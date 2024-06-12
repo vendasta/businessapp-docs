@@ -1,0 +1,8 @@
+{
+  "label": "Inbox",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Get starting using Inbox."
+  }
+}
