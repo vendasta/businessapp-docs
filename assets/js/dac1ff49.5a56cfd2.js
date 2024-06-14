@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbusinessapp_docs=self.webpackChunkbusinessapp_docs||[]).push([[6279],{543:s=>{s.exports=JSON.parse('{"metadata":{"permalink":"/businessapp-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
