@@ -1,10 +1,10 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 ---
 
 # My Business
 
-Learn how to set up and manage various features within the Business App, including your business profile, projects, meetings, guides, files, automations, orders, invoices, and the data exporter. The **My Business** section offers a comprehensive suite of tools designed to streamline operations efficiently.
+The **My Business** section offers a comprehensive suite of tools designed to streamline operations efficiently.
 
 ## How does the My Business page work?
 
