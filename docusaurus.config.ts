@@ -37,8 +37,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/vendasta/businessapp',
+          // editUrl:
+          //  'https://github.com/vendasta/businessapp',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -91,11 +91,6 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Overview',
-        },
-        {
-          href: 'https://github.com/vendasta/businessapp',
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },
