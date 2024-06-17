@@ -75,11 +75,9 @@ Currently with Inbox SMS messaging, Canadian businesses can only send SMS messag
 
 Registration is only available for US-based businesses, with Inbox Pro product active. Ensure the account has an address located in the United States.
 
-
 ** What phone number is used to send out messages?**
 
 Your business is assigned an available SMS number based on your address, using the nearest available area code. The business can share this number with customers and will receive text and MMS messages sent to it.  Calls cannot be received at this number at this time.
-
 
 **How many messages can we send to customers?**
 
