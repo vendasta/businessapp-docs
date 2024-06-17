@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# My Business
+# Overview
 
 The **My Business** section offers a comprehensive suite of tools designed to streamline operations efficiently.
 

@@ -34,7 +34,7 @@ Note: You only need to complete this process once. In the future, you’ll be au
 
 ![](../img/zapier_signin.png)
 
-![](../img/allow_access.png)
+![](../img/zapier_allow_access.png)
 
 5. Entering the Organization ID
 
