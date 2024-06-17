@@ -48,6 +48,35 @@ const config: Config = {
   ],
 
   themeConfig: {
+      algolia: {
+        // The application ID provided by Algolia
+        appId: '8SYZR207TF',
+
+        // Public API key: it is safe to commit it
+        apiKey: 'faba3d7ba0c2f3489cccf964cf02dae6',
+
+        indexName: 'businessapp',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'docs.businessapp\\.io',
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+
+        //... other Algolia params
+      },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
