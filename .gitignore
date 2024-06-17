@@ -1,3 +1,10 @@
+# IDEs and editors
+**/.idea/**
+/.idea
+
+# build
+/build
+
 # Logs
 logs
 *.log
