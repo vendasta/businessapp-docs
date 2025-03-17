@@ -12,9 +12,6 @@ Business App CRM can be connected to many 3rd party systems using Zapier.
 
 In this step, you can select the trigger that initiates an action in your workflow. As an example when a New Payment in Quickbooks Online can be used as a trigger. However, you can choose from various other triggers available in Zapier.
 
-Jess is demoing how to use this with brendan.
-
-![](../img/testing_image.png)
 
 ### Step 2: Choosing the App
 
