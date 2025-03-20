@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # AI-assisted Web Chat Widget
 
-With AI-assisted web chat, your business can capture more leads from your website. Your AI assistant will chat live with website visitors, answer questions capture their contact information so you can follow up later via SMS or email, and turn them into a customer.
+With AI-assisted web chat, your business can capture more leads from your website. Your AI assistant will chat live with website visitors, answer questions capture their contact information so you can follow up later via SMS or email, and turn them into a customer. Jesse and Cal test.
 
 ## How AI Web Chat works
 
