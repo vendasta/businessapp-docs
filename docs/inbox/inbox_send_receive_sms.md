@@ -1,12 +1,22 @@
 ---
 sidebar_position: 4
+toc_min_heading_level: 1
+toc_max_heading_level: 5
 ---
 
-# Send and Receive SMS
+# Send and Receive SMS in Inbox
 
-Businesses get a local SMS number to send text messages and images with customers from a shared team Inbox. Available for users of Inbox Pro in Canada and the United States.
+## What is it?
 
-When Inbox Pro is activated, a business will automatically be assigned a local texting number from an available pool of numbers nearest to the business’s physical address.
+SMS messaging allows businesses to send and receive text messages and images with customers directly from their shared team Inbox. Each business is assigned a dedicated local phone number, which is used for two-way communication. SMS is available to businesses with Inbox Pro in Canada and the United States.
+
+When Inbox Pro is activated, a business is automatically assigned a local SMS number based on its physical address. In the United States, SMS messaging also requires A2P 10DLC registration to comply with telecom regulations and ensure reliable delivery. Once registered, users can send and receive nearly unlimited SMS and MMS messages through Inbox.
+
+![SMS Registration Card](./img/sms_registration.png)
+
+## Why is this feature important?
+
+Inbox SMS messaging provides a centralized, professional way to manage customer texting. With a dedicated business number and shared team access, businesses can send updates, answer questions, and continue conversations all in one place. A2P registration ensures messages are delivered reliably, and all communication history is retained alongside other channels like email and web chat.
 
 ## How to send an SMS message
 
@@ -31,9 +41,7 @@ Fill out the form completely, and then click “Submit information”. You can a
 
 Your business will need an EIN number, a nine-digit number the IRS uses to identify a business for tax purposes, much like a Social Security number identifies an individual business. In the US, the Internal Revenue Service (IRS) issues a CP 575 EIN Confirmation Letter to confirm the unique Employer Identification Number (EIN) issued to a new business. The EIN provided in a CP 575 letter is required to file your company’s taxes, open a business bank account, and apply for a business credit card, loan, or payroll processing. If a business does not know their EIN, they can apply for an EIN by submitting IRS Form SS-4 online.
 
-## Frequently Asked Questions
-
-:::note
+### Frequently Asked Questions (FAQs)
 
 **I don’t see SMS in Inbox Settings?**
 

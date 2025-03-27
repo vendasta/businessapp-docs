@@ -1,14 +1,18 @@
 ---
 sidebar_position: 3
+toc_min_heading_level: 1
+toc_max_heading_level: 5
 ---
 
-# Send and Receive Emails
+# Send and Receive Emails in Inbox
 
-Inbox allows your team to send and receive emails with leads and customers via Inbox from a shared email address.
+## What is it?
 
-![](./img/inbox_email.png)
+Inbox allows your team to send and receive emails with leads and customers via Inbox from a shared email address. When a business gets a new lead from web chat or a form, and that lead provides an email address as a way to contact them, anyone on the team can reply via email to that customer from your centralized Inbox, without needing to open a separate email thread.
 
-When a business gets a new lead from web chat or a form, and that lead provides an email address as a way to contact them, anyone on the team can reply via email to that customer from your centralized Inbox, without needing to open a separate email thread.
+## Why is this feature important?
+
+When teams can’t easily see who replied to a customer—or whether anyone did—it creates confusion and delays. Using Inbox for email centralizes all communication into one shared space. Every team member can view and respond to messages from the same email thread without switching platforms. This ensures nothing is missed and keeps customer conversations organized in one place alongside other conversations through SMS and web chat.
 
 ## Features
 
@@ -44,7 +48,7 @@ For example, you might use a general business email address for customer inquiri
 2. Select Mail > Forwarding.
 3. To turn on forwarding, select Enable forwarding, enter the forwarding email address, and select Save.
 
-## Frequently Asked Questions
+### Frequently Asked Questions (FAQs)
 
 :::note
 

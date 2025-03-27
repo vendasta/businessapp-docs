@@ -1,6 +1,12 @@
-# Inbox
+---
+sidebar_position: 1
+toc_min_heading_level: 1
+toc_max_heading_level: 5
+---
 
-## Overview
+# Inbox Overview
+
+## What is it?
 
 Inbox is a communication tool that centralizes customer messages from email, Facebook, Instagram, and AI-powered web chat into one dashboard. It enables teams to view and respond to conversations collaboratively, without needing to switch between platforms. 
 
@@ -116,3 +122,15 @@ The web chat is 100% AI-managed lead capture. Small businesses are busy, and can
 
 **How much does the chatbot know about the business? Can it answer questions?**  
 The AI can access "knowledge" from the business profile, so it can answer questions about services, location and contact info, and hours. It can also be trained on your website. You can also add additional text Q&A 'knowledge' to the AI knowledge so it can answer frequently asked questions from any text.
+
+**Can Canadian businesses use Inbox to send SMS messages to recipients in the US?**  
+No, it's not possible to send SMS messages to US numbers without A2P registration (A2P registration is not supported in Canada).
+
+**How am I assigned an SMS number?**  
+When activating Inbox Pro, YOU will be automatically assigned an SMS number. First, the app will attempt to get a local number based on the business profile address. If no local numbers are available, a number from a neighbouring area in your country will be assigned. To see your assigned SMS phone number, navigate to `Business App > Settings > Inbox Settings > Your SMS number`. 
+
+**Does Inbox SMS use up Reputation Management Premium SMS add-on credits?**  
+No. Those credits are separate.
+
+**Q: Can I block spam messages from Business App Inbox?**  
+Not at this time. Spammers can send messages to any number, and unfortunately spam messages have been sent to users of Inbox Pro. If you are experiencing an unusually high amount of spam, contact support and we can assign a new number.
