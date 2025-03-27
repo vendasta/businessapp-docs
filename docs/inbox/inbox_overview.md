@@ -81,13 +81,13 @@ Inbox is available to all users of Business App. Get started by connecting your 
 - [**Install the AI-powered web chat widget**](./inbox_ai_web_chat_overview.md) 
   Add the chat widget to your website to engage visitors, answer questions automatically, and collect lead details using the AI assistant.
 
-- [**Add a lead contact form to your website**](../inbox/setup-web-form)  
+- [**Add a lead contact form to your website (optional)**](../inbox/setup-web-form)  
   Capture leads from your website using a simple contact form. Submissions are sent to your Inbox for easy follow-up.
 
-- [**Register your SMS number (Inbox Pro only)**](../inbox/setup-sms)  
+- [**Register your SMS number (Inbox Pro only)**](./inbox_send_receive_sms.md)  
   Businesses in the US and Canada can register for a dedicated SMS number to send and receive text messages through Inbox.
 
-- [**Set up email forwarding (optional)**](../inbox/setup-email-forwarding)  
+- [**Set up email forwarding (optional)**](../inbox/inbox_send_receive_emails.md) 
   Use your existing business email address to forward incoming mail into Inbox and reply from a shared address.
 
 ## How to connect your business messaging networks to Inbox
