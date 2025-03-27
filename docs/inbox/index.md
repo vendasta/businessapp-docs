@@ -77,7 +77,7 @@ Optional: Setup email forwarding
 
 ## How to connect your business messaging networks to Inbox
 
-1. Go to Business App > Settings > Inbox Settings
+1. Go to Business App > Administration > Inbox Settings
 2. Connect any business accounts for Google Business Profile, Facebook, and Instagram by going through the workflows to connect
 3. Make sure to Turn on messaging once an account has been connected.
    These integrations are shared across multiple features in Business App, so if you’ve already connected any previously, you’ll see them connected here, but you may need to reconnect to grant additional messaging permissions.

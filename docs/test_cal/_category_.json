@@ -1,0 +1,8 @@
+{
+    "label": "My Business",
+    "position": 7,
+    "link": {
+      "type": "generated-index",
+      "description": "Learn how to set up and manage various features within the Business App, including your business profile, projects, meetings, guides, files, automations, orders, invoices, and the data exporter."
+    }
+  }
