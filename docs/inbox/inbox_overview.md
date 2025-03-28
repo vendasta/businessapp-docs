@@ -6,7 +6,7 @@ toc_max_heading_level: 5
 
 # Inbox Overview
 
-## What is it?
+## What is Inbox?
 
 Inbox is a communication tool that centralizes customer messages from email, Facebook, Instagram, and AI-powered web chat into one dashboard. It enables teams to view and respond to conversations collaboratively, without needing to switch between platforms. 
 
@@ -14,19 +14,19 @@ If enabled, AI-powered web chat responds to and captures leads instantly, helpin
 
 ![](./img/inbox.png)
 
-## Why is this feature important?
+## Why is Inbox important?
 
 Small businesses often lose time and opportunities by managing messages across disconnected platforms. Without visibility into all conversations, responses are delayed and teams may duplicate efforts. Inbox consolidates these conversations into a shared workspace, helping businesses stay organized, improve response times, and create a more consistent customer experience.
 
 ## Table of Contents
 
-- [What's Included](#whats-included)
+- [What's Included](#whats-included-with-inbox)
 - [Inbox Pro Features](#inbox-pro-features)
 - [Feature Availability](#feature-availability)
-- [How to Set Up Inbox](#how-to-set-up-inbox)
+- [How to Set Up Inbox](#how-to-set-up-inbox-in-business-app)
 - [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
 
-## What’s Included
+## What’s Included with Inbox?
 
 Inbox includes the following capabilities out-of-the-box:
 

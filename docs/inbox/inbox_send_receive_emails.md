@@ -6,15 +6,15 @@ toc_max_heading_level: 5
 
 # Send and Receive Emails in Inbox
 
-## What is it?
+## What is email in Inbox?
 
-Inbox allows your team to send and receive emails with leads and customers via Inbox from a shared email address. When a business gets a new lead from web chat or a form, and that lead provides an email address as a way to contact them, anyone on the team can reply via email to that customer from your centralized Inbox, without needing to open a separate email thread.
+Send and receive emails with leads and customers via Inbox from a shared email address. When you get a new lead from web chat or a form, and that lead provides an email address as a way to contact them, anyone on the team can reply via email to that customer from your centralized Inbox, without needing to open a separate email thread.
 
-## Why is this feature important?
+## Why is email communication in Inbox important?
 
 When teams can’t easily see who replied to a customer—or whether anyone did—it creates confusion and delays. Using Inbox for email centralizes all communication into one shared space. Every team member can view and respond to messages from the same email thread without switching platforms. This ensures nothing is missed and keeps customer conversations organized in one place alongside other conversations through SMS and web chat.
 
-## Features
+## Features of Email Communication in Inbox
 
 1. Available to all users of Inbox, both Inbox Standard and Inbox Pro.
 2. Send emails to contacts using the business's assigned email address.
