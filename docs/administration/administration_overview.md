@@ -4,8 +4,8 @@ sidebar_position: 1
 
 # Administration Overview
 
-## What is the Administration section?
-The **Administration** section in Business App provides access to system-wide configuration tools all in one place. Your Business App relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. The Administration section ensures that:
+## What is the Administration section in Business App?
+The **Administration** section in Business App provides access to system-wide configuration tools all in one place. Your Business App relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. **The Administration section includes your Business Profile, App Settings, AI Settings, and Communication Settings.** Everything that lives in the administration section of Business App works together to ensure that:
 - Your tools are connected and synced correctly
 - AI and messaging features are properly configured
 - Workflows and communication channels are set-up in a way that steamlines your operations specific to your needs
@@ -18,8 +18,8 @@ Keeping these foundational settings aligned improves daily operations and makes 
 
 ## Table of Contents
 - [Business Profile](./business_profile.md)
-- [App Settings](./app_settings.md)
-- [AI Settings](./ai_settings.md)
+- [App Settings](./app-settings/app_settings.md)
+- [AI Settings](./ai-settings/ai_settings.md)
 - [Communication Settings](./communication_settings.md)
 
 
