@@ -244,7 +244,10 @@ To hide the reCAPTCHA badge, go to your website CSS editor:
 - Go to Appearance » Customizer
 - Click Additional CSS
 - Add the snippet:
+
+```css
 .grecaptcha-badge {
-visibility: hidden!important;
+  visibility: hidden !important;
 }
+```
 - Save and preview your website.
