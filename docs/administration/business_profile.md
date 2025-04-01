@@ -33,7 +33,9 @@ In the **Primary Info** tab, you can update:
 - **Phone number** (must be formatted internationally)
 - **Service area business** toggle
 
-These details power your listings.
+Click `Save` to apply your updates.
+
+These details power your listings. 
 
 ## Hours
 In the **Hours** tab, you can update:
@@ -42,29 +44,26 @@ In the **Hours** tab, you can update:
 - Special hours (like holidays)
 
 ## Descriptions
-In the **Descriptions** tab, you can add:
+In the **Descriptions** tab, you can add a:
 
 - **Short description** (up to 200 characters)  
   Appears in previews and listings  
 - **Long description** (up to 750 characters)  
   Describes your business in more detail  
 
-You can also use the `Suggest Description` button to generate content with the help of AI.
+You can also use the `Suggest Description` button to generate content with the help of AI. Click `Save` to apply your updates.
 
-![Business Profile Administration Business Descriptions](./img/administration_descriptions.png)
-![Business Profile Descriptions](./img/administration_descriptions.png)
+![Administration Settings Overview](./img/administration_descriptions.png)
 
 ## Images
-Use the **Images** tab to visually represent your brand:
+Use the **Images** tab to visually represent your brand across applications:
 
 - **Main logo**
 - **Secondary logo** (optional)
 - **Cover photo**
-- **Gallery images** used in listings and customer views
+- **Gallery images** (shared on listings that accept images)
 
-Click `Edit` or `Choose images` to upload or update files. These images help create a trustworthy and professional online presence.
-
-![Business Profile Images Tab](./img/image-20250401-images.png)
+Click `Edit` or `Choose images` to upload or update files. These images help create a trustworthy and professional online presence. Click `Save` to apply your updates.
 
 ## Social
 In the **Social** tab, you can add links to your active business pages:
@@ -77,23 +76,28 @@ In the **Social** tab, you can add links to your active business pages:
 - Pinterest  
 - Foursquare  
 
-You can also enter your **Blog or RSS feed URL** to integrate recent content where supported.
-
-![Business Profile Social Tab](./img/image-20250401-social.png)
+You can also enter your **Blog or RSS feed URL** to integrate recent content where supported. Click `Save` to apply your updates.
 
 ## Attributes
-The **Attributes** tab contains detailed operational and service-related information:
 
-- **Business open/closed status**
-- **Booking link** for appointment scheduling
-- **Online store only** toggle
-- **Payment methods** your business accepts
-- **Services offered** (e.g., Rabbit Grooming, Supplies)
-- **Brands carried** (e.g., Nike Rabbit, Adidas Rabbit)
+The **Attributes** tab allows you to define specific qualities and services your business offers. These attributes enhance how your business appears on platforms like Google and Bing, and can improve your discoverability in local search.
 
-These fields improve your discoverability and customer experience in local directories and Business App reports.
+You can search or scroll through the dropdown to add applicable options for each platform. Once selected, they will be synced to the appropriate listings platform when supported. Click `Save` to apply your updates.
 
-![Business Profile Attributes Tab](./img/image-20250401-attributes.png)
+### Examples of Available Attributes
+
+Depending on your business type, you may be able to select attributes such as:
+
+- **Identifies as women-owned**
+- **Language assistance**
+- **LGBTQ+ friendly**
+- **Menu or services link**
+- **On-site parking**
+- **Wheelchair accessible**
+- **Pet-friendly**
+- **Curbside pickup**
+- **Delivery service**
+
 
 ## Frequently Asked Questions (FAQs)
 
@@ -106,12 +110,7 @@ Missing information may reduce your visibility in listings and create gaps in re
 **Can I update my Business Profile at any time?**  
 Yes. You can return to this section anytime to make updates as your business evolves.
 
-**Do images or logos appear publicly?**  
-Yes. Images may appear in your public listings, reports, and other external-facing tools depending on what's supported.
-
 **How often should I review this section?**  
-We recommend reviewing your Business Profile at least quarterly, or whenever key business information changes.
+We recommend reviewing your Business Profile every few months, or whenever key business information changes.
 
 ---
-
-Let me know if you want to start on `app_settings.md` next or need help finalizing screenshots or alt text!
