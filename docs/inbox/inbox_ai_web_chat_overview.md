@@ -1,7 +1,5 @@
 ---
 sidebar_position: 2
-toc_min_heading_level: 1
-toc_max_heading_level: 5
 ---
 # AI-Assisted Web Chat Widget Overview
 
