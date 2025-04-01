@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Send and Receive SMS in Inbox
 
-## What is it?
+## What is SMS messaging in Inbox?
 
 SMS messaging allows businesses to send and receive text messages and images with customers directly from their shared team Inbox. Each business is assigned a dedicated local phone number, which is used for two-way communication. SMS is available to businesses with Inbox Pro in Canada and the United States.
 
