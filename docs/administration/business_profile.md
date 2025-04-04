@@ -3,10 +3,10 @@ sidebar_position: 2
 ---
 # Business Profile Overview
 
-## What is my Business Profile inside Business App?
-The **Business Profile** section in Business App allows you to manage your core business information in one central place. This includes your name, location, website, branding, services, social profiles, and operational details.
+## What is my Business Profile?
+Your **Business Profile** allows you to manage your core business information in one central place. This includes your name, location, website, branding, services, social profiles, and operational details.
 
-This profile ensures that your business information is accurate and consistent across listings, reports, lead capture tools, and across all features of Business App.
+This profile ensures that your business information is accurate and consistent across listings, reports, lead capture tools, and across all features of your app.
 
 ## Why is my Business Profile important?
 Keeping your Business Profile complete and up to date helps your business:
@@ -102,7 +102,7 @@ Depending on your business type, you may be able to select attributes such as:
 ## Frequently Asked Questions (FAQs)
 
 **Why should I complete my Business Profile?**  
-A complete profile improves visibility, enables automation, and powers accurate reporting across Business App features.
+A complete profile improves visibility, enables automation, and powers accurate reporting across all app features.
 
 **What happens if I leave a field blank?**  
 Missing information may reduce your visibility in listings and create gaps in reporting or customer-facing tools.

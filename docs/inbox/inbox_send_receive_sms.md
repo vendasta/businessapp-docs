@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# Send and Receive SMS in Inbox
+# Send and Receive SMS Messages in Inbox
 
-## What is SMS messaging in Inbox?
+## What is SMS Messaging in Inbox?
 
 SMS messaging allows businesses to send and receive text messages and images with customers directly from their shared team Inbox. Each business is assigned a dedicated local phone number, which is used for two-way communication. SMS is available to businesses with Inbox Pro in Canada and the United States.
 
@@ -12,26 +12,26 @@ When Inbox Pro is activated, a business is automatically assigned a local SMS nu
 
 ![SMS Registration Card](./img/sms_registration.png)
 
-## Why is this feature important?
+## Why is SMS Messaging Important?
 
 Inbox SMS messaging provides a centralized, professional way to manage customer texting. With a dedicated business number and shared team access, businesses can send updates, answer questions, and continue conversations all in one place. A2P registration ensures messages are delivered reliably, and all communication history is retained alongside other channels like email and web chat.
 
-## How to send an SMS message
+## How to Send an SMS Message
 
 If your business is located in the United States, you must first complete SMS registration before you can send any messages. If your business is located in Canada, you can use SMS messaging immediately:
 
 To send your first SMS message,
 
-1. Open Business App > Inbox Messages
-2. Click on "Send a Message" button
+1. Open `Inbox Messages`
+2. Click on `Send a Message` button
 3. Type in the phone number of the customer. The input field will automatically correct the phone number to match our phone number format. Ex: +1 (555) 555-5555.
 4. Type a message and send it.
 
-## How to register a US-based business for SMS messaging
+## How to Register a US-based Business for SMS Messaging
 
 To prevent spam and other widespread SMS abuse, phone carriers in the United States now require businesses to register their phone numbers before sending SMS messages to customers (A2P 10DLC). Registration can take up to a few weeks. Once registered, users on the business account will receive a notification and then can now send messages.
 
-To register a US-based business, go to Business App > Settings > Inbox Settings to see a new registration card. Click register now to view the form.
+To register a US-based business, go to `Settings > Inbox Settings` to see a new registration card. Click register now to view the form.
 
 ![](./img/sms_registration.png)
 

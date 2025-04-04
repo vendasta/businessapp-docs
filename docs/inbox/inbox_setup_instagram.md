@@ -2,9 +2,17 @@
 sidebar_position: 5
 ---
 
-# Instagram in Inbox
+# Send and Receieve Instagram Messages in Inbox
 
-### How to Connect Instagram to Inbox
+## What is Instagram in Inbox?
+
+Send and receive Instagram direct messages with leads and customers directly inside Inbox. When a customer reaches out via Instagram, anyone on your team can respond from the shared Inbox, without needing to open Instagram separately.
+
+## Why is Instagram Integration in Inbox Important?
+
+Without centralized access to Instagram messages, replies often depend on who has account access or mobile app notifications enabled. Using Inbox for Instagram messaging ensures all incoming and outgoing conversations are visible in one place. This makes it easier for your team to respond promptly, collaborate, and keep social conversations organized alongside SMS, email, and web chat—all in one shared workspace.
+
+## How to Connect Instagram to Inbox
 
 Connecting Instagram to Inbox requires a few extra steps. 
 ### Step 1  

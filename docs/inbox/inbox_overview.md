@@ -12,7 +12,7 @@ If enabled, AI-powered web chat responds to and captures leads instantly, helpin
 
 ![](./img/inbox.png)
 
-## Why is Inbox important?
+## Why is Inbox Important?
 
 Small businesses often lose time and opportunities by managing messages across disconnected platforms. Without visibility into all conversations, responses are delayed and teams may duplicate efforts. Inbox consolidates these conversations into a shared workspace, helping businesses stay organized, improve response times, and create a more consistent customer experience.
 
@@ -75,9 +75,9 @@ Inbox Pro is required to access these features.
 | Email                              | ✓              | ✓             | ✓                 |
 | Website Forms                      | ✓              | ✓             | ✓                 |
 
-## How to Set Up Inbox in Business App
+## How to Set Up Your Inbox
 
-Inbox is available to all users of Business App. Get started by connecting your Facebook and Instagram, installing your AI-powered web chat widget, and registering your SMS number.
+Inbox is available to all users. Get started by connecting your Facebook and Instagram, installing your AI-powered web chat widget, and registering your SMS number.
 
 - [**Set up Instagram in Inbox**](./inbox_setup_instagram.md) 
   Link your accounts so you can view and reply to direct messages directly from Inbox.
@@ -96,10 +96,10 @@ Inbox is available to all users of Business App. Get started by connecting your 
 
 ## How to connect your business messaging networks to Inbox
 
-1. Go to Business App > Administration > Inbox Settings
+1. Go to Administration > Inbox Settings
 2. Connect any business accounts for Google Business Profile, Facebook, and Instagram by going through the workflows to connect
 3. Make sure to turn on messaging once an account has been connected.
-   These integrations are shared across multiple features in Business App, so if you’ve already connected any previously, you’ll see them connected here, but you may need to reconnect to grant additional messaging permissions.
+   These integrations are shared across multiple features in your app, so if you’ve already connected any previously, you’ll see them connected here, but you may need to reconnect to grant additional messaging permissions.
 
 ### Frequently Asked Questions (FAQs)
 
@@ -125,10 +125,10 @@ The AI can access "knowledge" from the business profile, so it can answer questi
 No, it's not possible to send SMS messages to US numbers without A2P registration (A2P registration is not supported in Canada).
 
 **How am I assigned an SMS number?**  
-When activating Inbox Pro, YOU will be automatically assigned an SMS number. First, the app will attempt to get a local number based on the business profile address. If no local numbers are available, a number from a neighbouring area in your country will be assigned. To see your assigned SMS phone number, navigate to `Business App > Settings > Inbox Settings > Your SMS number`. 
+When activating Inbox Pro, YOU will be automatically assigned an SMS number. First, the app will attempt to get a local number based on the business profile address. If no local numbers are available, a number from a neighbouring area in your country will be assigned. To see your assigned SMS phone number, navigate to `Settings > Inbox Settings > Your SMS number`. 
 
 **Does Inbox SMS use up Reputation Management Premium SMS add-on credits?**  
 No. Those credits are separate.
 
-**Q: Can I block spam messages from Business App Inbox?**  
+**Q: Can I block spam messages from Inbox?**  
 Not at this time. Spammers can send messages to any number, and unfortunately spam messages have been sent to users of Inbox Pro. If you are experiencing an unusually high amount of spam, contact support and we can assign a new number.

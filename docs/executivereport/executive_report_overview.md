@@ -11,7 +11,7 @@ This report helps you understand your results over time and track growth without
 
 ![Executive Report Overview](./img/executive_report_overview.png)
 
-## Why is the Executive Report important?
+## Why is the Executive Report Important?
 As a business owner, you need a clear way to understand how your online presence and marketing efforts are performing. The **Executive Report** gives you a simple, reliable summary of your most important metrics—without the need to log into multiple tools or spreadsheets.
 
 Each report helps you:
@@ -51,7 +51,7 @@ The report includes only the sections where data has changed since your last rep
 
 Data appears in your Executive Report automatically as your connected products collect and sync performance results. Data sync time (approximate) for an authenticated Google Business Profile should populate within 5 minutes. If you recently added a product, it may take up to 48 hours for data to appear in your next report.
 
-## Viewing and Navigating the Report
+## How to View and Navigate the Report
 
 To view your Executive Report:
 1. Open the Business App and go to the `Executive Report` tab
@@ -71,7 +71,7 @@ To view your Executive Report:
 
 Your report is updated automatically and archived so you can review previous reports at any time.
 
-## Frequently Asked Questions (FAQs)
+### Frequently Asked Questions (FAQs)
 
 **When will I receive my Executive Report?**  
 Monthly reports are sent between the 1st–3rd of each month. Weekly reports are sent on Mondays.

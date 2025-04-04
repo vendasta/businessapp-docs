@@ -35,7 +35,7 @@ Lead source data is based on contacts created during the reporting period. The r
 - Effectiveness of AI-powered tools like web chat
 - Visual cards that summarize CRM performance at a glance
 
-## Frequently Asked Questions (FAQs)
+### Frequently Asked Questions (FAQs)
 
 **Why don’t I see any metrics in the Customer Relations section yet?**  
 The Executive Report shows data from the previous period (weekly or monthly). If you just activated a lead capture tool, wait for the next report cycle. You can confirm lead capture by checking the `CRM` tab in your Business App.

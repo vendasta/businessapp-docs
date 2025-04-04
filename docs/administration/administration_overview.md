@@ -4,13 +4,11 @@ sidebar_position: 1
 
 # Administration Overview
 
-## What is the Administration section in Business App?
-The **Administration** section in Business App provides access to system-wide configuration tools all in one place. Your Business App relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. **The Administration section includes your Business Profile, App Settings, AI Settings, and Communication Settings.** Everything that lives in the administration section of Business App works together to ensure that:
+## What can You Manage in the Administration Section?
+The **Administration** section provides access to system-wide configuration tools all in one place. Your dashboard relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. **The Administration section includes your Business Profile, App Settings, AI Settings, and Communication Settings.** Everything that lives in the administration section works together to ensure that:
 - Your tools are connected and synced correctly
 - AI and messaging features are properly configured
 - Workflows and communication channels are set-up in a way that steamlines your operations specific to your needs
-
-This section is organized by purpose and functionality, allowing you to set up the foundation for how Business App works across your organization.
 
 Keeping these foundational settings aligned improves daily operations and makes your system easier to manage over time.
 
@@ -23,7 +21,7 @@ Keeping these foundational settings aligned improves daily operations and makes 
 - [Communication Settings](./communication_settings.md)
 
 
-## What is Included in the Administration section of Business App?
+## What is Included in the Administration section?
 
 ### Account
 - **Business Profile**  
@@ -57,13 +55,13 @@ Keeping these foundational settings aligned improves daily operations and makes 
 
 ## Frequently Asked Questions (FAQs)
 
-**Can I return to update Business App settings later?**  
+**Can I return to update settings later?**  
 Yes. You can revisit any section in Administration at any time to make updates as your business grows.
 
 **Does changing these settings affect my team?**  
-Most settings apply across your Business App account, so updates will reflect for all users.
+Most settings apply across your account, so updates will reflect for all users.
 
-**Where should I get started in Business App?**  
+**Where should I get started to set up my app?**  
 Start with the **Business Profile** inside the Administration tab to ensure your basic business information is accurate and consistent across tools.
 
 ---

@@ -55,7 +55,7 @@ The AI-powered Web Chat Widget includes the following capabilities:
 To install the AI-assisted Web Chat Widget on your website (after Inbox Pro is enabled):
 
 1. **Access Web Chat Configuration**:
-   - Navigate to `Administration > Inbox Settings > Web Chat Configuration` in Business App.
+   - Navigate to `Administration > Inbox Settings > Web Chat Configuration`.
 
 2. **Configure the Widget**:
    - Customize the widget's appearance and behavior as desired.
@@ -158,7 +158,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 allowfullscreen>
 </iframe>
 
-1. Go to `AI > AI knowledge base > Manage knowledge` in Business App.  
+1. Go to `AI > AI knowledge base > Manage knowledge`.  
 3. Click `Add knowledge` the choose `Website`
 4. Follow the setup instructions to train the AI on your website. Make sure you select all the pages you would like to train your AI on, and save.
 
@@ -168,7 +168,7 @@ You can expand the assistant’s capabilities by adding your own knowledge conte
 
 ![](./img/web_chat_ai_knowledge_base.png)
 
-1. Go to `AI > AI knowledge base > Manage knowledge` in Business App.  
+1. Go to `AI > AI knowledge base > Manage knowledge`. 
 2. Click on any knowledge source title to preview what content is currently accessible to the AI.  
 3. Click `Manage Knowledge` to open the centralized knowledge area.  
 4. Add new content by writing or pasting text into a new knowledge source.  
@@ -176,7 +176,7 @@ You can expand the assistant’s capabilities by adding your own knowledge conte
 
 This lets you teach the AI to respond using business-specific details such as product explanations, policies, or unique services beyond what's stored in the profile.
 
-## How will I be notified about a new lead?
+## How Will I Be Notified About a New Lead?
 
 When your AI assistant is successful in capturing a name and contact info, a few things will happen automatically:
 
@@ -198,7 +198,7 @@ You can tailor the web chat widget to align with your branding and operational n
 - **Initial AI Message**: Configure a custom greeting that appears shortly after the chat is opened.
 - **Phone Configuration**: Define how received calls and SMS messages should be handled.
 
-Access these settings via `Business App > Administration > Inbox Settings > Configure Web Chat`.
+Access these settings via Administration > Inbox Settings > Configure Web Chat`.
 
 ## Frequently Asked Questions (FAQs)
 

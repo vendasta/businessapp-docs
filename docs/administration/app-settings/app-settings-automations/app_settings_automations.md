@@ -1,7 +1,7 @@
 # Automations Overview
 
-## What is an Automation inside Business App?
-The **Automations** feature in Business App allows you to create workflows that trigger specific actions when certain events occur. These rules help automate repetitive tasks and ensure important processes run consistently without manual input.
+## What is an Automation?
+**Automations** allow you to create workflows that trigger specific actions when certain events occur. These rules help automate repetitive tasks and ensure important processes run consistently without manual input.
 
 With Automations, you can set triggers like a new contact or company being created, then define what actions should happen in response—such as sending an SMS, email, or updating CRM fields.
 

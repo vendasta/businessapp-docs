@@ -3,8 +3,8 @@ sidebar_position: 3
 ---
 # App Settings Overview
 
-## What are App Settings inside Business App?
-The **App Settings** section in Business App allows you to configure how your account behaves behind the scenes. These settings influence workflows, integrations, data capture, and lead management—making it easier to scale your operations efficiently.
+## What are App Settings?
+Your **App Settings** allow you to configure how your account behaves behind the scenes. These settings influence workflows, integrations, data capture, and lead management—making it easier to scale your operations efficiently.
 
 This section includes tools for automating actions, connecting third-party platforms, customizing CRM fields, and scoring leads based on behavior and fit.
 
@@ -34,7 +34,7 @@ You can also navigate directly to your automations by selecting the `Automations
 
 ## Connections
 
-The **Connections** section allows you to link your Business App account to external services. These integrations enable data syncing, performance tracking, and automation across platforms.
+The **Connections** section allows you to link your account to external services. These integrations enable data syncing, performance tracking, and automation across platforms.
 
 Common connections include:
 - **Google Business Profile**

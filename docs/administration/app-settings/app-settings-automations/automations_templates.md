@@ -1,7 +1,7 @@
 # Automation Templates
 
 ## What are Automation Templates?
-Automation templates are pre-built workflows that help you set up common automation use cases quickly in Business App. Templates provide a structured starting point with a trigger, optional conditions, and one or more action steps. You can customize them to suit your specific needs.
+Automation templates are pre-built workflows that help you set up common automations, quickly. Templates provide a structured starting point with a trigger, optional conditions, and one or more action steps. You can customize them to suit your specific needs.
 
 Templates are helpful for saving time, ensuring consistency, and guiding you through best-practice automation design. Instead of building a workflow from scratch, templates allow you to:
 
@@ -39,7 +39,7 @@ This template helps you automatically follow up with customers to request a revi
 
 ### How to Set Up the Review Request Automation
 
-This workflow can be found under `Business App` > `Automations`. 
+This workflow can be found by naviating to `Automations` in your side bar. 
 
 **Step 1:** Select `Create Automation.`  
 **Step 2:** Choose a trigger to start your workflow. For this example, select `create a contact.` You can also add conditions to specify what you want to trigger.  

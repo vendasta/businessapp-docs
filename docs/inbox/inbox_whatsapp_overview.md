@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# WhatsApp Overview
+# Send and Receive Whatsapp Messages in Inbox
 
-## What is it?
+## What is the Whatsapp Integration?
 
 WhatsApp integration in Inbox enables international customer communication by connecting your WhatsApp Business account directly to your team’s shared Inbox. This allows you to send messages to new leads and existing customers using WhatsApp, while managing all customer interactions from one centralized location.
 
@@ -12,7 +12,7 @@ If enabled, businesses can use approved message templates to start conversations
 
 WhatsApp messaging is available in Inbox, for any accounts with either Inbox Pro or AI-Assisted Web Chat products active on their account, internationally.
 
-## Why is this feature important?
+## Why is Whatsapp Important?
 
 For many international markets, WhatsApp is the preferred method of communication. Without this integration, businesses may miss out on leads who prefer to message over WhatsApp instead of SMS or email. Connecting a WhatsApp Business account ensures that customers can reach you where they’re most active, while enabling your team to respond using the same shared Inbox they use for all other channels.
 
