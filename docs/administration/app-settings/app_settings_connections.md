@@ -73,13 +73,6 @@ Understanding these types will help you navigate set up for the connection you a
 | **SSO-Based**         | Secure logins and synced data             | Your app & the partner | Single sign-on authorization     |
 | **API-Key Based**     | Custom or advanced external connections   | You (developer/admin)  | Generate and use API credentials |
 
-Each integration type has its own guide with detailed steps and tips:
-
-- [Setting Up Vendor-Managed Integrations](./connections/vendor-managed-integrations.md)  
-- [Setting Up SSO-Based Integrations](./connections/sso-based-integrations.md)  
-- [Setting Up API-Key Based Integrations](./connections/api-key-integrations.md)
-
-
 ## How to Manage or Disconnect Integrations
 1. From the `Connections` section, select the `Manage` tab.  
 2. View the list of active integrations and their connection status.  
