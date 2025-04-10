@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 # Connections (Integrations) Overview
 
-## What Can I Manage in my Connections?
+## What Can I Manage in Connections?
 The **Connections** section allows you to link third-party tools directly to your app. These integrations bring your most important business data into one place and allow services across your app to work together.
 
 By connecting platforms like Google, Facebook, and others, you can:
@@ -27,7 +27,7 @@ Connecting accounts also reduces manual work by automatically syncing data betwe
 - [What Data Gets Synced](#what-data-gets-synced)
 - [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
 
-## What You Can Connect
+## What is Included?
 The `Browse` tab in the **Connections** section displays available integrations. You can search for or scroll through a list of platforms to connect.
 
 ![Browse Available Integrations in the Connection Section](../img/app_settings_connections_browse_integrations.png)
@@ -63,15 +63,15 @@ Each integration has it's own required steps to connect. You can find these deta
 
 ## Types of Integrations
 
-Your app supports three different methods of connecting external platforms. Each method serves a different use case depending on how the integration is built, who manages it, and how it’s authenticated.
+Your app supports three different methods of connecting external platforms. Each method serves a different use case depending on how the integration is built, who manages it, and how it’s authenticated. Understanding these types will help you navigate set up for the connection you are working with. 
 
-Understanding these types will help you navigate set up for the connection you are working with.
+| **Integration Type**  | **Best For**                             | **Setup Method**                |
+|-----------------------|-------------------------------------------|----------------------------------|
+| **Vendor-Managed**    | Prebuilt connections                      | Log in and connect               |
+| **SSO-Based**         | Secure logins and synced data             | Single sign-on authorization     |
+| **API-Key Based**     | Custom or advanced external connections   | Generate and use API credentials |
 
-| **Integration Type**  | **Best For**                             | **Managed By**        | **Setup Method**                |
-|-----------------------|-------------------------------------------|------------------------|----------------------------------|
-| **Vendor-Managed**    | Prebuilt connections listed in `Browse`   | Third-party vendor     | Log in and connect               |
-| **SSO-Based**         | Secure logins and synced data             | Your app & the partner | Single sign-on authorization     |
-| **API-Key Based**     | Custom or advanced external connections   | You (developer/admin)  | Generate and use API credentials |
+Within each specific app (after you press `Connect`) you will be prompted with special instructions on how to nagivate and set up the connection. 
 
 ## How to Manage or Disconnect Integrations
 1. From the `Connections` section, select the `Manage` tab.  
@@ -82,7 +82,7 @@ Understanding these types will help you navigate set up for the connection you a
    - Disconnect the platform  
 
 ## What Data Gets Synced
-Each integration sends specific data to your app, depending on its purpose:
+Each integration sends specific data to your app, depending on its purpose. For example:
 
 - **Lead forms** from Facebook  
 - **Website performance** from Google Analytics  

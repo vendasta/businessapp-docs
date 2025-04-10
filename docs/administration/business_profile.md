@@ -8,7 +8,7 @@ Your **Business Profile** allows you to manage your core business information in
 
 This profile ensures that your business information is accurate and consistent across listings, reports, lead capture tools, and across all features of your app.
 
-## Why is my Business Profile important?
+## Why is my Business Profile Important?
 Keeping your Business Profile complete and up to date helps your business:
 - Appear accurately in local search and online listings
 - Build trust with customers through consistent branding and clear service offerings
