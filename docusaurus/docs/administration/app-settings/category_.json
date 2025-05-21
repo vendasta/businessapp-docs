@@ -1,0 +1,14 @@
+{
+    "label": "App Settings",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "title": "App Settings",
+      "description": "Configure automations, integrations, CRM structure, and scoring to control how Business App functions across your workflows."
+    },
+    "items": [
+      "administration/app-settings/automations",
+      "administration/app-settings/connections",
+      "administration/app-settings/crm-fields"
+    ]
+  }
