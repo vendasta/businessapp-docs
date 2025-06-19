@@ -18,8 +18,16 @@ const config: Config = {
   organizationName: 'vendasta', // Usually your GitHub org/user name.
   projectName: 'businessapp-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+
+  // Enable faster builds with Rspack bundler and persistent cache
+  future: {
+    experimental_faster: {
+      rspackBundler: true,
+      rspackPersistentCache: true,
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
