@@ -46,7 +46,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
-          //  'https://github.com/vendasta/businessapp',
+          //  'https://github.com/vendasta/businessapp-docs',
         },
         theme: {
           customCss: './src/css/custom.css',
