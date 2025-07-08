@@ -2,6 +2,15 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+// Import images using native ES module syntax. This replaces the legacy
+// CommonJS `require` pattern that Docusaurus v2 no longer recommends inside
+// source files. Each import resolves to the processed image URL string
+// at build-time via Webpack's file-loader configuration provided by
+// the Docusaurus preset.
+import crmImg from '@site/static/img/crm_with_integrations.png';
+import inboxImg from '@site/static/img/inbox_message_hub.png';
+import aiImg from '@site/static/img/ai_assisted_lead_capture.png';
+
 type FeatureItem = {
   title: string;
   Img: string;
@@ -11,7 +20,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'CRM with integrations',
-    Img: require('@site/static/img/crm_with_integrations.png').default,
+    Img: crmImg,
     description: (
       <>
         Centralize your business’s data and streamline workflows from many different systems by integrating them with Business App’s CRM and automations.
@@ -20,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Inbox Messaging Hub',
-    Img: require('@site/static/img/inbox_message_hub.png').default,
+    Img: inboxImg,
     description: (
       <>
         All communication in one place – instead of isolated on personal employee phones.
@@ -29,7 +38,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AI-Assisted Lead Capture',
-    Img: require('@site/static/img/ai_assisted_lead_capture.png').default,
+    Img: aiImg,
     description: (
       <>
         Never miss a lead again. Website visitors get an instant response by your helpful AI assistant, answering questions about your business and encouraging them to leave their contact info.
