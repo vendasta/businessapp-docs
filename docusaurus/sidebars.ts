@@ -36,7 +36,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Inbox',
-    collapsed: true,
+    collapsible: false, // plain-text section header (no caret, no toggle)
+    className: 'sidebarSection',
     items: [
       {
         type: 'category',
@@ -61,7 +62,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'CRM',
-    collapsed: true,
+    collapsible: false,
+    className: 'sidebarSection',
     items: [
       {
         type: 'category',
@@ -81,7 +83,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'AI',
-    collapsed: true,
+    collapsible: false,
+    className: 'sidebarSection',
     items: [
       {
         type: 'category',
@@ -103,7 +106,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Executive Report',
-    collapsed: true,
+    collapsible: false,
+    className: 'sidebarSection',
     items: [
       'executivereport/executive_report_overview',
       'executivereport/executive_report_lead_analytics',
@@ -116,7 +120,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Campaigns',
-    collapsed: true,
+    collapsible: false,
+    className: 'sidebarSection',
     items: [
       'campaigns/index',
     ],
@@ -128,7 +133,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Store',
-    collapsed: true,
+    collapsible: false,
+    className: 'sidebarSection',
     items: [
       'store/index',
     ],
@@ -140,7 +146,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Automations',
-    collapsed: true,
+    collapsible: false,
+    className: 'sidebarSection',
     items: [
       'automations/index',
     ],
@@ -152,7 +159,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Administration',
-    collapsed: true,
+    collapsible: false,
+    className: 'sidebarSection',
     items: [
       {
         type: 'category',
