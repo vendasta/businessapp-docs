@@ -1,9 +1,7 @@
 ---
+title: Email Configuration
 sidebar_position: 2
 ---
-
-# Email Configuration
-
 Getting your emails to reach people's inboxes shows that you are sending the right messages at the right time. If people open, click, or complain about your emails, it can affect whether your emails are seen as good or spam. More positive actions mean your emails are more likely to be seen!
 
 ## Authenticate your custom email domain

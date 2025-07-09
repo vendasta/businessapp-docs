@@ -1,9 +1,7 @@
 ---
+title: Send and Receive WhatsApp Messages in Inbox
 sidebar_position: 5
 ---
-
-# Send and Receive Whatsapp Messages in Inbox
-
 ## What is the Whatsapp Integration?
 
 WhatsApp integration in Inbox enables international customer communication by connecting your WhatsApp Business account directly to your team’s shared Inbox. This allows you to send messages to new leads and existing customers using WhatsApp, while managing all customer interactions from one centralized location.

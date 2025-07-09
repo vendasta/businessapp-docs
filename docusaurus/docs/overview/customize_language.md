@@ -1,9 +1,7 @@
 ---
+title: Customize Language
 sidebar_position: 2
 ---
-
-# Customize Language
-
 Want to experience Business App in your preferred language? This guide offers a quick look at how to customize the app's interface. Language customization can enhance your experience and expand accessibility.
 
 How to Update the Business App Language

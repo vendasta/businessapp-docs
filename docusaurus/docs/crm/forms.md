@@ -1,9 +1,7 @@
 ---
+title: Web Forms
 sidebar_position: 2
 ---
-
-# Web Forms
-
 A custom form can be created in Business App and installed on a website landing page or ‘contact us’ page with a simple embed code. When it is filled out, it will create a contact in the CRM, and create a conversation in Inbox where it can then be responded to. Using Automations, the contact can receive an automatic reply after filling out the form, can be added to an email or SMS nurturing campaign, and more!
 
 ![](./img/contact_form.png)

@@ -1,8 +1,7 @@
 ---
+title: Your AI Receptionist for Chat
 sidebar_position: 2
 ---
-# Your AI Receptionist for Chat
-
 This best practice guide is designed to help you successfully set up and manage your AI Receptionist inside your app. With the right foundation, you can start seeing real results—like more captured leads and faster, accurate responses—from day one.
 
 ## Treat Your AI Like a New Employee

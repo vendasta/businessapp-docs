@@ -1,5 +1,6 @@
-# Contact Score Overview
-
+---
+title: Contact Score Overview
+---
 ## What is Contact Scoring?
 Contact Scoring allows you to assign a numeric score to each contact in your app based on their activity or value to your business. These scores help you track client engagement, prioritize follow-ups, and segment contacts for marketing and service efforts.
 

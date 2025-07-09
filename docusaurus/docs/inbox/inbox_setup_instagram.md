@@ -1,9 +1,7 @@
 ---
+title: Send and Receive Instagram Messages in Inbox
 sidebar_position: 5
 ---
-
-# Send and Receieve Instagram Messages in Inbox
-
 ## What is Instagram in Inbox?
 
 Send and receive Instagram direct messages with leads and customers directly inside Inbox. When a customer reaches out via Instagram, anyone on your team can respond from the shared Inbox, without needing to open Instagram separately.

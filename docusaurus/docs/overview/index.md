@@ -1,9 +1,7 @@
 ---
+title: Overview
 sidebar_position: 1
 ---
-
-# Overview
-
 Business App helps businesses manage their customer relationships, capture leads, automate marketing campaigns and messaging, and much more. Watch this video to learn all about it!
 
 <div style={{textAlign: 'center'}}>

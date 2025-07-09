@@ -1,9 +1,7 @@
 ---
+title: Administration Overview
 sidebar_position: 1
 ---
-
-# Administration Overview
-
 ## What can You Manage in the Administration Section?
 The **Administration** section provides access to system-wide configuration tools all in one place. Your dashboard relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. **The Administration section includes your Business Profile, App Settings, AI Settings, and Communication Settings.** Everything that lives in the administration section works together to ensure that:
 - Your tools are connected and synced correctly
