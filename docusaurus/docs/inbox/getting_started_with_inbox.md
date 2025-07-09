@@ -3,6 +3,8 @@ title: Getting Started with Inbox
 sidebar_position: 2
 ---
 
+import ResponsiveTable from '@site/src/components/ResponsiveTable';
+
 ## Getting Started Overview
 
 Welcome to Inbox! This guide will help you set up your shared workspace so you can manage your customer conversations from one place. 
@@ -17,7 +19,7 @@ Inbox brings all your business messages together—so you can reply to leads and
 
 ### What channels can I connect?
 
-<div class="responsive-table">
+<ResponsiveTable>
 
 | Channel                 | What It Does                                      | Setup Guide                                            | Availability     |
 |-------------------------|---------------------------------------------------|--------------------------------------------------------|------------------|
@@ -29,7 +31,7 @@ Inbox brings all your business messages together—so you can reply to leads and
 | **SMS Messaging**       | Text customers from your shared Inbox.            | [Register for SMS](./inbox_send_receive_sms.md)        | Pro              |
 | **Voice AI**            | Answer and respond to calls with AI (300 min).    | Voice AI                                               | Premium          |
 
-</div>
+</ResponsiveTable>
 
 > **Tip:** You don’t have to do everything at once—start with the channels you use most, and add more when you’re ready.
 
