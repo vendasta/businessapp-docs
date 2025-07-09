@@ -1,118 +1,191 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 /**
-* Business App documentation sidebar
-* ──────────────────────────────────
+* Business App docs sidebar (July 9 2025)
+* --------------------------------------------------
 *
-*  Goals for this revision (July 9 2025)
-*  -------------------------------------
-*  • Every logical section appears exactly **once**.
-*  • Labels are unique and unambiguous (no more generic “Overview”).
-*  • The hierarchy never exceeds two levels: **Category → Doc**.
-*  • Order mirrors the in-product navigation that most users see.
+*  - “Getting Started” is the only section that is *expanded* by default.
+*  - Every main navigation item (Inbox, CRM, AI, …) appears as a **section
+*    header** by using `{link: {type: 'none'}}`. Those headers are always
+*    visible but not clickable.
+*  - Sub-categories inside a section default to `collapsed: true` so the
+*    sidebar stays tidy until the reader chooses to drill in.
 *
-*  If a directory is omitted from this file its pages are still routable but
-*  they will not clutter the left-hand navigation – perfect for stubs or
-*  legacy content that writers are migrating.
+*  ⚠️  Important: This file purposefully lists only the *primary* docs that
+*  exist today. Writers can add more pages later by editing this array.
 */
 
+const docsSidebar = [
+  /* --------------------------------------------------------------------- */
+  /*  Getting Started (always expanded)                                    */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'Getting Started',
+    collapsed: false,
+    items: [
+      // Introductory guides – stub pages may be added later.
+      'getting_started_with_business_app',
+      'quickstart',
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  Inbox                                                                */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'Inbox',
+    link: {type: 'none'}, // render as a non-clickable section header
+    collapsed: true,
+    items: [
+      {
+        type: 'category',
+        label: 'Setup Guides',
+        collapsed: true,
+        items: [
+          'inbox/inbox_overview',
+          'inbox/getting_started_with_inbox',
+          'inbox/inbox_send_receive_emails',
+          'inbox/inbox_send_receive_sms',
+          'inbox/inbox_setup_instagram',
+          'inbox/inbox_ai_web_chat_overview',
+          'inbox/inbox_whatsapp_overview',
+        ],
+      },
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  CRM                                                                  */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'CRM',
+    link: {type: 'none'},
+    collapsed: true,
+    items: [
+      {
+        type: 'category',
+        label: 'Contacts',
+        collapsed: true,
+        items: [
+          'crm/index', // CRM Overview
+          'crm/forms',
+        ],
+      },
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  AI                                                                   */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'AI',
+    link: {type: 'none'},
+    collapsed: true,
+    items: [
+      {
+        type: 'category',
+        label: 'Workforce',
+        collapsed: true,
+        items: [
+          'ai/ai_overview',
+          'ai/ai-workforce/ai_workforce_overview',
+          'ai/ai-workforce/ai_receptionist',
+          'ai-employees/empower-your-ai-employee-custom-capabilities',
+        ],
+      },
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  Executive Report                                                     */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'Executive Report',
+    link: {type: 'none'},
+    collapsed: true,
+    items: [
+      'executivereport/executive_report_overview',
+      'executivereport/executive_report_lead_analytics',
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  Campaigns                                                            */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'Campaigns',
+    link: {type: 'none'},
+    collapsed: true,
+    items: [
+      'campaigns/index',
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  Store                                                                */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'Store',
+    link: {type: 'none'},
+    collapsed: true,
+    items: [
+      'store/index',
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  Automations                                                          */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'Automations',
+    link: {type: 'none'},
+    collapsed: true,
+    items: [
+      'automations/index',
+    ],
+  },
+
+  /* --------------------------------------------------------------------- */
+  /*  Administration                                                       */
+  /* --------------------------------------------------------------------- */
+  {
+    type: 'category',
+    label: 'Administration',
+    link: {type: 'none'},
+    collapsed: true,
+    items: [
+      {
+        type: 'category',
+        label: 'Settings',
+        collapsed: true,
+        items: [
+          'administration/administration_overview',
+          'administration/business_profile',
+          'administration/communication_settings',
+          'administration/app-settings/app_settings',
+        ],
+      },
+    ],
+  },
+] as const;
+
+// -------------------------------------------------------------------------
+// The Docusaurus plugin expects an object where *each* key maps to a sidebar
+// definition. We publish the same structure under both `docs` **and** the
+// legacy `tutorialSidebar` key so existing navbar references keep working.
+// -------------------------------------------------------------------------
+
 const sidebars: SidebarsConfig = {
-  tutorialSidebar: [
-    // ---------------------------------------------------------------------
-    // 1. Home
-    // ---------------------------------------------------------------------
-    {
-      type: 'doc',
-      id: 'overview/index',
-      label: 'Home',
-    },
-
-    // ---------------------------------------------------------------------
-    // 2. Inbox
-    // ---------------------------------------------------------------------
-    {
-      type: 'category',
-      label: 'Inbox',
-      link: {type: 'doc', id: 'inbox/inbox_overview'},
-      collapsed: false,
-      items: [{type: 'autogenerated', dirName: 'inbox'}],
-    },
-
-    // ---------------------------------------------------------------------
-    // 3. CRM
-    // ---------------------------------------------------------------------
-    {
-      type: 'category',
-      label: 'CRM',
-      items: [
-        {type: 'doc', id: 'crm/index', label: 'CRM Overview'},
-        {type: 'doc', id: 'crm/forms', label: 'Forms'},
-      ],
-    },
-
-    // ---------------------------------------------------------------------
-    // 4. AI
-    // ---------------------------------------------------------------------
-    {
-      type: 'category',
-      label: 'AI',
-      items: [
-        {type: 'doc', id: 'ai/ai_overview', label: 'AI Overview'},
-        {
-          type: 'doc',
-          id: 'ai/ai-workforce/ai_workforce_overview',
-          label: 'Workforce',
-        },
-        {
-          type: 'doc',
-          id: 'ai-employees/empower-your-ai-employee-custom-capabilities',
-          label: 'Custom Capabilities',
-        },
-      ],
-    },
-
-    // ---------------------------------------------------------------------
-    // 5. Executive Report
-    // ---------------------------------------------------------------------
-    {
-      type: 'doc',
-      id: 'executivereport/executive_report_overview',
-      label: 'Executive Report',
-    },
-
-    // ---------------------------------------------------------------------
-    // 6. Campaigns
-    // ---------------------------------------------------------------------
-    {type: 'doc', id: 'campaigns/index', label: 'Campaigns'},
-
-    // ---------------------------------------------------------------------
-    // 7. Store
-    // ---------------------------------------------------------------------
-    {type: 'doc', id: 'store/index', label: 'Store'},
-
-    // ---------------------------------------------------------------------
-    // 8. Automations
-    // ---------------------------------------------------------------------
-    {type: 'doc', id: 'automations/index', label: 'Automations'},
-
-    // ---------------------------------------------------------------------
-    // 9. Administration
-    // ---------------------------------------------------------------------
-    {
-      type: 'category',
-      label: 'Administration',
-      items: [
-        {type: 'doc', id: 'administration/administration_overview', label: 'Administration Overview'},
-        {type: 'doc', id: 'administration/business_profile', label: 'Business Profile'},
-        {type: 'doc', id: 'administration/communication_settings', label: 'Communication Settings'},
-        {
-          type: 'doc',
-          id: 'administration/app-settings/app_settings',
-          label: 'App Settings Overview',
-        },
-      ],
-    },
-  ],
+  docs: docsSidebar,
+  tutorialSidebar: docsSidebar,
 };
 
 export default sidebars;
