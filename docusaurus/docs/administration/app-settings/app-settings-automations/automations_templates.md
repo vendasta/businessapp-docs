@@ -1,5 +1,6 @@
-# Automation Templates
-
+---
+title: Automation Templates
+---
 ## What are Automation Templates?
 Automation templates are pre-built workflows that help you set up common automations, quickly. Templates provide a structured starting point with a trigger, optional conditions, and one or more action steps. You can customize them to suit your specific needs.
 

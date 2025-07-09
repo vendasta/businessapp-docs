@@ -1,9 +1,7 @@
 ---
+title: Overview
 sidebar_position: 1
 ---
-
-# Overview
-
 The My Products page offers a comprehensive list of all of your businesses products for easy accessibility through Business App. From this page, you will see all of the active products on your account, and can easily pin your most used products to the side panel.
 
 ## How does My Products page work?

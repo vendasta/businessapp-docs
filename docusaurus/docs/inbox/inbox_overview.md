@@ -1,9 +1,7 @@
 ---
+title: Inbox Overview
 sidebar_position: 1
 ---
-
-# Inbox Overview
-
 ## What is Inbox?
 
 Inbox is a communication tool that centralizes customer messages from email, Facebook, Instagram, and AI-powered web chat into one dashboard. It enables teams to view and respond to conversations collaboratively, without needing to switch between platforms. 
