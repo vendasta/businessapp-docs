@@ -36,7 +36,7 @@ Leave **one blank line** between paragraphs, headings, lists, and code blocks. T
 ### Inline code and code blocks
 
 - Wrap inline identifiers with back-ticks: ``useState``.
-- Fence blocks with triple back-ticks and a language tag: <code>```ts</code>, <code>```bash</code>, etc.
+- Fence blocks with triple back-ticks and a language tag: \`\`\`ts, \`\`\`bash, etc.
 - Minimize trailing whitespace inside fenced blocks – it bloats diffs.
 
 ## MDX-specific rules
