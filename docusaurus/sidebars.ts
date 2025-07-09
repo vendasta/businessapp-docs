@@ -36,7 +36,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Inbox',
-    link: {type: 'none'}, // render as a non-clickable section header
     collapsed: true,
     items: [
       {
@@ -62,7 +61,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'CRM',
-    link: {type: 'none'},
     collapsed: true,
     items: [
       {
@@ -83,7 +81,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'AI',
-    link: {type: 'none'},
     collapsed: true,
     items: [
       {
@@ -106,7 +103,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Executive Report',
-    link: {type: 'none'},
     collapsed: true,
     items: [
       'executivereport/executive_report_overview',
@@ -120,7 +116,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Campaigns',
-    link: {type: 'none'},
     collapsed: true,
     items: [
       'campaigns/index',
@@ -133,7 +128,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Store',
-    link: {type: 'none'},
     collapsed: true,
     items: [
       'store/index',
@@ -146,7 +140,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Automations',
-    link: {type: 'none'},
     collapsed: true,
     items: [
       'automations/index',
@@ -159,7 +152,6 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Administration',
-    link: {type: 'none'},
     collapsed: true,
     items: [
       {
