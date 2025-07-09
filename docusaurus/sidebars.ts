@@ -37,8 +37,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Inbox',
-    collapsible: false, // plain-text section header (no caret, no toggle)
-    className: 'sidebarSection',
+    collapsible: true, // header now has caret and can toggle
+    collapsed: true,   // collapsed by default on load
     items: [
       {
         type: 'category',
@@ -63,8 +63,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'CRM',
-    collapsible: false,
-    className: 'sidebarSection',
+    collapsible: true,
+    collapsed: true,
     items: [
       {
         type: 'category',
@@ -84,8 +84,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'AI',
-    collapsible: false,
-    className: 'sidebarSection',
+    collapsible: true,
+    collapsed: true,
     items: [
       {
         type: 'category',
@@ -107,8 +107,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Executive Report',
-    collapsible: false,
-    className: 'sidebarSection',
+    collapsible: true,
+    collapsed: true,
     items: [
       'executivereport/executive_report_overview',
       'executivereport/executive_report_lead_analytics',
@@ -121,8 +121,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Campaigns',
-    collapsible: false,
-    className: 'sidebarSection',
+    collapsible: true,
+    collapsed: true,
     items: [
       'campaigns/index',
     ],
@@ -134,8 +134,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Store',
-    collapsible: false,
-    className: 'sidebarSection',
+    collapsible: true,
+    collapsed: true,
     items: [
       'store/index',
     ],
@@ -147,8 +147,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Automations',
-    collapsible: false,
-    className: 'sidebarSection',
+    collapsible: true,
+    collapsed: true,
     items: [
       'automations/index',
     ],
@@ -160,8 +160,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Administration',
-    collapsible: false,
-    className: 'sidebarSection',
+    collapsible: true,
+    collapsed: true,
     items: [
       {
         type: 'category',

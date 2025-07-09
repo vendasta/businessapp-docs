@@ -79,23 +79,6 @@
 /*  Clerk-style plain-text top-level sidebar headers                      */
 /* --------------------------------------------------------------------- */
 
-/* Plain-text look for top-level headers */
-.menu__list-item.sidebarSection > .menu__link {
-  cursor: default;
-  color: var(--ifm-menu-color);
-}
-
-.menu__list-item.sidebarSection > .menu__link:hover,
-.menu__list-item.sidebarSection > .menu__link:focus {
-  background: transparent;
-  text-decoration: none;
-}
-
-/* Hide caret even if collapsible:true is mistakenly left */
-.menu__list-item.sidebarSection .menu__caret {
-  display: none;
-}
-
 /* ------------------------------------------------------------ */
 /*  Section header styling (kebab-case class)                   */
 /* ------------------------------------------------------------ */
