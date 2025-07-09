@@ -28,3 +28,49 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Responsive table styles */
+.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.responsive-table table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+/* Mobile responsiveness - horizontal scroll on screens smaller than 600px */
+@media (max-width: 600px) {
+  .responsive-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--ifm-table-border-color);
+    border-radius: var(--ifm-border-radius);
+  }
+  
+  .responsive-table table {
+    min-width: 600px; /* Minimum width to ensure readability */
+    margin: 0;
+  }
+  
+  .responsive-table::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .responsive-table::-webkit-scrollbar-track {
+    background: var(--ifm-scrollbar-track-background-color);
+    border-radius: 4px;
+  }
+  
+  .responsive-table::-webkit-scrollbar-thumb {
+    background: var(--ifm-scrollbar-thumb-background-color);
+    border-radius: 4px;
+  }
+  
+  .responsive-table::-webkit-scrollbar-thumb:hover {
+    background: var(--ifm-scrollbar-thumb-hover-background-color);
+  }
+}
