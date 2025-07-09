@@ -1,5 +1,5 @@
 ---
-title: Send and Receieve Instagram Messages in Inbox
+title: Send and Receive Instagram Messages in Inbox
 sidebar_position: 5
 ---
 ## What is Instagram in Inbox?
