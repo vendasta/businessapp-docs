@@ -1,9 +1,7 @@
 ---
+title: Overview
 sidebar_position: 1
 ---
-
-# Overview
-
 The **My Business** section offers a comprehensive suite of tools designed to streamline operations efficiently.
 
 ## How does the My Business page work?

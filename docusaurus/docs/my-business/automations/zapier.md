@@ -1,9 +1,7 @@
 ---
+title: Zapier
 sidebar_position: 1
 ---
-
-# Zapier
-
 Business App CRM can be connected to many 3rd party systems using Zapier.
 
 ## How Does it Work?

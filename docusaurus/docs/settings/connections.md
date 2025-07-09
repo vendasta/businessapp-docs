@@ -1,9 +1,7 @@
 ---
+title: Connections
 sidebar_position: 1
 ---
-
-# Connections
-
 You can connect Google Business Profile, Google Search Console, Google Analytics, Facebook, and more to Business App so that your most important business data can all come into one place.
 
 To add connection in Business App, navigate to Settings > Connections.

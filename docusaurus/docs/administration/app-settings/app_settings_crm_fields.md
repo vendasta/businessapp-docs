@@ -1,5 +1,6 @@
-# Custom Fields Overview
-
+---
+title: Custom Fields Overview
+---
 ## What are Custom Fields?
 Custom Fields allow you to add personalized data fields to your contact and company records in your app. These fields can store extra information that isn’t included in the default setup—such as birthdays, service preferences, or internal tracking notes. You can create and organize fields based on your business needs and the types of information you collect.
 

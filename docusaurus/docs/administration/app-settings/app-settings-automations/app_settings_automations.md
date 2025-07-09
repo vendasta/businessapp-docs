@@ -1,5 +1,6 @@
-# Automations Overview
-
+---
+title: Automations Overview
+---
 ## What is an Automation?
 **Automations** allow you to create workflows that trigger specific actions when certain events occur. These rules help automate repetitive tasks and ensure important processes run consistently without manual input.
 

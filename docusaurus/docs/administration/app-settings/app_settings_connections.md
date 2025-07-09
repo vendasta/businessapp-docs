@@ -1,8 +1,7 @@
 ---
+title: Connections (Integrations) Overview
 sidebar_position: 4
 ---
-# Connections (Integrations) Overview
-
 ## What Can I Manage in Connections?
 The **Connections** section allows you to link third-party tools directly to your app. These integrations bring your most important business data into one place and allow services across your app to work together.
 

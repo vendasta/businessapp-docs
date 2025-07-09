@@ -1,9 +1,7 @@
 ---
+title: Send and Receive Emails in Inbox
 sidebar_position: 3
 ---
-
-# Send and Receive Emails in Inbox
-
 ## What is Email in Inbox?
 
 Send and receive emails with leads and customers via Inbox from a shared email address. When you get a new lead from web chat or a form, and that lead provides an email address as a way to contact them, anyone on the team can reply via email to that customer from your centralized Inbox, without needing to open a separate email thread.

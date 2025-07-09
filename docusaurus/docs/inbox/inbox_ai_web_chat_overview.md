@@ -1,8 +1,7 @@
 ---
+title: AI-Assisted Web Chat Widget Overview
 sidebar_position: 2
 ---
-# AI-Assisted Web Chat Widget Overview
-
 ## What is AI-Assisted Web Chat?
 
 The AI-assisted Web Chat Widget, included with Inbox Pro, allows businesses to engage website visitors 24/7 through an AI assistant. This widget answers questions, gathers contact information, and delivers new leads into your CRM, ensuring continuous engagement with potential customers.

@@ -1,9 +1,7 @@
 ---
+title: Executive Report Lead Analytics
 sidebar_position: 2
 ---
-
-# Executive Report Lead Analytics
-
 ## What are Lead Analytics Inside the Executive Report?
 
 The Executive Report includes a section called **Customer Relations**, where you can view analytics on leads captured into your CRM—organized by source. This gives you a clear understanding of how different tools are helping you attract and convert leads.

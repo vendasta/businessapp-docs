@@ -1,9 +1,7 @@
 ---
+title: AI Workforce Overview
 sidebar_position: 1
 ---
-
-# AI Workforce Overview
-
 ## What is the AI Workforce?
 The AI Workforce is a collection of virtual employees built into your app to help manage routine customer interactions. Each AI Employee is designed for a specific business task—such as responding to messages, handling phone calls, creating content, or managing reviews.
 
