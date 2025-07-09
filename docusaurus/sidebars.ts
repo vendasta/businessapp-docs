@@ -22,7 +22,8 @@ const docsSidebar = [
   {
     type: 'category',
     label: 'Getting Started',
-    collapsed: false,
+    collapsible: false, // render as a static section header (no caret or toggle)
+    className: 'sidebar-section-header',
     items: [
       // Introductory guides – stub pages may be added later.
       'getting_started_with_business_app',

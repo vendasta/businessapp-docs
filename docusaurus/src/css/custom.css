@@ -95,3 +95,25 @@
 .menu__list-item.sidebarSection .menu__caret {
   display: none;
 }
+
+/* ------------------------------------------------------------ */
+/*  Section header styling (kebab-case class)                   */
+/* ------------------------------------------------------------ */
+
+/* Target your section headers, e.g., .sidebar-section-header */
+.sidebar-section-header {
+  font-size: 1rem;                /* Slightly larger than links */
+  font-weight: 700;               /* Bold */
+  color: #222c3c;                 /* Darker for emphasis */
+  text-transform: uppercase;      /* Optional: all caps for headers */
+  letter-spacing: 0.05em;         /* Space out the letters */
+  margin-top: 1.25em;             /* Space above section */
+  margin-bottom: 0.4em;           /* Tighten below header */
+  padding-left: 1em;              /* Align with menu items if indented */
+}
+
+/* Optional: Subtle divider for extra clarity */
+.sidebar-section-header:not(:first-child) {
+  border-top: 1px solid #ececec;
+  padding-top: 1em;
+}
