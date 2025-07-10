@@ -51,26 +51,25 @@ Use the guides in the table below to walk you step-by-step through connecting th
 You don’t have to do everything at once—start with the channels you use most, and add more when you’re ready.
 :::
 
-### 3. Customize Your Notifications 
+## 3. Customize Your Notifications 
 
-Make sure you’re notified right away when a new lead or message arrives:
+Make sure you’re notified right away when a new lead or message arrives! You can set-up your notification preferences to make sure you're getting email and app notifications for Inbox conversations.
 
 - Click on <NotificationsIcon /> `Notifications` in the top-left followed by <SettingsIcon /> `Settings`
 - Scroll down to the `Inbox` section and choose which notifications you want to receive. We reccommend both new messages and new leads! 
+ 
+## 4. Invite Your Team 
 
-- 
-## 3. Invite Your Team (Optional)
-
-Inbox works even better when your team collaborates!
+Inbox works even better when your team collaborates! All of your team members are able to see the same messages from Inbox and can see who is messaging and responding to your customers.
 
 To add team members so they can answer messages and help manage leads:
 
-- Go to <SettingsIcon /> `Settings` > `Team Members`
-- Click “Invite Member” and enter their email address
-- Choose their role and permissions
+- Click on your profile icon in the top-right of the navigation
+- Click “Invite Member” 
+- Enter your teammates email address and choose their role and permissions
 - Send the invitation
 
-## 4. What Happens Next?
+## 5. What Happens Next?
 
 After setup, all new messages from your connected channels will flow into Inbox.
 
@@ -79,10 +78,6 @@ You can:
 - View and reply to all customer messages from one place
 - Assign conversations to team members
 - Track lead details and contact info automatically
-
-## Need Help or Troubleshooting?
-
-If you get stuck, check our [Inbox Overview & FAQs](./inbox_overview.md#frequently-asked-questions-faqs) for answers to common questions, or see the detailed setup guides above.
 
 ---
 
