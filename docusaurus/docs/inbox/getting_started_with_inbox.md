@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Inbox
+title: Getting started with Inbox
 sidebar_position: 2
 ---
 
@@ -73,11 +73,11 @@ To add team members so they can answer messages and help manage leads:
 
 After setup, all new messages from your connected channels will flow into Inbox.
 
-You can:
+You and your team can:
 
 - View and reply to all customer messages from one place
-- Assign conversations to team members
 - Track lead details and contact info automatically
+- Assign your AI Receptionist to automatically respond on supported channels 
 
 ---
 

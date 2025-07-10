@@ -1,5 +1,5 @@
 ---
-title: Send and Receive SMS Messages in Inbox
+title: Set up Inbox for SMS messaging 
 sidebar_position: 4
 ---
 ## What is SMS Messaging in Inbox?

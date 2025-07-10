@@ -1,6 +1,6 @@
 ---
-title: AI-Assisted Web Chat Widget Overview
-sidebar_position: 2
+title: Set up Inbox for web chat
+sidebar_position: 2.1
 ---
 ## What is AI-Assisted Web Chat?
 
