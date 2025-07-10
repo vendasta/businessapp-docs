@@ -24,7 +24,7 @@ Your AI Workforce can:
 
 ## What is Included in Your AI Workforce?
 
-- [AI Receptionist](./ai_receptionist.md)
+- [AI Receptionist](./ai-receptionist.md)
 - AI Voice Receptionist
 - AI Content Creator
 - AI Review Manager

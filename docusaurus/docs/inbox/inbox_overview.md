@@ -77,19 +77,19 @@ Inbox Pro is required to access these features.
 
 Inbox is available to all users. Get started by connecting your Facebook and Instagram, installing your AI-powered web chat widget, and registering your SMS number.
 
-- [**Set up Instagram in Inbox**](./inbox_setup_instagram.md) 
+- [**Set up Instagram in Inbox**](./inbox-setup-instagram.md) 
   Link your accounts so you can view and reply to direct messages directly from Inbox.
 
-- [**Install the AI-powered web chat widget**](./inbox_ai_web_chat_overview.md) 
+- [**Install the AI-powered web chat widget**](./inbox-ai-web-chat-overview.md) 
   Add the chat widget to your website to engage visitors, answer questions automatically, and collect lead details using the AI assistant.
 
 - [**Add a lead contact form to your website (optional)**](../crm/forms.md)  
   Capture leads from your website using a simple contact form. Submissions are sent to your Inbox for easy follow-up.
 
-- [**Register your SMS number (Inbox Pro only)**](./inbox_send_receive_sms.md)  
+- [**Register your SMS number (Inbox Pro only)**](./inbox-send-receive-sms.md)  
   Businesses in the US and Canada can register for a dedicated SMS number to send and receive text messages through Inbox.
 
-- [**Set up email forwarding (optional)**](../inbox/inbox_send_receive_emails.md) 
+- [**Set up email forwarding (optional)**](../inbox/inbox-send-receive-emails.md) 
   Use your existing business email address to forward incoming mail into Inbox and reply from a shared address.
 
 ## How to connect your business messaging networks to Inbox

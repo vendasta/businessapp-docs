@@ -37,12 +37,12 @@ Use the guides in the table below to walk you step-by-step through connecting th
 
 | Channel                 | What It Does                                      | Setup Guide                                            | Availability     |
 |-------------------------|---------------------------------------------------|--------------------------------------------------------|------------------|
-| **Email**               | Send and receive customer emails in Inbox        | [Set up Email](./inbox_send_receive_emails.md)         | All Editions     |
+| **Email**               | Send and receive customer emails in Inbox        | [Set up Email](./inbox-send-receive-emails.md)         | All Editions     |
 | **Facebook Messenger**  | Manage Facebook Page conversations in Inbox      | [Connect Facebook Messenger](./inbox_facebook_messenger.md)| All Editions  |
-| **Instagram**           | Reply to Instagram DMs from Inbox                | [Set up Instagram Messaging](./inbox_setup_instagram.md) | All Editions  |
-| **AI Web Chat Widget**  | Capture leads via website chat, answered by AI   | [Install AI Web Chat](./inbox_ai_web_chat_overview.md) | Standard         |
-| **WhatsApp**            | Manage WhatsApp messages manually and with the help of your AI Receptionist            | [Connect WhatsApp](./inbox_whatsapp_overview.md)       | Standard         |
-| **SMS Messaging**       | Text customers manually, using automation and with the help of your AI Receptionist            | [Register for SMS](./inbox_send_receive_sms.md)        | Pro              |
+| **Instagram**           | Reply to Instagram DMs from Inbox                | [Set up Instagram Messaging](./inbox-setup-instagram.md) | All Editions  |
+| **AI Web Chat Widget**  | Capture leads via website chat, answered by AI   | [Install AI Web Chat](./inbox-ai-web-chat-overview.md) | Standard         |
+| **WhatsApp**            | Manage WhatsApp messages manually and with the help of your AI Receptionist            | [Connect WhatsApp](./inbox-whatsapp-overview.md)       | Standard         |
+| **SMS Messaging**       | Text customers manually, using automation and with the help of your AI Receptionist            | [Register for SMS](./inbox-send-receive-sms.md)        | Pro              |
 | **Voice AI**            | Assign your AI Receptionist to answer and respond to calls    | Voice AI                                               | Premium          |
 
 </ResponsiveTable>
