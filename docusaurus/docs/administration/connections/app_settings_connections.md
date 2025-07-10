@@ -108,3 +108,13 @@ Yes. Click any integration in the `Browse` tab to view detailed instructions.
 
 **Will disconnecting an integration remove my data?**  
 No, but it will stop new data from syncing. Reports and tools will retain past data until updated.
+
+---
+
+## Quick Add Via Settings
+
+You can also connect platforms directly from the `Settings` > `Connections` page.
+
+![Settings > Connections](../../settings/img/connections.png)
+
+Connecting your accounts early is one of the most important steps you can take to start seeing value in Business App. The metrics pulled in through Connections power analytics in the Executive Report and Marketing Funnel.
