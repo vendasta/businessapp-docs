@@ -4,13 +4,13 @@ sidebar_position: 2
 ---
 
 import ResponsiveTable from '@site/src/components/ResponsiveTable';
-import { MdNotifications, MdSettings } from 'react-icons/md';
+import { NotificationsIcon, SettingsIcon } from '@site/src/components/Icons';
 
 ## Getting Started Overview
 
 Welcome to Inbox! This guide will help you set up your shared workspace so you can manage your customer conversations from one place.
 
-We’ll walk you through connecting your communication channels, inviting your team, and setting up notifications <MdNotifications size="1em" style={{ verticalAlign: 'text-bottom' }} aria-label="Notifications icon" /> so you’re ready to start conversations and never miss a message.
+We’ll walk you through connecting your communication channels, inviting your team, and setting up notifications <NotificationsIcon /> so you’re ready to start conversations and never miss a message.
 
 ---
 
@@ -37,13 +37,13 @@ Use the guides in the table below to walk you step-by-step through connecting th
 
 | Channel                 | What It Does                                      | Setup Guide                                            | Availability     |
 |-------------------------|---------------------------------------------------|--------------------------------------------------------|------------------|
-| **Email**               | Send and receive customer emails in Inbox.        | [Set up Email](./inbox_send_receive_emails.md)         | All Editions     |
-| **Facebook Messenger**  | Manage Facebook Page conversations in Inbox.      | [Connect Facebook Messenger](./inbox_facebook_messenger.md)| All Editions  |
-| **Instagram**           | Reply to Instagram DMs from Inbox.                | [Set up Instagram Messaging](./inbox_setup_instagram.md) | All Editions  |
-| **AI Web Chat Widget**  | Capture leads via website chat, answered by AI.   | [Install AI Web Chat](./inbox_ai_web_chat_overview.md) | Standard         |
-| **WhatsApp**            | Manage WhatsApp messages through Inbox.           | [Connect WhatsApp](./inbox_whatsapp_overview.md)       | Standard         |
-| **SMS Messaging**       | Text customers from your shared Inbox.            | [Register for SMS](./inbox_send_receive_sms.md)        | Pro              |
-| **Voice AI**            | Answer and respond to calls with AI (300 min).    | Voice AI                                               | Premium          |
+| **Email**               | Send and receive customer emails in Inbox        | [Set up Email](./inbox_send_receive_emails.md)         | All Editions     |
+| **Facebook Messenger**  | Manage Facebook Page conversations in Inbox      | [Connect Facebook Messenger](./inbox_facebook_messenger.md)| All Editions  |
+| **Instagram**           | Reply to Instagram DMs from Inbox                | [Set up Instagram Messaging](./inbox_setup_instagram.md) | All Editions  |
+| **AI Web Chat Widget**  | Capture leads via website chat, answered by AI   | [Install AI Web Chat](./inbox_ai_web_chat_overview.md) | Standard         |
+| **WhatsApp**            | Manage WhatsApp messages manually and with the help of your AI Receptionist            | [Connect WhatsApp](./inbox_whatsapp_overview.md)       | Standard         |
+| **SMS Messaging**       | Text customers manually, using automation and with the help of your AI Receptionist            | [Register for SMS](./inbox_send_receive_sms.md)        | Pro              |
+| **Voice AI**            | Assign your AI Receptionist to answer and respond to calls    | Voice AI                                               | Premium          |
 
 </ResponsiveTable>
 
@@ -55,17 +55,17 @@ You don’t have to do everything at once—start with the channels you use most
 
 Make sure you’re notified right away when a new lead or message arrives:
 
-- Go to `Settings` <MdSettings size="1em" style={{ verticalAlign: 'text-bottom' }} aria-label="Settings icon" /> > `Notifications` <MdNotifications size="1em" style={{ verticalAlign: 'text-bottom' }} aria-label="Notifications icon" />
-- Select how you want to be notified (email, SMS, or in-app)
-- Choose which notifications you want to receive (new messages, new leads, missed conversations)
+- Click on <NotificationsIcon /> `Notifications` in the top-left followed by <SettingsIcon /> `Settings`
+- Scroll down to the `Inbox` section and choose which notifications you want to receive. We reccommend both new messages and new leads! 
 
+- 
 ## 3. Invite Your Team (Optional)
 
 Inbox works even better when your team collaborates!
 
 To add team members so they can answer messages and help manage leads:
 
-- Go to `Settings` <MdSettings size="1em" style={{ verticalAlign: 'text-bottom' }} aria-label="Settings icon" /> > `Team Members`
+- Go to <SettingsIcon /> `Settings` > `Team Members`
 - Click “Invite Member” and enter their email address
 - Choose their role and permissions
 - Send the invitation
