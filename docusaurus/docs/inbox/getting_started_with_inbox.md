@@ -3,11 +3,9 @@ title: Getting Started with Inbox
 sidebar_position: 2
 ---
 
-import ResponsiveTable from '@site/src/components/ResponsiveTable';
+import ResponsiveTable from '@site/src/components/ResponsiveTable.tsx';
 
-## Getting Started Overview
-
-Welcome to Inbox! This guide will help you set up your shared workspace so you can manage your customer conversations from one place. 
+This guide will help you set up Inbox so you can manage your customer conversations from one place and let your AI Receptionist respond for you too!
 
 We’ll walk you through connecting your communication channels, inviting your team, and setting up notifications, so you’re ready to start conversations and never miss a message.
 
@@ -15,9 +13,22 @@ We’ll walk you through connecting your communication channels, inviting your t
 
 ## 1. Connect Your Communication Channels
 
-Inbox brings all your business messages together—so you can reply to leads and customers from one workspace, no matter how they reach out.
+To be able to send and receive messages using Inbox, you must first connect Inbox with the channels you will be using. You can connect certain channels (like email) with any editions of Inbox, while others (like SMS) are only available with certain editions. 
 
-### What channels can I connect?
+All of your available connections will be listed under `Administration > Communication settings > Inbox settings`. 
+
+You can connect these channels to Inbox:
+- Email
+- Facebook Messenger
+- Instagram
+- AI Web Chat Widget
+- WhatsApp
+- SMS Messaging
+- Voice AI
+
+### How To Connect Each Inbox Channel
+
+Use the guides in the table below to walk you step-by-step through connecting the various channels:
 
 <ResponsiveTable>
 
@@ -33,17 +44,19 @@ Inbox brings all your business messages together—so you can reply to leads and
 
 </ResponsiveTable>
 
-> **Tip:** You don’t have to do everything at once—start with the channels you use most, and add more when you’re ready.
+:::tip
+You don’t have to do everything at once—start with the channels you use most, and add more when you’re ready.
+:::
 
-### Common Questions
+## 2. Customize Your Notifications
 
-**Can I connect more channels later?**  
-Yes! You can always add or remove channels in `Inbox Settings` as your needs change.
+Make sure you’re notified right away when a new lead or message arrives:
 
-**Do I need technical help to connect these channels?**  
-Most connections are designed to be self-serve, but you’ll find a detailed guide for each one.
+- Go to `Settings > Notifications`
+- Select how you want to be notified (email, SMS, or in-app)
+- Choose which notifications you want to receive (new messages, new leads, missed conversations)
 
-## 2. Invite Your Team (Optional)
+## 3. Invite Your Team (Optional)
 
 Inbox works even better when your team collaborates!
 
@@ -53,14 +66,6 @@ To add team members so they can answer messages and help manage leads:
 - Click “Invite Member” and enter their email address
 - Choose their role and permissions
 - Send the invitation
-
-## 3. Customize Your Notifications
-
-Make sure you’re notified right away when a new lead or message arrives:
-
-- Go to `Settings > Notifications`
-- Select how you want to be notified (email, SMS, or in-app)
-- Choose which notifications you want to receive (new messages, new leads, missed conversations)
 
 ## 4. What Happens Next?
 

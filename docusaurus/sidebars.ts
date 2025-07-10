@@ -40,20 +40,13 @@ const docsSidebar = [
     collapsible: true, // header now has caret and can toggle
     collapsed: true,   // collapsed by default on load
     items: [
-      {
-        type: 'category',
-        label: 'Setup Guides',
-        collapsed: true,
-        items: [
-          'inbox/inbox_overview',
-          'inbox/getting_started_with_inbox',
-          'inbox/inbox_send_receive_emails',
-          'inbox/inbox_send_receive_sms',
-          'inbox/inbox_setup_instagram',
-          'inbox/inbox_ai_web_chat_overview',
-          'inbox/inbox_whatsapp_overview',
-        ],
-      },
+      'inbox/inbox_overview',
+      'inbox/getting_started_with_inbox',
+      'inbox/inbox_send_receive_emails',
+      'inbox/inbox_send_receive_sms',
+      'inbox/inbox_setup_instagram',
+      'inbox/inbox_ai_web_chat_overview',
+      'inbox/inbox_whatsapp_overview',
     ],
   },
 
