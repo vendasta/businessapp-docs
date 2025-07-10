@@ -15,7 +15,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 *  exist today. Writers can add more pages later by editing this array.
 */
 
-const docsSidebar = [
+const docsSidebar: SidebarsConfig['docs'] = [
   /* --------------------------------------------------------------------- */
   /*  Getting Started (always expanded)                                    */
   /* --------------------------------------------------------------------- */
@@ -41,12 +41,22 @@ const docsSidebar = [
     collapsed: true,   // collapsed by default on load
     items: [
       'inbox/inbox_overview',
-      'inbox/getting_started_with_inbox',
-      'inbox/inbox_send_receive_emails',
-      'inbox/inbox_send_receive_sms',
-      'inbox/inbox_setup_instagram',
-      'inbox/inbox_ai_web_chat_overview',
-      'inbox/inbox_whatsapp_overview',
+      {
+        type: 'category',
+        label: 'Getting Started with Inbox',
+        link: {
+          type: 'doc',
+          id: 'inbox/getting-started-with-inbox',
+        },
+        collapsed: true,
+        items: [
+          'inbox/inbox-ai-web-chat-overview',
+          'inbox/inbox-send-receive-sms',
+          'inbox/inbox-send-receive-emails',
+          'inbox/inbox-setup-instagram',
+          'inbox/inbox-whatsapp-overview',
+        ],
+      },
     ],
   },
 
@@ -83,12 +93,14 @@ const docsSidebar = [
       {
         type: 'category',
         label: 'Workforce',
+        link: {
+          type: 'doc',
+          id: 'ai/ai-workforce/ai_workforce_overview',
+        },
         collapsed: true,
         items: [
-          'ai/ai_overview',
-          'ai/ai-workforce/ai_workforce_overview',
-          'ai/ai-workforce/ai_receptionist',
-          'ai-employees/empower-your-ai-employee-custom-capabilities',
+          'ai/ai-workforce/ai-receptionist',
+          'ai/ai-workforce/empower-your-ai-employee-custom-capabilities',
         ],
       },
     ],
@@ -169,7 +181,7 @@ const docsSidebar = [
       },
     ],
   },
-] as const;
+];
 
 // -------------------------------------------------------------------------
 // The Docusaurus plugin expects an object where *each* key maps to a sidebar

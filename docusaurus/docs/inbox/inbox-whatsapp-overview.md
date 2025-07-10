@@ -1,6 +1,6 @@
 ---
-title: Send and Receive WhatsApp Messages in Inbox
-sidebar_position: 5
+title: Set up Inbox for WhatsApp Messages 
+sidebar_position: 2.3
 ---
 ## What is the Whatsapp Integration?
 

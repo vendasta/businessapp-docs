@@ -1,5 +1,5 @@
 ---
-title: Send and Receive Emails in Inbox
+title: Set up Inbox for Emails 
 sidebar_position: 3
 ---
 ## What is Email in Inbox?
