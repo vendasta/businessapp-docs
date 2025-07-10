@@ -120,5 +120,6 @@
 
 .theme-doc-markdown img,
 .markdown img {
-  border-radius: 2px;
+  /* Use Infima global radius variable with a 2 px fallback for consistency */
+  border-radius: var(--ifm-global-radius, 2px);
 }
