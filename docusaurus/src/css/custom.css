@@ -106,3 +106,20 @@
   margin-bottom: 0.4em;           /* Tighten below header */
   padding-left: 1em;              /* Align with menu items if indented */
 }
+
+/* --------------------------------------------------------------------- */
+/*  Rounded corners for Markdown images                                   */
+/* --------------------------------------------------------------------- */
+
+/*
+* Apply a subtle 2 px border-radius to every <img> that originates from
+* Markdown/MDX content. The wrapper class `.theme-doc-markdown` (and the
+* legacy `.markdown`) is injected by Docusaurus around the generated HTML,
+* ensuring site-chrome images like the navbar logo remain unaffected.
+*/
+
+.theme-doc-markdown img,
+.markdown img {
+  /* Use Infima global radius variable with a 2 px fallback for consistency */
+  border-radius: var(--ifm-global-radius, 2px);
+}
