@@ -86,12 +86,14 @@ var docsSidebar = [
             {
                 type: 'category',
                 label: 'Workforce',
+                link: {
+                    type: 'doc',
+                    id: 'ai/ai-workforce/ai_workforce_overview',
+                },
                 collapsed: true,
                 items: [
-                    'ai/ai_overview',
-                    'ai/ai-workforce/ai_workforce_overview',
                     'ai/ai-workforce/ai_receptionist',
-                    'ai-employees/empower-your-ai-employee-custom-capabilities',
+                    'ai/ai-workforce/empower-your-ai-employee-custom-capabilities',
                 ],
             },
         ],

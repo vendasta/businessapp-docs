@@ -2,8 +2,6 @@
 title: Set up Inbox for SMS messaging 
 sidebar_position: 4
 ---
-## What is SMS Messaging in Inbox?
-
 SMS messaging allows businesses to send and receive text messages and images with customers directly from their shared team Inbox. Each business is assigned a dedicated local phone number, which is used for two-way communication. SMS is available to businesses with Inbox Pro in Canada and the United States.
 
 When Inbox Pro is activated, a business is automatically assigned a local SMS number based on its physical address. In the United States, SMS messaging also requires A2P 10DLC registration to comply with telecom regulations and ensure reliable delivery. Once registered, users can send and receive nearly unlimited SMS and MMS messages through Inbox.
