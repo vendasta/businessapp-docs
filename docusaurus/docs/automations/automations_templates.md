@@ -21,7 +21,7 @@ Templates are helpful for saving time, ensuring consistency, and guiding you thr
 2. Click `Create Automation` in the top right corner
 3. Choose a template from the gallery (or search for one by name)
 
-    ![Automation Template Selection](../../img/automations_template.png)
+    ![Automation Template Selection](../administration/img/automations_template.png)
 
 4. Review the suggested trigger, conditions, and actions
 5. Edit any step to match your business requirements
@@ -45,20 +45,20 @@ This workflow can be found by naviating to `Automations` in your side bar.
 **Step 1:** Select `Create Automation.`  
 **Step 2:** Choose a trigger to start your workflow. For this example, select `create a contact.` You can also add conditions to specify what you want to trigger.  
 
-![Review Request Step 1](../../img/automations_template_review_request_one.png)
+![Review Request Step 1](../administration/img/automations_template_review_request_one.png)
 
-**Step 3:** Next, add an action. In this example, the action is `Send a review request.
+**Step 3:** Next, add an action. In this example, the action is `Send a review request`.
 
-`  ![Review Request Step 2](../../img/automations_template_review_request_two.png)
+![Review Request Step 2](../administration/img/automations_template_review_request_two.png)
 
 **Step 4:** For this specific action you need to have **Reputation Management Premium** activated on the account. Click `Save.` 
 
 **Step 5:** Toggle it on. A modal will pop up with options to select your automation settings.  
 
-![Review Request Step 3](../../img/automations_template_review_request_three.png)
+![Review Request Step 3](../administration/img/automations_template_review_request_three.png)
 
 **Step 6:** Once you select `Turn On,` you will be prompted to give consent to the automation to complete actions on your behalf. Select `Allow.`
 
-![Review Request Step 4](../../img/automations_template_review_request_four.png)
+![Review Request Step 4](../administration/img/automations_template_review_request_four.png)
 
 ---
