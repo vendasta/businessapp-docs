@@ -47,9 +47,9 @@ This workflow can be found by naviating to `Automations` in your side bar.
 
 ![Review Request Step 1](../administration/img/automations_template_review_request_one.png)
 
-**Step 3:** Next, add an action. In this example, the action is `Send a review request.
+**Step 3:** Next, add an action. In this example, the action is `Send a review request`.
 
-`  ![Review Request Step 2](../administration/img/automations_template_review_request_two.png)
+![Review Request Step 2](../administration/img/automations_template_review_request_two.png)
 
 **Step 4:** For this specific action you need to have **Reputation Management Premium** activated on the account. Click `Save.` 
 
