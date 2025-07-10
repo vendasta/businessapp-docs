@@ -74,3 +74,35 @@
     background: var(--ifm-scrollbar-thumb-hover-background-color);
   }
 }
+
+/* --------------------------------------------------------------------- */
+/*  Clerk-style plain-text top-level sidebar headers                      */
+/* --------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/*  Section header styling (kebab-case class)                   */
+/* ------------------------------------------------------------ */
+
+/* Target top-level <li> items that act as section headers.
+* We scope typography styles to the direct link element so that the
+* rules do NOT cascade down to child <li> elements that represent
+* actual doc links (e.g., “Getting Started With Business App”).       */
+
+/* Visual treatment for the label text */
+.menu__list-item.sidebar-section-header > .menu__link {
+  font-size: 1rem;                /* Slightly larger than links */
+  font-weight: 700;               /* Bold */
+  color: #222c3c;                 /* Darker for emphasis */
+  text-transform: uppercase;      /* All caps for headers */
+  letter-spacing: 0.05em;         /* Space out the letters */
+  cursor: default;                /* No pointer hand */
+}
+
+/* Optional: Subtle divider for extra clarity */
+.menu__list-item.sidebar-section-header:not(:first-child) {
+  border-top: 1px solid #ececec;
+  padding-top: 1em;
+  margin-top: 1.25em;             /* Space above section */
+  margin-bottom: 0.4em;           /* Tighten below header */
+  padding-left: 1em;              /* Align with menu items if indented */
+}
