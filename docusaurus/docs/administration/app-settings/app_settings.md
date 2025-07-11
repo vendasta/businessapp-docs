@@ -1,8 +1,7 @@
 ---
+title: App Settings Overview
 sidebar_position: 3
 ---
-# App Settings Overview
-
 ## What are App Settings?
 Your **App Settings** allow you to configure how your account behaves behind the scenes. These settings influence workflows, integrations, data capture, and lead management—making it easier to scale your operations efficiently.
 

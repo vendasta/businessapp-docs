@@ -28,3 +28,98 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Responsive table styles */
+.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.responsive-table table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+/* Mobile responsiveness - horizontal scroll on screens smaller than 600px */
+@media (max-width: 600px) {
+  .responsive-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--ifm-table-border-color);
+    border-radius: var(--ifm-border-radius);
+  }
+  
+  .responsive-table table {
+    min-width: 600px; /* Minimum width to ensure readability */
+    margin: 0;
+  }
+  
+  .responsive-table::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .responsive-table::-webkit-scrollbar-track {
+    background: var(--ifm-scrollbar-track-background-color);
+    border-radius: 4px;
+  }
+  
+  .responsive-table::-webkit-scrollbar-thumb {
+    background: var(--ifm-scrollbar-thumb-background-color);
+    border-radius: 4px;
+  }
+  
+  .responsive-table::-webkit-scrollbar-thumb:hover {
+    background: var(--ifm-scrollbar-thumb-hover-background-color);
+  }
+}
+
+/* --------------------------------------------------------------------- */
+/*  Clerk-style plain-text top-level sidebar headers                      */
+/* --------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/*  Section header styling (kebab-case class)                   */
+/* ------------------------------------------------------------ */
+
+/* Target top-level <li> items that act as section headers.
+* We scope typography styles to the direct link element so that the
+* rules do NOT cascade down to child <li> elements that represent
+* actual doc links (e.g., “Getting Started With Business App”).       */
+
+/* Visual treatment for the label text */
+.menu__list-item.sidebar-section-header > .menu__link {
+  font-size: 1rem;                /* Slightly larger than links */
+  font-weight: 700;               /* Bold */
+  color: #222c3c;                 /* Darker for emphasis */
+  text-transform: uppercase;      /* All caps for headers */
+  letter-spacing: 0.05em;         /* Space out the letters */
+  cursor: default;                /* No pointer hand */
+}
+
+/* Optional: Subtle divider for extra clarity */
+.menu__list-item.sidebar-section-header:not(:first-child) {
+  border-top: 1px solid #ececec;
+  padding-top: 1em;
+  margin-top: 1.25em;             /* Space above section */
+  margin-bottom: 0.4em;           /* Tighten below header */
+  padding-left: 1em;              /* Align with menu items if indented */
+}
+
+/* --------------------------------------------------------------------- */
+/*  Rounded corners for Markdown images                                   */
+/* --------------------------------------------------------------------- */
+
+/*
+* Apply a subtle 2 px border-radius to every <img> that originates from
+* Markdown/MDX content. The wrapper class `.theme-doc-markdown` (and the
+* legacy `.markdown`) is injected by Docusaurus around the generated HTML,
+* ensuring site-chrome images like the navbar logo remain unaffected.
+*/
+
+.theme-doc-markdown img,
+.markdown img {
+  /* Use Infima global radius variable with a 2 px fallback for consistency */
+  border-radius: var(--ifm-global-radius, 2px);
+}

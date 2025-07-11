@@ -1,9 +1,7 @@
 ---
+title: Store
 sidebar_position: 5
 ---
-
-# Store
-
 Welcome to the Store tab in the Business App, your one-stop shop for browsing, expressing interest in, and purchasing products directly from the app. When you navigate to the Store tab, you'll find all the products and packages that have been published in your store, making it easy to access and purchase what you need. This feature is designed to streamline your shopping experience, ensuring you have all the available offerings at your fingertips.
 
 ## How can I access the Store in Business App?
