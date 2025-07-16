@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 // at build-time via Webpack's file-loader configuration provided by
 // the Docusaurus preset.
 import crmImg from '@site/static/img/crm_with_integrations.png';
-import inboxImg from '@site/static/img/inbox_message_hub.png';
+import conversationsImg from '@site/static/img/conversations_message_hub.png';
 import aiImg from '@site/static/img/ai_assisted_lead_capture.png';
 
 type FeatureItem = {
@@ -33,8 +33,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Inbox Messaging Hub',
-    imgSrc: inboxImg,
+    title: 'Conversations Hub',
+    imgSrc: conversationsImg,
     description: (
       <>
         All communication in one place – instead of isolated on personal employee phones.
