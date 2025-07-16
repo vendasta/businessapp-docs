@@ -3,146 +3,157 @@ title: Set up Conversations for phone calls
 sidebar_position: 2.4
 ---
 
-You can use Conversations to handle incoming phone calls with your AI Voice Receptionist, which answers calls 24/7 and captures leads automatically. This integration centralizes all phone call conversations alongside SMS, email, and web chat in one shared workspace.
+import { SettingsIcon } from '@site/src/components/Icons';
 
-## How to Set Up Phone Calls for Conversations
-
-### Phone Call Integration Prerequisites
+You can use Conversations to handle incoming phone calls with your assigned Conversations phone number. The features available depend on your Conversations edition:
+- **Pro:** Assigns your business a dedicated phone number for texts and enables you to handle phone calls to this number with missed-call text back and follow-up SMS automation.
+- **Premium:** Includes everything in Pro, plus the AI Voice Receptionist, which can answer calls 24/7 and capture leads automatically.
 
 :::info
-Phone call functionality requires Conversations Premium and is currently available only in the United States and Canada.
+Only businesses located in the United States and Canada are able to claim a phone-number with Conversations and make use of the phone call features as a result.
 :::
 
-To set up phone calls for Conversations, you'll need:
-- Conversations Premium subscription
-- A business located in the United States or Canada
-- Access to AI Workforce features in your account
+> **Note:** For setup and advanced AI options (Premium only), see [AI Voice Receptionist Guide](../ai/ai-workforce/ai-voice-receptionist.md).
+---
 
-### What's Included with Phone Call Integration
+## Phone call features included with Conversations AI
 
-- AI Voice Receptionist that answers calls 24/7
-- Automatic lead capture from phone conversations
-- Call recordings, transcripts, and summaries
-- Integration with your CRM for lead management
-- Customizable voice and greeting options
+The table below shows which phone call features are included in each Conversations edition. 
 
-### Step-by-Step Guide to Set Up Phone Calls for Conversations
+| Feature                                              | Pro   | Premium |
+|------------------------------------------------------|:-----:|:-------:|
+| Dedicated Conversations phone number   | ✔️    | ✔️      |
+| Call forwarding from main business line              | ✔️    | ✔️      |
+| Missed-call text back & SMS automation               | ✔️    | ✔️      |
+| Call recordings, transcripts, summaries in CRM       |     | ✔️      |
+| AI Voice Receptionist answers calls 24/7             |       | ✔️      |
 
-1. Go to `AI > AI Workforce` in your Business App
-2. Find the **Voice Receptionist** card and click **Configure**
 
-3. **Configure Basic Settings**:
-   - Give your AI Voice Receptionist a professional name
-   - Upload a photo or icon for easy identification
-   - Select a voice family and voice that matches your brand
+## Set Up Your Conversations Phone Number 
 
-4. **Enable Communication Channels**:
-   - Check the box next to `Answers phone calls`
-   - Your AI will be assigned to your Conversations phone number
+Your Conversations phone number is automatically assigned to you when you activate the Pro or Premium editions of Conversations AI. You can find this phone number by navigating to <SettingsIcon /> `Administration > Conversation Settings > Phone & SMS > Configure`. The options available to you depend on your edition of Conversations AI.
 
-5. **Set Up Capabilities**:
-   - Enable **Capture Lead Information** (recommended)
-   - Optionally enable **Book Appointments** if you have calendar integration
-   - Add custom capabilities as needed
+### Call Receiving Settings in Conversations AI
 
-6. **Add Business Knowledge**:
-   - Your Business Profile and website information are included by default
-   - Add additional knowledge sources in the AI Knowledge Base
+When someone calls your Conversations phone number, you can choose what happens using the **When a call is received...** dropdown in your settings.
 
-7. Click **Save** to activate your AI Voice Receptionist
+#### End call
+The call is automatically disconnected.
 
-### Call Forwarding Setup (Optional)
+- ***(Optional)* Play a voice message before ending the call:**  
+  Enable this to play a short, custom text-to-speech message (e.g., “Sorry we missed you!”) before the call disconnects.
 
-If you want your main business number to be answered by the AI:
+#### Forward the call
+Calls to your Conversations number are forwarded to another phone number you specify (such as your main office, personal cell, or a team member).
 
-1. Go to `Settings > Conversations Settings`
-2. Find your assigned phone number under **Your SMS/Phone Number**
-3. Set up call forwarding from your main business line to your Conversations number
-4. Test the forwarding to ensure calls reach your AI Voice Receptionist
+- **Enter the number in the `Forward to` field.**
+- **Set up SMS follow-up for forwarded calls:**
+  - **Immediately:** An SMS is sent as soon as the call is forwarded.
+  - **If the forwarded call is missed:** An SMS is only sent if the forwarded call is not answered (e.g., disconnects or receives a busy tone). Calls answered by voicemail are considered "answered" and won’t trigger a text back.
+
+#### Answer with AI (Premium only)
+The AI Voice Receptionist will answer, greet, and engage with the caller as configured in your AI settings. 
+
+> **Note:** For setup and advanced AI options see [AI Voice Receptionist Guide](../ai/ai-workforce/ai-voice-receptionist.md).
+
+#### Additional SMS options
+For all three scenarios, you can enable **Follow up with an SMS message**:
+- Toggle on this setting to automatically send a custom text after a call ends or is missed.
+- Customize your SMS message in the “Message to send” 
+   - Example: `Thanks for calling [Your Business Name]. Feel free to message us back if you have any further questions.`
+
+## Additional Step: Enable the AI Voice Receptionist (Premium Only)
+
+1. Go to **AI Workforce > AI Voice Receptionist > Configure**
+2. Check **"Phone call: Answer with Voice AI"** and save
+3. Customize your AI greeting, voice, and business knowledge as needed
+4. Test by calling your Conversations number
+
+For advanced AI configuration (scripts, voice family, multi-language), see [AI Voice Receptionist Guide](../ai/ai-workforce/ai-voice-receptionist.md).
+
+### What Happens When AI Voice Receptionist Answers Calls (Premium Only)
+Once your AI Voice Receptionist is set up to receive calls from your Conversations phone number:
+
+- All phone conversations appear in your Conversations dashboard 
+- Call recordings and transcripts are automatically generated 
+- Lead information is saved directly to your CRM 
+- Team members can review conversations and 
+- Follow-up actions can be triggered through Automations
+
+### Call Forwarding Setup in Conversations (Optional)
+
+If you want your main business number to be answered by Conversations (or by the AI Voice Receptionist), you can set up call forwarding from your existing number to your Conversations phone number.
+
+Most mobile carriers (AT&T, T-Mobile, Rogers, Bell, Telus, and many others) support simple star-codes to enable forwarding. In-platform, you’ll find a helpful guide in your Conversations phone settings that shows:
+- Activation and cancel codes for your provider
+- Step-by-step setup instructions, including confirmation steps
+- How to forward calls if you don’t answer, if your phone is off or has no signal, or if you’re on another call
+
+**How to access call forwarding instructions:**
+1. Go to <SettingsIcon />`Settings > Conversations Settings > Phone & SMS > Configure` in Business App.
+2. Check the **call forwarding help section** for up-to-date activation and cancel codes and step-by-step guidance.
+3. Test your setup by calling your business number from another phone.
+4. To turn off forwarding later, use the cancel code in the help section or dial `#004#` to reset your phone’s settings.
+
+> **Tip:** The call forwarding section in your Conversations settings always shows the latest carrier-specific instructions and codes, so check there for the most accurate info.
 
 ### Troubleshooting Phone Call Setup Issues
 
 #### Don't See Phone Call Options?
 
-- Verify you have Conversations Premium subscription
+- Verify you have the appropriate Conversations subscription (Pro or Premium)
 - Check that your business address is in the US or Canada
-- Ensure AI Workforce features are enabled on your account
+- Ensure AI Workforce features are enabled on your account (Premium only)
 
 #### AI Not Answering Calls?
 
-- Confirm the AI Voice Receptionist is properly configured and active
-- Check that `Answers phone calls` is enabled in communication channels
+- Confirm the AI Voice Receptionist is properly configured and active (Premium only)
+- Check that `Phone call: Answer with Voice AI` is enabled in AI Workforce settings
 - Verify your phone number assignment in Conversations Settings
 
 ---
-
-## How Phone Calls Work in Conversations
-
-Once your phone call integration is set up:
-
-1. **Incoming Calls**: Your AI Voice Receptionist answers automatically
-2. **Lead Capture**: The AI asks for caller information and saves it to your CRM
-3. **Conversation Logging**: Call recordings, transcripts, and summaries appear in Conversations
-4. **Team Follow-up**: Your team can review and follow up on leads from the Conversations interface
-
-:::info
-The AI Voice Receptionist uses your knowledge base to answer questions about your business. If it can't answer a question, it will capture the caller's information for your team to follow up.
-:::
-
-## Managing Phone Call Conversations
-
-- All phone conversations appear in your Conversations dashboard
-- Call recordings and transcripts are automatically generated
-- Lead information is saved directly to your CRM
-- Team members can review conversations and add notes
-- Follow-up actions can be triggered through Automations
 
 ## FAQs About Phone Calls in Conversations
 
 <details>
 <summary><strong>What regions support phone call functionality?</strong></summary>
 
-Phone call integration is currently available for businesses located in the United States and Canada only. This feature requires Conversations Premium.
+Phone call integration is currently available for businesses located in the United States and Canada only. This feature requires a Conversations Pro or Premium subscription.
 </details>
 
 <details>
 <summary><strong>Can I use my existing business phone number?</strong></summary>
 
-You can set up call forwarding from your existing business number to your assigned Conversations phone number. This allows your AI to answer calls made to your main business line.
-</details>
-
-<details>
-<summary><strong>How does the AI handle complex questions?</strong></summary>
-
-The AI uses your business knowledge base to answer questions. If it encounters a question it cannot answer, it will politely let the caller know and capture their information for your team to follow up.
+You can set up call forwarding from your existing business number to your assigned Conversations phone number. This allows your AI (Premium) to answer calls made to your main business line.
 </details>
 
 <details>
 <summary><strong>Can multiple team members access call recordings?</strong></summary>
 
-Yes, all team members with access to Conversations can view call recordings, transcripts, and summaries. This enables collaborative follow-up and improves customer service.
+Yes, all team members with access to Conversations can view call recordings, transcripts, and summaries. This enables collaborative follow-up and improves customer service. Available in both Pro and Premium editions.
 </details>
 
 <details>
 <summary><strong>What happens if the AI can't capture caller information?</strong></summary>
 
-If the AI is unable to capture complete caller information, the conversation will still be recorded and appear in Conversations. You can review the transcript to identify any missed opportunities or follow-up needs.
+If the AI is unable to capture complete caller information, the conversation will still be recorded and appear in Conversations. You can review the transcript to identify any missed opportunities or follow-up needs. This applies to Premium edition AI Voice Receptionist.
 </details>
 
 <details>
 <summary><strong>Can I customize what the AI says to callers?</strong></summary>
 
-Yes, you can customize your AI's responses, greeting, and behavior through the AI Workforce configuration. You can also add specific business knowledge to help the AI provide more accurate answers.
+Yes, you can customize your AI's responses, greeting, and behavior through the AI Workforce configuration. You can also add specific business knowledge to help the AI provide more accurate answers. For more information, refer to [AI Voice Receptionist Guide](../ai/ai-workforce/ai-voice-receptionist.md).
+
 </details>
 
 <details>
 <summary><strong>How are call costs handled?</strong></summary>
 
-Phone call functionality is included with your Conversations Premium subscription. There are no additional per-minute charges for incoming calls handled by your AI Voice Receptionist.
+Phone call functionality is included with your Conversations Pro or Premium subscription. There are no additional per-minute charges for incoming calls handled by your AI Voice Receptionist or your team.
 </details>
 
 <details>
 <summary><strong>Can I disable phone calls later?</strong></summary>
 
-Yes, you can disable phone call functionality at any time through your AI Workforce settings. This will stop the AI from answering calls, but your phone number will remain active for SMS messaging.
-</details> 
+Yes, you can disable phone call functionality at any time through your AI Workforce settings (Premium) or by adjusting your Conversations phone number settings (Pro). This will stop calls from being answered, but your phone number will remain active for SMS messaging.
+</details>

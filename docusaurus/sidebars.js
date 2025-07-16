@@ -26,7 +26,6 @@ var docsSidebar = [
         items: [
             // Introductory guides – stub pages may be added later.
             'getting_started_with_business_app',
-            'quickstart',
         ],
     },
     /* --------------------------------------------------------------------- */

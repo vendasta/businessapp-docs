@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Business App',
-  tagline: 'Customer experience platform for your business',
+  tagline: 'Customer acquisition and engagement platform for your business',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

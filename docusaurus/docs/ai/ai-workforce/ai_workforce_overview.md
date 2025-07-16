@@ -2,220 +2,109 @@
 title: AI Workforce Overview
 sidebar_position: 1
 ---
-Explore the guides below for step-by-step setup and answers to common questions about each AI Workforce role. Use these as a starting point, or come back any time you need more details or help.
+AI Employees are digital team members you can configure to automate conversations, answer customer questions, capture leads, book appointments, and more. Each works well out of the box, but can be tailored to fit your business needs.
 
-- [AI Chat Receptionist](./ai-receptionist.md)
-- [AI Voice Receptionist](./ai-voice-receptionist.md)
-- [Custom Capabilities for AI Employees](./empower-your-ai-employee-custom-capabilities.md)
-- [How to Configure an AI Employee](#how-to-configure-an-ai-employee)
-- [Training Your AI Employees: Purpose and Knowledge](#training-your-ai-employees-purpose-and-knowledge)
-- [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
+All AI Employees share a common structure, with configurable elements like their name, purpose, communication channels, capabilities, and knowledge sources. Specific roles (like Chat Receptionist or Voice Receptionist) may include additional options, but the basics are always the same.
 
-## How to Configure an AI Employee
+See these guides for step-by-step setup or details on specific AI Employees:
+- [Set up the AI Chat Receptionist](./ai-receptionist.md)
+- [Set up the AI Voice Receptionist](./ai-voice-receptionist.md)
 
-Each AI Employee can be customized to fit your brand, desired outcomes and communication preferences. Customization options include:
+For advanced setup:
+- [Creating Custom Capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md)
+
+If you’re just getting started, review the sections below for an overview of the main elements you’ll configure for any AI Employee.
+
+---
+
+## AI Employee Elements
+
+AI Employees all share a similar structure—no matter what role they play in your business. Each one comes with common parts you can review and configure, such as their name, purpose, communication channels, capabilities, and what knowledge they use to answer questions. 
+
+### Profile
+
+The **Profile** section is where you set the basics for your AI Employee—how they appear to your team and how they introduce themselves to customers.
+
+- **Name & Avatar:**  
+  _What this is:_ The display name and image used for your AI Employee across your channels.  
+  _What to do:_ Choose a friendly, memorable name and a profile image (like your logo or a custom avatar) that fits the role or your brand. This helps customers and your team instantly recognize who they’re interacting with.
+
+- **Purpose:**  
+  _What this is:_ The job description and behavioral “guidelines” for your AI Employee. This sets the tone, goals, and important instructions for every conversation.  
+  _What to do:_ Write a clear, short summary of what your AI Employee should do. Be specific about their tone, greeting, and key tasks.  
+  _Tip: Use bullets or a numbered list to clarify instructions._  
+  For example:
+    - “Introduce yourself as the business receptionist.”
+    - “Speak in a friendly, concise way.”
+    - “Always collect name, email, and phone before ending the conversation.”
+
+---
 
 ### Channels
-Choose which platforms the AI should respond on:
-- Website Chat Widget
-- SMS
-- WhatsApp
-- Voice (for phone receptionists)
 
-![AI Chat Receptionist with WhatsApp Active](../img/administration_ai_workforce_communication.png)
+The **Channels** section lets you choose where your AI Employee will work for you.
+_What this is:_ Channels are the different places or platforms where your AI Employee can interact with your customers—like website chat, SMS, phone calls, or even Google Meet.
 
+_What to do:_  
+Review the available channels for your AI Employee’s role. Turn on only the channels that make sense for your business right now. For example, you might want your AI to respond on your website’s chat widget, via text messages, or answer phone calls.
 
-You can toggle channels on or off and adjust channel-specific settings.
+- Website chat Widget  
+- SMS (text messages)  
+- Phone calls (voice)  
+- WhatsApp  
 
-### Goals and Instructions
+You can enable or disable channels at any time.  
+> **Tip:** Start with just one or two channels while you get comfortable, then expand as you see results!
 
-Recommended primary goals:
+---
 
-**Capture lead information** – always prompt lead to collect name and contact details (and automatically create a record in your CRM) 
+### Capabilities
 
-**Book calendar events** – link to a scheduling tool with real-time availability.
+The **Capabilities** section is where you decide what your AI Employee can actually do for your business.
 
-![Goals and Instructions – Primary Goal Settings](../img/administration_ai_workforce_primary_goal.png)
+_What this is:_  
+Capabilities are like “skills” or “tasks” you can turn on or off, depending on the role of your AI Employee. Each capability tells your AI which actions it should take or what outcomes to prioritize—such as capturing leads, booking appointments, answering FAQs, or performing a role-specific function.
 
-You can also write detailed behavior instructions, like:
+_What to do:_  
+Review the available capabilities for your chosen AI Employee.
+- **Turn on** the capabilities that are most important for your workflow and customer experience.
+- **Add or adjust capabilities** as your business needs evolve.
+- Use the additional instructions/goals field to give extra context or specific directions.
+- **Create your own custom capabilities:** You can design custom tasks for your AI Employee to perform, using the Custom Capabilities builder. This is great for advanced workflows or unique business needs. [Learn more ›](./empower-your-ai-employee-custom-capabilities.md)
 
-```markdown
-# TONE & PERSONALITY  
-Stay friendly and professional.
+_Examples of capabilities you might enable:_
+- Capture lead information (e.g., name, email, phone)
+- Book appointments using your connected calendar
+- Answer common customer questions (FAQs)
+- Follow your specific instructions or goals
 
-# SERVICE QUALIFICATION  
-Ask what type of service they need.
+> **Tip:** You can experiment with different capabilities to see what works best, and update them any time as your business grows.
 
-# BOOKING  
-If they want to schedule, link to my booking page.
+---
 
-# CONTACT INFO  
-Ask for name, phone, and email before ending the chat.
-```
+### Knowledge Sources
 
-## Training Your AI Employees: Purpose and Knowledge
+The **Knowledge Sources** section is where you teach your AI Employee about your business, so it can give accurate, up-to-date answers to customers.
 
-To respond accurately and effectively, your AI Employees need context about your business. There are two main tools for training your AI: **Purpose** and **Knowledge**.
+_What this is:_  
+Knowledge sources are collections of business information your AI can refer to during conversations—such as your business profile, website pages, FAQs, or uploaded documents. The AI uses this info only when it needs to answer a relevant question.
 
-| Feature        | What It Does                                   | When to Use It                                                           |
-|----------------|------------------------------------------------|--------------------------------------------------------------------------|
-| **Purpose** | Information that AI Employees use together with their capability instructions to respond.     | For core behaviors and tone (e.g., "Always collect home address.", "You are bright and cheerful")       |
-| **Knowledge**     | Content used only when questions are asked     | For FAQs, service descriptions, pricing info, policies, and more         |
+_What to do:_  
+Add any information that would help your AI answer questions or provide better service:
+- **Connect your business profile:** This gives the AI basics like your address, hours, services, and contact info.
+- **Add your website:** Let the AI “read” your site to answer questions about your offerings, prices, or policies.
+- **Upload documents or custom text:** Share menus, price lists, terms, or answers to frequently asked questions.
+- **Review and update regularly:** Make sure your knowledge sources are current, so your AI never gives outdated info.
 
-### Understanding the Purpose Section
+> **Tip:** The more up-to-date and specific your knowledge sources, the more helpful and accurate your AI Employee will be!
 
-The Purpose section defines your AI Employee's role, tone, and behavioral guidelines. This is where you set the foundation for how your AI should interact with customers and what it should prioritize during conversations.
+---
 
-**What to Include in Purpose:**
-- Your AI's personality and communication style
-- Core business rules and policies
-- Specific instructions for handling different situations
-- Required information to collect from customers
-- Services you do and don't provide
+### Save & Test
 
-**Example Purpose instructions using Markdown formatting:**
+- **Save your configuration:**  
+  Don’t forget to save changes before leaving the page!
+- **Test your AI:**  
+  Most AI Employees let you simulate conversations or actions, so you can preview how they’ll interact with real customers.
 
-```markdown
-# Services
-## We are not licensed plumbers
-### If asked, take contact info and suggest a referral
-```
-
-:::info
-Keep both instructions and knowledge concise. Use clear language and offer examples when possible.
-:::
-
-### Knowledge Sources: Teaching Your AI About Your Business
-
-Knowledge sources provide the detailed information your AI uses to answer customer questions. Unlike Purpose instructions, Knowledge content is only referenced when customers ask specific questions.
-
-#### Business Profile Knowledge (Enabled by Default)
-
-Your AI Employees automatically use information from your business profile to answer common questions such as what you do, where you're located, hours of operation, and how to get in touch. This is enabled by default, but you can remove it as a knowledge source if needed.
-
-The following fields from the business profile are shared with your AI:
-
-- Business Name  
-- Address and/or Service Areas  
-- Website  
-- Booking URL  
-- Phone Number  
-- Categories  
-- Hours  
-- Services Offered  
-- Short Description  
-- Long Description  
-- Social Media URLs  
-
-#### Adding Your Website as a Knowledge Source
-
-You can have your AI scrape your website, which helps it respond to detailed inquiries about your business.
-
-1. Go to `AI > AI knowledge base > Manage knowledge`.  
-2. Click `Add knowledge` then choose `Website`
-3. Follow the setup instructions to train the AI on your website. Make sure you select all the pages you would like to train your AI on, and save.
-
-To manage website content:
-- Go to the `Train` tab in the AI configuration.
-- Select which pages to include or exclude.
-- If you update your site, revisit this tab and click `Refresh`.
-
-#### Adding Custom Knowledge
-
-You can expand your AI's capabilities by adding your own knowledge content from any text-based source.
-
-1. Go to `AI > AI knowledge base > Manage knowledge`. 
-2. Click on any knowledge source title to preview what content is currently accessible to the AI.  
-3. Click `Manage Knowledge` to open the centralized knowledge area.  
-4. Add new content by writing or pasting text into a new knowledge source.  
-5. Select the checkbox next to each source you want the AI to use.
-
-This lets you teach your AI to respond using business-specific details such as product explanations, policies, or unique services beyond what's stored in the profile.
-
-### Testing and Monitoring Your AI Employees
-
-#### Testing Your AI's Responses
-
-Use the `Try it` button to simulate customer interactions. For best results, open the test in an incognito window so it starts with a clean session.
-
-Ask the kinds of questions your real customers might ask, and pay attention to:
-
-- How the AI responds
-- Whether it gives too much or too little information
-- If it's assuming something you didn't intend
-
-Then go back and adjust your Purpose instructions or Knowledge sources as needed.
-
-#### Monitoring and Improving Performance
-
-Regularly review the `Conversations` and `Anonymous Visitors` tabs in your app:
-
-- **Review successful interactions** where your goals were achieved
-- **Check anonymous conversations** to see what people are asking
-- **Identify misunderstandings** or overly complex responses—these are key areas for improvement
-
-**Pro Tip:**  
-When reviewing a conversation, expand the **Source material** beneath any AI response bubble. This reveals where the AI pulled its information from. If a response was incorrect, you can use this insight to:
-- Refine your Purpose instructions
-- Add new knowledge
-- Remove or update outdated knowledge sources
-
-This is like an in-app audit of all your online information!
-
-### Best Practices for Training Your AI
-
-#### Set Realistic Expectations
-
-AI is **non-deterministic**—that means it may not give the exact same answer every time. That's not a bug; it's part of how it adapts to different inputs.
-
-Think of your AI like a helpful teammate, not a fixed script.
-
-#### Capture What You Know
-
-You're the expert on your business. Create a simple guide that answers:
-
-- What services do you offer—and which do you not?
-- What questions do customers ask the most?
-- What information should always be collected?
-
-Use this guide to build your Purpose instructions and upload content to your AI knowledge base.
-
-#### Keep Content Fresh
-
-- Review and update your Knowledge sources regularly
-- Remove outdated information that might confuse your AI
-- Add new content as your business evolves
-- Monitor conversations to identify gaps in your AI's knowledge
-
-### Frequently Asked Questions (FAQs)
-
-**Do I need to enable all AI Employees?**  
-No. You can choose which AI Employees to activate based on your business needs. Each performs a separate function and can be configured independently.
-
-**Can I customize what an AI Employee says?**  
-Yes. You can set up detailed behavior using the `Purpose` section and upload FAQs, pricing, and service information to the `Knowledge` section.
-
-**Will the AI capture contact details automatically?**  
-Only if the "Capture lead information" goal is enabled. 
-
-**How does the AI book appointments?**  
-The AI connects to your calendar and offers available time slots during the conversation. It captures the necessary contact info and confirms the booking with the customer.
-
-**Can I test the AI before going live?**  
-Yes. Click the `Try it` button to open a test conversation. You can use this to simulate real customer interactions and refine your configuration.
-
-**How do I know if the AI is working well?**  
-Check the `Conversations` and `Anonymous Visitors` regularly to review how the AI responded, which leads were captured, and where improvements may be needed. This is like an in-app audit for all your online information.
-
-**What if the AI gives the wrong answer?**  
-Review the conversation and expand the **Source material** to see where the information came from. You can then update your Purpose instructions, edit knowledge sources, or remove outdated content.
-
-**Does the AI answer the same way every time?**  
-Not always. AI is non-deterministic, meaning responses can vary slightly. This helps the AI adapt to different phrasing and conversation flow.
-
-**Can I deactivate or delete an AI Employee?**  
-Yes. You can deactivate any AI Employee from the `AI Workforce` section. This stops it from responding to new conversations.
-
-**Do I need technical knowledge to configure this?**  
-No. Most configuration is done through simple forms and toggles. Instructions can be written in plain language or Markdown.
-
+---

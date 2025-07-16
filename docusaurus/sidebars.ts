@@ -27,7 +27,6 @@ const docsSidebar: SidebarsConfig['docs'] = [
     items: [
       // Introductory guides – stub pages may be added later.
       'getting_started_with_business_app',
-      'quickstart',
     ],
   },
 
@@ -105,6 +104,7 @@ const docsSidebar: SidebarsConfig['docs'] = [
           'ai/ai-workforce/empower-your-ai-employee-custom-capabilities',
         ],
       },
+      'ai/knowledge-base',
     ],
   },
 

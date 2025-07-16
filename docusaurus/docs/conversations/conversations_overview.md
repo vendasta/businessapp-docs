@@ -3,13 +3,23 @@ title: Conversations Overview
 sidebar_position: 1
 ---
 
-import { NotificationsIcon, SettingsIcon } from '@site/src/components/Icons';
+import { SettingsIcon } from '@site/src/components/Icons';
 
 ## What is Conversations?
 
-Conversations is a communication tool that centralizes customer messages from email, Facebook, Instagram, and AI-powered web chat into one dashboard. It enables teams to view and respond to conversations collaboratively, without needing to switch between platforms. 
+Conversations is your hub for managing all customer messages—email, Facebook, Instagram, and more—in a single inbox. It enables teams to view and respond to conversations collaboratively, without needing to switch between platforms. For a detailed list of supported channels and features, see the table below.
 
-If enabled, your AI Receptionist can respond to and captures leads instantly using Conversations and helping you stay responsive 24/7. Conversations reduces the need to manage multiple apps or disconnected systems while taking on some of the work for your business.
+### What is Conversations AI?
+
+Conversations AI brings the power of an AI Receptionist to your Conversations so you can capture leads, answer customer questions, and even handle phone calls automatically, 24/7.
+
+With Conversations AI, your AI Receptionist can:
+
+- Instantly reply to website chats, text messages (SMS), and WhatsApp
+- Answer incoming phone calls for you (Premium edition), capture leads, and even book appointments
+- Handle routine questions pre and post sale
+
+To learn more about how the AI Receptionist works and how to get the most out of it, see [AI Receptionist Overview](../ai/ai-workforce/ai-receptionist.md).
 
 ![](./img/inbox.png)
 
@@ -32,7 +42,7 @@ The table below shows all communication channels supported in Conversations, wha
 
 ### Connecting Channels
 
-Before you can send and receive messages with Conversations, you need toconnect the channels you want to use. Use these setup guides for detailed, step-by-step instructions:
+Before you can send and receive messages with Conversations, you need to connect the channels you want to use. Use these setup guides for detailed, step-by-step instructions:
 
 - [Set up Email for Conversations](./conversations-send-receive-emails.md)
 - [Set up Facebook Messenger for Conversations](./conversations-setup-facebook-messenger.md)
