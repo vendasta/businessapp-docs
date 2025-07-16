@@ -21,8 +21,12 @@ With Conversations AI, your AI Receptionist can:
 
 To learn more about how the AI Receptionist works and how to get the most out of it, see [AI Receptionist Overview](../ai/ai-workforce/ai-receptionist.md).
 
-![](./img/inbox.png)
+![](./img/conversations.png)
 
+## What you can do with Conversations
+
+- **Increased efficiency and faster response times** for your team through a unified view of all customer conversations.
+- **Improved customer satisfaction** by providing quick and consistent responses.
 
 ## Conversations Channels, Features, Editions, and Regional Availability
 
