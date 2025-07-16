@@ -7,7 +7,7 @@ import { AISparkleIcon } from '@site/src/components/Icons';
 
 You can enhance your AI Employees in Business App by adding **Custom Capabilities**—specialized skills that let your AI interact with external systems and perform actions beyond chat, like checking inventory or booking appointments.
 
-## What Are Custom Capabilities?
+## What are Custom Capabilities?
 
 A **Custom Capability** is a skill you add to your AI Employee. 
 
@@ -18,9 +18,9 @@ Each capability has two main parts:
 
 When combined, these allow your AI Employee to perform custom tasks on your behalf.
 
-## Why Use Custom Capabilities?
+## Why use Custom Capabilities?
 
-Creating Custom Capabilities can enable your AI Employees to:
+Creating Custom Capabilities can enable your AI Employees to use other systems to:
 
 - Check real-time inventory and product details
 - Schedule appointments or bookings
@@ -34,7 +34,7 @@ Creating Custom Capabilities can enable your AI Employees to:
 
 If an action can be done via an API, you can probably turn it into a capability.
 
-## How Your AI Employee Uses Custom Capabilities
+## How your AI Employees use Custom Capabilities
 
 Your AI Employee can use Custom Capabilities whenever it interacts with customers—whether through chat, voice, or any supported channel.
 
@@ -46,8 +46,7 @@ Your AI Employee can use Custom Capabilities whenever it interacts with customer
    - If some required information is missing, your AI Employee will prompt the customer to provide the missing details before continuing.
 4. Your AI Employee uses the Tool’s response to craft its reply—by sending a message or responding with spoken output.
 
-## How to Create a Custom Capability for your AI Employees
-
+## How to create a Custom Capability for your AI Employees
 1. In Business App, navigate to <AISparkleIcon /> `AI` › `AI Workforce` 
 2. Select an existing AI Employee and click **Configure**. 
 3. Access the **Custom Capabilities** section and click **Add a capability**.
@@ -57,20 +56,47 @@ Your AI Employee can use Custom Capabilities whenever it interacts with customer
 :::tip
 You may want to enter placeholder text like "TBD" and refine it after defining the **Tools**.
 :::
-6. Add one or more **Tools** (for example, one to check availability and another to confirm a booking). For details on configuring tools, see [Tool Fields Explained](#tool-fields-explained).
+
+6. Add one or more **Tools** (for example, one to check availability and another to confirm a booking).
 7. Save your changes and test the capability by chatting with your AI Employee.
 
-### Tool Fields Explained
+### Tool fields explained
 
-- **Import from cURL:** Quickly pre-fill the tool configuration by importing an existing cURL command.
-- **ID:** Unique identifier for the tool (e.g., `LookupProductDetails`).
-- **Description:** A plain-language explanation of what the tool does.
-- **Method & URL:** The HTTP method (GET, POST, etc.) and the API endpoint.
-- **Parameters:** Inputs the API requires, including name, description, location (query, path, body), and type.
-- **Headers:** Authentication keys or other HTTP headers needed for the API call.
-- **No external processing needed:** Check this if the tool does not call an API but only formats the AI's response.
+#### Import from cURL  
+cURL is a tool developers use to test APIs by typing commands. Many API docs show example cURL commands. Importing a cURL command here helps you fill in the tool setup automatically—saving time and avoiding mistakes.  
 
-### Writing a Good Prompt
+#### ID  
+This is a unique name for your tool inside your AI’s setup. Choose something simple and descriptive, like `CheckInventory` or `BookAppointment`. You cannot use spaces.
+
+#### Description  
+Write a short, clear sentence that explains what this tool does. This helps your AI Employee know what the tool does and helps you and your team remember its purpose later
+*Example:* “Checks if a product is in stock.”
+
+#### Method & URL  
+- **Method:** This is the action your AI will ask the API to perform:  
+  - **GET** means "give me some info."  
+  - **POST** means "create or update something."  
+  - **PUT/PATCH** means "change something."  
+  - **DELETE** means "remove something."  
+- **URL:** This is the web address your AI will contact to do the action. Think of it like the phone number the AI calls.  
+*Example:* `GET https://api.yourbusiness.com/products`
+
+#### Parameters  
+Parameters are extra details your AI sends so the API knows exactly what you want. They come in different types:  
+- **Query parameters:** Added to the end of a URL like a question. Example: `?product_id=123` means “tell me about product 123.”  
+- **Path parameters:** Part of the URL path, like an address. Example: `/products/123` means “look up product 123.”  
+- **Body parameters:** Sent inside the request, usually to add or update info (like customer details).  
+Each parameter has a name (like `product_id`), a description (what it means), where it goes (query, path, or body), and what kind of data it is (text, number, etc.).
+
+#### Headers  
+Headers are extra info sent with the API request, often for security. For example:  
+- `Authorization: Bearer YOUR_API_KEY` (lets the AI access the data)  
+- `Content-Type: application/json` (tells the AI what kind of data is sent)
+
+#### No external processing needed  
+Check this box if your tool doesn’t actually call an outside API but works internally—like formatting dates or text within the AI. This saves unnecessary network calls.
+
+### Writing a good capability Prompt
 
 When creating your **Prompt**, be sure to:
 
@@ -84,16 +110,16 @@ When creating your **Prompt**, be sure to:
 - **Updating:** Any saved changes are applied the next time the AI considers the capability during chat.
 - **Disabling:** Deleting tools is not supported yet; to disable a tool, un-assign it from the AI Employee.
 
-## Testing and Troubleshooting
+## Testing and troubleshooting ustom Capabilities
 
 1. Chat with your AI Employee and try different phrasings to trigger the capability.
 2. Verify the AI requests any required information and calls the appropriate tool.
-3. In the *Inbox*, click **Explanation** under a message to view the AI’s reasoning and raw API call.
+3. In *Conversations*, click **Explanation** under a message to view the AI’s reasoning and raw API call.
 4. If the API call fails, test it separately using tools like Postman, adjust as needed, and re-import the cURL command.
 
-## Example: Product Information Lookup
+## Example Custom Capability: Product information lookup
 
-### Tool Configuration
+### Example tool configuration
 
 | Field       | Value                                              |
 |-------------|----------------------------------------------------|
@@ -110,7 +136,7 @@ When creating your **Prompt**, be sure to:
 
 - `X-API-Key: YOUR_SECURE_API_KEY`
 
-### Prompt Snippet
+### Prompt snippet
 
 ```markdown
 # Product Lookup Assistant
@@ -130,16 +156,10 @@ When creating your **Prompt**, be sure to:
 - If not found: Apologize and suggest the user double-check the ID or browse products online.
 ```
 
-### Sample Conversation
+### Sample conversation
 
-**Customer:** "Hey, what's the price of product ABC-123?"  
-**AI:** "Sure, let me check that. Just to confirm, the product ID is *ABC-123*?"  
-**Customer:** "Yes."  
-*(AI calls `LookupProductDetails` with `product_id=ABC-123`)*  
-**AI:** "Got it! *Example Widget* costs **$49.99**. Description: A versatile widget."
-
-## Summary
-
-Custom Capabilities turn your AI Employee into an active assistant that can automate workflows, pull in live data, and perform real actions for your customers—all within a chat.
-
-For more details or troubleshooting, visit the [AI Workforce documentation](#).
+**Customer:** "Can you tell me the price of the blue wireless headphones?"  
+**AI:** "Sure! To make sure I have the right product, can you confirm if you mean the *BlueWave Wireless Headphones*?"  
+**Customer:** "Yes, that's the one."  
+*(AI calls `LookupProductDetails` with `product_id` matching BlueWave Wireless Headphones)*  
+**AI:** "Great! The *BlueWave Wireless Headphones* are priced at **$89.99**. They offer 20 hours of battery life and come with a two-year warranty."

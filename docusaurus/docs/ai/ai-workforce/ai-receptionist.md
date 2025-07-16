@@ -1,191 +1,116 @@
 ---
-title: Your AI Receptionist for Chat
+title: Set up the AI Chat Receptionist
 sidebar_position: 2
 ---
-This best practice guide is designed to help you successfully set up and manage your AI Receptionist inside your app. With the right foundation, you can start seeing real results—like more captured leads and faster, accurate responses—from day one.
 
-## AI Receptionist Behavior & Goals
+import { AISparkleIcon } from '@site/src/components/Icons';
 
-The AI Receptionist operates with the following primary objectives:
+Chat Receptionist helps you capture leads and respond to website visitors 24/7. In this guide, you’ll learn how to set up, train, and monitor your AI assistant to work for your business.
 
-1. **Answer Business-Related Questions**: Utilizing knowledge from the business profile and additional provided information, the assistant responds confidently to inquiries about services, pricing, and more. If uncertain, it informs the visitor that someone will follow up.
+**By default, the AI Chat Receptionist:**
+- Answers questions about your business using information from your business profile and knowledge base
+- Collects visitor contact information (name, phone number, or email) so you can follow up with leads
+- Detects and responds in over 40 languages, including English, French, and Spanish
+- Lets visitors know when it doesn’t have enough information, so a team member can follow up
 
-2. **Capture Lead Contact Information**: Engages visitors to understand their needs and collects their name and contact details (preferably mobile number, alternatively email) to facilitate continued communication.
+## Set Up the AI Chat Receptionist
 
-3. **Multilingual Support**: Automatically detects and responds in the visitor's language, supporting over 40 languages, including English, French, and Spanish.
+Follow these simple steps to configure your AI Chat Receptionist so it effectively engages visitors and captures valuable leads.
 
-## Treat Your AI Like a New Employee
+### Step 1: Configure Basic Settings for the AI Chat Receptionist
 
-Your AI Receptionist is smart—but it still needs training. Think of it like onboarding a new team member. You wouldn't expect a new hire to instantly know your services, policies, and tone of voice just by reading your website.
-
-Just like a human employee, your AI Receptionist requires:
-
-- **Training** (via instructions and knowledge)
-- **Feedback** (by reviewing past chats)
-- **Ongoing coaching** (by updating based on performance)
-
-## Step 1: Configure the Basics
-
-Start in your app's `AI Workforce` section and click `Configure`.
+Go to <AISparkleIcon /> `AI > AI workforce` and then click `Configure` on the Chat receptionist.
 
 - **Name and Image**  
-  Give your AI a friendly, professional name and photo. Be transparent—make it clear to customers that they're chatting with an AI.
+Give your AI a friendly, professional name and photo. The AI Receptionist knows their name and the photo will help you distinguish between other AI Employees in your app.
 
 - **Communication Channels**  
-  Enable `Web Chat` (default) and optionally turn on `SMS`.
+Your AI Chat Receptionist is assigned to the **Web Chat** channel by default. This channel is always active and cannot be disabled. You can also assign your AI Receptionist to the **SMS** channel to reach customers via text messaging.
 
-- **Set Your Goals**:
-  - **Capture Lead Information**  
-    Instructs the AI to ask for contact info like name, phone number, or email. If this is disabled, even if a user provides their info, it will not be saved to your CRM.
-
-  - **Book Appointments**  
-    Connect your calendar, and the AI will guide users through scheduling a meeting, offering available time slots, and collecting booking details.
-
-## Step 2: Understand Instructions vs Knowledge
-
-To respond accurately, your AI needs context. There are two tools for this: **Instructions** and **Knowledge**.
-
-| Feature        | What It Does                                   | When to Use It                                                           |
-|----------------|------------------------------------------------|--------------------------------------------------------------------------|
-| **Instructions** | Rules the AI follows every time it responds   | For core behaviors and tone (e.g., "Always collect home address.")       |
-| **Knowledge**     | Content used only when questions are asked     | For FAQs, service descriptions, pricing info, policies, and more         |
-
-You can upload or connect:
-- Business profile information
-- Website pages
-- FAQs and service documents
-
-To manage website content:
-- Go to the `Train` tab in the AI configuration.
-- Select which pages to include or exclude.
-- If you update your site, revisit this tab and click `Refresh`.
-
-:::info
-Keep both instructions and knowledge concise. Use clear language and offer examples when possible.
+:::note  
+The Web Chat widget isn’t automatically added to your website! You’ll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](../../conversations/conversations-ai-web-chat-overview.md)
 :::
 
-**Example instructions using Markdown formatting:**
+### Step 2: Configure Your AI Chat Receptionist Capabilities
 
-```markdown
-# Services
-## We are not licensed plumbers
-### If asked, take contact info and suggest a referral
-```
+Capabilities are like instructions that guide how your AI Chat Receptionist behaves and what actions it can take. Review these and adjust as needed to make sure your AI performs the way you want.
 
-## How to Train the AI on Your Business
+- **Capture Lead Information**  
+  The AI automatically asks visitors for contact details such as name, phone number, or email and saves captured leads directly to your CRM. This capability is turned on by default.
 
-You can train the AI assistant to accurately represent your business by giving it access to your business profile and any additional custom content you choose to provide.
+- **Book Appointments**  
+  Connect your calendar to let the AI help customers schedule meetings. It will offer available time slots and collect all necessary booking details automatically. 
 
-### Business Profile Knowledge (Enabled by Default)
+- **Custom Capabilities**  
+  Expand your AI Chat Receptionist’s skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](./empower-your-ai-employee-custom-capabilities.md) in depth.
 
-The AI assistant uses information from the business profile to answer common questions such as what you do, where you're located, hours of operation, and how to get in touch. This is enabled by default, but you can remove it as a knowledge source if needed.
+### Step 3: Add Purpose and Business Knowledge to the AI Chat Receptionist
 
-The following fields from the business profile are shared with the AI:
+To respond accurately to general inquiries, your AI Chat Receptionist needs context about your business. 
 
-- Business Name  
-- Address and/or Service Areas  
-- Website  
-- Booking URL  
-- Phone Number  
-- Categories  
-- Hours  
-- Services Offered  
-- Short Description  
-- Long Description  
-- Social Media URLs  
+- **Knowledge**: This includes detailed business information, such as FAQs, service descriptions, and policies, that the AI uses to answer specific questions. Your **Business Profile** and information for you homepage is included by default.
 
-![](../../inbox/img/web_chat_example_knowledge.png)
+For a complete guide on providing your AI Employees with Knowledge, see the [Purpose and Knowledge section in the AI Workforce Overview](./ai_workforce_overview.md#training-your-ai-employees-purpose-and-knowledge).
 
-### How to Add Your Website as Source Knowledge for Your AI
+## Test and Monitor Your AI Chat Receptionist
 
-You can have the AI scrape your website which helps it respond to detailed inquiries about your business. 
+Once your AI Chat Receptionist is set up, it’s important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. Regular testing and review will help you catch issues early and continuously improve your AI’s performance as your business evolves.
 
-<iframe width="100%" height="400" 
-src="https://www.youtube.com/embed/eMTaoKXymXQ?start=8" 
-title="AI Web Chat Overview" 
-frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen>
-</iframe>
+### Test the AI Chat Receptionist’s Responses
 
-1. Go to `AI > AI knowledge base > Manage knowledge`.  
-3. Click `Add knowledge` the choose `Website`
-4. Follow the setup instructions to train the AI on your website. Make sure you select all the pages you would like to train your AI on, and save.
-
-### How to Add Custom Knowledge to Your AI
-
-You can expand the assistant's capabilities by adding your own knowledge content from any text-based source.
-
-![](../../inbox/img/web_chat_ai_knowledge_base.png)
-
-1. Go to `AI > AI knowledge base > Manage knowledge`. 
-2. Click on any knowledge source title to preview what content is currently accessible to the AI.  
-3. Click `Manage Knowledge` to open the centralized knowledge area.  
-4. Add new content by writing or pasting text into a new knowledge source.  
-5. Select the checkbox next to each source you want the AI to use.
-
-This lets you teach the AI to respond using business-specific details such as product explanations, policies, or unique services beyond what's stored in the profile.
-
-## Step 3: Test and Iterate
-
-Use the `Try it` button to simulate customer chats. For best results, open the test in an incognito window so it starts with a clean session.
+Click the `Try it` button from <AISparkleIcon /> `AI` > `AI Workforce`  to open up a **My Listing** page you can use to test chat responses before installing the website widget. For best results, open the test in an incognito window so it starts with a clean session.
 
 Ask the kinds of questions your real customers might ask, and pay attention to:
-
 - How the AI responds
 - Whether it gives too much or too little information
 - If it's assuming something you didn't intend
 
-Then go back and adjust your instructions or knowledge sources as needed.
+### Monitor and Improve the AI Chat Receptionist
 
-## Step 4: Monitor and Improve
+Regularly review the `Conversations` and `Anonymous Visitors` tabs in Conversations to make sure your Chat Receptionist is having interacting with visitors like you expected. 
 
-Regularly review the `Inbox` and `Anonymous Visitors` tabs in your app:
+:::note
+Conversations are placed in the `Anonymous Visitors` tab when the AI Chat Receptionist was unable to identify their contact information during the conversation.
+:::
 
-- **Review successful chats** where contact information was captured
-- **Check anonymous conversations** to see what people are asking
-- **Identify misunderstandings** or overly complex responses—these are key areas for improvement
+Responses from the AI Chat Receptionist include a clickable `Explanation` that expands to show:
+- the AI "reasoning" behind their response
+- the source they used for any knowledge
+- any Tools that were used by the AI, as well as the detailed API call and response. 
 
-**Pro Tip:**  
-When reviewing a conversation, expand the **Source material** beneath any AI response bubble. This reveals where the AI pulled its information from. If a response was incorrect, you can use this insight to:
-- Refine your instructions
-- Add new knowledge
-- Remove or update outdated knowledge sources
+## Frequently Asked Questions about Setting Up Your AI Chat Receptionist
 
-This is like an-app audit of all your online information!
+<details>
+<summary>What should I include in the Purpose prompt?</summary>
 
-## Tips from the Pros
+Your Purpose prompt sets the tone and behavior of your AI Chat Receptionist. Include instructions about your business’s voice, how the AI should greet visitors, and any important policies or information it should share.
 
-### Set Realistic Expectations
+</details>
 
-AI is **non-deterministic**—that means it may not give the exact same answer every time. That's not a bug; it's part of how it adapts to different inputs.
+<details>
+<summary>How often should I update my AI Chat Receptionist’s knowledge?</summary>
 
-Think of your AI like a helpful teammate, not a fixed script.
+Regularly review and update your AI’s Purpose prompt and knowledge sources to ensure the responses stay accurate and aligned with your latest business offerings and policies. Once a month is a good starting point for many businesses, but your business might need to do it more or less often. 
 
-### Capture What You Know
+</details>
 
-You're the expert on your business. Create a simple guide that answers:
+<details>
+<summary>Why does my AI sometimes give different answers to the same question?</summary>
 
-- What services do you offer—and which do you not?
-- What questions do customers ask the most?
-- What information should always be collected?
+The AI Chat Receptionist is **non-deterministic**, which means it may provide different responses depending on the context and wording of each question. This flexibility allows it to better adapt to varied customer interactions! If you want to have your AI respond the exact same way each time, you need to be *very* specific when giving directions. 
 
-Use this guide to build your instructions and upload content to your AI knowledge base.
+</details>
 
-## Why It's Worth It
+<details>
+<summary>How can I help my AI Chat Receptionist give correct answers?</summary>
 
-Even if the AI doesn't always respond perfectly, your AI Receptionist can:
+You know your business best! To improve your AI’s accuracy, take a moment to write down:
 
-- Capture leads you might have missed
-- Offer 24/7 support across channels
-- Save your team time on manual follow-up
+- The services you offer—and those you don’t  
+- The most common questions your customers ask  
+- The key information the AI should always collect from visitors
 
-With regular reviews and small improvements, your AI becomes a reliable digital team member—one that knows your services and speaks your language.
+Use this info to write clear Purpose prompts and add any relevant content to your AI’s knowledge base that might be missing.
 
-## Next Steps
+</details>
 
-- ✔ Configure your AI with the basics  
-- ✔ Add clear instructions and useful knowledge  
-- ✔ Test it by chatting like a customer would  
-- ✔ Review conversations weekly  
-- ✔ Update and improve as needed  

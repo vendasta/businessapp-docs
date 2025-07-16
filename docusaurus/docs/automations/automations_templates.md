@@ -36,7 +36,7 @@ This template helps you automatically follow up with customers to request a revi
 
 **Requirements**  
 - For this specific automation, you need to have **Reputation Management Premium** activated on your account  
-- **Inbox Pro** is required to send SMS or plain text email
+- **Conversations Pro** is required to send SMS or plain text email
 
 ### How to Set Up the Review Request Automation
 

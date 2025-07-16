@@ -32,29 +32,30 @@ const docsSidebar: SidebarsConfig['docs'] = [
   },
 
   /* --------------------------------------------------------------------- */
-  /*  Inbox                                                                */
+  /*  Conversations                                                        */
   /* --------------------------------------------------------------------- */
   {
     type: 'category',
-    label: 'Inbox',
+    label: 'Conversations',
     collapsible: true, // header now has caret and can toggle
     collapsed: true,   // collapsed by default on load
     items: [
-      'inbox/inbox_overview',
       {
         type: 'category',
-        label: 'Getting Started with Inbox',
+        label: 'Conversations Overview',
         link: {
           type: 'doc',
-          id: 'inbox/getting-started-with-inbox',
+          id: 'conversations/conversations_overview',
         },
         collapsed: true,
         items: [
-          'inbox/inbox-ai-web-chat-overview',
-          'inbox/inbox-send-receive-sms',
-          'inbox/inbox-send-receive-emails',
-          'inbox/inbox-setup-instagram',
-          'inbox/inbox-whatsapp-overview',
+          'conversations/conversations-ai-web-chat-overview',
+          'conversations/conversations-setup-facebook-messenger',
+          'conversations/conversations-send-receive-sms',
+          'conversations/conversations-send-receive-emails',
+          'conversations/conversations-setup-instagram',
+          'conversations/conversations-whatsapp-overview',
+          'conversations/conversations-setup-phone-calls',
         ],
       },
     ],
@@ -100,6 +101,7 @@ const docsSidebar: SidebarsConfig['docs'] = [
         collapsed: true,
         items: [
           'ai/ai-workforce/ai-receptionist',
+          'ai/ai-workforce/ai-voice-receptionist',
           'ai/ai-workforce/empower-your-ai-employee-custom-capabilities',
         ],
       },
@@ -168,17 +170,10 @@ const docsSidebar: SidebarsConfig['docs'] = [
     collapsible: true,
     collapsed: true,
     items: [
-      {
-        type: 'category',
-        label: 'Settings',
-        collapsed: true,
-        items: [
-          'administration/administration_overview',
-          'administration/business_profile',
-          'administration/communication_settings',
-          'administration/app-settings/app_settings',
-        ],
-      },
+      'administration/administration_overview',
+      'administration/business_profile',
+              'administration/conversations-settings',
+      'administration/app-settings/app_settings',
     ],
   },
 ];

@@ -47,7 +47,7 @@ Automations save time while improving customer experience and internal efficienc
 - Trigger options like contact creation or company updates
 - Optional conditions to refine when automations run
 - Action steps including send SMS, send email, update CRM fields, or apply tags
-- Full compatibility with Inbox, CRM, and third-party integrations
+- Full compatibility with Conversations, CRM, and third-party integrations
 
 ## How to Set Up Your First Automation
 1. Go to `Business App` > `Administration` > `Automations`
@@ -68,7 +68,7 @@ Automations save time while improving customer experience and internal efficienc
 
 6. Add `Actions` like:
    - `Send SMS`
-   - `Send a plain text email` (Inbox Pro required)
+   - `Send a plain text email` (Conversations Pro required)
    - `Update Company`
    - `Apply tag`
 
@@ -109,7 +109,7 @@ All errors are logged in the `Activity` tab, where you can review and retry erro
 ## Frequently Asked Questions (FAQs)
 
 **Do SMS and email actions require anything extra?**  
-Yes. Sending SMS or plain text emails requires Inbox Pro.
+Yes. Sending SMS or plain text emails requires Conversations Pro.
 
 **Can I pause or edit an automation after creating it?**  
 Yes, automations can be edited or turned off at any time.

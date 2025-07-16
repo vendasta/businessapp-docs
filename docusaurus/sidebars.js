@@ -44,7 +44,6 @@ var docsSidebar = [
                 collapsed: true,
                 items: [
                     'inbox/inbox_overview',
-                    'inbox/getting-started-with-inbox',
                     'inbox/inbox-send-receive-emails',
                     'inbox/inbox-send-receive-sms',
                     'inbox/inbox-setup-instagram',
@@ -163,7 +162,7 @@ var docsSidebar = [
                 items: [
                     'administration/administration_overview',
                     'administration/business_profile',
-                    'administration/communication_settings',
+                    'administration/inbox-settings',
                     'administration/app-settings/app_settings',
                 ],
             },
