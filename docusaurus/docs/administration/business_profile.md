@@ -1,8 +1,7 @@
 ---
+title: Business Profile Overview
 sidebar_position: 2
 ---
-# Business Profile Overview
-
 ## What is my Business Profile?
 Your **Business Profile** allows you to manage your core business information in one central place. This includes your name, location, website, branding, services, social profiles, and operational details.
 

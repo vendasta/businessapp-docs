@@ -1,11 +1,9 @@
 ---
+title: Administration Overview
 sidebar_position: 1
 ---
-
-# Administration Overview
-
 ## What can You Manage in the Administration Section?
-The **Administration** section provides access to system-wide configuration tools all in one place. Your dashboard relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. **The Administration section includes your Business Profile, App Settings, AI Settings, and Communication Settings.** Everything that lives in the administration section works together to ensure that:
+The **Administration** section provides access to system-wide configuration tools all in one place. Your dashboard relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. **The Administration section includes your Business Profile, App Settings, AI Settings, and Conversations Settings.** Everything that lives in the administration section works together to ensure that:
 - Your tools are connected and synced correctly
 - AI and messaging features are properly configured
 - Workflows and communication channels are set-up in a way that steamlines your operations specific to your needs
@@ -18,7 +16,7 @@ Keeping these foundational settings aligned improves daily operations and makes 
 - [Business Profile](./business_profile.md)
 - [App Settings](./app-settings/app_settings.md)
 - [AI Settings](./ai-settings/ai_settings.md)
-- [Communication Settings](./communication_settings.md)
+- [Conversations Settings](./conversations-settings.md)
 
 
 ## What is Included in the Administration section?
@@ -43,8 +41,8 @@ Keeping these foundational settings aligned improves daily operations and makes 
 - **AI Workforce**  
   Create, configure, and assign AI employees to help your business
 
-### Communication Settings
-- **Inbox Settings**  
+### Conversations Settings
+- **Conversations Settings**  
   Manage messaging channels and setup AI responses for customer inquiries.
 - **Email Configuration**  
   Set the email addresses used for communication sent and received through the app.
@@ -62,6 +60,6 @@ Yes. You can revisit any section in Administration at any time to make updates a
 Most settings apply across your account, so updates will reflect for all users.
 
 **Where should I get started to set up my app?**  
-Start with the **Business Profile** inside the Administration tab to ensure your basic business information is accurate and consistent across tools.
+Start with the **Business Profile** inside the Administration tab to ensure your basic business information is accurate and consistent across all tools.
 
 ---
