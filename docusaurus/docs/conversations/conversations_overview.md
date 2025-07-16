@@ -3,7 +3,7 @@ title: Conversations Overview
 sidebar_position: 1
 ---
 
-import { SettingsIcon } from '@site/src/components/Icons';
+import { SettingsIcon, NotificationsIcon } from '@site/src/components/Icons';
 
 ## What is Conversations?
 

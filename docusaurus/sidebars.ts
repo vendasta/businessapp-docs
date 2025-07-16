@@ -75,9 +75,9 @@ const docsSidebar: SidebarsConfig['docs'] = [
         collapsed: true,
         items: [
           'crm/index', // CRM Overview
-          'crm/forms',
         ],
       },
+      'crm/forms', // Web Forms
     ],
   },
 
@@ -123,17 +123,17 @@ const docsSidebar: SidebarsConfig['docs'] = [
   },
 
   /* --------------------------------------------------------------------- */
-  /*  Campaigns                                                            */
+  /*  Campaigns (hidden for now)                                          */
   /* --------------------------------------------------------------------- */
-  {
-    type: 'category',
-    label: 'Campaigns',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      'campaigns/index',
-    ],
-  },
+  // {
+  //   type: 'category',
+  //   label: 'Campaigns',
+  //   collapsible: true,
+  //   collapsed: true,
+  //   items: [
+  //     'campaigns/index',
+  //   ],
+  // },
 
   /* --------------------------------------------------------------------- */
   /*  Store                                                                */
@@ -149,17 +149,17 @@ const docsSidebar: SidebarsConfig['docs'] = [
   },
 
   /* --------------------------------------------------------------------- */
-  /*  Automations                                                          */
+  /*  Automations (hidden for now)                                        */
   /* --------------------------------------------------------------------- */
-  {
-    type: 'category',
-    label: 'Automations',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      'automations/index',
-    ],
-  },
+  // {
+  //   type: 'category',
+  //   label: 'Automations',
+  //   collapsible: true,
+  //   collapsed: true,
+  //   items: [
+  //     'automations/index',
+  //   ],
+  // },
 
   /* --------------------------------------------------------------------- */
   /*  Administration                                                       */
@@ -172,7 +172,7 @@ const docsSidebar: SidebarsConfig['docs'] = [
     items: [
       'administration/administration_overview',
       'administration/business_profile',
-              'administration/conversations-settings',
+      // 'administration/conversations-settings', // hidden for now
       'administration/app-settings/app_settings',
     ],
   },
