@@ -86,7 +86,7 @@ const config: Config = {
         //... other Algolia params
       },
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/businessapp-docs-social-card.png',
     navbar: {
       title: 'Business App',
       logo: {
