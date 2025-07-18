@@ -123,3 +123,7 @@
   /* Use Infima global radius variable with a 2 px fallback for consistency */
   border-radius: var(--ifm-global-radius, 2px);
 }
+
+.markdown table td p + p {
+  margin-top: 0.6em;
+}
