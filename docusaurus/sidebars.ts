@@ -99,7 +99,18 @@ const docsSidebar: SidebarsConfig['docs'] = [
         },
         collapsed: true,
         items: [
-          'ai/ai-workforce/ai-receptionist',
+          {
+            type: 'category',
+            label: 'AI Chat Receptionist',
+            link: {
+              type: 'doc',
+              id: 'ai/ai-workforce/ai-receptionist',
+            },
+            collapsed: true,
+            items: [
+              'ai/ai-workforce/connect-the-ai-receptionist-with-shopify',
+            ],
+          },
           'ai/ai-workforce/ai-voice-receptionist',
           'ai/ai-workforce/empower-your-ai-employee-custom-capabilities',
         ],

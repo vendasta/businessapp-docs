@@ -65,7 +65,6 @@ For your AI Receptionist to be able to get information from Shopify, they will n
 ### Shopify Tool: getProductList
 
 `getProductList` is your AI Receptionist's product‑search tool. We are using it to send a keyword to Shopify’s Storefront API and returns up to five matching products with title, handle, price range, and availability. 
-
 Use the values below (replacing any placeholders) to create your version of this tool.
 
 #### Summary
