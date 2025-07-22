@@ -123,3 +123,87 @@
   /* Use Infima global radius variable with a 2 px fallback for consistency */
   border-radius: var(--ifm-global-radius, 2px);
 }
+
+.markdown table td p + p {
+  margin-top: 0.6em;
+}
+
+/* --------------------------------------------------------------------- */
+/*  Chat Bubble Styling                                                   */
+/* --------------------------------------------------------------------- */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.chat-message {
+  max-width: 70%;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.chat-user {
+  align-self: flex-start;
+  background-color: var(--ifm-color-emphasis-200, #f1f1f1);
+  border-bottom-left-radius: 0.25rem;
+}
+
+.chat-ai {
+  align-self: flex-end;
+  background-color: var(--ifm-color-emphasis-100, #e0e0e0);
+  border-bottom-right-radius: 0.25rem;
+}
+
+/* Dark mode support */
+[data-theme='dark'] .chat-user {
+  background-color: var(--ifm-color-emphasis-300, #525860);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .chat-ai {
+  background-color: var(--ifm-color-emphasis-700, #333333);
+  color: var(--ifm-font-color-base);
+}
+
+.chat-content {
+  margin: 0;
+}
+
+.chat-content p {
+  margin: 0 0 0.5rem 0;
+}
+
+.chat-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Style links within chat messages */
+.chat-content a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+[data-theme='dark'] .chat-ai .chat-content a {
+  color: var(--ifm-font-color-base);
+}
+
+/* Chat example wrapper for spacing */
+.chat-example-wrapper {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-border-radius);
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chat-message {
+    max-width: 85%;
+  }
+}

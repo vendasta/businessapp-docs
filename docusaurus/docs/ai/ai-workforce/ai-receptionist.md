@@ -1,11 +1,11 @@
 ---
-title: Set up the AI Chat Receptionist
+title: AI Chat Receptionist Overview 
 sidebar_position: 2
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';
 
-Chat Receptionist helps you capture leads and respond to website visitors 24/7. In this guide, you’ll learn how to set up, train, and monitor your AI assistant to work for your business.
+The AI Chat Receptionist helps you capture leads and respond to website visitors 24/7. In this guide, you’ll learn how to set up, train, and monitor your AI assistant to work for your business.
 
 **By default, the AI Chat Receptionist:**
 - Answers questions about your business using information from your business profile and knowledge base
@@ -13,6 +13,12 @@ Chat Receptionist helps you capture leads and respond to website visitors 24/7. 
 - Detects and responds in over 40 languages, including English, French, and Spanish
 - Lets visitors know when it doesn’t have enough information, so a team member can follow up
 
+### Why is the AI Chat Receptionist important?
+
+The AI Chat Receptionist ensures that your business never misses an opportunity by engaging website visitors instantly, around the clock. By capturing leads and answering common questions 24/7, it turns casual browsers into qualified prospects, even when your team is offline.
+
+Beyond capturing leads and answering questions around the clock, the Chat Receptionist reduces friction and drop-off by initiating conversations with context-driven prompts instead of overwhelming forms, handles ambiguity and complex inquiries by understanding free-form requests and adapting in real time without forcing users into rigid menu paths, and fosters trust through natural, empathetic interactions and personalized greetings. It also scales effortlessly with your business as it adapts to new offerings and workflows without rebuilding extensive decision trees, while delivering timely, personalized responses that guide visitors down the sales funnel and drive higher customer satisfaction and conversion rates.
+ 
 ## Set Up the AI Chat Receptionist
 
 Follow these simple steps to configure your AI Chat Receptionist so it effectively engages visitors and captures valuable leads.

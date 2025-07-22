@@ -1,5 +1,5 @@
 ---
-title: Set up the AI Voice Receptionist
+title: AI Voice Receptionist
 sidebar_position: 2
 ---
 
