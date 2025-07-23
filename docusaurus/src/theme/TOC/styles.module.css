@@ -13,15 +13,23 @@
 }
 
 .openChatGPTLink {
-  margin-top: 0.75rem;
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   background: none;
   border: none;
   padding: 0;
   color: var(--ifm-link-color);
   cursor: pointer;
+}
+
+.openChatGPTLink::after {
+  content: '↗';
+  margin-left: 0.25rem;
+  font-size: 0.9em;
+  vertical-align: text-top;
 }
 
 .openChatGPTLink:hover {
@@ -42,4 +50,12 @@
   .docItemContainer {
     padding: 0 0.3rem;
   }
+}
+
+.tocActions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }

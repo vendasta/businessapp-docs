@@ -12,6 +12,7 @@ import type {Props} from '@theme/TOC';
 
 import styles from './styles.module.css';
 import ChatGPTLogo from '@site/static/img/chatgpt.svg';
+import {useDoc} from '@docusaurus/theme-common';
 
 // Using a custom className
 // This prevents TOCInline/TOCCollapsible getting highlighted by mistake
@@ -33,14 +34,16 @@ export default function TOC({className, ...props}: Props): ReactNode {
         linkClassName={LINK_CLASS_NAME}
         linkActiveClassName={LINK_ACTIVE_CLASS_NAME}
       />
-      <button
-        type="button"
-        className={styles.openChatGPTLink}
-        onClick={handleOpenChatGPT}
-      >
-        <ChatGPTLogo className={styles.chatgptIcon} />
-        Open this page in ChatGPT
-      </button>
+      <div className={styles.tocActions}>
+        <button
+          type="button"
+          className={clsx(styles.openChatGPTLink, styles.tocAction)}
+          onClick={handleOpenChatGPT}
+        >
+          <ChatGPTLogo className={styles.chatgptIcon} />
+          Open this page in ChatGPT
+        </button>
+      </div>
     </div>
   );
 }
