@@ -1,0 +1,296 @@
+---
+id: connect-ai-chat-receptionist-with-mls-listings
+title: Connect Your AI Chat Receptionist with MLS Listings
+sidebar_label: MLS Listings Integration
+---
+import {AISparkleIcon} from '@site/src/components/Icons'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+By connecting the AI Chat Receptionist with MLS feeds, you’ll enable your AI Receptionist to gather deep and relevant data about real-estate listings.
+
+**In this guide you will set your AI Receptionist to be able to:**
+- Search a regional MLS database for active listings.
+- Filter by city, price, bedrooms, days on market, keywords in descriptions, and more.
+- Return listing photos, key details (address, price, lot size, days on market), and “View Listing” links.
+
+---
+
+## Why connect your AI Receptionist to MLS listings?
+
+When buyers chat about homes, they often have a neighbourhood or feature in mind—but browsing dozens of pages on an MLS site can be painful. This connection lets your AI receptionist:
+
+- Interpret natural-language queries like "Show me $350K–$450K homes in Grande Prairie."
+- Surface relevant photos and links instantly, without manual site search.
+- Support advanced filters such as pools, big backyards, proximity to schools, days on market, etc.
+
+---
+
+## Step 1: Add a Custom Capability
+
+This step is the same for all MLS providers.
+
+1. In Business App, go to <AISparkleIcon/> `AI → AI Workforce`.
+2. Click `Configure` for your AI Receptionist.
+3. Scroll to `Custom Capabilities`, then click `Add a capability`.
+4. Enter:
+   - **Name:** Get MLS Listings
+   - **Description:** Searches the MLS feed for properties matching criteria and returns photos, key details, and listing links.
+
+> You'll return here in Step 3 to paste in your prompt.
+
+---
+
+## Step 2: Configure your MLS API Tool(s)
+
+Choose your MLS provider or standard below and configure the Tool in your Business App dashboard.
+
+<Tabs>
+  <TabItem value="zillow" label="Zillow Bridge (RESO API)" default>
+:::info What is RESO Web API?
+    Zillow Bridge uses the **RESO Web API** standard. The main differences between Zillow and other RESO API users would be the URL endpoint and provider-specific parameters.
+    :::
+
+
+    #### Summary
+
+    | Field            | Value                                                                                                      |
+    |------------------|------------------------------------------------------------------------------------------------------------|
+    | **ID**           | `getZillowBridgeListings`                                                                                  |
+    | **Name**         | Get Zillow Bridge Listings                                                                                 |
+    | **Description**  | Searches the Zillow Bridge API for listings by city, price, and keywords.                                  |
+    | **Method**       | `GET`                                                                                                      |
+    | **URL**          | `https://api.bridgedataoutput.com/api/v2/OData/your_dataset_id/Property`                                     |
+
+    #### Headers
+
+    | Header           | Value                   |
+    |------------------|-------------------------|
+    | Authorization    | Bearer YOUR_ACCESS_TOKEN|
+
+    #### Query Parameters
+
+    | Parameter key     | Location | Type   | Description                                                            |
+    |-------------------|----------|--------|------------------------------------------------------------------------|
+    | `$filter`         | Query    | String | OData filter string, e.g., `City eq 'Austin' and ListPrice ge 500000`. |
+    | `$top`            | Query    | Number | Number of results to return (e.g., `10`).                              |
+
+  </TabItem>
+  <TabItem value="reso" label="RESO Web API (Example)">
+    :::info RESO Web API Example
+    This is a generic RESO Web API example. We use **MLSGrid** as our example provider; adjust endpoints and parameters for your region’s MLS API.
+    :::
+
+    #### Summary
+
+    | Field            | Value                                                                                                      |
+    |------------------|------------------------------------------------------------------------------------------------------------|
+    | **ID**           | `getResoListings`                                                                                          |
+    | **Name**         | Get RESO Listings                                                                                           |
+    | **Description**  | Searches RESO Web API endpoints for listings by city, price, and keywords.                                |
+    | **Method**       | `GET`                                                                                                      |
+    | **URL**          | `https://api.mlsgrid.com/v2/PropertyResi`                                                                  |
+
+    #### Headers
+
+    | Header           | Value                   |
+    |------------------|-------------------------|
+    | Authorization    | Bearer YOUR_ACCESS_TOKEN|
+    | Accept           | application/json        |
+
+    #### Query Parameters
+
+    | Parameter key     | Location | Type   | Description                                                            |
+    |-------------------|----------|--------|------------------------------------------------------------------------|
+    | `$filter`         | Query    | String | OData filter string, e.g., `City eq 'Austin' and ListPrice ge 500000`. |
+    | `$top`            | Query    | Number | Number of results to return (e.g., `10`).                              |
+    | `$expand`         | Query    | String | Related entities to expand, e.g., `Media`.                             |
+    | `OriginatingSystemName` | Query    | String | Your RESO system ID (e.g., 'actris' for MLSGrid).                      |
+
+  </TabItem>
+  <TabItem value="rets" label="RETS (Legacy Standard)">
+
+  :::warning RETS is not a REST API
+  RETS (Real Estate Transaction Standard) is a legacy protocol and does not use JSON. It requires an initial login to obtain a session token and uses DMQL2 queries for search endpoints.
+  :::
+
+  ### RETS Login Tool
+
+  | Field           | Value                                     |
+  |-----------------|-------------------------------------------|
+  | **ID**          | `getRETSLogin`                            |
+  | **Name**        | Get RETS Session                          |
+  | **Description** | Authenticates to the RETS server, returning a session cookie or token. |
+  | **Method**      | `GET`                                     |
+  | **URL**         | `https://your-mls-server.com/rets/login`   |
+
+  #### Headers
+
+  | Header           | Value               |
+  |------------------|---------------------|
+  | Accept           | application/xml     |
+
+  ### RETS Search Tool
+
+  | Field           | Value                                          |
+  |-----------------|------------------------------------------------|
+  | **ID**          | `getRETSSearch`                                |
+  | **Name**        | Get RETS Listings                              |
+  | **Description** | Searches the RETS server for listings using a DMQL2 query. |
+  | **Method**      | `GET`                                          |
+  | **URL**         | `https://your-mls-server.com/rets/search`       |
+
+  #### Headers
+
+  | Header          | Value                         |
+  |-----------------|-------------------------------|
+  | Cookie          | `RETS-Session={session_id}`   |
+  | Accept          | text/plain                    |
+
+  #### Query Parameters
+
+  | Parameter key  | Location | Type   | Description                                                            |
+  |----------------|----------|--------|------------------------------------------------------------------------|
+  | `SearchType`   | Query    | String | Should be `Property`.                                                  |
+  | `Class`        | Query    | String | The resource class (e.g., `RESI`).                                     |
+  | `QueryType`    | Query    | String | Should be `DMQL2`.                                                     |
+  | `Query`        | Query    | String | DMQL2 query string, e.g., `(ListPrice=350000-450000),(City='Austin')`. |
+  | `Format`       | Query    | String | Response format: `COMPACT-DECODED` or `COMPACT`.                       |
+  | `Limit`        | Query    | Number | Maximum number of records to return.                                   |
+
+  </TabItem>
+</Tabs>
+
+---
+
+## Step 3: Write the Prompt
+
+These instructions tell the AI when to call the tool, how to map user words into API fields, and how to format the response.
+
+<Tabs>
+  <TabItem value="zillow" label="Zillow Bridge (RESO API)" default>
+
+```markdown
+## Zillow Bridge Lookup Trigger & Query Instructions
+
+### When to Query Zillow Bridge
+Initiate a live Zillow Bridge query **only when**:
+- The user asks about properties, neighbourhoods, prices, or features (e.g., "homes under $400K", "houses with pools", "Royal Oaks listings").
+- They mention keywords that map to filters (e.g., "big backyard", "near a school", "days on market").
+
+**Do not query** for non-listing topics like taxes or mortgage rates.
+
+---
+
+### Mapping User Intent to Zillow Bridge API
+- **City** → `City eq '...'`
+- **Price Range** → `ListPrice ge ... and ListPrice le ...`
+- **Keywords** → `contains(PublicRemarks, '...')`
+- **Filters** → Combine all filters into a single `$filter` query.
+```
+
+  </TabItem>
+
+  <TabItem value="reso" label="RESO Web API (Example)">
+  
+:::note Example Provider
+This section uses **MLSGrid** as an example RESO Web API provider; adjust the instructions for your provider.
+:::
+
+```markdown
+## RESO Web API Lookup Trigger & Query Instructions
+
+### When to Query RESO Web API
+Initiate a live RESO Web API query **only when**:
+- The user asks about properties, neighbourhoods, prices, or features (e.g., "homes under $400K", "houses with pools", "Royal Oaks listings").
+- They mention keywords that map to filters (e.g., "big backyard", "near a school", "days on market").
+
+**Do not query** for non-listing topics like taxes or mortgage rates.
+
+---
+
+### Mapping User Intent to RESO Web API
+- **City** → `City eq '...'`
+- **Price Range** → `ListPrice ge ... and ListPrice le ...`
+- **Keywords** → `contains(PublicRemarks, '...')`
+- **Filters** → Combine all filters into a single `$filter` query.
+```
+
+  </TabItem>
+
+  <TabItem value="rets" label="RETS (Legacy Standard)">
+
+```markdown
+## RETS Lookup Trigger & Query Instructions
+
+### When to Query RETS
+Initiate a live RETS query **only when**:
+- The user asks about properties, neighbourhoods, prices, or features (e.g., "homes under $400K", "houses with pools", "Royal Oaks listings").
+
+**Do not query** for non-listing topics like taxes or mortgage rates.
+
+---
+
+### Mapping User Intent to RETS API
+Your goal is to construct a valid **DMQL2 query string** for the `Query` parameter.
+
+- **Price Range:**
+  - "under $400K" → `(ListPrice=400000-)`
+  - "over $500K" → `(ListPrice=500000+)`
+  - "between $350K and $450K" → `(ListPrice=350000-450000)`
+- **City:** → `(City=Austin)`
+- **Keywords:** → `(PublicRemarks=*pool*)`
+- **Multiple Filters:** Combine with commas, e.g., `(City=Austin),(ListPrice=500000+)`
+```
+
+---
+### Parsing Tab-Delimited Data
+When you receive a tab-delimited response, convert it into a JSON array of objects:
+- First line: header row with column names separated by tabs.
+- Subsequent lines: each record with values separated by tabs.
+- Split on `\t` to map values to keys.
+
+For example:
+```
+Address\tPrice\tBeds\tBaths
+123 Main St\t375000\t3\t2
+```
+becomes:
+```json
+[
+  {"Address":"123 Main St","Price":375000,"Beds":3,"Baths":2}
+]
+```
+
+  </TabItem>
+</Tabs>
+
+---
+
+
+
+## Sample Conversation
+
+This conversation works with any of the above API configurations, assuming the data has been parsed into a usable format.
+
+> **User:** Show me homes in Grand Prairie between $350,000 and $450,000.
+>
+> **AI:**
+> 1. ![Photo](https://example.com/1.jpg)
+>    **123 Main St** – $375,000 CAD
+>    3 beds • 2 baths • 45 days on market
+>    [View Listing](https://soldbybobbyjoe.ca/123-main-st)
+> 2. ![Photo](https://example.com/2.jpg)
+>    **456 Elm Ave** – $420,000 CAD
+>    4 beds • 3 baths • 30 days on market
+>    [View Listing](https://soldbybobbyjoe.ca/456-elm-ave)
+
+---
+
+## FAQ
+
+**Q: How do I handle RETS authentication?**
+A: RETS requires a `Login` request before you can make other calls. This process is outside the scope of this guide, but your RETS provider will give you the necessary credentials and Login URL.
+
+**Q: How do I customize the "View Listing" link?**
+A: In your prompt, build URLs using your domain and the `listingId` or `handle` field returned by the API.
