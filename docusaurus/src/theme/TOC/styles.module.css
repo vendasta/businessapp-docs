@@ -1,0 +1,45 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.tableOfContents {
+  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  overflow-y: auto;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+.openChatGPTLink {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--ifm-link-color);
+  cursor: pointer;
+}
+
+.openChatGPTLink:hover {
+  text-decoration: underline;
+}
+
+.chatgptIcon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+}
+
+@media (max-width: 996px) {
+  .tableOfContents {
+    display: none;
+  }
+
+  .docItemContainer {
+    padding: 0 0.3rem;
+  }
+}
