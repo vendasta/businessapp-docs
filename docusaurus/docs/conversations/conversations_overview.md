@@ -21,7 +21,7 @@ With Conversations AI, your AI Receptionist can:
 
 To learn more about how the AI Receptionist works and how to get the most out of it, see [AI Receptionist Overview](../ai/ai-workforce/ai-receptionist.md).
 
-![](./img/conversations.png)
+![](/img/conversations/conversations.png)
 
 ## What you can do with Conversations
 
