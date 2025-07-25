@@ -29,7 +29,7 @@ Connecting accounts also reduces manual work by automatically syncing data betwe
 ## What is Included?
 The `Browse` tab in the **Connections** section displays available integrations. You can search for or scroll through a list of platforms to connect.
 
-![Browse Available Integrations in the Connection Section](../img/app_settings_connections_browse_integrations.png)
+![Browse Available Integrations in the Connection Section](/img/administration/app_settings_connections_browse_integrations.png)
 
 Common integrations include:
 
@@ -58,7 +58,7 @@ Common integrations include:
 
 Each integration has it's own required steps to connect. You can find these detailed set up steps outlined in each integration card once you click the `Browse` tab and click on a specific integration. Once connected, data will begin syncing automatically into your app (some integrations will take up to 48 hours to sync).
 
-![Facebook Integration Example](../img/app_settings_connections_facebook.png)
+![Facebook Integration Example](/img/administration/app_settings_connections_facebook.png)
 
 ## Types of Integrations
 
@@ -115,6 +115,6 @@ No, but it will stop new data from syncing. Reports and tools will retain past d
 
 You can also connect platforms directly from the `Settings` > `Connections` page.
 
-![Settings > Connections](../../settings/img/connections.png)
+![Settings > Connections](/img/settings/connections.png)
 
 Connecting your accounts early is one of the most important steps you can take to start seeing value in Business App. The metrics pulled in through Connections power analytics in the Executive Report and Marketing Funnel.

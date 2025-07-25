@@ -78,7 +78,7 @@ Use the values below (replacing any placeholders) to create your version of this
 
 #### Required headers
 
-| Header | Example value | Required |
+| Header | Example value | Required |mini
 |--------|---------------|:-------:|
 | `X-Shopify-Storefront-Access-Token` | `YOUR_STOREFRONT_ACCESS_TOKEN` | ✓ |
 | `Content-Type` | `application/json` | ✓ |

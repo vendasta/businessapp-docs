@@ -14,7 +14,7 @@ You can use Conversations to send and receive SMS and MMS messages with customer
   <TabItem value="us" label="United States">
 ### Conversations SMS Registration for US Businesses (A2P 10DLC)
 
-![SMS Registration Card](./img/sms_registration.png)
+![SMS Registration Card](/img/conversations/sms_registration.png)
 
 To prevent spam and ensure reliable delivery, phone carriers in the United States require businesses to register their phone numbers before sending SMS messages to customers (A2P 10DLC). 
 :::warning

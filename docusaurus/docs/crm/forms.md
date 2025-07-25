@@ -4,13 +4,13 @@ sidebar_position: 2
 ---
 A custom form can be created in Business App and installed on a website landing page or ‘contact us’ page with a simple embed code. When it is filled out, it will create a contact in the CRM, and create a conversation in Conversations where it can then be responded to. Using Automations, the contact can receive an automatic reply after filling out the form, can be added to an email or SMS nurturing campaign, and more!
 
-![](./img/contact_form.png)
+![](/img/crm/contact_form.png)
 
 ## How to Use Form Builder
 
 ### Step 1: Navigate to CRM > Forms.
 
-![](./img/create.png)
+![](/img/crm/create.png)
 
 Add all the key fields you’d like to capture. Remember that for every field that is added to a form, the conversion rate decreases. (A study by Crazy Egg found that forms with 5 fields or fewer have a conversion rate of 50%, while those with 10 fields or more have a conversion rate of just 20%.)
 
@@ -33,19 +33,19 @@ You may want to set the form width to 100%, and then manage the width using the 
 
 In the “Design” tab, you can style the form’s container, font, and button.
 
-![](./img/design.png)
+![](/img/crm/design.png)
 
 ### Step 3: Set up reCAPTCHA in the form to prevent Spam.
 
 In the form builder, under Settings, you will find a section called reCAPTCHA settings, and it will be set up automatically after you generate the site key and secret key. The generation process takes several minutes.
 
-![](./img/recaptcha.png)
+![](/img/crm/recaptcha.png)
 
 ### Step 4: Copy the embed code for the form, and place it on your website landing page or contact page.
 
 If using WordPress with Divi, you can add a “Code” block and paste the embed code.
 
-![](./img/embed.png)
+![](/img/crm/embed.png)
 
 ### Step 5: Test your form, to confirm that a contact is captured in the CRM.
 
