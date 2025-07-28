@@ -6,7 +6,7 @@ Custom Fields allow you to add personalized data fields to your contact and comp
 
 This feature is useful for businesses that want to go beyond standard fields like phone number or address. It helps centralize key client or company details directly in your app, so you don’t have to manage separate spreadsheets or systems.
 
-![Custom Fields inside Administration](../img/administration_custom_field_contact.png)
+![Custom Fields inside Administration](/img/administration/administration_custom_field_contact.png)
 
 ## Why are Custom Fields Important?
 Default contact and company records often don’t include everything your business needs to track. For example, you might want to log whether a client has set an appointment, track dietary preferences, or store internal status flags. Without custom fields, this data may be lost or siloed outside your app.
@@ -69,7 +69,7 @@ Use `String List` when you want to associate multiple values with a single field
 
 NOTE: System fields (created by default) cannot be modified or deleted. Only custom fields allow full control.
 
-![Custom Fields inside Administration](../img/administration_custom_fields.png)
+![Custom Fields inside Administration](/img/administration/administration_custom_fields.png)
 
 ## How Might I use Custom Fields
 

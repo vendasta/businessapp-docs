@@ -36,27 +36,20 @@ const docsSidebar: SidebarsConfig['docs'] = [
   {
     type: 'category',
     label: 'Conversations',
+    link: {
+      type: 'doc',
+      id: 'conversations/conversations_overview',
+    },
     collapsible: true, // header now has caret and can toggle
     collapsed: true,   // collapsed by default on load
     items: [
-      {
-        type: 'category',
-        label: 'Conversations Overview',
-        link: {
-          type: 'doc',
-          id: 'conversations/conversations_overview',
-        },
-        collapsed: true,
-        items: [
-          'conversations/conversations-ai-web-chat-overview',
-          'conversations/conversations-setup-facebook-messenger',
-          'conversations/conversations-send-receive-sms',
-          'conversations/conversations-send-receive-emails',
-          'conversations/conversations-setup-instagram',
-          'conversations/conversations-whatsapp-overview',
-          'conversations/conversations-setup-phone-calls',
-        ],
-      },
+      'conversations/conversations-ai-web-chat-overview',
+      'conversations/conversations-setup-facebook-messenger',
+      'conversations/conversations-send-receive-sms',
+      'conversations/conversations-send-receive-emails',
+      'conversations/conversations-setup-instagram',
+      'conversations/conversations-whatsapp-overview',
+      'conversations/conversations-setup-phone-calls',
     ],
   },
 
@@ -101,7 +94,7 @@ const docsSidebar: SidebarsConfig['docs'] = [
         items: [
           {
             type: 'category',
-            label: 'AI Chat Receptionist',
+            label: 'AI Chat Receptionist Overview',
             link: {
               type: 'doc',
               id: 'ai/ai-workforce/ai-receptionist',

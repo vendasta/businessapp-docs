@@ -56,15 +56,15 @@ Automations save time while improving customer experience and internal efficienc
    - Select a template from the gallery
    - Or build from scratch using `Blank`
 
-    ![Automation Template Selection](../administration/img/automations_template.png)
+    ![Automation Template Selection](/img/administration/automations_template.png)
 
 4. Set your `Trigger` (e.g., When a Contact is created)
 
-    ![Add Trigger Step in Automation](../administration/img/automations_add_trigger.png)
+    ![Add Trigger Step in Automation](/img/administration/automations_add_trigger.png)
 
 5. Add `Conditions` (optional)
 
-    ![Add Condition Step in Automation](../administration/img/automations_add_conditions.png)
+    ![Add Condition Step in Automation](/img/administration/automations_add_conditions.png)
 
 6. Add `Actions` like:
    - `Send SMS`
@@ -72,7 +72,7 @@ Automations save time while improving customer experience and internal efficienc
    - `Update Company`
    - `Apply tag`
 
-    ![Add Action Step in Automation](../administration/img/automations_add_actions.png)
+    ![Add Action Step in Automation](/img/administration/automations_add_actions.png)
 
 7. Click `Save` and toggle the automation to `Active`
 
