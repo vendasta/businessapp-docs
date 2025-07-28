@@ -85,8 +85,8 @@ const config: Config = {
 
         //... other Algolia params
       },
-    // Replace with your project's social card
-    image: 'img/businessapp-docs-social-card.png',
+    // Social card used for sharing previews
+    image: 'img/businessapp-docs-social-share.png',
     navbar: {
       title: 'Business App',
       logo: {
