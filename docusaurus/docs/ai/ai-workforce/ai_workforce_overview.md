@@ -6,20 +6,27 @@ AI Employees are digital team members you can configure to automate conversation
 
 All AI Employees share a common structure, with configurable elements like their name, purpose, communication channels, capabilities, and knowledge sources. Specific roles (like Chat Receptionist or Voice Receptionist) may include additional options, but the basics are always the same.
 
-See these guides for step-by-step setup or details on specific AI Employees:
+### What you'll learn
+
+This overview covers the core elements shared by all AI Employees:
+- **[Profile](#profile)** – Name, avatar, and purpose
+- **[Channels](#channels)** – Where your AI Employee works (website chat, SMS, phone calls, etc.)
+- **[Capabilities](#capabilities)** – What your AI Employee can do (capture leads, book appointments, answer questions)
+- **[Knowledge Sources](#knowledge-sources)** – Information your AI Employee uses to provide accurate answers
+
+#### Next steps
+
+For step-by-step setup or details on specific AI Employees:
 - [Set up the AI Chat Receptionist](./ai-receptionist.md)
 - [Set up the AI Voice Receptionist](./ai-voice-receptionist.md)
 
-For advanced setup:
-- [Creating Custom Capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md)
-
-If you’re just getting started, review the sections below for an overview of the main elements you’ll configure for any AI Employee.
+Looking for more personalized setup? Check out **[custom capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md)** to tailor your AI’s skills.
 
 ---
 
-## AI Employee Elements
+## Key components
 
-AI Employees all share a similar structure—no matter what role they play in your business. Each one comes with common parts you can review and configure, such as their name, purpose, communication channels, capabilities, and what knowledge they use to answer questions. 
+AI Employees all share a similar structure no matter what role they play in your business. In this section we will review common parts you can review and configure
 
 ### Profile
 
