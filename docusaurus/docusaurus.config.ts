@@ -41,10 +41,14 @@ const config: Config = {
     [
       'classic',
       {
+        // ← GA4 configuration
+        gtag: {
+          trackingID: 'G-XXXXXXXXXX',  // your GA4 Measurement ID
+          anonymizeIP: true,           // optional: set to false to disable
+        },
+  
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           // editUrl:
           //  'https://github.com/vendasta/businessapp-docs',
         },
