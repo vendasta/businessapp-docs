@@ -123,6 +123,37 @@ This capability allows your AI Receptionist to search for customers and retrieve
 | `page` | `Query` | `integer` | Page number for pagination |
 | `pageSize` | `Query` | `integer` | Number of results per page (max: 100) |
 
+#### ServiceTitan Tool: createCustomer
+
+`createCustomer` creates a new customer record in ServiceTitan when they don't already exist in the system.
+
+##### Summary
+
+| Field | Value |
+|-------|-------|
+| **ID** | `createCustomer` |
+| **Description** | Creates a new customer record in ServiceTitan with contact information and address details for first-time service requests. |
+| **Method** | `POST` |
+| **URL** | `https://api.servicetitan.io/crm/v2/tenant/{{tenant_id}}/customers` |
+
+##### Required headers
+
+| Header | Example value | Required |
+|--------|---------------|:--------:|
+| `Authorization` | `Bearer {{access_token}}` | ✓ |
+| `ST-App-Key` | `{{app_key}}` | ✓ |
+| `Content-Type` | `application/json` | ✓ |
+
+##### Body parameters
+| Name | Location | Type | Description |
+|------|----------|------|-------------|
+| `name` | `Body` | `string` | Customer's full name |
+| `email` | `Body` | `string` | Customer's email address |
+| `phoneNumber` | `Body` | `string` | Primary phone number |
+| `address` | `Body` | `object` | Service address including street, city, state, zip |
+| `doNotMail` | `Body` | `boolean` | Opt-out preference for mailing (default: false) |
+| `doNotService` | `Body` | `boolean` | Service restriction flag (default: false) |
+
 ### Step 3: Write the Customer Lookup Prompt
 
 ````
@@ -147,7 +178,11 @@ Initiate a ServiceTitan customer search **when**:
 2. If searching by name, use the full name or last name for better results
 3. If multiple customers match, ask for additional identifying information
 
-**Step 2: Retrieve Service History (if customer found)**
+**Step 2: Handle Customer Status**
+- **If customer found:** Retrieve their job history and note upcoming appointments
+- **If customer not found:** Prepare to create a new customer record
+
+**Step 3: Retrieve Service History (for existing customers)**
 1. Once you have the customer ID, retrieve their job history
 2. Look for patterns in service frequency, preferred technicians, or recurring issues
 3. Note any upcoming appointments or pending work orders
@@ -161,9 +196,17 @@ Initiate a ServiceTitan customer search **when**:
 - Offer to help with scheduling or service questions
 
 **When customer is not found:**
-- Politely indicate that you couldn't locate their account
-- Ask if they might have used a different name or phone number
-- Offer to help them create a new customer account or schedule service
+- Welcome them as a new customer
+- Explain that you'll create their account during the service booking process
+- Gather necessary information (name, phone, email, service address)
+- Use the `createCustomer` tool if they want to proceed with scheduling
+
+**For new customer creation, collect:**
+- Full name
+- Phone number
+- Email address
+- Service address (street, city, state, zip code)
+- Any special access instructions
 
 **Security Note:**
 - Only provide account details to the verified account holder
@@ -175,8 +218,8 @@ Initiate a ServiceTitan customer search **when**:
 **Existing Customer:**
 "Hi [Customer Name]! I found your account in our system. I can see you're one of our valued customers with [X] service history. How can I help you today?"
 
-**Customer Not Found:**
-"I wasn't able to locate an account with that information. You might have used a different name or phone number when you first set up service. Would you like me to try searching with different details, or can I help you schedule a new service call?"
+**New Customer:**
+"Welcome! I don't see an existing account with that information, which means you'll be a new customer. That's no problem at all - I can set up your account and schedule your service. Let me gather some basic information to get started."
 ````
 
 ---
@@ -268,24 +311,30 @@ Create new appointments in ServiceTitan **when**:
 
 ### Scheduling Process
 
-**Step 1: Gather Required Information**
+**Step 1: Identify Customer Status**
+- Search for existing customer using provided contact information
+- If customer found: proceed with appointment scheduling
+- If customer not found: create new customer record first using `createCustomer` tool
+
+**Step 2: Gather Required Information**
 Before creating an appointment, collect:
-- Customer contact information (if not already in system)
+- Customer contact information (if new customer)
 - Service location address
 - Type of service needed (HVAC repair, plumbing, electrical, etc.)
 - Problem description or reason for visit
 - Preferred appointment time/date
 - Urgency level (emergency, urgent, routine)
 
-**Step 2: Check Availability**
+**Step 3: Check Availability**
 - Search for available time slots based on customer preferences
 - Consider job type and required technician skills
 - Offer multiple options when possible
 
-**Step 3: Create the Appointment**
+**Step 4: Create the Appointment**
 - Create the job in ServiceTitan with all gathered details
 - Assign appropriate priority level
 - Include comprehensive job summary
+- Link to customer ID (whether existing or newly created)
 
 ### Service Type Guidelines
 
@@ -460,19 +509,25 @@ Retrieve job status information **when**:
 
 ---
 
-## Example conversation with AI Receptionist connected to ServiceTitan
+## Example conversations with AI Receptionist connected to ServiceTitan
+
+### Example 1: Existing Customer Scheduling Maintenance
 
 <ChatUserMessage>
 Hi, I'd like to schedule an HVAC maintenance appointment for my home. Can you check what's available next week?
 </ChatUserMessage>
 
-*(AI searches for customer and checks technician availability)*
-
 <ChatAIMessage>
 I'd be happy to help you schedule your HVAC maintenance! Let me first look up your account. Can you provide your name and phone number?
+</ChatAIMessage>
 
-*[After customer provides information and AI finds their account]*
+<ChatUserMessage>
+Sure, it's Robert Johnson and my phone number is (555) 123-4567.
+</ChatUserMessage>
 
+*(AI searches ServiceTitan for customer)*
+
+<ChatAIMessage>
 Perfect! I found your account, Mr. Johnson. I can see you're due for your annual HVAC maintenance. I have several time slots available next week:
 
 **Tuesday, March 14th:**
@@ -493,6 +548,8 @@ Which of these times works best for you? The maintenance typically takes about 1
 Tuesday at 2 PM would be perfect. Can you book that for me?
 </ChatUserMessage>
 
+*(AI creates appointment in ServiceTitan)*
+
 <ChatAIMessage>
 Excellent! I've scheduled your HVAC maintenance appointment for Tuesday, March 14th from 2:00 PM to 4:00 PM. 
 
@@ -506,6 +563,81 @@ Excellent! I've scheduled your HVAC maintenance appointment for Tuesday, March 1
 Mike will call you about 30 minutes before arrival. Please ensure the area around your HVAC unit is accessible, and if you have pets, please secure them during the visit.
 
 You'll receive a confirmation email shortly, and we'll send a reminder the day before your appointment. Is there anything specific you'd like our technician to check during the maintenance?
+</ChatAIMessage>
+
+### Example 2: New Customer Requesting Service
+
+<ChatUserMessage>
+Hi, my kitchen sink has been leaking and I need a plumber. Can someone come out this week?
+</ChatUserMessage>
+
+<ChatAIMessage>
+I can definitely help you get a plumber scheduled for that kitchen sink leak. Let me first look up your information. What's your name and phone number?
+</ChatAIMessage>
+
+<ChatUserMessage>
+I'm Sarah Williams, phone number is (555) 987-6543. I think this might be my first time calling your company.
+</ChatUserMessage>
+
+*(AI searches ServiceTitan but finds no existing customer)*
+
+<ChatAIMessage>
+Welcome, Sarah! You're right - I don't see an existing account, which means you'll be a new customer. That's no problem at all! I can set up your account and get that plumber scheduled for you.
+
+Let me gather some basic information to get started:
+
+1. I have your name as Sarah Williams and phone (555) 987-6543
+2. What's your email address?
+3. What's the service address where you need the plumbing work done?
+
+Also, can you tell me more about the kitchen sink leak? Is it under the sink, from the faucet, or somewhere else?
+</ChatAIMessage>
+
+<ChatUserMessage>
+My email is sarah.williams@email.com and the address is 456 Oak Street, Springfield, IL 62701. The leak is coming from under the sink - looks like it's from one of the pipes connecting to the garbage disposal.
+</ChatUserMessage>
+
+*(AI creates new customer in ServiceTitan and checks technician availability)*
+
+<ChatAIMessage>
+Thank you, Sarah! I've created your account and can see this sounds like a plumbing connection issue that definitely needs attention. 
+
+I have these available appointment slots this week:
+
+**Wednesday, March 15th:**
+- 10:00 AM - 12:00 PM
+- 3:00 PM - 5:00 PM
+
+**Thursday, March 16th:**
+- 8:00 AM - 10:00 AM
+- 1:00 PM - 3:00 PM
+
+**Friday, March 17th:**
+- 9:00 AM - 11:00 AM
+
+Given that it's an active leak, I'd recommend sooner rather than later. In the meantime, you might want to place a bucket under the leak and avoid using the garbage disposal if possible. Which time slot works best for you?
+</ChatAIMessage>
+
+<ChatUserMessage>
+Wednesday at 10 AM would be great!
+</ChatUserMessage>
+
+*(AI creates appointment in ServiceTitan)*
+
+<ChatAIMessage>
+Perfect! I've scheduled your plumbing repair for Wednesday, March 15th from 10:00 AM to 12:00 PM.
+
+**Appointment Details:**
+- **Job Number:** #ST-847401
+- **Service:** Kitchen Sink Plumbing Repair
+- **Date & Time:** Wednesday, March 15th, 10:00 AM - 12:00 PM
+- **Technician:** Dave Martinez (licensed plumber)
+- **Location:** 456 Oak Street, Springfield, IL 62701
+- **Issue:** Leak under kitchen sink, appears to be from garbage disposal connection
+
+Dave will call you about 30 minutes before arrival. Please make sure the area under the sink is accessible - you might want to remove any cleaning supplies or storage items beforehand.
+
+You'll receive a confirmation email at sarah.williams@email.com, and we'll send you a reminder the day before. Welcome to our family of customers, Sarah!
 </ChatAIMessage>
 
 ## Testing & Troubleshooting
