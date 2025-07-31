@@ -1,9 +1,6 @@
 ---
 title: call-ai-employee-from-automations
 sidebar_label: Call an AI Employee from Automations
-description: Set up an automation that allows an AI Employee to automatically reply to form submissions with a unique and helpful response.
-tags: automations, ai, form-submission, conversations
-keywords: automations, ai-employee, forms, receptionist
 ---
 
 # Call an AI Employee from Automations
