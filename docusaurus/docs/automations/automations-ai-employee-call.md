@@ -1,9 +1,6 @@
 ---
 title: automations-call-an-ai-employee
 sidebar_label: Call an AI Employee
-description: Learn how to use automations to have an AI Employee instantly respond to customer actions like form submissions.
-tags: automations, ai, ai-employee, forms, conversations
-keywords: automation, workflow, ai, artificial-intelligence, receptionist, form, auto-reply
 ---
 
 # Automations: Call an AI Employee
