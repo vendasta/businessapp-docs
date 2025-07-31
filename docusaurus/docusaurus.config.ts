@@ -21,6 +21,20 @@ const config: Config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+  // Custom head tags for Cookiebot integration
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {
+        id: 'Cookiebot',
+        src: 'https://consent.cookiebot.com/uc.js',
+        'data-cbid': '18defc9c-f3d9-498d-b1d8-469fdf619133',
+        'data-blockingmode': 'auto',
+        type: 'text/javascript',
+      },
+    },
+  ],
+
   // Enable faster builds with Rspack bundler and persistent cache
   future: {
     experimental_faster: {
@@ -41,10 +55,14 @@ const config: Config = {
     [
       'classic',
       {
+        // ← GA4 configuration
+        gtag: {
+          trackingID: 'G-1Y49QBYD4L',  // your GA4 Measurement ID
+          anonymizeIP: true,           // optional: set to false to disable
+        },
+  
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           // editUrl:
           //  'https://github.com/vendasta/businessapp-docs',
         },
@@ -111,6 +129,15 @@ const config: Config = {
             {
               label: 'Getting started',
               to: '/docs/category/business-app',
+            },
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Cookie Declaration',
+              to: '/cookie-declaration',
             },
           ],
         },
