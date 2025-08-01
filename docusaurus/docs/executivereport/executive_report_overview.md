@@ -7,7 +7,7 @@ The **Executive Report** gives you a clear summary of your business’s online p
 
 This report helps you understand your results over time and track growth without needing to gather data from multiple tools manually.
 
-![Executive Report Overview](/img/executivereport/executive_report_overview.png)
+![Executive Report Overview](./img/executive_report_overview.png)
 
 ## Why is the Executive Report Important?
 As a business owner, you need a clear way to understand how your online presence and marketing efforts are performing. The **Executive Report** gives you a simple, reliable summary of your most important metrics—without the need to log into multiple tools or spreadsheets.
@@ -58,13 +58,13 @@ To view your Executive Report:
    - Monthly view
    - Custom date range
 
-   ![Executive Report Weekly Data Overview](/img/executivereport/executive_report_weekly_view.png)
+   ![Executive Report Weekly Data Overview](./img/executive_report_weekly_view.png)
 
 3. Navigate quickly between sections using:
    - The category icons at the top of the report
    - The dropdown navigation menu
 
-      ![Executive Report Weekly Data Overview](/img/executivereport/executive_report_overview_dropdown.png)
+      ![Executive Report Weekly Data Overview](./img/executive_report_overview_dropdown.png)
 
 
 Your report is updated automatically and archived so you can review previous reports at any time.

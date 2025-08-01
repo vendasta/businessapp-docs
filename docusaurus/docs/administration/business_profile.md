@@ -52,7 +52,7 @@ In the **Descriptions** tab, you can add a:
 
 You can also use the `Suggest Description` button to generate content with the help of AI. Click `Save` to apply your updates.
 
-![Administration Settings Overview](/img/administration/administration_descriptions.png)
+![Administration Settings Overview](./img/administration_descriptions.png)
 
 ## Images
 Use the **Images** tab to visually represent your brand across applications:

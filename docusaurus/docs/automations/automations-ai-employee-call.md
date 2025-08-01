@@ -9,7 +9,7 @@ sidebar_label: Call an AI Employee
 
 The AI Employee automation adds a step to `Automations` that allows you to send a request, or prompt, to an AI Employee. The AI's response can then be used in other steps within the same automation, such as sending a follow-up SMS or email message via `Conversations`.
 
-![automations call to ai receptionist](../../static/img/ai/automations-call-ai-receptionist.png)
+![automations call to ai receptionist](../ai/img/automations-call-ai-receptionist.png)
 ***
 
 ## Why is this important?

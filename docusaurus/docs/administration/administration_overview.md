@@ -10,7 +10,7 @@ The **Administration** section provides access to system-wide configuration tool
 
 Keeping these foundational settings aligned improves daily operations and makes your system easier to manage over time.
 
-![Administration Settings Overview](/img/administration/administration_overview.png)
+![Administration Settings Overview](./img/administration_overview.png)
 
 ## Table of Contents
 - [Business Profile](./business_profile.md)

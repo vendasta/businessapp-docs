@@ -8,13 +8,13 @@ Welcome to the Store tab in the Business App, your one-stop shop for browsing, e
 
 Log in to the Business App and click on Store.
 
-![](/img/store/store.png)
+![](./img/store.png)
 
 ## How to use the Store
 
 Clicking on any package will bring you to that package's information page. Here, you can see package marketing materials, product details, pricing, and more.
 
-![](/img/store/package.png)
+![](./img/package.png)
 
 1. Package information – Features the package name, tagline, and solution type.
 2. Pricing – Pricing information for the package. Also includes the purchase button (covered below).
@@ -22,7 +22,7 @@ Clicking on any package will bring you to that package's information page. Here,
 4. Product Description – Information explaining the purpose of the product.
 5. Gallery – Media to showcase how the product functions.
 
-![](/img/store/key_points.png)
+![](./img/key_points.png)
 
 6. Key points – Points designed to showcase how the product can help you.
 7. FAQs – Additional information designed to explain any questions you may have before purchasing. 

@@ -10,7 +10,7 @@ You can use Conversations to send and receive emails with leads and customers fr
 
 ## Sender, Reply, and Forwarding settings for email in Conversations
 
-![](/img/conversations/email_setup.png)
+![](./img/email_setup.png)
 
 ### Conversations Email Sender Address
 

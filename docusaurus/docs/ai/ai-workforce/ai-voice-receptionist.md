@@ -25,7 +25,7 @@ Having an AI Voice Receptionist helps stop customers from moving on to the next 
 
 There are a number of ways to route calls to and from your Voice Receptionist to ensure that you never miss a lead.
 
-![AI Voice Receptionist Call Flow](/img/ai/ai-voice-receptionist-call-flow.png)
+![AI Voice Receptionist Call Flow](../../ai-voice-receptionist-call-flow.png)
 
 #### Routing phone calls to your AI Voice Receptionist
 
@@ -43,7 +43,7 @@ Customers can keep calling your existing business number and your telephone prov
    - Forwarding calls automatically after-hours
 
 :::tip
-For more help forwarding calls, see [Call Forwarding Setup in Conversations](/docs/conversations/conversations-setup-phone-calls.md).
+For more help forwarding calls, see [Call Forwarding Setup in Conversations](/img/docs/conversations/conversations-setup-phone-calls.md).
 :::
 
 #### Handling calls from your AI Voice Receptionist

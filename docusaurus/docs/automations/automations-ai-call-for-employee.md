@@ -9,7 +9,7 @@ This `Automations` feature is called `Call an AI Employee`. This allows you to s
 
 A template, "Form submission - Auto-reply with AI Chat Receptionist custom message," uses this feature to let the AI Receptionist automatically send a helpful, unique reply to a contact after they submit a form.
 
-![call an ai employee](../../static/img/ai/automations-call-ai-receptionist.png)
+![call an ai employee](../ai/img/automations-call-ai-receptionist.png)
 
 ## Why is this important?
 
