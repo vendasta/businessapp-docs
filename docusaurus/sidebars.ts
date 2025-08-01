@@ -102,6 +102,7 @@ const docsSidebar: SidebarsConfig['docs'] = [
             collapsed: true,
             items: [
               'ai/ai-workforce/connect-the-ai-receptionist-with-shopify',
+              'ai/ai-workforce/connect-the-ai-receptionist-with-servicetitan',
             ],
           },
           'ai/ai-workforce/ai-voice-receptionist',
@@ -153,17 +154,23 @@ const docsSidebar: SidebarsConfig['docs'] = [
   },
 
   /* --------------------------------------------------------------------- */
-  /*  Automations (hidden for now)                                        */
+  /*  Automations                                                          */
   /* --------------------------------------------------------------------- */
-  // {
-  //   type: 'category',
-  //   label: 'Automations',
-  //   collapsible: true,
-  //   collapsed: true,
-  //   items: [
-  //     'automations/index',
-  //   ],
-  // },
+  {
+    type: 'category',
+    label: 'Automations',
+    link: {
+      type: 'doc',
+      id: 'automations/index',
+    },
+    collapsible: true,
+    collapsed: true,
+    items: [
+      'automations/automations_templates',
+      'automations/app_settings_automations',
+      'automations/zapier',
+    ],
+  },
 
   /* --------------------------------------------------------------------- */
   /*  Administration                                                       */
@@ -171,13 +178,36 @@ const docsSidebar: SidebarsConfig['docs'] = [
   {
     type: 'category',
     label: 'Administration',
+    link: {
+      type: 'doc',
+      id: 'administration/administration_overview',
+    },
     collapsible: true,
     collapsed: true,
     items: [
-      'administration/administration_overview',
       'administration/business_profile',
-      // 'administration/conversations-settings', // hidden for now
-      'administration/app-settings/app_settings',
+      {
+        type: 'category',
+        label: 'App Settings',
+        link: {
+          type: 'doc',
+          id: 'administration/app-settings/app_settings',
+        },
+        collapsed: true,
+        items: [
+          'administration/connections/app_settings_connections',
+          'administration/crm-objects/app_settings_crm_fields',
+          'administration/score/app_settings_score',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Settings',
+        collapsed: true,
+        items: [
+          'administration/settings/email_configuration',
+        ],
+      },
     ],
   },
 ];
