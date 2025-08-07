@@ -100,7 +100,7 @@ Existing Facebook Messenger conversations will continue to appear in Facebook. N
 <details>
 <summary><strong>Can the AI Receptionist respond to Facebook Messenger messages?</strong></summary>
 
-The AI Receptionist can be configured to respond to Facebook Messenger messages automatically. You can enable or disable this feature in your AI Workforce settings to ensure appropriate responses for your business.
+The AI Receptionist cannot currently be configured to respond to Facebook Messenger messages automatically. 
 </details>
 
 <details>
