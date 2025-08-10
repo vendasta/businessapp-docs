@@ -63,9 +63,12 @@ const config: Config = {
   
         docs: {
           sidebarPath: './sidebars.ts',
+          // Serve docs at site root so "/" shows the docs with sidebar
+          routeBasePath: '/',
           // editUrl:
           //  'https://github.com/vendasta/businessapp-docs',
         },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -128,7 +131,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting started',
-              to: '/docs/category/business-app',
+              to: '/getting_started_with_business_app',
             },
           ],
         },
