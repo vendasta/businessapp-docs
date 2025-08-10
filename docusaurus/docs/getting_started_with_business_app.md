@@ -1,6 +1,7 @@
 ---
 id: getting_started_with_business_app
 title: Getting Started with Business App
+sidebar_position: 2
 ---
 
 Business App is your one-stop dashboard for running your business online. Think of it as your digital command center: manage your online presence, monitor your business activity, communicate with customers, and access the products and services that help your business grow — all in one place!
