@@ -128,6 +128,23 @@
   margin-top: 0.6em;
 }
 
+/* Make whole feature cards clickable on landing page */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  height: 100%;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.card-link .card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
 /* --------------------------------------------------------------------- */
 /*  Chat Bubble Styling                                                   */
 /* --------------------------------------------------------------------- */
