@@ -1,6 +1,6 @@
 ---
 title: Tasks
-sidebar_position: 5
+sidebar_position: 6
 description: Create, prioritize, and complete tasks from CRM records or the task table, with filters, views, and a task queue.
 tags: [tasks, crm, sales]
 keywords: [sales tasks, task queue, crm tasks, activity, views, filters]
@@ -115,5 +115,3 @@ To-do, Email, Call, Message, Connection, and LinkedIn.
 
 Yes. Edit any task to adjust due date/time, priority, and other fields.
 </details>
-
-

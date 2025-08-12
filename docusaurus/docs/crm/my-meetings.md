@@ -1,6 +1,6 @@
 ---
 title: My Meetings
-sidebar_position: 9
+sidebar_position: 10
 description: Create booking links, manage availability, and track meetings from within the CRM.
 tags: [meetings, crm]
 keywords: [booking links, availability, meetings]

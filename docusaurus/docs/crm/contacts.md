@@ -1,5 +1,6 @@
+---
 title: Contacts
-sidebar_position: 1
+sidebar_position: 2
 description: Manage people you engage with. Import/export, organize, and take action on contacts across campaigns, tasks, and opportunities.
 tags: [contacts, crm]
 keywords: [crm contacts, import contacts, export contacts, contact fields, campaigns]
@@ -47,11 +48,6 @@ Updating existing contacts during import will overwrite the mapped fields on mat
 Each contact should include at least one of: first name, last name, email, or phone. Company name is required for any new company rows created during import.
 :::
 
-Notes:
-
-- Include at least one of: first name, last name, email, or phone for each contact.
-- Company name is required for company records created during import.
-
 ### Export contacts
 
 1. In `CRM` > `Contacts`, select the checkbox at the top-left of the table.
@@ -68,23 +64,19 @@ Exports respect your current filters and the set of rows displayed.
 1. Open a contact profile and go to the `Campaigns` section.
 2. Use the action menu to schedule, pause, or resume campaigns for that contact.
 
-![Campaigns tab](./img/contacts/pause-resume-campaigns/campaigns-tab.jpg)
 ![Three dots menu](./img/contacts/pause-resume-campaigns/three-dots-menu.jpg)
 ![Pause Campaigns option](./img/contacts/pause-resume-campaigns/pause-campaigns-option.jpg)
-![Resume Campaigns option](./img/contacts/pause-resume-campaigns/resume-campaigns-option.jpg)
 
 ### Add contacts to lists or automations
 
 1. From the Contacts table, select records and use actions to add them to a `List`.
 2. Trigger or schedule automations for the selected list.
 
-![Schedule Campaigns Step 1](./img/crm-contacts/schedule_campaigns_step1.jpg)
 ![Schedule Campaigns Step 2](./img/crm-contacts/schedule_campaigns_step2.jpg)
 ![Schedule Campaigns Step 3](./img/crm-contacts/schedule_campaigns_step3.jpg)
 ![Schedule Campaigns Step 4](./img/crm-contacts/schedule_campaigns_step4.jpg)
 ![Schedule Campaigns Time](./img/crm-contacts/schedule_campaigns_time.jpg)
 ![Schedule Campaigns Custom Email](./img/crm-contacts/schedule_campaigns_custom.jpg)
-![Schedule Campaigns Salesperson](./img/crm-contacts/schedule_campaigns_salesperson.jpg)
 
 ### Log activity and create tasks
 

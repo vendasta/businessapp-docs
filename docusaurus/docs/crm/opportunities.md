@@ -1,6 +1,6 @@
 ---
 title: Opportunities
-sidebar_position: 4
+sidebar_position: 5
 description: Track opportunities from lead to won using table or board views, filters, and custom pipelines.
 tags: [sales-pipeline, crm, opportunities]
 keywords: [sales pipeline, crm, board view, table view, manage stages, filter opportunities]
@@ -45,8 +45,6 @@ Save filtered views to quickly revisit common segments (e.g., this quarter’s d
 1. Go to `CRM` > `Opportunities` > `Board`.
 2. Drag and drop opportunities between stages.
 3. Select an opportunity to open its details.
-
-![Pipeline Board View](./img/opportunities/pipeline-board-view.jpg)
 
 :::note
 Drag-and-drop updates the stage immediately. Use filters to focus on a pipeline, team, or product line.

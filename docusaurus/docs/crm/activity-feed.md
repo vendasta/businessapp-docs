@@ -1,5 +1,6 @@
-title: Activity Feed
-sidebar_position: 3
+---
+title: Activity feed
+sidebar_position: 4
 description: See real-time sales activities across your CRM—emails, notes, calls, meetings, and tasks—in one place.
 tags: [activity-feed, crm]
 keywords: [crm activity feed, sales activity, filter activities]
@@ -25,8 +26,6 @@ Use the Activity Feed to see real-time updates on sales activities across your t
 2. Filter by activity types such as Emails, Notes, Calls, or Meetings.
 3. Use search to find activities that mention specific keywords.
 4. Click an item to open the associated record and take action.
-
-![Activity Feed Navigation](./img/activity-feed/activity-feed-navigation.png)
 
 ## Frequently Asked Questions (FAQs)
 

@@ -1,5 +1,6 @@
+---
 title: Companies
-sidebar_position: 2
+sidebar_position: 3
 description: Manage organizations in your CRM. Create, enrich, and segment companies; associate contacts and opportunities; and log sales activity.
 tags: [companies, crm]
 keywords: [crm companies, company fields, logging activity, lead scoring, find accounts]
@@ -36,8 +37,6 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 1. Open a company profile.
 2. In the activity area, choose the activity type: note, email, call, meeting, task, or more.
 3. Add details, outcomes, and follow-up tasks as needed.
-
-![Activity logger interface showing options to share updates](./img/companies/activity-logger.png)
 
 ### Associate contacts and opportunities
 

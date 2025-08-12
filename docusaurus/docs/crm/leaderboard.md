@@ -1,6 +1,6 @@
 ---
 title: Leaderboard
-sidebar_position: 7
+sidebar_position: 8
 description: Track top-performing salespeople and teams using Leaderboard metrics in the CRM.
 tags: [leaderboard, crm]
 keywords: [sales leaderboard, performance, rankings]

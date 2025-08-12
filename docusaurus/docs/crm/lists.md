@@ -1,6 +1,6 @@
 ---
 title: Lists
-sidebar_position: 6
+sidebar_position: 7
 description: Create static or smart lists to segment contacts and companies, trigger automations, and streamline CRM workflows.
 tags: [lists, crm, segmentation, automations]
 keywords: [smart lists, static lists, crm lists, trigger automation, segment contacts, segment companies]
