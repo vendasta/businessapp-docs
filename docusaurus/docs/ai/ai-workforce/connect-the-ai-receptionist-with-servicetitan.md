@@ -7,7 +7,7 @@ import {ChatUserMessage, ChatAIMessage} from '@site/src/components/ChatBubble'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-By connecting the AI Chat Receptionist with ServiceTitan, you'll enable seamless integration with the leading software platform for trades businesses, allowing your AI Receptionist to access customer information, schedule appointments, and manage service requests directly within ServiceTitan.
+By connecting the AI Chat Receptionist with ServiceTitan, your AI Receptionist can access customer information, schedule appointments, and manage service requests in your ServiceTitan account.
 
 **In this guide, you will set up your AI Receptionist to be able to:**
 - Look up customer information and service history;
@@ -19,7 +19,7 @@ By connecting the AI Chat Receptionist with ServiceTitan, you'll enable seamless
 
 ### Why is connecting the AI Receptionist with ServiceTitan important?
 
-ServiceTitan is the comprehensive software platform that powers trades businesses, from HVAC and plumbing to electrical and other home services. When customers call your business, they often need immediate assistance with scheduling, want updates on existing jobs, or have questions about their service history. This integration allows your AI Receptionist to access real-time data from ServiceTitan and provide instant, accurate responses while automatically updating your system with new appointments and customer interactions.
+ServiceTitan is a software platform used by many trades businesses (HVAC, plumbing, electrical, and other home services). When customers contact your business, they often need help with scheduling, job updates, or service history. This integration lets your AI Receptionist read and update data in ServiceTitan, such as customers, jobs, appointments, and related records.
 
 :::tip
 While this guide has been written primarily for your AI Chat Receptionist, you can use the Capabilities created in this guide with your AI Voice Receptionist, or any other AI Employee!
@@ -744,7 +744,7 @@ For more details on setting up Custom Capabilities across different AI Employees
 <details>
 <summary>What ServiceTitan modules and features can I integrate besides basic scheduling?</summary>
 
-While this guide covers core customer service functions, ServiceTitan's extensive API allows for many additional integrations:
+While this guide covers core customer service functions, ServiceTitan's API supports additional integrations:
 
 **Available Modules:**
 - Job Management (scheduling, dispatch, completion)
@@ -764,7 +764,7 @@ You can create additional Custom Capabilities for features like inventory lookup
 <details>
 <summary>How does the ServiceTitan integration work with my AI's Knowledge Base?</summary>
 
-The ServiceTitan integration provides real-time operational data through API calls, while your [Knowledge Base](../knowledge-base.md) contains static business information. These work together seamlessly:
+The ServiceTitan integration provides real-time operational data through API calls, while your [Knowledge Base](../knowledge-base.md) contains static business information. These work together as follows:
 
 **ServiceTitan API provides:** Live job status, customer history, technician schedules, real-time availability  
 **Knowledge Base should include:** Service policies, pricing information, service area details, company procedures, emergency protocols
@@ -871,7 +871,7 @@ Monitor customer service patterns through several methods:
 
 4. **Business Intelligence:** Set up [automations](../../automations/app_settings_automations.md) to log AI-generated appointments and analyze trends
 
-This data helps you optimize staffing, inventory, and service offerings based on customer demand patterns.
+This data can inform staffing, inventory, and service offerings based on customer demand patterns.
 </details>
 
 <details>
@@ -923,7 +923,7 @@ The integration respects ServiceTitan's existing permission structure, so custom
 <details>
 <summary>Can I create automated follow-up workflows based on job completion?</summary>
 
-Yes! You can create sophisticated follow-up workflows using ServiceTitan webhooks and Business App automations:
+You can create follow-up workflows using ServiceTitan webhooks and Business App automations:
 
 **Job Completion Follow-ups:**
 - Automatic customer satisfaction surveys
@@ -939,5 +939,5 @@ Yes! You can create sophisticated follow-up workflows using ServiceTitan webhook
 **Example Workflow:**
 When a ServiceTitan job is marked "Completed" → trigger Business App automation → send personalized follow-up message through AI Receptionist → schedule satisfaction survey → book next maintenance appointment if needed.
 
-This creates a seamless customer experience that continues the relationship beyond the initial service call.
+This provides a consistent customer experience beyond the initial service call.
 </details>
