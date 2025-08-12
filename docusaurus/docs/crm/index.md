@@ -2,10 +2,36 @@
 title: Overview
 sidebar_position: 1
 ---
-## Understanding CRM Software
-Customer Relationship Management (CRM) software is a vital tool that enables business owners to efficiently track communications and nurture relationships with their leads and clients. By consolidating information from various spreadsheets, databases, and apps, CRM software streamlines the process of managing client data. For small businesses, CRM software, like the one provided by Business App, can significantly enhance organization, efficiency, and time management by automating numerous tasks, leading to more impressed clients.
+Business App’s CRM centralizes your contacts, companies, opportunities, activities, and automations—so your team can collaborate, stay organized, and close more deals.
 
-A CRM system centralizes data from all your sales leads and customers into one place. It organizes communications, documents, quotes, purchases, and tasks associated with each lead and client. This ensures that your entire team can access the right details at the right time to close sales and deliver outstanding service.
+## Why use the CRM?
 
-### Enhanced Contact Management
-The core function of CRM software is contact management. It stores and manages data for every contact, from leads to business partners. Unlike spreadsheets that can only handle static information, Business App’s CRM continuously updates with dynamic data. This ensures that your contact information is always current and actionable.
+- Centralize customer and prospect data across teams
+- Track emails, calls, meetings, tasks, and opportunities
+- Automate follow-ups and list-based workflows
+- Improve visibility and forecasting with shared views
+
+## What’s included
+
+- **[Contacts](./contacts)**: Manage people, import/export, and run campaigns
+- **[Companies](./companies)**: Manage organizations, associate contacts and opportunities
+- **[Lists](./lists)**: Segment contacts and companies with static or smart lists
+- **[Forms](./forms)**: Capture leads from your website directly into the CRM
+- **[Tasks](./tasks)**: Plan and complete sales activities
+- **[Opportunities](./opportunities)**: Track and manage deals in table or board views
+
+## Get started
+
+1. Go to `CRM` in Business App.
+2. Import a CSV of contacts in `CRM` > `Contacts` > `Import`.
+3. Create a `List` for a segment you want to target.
+4. Build a `Web Form` and embed it on your site to capture new leads.
+5. Create an `Opportunity` and manage stages in `Opportunities`.
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Can I migrate from spreadsheets?</summary>
+
+Yes. Use CSV import in `CRM` > `Contacts` to add and update records in bulk.
+</details>
