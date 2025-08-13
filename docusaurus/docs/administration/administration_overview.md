@@ -15,7 +15,7 @@ Keeping these foundational settings aligned improves daily operations and makes 
 ## Table of Contents
 - [Business Profile](./business_profile.md)
 - [App Settings](./app-settings/app_settings.md)
-- [AI Settings](./ai-settings/ai_settings.md)
+- [AI Settings](/administration/ai-settings/ai_settings)
 - [Conversations Settings](./conversations-settings.md)
 
 
