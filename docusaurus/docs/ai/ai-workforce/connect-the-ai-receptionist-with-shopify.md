@@ -418,7 +418,7 @@ You can monitor product inquiry patterns through several methods:
 
 2. **AI Explanation Feature:** Click "Explanation" on AI responses to see exactly which tools were called and what products were searched
 
-3. **Automation Tracking:** Set up [automations](../../automations/app_settings_automations.md) to log product inquiries or notify your team about trending searches
+3. **Automation Tracking:** Set up [automations](../../automations/index.md) to log product inquiries or notify your team about trending searches
 
 This data helps you understand customer demand, optimize your inventory, and identify opportunities for targeted marketing campaigns.
 </details>
@@ -435,7 +435,7 @@ Your AI provides product information and links, but purchase completion depends 
 - Provide clear checkout instructions and support contact information
 
 **Follow-up Workflows:**
-- Create [automations](../../automations/app_settings_automations.md) to notify your sales team about purchase-intent conversations
+- Create [automations](../../automations/index.md) to notify your sales team about purchase-intent conversations
 - Set up lead scoring to prioritize high-value product inquiries
 - Use [Zapier](../../automations/zapier.md) to create tasks in your CRM when specific products are discussed
 

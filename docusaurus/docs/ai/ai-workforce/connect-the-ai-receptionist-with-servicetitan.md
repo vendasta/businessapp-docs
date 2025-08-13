@@ -869,7 +869,7 @@ Monitor customer service patterns through several methods:
 
 3. **Custom Capability Analytics:** Monitor which API calls are made most frequently through the "Explanation" feature
 
-4. **Business Intelligence:** Set up [automations](../../automations/app_settings_automations.md) to log AI-generated appointments and analyze trends
+4. **Business Intelligence:** Set up [automations](../../automations/index.md) to log AI-generated appointments and analyze trends
 
 This data can inform staffing, inventory, and service offerings based on customer demand patterns.
 </details>
@@ -932,7 +932,7 @@ You can create follow-up workflows using ServiceTitan webhooks and Business App 
 - Review request campaigns for positive experiences
 
 **Implementation Options:**
-1. Use ServiceTitan webhooks to trigger Business App [automations](../../automations/app_settings_automations.md)
+1. Use ServiceTitan webhooks to trigger Business App [automations](../../automations/index.md)
 2. Set up [Zapier](../../automations/zapier.md) integrations between ServiceTitan and Business App
 3. Create scheduled follow-up tasks in your AI workflow
 
