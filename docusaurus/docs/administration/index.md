@@ -1,7 +1,7 @@
 ---
 title: Administration Overview
-sidebar_position: 1
 ---
+
 ## What can You Manage in the Administration Section?
 The **Administration** section provides access to system-wide configuration tools all in one place. Your dashboard relies on key configurations that determine how leads are captured, communications are handled, and automations are triggered. **The Administration section includes your Business Profile, App Settings, AI Settings, and Conversations Settings.** Everything that lives in the administration section works together to ensure that:
 - Your tools are connected and synced correctly
@@ -17,7 +17,6 @@ Keeping these foundational settings aligned improves daily operations and makes 
 - [App Settings](./app-settings/app_settings.md)
 - [AI Settings](./ai-settings/ai_settings.md)
 - [Conversations Settings](./conversations-settings.md)
-
 
 ## What is Included in the Administration section?
 
@@ -63,3 +62,5 @@ Most settings apply across your account, so updates will reflect for all users.
 Start with the **Business Profile** inside the Administration tab to ensure your basic business information is accurate and consistent across all tools.
 
 ---
+
+
