@@ -1,7 +1,7 @@
 {
   "label": "Administration",
-  "position": 9,
-  "link": { "type": "doc", "id": "administration/administration_overview" }
+  "collapsed": true,
+  "link": { "type": "doc", "id": "administration/index" }
 }
 
 

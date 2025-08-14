@@ -738,7 +738,7 @@ Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Cap
 
 This means customers can get ServiceTitan information and schedule appointments through phone calls, SMS, web chat, or any other channel your AI Employees support. The same ServiceTitan data will be available regardless of how customers choose to interact with your business.
 
-For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](/ai/ai-workforce/empower-your-ai-employee-custom-capabilities).
+ For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
 </details>
 
 <details>
@@ -863,13 +863,13 @@ Emergency services require special handling to ensure rapid response:
 
 Monitor customer service patterns through several methods:
 
-1. **Conversation Analytics:** Review the [Conversations](/conversations/conversations_overview) tab to identify frequently requested services
+ 1. **Conversation Analytics:** Review the [Conversations](../../conversations/) tab to identify frequently requested services
 
 2. **ServiceTitan Reporting:** Use ServiceTitan's built-in reporting to track jobs created through AI interactions by tagging them appropriately
 
 3. **Custom Capability Analytics:** Monitor which API calls are made most frequently through the "Explanation" feature
 
-4. **Business Intelligence:** Set up [automations](/docs/automations/app_settings_automations) to log AI-generated appointments and analyze trends
+ 4. **Business Intelligence:** Set up [automations](../../automations/index.md) to log AI-generated appointments and analyze trends
 
 This data can inform staffing, inventory, and service offerings based on customer demand patterns.
 </details>
@@ -932,8 +932,8 @@ You can create follow-up workflows using ServiceTitan webhooks and Business App 
 - Review request campaigns for positive experiences
 
 **Implementation Options:**
-1. Use ServiceTitan webhooks to trigger Business App [automations](/docs/automations/app_settings_automations)
-2. Set up [Zapier](/docs/automations/zapier) integrations between ServiceTitan and Business App
+ 1. Use ServiceTitan webhooks to trigger Business App [automations](../../automations/index.md)
+ 2. Set up [Zapier](../../automations/zapier.md) integrations between ServiceTitan and Business App
 3. Create scheduled follow-up tasks in your AI workflow
 
 **Example Workflow:**

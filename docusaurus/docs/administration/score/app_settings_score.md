@@ -1,5 +1,6 @@
 ---
 title: Contact Score Overview
+sidebar_label: Score
 ---
 ## What is Contact Scoring?
 Contact Scoring allows you to assign a numeric score to each contact in your app based on their activity or value to your business. These scores help you track client engagement, prioritize follow-ups, and segment contacts for marketing and service efforts.
@@ -36,14 +37,23 @@ This field is editable by anyone with permission to manage contact records.
 
 ## Frequently Asked Questions (FAQs)
 
-**Can I use contact score in automations or integrations?**  
+<details>
+<summary>Can I use contact score in automations or integrations?</summary>
+
 Yes. The `Score` field can be read or updated via integration tools and APIs.
 
-**What kind of values can I use for scoring?**  
+</details>
+
+<details>
+<summary>What kind of values can I use for scoring?</summary>
+
 Scores must be numeric. You can define your own range (e.g., 1–10, 0–100) and scoring rules.
 
-**Is the score visible to contacts?**  
+</details>
+
+<details>
+<summary>Is the score visible to contacts?</summary>
+
 No. The contact score is internal to app users only.
 
-**Can I use more than one type of score?**  
-Yes. You can create custom fields for additional scoring types—such as service fit, likelihood to renew, or satisfaction.
+</details>

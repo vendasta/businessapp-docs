@@ -2,7 +2,7 @@
   "label": "Conversations",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Conversations is a lead capture and customer communication tool inside Business App. A business can centralize customer messaging with integrations to Facebook, email, and more – and upgrade to get SMS, and an AI-powered web chat widget."
+    "type": "doc",
+    "id": "conversations/index"
   }
 }

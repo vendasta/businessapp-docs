@@ -47,8 +47,8 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
 - **Book Appointments**  
   Connect your calendar to let the AI help customers schedule meetings. It will offer available time slots and collect all necessary booking details automatically. 
 
-- **Custom Capabilities**  
-  Expand your AI Chat Receptionist’s skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](/ai/ai-workforce/empower-your-ai-employee-custom-capabilities) in depth.
+ - **Custom Capabilities**  
+   Expand your AI Chat Receptionist’s skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../empower-your-ai-employee-custom-capabilities.md) in depth.
 
 ### Step 3: Add Purpose and Business Knowledge to the AI Chat Receptionist
 
@@ -56,7 +56,7 @@ To respond accurately to general inquiries, your AI Chat Receptionist needs cont
 
 - **Knowledge**: This includes detailed business information, such as FAQs, service descriptions, and policies, that the AI uses to answer specific questions. Your **Business Profile** and information for you homepage is included by default.
 
-For a complete guide on providing your AI Employees with Knowledge, see the [Purpose and Knowledge section in the AI Workforce Overview](/ai/ai-workforce/ai_workforce_overview#training-your-ai-employees-purpose-and-knowledge).
+ For a complete guide on providing your AI Employees with Knowledge, see the [Knowledge Sources section in the AI Workforce Overview](../ai_workforce_overview.md#knowledge-sources).
 
 ## Test and Monitor Your AI Chat Receptionist
 

@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+  "label": "AI Workforce",
+  "position": 8
+}
+=======
     "label": "AI Workforce",
     "position": 8,
     "link": {
@@ -6,3 +11,4 @@
       "id": "ai/ai-workforce/ai_workforce_overview"
     }
   }
+>>>>>>> origin/master

@@ -25,7 +25,7 @@ This report consolidates your data into one view, so you can make smart business
 ## Table of Contents
 - [What is Included with Executive Report](#whats-included-with-executive-report)
 - [When Is New Data Updated in the Executive Report](#when-is-new-data-updated-in-the-executive-report)
-- [Viewing and Navigating the Report](#viewing-and-navigating-the-report)
+- [How to View and Navigate the Report](#how-to-view-and-navigate-the-report)
 - [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
 
 ## What’s Included with Executive Report

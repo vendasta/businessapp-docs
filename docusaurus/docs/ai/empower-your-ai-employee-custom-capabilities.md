@@ -1,6 +1,7 @@
 ---
 title: Creating Custom Capabilities for your AI Employees
-sidebar_position: 3
+sidebar_label:  AI Capabilities
+sidebar_position: 2
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';
@@ -51,7 +52,7 @@ Your AI Employee can use Custom Capabilities whenever it interacts with customer
 2. Select an existing AI Employee and click **Configure**. 
 3. Access the **Custom Capabilities** section and click **Add a capability**.
 4. Name the capability clearly (e.g., `CheckInventory`) and add a short description to help your AI Employee know when to use their capabilities.
-5. Add the **Prompt**. For tips and best practices, see [Writing a Good Prompt](#writing-a-good-prompt).
+5. Add the **Prompt**. For tips and best practices, see [Writing a Good Capability Prompt](#writing-a-good-capability-prompt).
    
 :::tip
 You may want to enter placeholder text like "TBD" and refine it after defining the **Tools**.
