@@ -19,7 +19,7 @@ With Conversations AI, your AI Receptionist can:
 - Answer incoming phone calls for you (Premium edition), capture leads, and even book appointments
 - Handle routine questions pre and post sale
 
-To learn more about how the AI Receptionist works and how to get the most out of it, see [AI Chat Receptionist Overview](../ai/ai-workforce/ai-chat-receptionist/index.md).
+To learn more about how the AI Receptionist works and how to get the most out of it, see [AI Chat Receptionist Overview](/ai/ai-workforce/ai-chat-receptionist).
 
 ![](./img/conversations.png)
 
@@ -54,7 +54,7 @@ Before you can send and receive messages with Conversations, you need to connect
 - [Set up AI Web Chat for Conversations](./conversations-ai-web-chat-overview.md)
 - [Set up WhatsApp for Conversations](./conversations-whatsapp-overview.md)
 - [Set up SMS for Conversations](./conversations-send-receive-sms.md)
-- [Set up phone calls for Conversations](../ai/ai-workforce/ai-voice-receptionist.md)
+- [Set up phone calls for Conversations](/ai/ai-workforce/ai-voice-receptionist)
 
 :::tip
 You don't have to do everything at once! Start with the channels you use most and add more when you're ready. All of your available connections will be listed under `Administration > Conversations settings`.
@@ -95,7 +95,7 @@ Conversations does not directly integrate with external CRMs or messaging platfo
 
 Business App Automations let you create custom workflows using triggers (like a `Message Received`) and actions (such as `Send Email` or `Send SMS`). This helps you automate responses and actions based on specific rules and criteria.
 
-You can also assign an AI Receptionist to automatically respond on certain channels for you. See [AI Workforce Overview](../ai/ai-workforce/ai_workforce_overview.md) for more details.
+You can also assign an AI Receptionist to automatically respond on certain channels for you. See [AI Workforce Overview](/ai/ai-workforce/ai_workforce_overview) for more details.
 
 </details>
 

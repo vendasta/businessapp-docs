@@ -315,11 +315,11 @@ Shopify returned a `429 Too Many Requests` error, indicating you are hitting the
 <details>
 <summary>Can I use this Shopify integration with other AI Employees besides the Chat Receptionist?</summary>
 
-Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](./ai-voice-receptionist.md). 
+Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](/docs/ai/ai-workforce/ai-voice-receptionist). 
 
 This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business. 
 
-For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
+ For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
 </details>
 
 <details>
@@ -327,7 +327,7 @@ For more details on setting up Custom Capabilities across different AI Employees
 
 While this guide is specific to Shopify, you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
 
-The [Custom Capabilities framework](../empower-your-ai-employee-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
+ The [Custom Capabilities framework](../empower-your-ai-employee-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
 </details>
 
 ### AI & Knowledge Questions
@@ -335,18 +335,18 @@ The [Custom Capabilities framework](../empower-your-ai-employee-custom-capabilit
 <details>
 <summary>How does the Shopify integration work with my AI's Knowledge Base?</summary>
 
-The Shopify integration provides real-time product data through API calls, while your [Knowledge Base](../knowledge-base.md) contains static business information. These work together perfectly:
+The Shopify integration provides real-time product data through API calls, while your [Knowledge Base](/docs/ai/knowledge-base) contains static business information. These work together perfectly:
 
 **Shopify API provides:** Live product availability, current prices, product descriptions  
 **Knowledge Base should include:** Shipping policies, return information, size guides, care instructions, warranty details
 
-Your AI will use the Shopify API to answer "Do you have this product?" and the Knowledge Base to answer "What's your return policy?" For best results, ensure your [Knowledge Sources](./ai_workforce_overview.md#knowledge-sources) include comprehensive product and policy information to complement the real-time data.
+Your AI will use the Shopify API to answer "Do you have this product?" and the Knowledge Base to answer "What's your return policy?" For best results, ensure your [Knowledge Sources](/docs/ai/ai-workforce/ai_workforce_overview#knowledge-sources) include comprehensive product and policy information to complement the real-time data.
 </details>
 
 <details>
 <summary>What if customers ask about Shopify-related questions the API can't answer?</summary>
 
-Great question! The Shopify API provides product and inventory data, but customers often need additional information. Add these topics to your [Knowledge Base](../knowledge-base.md):
+Great question! The Shopify API provides product and inventory data, but customers often need additional information. Add these topics to your [Knowledge Base](/docs/ai/knowledge-base):
 
 - Shipping costs and delivery times
 - Return and exchange policies  
@@ -366,14 +366,14 @@ This ensures your AI can provide complete, helpful answers by combining real-tim
 
 Yes! Custom Capabilities work across all communication channels supported by your AI Employees. Customers can ask about products through:
 
-- [Web chat](../../conversations/conversations-ai-web-chat-overview.md)
-- [SMS messaging](../../conversations/conversations-send-receive-sms.md) (Conversations Pro required)
-- [WhatsApp](../../conversations/conversations-whatsapp-overview.md)
-- Phone calls (with [AI Voice Receptionist](./ai-voice-receptionist.md))
-- [Facebook Messenger](../../conversations/conversations-setup-facebook-messenger.md)
-- [Instagram DMs](../../conversations/conversations-setup-instagram.md)
+- [Web chat](/conversations/conversations-ai-web-chat-overview)
+- [SMS messaging](/conversations/conversations-send-receive-sms) (Conversations Pro required)
+- [WhatsApp](/conversations/conversations-whatsapp-overview)
+- Phone calls (with [AI Voice Receptionist](/ai/ai-workforce/ai-voice-receptionist))
+- [Facebook Messenger](/conversations/conversations-setup-facebook-messenger)
+- [Instagram DMs](/conversations/conversations-setup-instagram)
 
-The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
+ The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
 </details>
 
 <details>
@@ -385,7 +385,7 @@ Your AI adapts product recommendations to each communication channel:
 **SMS/WhatsApp:** Simplified text format with product names, prices, and shortened URLs  
 **Voice Calls:** Spoken product names, prices, and descriptions 
 
-Your AI automatically optimizes the presentation for each channel. For more details on channel setup, see [Conversations Overview](../../conversations/).
+ Your AI automatically optimizes the presentation for each channel. For more details on channel setup, see [Conversations Overview](../../conversations/).
 </details>
 
 ### Advanced Configuration Questions
@@ -414,7 +414,7 @@ Learn more about structuring multiple tools in [Creating Custom Capabilities for
 
 You can monitor product inquiry patterns through several methods:
 
-1. **Conversation Reviews:** Check the [Conversations](../../conversations/) tab to see which products customers mention most frequently
+ 1. **Conversation Reviews:** Check the [Conversations](../../conversations/) tab to see which products customers mention most frequently
 
 2. **AI Explanation Feature:** Click "Explanation" on AI responses to see exactly which tools were called and what products were searched
 
@@ -521,7 +521,7 @@ Business App's Custom Capabilities are designed to be easily updated as external
 
 Absolutely! Use these testing methods:
 
-**AI Employee Testing:** Use the "Try it" button in [AI Workforce](./ai_workforce_overview.md) to test your AI Employee with sample product questions
+**AI Employee Testing:** Use the "Try it" button in [AI Workforce](/docs/ai/ai-workforce/ai_workforce_overview) to test your AI Employee with sample product questions
 
 **Tool Testing:** Review the "Explanation" feature in conversations to see raw API calls and responses
 

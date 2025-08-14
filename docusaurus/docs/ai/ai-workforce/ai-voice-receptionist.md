@@ -43,7 +43,11 @@ Customers can keep calling your existing business number and your telephone prov
    - Forwarding calls automatically after-hours
 
 :::tip
+<<<<<<< HEAD
 For more help forwarding calls, see [Call Forwarding Setup in Conversations](../../conversations/conversations-setup-phone-calls.md).
+=======
+For more help forwarding calls, see [Call Forwarding Setup in Conversations](/conversations/conversations-setup-phone-calls).
+>>>>>>> origin/master
 :::
 
 #### Handling calls from your AI Voice Receptionist
@@ -63,7 +67,7 @@ Once a call reaches your AI Voice Receptionist, there are a number of potential 
    A text message is sent to callers, prompting them to leave a voicemail or schedule a callback.
 
 :::note
-While this guide will cover accessing these other options, it will focus on setting up the AI Voice Receptionist answer calls. For more detail on using the other options, see [Conversations Settings](/administration/conversations-settings.md).
+While this guide will cover accessing these other options, it will focus on setting up the AI Voice Receptionist answer calls. For more detail on using the other options, see [Conversations Settings](/administration/conversations-settings).
 :::
 
 ### Prerequisites for AI Voice Receptionist Setup
@@ -72,7 +76,7 @@ Before you get begin, make sure you've completed these prequisites so your AI Vo
 
 | What you need                     | Where to find it              | Notes                                                |
 | --------------------------------- | ----------------------------- | ---------------------------------------------------- |
-| AI Voice Receptionist access      | <AISparkleIcon /> `AI` > `AI Workforce`             | See the [Conversations AI Overview](./ai_workforce_overview.md) for edition and region availability.           |
+| AI Voice Receptionist access      | <AISparkleIcon /> `AI` > `AI Workforce`             | See the [Conversations AI Overview](/ai/ai-workforce/ai_workforce_overview) for edition and region availability.           |
 | Conversations AI phone number        | <SettingsIcon /> `Adminsitration` > `Conversations Settings` | You will need this number for call-forwarding and publishing. This number is assigned after activating an eligible edition of Conversations AI.                |
 | *(Optional)* Calendar connection    | <CRMIcon /> `CRM` > `My Meetings` > <SettingsIcon /> `Settings` > `Defaults` > `Connect Calendar`   | Let's your AI Voice Receptionist book meetings and appointments on the connected calendar.                          |
 
@@ -106,7 +110,7 @@ You can:
 - Add new custom capabilities to expand their skills.
 
 :::info Learn more about Capabilities
-For more detailed information on Capabilities, see the [AI Workforce Overview](./ai_workforce_overview.md#capabilities).
+For more detailed information on Capabilities, see the [AI Workforce Overview](/ai/ai-workforce/ai_workforce_overview#capabilities).
 :::
 
 #### Default voice lead capture for AI Voice Receptionist
@@ -137,7 +141,11 @@ Some examples of instructions you might want to add include:
 You can extend your AI Voice Receptionist's capabilities by building your own custom capabilities. By adding your own "Tools" to custom capabilities, you can give your AI Voice Receptionist the ability to perform tasks that are specific to your business and build connections with other software you use.
 
 :::info Learn more about custom capabilities
+<<<<<<< HEAD
 For more details on creating custom capabilities, see [Empower Your AI Employee with Custom Capabilities](../empower-your-ai-employee-custom-capabilities.md).
+=======
+For more details on creating custom capabilities, see [Empower Your AI Employee with Custom Capabilities](/ai/ai-workforce/empower-your-ai-employee-custom-capabilities).
+>>>>>>> origin/master
 :::
 
 
@@ -154,7 +162,11 @@ Any relevant information available on your website's homepage that is written in
 If you need to add more detailed information for your AI Receptionist, you can use the `Add knowledge` bar to `+ Add new knowledge`. From here you can add text, website, or file information to your Knowledge Base and immediately have it available to your AI Voice Receptionist.
 
 :::tip Learn more about Knowledge Sources
+<<<<<<< HEAD
 For more details on knowledge sources and adding them to the Knowledge Base, see the [Knowledge Base Overview](../knowledge-base.md).
+=======
+For more details on knowledge sources and adding them to the Knowledge Base, see the [Knowledge Base Overview](/ai/knowledge-base).
+>>>>>>> origin/master
 :::
 ---
 
@@ -193,7 +205,7 @@ If the AI Voice Receptionist is unable to capture a caller’s contact informati
 <summary>What do I need before setting up my AI Voice Receptionist?</summary>
 
 Before getting started, make sure you have:
-- **AI Voice Receptionist access** through an eligible edition (see [AI Workforce Overview](./ai_workforce_overview.md) for edition and region availability)
+- **AI Voice Receptionist access** through an eligible edition (see [AI Workforce Overview](/ai/ai-workforce/ai_workforce_overview) for edition and region availability)
 - **Conversations AI phone number** assigned after activating Pro or Premium (found in Administration > Conversations Settings)
 - **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.md))
 - *(Optional)* **Calendar connection** for appointment booking (set up in CRM > My Meetings > Settings)
@@ -209,7 +221,11 @@ There are two main ways to route calls to your AI Voice Receptionist:
 1. **Direct calls to your Conversations number** - Calls made directly to your assigned Conversations phone number are automatically sent to your AI Receptionist
 2. **Forward calls from your business line** - Set up call forwarding from your existing business number to your Conversations number so customers can keep calling your familiar number
 
+<<<<<<< HEAD
 For detailed call forwarding setup instructions, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md#call-forwarding-setup-in-conversations-optional).
+=======
+For detailed call forwarding setup instructions, see [Conversations Phone Call Setup](/conversations/conversations-setup-phone-calls#call-forwarding-setup-in-conversations-optional).
+>>>>>>> origin/master
 </details>
 
 <details>
@@ -217,7 +233,11 @@ For detailed call forwarding setup instructions, see [Conversations Phone Call S
 
 Yes! You can set up call forwarding from your existing business number to your assigned Conversations phone number. This allows customers to keep calling your familiar business line while having your AI Voice Receptionist handle the calls. 
 
+<<<<<<< HEAD
 Most mobile carriers support simple star-codes for call forwarding. Check your [Conversations Settings](../../administration/conversations-settings.md) for carrier-specific activation codes and step-by-step instructions.
+=======
+Most mobile carriers support simple star-codes for call forwarding. Check your [Conversations Settings](/administration/conversations-settings) for carrier-specific activation codes and step-by-step instructions.
+>>>>>>> origin/master
 </details>
 
 ### Configuration and Customization
@@ -255,7 +275,11 @@ To add more detailed information:
 2. Click "Add knowledge" to add text, website pages, or file uploads
 3. Organize information by topic for better AI understanding
 
+<<<<<<< HEAD
 For more details, see the [Knowledge Base Overview](../knowledge-base.md).
+=======
+For more details, see the [Knowledge Base Overview](/ai/knowledge-base).
+>>>>>>> origin/master
 </details>
 
 <details>
@@ -263,7 +287,11 @@ For more details, see the [Knowledge Base Overview](../knowledge-base.md).
 
 Absolutely! You can extend your AI Voice Receptionist's capabilities by creating custom tools and integrations specific to your business needs. This allows your AI to perform tasks like checking inventory, scheduling specific services, or connecting with other software you use.
 
+<<<<<<< HEAD
 For detailed guidance on creating custom capabilities, see [Empower Your AI Employee with Custom Capabilities](../empower-your-ai-employee-custom-capabilities.md).
+=======
+For detailed guidance on creating custom capabilities, see [Empower Your AI Employee with Custom Capabilities](/ai/ai-workforce/empower-your-ai-employee-custom-capabilities).
+>>>>>>> origin/master
 </details>
 
 ### Operations and Performance
@@ -317,7 +345,11 @@ If your AI Voice Receptionist isn't answering calls, verify:
 3. **AI configuration** - Ensure your Voice Receptionist is configured and the "Phone call: Answer with Voice AI" setting is enabled
 4. **Call routing** - Check that calls are being routed to your Conversations number (not another destination)
 
+<<<<<<< HEAD
 For additional troubleshooting, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md#troubleshooting-phone-call-setup-issues).
+=======
+For additional troubleshooting, see [Conversations Phone Call Setup](/conversations/conversations-setup-phone-calls#troubleshooting-phone-call-setup-issues).
+>>>>>>> origin/master
 </details>
 
 <details>
@@ -340,5 +372,5 @@ AI Voice Receptionist is currently available for businesses located in the **Uni
 - Business address in a supported region
 - Phone number assignment through Conversations
 
-For the most up-to-date region availability, see the [AI Workforce Overview](./ai_workforce_overview.md).
+For the most up-to-date region availability, see the [AI Workforce Overview](/ai/ai-workforce/ai_workforce_overview).
 </details>
