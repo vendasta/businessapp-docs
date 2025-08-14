@@ -1,6 +1,10 @@
 {
   "label": "Connections",
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "administration/connections/index"
+  }
 }
 
 

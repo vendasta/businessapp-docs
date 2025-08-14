@@ -45,3 +45,5 @@ Spam traps are email addresses created by email service providers to catch spamm
 ## Send emails that your contacts love
 
 When your contacts open and click on your emails, it shows you're delivering content they find valuable. On the flip side, spam complaints, high bounce rates, and unsubscribes can harm your reputation as a sender. By monitoring your email performance, you can discover which content appeals to your audience and decide which contacts to focus on in future campaigns.
+
+

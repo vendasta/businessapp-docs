@@ -1,5 +1,6 @@
 ---
 title: Business Profile Overview
+sidebar_label: Business Profile
 sidebar_position: 2
 ---
 ## What is my Business Profile?

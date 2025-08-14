@@ -1,10 +1,4 @@
 {
-  "label": "CRM Fields",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "administration/crm-objects/app_settings_crm_fields"
-  }
+  "label": "CRM Objects",
+  "collapsed": true
 }
-
-

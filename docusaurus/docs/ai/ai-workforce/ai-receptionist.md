@@ -56,7 +56,7 @@ To respond accurately to general inquiries, your AI Chat Receptionist needs cont
 
 - **Knowledge**: This includes detailed business information, such as FAQs, service descriptions, and policies, that the AI uses to answer specific questions. Your **Business Profile** and information for you homepage is included by default.
 
-For a complete guide on providing your AI Employees with Knowledge, see the [Purpose and Knowledge section in the AI Workforce Overview](./ai_workforce_overview.md#training-your-ai-employees-purpose-and-knowledge).
+For a complete guide on providing your AI Employees with Knowledge, see the [Knowledge Sources section in the AI Workforce Overview](./ai_workforce_overview.md#knowledge-sources).
 
 ## Test and Monitor Your AI Chat Receptionist
 

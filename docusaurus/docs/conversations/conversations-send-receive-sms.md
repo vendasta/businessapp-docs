@@ -10,7 +10,7 @@ You can use Conversations to send and receive SMS and MMS messages with customer
 Before you can send SMS messages, you'll need to complete the registration and configuration process.
 
 :::info Setup Required
-For detailed registration instructions and configuration steps, see [SMS Configuration](../administration/settings/sms_configuration.md).
+For detailed registration instructions and configuration steps, see [SMS Configuration](../administration/sms_configuration.md).
 :::
 
 **Quick Overview:**

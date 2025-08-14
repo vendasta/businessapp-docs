@@ -19,7 +19,7 @@ When your tools are connected, your app can use real data to show what's working
 Connecting accounts also reduces manual work by automatically syncing data between systems, improving the accuracy and efficiency of your daily operations.
 
 ## Table of Contents
-- [What You Can Connect](#what-you-can-connect)
+- [What Can I Manage in Connections](#what-can-i-manage-in-connections)
 - [How to Browse and Add New Integrations](#how-to-browse-and-add-new-integrations)
 - [How to Manage or Disconnect Integrations](#how-to-manage-or-disconnect-integrations)
 - [What Data Gets Synced](#what-data-gets-synced)

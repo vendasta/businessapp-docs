@@ -83,7 +83,7 @@ Use the values below (replacing any placeholders) to create your version of this
 | `X-Shopify-Storefront-Access-Token` | `YOUR_STOREFRONT_ACCESS_TOKEN` | ✓ |
 | `Content-Type` | `application/json` | ✓ |
 
-> For help getting your storefront access token, you can follow the [Prerequisites & Setup](/docs/ai/ai-workforce/shopify-capability-example#prerequisites-setup) section in this guide.
+> For help getting your storefront access token, you can follow the [Prerequisites & Setup](#prerequisites--setup) section in this guide.
 
 #### Body parameters
 | Name | Location | Type | Description |
