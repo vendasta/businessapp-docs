@@ -2,7 +2,7 @@
     "label": "AI Workforce",
     "position": 8,
     "link": {
-      "type": "generated-index",
-      "description": "Explore all AI Employees available in the AI Workforce."
+      "type": "doc",
+      "id": "ai/ai-workforce/ai_workforce_overview"
     }
   }

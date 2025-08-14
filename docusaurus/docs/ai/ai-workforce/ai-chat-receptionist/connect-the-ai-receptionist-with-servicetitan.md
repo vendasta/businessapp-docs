@@ -734,11 +734,11 @@ The API returned a `404 Not Found` error, meaning the requested resource doesn't
 <details>
 <summary>Can I use this ServiceTitan integration with other AI Employees besides the Chat Receptionist?</summary>
 
-Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capabilities and tools you create here work with any AI Employee, including your [AI Voice Receptionist](./ai-voice-receptionist.md).
+Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capabilities and tools you create here work with any AI Employee, including your [AI Voice Receptionist](/docs/ai/ai-workforce/ai-voice-receptionist).
 
 This means customers can get ServiceTitan information and schedule appointments through phone calls, SMS, web chat, or any other channel your AI Employees support. The same ServiceTitan data will be available regardless of how customers choose to interact with your business.
 
-For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md).
+For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](/ai/ai-workforce/empower-your-ai-employee-custom-capabilities).
 </details>
 
 <details>
@@ -764,18 +764,18 @@ You can create additional Custom Capabilities for features like inventory lookup
 <details>
 <summary>How does the ServiceTitan integration work with my AI's Knowledge Base?</summary>
 
-The ServiceTitan integration provides real-time operational data through API calls, while your [Knowledge Base](../knowledge-base.md) contains static business information. These work together as follows:
+The ServiceTitan integration provides real-time operational data through API calls, while your [Knowledge Base](/docs/ai/knowledge-base) contains static business information. These work together as follows:
 
 **ServiceTitan API provides:** Live job status, customer history, technician schedules, real-time availability  
 **Knowledge Base should include:** Service policies, pricing information, service area details, company procedures, emergency protocols
 
-Your AI will use the ServiceTitan API to answer "When is my next appointment?" and the Knowledge Base to answer "What's your service area?" For best results, ensure your [Knowledge Sources](./ai_workforce_overview.md#knowledge-sources) include comprehensive business policies and procedures to complement the real-time operational data.
+Your AI will use the ServiceTitan API to answer "When is my next appointment?" and the Knowledge Base to answer "What's your service area?" For best results, ensure your [Knowledge Sources](/ai/ai-workforce/ai_workforce_overview#knowledge-sources) include comprehensive business policies and procedures to complement the real-time operational data.
 </details>
 
 <details>
 <summary>What if customers ask about ServiceTitan-related information the API can't provide?</summary>
 
-Great question! The ServiceTitan API provides operational and customer data, but customers often need additional business information. Add these topics to your [Knowledge Base](../knowledge-base.md):
+Great question! The ServiceTitan API provides operational and customer data, but customers often need additional business information. Add these topics to your [Knowledge Base](/docs/ai/knowledge-base):
 
 - Service area boundaries and travel charges
 - Emergency service policies and after-hours rates
@@ -863,13 +863,13 @@ Emergency services require special handling to ensure rapid response:
 
 Monitor customer service patterns through several methods:
 
-1. **Conversation Analytics:** Review the [Conversations](../../conversations/conversations_overview.md) tab to identify frequently requested services
+1. **Conversation Analytics:** Review the [Conversations](/conversations/conversations_overview) tab to identify frequently requested services
 
 2. **ServiceTitan Reporting:** Use ServiceTitan's built-in reporting to track jobs created through AI interactions by tagging them appropriately
 
 3. **Custom Capability Analytics:** Monitor which API calls are made most frequently through the "Explanation" feature
 
-4. **Business Intelligence:** Set up [automations](../../automations/app_settings_automations.md) to log AI-generated appointments and analyze trends
+4. **Business Intelligence:** Set up [automations](/docs/automations/app_settings_automations) to log AI-generated appointments and analyze trends
 
 This data can inform staffing, inventory, and service offerings based on customer demand patterns.
 </details>
@@ -932,8 +932,8 @@ You can create follow-up workflows using ServiceTitan webhooks and Business App 
 - Review request campaigns for positive experiences
 
 **Implementation Options:**
-1. Use ServiceTitan webhooks to trigger Business App [automations](../../automations/app_settings_automations.md)
-2. Set up [Zapier](../../automations/zapier.md) integrations between ServiceTitan and Business App
+1. Use ServiceTitan webhooks to trigger Business App [automations](/docs/automations/app_settings_automations)
+2. Set up [Zapier](/docs/automations/zapier) integrations between ServiceTitan and Business App
 3. Create scheduled follow-up tasks in your AI workflow
 
 **Example Workflow:**
