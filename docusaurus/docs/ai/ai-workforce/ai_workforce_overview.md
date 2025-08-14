@@ -1,17 +1,16 @@
 ---
 title: AI Workforce Overview
-sidebar_position: 1
 ---
 AI Employees are digital team members you can configure to automate conversations, answer customer questions, capture leads, book appointments, and more. Each works well out of the box, but can be tailored to fit your business needs.
 
 All AI Employees share a common structure, with configurable elements like their name, purpose, communication channels, capabilities, and knowledge sources. Specific roles (like Chat Receptionist or Voice Receptionist) may include additional options, but the basics are always the same.
 
 See these guides for step-by-step setup or details on specific AI Employees:
-- [Set up the AI Chat Receptionist](./ai-receptionist.md)
+- [Set up the AI Chat Receptionist](./ai-chat-receptionist/index.md)
 - [Set up the AI Voice Receptionist](./ai-voice-receptionist.md)
 
 For advanced setup:
-- [Creating Custom Capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md)
+- [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md)
 
 If you’re just getting started, review the sections below for an overview of the main elements you’ll configure for any AI Employee.
 
@@ -70,7 +69,7 @@ Review the available capabilities for your chosen AI Employee.
 - **Turn on** the capabilities that are most important for your workflow and customer experience.
 - **Add or adjust capabilities** as your business needs evolve.
 - Use the additional instructions/goals field to give extra context or specific directions.
-- **Create your own custom capabilities:** You can design custom tasks for your AI Employee to perform, using the Custom Capabilities builder. This is great for advanced workflows or unique business needs. [Learn more ›](./empower-your-ai-employee-custom-capabilities.md)
+- **Create your own custom capabilities:** You can design custom tasks for your AI Employee to perform, using the Custom Capabilities builder. This is great for advanced workflows or unique business needs. [Learn more ›](../empower-your-ai-employee-custom-capabilities.md)
 
 _Examples of capabilities you might enable:_
 - Capture lead information (e.g., name, email, phone)

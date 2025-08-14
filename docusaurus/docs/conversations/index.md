@@ -19,7 +19,7 @@ With Conversations AI, your AI Receptionist can:
 - Answer incoming phone calls for you (Premium edition), capture leads, and even book appointments
 - Handle routine questions pre and post sale
 
-To learn more about how the AI Receptionist works and how to get the most out of it, see [AI Receptionist Overview](../ai/ai-workforce/ai-receptionist.md).
+To learn more about how the AI Receptionist works and how to get the most out of it, see [AI Chat Receptionist Overview](../ai/ai-workforce/ai-chat-receptionist/index.md).
 
 ![](./img/conversations.png)
 

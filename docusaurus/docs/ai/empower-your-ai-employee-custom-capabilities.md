@@ -1,6 +1,7 @@
 ---
 title: Creating Custom Capabilities for your AI Employees
-sidebar_position: 3
+sidebar_label:  AI Capabilities
+sidebar_position: 2
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';

@@ -319,7 +319,7 @@ Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Cap
 
 This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business. 
 
-For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md).
+For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
 </details>
 
 <details>
@@ -327,7 +327,7 @@ For more details on setting up Custom Capabilities across different AI Employees
 
 While this guide is specific to Shopify, you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
 
-The [Custom Capabilities framework](./empower-your-ai-employee-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
+The [Custom Capabilities framework](../empower-your-ai-employee-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
 </details>
 
 ### AI & Knowledge Questions
@@ -406,7 +406,7 @@ Absolutely! You can create multiple tools within the same Custom Capability or s
 - Inventory lookup for existing customers
 - New arrivals showcase for marketing
 
-Learn more about structuring multiple tools in [Creating Custom Capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md).
+Learn more about structuring multiple tools in [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
 </details>
 
 <details>
@@ -451,7 +451,7 @@ Yes! You can customize out-of-stock responses in your Custom Capability prompt. 
 **Restock notifications:** "I can have our team notify you when it's back in stock."  
 **Substitute suggestions:** "Based on your interest, you might also like [alternative products]."
 
-You can also modify the tool logic to suggest related products or connect to your inventory system for restock dates. See [Creating Custom Capabilities](./empower-your-ai-employee-custom-capabilities.md) for prompt customization best practices.
+You can also modify the tool logic to suggest related products or connect to your inventory system for restock dates. See [Creating Custom Capabilities](../empower-your-ai-employee-custom-capabilities.md) for prompt customization best practices.
 </details>
 
 <details>
@@ -509,7 +509,7 @@ Yes—update the GraphQL body in the tool definition to include any product fiel
 
 Shopify's API evolves over time, so monitor their [API documentation](https://shopify.dev/docs/api/storefront) for changes. If query formats change:
 
-1. Update the tool definition in your [Custom Capability](./empower-your-ai-employee-custom-capabilities.md)
+1. Update the tool definition in your [Custom Capability](../empower-your-ai-employee-custom-capabilities.md)
 2. Test the new query format using the troubleshooting tools mentioned above
 3. Adjust your AI prompt if the response structure changes
 
@@ -525,7 +525,7 @@ Absolutely! Use these testing methods:
 
 **Tool Testing:** Review the "Explanation" feature in conversations to see raw API calls and responses
 
-**Channel Testing:** Test across different channels using the methods described in [AI Chat Receptionist setup](./ai-receptionist.md#test-and-monitor-your-ai-chat-receptionist) and [AI Voice Receptionist testing](./ai-voice-receptionist.md#test-and-monitor-your-ai-voice-receptionist)
+**Channel Testing:** Test across different channels using the methods described in [AI Chat Receptionist setup](./index.md#test-and-monitor-your-ai-chat-receptionist) and [AI Voice Receptionist testing](../ai-voice-receptionist.md#test-and-monitor-your-ai-voice-receptionist)
 
 Always test thoroughly before enabling the capability for customer-facing interactions.
 </details>

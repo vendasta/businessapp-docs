@@ -738,7 +738,7 @@ Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Cap
 
 This means customers can get ServiceTitan information and schedule appointments through phone calls, SMS, web chat, or any other channel your AI Employees support. The same ServiceTitan data will be available regardless of how customers choose to interact with your business.
 
-For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](./empower-your-ai-employee-custom-capabilities.md).
+For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
 </details>
 
 <details>
