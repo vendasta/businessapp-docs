@@ -1,14 +1,8 @@
 {
-<<<<<<< HEAD
   "label": "AI Workforce",
-  "position": 8
-}
-=======
-    "label": "AI Workforce",
-    "position": 8,
-    "link": {
-      "type": "doc",
-      "id": "ai/ai-workforce/ai_workforce_overview"
-    }
+  "position": 1,
+  "link": {
+    "type": "doc",
+    "id": "ai/ai-workforce/ai_workforce_overview"
   }
->>>>>>> origin/master
+}

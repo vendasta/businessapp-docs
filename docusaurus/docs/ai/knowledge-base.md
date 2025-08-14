@@ -1,12 +1,6 @@
 ---
 title: Knowledge Base Overview
-<<<<<<< HEAD
-sidebar_label: Knowledge Base
-sidebar_position: 3
-=======
 sidebar_position: 2
-sidebar_label: Knowledge Base
->>>>>>> origin/master
 ---
 
 The Knowledge Base is where you centralize all the information your AI Employees need to provide accurate, helpful responses to your customers. Think of it as the shared library that all your AI team members can reference when answering questions about your business.
