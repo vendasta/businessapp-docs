@@ -1,149 +1,247 @@
 ---
-title: Opportunities
-sidebar_position: 5
-description: Track opportunities from lead to won using table or board views, filters, and custom pipelines.
-tags: [sales-pipeline, crm, opportunities]
-keywords: [sales pipeline, crm, board view, table view, manage stages, filter opportunities]
+title: Opportunities – Getting Started
+sidebar_label: Opportunities
+description: Track and manage potential revenue using opportunities in your sales pipeline.
+tags: [crm, opportunities, pipeline, sales]
+keywords: [opportunity, sales pipeline, create opportunity, edit opportunity, close opportunity]
 ---
 
-Use Opportunities to track deals from the first contact through to a won outcome. View your work in either a table or a board, apply filters and sorting, and customize pipelines and stages to match your process.
+## What is Opportunities?
 
-## Why are Opportunities important?
+Opportunities help you track potential revenue throughout your sales process. You can link opportunities to CRM records, including contacts and companies, to keep information organized and up to date.
 
-Managing Opportunities gives you a clear view of all current deals and their progress.
-It helps you:
+## Why is Opportunities important?
 
-- Monitor sales activity
-- Organize and prioritize deals
-- Identify bottlenecks in your process
-- Forecast revenue more accurately
+Managing opportunities lets you visualize, organize, and act on deals across different pipeline stages. It helps you monitor progress, forecast revenue, and ensure timely follow-ups with associated contacts or companies.
 
 ## What’s Included with Opportunities?
 
-- **Table View** for data-focused management
-- **Board View** for drag-and-drop visual workflow
-- **Filters and Sorting** to refine results
-- **Pipeline and Stage Management** for customization
-- **CSV Export** for offline analysis
+- **Pipeline View** to manage opportunities by stage
+- **List View** with sortable and filterable data
+- **Opportunity Profile Page** with a detailed timeline and linked CRM records
+- **Manual and Automated Creation** of opportunities
+- **Editable Fields** in both profile and table views
+- **Flexible Closing Options** for won or lost deals
 
-## How to Use Opportunities
+## How to Access Opportunities
+1. Go to `CRM` → `Opportunities`.
+2. You’ll land on the Pipeline View.
 
-### Table View
+## How to Set Up and Use Opportunities
 
-1. Go to `CRM` > `Opportunities` > `Table`.
-2. Search opportunities, sort columns, and apply filters.
-3. Export displayed rows to CSV if needed.
+### Pipeline View
+You can manage opportunities visually by stage:
+![Opportunities Pipeline View](./img/opportunities/opportunity-1.png)
 
-![Pipeline Table View](./img/opportunities/pipeline-table-view.jpg)
+- Click `Set up a pipeline` if no pipeline exists.
+- Drag and drop opportunities to update their stage.
+- Use filters and search to find specific records.
 
-:::tip
-Save filtered views to quickly revisit common segments (e.g., this quarter’s deals by team).
+### List View
+To switch to the list view, click the `List` icon:
+![Opportunities Pipeline View](./img/opportunities/opportunity-2.png)
+
+- Configure columns to personalize visible data.
+- Sort by fields such as expected close date.
+- Use bulk actions to update multiple records.
+
+## How to Create an Opportunity
+
+### From the Opportunity Page
+![Opportunities Pipeline View](./img/opportunities/opportunity-4.png)
+
+1. Navigate to `CRM` → `Opportunities`.
+2. Click `Create Opportunity`.
+3. Enter the opportunity details.
+4. Click `Create`.
+
+
+## How to Edit an Opportunity
+
+### From the Profile Page
+![Opportunities Pipeline View](./img/opportunities/opportunity-5.png)
+1. Go to `CRM` → `Opportunities`.
+2. Click on the opportunity.
+3. Click any editable field in the left panel.
+4. Make changes and click away to save.
+
+### From the Table View
+![Opportunities Pipeline View](./img/opportunities/opportunity-9.png)
+
+1. Go to `CRM` → `Opportunities`.
+2. Switch to the list view.
+3. Click the action menu for the opportunity.
+4. Select `Edit opportunity`.
+5. Update fields and click `Save`.
+
+## How to Close an Opportunity
+
+### In Pipeline View
+![Opportunities Pipeline View](./img/opportunities/opportunity-6.png)
+
+- Drag the opportunity to the `Closed Won` or `Closed Lost` column.
+
+### From the Profile Page
+![Opportunities Pipeline View](./img/opportunities/opportunity-7.png)
+
+- Open the opportunity.
+- Click `Closed Won` or `Closed Lost` at the top.
+
+### By Updating the Stage Field
+![Opportunities Pipeline View](./img/opportunities/opportunity-8.png)
+
+- Open the opportunity.
+- Change the `Stage` field to `Closed Won` or `Closed Lost`.
+
+## How to Set Up a Pipeline
+![Opportunities Pipeline View](./img/opportunities/pipeline-1.png)
+1. Go to the Opportunities page.
+2. Click the `Set up a pipeline` button. This creates a default pipeline.
+3. Use `Add Stage` to insert new stages.
+4. Use the `X` next to a stage to remove it (except for default stages).
+5. Set a Close Probability for each stage to forecast deal success rates.
+![Opportunities Pipeline View](./img/opportunities/pipeline-2.png)
+
+:::warning
+You cannot remove `Closed Won` and `Closed Lost` stages. You also cannot set any stage to 0% or 100% Close Probability, as those are reserved for the default stages.
 :::
 
-### Board View
+## How to Add or Remove a Pipeline
 
-1. Go to `CRM` > `Opportunities` > `Board`.
-2. Drag and drop opportunities between stages.
-3. Select an opportunity to open its details.
+### Add a New Pipeline
+![Opportunities Pipeline View](./img/opportunities/pipeline-3.png)
 
-:::note
-Drag-and-drop updates the stage immediately. Use filters to focus on a pipeline, team, or product line.
-:::
+- Click `Create Pipeline` to add a new one.
+- There is no limit to the number of pipelines you can create.
 
-## Apply Filters
+### Remove a Pipeline
+![Opportunities Pipeline View](./img/opportunities/pipeline-4.png)
 
-1. Select `+ Add Filter` from the Opportunities view.
-2. Choose one or more filter criteria, such as:
-   - Account
-   - Type
-   - Salesperson or Team
-   - Status
-   - Packages or Products
-   - Tags
-   - Expected or Actual Close Date
-   - Created Date
-   - Assigned Date
+- Click `Delete` next to the pipeline you want to remove.
+- Ensure all opportunities are reassigned before deletion. If not, they will remain unattached.
 
-:::info
-You can combine multiple filters to narrow your results further.
-:::
 
-## Sort Opportunities
+## How to Create Opportunities Automatically
 
-You can sort by:
+You can create an opportunity when a lead is captured from webchat.
 
-- Potential Revenue
-- Expected or Actual Close Date
-- Last Connected Date
-- Last Sales Activity
-- Opportunity Name
-- Created Date
-- Assigned Date
-- Qualification
+### Example: Create an Opportunity and Follow Up from Webchat
 
-## Manage Pipelines and Stages
+**Requirements**: Conversation AI must be active.
+![Opportunities Pipeline View](./img/opportunities/opp-automation-1.png)
 
-Default stages are **Lead**, **Contact**, **Qualified**, and **Proposal**, each with an associated forecast percentage.
-You can create custom pipelines and define your own stages and percentages.
+Automation behavior:
+- Triggered when a lead is captured through webchat
+- Webchat summary is sent to AI
+- AI identifies the requested service and creates an opportunity
+- A follow-up SMS message is sent to the contact
+- A sales task is created for further follow-up
 
-1. Go to `CRM` > `Opportunities` > `Board`.
-2. Open the pipeline dropdown and select `Manage Pipelines`.
-3. Create a new pipeline:
-   - Enter a pipeline name.
-   - Add stages.
-   - Set default percentages for each stage.
-4. Save your changes.
+### Steps to Set It Up:
+1. Go to `Automation`.
+2. Click `Create automation`.
+3. Search for the template **Create an opportunity and follow up when a lead is captured by Webchat**.
+4. In the `Create opportunity` step, choose the appropriate pipeline.
+5. Review and customize the steps to match your workflow.
 
-![Pipeline Stage Creation](./img/opportunities/pipeline-stage-creation.jpg)
+## How to Automate Actions Based on Opportunity Stages
+![Opportunities Pipeline View](./img/opportunities/opp-automation-2.png)
+
+You can start nurturing campaigns or send communications when an opportunity reaches a specific stage.
+
+### Example: Trigger a Campaign When an Opportunity Moves to a Nurturing Stage
+
+**Requirements**: Campaign Pro with SMS credits must be active.
+
+Automation behavior:
+- Triggered when an opportunity enters a specified nurturing stage
+- Finds the contact associated with the opportunity
+- Starts a predefined campaign
+
+### Steps to Set It Up:
+1. Go to `Automation`.
+2. Click `Create automation`.
+3. Search for the template **Start a campaign when opportunity move to a specific stage**.
+4. In the `When an opportunity is created or modified` step, set the pipeline and stage conditions.
+5. In the `Start a campaign for contact` step, select the desired campaign.
+6. Review and adjust the automation as needed.
+
+## How to Move Opportunities to Specific Stages Automatically
+![Opportunities Pipeline View](./img/opportunities/opp-automation-3.png)
+
+You can move an opportunity to a specific stage when a defined trigger occurs, such as booking a meeting.
+
+### Example: Move Opportunity to “Appointment Set” When a Meeting Is Booked
+
+Automation behavior:
+- Triggered when a meeting activity is created or modified
+- If the meeting status is `Scheduled`, the opportunity is moved to the “Appointment set” stage
+
+### Steps to Set It Up:
+1. Go to `Automation`.
+2. Click `Create automation`.
+3. Search for the template **Move the opportunity to a specific stage when a meeting is booked**.
+4. In the `Update opportunity` step, set the correct pipeline and target stage.
+5. Customize the steps as needed for your process.
 
 ## Frequently Asked Questions (FAQs)
 
 <details>
-<summary>Can I switch between table and board views?</summary>
+<summary>What is the currency for the opportunity amounts?</summary>
 
-Yes. You can switch views from the `Opportunities` section at any time.
+The currency follows your Business App's configured currency settings.
 </details>
 
 <details>
-<summary>Can I export data from Opportunities?</summary>
+<summary>How do I create a pipeline for my opportunities?</summary>
 
-Yes. In Table View, you can export the displayed rows to a CSV file.
+Go to `CRM` → `Opportunities`, then click `Set up a pipeline` and follow the prompts.
 </details>
 
 <details>
-<summary>Are there default stages?</summary>
+<summary>Can I automate the creation of opportunities?</summary>
 
-Yes. The default stages are Lead, Contact, Qualified, and Proposal, each with a preset forecast percentage.
+Yes. You can use the automation builder to trigger opportunity creation when specific conditions are met.
 </details>
 
 <details>
-<summary>Can I create multiple pipelines?</summary>
+<summary>How do I close an opportunity?</summary>
 
-Yes. You can create and manage multiple pipelines from the `Manage Pipelines` menu.
+You can close an opportunity via the pipeline view, profile page, or by updating the stage field to `Closed Won` or `Closed Lost`.
 </details>
 
 <details>
-<summary>How do I update forecast percentages?</summary>
+<summary>Can I associate an opportunity with more than one contact or company?</summary>
 
-Edit the stage details when managing your pipelines, then save your changes.
+Yes. Opportunities can be linked to multiple contacts and companies. Logged activities appear on all linked records.
 </details>
 
 <details>
-<summary>Can I sort opportunities by revenue?</summary>
+<summary>How do I edit an opportunity?</summary>
 
-Yes. Sorting by potential revenue is available in both Table and Board views.
+Edit from the profile page by clicking the field, or from the table view using the action menu.
 </details>
 
 <details>
-<summary>Can I filter by salesperson or team?</summary>
+<summary>Can I filter opportunities by stage?</summary>
 
-Yes. Use the filter menu to select specific salespeople or teams.
+Yes. Both pipeline and list views support filters for opportunity stage and other fields.
 </details>
 
 <details>
-<summary>Will filters apply across all views?</summary>
+<summary>How do I customize the columns in the list view?</summary>
 
-Filters apply to the current view (Table or Board) you are working in.
+Use the column configuration options in the list view to choose which fields to display.
 </details>
 
+<details>
+<summary>Are activities synced across linked records?</summary>
 
+Yes. Activities logged on an opportunity are also shown on linked contacts and companies.
+</details>
+
+<details>
+<summary>Can I bulk update opportunities?</summary>
+
+Yes. Use the bulk action tools in the list view to update multiple records at once.
+</details>
