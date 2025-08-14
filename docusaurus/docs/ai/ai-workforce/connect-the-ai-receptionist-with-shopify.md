@@ -327,7 +327,7 @@ For more details on setting up Custom Capabilities across different AI Employees
 
 While this guide is specific to Shopify, you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
 
-The [Custom Capabilities framework](./empower-your-ai-employee-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/app_settings_connections.md) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
+The [Custom Capabilities framework](./empower-your-ai-employee-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
 </details>
 
 ### AI & Knowledge Questions
@@ -373,7 +373,7 @@ Yes! Custom Capabilities work across all communication channels supported by you
 - [Facebook Messenger](../../conversations/conversations-setup-facebook-messenger.md)
 - [Instagram DMs](../../conversations/conversations-setup-instagram.md)
 
-The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/conversations_overview.md) for a complete list of supported channels.
+The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
 </details>
 
 <details>
@@ -385,7 +385,7 @@ Your AI adapts product recommendations to each communication channel:
 **SMS/WhatsApp:** Simplified text format with product names, prices, and shortened URLs  
 **Voice Calls:** Spoken product names, prices, and descriptions 
 
-Your AI automatically optimizes the presentation for each channel. For more details on channel setup, see [Conversations Overview](../../conversations/conversations_overview.md).
+Your AI automatically optimizes the presentation for each channel. For more details on channel setup, see [Conversations Overview](../../conversations/).
 </details>
 
 ### Advanced Configuration Questions
@@ -414,7 +414,7 @@ Learn more about structuring multiple tools in [Creating Custom Capabilities for
 
 You can monitor product inquiry patterns through several methods:
 
-1. **Conversation Reviews:** Check the [Conversations](../../conversations/conversations_overview.md) tab to see which products customers mention most frequently
+1. **Conversation Reviews:** Check the [Conversations](../../conversations/) tab to see which products customers mention most frequently
 
 2. **AI Explanation Feature:** Click "Explanation" on AI responses to see exactly which tools were called and what products were searched
 

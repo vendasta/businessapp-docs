@@ -863,7 +863,7 @@ Emergency services require special handling to ensure rapid response:
 
 Monitor customer service patterns through several methods:
 
-1. **Conversation Analytics:** Review the [Conversations](../../conversations/conversations_overview.md) tab to identify frequently requested services
+1. **Conversation Analytics:** Review the [Conversations](../../conversations/) tab to identify frequently requested services
 
 2. **ServiceTitan Reporting:** Use ServiceTitan's built-in reporting to track jobs created through AI interactions by tagging them appropriately
 
