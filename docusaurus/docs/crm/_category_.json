@@ -1,8 +1,5 @@
 {
   "label": "CRM",
   "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Centralize your business’s data and streamline workflows from many different systems by integrating them with Business App’s CRM and automations"
-  }
+  "link": { "type": "doc", "id": "crm/index" }
 }

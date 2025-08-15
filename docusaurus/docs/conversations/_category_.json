@@ -1,6 +1,7 @@
 {
   "label": "Conversations",
-  "collapsed": true
+  "collapsed": true,
+  "link": { "type": "doc", "id": "conversations/index" }
 }
 
 

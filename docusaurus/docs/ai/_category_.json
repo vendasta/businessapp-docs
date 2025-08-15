@@ -1,5 +1,6 @@
 {
   "label": "AI",
   "description": "Configure AI Workforce Employees and AI Knowledge that power the app.",
-  "position": 5
+  "position": 5,
+  "link": { "type": "doc", "id": "ai/index" }
 }
