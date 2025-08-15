@@ -128,6 +128,12 @@
   margin-top: 0.6em;
 }
 
+/* Hide docs that opt-in via frontmatter `sidebar_class_name: hide-from-sidebar` */
+.theme-doc-sidebar-item-link.hide-from-sidebar,
+.theme-doc-sidebar-item-category-link.hide-from-sidebar {
+  display: none !important;
+}
+
 /* Make whole feature cards clickable on landing page */
 .card-link {
   text-decoration: none;
