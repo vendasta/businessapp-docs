@@ -1,8 +1,6 @@
 {
   "label": "Conversations",
   "position": 2,
-  "link": {
-    "type": "doc",
-    "id": "conversations/index"
-  }
+  "collapsed": true,
+  "link": { "type": "doc", "id": "index" }
 }

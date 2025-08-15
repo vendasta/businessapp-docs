@@ -1,5 +1,6 @@
 ---
 title: AI Voice Receptionist Overview
+sidebar_label: AI Voice Receptionist
 sidebar_position: 2
 ---
 

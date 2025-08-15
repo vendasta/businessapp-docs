@@ -1,9 +1,6 @@
 {
   "label": "AI Chat Receptionist",
   "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "ai/ai-workforce/ai-chat-receptionist/index"
-  }
+  "link": { "type": "doc", "id": "index" }
 }
 

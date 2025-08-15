@@ -1,7 +1,6 @@
 ---
-id: getting_started_with_business_app
 title: Getting Started with Business App
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 Business App is your one-stop dashboard for running your business online. Think of it as your digital command center: manage your online presence, monitor your business activity, communicate with customers, and access the products and services that help your business grow — all in one place!
@@ -20,7 +19,7 @@ Business App is your one-stop dashboard for running your business online. Think 
   See important business analytics such as website traffic, reviews, and leads either in your Executive Report or your home screen.
 
 - **Access Your Tools & Products**  
-  Quickly launch any apps or services you’ve activated to market your business, connect with customers, or boost productivity.
+  Quickly launch any apps or services you've activated to market your business, connect with customers, or boost productivity.
 
 - **Multi-location Management**  
   If you manage more than one business location, view and control them all from a single login.
@@ -29,9 +28,9 @@ Business App is your one-stop dashboard for running your business online. Think 
 
 ## Get Started Fast: Your Onboarding Checklist
 
-When you first log in, you’ll see a **“Complete Setup”** card on your Home screen. This is your personalized onboarding checklist to help you hit the ground running.  
+When you first log in, you'll see a **"Complete Setup"** card on your Home screen. This is your personalized onboarding checklist to help you hit the ground running.  
 
-Finishing these steps helps you unlock everything Business App can do for your business. You’ll:
+Finishing these steps helps you unlock everything Business App can do for your business. You'll:
 - Start seeing results in your Executive Report sooner.
 - Respond faster to customer reviews and questions.
 - Collect more leads and feedback.
@@ -62,11 +61,11 @@ Want to experience Business App in your preferred language? This guide offers a 
 1. Log in to Business App.
 2. Click your profile name in the top-right corner, then click the current language.
 
-   ![Language dropdown](./overview/img/language.png)
+   ![Language dropdown](./img/language.png)
 
 3. Select your preferred language from the available list.
 
-   ![Preferred language list](./overview/img/preferred_language_list.png)
+   ![Preferred language list](./img/preferred_language_list.png)
 
 ---
 
