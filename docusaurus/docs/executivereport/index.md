@@ -1,6 +1,5 @@
 ---
-title: Executive Report Overview
-sidebar_position: 1
+title: Executive Report
 ---
 ## What is the Executive Report?
 The **Executive Report** gives you a clear summary of your business’s online performance across key marketing areas like reviews, SEO, social media, listings, advertising, and website traffic. The report is automatically generated and delivered on a weekly or monthly schedule and includes data from the tools connected to your Business App.

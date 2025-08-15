@@ -1,5 +1,6 @@
 {
   "label": "Automations",
-  "position": 8,
-  "link": { "type": "doc", "id": "automations/index" }
+  "position": 7,
+  "collapsed": true,
+  "link": { "type": "doc", "id": "index" }
 }

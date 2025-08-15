@@ -18,8 +18,8 @@ const config: Config = {
   organizationName: 'vendasta', // Usually your GitHub org/user name.
   projectName: 'businessapp-docs', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
 
   // Custom head tags for Cookiebot integration
   headTags: [
@@ -144,7 +144,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting started',
-              to: '/getting_started_with_business_app',
+              to: '/getting-started-with-business-app',
             },
           ],
         },

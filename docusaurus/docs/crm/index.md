@@ -1,6 +1,5 @@
 ---
-title: Overview
-sidebar_position: 1
+title: CRM Overview
 ---
 Business App’s CRM centralizes your contacts, companies, opportunities, activities, and automations—so your team can collaborate, stay organized, and close more deals.
 

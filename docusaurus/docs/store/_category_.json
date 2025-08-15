@@ -1,7 +1,8 @@
 {
   "label": "Store",
-  "position": 7,
-  "link": { "type": "doc", "id": "store/index" }
+  "position": 6,
+  "collapsed": true,
+  "link": { "type": "doc", "id": "index" }
 }
 
 

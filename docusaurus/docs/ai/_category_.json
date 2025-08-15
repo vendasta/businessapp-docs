@@ -1,5 +1,9 @@
 {
   "label": "AI",
-  "description": "Configure AI Workforce Employees and AI Knowledge that power the app.",
-  "position": 5
+  "position": 4,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Configure AI Workforce Employees and AI Knowledge that power your customer interactions."
+  }
 }
