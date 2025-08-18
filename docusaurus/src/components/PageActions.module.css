@@ -35,6 +35,7 @@
   padding: 0;
   color: var(--ifm-link-color);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .openChatGPTLink::after {
@@ -55,14 +56,16 @@
 .copyIcon {
   width: 1em;
   height: 1em;
-  margin-right: 0.25em;
+  margin-right: 0.5em;
+  flex-shrink: 0;
 }
 
 .chatgptIcon {
   width: 1em;
   height: 1em;
-  margin-right: 0.25em;
+  margin-right: 0.5em;
   fill: currentColor;
+  flex-shrink: 0;
 }
 
 /* For row layout, make buttons more compact */

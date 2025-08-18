@@ -56,9 +56,12 @@ export default function PageActions({
       >
         <ChatGPTLogo
           className={styles.chatgptIcon}
+          width="1em"
+          height="1em"
+          style={{verticalAlign: 'text-bottom'}}
           aria-label="ChatGPT logo"
         />
-        Open this page in ChatGPT
+        Open in ChatGPT
       </button>
       <button
         type="button"
