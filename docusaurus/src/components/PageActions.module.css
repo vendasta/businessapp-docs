@@ -1,0 +1,75 @@
+.pageActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.pageAction {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--ifm-link-color);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.openChatGPTLink::after {
+  content: '↗';
+  margin-left: 0.25rem;
+  font-size: 0.9em;
+  vertical-align: text-top;
+}
+
+.openChatGPTLink:hover {
+  text-decoration: underline;
+}
+
+.copyMarkdownLink:hover {
+  text-decoration: underline;
+}
+
+.copyIcon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  flex-shrink: 0;
+}
+
+.chatgptIcon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* For row layout, make buttons more compact */
+.direction-row .pageAction {
+  width: auto;
+  justify-content: center;
+}
