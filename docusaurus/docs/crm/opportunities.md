@@ -55,6 +55,15 @@ To switch to the list view, click the `List` icon:
 3. Enter the opportunity details.
 4. Click `Create`.
 
+### Import opportunities (CSV)
+1. In `CRM` → `Opportunities`, click `Import`.
+2. Upload a CSV and map columns to opportunity fields.
+3. Optionally map associations to existing contacts or companies.
+4. Review choices, then finish the import.
+
+::::note
+Updating existing opportunities during import overwrites mapped fields on matching records (by ID or external ID). Export a backup first if you’re unsure.
+::::
 
 ## How to Edit an Opportunity
 
@@ -92,6 +101,10 @@ To switch to the list view, click the `List` icon:
 
 - Open the opportunity.
 - Change the `Stage` field to `Closed Won` or `Closed Lost`.
+
+::::info
+When marking an opportunity as `Closed Lost`, you may be prompted to provide a reason. Key stage changes (Won, Lost, Reopened) are recorded as activity notes for better history and reporting.
+::::
 
 ## How to Set Up a Pipeline
 ![Opportunities Pipeline View](./img/opportunities/pipeline-1.png)
@@ -190,6 +203,24 @@ Automation behavior:
 <summary>What is the currency for the opportunity amounts?</summary>
 
 The currency follows your Business App's configured currency settings.
+</details>
+
+<details>
+<summary>Can I import opportunities with CSV? What fields are supported?</summary>
+
+Yes. Go to `CRM` → `Opportunities` → `Import` and upload a CSV. You can map columns to standard fields (name, amount, stage, expected close date, owner, etc.) and to your custom fields. You can also map associations to existing contacts or companies.
+</details>
+
+<details>
+<summary>Will importing update existing opportunities?</summary>
+
+If you choose to update matches, rows that match by ID or external ID will overwrite the mapped fields on those records. Export a backup first if you’re unsure.
+</details>
+
+<details>
+<summary>Which automation actions are available for opportunities?</summary>
+
+You can create tasks, notes, and logged calls tied directly to an opportunity, update fields, and move an opportunity to a specific stage as part of an automation.
 </details>
 
 <details>

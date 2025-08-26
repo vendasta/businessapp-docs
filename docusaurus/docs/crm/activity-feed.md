@@ -19,6 +19,7 @@ Use the Activity Feed to see real-time updates on sales activities across your t
 - **Filters and search** by activity type and keywords
 - **Live updates** of recent emails, notes, calls, meetings, and tasks
 - **Links** to the underlying contact or company record for context
+- **Richer activity details** like meeting status and call outcomes at-a-glance
 
 ## How to use the Activity Feed
 
@@ -33,6 +34,12 @@ Use the Activity Feed to see real-time updates on sales activities across your t
 <summary>Can I filter by specific activity types?</summary>
 
 Yes. Use filters to focus on emails, notes, calls, meetings, and more.
+</details>
+
+<details>
+<summary>Can I delete a recorded meeting activity?</summary>
+
+Yes. Open the related record and delete the activity there; the Activity Feed will reflect the change. You can access activities from [Contacts](/crm/contacts), [Companies](/crm/companies), or [Opportunities](/crm/opportunities).
 </details>
 
 <details>

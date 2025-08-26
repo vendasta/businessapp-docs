@@ -104,6 +104,18 @@ Yes. Choose to update matches by ID, external ID, or email when reviewing the im
 </details>
 
 <details>
+<summary>Where can I see import history and errors?</summary>
+
+After an import completes, review the import summary in `CRM` > `Contacts` to see successes, failures, and error details for each row.
+</details>
+
+<details>
+<summary>How do I assign an owner during import?</summary>
+
+In the CSV, include an Owner Email column and map it during import. Matching is done against existing users; when a match is found, that user is set as the contact owner.
+</details>
+
+<details>
 <summary>Can I automatically log emails?</summary>
 
 Yes. Set up email auto-BCC and forwarding so sales emails are captured to the appropriate contact records.
