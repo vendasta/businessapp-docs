@@ -11,6 +11,9 @@ Automations let you create workflows that run on their own when specific events 
 - Apply tags, update CRM fields, or create tasks based on activity
 - Notify your team or log sales activities when messages are sent/received
 - Kick off follow‑ups after meetings, orders, or invoices
+- Trigger workflows when a conversation summary is created
+- Create tasks, notes, and logged calls on opportunities
+- Get a response from an AI Employee as part of a workflow
 
 ## How it works
 
@@ -69,3 +72,11 @@ Use the Activity tab on an automation to see what ran, when it ran, and whether 
   - See: [Templates and recipes](./templates-and-recipes.md)
 - Connect external systems with Zapier
   - See: [Zapier](./zapier.md)
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Can I get a response from an AI Employee inside an automation?</summary>
+
+Yes. Add the "Get a response from an AI Employee" action to send context (for example, a conversation summary or form submission) to your AI Employee and use the response later in the workflow.
+</details>

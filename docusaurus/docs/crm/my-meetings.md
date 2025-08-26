@@ -19,6 +19,9 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 - **Personal and team booking links**
 - **Availability settings** and buffers
 - **Calendar connections**
+- **Microsoft Outlook/365 calendar integration**
+- **Microsoft Teams video conferencing integration**
+- **Multi‑host events (up to five hosts)**
 
 ## How to use My Meetings
 
@@ -37,6 +40,24 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 <summary>Can I set different durations for meeting types?</summary>
 
 Yes. Configure durations when creating booking links.
+</details>
+
+<details>
+<summary>How many hosts can I add to a single event?</summary>
+
+You can add up to five hosts to one event. All selected hosts are added to the calendar invite so everyone stays in the loop.
+</details>
+
+<details>
+<summary>Do I need anything special to connect Microsoft Outlook/Teams?</summary>
+
+You’ll need to sign in with a Microsoft 365 account you control. Some organizations require an administrator to approve new app connections—if you see a consent prompt, contact your Microsoft admin to enable it.
+</details>
+
+<details>
+<summary>Which video link is used for multi‑host events?</summary>
+
+The conferencing provider set in the booking link is used. If Microsoft Teams is connected and selected for the link, a Teams meeting is created and included on the invite that all hosts and attendees receive.
 </details>
 
 

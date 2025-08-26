@@ -12,6 +12,10 @@ Setting up SPF, DKIM, and DMARC is like showing an ID for your emails. It proves
 
 Configure your email settings via Business App > Settings > Email Configuration.
 
+:::info
+Business App uses HTTPS link branding for tracking links in campaign emails, which helps reduce deliverability warnings from some providers. Authenticating your domain further improves inbox placement and reputation.
+::::
+
 ## Warm up your email domain
 
 Once you've established your custom email domain, it's important to allocate a period for warming it up. Without properly warming up your domain, your emails risk being filtered out by various email service providers.
@@ -46,4 +50,16 @@ Spam traps are email addresses created by email service providers to catch spamm
 
 When your contacts open and click on your emails, it shows you're delivering content they find valuable. On the flip side, spam complaints, high bounce rates, and unsubscribes can harm your reputation as a sender. By monitoring your email performance, you can discover which content appeals to your audience and decide which contacts to focus on in future campaigns.
 
+## Frequently Asked Questions (FAQs)
 
+<details>
+<summary>What’s the difference between the shared sending domain and a custom domain?</summary>
+
+The shared sending domain is the default domain used by Business App for outbound campaigns. Many senders share it. A custom domain is your own authenticated domain (via SPF/DKIM/DMARC) that you connect to build reputation for your brand. For best deliverability and control, set up a custom domain. See [Authenticate your custom email domain](#authenticate-your-custom-email-domain).
+</details>
+
+<details>
+<summary>Which should I use—shared domain or custom domain?</summary>
+
+Use the shared domain to get started quickly. For ongoing sending, we strongly recommend a custom domain to build your own sender reputation and reduce the impact of other senders. Link tracking uses HTTPS by default and works with both.
+</details>

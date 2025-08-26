@@ -72,4 +72,10 @@ If using WordPress (e.g., Divi), add a “Code” block and paste the embed code
 For the form to capture UTM, they must be still present in the browser address bar. If a user clicks away from your landing page, to visit a second page on your website, and you don’t have a UTM preservation tool active, the UTM can be lost and won’t be captured if they fill out a form. One tactic to prevent this is removing all links from your landing page, to ensure leads fill out the form on the landing page and nowhere else.
 </details>
 
+<details>
+<summary>Can I trigger automations from a specific form?</summary>
+
+Yes. In Automations, choose a form submission as the trigger, then add actions like tagging, notifications, or follow‑ups. This helps route and respond to new leads consistently.
+</details>
+
 
