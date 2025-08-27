@@ -70,6 +70,8 @@ Use the Activity tab on an automation to see what ran, when it ran, and whether 
   - See: [Messaging](./messaging.md)
 - Templates and recipes
   - See: [Templates and recipes](./templates-and-recipes.md)
+- Start from a form
+  - See: [Forms](../crm/forms.md)
 - Connect external systems with Zapier
   - See: [Zapier](./zapier.md)
 
