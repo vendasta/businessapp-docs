@@ -2,7 +2,7 @@
 title: Set up Conversations for web chat
 sidebar_position: 2.1
 ---
-Easily capture leads and respond to website visitors 24/7 with Vendasta’s AI-powered web chat. This guide will show you how to set up your chat widget so your AI Receptionist can greet visitors, answer questions, and deliver new leads right to your Conversations—even in over 40 languages.
+Easily capture leads and respond to website visitors 24/7 with AI-powered web chat. This guide will show you how to set up your chat widget so your AI Receptionist can greet visitors, answer questions, and deliver new leads right to your Conversations—even in over 40 languages.
 
 ![](./img/web_chat_widget_welcome.png)
 
