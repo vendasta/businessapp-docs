@@ -55,7 +55,7 @@ Once a call reaches your AI Voice Receptionist, there are a number of potential 
    The AI greets callers, answers FAQs using your knowledge base, captures contact details, and can book appointments.
   
 2. **Forward calls**  
-   The call is routed to another phone number automatically.
+   The call is routed to another phone number automatically. See [Transfer calls to other numbers](#transfer-calls-to-other-numbers) to configure rules and destinations.
   
 3. **End with a custom message**  
    A branded or informational message is played before the call is ended automatically.
@@ -138,9 +138,28 @@ Some examples of instructions you might want to add include:
 You can extend your AI Voice Receptionist's capabilities by building your own custom capabilities. By adding your own "Tools" to custom capabilities, you can give your AI Voice Receptionist the ability to perform tasks that are specific to your business and build connections with other software you use.
 
 :::info Learn more about custom capabilities
-For more details on creating custom capabilities, see [Empower Your AI Employee with Custom Capabilities](../empower-your-ai-employee-custom-capabilities.md).
+For more details on creating custom capabilities, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
 :::
 
+#### Transfer calls to other numbers from your AI Voice Receptionist
+
+Enable your AI Voice Receptionist to live-transfer callers to one or more phone numbers based on caller intent and conditions you define. For example, route callers asking for "billing" to your billing department, send incoming calls to different teams based on the time of day, or transfer VIP clients directly to their account manager.
+
+How to enable:
+1. Go to `AI > AI Workforce > Voice Receptionist > Configure`
+2. In Capabilities, click "Add new capability"
+3. Select "Transfer call"
+4. Add one or more destination numbers and define criteria (e.g., sales vs. support, business hours)
+
+![Transfer Call capability](../img/voice-receptionist-transfer.png)
+
+Best practices:
+- Keep transfer criteria simple and unambiguous
+- Specify after-hours behavior (e.g., transfer to after-hours line vs. take a message)
+
+:::warning
+Once a call is transferred, recording ends and the system does not record or transcribe the destination leg. If the destination doesn't answer, the transfer is not reverted; the caller would need to call again to speak with the AI.
+:::
 
 ### Step 3: Add Knowledge Sources to your AI Voice Receptionist
 
@@ -264,7 +283,7 @@ For more details, see the [Knowledge Base Overview](../knowledge-base.md).
 
 Absolutely! You can extend your AI Voice Receptionist's capabilities by creating custom tools and integrations specific to your business needs. This allows your AI to perform tasks like checking inventory, scheduling specific services, or connecting with other software you use.
 
-For detailed guidance on creating custom capabilities, see [Empower Your AI Employee with Custom Capabilities](../empower-your-ai-employee-custom-capabilities.md).
+For detailed guidance on creating custom capabilities, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
 </details>
 
 ### Operations and Performance
