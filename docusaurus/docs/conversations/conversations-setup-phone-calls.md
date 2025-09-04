@@ -122,6 +122,18 @@ Phone call integration is currently available for businesses located in the Unit
 </details>
 
 <details>
+<summary><strong>Can the AI transfer calls to my team?</strong></summary>
+
+Yes. With Premium, the AI Voice Receptionist can transfer calls based on caller intent or rules you define. See [Transfer calls to other numbers](../ai/ai-workforce/ai-voice-receptionist.md#transfer-calls-to-other-numbers) for setup steps and best practices.
+</details>
+
+<details>
+<summary><strong>Are transferred calls recorded or transcribed?</strong></summary>
+
+No. Recording ends at the moment of transfer and does not continue on the destination leg of the call.
+</details>
+
+<details>
 <summary><strong>Can I use my existing business phone number?</strong></summary>
 
 You can set up call forwarding from your existing business number to your assigned Conversations phone number. This allows your AI (Premium) to answer calls made to your main business line.
