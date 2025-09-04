@@ -1,14 +1,25 @@
-name: tfsec scan
+name: Trivy Scan
 on:
   pull_request:
     branches:
       - master
 jobs:
-  tfsec:
-    name: Run tfsec
+  trivy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Run tfsec
-        uses: aquasecurity/tfsec-action@v1.0.3
+      - uses: actions/checkout@v4
+      
+      # Config scan
+      - name: Trivy config scan
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          scan-type: config
+          severity: CRITICAL,HIGH
+
+      # Filesystem scan (secrets, sensitive files)
+      - name: Trivy secret scan
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          scan-type: fs
+          scanners: secret
+          severity: CRITICAL,HIGH
