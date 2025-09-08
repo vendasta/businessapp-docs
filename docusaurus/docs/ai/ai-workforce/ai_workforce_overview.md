@@ -5,32 +5,11 @@ AI Employees are digital team members you can configure to automate conversation
 
 All AI Employees share a common structure, with configurable elements like their name, purpose, communication channels, capabilities, and knowledge sources. Specific roles (like Chat Receptionist or Voice Receptionist) may include additional options, but the basics are always the same.
 
-## Types of AI Employees
-
-### Pre-built AI Employees
-- **AI Chat Receptionist**: Handles website chat conversations
-- **AI Voice Receptionist**: Manages phone calls and voice interactions  
-- Ready to use with minimal configuration
-- Optimized for common business scenarios
-
-### Custom AI Employees
-Create specialized AI team members with unique capabilities and purposes:
-- **Tailored functionality**: Build AI for specific business processes
-- **Custom capabilities**: Connect to your systems and APIs via MCP protocols
-- **Specialized knowledge**: Train on industry-specific information
-- **Complete control**: Design conversation flows and responses from scratch
-
-**When to use Custom AI Employees:**
-- Industry-specific requirements (real estate, healthcare, legal)
-- Complex business processes requiring multiple system integrations
-- Unique customer interaction flows
-- Specialized knowledge domains
-
 See these guides for step-by-step setup or details on specific AI Employees:
 - [Set up the AI Chat Receptionist](./ai-chat-receptionist/)
 - [Set up the AI Voice Receptionist](./ai-voice-receptionist)
 
-For advanced setup:
+For more detail on setup:
 - [AI Capabilities Overview](../ai-capabilities/)
 - [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities)
 
@@ -72,7 +51,9 @@ Review the available channels for your AI Employee’s role. Turn on only the ch
 - Website chat Widget  
 - SMS (text messages)  
 - Phone calls (voice)  
-- WhatsApp  
+- WhatsApp
+- Facebook
+- Instagram
 
 You can enable or disable channels at any time.  
 > **Tip:** Start with just one or two channels while you get comfortable, then expand as you see results!
