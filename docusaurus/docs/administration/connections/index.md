@@ -44,7 +44,7 @@ Common integrations include:
 - **Gingr**, **PetExec**, **Pet Resort Pro**, **Paw Partner**, **PawLoyalty** – Connect customer and service data for pet-related businesses  
 
 ### Finance and Productivity Tools
-- **QuickBooks Online / Personal** – Syncs invoices, transactions, and billing data  
+- **QuickBooks Online / Personal** – Syncs invoices, transactions, and billing data
 - **Zapier** – Connects and automates workflows with thousands of apps  
 
 ## How to Browse and Add New Integrations
@@ -86,29 +86,7 @@ Each integration sends specific data to your app, depending on its purpose. For 
 - **Website performance** from Google Analytics  
 - **Search visibility** from Google Business Profile  
 - **Customer and job data** from Housecall Pro or Jobber  
-- **Financial records** from QuickBooks  
-
-### Frequently Asked Questions (FAQs)
-
-**Do I have to connect everything right away?**  
-No, but connecting key platforms early helps you get value faster from reports and automation tools.
-
-**Are connections shared across my products?**  
-Yes. Integrations and synced data is shared across (most) products. 
-
-**Why is one of my integrations disconnected?**  
-This may happen if permissions are removed or login credentials change. Reconnect to restore data syncing.
-
-**Where does the integration data appear?**  
-In the Executive Report, Marketing Funnel, and any features connected to that service.
-
-**Are there setup guides for individual integrations?**  
-Yes. Click any integration in the `Browse` tab to view detailed instructions.
-
-**Will disconnecting an integration remove my data?**  
-No, but it will stop new data from syncing. Reports and tools will retain past data until updated.
-
----
+- **Financial records** from QuickBooks 
 
 ## Quick Add Via Settings
 

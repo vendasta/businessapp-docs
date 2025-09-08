@@ -10,7 +10,7 @@ Business App’s CRM centralizes your contacts, companies, opportunities, activi
 - Automate follow-ups and list-based workflows
 - Improve visibility and forecasting with shared views
 
-## What’s included
+## What's included
 
 - **[Contacts](./contacts)**: Manage people, import/export, and run campaigns
 - **[Companies](./companies)**: Manage organizations, associate contacts and opportunities

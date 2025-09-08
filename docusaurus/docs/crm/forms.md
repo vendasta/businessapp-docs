@@ -46,9 +46,48 @@ Short forms convert better. Consider deferring lower-priority questions to a fol
 
 ### Step 2: Customize the styling to match your website.
 
-You may want to set the form width to 100%, and then manage the width using your page builder. In the “Design” tab, style the container, font, and button.
+You may want to set the form width to 100%, and then manage the width using your page builder. In the "Design" tab, style the container, font, and button.
 
 ![](./img/design.png)
+
+#### Advanced Styling with Custom CSS
+
+For more advanced customization, you can add custom CSS to style your forms exactly how you want them to appear on your website.
+
+1. In the form builder, navigate to the **Design** tab
+2. Scroll down to the **Custom CSS** section
+3. Add your CSS rules to customize colors, fonts, spacing, and layout
+4. Preview changes in real-time to see how your form will appear
+
+**Example custom CSS:**
+```css
+/* Customize form background */
+.form-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Style input fields */
+input[type="text"], input[type="email"] {
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Customize submit button */
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+```
+
+:::tip
+Test your custom CSS on different devices to ensure your form looks great on desktop, tablet, and mobile.
+:::
 
 ### Step 3: Set up reCAPTCHA in the form to prevent Spam.
 
@@ -131,6 +170,24 @@ Use the toggle at the top‑right of the `Automation` tab.
 <summary>Can I delete a form automation from the tab?</summary>
 
 Not yet. To delete, go to the main Automations page, open the automation, and delete it there.
+</details>
+
+<details>
+<summary>How do I add custom CSS to style my forms?</summary>
+
+In the form builder, go to the **Design** tab and scroll down to the **Custom CSS** section. You can add CSS rules to customize colors, fonts, spacing, and layout. Changes preview in real-time.
+</details>
+
+<details>
+<summary>Can I use custom CSS to make my forms responsive?</summary>
+
+Yes! You can add media queries and responsive CSS rules in the Custom CSS section to ensure your forms look great on all devices.
+</details>
+
+<details>
+<summary>What CSS classes can I target for form styling?</summary>
+
+You can target standard form elements like `.form-container`, `input[type="text"]`, `input[type="email"]`, `.submit-button`, and other standard HTML form elements. Use your browser's developer tools to inspect the form structure.
 </details>
 
 

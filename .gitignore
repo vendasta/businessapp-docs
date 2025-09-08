@@ -138,3 +138,11 @@ dist
 
 # Ignore build directory
 build/
+
+# Local assessment
+SCORECARD.md
+
+# macOS
+.DS_Store
+*/.DS_Store
+

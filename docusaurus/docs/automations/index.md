@@ -82,3 +82,21 @@ Use the Activity tab on an automation to see what ran, when it ran, and whether 
 
 Yes. Add the "Get a response from an AI Employee" action to send context (for example, a conversation summary or form submission) to your AI Employee and use the response later in the workflow.
 </details>
+
+<details>
+<summary>How do I trigger automations for entire lists?</summary>
+
+Use the **"Start automation for a list"** action in your automation builder. Select your target list (contacts, companies, or custom objects) and choose which automation to run. The automation will execute for each record in the list.
+</details>
+
+<details>
+<summary>What are getter actions in automations?</summary>
+
+Getter actions let you retrieve related data during automation runs. For example, "Get company from contact" retrieves company information when your automation is processing a contact record. This helps you work with connected data across your CRM.
+</details>
+
+<details>
+<summary>What's the difference between regular automations and list automations?</summary>
+
+Regular automations trigger based on events (like "when a contact is created"). List automations let you manually trigger a workflow for an entire existing list of records, making them ideal for bulk operations and targeted campaigns.
+</details>

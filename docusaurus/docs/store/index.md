@@ -29,5 +29,13 @@ Clicking on any package will bring you to that package's information page. Here,
 
 Once you have made your decision and would like to purchase, you will have the option to Contact Sales or Add to the Cart depending on the package's purchase button behavior.
 
-This will prompt a window in which you can either email your salesperson to express interest in the product or purchase it on your own. 
+This will prompt a window in which you can either email your salesperson to express interest in the product or purchase it on your own.
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>What happens when I click "Upgrade now"?</summary>
+
+Clicking "Upgrade now" takes you through the standard Store purchase flow where you can review package details, pricing, and complete your purchase.
+</details>
 
