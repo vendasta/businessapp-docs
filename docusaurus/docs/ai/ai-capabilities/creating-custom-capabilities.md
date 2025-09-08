@@ -87,21 +87,6 @@ Consider the prompt as instructions for when you hire an employee. Be specific a
 3. Fill in the required tool fields (see [Tool Configuration Reference](#tool-fields-explained)).
 4. Add multiple tools if your capability requires several API calls.
 
-#### Using MCP Connections
-
-MCP (Model Context Protocol) connections provide pre-built integrations with popular external systems:
-
-1. In the tool configuration, select **MCP Connection**
-2. Choose from available MCP integrations (Shopify, CRM, etc.)
-3. Configure the connection settings (API keys, endpoints)
-4. Test the connection to ensure it's working properly
-
-**Popular MCP integrations:**
-- **Shopify Storefront**: Access product catalogs and inventory
-- **CRM Systems**: Read and update contact/company data  
-- **Calendar Systems**: Book appointments and check availability
-- **Support Platforms**: Create tickets and check status
-
 ### Step 5: Test and Refine
 
 1. Click **Save** to store your capability configuration.
