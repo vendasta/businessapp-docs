@@ -62,47 +62,6 @@ Use "Skip the step and continue" for non‑critical actions like logging or tagg
 
 Use the Activity tab on an automation to see what ran, when it ran, and whether it succeeded. This is helpful for verification and troubleshooting.
 
-## List-Based Automations
-
-You can now trigger automations for entire lists of contacts, companies, or custom objects. This is powerful for seasonal campaigns, event-based outreach, and bulk operations.
-
-### When to use list automations
-
-- **Seasonal marketing**: Send SMS follow-ups to a mosquito control list after rainy days
-- **Event reminders**: Notify auction attendees based on custom event objects
-- **Bulk updates**: Apply tags or update fields for specific customer segments
-- **Campaign targeting**: Launch coordinated outreach to curated prospect lists
-
-### How to set up list automations
-
-1. Create or select your target list (contacts, companies, or custom objects)
-2. In automations, use the **"Start automation for a list"** action
-3. Select your target list and the automation to trigger
-4. The automation will run for each record in the list
-
-:::tip
-Combine list automations with conditions to create sophisticated targeting. For example, "Apply to this list, but only if the contact hasn't been contacted in 30 days."
-:::
-
-## Enhanced Data Actions (Getter Steps)
-
-New automation actions help you work with related data across your CRM:
-
-### Available getter actions
-
-- **Get company from contact**: Retrieve company data when working with a contact
-- **Get contact from company**: Find primary contact when processing company records  
-- **Get company object from contact**: Access custom company fields and data
-- **Get contact object from company**: Retrieve contact-specific custom data
-- **Get opportunity from company**: Access deal information for account-based workflows
-- **Get custom object data**: Work with your custom business objects
-
-### Example use cases
-
-- **Update opportunities when meetings are booked**: Use "Get opportunity from company" to update deal stages
-- **Sync contact preferences to company level**: Use "Get company from contact" to apply individual preferences company-wide
-- **Create follow-up tasks**: Use "Get contact from company" to assign tasks to the right person
-
 ## Learn more
 
 - Builder and settings
@@ -134,12 +93,6 @@ Use the **"Start automation for a list"** action in your automation builder. Sel
 <summary>What are getter actions in automations?</summary>
 
 Getter actions let you retrieve related data during automation runs. For example, "Get company from contact" retrieves company information when your automation is processing a contact record. This helps you work with connected data across your CRM.
-</details>
-
-<details>
-<summary>Can I use list automations for seasonal campaigns?</summary>
-
-Yes! List automations are perfect for seasonal campaigns. You can trigger automations for specific customer segments, like sending mosquito control reminders to a list after rainy days, or auction reminders based on custom event objects.
 </details>
 
 <details>
