@@ -138,3 +138,6 @@ dist
 
 # Ignore build directory
 build/
+
+# Local assessment
+SCORECARD.md

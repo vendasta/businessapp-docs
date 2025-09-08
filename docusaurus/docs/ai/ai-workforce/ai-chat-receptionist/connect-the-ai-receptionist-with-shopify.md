@@ -319,7 +319,7 @@ Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Cap
 
 This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business. 
 
- For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
+ For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
 </details>
 
 <details>
@@ -327,7 +327,7 @@ This means customers can ask about products through phone calls, SMS, WhatsApp, 
 
 While this guide is specific to Shopify, you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
 
- The [Custom Capabilities framework](../empower-your-ai-employee-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
+ The [Custom Capabilities framework](../ai-capabilities/creating-custom-capabilities) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
 </details>
 
 ### AI & Knowledge Questions
@@ -406,7 +406,7 @@ Absolutely! You can create multiple tools within the same Custom Capability or s
 - Inventory lookup for existing customers
 - New arrivals showcase for marketing
 
-Learn more about structuring multiple tools in [Creating Custom Capabilities for your AI Employees](../empower-your-ai-employee-custom-capabilities.md).
+Learn more about structuring multiple tools in [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
 </details>
 
 <details>
@@ -509,7 +509,7 @@ Yes—update the GraphQL body in the tool definition to include any product fiel
 
 Shopify's API evolves over time, so monitor their [API documentation](https://shopify.dev/docs/api/storefront) for changes. If query formats change:
 
-1. Update the tool definition in your [Custom Capability](../empower-your-ai-employee-custom-capabilities.md)
+1. Update the tool definition in your [Custom Capability](../ai-capabilities/creating-custom-capabilities)
 2. Test the new query format using the troubleshooting tools mentioned above
 3. Adjust your AI prompt if the response structure changes
 
