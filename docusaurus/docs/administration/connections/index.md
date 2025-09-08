@@ -43,12 +43,8 @@ Common integrations include:
 - **Jobber** – Connects field service workflows  
 - **Gingr**, **PetExec**, **Pet Resort Pro**, **Paw Partner**, **PawLoyalty** – Connect customer and service data for pet-related businesses  
 
-### CRM and Sales Tools
-- **HubSpot** – Two-way sync for contacts and companies with your HubSpot CRM
-- **Kixie** – Dialer integration for power calling and contact management
-
 ### Finance and Productivity Tools
-- **QuickBooks Online / Personal** – Syncs invoices, transactions, and billing data (enhanced email support)
+- **QuickBooks Online / Personal** – Syncs invoices, transactions, and billing data
 - **Zapier** – Connects and automates workflows with thousands of apps  
 
 ## How to Browse and Add New Integrations
