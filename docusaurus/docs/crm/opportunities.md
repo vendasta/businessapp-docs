@@ -65,6 +65,15 @@ To switch to the list view, click the `List` icon:
 Updating existing opportunities during import overwrites mapped fields on matching records (by ID or external ID). Export a backup first if you’re unsure.
 ::::
 
+## How to Upload Files to an Opportunity
+
+1. Open an opportunity record.
+2. Go to the `Files` section.
+3. Click `Add a file` to upload documents, images, or other files.
+4. View AI-generated summaries of uploaded content for better organization.
+
+Learn more about [file uploads](./file-upload) and supported file types.
+
 ## How to Edit an Opportunity
 
 ### From the Profile Page

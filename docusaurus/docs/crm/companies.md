@@ -38,6 +38,14 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 2. In the activity area, choose the activity type: note, email, call, meeting, task, or more.
 3. Add details, outcomes, and follow-up tasks as needed.
 
+### Upload files
+
+1. On a company profile, go to the `Files` section.
+2. Click `Add a file` to upload documents, images, or other files.
+3. View AI-generated summaries of uploaded content for better organization.
+
+Learn more about [file uploads](./file-upload) and supported file types.
+
 ### Associate contacts and opportunities
 
 1. From a company profile, associate related contacts and opportunities.

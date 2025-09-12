@@ -83,6 +83,14 @@ Exports respect your current filters and the set of rows displayed.
 1. On a contact profile, use the activity area to log notes, emails, calls, messages, and meetings.
 2. Create tasks for follow-up and associate them with the contact (and related company or opportunity).
 
+### Upload files
+
+1. On a contact profile, go to the `Files` section.
+2. Click `Add a file` to upload documents, images, or other files.
+3. View AI-generated summaries of uploaded content for better organization.
+
+Learn more about [file uploads](./file-upload) and supported file types.
+
 ## Frequently Asked Questions (FAQs)
 
 <details>
