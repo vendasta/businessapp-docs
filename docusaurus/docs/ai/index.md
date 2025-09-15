@@ -3,6 +3,7 @@ title: AI Overview
 sidebar_position: 1
 ---
 
+import Link from '@docusaurus/Link';
 import { AISparkleIcon, SettingsIcon, CRMIcon } from '@site/src/components/Icons';
 
 Use AI Employees to automate conversations, answer questions, capture leads, and book appointments across your channels.
@@ -15,18 +16,61 @@ Use AI Employees to automate conversations, answer questions, capture leads, and
 
 ## Key areas
 
-- AI Workforce: Configure employees, capabilities, tone, and behavior
-  - See: [AI Workforce Overview](./ai-workforce/ai_workforce_overview)
-- Capabilities: Enable skills like lead capture, Q&A, booking, and integrations
-  - See: [AI Capabilities Overview](./ai-capabilities/)
-- Knowledge Base: Provide business-specific information for accurate answers
-  - See: [Knowledge Base Overview](./knowledge-base.md)
+<div className="row">
+  <div className="col col--4">
+    <Link className="card-link" to="./ai-workforce/ai_workforce_overview">
+      <div className="card">
+        <div className="card__header"><h3>AI Workforce</h3></div>
+        <div className="card__body"><p>Configure employees, capabilities, tone, and behavior.</p></div>
+      </div>
+    </Link>
+  </div>
+  <div className="col col--4">
+    <Link className="card-link" to="./ai-capabilities/">
+      <div className="card">
+        <div className="card__header"><h3>Capabilities</h3></div>
+        <div className="card__body"><p>Enable skills like lead capture, Q&A, booking, and integrations.</p></div>
+      </div>
+    </Link>
+  </div>
+  <div className="col col--4">
+    <Link className="card-link" to="./knowledge-base.md">
+      <div className="card">
+        <div className="card__header"><h3>Knowledge Base</h3></div>
+        <div className="card__body"><p>Provide business-specific information for accurate answers.</p></div>
+      </div>
+    </Link>
+  </div>
+</div>
 
 ### Popular guides
 
-- [AI Chat Receptionist](./ai-workforce/ai-chat-receptionist)
-- [AI Voice Receptionist](./ai-workforce/ai-voice-receptionist)
-- [Creating Custom Capabilities](./ai-capabilities/creating-custom-capabilities)
+<div className="row">
+  <div className="col col--4">
+    <Link className="card-link" to="./ai-workforce/ai-chat-receptionist">
+      <div className="card">
+        <div className="card__header"><h3>AI Chat Receptionist</h3></div>
+        <div className="card__body"><p>Answer web chat, SMS, and WhatsApp automatically.</p></div>
+      </div>
+    </Link>
+  </div>
+  <div className="col col--4">
+    <Link className="card-link" to="./ai-workforce/ai-voice-receptionist">
+      <div className="card">
+        <div className="card__header"><h3>AI Voice Receptionist</h3></div>
+        <div className="card__body"><p>Answer phone calls 24/7 and capture leads.</p></div>
+      </div>
+    </Link>
+  </div>
+  <div className="col col--4">
+    <Link className="card-link" to="./ai-capabilities/creating-custom-capabilities">
+      <div className="card">
+        <div className="card__header"><h3>Custom Capabilities</h3></div>
+        <div className="card__body"><p>Connect tools and tailor what your AI can do.</p></div>
+      </div>
+    </Link>
+  </div>
+</div>
 
 ## FAQs
 
