@@ -3,23 +3,9 @@ title: AI Overview
 sidebar_position: 1
 ---
 
-import Link from '@docusaurus/Link';
 import { AISparkleIcon, SettingsIcon, CRMIcon } from '@site/src/components/Icons';
 
-<div className="row" style={{marginBottom: '1.5rem'}}>
-  <div className="col col--7">
-    <h1 style={{marginTop: 0}}>Build your AI Workforce</h1>
-    <p>Use AI Employees to greet visitors, answer questions, capture leads, and book appointments across chat, SMS, WhatsApp, and phone.</p>
-    <div style={{display: 'flex', gap: '0.75rem', flexWrap: 'wrap'}}>
-      <Link className="button button--primary" to="./ai-workforce/ai_workforce_overview"><AISparkleIcon />&nbsp;Open AI Workforce</Link>
-      <Link className="button button--secondary" to="./knowledge-base"><CRMIcon />&nbsp;Knowledge Base</Link>
-      <Link className="button button--secondary" to="./ai-capabilities/"><SettingsIcon />&nbsp;Capabilities</Link>
-    </div>
-  </div>
-  <div className="col col--5">
-    <img alt="AI assisting across channels" src="./img/form-fill-respond.png" />
-  </div>
-</div>
+Use AI Employees to automate conversations, answer questions, capture leads, and book appointments across your channels.
 
 ## Start here
 
@@ -27,59 +13,20 @@ import { AISparkleIcon, SettingsIcon, CRMIcon } from '@site/src/components/Icons
 - Review your <SettingsIcon /> `Administration > Business Profile` so your AI has accurate information
 - Optional: Connect your calendar in <CRMIcon /> `CRM > My Meetings` for bookings
 
-## Explore
+## Key areas
 
-<div className="row">
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-workforce/ai_workforce_overview">
-      <div className="card">
-        <div className="card__header"><h3>AI Workforce</h3></div>
-        <div className="card__body"><p>Set up employees, tone, and behavior.</p></div>
-      </div>
-    </Link>
-  </div>
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-capabilities/">
-      <div className="card">
-        <div className="card__header"><h3>Capabilities</h3></div>
-        <div className="card__body"><p>Enable skills like Q&A, booking, and integrations.</p></div>
-      </div>
-    </Link>
-  </div>
-  <div className="col col--4">
-    <Link className="card-link" to="./knowledge-base">
-      <div className="card">
-        <div className="card__header"><h3>Knowledge Base</h3></div>
-        <div className="card__body"><p>Provide business-specific information for accurate answers.</p></div>
-      </div>
-    </Link>
-  </div>
+- AI Workforce: Configure employees, capabilities, tone, and behavior
+  - See: [AI Workforce Overview](./ai-workforce/ai_workforce_overview)
+- Capabilities: Enable skills like lead capture, Q&A, booking, and integrations
+  - See: [AI Capabilities Overview](./ai-capabilities/)
+- Knowledge Base: Provide business-specific information for accurate answers
+  - See: [Knowledge Base Overview](./knowledge-base.md)
 
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-workforce/ai-chat-receptionist">
-      <div className="card">
-        <div className="card__header"><h3>AI Chat Receptionist</h3></div>
-        <div className="card__body"><p>Answer web chat, SMS, and WhatsApp automatically.</p></div>
-      </div>
-    </Link>
-  </div>
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-workforce/ai-voice-receptionist">
-      <div className="card">
-        <div className="card__header"><h3>AI Voice Receptionist</h3></div>
-        <div className="card__body"><p>Answer phone calls 24/7 and capture leads.</p></div>
-      </div>
-    </Link>
-  </div>
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-capabilities/creating-custom-capabilities">
-      <div className="card">
-        <div className="card__header"><h3>Custom Capabilities</h3></div>
-        <div className="card__body"><p>Connect tools and tailor what your AI can do.</p></div>
-      </div>
-    </Link>
-  </div>
-</div>
+### Popular guides
+
+- [AI Chat Receptionist](./ai-workforce/ai-chat-receptionist)
+- [AI Voice Receptionist](./ai-workforce/ai-voice-receptionist)
+- [Creating Custom Capabilities](./ai-capabilities/creating-custom-capabilities)
 
 ## FAQs
 
