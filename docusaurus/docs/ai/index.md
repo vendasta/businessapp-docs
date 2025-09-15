@@ -1,18 +1,14 @@
 ---
 title: AI Overview
 sidebar_position: 1
+description: Configure AI Employees in Business App to answer questions, capture leads, book appointments, and automate conversations across chat, SMS, WhatsApp, and phone.
+slug: /ai
 ---
 
 import Link from '@docusaurus/Link';
 import { AISparkleIcon, SettingsIcon, CRMIcon } from '@site/src/components/Icons';
 
-Have AI Employees answer questions, capture leads, book appointments, and *more* using a personalized Knowledge Base and specialized capabilities.
-
-## Start here
-
-- Go to <AISparkleIcon /> `AI > AI Workforce` to configure your AI Employees
-- Review your <SettingsIcon /> `Administration > Business Profile` so your AI has accurate information
-- Optional: Connect your calendar in <CRMIcon /> `CRM > My Meetings` for bookings
+The AI Workforce is a set of configurable AI Employees that help do the heavy lifting for your business by taking on repetitive tasks so humans can focus on other work. Each employee uses assigned **Capabilities** and knowledge from the **Knowledge Base** to perform their work accurately and consistently.
 
 ## Key areas
 
@@ -37,7 +33,7 @@ Have AI Employees answer questions, capture leads, book appointments, and *more*
     <Link className="card-link" to="./knowledge-base.md">
       <div className="card">
         <div className="card__header"><h3>Knowledge Base</h3></div>
-        <div className="card__body"><p>Provide business-specific information for accurate answers.</p></div>
+        <div className="card__body"><p>Provide business‑specific information for accurate answers.</p></div>
       </div>
     </Link>
   </div>
