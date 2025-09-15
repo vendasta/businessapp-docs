@@ -6,7 +6,7 @@ sidebar_position: 1
 import Link from '@docusaurus/Link';
 import { AISparkleIcon, SettingsIcon, CRMIcon } from '@site/src/components/Icons';
 
-Use AI Employees to automate conversations, answer questions, capture leads, and book appointments across your channels.
+Have AI Employees answer questions, capture leads, book appointments, and *more* using a personalized Knowledge Base and specialized capabilities.
 
 ## Start here
 
