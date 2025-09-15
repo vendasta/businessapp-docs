@@ -75,13 +75,13 @@ Use AI Employees to automate conversations, answer questions, capture leads, and
 ## FAQs
 
 <details>
-<summary>Where do I enable AI?</summary>
+<summary>How do I enable AI Employees?</summary>
 
 Go to <AISparkleIcon /> `AI > AI Workforce` in Business App. Choose the employee you want to use and follow the setup prompts.
 </details>
 
 <details>
-<summary>How does AI get my business information?</summary>
+<summary>How do AI Employees get my business information?</summary>
 
 Your Business Profile is included by default. You can add additional knowledge sources in the Knowledge Base. See the [Knowledge Base Overview](./knowledge-base.md).
 </details>
