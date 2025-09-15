@@ -2,8 +2,5 @@
   "label": "AI",
   "position": 4,
   "collapsed": true,
-  "link": {
-    "type": "generated-index",
-    "description": "Configure AI Workforce Employees and AI Knowledge that power your customer interactions."
-  }
+  "link": { "type": "doc", "id": "index" }
 }
