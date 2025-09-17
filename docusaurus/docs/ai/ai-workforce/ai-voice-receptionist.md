@@ -151,7 +151,7 @@ How to enable:
 3. Select "Transfer call"
 4. Add one or more destination numbers and define criteria (e.g., sales vs. support, business hours)
 
-![Transfer Call capability](../img/voice-receptionist-transfer.png)
+![Transfer Call capability](../img/ai-voice-receptionist-diagram1.jpg)
 
 Best practices:
 - Keep transfer criteria simple and unambiguous

@@ -134,6 +134,36 @@
   display: none !important;
 }
 
+/* --------------------------------------------- */
+/* Guides divider and link styling in CRM sidebar */
+/* --------------------------------------------- */
+
+/* Make the Guides category look like a divider/section header */
+.theme-doc-sidebar-item-category.sidebar-guides-divider {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.theme-doc-sidebar-item-category.sidebar-guides-divider .menu__list-item-collapsible > .menu__link {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-700);
+  cursor: default;
+}
+
+/* Distinct style for guide links */
+.theme-doc-sidebar-item-link.sidebar-guide-link > .menu__link {
+  font-style: italic;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-link.sidebar-guide-link > .menu__link {
+  color: var(--ifm-color-emphasis-200);
+}
+
 /* Make whole feature cards clickable on landing page */
 .card-link {
   text-decoration: none;
