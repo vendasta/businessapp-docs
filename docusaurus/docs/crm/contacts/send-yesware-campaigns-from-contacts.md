@@ -32,7 +32,7 @@ Before you can send contacts a Yesware campaign, make sure that:
 You can add up to 100 contacts at a time from the Contacts table. The action does not apply to `Select all` beyond the first 100.
 :::
 
-![Steps to adding a Contact to a Yesware Campaign](./img/contacts/add-to-Yesware-Campaign.gif)
+![Steps to adding a Contact to a Yesware Campaign](../img/contacts/add-to-Yesware-Campaign.gif)
 
 You can also use the row action menu (three dots) for an individual contact and choose `Add to Yesware Campaign`.
 
