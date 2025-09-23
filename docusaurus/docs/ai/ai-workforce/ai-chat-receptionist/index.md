@@ -58,11 +58,11 @@ To respond accurately to general inquiries, your AI Chat Receptionist needs cont
 
  For a complete guide on providing your AI Employees with Knowledge, see the [Knowledge Sources section in the AI Workforce Overview](../ai_workforce_overview.md#knowledge-sources).
 
-## Preview your AI Chat Receptionist in Action
+## Preview your AI Chat Receptionist in Action {#test-the-ai-chat-receptionists-responses}
 
-Once your AI Chat Receptionist is set up, it's important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. 
+Once your AI Chat Receptionist is set up, it's important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. **For Partners**: This testing environment is also perfect for demonstrating the AI Chat Receptionist's capabilities to prospective clients during sales presentations.
 
-To test your AI Chat Receptionist before going live:
+To test your AI Chat Receptionist before going live (or to demo it to clients):
 
 1. **Navigate to the AI Workforce section**: Go to <AISparkleIcon /> `AI` > `AI Workforce` in your dashboard
 2. **Find your Chat Receptionist**: Locate the AI Chat Receptionist card in your workforce list

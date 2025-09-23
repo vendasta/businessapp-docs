@@ -525,7 +525,7 @@ Absolutely! Use these testing methods:
 
 **Tool Testing:** Review the "Explanation" feature in conversations to see raw API calls and responses
 
-**Channel Testing:** Test across different channels using the methods described in [AI Chat Receptionist setup](./index.md#test-and-monitor-your-ai-chat-receptionist) and [AI Voice Receptionist testing](../ai-voice-receptionist.md#test-and-monitor-your-ai-voice-receptionist)
+**Channel Testing:** Test across different channels using the methods described in [AI Chat Receptionist setup](./index.md#test-the-ai-chat-receptionists-responses) and [AI Voice Receptionist testing](../ai-voice-receptionist.md#test-and-monitor-your-ai-voice-receptionist)
 
 Always test thoroughly before enabling the capability for customer-facing interactions.
 </details>
