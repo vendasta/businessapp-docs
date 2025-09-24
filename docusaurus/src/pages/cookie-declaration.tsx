@@ -1,33 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import CookieDeclaration from '../components/CookieDeclaration';
 
-export default function CookieDeclaration(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
-
-  useEffect(() => {
-    // Create and append the Cookiebot declaration script
-    const script = document.createElement('script');
-    script.id = 'CookieDeclaration';
-    script.src = 'https://consent.cookiebot.com/18defc9c-f3d9-498d-b1d8-469fdf619133/cd.js';
-    script.type = 'text/javascript';
-    script.async = true;
-
-    // Find the container and append the script
-    const container = document.getElementById('cookie-declaration-container');
-    if (container) {
-      container.appendChild(script);
-    }
-
-    // Cleanup function to remove the script when component unmounts
-    return () => {
-      const existingScript = document.getElementById('CookieDeclaration');
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
-  }, []);
-
+export default function CookieDeclarationPage(): JSX.Element {
   return (
     <Layout
       title="Cookie Declaration"
@@ -42,9 +17,7 @@ export default function CookieDeclaration(): JSX.Element {
                 The declaration below is automatically updated by Cookiebot to reflect
                 the current cookie usage on our site.
               </p>
-              <div id="cookie-declaration-container">
-                {/* The Cookiebot declaration script will be injected here */}
-              </div>
+              <CookieDeclaration />
             </div>
           </div>
         </div>
