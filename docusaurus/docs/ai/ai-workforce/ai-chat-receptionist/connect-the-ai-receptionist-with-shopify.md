@@ -22,7 +22,7 @@ When a customer visits a Shopify store they might might have a general idea of a
 While this guide has been written primarily for your AI Chat Receptionist, you can use the Tools created in this guide with you AI Voice Receptionist, or any other AI Employee!
 :::
 
-## Prerequisites & Setup
+## Prerequisites & Setup {#prerequisites--setup}
 
 Before you connect your AI Receptionist to Shopify, you need to gather the following items from your Shopify store’s admin. You’ll only need to do this once.
 
@@ -115,7 +115,7 @@ query {
 :::
 
 
-## Step 3: Write the Prompt
+## Step 3: Write the Prompt {#step-3-write-the-prompt}
 
 In this step, you’ll write the AI Receptionist’s prompt. These are the instructions that tells the AI Receptionist **when** to use the tool `getProductList`, **how** to use the tool based on information from the conversation, and **what** to respond to the customer with.
 
