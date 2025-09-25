@@ -80,6 +80,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/docs/ai/ai-workforce/ai-receptionist',
+            to: '/ai/ai-workforce/ai-chat-receptionist/',
+          },
+        ],
+      },
+    ],
+  ],
+
   themeConfig: {
       algolia: {
         // The application ID provided by Algolia
