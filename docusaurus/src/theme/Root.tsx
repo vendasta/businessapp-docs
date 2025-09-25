@@ -11,7 +11,6 @@ declare global {
 export default function Root({children}: {children: React.ReactNode}): React.ReactElement {
   const location = useLocation();
   const previousPathRef = useRef<string>('');
-
   // Push pageview event to dataLayer on initial load and on every route change
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -62,7 +61,7 @@ export default function Root({children}: {children: React.ReactNode}): React.Rea
       {/* Google Tag Manager (noscript) */}
       <noscript>
         <iframe
-          src={`https://www.googletagmanager.com/ns.html?id=${process.env.GTM_CONTAINER_ID || 'GTM-XXXXXXX'}`}
+          src="https://www.googletagmanager.com/ns.html?id=GTM-1Y49QBYD4L"
           height="0"
           width="0"
           style={{display: 'none', visibility: 'hidden'}}
