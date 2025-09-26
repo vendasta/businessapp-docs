@@ -67,12 +67,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     [
       'classic',
       {
-        // ← GA4 configuration
-        gtag: {
-          trackingID: 'G-1Y49QBYD4L',  // your GA4 Measurement ID
-          anonymizeIP: true,           // optional: set to false to disable
-        },
-  
         docs: {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
