@@ -80,6 +80,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ],
   ],
 
+  // Additional content plugins
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'partner',
+        path: 'partner-docs',
+        routeBasePath: 'partner-center',
+        sidebarPath: './sidebars-partner.ts',
+      },
+    ],
+  ],
+
   themeConfig: {
       algolia: {
         // The application ID provided by Algolia
