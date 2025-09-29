@@ -33,14 +33,6 @@ const config: Config = {
         type: 'text/javascript',
       },
     },
-    // Google Tag Manager script (mirrors partnercenter-docs approach)
-    {
-      tagName: 'script',
-      attributes: {
-        type: 'text/javascript',
-      },
-      innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-1Y49QBYD4L');`,
-    },
   ],
 
   // Enable faster builds with Rspack bundler and persistent cache
@@ -63,6 +55,12 @@ const config: Config = {
     [
       'classic',
       {
+        // ← GA4 configuration
+        gtag: {
+          trackingID: 'G-1Y49QBYD4L',  // your GA4 Measurement ID
+          anonymizeIP: true,           // optional: set to false to disable
+        },
+  
         docs: {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
