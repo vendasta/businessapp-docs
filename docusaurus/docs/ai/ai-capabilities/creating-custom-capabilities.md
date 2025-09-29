@@ -100,7 +100,7 @@ Consider the prompt as instructions for when you hire an employee. Be specific a
 2. Monitor conversation logs to see how the capability performs.
 3. Iterate on prompts and tool configurations based on real usage.
 
-## Tool Configuration Reference
+## Tool Configuration Reference {#tool-fields-explained}
 
 #### Import from cURL  
 cURL is a tool developers use to test APIs by typing commands. Many API docs show example cURL commands. Importing a cURL command here helps you fill in the tool setup automatically—saving time and avoiding mistakes.  
@@ -136,7 +136,7 @@ Headers are extra info sent with the API request, often for security. For exampl
 #### No external processing needed  
 Check this box if your tool doesn’t actually call an outside API but works internally—like formatting dates or text within the AI. This saves unnecessary network calls.
 
-## Writing Effective Capability Prompts
+## Writing Effective Capability Prompts {#writing-a-good-capability-prompt}
 
 When creating your **Prompt**, be sure to:
 
