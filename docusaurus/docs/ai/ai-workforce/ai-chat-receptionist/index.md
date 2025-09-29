@@ -58,18 +58,58 @@ To respond accurately to general inquiries, your AI Chat Receptionist needs cont
 
  For a complete guide on providing your AI Employees with Knowledge, see the [Knowledge Sources section in the AI Workforce Overview](../ai_workforce_overview.md#knowledge-sources).
 
-## Test and Monitor Your AI Chat Receptionist
+## Preview your AI Chat Receptionist in Action {#test-the-ai-chat-receptionists-responses}
 
-Once your AI Chat Receptionist is set up, it’s important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. Regular testing and review will help you catch issues early and continuously improve your AI’s performance as your business evolves.
+Once your AI Chat Receptionist is set up, it's important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. **For Partners**: This testing environment is also perfect for demonstrating the AI Chat Receptionist's capabilities to prospective clients during sales presentations.
 
-### Test the AI Chat Receptionist’s Responses
+To test your AI Chat Receptionist before going live (or to demo it to clients):
 
-Click the `Try it` button from <AISparkleIcon /> `AI` > `AI Workforce`  to open up a **My Listing** page you can use to test chat responses before installing the website widget. For best results, open the test in an incognito window so it starts with a clean session.
+1. **Navigate to the AI Workforce section**: Go to <AISparkleIcon /> `AI` > `AI Workforce` in your dashboard
+2. **Find your Chat Receptionist**: Locate the AI Chat Receptionist card in your workforce list
+3. **Launch the test environment**: Click the `Try it` button to open your **My Listing** page in a new tab
 
-Ask the kinds of questions your real customers might ask, and pay attention to:
-- How the AI responds
-- Whether it gives too much or too little information
-- If it's assuming something you didn't intend
+:::warning
+To access the My Listing page, you must have Local SEO Standard active on your account.
+:::
+
+### What to Test and Look For
+
+:::tip Pro Testing Tip
+For the most accurate testing experience, open the My Listing page in an **incognito or private browser window**. This ensures you start with a clean session without any cached data or previous conversations that might influence the AI's responses.
+:::
+
+When testing your AI Chat Receptionist, simulate real customer interactions by asking the types of questions your actual visitors might ask. Here are key scenarios to test:
+
+**Basic Business Information**
+- Ask about your business hours, location, and contact information
+- Test questions about your services or products
+- Verify the AI provides accurate, up-to-date information from your business profile
+
+**Lead Capture Functionality**
+- Start a conversation without providing contact details
+- See if the AI naturally asks for your name, phone number, or email
+- Test whether the AI handles partial information (e.g., giving only a name but not phone/email)
+- Check if the AI gracefully handles when visitors decline to share contact information
+
+**Appointment Booking** (if enabled)
+- Ask about scheduling a consultation or appointment
+- Test different time preferences (morning, afternoon, specific days)
+- See how the AI handles scheduling conflicts or unavailable times
+
+**Knowledge Base Accuracy**
+- Ask specific questions about your services, policies, or procedures
+- Test edge cases or less common questions
+- Verify the AI admits when it doesn't know something rather than guessing
+
+**Conversational Flow**
+- Pay attention to how natural the conversation feels
+- Notice if the AI gives too much information at once or too little
+- Check if the AI maintains context throughout the conversation
+- Test how it handles follow-up questions or topic changes
+
+**Multilingual Support** (if applicable)
+- Test conversations in different languages your customers might use
+- Verify the AI responds appropriately in the same language
 
 ### Monitor and Improve the AI Chat Receptionist
 
@@ -84,7 +124,7 @@ Responses from the AI Chat Receptionist include a clickable `Explanation` that e
 - the source they used for any knowledge
 - any Tools that were used by the AI, as well as the detailed API call and response. 
 
-## Frequently Asked Questions about Setting Up Your AI Chat Receptionist
+## Frequently Asked Questions about the AI Chat Receptionist
 
 <details>
 <summary>What should I include in the Purpose prompt?</summary>
