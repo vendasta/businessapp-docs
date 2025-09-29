@@ -109,3 +109,4 @@ Go to `Administration > Connections > Manage`, click the integration, and choose
 
 Yes. Disconnecting stops future syncing but does not delete historical data already imported into your app.
 </details>
+
