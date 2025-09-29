@@ -95,3 +95,18 @@ You can also connect platforms directly from the `Settings` > `Connections` page
 ![Settings > Connections](../img/connections.png)
 
 Connecting your accounts early is one of the most important steps you can take to start seeing value in Business App. The metrics pulled in through Connections power analytics in the Executive Report and Marketing Funnel.
+
+## Frequently Asked Questions (FAQs) {#frequently-asked-questions-faqs}
+
+<details>
+<summary>How do I reconnect an integration that has expired?</summary>
+
+Go to `Administration > Connections > Manage`, click the integration, and choose **Reconnect**. Follow the authorization steps to restore access.
+</details>
+
+<details>
+<summary>Can I disconnect an integration without losing data?</summary>
+
+Yes. Disconnecting stops future syncing but does not delete historical data already imported into your app.
+</details>
+
