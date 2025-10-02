@@ -77,7 +77,7 @@ Before you get begin, make sure you've completed these prequisites so your AI Vo
 | Conversations AI phone number        | <SettingsIcon /> `Adminsitration` > `Conversations Settings` | You will need this number for call-forwarding and publishing. This number is assigned after activating an eligible edition of Conversations AI.                |
 | *(Optional)* Calendar connection    | <CRMIcon /> `CRM` > `My Meetings` > <SettingsIcon /> `Settings` > `Defaults` > `Connect Calendar`   | Let's your AI Voice Receptionist book meetings and appointments on the connected calendar.                          |
 
-### Step 1: Set up your AI Voice Receptionist Persona and Communication Channels
+### Step 1: Set up your AI Voice Receptionist Profile and Communication Channels
 While your AI Voice Receptionist is capable of being a great representative for your business with very little configuration, there are a few things you can do to make them feel more on brand with your business and ensure they are set up correctly.
 
 To get started, go to <AISparkleIcon /> `AI > AI Workforce` and click `Configure` on the Voice Receptionist. 
@@ -85,6 +85,10 @@ To get started, go to <AISparkleIcon /> `AI > AI Workforce` and click `Configure
 #### Set your AI Voice Receptionist's name and image
 
 Give your AI Voice Receptionist a friendly, professional name and upload a photo or icon. Your Voice Receptionist will use this name when speaking to callers, and the photo helps you quickly identify it among your other AI Employees in the app. 
+
+#### Set your AI Voice Receptionist's purpose
+
+The Purpose section is where you define how your AI Voice Receptionist should behave and what it should prioritize. Include instructions about your business's voice, how the AI should greet callers, what information it should emphasize, and any important policies or procedures. This is where you make your AI Voice Receptionist uniquely suited to represent your business.
 
 #### Choose your AI Voice Receptionist's voice
 
