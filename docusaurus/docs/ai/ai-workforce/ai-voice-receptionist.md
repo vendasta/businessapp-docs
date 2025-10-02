@@ -1,7 +1,10 @@
 ---
 title: AI Voice Receptionist Overview
+description: Configure your AI Voice Receptionist to answer calls 24/7, capture lead information, book appointments, and route calls. Never miss a high-intent caller again.
 sidebar_label: AI Voice Receptionist
 sidebar_position: 2
+keywords: [AI voice receptionist, AI phone answering, automated receptionist, call handling AI, phone lead capture, appointment booking calls, call forwarding AI, 24/7 phone answering, voice AI assistant, business phone automation]
+tags: [ai, voice, phone, lead capture, automation, appointments]
 ---
 
 import { AISparkleIcon, SettingsIcon, CRMIcon } from '@site/src/components/Icons';

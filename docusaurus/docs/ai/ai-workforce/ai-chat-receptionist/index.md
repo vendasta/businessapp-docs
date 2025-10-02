@@ -1,6 +1,9 @@
 ---
 title: AI Chat Receptionist Overview 
+description: Set up your AI Chat Receptionist to capture leads and answer questions 24/7 across web chat, SMS, Facebook Messenger, and WhatsApp. Configure purpose, capabilities, and knowledge.
 sidebar_position: 2
+keywords: [AI chat receptionist, website chatbot, SMS chatbot, Facebook Messenger bot, WhatsApp business bot, live chat AI, lead capture bot, 24/7 chat support, AI customer service, multi-channel chat, conversational AI, automated messaging]
+tags: [ai, chat, lead capture, automation, customer service, sms, social media]
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';
