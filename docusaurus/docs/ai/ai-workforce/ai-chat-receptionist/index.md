@@ -44,6 +44,8 @@ The Web Chat widget isn't automatically added to your website! You'll need to in
 
 #### Example Purpose Prompts by Business Type {#example-purpose-by-business-type}
 
+Use the examples below as starting points for your **Purpose** prompt. Pick the tab that best matches your business type (or choose **Generic**), copy the prompt into your Purpose field, and tailor the voice, services, and policies to your brand. Keep it specific and concise—the AI will follow these directions in every conversation.
+
 <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
 
@@ -190,12 +192,14 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
 - **Book Appointments**  
   Connect your calendar to let the AI help customers schedule meetings. It will offer available time slots and collect all necessary booking details automatically. 
 
- - **Custom Capabilities**  
-   Expand your AI Chat Receptionist’s skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../ai-capabilities/creating-custom-capabilities) in depth.
+- **Custom Capabilities**  
+  Expand your AI Chat Receptionist's skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../ai-capabilities/creating-custom-capabilities) in depth.
 
-#### Example Capabilities for the AI Chat Receptionist by Business Type {#example-capabilities-by-business-type}
+#### Example Additional Instructions Capabilities by Business Type {#example-custom-capabilities-and-additional-instructions-by-business-type}
 
-<Tabs groupId="business-type" queryString="business-type">
+ The examples below show how you can use simple text instructions in Capabilities to help your AI Chat Receptionist understand how to handle different customer types. These complement your Purpose prompt by focusing on operational requirements, qualification data, routing rules, and response formats.
+
+ <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
 
 ```text wrap
@@ -459,6 +463,12 @@ Bot: Provide Careers page (no booking link).
 
   </TabItem>
 </Tabs>
+
+:::info AI Receptionst Taking Actions 
+ These instructions will change how your AI Receptionist communicates with customers but it will *not* change the actions it can take with Business App or other systems. 
+ 
+ Getting your AI Receptionist to take actions requires adding the appropriate Tool to your Custom Capabilities. For more information on Tools, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
+ :::
 
 ### Step 3: Add Knowledge to the AI Chat Receptionist
 
