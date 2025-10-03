@@ -9,6 +9,9 @@ tags: [ai, chat, lead capture, automation, customer service, sms, social media]
 import { AISparkleIcon } from '@site/src/components/Icons';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ScrollToHash from '@site/src/components/ScrollToHash';
+
+<ScrollToHash />
 
 The AI Chat Receptionist helps you capture leads and respond to website visitors 24/7. In this guide, you’ll learn how to set up, train, and monitor your AI assistant to work for your business.
 
@@ -201,6 +204,8 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
 #### Example Additional Instructions Capabilities by Business Type {#example-custom-capabilities-and-additional-instructions-by-business-type}
 
  The examples below show how you can use simple text instructions in Capabilities to help your AI Chat Receptionist understand how to handle different customer types. These complement your Purpose prompt by focusing on operational requirements, qualification data, routing rules, and response formats.
+
+
 
  <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
