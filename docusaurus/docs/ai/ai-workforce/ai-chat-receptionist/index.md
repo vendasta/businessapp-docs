@@ -52,13 +52,6 @@ The Web Chat widget isn't automatically added to your website! You'll need to in
 
 Use the examples below as starting points for your **Purpose** prompt. Pick the tab that best matches your business type (or choose **Generic**), copy the prompt into your Purpose field, and tailor the voice, services, and policies to your brand. Keep it specific and concise—the AI will follow these directions in every conversation.
 
-- [Home Services](?business-type=home-services#example-purpose-by-business-type)
-- [Pet Services](?business-type=pet-services#example-purpose-by-business-type)
-- [Automotive Services](?business-type=automotive#example-purpose-by-business-type)
-- [Personal Services](?business-type=personal-services#example-purpose-by-business-type)
-- [Agent & Broker](?business-type=agent-broker#example-purpose-by-business-type)
-- [Generic](?business-type=generic#example-purpose-by-business-type)
-
 <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
 
@@ -212,12 +205,7 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
 
  The examples below show how you can use simple text instructions in Capabilities to help your AI Chat Receptionist understand how to handle different customer types. These complement your Purpose prompt by focusing on operational requirements, qualification data, routing rules, and response formats.
 
-- [Home Services](?business-type=home-services#example-custom-capabilities-and-additional-instructions-by-business-type)
-- [Pet Services](?business-type=pet-services#example-custom-capabilities-and-additional-instructions-by-business-type)
-- [Automotive Services](?business-type=automotive#example-custom-capabilities-and-additional-instructions-by-business-type)
-- [Personal Services](?business-type=personal-services#example-custom-capabilities-and-additional-instructions-by-business-type)
-- [Agent & Broker](?business-type=agent-broker#example-custom-capabilities-and-additional-instructions-by-business-type)
-- [Generic](?business-type=generic#example-custom-capabilities-and-additional-instructions-by-business-type)
+
 
  <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
@@ -599,3 +587,4 @@ You know your business best! To improve your AI’s accuracy, take a moment to w
 Use this info to write clear Purpose prompts and add any relevant content to your AI’s knowledge base that might be missing.
 
 </details>
+
