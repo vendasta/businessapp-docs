@@ -9,304 +9,52 @@ import TabItem from '@theme/TabItem';
 
 By connecting the AI Chat Receptionist with Shopify, you'll be able to integrate info from your online store directly to your AI Chat Receptionist. 
 
-**In this guide, you will set up your AI Receptionist to be able to:**
-- Search your Shopify store for products by keyword;
-- Fetch detailed product information, including title, handle, price range, and description; and
-- Check real-time inventory levels.
+**In this guide, you will enable your AI Receptionist to:**
+- Search your Shopify store for products by keyword
+- Fetch detailed product information, including title, handle, price range, and description
+- Check real‑time availability
 
 ### Why is connecting the AI Receptionist with Shopify important?
 
 When a customer visits a Shopify store they might might have a general idea of a product they want but aren't sure exactly how to find it on the store website. Similarly, a customer might be able to find it in search but miss out on some key product details if they don't know where to look. This integration lets a customer ask general questions using chat and get helpful, personalized responses from the AI Receptionist that directs them where they want to go.
 
 :::tip
-While this guide has been written primarily for your AI Chat Receptionist, you can use the Tools created in this guide with you AI Voice Receptionist, or any other AI Employee!
+This guide focuses on the AI Chat Receptionist, but the Shopify MCP connection works across all AI Employees (including AI Voice Receptionist). No manual tool creation is required.
 :::
 
 ## Prerequisites & Setup
 
-Before you connect your AI Receptionist to Shopify, you need to gather the following items from your Shopify store’s admin. You’ll only need to do this once.
+Getting started is simple! All you need to have ready is:
 
-| What you need | Where to find it | Scopes / Notes |
-|---------------|------------------|----------------|
-| **Shopify Store Domain** (`your-store.myshopify.com`) | `Admin` → `Settings` → `General` — copy **Store address** | — |
-| **Admin API Access Token** | <p>1. Click <code>New app</code> → <code>Configure Admin API</code> (select the permissions shown in “Scopes / Notes” and click Save)</p><p>2. Click <code>Install</code> → <code>Reveal token</code></p> | <ul><li>`read_inventory`</li><li>`read_products`</li></ul> |
-| **Storefront API Access Token** | <p>1. Click <code>Enable Storefront API</code> (turn on the permission listed in “Scopes / Notes” and click Save)</p><p>2. Click <code>Install / Update</code> → <code>Reveal token</code></p> | <ul><li>`unauthenticated_read_product_listings`</li></ul> |
-| *(Optional)* **GraphQL Familiarity** | Review [Shopify Admin GraphQL API docs](https://shopify.dev/docs/api/admin-graphql) | — |
-
-#### Shopify Help Resources
-
-> You can get more detailed help on gathering this information from the Shopify help links below:
-> - Getting your store domain ([Shopify general settings](https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/general-settings))
-> - Developing "apps" for your store ([Custom Apps](https://help.shopify.com/en/manual/apps/custom-apps))
-> - Utilizing the Shopify Storefront API ([Storefront API docs](https://shopify.dev/docs/api/storefront))
-> - Utilizing Shopify Admin GraphQL API ([Admin GraphQL API docs](https://shopify.dev/docs/api/admin-graphql))
+| What you need | Where to find it | Notes |
+|---------------|------------------|-------|
+| Your Shopify Storefront URL | Shopify Admin (or in the address bar when you visit your store) | |
+| **Business App admin access** | Business App | Required to manage Connections and AI Workforce |
 
 ---
 
-## Step 1: Add a Shopify Custom Capability for your AI Receptionist
+## Step 1: Connect your Shopify Storefront
 
-This step creates the capability your AI Receptionist will reference when someone asks about items or stock. These are the "instructions" given to your AI Receptionist that help it know what it can do and when it should do it.
+1. In Business App, go to `Administration` → `Integrations` and select `Shopify Storefront`.
+2. Click `Connect` and enter your Shopify Storefront URL.
 
-1. In Business App, navigate to <AISparkleIcon /> `AI` → `AI Workforce`
+
+Once connected, the Shopify Storefront integration makes the "Access Shopify" Capability and multiple Tools available to your AI Employees using Shopify's Model Context Protocol (MCP) servers.
+
+## Step 2: Enable Shopify actions for your AI Receptionist
+
+1. Navigate to <AISparkleIcon /> `AI` → `AI Workforce`.
 2. Select your AI Employee and click `Configure`.
-3. Under `Custom Capabilities`, click `Add a capability`.
-4. Fill in the following fields:
-   - **Name**: `Get Shopify Product Info`
-   - **Description**: Searches the Shopify store for products matching a keyword and returns product names, descriptions, prices, and availability using the Storefront API.
-  
-:::note
-You will come back to this screen in [Step 3: Write the Prompt](#step-3-write-the-prompt).
-:::
+3. Under the `Capabilities` tab, find the "Access Shopify" Capability and ensure the URL for your connected Shopify Storefront is shown in the drop-down menu.
 
-## Step 2: Configure Shopify API Tools for the AI Receptionist
+## Step 3: Optional prompt tips
 
-For your AI Receptionist to be able to get information from Shopify, they will need to be able to call Shopify APIs using Tools. In this step you will configure a single tool your AI Receptionist can use to search for products and report whether they are available for sale.
+While the "Access Shopify" Capability works out of the box without further configuration, you might want to include instructions in your AI Employee's `Purpose` or in an additional Custom Capability to help format the Shopify responses consistently.
 
-### Shopify Tool: getProductList
-
-`getProductList` is your AI Receptionist's product‑search tool. We are using it to send a keyword to Shopify’s Storefront API and returns up to five matching products with title, handle, price range, and availability. 
-Use the values below (replacing any placeholders) to create your version of this tool.
-
-#### Summary
-
-| Field | Value |
-|-------|-------|
-| **ID** | `getProductList` |
-| **Description** | Searches the Shopify store for products matching a keyword and returns names, descriptions, prices, and availability. |
-| **Method** | `POST` |
-| **URL** | `https://{{your-shopify-domain}}/api/2025-01/graphql.json` |
-
-#### Required headers
-
-| Header | Example value | Required |mini
-|--------|---------------|:-------:|
-| `X-Shopify-Storefront-Access-Token` | `YOUR_STOREFRONT_ACCESS_TOKEN` | ✓ |
-| `Content-Type` | `application/json` | ✓ |
-
-> For help getting your storefront access token, you can follow the [Prerequisites & Setup](#prerequisites--setup) section in this guide.
-
-#### Body parameters
-| Name | Location | Type | Description |
-|------|----------|------|-------------|
-| `query` | `Body` | `string` | `Generate a full GraphQL query string using Shopify Storefront API with this format: query { products(first: 5, query: "KEYWORD") { edges { node { title handle availableForSale priceRange { minVariantPrice { amount currencyCode } } descriptionHtml } } } }, replacing KEYWORD with the user's term. Do not return just a keyword—return the entire query string exactly as shown.` |
-
-:::info
-If an API call is failing, compare the API call created by your AI Employeee with this example succesful GraphQL body. You can inspect AI Employee raw API calls in the `Conversations` tab.
-
-<details>
-<summary>Example AI Receptionist generated GraphQL body</summary>
-
-```graphql
-query {
-  products(first: 5, query: "bags") {
-    edges {
-      node {
-        id
-        title
-        variants(first: 1) {
-          edges { node { price } }
-        }
-      }
-    }
-  }
-}
-```
-</details>
-:::
-
-
-## Step 3: Write the Prompt
-
-In this step, you’ll write the AI Receptionist’s prompt. These are the instructions that tells the AI Receptionist **when** to use the tool `getProductList`, **how** to use the tool based on information from the conversation, and **what** to respond to the customer with.
-
-You can copy and paste this whole example prompt below, but you will first have to:
--  swap out the `Category`  placeholders with a few examples of product categories in your Shopify store 
-- swap out the `Item` placeholders with examples of products that belong to the prodcut categores in your Shopify store
-
-### Example AI Receptionist Shopify Prompt
-
-````
-## **Inventory Lookup Trigger & Query Instructions**
-
-### When to Query Shopify Inventory
-Initiate a live Shopify Storefront API query **only when**:
-- The user asks about a specific product, product type, or category (e.g., "Do you have grooming kits?" or "Show me hoodies").
-- The user expresses interest in browsing or comparing available items.
-- The user mentions relevant keywords from product categories (see below).
-
-**Do not query** if the user asks about non-inventory topics such as shipping, returns, sizing, or store policies.
-
----
-
-### Keyword-Based Intent Inference
-Trigger a query if the user message includes or implies any of these category-related keywords:
-
-#### {Category 1}:
-- {Item 1, Item 2, Item 3, Item 4, Item 5}
-
-#### {Category 2}:
-- {Item a, Item b, Item c, Item d, Item e}
-
-#### {Category 3}:
-- {Item z, Item y, Item x, Item v, Item w}
-
-If multiple categories are referenced, use the most specific or dominant keyword to construct the search term.
-
----
-
-### GraphQL Query Construction
-When querying Shopify, YOU MUST generate a **complete GraphQL query string** in the following structure, and place it in the 'query' param. DO NOT SEND A SINGLE KEYWORD in the query param.
-
-```graphql
-query {
-  products(first: 5, query: "KEYWORD") {
-    edges {
-      node {
-        title
-        handle
-        availableForSale
-        priceRange {
-          minVariantPrice {
-            amount
-            currencyCode
-          }
-        }
-        descriptionHtml
-      }
-    }
-  }
-}
-```
-
-- Replace "KEYWORD" with the most relevant search term based on the user's input.
-- Do **not** include pagination cursors, pageInfo, or unrelated fields.
-- Ensure the query is syntactically valid and fully escaped if it will be sent as a JSON string.
-- Include the `handle` field so you can build product URLs.
-- Product links should be constructed using the format: `https://cegxnb-y0.myshopify.com/products/HANDLE`
-
-### If No Matching Products Are Found
-- Politely inform the user that no products matched their query.
-- Suggest other available categories or popular items (e.g., "You could also check out our toys or grooming kits").
-
-When sharing links, hyperlink it over the name of the product.
-````
-
-## Example conversation wih AI Receptionist connected to Shopify
-
-<ChatUserMessage>
-Hey, do you have any hoodies for sale?
-</ChatUserMessage>
-
-*(AI calls `getProductList` with the provided keyword `hoodie`)*
-
-<ChatAIMessage>
-Sure! Here are a couple of options for hoodies:
-
-1. **Cozy Hoodie** – $45.00 USD  
-   A fleece-lined pullover with a front pocket and adjustable drawstring hood.  
-   [View Cozy Hoodie](https://your-store.myshopify.com/products/cozy-hoodie)
-
-2. **Lightweight Zip-Up** – $39.00 USD  
-   A breathable, zip-up hoodie perfect for layering, available in multiple colors.  
-   [View Lightweight Zip-Up](https://your-store.myshopify.com/products/lightweight-zip-up)
-
-Would you like more details or help placing an order?
-</ChatAIMessage>
-
-
-
-## Testing & Troubleshooting
-
-This section walks you through diagnosing the most common issues with connecting Shopify with  the AI Receptionist: from authentication errors and query mistakes, to empty results and rate limiting. Select the tab that matches your symptom to learn what the error looks like and how to fix it.
-
-
-:::note
-Troubleshooting API errors can involve technical steps like examining HTTP responses, GraphQL query syntax, and request headers. If you’re not comfortable with these details, consider asking a developer or reaching out to our support team for help.
-:::
-
-<Tabs
-  defaultValue="token"
-  values={[
-    { label: 'Unauthorized Error (401/403)', value: 'token' },
-    { label: 'Syntax Error', value: 'syntax' },
-    { label: 'No Products Found', value: 'empty' },
-    { label: 'View Raw Request', value: 'inspect' },
-    { label: 'Rate Limit (429)', value: 'rate' },
-  ]}>
-
-<TabItem value="token">
-#### What is this error?
-You’ll get a `401 Unauthorized` or `403 Forbidden` response and see a JSON like:
-```json
-{ "errors": [{ "message": "Access denied" }] }
-```
-
-#### How do we fix this error?
-1. Double-check your Storefront access token and store domain.
-2. In Postman or GraphiQL, run the same query against
-   `https://{{your-shopify-domain}}/api/2025-01/graphql.json`
-   with header
-   `X-Shopify-Storefront-Access-Token: <token>`.
-3. If it still fails, regenerate your Storefront token in Shopify’s admin.
-</TabItem>
-
-<TabItem value="syntax">
-#### What is this error?
-You’ll encounter a `Syntax Error` (the GraphQL query couldn’t be understood), and may see a JSON like:
-```json
-{ "errors": [{ "message": "Syntax Error: Unexpected }" }] }
-```
-
-#### How do we fix this error?
-1. Compare your query to this template exactly:
-   ```graphql
-   query {
-     products(first: 5, query: "YOUR_TERM") {
-       edges {
-         node {
-           title
-           handle
-           availableForSale
-           priceRange { minVariantPrice { amount currencyCode } }
-           descriptionHtml
-         }
-       }
-     }
-   }
-   ```
-2. Escape all quotes and ensure braces match.
-</TabItem>
-
-<TabItem value="inspect">
-#### What is this error?
-This view shows the raw HTTP request the AI sent, including headers and the GraphQL body.
-
-#### How do we fix this error?
-1. Open “Conversations” → “Explanation” in the Business App.
-2. Confirm the GraphQL query and headers match your intended values.
-3. Correct any typos in the tool prompt or mapping logic.
-</TabItem>
-
-<TabItem value="empty">
-#### What is this error?
-The response’s `products.edges` array is empty, so no products matched.
-
-#### How do we fix this error?
-1. Verify the search term matches a product title, handle, or tag.
-2. Try a broader keyword or check for typos.
-</TabItem>
-
-<TabItem value="rate">
-#### What is this error?
-Shopify returned a `429 Too Many Requests` error, indicating you are hitting the rate limit.
-
-#### How do we fix this error?
-1. Reduce the frequency of `getProductList` calls.
-2. Implement exponential backoff or caching.
-3. Aggregate multiple user queries into a single batch if possible.
-</TabItem>
-
-</Tabs>
+Examples of instructions you might include are:
+- only share one product at a time unless the user asks for more
+- always share a picture of the product using markdown links on web chat
+- if no results are found, suggest related categories or popular items
 
 ## FAQ: Connecting the AI Receptionist with Shopify
 
@@ -318,16 +66,14 @@ Shopify returned a `429 Too Many Requests` error, indicating you are hitting the
 Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](/docs/ai/ai-workforce/ai-voice-receptionist). 
 
 This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business. 
-
- For more details on setting up Custom Capabilities across different AI Employees, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
 </details>
 
 <details>
-<summary>What other e-commerce platforms can I connect besides Shopify?</summary>
+<summary>Can I connect other e-commerce platforms besides Shopify?</summary>
 
-While this guide is specific to Shopify, you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
+Yes! This guide is specific to Shopify, but you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
 
- The [Custom Capabilities framework](../ai-capabilities/creating-custom-capabilities) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Connections](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
+ The [Custom Capabilities framework](../ai-capabilities/creating-custom-capabilities) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Integrations](../../administration/connections/) or create workflows with external platforms using [Zapier](../../automations/zapier.md).
 </details>
 
 ### AI & Knowledge Questions
@@ -335,18 +81,18 @@ While this guide is specific to Shopify, you can create similar integrations wit
 <details>
 <summary>How does the Shopify integration work with my AI's Knowledge Base?</summary>
 
-The Shopify integration provides real-time product data through API calls, while your [Knowledge Base](/docs/ai/knowledge-base) contains static business information. These work together perfectly:
+The Shopify integration provides real-time product data using Shopify's Model Context Protocol (MCP) server, while your [Knowledge Base](/docs/ai/knowledge-base) contains static business information. These work together perfectly:
 
-**Shopify API provides:** Live product availability, current prices, product descriptions  
+**Shopify MCP provides:** Live product availability, current prices, product descriptions, storefront FAQs, etc.  
 **Knowledge Base should include:** Shipping policies, return information, size guides, care instructions, warranty details
 
-Your AI will use the Shopify API to answer "Do you have this product?" and the Knowledge Base to answer "What's your return policy?" For best results, ensure your [Knowledge Sources](/docs/ai/ai-workforce/ai_workforce_overview#knowledge-sources) include comprehensive product and policy information to complement the real-time data.
+Your AI will use the Shopify Storefront integration to answer "Do you have this product?" and the Knowledge Base to answer "How does a medium t-shirt fit?" For best results, ensure your [Knowledge Sources](/docs/ai/ai-workforce/ai_workforce_overview#knowledge-sources) include comprehensive product and policy information to complement the real-time data.
 </details>
 
 <details>
 <summary>What if customers ask about Shopify-related questions the API can't answer?</summary>
 
-Great question! The Shopify API provides product and inventory data, but customers often need additional information. Add these topics to your [Knowledge Base](/docs/ai/knowledge-base):
+Great question! The Shopify Storefront integration detailed storefront data, but customers often need additional information. If the below information is *not* shared on your Shopify store, you should add it to your [Knowledge Base](/docs/ai/knowledge-base):
 
 - Shipping costs and delivery times
 - Return and exchange policies  
@@ -364,7 +110,7 @@ This ensures your AI can provide complete, helpful answers by combining real-tim
 <details>
 <summary>Can customers use this Shopify integration through SMS or WhatsApp?</summary>
 
-Yes! Custom Capabilities work across all communication channels supported by your AI Employees. Customers can ask about products through:
+Yes! The Shopify Storefront integration works across all communication channels supported by your AI Employees. Customers can search for products, update carts, and more through:
 
 - [Web chat](/conversations/conversations-ai-web-chat-overview)
 - [SMS messaging](/conversations/conversations-send-receive-sms) (Conversations Pro required)
@@ -379,35 +125,20 @@ Yes! Custom Capabilities work across all communication channels supported by you
 <details>
 <summary>How do product recommendations appear in different conversation channels?</summary>
 
-Your AI adapts product recommendations to each communication channel:
+Your AI will adapt product recommendations to each communication channel:
 
 **Web Chat & Messaging:** Products appear with clickable links, formatted descriptions, and prices  
 **SMS/WhatsApp:** Simplified text format with product names, prices, and shortened URLs  
 **Voice Calls:** Spoken product names, prices, and descriptions 
 
  Your AI automatically optimizes the presentation for each channel. For more details on channel setup, see [Conversations Overview](../../conversations/).
+
+ :::note
+ You are welcome to write custom prompts to create more specific formatting for each channel, but note that the Shopify Storefront integration is designed to work out of the box with no additional configuration.
+ :::
 </details>
 
 ### Advanced Configuration Questions
-
-<details>
-<summary>Can I create multiple Shopify tools for different store sections or purposes?</summary>
-
-Absolutely! You can create multiple tools within the same Custom Capability or separate capabilities for different purposes:
-
-**Separate tools by function:**
-- `getProductList` - Search products by keyword
-- `getProductByID` - Get detailed info for specific products  
-- `checkInventory` - Check stock levels for multiple items
-- `getProductsByCategory` - Browse by category
-
-**Separate capabilities by business logic:**
-- Product search for general inquiries
-- Inventory lookup for existing customers
-- New arrivals showcase for marketing
-
-Learn more about structuring multiple tools in [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
-</details>
 
 <details>
 <summary>How can I track which products customers are asking about most?</summary>
