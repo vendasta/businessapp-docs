@@ -8,16 +8,16 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Head from '@docusaurus/Head';
 
-By connecting the AI Chat Receptionist with Shopify, you'll be able to integrate info from your online store directly to your AI Chat Receptionist. 
+By connecting the AI Chat Receptionist with your Shopify Storefront, customers will be able to interact with your store directly on any channel your AI Chat Receptionist is working on, such as web chat, SMS, Facebook Messenger, Instagram DMs, WhatsApp, or phone calls.
 
 **In this guide, you will enable your AI Receptionist to:**
-- Search your Shopify store for products by keyword
-- Fetch detailed product information, including title, handle, price range, and description
-- Check real‑time availability
+- Search and find products
+- Respond to frequently asked questions
+- Update and create customer carts as well as create checkout links
 
 ### Why is connecting the AI Receptionist with Shopify important?
 
-When a customer visits a Shopify store they might might have a general idea of a product they want but aren't sure exactly how to find it on the store website. Similarly, a customer might be able to find it in search but miss out on some key product details if they don't know where to look. This integration lets a customer ask general questions using chat and get helpful, personalized responses from the AI Receptionist that directs them where they want to go.
+When a customer connects with your business—whether through web chat, SMS, social messaging apps, or even a phone call—they often know what they’re looking for but may struggle to find it quickly. The Shopify integration allows your AI Receptionist to handle these inquiries seamlessly across every supported channel. Customers can ask general or detailed questions and receive helpful, personalized responses that guide them to the right products or key details, no matter where the conversation starts.
 
 :::tip
 This guide focuses on the AI Chat Receptionist, but the Shopify Storefront integration works across all AI Employees (including AI Voice Receptionist). No manual tool creation is required.
