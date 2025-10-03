@@ -29,7 +29,7 @@ Getting started is simple! All you need to have ready is:
 
 | What you need | Where to find it | Notes |
 |---------------|------------------|-------|
-| Your Shopify Storefront URL | Shopify Admin (or in the address bar when you visit your store) | |
+| **Your Shopify Storefront URL** | Shopify Admin (or in the address bar when you visit your store) | The `https` portion of your storefront URL is required |
 | **Business App admin access** | Business App | Required to manage Connections and AI Workforce |
 
 ---
@@ -39,6 +39,8 @@ Getting started is simple! All you need to have ready is:
 1. In Business App, go to `Administration` → `Integrations` and select `Shopify Storefront`.
 2. Click `Connect` and enter your Shopify Storefront URL.
 
+![Shopfiy Storefront Integration](./img/shopify-storefront-integration-page.png)
+
 
 Once connected, the Shopify Storefront integration makes the "Access Shopify" Capability and multiple Tools available to your AI Employees using Shopify's Model Context Protocol (MCP) servers.
 
@@ -47,6 +49,8 @@ Once connected, the Shopify Storefront integration makes the "Access Shopify" Ca
 1. Navigate to <AISparkleIcon /> `AI` → `AI Workforce`.
 2. Select your AI Employee and click `Configure`.
 3. Under the `Capabilities` tab, find the "Access Shopify" Capability and ensure the URL for your connected Shopify Storefront is shown in the drop-down menu.
+
+![Shopify Storefront Capability](./img/shopify-storefront-capability.png)
 
 ## Step 3: Optional prompt tips
 
@@ -194,7 +198,7 @@ Absolutely! Use these testing methods:
 Always test thoroughly before enabling the capability for customer-facing interactions.
 </details>
 
-const faqSchema = {
+export const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
