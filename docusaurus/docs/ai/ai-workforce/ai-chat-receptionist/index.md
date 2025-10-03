@@ -9,6 +9,9 @@ tags: [ai, chat, lead capture, automation, customer service, sms, social media]
 import { AISparkleIcon } from '@site/src/components/Icons';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ScrollToHash from '@site/src/components/ScrollToHash';
+
+<ScrollToHash />
 
 The AI Chat Receptionist helps you capture leads and respond to website visitors 24/7. In this guide, you’ll learn how to set up, train, and monitor your AI assistant to work for your business.
 
@@ -48,6 +51,13 @@ The Web Chat widget isn't automatically added to your website! You'll need to in
 #### Example Purpose Prompts by Business Type {#example-purpose-by-business-type}
 
 Use the examples below as starting points for your **Purpose** prompt. Pick the tab that best matches your business type (or choose **Generic**), copy the prompt into your Purpose field, and tailor the voice, services, and policies to your brand. Keep it specific and concise—the AI will follow these directions in every conversation.
+
+- [Home Services](?business-type=home-services#example-purpose-by-business-type)
+- [Pet Services](?business-type=pet-services#example-purpose-by-business-type)
+- [Automotive Services](?business-type=automotive#example-purpose-by-business-type)
+- [Personal Services](?business-type=personal-services#example-purpose-by-business-type)
+- [Agent & Broker](?business-type=agent-broker#example-purpose-by-business-type)
+- [Generic](?business-type=generic#example-purpose-by-business-type)
 
 <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
@@ -201,6 +211,13 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
 #### Example Additional Instructions Capabilities by Business Type {#example-custom-capabilities-and-additional-instructions-by-business-type}
 
  The examples below show how you can use simple text instructions in Capabilities to help your AI Chat Receptionist understand how to handle different customer types. These complement your Purpose prompt by focusing on operational requirements, qualification data, routing rules, and response formats.
+
+- [Home Services](?business-type=home-services#example-custom-capabilities-and-additional-instructions-by-business-type)
+- [Pet Services](?business-type=pet-services#example-custom-capabilities-and-additional-instructions-by-business-type)
+- [Automotive Services](?business-type=automotive#example-custom-capabilities-and-additional-instructions-by-business-type)
+- [Personal Services](?business-type=personal-services#example-custom-capabilities-and-additional-instructions-by-business-type)
+- [Agent & Broker](?business-type=agent-broker#example-custom-capabilities-and-additional-instructions-by-business-type)
+- [Generic](?business-type=generic#example-custom-capabilities-and-additional-instructions-by-business-type)
 
  <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
@@ -582,4 +599,3 @@ You know your business best! To improve your AI’s accuracy, take a moment to w
 Use this info to write clear Purpose prompts and add any relevant content to your AI’s knowledge base that might be missing.
 
 </details>
-
