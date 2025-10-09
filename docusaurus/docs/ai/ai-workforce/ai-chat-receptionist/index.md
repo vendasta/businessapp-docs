@@ -164,7 +164,7 @@ Your role has **two main objectives**:
 ```
 
   </TabItem>
-  <TabItem value="generic" label="Generic">
+  <TabItem value="general" label="General Business">
 
 ```text wrap
 You are a representative of a *[Industry]* business**.  
