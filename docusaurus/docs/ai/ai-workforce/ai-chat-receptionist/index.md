@@ -390,7 +390,7 @@ Bot: Collect info → Provide booking link.
 ```
 
   </TabItem>
-  <TabItem value="generic" label="Generic">
+  <TabItem value="generic" label="General Business">
 
 ```text wrap
 # Additional Instructions  
