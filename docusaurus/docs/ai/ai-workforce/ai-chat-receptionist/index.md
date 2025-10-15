@@ -164,7 +164,7 @@ Your role has **two main objectives**:
 ```
 
   </TabItem>
-  <TabItem value="general" label="General Business">
+  <TabItem value="General Business" label="General Business">
 
 ```text wrap
 You are a representative of a *[Industry]* business**.  
@@ -390,7 +390,7 @@ Bot: Collect info → Provide booking link.
 ```
 
   </TabItem>
-  <TabItem value="generic" label="General Business">
+  <TabItem value="General Business" label="General Business">
 
 ```text wrap
 # Additional Instructions  
