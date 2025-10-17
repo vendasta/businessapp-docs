@@ -132,7 +132,7 @@ const config: Config = {
       title: 'Product Documentation',
       logo: {
         alt: 'Logo',
-        src: 'img/logo.png',
+        src: 'img/business-app-logo.svg',
       },
       hideOnScroll: false,
       items: [

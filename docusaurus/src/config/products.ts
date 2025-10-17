@@ -11,7 +11,7 @@ export const products: Product[] = [
   {
     id: 'businessapp',
     name: 'Business App',
-    logo: '/img/logo.png',
+    logo: '/img/business-app-logo.svg',
     sidebarId: 'businessappSidebar',
     path: '/businessapp/',
     tagline: 'Customer acquisition and engagement platform for your business',
