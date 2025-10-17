@@ -121,6 +121,7 @@ const ProductSwitcher: React.FC<ProductSwitcherProps> = ({variant = 'navbar'}) =
               className={`${styles.dropdownItem} ${
                 currentProduct.id === product.id ? styles.dropdownItemActive : ''
               }`}
+              title={`${product.name}${product.tagline ? ' — ' + product.tagline : ''}`}
               onClick={() => handleProductChange(product.id)}
             >
               <img
