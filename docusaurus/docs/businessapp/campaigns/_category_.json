@@ -1,0 +1,9 @@
+{
+  "label": "Campaigns",
+  "position": 5,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "businessapp/campaigns/index"
+  }
+}

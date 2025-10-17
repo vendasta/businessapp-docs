@@ -1,0 +1,35 @@
+---
+title: "What Salesforce information populates dynamic Templates?"
+description: "What Salesforce information populates dynamic Templates?"
+sidebar_position: 60
+---
+
+# What Salesforce information populates dynamic Templates?
+
+When creating a new Template in the Gmail or O365 compose window, Yesware will look at the **first recipient in the “To” field**. If a matching **Contact or Lead** is found in Salesforce, Yesware will automatically populate dynamic fields in your Template using information from that record.
+### How to Insert Salesforce Fields into a Template
+In the Templates editor, click the **"Insert Merge Field"** button at the bottom of the compose area.
+Select **"Salesforce field."**
+As you type in the name of the field, a list of matching Salesforce fields will appear.
+**Note:** Salesforce field merging is available only on the **Enterprise plan**.
+### Formatting Salesforce Merge Fields
+Templates must use the standard merge field format `\{!...\}`. For example:
+`\{!Contact.FirstName\}` – pulls from a matching **Contact**
+`\{!Lead.FirstName\}` – pulls from a matching **Lead**
+`\{!FirstName\}` – works for either Contact or Lead without specifying the object
+You can use any valid Salesforce field from a Contact or Lead object, including:
+Phone number
+Company name
+Account name
+Website
+And more...
+The merge field must match the **Salesforce API field name**, not the label name.
+### Pulling from Account Fields
+To use fields from an **Account** object (e.g., the Account tied to a Contact), you must **prefix the field name with the object name**:
+`\{!Account.Website\}`
+Yesware does **not support Opportunity objects** for dynamic field population.
+### Helpful Salesforce Resources
+Here are Salesforce's official guides to API field names for common objects:
+[Account field names](https://help.salesforce.com/s/articleView?id=sf.fields_about_account_fields.htm)
+[Contact field names](https://help.salesforce.com/s/articleView?id=sf.fields_about_contact_fields.htm)
+[Lead field names](https://help.salesforce.com/s/articleView?id=sf.fields_about_lead_fields.htm)

@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Business App',
-  tagline: 'Customer acquisition and engagement platform for your business',
+  title: 'Product Documentation',
+  tagline: 'Comprehensive documentation for all products',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -43,13 +43,14 @@ const config: Config = {
     },
   ],
 
-  // Enable faster builds with Rspack bundler and persistent cache
-  future: {
-    experimental_faster: {
-      rspackBundler: true,
-      rspackPersistentCache: true,
-    },
-  },
+  // Disabled experimental Rspack bundler due to stability issues
+  // Using stable Webpack bundler instead
+  // future: {
+  //   experimental_faster: {
+  //     rspackBundler: true,
+  //     rspackPersistentCache: true,
+  //   },
+  // },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -83,7 +84,12 @@ const config: Config = {
         redirects: [
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
-            to: '/ai/ai-workforce/ai-chat-receptionist/',
+            to: '/businessapp/ai/ai-workforce/ai-chat-receptionist/',
+          },
+          // Redirect root to businessapp by default
+          {
+            from: '/',
+            to: '/businessapp/',
           },
         ],
       },
@@ -123,17 +129,68 @@ const config: Config = {
     // Social card used for sharing previews
     image: 'img/businessapp-docs-social-share.png',
     navbar: {
-      title: 'Business App',
+      title: 'Product Documentation',
       logo: {
-        alt: 'Business App Logo',
+        alt: 'Logo',
         src: 'img/logo.png',
       },
+      hideOnScroll: false,
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'businessappSidebar',
           position: 'left',
-          label: 'Overview',
+          label: 'Business App',
+          className: 'navbar__item--hidden',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'adintelSidebar',
+          position: 'left',
+          label: 'Ad Intel',
+          className: 'navbar__item--hidden',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'ampsSidebar',
+          position: 'left',
+          label: 'AMPS',
+          className: 'navbar__item--hidden',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'localseoSidebar',
+          position: 'left',
+          label: 'Local SEO',
+          className: 'navbar__item--hidden',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'repmanSidebar',
+          position: 'left',
+          label: 'Reputation Management',
+          className: 'navbar__item--hidden',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'socialmarketingSidebar',
+          position: 'left',
+          label: 'Social Marketing',
+          className: 'navbar__item--hidden',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'websiteSidebar',
+          position: 'left',
+          label: 'WordPress Hosting',
+          className: 'navbar__item--hidden',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'yeswareSidebar',
+          position: 'left',
+          label: 'Yesware',
+          className: 'navbar__item--hidden',
         },
       ],
     },
