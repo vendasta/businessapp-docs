@@ -1,6 +1,75 @@
 .productSwitcher {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+}
+
+.navbarVariant {
+  margin: 0;
+  margin-top: 0.35rem;
+  width: 100%;
+}
+
+.navbarVariant .switcherButton {
+  width: 100%;
+  justify-content: flex-start;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.navbarVariant .switcherButton:hover {
+  background: transparent;
+  border: none;
+}
+
+.navbarVariant .switcherButton:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 996px) {
+  .navbarVariant {
+    margin-top: 0;
+    width: auto;
+  }
+
+  .navbarVariant .switcherButton {
+    width: auto;
+    padding: 6px 12px;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    background: var(--ifm-background-color);
+  }
+
+  .navbarVariant .switcherButton:hover {
+    background: var(--ifm-color-emphasis-100);
+    border-color: var(--ifm-color-emphasis-400);
+  }
+}
+
+.mobileVariant {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Sidebar variant: designed to sit inside the left doc sidebar */
+.sidebarVariant {
+  width: 100%;
+  display: block;
+  margin: 0 0 12px 0;
+}
+
+.sidebarSwitcherButton {
+  width: 100%;
+  justify-content: flex-start;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 10px 12px;
+  height: auto;
+}
+
+.sidebarSwitcherButton:hover {
+  border-color: var(--ifm-color-primary);
 }
 
 .switcherButton {
@@ -17,6 +86,11 @@
   font-weight: 500;
   transition: all 0.2s ease;
   height: 36px;
+}
+
+.mobileSwitcherButton {
+  width: 100%;
+  justify-content: space-between;
 }
 
 .switcherButton:hover {
@@ -50,12 +124,15 @@
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-  min-width: 320px;
+  /* Keep dropdown within the sidebar width to avoid clipping */
+  width: 100%;
+  min-width: unset;
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  /* Ensure menu overlays page content */
+  z-index: 10000;
   overflow: hidden;
   animation: dropdownFadeIn 0.15s ease;
   backdrop-filter: none;
@@ -143,11 +220,17 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .productSwitcher {
+    width: 100%;
+  }
+
   .productName {
     max-width: 100px;
   }
   
-  .dropdown {
-    min-width: 280px;
+  .mobileVariant .dropdown,
+  .sidebarVariant .dropdown {
+    min-width: unset;
+    width: 100%;
   }
 }

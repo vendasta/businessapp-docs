@@ -43,14 +43,12 @@ const config: Config = {
     },
   ],
 
-  // Disabled experimental Rspack bundler due to stability issues
-  // Using stable Webpack bundler instead
-  // future: {
-  //   experimental_faster: {
-  //     rspackBundler: true,
-  //     rspackPersistentCache: true,
-  //   },
-  // },
+  future: {
+    experimental_faster: {
+      rspackBundler: true,
+      rspackPersistentCache: true,
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -85,6 +83,11 @@ const config: Config = {
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
             to: '/businessapp/ai/ai-workforce/ai-chat-receptionist/',
+          },
+          // Legacy Listing Sync permalink -> new Local SEO path
+          {
+            from: '/vendasta-products/local-seo/listing-sync',
+            to: '/localseo/listing-sync/',
           },
           // Redirect root to businessapp by default
           {
@@ -134,7 +137,7 @@ const config: Config = {
         alt: 'Logo',
         src: 'img/business-app-logo.svg',
       },
-      hideOnScroll: false,
+      hideOnScroll: true,
       items: [
         {
           type: 'docSidebar',

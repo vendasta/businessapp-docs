@@ -38,7 +38,7 @@ export const products: Product[] = [
     logo: '/img/logo.png',
     sidebarId: 'localseoSidebar',
     path: '/localseo/',
-    tagline: 'Boost your clients\' local rankings with AI-powered software',
+    tagline: "Boost your clients' local rankings with AI-powered software",
   },
   {
     id: 'repman',
@@ -78,14 +78,13 @@ export const getProductById = (id: string): Product | undefined => {
   return products.find((product) => product.id === id);
 };
 
-export const getProductByPath = (pathname: string): Product | undefined => {
-  const ensureTrailingSlash = (value: string): string =>
-    value.endsWith('/') ? value : `${value}/`;
+const ensureTrailingSlash = (value: string): string =>
+  value.endsWith('/') ? value : `${value}/`;
 
+export const getProductByPath = (pathname: string): Product | undefined => {
   const normalizedPath = ensureTrailingSlash(pathname);
 
-  return products.find((product) => {
-    const productPath = ensureTrailingSlash(product.path);
-    return normalizedPath.startsWith(productPath);
-  });
+  return products.find((product) =>
+    normalizedPath.startsWith(ensureTrailingSlash(product.path)),
+  );
 };
