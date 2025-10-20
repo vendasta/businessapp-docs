@@ -1,0 +1,17 @@
+---
+title: "How do I use the Salesforce Calendar Sync in O365?"
+description: "How do I use the Salesforce Calendar Sync in O365?"
+sidebar_position: 225
+---
+
+# How do I use the Salesforce Calendar Sync in O365?
+
+To use Yesware's Calendar Sync in O365:
+- Open up a new meeting and click "Invite Attendees."
+- Invite whomever needs to attend the meeting. 
+- Select the Yesware Y in the Outlook ribbon - this will open up Yesware's sidebar within the meeting invite.
+- As long as the "Salesforce Sync" is toggled on, it will include a unique Salesforce sync address in your list of attendees.
+- Send the invite.
+When you then send the invitation, this meeting will sync as an open activity to the **first recipient on the invitation with a Contact or Lead record**. It will sync it to Salesforce as an Event in the Open Events until the date and time have come and gone, and it will then appear in the Activity History.
+We sync over the title of the event, the location, and the date and time. We do not sync over the body of the invite. All Events that Yesware logs into Salesforce using Calendar Sync will have "[event synced]" added to the Description field of the event in Salesforce. This notation is only added to the Salesforce event and is not included in your O365 Calendar event.
+**Please note:** you can only sync a calendar event at the time of the creation of the event; you cannot sync one retroactively or sync an incoming calendar invite.

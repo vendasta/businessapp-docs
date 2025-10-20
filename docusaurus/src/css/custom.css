@@ -260,3 +260,43 @@
     max-width: 85%;
   }
 }
+
+/* --------------------------------------------------------------------- */
+/*  Product Switcher - Hide navbar sidebar items                         */
+/* --------------------------------------------------------------------- */
+
+/* Hide the sidebar items in navbar that are managed by ProductSwitcher */
+.navbar__item--hidden {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------- */
+/*  Product Switcher - Navbar Placement                                  */
+/* --------------------------------------------------------------------- */
+
+.theme-layout-navbar-left.navbar__items {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.theme-layout-navbar-left .navbar__brand {
+  margin-right: 0;
+}
+
+.theme-layout-navbar-left .navbar__item--product-switcher {
+  align-self: stretch;
+  margin-left: 0;
+}
+
+@media (max-width: 996px) {
+  .theme-layout-navbar-left.navbar__items {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--ifm-navbar-item-margin-horizontal);
+  }
+
+  .theme-layout-navbar-left .navbar__item--product-switcher {
+    align-self: center;
+  }
+}

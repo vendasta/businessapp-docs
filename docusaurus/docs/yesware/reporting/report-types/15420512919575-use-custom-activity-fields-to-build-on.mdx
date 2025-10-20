@@ -1,0 +1,56 @@
+---
+title: "Use custom Activity Fields to build on your existing SFDC reports"
+description: "Use custom Activity Fields to build on your existing SFDC reports"
+sidebar_position: 101
+---
+
+# Use custom Activity Fields to build on your existing SFDC reports
+
+Your reps are using Yesware to automatically sync activity to Salesforce on our Enterprise plan. Now what?
+As a manager or team leader, you need to use this data to drive insights and make your team more effective.
+We’ll go over the following topics:
+- Salesforce Sync Logic
+- Using custom Activity Fields to create basic reports in SFDC 
+### Yesware’s Salesforce Sync logic maintains your data integrity for Salesforce reporting
+When your rep sends an email with ***Salesforce Sync*** enabled, Yesware looks for the first email address listed in the ***To field*** that matches the email address of an existing Lead or Contact in Salesforce.
+Yesware then syncs all recipient tracking engagement and threaded replies to the appropriate Lead, Contact, Account and/or Opportunity record in Salesforce.
+So, what’s our sync logic?
+Yesware ***prefers Leads over Contacts***, so we’ll first look to match with any Leads in Salesforce.
+If no Lead is found, we look for all Contacts for a matching email address.
+***If a match is found***, we sync all activities as completed Tasks to the Activity History in Salesforce under the appropriate record.
+When syncing, Yesware looks for a “WhoId” and a “WhatId”.
+***WhoId = Lead or Contact******WhatId = Account or Opportunity***
+If Yesware matches the email address to the ***Lead***, we only sync the task to the Activity History of the Lead record.
+If Yesware matches the email address to a ***Contact***:
+- We will map the task to the Activity History of the Contact as well as the associated Account
+- If the Contact is also listed as a ***Contact Role*** on an Open Opportunity, we will sync the task to the Activity History of the Contact and related Open Opportunity record in Salesforce
+***If multiple matches are found***, we:
+- Prefer Leads over Contacts
+- Prefer Open Opportunities with most recent CreatedDate
+- Prefer records with most recent LastActivityDate
+- And prefer most recent LastModifiedDate if there are still multiple matches
+***If no match is found***, we do not sync the task to Salesforce.
+Using Yesware’s ***Calendar Sync***, reps can also sync calendar invites to Salesforce from their Calendar. Calendar events are synced to Salesforce as Open Events until the date and time of the meeting pass, when it will become a Completed Event that can be viewed from the Activity History.
+The logic for syncing is the same for Calendar events.
+### Use custom Activity Fields to build on your existing reports
+Below are some of our favorite custom Activity fields you can use to create basic reports or incorporate Yesware data into your existing reports.
+**The Yesware Activity Type field helps you track reps’ Yesware usage and effectiveness**
+At a quick glance, you and your reps will be able to scan the Activity History for a given Lead, Contact, Account, or Open Opportunity for any Yesware-related activity.
+For every action you take within Yesware, we sync over a task with a unique subject line to Salesforce. For example:
+***Email send = “Message Sent: [Subject of your Email]”***
+The ***Yesware Activity Type*** field is one of the most useful fields when it comes to Yesware reporting in Salesforce. This field reports on the following activities in Salesforce:
+- Email sends → Message Sent
+- Email opens → Message Opened
+- Reply Emails → Reply received
+- Link Clicks → Link clicked
+- Attachment opens → Attachment Opened
+- Bounces → Bounce received
+- Meetings set → Event Synced
+This field will be available for any Yesware-created tasks. You can use this field for a number of purposes, like reporting on the number of emails your reps sent with Yesware.
+### The Yesware Template Name field helps you identify effective messaging
+With Templates, not only will your reps be more efficient in their outreach, but they’ll also be more effective with their messaging. With Yesware’s integration with Salesforce, you’ll be able to monitor your team’s Template usage and report on which Templates are most effective.
+There are several custom fields you can use to report on Templates, including the Yesware Template Name field.
+By filtering by Template Name, you can pull reporting on different Templates. You can use this field for A/B testing different Templates with your team.
+Use the ***Template Name*** and ***Yesware Activity Type*** fields to filter by a specific Template and related activity:
+***YeswareTemplateName = Example name******Yesware Activity Type = Sent, Open, Reply*** 
+This allows you to see the number of sends, opens, and replies associated with a specific Template, enabling you to understand how effective your Templates are.
