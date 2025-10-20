@@ -1,13 +1,13 @@
 # Product Switcher Implementation
 
-This documentation site has been converted into a unified monorepo containing documentation for multiple products with a Product Switcher in the navbar.
+This documentation contains documentation for multiple products with a Product Switcher in the navbar.
 
 ## Architecture Overview
 
 ### Products Included
 1. **Business App** - Customer acquisition and engagement platform
 2. **Advertising Intelligence** - Unified PPC reporting
-3. **AMPS** - Advertising Management Platform
+3. **Vendasta Services** - Vendasta Services
 4. **Local SEO** - Local rankings optimization
 5. **Reputation Management** - Review management software
 6. **Social Marketing** - Social media management
@@ -21,7 +21,7 @@ docusaurus/
 ├── docs/
 │   ├── businessapp/     # Business App documentation
 │   ├── adintel/         # Ad Intel documentation
-│   ├── amps/            # AMPS documentation
+│   ├── amps/            # Vendasta Services documentation
 │   ├── localseo/        # Local SEO documentation
 │   ├── repman/          # Reputation Management documentation
 │   ├── socialmarketing/ # Social Marketing documentation
