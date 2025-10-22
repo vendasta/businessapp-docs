@@ -6,6 +6,7 @@ sidebar_position: 1
 Business App is your one-stop dashboard for running your business online. Think of it as your digital command center: manage your online presence, monitor your business activity, communicate with customers, and access the products and services that help your business grow — all in one place!
 
 ---
+<iframe width="100%" height="400" src="https://fast.wistia.net/embed/iframe/0biegn1dzb" title="Descriptive title" frameBorder="0" allowFullScreen></iframe>
 
 ## Key Features of Business App at a Glance
 
