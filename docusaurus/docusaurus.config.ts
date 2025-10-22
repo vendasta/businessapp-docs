@@ -155,13 +155,6 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'ampsSidebar',
-          position: 'left',
-          label: 'AMPS',
-          className: 'navbar__item--hidden',
-        },
-        {
-          type: 'docSidebar',
           sidebarId: 'localseoSidebar',
           position: 'left',
           label: 'Local SEO',

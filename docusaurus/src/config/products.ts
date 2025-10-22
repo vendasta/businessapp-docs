@@ -25,14 +25,6 @@ export const products: Product[] = [
     tagline: 'Unified PPC reporting for easy ad performance insights',
   },
   {
-    id: 'amps',
-    name: 'AMPS',
-    logo: '/img/logo.svg',
-    sidebarId: 'ampsSidebar',
-    path: '/amps/intro',
-    tagline: 'Advertising Management Platform',
-  },
-  {
     id: 'localseo',
     name: 'Local SEO',
     logo: '/img/Local-SEO.svg',
