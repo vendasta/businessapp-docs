@@ -134,8 +134,8 @@ const config: Config = {
     navbar: {
       title: 'Product Documentation',
       logo: {
-        alt: 'Logo',
-        src: 'img/business-app-logo.svg',
+        alt: 'Business App logo',
+        src: 'img/Business App.svg',
       },
       hideOnScroll: true,
       items: [
