@@ -3,9 +3,20 @@ title: Getting Started with Business App
 sidebar_position: 1
 ---
 
+import Video from '@site/src/components/Video';
+
 Business App is your one-stop dashboard for running your business online. Think of it as your digital command center: manage your online presence, monitor your business activity, communicate with customers, and access the products and services that help your business grow — all in one place!
 
+<Video
+  src="https://fast.wistia.net/embed/iframe/0biegn1dzb"
+  title="Business App Overview"
+  aspectRatio="16:9"
+  allowFullScreen={true}
+  frameBorder="0"
+/>
+
 ---
+
 
 ## Key Features of Business App at a Glance
 

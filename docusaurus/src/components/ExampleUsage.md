@@ -1,4 +1,49 @@
-# Page Actions Component Usage
+# Component Usage
+
+## Video Component
+
+A responsive video embed component that eliminates black bars and supports multiple aspect ratios.
+
+### Basic Usage in MDX
+
+```mdx
+import Video from '@site/src/components/Video';
+
+<Video
+  src="https://fast.wistia.net/embed/iframe/your-video-id"
+  title="Video Title"
+/>
+```
+
+### With Custom Aspect Ratio
+
+```mdx
+<Video
+  src="https://youtube.com/embed/video-id"
+  title="YouTube Video"
+  aspectRatio="16:9"
+/>
+```
+
+### Available Aspect Ratios
+
+- `16:9` (default) - Standard widescreen
+- `4:3` - Traditional format
+- `21:9` - Ultra-wide
+- `1:1` - Square format
+
+### Props
+
+- `src`: Video embed URL (Wistia, YouTube, Vimeo, etc.)
+- `title`: Video title for accessibility
+- `aspectRatio`: '16:9' | '4:3' | '21:9' | '1:1' (default: '16:9')
+- `className`: Additional CSS classes
+- `allowFullScreen`: boolean (default: true)
+- `frameBorder`: string | number (default: '0')
+
+---
+
+## Page Actions Component Usage
 
 ## Direct Usage
 
