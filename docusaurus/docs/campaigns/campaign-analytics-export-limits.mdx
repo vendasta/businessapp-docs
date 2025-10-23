@@ -1,0 +1,94 @@
+---
+title: Campaign analytics – export limits and workarounds
+sidebar_label: Export limits
+description: Understand the 10,000-row export limit for campaign analytics and learn safe ways to work within it.
+tags: [campaigns, email, analytics, exports, limitations]
+keywords: [campaign-analytics, export, 10000-limit, opened, unique-emails]
+---
+
+## What is exporting campaign analytics?
+Exporting campaign analytics lets you download the rows that appear in a campaign’s analytics table (for example, engagement such as opened or clicked) to a CSV file so you can review or process the data outside the app.
+
+## Why is exporting important?
+- Share results with your team
+- Back up engagement data
+- Build lists for follow-up or enrichment in other tools
+
+## What’s included in an export?
+- The export contains the rows currently visible in the campaign analytics table
+- Columns in the table are included in the CSV
+- If the table lists multiple events for a contact, the CSV may include more than one row for that contact
+
+:::warning
+Export limit: Campaign analytics exports are limited to 10,000 rows per export. Date and user filters are not available in this table. If your dataset is larger, use the workarounds below.
+:::
+
+## How to export within the limit
+1. Open the campaign you want to review.
+2. Go to the analytics table for the campaign.
+3. Apply any available filters to reduce the results (for example, `Email activity: Opened`).
+4. Select `Export` and download the CSV.
+
+:::info
+If you only need unique emails, deduplicate the `Email` column after you download the CSV using your spreadsheet tool’s remove-duplicates feature.
+:::
+
+## Workarounds for datasets over 10,000 rows
+When you need more than 10,000 rows or need filters that are not supported in the campaign analytics table, try these options:
+
+- Segment first in CRM contacts
+  - Filter your contacts using campaign engagement fields (for example, last campaign sent name or last campaign clicked date).
+  - Export contacts from CRM and deduplicate as needed.
+- Run multiple, narrower exports
+  - Apply different engagement filters (such as opened vs. clicked) and export each set separately, then combine the CSVs and remove duplicates.
+- Ask Support for a full export
+  - If you cannot access the data you need due to the export cap, submit a support ticket and include the campaign name and the audience you need.
+
+## Frequently asked questions (FAQs)
+<details>
+<summary>What is the export row limit for campaign analytics?</summary>
+The limit is 10,000 rows per export.
+</details>
+
+<details>
+<summary>Does the limit apply to each campaign or each export?</summary>
+The cap applies per export. You can run multiple exports and combine the files.
+</details>
+
+<details>
+<summary>Can I filter by date or by user in the campaign analytics table?</summary>
+No. Date and user filters are not available in this table.
+</details>
+
+<details>
+<summary>How can I get only contacts who opened a specific campaign?</summary>
+Filter the campaign analytics table by `Email activity: Opened` before exporting, then remove duplicates in the CSV.
+</details>
+
+<details>
+<summary>Why do I see duplicates in my CSV?</summary>
+Exports reflect the rows in the analytics table. If the table records multiple events for a contact, you may see more than one row for that contact. Deduplicate the `Email` column in a spreadsheet tool.
+</details>
+
+<details>
+<summary>What file format is used for exports?</summary>
+CSV.
+</details>
+
+<details>
+<summary>Can I export all rows if my campaign has more than 10,000 opens?</summary>
+Not in a single export. Use the workarounds above or contact Support for help with a full export.
+</details>
+
+<details>
+<summary>Do exports include the columns I see on screen?</summary>
+Yes. The CSV includes the columns shown in the table at the time of export.
+</details>
+
+<details>
+<summary>Can I automate exports?</summary>
+Automated exports are not available for the campaign analytics table.
+</details>
+
+## Screenshots or videos
+No screenshots are required for this topic.
