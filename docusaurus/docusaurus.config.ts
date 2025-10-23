@@ -41,6 +41,16 @@ const config: Config = {
       },
       innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-1Y49QBYD4L');`,
     },
+    // Webchat widget script (simple approach)
+    {
+      tagName: 'script',
+      attributes: {
+        src: 'https://cdn.apigateway.co/webchat-client..prod/sdk.js',
+        'data-widget-id': 'fdb6e70b-af9a-11f0-bff6-7afa397fdb2d',
+        'data-cookieconsent': 'ignore',
+        defer: 'true',
+      },
+    },
   ],
 
   future: {
