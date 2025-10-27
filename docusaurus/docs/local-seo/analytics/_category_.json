@@ -1,10 +1,10 @@
 {
-  "label": "My Listing",
-  "position": 6,
+  "label": "Analytics",
+  "position": 8,
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "doc",
-    "id": "localseo/my-listing/index"
+    "id": "local-seo/analytics/index"
   }
 }

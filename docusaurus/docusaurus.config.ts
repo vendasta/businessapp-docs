@@ -97,7 +97,7 @@ const config: Config = {
           // Legacy Listing Sync permalink -> new Local SEO path
           {
             from: '/vendasta-products/local-seo/listing-sync',
-            to: '/localseo/listing-sync/',
+            to: '/local-seo/listing-sync/',
           },
           // Redirect root to business-app by default
           {

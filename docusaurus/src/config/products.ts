@@ -29,7 +29,7 @@ export const products: Product[] = [
     name: 'Local SEO',
     logo: '/img/Local-SEO.svg',
     sidebarId: 'localseoSidebar',
-    path: '/localseo/',
+    path: '/local-seo/',
     tagline: "Boost your clients' local rankings with AI-powered software",
   },
   {
@@ -45,7 +45,7 @@ export const products: Product[] = [
     name: 'Social Marketing',
     logo: '/img/Social-Marketing.svg',
     sidebarId: 'socialmarketingSidebar',
-    path: '/socialmarketing/',
+    path: '/social-marketing/',
     tagline: 'AI-Powered Social Media Management Software',
   },
   {
