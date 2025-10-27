@@ -92,17 +92,17 @@ const config: Config = {
         redirects: [
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
-            to: '/businessapp/ai/ai-workforce/ai-chat-receptionist/',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           // Legacy Listing Sync permalink -> new Local SEO path
           {
             from: '/vendasta-products/local-seo/listing-sync',
             to: '/localseo/listing-sync/',
           },
-          // Redirect root to businessapp by default
+          // Redirect root to business-app by default
           {
             from: '/',
-            to: '/businessapp/',
+            to: '/business-app/',
           },
         ],
       },

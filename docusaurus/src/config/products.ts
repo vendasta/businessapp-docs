@@ -13,7 +13,7 @@ export const products: Product[] = [
     name: 'Business App',
     logo: '/img/Business App.svg',
     sidebarId: 'businessappSidebar',
-    path: '/businessapp/',
+    path: '/business-app/',
     tagline: 'Customer acquisition and engagement platform for your business',
   },
   {
@@ -21,7 +21,7 @@ export const products: Product[] = [
     name: 'Advertising Intelligence',
     logo: '/img/Advertising-Intelligence.svg',
     sidebarId: 'adintelSidebar',
-    path: '/adintel/',
+    path: '/ad-intel/',
     tagline: 'Unified PPC reporting for easy ad performance insights',
   },
   {
@@ -37,7 +37,7 @@ export const products: Product[] = [
     name: 'Reputation Management',
     logo: '/img/Reputation-Management.svg',
     sidebarId: 'repmanSidebar',
-    path: '/repman/',
+    path: '/reputation-management/',
     tagline: 'AI-powered review management software',
   },
   {
@@ -53,7 +53,7 @@ export const products: Product[] = [
     name: 'WordPress Hosting',
     logo: '/img/Wordpress-Hosting.png',
     sidebarId: 'websiteSidebar',
-    path: '/website/',
+    path: '/wordpress-hosting/',
     tagline: 'Build and manage beautiful, professional websites',
   },
   {
