@@ -31,7 +31,7 @@ export default function PageActions({
   const handleOpenChatGPT = () => {
     if (typeof window === 'undefined') return;
     const prompt = getPrompt();
-    const chatUrl = `https://chat.openai.com/share/new?prompt=${encodeURIComponent(prompt)}`;
+    const chatUrl = `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`;
     window.open(chatUrl, '_blank');
   };
 
