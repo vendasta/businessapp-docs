@@ -1,32 +1,50 @@
-/* Container that wraps both TOC and PageActions */
+/* Container houses the original TOC plus the PageActions block */
 .tocContainer {
   display: flex;
   flex-direction: column;
-  /* Container works within Docusaurus's sticky TOC sidebar */
+  min-height: 0;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  background: var(--ifm-background-color);
 }
 
-/* TOC content area - flows naturally */
-.tocContent {
-  /* Let TOC content flow naturally - don't add scrolling constraints */
+/* Let the original TOC keep scrolling while the container stays sticky */
+.tocContainer .tocBody {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+  position: static;
+  top: auto;
 }
 
-/* PageActions sticky at bottom of viewport within TOC container */
+/* Page actions sit underneath the TOC */
 .pageActionsContainer {
   flex-shrink: 0;
-  position: sticky;
-  bottom: 0;
-  background: var(--ifm-background-color);
+  margin-top: 0.75rem;
   padding-top: 0.75rem;
-  margin-top: 0.5rem;
-  z-index: 10;
-  /* Match TOC list styling - no border, no shadow */
+  border-top: 1px solid var(--ifm-toc-border-color, var(--ifm-hr-background-color));
+  background: inherit;
 }
 
-/* Ensure the sticky positioning works correctly */
+.pageActions {
+  width: 100%;
+}
+
 @media (max-width: 996px) {
+  .tocContainer {
+    position: static;
+    max-height: none;
+  }
+
+  .tocContainer .tocBody {
+    max-height: none;
+  }
+
   .pageActionsContainer {
-    position: relative;
+    margin-top: 1rem;
     padding-top: 0.5rem;
+    border-top: none;
   }
 }
-
