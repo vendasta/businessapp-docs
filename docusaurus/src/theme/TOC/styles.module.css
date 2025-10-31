@@ -1,0 +1,32 @@
+/* Container that wraps both TOC and PageActions */
+.tocContainer {
+  display: flex;
+  flex-direction: column;
+  /* Container works within Docusaurus's sticky TOC sidebar */
+}
+
+/* TOC content area - flows naturally */
+.tocContent {
+  /* Let TOC content flow naturally - don't add scrolling constraints */
+}
+
+/* PageActions sticky at bottom of viewport within TOC container */
+.pageActionsContainer {
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  background: var(--ifm-background-color);
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+  z-index: 10;
+  /* Match TOC list styling - no border, no shadow */
+}
+
+/* Ensure the sticky positioning works correctly */
+@media (max-width: 996px) {
+  .pageActionsContainer {
+    position: relative;
+    padding-top: 0.5rem;
+  }
+}
+
