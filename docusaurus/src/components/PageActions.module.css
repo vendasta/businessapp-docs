@@ -49,8 +49,27 @@
   text-decoration: underline;
 }
 
+.openAILink::after {
+  content: '↗';
+  margin-left: 0.25rem;
+  font-size: 0.9em;
+  vertical-align: text-top;
+}
+
+.openAILink:hover {
+  text-decoration: underline;
+}
+
 .copyMarkdownLink:hover {
   text-decoration: underline;
+}
+
+.aiIcon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .copyIcon {
