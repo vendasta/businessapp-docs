@@ -10,6 +10,24 @@ import { AISparkleIcon, SettingsIcon, CRMIcon } from '@site/src/components/Icons
 
 The AI Workforce is a set of configurable AI Employees that help do the heavy lifting for your business by taking on repetitive tasks so humans can focus on other work. Each employee uses assigned **Capabilities** and knowledge from the **Knowledge Base** to perform their work accurately and consistently.
 
+## Understanding the core concepts
+
+Your AI employees are powered by three key components:
+
+- **Knowledge Base** provides the factual content your AI can search and reference when answering questions — like business hours, pricing, FAQs, and policies.
+
+- **Capabilities** tell your AI employee how to act and when to take specific actions in conversations — like when to capture leads, how to qualify customers, or what tone to use.
+
+- **Tools** connect your AI employee to external systems via APIs, allowing them to perform actions like creating appointments, checking inventory, or updating your CRM.
+
+These three components can be mixed and matched to create powerful AI employees that handle complex customer interactions and automate business processes.
+
+:::tip Quick Reference
+- **Knowledge Base** = Information to reference (reactive, fact-based)
+- **Capabilities** = Instructions on how to behave (proactive, process-based)  
+- **Tools** = Ability to take action in external systems (integration-based)
+:::
+
 ## Key areas
 
 <div className="row">
