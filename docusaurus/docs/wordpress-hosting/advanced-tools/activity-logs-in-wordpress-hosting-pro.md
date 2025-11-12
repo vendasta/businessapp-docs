@@ -32,6 +32,17 @@ The activity logs include the following information:
       
     ![](./img/32999976946583-7a231c0d99.png)
 
+### White-Labelled Support in Activity Logs
+
+Activity logs also include visibility for **support-related actions**:
+
+* For **internal teams**: The actual **support email** associated with the activity is displayed.  
+* For **clients and small businesses**: The log anonymizes support details, and they will only see the label **"Support user"**.  
+
+This ensures transparency for internal teams while maintaining a white-labelled experience for end clients.  
+
+![](./img/activity-support-logs.png)
+
 ### How to Access Activity Logs
 
 1.  Log in to your WordPress Hosting Pro dashboard.
