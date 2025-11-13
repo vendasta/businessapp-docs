@@ -110,11 +110,6 @@ const config: Config = {
             from: '/vendasta-products/local-seo/listing-sync',
             to: '/local-seo/listing-sync/',
           },
-          // Redirect root to business-app by default
-          {
-            from: '/',
-            to: '/business-app/',
-          },
         ],
         createRedirects(existingPath) {
           const matches = new Set<string>();
