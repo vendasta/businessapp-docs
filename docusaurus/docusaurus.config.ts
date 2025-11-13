@@ -101,12 +101,9 @@ const config: Config = {
             to: '/local-seo/listing-sync/',
           },
           // Legacy section redirects - redirect top-level paths only
+          // Note: Only include trailing slash versions to avoid conflicts
           {
             from: '/businessapp',
-            to: '/business-app/',
-          },
-          {
-            from: '/businessapp/',
             to: '/business-app/',
           },
           {
@@ -114,15 +111,7 @@ const config: Config = {
             to: '/ad-intel/',
           },
           {
-            from: '/adintel/',
-            to: '/ad-intel/',
-          },
-          {
             from: '/localseo',
-            to: '/local-seo/',
-          },
-          {
-            from: '/localseo/',
             to: '/local-seo/',
           },
           {
@@ -130,23 +119,11 @@ const config: Config = {
             to: '/reputation-management/',
           },
           {
-            from: '/reputationmanagement/',
-            to: '/reputation-management/',
-          },
-          {
             from: '/socialmarketing',
             to: '/social-marketing/',
           },
           {
-            from: '/socialmarketing/',
-            to: '/social-marketing/',
-          },
-          {
             from: '/wordpresshosting',
-            to: '/wordpress-hosting/',
-          },
-          {
-            from: '/wordpresshosting/',
             to: '/wordpress-hosting/',
           },
         ],
