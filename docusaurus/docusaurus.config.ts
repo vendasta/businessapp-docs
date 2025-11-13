@@ -85,6 +85,35 @@ const config: Config = {
             from: '/docs/ai/ai-workforce/ai-receptionist',
             to: '/ai/ai-workforce/ai-chat-receptionist/',
           },
+          // Conversation channel reorganization redirects
+          {
+            from: '/conversations/conversations-send-receive-emails',
+            to: '/conversations/email-overview',
+          },
+          {
+            from: '/conversations/conversations-send-receive-sms',
+            to: '/conversations/sms-overview',
+          },
+          {
+            from: '/conversations/conversations-setup-facebook-messenger',
+            to: '/conversations/facebook-overview',
+          },
+          {
+            from: '/conversations/conversations-setup-instagram',
+            to: '/conversations/instagram-overview',
+          },
+          {
+            from: '/conversations/conversations-setup-phone-calls',
+            to: '/conversations/phone-calls-overview',
+          },
+          {
+            from: '/conversations/conversations-whatsapp-overview',
+            to: '/conversations/whatsapp-overview',
+          },
+          {
+            from: '/conversations/conversations-ai-web-chat-overview',
+            to: '/conversations/web-chat/',
+          },
         ],
       },
     ],

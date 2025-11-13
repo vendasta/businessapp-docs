@@ -1,6 +1,10 @@
 ---
-title: Set up Conversations for Facebook Messenger 
-sidebar_position: 2.1
+title: "Facebook in Conversations"
+sidebar_label: "Facebook"
+sidebar_position: 2
+description: Connect your Facebook business page to Conversations to manage Facebook Messenger conversations alongside other customer communications.
+keywords: [facebook, messenger, facebook business, social media, conversations, customer chat, facebook integration]
+tags: [facebook, conversations, messaging, social-media]
 ---
 
 You can use Conversations to send and receive Facebook Messenger messages with customers from your connected Facebook business page. This integration centralizes all Facebook Messenger conversations alongside SMS, email, and web chat in one shared workspace.

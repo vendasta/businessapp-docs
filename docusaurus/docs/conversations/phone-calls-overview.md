@@ -1,6 +1,10 @@
 ---
-title: Set up Conversations for phone calls 
-sidebar_position: 2.4
+title: "Phone Calls in Conversations"
+sidebar_label: "Phone Calls"
+sidebar_position: 7
+description: Learn about phone call handling in Conversations, including AI voice receptionists and call forwarding options.
+keywords: [phone calls, voice receptionist, ai voice, call forwarding, conversations, business phone, call handling, ai receptionist]
+tags: [phone-calls, conversations, voice, ai]
 ---
 
 import { SettingsIcon } from '@site/src/components/Icons';

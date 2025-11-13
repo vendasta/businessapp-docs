@@ -45,7 +45,7 @@ The Purpose prompt sets the tone and behavior of your AI Chat Receptionist. Incl
 Your AI Chat Receptionist is assigned to the **Web Chat** channel by default. This channel is always active and cannot be disabled. You can also assign your AI Receptionist to the **SMS** channel to reach customers via text messaging.
 
 :::note  
-The Web Chat widget isn't automatically added to your website! You'll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](/conversations/conversations-ai-web-chat-overview)
+The Web Chat widget isn't automatically added to your website! You'll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](/conversations/web-chat/)
 :::
 
 #### Example Purpose Prompts by Business Type {#example-purpose-by-business-type}
