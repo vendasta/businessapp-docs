@@ -1,0 +1,10 @@
+{
+  "label": "Analytics",
+  "position": 8,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "local-seo/analytics/index"
+  }
+}

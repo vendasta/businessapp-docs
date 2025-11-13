@@ -1,0 +1,9 @@
+{
+  "label": "AI",
+  "position": 4,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "business-app/ai/index"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Executive Report",
+  "position": 5,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "business-app/executivereport/index"
+  }
+}
