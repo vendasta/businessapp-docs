@@ -2,6 +2,16 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// Map legacy (non-hyphenated) section prefixes to the new hyphenated slugs.
+const legacySectionRedirects: Record<string, string> = {
+  '/businessapp': '/business-app',
+  '/adintel': '/ad-intel',
+  '/localseo': '/local-seo',
+  '/reputationmanagement': '/reputation-management',
+  '/socialmarketing': '/social-marketing',
+  '/wordpresshosting': '/wordpress-hosting',
+};
+
 const config: Config = {
   title: 'Product Help & Documentation',
   tagline: 'Your guide to getting the most out of your products',
@@ -105,6 +115,29 @@ const config: Config = {
             to: '/business-app/',
           },
         ],
+        createRedirects(existingPath) {
+          const matches = new Set<string>();
+
+          Object.entries(legacySectionRedirects).forEach(([legacyPrefix, hyphenatedPrefix]) => {
+            const candidatePrefixes = [hyphenatedPrefix, `/category${hyphenatedPrefix}`];
+            const isMatch = candidatePrefixes.some(
+              (prefix) => existingPath === prefix || existingPath.startsWith(`${prefix}/`),
+            );
+
+            if (isMatch) {
+              const legacyPath = existingPath.replace(hyphenatedPrefix, legacyPrefix);
+              matches.add(legacyPath);
+
+              if (legacyPath.endsWith('/') && legacyPath !== '/') {
+                matches.add(legacyPath.slice(0, -1));
+              } else {
+                matches.add(`${legacyPath}/`);
+              }
+            }
+          });
+
+          return matches.size > 0 ? Array.from(matches) : undefined;
+        },
       },
     ],
   ],
