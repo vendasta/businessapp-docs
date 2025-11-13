@@ -63,6 +63,7 @@ const config: Config = {
     },
   ],
 
+  // Enable faster builds with Rspack bundler and persistent cache
   future: {
     experimental_faster: {
       rspackBundler: true,
@@ -180,7 +181,6 @@ const config: Config = {
         alt: 'Business App logo',
         src: 'img/Business App.svg',
       },
-      hideOnScroll: true,
       items: [
         {
           type: 'docSidebar',

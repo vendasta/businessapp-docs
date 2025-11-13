@@ -30,6 +30,7 @@
   width: 100%;
   justify-content: flex-start;
   align-items: center;
+  /* Match TOC link styling */
   font-size: 0.875rem;
   background: none;
   border: none;
