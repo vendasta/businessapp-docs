@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Product Documentation',
-  tagline: 'Comprehensive documentation for all products',
+  title: 'Product Help & Documentation',
+  tagline: 'Your guide to getting the most out of your products',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -142,7 +142,7 @@ const config: Config = {
     // Social card used for sharing previews
     image: 'img/businessapp-docs-social-share.png',
     navbar: {
-      title: 'Product Documentation',
+      title: 'Product Help & Documentation',
       logo: {
         alt: 'Business App logo',
         src: 'img/Business App.svg',
