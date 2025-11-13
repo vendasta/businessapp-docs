@@ -1,0 +1,15 @@
+---
+title: "My .CSV File Won't Upload to my Campaign"
+description: "My .CSV File Won't Upload to my Campaign"
+sidebar_position: 49
+---
+
+# My .CSV File Won't Upload to my Campaign
+
+If you're having trouble uploading a .CSV file to a Campaign, review the following formatting requirements to ensure your file is compatible:
+The **Email** column must be the first column, in **Column A**.
+All **column headings must exactly match** the Merge Fields used in your email. For example, a column labeled `FirstName` will not work with the merge field `\{!First\}`.
+Each row must include a valid **email address**. Do not leave blank lines—uploading will stop at the first row without an email.
+Remove **any unused columns, rows, or extra tabs**. Only include information you intend to use in your Campaign.
+Your file **must be saved as a .CSV**. Most spreadsheet programs default to `.xlsx`, so be sure to select **"Comma Separated Values (.csv)"** as the file type when saving.
+Following these best practices should resolve most upload issues.
