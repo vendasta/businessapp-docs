@@ -260,3 +260,25 @@
     max-width: 85%;
   }
 }
+
+/* --------------------------------------------------------------------- */
+/*  Navbar Title Alignment                                               */
+/* --------------------------------------------------------------------- */
+
+/* Ensure navbar brand (logo + title) stays left-aligned */
+.navbar__brand {
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+/* Fix navbar title positioning - work with text--truncate class */
+.navbar__title.text--truncate {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+/* Ensure navbar inner container keeps brand left-aligned */
+.navbar__inner {
+  justify-content: flex-start;
+}
