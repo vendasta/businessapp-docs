@@ -1,0 +1,12 @@
+---
+title: "Will Yesware create a Contact in Salesforce for me if one doesn't already exist?"
+description: "Will Yesware create a Contact in Salesforce for me if one doesn't already exist?"
+sidebar_position: 97
+---
+
+# Will Yesware create a Contact in Salesforce for me if one doesn't already exist?
+
+**Will Yesware create a Contact in Salesforce for me if one doesn't already exist? What if an email is sent to multiple recipients?**
+Yesware will not automatically create Contacts or Leads in Salesforce. If a Contact or Lead is not found, the email and associated events will not be sent to Salesforce, even if Send to Salesforce is on. If multiple Leads or Contacts in Salesforce have the same email address, Yesware will choose the most appropriate one to associate the email or event with ([preferring Leads over Contacts](/docs/salesforce-integration/getting-started/measure-your-team-s-yesware-effectiveness-with)).
+If an email is sent to multiple recipients, Yesware will choose the first recipient on the To line and try to find a matching Contact or Lead in Salesforce to associate the email and events with. If no matching Contact or Lead is found, the email and associated events will not be sent to Salesforce, even if Send to Salesforce is on.
+If the recipient does not have a Contact or Lead record in Salesforce, we will not sync the message.  You can, however, [create one](/docs/salesforce-integration/salesforce-sidebar-enterprise-plan/how-do-i-create-a-salesforce-contact) in the Yesware Salesforce Sidebar and then send your message, ensuring the email will sync to Salesforce.

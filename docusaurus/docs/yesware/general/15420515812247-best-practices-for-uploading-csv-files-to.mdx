@@ -1,0 +1,15 @@
+---
+title: "Best Practices for Uploading .CSV files to Campaigns"
+description: "Best Practices for Uploading .CSV files to Campaigns"
+sidebar_position: 105
+---
+
+# Best Practices for Uploading .CSV files to Campaigns
+
+To ensure your .CSV file uploads successfully into a Campaign, follow these formatting best practices:
+Place the **Email** column first, in **Column A**.
+Include **column headings** for all fields you plan to use as **Merge Fields** in your email body. The headings must match your merge fields **exactly**. For example, the column header `FirstName` will not work with the merge field `\{!First\}`.
+Do **not** include any **blank email rows**. The upload process will stop at the first line without an email address.
+Include **only the data you need** for the Campaign. Remove any unused rows, columns, or extra tabs before uploading.
+The file must be saved as a **.CSV** (Comma Separated Values) file. Most spreadsheets default to `.xlsx`, so be sure to select **"Comma Separated Values (.csv)"** as the file type before saving.
+**Example Format:**

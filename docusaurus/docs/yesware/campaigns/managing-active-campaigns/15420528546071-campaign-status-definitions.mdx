@@ -1,0 +1,17 @@
+---
+title: "Campaign Status Definitions"
+description: "Campaign Status Definitions"
+sidebar_position: 122
+---
+
+# Campaign Status Definitions
+
+Within a Campaign, there are six possible recipient status types. Here’s what each one means:
+**Active**:The recipient was successfully added to the Campaign and is scheduled to receive future Touches.
+**Connected**:The recipient was automatically removed from the Campaign due to an email reply, picking up a phone call touch, or booking a meeting through Meeting Scheduler. This automatic removal happens only if:
+The **“Remove recipients after connection”** option was selected when creating the Campaign, and
+(For emails) the recipient replies from the **same email address** used in the Campaign.*(In Outlook, this applies specifically to automated emails.)*
+**Completed**:The recipient received all of the Touches within the Campaign and was not manually removed or removed through a connection. They will not receive any further communication.
+**Manually Removed**:You manually selected and removed this recipient. Only recipients with a status of “Active” or “Needs Rescheduling” can be manually removed.
+**Bounced**:The recipient was added to the Campaign, but the email was **not deliverable** to their address. Bounced recipients are automatically removed from the Campaign.
+**Needs Rescheduling**:An **automatic Out of Office reply** was received, and the recipient was paused mid-Campaign. Future Touches are on hold and need to be **rescheduled** within the “Recipients” tab of the Campaign.
