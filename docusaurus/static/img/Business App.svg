@@ -1,0 +1,11 @@
+<svg id="Business_App" data-name="Business App" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_9069" data-name="Rectangle 9069" width="33" height="33" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_18532" data-name="Group 18532" clip-path="url(#clip-path)">
+    <path id="Path_19273" data-name="Path 19273" d="M33,16.5A16.5,16.5,0,1,1,16.5,0,16.5,16.5,0,0,1,33,16.5"/>
+    <path id="Path_19274" data-name="Path 19274" d="M30.7,14H13.1v2.2H30.7Zm1.1,11V22.8l-1.1-5.5H13.1L12,22.8V25h1.1v6.6h11V25h4.4v6.6h2.2V25Zm-9.9,4.4H15.3V25h6.6Z" transform="translate(-5.4 -6.3)" fill="#fff"/>
+  </g>
+</svg>

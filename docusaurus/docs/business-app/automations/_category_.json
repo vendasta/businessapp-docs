@@ -1,0 +1,9 @@
+{
+  "label": "Automations",
+  "position": 7,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "business-app/automations/index"
+  }
+}

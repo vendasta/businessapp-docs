@@ -1,0 +1,10 @@
+{
+  "label": "Listing Sync",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "local-seo/listing-sync/index"
+  }
+}
