@@ -1,9 +1,12 @@
-# Cursor Rules for Business App Documentation
+---
+description: Wistia video embedding format for Docusaurus documentation files (.md and .mdx)
+globs: ["docusaurus/docs/**/*.{md,mdx}"]
+alwaysApply: false
+---
 
-## Wistia Video Embedding
-**Applies to: `docusaurus/docs/**/*.mdx`**
+# Wistia Video Embedding
 
-When embedding Wistia videos in MDX files, use the following format:
+When embedding Wistia videos in Docusaurus documentation files, use the following format:
 
 ```mdx
 <div
@@ -31,13 +34,13 @@ When embedding Wistia videos in MDX files, use the following format:
 <script src="https://fast.wistia.net/player.js" async></script>
 ```
 
-### Requirements:
-- Files must be `.mdx` (not `.md`) to support JSX/HTML
+## Requirements:
+- Files must be `.mdx` (not `.md`) to support JSX/HTML. If working with a `.md` file, convert it to `.mdx` first.
 - Replace `{VIDEO_ID}` with the actual Wistia media ID (e.g., `stb74pd0qz`)
 - Replace `{Descriptive Video Title}` with a descriptive, accessible title
 - The script tag must be included after the div wrapper
 - Use this exact structure - do not create custom components for Wistia embeds
+- Applies to all Docusaurus documentation files in `docusaurus/docs/**/*.{md,mdx}`
 
-### Example:
+## Example:
 See `docusaurus/docs/business-app/ai/ai-capabilities/index.mdx` for a working example.
-
