@@ -117,12 +117,12 @@ This ensures your AI can provide complete, helpful answers by combining real-tim
 
 Yes! The Shopify Storefront integration works across all communication channels supported by your AI Employees. Customers can search for products, update carts, and more through:
 
-- [Web chat](/conversations/conversations-ai-web-chat-overview)
-- [SMS messaging](/conversations/conversations-send-receive-sms) (Conversations Pro required)
-- [WhatsApp](/conversations/conversations-whatsapp-overview)
+- [Web chat](/conversations/web-chat/)
+- [SMS messaging](/conversations/sms-overview) (Conversations Pro required)
+- [WhatsApp](/conversations/whatsapp-overview)
 - Phone calls (with [AI Voice Receptionist](/ai/ai-workforce/ai-voice-receptionist))
-- [Facebook Messenger](/conversations/conversations-setup-facebook-messenger)
-- [Instagram DMs](/conversations/conversations-setup-instagram)
+- [Facebook Messenger](/conversations/facebook-overview)
+- [Instagram DMs](/conversations/instagram-overview)
 
  The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
 </details>

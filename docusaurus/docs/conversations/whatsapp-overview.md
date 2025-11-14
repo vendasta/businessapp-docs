@@ -1,6 +1,10 @@
 ---
-title: Set up Conversations for WhatsApp messaging 
-sidebar_position: 2.3
+title: "WhatsApp in Conversations"
+sidebar_label: "WhatsApp"
+sidebar_position: 5
+description: Connect WhatsApp Business to Conversations for international customer messaging and AI-powered responses.
+keywords: [whatsapp, whatsapp business, international messaging, conversations, whatsapp integration, business messaging, ai chatbot]
+tags: [whatsapp, conversations, messaging, international]
 ---
 
 You can use Conversations to send and receive WhatsApp messages with customers through your WhatsApp Business account. This integration enables international customer communication by connecting your WhatsApp Business account directly to your team's shared Conversations. WhatsApp messaging is available starting with Conversations Standard.

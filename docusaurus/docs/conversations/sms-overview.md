@@ -1,6 +1,10 @@
 ---
-title: Set up Conversations for SMS messaging 
-sidebar_position: 4
+title: "SMS in Conversations"
+sidebar_label: "SMS"
+sidebar_position: 6
+description: Set up SMS messaging in Conversations with your dedicated business phone number for two-way text communication.
+keywords: [sms, text messaging, business phone number, conversations, sms setup, mms, customer texting, mobile messaging]
+tags: [sms, conversations, messaging, mobile]
 ---
 
 You can use Conversations to send and receive SMS and MMS messages with customers from a dedicated business phone number. Each business is assigned a local phone number for two-way communication based on the provided business address. SMS is available to businesses with a suppoorted edition of Conversations in Canada and the United States.

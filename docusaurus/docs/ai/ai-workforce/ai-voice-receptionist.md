@@ -47,7 +47,7 @@ Customers can keep calling your existing business number and your telephone prov
    - Forwarding calls automatically after-hours
 
 :::tip
-For more help forwarding calls, see [Call Forwarding Setup in Conversations](../../conversations/conversations-setup-phone-calls.md).
+For more help forwarding calls, see [Call Forwarding Setup in Conversations](../../conversations/phone-calls-overview.md).
 :::
 
 #### Handling calls from your AI Voice Receptionist
@@ -236,7 +236,7 @@ There are two main ways to route calls to your AI Voice Receptionist:
 1. **Direct calls to your Conversations number** - Calls made directly to your assigned Conversations phone number are automatically sent to your AI Receptionist
 2. **Forward calls from your business line** - Set up call forwarding from your existing business number to your Conversations number so customers can keep calling your familiar number
 
-For detailed call forwarding setup instructions, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md#call-forwarding-setup-in-conversations-optional).
+For detailed call forwarding setup instructions, see [Conversations Phone Call Setup](../../conversations/phone-calls-overview.md#call-forwarding-setup-in-conversations-optional).
 </details>
 
 <details>
@@ -344,7 +344,7 @@ If your AI Voice Receptionist isn't answering calls, verify:
 3. **AI configuration** - Ensure your Voice Receptionist is configured and the "Phone call: Answer with Voice AI" setting is enabled
 4. **Call routing** - Check that calls are being routed to your Conversations number (not another destination)
 
-For additional troubleshooting, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md#troubleshooting-phone-call-setup-issues).
+For additional troubleshooting, see [Conversations Phone Call Setup](../../conversations/phone-calls-overview.md#troubleshooting-phone-call-setup-issues).
 </details>
 
 <details>

@@ -1,6 +1,10 @@
 ---
-title: Set up Conversations for Emails 
-sidebar_position: 3
+title: "Email in Conversations"
+sidebar_label: "Email"
+sidebar_position: 1
+description: Learn how to set up email communication in Conversations to send and receive messages from a shared business email address.
+keywords: [email, conversations, business email, shared inbox, email setup, email integration, customer communication]
+tags: [email, conversations, messaging]
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
