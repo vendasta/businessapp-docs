@@ -2,6 +2,18 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const legacyBusinessAppSections = [
+  'administration',
+  'ai',
+  'automations',
+  'campaigns',
+  'conversations',
+  'crm',
+  'executivereport',
+  'store',
+  'getting-started-with-business-app',
+];
+
 const config: Config = {
   title: 'Product Help & Documentation',
   tagline: 'Your guide to getting the most out of your products',
@@ -127,6 +139,26 @@ const config: Config = {
             to: '/wordpress-hosting/',
           },
         ],
+        createRedirects(existingPath) {
+          if (!existingPath.startsWith('/business-app/')) {
+            return undefined;
+          }
+
+          const remainder = existingPath.replace('/business-app/', '');
+          const [section] = remainder.split('/');
+          if (!legacyBusinessAppSections.includes(section)) {
+            return undefined;
+          }
+
+          const legacyPath = `/${remainder}`;
+          const docsLegacyPath = `/docs/${remainder}`;
+          const redirects = [legacyPath];
+          if (docsLegacyPath !== legacyPath) {
+            redirects.push(docsLegacyPath);
+          }
+
+          return redirects;
+        },
       },
     ],
   ],
@@ -179,7 +211,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting started',
-              to: '/getting-started-with-business-app',
+              to: '/business-app/getting-started-with-business-app',
             },
           ],
         },
