@@ -94,7 +94,7 @@
 .mobileSwitcherButton {
   width: 100%;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
 }
 
@@ -131,6 +131,11 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.mobileSwitcherButton .chevron {
+  align-self: center;
+  margin-top: 0;
 }
 
 .chevron {
