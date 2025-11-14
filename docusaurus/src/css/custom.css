@@ -282,3 +282,33 @@
 .navbar__inner {
   justify-content: flex-start;
 }
+
+/* Give the mobile sidebar brand row breathing room */
+.navbar-sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1.2rem 0.6rem;
+}
+
+.navbar-sidebar__brand .navbar__brand {
+  margin-right: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.navbar-sidebar__brand .navbar__title.text--truncate {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+  line-height: 1.3;
+}
+
+.navbar-sidebar__brand .navbar-sidebar__close {
+  margin-left: 0.25rem;
+  border-radius: 999px;
+  padding: 0.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
