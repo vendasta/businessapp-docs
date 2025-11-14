@@ -68,7 +68,7 @@ Examples of instructions you might include are:
 <details>
 <summary>Can I use this Shopify integration with other AI Employees besides the Chat Receptionist?</summary>
 
-Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](/docs/ai/ai-workforce/ai-voice-receptionist). 
+Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](/business-app/ai/ai-workforce/ai-voice-receptionist). 
 
 This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business. 
 </details>
@@ -86,18 +86,18 @@ Yes! This guide is specific to Shopify, but you can create similar integrations 
 <details>
 <summary>How does the Shopify integration work with my AI's Knowledge Base?</summary>
 
-The Shopify integration provides real-time product data using Shopify's Model Context Protocol (MCP) server, while your [Knowledge Base](/docs/ai/knowledge-base) contains static business information. These work together perfectly:
+The Shopify integration provides real-time product data using Shopify's Model Context Protocol (MCP) server, while your [Knowledge Base](/business-app/ai/knowledge-base) contains static business information. These work together perfectly:
 
 **Shopify MCP provides:** Live product availability, current prices, product descriptions, storefront FAQs, etc.  
 **Knowledge Base should include:** Shipping policies, return information, size guides, care instructions, warranty details
 
-Your AI will use the Shopify Storefront integration to answer "Do you have this product?" and the Knowledge Base to answer "How does a medium t-shirt fit?" For best results, ensure your [Knowledge Sources](/docs/ai/ai-workforce/ai_workforce_overview#knowledge-sources) include comprehensive product and policy information to complement the real-time data.
+Your AI will use the Shopify Storefront integration to answer "Do you have this product?" and the Knowledge Base to answer "How does a medium t-shirt fit?" For best results, ensure your [Knowledge Sources](/business-app/ai/ai-workforce/ai_workforce_overview#knowledge-sources) include comprehensive product and policy information to complement the real-time data.
 </details>
 
 <details>
 <summary>What if customers ask about Shopify-related questions the API can't answer?</summary>
 
-Great question! The Shopify Storefront integration detailed storefront data, but customers often need additional information. If the below information is *not* shared on your Shopify store, you should add it to your [Knowledge Base](/docs/ai/knowledge-base):
+Great question! The Shopify Storefront integration detailed storefront data, but customers often need additional information. If the below information is *not* shared on your Shopify store, you should add it to your [Knowledge Base](/business-app/ai/knowledge-base):
 
 - Shipping costs and delivery times
 - Return and exchange policies  
@@ -117,12 +117,12 @@ This ensures your AI can provide complete, helpful answers by combining real-tim
 
 Yes! The Shopify Storefront integration works across all communication channels supported by your AI Employees. Customers can search for products, update carts, and more through:
 
-- [Web chat](/conversations/conversations-ai-web-chat-overview)
-- [SMS messaging](/conversations/conversations-send-receive-sms) (Conversations Pro required)
-- [WhatsApp](/conversations/conversations-whatsapp-overview)
-- Phone calls (with [AI Voice Receptionist](/ai/ai-workforce/ai-voice-receptionist))
-- [Facebook Messenger](/conversations/conversations-setup-facebook-messenger)
-- [Instagram DMs](/conversations/conversations-setup-instagram)
+- [Web chat](/business-app/conversations/conversations-ai-web-chat-overview)
+- [SMS messaging](/business-app/conversations/conversations-send-receive-sms) (Conversations Pro required)
+- [WhatsApp](/business-app/conversations/conversations-whatsapp-overview)
+- Phone calls (with [AI Voice Receptionist](/business-app/ai/ai-workforce/ai-voice-receptionist))
+- [Facebook Messenger](/business-app/conversations/conversations-setup-facebook-messenger)
+- [Instagram DMs](/business-app/conversations/conversations-setup-instagram)
 
  The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
 </details>
@@ -189,7 +189,7 @@ See [Creating Custom Capabilities](../empower-your-ai-employee-custom-capabiliti
 
 Absolutely! Use these testing methods:
 
-**AI Employee Testing:** Use the "Try it" button in [AI Workforce](/docs/ai/ai-workforce/ai_workforce_overview) to test your AI Employee with sample product questions
+**AI Employee Testing:** Use the "Try it" button in [AI Workforce](/business-app/ai/ai-workforce/ai_workforce_overview) to test your AI Employee with sample product questions
 
 **Tool Testing:** Review the "Explanation" feature in conversations to see raw API calls and responses
 
