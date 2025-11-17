@@ -54,7 +54,6 @@ Each contact should include at least one of: first name, last name, email, or ph
 1. In `CRM` > `Contacts`, select the checkbox at the top-left of the table.
 2. Choose `Select all…` > `Export` to export the displayed rows as CSV.
 
-![Export Contacts](../img/contacts/export-contacts.jpg)
 
 :::info
 Exports respect your current filters and the set of rows displayed.
@@ -66,18 +65,11 @@ Exports respect your current filters and the set of rows displayed.
 2. Use the action menu to schedule, pause, or resume campaigns for that contact.
 
 ![Three dots menu](../img/contacts/pause-resume-campaigns/three-dots-menu.jpg)
-![Pause Campaigns option](../img/contacts/pause-resume-campaigns/pause-campaigns-option.jpg)
 
 ### Add contacts to lists or automations
 
 1. From the Contacts table, select records and use actions to add them to a `List`.
 2. Trigger or schedule automations for the selected list.
-
-![Schedule Campaigns Step 2](../img/crm-contacts/schedule_campaigns_step2.jpg)
-![Schedule Campaigns Step 3](../img/crm-contacts/schedule_campaigns_step3.jpg)
-![Schedule Campaigns Step 4](../img/crm-contacts/schedule_campaigns_step4.jpg)
-![Schedule Campaigns Time](../img/crm-contacts/schedule_campaigns_time.jpg)
-![Schedule Campaigns Custom Email](../img/crm-contacts/schedule_campaigns_custom.jpg)
 
 ### Log activity and create tasks
 
