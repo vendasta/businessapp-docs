@@ -51,7 +51,8 @@ When restoring backups, the system automatically respects your subsite limit:
 ### Frequently Asked Questions
 
 <details>
-<summary>How can I add more subsites?</summary>
+    <summary>How can I add more subsites?</summary>
+    
 Contact your account administrator to add the Additional Subsites Add-on to your WordPress Hosting Premium plan.
 </details>
 
