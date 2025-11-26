@@ -3,17 +3,31 @@ title: Getting Started with Business App
 sidebar_position: 1
 ---
 
-import Video from '@site/src/components/Video';
-
 Business App is your one-stop dashboard for running your business online. Think of it as your digital command center: manage your online presence, monitor your business activity, communicate with customers, and access the products and services that help your business grow — all in one place!
 
-<Video
-  src="https://fast.wistia.net/embed/iframe/0biegn1dzb"
-  title="Business App Overview"
-  aspectRatio="16:9"
-  allowFullScreen={true}
-  frameBorder="0"
-/>
+<div
+  className="wistia_responsive_padding"
+  style={{ padding: '56.25% 0 0 0', position: 'relative' }}
+>
+  <div
+    className="wistia_responsive_wrapper"
+    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+  >
+    <iframe
+      src="https://fast.wistia.net/embed/iframe/s9aqsoo0ks?web_component=true&seo=true"
+      title="Business App Overview"
+      allow="autoplay; fullscreen"
+      allowTransparency
+      frameBorder="0"
+      scrolling="no"
+      className="wistia_embed"
+      name="wistia_embed"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </div>
+</div>
+<script src="https://fast.wistia.net/player.js" async></script>
 
 ---
 
