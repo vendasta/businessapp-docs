@@ -2,8 +2,18 @@
 title: managing-contacts
 sidebar_label: Managing Contacts
 description: Learn how to manage contacts by adding notes, viewing timelines, enriching data, and exporting contact lists.
-tags: contacts, contact-management, contact-enrichment, contact-timeline, export-contacts
-keywords: contact-notes, contact-timeline, enrichment, export-contacts, contact-history
+tags:
+  - contacts
+  - contact-management
+  - contact-enrichment
+  - contact-timeline
+  - export-contacts
+keywords:
+  - contact-notes
+  - contact-timeline
+  - enrichment
+  - export-contacts
+  - contact-history
 ---
 
 # Managing Contacts

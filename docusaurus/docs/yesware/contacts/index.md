@@ -2,8 +2,16 @@
 title: getting-started-with-contacts
 sidebar_label: Getting Started
 description: Learn how to access and use Contacts to manage your professional relationships and track interactions.
-tags: contacts, getting-started, contact-management
-keywords: contacts, yesware-contacts, contact-profiles, gmail, outlook
+tags:
+  - contacts
+  - getting-started
+  - contact-management
+keywords:
+  - contacts
+  - yesware-contacts
+  - contact-profiles
+  - gmail
+  - outlook
 ---
 
 # Getting Started with Contacts
