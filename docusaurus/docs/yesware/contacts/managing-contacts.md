@@ -158,37 +158,49 @@ The export will download as a file that you can open in spreadsheet applications
 
 ## Frequently Asked Questions
 
-<details><summary>Why am I seeing no activity for a contact in the timeline?</summary>
+<details>
+
+<summary>Why am I seeing no activity for a contact in the timeline?</summary>
 
 The timeline will not show activity for your first inbound email from a recipient. It also will not show activity for internal emails with colleagues. If you recently added a contact manually, their timeline will only populate after you begin emailing with them.
 
 </details>
 
-<details><summary>How many enrichment credits do I have?</summary>
+<details>
+
+<summary>How many enrichment credits do I have?</summary>
 
 Contact Enrichment is an add-on feature that uses credits. To check your available enrichment credits, contact your account administrator or check your plan details in the Yesware app. Each enrichment uses one credit.
 
 </details>
 
-<details><summary>Can I export specific contacts instead of all contacts?</summary>
+<details>
+
+<summary>Can I export specific contacts instead of all contacts?</summary>
 
 The export function currently allows you to select all contacts. If you need to export specific contacts, you can select them individually on the Contacts page before clicking the export button. Alternatively, you can export all contacts and filter the results in your spreadsheet application.
 
 </details>
 
-<details><summary>Are my notes visible to anyone else?</summary>
+<details>
+
+<summary>Are my notes visible to anyone else?</summary>
 
 Notes are internal to your Yesware account. They are not visible to email recipients or shared externally. However, if you're part of a team or organization, check with your administrator about note visibility within your organization.
 
 </details>
 
-<details><summary>What happens if I enrich a contact that already has information?</summary>
+<details>
+
+<summary>What happens if I enrich a contact that already has information?</summary>
 
 When you enrich a contact, the system will display both the existing profile information and the newly enriched data. You can then choose which information to save. Enriching an existing contact can help you update outdated information or fill in missing fields.
 
 </details>
 
-<details><summary>Can I delete notes from a contact?</summary>
+<details>
+
+<summary>Can I delete notes from a contact?</summary>
 
 Yes, you can edit or delete notes at any time by returning to the contact profile. Simply access the Notes section, make your changes, and click `Save` to update.
 

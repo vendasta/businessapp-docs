@@ -94,13 +94,17 @@ You can also create contacts manually before sending your first email to them.
 
 ## Frequently Asked Questions
 
-<details><summary>What are the user limits for the Pro Plan?</summary>
+<details>
+
+<summary>What are the user limits for the Pro Plan?</summary>
 
 The Pro Plan includes a limit of 5 seats (users). If you wish to add more seats, you will be prompted to upgrade your plan or contact the sales team.
 
 </details>
 
-<details><summary>How do I update my Contacts Email button to email from Gmail?</summary>
+<details>
+
+<summary>How do I update my Contacts Email button to email from Gmail?</summary>
 
 The email button on the Contacts page will open in your default email program. To use Contacts Email with Gmail (and have access to Yesware features), follow these steps:
 
@@ -117,19 +121,25 @@ The email button on the Contacts page will open in your default email program. T
 
 </details>
 
-<details><summary>Can I use Contacts if I'm not sending emails yet?</summary>
+<details>
+
+<summary>Can I use Contacts if I'm not sending emails yet?</summary>
 
 Yes. You can manually create contacts before sending your first email. This allows you to pre-fill information and prepare for outreach. Only an email address is required, but you can also include name, company, title, or phone number.
 
 </details>
 
-<details><summary>Will I see contacts from internal emails with my colleagues?</summary>
+<details>
+
+<summary>Will I see contacts from internal emails with my colleagues?</summary>
 
 Contacts will be created for any email recipient, but certain activity (like the first inbound email from a recipient or internal emails with colleagues) may not show in the Contact Timeline.
 
 </details>
 
-<details><summary>Where can I access Quick Actions for contacts?</summary>
+<details>
+
+<summary>Where can I access Quick Actions for contacts?</summary>
 
 In Gmail, Quick Actions are available in the Contacts tab of your sidebar. You'll see `Campaigns` and `Email` buttons that allow you to quickly start outreach. In the Contacts page on the app site, you can also click on the Campaign button within a contact to launch the Campaign screen.
 
