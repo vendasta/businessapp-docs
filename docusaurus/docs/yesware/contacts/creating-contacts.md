@@ -124,7 +124,9 @@ You can also delete a contact directly from the Gmail sidebar:
 
 ## Frequently Asked Questions
 
-<details><summary>How do I add a non-US telephone number to a contact?</summary>
+<details>
+
+<summary>How do I add a non-US telephone number to a contact?</summary>
 
 If you would like to add a non-US-based telephone number, you can do so using the following format:
 
@@ -136,7 +138,9 @@ Note: Numbers starting with 0 (which indicate local dialing) are not supported b
 
 </details>
 
-<details><summary>Can I import contacts and leads from Salesforce Campaigns into Yesware?</summary>
+<details>
+
+<summary>Can I import contacts and leads from Salesforce Campaigns into Yesware?</summary>
 
 No, Yesware Campaigns does not currently support importing data directly from the Salesforce Campaigns object.
 
@@ -152,7 +156,9 @@ If you need to use data from the Salesforce Campaigns object, consider these ste
 
 </details>
 
-<details><summary>How do I add a contact to a Campaign?</summary>
+<details>
+
+<summary>How do I add a contact to a Campaign?</summary>
 
 From your Contacts tab in the sidebar (Gmail) or on the app site, you can add contacts to Campaigns:
 
@@ -175,19 +181,25 @@ From your Contacts tab in the sidebar (Gmail) or on the app site, you can add co
 
 </details>
 
-<details><summary>What happens to a contact if I delete them?</summary>
+<details>
+
+<summary>What happens to a contact if I delete them?</summary>
 
 When you delete a contact from Yesware, their contact record and any associated notes or enrichment data will be permanently removed from your Yesware account. However, this does not affect your email history or any emails you've exchanged with that person. If you send another email to that address in the future, a new contact record will be created automatically.
 
 </details>
 
-<details><summary>Can I edit multiple contacts at once?</summary>
+<details>
+
+<summary>Can I edit multiple contacts at once?</summary>
 
 Currently, Yesware does not support bulk editing of contacts. You need to edit each contact individually by clicking on their profile and updating the relevant fields.
 
 </details>
 
-<details><summary>What information is required to create a contact?</summary>
+<details>
+
+<summary>What information is required to create a contact?</summary>
 
 The only required field to create a contact is the email address. All other fields (First Name, Last Name, Company, Title, Phone Number) are optional but recommended for maintaining complete contact records.
 
