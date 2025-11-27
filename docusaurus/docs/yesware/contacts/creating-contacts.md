@@ -2,8 +2,17 @@
 title: creating-and-editing-contacts
 sidebar_label: Creating Contacts
 description: Learn how to create, edit, and delete contacts in Yesware for Gmail and Outlook.
-tags: contacts, create-contacts, edit-contacts, delete-contacts
-keywords: create-contact, edit-contact, delete-contact, add-contact, yesware-contacts
+tags:
+  - contacts
+  - create-contacts
+  - edit-contacts
+  - delete-contacts
+keywords:
+  - create-contact
+  - edit-contact
+  - delete-contact
+  - add-contact
+  - yesware-contacts
 ---
 
 # Creating and Editing Contacts
