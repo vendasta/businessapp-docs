@@ -1,4 +1,9 @@
 {
   "label": "Analytics",
-  "position": 3
-} 
+  "position": 3,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "ad-intel/analytics/index"
+  }
+}
