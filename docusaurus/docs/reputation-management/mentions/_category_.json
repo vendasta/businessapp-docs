@@ -1,4 +1,9 @@
 {
   "label": "Mentions",
-  "position": 8
-} 
+  "position": 8,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "reputation-management/mentions/index"
+  }
+}
