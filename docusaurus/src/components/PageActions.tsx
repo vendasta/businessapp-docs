@@ -124,7 +124,7 @@ export default function PageActions({
   const handleOpenGemini = () => {
     if (typeof window === 'undefined') return;
     const prompt = getPrompt();
-    const geminiUrl = `https://www.google.com/search?udm=50&aep=11&q=${encodeURIComponent(prompt)}`;
+    const geminiUrl = `https://gemini.google.com/app?query=${encodeURIComponent(prompt)}`;
     window.open(geminiUrl, '_blank');
   };
 
