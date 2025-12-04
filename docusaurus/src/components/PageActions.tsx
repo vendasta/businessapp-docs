@@ -211,7 +211,7 @@ export default function PageActions({
           style={{verticalAlign: 'text-bottom'}}
           aria-label="Gemini logo"
         />
-        Open in Gemini
+        Open in Google AI
       </button>
       <button
         type="button"
