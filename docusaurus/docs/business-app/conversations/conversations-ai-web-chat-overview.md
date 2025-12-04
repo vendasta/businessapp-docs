@@ -128,6 +128,7 @@ You can tailor the web chat widget to align with your branding and operational n
 - **Welcome Greeting**: Set a header message to invite engagement.
 - **Initial AI Message**: Configure a custom greeting that appears shortly after the chat is opened.
 - **Phone Configuration**: Define how received calls and SMS messages should be handled.
+- **Widget Actions**: Create direct links that automatically open the chat widget with predefined messages—perfect for email campaigns, landing pages, and support pages.
 
 Access these settings via Administration > Conversations Settings > Configure Web Chat`.
 
@@ -163,6 +164,8 @@ You can trigger widget actions using two methods:
 - Useful when you need to trigger actions based on user interactions or dynamic conditions
 
 ### Configuration Steps
+
+![Widget Actions configuration interface](./img/widget-actions-configuration.png)
 
 1. Navigate to **Conversations Settings > Web Chat Configuration > Widget Actions**
 2. **Select an action**: Choose **Prefill message** or **Send message**
