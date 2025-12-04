@@ -1,5 +1,5 @@
 ---
-title: Send Automated SMS Alerts to Any Phone Number
+title: Send automated SMS alerts to any phone number
 sidebar_label: Automated SMS to any phone number
 description: Use the Send an SMS message to a phone number action in Automations to send text alerts to any destination phone number.
 tags:
@@ -12,7 +12,7 @@ keywords:
   - phone-number-alerts
 ---
 
-# Send Automated SMS Alerts to Any Phone Number
+# Send automated SMS alerts to any phone number
 
 This article explains how to use the **Send an SMS message to a phone number** action in Automations to send SMS alerts to any destination phone number, including numbers that are not stored in your CRM.
 
