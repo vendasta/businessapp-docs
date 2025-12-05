@@ -71,17 +71,6 @@ Use the Phone Number field to send alerts to internal or external recipients who
 | **Send an SMS message via Conversations** | Sends only to the contact who triggered the automation |
 | **Send an SMS message to a phone number** | Sends to any number you manually specify, such as a team member or owner |
 
-## Demo video
-
-<div style={{position: 'relative', paddingBottom: '56.25%', height: 0}}>
-  <iframe 
-    src="https://www.loom.com/embed/e341e373bbed4f25ba9e70573121fd8f" 
-    frameBorder="0" 
-    allowFullScreen 
-    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-  />
-</div>
-
 ## FAQs
 
 <details>
