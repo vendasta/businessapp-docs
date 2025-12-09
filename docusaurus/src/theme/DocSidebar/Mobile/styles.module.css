@@ -1,0 +1,15 @@
+.switcherContainer {
+  padding: 0.4rem 1rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.menuList {
+  padding: 0.25rem 0;
+}
+
+@media (min-width: 997px) {
+  .switcherContainer {
+    display: none;
+  }
+}

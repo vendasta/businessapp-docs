@@ -1,0 +1,11 @@
+{
+  "label": "Staging",
+  "position": 9,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Set up and manage staging environments.",
+    "slug": "/wordpress-hosting/category/staging"
+  }
+}

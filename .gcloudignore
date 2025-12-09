@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs (we build fresh in Docker)
+build/
+**/build/
+docusaurus/build/
+
+# Cache and temp files
+.cache/
+.docusaurus/
+.npm/
+.eslintcache/
+.stylelintcache/
+*.tsbuildinfo
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Git (not needed for build)
+.git/
+.gitignore
+
+# Documentation (if not needed for build)
+README.md
+CONTRIBUTING.md
+LICENSE
+*.md
+!docusaurus/docs/**/*.md
+!docusaurus/docs/**/*.mdx
+
+# Other
+.yarn/
+.pnp.*
+scripts/
+

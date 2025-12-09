@@ -1,0 +1,9 @@
+{
+  "label": "Store",
+  "position": 6,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "business-app/store/index"
+  }
+}

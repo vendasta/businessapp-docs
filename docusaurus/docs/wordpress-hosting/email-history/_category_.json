@@ -1,0 +1,11 @@
+{
+  "label": "Email History",
+  "position": 10,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Troubleshoot outgoing email and delivery from your site.",
+    "slug": "/wordpress-hosting/category/email-history"
+  }
+}

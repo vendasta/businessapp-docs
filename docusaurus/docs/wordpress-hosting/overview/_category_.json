@@ -1,0 +1,11 @@
+{
+  "label": "Overview",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Start here for key concepts and getting started resources.",
+    "slug": "/wordpress-hosting/category/overview"
+  }
+}

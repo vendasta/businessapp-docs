@@ -1,0 +1,32 @@
+---
+title: "How Do Dynamic Templates Work with Salesforce?"
+description: "How Do Dynamic Templates Work with Salesforce?"
+sidebar_position: 18
+---
+
+# How Do Dynamic Templates Work with Salesforce?
+
+Yesware’s dynamic templates allow Enterprise users to personalize emails using live data pulled from Salesforce Contact or Lead records. When a match is found, fields in your template are automatically filled in with real-time information—making it easy to send personalized communication at scale.
+### How dynamic field matching works
+When you select a template in the compose window, Yesware looks up the **first recipient in the "To" field**.
+If a **matching Contact or Lead** is found in Salesforce, the dynamic fields will automatically populate with that record's data.
+If **no match is found**:
+**Gmail**: You’ll see a prompt at the bottom of the template to create a new Contact or Lead using the Salesforce Sidebar.
+**Outlook**: There is no prompt. Fields remain blank if no match is found.
+### How to trigger Salesforce field population
+To ensure Salesforce data is pulled into the template, you must interact with the template properly:
+**Gmail**: Click **“Fill In”** when selecting a template. Once data is populated, click **“Insert Template”**.
+**Outlook**: Click on the template name to trigger the Salesforce lookup. Once fields are filled, then click **“Insert”**.
+Using the **Insert** button too early (without previewing or selecting the template) will insert the template as-is, with merge fields left blank.
+### Inserting Salesforce fields into a template
+When building or editing a template, you can insert Salesforce merge fields:
+Click the **Insert Merge Field** button at the bottom of the template editor.
+Select **Salesforce Field**.
+Begin typing the API name of the field you’d like to use. Matching options will be suggested.
+If you're referencing fields from an **Account object**, prefix the field name with the object. For example:`\{!Account.Website\}`
+Yesware does **not** support pulling from **Opportunity** objects.
+**Reference: Salesforce field names**
+Use the following Salesforce documentation to find standard API names for commonly used fields:
+[Account Field Names](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_account.htm)
+[Contact Field Names](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contact.htm)
+[Lead Field Names ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_lead.htm)

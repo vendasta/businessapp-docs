@@ -1,0 +1,46 @@
+---
+description: Wistia video embedding format for Docusaurus documentation files (.md and .mdx)
+globs: ["docusaurus/docs/**/*.{md,mdx}"]
+alwaysApply: false
+---
+
+# Wistia Video Embedding
+
+When embedding Wistia videos in Docusaurus documentation files, use the following format:
+
+```mdx
+<div
+  className="wistia_responsive_padding"
+  style={{ padding: '56.25% 0 0 0', position: 'relative' }}
+>
+  <div
+    className="wistia_responsive_wrapper"
+    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+  >
+    <iframe
+      src="https://fast.wistia.net/embed/iframe/{VIDEO_ID}?web_component=true&seo=true"
+      title="{Descriptive Video Title}"
+      allow="autoplay; fullscreen"
+      allowTransparency
+      frameBorder="0"
+      scrolling="no"
+      className="wistia_embed"
+      name="wistia_embed"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </div>
+</div>
+<script src="https://fast.wistia.net/player.js" async></script>
+```
+
+## Requirements:
+- Files must be `.mdx` (not `.md`) to support JSX/HTML. If working with a `.md` file, convert it to `.mdx` first.
+- Replace `{VIDEO_ID}` with the actual Wistia media ID (e.g., `stb74pd0qz`)
+- Replace `{Descriptive Video Title}` with a descriptive, accessible title
+- The script tag must be included after the div wrapper
+- Use this exact structure - do not create custom components for Wistia embeds
+- Applies to all Docusaurus documentation files in `docusaurus/docs/**/*.{md,mdx}`
+
+## Example:
+See `docusaurus/docs/business-app/ai/ai-capabilities/index.mdx` for a working example.

@@ -1,0 +1,11 @@
+{
+  "label": "WordPress Dashboard",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Everything inside WordPress: pages, plugins, themes, and more.",
+    "slug": "/wordpress-hosting/category/wordpress-dashboard"
+  }
+}

@@ -1,0 +1,341 @@
+---
+title: managing-active-campaigns
+sidebar_label: Managing Active Campaigns
+description: Learn how to add recipients, track performance, export data, and manage active campaigns.
+tags:
+  - campaigns
+  - recipients
+  - performance-metrics
+  - csv-export
+  - campaign-management
+keywords:
+  - add-recipients
+  - campaign-metrics
+  - pause-campaign
+  - export-csv
+  - campaign-reporting
+---
+
+# Managing Active Campaigns
+
+## What is campaign management?
+
+Campaign management involves adding recipients to your campaigns, monitoring their progress, tracking performance metrics, and making adjustments as needed. Once you've created a campaign, you'll use campaign management features to execute and optimize your outreach.
+
+## Why is this important?
+
+Effective campaign management allows you to:
+
+- Add and organize recipients efficiently
+- Track engagement and performance in real-time
+- Make data-driven decisions about your outreach
+- Pause, reschedule, or adjust campaigns as needed
+- Export data for analysis and reporting
+- Integrate with your CRM for seamless tracking
+
+## What's included?
+
+Campaign management includes:
+
+- Multiple methods to add recipients (CSV upload, manual entry, Salesforce import)
+- Performance tracking and metrics
+- Recipient status monitoring
+- Export and reporting capabilities
+- Pause and resume functionality
+- CRM integration options
+
+## How to add recipients to a campaign
+
+You can add recipients to your Campaigns in several ways, depending on your plan level:
+
+- Uploading a CSV file
+- Manually typing recipients into the recipient table
+- Importing from Salesforce (Enterprise plans only)
+- *(Gmail only)* Using the `Add to Campaigns` option from an email thread
+
+### Uploading a CSV
+
+You can upload a spreadsheet of recipients directly into a Campaign.
+
+**Best practice:** Ensure that the email column is first in your CSV. All other column headers can be used for merge fields and personalization.
+
+#### CSV formatting requirements
+
+If you're having trouble uploading a .CSV file to a Campaign, review the following formatting requirements to ensure your file is compatible:
+
+- The `Email` column must be the first column, in Column A.
+- All column headings must exactly match the Merge Fields used in your email. For example, a column labeled `FirstName` will not work with the merge field `{!First}`.
+- Each row must include a valid email address. Do not leave blank lines—uploading will stop at the first row without an email.
+- Remove any unused columns, rows, or extra tabs. Only include information you intend to use in your Campaign.
+- Your file must be saved as a .CSV. Most spreadsheet programs default to `.xlsx`, so be sure to select "Comma Separated Values (.csv)" as the file type when saving.
+
+Following these best practices should resolve most upload issues.
+
+#### CSV field titles for export
+
+When you export recipient data from a campaign, only the following field titles will export:
+
+- Email
+- FirstName
+- LastName
+- Name
+- Title
+- Phone
+- Company
+
+:::warning
+These field titles must be spelled exactly as shown above, including capitalization. For example, "FirstName" will export, but "firstname" or "Firstname" will not.
+:::
+
+To export recipient data from a campaign:
+
+1. Go to the specific campaign.
+2. Click the `Recipients` tab.
+3. Check the box for `Personal Details`.
+4. Click `Export`.
+
+### Manually typing into the recipient table
+
+You can also add recipients one by one directly in the recipient table:
+
+- All column headers are editable
+- You can add rows or columns to include more data manually
+
+### Gmail only: "Add to campaigns" from an email thread
+
+In Gmail:
+
+1. Hover over the Yesware "Y" icon next to an email address in a thread.
+2. Select `Add to Campaigns`.
+3. The Campaigns dashboard will open.
+4. Choose the Campaign you'd like to add the recipient to.
+
+### Salesforce imports (Enterprise plans)
+
+Enterprise users can import recipients in multiple ways:
+
+**Import a Contact or Lead List:** Any list created in Salesforce will be available to import into Campaigns.
+
+**Search Salesforce to Add an Individual:** Use the search box to locate and add a single Contact or Lead.
+
+**From a List View in Salesforce:** Select the list view, then click `Add to Campaign`. Hover over the desired Campaign and click the blue `Add Recipients` button.
+
+**From an Individual Contact/Lead Record:** Open the record in Salesforce and click `Add to Campaign`. Then select the Campaign and use the `Add Recipients` button.
+
+:::info
+Fields from your Salesforce list will appear as column headers and can be used for merge field personalization.
+:::
+
+### How to export a CSV from Salesforce
+
+In order to use Campaigns at scale, you may need to upload a CSV that contains the data that you'd like to merge into your emails. While this spreadsheet can be created manually, exporting a list from Salesforce can save you time.
+
+Create a new Report in Salesforce. Depending on what information you're trying to pull together, this report could be based on Accounts, Leads, Contacts, or Opportunities.
+
+#### Salesforce Lightning
+
+1. In the report builder, select the fields that you'd like to include in the email. **Note:** Email must be the first column of your report.
+2. At the top of your report, click `Run` and then the down arrow and `Export` button.
+3. Select `Details Only`.
+4. Select `Comma Delimited .csv` as the `Export File Format` and click Export.
+
+Now you're ready to upload the file into Campaigns.
+
+#### Salesforce Classic
+
+1. In the report builder, select the fields that you'd like to include in the email. **Note:** Email must be the first column of your report.
+2. At the top of your report, click `Run Report` and then the `Export Details` button.
+3. Select `Comma Delimited .csv` as the `Export File Format` and click Export.
+
+Now you're ready to upload the file into Campaigns.
+
+### Campaign size limits
+
+- Max 900 recipients per upload
+- Max 5,000 recipients per Campaign
+- Pro Plan: 20 recipients/month
+- Free Plan: 10 recipients/month
+- Trial accounts: 500 recipients for the duration of the trial
+
+## How to view performance metrics
+
+You can view high-level performance metrics for your Campaigns in the Campaigns dashboard. These include:
+
+- Total number of recipients
+- Open rate (percentage)
+- Click rate (percentage)
+- Connect rate (percentage)
+- Number of meetings booked (if you include your Meeting Scheduler link)
+
+### Campaign-level performance
+
+You can also view Campaign performance at the user and team level by using the:
+
+- Campaigns by User Report
+- Campaigns by Campaign Report
+
+To dive deeper into a specific Campaign:
+
+1. Click on the Campaign from the dashboard.
+2. You'll see performance metrics broken down by each individual touch.
+3. Click on a touch to expand and view its content and stats.
+
+### Shared campaign performance
+
+To measure the success of a Shared Campaign across your Team:
+
+1. Toggle the `My Stats` button to `Campaign Stats`.
+2. This view will show the open, click, and connect percentages for your entire team on each shared Campaign.
+
+### Download campaign insights
+
+While direct downloads from the Campaigns section are not available, you can access detailed performance insights through the Reports section. By selecting Campaigns by Campaigns, you'll unlock a comprehensive report with valuable analytics to evaluate and optimize your campaign strategy.
+
+#### Key features of the campaigns by campaigns report
+
+**Versatile Sorting:** Effortlessly analyze your campaign's effectiveness by sorting data across various engagement metrics. This allows you to quickly identify which strategies are delivering the best results.
+
+**Recipient Tracking:** Track recipient engagement and their progression across multiple campaigns. Use this information to refine your audience targeting and improve campaign impact.
+
+**Meeting Booking Analysis:** Determine which campaigns drive the highest number of booked meetings. This insight helps you measure the effectiveness of your outreach efforts and their influence on tangible outcomes.
+
+**Customizable Date Range:** Adjust the date range to focus your analysis on specific time periods. This flexibility allows you to identify performance trends over time and make informed, data-driven decisions.
+
+To access your campaign insights, go to the Reports section, select Campaigns by Campaigns, and start uncovering the data that matters most to your success.
+
+## How to pause and resume a campaign
+
+Going away on vacation, but have a multi-touch campaign running? Use the pause button to prevent the upcoming touches on that campaign from going out.
+
+You can pause all activity for an individual Campaign. When paused, no automated emails will be sent and no tasks will appear in the Tasks list for that Campaign.
+
+### Pause a campaign
+
+1. Click on the Campaign you want to pause
+2. In the upper right corner, click `Pause Campaign`
+3. You will see a message confirming the Campaign has been paused
+4. You can still edit, reschedule, remove, or skip the next touch for paused recipients
+5. No content will be sent until the Campaign is resumed
+
+### Resume a campaign
+
+1. Click on `Resume Campaign` in the upper right corner
+2. For any recipient that had a send date/time that was scheduled in the past (meaning the date for which the original send was scheduled has come and gone since you paused the Campaign), you will be able to reschedule, or you can accept the default to send it immediately
+3. Confirm you want to resume
+
+:::warning
+Pausing is a Campaign-wide action at the user-level, not something that can be done to recipients individually. When you pause a Campaign all actions related to recipients you added will cease. This would not affect recipients in shared Campaigns that other teammates added.
+
+Pausing a campaign will prevent follow-up touches from going out. If you have emails already going out, hitting the Pause button will not stop them since they are already queued in your inbox to go out.
+:::
+
+## How to reschedule a campaign touch
+
+To reschedule touches in a campaign follow these steps:
+
+1. Click on the desired campaign.
+2. Select the `Recipients` tab.
+3. Check the box next to `Personal Details`, and click `Reschedule Next Touch`.
+
+## How to integrate with Salesforce
+
+### BCC campaigns to Salesforce
+
+To set up BCC to Salesforce, follow these steps:
+
+1. In Gmail, click the drop-down menu in the top-left corner and select `Preferences`.
+2. Go to the `Integrations` section.
+3. Turn `BCC to CRM` to ON.
+4. Enter your unique BCC address.
+5. Click `Save & Reload`.
+6. Ensure the `CRM` button is checked in your Gmail compose window.
+
+:::info
+You will need to repeat this process every time you add new recipients to an existing campaign. However, there is a workaround: by adding the BCC to the CRM email address when you first create the campaign, it will automatically be included in all future communications for that campaign.
+:::
+
+## Frequently Asked Questions
+
+
+<details>
+<summary>Can I track deleted campaigns?</summary>
+
+When a campaign is deleted from the dashboard, here's what you need to know:
+
+**Permanent Deletion:** Once a campaign is deleted, it cannot be retrieved or restored in your account.
+
+**Email Tracking:** Emails that were sent as part of the deleted campaign will still be trackable, so you can monitor their performance.
+
+**Scheduled Touches:** Any remaining scheduled touches or emails associated with the campaign will no longer be sent, as the campaign is permanently removed.
+
+</details>
+
+<details>
+<summary>Does bounced email reporting exist?</summary>
+
+While there is no reporting feature that provides data and statistics on bounced emails, you can still gather this information by exporting the bounced recipients for each campaign.
+
+To get this, you will first need to filter the campaign recipients by those that bounced by clicking into the campaign, selecting the `Recipients` tab, setting the filter to `Bounced` > clicking `Apply`.
+
+From there you will then need to export these recipients by checking the box next to `Personal Details` > `Export`.
+
+</details>
+
+<details>
+<summary>Can I add a recipient to more than one campaign?</summary>
+
+Currently, there is no ability to add the same email address onto more than one campaign at a time. If you would like to include a user on another campaign, you will need to manually remove them from the current campaign they are on, and move them to the new, desired campaign.
+
+To manually move a recipient to a new campaign: Click into the campaign > `Recipients` tab > check the box next to their email address > `Move To` button at the top of the page and select the new campaign.
+
+</details>
+
+<details>
+<summary>Can I add an email touch to an active campaign?</summary>
+
+At this time, you do not have the ability to add email touches to a campaign for recipients already in flight. The email touch would have to have been added prior to when you added the recipients and sent out the campaign.
+
+However, this means that any new recipients added to the campaign, moving forward, will receive the new email touch.
+
+For any recipients that won't receive the follow-up email touch, as a workaround, creating a single email touch campaign with the follow-up email touch that you wanted to send out and adding those recipients to the campaign is suggested.
+
+</details>
+
+<details>
+<summary>Can I limit the number of recipients receiving campaign emails for larger recipient lists?</summary>
+
+Currently, there is no way to limit the number of recipients for campaign emails when dealing with larger recipient lists. There is no throttle or toggle feature to send emails in smaller batches within a larger recipient pool.
+
+**Workaround:** To manage the number of emails being sent, you can adjust the timing of adding recipients to campaigns, sending smaller batches at different times, or modify the frequency of touchpoints within campaigns to control the flow of emails.
+
+</details>
+
+<details>
+<summary>Can I see recipients of other team members' campaigns?</summary>
+
+Users cannot view the recipients of another team member's campaigns. However, each team member can access the details of their own campaigns by navigating to the campaign and clicking on the `Recipients` section. For privacy and security reasons, this information is kept confidential and is only visible to the account holder.
+
+</details>
+
+<details>
+<summary>What happens when I connect with a recipient on a campaign?</summary>
+
+By default, recipients are removed from a Campaign when they "connect" with you, meaning that they will not receive any subsequent touches in the Campaign if there are any. A "connect" means that they replied to your email, you spoke to them on the phone as a result of a phone call touch, or they booked a meeting with your Meeting Scheduler link.
+
+When creating a Campaign, you can choose whether or not you want to `Remove recipients after connection`. If you'd like to keep a recipient in a Campaign regardless of whether or not they reply to an email, you speak to them on the phone, or they book a meeting, simply un-check the `Remove recipients after connection` box in the `Settings` section of the Campaign.
+
+</details>
+
+<details>
+<summary>Why can't I see my Google signature in the campaign preview?</summary>
+
+If you're using the "Include Google Signature" option when creating an email touch or campaign, you may notice that the Google signature does not appear in the campaign preview. This is intentional and part of the platform's functionality.
+
+**In the Preview:** The Google signature will not display in the email preview, even if the "Include Google Signature" option is toggled on.
+
+**In Sent Emails:** The Google signature will be included in the emails sent to recipients, as long as the Gmail account associated with the campaign has a signature properly set up.
+
+To ensure your Google signature appears in sent emails, enable the "Include Google Signature" option while creating your email touch or campaign, and verify your Gmail account has an active signature set up in your Gmail settings.
+
+</details>
+

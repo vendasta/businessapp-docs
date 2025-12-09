@@ -1,0 +1,11 @@
+{
+  "label": "Templates",
+  "position": 11,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Manage templates for your WordPress site.",
+    "slug": "/wordpress-hosting/category/templates"
+  }
+}

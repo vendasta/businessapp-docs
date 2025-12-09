@@ -1,0 +1,10 @@
+{
+  "label": "Citation Builder",
+  "position": 7,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "local-seo/citation-builder/index"
+  }
+}

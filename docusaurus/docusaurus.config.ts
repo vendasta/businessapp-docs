@@ -2,9 +2,21 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const legacyBusinessAppSections = [
+  'administration',
+  'ai',
+  'automations',
+  'campaigns',
+  'conversations',
+  'crm',
+  'executivereport',
+  'store',
+  'getting-started-with-business-app',
+];
+
 const config: Config = {
-  title: 'Business App',
-  tagline: 'Customer acquisition and engagement platform for your business',
+  title: 'Product Help & Documentation',
+  tagline: 'Your guide to getting the most out of your products',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -40,6 +52,16 @@ const config: Config = {
         type: 'text/javascript',
       },
       innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-1Y49QBYD4L');`,
+    },
+    // Webchat widget script (simple approach)
+    {
+      tagName: 'script',
+      attributes: {
+        src: 'https://cdn.apigateway.co/webchat-client..prod/sdk.js',
+        'data-widget-id': 'fdb6e70b-af9a-11f0-bff6-7afa397fdb2d',
+        'data-cookieconsent': 'ignore',
+        defer: 'true',
+      },
     },
   ],
 
@@ -83,7 +105,38 @@ const config: Config = {
         redirects: [
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
-            to: '/ai/ai-workforce/ai-chat-receptionist/',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
+          },
+          // Legacy Listing Sync permalink -> new Local SEO path
+          {
+            from: '/vendasta-products/local-seo/listing-sync',
+            to: '/local-seo/listing-sync/',
+          },
+          // Legacy section redirects - redirect top-level paths only
+          // Note: Only include trailing slash versions to avoid conflicts
+          {
+            from: '/businessapp',
+            to: '/business-app/',
+          },
+          {
+            from: '/adintel',
+            to: '/ad-intel/',
+          },
+          {
+            from: '/localseo',
+            to: '/local-seo/',
+          },
+          {
+            from: '/reputationmanagement',
+            to: '/reputation-management/',
+          },
+          {
+            from: '/socialmarketing',
+            to: '/social-marketing/',
+          },
+          {
+            from: '/wordpresshosting',
+            to: '/wordpress-hosting/',
           },
           // Conversation channel reorganization redirects
           {
@@ -115,6 +168,26 @@ const config: Config = {
             to: '/conversations/web-chat/',
           },
         ],
+        createRedirects(existingPath) {
+          if (!existingPath.startsWith('/business-app/')) {
+            return undefined;
+          }
+
+          const remainder = existingPath.replace('/business-app/', '');
+          const [section] = remainder.split('/');
+          if (!legacyBusinessAppSections.includes(section)) {
+            return undefined;
+          }
+
+          const legacyPath = `/${remainder}`;
+          const docsLegacyPath = `/docs/${remainder}`;
+          const redirects = [legacyPath];
+          if (docsLegacyPath !== legacyPath) {
+            redirects.push(docsLegacyPath);
+          }
+
+          return redirects;
+        },
       },
     ],
   ],
@@ -152,19 +225,12 @@ const config: Config = {
     // Social card used for sharing previews
     image: 'img/businessapp-docs-social-share.png',
     navbar: {
-      title: 'Business App',
+      title: 'Product Help & Documentation',
       logo: {
-        alt: 'Business App Logo',
-        src: 'img/logo.png',
+        alt: 'Business App logo',
+        src: 'img/Business App.svg',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Overview',
-        },
-      ],
+      items: [],
     },
     footer: {
       style: 'dark',
@@ -174,7 +240,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting started',
-              to: '/getting-started-with-business-app',
+              to: '/business-app/getting-started-with-business-app',
             },
           ],
         },

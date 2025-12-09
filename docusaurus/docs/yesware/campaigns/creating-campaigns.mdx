@@ -1,0 +1,248 @@
+---
+title: creating-campaigns
+sidebar_label: Creating Campaigns
+description: Learn how to create and personalize multi-touch campaigns with automated and manual touches.
+tags:
+  - campaigns
+  - email-automation
+  - personalization
+  - merge-fields
+keywords:
+  - create-campaigns
+  - campaign-touches
+  - personalization
+  - manual-email
+  - automated-email
+---
+
+# Creating Campaigns
+
+## What is campaign creation?
+
+Campaign creation is the process of building multi-touch, multi-channel outreach sequences that can include automated emails, manual emails, phone calls, LinkedIn tasks, and other touch types. When you create a campaign, you define the content, timing, and structure of your outreach sequence.
+
+## Why is this important?
+
+Creating well-structured campaigns allows you to:
+
+- Automate repetitive outreach tasks while maintaining personalization
+- Ensure consistent messaging across your prospecting efforts
+- Plan multi-step follow-up sequences in advance
+- Mix automated and manual touches to balance efficiency with personal attention
+- Scale your outreach without sacrificing quality
+
+## What's included?
+
+When creating a campaign, you can:
+
+- Define unlimited touches with no maximum limit
+- Mix and match touch types (automated email, manual email, phone call, LinkedIn, custom tasks)
+- Personalize content using merge fields from CSV or Salesforce data
+- Set timing and intervals between touches
+- Create campaign signatures
+- Configure removal settings for when recipients connect
+
+## How to create a campaign
+
+### Step 1: Access the campaign builder
+
+**Gmail Users:** Open Gmail and click the Campaigns tab in the Yesware sidebar on the right-hand side of your inbox. Click to create a new campaign.
+
+**Outlook Users:** Access Campaigns via the Add-ins section in your Outlook ribbon. The campaign builder will open in a standalone window.
+
+### Step 2: Configure campaign settings
+
+When creating a new campaign, configure:
+
+- **Campaign name:** Give your campaign a descriptive name
+- **Remove recipients after connection:** Choose whether recipients should automatically be removed when they reply, answer a call, or book a meeting
+- **Campaign signature:** Optionally add a signature to appear at the bottom of all campaign messages
+
+#### Adding a signature with GIFs
+
+GIFs can be inserted into a Campaign signature. Since the Campaign signature requires you to insert an 'image source' instead of uploading directly from your computer, you will need to first insert the GIF into a Template to capture the image source ID.
+
+You can do this using the following steps:
+
+1. Open up your Template tool > New Template > Insert/edit Image and select the GIF you would like to use.
+2. Upon selecting the GIF, toggle over to 'Image URL', and highlight the url that appears in the 'Source' area.
+3. Go to your Campaign tool > New Campaign > Edit signature > Insert/edit image & paste the copied URL.
+
+From there you will be able to resize the GIF as needed and make any additional changes to your signature. Once you save the signature it will be saved and included at the bottom of all of your campaign messages.
+
+:::info
+Each user will need to complete these steps, as signatures cannot be rolled out to all users universally.
+:::
+
+### Step 3: Add touches to your campaign
+
+There is no limit to the number of touches you can include in a Campaign, and you can mix and match your touch types in any way that you see fit. However, limiting your Campaigns to somewhere between 5 to 10 touches is recommended.
+
+#### Touch types available
+
+- **Automated Email:** Sends automatically at the scheduled time
+- **Manual Email:** Requires you to review and send manually from your inbox
+- **Phone Call:** Creates a task reminder to call the recipient
+- **LinkedIn:** Creates a task for LinkedIn outreach (requires LinkedIn Sales Navigator integration)
+- **Custom Task:** Creates a custom action item
+
+#### Automated vs. manual email touches
+
+**Automated emails** send automatically at the scheduled time without any human intervention. Use automated emails for:
+
+- High-volume outreach
+- Standard follow-up sequences
+- Touches that don't require attachment customization
+
+**Manual emails** require you to review and send from your inbox. Use manual emails when you want to:
+
+- Add a personalized attachment
+- Insert extra notes of personalization
+- Give the email a once-over before sending
+
+### Step 4: Create your email content
+
+For each email touch, compose your message content. You can:
+
+- Write from scratch
+- Use an existing template
+- Include merge fields for personalization
+- Add links, images, and formatting
+
+#### Personalization with merge fields
+
+Mapping merge fields from your CSV or Salesforce list to the compose area allows you to pull in personalization for each recipient. As long as the merge fields in the compose area match exactly with the column headers in the recipient table, the information will pull in correctly.
+
+Use the `Merge Field` button at the bottom of the compose window to help enter the correct syntax, or use a Template that already includes corresponding fields.
+
+:::info
+Any fields used to build your list in Salesforce will appear as column headers when you import a Contact/Lead list.
+:::
+
+### Step 5: Set timing between touches
+
+For each touch, specify how many days after the previous touch it should be sent. You can customize the timing to match your outreach strategy.
+
+### Step 6: Preview and save
+
+Review your campaign structure, touch content, and timing before saving. You can always edit the campaign later before adding recipients.
+
+## How to personalize campaigns
+
+There is lots of room for personalization within a Campaign. You can:
+
+- Use merge fields to personalize emails using data from your CSV or Salesforce list
+- Add a Personalization column to the recipient table
+- Customize messages for individual recipients in Preview & Personalize
+- Add tailored content even after launching a Campaign using Manage Recipients
+- *(Gmail only)* Add finishing touches in Manual Email Touches
+
+### Add personalization column to recipient table
+
+If you're using a Salesforce import and want to go beyond basic fields like name or company, you can add a new column for personalized data—such as "Alma Mater" or "Industry Comment."
+
+After importing your recipient list:
+
+1. Click `Add Column` under the table.
+2. Label the new column.
+3. Enter your custom content per recipient.
+4. Use the `Insert Merge Field` button to pull that new column into the email body.
+
+### Preview & personalize
+
+In the Preview & Personalize area, you can tailor messaging for specific recipients before launch:
+
+1. Find the recipient in the list.
+2. Click their name to open their compose area.
+3. Type your custom note.
+4. Click `Apply Personalization` to save it.
+
+:::warning
+Clicking `Save and Exit` only saves the content template for the touch—not added recipients. If you add personalization without saving recipients, those notes will not be retained.
+:::
+
+### Manage recipients (after launch)
+
+Even after launching a Campaign, you can personalize messages on the fly:
+
+1. Locate the Campaign and open the More Actions kebab menu.
+2. Click `Manage Recipients`.
+3. Find the recipient, expand the relevant touch, and click `Personalize Touch`.
+4. Add your message and click `Save Personalization`.
+
+:::info
+If the email is scheduled to send immediately, you won't be able to add content and will receive a warning.
+:::
+
+### Gmail only: Manual email touch
+
+If you're using a Manual Email Touch in Gmail, you can personalize the message just before hitting Send:
+
+Add any custom notes directly in the compose window before sending—no need to go back into the Campaign builder.
+
+## How to work with manual touches (Gmail)
+
+### Access your to-do list
+
+To take action on any of the manual tasks of your Campaign, you'll need to access the Campaigns to-do list, located in the Yesware sidebar in your Gmail inbox.
+
+To get there:
+
+1. Click on the Yesware logo from the right-hand side of your Gmail to enable the sidebar.
+2. Select the Campaigns tab.
+
+From the Campaigns to-do list, you can send manual emails, complete custom tasks, or log phone calls. For those using the LinkedIn Sales Navigator integration, you also have the option to send a Connection or InMail.
+
+### Send a manual email
+
+To take action on a Manual email:
+
+1. Go to the Campaigns tab of the Yesware sidebar.
+2. If you've just added Manual tasks, refresh the sidebar.
+3. Select the to-do card for your manual email and click `Email`.
+4. This will pop out a compose window with the content you already created in the Campaign.
+5. Add any finishing touches and click the `Send` button.
+
+## Frequently Asked Questions
+
+
+<details>
+<summary>Can I add a GIF to my campaign?</summary>
+
+GIFs can be inserted into a Campaign signature. Since the Campaign signature requires you to insert an 'image source' instead of uploading directly from your computer, you will need to first insert the GIF into a Template to capture the image source ID.
+
+You can do this using the following steps:
+
+1. Open up your Template tool > New Template > Insert/edit Image and select the GIF you would like to use.
+2. Upon selecting the GIF, toggle over to 'Image URL', and highlight the url that appears in the 'Source' area.
+3. Go to your Campaign tool > New Campaign > Edit signature > Insert/edit image & paste the copied URL.
+
+From there you will be able to resize the GIF as needed and make any additional changes to your signature. Once you save the signature it will be saved and included at the bottom of all of your campaign messages. Please note that each user will need to complete these steps individually.
+
+</details>
+
+<details>
+<summary>Is there a maximum number of touches I can have in a campaign?</summary>
+
+There is no limit to the number of touches you can include in a Campaign, and you can mix and match your touch types in any way that you see fit. Limiting your Campaigns to somewhere between 5 to 10 touches is recommended, but you can have as many as you think you need to accomplish your goal.
+
+</details>
+
+<details>
+<summary>How do I access my to-do list for manual campaign tasks in Gmail?</summary>
+
+To take action on any of the manual tasks of your Campaign, you'll need to access the Campaigns to-do list, located in the Yesware sidebar in your Gmail inbox. Click on the Yesware logo from the right-hand side of your Gmail to enable the sidebar. Once enabled, you'll see and select the Campaigns tab.
+
+From the Campaigns to-do list, you can send manual emails, complete custom tasks, or log phone calls. For those using the LinkedIn Sales Navigator integration, you also have the option to send a Connection or InMail.
+
+</details>
+
+<details>
+<summary>How do I send a manual email via campaigns from Gmail?</summary>
+
+One of the available touch-types in Campaigns for Gmail is a Manual email. Unlike an Automated email, a Manual email requires some human intervention to get it sent.
+
+To take action on a Manual email, go to the Campaigns tab of the Yesware sidebar. If you've just added Manual tasks, refresh the sidebar. Select the to-do card for your manual email and click `Email`. This will pop out a compose window with the content you already created in the Campaign. You can then add any finishing touches and click the `Send` button.
+
+</details>
+

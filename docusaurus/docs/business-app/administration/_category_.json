@@ -1,0 +1,9 @@
+{
+  "label": "Administration",
+  "position": 8,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "business-app/administration/index"
+  }
+}

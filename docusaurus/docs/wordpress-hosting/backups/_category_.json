@@ -1,0 +1,11 @@
+{
+  "label": "Backups",
+  "position": 8,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Manage backups for your WordPress site.",
+    "slug": "/wordpress-hosting/category/backups"
+  }
+}
