@@ -41,6 +41,27 @@ Tips:
 - Personalize with the contact’s name and relevant details
 - Combine with Conditions to target the right audience
 
+## Send WhatsApp template
+
+:::note
+Sending a WhatsApp message requires Conversations AI | Standard | Pro | Premium
+:::
+
+1. Go to Business App > Administration > Automations
+2. Create a new automation (or open an existing one)
+3. Choose a Trigger (for example, When a contact is created)
+4. Add Action > Send a WhatsApp template to a contact
+5. Choose an approved template from the dropdown
+6. Populate template variables if required
+7. Save and toggle the automation On
+
+Tips: 
+- A connected WhatsApp Business Account is required to send WhatsApp messages
+- Only approved WhatsApp templates can be used for outbound messages
+- A payment method must be added to the WhatsApp Business Account before messages can be delivered
+- Templates must be approved before they appear in the dropdown
+- WhatsApp requires templates for outbound messages sent outside an active conversation window
+
 <details>
 <summary>What if messages fail to send?</summary>
 
