@@ -52,7 +52,7 @@ Sending a WhatsApp message requires Conversations AI | Standard | Pro | Premium
 3. Choose a Trigger (for example, When a contact is created)
 4. Add Action > Send a WhatsApp template to a contact
 5. Choose an approved template from the dropdown
-6. Populate template variables if required
+6. Populate template variables if needed
 7. Save and toggle the automation On
 
 Tips: 
