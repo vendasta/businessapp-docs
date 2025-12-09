@@ -6,7 +6,7 @@ Easily capture leads and respond to website visitors 24/7 with AI-powered web ch
 
 ![](./img/web_chat_widget_welcome.png)
 
-## What’s included with the Conversations AI Web Chat
+## What’s included with the Conversations AI web chat
 
 With the Conversations AI Web Chat, you get:
 
@@ -21,7 +21,7 @@ While your AI Receptionist is smart out-of-the-box, they can be configured and c
 [Learn more about how the AI Receptionist works.](/business-app/ai/ai-workforce/ai-receptionist)
 :::
 
-## How to Install the Conversations Web Chat Widget
+## How to install the Conversations web chat widget
 
 Choose your website platform to get started:
 
@@ -31,7 +31,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="wordpress" label="WordPress">
 
-### Install the web chat widget using the Wordpress plugin
+### Install the web chat widget using the WordPress plugin
 
 1. Download the web chat widget installation plugin from `Settings > Conversations Settings > Web Chat Configuration > Installation`.
 2. In your WordPress admin (`your-website.com/wp-admin`), go to **Plugins > Add New Plugin**.
@@ -67,7 +67,7 @@ Your web chat widget should now be live on all pages!
   </TabItem>
   <TabItem value="custom-html" label="Other Platforms (HTML)">
 
-### Install the web chat widget on Other Platforms (HTML)
+### Install the web chat widget on other platforms (HTML)
 
 This method works for most website builders and platforms that let you add custom HTML or header code, such as **Wix, Squarespace, Webflow, GoDaddy**, and more.
 
@@ -83,7 +83,7 @@ This method works for most website builders and platforms that let you add custo
 
 ---
 
-### Troubleshooting your web chat widget installation 
+### Troubleshooting your web chat widget installation
 
 If the Conversations web chat widget does not appear on your site after installation there are a couple of things you might be able to do yourself to make it appear:
 
@@ -107,7 +107,7 @@ Ensure the widget installation code is pasted in the correct location:
 - Disable other plugins or custom code temporarily to see if something is blocking the widget.
 - If you find a conflict, try re-enabling plugins one by one to isolate the issue.
 
-## How Will I Be Notified About a New Lead?
+## How will I be notified about a new lead?
 
 When your AI assistant is successful in capturing a name and contact info, a few things will happen automatically:
 
@@ -117,7 +117,7 @@ When your AI assistant is successful in capturing a name and contact info, a few
 
 ![](./img/web_chat_ai_new_lead.png)
 
-## Customization Options
+## Customization options
 
 You can tailor the web chat widget to align with your branding and operational needs:
 
@@ -132,7 +132,7 @@ You can tailor the web chat widget to align with your branding and operational n
 
 Access these settings via Administration > Conversations Settings > Configure Web Chat`.
 
-## Widget Actions
+## Widget actions
 
 Widget actions allow you to create direct links that automatically open the web chat widget with predefined messages. This feature is perfect for email campaigns, landing pages, support pages, or any scenario where you want to direct visitors to start a chat with a specific message.
 
@@ -140,14 +140,14 @@ Widget actions allow you to create direct links that automatically open the web 
 The web chat widget must be installed on the page for these actions to work.
 :::
 
-### Action Types
+### Action types
 
 There are two types of widget actions you can configure:
 
 - **Prefill message**: Opens the widget and pre-fills the message field with your predefined text. The visitor must click send to actually send the message. Use this when you want to give visitors control over when to send the message.
 - **Send message**: Opens the widget and automatically sends the predefined message without requiring any user interaction. Use this for immediate engagement and when you want the message sent automatically.
 
-### Implementation Methods
+### Implementation methods
 
 You can trigger widget actions using two methods:
 
@@ -163,7 +163,7 @@ You can trigger widget actions using two methods:
 - Allows you to trigger actions programmatically from your own JavaScript code
 - Useful when you need to trigger actions based on user interactions or dynamic conditions
 
-### Configuration Steps
+### Configuration steps
 
 ![Widget Actions configuration interface](./img/widget-actions-configuration.png)
 
@@ -175,7 +175,7 @@ You can trigger widget actions using two methods:
 
 The generated code will look like: `#webchat-send-message?webchat-widgetId=fedf2e7a-30fb-11f0-941a-ea112a20`
 
-### Code Examples
+### Code examples
 
 **Anchor Link Example** (Send message):
 ```html
@@ -193,7 +193,7 @@ The generated code will look like: `#webchat-send-message?webchat-widgetId=fedf2
 window.location.hash = '#webchat-send-message?webchat-widgetId=fedf2e7a-30fb-11f0-941a-ea112a20';
 ```
 
-### Use Cases
+### Use cases
 
 - **Email campaigns**: Include a "Chat with us" link that opens the widget with a message like "I'm interested in your services"
 - **Landing pages**: Add CTAs that open chat with context-specific messages
@@ -201,7 +201,7 @@ window.location.hash = '#webchat-send-message?webchat-widgetId=fedf2e7a-30fb-11f
 - **Product pages**: Enable visitors to ask about specific products with pre-filled inquiries
 - **External navigation**: Link from external sites or apps directly to your chat with context
 
-## FAQs About AI Web Chat in Conversations
+## FAQs about AI web chat in Conversations
 
 <details>
 <summary><strong>Can the AI assistant scrape websites for information?</strong></summary>
