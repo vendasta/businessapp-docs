@@ -1,0 +1,9 @@
+{
+  "label": "Web Chat",
+  "position": 4,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "conversations/web-chat/index"
+  }
+}

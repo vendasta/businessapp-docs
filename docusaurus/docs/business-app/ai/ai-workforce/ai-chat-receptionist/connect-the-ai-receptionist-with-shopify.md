@@ -68,7 +68,7 @@ Examples of instructions you might include are:
 <details>
 <summary>Can I use this Shopify integration with other AI Employees besides the Chat Receptionist?</summary>
 
-Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](/business-app/ai/ai-workforce/ai-voice-receptionist). 
+Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](/business-app/ai/ai-workforce/ai-voice-receptionist).
 
 This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business. 
 </details>
@@ -117,12 +117,12 @@ This ensures your AI can provide complete, helpful answers by combining real-tim
 
 Yes! The Shopify Storefront integration works across all communication channels supported by your AI Employees. Customers can search for products, update carts, and more through:
 
-- [Web chat](/business-app/conversations/conversations-ai-web-chat-overview)
-- [SMS messaging](/business-app/conversations/conversations-send-receive-sms) (Conversations Pro required)
-- [WhatsApp](/business-app/conversations/conversations-whatsapp-overview)
+- [Web chat](/business-app/conversations/web-chat/)
+- [SMS messaging](/business-app/conversations/sms-overview) (Conversations Pro required)
+- [WhatsApp](/business-app/conversations/whatsapp-overview)
 - Phone calls (with [AI Voice Receptionist](/business-app/ai/ai-workforce/ai-voice-receptionist))
-- [Facebook Messenger](/business-app/conversations/conversations-setup-facebook-messenger)
-- [Instagram DMs](/business-app/conversations/conversations-setup-instagram)
+- [Facebook Messenger](/business-app/conversations/facebook-overview)
+- [Instagram DMs](/business-app/conversations/instagram-overview)
 
  The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
 </details>

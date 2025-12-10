@@ -1,6 +1,10 @@
 ---
-title: Set up Conversations for Instagram Messages 
-sidebar_position: 2.2
+title: "Instagram in Conversations"
+sidebar_label: "Instagram"
+sidebar_position: 3
+description: Set up Instagram messaging in Conversations to respond to Instagram direct messages from your business account.
+keywords: [instagram, instagram business, direct messages, social media, conversations, instagram integration, customer messaging]
+tags: [instagram, conversations, messaging, social-media]
 ---
 
 You can use Conversations to send and receive Instagram direct messages with customers from your connected Instagram business account. This integration centralizes all Instagram conversations alongside SMS, email, and web chat in one shared workspace.

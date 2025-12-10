@@ -1,10 +1,10 @@
 ---
-title: Set up Conversations for web chat
+title: Web Chat Overview
 sidebar_position: 2.1
 ---
 Easily capture leads and respond to website visitors 24/7 with AI-powered web chat. This guide will show you how to set up your chat widget so your AI Receptionist can greet visitors, answer questions, and deliver new leads right to your Conversations—even in over 40 languages.
 
-![](./img/web_chat_widget_welcome.png)
+![Web chat widget welcome screen](../img/web_chat_widget_welcome.png)
 
 ## What’s included with the Conversations AI Web Chat
 
@@ -50,7 +50,7 @@ _The example below uses the Divi Theme, but the steps are similar for most WordP
 
 Your web chat widget should now be live on all pages!
 
-![](./img/wordpress.png)
+![WordPress installation](../img/wordpress.png)
 
   </TabItem>
   <TabItem value="shopify" label="Shopify">
@@ -115,7 +115,7 @@ When your AI assistant is successful in capturing a name and contact info, a few
    * If a lead updates their contact info in the AI-assisted web chat (like for example, if they make a mistake), the latest contact info will be updated on the contact automatically.
 2. A "New lead" email notification is sent to users on your account. Make sure you have notifications enabled for new leads.
 
-![](./img/web_chat_ai_new_lead.png)
+![New lead notification](../img/web_chat_ai_new_lead.png)
 
 ## Customization Options
 
@@ -130,6 +130,12 @@ You can tailor the web chat widget to align with your branding and operational n
 - **Phone Configuration**: Define how received calls and SMS messages should be handled.
 
 Access these settings via Administration > Conversations Settings > Configure Web Chat`.
+
+## Track Web Chat Performance
+
+Want to see how visitors interact with your web chat? You can track chat events in Google Analytics using Google Tag Manager to understand engagement patterns and optimize your customer experience.
+
+[Learn how to set up web chat event tracking](./web-chat/track-web-chat-events-in-google-analytics-using-tag-manager.mdx).
 
 ## FAQs About AI Web Chat in Conversations
 
