@@ -89,13 +89,9 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
-          // Surface git metadata so readers can see when pages were last updated
-          showLastUpdateTime: true,
-          // Ensure builds succeed when .git is unavailable (e.g., inside Docker)
-          lastUpdate: {
-            enabled: true,
-            fallbackToFileSystem: true,
-          },
+          // Disable git-based last update to allow Docker/CI builds without .git
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
         },
         blog: false,
         theme: {
@@ -116,24 +112,12 @@ const config: Config = {
             to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           {
-            from: '/docs/ai/ai-workforce/ai-receptionist/',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
-          },
-          {
             from: '/ai/ai-workforce/ai-receptionist',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
-          },
-          {
-            from: '/ai/ai-workforce/ai-receptionist/',
             to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           // Legacy Listing Sync permalink -> new Local SEO path
           {
             from: '/vendasta-products/local-seo/listing-sync',
-            to: '/local-seo/listing-sync/',
-          },
-          {
-            from: '/vendasta-products/local-seo/listing-sync/',
             to: '/local-seo/listing-sync/',
           },
           // Legacy section redirects - redirect top-level paths only
@@ -143,15 +127,7 @@ const config: Config = {
             to: '/business-app/',
           },
           {
-            from: '/businessapp/',
-            to: '/business-app/',
-          },
-          {
             from: '/adintel',
-            to: '/ad-intel/',
-          },
-          {
-            from: '/adintel/',
             to: '/ad-intel/',
           },
           {
@@ -159,15 +135,7 @@ const config: Config = {
             to: '/local-seo/',
           },
           {
-            from: '/localseo/',
-            to: '/local-seo/',
-          },
-          {
             from: '/reputationmanagement',
-            to: '/reputation-management/',
-          },
-          {
-            from: '/reputationmanagement/',
             to: '/reputation-management/',
           },
           {
@@ -175,15 +143,7 @@ const config: Config = {
             to: '/social-marketing/',
           },
           {
-            from: '/socialmarketing/',
-            to: '/social-marketing/',
-          },
-          {
             from: '/wordpresshosting',
-            to: '/wordpress-hosting/',
-          },
-          {
-            from: '/wordpresshosting/',
             to: '/wordpress-hosting/',
           },
         ],
