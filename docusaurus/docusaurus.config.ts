@@ -91,11 +91,7 @@ const config: Config = {
           routeBasePath: '/',
           // Surface git metadata so readers can see when pages were last updated
           showLastUpdateTime: true,
-          // Ensure builds succeed when .git is unavailable (e.g., inside Docker)
-          lastUpdate: {
-            enabled: true,
-            fallbackToFileSystem: true,
-          },
+          // Note: Docusaurus will gracefully skip git metadata if .git is unavailable
         },
         blog: false,
         theme: {
