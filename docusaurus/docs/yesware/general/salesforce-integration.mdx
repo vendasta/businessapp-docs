@@ -1,0 +1,109 @@
+---
+title: "Salesforce Integration"
+description: "Guide to integrating Yesware with Salesforce for seamless CRM syncing"
+sidebar_position: 7
+---
+
+# Salesforce Integration
+
+Yesware's Enterprise plan includes powerful Salesforce integration capabilities that help you keep your CRM up-to-date with all your email activities, calls, and meetings. This guide covers how to use and manage your Salesforce integration.
+
+## BCC to CRM Functionality
+
+BCC to CRM allows you to automatically log emails to Salesforce by BCCing a special email address. This feature works for both Gmail and Outlook users.
+
+### How It Works
+
+When you BCC your unique Yesware address on an email, that email will be automatically logged to the appropriate Contact, Lead, or Opportunity in Salesforce. Yesware automatically matches the email addresses in your email to records in Salesforce.
+
+### Setting Up BCC to CRM
+
+To enable BCC to CRM:
+1. Log in to your Yesware account at [app.yesware.com](https://app.yesware.com)
+2. Navigate to your [CRM Services page](https://app.yesware.com/crm/services)
+3. Enable the BCC to CRM option
+4. Note your unique BCC email address
+
+You can then add this address to your contacts or use it on an as-needed basis when composing emails.
+
+## Salesforce Sync
+
+For Enterprise users, Yesware automatically syncs email activities, tracking events, call logs, and meeting bookings to Salesforce.
+
+### What Gets Synced
+
+- **Email Activities**: Sent emails are logged as activities in Salesforce
+- **Tracking Events**: Opens, clicks, and replies can be synced (configurable)
+- **Phone Calls**: Call activities with outcomes and notes
+- **Meetings**: Booked meetings through Meeting Scheduler
+- **Campaign Activities**: Completed campaign touches
+
+### Managing What Gets Synced
+
+Your account manager can configure which events sync to Salesforce. For example, if you only want certain events in your Salesforce org, you can request to not have open events, clicked link events, etc. synced into Salesforce. This helps manage API usage.
+
+## Creating Lists in Salesforce for Campaigns
+
+The Salesforce lists for Campaigns can be pulled from your Contacts or Leads. The list views are retrieved from your Salesforce account.
+
+### To view your current lists
+1. Log into your Salesforce account.
+2. Select the Contacts or Leads tab.
+3. Use the View drop-down menu to select a list.
+4. Click "Go" to see the contact list and fields for the selected view.
+
+### To create a new list view in Salesforce Classic
+1. Log into your Salesforce account.
+2. Select the Contacts or Leads tab.
+3. Click "Create New View."
+
+From there, you can set up a new view using filters and select which fields you'd like to be displayed in the list. Please note, any of the fields you include in your Contact/Lead list will come over as column headers in the Recipients Table in Campaigns, so that you are able to pair them with merge fields and personalize your Campaigns emails.
+
+- Step 1: Name your list view
+- Step 2: Add filters. You can filter by all Contacts/Leads or just Contacts/Leads assigned to you. Add filter logic (example: if you're reaching out to Leads in a certain industry, filter by that field)
+- Step 3: Select fields to display. This will add the fields that will show in your list view in Campaigns.
+- Step 4: Click Save
+
+Once saved, you can use the list to add your recipients to a Campaign.
+
+### To create a new list view in Salesforce Lightning
+1. Log into your Salesforce account.
+2. Select the Contacts or Leads tab.
+3. Click Settings gear icon + "New" on the top right
+
+From there, you can set up a new view using filters and select which fields you'd like to be displayed in the list.
+
+- Step 1: Name your list view, and select who can see the list
+- Step 2: Add filters. On the right of the screen, select all Contacts/Leads or just those assigned to you. Add additional filters by clicking the "add filter" button and selecting criteria. Click Save. You can also add filters by clicking the Settings gear button and then "edit list filters)
+- Step 3: Select fields to display. Click the Settings gear button & "select fields to display." From there, move the fields to the visible fields section. This will add the fields that will show in your list view in Campaigns. Click Save
+
+Once saved, you can use the list to add your recipients to a Campaign.
+
+## Field Mapping
+
+When importing recipients from Salesforce or using merge fields in campaigns, Yesware automatically maps Salesforce fields to campaign fields. Standard fields like First Name, Last Name, Email, Company, and Title are automatically mapped. Custom fields can also be used - they will appear as available merge fields when you import a Salesforce list.
+
+## Frequently Asked Questions
+
+### How do I track and sync emails without using the Send with Yesware button in Outlook?
+
+You might be eligible to use the regular Outlook Send button to send a tracked and synced email, instead of the Send with Yesware button.
+
+You only have to use the Send with Yesware button to track and sync your emails:
+- If you use Outlook's Mac Desktop App (We will keep you posted on when you can switch to using the Outlook send button, but at this time, it is TBD. Don't want to wait? Use Outlook Web Access or reach out to support@yesware.com and ask for Direct Install.)
+- If you are not yet on Outlook's Version 2008 (Build 13127.21064) or above (Don't want to wait? Ask your IT team to update your Outlook version, use Outlook Web Access, or reach out to support@yesware.com and ask for Direct Install.)
+
+If you use Outlook Web Access or are a PC user on Outlook Version 2008 (Build 13127.21064) or above, first make sure that you've got your Yesware sidebar open by clicking the "Open Sidebar" button in your compose window. **You will not be able to track and sync emails if you do not have the sidebar open in your compose window**. The easiest way to remember to do this is to pin the sidebar so that it is always open - just select the pushpin icon in the upper right-hand corner of the Yesware sidebar. Now, hit the send button and watch your recipient engage!
+
+### What does the "Salesforce Error - API Limit Exceeded" mean?
+
+This is an error that originates from Salesforce and is caused by exceeding your Salesforce-allotted API limit. The API limits refresh once daily.
+
+Whenever Yesware makes a 'call' or communicates with your Salesforce organization, we will use API calls. This would include actions such as using the Salesforce sidebar to look up Accounts/Leads or syncing Yesware tracked emails into Salesforce. Depending on the type of action, there might be several API calls made.
+
+If you only want certain events in your Salesforce org, your account manager can request to not have open events, clicked link events, etc. synced into Salesforce. In addition, your Salesforce Admin can check the API call usage in Salesforce and if needed, request a limit increase with Salesforce.
+
+If you'd like to increase the API limit, reach out to Salesforce directly. Please note that increasing the API limit will likely carry an extra monthly charge.
+
+
+
