@@ -1,6 +1,8 @@
 # Build stage
 FROM node:20 as build
 WORKDIR /app
+# Include git history so Docusaurus can read last-update metadata
+COPY .git .git
 COPY docusaurus/package*.json ./
 RUN npm ci
 COPY docusaurus/ .
