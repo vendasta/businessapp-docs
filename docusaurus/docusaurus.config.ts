@@ -89,9 +89,9 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
-          // Disable git-based last update to allow Docker/CI builds without .git
-          showLastUpdateTime: false,
-          showLastUpdateAuthor: false,
+          // Show git-based last update metadata (Docker build now includes .git)
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: false,
         theme: {
