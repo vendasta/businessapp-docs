@@ -105,8 +105,21 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
+          // Specific redirects for renamed paths
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
+          },
+          {
+            from: '/docs/ai/ai-workforce/ai-receptionist/',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
+          },
+          {
+            from: '/ai/ai-workforce/ai-receptionist',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
+          },
+          {
+            from: '/ai/ai-workforce/ai-receptionist/',
             to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           // Legacy Listing Sync permalink -> new Local SEO path
@@ -114,10 +127,18 @@ const config: Config = {
             from: '/vendasta-products/local-seo/listing-sync',
             to: '/local-seo/listing-sync/',
           },
+          {
+            from: '/vendasta-products/local-seo/listing-sync/',
+            to: '/local-seo/listing-sync/',
+          },
           // Legacy section redirects - redirect top-level paths only
-          // Note: Only include trailing slash versions to avoid conflicts
+          // Note: Include both trailing slash and non-trailing slash versions
           {
             from: '/businessapp',
+            to: '/business-app/',
+          },
+          {
+            from: '/businessapp/',
             to: '/business-app/',
           },
           {
@@ -125,7 +146,15 @@ const config: Config = {
             to: '/ad-intel/',
           },
           {
+            from: '/adintel/',
+            to: '/ad-intel/',
+          },
+          {
             from: '/localseo',
+            to: '/local-seo/',
+          },
+          {
+            from: '/localseo/',
             to: '/local-seo/',
           },
           {
@@ -133,28 +162,47 @@ const config: Config = {
             to: '/reputation-management/',
           },
           {
+            from: '/reputationmanagement/',
+            to: '/reputation-management/',
+          },
+          {
             from: '/socialmarketing',
+            to: '/social-marketing/',
+          },
+          {
+            from: '/socialmarketing/',
             to: '/social-marketing/',
           },
           {
             from: '/wordpresshosting',
             to: '/wordpress-hosting/',
           },
+          {
+            from: '/wordpresshosting/',
+            to: '/wordpress-hosting/',
+          },
         ],
         createRedirects(existingPath) {
+          // Only create redirects for business-app paths
           if (!existingPath.startsWith('/business-app/')) {
             return undefined;
           }
 
           const remainder = existingPath.replace('/business-app/', '');
           const [section] = remainder.split('/');
+          
+          // Only create redirects for legacy business app sections
           if (!legacyBusinessAppSections.includes(section)) {
             return undefined;
           }
 
+          // Create redirects from both root-level and /docs/ paths
+          // Handle both trailing slash and non-trailing slash versions
           const legacyPath = `/${remainder}`;
           const docsLegacyPath = `/docs/${remainder}`;
           const redirects = [legacyPath];
+          
+          // Add /docs/ version if different
           if (docsLegacyPath !== legacyPath) {
             redirects.push(docsLegacyPath);
           }

@@ -1,4 +1,9 @@
 {
   "label": "Settings",
-  "position": 11
-} 
+  "position": 11,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "reputation-management/settings/index"
+  }
+}

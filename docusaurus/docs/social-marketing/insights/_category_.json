@@ -1,4 +1,9 @@
 {
   "label": "Insights",
-  "position": 6
-} 
+  "position": 6,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "social-marketing/insights/index"
+  }
+}

@@ -1,9 +1,10 @@
 {
-  "label": "Tools",
+  "label": "FAQs",
   "position": 5,
   "collapsed": true,
   "link": {
     "type": "doc",
-    "id": "social-marketing/tools/index"
+    "id": "ad-intel/faqs/index"
   }
 }
+

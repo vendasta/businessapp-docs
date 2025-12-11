@@ -18,7 +18,7 @@ With the Conversations AI Web Chat, you get:
 :::note
 While your AI Receptionist is smart out-of-the-box, they can be configured and customized to work with your business in more detail.
 
-[Learn more about how the AI Receptionist works.](/business-app/ai/ai-workforce/ai-receptionist)
+[Learn more about how the AI Receptionist works.](/business-app/ai/ai-workforce/ai-chat-receptionist)
 :::
 
 ## How to Install the Conversations Web Chat Widget
