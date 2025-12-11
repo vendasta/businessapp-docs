@@ -89,6 +89,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
+          // Surface git metadata so readers can see when pages were last updated
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
