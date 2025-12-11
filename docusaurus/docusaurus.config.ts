@@ -112,15 +112,7 @@ const config: Config = {
             to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           {
-            from: '/docs/ai/ai-workforce/ai-receptionist/',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
-          },
-          {
             from: '/ai/ai-workforce/ai-receptionist',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
-          },
-          {
-            from: '/ai/ai-workforce/ai-receptionist/',
             to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           // Legacy Listing Sync permalink -> new Local SEO path
@@ -128,18 +120,13 @@ const config: Config = {
             from: '/vendasta-products/local-seo/listing-sync',
             to: '/local-seo/listing-sync/',
           },
-          {
-            from: '/vendasta-products/local-seo/listing-sync/',
-            to: '/local-seo/listing-sync/',
-          },
+          // (No trailing-slash duplicate here; it causes redirect file collisions)
           // Legacy section redirects - redirect top-level paths only
-          // Note: Include both trailing slash and non-trailing slash versions
+          // Note: Do NOT include both trailing slash and non-trailing slash versions here.
+          // The redirects plugin normalizes paths, and with directory-style output this can
+          // cause duplicate writes to the same `build/<path>/index.html` (EEXIST).
           {
             from: '/businessapp',
-            to: '/business-app/',
-          },
-          {
-            from: '/businessapp/',
             to: '/business-app/',
           },
           {
@@ -147,15 +134,7 @@ const config: Config = {
             to: '/ad-intel/',
           },
           {
-            from: '/adintel/',
-            to: '/ad-intel/',
-          },
-          {
             from: '/localseo',
-            to: '/local-seo/',
-          },
-          {
-            from: '/localseo/',
             to: '/local-seo/',
           },
           {
@@ -163,23 +142,11 @@ const config: Config = {
             to: '/reputation-management/',
           },
           {
-            from: '/reputationmanagement/',
-            to: '/reputation-management/',
-          },
-          {
             from: '/socialmarketing',
             to: '/social-marketing/',
           },
           {
-            from: '/socialmarketing/',
-            to: '/social-marketing/',
-          },
-          {
             from: '/wordpresshosting',
-            to: '/wordpress-hosting/',
-          },
-          {
-            from: '/wordpresshosting/',
             to: '/wordpress-hosting/',
           },
         ],
