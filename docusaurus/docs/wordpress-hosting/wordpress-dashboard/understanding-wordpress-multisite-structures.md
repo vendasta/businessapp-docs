@@ -35,18 +35,14 @@ While WordPress allows both **subdomains** (`blog.yourdomain.com`) and **subdire
 
 #### **Step 2: Configure Network Site**
 
-1.  **Login and Navigate:** Log in to your WordPress Multisite network's admin dashboard. Go to "My Sites" > "Network Admin" > "Sites". 
-    
-    ![](https://support.vendasta.com/hc/article_attachments/33643485395607)
+1.  **Login and Navigate:** Log in to your WordPress Multisite network's admin dashboard. Go to "My Sites" > "Network Admin" > "Sites".
     
 2.  **Add New Site:** Click the "Add New" button.
 3.  **Enter Site Information:** Provide the necessary details for the new site, such as:
     1.  **Site Address (URL):** The domain or subdomain for the new site (e.g., `newsite.example.com` or `example.com/newsite`).
     2.  **Site Title:** A name for the new site.
     3.  **Admin Email:** An email address for the site's administrator.
-4.  **Add Site:** Click the "Add Site" button to create the new site. 
-    
-    ![](https://support.vendasta.com/hc/article_attachments/33643497519255)
+4.  **Add Site:** Click the "Add Site" button to create the new site.
     
 5.  **Access the New Site's Dashboard:** You can access the new site's dashboard from the "My Sites" menu in the top toolbar, or by going to "Network Admin" > "Sites", finding the new site, and clicking "Dashboard". 
 
