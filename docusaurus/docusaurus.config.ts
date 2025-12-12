@@ -89,7 +89,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
-          // Surface git metadata so readers can see when pages were last updated
+          // Show git-based last update metadata (Docker build now includes .git)
           showLastUpdateTime: true,
           // Note: Docusaurus will gracefully skip git metadata if .git is unavailable
         },
@@ -120,7 +120,6 @@ const config: Config = {
             from: '/vendasta-products/local-seo/listing-sync',
             to: '/local-seo/listing-sync/',
           },
-          // (No trailing-slash duplicate here; it causes redirect file collisions)
           // Legacy section redirects - redirect top-level paths only
           // Note: Do NOT include both trailing slash and non-trailing slash versions here.
           // The redirects plugin normalizes paths, and with directory-style output this can
