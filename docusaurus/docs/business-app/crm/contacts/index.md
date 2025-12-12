@@ -1,6 +1,5 @@
 ---
 title: Contacts
-slug: /crm/contacts
 sidebar_position: 1
 description: Manage people you engage with. Import/export, organize, and take action on contacts across campaigns, tasks, and opportunities.
 tags: [contacts, crm]

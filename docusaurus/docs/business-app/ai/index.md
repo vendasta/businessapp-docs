@@ -2,7 +2,6 @@
 title: AI Overview
 sidebar_position: 1
 description: Configure AI Employees in Business App to answer questions, capture leads, book appointments, and automate conversations across chat, SMS, WhatsApp, and phone.
-slug: /ai
 ---
 
 import Link from '@docusaurus/Link';
