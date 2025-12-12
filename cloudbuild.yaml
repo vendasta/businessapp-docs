@@ -1,7 +1,18 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/repcore-prod/docs-repo/businessapp-docs:$COMMIT_SHA', '.']
+    env: ['DOCKER_BUILDKIT=1']
+    args:
+      [
+        'build',
+        '--build-arg',
+        'BUILDKIT_INLINE_CACHE=1',
+        '--cache-from',
+        'us-central1-docker.pkg.dev/repcore-prod/docs-repo/businessapp-docs:latest',
+        '-t',
+        'us-central1-docker.pkg.dev/repcore-prod/docs-repo/businessapp-docs:$COMMIT_SHA',
+        '.',
+      ]
 
   # Push the container image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
