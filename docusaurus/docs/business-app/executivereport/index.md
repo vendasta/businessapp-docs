@@ -63,7 +63,7 @@ To view your Executive Report:
    - The category icons at the top of the report
    - The dropdown navigation menu
 
-      ![Executive Report Weekly Data Overview](img/executive_report_overview_dropdown.png)
+      ![Executive Report Weekly Data Overview](./img/executive_report_overview_dropdown.png)
 
 
 Your report is updated automatically and archived so you can review previous reports at any time.

@@ -21,7 +21,7 @@ Often, simply reconfiguring your permalink structure can fix the problem.
 
 This action refreshes your permalink settings and flushes the rewrite rules, which commonly resolves 404 errors.
 
-![image.png](img/33001665602583-e7cdc3cfaf.png)
+![image.png](./img/33001665602583-e7cdc3cfaf.png)
 
 ### 2\. Check for Plugin Conflicts
 

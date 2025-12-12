@@ -55,7 +55,7 @@ To connect your WhatsApp Business account to Conversations, follow these steps:
 9. **Confirm Permissions and Complete Setup**  
    Finish any remaining prompts to finalize the WhatsApp Business connection. A green 'connected' badge will appear when verified.
 
-![Final Setup](img/conversations_whatsapp_finalsetup.png)
+![Final Setup](./img/conversations_whatsapp_finalsetup.png)
 
 ---
 

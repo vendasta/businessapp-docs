@@ -101,6 +101,6 @@ This is a common permalink issue. Here's how to fix it:
 3.  Without changing anything, click **Save Changes**
     
 
-**![mceclip0.png](img/31942567430039-143b1b5886.png)**
+**![mceclip0.png](./img/31942567430039-143b1b5886.png)**
 
 This action will flush the rewrite rules, often resolving 404 errors on blog posts or custom URLs.

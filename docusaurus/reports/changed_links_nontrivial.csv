@@ -1,0 +1,120 @@
+file,line,alt,old,new
+docs/business-app/crm/activity-feed.md,42,[Opportunities],/business-app/crm/opportunities,opportunities.md
+docs/business-app/crm/index.mdx,45,[Opportunities],./opportunities,opportunities.md
+docs/business-app/crm/opportunities.md,42,![Opportunities Pipeline View],img/opportunities/opportunity-2.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,51,![Opportunities Pipeline View],img/opportunities/opportunity-4.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,71,![Opportunities Pipeline View],img/opportunities/opportunity-5.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,78,![Opportunities Pipeline View],img/opportunities/opportunity-9.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,89,![Opportunities Pipeline View],img/opportunities/opportunity-6.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,94,![Opportunities Pipeline View],img/opportunities/opportunity-7.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,100,![Opportunities Pipeline View],img/opportunities/opportunity-8.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,110,![Opportunities Pipeline View],img/opportunities/pipeline-1.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,116,![Opportunities Pipeline View],img/opportunities/pipeline-2.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,125,![Opportunities Pipeline View],img/opportunities/pipeline-3.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,131,![Opportunities Pipeline View],img/opportunities/pipeline-4.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,144,![Opportunities Pipeline View],img/opportunities/opp-automation-1.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,161,![Opportunities Pipeline View],img/opportunities/opp-automation-2.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/opportunities.md,183,![Opportunities Pipeline View],./img/opportunities/opp-automation-3.png,img/opportunities/opportunity-1.png
+docs/business-app/crm/contacts/send-yesware-campaigns-from-contacts.md,154,[Activity feed],./activity-feed.md,../activity-feed.md
+docs/business-app/conversations/conversations-setup-phone-calls.md,127,[Transfer calls to other numbers],../ai/ai-workforce/ai-voice-receptionist.md#transfer-calls-to-other-numbers,../ai/ai-workforce/ai-voice-receptionist.md
+docs/business-app/conversations/conversations-whatsapp-overview.md,41,![WhatsApp Setup],img/conversations_whatsapp_socialreputation.png,img/conversations_whatsapp_setup.png
+docs/business-app/conversations/conversations-whatsapp-overview.md,116,[WhatsApp Manager],https://business.facebook.com/latest/whatsapp_manager/message_templates,https://business.facebook.com/latest/whatsapp_manager
+docs/business-app/conversations/index.mdx,121,[AI Workforce Overview],/business-app/ai/ai-workforce/ai_workforce_overview,../ai/ai-workforce/ai_workforce_overview.md
+docs/business-app/ai/ai-capabilities/index.mdx,101,[Creating Custom Capabilities],./creating-custom-capabilities,creating-custom-capabilities.md
+docs/business-app/ai/ai-capabilities/configuring-capabilities.md,169,[Learn how to build custom capabilities],./creating-custom-capabilities,creating-custom-capabilities.md
+docs/business-app/ai/ai-workforce/ai_workforce_overview.md,14,[Creating Custom Capabilities],../ai-capabilities/creating-custom-capabilities.md,../ai-capabilities/creating-custom-capabilities.md.md
+docs/business-app/ai/ai-workforce/ai_workforce_overview.md,75,[Learn more ›],../ai-capabilities/creating-custom-capabilities.md,../ai-capabilities/creating-custom-capabilities.md.md
+docs/business-app/ai/ai-workforce/ai-voice-receptionist.md,223,[AI Workforce Overview],ai_workforce_overview.md,ai_workforce_overview.md#capabilities
+docs/business-app/ai/ai-workforce/ai-voice-receptionist.md,353,[My Meetings],/business-app/crm/my-meetings,../../crm/my-meetings.md
+docs/business-app/ai/ai-workforce/ai-voice-receptionist.md,376,[AI Workforce Overview],ai_workforce_overview.md,ai_workforce_overview.md#capabilities
+docs/business-app/ai/ai-workforce/ai-chat-receptionist/index.md,487,[Knowledge Sources section in the AI Workforce Overview],../ai_workforce_overview.md#knowledge-sources,../ai_workforce_overview.md
+docs/business-app/ai/ai-workforce/ai-chat-receptionist/connect-the-ai-receptionist-with-shopify.md,196,[AI Voice Receptionist testing],../ai-voice-receptionist.md#test-and-monitor-your-ai-voice-receptionist,../ai-voice-receptionist.md
+docs/business-app/ai/ai-workforce/ai-chat-receptionist/connect-the-ai-receptionist-with-servicetitan.md,936,[Zapier],../../automations/zapier.md,../../../automations/zapier.md
+docs/business-app/executivereport/index.md,66,![Executive Report Weekly Data Overview],./img/executive_report_overview_dropdown.png,img/executive_report_weekly_view.png
+docs/ad-intel/settings/index.mdx,32,[Admin vs User Settings],./vendasta-products-advertising-intelligence-settings,vendasta-products-advertising-intelligence-settings.mdx
+docs/ad-intel/faqs/connect-call-tracking.mdx,15,[Telmetrics],../settings/telmetrics-call-tracking-integration,../settings/telmetrics-call-tracking-integration.mdx
+docs/ad-intel/faqs/index.mdx,13,[Currency Display],./currency-display,currency-display.mdx
+docs/ad-intel/advertisements/index.mdx,20,[LocalAds Conversion Customization],./localads-conversion-customization-and-form-fills,localads-conversion-customization-and-form-fills.mdx
+docs/ad-intel/analytics/index.mdx,20,[Marchex Call Tracking],./marchex-call-tracking,marchex-call-tracking.mdx
+docs/wordpress-hosting/domains/FAQ/configure-dns-records.md,2,[What are DNS records?],./what-are-dns-records,what-are-dns-records.md
+docs/wordpress-hosting/faqs/what-is-google-cloud-armor.md,27,[Set up your domain],../domains/set-up-your-domain,../domains/set-up-your-domain.md
+docs/wordpress-hosting/faqs/faq-developer-tools---accessing-and-managing-your-wordpress-hosting-pro-files-an.md,24,![],./img/31908864923543-26fd4dc078.png,./img/31908864923543-1e8398a9b5.png
+docs/wordpress-hosting/faqs/faq-developer-tools---accessing-and-managing-your-wordpress-hosting-pro-files-an.md,49,![],./img/31908864923543-aa87b4ae65.png,./img/31908864923543-1e8398a9b5.png
+docs/wordpress-hosting/faqs/faq-hosting-environment-php-and-scalability-in-wordpress-hosting-pro.md,30,![],./img/32160223564439-9a1e07cb83.png,./img/32160223564439-a71a50b642.png
+docs/wordpress-hosting/faqs/faq-admin-access-feature-visibility-control-in-wordpress-hosting-pro.md,34,![],./img/32162294727063-5793bd69b4.png,./img/32162294727063-afa740e9dd.png
+docs/wordpress-hosting/faqs/faq-troubleshooting-errors-in-wordpress-hosting-pro-and-standard.md,104,![mceclip0.png],./img/31942567430039-143b1b5886.png,img/31942567430039-0f5e7f3130.png
+docs/wordpress-hosting/wordpress-dashboard/fixing-wordpress-404-errors-on-posts.md,24,![image.png],./img/33001665602583-e7cdc3cfaf.png,img/33001665602583-c271d5a4d1.png
+docs/wordpress-hosting/wordpress-dashboard/wordpress-debugging-basics.md,74,[Set up your domain],../domains/set-up-your-domain,../domains/set-up-your-domain.md
+docs/wordpress-hosting/wordpress-dashboard/get-started-with-elementor-ai.md,54,![Write Text Using Elementor AI » Elementor],img/29625054388375-35544216c2.jpeg,img/29625054388375-2032741ef0.jpeg
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,26,![],./img/32998698678551-c30fff1231.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,29,![],./img/32998698678551-97cf4a5635.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,39,![],./img/32998698678551-f45615ce38.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,48,![],./img/32998698678551-10bb46f1c2.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,59,![],./img/32998698678551-9e0b05c458.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,73,![],./img/32998698678551-722250e5a5.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,74,![],./img/32998698678551-03946a624b.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,76,![],./img/32998698678551-3b83e1836a.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,97,![],./img/32998698678551-abd897df61.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,118,![],./img/32998698678551-830e88fe8a.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,131,![],./img/32998698678551-617860fb6b.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,133,![],./img/32998698678551-9ab46437e9.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/how-to-configure-gmail-smtp-on-your-wordpress-website.md,141,![],./img/32998698678551-b3abd4e6d9.png,./img/32998698678551-f664efbb74.png
+docs/wordpress-hosting/wordpress-dashboard/plugins/blacklisted-and-redundant.md,45,[more information here],https://help.websitepro.hosting/?p=8,divi-builder/troubleshooting.md
+docs/wordpress-hosting/wordpress-dashboard/plugins/blacklisted-and-redundant.md,120,[EWWW Image Optimizer],"https://en-ca.wordpress.org/plugins/ewww-image-optimizer/ ""https://en-ca.wordpress.org/plugins/ewww-image-optimizer/""",https://wordpress.org/plugins/ewww-image-optimizer/
+docs/reputation-management/listings/index.mdx,22,[Edit and Update Listings],./edit-update-listings,edit-update-listings.mdx
+docs/reputation-management/templates/index.mdx,21,[Request Reviews to Industry-Specific Platforms],./request-review-to-industry-specific-review-platforms,request-review-to-industry-specific-review-platforms.mdx
+docs/reputation-management/reviews/sms-review-requesting.mdx,35,![Credit usage],./sms-review-requesting/image5.png,../../local-seo/img/image5.jpg
+docs/reputation-management/reviews/review-matching.mdx,51,![RM Review Matching],img/rm-review-matching2.png,img/rm-review-matching1.png
+docs/reputation-management/reviews/review-matching.mdx,57,![RM Review Matching],img/rm-review-matching5.png,img/rm-review-matching1.png
+docs/reputation-management/reviews/review-matching.mdx,68,![RM Review Matching],img/rm-review-matching3.png,img/rm-review-matching1.png
+docs/reputation-management/reviews/review-matching.mdx,76,![RM Review Matching],./img/rm-review-matching4.png,img/rm-review-matching1.png
+docs/reputation-management/reviews/index.mdx,27,[Review Matching],./review-matching,review-matching.mdx
+docs/yesware/reporting/report-types/how-do-i-remove-the-insights-widget.mdx,9,[Response Insights],/docs/reporting/report-types/what-are-response-insights,what-are-response-insights.mdx
+docs/yesware/reporting/report-types/what-data-is-shown-on-the-templates.mdx,9,[reporting periods can be specified],/docs/reporting/report-types/how-can-i-filter-by-date-range,how-can-i-filter-by-date-range.mdx
+docs/yesware/reporting/report-types/create-and-save-email-templates-that-live.mdx,9,[reporting],/docs/reporting/report-types/what-data-is-shown-on-the-templates,what-data-is-shown-on-the-templates.mdx
+docs/yesware/reporting/report-types/creating-yesware-templates-in-outlook.mdx,9,[reporting],/docs/reporting/report-types/what-data-is-shown-on-the-templates,what-data-is-shown-on-the-templates.mdx
+docs/yesware/reporting/report-types/yesware-reporting-capabilities.mdx,32,[Salesforce reporting tools],/docs/salesforce-integration/getting-started/measure-your-team-s-yesware-effectiveness-with,../../salesforce-integration/getting-started/measure-your-team-s-yesware-effectiveness-with.mdx
+docs/yesware/salesforce-integration/getting-started/will-yesware-create-a-contact-in-salesforce.mdx,12,[create one],/docs/salesforce-integration/salesforce-sidebar-enterprise-plan/how-do-i-create-a-salesforce-contact,../salesforce-sidebar-enterprise-plan/how-do-i-create-a-salesforce-contact.mdx
+docs/yesware/salesforce-integration/salesforce-sync-enterprise-plan/where-can-i-see-the-activities-that.mdx,9,[Contact Role],/docs/salesforce-integration/salesforce-sync-enterprise-plan/how-do-i-automatically-associate-my-email,how-do-i-automatically-associate-my-email.mdx
+docs/yesware/salesforce-integration/salesforce-sync-enterprise-plan/what-happens-if-i-have-duplicate-records.mdx,15,[Contact Role.],/docs/salesforce-integration/salesforce-sync-enterprise-plan/how-do-i-automatically-associate-my-email,how-do-i-automatically-associate-my-email.mdx
+docs/yesware/salesforce-integration/salesforce-sync-enterprise-plan/how-do-i-automatically-associate-my-email.mdx,10,[what happens if there are duplicates?],/docs/salesforce-integration/salesforce-sync-enterprise-plan/what-happens-if-i-have-duplicate-records,what-happens-if-i-have-duplicate-records.mdx
+docs/yesware/salesforce-integration/salesforce-sync-enterprise-plan/yesware-s-salesforce-integration-for-gmail.mdx,25,[Sync Selector],/docs/salesforce-integration/salesforce-sync-enterprise-plan/how-does-the-yesware-sync-selector-work,how-does-the-yesware-sync-selector-work.mdx
+docs/yesware/salesforce-integration/salesforce-sync-enterprise-plan/does-yesware-s-salesforce-sync-write-activities.mdx,10,[configured to further summarize all events on an email down to a single Task],/docs/salesforce-integration/salesforce-sync-enterprise-plan/how-do-i-leverage-summary-task-logging,how-do-i-leverage-summary-task-logging.mdx
+docs/yesware/salesforce-integration/calendar-sync-enterprise-plan/salesforce-calendar-sync-in-gmail.mdx,20,[this article],/docs/salesforce-integration/calendar-sync-enterprise-plan/what-are-shared-activities-in-gmail,what-are-shared-activities-in-gmail.mdx
+docs/yesware/salesforce-integration/salesforce-sidebar-enterprise-plan/what-is-the-cloud-icon-next-to.mdx,10,[add and save one using the Sidebar],/docs/salesforce-integration/salesforce-sidebar-enterprise-plan/how-do-i-create-a-new-contact,how-do-i-create-a-new-contact.mdx
+docs/yesware/general/email-tracking.mdx,155,[Advanced Features],/docs/general/advanced-features,advanced-features.mdx
+docs/yesware/general/index.mdx,82,[Advanced Features],/docs/general/advanced-features,advanced-features.mdx
+docs/yesware/general/meeting-scheduler.mdx,77,[Click here to learn how to use Meeting Scheduler.],/docs/meeting-scheduler/meeting-types/how-do-i-use-meeting-scheduler-with,../meeting-scheduler/meeting-types/how-do-i-use-meeting-scheduler-with.mdx
+docs/yesware/general/advanced-features.mdx,66,[this article.],/docs/general/campaigns,campaigns.mdx
+docs/yesware/general/advanced-features.mdx,136,[this article.],/docs/general/campaigns,campaigns.mdx
+docs/yesware/general/bcc-to-crm/bcc-to-crm-in-gmail.mdx,13,[Salesforce:],/docs/salesforce-integration/salesforce-sync-enterprise-plan/yesware-s-salesforce-integration-for-gmail,../../salesforce-integration/salesforce-sync-enterprise-plan/yesware-s-salesforce-integration-for-gmail.mdx
+docs/yesware/general/bcc-to-crm/bcc-to-crm-in-gmail.mdx,20,[this support article],https://capsulecrm.com/support/drop-box/#storing-emails,http://support.sugarcrm.com/Knowledge_Base/Email/Enabling_Sugar_Email_Archiving/index.html
+docs/yesware/general/bcc-to-crm/bcc-to-crm-in-gmail.mdx,24,[this support article],https://www.zoho.com/crm/help/email/bcc-dropbox.html,http://support.sugarcrm.com/Knowledge_Base/Email/Enabling_Sugar_Email_Archiving/index.html
+docs/yesware/general/additional-resources/prioritize-email-follow-ups-with-yesware-reminders.mdx,28,[Send Laters],/docs/general/additional-resources/put-your-outreach-on-autopilot-with-send,put-your-outreach-on-autopilot-with-send.mdx
+docs/yesware/general/additional-resources/how-do-i-use-yesware-reminders-in.mdx,21,[Send Laters],/docs/general/additional-resources/put-your-outreach-on-autopilot-with-send,put-your-outreach-on-autopilot-with-send.mdx
+docs/yesware/general/installing-yesware/how-to-remove-yesware-s-free-plan.mdx,15,[this help article],/docs/general/installing-yesware/getting-started-with-yesware-s-free-plan,getting-started-with-yesware-s-free-plan.mdx
+docs/yesware/teams/creating-a-team/can-multiple-people-on-my-team-share.mdx,10,[Click here],/docs/teams/creating-a-team/how-do-i-set-up-a-team,how-do-i-set-up-a-team.mdx
+docs/yesware/teams/creating-a-team/how-to-add-a-team-member-to.mdx,20,[How to Set Up a Team in Yesware (Gmail)],/docs/teams/creating-a-team/how-do-i-set-up-a-team,how-do-i-set-up-a-team.mdx
+docs/yesware/templates/using-templates/enable-emails-replies-and-tracking-events-to.mdx,16,[first single Contact or Lead],/docs/salesforce-integration/salesforce-sync-enterprise-plan/what-happens-if-i-have-duplicate-records,../../salesforce-integration/salesforce-sync-enterprise-plan/what-happens-if-i-have-duplicate-records.mdx
+docs/yesware/templates/using-templates/can-i-use-dynamic-templates-with-salesforce.mdx,10,[click here.],/docs/templates/using-templates/how-do-dynamic-templates-work-with-salesforce,how-do-dynamic-templates-work-with-salesforce.mdx
+docs/yesware/templates/creating-templates/using-yesware-templates-in-gmail.mdx,24,[Yesware App],http://app.yesware.com/,https://app.yesware.com/template_library/manage
+docs/yesware/templates/creating-templates/using-yesware-templates-in-gmail.mdx,33,[Text fields],/docs/templates/creating-templates/how-to-use-placeholders-merge-fields-in,how-to-use-placeholders-merge-fields-in.mdx
+docs/yesware/templates/creating-templates/using-yesware-templates-in-gmail.mdx,33,[Dropdown list],/docs/templates/creating-templates/how-to-use-placeholders-merge-fields-in,how-to-use-placeholders-merge-fields-in.mdx
+docs/yesware/templates/creating-templates/creating-yesware-templates-in-gmail.mdx,25,[Yesware App],http://app.yesware.com,https://app.yesware.com/template_library/manage
+docs/yesware/templates/creating-templates/creating-yesware-templates-in-gmail.mdx,34,[Text fields],/docs/templates/creating-templates/how-to-use-placeholders-merge-fields-in,how-to-use-placeholders-merge-fields-in.mdx
+docs/yesware/templates/creating-templates/creating-yesware-templates-in-gmail.mdx,34,[Dropdown list],/docs/templates/creating-templates/how-to-use-placeholders-merge-fields-in,how-to-use-placeholders-merge-fields-in.mdx
+docs/yesware/templates/sharing-templates/can-i-add-additional-template-categories-or.mdx,10,[create Template folders and Templates],/docs/templates/sharing-templates/how-do-i-share-templates,how-do-i-share-templates.mdx
+docs/yesware/tracking/getting-started-with-tracking/what-does-yesware-tracking-track-in-gmail.mdx,10,[attachment and presentation tracking],/docs/tracking/getting-started-with-tracking/gain-valuable-insight-with-attachment-tracking-in,gain-valuable-insight-with-attachment-tracking-in.mdx
+docs/yesware/tracking/getting-started-with-tracking/yesware-for-gmail-jumpstart-guide-for-gmail.mdx,29,[Salesforce Calendar Sync in Gmail],/docs/salesforce-integration/calendar-sync-enterprise-plan/salesforce-calendar-sync-in-gmail,../../salesforce-integration/calendar-sync-enterprise-plan/salesforce-calendar-sync-in-gmail.mdx
+docs/yesware/tracking/getting-started-with-tracking/yesware-for-o365-jumpstart-guide.mdx,18,[Salesforce Sync + Sidebar],/docs/tracking/getting-started-with-tracking/sync-yesware-for-outlook-with-salesforce,sync-yesware-for-outlook-with-salesforce.mdx
+docs/yesware/tracking/getting-started-with-tracking/yesware-for-o365-jumpstart-guide.mdx,19,[Salesforce Calendar Sync],/docs/tracking/getting-started-with-tracking/sync-yesware-for-outlook-with-salesforce,sync-yesware-for-outlook-with-salesforce.mdx
+docs/yesware/tracking/getting-started-with-tracking/what-does-yesware-tracking-track.mdx,10,[Email Tracking 101 for Outlook (O365)],/docs/tracking/getting-started-with-tracking/send-tracked-emails-and-links-on-outlook,send-tracked-emails-and-links-on-outlook.mdx
+docs/yesware/meeting-scheduler/meeting-types/can-i-include-a-meeting-scheduler-link.mdx,10,[Meeting Scheduler],/docs/meeting-scheduler/meeting-types/meeting-scheduler-in-outlook,meeting-scheduler-in-outlook.mdx
+docs/yesware/meeting-scheduler/meeting-types/what-does-my-recipient-see-when-i.mdx,9,[working hours],/docs/meeting-scheduler/meeting-types/how-to-edit-your-working-hours-in,how-to-edit-your-working-hours-in.mdx
+docs/yesware/meeting-scheduler/meeting-types/what-does-the-meeting-duration-selector-do.mdx,9,[custom availability meeting],/docs/meeting-scheduler/meeting-types/how-do-i-suggest-specific-times-for,how-do-i-suggest-specific-times-for.mdx
+docs/yesware/meeting-scheduler/meeting-types/how-do-i-suggest-specific-times-for.mdx,10,[meeting length],/docs/meeting-scheduler/meeting-types/what-does-the-meeting-duration-selector-do,what-does-the-meeting-duration-selector-do.mdx
+docs/yesware/meeting-scheduler/meeting-types/how-do-i-use-meeting-scheduler-with.mdx,17,[Click here],/docs/general/how-do-i-suggest-specific-times-for,how-do-i-suggest-specific-times-for.mdx
+docs/yesware/meeting-scheduler/meeting-types/how-to-create-team-meeting-types-for.mdx,21,[Zoom integration],/docs/meeting-scheduler/meeting-types/how-to-use-zoom-details-in-meeting,how-to-use-zoom-details-in-meeting.mdx
+docs/social-marketing/posts/Add-Another-Post-in-the-Post-Campaign-Workflow.mdx,48,![Post Campaign],./img/add-another-post/Add-Another-Post-Post-Campaign-Add-Another-Post-20-Posts-Generated.png,img/add-another-post/Add-Another-Post-Post-Campaign.png
+docs/social-marketing/posts/manage-posts-in-business-app-social.mdx,96,![Manage Posts Business App Social Mobile View],img/manage-posts/Manage-Tabs-Socia-Business-App-Create-Post.png,img/manage-posts/Manage-Tabs-Socia-Business-App-Mobile-View.png
+docs/local-seo/analytics/index.mdx,53,![Bing Insights in Local SEO],././img/bing-insights.png,img/bing-insights.png

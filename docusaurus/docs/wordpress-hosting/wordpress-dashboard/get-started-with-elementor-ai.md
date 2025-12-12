@@ -77,7 +77,7 @@ Elementor AI can also generate HTML, CSS, and JavaScript code. To use this featu
 4.  Insert and tweak the generated code as needed.
     
 
-_![Add Custom CSS Using Elementor AI » Elementor](img/29625054388375-9d49124451.jpeg)_
+_![Add Custom CSS Using Elementor AI » Elementor](./img/29625054388375-9d49124451.jpeg)_
 
 ### Step 5: Save and Publish Your Work
 

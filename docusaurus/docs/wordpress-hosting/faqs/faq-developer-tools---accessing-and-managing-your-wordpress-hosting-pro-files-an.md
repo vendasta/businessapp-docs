@@ -149,7 +149,7 @@ To increase the default upload limit:
     
 3.  Activate the plugin
     
-4.  Navigate to **Media > Big File Uploads** and set your desired limit (up to 256 MB) **![mceclip2.png](img/31908864923543-089914e8e3.png)**
+4.  Navigate to **Media > Big File Uploads** and set your desired limit (up to 256 MB) **![mceclip2.png](./img/31908864923543-089914e8e3.png)**
     
 
 > If you need to upload files larger than 256 MB, use **SFTP** to upload directly to your server.

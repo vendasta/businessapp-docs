@@ -34,7 +34,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
     
 3.  Click **Create Credentials** to begin setting up your OAuth access  
       
-    ![nav.gif](img/32998698678551-49b46ca0db.gif)  
+    ![nav.gif](./img/32998698678551-49b46ca0db.gif)  
     4\. Click **Create** **Credentials** to Generate Client ID.  
     ![](./img/32998698678551-f45615ce38.png)
     

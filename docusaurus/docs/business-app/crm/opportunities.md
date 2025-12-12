@@ -180,7 +180,7 @@ Automation behavior:
 6. Review and adjust the automation as needed.
 
 ## How to Move Opportunities to Specific Stages Automatically
-![Opportunities Pipeline View](img/opportunities/opp-automation-3.png)
+![Opportunities Pipeline View](./img/opportunities/opp-automation-3.png)
 
 You can move an opportunity to a specific stage when a defined trigger occurs, such as booking a meeting.
 
