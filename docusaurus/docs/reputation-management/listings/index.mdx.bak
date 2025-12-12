@@ -1,0 +1,152 @@
+---
+title: Listings Overview
+description: Learn about managing business listings in Reputation Management
+sidebar_position: 1
+---
+
+Listings in Reputation Management gathers all the locations on the web where your business can be found: major search engines, local review sites, online business directories, and social networks. This feature allows you to see where your business is listed, detect and fix any errors, and add new listings to expand your online presence.
+
+## Why use Listings?
+
+- **Increased Online Visibility**: Be found online before your competitors
+- **Accurate Business Information**: Monitor and maintain consistent business data across platforms
+- **Performance Tracking**: Review your Listing Score and compare it to industry averages
+- **Error Detection**: Identify and fix inaccuracies in your listings
+- **Review Management**: Connect your listings to enable review monitoring and response
+
+## What's included
+
+- **[Citations Page](citations-page-getting-started.mdx)**: Manage your business citations across directories
+- **[Google Business Profile Authentication](how-to-authenticate-google-business-profile-listing.mdx)**: Connect and verify your Google listing
+- **[Edit Business Profile](edit-business-profile.mdx)**: Update your business information within the application
+- **[Edit and Update Listings](./edit-update-listings)**: Manage and correct your listings across platforms
+
+## Get started
+
+1. Navigate to `Reputation Management > Listings > Primary Listings`.
+2. Review your Listing Score and compare it to industry averages.
+3. Monitor your business listings for accuracy and detect possible errors.
+4. Click on any listing to view details, navigate to the source, or make corrections.
+
+## Understanding the Listings Tab
+
+### Primary Listings
+
+The **Primary Listings** tab is your command center for managing your business listings. Here you can:
+
+- **Review your Listing Score** and compare it to industry averages across different regions
+- **Monitor your business listings** for accuracy and detect possible errors
+- **Navigate to source platforms** to view or edit listings directly
+- **Refresh listings** to get the most up-to-date information
+- **Mark listings as correct** to ignore false error alerts
+- **Verify as the only listing** for a source to prevent duplicate results
+- **Remove incorrect matches** that don't belong to your business
+
+### How Your Listing Score Works
+
+Your **Listing Score** is an evaluation of your business's accurate Primary Listings and Citations. Each listing source is assigned a score based on the platform's popularity and authority. For example, having an accurate listing on Google Maps carries more weight than smaller directory sites.
+
+**How to Increase Your Listing Score:**
+- Ensure your business information is accurate and consistent across all platforms
+- Add your business to additional relevant listing sources
+- Fix any detected errors in existing listings
+- Maintain up-to-date business information
+
+## Understanding Citations
+
+**Citations** are mentions of your business name along with other business data (phone number, address, website, etc.). They're crucial for search marketing optimization and help people discover your business.
+
+Search engines consider these factors when ranking listings:
+- Number of citations
+- Accuracy and consistency of data in citations  
+- Authority of websites where citations appear
+
+## How the System Identifies Relevant Listings
+
+Reputation Management uses **Best Match** – an algorithm that determines if a listing belongs to your business profile. Best Match compares your anchor data (Name, Address, Phone Number, and Website) to information found on listings and ranks them based on similarity.
+
+The system weighs different data types with varying importance:
+- **Phone Number**: 1.00 (highest weight)
+- **Address**: 0.70
+- **Zip Code**: 0.55
+- **Business Name**: 0.55
+- **City**: 0.10 (lowest weight)
+
+A listing must reach a minimum threshold score (typically 50%) to be considered a potential match.
+
+## Key Management Tasks
+
+### Editing and Updating Listings
+
+**Mark this Listing as Correct**: Use this when the system flags an error that isn't actually incorrect. This tells Reputation Management to stop checking for changes on that listing.
+
+**Verify as Only Listing**: Use this to mark a listing as correct and prevent the system from finding additional results for that source.
+
+**Remove Match**: Use this to remove listings that don't belong to your business.
+
+### Adding New Listings
+
+You can manually add listings by:
+1. Going to **Listings tab > Primary Listings**
+2. Finding the platform you want to add
+3. Clicking **View Possible Matches**
+4. Submitting your listing URL
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Why are my reviews missing in Reputation Management?</summary>
+
+Reviews will only populate if the correct listing is present in Reputation Management. If you have reviews on your live listing but not in the dashboard, the wrong listing was likely pulled in or no listing was found.
+
+**How to fix this:**
+- Launch Reputation Management, navigate to **Listings tab > Primary Listings**
+- Remove the wrong listing URL if present, then submit the correct URL
+- Once the correct page is found, reviews will start populating
+</details>
+
+<details>
+<summary>Why are reviews duplicated in Reputation Management?</summary>
+
+Duplicate reviews typically occur when a Google account is connected twice in Reputation Management.
+
+**To resolve this:**
+1. Click on the Google listing to expand it
+2. Click **'Remove this match'** under the duplicate listing
+3. Refresh the page
+</details>
+
+<details>
+<summary>How is the point-based Listing Score calculated?</summary>
+
+Each listing source is assigned a score based on its popularity and authority. Popular sites like Google Maps carry more weight. We assess the accuracy of your listings on the top 30 sites and adjust the score accordingly:
+- Good match = 100% of assigned points 
+- Partial Match = Partial assigned points 
+</details>
+
+<details>
+<summary>Why was my listing not found?</summary>
+
+There are several reasons why a listing might not be found:
+- **For new listings**: If you recently created a listing, Reputation Management should pull it in during its next search.
+- **For Google Maps listings**: The Business Profile information may not match closely enough.
+- **For service area businesses**: If your Google Maps address is suppressed, authenticating your Google Business Profile can help.
+
+**Solution:** Manually add the listing through **View Possible Matches**.
+</details>
+
+<details>
+<summary>What is the difference between Relaxed and Strict listing settings?</summary>
+
+**Relaxed Visibility** means listings are marked as "Correct" when an exact match OR a close match is found (e.g., "St." instead of "Street").
+
+**Strict Visibility** means online listings are marked as "Found" only when an exact match is discovered. Strict Visibility is optimal for SEO.
+</details>
+
+<details>
+<summary>How do I remove incorrect listings or reviews?</summary>
+
+1. Open **Reputation Management**
+2. Go to the **Listings** tab
+3. Review all listings. If you find one that doesn't belong, click the menu and select **Remove this match**
+</details>

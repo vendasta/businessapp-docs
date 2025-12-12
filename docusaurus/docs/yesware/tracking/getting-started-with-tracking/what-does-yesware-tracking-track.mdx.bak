@@ -1,0 +1,11 @@
+---
+title: "What does Yesware tracking track?"
+description: "What does Yesware tracking track?"
+sidebar_position: 75
+---
+
+# What does Yesware tracking track?
+
+Yesware tracks who opened your email, when it was opened, what type of device they used to read it, and in some cases, where they opened it.
+**To learn more: **[Email Tracking 101 for Outlook (O365)](/docs/tracking/getting-started-with-tracking/send-tracked-emails-and-links-on-outlook) 
+Yesware can also track links clicked in emails if you enable [link tracking](https://support.yesware.com/hc/en-us/articles/15420627399831) and we also offer [attachment](https://support.yesware.com/hc/en-us/articles/15420528296471-How-do-I-add-attachments-to-Templates-and-or-Campaigns-) tracking.

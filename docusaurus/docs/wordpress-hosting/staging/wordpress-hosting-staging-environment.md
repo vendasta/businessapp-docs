@@ -10,23 +10,23 @@ When it comes to managing your website, ensuring it runs smoothly and without in
 
 Below is a staging view, for a site that hasn't created a staging environment:
 
-![mceclip0.png](./img/4406961488151-d5926f8a9e.png)
+![mceclip0.png](img/4406961488151-d5926f8a9e.png)
 
 The site below has a staging environment:
 
-![mceclip1.png](./img/4406961488151-3adbd3a7b9.png)
+![mceclip1.png](img/4406961488151-3adbd3a7b9.png)
 
 In the staging environment, customers can test out their site updates, and once satisfied push to live.
 
 Please Note: If you still want the staging files to be present after pushing the site to live, please checkbox "Preserve the Staging files" or they will be deleted. 
 
-![mceclip2.png](./img/4406961488151-d1e41336e3.png)
+![mceclip2.png](img/4406961488151-d1e41336e3.png)
 
 ### Resetting a Staging Site
 
 There are 3 ways to reset your staging site:
 
-![blobid0.png](./img/4406961488151-597243ad1e.png)
+![blobid0.png](img/4406961488151-597243ad1e.png)
 
 1) Reset to live site - This will reset the staging site and make an exact copy of the live site currently.
 

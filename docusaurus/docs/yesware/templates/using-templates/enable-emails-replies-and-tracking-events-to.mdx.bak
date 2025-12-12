@@ -1,0 +1,16 @@
+---
+title: "Enable emails, replies, and tracking events to automatically send to Salesforce from Gmail"
+description: "Enable emails, replies, and tracking events to automatically send to Salesforce from Gmail"
+sidebar_position: 69
+---
+
+# Enable emails, replies, and tracking events to automatically send to Salesforce from Gmail
+
+If you’re on our Enterprise plan and already use [Salesforce](http://www.salesforce.com/), it's easy to incorporate Yesware to automatically store emails from Gmail. Unlike the basic BCC to CRM functionality, the send to Salesforce functionality will store not only sent emails, but will also capture replies, open events, viewed attachments/presentations, and link-click events into Salesforce automatically. You will also be able to use [dynamic templates](how-do-dynamic-templates-work-with-salesforce.mdx) and Salesforce lists with Campaigns.
+**To enable this functionality:**
+- Click the "Yesware" menu at the very top of Gmail and select "Preferences"
+- Navigate to the "Integrations" section
+- Under "Salesforce," make sure you've switched the toggle to the "On" position
+- Authenticate to Salesforce if you have not already done so, which will link your account
+- Click "Save &amp; Reload"
+From now on, whenever you send an email, that message and all of its associated replies, message opens, link clicks, and attachment views will be stored to Salesforce as Activities on an existing Contact or Lead. The email will sync as an Activity to the [first single Contact or Lead](/docs/salesforce-integration/salesforce-sync-enterprise-plan/what-happens-if-i-have-duplicate-records) and optionally the first single Account or Opportunity associated with the email address.

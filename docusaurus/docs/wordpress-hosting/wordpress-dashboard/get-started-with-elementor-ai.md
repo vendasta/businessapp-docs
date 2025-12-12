@@ -17,7 +17,7 @@ Before using Elementor AI, make sure that Elementor is installed and activated o
 3.  Click **Install Now** and then **Activate**.
     
 
-![Install & Activate Elementor Core » Elementor](./img/29625054388375-ec24a2877f.png)
+![Install & Activate Elementor Core » Elementor](img/29625054388375-ec24a2877f.png)
 
 ### Step 2: Enable Elementor AI
 
@@ -32,9 +32,9 @@ Elementor AI is available within the Elementor editor. To enable it:
 4.  If prompted, activate Elementor AI by following the on-screen instructions.
     
 
-![Write Text Using Elementor AI » Elementor](./img/29625054388375-2032741ef0.jpeg)
+![Write Text Using Elementor AI » Elementor](img/29625054388375-2032741ef0.jpeg)
 
-![Generate Text In Gutenberg Using Elementor AI » Elementor](./img/29625054388375-a8910374cd.png)
+![Generate Text In Gutenberg Using Elementor AI » Elementor](img/29625054388375-a8910374cd.png)
 
 ### **Step 3: Generate AI-Powered Content**
 
@@ -51,7 +51,7 @@ Once Elementor AI is enabled, you can start using it to create content effortles
 4.  Click **Insert** to add the content to your page.
     
 
-![Write Text Using Elementor AI » Elementor](./img/29625054388375-35544216c2.jpeg)
+![Write Text Using Elementor AI » Elementor](img/29625054388375-35544216c2.jpeg)
 
 **Editing and Refining Content**
 
@@ -77,7 +77,7 @@ Elementor AI can also generate HTML, CSS, and JavaScript code. To use this featu
 4.  Insert and tweak the generated code as needed.
     
 
-_![Add Custom CSS Using Elementor AI » Elementor](./img/29625054388375-9d49124451.jpeg)_
+_![Add Custom CSS Using Elementor AI » Elementor](img/29625054388375-9d49124451.jpeg)_
 
 ### Step 5: Save and Publish Your Work
 

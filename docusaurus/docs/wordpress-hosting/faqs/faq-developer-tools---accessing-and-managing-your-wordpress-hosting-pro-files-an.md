@@ -23,7 +23,7 @@ WordPress Hosting Pro allows you to connect via **SFTP** (Secure File Transfer P
 
 ![](./img/31908864923543-26fd4dc078.png)
 
-![blobid0.png](./img/31908864923543-0b6c55e0cd.png)
+![blobid0.png](img/31908864923543-0b6c55e0cd.png)
 
 **Step 2: Connect using FileZilla (or another SFTP client)**
 
@@ -145,11 +145,11 @@ To increase the default upload limit:
 
 1.  In WordPress, go to **Plugins > Add New**
     
-2.  Install **Big File Uploads – Increase Maximum File Upload Size ![mceclip0.png](./img/31908864923543-544a231b18.png)** 
+2.  Install **Big File Uploads – Increase Maximum File Upload Size ![mceclip0.png](img/31908864923543-544a231b18.png)** 
     
 3.  Activate the plugin
     
-4.  Navigate to **Media > Big File Uploads** and set your desired limit (up to 256 MB) **![mceclip2.png](./img/31908864923543-089914e8e3.png)**
+4.  Navigate to **Media > Big File Uploads** and set your desired limit (up to 256 MB) **![mceclip2.png](img/31908864923543-089914e8e3.png)**
     
 
 > If you need to upload files larger than 256 MB, use **SFTP** to upload directly to your server.

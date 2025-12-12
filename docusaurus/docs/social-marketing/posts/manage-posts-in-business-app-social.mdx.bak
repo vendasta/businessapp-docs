@@ -1,0 +1,171 @@
+---
+title: Managing Posts from Business App
+sidebar_label: Managing Posts from Business App
+description: View and manage all your social and blog posts directly in Business App without switching to the Social Marketing product.
+tags: [social, business-app, manage-posts]
+keywords: [business app, manage social posts, drafts, scheduled posts, published posts]
+---
+
+## What is Manage Posts in Business App Social?
+
+The **Manage Posts** feature allows you to view and manage all your social and blog posts including drafts, scheduled, and published content directly within the Business App.  
+This provides a centralized location to review in-progress posts, monitor upcoming scheduled content, and track performance on published posts without navigating to the Social Marketing product.
+
+## Why is Manage Posts important?
+
+This simplifies content management by allowing you to:
+
+- Access all social and blog post statuses in one place  
+- Quickly review and filter posts by account or network  
+- View performance metrics on published posts  
+- Save time by reducing the need to switch between products  
+
+With this integrated view, you can make faster, data-informed decisions about your content strategy.
+
+## What’s Included with Manage Posts?
+
+- Tabs for **Drafts**, **Scheduled**, and **Published** posts  
+- Post-level engagement and performance data  
+- Filtering by network, account, or date range  
+- Web and mobile view previews  
+- Access to create new posts in Social Marketing  
+- Deletion options for posts across all statuses  
+
+## How to Use Manage Posts
+
+### Step 1: Open the Business App
+
+1. Sign in to your Business App.  
+2. From the left-hand navigation menu, go to `Social`.
+
+![Business App View](img/manage-posts/Business-App.png)
+
+### Step 2: Navigate Between Tabs
+
+You will find three main tabs:  
+
+- **Drafts** – Lists posts currently being created or awaiting approval.  
+- **Scheduled** – Displays posts planned for future publication.  
+- **Published** – Shows posts that have already been published to your social or blog accounts.
+
+![Manage Posts Business App Social](img/manage-posts/Manage-Tabs-Socia-Business-App.png)
+
+
+### Step 3: Review and Manage Posts
+
+Within each tab, you can:
+
+- View post content, status, and associated networks  
+- Access engagement metrics (likes, shares, comments, reach, etc.) for published posts  
+- Click `View` to see how the post appears on its respective social network  
+
+![Manage Posts Business App Social Published View](img/manage-posts/Manage-Tabs-Socia-Business-App-Published-View.png)
+
+
+### Step 4: Apply Filters
+
+Use the available filters to refine your post list:  
+
+- **Social Networks** – Filter by platform such as Facebook, Instagram, or LinkedIn.  
+- **Connected Accounts** – Focus on posts for specific accounts.  
+- **Date Range** –  
+  - Drafts and Published: Filter by past date ranges.  
+  - Scheduled: Filter by future publication dates.
+
+![Manage Posts Business App Social Filter View](img/manage-posts/Manage-Tabs-Socia-Business-App-Filter-View.png)
+
+
+### Step 5: Preview Posts
+
+You can preview each post in:  
+
+- **Web View** – See how your post appears on desktop devices.  
+- **Mobile View** – Review how it appears on mobile screens.
+
+![Manage Posts Business App Social Mobile View](img/manage-posts/Manage-Tabs-Socia-Business-App-Mobile-View.png)
+
+
+### Step 6: Create a New Post
+
+To create a new post:  
+
+1. Click `Create` in the `Social` section.  
+2. You will be redirected to the **Social Marketing** product.  
+3. From there, you can compose a new social or blog post, add media, and schedule publication.
+
+![Manage Posts Business App Social Mobile View](img/manage-posts/Manage-Tabs-Socia-Business-App-Create-Post.png)
+
+
+## Points to Remember
+
+:::info
+You can **delete** draft, scheduled, and published posts directly from the Business App.
+:::
+
+![Manage Posts Business App Delete](./img/manage-posts/Manage-Tabs-Socia-Business-App-Delete-Post.png)
+
+
+:::warning
+- You **cannot edit** draft or scheduled posts within the Business App.  
+  To make edits, open the post in the **Social Marketing** product.  
+- Published **Instagram** posts cannot be deleted from the Business App or Social Marketing.  
+  To remove an Instagram post, use the native Instagram app.
+:::
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Can I edit posts from the Business App?</summary>
+
+No. Posts can only be deleted within the Business App. To edit content, open the post in the Social Marketing product.
+</details>
+
+<details>
+<summary>Can I see engagement metrics for my posts?</summary>
+
+Yes. Published posts include performance metrics such as reach, likes, comments, and shares.
+</details>
+
+<details>
+<summary>Can I create new posts in the Business App?</summary>
+
+Yes. Clicking `Create` redirects you to the Social Marketing product to compose a new post.
+</details>
+
+<details>
+<summary>Can I delete Instagram posts?</summary>
+
+No. Instagram posts must be deleted using the native Instagram app.
+</details>
+
+<details>
+<summary>What filters are available?</summary>
+
+You can filter posts by social network, connected account, or date range.
+</details>
+
+<details>
+<summary>Can I preview posts before publishing?</summary>
+
+Yes. You can view posts in both web and mobile preview modes.
+</details>
+
+<details>
+<summary>What’s the difference between Drafts, Scheduled, and Published tabs?</summary>
+
+- **Drafts:** Posts still in progress.  
+- **Scheduled:** Posts planned for future dates.  
+- **Published:** Posts already live on social or blog accounts.
+</details>
+
+<details>
+<summary>Can I manage blog posts through this feature?</summary>
+
+Yes. The Manage Posts view includes both social and blog posts.
+</details>
+
+<details>
+<summary>Does deleting a post in the Business App remove it from all platforms?</summary>
+
+Yes. Deleted posts are removed from all connected networks, except published Instagram posts.
+</details>

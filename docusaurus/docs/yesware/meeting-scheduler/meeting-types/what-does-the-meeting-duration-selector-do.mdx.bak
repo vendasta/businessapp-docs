@@ -1,0 +1,9 @@
+---
+title: "What does the meeting duration selector do?"
+description: "What does the meeting duration selector do?"
+sidebar_position: 89
+---
+
+# What does the meeting duration selector do?
+
+The meeting duration selector lets you choose how long you want your [custom availability meeting](/docs/meeting-scheduler/meeting-types/how-do-i-suggest-specific-times-for) to be. You can suggest large blocks of time for your meetings and let Meeting Scheduler create the available time slots for the meeting. Select the meeting duration and Yesware will automatically break your available times into meeting-length slots.

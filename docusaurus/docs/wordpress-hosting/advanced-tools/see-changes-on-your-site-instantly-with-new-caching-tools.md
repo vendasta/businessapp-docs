@@ -18,4 +18,4 @@ To combat this, we have **added the ability to flush your site cache manually**.
 
 To ensure website visitors always see the latest version of your files, click the **Flush Cache** button on the product **Overview page** after making changes. This will clear the cache for your site instantly.
 
-![screenshot-www.websitepro.hosting-2021.11.15-12_30_22.jpg](./img/4406957286807-8972de13c8.jpg)
+![screenshot-www.websitepro.hosting-2021.11.15-12_30_22.jpg](img/4406957286807-8972de13c8.jpg)

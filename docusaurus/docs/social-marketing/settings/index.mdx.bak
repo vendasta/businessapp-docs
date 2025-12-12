@@ -1,0 +1,92 @@
+---
+title: Settings Overview
+description: Configure integrations, content preferences, AI behaviors, and account connections in Social Marketing.
+sidebar_position: 1
+---
+
+The Settings tab in Social Marketing is the control hub where you configure integrations, content preferences, AI content behaviors, and account-level personalization. It's divided into three intuitive sub-tabs: **Connect Accounts**, **Interesting Content**, and **AI Settings**. Each section plays a pivotal role in ensuring your content publishing and social media strategy runs smoothly and efficiently.
+
+## Why use Settings?
+
+- Connect all your social media accounts in one place
+- Configure AI to generate on-brand content automatically
+- Set up content feeds for post inspiration
+- Manage platform integrations and troubleshoot issues
+- Customize how content is created and published
+
+## What's included
+
+- **[Account Connections](account-connections.mdx)**: Connect and manage social media accounts
+- **[AI Settings](ai-settings.mdx)**: Configure AI behavior and content generation preferences
+- **[Add Facebook Pages](add-facebook-pages-to-managed-pages.mdx)**: Add additional Facebook pages to your account
+- **[Interesting Content](configuring-interesting-content.mdx)**: Set up content feeds for post inspiration
+- **[Custom Feed Integration](custom-feed-integration.mdx)**: Integrate custom RSS feeds and content sources
+- **[Troubleshooting](./Troubleshooting-Social-Marketing.mdx)**: Resolve common Social Marketing issues
+
+## Get started
+
+1. Go to `Social Marketing` > `Settings`.
+2. Click `Connect Accounts` to link your social media profiles.
+3. Add your Facebook, Instagram, LinkedIn, TikTok, or Google Business Profile accounts.
+4. Go to `AI Settings` to configure how AI generates content for your business.
+5. Optionally, set up `Interesting Content` feeds to discover content for your posts.
+
+## Connect Accounts
+
+This section allows you to link your social media and content platforms to your Social Marketing account.
+
+**Key Features:**
+- **Supported Platforms:** Facebook, Instagram, X (Twitter), TikTok, LinkedIn, Google Business Profile, WordPress Blog, Shopify Blog, and custom RSS feeds.
+- **Status Indicators:** Easily view which accounts are connected or pending, and manage page access permissions.
+- **Integration Management:** Add, disconnect, or troubleshoot integrations directly from this view.
+
+## Interesting Content
+
+Curate content sources that inspire or supplement your social posts.
+
+**Key Features:**
+- **RSS Feeds:** Add and manage RSS feeds for relevant blogs, news outlets, or niche publications.
+- **Discovery:** Search and subscribe to content feeds that align with your brand or audience interests.
+
+## AI Settings
+
+Tailor how the AI content generator writes posts and what sources it uses to create personalized, on-brand content.
+
+**Key Features:**
+- **Knowledge Sources:** Add and manage key business information such as:
+  - Business Profile (hours, services, contact)
+  - Pricing details
+  - Seasonal promotions
+  - Website and Facebook page content
+  - Custom Q&A
+- **Training Status:** View when each source was last refreshed and how many pages were used to train the AI.
+- **Instructions:** Customize AI behavior for different content types:
+  - Social posts
+  - Blog posts
+- **Manual Knowledge Entry:** Add specific knowledge manually to supplement content generation.
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Can I connect multiple pages or accounts for the same platform?</summary>
+
+Yes, you can connect multiple business pages for platforms like Facebook or LinkedIn. Each page or account will appear separately for management.
+</details>
+
+<details>
+<summary>How does the AI use the knowledge sources I provide?</summary>
+
+The AI references these sources when generating content, ensuring posts are aligned with your business's services, promotions, and tone.
+</details>
+
+<details>
+<summary>What types of RSS feeds can I add?</summary>
+
+Any publicly available RSS feed can be added—from news outlets and blogs to niche industry content. This helps diversify and enrich your post queue.
+</details>
+
+<details>
+<summary>What if I need to update a promotion or business detail?</summary>
+
+Simply edit or remove the relevant knowledge source in the AI Settings tab. The AI will refresh its training accordingly, usually showing the update timestamp.
+</details>

@@ -1,0 +1,98 @@
+---
+title: Overview
+description: Explore Advertising Intelligence providing live reporting and analysis for digital ad campaigns with comprehensive ROI calculation and campaign analysis.
+sidebar_position: 1
+---
+
+Advertising Intelligence provides live reporting and analysis for your digital ad campaigns. Get big-picture campaign analysis to understand ad performance and grow ROI.
+
+## Why use Advertising Intelligence?
+
+- Consolidate reporting from Google, Facebook, LocalAds, and Microsoft Ads in one place
+- Calculate precise ROI using Average Sale and Close Rate data
+- Compare individual campaigns side-by-side
+- Integrate with the Executive Report for unified marketing insights
+- Add management markup fees to client reporting
+
+## What's included
+
+- **[Accepting Facebook Requests](accepting-facebook-requests.mdx)**: Accept requests for digital advertising campaigns
+- **[Access MatchCraft AdVantage](access-matchcraft-advantage-merchant-center.mdx)**: Access Merchant Center via SSO
+- **[Customizable Settings and Key Metrics](vendasta-products-advertising-intelligence-overview.mdx)**: Configure settings and view key metrics
+- **[Cheat Sheet](cheat-sheet-for-advertising-intelligence.mdx)**: Quick reference guide for Advertising Intelligence
+- **[Executive Report Integration](reporting-in-the-executive-report.mdx)**: View advertising data in the Executive Report
+- **[Advanced Campaign Reporting](advanced-reporting-of-individual-campaign-metrics.mdx)**: Detailed reporting for individual campaigns
+
+## Get started
+
+1. Navigate to `Advertising Intelligence` in Business App.
+2. Go to the `Settings` page to connect your ad platforms.
+3. Select the connected campaign to enter your mark-up fees.
+4. View your dashboard to see consolidated reporting across all platforms.
+
+## Who is Advertising Intelligence for?
+
+**DIY users:** Small businesses that run digital ad campaigns themselves. Make sense of your ad data and pinpoint your unique ROI.
+
+**DIFM & DIWM users:** Agencies that run digital ad campaigns on behalf of their clients. Save time and provide real ROI to justify ad spend and secure campaign renewals.
+
+## What does Advertising Intelligence do?
+
+Advertising Intelligence connects with Google, Facebook, LocalAds, and Microsoft ad reporting and analysis. Get real advertising ROI for your campaigns.
+
+### High-level stats
+
+Track key metrics across Google, Facebook, LocalAds, and Microsoft Ads:
+
+- Clicks
+- Impressions
+- Conversions
+- Client Spend
+- Average Client Cost-Per-Click
+- Click through Rate
+
+### ROI calculator
+
+Calculate precise ROI for your campaigns using *Average Sale* and *Close Rate* data collected from each unique user, plus Conversions and Spend from Google / Facebook / LocalAds / Microsoft Ads.
+
+### Detailed campaign table
+
+Import individual Google / Facebook / Microsoft / LocalAds campaigns and compare ROI, Client Spend, Conversions, Clicks, Impressions, CTR, Average CPC, and Start/End Dates.
+
+![Detailed campaign table](img/ad-intelligence-overview-1.jpg)
+
+### Integration with the Executive Report
+
+View reporting for advertising, along with your other products, right in Business App. You and your clients can see what's happening across all digital marketing channels in one place.
+
+### Management mark-up fees
+
+Add your monthly management fee to your client's ad spend. These markup fees are added to all cost-related metrics (e.g. Average CPC, ROI, Total Spend, etc.) and reflected in your clients' reporting.
+
+![Management markup fees](./img/ad-intelligence-overview-2.jpg)
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>What advertising platforms are supported?</summary>
+
+Advertising Intelligence supports Google Ads, Facebook Ads, LocalAds, and Microsoft (Bing) Ads. Additional platforms like LinkedIn, TikTok, and Amazon can be connected in Settings.
+</details>
+
+<details>
+<summary>How do I calculate ROI?</summary>
+
+Enter your Average Sale value and Close Rate in the ROI calculator. The system combines this with Conversions and Spend data from connected platforms to calculate your ROI.
+</details>
+
+<details>
+<summary>Can I add management fees to client reporting?</summary>
+
+Yes. In Settings, you can add monthly management fees that will be reflected in all cost-related metrics shown to clients.
+</details>
+
+<details>
+<summary>How do I view advertising data in the Executive Report?</summary>
+
+Once connected, advertising data automatically appears in the Executive Report alongside your other marketing metrics.
+</details>

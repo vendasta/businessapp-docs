@@ -1,0 +1,165 @@
+---
+title: getting-started-with-campaigns
+sidebar_label: Getting Started
+description: Learn how to use Campaigns to create multi-touch, multi-channel outreach sequences directly from your inbox.
+tags:
+  - campaigns
+  - email-automation
+  - multi-touch-outreach
+keywords:
+  - campaigns
+  - email-sequences
+  - automated-emails
+  - outreach
+---
+
+# Getting Started with Campaigns
+
+## What is Campaigns?
+
+Campaigns enables you to create multi-touch, multi-channel outreach sequences directly from your inbox. It's similar to a mail merge—but with more powerful options like phone calls, LinkedIn tasks, and automated or manual email touches.
+
+Campaigns helps you and your team stay compliant with messaging guidelines while scaling your outreach efficiently. Whether you're prospecting, following up, or re-engaging leads, Campaigns keeps you focused and organized by delivering a prioritized, always-up-to-date to-do list of your next steps, without leaving your inbox.
+
+## Why is this important?
+
+Campaigns allows you to automate and systematize your outreach while maintaining personalization and control. Instead of manually tracking follow-ups and next steps, Campaigns provides a structured workflow that ensures no lead falls through the cracks. This helps you:
+
+- Stay organized with multi-step outreach sequences
+- Maintain consistency across your prospecting efforts
+- Scale your outreach without sacrificing personalization
+- Track engagement and performance metrics in one place
+
+## What's included?
+
+Campaigns can be tailored to match your workflow by:
+
+- Channel (email, call, LinkedIn task, etc.)
+- Touch frequency and spacing
+- Degree of automation (manual or automated)
+
+For example, you might create a Campaign with:
+
+- An initial automated email
+- A LinkedIn connection request two days later
+- A phone call reminder on the fifth day
+
+### Platform Differences
+
+**Gmail Users:** Campaigns are built and managed directly from the Gmail interface via the add-on.
+
+**Outlook Users:** Campaigns are accessed via the Add-ins section in your Outlook ribbon, and open in a standalone window for full functionality.
+
+### Campaign Recipient Limits
+
+Your subscription plan determines how many recipients you can add to campaigns each calendar month.
+
+This monthly limit applies across all campaigns. For example, you could use 50% of your recipient allowance by sending Campaign A in the first week, and the remaining 50% with Campaign B later in the month.
+
+The limit resets on the first day of each month.
+
+**Plan Limits:**
+
+- Premium and Enterprise plans: 900 recipients per upload, 5,000 recipients per campaign
+- Pro Plan: 20 recipients/month
+- Free Plan: 10 recipients/month
+- Trial accounts: 500 recipients for the duration of the trial
+
+### Campaign Status Definitions
+
+Within a Campaign, there are six possible recipient status types. Here's what each one means:
+
+**Active:** The recipient was successfully added to the Campaign and is scheduled to receive future Touches.
+
+**Connected:** The recipient was automatically removed from the Campaign due to an email reply, picking up a phone call touch, or booking a meeting through Meeting Scheduler. This automatic removal happens only if:
+
+- The `Remove recipients after connection` option was selected when creating the Campaign, and
+- (For emails) the recipient replies from the same email address used in the Campaign. *(In Outlook, this applies specifically to automated emails.)*
+
+**Completed:** The recipient received all of the Touches within the Campaign and was not manually removed or removed through a connection. They will not receive any further communication.
+
+**Manually Removed:** You manually selected and removed this recipient. Only recipients with a status of "Active" or "Needs Rescheduling" can be manually removed.
+
+**Bounced:** The recipient was added to the Campaign, but the email was not deliverable to their address. Bounced recipients are automatically removed from the Campaign.
+
+**Needs Rescheduling:** An automatic Out of Office reply was received, and the recipient was paused mid-Campaign. Future Touches are on hold and need to be rescheduled within the `Recipients` tab of the Campaign.
+
+## How to get started with Campaigns
+
+### Step 1: Plan your campaign strategy
+
+Before creating a Campaign, consider:
+
+- What is your goal? (prospecting, follow-up, re-engagement)
+- How many touches do you need?
+- What channels will you use? (email, phone, LinkedIn)
+- Will touches be automated or manual?
+
+There is no limit to the number of touches you can include in a Campaign, and you can mix and match your touch types in any way that you see fit. However, limiting your Campaigns to somewhere between 5 to 10 touches is recommended.
+
+### Step 2: Create your campaign
+
+Navigate to the Campaigns section and create a new campaign. You'll define:
+
+- Campaign name and settings
+- Touch types and content
+- Timing between touches
+- Whether to remove recipients after connection
+
+### Step 3: Add recipients
+
+Once your campaign is created, you can add recipients using various methods:
+
+- Upload a CSV file
+- Manually type recipients into the recipient table
+- Import from Salesforce (Enterprise plans only)
+- *(Gmail only)* Use the `Add to Campaigns` option from an email thread
+
+For detailed instructions on adding and managing recipients, see the [Managing Active Campaigns](managing-active-campaigns.mdx) article.
+
+### Step 4: Personalize your outreach
+
+Use merge fields, personalization columns, and the Preview & Personalize feature to customize messages for individual recipients. For detailed instructions, see the [Creating Campaigns](./creating-campaigns.mdx) article.
+
+### Step 5: Launch and monitor
+
+Once your recipients are added and your content is personalized, launch your campaign. Monitor performance through the Campaigns dashboard to track open rates, click rates, connect rates, and meetings booked.
+
+## Frequently Asked Questions
+
+
+<details>
+<summary>Is there a way to stagger emails within a campaign?</summary>
+
+Campaigns sends emails about 10-15 seconds apart when you send to a list of recipients. At this time, there is no way to alter this cadence.
+
+While it's a little more time-consuming, breaking up a large list into a few smaller ones and setting different send times for each batch when you add them to Campaigns is typically recommended.
+
+</details>
+
+<details>
+<summary>How are monthly campaign recipient limits calculated?</summary>
+
+Your subscription plan determines how many recipients you can add to campaigns each calendar month. This monthly limit applies across all campaigns. For example, you could use 50% of your recipient allowance by sending Campaign A in the first week, and the remaining 50% with Campaign B later in the month. The limit resets on the first day of each month.
+
+</details>
+
+<details>
+<summary>Can I add a recipient to more than one campaign?</summary>
+
+Currently, there is no ability to add the same email address onto more than one campaign at a time. If you would like to include a user on another campaign, you will need to manually remove them from the current campaign they are on, and move them to the new, desired campaign.
+
+To manually move a recipient to a new campaign: Click into the campaign > `Recipients` tab > check the box next to their email address > `Move To` button at the top of the page and select the new campaign.
+
+</details>
+
+<details>
+<summary>What happens when I connect with a recipient on a campaign?</summary>
+
+By default, recipients are removed from a Campaign when they "connect" with you, meaning that they will not receive any subsequent touches in the Campaign if there are any. A "connect" means that they replied to your email, you spoke to them on the phone as a result of a phone call touch, or they booked a meeting with your Meeting Scheduler link.
+
+When creating a Campaign, you can choose whether or not you want to `Remove recipients after connection`. If you'd like to keep a recipient in a Campaign regardless of whether or not they reply to an email, you speak to them on the phone, or they book a meeting, simply un-check the `Remove recipients after connection` box in the `Settings` section of the Campaign.
+
+</details>
+
+

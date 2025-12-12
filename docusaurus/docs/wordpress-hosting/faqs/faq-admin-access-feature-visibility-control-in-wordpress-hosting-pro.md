@@ -10,7 +10,7 @@ This FAQ covers how Partner admins can control what features users see in the Wo
 
 Partner admin users can remove the **Advanced Tools** tab from the WordPress Hosting dashboard for all client accounts.
 
-![Screenshot 2025-06-03 at 8.41.04 AM.png](./img/32162294727063-f090153837.png)
+![Screenshot 2025-06-03 at 8.41.04 AM.png](img/32162294727063-f090153837.png)
 
 This prevents clients from accessing:
 

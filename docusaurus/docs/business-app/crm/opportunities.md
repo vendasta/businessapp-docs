@@ -31,7 +31,7 @@ Managing opportunities lets you visualize, organize, and act on deals across dif
 
 ### Pipeline View
 You can manage opportunities visually by stage:
-![Opportunities Pipeline View](./img/opportunities/opportunity-1.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-1.png)
 
 - Click `Set up a pipeline` if no pipeline exists.
 - Drag and drop opportunities to update their stage.
@@ -39,7 +39,7 @@ You can manage opportunities visually by stage:
 
 ### List View
 To switch to the list view, click the `List` icon:
-![Opportunities Pipeline View](./img/opportunities/opportunity-2.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-2.png)
 
 - Configure columns to personalize visible data.
 - Sort by fields such as expected close date.
@@ -48,7 +48,7 @@ To switch to the list view, click the `List` icon:
 ## How to Create an Opportunity
 
 ### From the Opportunity Page
-![Opportunities Pipeline View](./img/opportunities/opportunity-4.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-4.png)
 
 1. Navigate to `CRM` → `Opportunities`.
 2. Click `Create Opportunity`.
@@ -68,14 +68,14 @@ Updating existing opportunities during import overwrites mapped fields on matchi
 ## How to Edit an Opportunity
 
 ### From the Profile Page
-![Opportunities Pipeline View](./img/opportunities/opportunity-5.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-5.png)
 1. Go to `CRM` → `Opportunities`.
 2. Click on the opportunity.
 3. Click any editable field in the left panel.
 4. Make changes and click away to save.
 
 ### From the Table View
-![Opportunities Pipeline View](./img/opportunities/opportunity-9.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-9.png)
 
 1. Go to `CRM` → `Opportunities`.
 2. Switch to the list view.
@@ -86,18 +86,18 @@ Updating existing opportunities during import overwrites mapped fields on matchi
 ## How to Close an Opportunity
 
 ### In Pipeline View
-![Opportunities Pipeline View](./img/opportunities/opportunity-6.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-6.png)
 
 - Drag the opportunity to the `Closed Won` or `Closed Lost` column.
 
 ### From the Profile Page
-![Opportunities Pipeline View](./img/opportunities/opportunity-7.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-7.png)
 
 - Open the opportunity.
 - Click `Closed Won` or `Closed Lost` at the top.
 
 ### By Updating the Stage Field
-![Opportunities Pipeline View](./img/opportunities/opportunity-8.png)
+![Opportunities Pipeline View](img/opportunities/opportunity-8.png)
 
 - Open the opportunity.
 - Change the `Stage` field to `Closed Won` or `Closed Lost`.
@@ -107,13 +107,13 @@ When marking an opportunity as `Closed Lost`, you may be prompted to provide a r
 ::::
 
 ## How to Set Up a Pipeline
-![Opportunities Pipeline View](./img/opportunities/pipeline-1.png)
+![Opportunities Pipeline View](img/opportunities/pipeline-1.png)
 1. Go to the Opportunities page.
 2. Click the `Set up a pipeline` button. This creates a default pipeline.
 3. Use `Add Stage` to insert new stages.
 4. Use the `X` next to a stage to remove it (except for default stages).
 5. Set a Close Probability for each stage to forecast deal success rates.
-![Opportunities Pipeline View](./img/opportunities/pipeline-2.png)
+![Opportunities Pipeline View](img/opportunities/pipeline-2.png)
 
 :::warning
 You cannot remove `Closed Won` and `Closed Lost` stages. You also cannot set any stage to 0% or 100% Close Probability, as those are reserved for the default stages.
@@ -122,13 +122,13 @@ You cannot remove `Closed Won` and `Closed Lost` stages. You also cannot set any
 ## How to Add or Remove a Pipeline
 
 ### Add a New Pipeline
-![Opportunities Pipeline View](./img/opportunities/pipeline-3.png)
+![Opportunities Pipeline View](img/opportunities/pipeline-3.png)
 
 - Click `Create Pipeline` to add a new one.
 - There is no limit to the number of pipelines you can create.
 
 ### Remove a Pipeline
-![Opportunities Pipeline View](./img/opportunities/pipeline-4.png)
+![Opportunities Pipeline View](img/opportunities/pipeline-4.png)
 
 - Click `Delete` next to the pipeline you want to remove.
 - Ensure all opportunities are reassigned before deletion. If not, they will remain unattached.
@@ -141,7 +141,7 @@ You can create an opportunity when a lead is captured from webchat.
 ### Example: Create an Opportunity and Follow Up from Webchat
 
 **Requirements**: Conversation AI must be active.
-![Opportunities Pipeline View](./img/opportunities/opp-automation-1.png)
+![Opportunities Pipeline View](img/opportunities/opp-automation-1.png)
 
 Automation behavior:
 - Triggered when a lead is captured through webchat
@@ -158,7 +158,7 @@ Automation behavior:
 5. Review and customize the steps to match your workflow.
 
 ## How to Automate Actions Based on Opportunity Stages
-![Opportunities Pipeline View](./img/opportunities/opp-automation-2.png)
+![Opportunities Pipeline View](img/opportunities/opp-automation-2.png)
 
 You can start nurturing campaigns or send communications when an opportunity reaches a specific stage.
 
@@ -180,7 +180,7 @@ Automation behavior:
 6. Review and adjust the automation as needed.
 
 ## How to Move Opportunities to Specific Stages Automatically
-![Opportunities Pipeline View](./img/opportunities/opp-automation-3.png)
+![Opportunities Pipeline View](img/opportunities/opp-automation-3.png)
 
 You can move an opportunity to a specific stage when a defined trigger occurs, such as booking a meeting.
 

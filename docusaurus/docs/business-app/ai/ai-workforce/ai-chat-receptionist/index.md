@@ -45,7 +45,7 @@ The Purpose prompt sets the tone and behavior of your AI Chat Receptionist. Incl
 Your AI Chat Receptionist is assigned to the **Web Chat** channel by default. This channel is always active and cannot be disabled. You can also assign your AI Receptionist to the **SMS** channel to reach customers via text messaging.
 
 :::note  
-The Web Chat widget isn't automatically added to your website! You'll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](/business-app/conversations/conversations-ai-web-chat-overview)
+The Web Chat widget isn't automatically added to your website! You'll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](../../../conversations/conversations-ai-web-chat-overview.md)
 :::
 
 #### Example Purpose Prompts by Business Type {#example-purpose-by-business-type}
@@ -199,7 +199,7 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
   Connect your calendar to let the AI help customers schedule meetings. It will offer available time slots and collect all necessary booking details automatically. 
 
 - **Custom Capabilities**  
-  Expand your AI Chat Receptionist's skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../ai-capabilities/creating-custom-capabilities) in depth.
+  Expand your AI Chat Receptionist's skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../../../ai-capabilities/creating-custom-capabilities.md.md) in depth.
 
 #### Example Additional Instructions Capabilities by Business Type {#example-custom-capabilities-and-additional-instructions-by-business-type}
 
@@ -475,7 +475,7 @@ Bot: Provide Careers page (no booking link).
 :::info AI Receptionst Taking Actions 
  These instructions will change how your AI Receptionist communicates with customers but it will *not* change the actions it can take with Business App or other systems. 
  
- Getting your AI Receptionist to take actions requires adding the appropriate Tool to your Custom Capabilities. For more information on Tools, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
+ Getting your AI Receptionist to take actions requires adding the appropriate Tool to your Custom Capabilities. For more information on Tools, see [Creating Custom Capabilities](../../../ai-capabilities/creating-custom-capabilities.md.md).
  :::
 
 ### Step 3: Add Knowledge to the AI Chat Receptionist
@@ -484,7 +484,7 @@ To respond accurately to general inquiries, your AI Chat Receptionist needs cont
 
 **Knowledge** includes detailed business information, such as FAQs, service descriptions, and policies, that the AI uses to answer specific questions. Your **Business Profile** and information for your homepage is included by default.
 
- For a complete guide on providing your AI Employees with Knowledge, see the [Knowledge Sources section in the AI Workforce Overview](../ai_workforce_overview.md#knowledge-sources).
+ For a complete guide on providing your AI Employees with Knowledge, see the [Knowledge Sources section in the AI Workforce Overview](../ai_workforce_overview.md).
 
 ## Preview your AI Chat Receptionist in Action {#test-the-ai-chat-receptionists-responses}
 

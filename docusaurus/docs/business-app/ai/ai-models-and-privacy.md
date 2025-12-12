@@ -21,8 +21,8 @@ This page explains how Business App AI Employees—including AI Chat Receptionis
 
 ## How AI Employees generate answers
 AI Employees use a large language model (LLM) to draft responses based on:
-- Your configured capabilities. See [Configure capabilities](./ai-capabilities/configuring-capabilities.md).
-- Your knowledge base content, including uploaded files and website sources. See [Knowledge base](./knowledge-base.md).
+- Your configured capabilities. See [Configure capabilities](ai-capabilities/configuring-capabilities.md).
+- Your knowledge base content, including uploaded files and website sources. See [Knowledge base](knowledge-base.md).
 - Conversation context from the active chat, call, or task.
 
 :::warning

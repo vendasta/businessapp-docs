@@ -93,7 +93,7 @@ This is helpful if:
 *   Partners can manually enable automatic plugin updates from the dashboard
     
 
-![mceclip0.png](./img/32160223564439-a8e3b0c848.png)
+![mceclip0.png](img/32160223564439-a8e3b0c848.png)
 
 This provides a balance between safety and control — especially important for client sites.
 

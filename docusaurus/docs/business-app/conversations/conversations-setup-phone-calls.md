@@ -124,7 +124,7 @@ Phone call integration is currently available for businesses located in the Unit
 <details>
 <summary><strong>Can the AI transfer calls to my team?</strong></summary>
 
-Yes. With Premium, the AI Voice Receptionist can transfer calls based on caller intent or rules you define. See [Transfer calls to other numbers](../ai/ai-workforce/ai-voice-receptionist.md#transfer-calls-to-other-numbers) for setup steps and best practices.
+Yes. With Premium, the AI Voice Receptionist can transfer calls based on caller intent or rules you define. See [Transfer calls to other numbers](../ai/ai-workforce/ai-voice-receptionist.md) for setup steps and best practices.
 </details>
 
 <details>

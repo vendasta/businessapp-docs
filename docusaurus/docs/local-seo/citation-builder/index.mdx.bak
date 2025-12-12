@@ -1,0 +1,134 @@
+---
+title: Citation Builder
+description: Learn how to submit and track business data distribution across directories and platforms.
+sidebar_position: 1
+---
+
+# Citation Builder
+
+Manage how your business data is submitted to aggregators and distributed to directories and apps.
+
+## What is Citation Builder?
+
+Citation Builder helps you submit accurate business data to major data aggregators so your information appears consistently across directories, search engines, and apps.
+
+:::info
+Related products:
+- For instant syncing to a focused network of directories, see `listing-sync-pro`.
+- For listing setup and sync details inside the product, see `listing-sync`.
+:::
+
+## Why is Citation Builder important?
+
+- Consistent listings improve local search visibility.
+- Aggregators distribute your data to many platforms that users rely on.
+- Ongoing distribution helps keep details up to date across the web.
+
+## What’s included with Citation Builder?
+
+- **Data Submission** to two aggregators: **TransUnion's Neustar/Localeze** and **Foursquare**.
+- **Verification and Conflict Handling** guidance for aggregator workflows.
+- **Reporting** to track citation growth, distribution, and data accuracy.
+- **Update Timeline** expectations for submissions and downstream publication.
+
+![How data flows through Citation Builder](img/citation-builder-diagram.png)
+
+## How data submission works
+
+### Information sent to aggregators
+- Primary data submitted to both aggregators includes: Business name, address, city, state/province/region, country, zip/postal code, phone number, and website.
+- Additional data (accepted by some sources): Hours of operation, payment methods, business description, services, brands, keywords, landmark, and toll-free number.
+- Healthcare records (where applicable): Firm/clinic/office name, first name, last name, email, professional credential, NPI, gender, insurances accepted, and school.
+
+### Aggregator verification
+- Aggregators compare submitted data against authoritative sources (for example, postal records). They may make formatting adjustments and may contact businesses for verification.
+
+### Aggregator specifics
+#### Transunion's neustar/localeze
+- Collects, verifies, and distributes business data to directories, search engines, navigation tools, mobile apps, and more.
+- Tracks acceptance and distribution, including reporting to several key platforms.
+
+![Neustar/Localeze data status](img/neustar-localeze-data-aggregator.jpg)
+
+#### Foursquare
+- Acts as a submission-only provider for this product.
+- Distributes business data to platforms that rely on Foursquare.
+
+![Foursquare submission status](img/foursquare-data-aggregator.jpg)
+
+### Verification examples
+- Neustar/Localeze may send a conflict-resolution email when a listing is already claimed. If approved, control is transferred; if not, updates cannot be applied; if no response within 10 business days, the listing is released.
+
+![Neustar/Localeze conflict resolution email](img/neustar-localeze-conflict-resolution.jpg)
+
+### Toll-free numbers
+- Toll-free numbers are supported. Neustar/Localeze has a dedicated field for toll-free numbers.
+- To use a toll-free number as the main phone, a standard number must also be provided. Acceptance as a primary number is not always guaranteed.
+
+### Selecting the correct category
+- Choosing the correct business category or taxonomy ID ensures accurate classification and helps avoid syncing issues with sources that do not support generic categories.
+
+## Reporting
+
+![Citation Builder reporting dashboard](./img/citation-builder-reporting.png)
+
+- View total citations created since activation and new citations added over time.
+- See distribution by source in the “View all citations” area.
+- Review syncing status and accuracy of name, address, and phone number across platforms.
+
+## Update timeline and expectations
+
+- Submission typically occurs within 24 hours of data entry.
+- Aggregators may confirm acceptance within 6–8 weeks.
+- Aggregators then share information with citation sources, which may take 2–3 months to publish updates (varies by source).
+- Search engines and directories pick up changes on their own refresh cycles.
+
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>How does Citation Builder work?</summary>
+
+It submits business information to data aggregators (TransUnion's Neustar/Localeze and Foursquare). These aggregators distribute data to directories, search engines, navigation systems, voice assistants, and mobile apps.
+</details>
+
+<details>
+<summary>What is a data aggregator?</summary>
+
+An organization that collects, verifies, and distributes business data to many platforms to keep listings accurate and consistent.
+</details>
+
+<details>
+<summary>How long do updates take?</summary>
+
+Submission occurs within about 24 hours; aggregator acceptance can take 6–8 weeks; downstream sources may publish in 2–3 months; pickup by search engines varies by their refresh cycles.
+</details>
+
+<details>
+<summary>Why is this offered as a yearly subscription?</summary>
+
+Data distribution is ongoing. Maintaining an active subscription helps keep information current and consistent as sources refresh at different intervals.
+</details>
+
+<details>
+<summary>How often can I update my business profile?</summary>
+
+You can update business details at any time. Changes are submitted to aggregators after they are saved.
+</details>
+
+<details>
+<summary>What happens with duplicate listings?</summary>
+
+The product does not delete duplicates directly. It ensures authoritative sources reference correct data so directories relying on aggregators adjust over time.
+</details>
+
+<details>
+<summary>Is this available outside the United States?</summary>
+
+Available only for US-based businesses.
+</details>
+
+<details>
+<summary>Why does the Foursquare column show “Not Applicable”?</summary>
+
+If the physical address is hidden (service area business), Foursquare requires a visible address and will exclude the submission.
+</details>

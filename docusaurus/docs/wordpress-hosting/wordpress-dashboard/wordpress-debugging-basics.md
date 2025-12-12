@@ -10,7 +10,7 @@ We hope after reading this guide that you have the basics on debugging some comm
 
 ### Let's get started
 
-**![homepage.jpg](./img/4406960816663-cc2ec7f16e.png)**
+**![homepage.jpg](img/4406960816663-cc2ec7f16e.png)**
 
 The above is a site I will be using, I wanted to get this screenshot here so you would know what the site looks like when we start introducing different types of errors into it. Let's take a look at some of the tools we offer that will come in handy with fixing websites. 
 
@@ -18,25 +18,25 @@ The above is a site I will be using, I wanted to get this screenshot here so you
 
 **Daily Backups in WordPress Hosting Pro**
 
-![screenshot-www.websitepro.hosting-2021.11.03-15_22_34.png](./img/4406960816663-453505e265.png)
+![screenshot-www.websitepro.hosting-2021.11.03-15_22_34.png](img/4406960816663-453505e265.png)
 
 Within WordPress Hosting Pro under the Backups tab, you will see a list of backups that are created. By default on the creation of a WordPress Hosting Pro install there will be a base backup (clean install). Subsequent backups are created daily. We offer various information to help with the decision of which backup to restore a site to, like WordPress version, size of the database, size of the files, and the number of Posts, Pages, and Plugins. You can restore a backup by clicking the Restore link to the right of the backup you wish to use, and then confirm the restoration. 
 
 **PHP Logs**
 
-![screenshot-www.websitepro.hosting-2021.11.03-15_34_24.png](./img/4406960816663-bc47dc5a2b.png)
+![screenshot-www.websitepro.hosting-2021.11.03-15_34_24.png](img/4406960816663-bc47dc5a2b.png)
 
 The logs here record the date of the error as well as a full trace of how the problem occurred. We do intend to improve the interface by adding features such as searching for specific logs.
 
 **SFTP Access**
 
-![screenshot-www.websitepro.hosting-2021.11.03-16_02_36.png](./img/4406960816663-9d0a28be81.png)
+![screenshot-www.websitepro.hosting-2021.11.03-16_02_36.png](img/4406960816663-9d0a28be81.png)
 
 SFTP access can be found on the Advanced Tools tab, under the WordPress Dashboard button. This allows you to set up a key that can be used with an SFTP client. The most common one that I know is Filezilla, which allows you to access the website files directly.
 
 ### Staging Environment
 
-![screenshot-www.websitepro.hosting-2021.11.03-16_04_11.png](./img/4406960816663-80676bd613.png)
+![screenshot-www.websitepro.hosting-2021.11.03-16_04_11.png](img/4406960816663-80676bd613.png)
 
 When you first get to the Staging Environment tab you will need to enable it, which will take a copy of the live website. This tool is quite useful as it includes a toggle for WP\_Debug which will inline errors or warnings as they occur. You can find a wide array of uses with a staging environment:
 
@@ -50,7 +50,7 @@ Let's get into some errors and typical steps to debug them. We will start with t
 
 **Internal server error**
 
-**![blobid0.png](./img/4406960816663-1a47873035.png)**
+**![blobid0.png](img/4406960816663-1a47873035.png)**
 
 Contrary to what this error message states, this issue isn't caused by the server itself, or the hosting company. This is an error that is usually when there is an issue with the code on the WordPress Site. Whether it is a plugin that didn't completely update or a theme that has an issue in it. There is some problem with the code that cannot be resolved and so the site goes down. 
 
@@ -63,15 +63,15 @@ Ways to Fix this:
 
 As an example, the error above can be seen in the PHP logs:
 
-![screenshot-vendasta-support.zendesk.com-2021.11.03-16_05_23.png](./img/4406960816663-91cba3dbc7.png)
+![screenshot-vendasta-support.zendesk.com-2021.11.03-16_05_23.png](img/4406960816663-91cba3dbc7.png)
 
 The theme I am using (Divi-child), has incorrect syntax on line 6 of functions.php. This can be fixed by rolling back to the backup I made before the change. We could also open the file with an SFTP connection and correct the syntax issue, I removed a ";" to generate the error on line 6, so it needs to be replaced. This error could also be seen by enabling the staging environment and turning on WP\_Debug.
 
 **The site cannot be reached**
 
-![Screen_Shot_2019-06-12_at_1.52.02_PM.png](./img/4406960816663-c666767cc2.png)
+![Screen_Shot_2019-06-12_at_1.52.02_PM.png](img/4406960816663-c666767cc2.png)
 
-This one isn't actually a WordPress issue or an issue with the hosting of a site, but it comes up often enough that I should mention it, as it technically takes the website down. In this case, the domain itself is not pointing directly to your website host, I tried going to a random domain fehubugadersgos.com to get this screenshot, but you may also notice something like this if anything happens to the domain's connection to your hosting. Whether it is the domain is expired, or something happens with the nameservers for a domain. In this case, you need to contact whomever you registered the domain with or the company that has the nameservers. If you're looking for some more information on domain basics, or how to set it up with WordPress Hosting Pro, see [Set up your domain](../domains/set-up-your-domain).
+This one isn't actually a WordPress issue or an issue with the hosting of a site, but it comes up often enough that I should mention it, as it technically takes the website down. In this case, the domain itself is not pointing directly to your website host, I tried going to a random domain fehubugadersgos.com to get this screenshot, but you may also notice something like this if anything happens to the domain's connection to your hosting. Whether it is the domain is expired, or something happens with the nameservers for a domain. In this case, you need to contact whomever you registered the domain with or the company that has the nameservers. If you're looking for some more information on domain basics, or how to set it up with WordPress Hosting Pro, see [Set up your domain](../domains/set-up-your-domain.md).
 
 ### General Debugging Steps
 

@@ -24,7 +24,7 @@ Memory issues in Divi or Elementor are usually caused by:
 3.  If issues persist, disable plugins one by one to find the culprit.
     
 
-![blobid1.png](./img/31942567430039-4622dd0721.png)
+![blobid1.png](img/31942567430039-4622dd0721.png)
 
 **Known conflicting plugins include:**
 
@@ -68,7 +68,7 @@ Auto-updating WordPress core versions can break your site if your plugins/themes
 
 No action is needed unless your team chooses to handle updates differently.
 
-![plugins.jpg](./img/31942567430039-bde6821f00.jpg)
+![plugins.jpg](img/31942567430039-bde6821f00.jpg)
 
 #### **Q: Why am I seeing "Access Denied" errors when importing a `.sql` file via phpMyAdmin?**
 
@@ -88,7 +88,7 @@ This error typically occurs when:
 
 You cannot create new databases in WordPress Hosting Pro, only use the ones provisioned per site.
 
-![mceclip0.png](./img/31942567430039-0f5e7f3130.png)
+![mceclip0.png](img/31942567430039-0f5e7f3130.png)
 
 #### **Q: Why are my WordPress posts returning 404 errors?**
 
@@ -101,6 +101,6 @@ This is a common permalink issue. Here's how to fix it:
 3.  Without changing anything, click **Save Changes**
     
 
-**![mceclip0.png](./img/31942567430039-143b1b5886.png)**
+**![mceclip0.png](img/31942567430039-143b1b5886.png)**
 
 This action will flush the rewrite rules, often resolving 404 errors on blog posts or custom URLs.

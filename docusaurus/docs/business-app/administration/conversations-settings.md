@@ -34,5 +34,5 @@ Connect messaging channels so they appear in your unified inbox:
 - Include opt-out language in automated texts (e.g., “Reply STOP to opt out”).
 
 ## Related
-- See also: [Email Configuration](./email_configuration.md)
-- See also: [SMS Configuration](./sms_configuration.md)
+- See also: [Email Configuration](email_configuration.md)
+- See also: [SMS Configuration](sms_configuration.md)
