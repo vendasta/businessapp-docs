@@ -37,8 +37,7 @@ yarn-error.log*
 .env.local
 .env.*.local
 
-# Git (not needed for build)
-.git/
+# Git metadata (needed for Docker build last-updated data)
 .gitignore
 
 # Documentation (if not needed for build)
