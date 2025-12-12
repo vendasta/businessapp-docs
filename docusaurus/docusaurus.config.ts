@@ -91,7 +91,7 @@ const config: Config = {
           routeBasePath: '/',
           // Show git-based last update metadata (Docker build now includes .git)
           showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
+          // Note: Docusaurus will gracefully skip git metadata if .git is unavailable
         },
         blog: false,
         theme: {
@@ -121,7 +121,9 @@ const config: Config = {
             to: '/local-seo/listing-sync/',
           },
           // Legacy section redirects - redirect top-level paths only
-          // Note: Include both trailing slash and non-trailing slash versions
+          // Note: Do NOT include both trailing slash and non-trailing slash versions here.
+          // The redirects plugin normalizes paths, and with directory-style output this can
+          // cause duplicate writes to the same `build/<path>/index.html` (EEXIST).
           {
             from: '/businessapp',
             to: '/business-app/',
