@@ -148,6 +148,11 @@ const config: Config = {
             from: '/wordpresshosting',
             to: '/wordpress-hosting/',
           },
+          // Social Marketing getting-started restructure
+          {
+            from: '/social-marketing/getting-started/getting-started-with-social-marketing',
+            to: '/social-marketing/getting-started-with-social-marketing',
+          },
         ],
         createRedirects(existingPath) {
           // Only create redirects for business-app paths
