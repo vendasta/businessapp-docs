@@ -1,10 +1,10 @@
 ---
 title: "Captcha’s, reCaptcha’s and Advanced Login (Using /wp-admin page)"
 sidebar_label: "Captcha’s, reCaptcha’s and Advanced Login (Using /wp-admin page)"
-description: "If the Advanced Login feature is enabled, logging into the WordPress dashboard from Partner Center or Business App could be affected if a reCaptcha is set up o"
+description: "If the Advanced Login feature is enabled, logging into the WordPress dashboard directly via SSO could be affected if a reCaptcha is set up"
 ---
 
-If the Advanced Login feature is enabled, logging into the WordPress dashboard from Partner Center or Business App could be affected if a reCaptcha is set up on the WordPress login page.
+If the Advanced Login feature is enabled, logging into the WordPress dashboard via SSO could be affected if a reCaptcha is set up on the WordPress login page.
 
 ![](./img/captchas/hide-advanced-toggle.png)
 
@@ -21,4 +21,4 @@ Enhanced Captcha can be configured from your WordPress dashboard -> General sett
 
 ![mceclip1.png](./img/captchas/enhanced-captcha-login.png)
 
-If you would still like to log in from Partner Center or Business App, simply disable the captcha feature on the login page (If using a reCaptcha plugin, simply disabling the plugin should achieve this).
+If you would still like to log in directly via SSO, simply disable the captcha feature on the login page (If using a reCaptcha plugin, simply disabling the plugin should achieve this).
