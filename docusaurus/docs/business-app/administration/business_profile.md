@@ -8,6 +8,18 @@ Your **Business Profile** allows you to manage your core business information in
 
 This profile ensures that your business information is accurate and consistent across listings, reports, lead capture tools, and across all features of your app.
 
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/jwq88rpson.js" async type="module"></script>
+<style>
+{`wistia-player[media-id='jwq88rpson']:not(:defined) { 
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/jwq88rpson/swatch'); 
+  display: block; 
+  filter: blur(5px); 
+  padding-top:56.25%; 
+}`}
+</style>
+<wistia-player media-id="jwq88rpson" aspect="1.7777777777777777"></wistia-player>
+
 ## Why is my Business Profile Important?
 Keeping your Business Profile complete and up to date helps your business:
 - Appear accurately in local search and online listings
