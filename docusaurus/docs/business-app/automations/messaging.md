@@ -1,5 +1,8 @@
 ---
 title: Messaging actions
+description: Send automated SMS and email messages as actions within your workflows.
+tags: [automation, messaging, sms, email]
+keywords: [automated SMS, automated email, messaging actions, workflow alerts, customer notifications]
 ---
 
 Automate outbound messages from your workflows using SMS or plain‑text email. Great for confirmations, reminders, and follow‑ups.

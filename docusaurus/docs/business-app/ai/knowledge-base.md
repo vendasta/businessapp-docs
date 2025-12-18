@@ -2,6 +2,9 @@
 title: Knowledge Base Overview
 sidebar_label: Knowledge Base
 sidebar_position: 3
+description: Centralize information for AI Employees to reference when answering customer questions.
+tags: [ai-employees, knowledge-base, setup]
+keywords: [AI Knowledge Base, AI data sources, business info for AI, AI training data, document upload]
 ---
 
 The Knowledge Base is where you centralize all the information your AI Employees need to provide accurate, helpful responses to your customers. Think of it as the shared library that all your AI team members can reference when answering questions about your business.

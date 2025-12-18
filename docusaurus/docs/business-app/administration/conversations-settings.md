@@ -1,6 +1,9 @@
 ---
 title: Conversations Settings
 sidebar_position: 5
+description: Manage your messaging settings, notification preferences, and channel connections in Business App.
+tags: [business-app, conversations, inbox, settings]
+keywords: [Conversations settings, Business App inbox, messaging preferences, connection settings, notification management]
 ---
 
 ## Overview

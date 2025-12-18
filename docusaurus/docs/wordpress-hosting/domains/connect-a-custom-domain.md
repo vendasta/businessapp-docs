@@ -1,7 +1,9 @@
 ---
 title: "Connect a Custom Domain"
 sidebar_label: "Connect a Custom Domain"
-description: "To connect a custom domain, follow these steps:  \n  Part 1: Your domain and its Records  \n \n Purchase a domain from a Domain Registrar. \n Find the Domain"
+description: Step-by-step guide to connecting your custom domain to your WordPress Hosting website using DNS records.
+tags: [wordpress-hosting, domains, dns, setup]
+keywords: [connect custom domain, WordPress DNS records, domain registrar setup, point domain to WordPress, A record CNAME]
 ---
 
 To connect a custom domain, follow these steps: 

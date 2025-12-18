@@ -1,7 +1,9 @@
 ---
 title: "WordPress Hosting Staging Environment"
 sidebar_label: "WordPress Hosting Staging Environment"
-description: "WordPress Hosting  accounts can create a staging environment for their websites, make the necessary changes in the staging environment, and push the change to"
+description: Use the WordPress Hosting staging environment to safely test changes before pushing them to your live production site.
+tags: [wordpress-hosting, staging, development]
+keywords: [WordPress staging site, test website changes, push to production, staging environment, safe website updates]
 ---
 
 **WordPress Hosting** accounts can create a staging environment for their websites, make the necessary changes in the staging environment, and push the change to production with minimum downtime. Standard accounts can only edit their production websites directly. A staging site is separate from the production site, and you can even import All-In-One and WordPress Hosting backups to a staging environment.

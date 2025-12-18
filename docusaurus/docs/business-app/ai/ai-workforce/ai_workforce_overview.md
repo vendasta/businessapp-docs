@@ -1,5 +1,8 @@
 ---
 title: AI Workforce Overview
+description: Overview of AI Employees and the common structure for digital team members in Business App.
+tags: [ai-workforce, overview, ai-employees]
+keywords: [AI workforce, digital employees, AI automation, AI setup, Business App AI]
 ---
 AI Employees are digital team members you can configure to automate conversations, answer customer questions, capture leads, book appointments, and more. Each works well out of the box, but can be tailored to fit your business needs.
 
