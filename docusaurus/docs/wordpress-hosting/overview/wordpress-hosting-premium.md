@@ -184,3 +184,12 @@ Setup completes within minutes after launch initiation.
 
 **Q: Will I retain my old domain after upgrading?**  
 Yes. It will redirect to your Multisite domain automatically.
+
+## Frequently Asked Questions regarding Upgrades
+
+<details>
+<summary>Can I upgrade from Standard to Premium later?</summary>
+
+Yes, you can upgrade your account edition at any time through the Partner Center or Marketplace. The system handles the migration of your existing site into the Premium environment.
+
+</details>

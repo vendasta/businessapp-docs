@@ -38,3 +38,12 @@ Use Automation Activity to see what ran, when it ran, and whether it succeeded. 
 - Monitor early: Review Activity after enabling to confirm expected behavior
 - Log context: Use tags or fields so you can filter runs and outcomes later
 
+## Frequently Asked Questions
+
+<details>
+<summary>Why is my automation stuck in "Running"?</summary>
+
+A "Running" status usually means the automation is waiting for a step to complete (like a delay or web request). If it stays stuck for an unusually long time, check specifically for steps that might be timing out or waiting on external systems.
+
+</details>
+

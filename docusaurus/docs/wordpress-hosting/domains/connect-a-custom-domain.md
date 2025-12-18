@@ -29,3 +29,26 @@ You have the ability to set any of your **connected** domains to be the **Pri
 1.  On the **Domains** tab
 2.  Find the domain in the list, expand the options menu on the right side, then click **Make Primary**.
 3.  All of your domains will then redirect to this domain.
+
+## Frequently Asked Questions
+
+<details>
+<summary>How long does it take for my new domain to work?</summary>
+
+DNS propagation can take anywhere from a few minutes to 48 hours. However, with most modern registrars, you will often see the site connect within 1-2 hours.
+
+</details>
+
+<details>
+<summary>Can I use a subdomain (e.g., shop.mysite.com)?</summary>
+
+Yes. You would simply follow the same steps but enter the full subdomain (e.g., `shop.mysite.com`) when connecting, and ensure your DNS records (CNAME or A record) in your registrar point specifically for that subdomain.
+
+</details>
+
+<details>
+<summary>What if I purchased my domain from GoDaddy/Namecheap?</summary>
+
+The process is the same. You need to log in to your registrar's dashboard (GoDaddy, Namecheap, etc.) and update the DNS records (A Record or CNAME) to point to the values provided in the WordPress Hosting dashboard.
+
+</details>

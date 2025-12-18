@@ -102,11 +102,20 @@ Add any information that would help your AI answer questions or provide better s
 
 ---
 
-### Save & Test
+## Frequently Asked Questions
 
-- **Save your configuration:**  
-  Don’t forget to save changes before leaving the page!
-- **Test your AI:**  
-  Most AI Employees let you simulate conversations or actions, so you can preview how they’ll interact with real customers.
+<details>
+<summary>How many channels can I enable for one AI Employee?</summary>
 
----
+You can enable as many available channels as you like. For example, a single AI Employee can handle website chat, SMS, and Facebook Messenger simultaneously. 
+
+</details>
+
+<details>
+<summary>What happens if I disable a capability?</summary>
+
+If you disable a capability, the AI Employee will no longer be able to perform that specific task. If a customer asks for it, the AI will likely apologize and say it cannot help with that request, or fall back to general knowledge. 
+
+Your capability will still be available to use later.
+
+</details>

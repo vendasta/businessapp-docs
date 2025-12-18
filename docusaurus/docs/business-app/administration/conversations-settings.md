@@ -36,3 +36,29 @@ Connect messaging channels so they appear in your unified inbox:
 ## Related
 - See also: [Email Configuration](./email_configuration.md)
 - See also: [SMS Configuration](./sms_configuration.md)
+
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>What channels can I connect to my unified inbox?</summary>
+
+You can connect Facebook Messenger, Instagram Messaging, WhatsApp Business, and use forwarding with email inboxes. This consolidates all your customer communications into one place.
+</details>
+
+<details>
+<summary>How do I enable AI replies?</summary>
+
+You can assign an AI Employee to automatically respond on certain channels. [Learn more about AI Employees](../ai/ai-workforce/ai_workforce_overview.md).
+</details>
+
+<details>
+<summary>What is A2P 10DLC registration?</summary>
+
+A2P 10DLC (Application-to-Person 10-Digit Long Code) registration is a requirement for businesses sending SMS messages in the US and Canada. It verifies your business identity and campaign intent to improve deliverability and prevent spam.
+</details>
+
+<details>
+<summary>Can I forward calls to another number?</summary>
+
+Yes. You can configure call forwarding settings to route incoming calls to your mobile phone, office line, or another preferred number so you never miss a lead.
+</details>

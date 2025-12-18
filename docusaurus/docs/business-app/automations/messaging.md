@@ -62,10 +62,22 @@ Tips:
 - Templates must be approved before they appear in the dropdown
 - WhatsApp requires templates for outbound messages sent outside an active conversation window
 
+- templates must be approved before they appear in the dropdown
+- WhatsApp requires templates for outbound messages sent outside an active conversation window
+
+## Frequently Asked Questions
+
 <details>
 <summary>What if messages fail to send?</summary>
 
 Check the Activity tab for the run. Make sure required fields (for example, phone for SMS or email for plain‑text email) are present. If you see frequent failures, consider switching Error handling to "Skip the step and continue" in Settings so other steps can still complete.
+
+</details>
+
+<details>
+<summary>What is the difference between SMS and WhatsApp templates?</summary>
+
+SMS allows for free-form text but has character limits and costs per segment. WhatsApp templates allow for rich formatting and media but require pre-approval from Meta and must be used for initiating conversations.
 
 </details>
 

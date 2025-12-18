@@ -33,3 +33,19 @@ There are 3 ways to reset your staging site:
 2) Reset from backup - This will reset the staging site from whichever backup you select from the backup list - this is a better approach when you need to compare the actual site vs the content of an older backup.
 
 3) Reset from template - Reset the staging site from the template selection - this means the staging site will be different from your actual site, and it will install a fresh template from the template selections for you to work with.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Will search engines index my staging site?</summary>
+
+By default, staging environments are usually set to "discourage search engines from indexing this site" in WordPress settings, or protected via a separate URL structure, to prevent duplicate content issues.
+
+</details>
+
+<details>
+<summary>Does the staging site have its own URL?</summary>
+
+Yes. The staging build will have a unique URL so you can view and share it without affecting your primary domain.
+
+</details>
