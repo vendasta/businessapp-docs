@@ -2,6 +2,9 @@
 title: Knowledge Base Overview
 sidebar_label: Knowledge Base
 sidebar_position: 3
+description: Centralize information for AI Employees to reference when answering customer questions.
+tags: [ai-employees, knowledge-base, setup]
+keywords: [AI Knowledge Base, AI data sources, business info for AI, AI training data, document upload]
 ---
 
 The Knowledge Base is where you centralize all the information your AI Employees need to provide accurate, helpful responses to your customers. Think of it as the shared library that all your AI team members can reference when answering questions about your business.
@@ -62,4 +65,31 @@ To build an effective Knowledge Base:
 4. **Test with your AI** - See how well your AI can answer questions with the current knowledge
 5. **Expand gradually** - Add more detailed information as you identify gaps
 
-A strong Knowledge Base is the foundation of effective AI Employee performance. The time you invest in creating comprehensive, accurate knowledge sources will pay dividends in better customer interactions and reduced manual support needs. 
+A strong Knowledge Base is the foundation of effective AI Employee performance. The time you invest in creating comprehensive, accurate knowledge sources will pay dividends in better customer interactions and reduced manual support needs.
+
+## Frequently Asked Questions
+
+<details>
+<summary>What types of files can I upload to the Knowledge Base?</summary>
+
+You can upload common document formats such as PDF, DOCX, TXT, CSv, and PPTX files. Note that text-based will be most effective for the AI to read and process it effectively.
+
+</details>
+
+<details>
+<summary>How often should I update my Knowledge Base?</summary>
+
+You should update your Knowledge Base whenever your business information changes—such as new products, price adjustments, or updated policies. Regular reviews (e.g., monthly) help ensure accuracy.
+
+:::note
+If you find yourself updating your Knowledge Base very often, you may want to consider giving your AI a Capability that connects to your systems and uses live info instead.
+:::
+
+</details>
+
+<details>
+<summary>Can I restrict knowledge to specific AI Employees?</summary>
+
+Knowledge sources are generally shared across your AI workforce, but you can configure specific AI Employees to prioritize certain information through their instructions and prompts.
+
+</details> 

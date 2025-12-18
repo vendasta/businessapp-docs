@@ -1,7 +1,9 @@
 ---
 title: "Managing and Creating Backups"
 sidebar_label: "Managing and Creating Backups"
-description: "The WordPress Hosting Pro Dashboard offers a robust backup system, empowering users to protect their digital assets efficiently. This article delves into the m"
+description: Learn how to manage automated and manual backups in WordPress Hosting to protect your website data.
+tags: [wordpress-hosting, backups, security, setup]
+keywords: [WordPress backups, website restore, manual backup WordPress, automated backups, data protection]
 ---
 
 The WordPress Hosting Pro Dashboard offers a robust backup system, empowering users to protect their digital assets efficiently. This article delves into the mechanics of creating backups from the Website Pro Dashboard, highlighting its importance and providing a straightforward, step-by-step guide.
@@ -21,5 +23,13 @@ Users can create a new backup of their live site at any time from the Backups ta
 
 ![Screenshot 2025-05-27 at 3.08.23 PM.png](./img/32997952840599-27fd398bb0.png)**Initiate the Backup Process**: Within the Backups Tab, you will have two primary options:
 
-*   Create a new backup from Production: Ideal for capturing the current state of your live site. -
 *   Backup Now: Instantly generates a backup of your live/production site, ensuring any recent changes are secured.
+
+## Frequently Asked Questions
+
+<details>
+<summary>How long does a restoration take?</summary>
+
+Restoration time depends on the size of your site. Small sites may restore in minutes, while larger sites (multiple GBs) can take significantly longer.
+
+</details>
