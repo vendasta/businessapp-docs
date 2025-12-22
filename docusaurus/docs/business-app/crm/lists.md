@@ -33,15 +33,15 @@ Lists make it easy to target the right audience, kick off automations, and keep 
 1. Go to `CRM` > `Lists`.
 2. Click `Create`, then choose `Static` or `Smart`.
 
-![CRM Lists Navigation](./img/lists/list-navigation.jpg)
+![CRM Lists Navigation](img/lists/list-navigation.jpg)
 
 ### Create a Static List
 
 1. Specify filters to select initial members and click `Save`.
 2. Add or remove members any time from the `Contacts` or `Companies` tables.
 
-![Static List Filters](./img/lists/static-list-filters.jpg)
-![Static List Save](./img/lists/static-list-save.jpg)
+![Static List Filters](img/lists/static-list-filters.jpg)
+![Static List Save](img/lists/static-list-save.jpg)
 
 :::tip
 Keep static lists small and intentional—use them for one-time actions or short-term targeting.
@@ -52,7 +52,7 @@ Keep static lists small and intentional—use them for one-time actions or short
 1. Define rules (for example, “Companies with a contact who opened a marketing email in the last 2 weeks” or “Companies with listing grade C/D/F”).
 2. Click `Save`. Membership updates automatically as data changes.
 
-![Smart List Criteria](./img/lists/smart-list-criteria.jpg)
+![Smart List Criteria](img/lists/smart-list-criteria.jpg)
 
 ### Start an Automation from a List
 
@@ -60,7 +60,7 @@ Keep static lists small and intentional—use them for one-time actions or short
 2. Open the action menu (three dots) and select `Start Automation`.
 3. Choose an automation for contacts or companies (based on the list type) and run it.
 
-![Start Automation](./img/lists/start-automation.jpg)
+![Start Automation](img/lists/start-automation.jpg)
 
 :::info
 Automations run immediately for the list’s current members. Use membership triggers to handle future additions or removals.
@@ -77,7 +77,7 @@ Available triggers:
 
 Use these to send follow-ups, notify sales, or update CRM stages automatically.
 
-![List Triggers](./img/lists/list-triggers.jpg)
+![List Triggers](img/lists/list-triggers.jpg)
 
 ### Delete a List
 
@@ -85,7 +85,7 @@ Use these to send follow-ups, notify sales, or update CRM stages automatically.
 2. Open the action menu (three dots) and select `Delete`.
 3. Confirm deletion.
 
-![Delete List](./img/lists/delete-list.jpg)
+![Delete List](img/lists/delete-list.jpg)
 
 ## Frequently Asked Questions (FAQs)
 

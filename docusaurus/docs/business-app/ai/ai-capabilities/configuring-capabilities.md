@@ -166,7 +166,7 @@ Track key metrics to measure capability effectiveness:
 
 ## Next Steps
 
-- **Create Custom Capabilities**: [Learn how to build custom capabilities](./creating-custom-capabilities) for specialized business needs
+- **Create Custom Capabilities**: [Learn how to build custom capabilities](creating-custom-capabilities.md) for specialized business needs
 - **Advanced Prompting**: Explore prompt engineering techniques for better capability performance
 - **Integration Setup**: Connect external systems to enhance capability functionality
 

@@ -10,7 +10,7 @@ This additional PageSpeed data can help partners and their clients understand th
 
 PageSpeed scores are measured weekly for both desktop and mobile, if a user would like to see an updated score they can do so by clicking the **refresh** button in the bottom left corner of the card. 
 
-![Screen_Shot_2020-12-02_at_2.51.06_PM.png](./img/4406951896727-9ec755a565.png)
+![Screen_Shot_2020-12-02_at_2.51.06_PM.png](img/4406951896727-9ec755a565.png)
 
 If a user clicks to **Improve Desktop** or **Mobile Speed** they will be taken to Google's PageSpeed Insights in another tab. From here, a user can dig into what is causing their site to receive its score and what to change to improve it. 
 
@@ -18,4 +18,4 @@ When a user clicks to **Learn more** a Google article will open in a new tab inf
 
 If the website has recently been created the trend line will not appear as there is not enough data to support it. 
 
-![Screen_Shot_2020-12-02_at_2.57.22_PM.png](./img/4406951896727-2903624387.png)
+![Screen_Shot_2020-12-02_at_2.57.22_PM.png](img/4406951896727-2903624387.png)

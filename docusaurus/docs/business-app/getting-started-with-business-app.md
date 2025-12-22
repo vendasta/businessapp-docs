@@ -86,11 +86,11 @@ Want to experience Business App in your preferred language? This guide offers a 
 1. Log in to Business App.
 2. Click your profile name in the top-right corner, then click the current language.
 
-   ![Language dropdown](./img/language.png)
+   ![Language dropdown](img/language.png)
 
 3. Select your preferred language from the available list.
 
-   ![Preferred language list](./img/preferred_language_list.png)
+   ![Preferred language list](img/preferred_language_list.png)
 
 ---
 

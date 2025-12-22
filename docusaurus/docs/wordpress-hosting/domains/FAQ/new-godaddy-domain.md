@@ -1,5 +1,5 @@
 # How to point a New GoDaddy domain to WordPress Hosting?
-If you recently purchased the domain (or just have never pointed your domain to a site), then these instructions should allow you to point your domain to your WordPress Hosting site. These less specific [Domain connection Instructions](./connect-custom-domain.md) might be more helpful if your [DNS records](./what-are-dns-records.md) are not managed in GoDaddy. Follow these [transfer domain instructions](./existing-godaddy-domain.md) if you are transfering your domain from a previous host.
+If you recently purchased the domain (or just have never pointed your domain to a site), then these instructions should allow you to point your domain to your WordPress Hosting site. These less specific [Domain connection Instructions](connect-custom-domain.md) might be more helpful if your [DNS records](what-are-dns-records.md) are not managed in GoDaddy. Follow these [transfer domain instructions](existing-godaddy-domain.md) if you are transfering your domain from a previous host.
 
 * * *
 

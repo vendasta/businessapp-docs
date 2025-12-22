@@ -21,7 +21,7 @@ The WordPress Hosting Pro Dashboard offers a robust backup system, empowering us
 
 Users can create a new backup of their live site at any time from the Backups tab. Click on the Backups Tab. Click on **Create a new backup from Production** or **Backup Now** to create a backup of the live/production site.
 
-![Screenshot 2025-05-27 at 3.08.23 PM.png](./img/32997952840599-27fd398bb0.png)**Initiate the Backup Process**: Within the Backups Tab, you will have two primary options:
+![Screenshot 2025-05-27 at 3.08.23 PM.png](img/32997952840599-27fd398bb0.png)**Initiate the Backup Process**: Within the Backups Tab, you will have two primary options:
 
 *   Backup Now: Instantly generates a backup of your live/production site, ensuring any recent changes are secured.
 

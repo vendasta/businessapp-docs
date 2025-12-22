@@ -14,7 +14,7 @@ Examples of Plugins that can conflict with our platforms built-in caching struct
 *   [W3 Total Cache](https://en-ca.wordpress.org/plugins/w3-total-cache/)
 *   WP Super Cache
 *   WP File Cache
-*   Divi Builder _Some functionality issues_ ([more information here](./divi-builder/troubleshooting.md))
+*   Divi Builder _Some functionality issues_ ([more information here](divi-builder/troubleshooting.md))
 
 Site Backup Plugins
 -------------------

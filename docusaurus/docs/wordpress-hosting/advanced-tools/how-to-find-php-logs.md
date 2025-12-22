@@ -30,4 +30,4 @@ If you're troubleshooting an issue or debugging your website, accessing PHP logs
 
 By following these steps, you can efficiently access and review PHP logs to maintain and troubleshoot your website.
 
-![-11-WordPress-Hosting-Pro-05-27-2025_03_02_PM.png](./img/33000075856151-1cafe40abe.png)
+![-11-WordPress-Hosting-Pro-05-27-2025_03_02_PM.png](img/33000075856151-1cafe40abe.png)

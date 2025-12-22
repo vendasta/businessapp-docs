@@ -6,7 +6,7 @@ description: "Google-fast WordPress sites \n   \n  Hosting websites can be time-
 
 ### Google-fast WordPress sites
 
-# ![Website-Pro.png](./img/4406958669591-bc828d686e.png)
+# ![Website-Pro.png](img/4406958669591-bc828d686e.png)
 
 Hosting websites can be time-consuming, and stressful, and often requires the expertise of trained technical people. Moreover, your clients expect their website to be reliable, easy to use, and come backed with top-notch security, speed, and storage. That's why you activated WordPress Hosting Pro-managed WordPress hosting!
 
@@ -16,7 +16,7 @@ WordPress Hosting Pro hosts your clients’ WordPress sites with the most truste
 
 * * *
 
-![WordPress Hosting Pro logo](./img/4406958669591-df49e85001.png)
+![WordPress Hosting Pro logo](img/4406958669591-df49e85001.png)
 
 **Product Description**
 

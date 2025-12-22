@@ -27,13 +27,13 @@ This plugin makes your website more inclusive by providing accessibility tools l
 
 You can customize your site’s title separator using the **Yoast SEO plugin**:
 
-1.  Install and activate **Yoast SEO** (via Plugins > Add New)  ![yoast.jpg](./img/32163270121623-6028301933.jpg)
+1.  Install and activate **Yoast SEO** (via Plugins > Add New)  ![yoast.jpg](img/32163270121623-6028301933.jpg)
     
-2.  In your WordPress dashboard, go to **Yoast SEO > Search Appearance ![Yoast1.jpg](./img/32163270121623-cbdc5a22a5.jpg)** 
+2.  In your WordPress dashboard, go to **Yoast SEO > Search Appearance ![Yoast1.jpg](img/32163270121623-cbdc5a22a5.jpg)** 
     
 3.  Under the **General** tab, choose your preferred separator (e.g., dash, pipe, or bullet)
     
-4.  Click **Save changes ![Yoast3.jpg](./img/32163270121623-59f2957a4d.jpg)** 
+4.  Click **Save changes ![Yoast3.jpg](img/32163270121623-59f2957a4d.jpg)** 
     
 
 This affects how titles appear in browser tabs and search engines.
@@ -63,7 +63,7 @@ When selecting a theme in WordPress Hosting Pro or WordPress Hosting Standard:
 
 Once active, Divi’s Visual Builder will be accessible from the WordPress dashboard and during page editing.
 
-![screenshot-www.websitepro.hosting-2022.02.18-09_27_11.jpeg](./img/32163270121623-c3fd9f1e5a.png)
+![screenshot-www.websitepro.hosting-2022.02.18-09_27_11.jpeg](img/32163270121623-c3fd9f1e5a.png)
 
 ### Q: How do I create a popup using Divi Builder?
 

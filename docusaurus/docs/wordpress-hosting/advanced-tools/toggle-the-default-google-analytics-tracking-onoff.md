@@ -18,12 +18,12 @@ If at any time our partners would like to turn Google Analytics back on, the tog
 
 2\. Click on Advanced tools
 
-![mceclip1.png](./img/12781597309591-100dba1dbb.png)
+![mceclip1.png](img/12781597309591-100dba1dbb.png)
 
 3\. Toggle the option for the Google Analytics Integration
 
-![mceclip0.png](./img/12781597309591-5eac791f8e.png)
+![mceclip0.png](img/12781597309591-5eac791f8e.png)
 
 4\. Click on Accept
 
-![mceclip2.png](./img/12781597309591-8c4094951e.png)
+![mceclip2.png](img/12781597309591-8c4094951e.png)

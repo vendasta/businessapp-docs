@@ -53,7 +53,7 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 
 If enabled, configure scoring criteria in `Administration` > `Score` and use the score to prioritize outreach in the company table.
 
-![Lead scoring interface in the CRM](./img/companies/lead-scoring.png)
+![Lead scoring interface in the CRM](img/companies/lead-scoring.png)
 
 :::tip
 Start with a simple score combining profile fit and engagement. Iterate after you review early results.

@@ -56,11 +56,11 @@ Sitemaps are especially useful for new websites, websites with few backlinks, or
 
 If you're migrating from the Mono Website Builder:
 
-1.  Launch the Mono product and click the **Settings** icon (top-right corner) ![mceclip0.png](./img/32163669418391-3caf6c989a.png)
+1.  Launch the Mono product and click the **Settings** icon (top-right corner) ![mceclip0.png](img/32163669418391-3caf6c989a.png)
     
 2.  Locate the **Site ID** — this is required for any support escalations
     
-3.  To view DNS records, go to **Account Center ![mceclip1.png](./img/32163669418391-8b31a743b5.png)** 
+3.  To view DNS records, go to **Account Center ![mceclip1.png](img/32163669418391-8b31a743b5.png)** 
     
 4.  DNS settings will be listed there for domain connection or migration
     

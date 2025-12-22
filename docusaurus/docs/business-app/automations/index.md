@@ -67,13 +67,13 @@ Use the Activity tab on an automation to see what ran, when it ran, and whether 
 - Builder and settings
   - Entry settings, error handling, and activity are covered below
 - Messaging actions
-  - See: [Messaging](./messaging.md)
+  - See: [Messaging](messaging.md)
 - Templates and recipes
-  - See: [Templates and recipes](./templates-and-recipes.md)
+  - See: [Templates and recipes](templates-and-recipes.md)
 - Start from a form
   - See: [Forms](../crm/forms.md)
 - Connect external systems with Zapier
-  - See: [Zapier](./zapier.md)
+  - See: [Zapier](zapier.md)
 
 ## Frequently Asked Questions (FAQs)
 

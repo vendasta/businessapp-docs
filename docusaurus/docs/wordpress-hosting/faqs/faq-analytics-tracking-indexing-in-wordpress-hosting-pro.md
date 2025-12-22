@@ -15,13 +15,13 @@ There are two ways to install Google Analytics in WordPress Hosting Pro: using t
 1.  Sign in to your [Google Analytics account](https://analytics.google.com/). 
     
 2.  Navigate to:  
-    **Admin > Property Settings > Tracking Info > Tracking Code ![mceclip1.png](./img/32137920258839-9f02204ad2.png)** 
+    **Admin > Property Settings > Tracking Info > Tracking Code ![mceclip1.png](img/32137920258839-9f02204ad2.png)** 
     
-3.  Copy your **Tracking ID** (format: `UA-XXXXXXX-X` or `G-XXXXXXX`)    ![mceclip2.png](./img/32137920258839-359b945518.png)
+3.  Copy your **Tracking ID** (format: `UA-XXXXXXX-X` or `G-XXXXXXX`)    ![mceclip2.png](img/32137920258839-359b945518.png)
     
 4.  In your WordPress dashboard (WordPress Hosting Pro):
     
-    *   Go to **Settings > General ![mceclip0.png](./img/32137920258839-12ba9a5cc9.png)** 
+    *   Go to **Settings > General ![mceclip0.png](img/32137920258839-12ba9a5cc9.png)** 
         
     *   Scroll to the bottom and paste your Tracking ID into the **Custom Google Analytics Tracking ID** field
         

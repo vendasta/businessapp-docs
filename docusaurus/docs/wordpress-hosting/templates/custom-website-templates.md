@@ -32,4 +32,4 @@ From here, create your template as though you were building a standard site. You
 Once you're satisfied with how your template looks, click **Save as Template**. Should you edit this template at a later time, click **Update Template** to overwrite the previous version.
 
 *   *   To edit a previously created template, click **Edit Template** on that template's card.  
-        ![screenshot-www.websitepro.hosting-2021.11.03-15_55_27.png](./img/4406957721879-fc30407057.png)
+        ![screenshot-www.websitepro.hosting-2021.11.03-15_55_27.png](img/4406957721879-fc30407057.png)

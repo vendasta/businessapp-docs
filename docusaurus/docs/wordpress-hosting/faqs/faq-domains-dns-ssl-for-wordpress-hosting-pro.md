@@ -112,7 +112,7 @@ Additionally, be aware of **CAA Records**:
     
 5.  Allow up to 24 hours for all changes to take full effect. During this time your old host may still be serving your site’s traffic. You can check on the status of your DNS Settings using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx) or viewing the **Domains** tab in WordPress Hosting **Pro.**
 
-**![Screenshot of the "Records" section of GoDaddy's DNS page showing correctly configured DNS Records.](./img/31886072929047-697db8d5a9.png)**
+**![Screenshot of the "Records" section of GoDaddy's DNS page showing correctly configured DNS Records.](img/31886072929047-697db8d5a9.png)**
 
 > Flush Google’s DNS cache for faster propagation: [Google DNS Cache Flush Tool](https://developers.google.com/speed/public-dns/cache)
 
@@ -136,7 +136,7 @@ Additionally, be aware of **CAA Records**:
     
 3.  Add your domain.
     
-4.  Cloudflare will display **nameservers** to replace at your domain registrar. ![mceclip0.png](./img/31886072929047-026a4eeaad.png)
+4.  Cloudflare will display **nameservers** to replace at your domain registrar. ![mceclip0.png](img/31886072929047-026a4eeaad.png)
     
 5.  Update your **domain’s nameservers** to Cloudflare’s.
     
@@ -211,7 +211,7 @@ Propagation can still take up to 24 hours depending on the ISP.
 
 No. **All WordPress Hosting Pro sites are automatically issued an SSL certificate** from Let’s Encrypt. This typically completes within a few minutes, but can take up to 24 hours.
 
-![Screenshot 2025-06-03 at 8.55.01 AM.png](./img/31886072929047-afecb7167c.png)
+![Screenshot 2025-06-03 at 8.55.01 AM.png](img/31886072929047-afecb7167c.png)
 
 #### **Q: Why does my site still show as “Not Secure” even with SSL?**
 
@@ -223,10 +223,10 @@ To troubleshoot:
     
 2.  Press **F12** or right-click and choose **Inspect**, then open the **Console** tab.
     
-3.  Look for errors about insecure content such as ![mceclip3.png](./img/31886072929047-2a6a1dcec1.png)
+3.  Look for errors about insecure content such as ![mceclip3.png](img/31886072929047-2a6a1dcec1.png)
     
 
-![mceclip2.png](./img/31886072929047-05d6dbaaf1.png)
+![mceclip2.png](img/31886072929047-05d6dbaaf1.png)
 
 Any `http://` assets must be updated to `https://` or replaced.
 

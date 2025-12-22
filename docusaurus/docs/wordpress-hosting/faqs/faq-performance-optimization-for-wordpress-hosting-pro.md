@@ -165,7 +165,7 @@ To disable the CDN:
 *   Toggle **Enable CDN** off
     
 
-![screenshot-www.websitepro.hosting-2021.10.18-15_56_38.png](./img/31887738060055-24f7ccda7c.png)
+![screenshot-www.websitepro.hosting-2021.10.18-15_56_38.png](img/31887738060055-24f7ccda7c.png)
 
 More about CDN functionality:  
 [What is Cloud CDN? (Google)](https://cloud.google.com/blog/topics/developers-practitioners/what-cloud-cdn-and-how-does-it-work)

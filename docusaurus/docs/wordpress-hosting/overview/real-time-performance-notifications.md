@@ -10,7 +10,7 @@ _Provide an excellent customer experience with real-time notifications on the st
 
 Channel Partners have the option for enhanced visibility into their client experiences by receiving notifications the moment there is a change in the status of their websites. 
 
-![Screen_Shot_2022-04-12_at_5.18.31_PM.png](./img/5426325099287-64e42cc219.png)
+![Screen_Shot_2022-04-12_at_5.18.31_PM.png](img/5426325099287-64e42cc219.png)
 
 With this new feature, Partners can opt-in to receive in-app or email notifications from their managed client's websites to be notified in real-time in the event of unplanned downtime, and the moment the service is restored.
 
@@ -34,12 +34,12 @@ Notifications can be enabled in three easy steps:
 
 1\. Click on the notifications bell in the Partner Center.
 
-![Screen_Shot_2022-04-13_at_11.08.26_AM.png](./img/5426325099287-f619e29a01.png)
+![Screen_Shot_2022-04-13_at_11.08.26_AM.png](img/5426325099287-f619e29a01.png)
 
 2\. Click on the gear icon that takes you to the settings
 
-![Screen_Shot_2022-04-13_at_11.09.55_AM.png](./img/5426325099287-f7a1e53ea8.png)
+![Screen_Shot_2022-04-13_at_11.09.55_AM.png](img/5426325099287-f7a1e53ea8.png)
 
 3\. Scroll down to the website section to enable notifications
 
-![Screen_Shot_2022-04-13_at_11.11.16_AM.png](./img/5426325099287-3b0f2f28da.png)
+![Screen_Shot_2022-04-13_at_11.11.16_AM.png](img/5426325099287-3b0f2f28da.png)

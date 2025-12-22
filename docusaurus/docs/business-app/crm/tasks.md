@@ -30,7 +30,7 @@ Tasks help you plan and track the actions required to move deals forward—calls
 2. Click the record name to open the profile.
 3. In the activity area, select `Tasks`, fill in details, and save.
 
-![Create tasks from a CRM record](./img/tasks/create-tasks-from-crm-record.png)
+![Create tasks from a CRM record](img/tasks/create-tasks-from-crm-record.png)
 
 ### Create from the Task Table
 
@@ -44,7 +44,7 @@ Tasks help you plan and track the actions required to move deals forward—calls
    - Tags
 3. Click `Create`.
 
-![Create tasks from the task table](./img/tasks/create-tasks-from-task-table.png)
+![Create tasks from the task table](img/tasks/create-tasks-from-task-table.png)
 
 :::tip
 Use tags and priority to organize your daily queue, then save a view for today’s focus tasks.
@@ -55,7 +55,7 @@ Use tags and priority to organize your daily queue, then save a view for today�
 1. Go to `CRM` > `Tasks`.
 2. Click `Add filter` to filter tasks and save common filters as `Views`.
 
-![View and filter tasks](./img/tasks/view-and-filter-tasks.png)
+![View and filter tasks](img/tasks/view-and-filter-tasks.png)
 
 :::note
 Views are personal by default. Name them clearly so you can reuse them.
@@ -68,7 +68,7 @@ Within a CRM record’s activity timeline:
 - Complete: check the task checkbox, or use `Mark as complete` if shown.
 - Edit: open the task menu (kebab), choose `Edit activity`, make changes, and save.
 
-![Edit, complete, and delete tasks](./img/tasks/edit-complete-delete-tasks.png)
+![Edit, complete, and delete tasks](img/tasks/edit-complete-delete-tasks.png)
 
 From the task table:
 
@@ -83,8 +83,8 @@ From the task table:
 2. Click `Start [x] tasks` to work through them consecutively.
 3. For each task, choose: `Mark as complete`, `Reschedule`, or `Skip`. Use the association dropdown to jump between linked records. Exit the queue any time and resume from the table.
 
-![Complete tasks consecutively](./img/tasks/complete-tasks-consecutively.png)
-![Task queue actions](./img/tasks/task-queue-actions.png)
+![Complete tasks consecutively](img/tasks/complete-tasks-consecutively.png)
+![Task queue actions](img/tasks/task-queue-actions.png)
 
 :::info
 The task queue works best with a narrowly filtered set of tasks (same type or segment) to reduce context switching.

@@ -100,7 +100,7 @@ Upgrading from WordPress Hosting Standard or Pro
     
 3.  Choose **Premium**.
     
-4.  Acknowledge the pricing change notice and proceed. ![Screenshot 2025-05-21 at 10.29.55 AM.png](./img/32267466430615-566bc3511c.png)
+4.  Acknowledge the pricing change notice and proceed. ![Screenshot 2025-05-21 at 10.29.55 AM.png](img/32267466430615-566bc3511c.png)
     
 
 **Step 2: Launching the Product**
@@ -124,7 +124,7 @@ Upgrading from WordPress Hosting Standard or Pro
 
 1.  Go to the **WordPress Dashboard**.
     
-2.  Navigate to **Network Admin > Sites**. ![e824c194-ecb6-41e6-bd60-b2cbd1fbe95d.png](./img/32267466430615-b2afcdcfda.png)
+2.  Navigate to **Network Admin > Sites**. ![e824c194-ecb6-41e6-bd60-b2cbd1fbe95d.png](img/32267466430615-b2afcdcfda.png)
     
 3.  Select **Add New** and enter:
     
@@ -132,14 +132,14 @@ Upgrading from WordPress Hosting Standard or Pro
         
     *   Site Title
         
-    *   Admin Email ![fb89f6e8-8461-4117-9361-0a5850ad9bc8.png](./img/32267466430615-149e1bcf14.png)
+    *   Admin Email ![fb89f6e8-8461-4117-9361-0a5850ad9bc8.png](img/32267466430615-149e1bcf14.png)
         
 
 **Step 4: Assigning a Site Admin**
 
 *   Site Admins have access to content and settings for their assigned subsite only.
     
-*   Network Admins retain control over all plugins, themes, and global configurations. ![ae10067c-21ed-48c5-bd53-9a882948d1b1.png](./img/32267466430615-97098dde80.png) ![e252c335-6442-46f4-a531-2e00bfb1613d.png](./img/32267466430615-73f9ec1274.png)
+*   Network Admins retain control over all plugins, themes, and global configurations. ![ae10067c-21ed-48c5-bd53-9a882948d1b1.png](img/32267466430615-97098dde80.png) ![e252c335-6442-46f4-a531-2e00bfb1613d.png](img/32267466430615-73f9ec1274.png)
     
 
 **Step 5: Connecting a Custom Domain (Main Site)**

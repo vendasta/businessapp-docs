@@ -29,7 +29,7 @@ The AI Workforce is a set of configurable AI Employees that help do the heavy li
     </Link>
   </div>
   <div className="col col--4">
-    <Link className="card-link" to="./knowledge-base.md">
+    <Link className="card-link" to="knowledge-base.md">
       <div className="card">
         <div className="card__header"><h3>Knowledge Base</h3></div>
         <div className="card__body"><p>Provide business‑specific information for accurate answers.</p></div>
@@ -78,5 +78,5 @@ Go to <AISparkleIcon /> `AI > AI Workforce` in Business App. Choose the employee
 <details>
 <summary>How do AI Employees get my business information?</summary>
 
-Your Business Profile is included by default. You can add additional knowledge sources in the Knowledge Base. See the [Knowledge Base Overview](./knowledge-base.md).
+Your Business Profile is included by default. You can add additional knowledge sources in the Knowledge Base. See the [Knowledge Base Overview](knowledge-base.md).
 </details>

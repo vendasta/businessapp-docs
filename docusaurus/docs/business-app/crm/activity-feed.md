@@ -39,7 +39,7 @@ Yes. Use filters to focus on emails, notes, calls, meetings, and more.
 <details>
 <summary>Can I delete a recorded meeting activity?</summary>
 
-Yes. Open the related record and delete the activity there; the Activity Feed will reflect the change. You can access activities from [Contacts](/business-app/crm/contacts), [Companies](/business-app/crm/companies), or [Opportunities](/business-app/crm/opportunities).
+Yes. Open the related record and delete the activity there; the Activity Feed will reflect the change. You can access activities from [Contacts](/business-app/crm/contacts), [Companies](companies.md), or [Opportunities](opportunities.md).
 </details>
 
 <details>

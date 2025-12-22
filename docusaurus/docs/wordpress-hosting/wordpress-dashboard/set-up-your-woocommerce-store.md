@@ -31,15 +31,15 @@ WooCommerce is a plugin that integrates seamlessly with your WordPress site, tra
     *   Input the product name, price, inventory details, and attributes.
     *   Replace or upload product images by clicking **Set Product Image** in the lower-right corner. Add additional images by selecting **Add Product Gallery Images**.
 
-![add-new-product-68960f4d11b20869f0db4abcfeb02389.png](./img/32995646195095-677adbbd1d.png)
+![add-new-product-68960f4d11b20869f0db4abcfeb02389.png](img/32995646195095-677adbbd1d.png)
 
-![product-details-fb3f7e980c1bf367f5365b5623a8b71e.png](./img/32995646195095-07fc126fa3.png)
+![product-details-fb3f7e980c1bf367f5365b5623a8b71e.png](img/32995646195095-07fc126fa3.png)
 
 ### Setting Up Payments
 
 1.  **Open Payment Settings**:
     *   Hover over the **WooCommerce** tab in the left navigation and select **Settings**.
-    *   Click the **Payments** tab. ![payment-methods-b9c2592c63aa56701c2a619ca5e2baca.png](./img/32995646195095-8d7604e984.png)
+    *   Click the **Payments** tab. ![payment-methods-b9c2592c63aa56701c2a619ca5e2baca.png](img/32995646195095-8d7604e984.png)
 2.  **Enable Payment Options**:
     *   Toggle the switch under the **Enabled** column for your preferred payment method. The toggle will turn purple when activated.
     *   Click the **Setup** button next to the selected payment method and follow the prompts to configure it.

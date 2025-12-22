@@ -33,7 +33,7 @@ This field is editable by anyone with permission to manage contact records.
 - **Prioritize follow-ups** by sorting or filtering contacts based on score
 - **Track engagement trends** over time for each client
 
-![Custom Fields inside Administration](./img/administration_lead_score.png)
+![Custom Fields inside Administration](img/administration_lead_score.png)
 
 ## Frequently Asked Questions (FAQs)
 

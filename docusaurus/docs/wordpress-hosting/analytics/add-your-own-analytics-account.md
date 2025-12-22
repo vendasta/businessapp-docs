@@ -16,4 +16,4 @@ _Note: Plugins meant to support Google Analytics are available, but these often 
 
 Please keep in mind that this ID will run concurrently with WordPress Hosting’s built-in analytic tracking, which will remain on the WordPress Hosting dashboard.
 
-![Under "Settings > General" you can enter a Google Analytics Tracking ID connected to your own Google Analytics Account.](./img/smaller_GA_tracking_id.png)
+![Under "Settings > General" you can enter a Google Analytics Tracking ID connected to your own Google Analytics Account.](img/smaller_GA_tracking_id.png)

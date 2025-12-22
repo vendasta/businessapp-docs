@@ -14,7 +14,7 @@ You’ll see a breakdown of leads generated from sources like:
 
 This insight helps you understand which tools are contributing to your business growth and whether your lead capture strategies are effective.
 
-![Customer Relations Lead Analytics](./img/executive_report_lead_analytics.png)
+![Customer Relations Lead Analytics](img/executive_report_lead_analytics.png)
 
 ## How to Use Lead Source Analytics
 

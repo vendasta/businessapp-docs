@@ -146,3 +146,9 @@ SCORECARD.md
 .DS_Store
 */.DS_Store
 
+# Broken links report (keep locally but don't commit)
+docusaurus/broken_links_full_report.csv
+
+# Backup files
+*.bak
+
