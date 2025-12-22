@@ -148,6 +148,93 @@ const config: Config = {
             from: '/wordpresshosting',
             to: '/wordpress-hosting/',
           },
+          // Redirect legacy business-app sections without product prefix
+          // These handle external links that don't include /business-app/ prefix
+          {
+            from: '/administration',
+            to: '/business-app/administration/',
+          },
+          {
+            from: '/ai',
+            to: '/business-app/ai/',
+          },
+          {
+            from: '/automations',
+            to: '/business-app/automations/',
+          },
+          {
+            from: '/campaigns',
+            to: '/business-app/campaigns/',
+          },
+          {
+            from: '/conversations',
+            to: '/business-app/conversations/',
+          },
+          {
+            from: '/crm',
+            to: '/business-app/crm/',
+          },
+          {
+            from: '/executivereport',
+            to: '/business-app/executivereport/',
+          },
+          {
+            from: '/store',
+            to: '/business-app/store/',
+          },
+          {
+            from: '/getting-started-with-business-app',
+            to: '/business-app/getting-started-with-business-app',
+          },
+          // Also handle /docs/ prefixed versions of these sections
+          {
+            from: '/docs/administration',
+            to: '/business-app/administration/',
+          },
+          {
+            from: '/docs/ai',
+            to: '/business-app/ai/',
+          },
+          {
+            from: '/docs/automations',
+            to: '/business-app/automations/',
+          },
+          {
+            from: '/docs/campaigns',
+            to: '/business-app/campaigns/',
+          },
+          {
+            from: '/docs/conversations',
+            to: '/business-app/conversations/',
+          },
+          {
+            from: '/docs/crm',
+            to: '/business-app/crm/',
+          },
+          {
+            from: '/docs/executivereport',
+            to: '/business-app/executivereport/',
+          },
+          {
+            from: '/docs/store',
+            to: '/business-app/store/',
+          },
+          {
+            from: '/docs/getting-started-with-business-app',
+            to: '/business-app/getting-started-with-business-app',
+          },
+          // Generate overview redirects for all legacy sections
+          // Pattern: /section/section_overview -> /business-app/section/
+          ...legacyBusinessAppSections.flatMap(section => [
+            {
+              from: `/${section}/${section}_overview`,
+              to: `/business-app/${section}/`,
+            },
+            {
+              from: `/docs/${section}/${section}_overview`,
+              to: `/business-app/${section}/`,
+            },
+          ]),
         ],
         createRedirects(existingPath) {
           // Only create redirects for business-app paths
@@ -163,8 +250,8 @@ const config: Config = {
             return undefined;
           }
 
-          // Create redirects from both root-level and /docs/ paths
-          // Handle both trailing slash and non-trailing slash versions
+          // Create redirects from paths without product prefix (for external links)
+          // These redirects handle cases like /administration/integrations -> /business-app/administration/integrations
           const legacyPath = `/${remainder}`;
           const docsLegacyPath = `/docs/${remainder}`;
           const redirects = [legacyPath];
