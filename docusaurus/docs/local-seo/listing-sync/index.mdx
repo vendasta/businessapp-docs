@@ -7,7 +7,7 @@ description: Set up Listing Sync, connect Apple, understand statuses and reports
 
 ## What is Listing Sync?
 
-Listing Sync allows you to instantaneously sync common business data to your Google Business Profile, Facebook, Bing, and X profiles to ensure the accuracy and consistency of your contact info. This helps improve SEO and customer acquisition while reducing the time it takes to update multiple online profiles.
+Listing Sync allows you to sync common business data to your Google Business Profile, Facebook, Bing, and X profiles to ensure the accuracy and consistency of your contact info. This helps improve SEO and customer acquisition while reducing the time it takes to update multiple online profiles.
 
 ## Why is Listing Sync important?
 
@@ -53,8 +53,8 @@ The Instagram source selection does not have an edit button because it is manage
 ## Service area businesses
 
 - If you mark a business as a Service Area Business in the Business Profile, the system will still attempt to match and pull listings into the platform.
-- If an external source's address matches your Business Profile, it appears as an accurate listing.
-- If the address does not match, it appears as "listing found with possible errors," and you must edit it on the external source.
+- If an external source's Business Name, Phone Number and Website URL matches your Business Profile, it appears as an accurate listing.
+- If the Business Name, Phone Number and Website URL does not match, it appears as "listing found with possible errors," and you must edit it on the external source.
 
 ![Service area business listings](./img/service-area-business-listings.jpg)
 
@@ -66,7 +66,6 @@ To get the most value from Listing Sync:
 - Select a primary category and two secondary categories.
 - Keep your Google Business Profile optimized every month.
 - Ensure the business address is searchable with a quick online search.
-- Ensure the phone number is accurate.
 ## Score considerations
 
 The listing score per source has a maximum attainable value, but there is no fixed maximum across all sources. Overall scores can change as sources are added or removed. You can see the per‑source maximum on the listings table under `Listing Sync`.
@@ -81,12 +80,11 @@ Common fields that sync to multiple sources include:
 - Phone number
 - Website
 - Payment methods
-- Services
 - Brands / brands carried
 - Hours of operation and special hours
 - Logo / primary photo
 - SEO keywords
-- Instagram handle
+- Social URL's
 
 For source‑specific details inside the product: open `Local SEO` > `Listing Sync` > choose a source > `Syncing Info`.
 
@@ -119,7 +117,7 @@ The `Accuracy Report` column reflects independent reporting on data submitted to
 ### Accuracy report statuses
 
 - **Accurate**: There is a 100% match between your Business Profile data and the listing source. Some directories require cleansing, which can cause the report to differ from your raw Business Profile data. Mandatory cleansing directories include Apple, Yelp, Foursquare, Baidu, HERE, and Tripadvisor.
-- **In progress**: The listing data is being updated on the source. This status can persist for some time.
+- **Possible errors**: An incorrect listing was found. The listing data is being updated on the source. This status can persist for some time.
 - **Not found**: The system did not find a good listing match.
 - **Source does not have reporting**: The system cannot verify whether data was updated because the directory cannot communicate a status back. GPS sources commonly show this. Data submission is when data is pushed to the directory, while data collection is when systems explore the internet to verify updates; some sources do not support robust data collection.
 
@@ -131,6 +129,7 @@ The `Accuracy Report` column reflects independent reporting on data submitted to
 
 - **Submitted to source**: The system submitted your Business Profile information to the directory. Each source controls its own publishing timeline. Allow 24–72 hours for most sources, up to 30 days for GPS directories. Bing and Apple Maps can take longer. Voice sources are submission-based and may take longer.
 - **Synced**: The directory reported back that the listing was updated. The `Accuracy Report` then shows the accuracy of that data. If it shows `Accurate`, the listing is live with 100% data accuracy.
+-**Syncing**: The listing is being updated on the source. This status can persist for some time.
 - **Not syncing**: The business may have a paid advertising relationship with the source that blocks updates from the system.
 
 ![Submitted to source status](./img/submitted-to-source-status.jpg)
@@ -139,7 +138,7 @@ The `Accuracy Report` column reflects independent reporting on data submitted to
 
 ### Claimed listings
 
-When a listing is marked as claimed, someone controls it. Claimed listings are verified by the owner through a paid relationship with the site or via a third‑party syncing service. Only the verifier can maintain it. Listing Sync cannot manage claimed listings. If you want Listing Sync to manage them, you must contact the listing site or service provider and ask them to release the listings.
+When a listing is marked as claimed, someone controls it. Claimed listings are verified by the owner through a paid relationship with the site or via a third‑party syncing service. Only the verifier can maintain it. Listing Sync cannot manage or update claimed listings. If you want Listing Sync to manage them, you must contact the listing site or service provider and ask them to release the listings.
 
 :::info
 "As I am managing my business online listings through a technical service provider, I kindly ask you to release the listing -(insert link here)- or completely delete it, so that my business data can be automatically submitted and updated onto your directory. Please inform me as soon as the optimization of my online presence can be resumed. Kind regards, YOUR NAME".
