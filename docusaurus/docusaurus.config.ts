@@ -138,7 +138,23 @@ const config: Config = {
           },
           {
             from: '/reputationmanagement',
-            to: '/reputation-management/',
+            to: '/reputation/',
+          },
+          {
+            from: '/reputation-management',
+            to: '/reputation/',
+          },
+          {
+            from: '/reputation-management/',
+            to: '/reputation/',
+          },
+          {
+            from: '/docs/reputation-management',
+            to: '/reputation/',
+          },
+          {
+            from: '/docs/reputation-management/',
+            to: '/reputation/',
           },
           {
             from: '/socialmarketing',
