@@ -63,7 +63,7 @@ Ways to Fix this:
 
 As an example, the error above can be seen in the PHP logs:
 
-![screenshot-vendasta-support.zendesk.com-2021.11.03-16_05_23.png](./img/4406960816663-91cba3dbc7.png)
+![PHP error log screenshot](./img/4406960816663-91cba3dbc7.png)
 
 The theme I am using (Divi-child), has incorrect syntax on line 6 of functions.php. This can be fixed by rolling back to the backup I made before the change. We could also open the file with an SFTP connection and correct the syntax issue, I removed a ";" to generate the error on line 6, so it needs to be replaced. This error could also be seen by enabling the staging environment and turning on WP\_Debug.
 
