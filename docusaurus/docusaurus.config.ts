@@ -145,15 +145,7 @@ const config: Config = {
             to: '/reputation/',
           },
           {
-            from: '/reputation-management/',
-            to: '/reputation/',
-          },
-          {
             from: '/docs/reputation-management',
-            to: '/reputation/',
-          },
-          {
-            from: '/docs/reputation-management/',
             to: '/reputation/',
           },
           {
