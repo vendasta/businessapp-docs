@@ -37,7 +37,7 @@ export const products: Product[] = [
     name: 'Reputation AI',
     logo: '/img/Reputation-Management.svg',
     sidebarId: 'repmanSidebar',
-    path: '/reputation-management/',
+    path: '/reputation/',
     tagline: 'AI-powered review management software',
   },
   {

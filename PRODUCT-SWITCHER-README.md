@@ -21,7 +21,7 @@ docusaurus/
 │   ├── business-app/           # Business App documentation
 │   ├── ad-intel/               # Ad Intel documentation
 │   ├── local-seo/               # Local SEO documentation
-│   ├── reputation-management/   # Reputation AI documentation
+│   ├── reputation/   # Reputation AI documentation
 │   ├── social-marketing/        # Social Marketing documentation
 │   ├── wordpress-hosting/       # WordPress Hosting documentation
 │   └── yesware/                 # Yesware documentation
@@ -119,7 +119,7 @@ To add a new product:
 - `/business-app/` - Business App docs
 - `/ad-intel/` - Ad Intel docs
 - `/local-seo/` - Local SEO docs
-- `/reputation-management/` - Reputation AI docs
+- `/reputation/` - Reputation AI docs
 - `/social-marketing/` - Social Marketing docs
 - `/wordpress-hosting/` - WordPress Hosting docs
 - `/yesware/` - Yesware docs
@@ -249,7 +249,7 @@ Potential improvements:
 All documentation has been migrated from separate repos:
 - `adintel-docs` → `/docs/ad-intel/`
 - `localseo-docs` → `/docs/local-seo/`
-- `repman-docs` → `/docs/reputation-management/`
+- `repman-docs` → `/docs/reputation/`
 - `socialmarketing-docs` → `/docs/social-marketing/`
 - `website-docs` → `/docs/wordpress-hosting/`
 - `yesware-docs` → `/docs/yesware/`
