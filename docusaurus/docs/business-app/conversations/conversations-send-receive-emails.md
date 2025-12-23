@@ -76,5 +76,5 @@ Not currently. The business uses one shared email address and Conversations. But
 <details>
 <summary><strong>I see an area in my settings called “email configuration” – is this where I manage my email for Conversations?</strong></summary>
 
-No, not currently. The email configuration area in settings is for managing email that’s sent from Campaigns Pro and Reputation Management Premium. 
+No, not currently. The email configuration area in settings is for managing email that’s sent from Campaigns Pro and Reputation AI Premium. 
 </details>

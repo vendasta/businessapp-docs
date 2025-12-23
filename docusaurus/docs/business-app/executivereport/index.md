@@ -91,7 +91,7 @@ Sections only appear if there was updated data. If a section is missing, no new 
 **What products contribute data to the Executive Report?**  
 Most active products push data to the report, including:
 - Google Business Profile
-- Reputation Management
+- Reputation AI
 - Local SEO
 - Social Marketing
 - Advertising Intelligence (Google Ads, Facebook Ads)

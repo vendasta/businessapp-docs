@@ -34,7 +34,7 @@ export const products: Product[] = [
   },
   {
     id: 'repman',
-    name: 'Reputation Management',
+    name: 'Reputation AI',
     logo: '/img/Reputation-Management.svg',
     sidebarId: 'repmanSidebar',
     path: '/reputation-management/',

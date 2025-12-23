@@ -8,7 +8,7 @@ This documentation contains documentation for multiple products with a Product S
 1. **Business App** - Customer acquisition and engagement platform
 2. **Advertising Intelligence** - Unified PPC reporting
 3. **Local SEO** - Local rankings optimization
-4. **Reputation Management** - Review management software
+4. **Reputation AI** - Review management software
 5. **Social Marketing** - Social media management
 6. **WordPress Hosting** - Website hosting and management
 7. **Yesware** - Sales engagement and email marketing
@@ -21,7 +21,7 @@ docusaurus/
 │   ├── business-app/           # Business App documentation
 │   ├── ad-intel/               # Ad Intel documentation
 │   ├── local-seo/               # Local SEO documentation
-│   ├── reputation-management/   # Reputation Management documentation
+│   ├── reputation-management/   # Reputation AI documentation
 │   ├── social-marketing/        # Social Marketing documentation
 │   ├── wordpress-hosting/       # WordPress Hosting documentation
 │   └── yesware/                 # Yesware documentation
@@ -119,7 +119,7 @@ To add a new product:
 - `/business-app/` - Business App docs
 - `/ad-intel/` - Ad Intel docs
 - `/local-seo/` - Local SEO docs
-- `/reputation-management/` - Reputation Management docs
+- `/reputation-management/` - Reputation AI docs
 - `/social-marketing/` - Social Marketing docs
 - `/wordpress-hosting/` - WordPress Hosting docs
 - `/yesware/` - Yesware docs
