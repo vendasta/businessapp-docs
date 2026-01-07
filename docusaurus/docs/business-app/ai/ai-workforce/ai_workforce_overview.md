@@ -48,17 +48,18 @@ The **Profile** section is where you set the basics for your AI Employee—how t
 The **Channels** section lets you choose where your AI Employee will work for you.
 _What this is:_ Channels are the different places or platforms where your AI Employee can interact with your customers—like website chat, SMS, phone calls, or even Google Meet.
 
-_What to do:_  
-Review the available channels for your AI Employee’s role. Turn on only the channels that make sense for your business right now. For example, you might want your AI to respond on your website’s chat widget, via text messages, or answer phone calls.
+_What to do:_
+Review the available channels for your AI Employee's role. Turn on only the channels that make sense for your business right now. For example, you might want your AI to respond on your website's chat widget, via text messages, email, or answer phone calls.
 
-- Website chat Widget  
-- SMS (text messages)  
-- Phone calls (voice)  
+- Website chat Widget
+- Email
+- SMS (text messages)
+- Phone calls (voice)
 - WhatsApp
 - Facebook
 - Instagram
 
-You can enable or disable channels at any time.  
+You can enable or disable channels at any time.
 > **Tip:** Start with just one or two channels while you get comfortable, then expand as you see results!
 
 ---
@@ -110,7 +111,7 @@ Add any information that would help your AI answer questions or provide better s
 <details>
 <summary>How many channels can I enable for one AI Employee?</summary>
 
-You can enable as many available channels as you like. For example, a single AI Employee can handle website chat, SMS, and Facebook Messenger simultaneously. 
+You can enable as many available channels as you like. For example, a single AI Employee can handle website chat, email, SMS, and Facebook Messenger simultaneously.
 
 </details>
 

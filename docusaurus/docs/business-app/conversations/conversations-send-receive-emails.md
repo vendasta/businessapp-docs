@@ -7,6 +7,22 @@ import TabItem from '@theme/TabItem';
 
 You can use Conversations to send and receive emails with leads and customers from a shared email address. As long as you have the email address for a contact, anyone on the team can send an email to that customer from your centralized Conversations and keep message history in one shared place.
 
+## AI Auto-Response for Emails
+
+The AI Chat Receptionist can automatically respond to inbound emails, providing instant 24/7 customer support via email just like other communication channels. When enabled, the AI will:
+
+- Automatically reply to customer emails within minutes
+- Answer questions using your business profile and knowledge base
+- Capture lead information and book appointments
+- Create a conversation thread in Conversations for your team to monitor
+
+**To enable AI auto-response for email:**
+1. Go to AI > AI Workforce in your dashboard
+2. Configure your AI Chat Receptionist
+3. In the Communication Channels section, enable the **Email** channel
+4. Your AI will now automatically respond to emails sent to your business
+
+Learn more about setting up and customizing your [AI Chat Receptionist](/business-app/ai/ai-workforce/ai-chat-receptionist/).
 
 ## Sender, Reply, and Forwarding settings for email in Conversations
 
