@@ -33,6 +33,30 @@ The AI Reputation Specialist addresses these challenges by automating responses 
 
 ## How to set up the AI Reputation Specialist
 
+<div
+  className="wistia_responsive_padding"
+  style={{ padding: '56.25% 0 0 0', position: 'relative' }}
+>
+  <div
+    className="wistia_responsive_wrapper"
+    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+  >
+    <iframe
+      src="https://fast.wistia.net/embed/iframe/xw7sgjsgeq?web_component=true&seo=true"
+      title="AI Reputation Specialist overview video"
+      allow="autoplay; fullscreen"
+      allowTransparency
+      frameBorder="0"
+      scrolling="no"
+      className="wistia_embed"
+      name="wistia_embed"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </div>
+</div>
+<script src="https://fast.wistia.net/player.js" async></script>
+
 ### Core requirements
 
 Ensure your setup includes:
