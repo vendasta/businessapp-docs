@@ -15,11 +15,11 @@ Within the **Product Settings** section, you'll see an option labeled **Show Inc
 **Here’s an illustration of the setting in action:**
 
 When the included Website templates are enabled:   
-![Screenshot 2025-06-03 at 10.02.02 AM.png](./img/28760299656087-dfca0e567c.png)  
+![Screenshot 2025-06-03 at 10.02.02 AM.png](img/28760299656087-dfca0e567c.png)  
   
-![Screenshot 2025-06-03 at 10.02.56 AM.png](./img/28760299656087-d2f0b2ec10.png)
+![Screenshot 2025-06-03 at 10.02.56 AM.png](img/28760299656087-d2f0b2ec10.png)
 
 When the included Website templates are disabled:   
-![Screenshot 2025-06-03 at 10.03.11 AM.png](./img/28760299656087-cbbe6c030b.png)  
+![Screenshot 2025-06-03 at 10.03.11 AM.png](img/28760299656087-cbbe6c030b.png)  
   
-![Screenshot 2025-06-03 at 10.03.40 AM.png](./img/28760299656087-fd2d9dbf7a.png)
+![Screenshot 2025-06-03 at 10.03.40 AM.png](img/28760299656087-fd2d9dbf7a.png)

@@ -22,10 +22,10 @@ This feature lets Partners duplicate their existing templates, or create new one
 
 1.  Go to **WordPress Hosting > Templates** and hover over a template. You will now see a **Duplicate** option. 
 
-![Screenshot 2025-06-03 at 10.42.28 AM.png](./img/5616708167191-645bb34d14.png)
+![Screenshot 2025-06-03 at 10.42.28 AM.png](img/5616708167191-645bb34d14.png)
 
 1.  Clicking on Duplicate will prompt you to define a new template name. Simply type in your new template name and click **Create Template**.
 2.  To edit the template, simply click on **Edit Template.** You will be taken to the WordPress Dashboard where you can edit your site.
 3.  To save the changes made to your new custom template, click **Update Template** under Template Management.
 
-![Screenshot 2025-06-03 at 10.42.54 AM.png](./img/5616708167191-2d58288672.png)
+![Screenshot 2025-06-03 at 10.42.54 AM.png](img/5616708167191-2d58288672.png)

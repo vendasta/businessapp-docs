@@ -29,10 +29,10 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 2. Connect your calendar and configure availability.
 3. Create personal or team booking links and share them.
 
-![My Meetings overview](./img/my-meetings/business-app-my-meetings.png)
-![Create booking link](./img/my-meetings/create-booking-link-1.png)
-![Booking link settings](./img/my-meetings/booking-link-settings.png)
-![Share booking link](./img/my-meetings/booking-link-share.png)
+![My Meetings overview](img/my-meetings/business-app-my-meetings.png)
+![Create booking link](img/my-meetings/create-booking-link-1.png)
+![Booking link settings](img/my-meetings/booking-link-settings.png)
+![Share booking link](img/my-meetings/booking-link-share.png)
 
 ## Frequently Asked Questions (FAQs)
 

@@ -56,7 +56,7 @@ Contacts are automatically created for every new recipient you email. However, y
    - Phone Number
 4. Click `Create` to save the contact.
 
-![Creating a contact in Gmail](./img/how-to-create-a-new-yesware-contact-7f3e97b2.jpg)
+![Creating a contact in Gmail](img/how-to-create-a-new-yesware-contact-7f3e97b2.jpg)
 
 ### For Outlook
 
@@ -71,7 +71,7 @@ Contacts are automatically created for every new recipient you email. However, y
    - Notes
 5. Click `Create` to save the contact.
 
-![Creating a contact in the web app](./img/how-to-create-a-new-yesware-contact-f84b0646.jpg)
+![Creating a contact in the web app](img/how-to-create-a-new-yesware-contact-f84b0646.jpg)
 
 You can return to the contact later to edit or update any information as needed.
 
@@ -170,14 +170,14 @@ From your Contacts tab in the sidebar (Gmail) or on the app site, you can add co
 5. The information that pulls through is the information available in the Contacts sidebar.
 6. Preview the Campaign to make sure your merge fields are set up correctly with the contact information.
 
-![Adding a contact to a Campaign](./img/how-do-i-add-a-yesware-contact-005a276b.jpg)
+![Adding a contact to a Campaign](img/how-do-i-add-a-yesware-contact-005a276b.jpg)
 
 **In the App Site:**
 1. In the Contacts page, click on the `Campaign` button within the contact.
 2. This will launch the Campaign screen in the app site.
 3. Select, edit, and add the contact to one of your Yesware Campaigns.
 
-![Campaign button in app site](./img/how-do-i-add-a-yesware-contact-5364ab04.jpg)
+![Campaign button in app site](img/how-do-i-add-a-yesware-contact-5364ab04.jpg)
 
 </details>
 

@@ -40,7 +40,7 @@ To create a custom object:
 
 ## Extend objects with custom fields
 
-Need to store more than the default set of fields? Use [CRM Fields](./app_settings_crm_fields.md) to introduce additional data points such as preferred services, contract numbers, or onboarding dates.
+Need to store more than the default set of fields? Use [CRM Fields](app_settings_crm_fields.md) to introduce additional data points such as preferred services, contract numbers, or onboarding dates.
 
 Custom fields allow you to:
 

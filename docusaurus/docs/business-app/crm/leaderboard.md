@@ -26,7 +26,7 @@ Use the Leaderboard to see top-performing salespeople and teams. Filter, compare
 2. Select the metric and time range.
 3. Filter by team or salesperson as needed.
 
-![Leaderboard overview](./img/leaderboard/leaderboard_overview.png)
+![Leaderboard overview](img/leaderboard/leaderboard_overview.png)
 
 ## Frequently Asked Questions (FAQs)
 

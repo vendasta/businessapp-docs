@@ -10,11 +10,11 @@ All AI Employees share a common structure, with configurable elements like their
 
 See these guides for step-by-step setup or details on specific AI Employees:
 - [Set up the AI Chat Receptionist](./ai-chat-receptionist/)
-- [Set up the AI Voice Receptionist](./ai-voice-receptionist)
+- [Set up the AI Voice Receptionist](ai-voice-receptionist.md)
 
 For more detail on setup:
 - [AI Capabilities Overview](../ai-capabilities/)
-- [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities)
+- [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md.md)
 
 If you’re just getting started, review the sections below for an overview of the main elements you’ll configure for any AI Employee.
 
@@ -76,7 +76,7 @@ Review the available capabilities for your chosen AI Employee.
 - **Turn on** the capabilities that are most important for your workflow and customer experience.
 - **Add or adjust capabilities** as your business needs evolve.
 - Use the additional instructions/goals field to give extra context or specific directions.
-- **Create your own custom capabilities:** You can design custom tasks for your AI Employee to perform, using the Custom Capabilities builder. This is great for advanced workflows or unique business needs. [Learn more ›](../ai-capabilities/creating-custom-capabilities)
+- **Create your own custom capabilities:** You can design custom tasks for your AI Employee to perform, using the Custom Capabilities builder. This is great for advanced workflows or unique business needs. [Learn more ›](../ai-capabilities/creating-custom-capabilities.md.md)
 
 _Examples of capabilities you might enable:_
 - Capture lead information (e.g., name, email, phone)
