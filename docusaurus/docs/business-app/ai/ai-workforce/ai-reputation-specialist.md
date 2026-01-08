@@ -6,32 +6,7 @@ tags: [automations, reviews, nps, ai-workforce]
 keywords: [ai-reputation-specialist, review response, nps data, google business profile, facebook reviews]
 ---
 
-## What is the AI Reputation Specialist?
-
 The AI Reputation Specialist is an AI-powered assistant that helps you manage and analyze customer feedback at scale. It can automatically respond to reviews using predefined rules and knowledge, and allows you to explore reviews and Net Promoter Score (NPS) data through a conversational interface.
-
-## Why is the AI Reputation Specialist important?
-
-Customer reviews and NPS feedback affect reputation, trust, and buying decisions. Managing this feedback manually can be inconsistent and time-consuming as volume increases.
-
-Without automation, you may encounter:
-
-- Delayed or missed responses
-- Inconsistent tone across platforms
-- Limited insight into recurring issues
-- Difficulty analyzing large volumes of feedback
-
-The AI Reputation Specialist addresses these challenges by automating responses and providing structured analysis.
-
-## What’s included with the AI Reputation Specialist?
-
-- Automatically generate responses to customer reviews using AI
-- Apply custom rules and knowledge base content to guide review responses
-- Auto-respond to reviews on Google Business Profile (GBP) and to customers who recommend on Facebook.
-- Chat with and analyze all customer reviews and NPS feedback
-- Identify sentiment trends, common themes, and key insights across feedback data
-
-## How to set up the AI Reputation Specialist
 
 <div
   className="wistia_responsive_padding"
@@ -56,6 +31,29 @@ The AI Reputation Specialist addresses these challenges by automating responses 
   </div>
 </div>
 <script src="https://fast.wistia.net/player.js" async></script>
+
+## Why is the AI Reputation Specialist important?
+
+Customer reviews and NPS feedback affect reputation, trust, and buying decisions. Managing this feedback manually can be inconsistent and time-consuming as volume increases.
+
+Without automation, you may encounter:
+
+- Delayed or missed responses
+- Inconsistent tone across platforms
+- Limited insight into recurring issues
+- Difficulty analyzing large volumes of feedback
+
+The AI Reputation Specialist addresses these challenges by automating responses and providing structured analysis.
+
+## What’s included with the AI Reputation Specialist?
+
+- Automatically generate responses to customer reviews using AI
+- Apply custom rules and knowledge base content to guide review responses
+- Auto-respond to reviews on Google Business Profile (GBP) and to customers who recommend on Facebook.
+- Chat with and analyze all customer reviews and NPS feedback
+- Identify sentiment trends, common themes, and key insights across feedback data
+
+## How to set up the AI Reputation Specialist
 
 ### Core requirements
 
