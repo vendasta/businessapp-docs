@@ -35,7 +35,7 @@ Before you connect your AI Receptionist to ServiceTitan, you need to gather the 
 | **API Application** | Request access at [developer.servicetitan.io](https://developer.servicetitan.io/) | Create a custom app for your integration |
 | **Client ID & Client Secret** | Developer Portal → Your App → Credentials | OAuth 2.0 authentication credentials |
 | **App ID & App Key** | Developer Portal → Your App → App Details | Application-specific identifiers |
-| **API Permissions** | `Settings` → `Integrations` → `API Application Access` → Configure Permissions | <ul><li>`jpm:jobs:read`</li><li>`jpm:jobs:write`</li><li>`crm:customers:read`</li><li>`crm:appointments:read`</li><li>`crm:appointments:write`</li><li>`accounting:invoices:read`</li><li>`settings:technicians:read`</li></ul> |
+| **API Permissions** | `Settings` → `Integrations` → `API Application Access` → Configure Permissions | <ul><li>`jpm:jobs:read`</li><li>`jpm:jobs:write`</li><li>`crm:customers:read`</li><li>`crm:appointments:read`</li><li>`crm:appointments:write`</li><li>`accounting:invoices:read`</li><li>`settings:technicians:read`</li><li>`scheduling-pro:availability:read`</li><li>`crm:bookings:write`</li></ul> |
 
 #### ServiceTitan Help Resources
 
@@ -85,8 +85,7 @@ This capability allows your AI Receptionist to search for customers and retrieve
 ##### Query parameters
 | Name | Location | Type | Description |
 |------|----------|------|-------------|
-| `name` | `Query` | `string` | Customer name to search for |
-| `phone` | `Query` | `string` | Phone number to search for |
+| `mobilePhone` | `Query` | `string` | Mobile phone number to search for |
 | `email` | `Query` | `string` | Email address to search for |
 | `active` | `Query` | `boolean` | Filter for active customers only (default: true) |
 | `page` | `Query` | `integer` | Page number for pagination (default: 1) |
@@ -224,9 +223,15 @@ Initiate a ServiceTitan customer search **when**:
 
 ---
 
-## Capability 2: Appointment Scheduling and Job Creation
+## Capability 2: Appointment Scheduling and Booking
 
-This capability enables your AI Receptionist to schedule new appointments, create service jobs in ServiceTitan, and manage the booking process end-to-end.
+This capability enables your AI Receptionist to schedule new appointments and create booking requests in ServiceTitan.
+
+:::important
+Real-time availability and online booking requires **ServiceTitan Scheduling Pro**. Without this feature enabled in your ServiceTitan account, your AI Receptionist won't be able to retrieve live time slots or create automated bookings.
+- [Learn more about ServiceTitan Scheduling Pro](https://www.servicetitan.com/features/pro/scheduling)
+- If you don't use Scheduling Pro, you can still use the AI to gather customer information and manually coordinate scheduling.
+:::
 
 ### Step 1: Add a ServiceTitan Appointment Scheduling Capability
 
@@ -235,22 +240,22 @@ This capability enables your AI Receptionist to schedule new appointments, creat
 3. Under `Custom Capabilities`, click `Add a capability`.
 4. Fill in the following fields:
    - **Name**: `ServiceTitan Appointment Scheduling`
-   - **Description**: Creates new appointments and service jobs in ServiceTitan, checks technician availability, and manages the complete booking workflow from initial request to job creation.
+   - **Description**: Checks for available time slots using Scheduling Pro and creates new booking requests in ServiceTitan to manage the customer scheduling workflow.
 
 ### Step 2: Configure ServiceTitan Scheduling API Tools
 
-#### ServiceTitan Tool: getAvailableTimeSlots
+#### ServiceTitan Tool: getAvailableSlots
 
-`getAvailableTimeSlots` checks technician availability and capacity to find open appointment slots.
+`getAvailableSlots` fetches real-time available time windows from Scheduling Pro based on your dispatch board and business rules.
 
 ##### Summary
 
 | Field | Value |
 |-------|-------|
-| **ID** | `getAvailableTimeSlots` |
-| **Description** | Retrieves available appointment time slots based on technician schedules, job types, and capacity constraints. |
+| **ID** | `getAvailableSlots` |
+| **Description** | Retrieves available appointment time slots from Scheduling Pro for a specific date range and service type. |
 | **Method** | `GET` |
-| **URL** | `https://api.servicetitan.io/settings/v2/tenant/{{tenant_id}}/technicians` |
+| **URL** | `https://api.servicetitan.io/scheduling-pro/v2/tenant/{{tenant_id}}/availability` |
 
 ##### Required headers
 
@@ -262,21 +267,43 @@ This capability enables your AI Receptionist to schedule new appointments, creat
 ##### Query parameters
 | Name | Location | Type | Description |
 |------|----------|------|-------------|
-| `active` | `Query` | `boolean` | Filter for active technicians only |
-| `hasPermissions` | `Query` | `string` | Filter technicians by specific permissions |
+| `startsOnOrAfter` | `Query` | `string` | Start of search window (ISO 8601, e.g., `2024-03-14T00:00:00Z`) |
+| `endsOnOrBefore` | `Query` | `string` | End of search window (ISO 8601) |
+| `jobTypeId` | `Query` | `integer` | ID of the job type to check availability for |
+| `businessUnitId` | `Query` | `integer` | ID of the business unit |
 
-#### ServiceTitan Tool: createAppointment
+#### ServiceTitan Tool: getJobTypes
 
-`createAppointment` creates a new appointment and job in ServiceTitan with all necessary details.
+`getJobTypes` retrieves a list of valid job types to ensure bookings are created with the correct classification.
 
 ##### Summary
 
 | Field | Value |
 |-------|-------|
-| **ID** | `createAppointment` |
-| **Description** | Creates a new appointment and job in ServiceTitan with customer information, service details, and scheduling preferences. |
+| **ID** | `getJobTypes` |
+| **Description** | Retrieves valid job types from ServiceTitan to ensure correct booking classification. |
+| **Method** | `GET` |
+| **URL** | `https://api.servicetitan.io/jpm/v2/tenant/{{tenant_id}}/job-types` |
+
+##### Required headers
+
+| Header | Example value | Required |
+|--------|---------------|:--------:|
+| `Authorization` | `Bearer {{access_token}}` | ✓ |
+| `ST-App-Key` | `{{app_key}}` | ✓ |
+
+#### ServiceTitan Tool: createBooking
+
+`createBooking` creates a new booking request in the ServiceTitan Calls screen for dispatchers to review and convert into a job.
+
+##### Summary
+
+| Field | Value |
+|-------|-------|
+| **ID** | `createBooking` |
+| **Description** | Creates a new booking request in ServiceTitan with customer details and the selected time slot. |
 | **Method** | `POST` |
-| **URL** | `https://api.servicetitan.io/jpm/v2/tenant/{{tenant_id}}/jobs` |
+| **URL** | `https://api.servicetitan.io/crm/v2/tenant/{{tenant_id}}/bookings` |
 
 ##### Required headers
 
@@ -289,52 +316,71 @@ This capability enables your AI Receptionist to schedule new appointments, creat
 ##### Body parameters
 | Name | Location | Type | Description |
 |------|----------|------|-------------|
-| `customerId` | `Body` | `integer` | ServiceTitan customer ID |
-| `locationId` | `Body` | `integer` | Service location ID |
-| `jobTypeId` | `Body` | `integer` | Type of service job |
-| `priority` | `Body` | `string` | Job priority level |
+| `name` | `Body` | `string` | Customer full name |
+| `email` | `Body` | `string` | Customer email |
+| `phoneNumber` | `Body` | `string` | Customer phone number |
+| `address` | `Body` | `object` | Service address |
 | `summary` | `Body` | `string` | Brief description of the service needed |
-| `appointmentStart` | `Body` | `string` | Appointment start time (ISO 8601 format) |
-| `duration` | `Body` | `integer` | Expected job duration in minutes |
+| `jobTypeId` | `Body` | `integer` | Selected job type ID |
+| `arrivalWindowStart` | `Body` | `string` | Selected slot start time (ISO 8601) |
+| `arrivalWindowEnd` | `Body` | `string` | Selected slot end time (ISO 8601) |
+| `bookingProviderTagId` | `Body` | `integer` | ID of your API booking provider tag |
 
 ### Step 3: Write the Appointment Scheduling Prompt
 
 ````
 ## **Appointment Scheduling Instructions**
 
+### Booking vs. Job Distinction
+- **Booking**: A customer request created by the AI that appears in the ServiceTitan "Calls" screen. It acts as a reservation awaiting dispatcher review.
+- **Job**: A confirmed work order that has been dispatched to a technician. Dispatchers convert Bookings into Jobs.
+
 ### When to Schedule Appointments
-Create new appointments in ServiceTitan **when**:
+Create new bookings in ServiceTitan **when**:
 - Customer requests to schedule service for HVAC, plumbing, electrical, or other trade work
 - Customer wants to book a maintenance visit, inspection, or consultation
-- Customer needs emergency service but can wait for next available appointment
-- Customer wants to schedule follow-up work or warranty service
+- Customer needs emergency service but can wait for a scheduled window
 
 ### Scheduling Process
 
+```mermaid
+sequenceDiagram
+    participant Customer
+    participant AIReceptionist
+    participant SchedulingPro
+    participant CRMBookings
+    
+    Customer->>AIReceptionist: Request appointment
+    AIReceptionist->>SchedulingPro: getAvailableSlots
+    SchedulingPro-->>AIReceptionist: Available time windows
+    AIReceptionist->>Customer: Present options
+    Customer->>AIReceptionist: Select time slot
+    AIReceptionist->>CRMBookings: createBooking
+    CRMBookings-->>AIReceptionist: Booking confirmation
+    AIReceptionist->>Customer: Confirm appointment
+```
+
 **Step 1: Identify Customer Status**
-- Search for existing customer using provided contact information
-- If customer found: proceed with appointment scheduling
-- If customer not found: create new customer record first using `createCustomer` tool
+- Search for existing customer using provided contact information.
+- If customer not found, gather details (name, email, phone, address) to include in the booking.
 
-**Step 2: Gather Required Information**
-Before creating an appointment, collect:
-- Customer contact information (if new customer)
-- Service location address
-- Type of service needed (HVAC repair, plumbing, electrical, etc.)
-- Problem description or reason for visit
-- Preferred appointment time/date
-- Urgency level (emergency, urgent, routine)
+**Step 2: Check Availability**
+- Use the `getAvailableSlots` tool to fetch real-time windows from Scheduling Pro.
+- Ensure you provide a date range that matches the customer's request.
+- Use `getJobTypes` if you need to verify the correct ID for the service requested.
 
-**Step 3: Check Availability**
-- Search for available time slots based on customer preferences
-- Consider job type and required technician skills
-- Offer multiple options when possible
+**Step 3: Present Options**
+- Offer the customer 3-4 available time slots that match their preference.
+- Clearly state the arrival window (e.g., "Tuesday between 8 AM and 10 AM").
 
-**Step 4: Create the Appointment**
-- Create the job in ServiceTitan with all gathered details
-- Assign appropriate priority level
-- Include comprehensive job summary
-- Link to customer ID (whether existing or newly created)
+**Step 4: Create the Booking**
+- Use the `createBooking` tool with the customer's selected time slot.
+- Include a clear `summary` of the problem (e.g., "Leaking kitchen sink under the disposal").
+- Ensure all required contact and address fields are populated.
+
+**Step 5: Confirm with Customer**
+- Provide the customer with confirmation that their request has been received.
+- Explain that a dispatcher will review the booking and they will receive a final confirmation.
 
 ### Service Type Guidelines
 
@@ -371,9 +417,9 @@ After successfully creating an appointment:
 - Provide contact information for changes
 - Send any necessary preparation instructions
 
-### Example Appointment Creation
+### Example Appointment Booking
 
-"I've successfully scheduled your HVAC maintenance appointment for [Date] at [Time]. Your job number is [Job#]. Our technician will arrive during the scheduled window to perform a complete system inspection and tune-up. You should receive a confirmation call the day before your appointment. Is there anything else I can help you with today?"
+"I've successfully submitted your HVAC maintenance booking for Tuesday, March 14th between 2:00 PM and 4:00 PM. Your booking reference is [Booking#]. Our dispatch team will review the request and you'll receive a final confirmation shortly. Is there anything else I can help you with today?"
 ````
 
 ---
@@ -548,21 +594,20 @@ Which of these times works best for you? The maintenance typically takes about 1
 Tuesday at 2 PM would be perfect. Can you book that for me?
 </ChatUserMessage>
 
-*(AI creates appointment in ServiceTitan)*
+*(AI creates booking in ServiceTitan)*
 
 <ChatAIMessage>
-Excellent! I've scheduled your HVAC maintenance appointment for Tuesday, March 14th from 2:00 PM to 4:00 PM. 
+Excellent! I've submitted your HVAC maintenance booking for Tuesday, March 14th between 2:00 PM and 4:00 PM. 
 
-**Appointment Details:**
-- **Job Number:** #ST-847392
+**Booking Details:**
+- **Booking Reference:** #BK-847392
 - **Service:** Annual HVAC System Maintenance  
-- **Date & Time:** Tuesday, March 14th, 2:00 PM - 4:00 PM
-- **Technician:** Mike Rodriguez (certified HVAC specialist)
+- **Date & Time Window:** Tuesday, March 14th, 2:00 PM - 4:00 PM
 - **Location:** 1234 Main Street (your home address)
 
-Mike will call you about 30 minutes before arrival. Please ensure the area around your HVAC unit is accessible, and if you have pets, please secure them during the visit.
+Our dispatch team will review this request and send you a final confirmation shortly. Once confirmed, a certified HVAC specialist will be assigned to your visit.
 
-You'll receive a confirmation email shortly, and we'll send a reminder the day before your appointment. Is there anything specific you'd like our technician to check during the maintenance?
+You'll receive an email with these details as well. Is there anything specific you'd like our technician to check during the maintenance?
 </ChatAIMessage>
 
 ### Example 2: New Customer Requesting Service
@@ -602,7 +647,7 @@ My email is sarah.williams@email.com and the address is 456 Oak Street, Springfi
 <ChatAIMessage>
 Thank you, Sarah! I've created your account and can see this sounds like a plumbing connection issue that definitely needs attention. 
 
-I have these available appointment slots this week:
+I have checked our technicians and can schedule you for one of these slots:
 
 **Wednesday, March 15th:**
 - 10:00 AM - 12:00 PM
@@ -622,22 +667,21 @@ Given that it's an active leak, I'd recommend sooner rather than later. In the m
 Wednesday at 10 AM would be great!
 </ChatUserMessage>
 
-*(AI creates appointment in ServiceTitan)*
+*(AI creates booking in ServiceTitan)*
 
 <ChatAIMessage>
-Perfect! I've scheduled your plumbing repair for Wednesday, March 15th from 10:00 AM to 12:00 PM.
+Perfect! I've submitted your plumbing repair booking for Wednesday, March 15th between 10:00 AM and 12:00 PM.
 
-**Appointment Details:**
-- **Job Number:** #ST-847401
+**Booking Details:**
+- **Booking Reference:** #BK-847401
 - **Service:** Kitchen Sink Plumbing Repair
-- **Date & Time:** Wednesday, March 15th, 10:00 AM - 12:00 PM
-- **Technician:** Dave Martinez (licensed plumber)
+- **Date & Time Window:** Wednesday, March 15th, 10:00 AM - 12:00 PM
 - **Location:** 456 Oak Street, Springfield, IL 62701
 - **Issue:** Leak under kitchen sink, appears to be from garbage disposal connection
 
-Dave will call you about 30 minutes before arrival. Please make sure the area under the sink is accessible - you might want to remove any cleaning supplies or storage items beforehand.
+Our dispatch team will review this and send a final confirmation. In the meantime, please keep a bucket under the leak and avoid using the disposal.
 
-You'll receive a confirmation email at sarah.williams@email.com, and we'll send you a reminder the day before. Welcome to our family of customers, Sarah!
+You'll receive a confirmation email at sarah.williams@email.com. Welcome to our family of customers, Sarah!
 </ChatAIMessage>
 
 ## Testing & Troubleshooting
