@@ -25,14 +25,14 @@ The Google Analytics view in WordPress Hosting Pro allows Partners and their cli
 
 ### How to add your own Google Analytics account
 
-See [Add your own analytics account](./add-your-own-analytics-account) for steps on how to add your Google Analytics account
+See [Add your own analytics account](add-your-own-analytics-account.md) for steps on how to add your Google Analytics account
 
 ### How does the Google Analytics view work?
 
 When you set up a site on WordPress Hosting Pro, you have the option to either allow the platform to collect GA data for you, or you could connect your own GA account view.
 
-1.  **Default Google Analytics pulled in by the system**: Note, that if there is a prompt at the top informing you to connect a GA view, you are using the default view and not a custom view.![mceclip0.png](./img/4406961519255-54e96795a8.png)
-2.  **Custom Google Analytics View**: note for a custom connected view, you get the option to toggle the amount of data shown at the top and also more refined traffic metrics.![mceclip1.png](./img/4406961519255-a5f3988593.png)
+1.  **Default Google Analytics pulled in by the system**: Note, that if there is a prompt at the top informing you to connect a GA view, you are using the default view and not a custom view.![mceclip0.png](img/4406961519255-54e96795a8.png)
+2.  **Custom Google Analytics View**: note for a custom connected view, you get the option to toggle the amount of data shown at the top and also more refined traffic metrics.![mceclip1.png](img/4406961519255-a5f3988593.png)
 
 ### Which should I use?
 

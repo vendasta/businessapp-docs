@@ -10,11 +10,11 @@ All AI Employees share a common structure, with configurable elements like their
 
 See these guides for step-by-step setup or details on specific AI Employees:
 - [Set up the AI Chat Receptionist](./ai-chat-receptionist/)
-- [Set up the AI Voice Receptionist](./ai-voice-receptionist)
+- [Set up the AI Voice Receptionist](ai-voice-receptionist.md)
 
 For more detail on setup:
 - [AI Capabilities Overview](../ai-capabilities/)
-- [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities)
+- [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md.md)
 
 If you’re just getting started, review the sections below for an overview of the main elements you’ll configure for any AI Employee.
 
@@ -48,17 +48,18 @@ The **Profile** section is where you set the basics for your AI Employee—how t
 The **Channels** section lets you choose where your AI Employee will work for you.
 _What this is:_ Channels are the different places or platforms where your AI Employee can interact with your customers—like website chat, SMS, phone calls, or even Google Meet.
 
-_What to do:_  
-Review the available channels for your AI Employee’s role. Turn on only the channels that make sense for your business right now. For example, you might want your AI to respond on your website’s chat widget, via text messages, or answer phone calls.
+_What to do:_
+Review the available channels for your AI Employee's role. Turn on only the channels that make sense for your business right now. For example, you might want your AI to respond on your website's chat widget, via text messages, email, or answer phone calls.
 
-- Website chat Widget  
-- SMS (text messages)  
-- Phone calls (voice)  
+- Website chat Widget
+- Email
+- SMS (text messages)
+- Phone calls (voice)
 - WhatsApp
 - Facebook
 - Instagram
 
-You can enable or disable channels at any time.  
+You can enable or disable channels at any time.
 > **Tip:** Start with just one or two channels while you get comfortable, then expand as you see results!
 
 ---
@@ -75,7 +76,7 @@ Review the available capabilities for your chosen AI Employee.
 - **Turn on** the capabilities that are most important for your workflow and customer experience.
 - **Add or adjust capabilities** as your business needs evolve.
 - Use the additional instructions/goals field to give extra context or specific directions.
-- **Create your own custom capabilities:** You can design custom tasks for your AI Employee to perform, using the Custom Capabilities builder. This is great for advanced workflows or unique business needs. [Learn more ›](../ai-capabilities/creating-custom-capabilities)
+- **Create your own custom capabilities:** You can design custom tasks for your AI Employee to perform, using the Custom Capabilities builder. This is great for advanced workflows or unique business needs. [Learn more ›](../ai-capabilities/creating-custom-capabilities.md.md)
 
 _Examples of capabilities you might enable:_
 - Capture lead information (e.g., name, email, phone)
@@ -110,7 +111,7 @@ Add any information that would help your AI answer questions or provide better s
 <details>
 <summary>How many channels can I enable for one AI Employee?</summary>
 
-You can enable as many available channels as you like. For example, a single AI Employee can handle website chat, SMS, and Facebook Messenger simultaneously. 
+You can enable as many available channels as you like. For example, a single AI Employee can handle website chat, email, SMS, and Facebook Messenger simultaneously.
 
 </details>
 

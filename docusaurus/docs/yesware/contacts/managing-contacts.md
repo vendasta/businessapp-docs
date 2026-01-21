@@ -56,7 +56,7 @@ In the Yesware Contact Sidebar:
 
 This is a great way to keep information on your contacts easily accessible while emailing with them.
 
-![Adding notes in Gmail](./img/how-do-i-add-notes-a-to-a7bee156.jpg)
+![Adding notes in Gmail](img/how-do-i-add-notes-a-to-a7bee156.jpg)
 
 ### For Gmail and Outlook (App Site)
 
@@ -91,7 +91,7 @@ The timeline is visible in the Contacts Sidebar when you view a contact profile.
 **For Outlook:**
 The Contact Timeline lives within the Yesware sidebar under the `Tracking` tab. You can also view it in the [app site](https://app.yesware.com/contacts) on each contact's profile page.
 
-![Contact Timeline in Outlook](./img/what-is-the-yesware-contact-timeline-in-c4edb663.jpg)
+![Contact Timeline in Outlook](img/what-is-the-yesware-contact-timeline-in-c4edb663.jpg)
 
 ### Understanding timeline activity
 
@@ -125,7 +125,7 @@ Contact Enrichment is an **add-on** to your existing Yesware plan and uses **enr
 4. The system will display both the existing profile and newly enriched information.
 5. Click `Save` to update the contact with the enriched details.
 
-![Contact enrichment in app site](./img/what-is-contact-enrichment-2b7748f1.jpg)
+![Contact enrichment in app site](img/what-is-contact-enrichment-2b7748f1.jpg)
 
 ### Enriching contacts in Gmail
 
@@ -135,7 +135,7 @@ Contact Enrichment is an **add-on** to your existing Yesware plan and uses **enr
 4. A credit will be used, and additional details will appear alongside the existing contact data.
 5. Click `Save` to update the contact.
 
-![Contact enrichment in Gmail](./img/what-is-contact-enrichment-67a8ae9b.jpg)
+![Contact enrichment in Gmail](img/what-is-contact-enrichment-67a8ae9b.jpg)
 
 This feature helps you keep your records complete and up to date, without manual research.
 
@@ -150,9 +150,9 @@ To export all contacts:
 3. Check the `Select All` option to select all contacts.
 4. Click on `Export Contacts`.
 
-![Exporting contacts step 1](./img/export-contacts-86b06bdb.jpg)
+![Exporting contacts step 1](img/export-contacts-86b06bdb.jpg)
 
-![Exporting contacts step 2](./img/export-contacts-bc7096f2.jpg)
+![Exporting contacts step 2](img/export-contacts-bc7096f2.jpg)
 
 The export will download as a file that you can open in spreadsheet applications or import into other systems.
 

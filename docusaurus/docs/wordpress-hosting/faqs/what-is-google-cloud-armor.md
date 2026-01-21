@@ -24,6 +24,6 @@ Google Cloud Armor is a firewall that acts as a shield for websites, routing tra
     *   For each domain, modify the **A record** to the following IP address:
         *   **34.149.86.124**
 
-For more guidance on domain configuration, see [Set up your domain](../domains/set-up-your-domain).
+For more guidance on domain configuration, see [Set up your domain](../domains/set-up-your-domain.md).
 
 Using Google Cloud Armor can help you keep your website secure, protecting both your data and your visitors.

@@ -25,7 +25,7 @@ If you have correctly added the following A and CNAME records in your domain’s
 If the DNS records are configured correctly but the SSL status still shows as “Pending,” remove the domain and reconnect it. This action restarts the automatic SSL generation process.
 
   
-![Screenshot 2025-06-03 at 9.18.05 AM.png](./img/29594088000151-6fc62054c8.png)
+![Screenshot 2025-06-03 at 9.18.05 AM.png](img/29594088000151-6fc62054c8.png)
 
 ### Step 2: Wait for SSL Activation
 

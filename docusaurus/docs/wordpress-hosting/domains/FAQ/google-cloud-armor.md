@@ -15,4 +15,4 @@ Google Cloud Armor is now available for websites to route their traffic through.
 2.  For each domain purchased, update the A record to the below IP
     1.  **34.149.86.124**
 
-Additional information about how to configure your domain can be found [here](./connect-custom-domain.md).
+Additional information about how to configure your domain can be found [here](connect-custom-domain.md).

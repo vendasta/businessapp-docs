@@ -6,9 +6,31 @@ tags: [automations, reviews, nps, ai-workforce]
 keywords: [ai-reputation-specialist, review response, nps data, google business profile, facebook reviews]
 ---
 
-## What is the AI Reputation Specialist?
-
 The AI Reputation Specialist is an AI-powered assistant that helps you manage and analyze customer feedback at scale. It can automatically respond to reviews using predefined rules and knowledge, and allows you to explore reviews and Net Promoter Score (NPS) data through a conversational interface.
+
+<div
+  className="wistia_responsive_padding"
+  style={{ padding: '56.25% 0 0 0', position: 'relative' }}
+>
+  <div
+    className="wistia_responsive_wrapper"
+    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+  >
+    <iframe
+      src="https://fast.wistia.net/embed/iframe/xw7sgjsgeq?web_component=true&seo=true"
+      title="AI Reputation Specialist overview video"
+      allow="autoplay; fullscreen"
+      allowTransparency
+      frameBorder="0"
+      scrolling="no"
+      className="wistia_embed"
+      name="wistia_embed"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </div>
+</div>
+<script src="https://fast.wistia.net/player.js" async></script>
 
 ## Why is the AI Reputation Specialist important?
 

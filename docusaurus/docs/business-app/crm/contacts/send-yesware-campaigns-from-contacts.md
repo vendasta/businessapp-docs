@@ -66,8 +66,8 @@ Only existing Yesware campaigns can be selected in Automations. Campaign creatio
 
 **Related automation guides:**
 - [Business App Automations overview](../automations/index.md) - Learn how to create your first automation workflow
-- [Automation templates and recipes](../automations/templates-and-recipes.md) - Pre-built workflows that can trigger Yesware campaigns
-- [Automation messaging options](../automations/messaging.md) - Compare Yesware with other messaging automation options
+- [Automation templates and recipes](../../../automations/templates-and-recipes.md) - Pre-built workflows that can trigger Yesware campaigns
+- [Automation messaging options](../../../automations/messaging.md) - Compare Yesware with other messaging automation options
 
 ## Frequently asked questions
 
@@ -141,17 +141,17 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 
 **CRM contact management:**
 - [CRM contacts overview](./contacts.md) - Learn about importing contacts, campaign management, and contact field customization
-- [Contact lists for targeted outreach](./lists.md) - Segment contacts before adding to Yesware campaigns
-- [CRM forms for lead capture](./forms.md) - Capture new leads that can be added to Yesware campaigns
+- [Contact lists for targeted outreach](../lists.md) - Segment contacts before adding to Yesware campaigns
+- [CRM forms for lead capture](../forms.md) - Capture new leads that can be added to Yesware campaigns
 
 **Business App automation options:**
 - [Automations overview](../automations/index.md) - Compare Yesware with native Business App automation options
-- [Automation templates](../automations/templates-and-recipes.md) - Pre-built workflows for lead nurturing and follow-up
-- [Email messaging in automations](../automations/messaging.md) - Alternative email options for bulk communications
+- [Automation templates](../../../automations/templates-and-recipes.md) - Pre-built workflows for lead nurturing and follow-up
+- [Email messaging in automations](../../../automations/messaging.md) - Alternative email options for bulk communications
 
 **Advanced workflows:**
-- [CRM opportunities](./opportunities.md) - Track deals that result from Yesware campaigns
-- [Activity feed](./activity-feed.md) - Monitor Yesware campaign responses and engagement
+- [CRM opportunities](../opportunities.md) - Track deals that result from Yesware campaigns
+- [Activity feed](../activity-feed.md) - Monitor Yesware campaign responses and engagement
 
 ---
 
