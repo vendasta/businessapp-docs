@@ -90,7 +90,14 @@ Not currently. The business uses one shared email address and Conversations. But
 </details>
 
 <details>
-<summary><strong>I see an area in my settings called “email configuration” – is this where I manage my email for Conversations?</strong></summary>
+<summary><strong>I see an area in my settings called "email configuration" – is this where I manage my email for Conversations?</strong></summary>
 
-No, not currently. The email configuration area in settings is for managing email that’s sent from Campaigns Pro and Reputation AI Premium. 
+No, not currently. The email configuration area in settings is for managing email that's sent from Campaigns Pro and Reputation AI Premium.
+</details>
+
+<details>
+<summary><strong>Is there a limit on how many emails I can send?</strong></summary>
+
+Yes, there is a daily email quota. If you're unable to send emails, you may have reached your daily limit. The quota resets every 24 hours.
+
 </details>
