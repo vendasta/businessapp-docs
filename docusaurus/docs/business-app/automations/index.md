@@ -20,15 +20,15 @@ Automations let you create workflows that run on their own when specific events 
 Every automation includes:
 
 - Trigger: The event that starts your workflow (for example, When a contact is created)
-- Conditions (optional): Narrow when it should run
+- Conditions: They are an optional part of an automation rule. After a trigger occurred, all conditions will be checked. The automation will be executed if all conditions are met.
 - Actions: What happens next (for example, Send SMS, Send plain text email, Update company)
 
 ## Get started
 
 1. Go to Business App > Administration > Automations
-2. Select Create Automation
-3. Choose a template from the gallery, or start from Blank
-4. Add your Trigger, Conditions (optional), and Action steps
+2. Select ``Create Automation``
+3. Choose a template from the gallery, or start from ``Blank``
+4. Add your Trigger, Conditions (optional), and Action steps from the right-side panel
 5. Save and toggle your automation On
 
 :::tip
@@ -41,12 +41,12 @@ Each automation has a Settings tab where you control how and when your workflow 
 
 ### Entry settings
 
-- Only once per company: Run a single time for each company
-- Multiple times per company: Run every time the trigger conditions are met
-- One at a time per company: Ensure a new run starts only after the previous one finishes
+- Only once per entity: Run a single time for each entity
+- Multiple times per entity: Run every time the trigger conditions are met
+- One at a time per entity: Ensure a new run starts only after the previous one finishes
 
 :::warning
-If your automation updates the same record (for example, applies tags or updates fields), prefer "One at a time per company" to avoid overlapping runs and duplicate changes.
+If your automation updates the same record (for example, applies tags or updates fields), prefer "One at a time per entity" to avoid overlapping runs and duplicate changes.
 :::
 
 ### Error handling
