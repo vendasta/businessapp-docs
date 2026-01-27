@@ -39,7 +39,7 @@ Getting started is simple! All you need to have ready is:
 1. In Business App, go to `Administration` → `Integrations` and select `Shopify Storefront`.
 2. Click `Connect` and enter your Shopify Storefront URL.
 
-![Shopfiy Storefront Integration](img/shopify-storefront-integration-page.png)
+![Shopify Storefront Integration](img/shopify-storefront-integration-page.png)
 
 
 Once connected, the Shopify Storefront integration makes the "Access Shopify" Capability and multiple Tools available to your AI Employees using Shopify's Model Context Protocol (MCP) servers.
