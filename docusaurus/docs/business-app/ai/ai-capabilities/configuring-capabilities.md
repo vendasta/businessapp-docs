@@ -15,7 +15,7 @@ Before you begin:
 - You have appropriate permissions to configure AI settings
 - You understand which capabilities align with your business needs
 
-## Step 1: Access AI Employee Configuration
+## Step 1: Access AI Employee configuration
 
 1. Navigate to <AISparkleIcon /> **AI** › **AI Workforce** in your Business App dashboard.
 2. Locate the AI Employee you want to configure.
@@ -25,13 +25,13 @@ Before you begin:
 If you don't see the Configure button, verify you have the necessary permissions to modify AI Employee settings.
 :::
 
-## Step 2: Open the Capabilities Section
+## Step 2: Open the capabilities section
 
 1. In the AI Employee configuration panel, scroll down to the **Capabilities** section.
 2. Click to expand the section if it's collapsed.
 3. You'll see a list of available built-in capabilities with toggle switches.
 
-## Step 3: Enable Desired Capabilities
+## Step 3: Enable desired capabilities
 
 For each capability you want to activate:
 
@@ -39,9 +39,9 @@ For each capability you want to activate:
 2. **Toggle the capability switch** to the "on" position.
 3. **Add specific instructions** (optional) to customize how the capability behaves.
 
-### Common Capability Configurations
+### Common capability configurations
 
-#### Lead Capture
+#### Lead capture
 - **What it does**: Automatically collects contact information from potential customers
 - **Recommended instructions**: 
   ```
@@ -50,7 +50,7 @@ For each capability you want to activate:
   Be friendly but persistent in gathering complete information.
   ```
 
-#### Appointment Booking
+#### Appointment booking
 - **What it does**: Schedules meetings using your connected calendar
 - **Prerequisites**: Ensure your calendar is connected in Business App settings
 - **Recommended instructions**:
@@ -60,7 +60,7 @@ For each capability you want to activate:
   Send confirmation details to the customer.
   ```
 
-#### Communication Style
+#### Communication style
 - **What it does**: Maintains consistent tone and brand voice
 - **Recommended instructions**:
   ```
@@ -69,7 +69,7 @@ For each capability you want to activate:
   Refer to our company as "we" and "our team."
   ```
 
-## Step 4: Add Goals and Instructions (Optional)
+## Step 4: Add goals and instructions (optional)
 
 For more precise control over capability behavior:
 
@@ -80,7 +80,7 @@ For more precise control over capability behavior:
    - How to respond in different scenarios
    - What to do if something goes wrong
 
-### Writing Effective Instructions
+### Writing effective instructions
 
 **Good example:**
 ```
@@ -99,7 +99,7 @@ Get contact info when needed.
 - Test different phrasings to see what works best
 :::
 
-## Step 5: Save and Test Your Configuration
+## Step 5: Save and test your configuration
 
 1. **Click "Save Changes"** at the bottom of the configuration panel.
 2. **Test the capabilities** by starting a conversation with your AI Employee.
@@ -108,7 +108,7 @@ Get contact info when needed.
    - Express interest in services to test lead capture
    - Request an appointment to test booking functionality
 
-### Testing Checklist
+### Testing checklist
 
 - [ ] Capabilities activate at appropriate times
 - [ ] Required information is collected before proceeding
@@ -116,7 +116,7 @@ Get contact info when needed.
 - [ ] Error scenarios are handled gracefully
 - [ ] Customer experience feels natural and helpful
 
-## Step 6: Monitor and Refine
+## Step 6: Monitor and refine
 
 After initial setup:
 
@@ -125,46 +125,46 @@ After initial setup:
 3. **Adjust instructions** based on what you learn.
 4. **Add or remove capabilities** as your business needs evolve.
 
-## Troubleshooting Common Issues
+## Troubleshooting common issues
 
-### Capability Not Activating
+### Capability not activating
 - **Check trigger conditions**: Ensure customer requests match capability parameters
 - **Review instructions**: Make sure activation criteria are clear
 - **Test with different phrasings**: Try various ways customers might make requests
 
-### Information Not Being Collected
+### Information not being collected
 - **Verify required fields**: Ensure the capability knows what information to gather
 - **Check instruction clarity**: Make collection requirements explicit
 - **Test conversation flow**: Walk through the process as a customer would
 
-### Capabilities Conflicting
+### Capabilities conflicting
 - **Review capability priorities**: Some capabilities may override others
 - **Clarify instructions**: Make trigger conditions more specific
 - **Disable conflicting capabilities**: Temporarily turn off capabilities that interfere
 
-## Advanced Configuration Tips
+## Advanced configuration tips
 
-### Capability Layering
+### Capability layering
 Enable multiple complementary capabilities that work together:
 - Lead Capture + Appointment Booking for service businesses
 - Knowledge Base + Communication Style for support scenarios
 - Product Lookup + Lead Capture for sales interactions
 
-### Gradual Rollout
+### Gradual rollout
 Start with essential capabilities and add more over time:
 1. **Week 1**: Enable basic communication style and knowledge base
 2. **Week 2**: Add lead capture once AI is responding well
 3. **Week 3**: Include appointment booking after testing lead flow
 4. **Week 4+**: Add custom capabilities for specialized needs
 
-### Performance Monitoring
+### Performance monitoring
 Track key metrics to measure capability effectiveness:
 - Activation rate (how often capabilities trigger)
 - Completion rate (successful information collection)
 - Customer satisfaction scores
 - Conversion rates for lead capture
 
-## Next Steps
+## Next steps
 
 - **Create Custom Capabilities**: [Learn how to build custom capabilities](creating-custom-capabilities.md) for specialized business needs
 - **Advanced Prompting**: Explore prompt engineering techniques for better capability performance
