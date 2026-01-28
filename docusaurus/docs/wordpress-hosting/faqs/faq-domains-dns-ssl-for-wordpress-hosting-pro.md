@@ -235,7 +235,7 @@ Recommended guide:
 
 #### **Q: Does WordPress Hosting Pro support AAAA Records or IPv6?**
 
-Currently, **Vendasta does not support AAAA Records (IPv6)**. WordPress Hosting Pro requires only an **A Record** that points to the IPv4 address: `34.149.86.124`.
+Currently, **AAAA Records (IPv6) are not supported.** WordPress Hosting Pro requires only an **A Record** that points to the IPv4 address: `34.149.86.124`.
 
 ### Q: How many subdomains can I use with WordPress Hosting Pro?
 

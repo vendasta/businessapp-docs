@@ -44,4 +44,4 @@ When customers connect their own Google Analytics views, the platform pulls in d
 
 ### My client connected GA but there is no data
 
-Historically, the most likely issue resulting from this is Partners and their clients are connected to the incorrect view. In Google Analytics (outside of Vendasta), users can configure their own view, with specific data collection and filtering behavior. As long as users connect a view that has data, the platform will pull the data in; in addition, it will pull in 12 months' worth of data upon connection.
+Historically, the most likely issue resulting from this is Partners and their clients are connected to the incorrect view. In Google Analytics, users can configure their own view, with specific data collection and filtering behavior. As long as users connect a view that has data, the platform will pull the data in; in addition, it will pull in 12 months' worth of data upon connection.

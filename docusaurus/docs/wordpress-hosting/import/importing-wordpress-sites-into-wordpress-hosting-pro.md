@@ -30,7 +30,7 @@ Use a plugin like [All-in-One WP Migration](https://en-ca.wordpress.org/plugins/
 
 **Option B: Do It For Me**
 
-If you’d like Vendasta to migrate your sites for you:
+If you'd like migration assistance:
 
 1.  Submit **[this form](https://website-pro-migration.websitepro.hosting/)** to provide us with key details about your migration.
 2.  A member of our WordPress Hosting team will email you to begin the migration.

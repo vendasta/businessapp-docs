@@ -84,7 +84,7 @@ The free version of **All-in-One WP Migration** supports up to 64MB. If your fil
 
 *   Buy the **Unlimited Extension** ($69 one-time, use on unlimited sites)
     
-*   Or contact Vendasta Support and we’ll upload it for you at no cost.
+*   Or contact Support and we'll upload it for you at no cost.
     
 
 #### Option 3: Use another migration plugin

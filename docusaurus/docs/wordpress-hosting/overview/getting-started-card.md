@@ -14,13 +14,13 @@ Depending on the plugins available on the website, the section will display thre
 2.  Customize Your Site
 3.  Connect Analytics
 
-At Vendasta, we’re dedicated to helping local businesses thrive. In order for your clients to thrive with our WordPress Hosting product, it is important to make navigating WordPress as easy as possible. 
+WordPress Hosting is designed to make it easy to get your business online. The Getting Started Card helps you navigate the product and build your website step by step. 
 
 ### How does the Getting Started Card work?
 
 Upon logging in to WordPress Hosting **Standard or Pro**, the user will see the new section on the **Overview page**. 
 
-If the site was created from one of Vendasta’s 7 eCommerce templates (with Divi Builder and WooCommerce), the user will be prompted with three options: **Set up store, Customize your site, and Connect analytics**. 
+If your site was created from one of the 7 eCommerce templates (with Divi Builder and WooCommerce), the user will be prompted with three options: **Set up store, Customize your site, and Connect analytics**. 
 
 If a user creates a website from another template, specifically one that does not have Divi Builder, they will only be prompted to **Set up store and Connect analytics**. _This is because the customize your site card links specifically to Divi Builder customization options._ 
 

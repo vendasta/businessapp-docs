@@ -98,8 +98,8 @@ Yes. Use the dynamic field inserter when writing the message.
 </details>
 
 <details>
-<summary>Is it possible to set up an automation in Vendasta to send a WhatsApp message when a new contact is created in the CRM?</summary>
+<summary>Is it possible to set up an automation to send a WhatsApp message when a new contact is created in the CRM?</summary>
 
-No. At this time, direct WhatsApp messaging through Vendasta automations is not supported. Automations cannot trigger messages through a connected business WhatsApp account.
+No. At this time, direct WhatsApp messaging through automations is not supported. Automations cannot trigger messages through a connected business WhatsApp account.
 </details>
 

@@ -52,7 +52,7 @@ If a WordPress Hosting product (Standard or Pro) is canceled and fully deactivat
 *   After 90 days, the system will create a **final archive**, and then both the production and staging sites will be **permanently deleted**
     
 
-> **Tip:** If you know your client wants to cancel but may return later, reach out to Vendasta Support before canceling. We can help you obtain a final copy of the website.
+> **Tip:** If you know your client wants to cancel but may return later, reach out to Support before canceling. We can help you obtain a final copy of the website.
 
 #### **Q: Will I receive notifications if a backup fails?**
 
@@ -101,7 +101,7 @@ WordPress Hosting Pro leverages [**Google Cloud Platform’s**](https://cloud.go
     
     *   The default `wp-login.php` page is not directly accessible
         
-    *   Admins must sign in through **Vendasta’s secure dashboard**
+    *   Admins must sign in through **the secure dashboard**
         
     *   This protects against brute-force login attacks and credential stuffing
         
@@ -142,6 +142,6 @@ Connect your **custom domain** before launching your site or beginning any SEO e
 No. WordPress Hosting Pro is not fully compliant with HIPAA or GDPR regulations at this time.
 
 **Why not?**  
-While cookie banners and consent tools can be added, full compliance — such as guaranteed data deletion or protected health information (PHI) handling — involves multiple systems beyond just the website backend. Vendasta cannot guarantee total control or deletion of all user data submitted via form fills.
+While cookie banners and consent tools can be added, full compliance — such as guaranteed data deletion or protected health information (PHI) handling — involves multiple systems beyond just the website backend. The platform cannot guarantee total control or deletion of all user data submitted via form fills.
 
 > If your client requires HIPAA or GDPR compliance, you may need to explore more specialized hosting or form-handling platforms.

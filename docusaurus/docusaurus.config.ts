@@ -120,6 +120,11 @@ const config: Config = {
             from: '/vendasta-products/local-seo/listing-sync',
             to: '/local-seo/listing-sync/',
           },
+          // Renamed: hide Vendasta's pre-built templates -> hide pre-built templates (gray-label)
+          {
+            from: '/wordpress-hosting/templates/hide-vendastas-pre-built-templates-from-clients',
+            to: '/wordpress-hosting/templates/hide-pre-built-templates/',
+          },
           // Legacy section redirects - redirect top-level paths only
           // Note: Do NOT include both trailing slash and non-trailing slash versions here.
           // The redirects plugin normalizes paths, and with directory-style output this can

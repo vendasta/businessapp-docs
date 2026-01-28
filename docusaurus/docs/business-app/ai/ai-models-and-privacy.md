@@ -53,7 +53,7 @@ AI Employees run on enterprise‑grade LLMs that we evaluate and monitor for qua
 <details>
 <summary>Can I choose which model is used?</summary>
 
-AI Chat Receptionist and AI Voice Receptionist automatically use a supported model managed by Vendasta. AI Employees let you choose from the supported model options exposed in Business App settings, though we do not list the underlying provider names.
+AI Chat Receptionist and AI Voice Receptionist automatically use a supported model managed by the platform. AI Employees let you choose from the supported model options exposed in Business App settings, though we do not list the underlying provider names.
 
 </details>
 

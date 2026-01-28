@@ -1,10 +1,10 @@
 ---
 title: "FAQ: Hosting Environment, PHP, and Scalability in WordPress Hosting Pro"
 sidebar_label: "FAQ: Hosting Environment, PHP, and Scalability in WordPress Hosting Pro"
-description: "This article answers frequently asked technical questions about the infrastructure, server behavior, and performance capabilities of Vendasta’s WordPress Hosti"
+description: "This article answers frequently asked technical questions about the infrastructure, server behavior, and performance capabilities of WordPress Hosting Pro."
 ---
 
-This article answers frequently asked technical questions about the infrastructure, server behavior, and performance capabilities of Vendasta’s WordPress Hosting Pro product.
+This article answers frequently asked technical questions about the infrastructure, server behavior, and performance capabilities of WordPress Hosting Pro.
 
 ### Q: Can I upgrade to PHP 8.1 on WordPress Hosting Pro?
 

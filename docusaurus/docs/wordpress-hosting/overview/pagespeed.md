@@ -1,12 +1,12 @@
 ---
 title: "PageSpeed"
 sidebar_label: "PageSpeed"
-description: "Vendasta's WordPress Hosting product has introduced richer PageSpeed data to the dashboard. Users are able to see a trend of their website's page speed over ti"
+description: "WordPress Hosting includes richer PageSpeed data on the dashboard. You can see a trend of your website's page speed over time and understand opportunities to improve it."
 ---
 
-Vendasta's WordPress Hosting product has introduced richer PageSpeed data to the dashboard. Users are able to see a trend of their website's page speed over time and, at a glance, understand opportunities to improve it.
+WordPress Hosting includes richer PageSpeed data on the dashboard. You can see a trend of your website's page speed over time and, at a glance, understand opportunities to improve it.
 
-This additional PageSpeed data can help partners and their clients understand the impact of any recent site changes. 
+This additional PageSpeed data can help you understand the impact of any recent site changes. 
 
 PageSpeed scores are measured weekly for both desktop and mobile, if a user would like to see an updated score they can do so by clicking the **refresh** button in the bottom left corner of the card. 
 

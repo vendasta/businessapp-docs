@@ -13,7 +13,7 @@ For your customers with WordPress Hosting Pro or another WordPress hosting solut
 ![1.png](img/4406953671831-cc844d9013.png)
 
 1.  Go to WooCommerce.com and set up an account by selecting **_Log in with WordPress.com_**
-    *   For WordPress Hosting Pro users, log in with the Vendasta account you use to manage your client’s site
+    *   For WordPress Hosting Pro users, log in with the same account you use to access your WordPress Hosting site
     *   For clients with other WordPress hosting solutions, log in with an existing WordPress account
 2.  Follow the steps. When prompted, select to **_Auto-Install WooCommerce![2.png](img/4406953671831-3587ff948e.png)_**
 3.  In another tab, access your client’s WordPress dashboard. _Ensure that your client’s WordPress site is up to date._
