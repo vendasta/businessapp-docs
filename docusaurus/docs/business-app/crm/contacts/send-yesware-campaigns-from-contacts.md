@@ -155,4 +155,4 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 
 ---
 
-Source: Release reference "Starting a Yesware Campaign within Vendasta".
+Source: Release reference "Starting a Yesware Campaign in Business App".

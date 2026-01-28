@@ -30,7 +30,7 @@ You can export your website using the **All-in-One WP Migration** plugin:
 3.  Download the exported `.wpress` file to your local device.
     
 
-> If your website has been deactivated, contact Vendasta Support to request the most recent backup file (available for a limited time after cancellation).
+> If your website has been deactivated, contact Support to request the most recent backup file (available for a limited time after cancellation).
 
 ### Q: What is a sitemap and why does it matter?
 

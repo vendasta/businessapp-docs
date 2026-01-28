@@ -63,4 +63,4 @@ This includes step-by-step tutorials on:
 *   Theme customization
     
 
-> Note: Vendasta does not provide direct support for Divi’s proprietary functionality beyond what is enabled in the default templates. For advanced Divi-specific questions, Elegant Themes support is recommended.
+> Note: Direct support for Divi's proprietary functionality is not provided beyond what is enabled in the default templates. For advanced Divi-specific questions, Elegant Themes support is recommended.

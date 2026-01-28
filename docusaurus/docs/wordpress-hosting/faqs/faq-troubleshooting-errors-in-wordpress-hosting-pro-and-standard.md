@@ -64,7 +64,7 @@ If the plugin requires MyISAM, contact the plugin developer to explore switching
 This WordPress Site Health warning simply means that **core auto-updates are turned off**.
 
 **Why this is safe:**  
-Auto-updating WordPress core versions can break your site if your plugins/themes are not compatible. Vendasta recommends manual updates to maintain stability.
+Auto-updating WordPress core versions can break your site if your plugins/themes are not compatible. Manual updates are recommended to maintain stability.
 
 No action is needed unless your team chooses to handle updates differently.
 

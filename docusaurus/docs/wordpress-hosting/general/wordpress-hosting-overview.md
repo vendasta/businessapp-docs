@@ -1,10 +1,10 @@
 ---
 title: "WordPress Hosting Overview"
 sidebar_label: "WordPress Hosting Overview"
-description: "Vendasta’s WordPress Hosting product enables Partners to offer fast, secure, and customizable websites to clients of all sizes—from small businesses just getti"
+description: "WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes."
 ---
 
-Vendasta’s WordPress Hosting product enables Partners to offer fast, secure, and customizable websites to clients of all sizes—from small businesses just getting started online to agencies managing dozens of sites. Built on Google Cloud Platform, it delivers reliable hosting, built-in eCommerce, robust performance, and easy-to-use visual tools.
+WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes—from small businesses just getting started online to those managing multiple sites. Built on Google Cloud Platform, it delivers reliable hosting, built-in eCommerce, robust performance, and easy-to-use visual tools.
 
 This guide provides everything you need to know about WordPress Hosting Standard and WordPress Hosting Pro, including how to set up sites, configure email and domains, manage backups and plugins, and customize access and branding.
 
@@ -12,7 +12,7 @@ This guide provides everything you need to know about WordPress Hosting Standard
 
 **WordPress Hosting Standard**
 
-WordPress Hosting Standard is a simplified version of WordPress Hosting Pro. It is free to Vendasta Partners on any paid subscription tier and is ideal for clients who need a quick, cost-effective online presence.
+WordPress Hosting Standard is a simplified version of WordPress Hosting Pro. It is ideal for businesses that need a quick, cost-effective online presence.
 
 **Included Features:**
 
