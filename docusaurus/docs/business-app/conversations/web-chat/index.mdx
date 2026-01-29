@@ -1,0 +1,193 @@
+---
+title: Web Chat Setup & Usage
+description: How to set up, configure, and troubleshoot the AI web chat widget
+---
+
+# Web Chat Setup & Usage
+
+The AI web chat widget automatically captures leads from your website and answers visitor questions 24/7. Here's how to set it up and use it effectively.
+
+## Prerequisites
+
+- **Product Required**: Conversations AI Standard, Pro or Premium subscription
+- **Access**: Business App with Conversations enabled
+- **Website**: Any website where you can add HTML code
+
+## Setup Process
+
+### Step 1: Test Before Installing
+
+1. Navigate to **Business App > Conversations AI > Conversations AI Settings**
+2. Click **"Try it out today"** on the Web Chat Widget card
+3. This creates a demo widget on the My Listing page for testing
+4. Reload the Conversations AI Settings page to see configuration options
+
+### Step 2: Configure Web Chat Settings
+
+1. Click **"Configure Web Chat"** in Conversations AI Settings
+2. **Widget Name**: Enter a unique name to identify this widget (usually your domain)
+
+### Step 3: Set Up AI Assistant
+
+1. Go to **AI Assistant** settings card to train and customize:
+   - **Select an AI Assistant**: Choose a pre-built AI Assistant (like Chat Receptionist)
+   - Add business knowledge: Click "Add knowledge" → Select "Website" to scrape your website content
+   - Add custom Q&A: Manually enter frequently asked questions and answers
+   - Set business profile info: Ensure location, services, and hours are correct
+
+### Step 4: Customize Messages
+
+Configure how visitors interact with the widget:
+
+- **Welcome Greeting** (0-70 characters): Appears in chat widget header to encourage engagement
+  - Example: "Hi, how can we help you today?"
+- **Initial AI Message** (up to 600 characters): First message your AI assistant sends. This is automatically turned on and includes a default message along with privacy notice. This can be changed to any message you prefer.
+  - Example: "Hi! I'm here to assist with your [service] questions. How can I help you today?"
+  - Keep it friendly, specific to your business, and encourage engagement
+  - To add a link to the message, use this format: `[Link text Here](https://www.example.com)`
+
+### Step 5: Customize Appearance
+
+Match the widget to your brand:
+
+- **Primary Color**: Main widget color (header, branding)
+- **Primary Text Color**: Text color for primary elements
+- **Accent Color**: Send button and chat bubble color  
+- **Accent Text Color**: Text color for accent elements
+- **Position**: Choose bottom corner position (left/right)
+- **Mobile Popup**: Enable/disable message popup for mobile visitors (vs. just chat button)
+
+### Step 6: Install on Website
+
+Choose your installation method in the **Installation** section:
+
+**For Most Websites**:
+1. Select **Website** tab
+2. Copy the JavaScript code provided
+3. Paste into the `<head>` section before the closing `</head>` tag
+
+### For Google Tag Manager
+
+1. Select **Google Tag Manager** tab
+2. Follow the provided GTM setup instructions
+
+**For WordPress**:
+1. Select **WordPress** tab  
+2. Follow WordPress-specific installation steps
+
+**For GoDaddy Website Builder**:
+1. Select **GoDaddy Website Builder** tab
+2. Follow GoDaddy-specific installation steps
+
+**Test Installation**: Always verify the widget appears and functions correctly on the live site
+
+## Widget Types and Widget Actions
+
+### Floating Chat Widget
+This is the default method of adding the AI Receptionist to your website. It places a floating button on the bottom left or right corner of your website that allows users to start chatting with the AI Assistant.
+
+### Embedded Chat Widget
+This is a more advanced version of the chat widget that places a chat box anywhere you want on your website. To make this work, you will need to add a placeholder space on your website (a container) and load the embedded chat widget code into that space. 
+
+- The code can be copied from the web chat configuration page
+- Make sure to give your container enough height to properly display the chat (eg. 400-600)
+- Test on both desktop and mobile
+
+### Widget Actions
+When a chat widget is loaded onto a website, you can add widget actions—links that will populate the chat with a message on behalf of your user. These are great when you want to help your users engage with your AI Receptionist in a specific way. For example, clicking a button that pre-fills "I want to book an appointment" so your AI Receptionist can start guiding a user along that particular workflow.
+
+Under the widget actions section of web chat configuration, you will find the types of actions, implementation options, and instructions for using the code that is generated based on your selections which you can then copy and add to your site. Here is a breakdown of the configuration options:
+
+#### Select an Action
+1. **Prefill message** - Use this option if you want to suggest a message but don't want to force your users to send it.
+2. **Send message** - Use this option if you want the message sent to the AI assistant; useful for initiating specific workflows.
+
+#### Select an Implementation Method
+1. **Anchor link listener** - Triggers the action via a URL. Best for direct links, email campaigns, or navigating to a page with the web chat from an external source.
+2. **JavaScript API** - Triggers the action programmatically. Best for dynamic interactions, custom triggers, or on-page buttons.
+
+#### Enter a Message
+Enter a message that will be used in selected action when the link is clicked. If left empty, the action will open the Web Chat only.
+
+#### Code
+The code changes depending on the action, implementation, and message set. You can configure these multiple times to create multiple snippets of code and have many different actions. Instructions for using the code vary depending on implementation method.
+1. **For anchor link listener:** Use the code in a URL as an anchor link or redirect target. The widget will automatically detect the hash and trigger the action when the page loads or when the hash changes.
+2. **For JavaScript API:** Use the code in your button's onClick handler or any JavaScript event. The webchatAPI is automatically available once the widget script loads.
+
+## Managing Conversations
+
+### When AI Assistant Hands Off to Humans
+
+- AI assistant captures lead information first (name, phone/email)
+- Team members get notified of new conversations
+- Staff can join conversations through Business App > Conversations
+- Chat history remains available for context
+
+### Lead Follow-Up
+
+- New leads automatically appear in your CRM
+- Follow up via SMS (US/Canada) or email 
+- Use automations to send immediate responses
+- Set up nurture campaigns for qualified leads
+
+## Common Issues & Solutions
+
+<details>
+<summary><strong>Widget Not Appearing</strong></summary>
+
+- **Check installation**: Ensure the correct widget is installed and loading on your website.
+- **Clear cache**: Browser or website caching may delay visibility
+- **Verify activation**: Confirm Conversations AI Pro is active on your account, and the web chat widget is enabled.
+</details>
+
+<details>
+<summary><strong>AI Assistant Not Responding Accurately</strong></summary>
+
+- **Add more knowledge**: Train AI assistant with website content and custom Q&A
+- **Update business profile**: Ensure location, services, hours are current
+- **Review conversation logs**: Check what questions the AI assistant struggles with
+- **Refine initial message**: Make it more specific to common visitor questions
+</details>
+
+<details>
+<summary><strong>Leads Not Converting</strong></summary>
+
+- **Improve welcome greeting**: Make it more compelling and specific
+- **Refine initial AI message**: Ask better qualifying questions upfront
+- **Adjust AI assistant personality**: Match your brand voice
+- **Follow up faster**: Respond to new leads within minutes, not hours
+</details>
+
+<details>
+<summary><strong>Poor Visual Integration</strong></summary>
+
+- **Adjust colors**: Match widget colors to your website branding
+- **Test mobile experience**: Enable/disable mobile popup as needed
+- **Check positioning**: Ensure widget doesn't block important content
+</details>
+
+<details>
+<summary><strong>Team Not Getting Notifications</strong></summary>
+
+- **Check user permissions**: Ensure team has access to Conversations
+- **Verify notification settings**: Review Business App notification preferences
+- **Test handoff process**: Practice AI assistant-to-human conversation transitions
+</details>
+
+## Best Practices
+
+1. **Start with demo**: Always test functionality before installation
+2. **Train thoroughly**: Add business-specific knowledge before going live
+3. **Monitor conversations**: Review chat logs weekly to improve AI assistant responses
+4. **Respond quickly**: New leads expect fast follow-up via SMS or email
+5. **Track performance**: Use analytics to measure chat-to-lead conversion rates
+
+## Configuration Tips
+
+- **Widget Name**: Use your domain name for easy identification
+- **Welcome Greeting**: Keep it short, friendly, and action-oriented  
+- **Initial AI Message**: Be specific about what help you provide and ask qualifying questions
+- **Colors**: Use your brand colors for seamless website integration
+- **Mobile Popup**: Enable for service businesses, disable if it might interrupt user experience
+
+The web chat widget works best when properly configured with business-specific information and integrated into your team's workflow.

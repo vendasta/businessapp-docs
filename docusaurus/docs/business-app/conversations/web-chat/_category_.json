@@ -1,0 +1,8 @@
+{
+  "label": "Web Chat",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "business-app/conversations/web-chat/index"
+  }
+}

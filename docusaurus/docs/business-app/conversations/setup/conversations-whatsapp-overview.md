@@ -24,7 +24,7 @@ To connect your WhatsApp Business account to Conversations, follow these steps:
 2. **Sign in with Facebook**  
    Find the **WhatsApp Business Messages** card and click **Sign in with Facebook**.
 
-![WhatsApp Setup](img/conversations_whatsapp_setup.png)
+![WhatsApp Setup](../img/conversations_whatsapp_setup.png)
 
 3. **Authorize Access**  
    In the pop-up, log in to your Facebook account and click **Continue as [Your Name]** to allow access.
@@ -32,13 +32,13 @@ To connect your WhatsApp Business account to Conversations, follow these steps:
 4. **Connect Your Business Account**  
    Select **Get Started** to link your business to the platform called **Digital Agency**.
 
-   ![Digital Agency Connection](img/conversations_whatsapp_connect_digital_agency.png)
+   ![Digital Agency Connection](../img/conversations_whatsapp_connect_digital_agency.png)
 
 5. **Get your SMS/Phone number from Conversations**  
    - In Business App, go to `Settings > Conversations Settings > Phone & SMS > Configure`.
    - Take note of your number, as you’ll need it to set up WhatsApp.
 
-![WhatsApp Setup](img/conversations_whatsapp_socialreputation.png)
+![WhatsApp Setup](../img/conversations_whatsapp_socialreputation.png)
 
 6. **Temporarily Enable Call Forwarding**  
    - Go to `Conversations Settings > Your SMS/Phone Number > Settings`.  
@@ -55,7 +55,7 @@ To connect your WhatsApp Business account to Conversations, follow these steps:
 9. **Confirm Permissions and Complete Setup**  
    Finish any remaining prompts to finalize the WhatsApp Business connection. A green 'connected' badge will appear when verified.
 
-![Final Setup](./img/conversations_whatsapp_finalsetup.png)
+![Final Setup](../img/conversations_whatsapp_finalsetup.png)
 
 ---
 
