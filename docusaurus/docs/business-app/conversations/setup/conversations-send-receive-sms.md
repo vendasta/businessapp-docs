@@ -50,9 +50,9 @@ No! You can use SMS messaging immediately without any configuration or registrat
 </details>
 
 <details>
-<summary><strong>My business is located in Canada, why can't I send SMS to someone in the United States?</strong></summary>
+<summary><strong>Can I send SMS to US numbers from Canada?</strong></summary>
 
-Currently, Canadian businesses can only send SMS messages to Canadian numbers. Messages to US-based numbers are rejected by US telecom carriers because they weren't sent from an A2P-registered business.
+No. Sending SMS to US numbers requires A2P registration, which is not supported in Canada. You can only send SMS to Canadian numbers; messages to US numbers are rejected by US carriers.
 </details>
 
 <details>
