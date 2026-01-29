@@ -2,14 +2,14 @@
 title: SMS Configuration
 ---
 
+
+Configure SMS sending, including number selection and A2P 10DLC registration for United States businesses. 
+
 :::caution
 Your US A2P registration is currently in the carrier approval process. Due to stricter enforcement across the A2P ecosystem, approvals are taking ~8–9 business days right now.
 
 We implemented updates and resubmitted affected applications on Jan 22, 2026. We’ll notify you as soon as your registration is approved or if we need any additional details to strengthen the application.
 :::
-
-Configure SMS sending, including number selection and A2P 10DLC registration for United States businesses. 
-
 :::info
 This configuration is only required for businesses located in the United States. Canadian businesses can use SMS messaging immediately without any configuration or registration requirements.
 :::
