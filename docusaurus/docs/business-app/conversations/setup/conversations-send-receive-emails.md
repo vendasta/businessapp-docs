@@ -26,7 +26,7 @@ Learn more about setting up and customizing your [AI Chat Receptionist](/busines
 
 ## Sender, Reply, and Forwarding settings for email in Conversations
 
-![](./img/email_setup.png)
+![](../img/email_setup.png)
 
 ### Conversations Email Sender Address
 

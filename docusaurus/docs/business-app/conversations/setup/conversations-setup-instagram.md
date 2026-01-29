@@ -24,7 +24,7 @@ To connect Instagram to Conversations, you'll need:
 1. Go to `Settings > Conversations Settings`
 2. Click **Sign in with Instagram**
 
-![Step 1: Sign in with Instagram](img/Inbox_instagram_stepone.png)
+![Step 1: Sign in with Instagram](../img/Inbox_instagram_stepone.png)
 
 3. Log in to Facebook (or click **Reconnect** if already signed in)
 4. Grant access to **All Pages** linked to your Facebook account
@@ -32,7 +32,7 @@ To connect Instagram to Conversations, you'll need:
 6. Click **Connect**
 7. Back in Conversations Settings, click **Turn on Messaging** to enable Instagram messages
 
-![Step 3: Select Instagram account](img/Inbox_instagram_stepthree.png)
+![Step 3: Select Instagram account](../img/Inbox_instagram_stepthree.png)
 
 ### Troubleshooting Instagram Connection Issues
 
