@@ -1,4 +1,4 @@
-# How to give existing WordPress users logins after import
+# Existing Users After Import
 When you import an existing site into WordPress Hosting, your WordPress users will not initially be able to log in. To maintain your users’ ability to log in, you have two options.
 
 ## Option 1

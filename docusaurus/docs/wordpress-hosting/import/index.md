@@ -1,6 +1,6 @@
 ---
-title: "Importing WordPress sites into WordPress Hosting Pro"
-sidebar_label: "Importing WordPress sites into WordPress Hosting Pro"
+title: "Import"
+sidebar_label: "Import"
 description: "To import your WordPress sites into WordPress Hosting Pro, follow these steps:  \n  1. Create an Account  \n  Go to the   Accounts   tab in Partner Center and c"
 ---
 

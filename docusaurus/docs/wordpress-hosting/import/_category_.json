@@ -2,10 +2,9 @@
   "label": "Import",
   "position": 7,
   "collapsible": true,
-  "collapsed": true,
+  "collapsed": false,
   "link": {
-    "type": "generated-index",
-    "description": "Bring an existing site into WordPress Hosting.",
-    "slug": "/wordpress-hosting/category/import"
+    "type": "doc",
+    "id": "wordpress-hosting/import/index"
   }
 }

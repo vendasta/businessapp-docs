@@ -1,4 +1,4 @@
-# How to change WordPress user roles
+# Change User Roles
 To change a user’s WordPress role (from Administrator) you have two options.
 
 ## Option 1

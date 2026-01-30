@@ -24,7 +24,7 @@ WordPress Hosting Standard is a simplified version of WordPress Hosting Pro. It 
     
 *   Hosting on Google Cloud Platform
     
-*   Free SSL certificate via Let’s Encrypt
+*   Free SSL certificate via Let's Encrypt
     
 *   Daily backups (two most recent versions retained)
     
@@ -77,7 +77,7 @@ All WordPress Hosting plans are hosted on Google Cloud Platform using compute-op
     
 *   PHP 7+
     
-*   Free SSL certificates via Let’s Encrypt
+*   Free SSL certificates via Let's Encrypt
     
 *   HTTPS-only firewall with Google botnet IP blocking
     
@@ -250,7 +250,7 @@ Refer to WooCommerce documentation for more on managing inventory, shipping, ord
 
 **SSL Certificates**
 
-All WordPress Hosting sites receive free SSL certificates from Let’s Encrypt. TLS versions 1.1–1.3 are supported for encrypted, secure traffic.
+All WordPress Hosting sites receive free SSL certificates from Let's Encrypt. TLS versions 1.1–1.3 are supported for encrypted, secure traffic.
 
 ### DNSSEC Support
 
@@ -271,7 +271,7 @@ To use an external SMTP plugin:
 
 1.  Go to **Settings > General**
     
-2.  Disable the “WordPress Hosting Pro Mail System” toggle
+2.  Disable the "WordPress Hosting Pro Mail System" toggle
     
 3.  Click **Save Changes**
     
@@ -380,12 +380,12 @@ Only Partner Center admin users with access to all markets can view the Admin Da
 
 1.  In **Product Info**, locate **White-Label Branding**
     
-2.  Customize product name and upload your brand’s logo
+2.  Customize product name and upload your brand's logo
     
 
 Note: White-label options are available on select subscription tiers.
 
-WordPress Hosting empowers Partners to offer high-performance websites across a range of client needs. Whether you’re building a fast, templated site with Standard or managing advanced deployments with Pro, you have the tools, infrastructure, and support needed to succeed.
+WordPress Hosting empowers Partners to offer high-performance websites across a range of client needs. Whether you're building a fast, templated site with Standard or managing advanced deployments with Pro, you have the tools, infrastructure, and support needed to succeed.
 ## Frequently Asked Questions
 
 <details>
