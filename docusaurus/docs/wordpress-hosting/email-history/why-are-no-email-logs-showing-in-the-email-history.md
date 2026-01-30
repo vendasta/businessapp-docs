@@ -1,6 +1,6 @@
 ---
-title: "Why Are No Email Logs Showing in the Email History?"
-sidebar_label: "Why Are No Email Logs Showing in the Email History?"
+title: "No Email Logs Showing"
+sidebar_label: "No Email Logs Showing"
 description: "If you do not see any email logs under the  Email History  tab in WordPress Hosting Pro, it is likely because your website is configured to use an external SMT"
 ---
 

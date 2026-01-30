@@ -1,4 +1,4 @@
-# How does WordPress Hosting log me in to the WordPress Dashboard?
+# WordPress Dashboard Login
 WordPress Hosting provides a secure login to the WordPress Admin Dashboard (simply by clicking on the “WordPress Dashboard” button on the Overview page) to make your site safer and easier to use.
 
 Our custom WordPress integration intercepts all attempts to access your WordPress Dashboard and directs unauthenticated traffic to your homepage or our custom login page. This helps us secure your site from password attacks and provide access to your site with more control. It will also allow you to unify your user management and access control for WordPress Hosting and other software solutions.

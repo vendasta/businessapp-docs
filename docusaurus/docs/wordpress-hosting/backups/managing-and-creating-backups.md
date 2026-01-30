@@ -1,6 +1,6 @@
 ---
-title: "Managing and Creating Backups"
-sidebar_label: "Managing and Creating Backups"
+title: "Manage Backups"
+sidebar_label: "Manage Backups"
 description: Learn how to manage automated and manual backups in WordPress Hosting to protect your website data.
 tags: [wordpress-hosting, backups, security, setup]
 keywords: [WordPress backups, website restore, manual backup WordPress, automated backups, data protection]
