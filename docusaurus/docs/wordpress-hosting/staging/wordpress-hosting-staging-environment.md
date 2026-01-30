@@ -51,3 +51,35 @@ By default, staging environments are usually set to "discourage search engines f
 Yes. The staging build will have a unique URL so you can view and share it without affecting your primary domain.
 
 </details>
+
+<details>
+<summary>Why is my staging site taking a long time to create?</summary>
+
+Staging creation time depends on more than just the site's file size—it also depends on how large and complex the site's **database** is.
+
+**Examples:**
+
+* A 4.5 GB eCommerce site with **10,000+ products** will take significantly longer than a 4.5 GB brochure site with 5 pages and large media files.
+* This is because staging involves copying both the **file system** and performing **database writes**, which can be slow for content-heavy or highly dynamic sites.
+
+If your staging site is taking longer than expected, give it additional time or reach out to support if it's stalled for an extended period.
+
+</details>
+
+<details>
+<summary>Does WordPress Hosting Pro block SEO bots from crawling temporary URLs?</summary>
+
+Yes. WordPress Hosting Pro automatically restricts SEO bots from indexing temporary URLs (e.g. `sitename.websitepro.hosting`).
+
+**Why this matters:**
+
+* Prevents premature indexing of incomplete or placeholder content
+* Protects your SEO reputation
+* Avoids duplicate content penalties from search engines
+
+**Best practice:**  
+Connect your **custom domain** before launching your site or beginning any SEO efforts. Only custom domains allow full indexing and visibility by search engine bots.
+
+> Temporary URLs are not intended for public visibility or long-term use. SEO bots are blocked by design until a custom domain is in place.
+
+</details>
