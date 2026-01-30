@@ -32,7 +32,9 @@ Once you're satisfied with your changes in staging, you can push them to product
 
 After testing your changes in staging, you can push them to your live site with a single click. The push process minimizes downtime and ensures your changes go live smoothly.
 
-> **Tip**: Use the "Preserve the Staging files" option if you want to keep your staging environment intact after pushing to production. Otherwise, staging files will be deleted after the push.
+:::tip
+Use the "Preserve the Staging files" option if you want to keep your staging environment intact after pushing to production. Otherwise, staging files will be deleted after the push.
+:::
 
 ### Reset Options
 

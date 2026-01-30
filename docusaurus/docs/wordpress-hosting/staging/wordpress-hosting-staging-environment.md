@@ -1,6 +1,6 @@
 ---
-title: "WordPress Hosting Staging Environment"
-sidebar_label: "WordPress Hosting Staging Environment"
+title: "Staging Environment"
+sidebar_label: "Staging Environment"
 description: Use the WordPress Hosting staging environment to safely test changes before pushing them to your live production site.
 tags: [wordpress-hosting, staging, development]
 keywords: [WordPress staging site, test website changes, push to production, staging environment, safe website updates]
