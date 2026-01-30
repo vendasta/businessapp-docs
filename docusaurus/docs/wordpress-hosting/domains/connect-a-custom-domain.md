@@ -1,299 +1,142 @@
 ---
-title: "Connect a Custom Domain"
-sidebar_label: "Connect a Custom Domain"
-description: Step-by-step guide to connecting your custom domain to your WordPress Hosting website using DNS records.
+title: "Domain Setup"
+sidebar_label: "Domain Setup"
+description: "Complete guide to setting up and connecting your custom domain to WordPress Hosting. Includes DNS record configuration, domain connection steps, validation, and FAQs."
 tags: [wordpress-hosting, domains, dns, setup]
-keywords: [connect custom domain, WordPress DNS records, domain registrar setup, point domain to WordPress, A record CNAME]
+keywords: [domain setup, connect custom domain, WordPress DNS records, domain registrar setup, point domain to WordPress, A record CNAME]
 ---
 
-To connect a custom domain, follow these steps: 
+To connect a custom domain to WordPress Hosting, you'll need to configure DNS records at your domain registrar and then connect the domain in WordPress Hosting Pro.
 
-**Part 1: Your domain and its Records**
+## Overview
 
-1.  Purchase a domain from a Domain Registrar.
-2.  Find the Domain Registrar’s page for managing the DNS Records of your new domain
-3.  Edit or create a DNS Record for your new domain
-    *   We recommend setting a CNAME Record with a value of _[host.websiteprohosting.com](http://host.websiteprohosting.com/)_
-    *   If you require an A Record then the value should be _**34.149.86.124**_
+To set up your domain for WordPress Hosting, there are two types of DNS records you'll need to configure:
 
-**Part 2: Configuring your WordPress Hosting Site**
+**A record:** This allows you to point your root domain (e.g., `mybusiness.com`) to your website.
 
-1.  Log into WordPress Hosting and navigate to the **Domains** tab
-2.  Click **Connect a Domain**
-3.  Enter the domain name you purchased. Click **Add Domain.**
-4.  WordPress Hosting will mark the new domain as **Pending** while it verifies that the DNS records are correct. Once the DNS records have been verified (WordPress Hosting checks for this automatically), your domain will show as **Connected.** 
-5.  You will receive an email and see a notification in the **Recent** **Activity** stream of **Business App**.
-6.  You can also **Delete** added domains from this tab.
-7.  Once it has been **connected** requests for your new domain will be redirected to the **Primary Domain**.
+**CNAME record:** Allows pointing a subdomain (e.g., `www.mybusiness.com`) to your website.
 
-You have the ability to set any of your **connected** domains to be the **Primary Domain**.
+You'll need at least one of these records. It's common to use both: an A Record for the root domain and a CNAME for `www`.
 
-1.  On the **Domains** tab
-2.  Find the domain in the list, expand the options menu on the right side, then click **Make Primary**.
-3.  All of your domains will then redirect to this domain.
+## Part 1: Configure DNS Records
+
+### Setting up an A record
+
+To set up an A record, log in to your domain registrar and access your domain settings. From there, choose to add an A record. For this new record, add the following information:
+
+**HOST**: This should be either blank or `@` (depending on your provider)  
+**Points to**: `34.149.86.124`  
+**TTL**: 3600 seconds (1 hour)
+
+### Setting up a CNAME record
+
+To set up your CNAME record, log in to your domain registrar and access your domain settings. From there, choose to add a CNAME record and enter the following information:
+
+**HOST:** This should be the subdomain you want to use (usually `www`)
+
+**Points to:** `host.websiteprohosting.com`
+
+**TTL:** 3600 seconds (1 hour)
+
+> **Note:** We recommend setting a CNAME Record for subdomains. If you require an A Record for your root domain, use the value `34.149.86.124`.
+
+For more detailed information about DNS records, when to use each type, and DNS propagation, see [Understanding DNS Records](understanding-dns-records.md).
+
+## Part 2: Connect Domain in WordPress Hosting Pro
+
+1. Log into WordPress Hosting and navigate to the **Domains** tab
+2. Click **Connect a Domain**
+3. Enter the domain name you purchased. Click **Add Domain.**
+4. WordPress Hosting will mark the new domain as **Pending** while it verifies that the DNS records are correct. Once the DNS records have been verified (WordPress Hosting checks for this automatically), your domain will show as **Connected.**
+5. You will receive an email and see a notification in the **Recent Activity** stream of **Business App**.
+6. You can also **Delete** added domains from this tab.
+7. Once it has been **connected**, requests for your new domain will be redirected to the **Primary Domain**.
+
+### Setting Your Primary Domain
+
+You have the ability to set any of your **connected** domains to be the **Primary Domain**.
+
+1. On the **Domains** tab
+2. Find the domain in the list, expand the options menu on the right side, then click **Make Primary**.
+3. All of your domains will then redirect to this domain.
+
+For more information on managing multiple domains and setting your primary domain, see [Set your preferred URL or domain](set-your-preferred-url-or-domain.md).
+
+## Part 3: Validate DNS Records
+
+Once the above records are set up, WordPress Hosting Pro will automatically validate them. The domain will show as **Pending** until WordPress Hosting detects the correct DNS records, then it will change to **Connected**.
+
+You can also manually check to see if your domains are propagating by looking them up on MxToolbox:
+
+**A record**: Enter your root domain: [https://mxtoolbox.com/DNSLookup.aspx](https://mxtoolbox.com/DNSLookup.aspx)  
+The A record that is returned should include an IP address of `34.149.86.124`
+
+**CNAME record**: Enter your subdomain (e.g. `www.business.com`): [https://mxtoolbox.com/DNSLookup.aspx](https://mxtoolbox.com/DNSLookup.aspx)  
+The record that is returned should reflect a Canonical Name of `host.websiteprohosting.com`
 
 ## Frequently Asked Questions
 
-
 <details>
-<summary>What if I purchased my domain from GoDaddy/Namecheap?</summary>
+<summary>When do I use an A Record?</summary>
 
-The process is the same. You need to log in to your registrar's dashboard (GoDaddy, Namecheap, etc.) and update the DNS records (A Record or CNAME) to point to the values provided in the WordPress Hosting dashboard.
+You would use an A record if you want your root domain, for example, `business.com`, to point to your site on WordPress Hosting Pro.
 
 </details>
 
 <details>
-<summary>What are DNS Records?</summary>
+<summary>When do I use a CNAME record?</summary>
 
-The **Domain Name System (DNS)** is a collection of standards and infrastructure that allows internet clients (like Chrome, Safari, or Edge) to map human-readable domain names to server addresses.
-
-Think of it like giving a taxi driver the name of a place, such as "the mall," instead of the exact address; the driver can look up the location and find the directions.
-
-DNS records serve as "listings" for domain addresses. They're configured on **NameServers**, which respond to queries about domains, such as "Where can I find mybusiness.com?" WordPress Hosting Pro works with three main types of DNS records:
-
-**Types of DNS Records Used by WordPress Hosting Pro**
-
-**1. A Records**
-* **Meaning**: "A" stands for **Address Record**.
-* **Purpose**: Points a domain name to a specific IP address.
-* **Example**: An A Record for `mybusiness.com` might direct traffic to IP `216.239.38.21`.
-* **In General**: "If you're looking for `mybusiness.com`, you should find it at IP address `216.239.38.21`."
-
-**2. CNAME Records**
-* **Meaning**: Stands for **Canonical Name Record** (here, "canonical" means "the rule that must be followed").
-* **Purpose**: Points one domain name to another domain name.
-* **Example**: Setting a CNAME for `www.mybusiness.com` will ensure it points to `mybusiness.com`. If configured incorrectly, this could override other records for subdomains like `smtp.mybusiness.com`.
-* **In General**: "If you're looking for `www.mybusiness.com`, you should find it at `mybusiness.com`."
-
-**3. CAA Records**
-* **Meaning**: Stands for **Certificate Authority Authorization**.
-* **Purpose**: Controls which Certificate Authorities (CAs) can issue SSL/TLS certificates for your domain, which verify your domain's identity and secure communication.
-* **Example**: A CAA Record might specify that only certain CAs, like Let's Encrypt, can create SSL/TLS certificates for your domain.
-* **In General**: "If you're an authorized Certificate Authority, you may issue SSL/TLS certificates for this domain."
-
-If there is **no CAA Record** (or if it's empty), any Certificate Authority can issue certificates for the domain—this is the most common setup.
+You would use a CNAME record any time you want a subdomain to point to your website. Some example subdomains would be `www.business.com` or `listings.business.com`. In both of these cases you would add only the subdomain portion as the host in your record, so `www` and `listings` in the example.
 
 </details>
 
 <details>
-<summary>Do I need an A Record or CNAME or both to connect a domain?</summary>
+<summary>What is the base requirement for linking my domain?</summary>
 
-To connect a domain to WordPress Hosting Pro, you'll need either an **A Record** or a **CNAME Record**, depending on what part of the domain you're connecting:
-
-* Use an **A Record** to link the **root domain** (e.g., `mybusiness.com`).
-* Use a **CNAME Record** to link a **subdomain** (e.g., `www.mybusiness.com`).
-
-You must use at least one of these. It's common to use both: an A Record for the root and a CNAME for `www`.
+To link your domain to WordPress Hosting Pro you must use at least one A record or CNAME record. Which one you use depends on whether you want to link the root domain or a subdomain to WordPress Hosting Pro. To link the root domain you would use an A record. To link a subdomain you would use a CNAME record.
 
 </details>
 
 <details>
-<summary>When should I use a CNAME Record?</summary>
+<summary>Do I need to do anything to setup SSL?</summary>
 
-Use a **CNAME Record** any time you want a subdomain (like `www` or `blog`) to point to your WordPress Hosting Pro site.
-
-Examples:
-* `www.business.com`
-* `listings.business.com`
-
-For the "Host" field in the record, only enter the subdomain part (e.g., `www` or `listings`).
+All WordPress Hosting Pro sites are automatically provisioned with a Let's Encrypt SSL certificate, so you would not need to follow any extra steps to set this up.
 
 </details>
 
 <details>
-<summary>When should I use an A Record?</summary>
+<summary>How do I set the preferred URL?</summary>
 
-Use an **A Record** when connecting your **primary/root domain**, such as `mybusiness.com`, directly to your WordPress Hosting Pro site.
+This can be done from the domains tab of WordPress Hosting Pro. Select the kabob menu next to the domain you want to use, then select Make Primary. This will make it so that when the site is accessed from any of its connected domains, the user is redirected to your primary one.
+
+</details>
+
+## Additional FAQs
+
+<details>
+<summary>How long does it take for my domain to connect?</summary>
+
+After configuring your DNS records, it typically takes a few minutes for WordPress Hosting to detect and connect your domain. However, DNS propagation can take up to 24 hours to fully complete across all internet service providers. Your domain will show as "Pending" until WordPress Hosting detects the correct DNS records, then it will change to "Connected."
 
 </details>
 
 <details>
-<summary>How do I configure my DNS records to connect to WordPress Hosting Pro?</summary>
+<summary>What if my domain stays in "Pending" status?</summary>
 
-To connect a domain:
-
-**A Record**
-* Host: `@`
-* Points to: `34.149.86.124`
-
-**CNAME Record**
-* Host: `www`
-* Points to: `host.websiteprohosting.com`
-
-Additionally, be aware of **CAA Records**:
-* If no CAA Record exists, any certificate authority (CA) can issue an SSL certificate.
-* If using a CAA Record, you **must authorize** `letsencrypt.org` (used by WordPress Hosting Pro) to issue certificates.
+If your domain remains in "Pending" status, verify that your DNS records are configured correctly. You can check your DNS records using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx). Ensure your A record points to `34.149.86.124` and your CNAME record (if using www) points to `host.websiteprohosting.com`. DNS changes can take up to 24 hours to propagate.
 
 </details>
 
 <details>
-<summary>How do I point a GoDaddy domain to WordPress Hosting Pro?</summary>
+<summary>Can I connect multiple domains to the same WordPress Hosting site?</summary>
 
-**Part 1: DNS Settings in GoDaddy**
-
-1. In GoDaddy, go to **Domains > All Domains**.
-2. Select your domain and go to **Manage DNS**.
-3. Under **Records**:
-   * Add an **A Record** for `@` that points to `34.149.86.124`.
-   * Add a **CNAME Record** for `www` that points to `host.websiteprohosting.com`.
-4. Click **Save**.
-5. Allow up to 24 hours for all changes to take full effect. During this time your old host may still be serving your site's traffic. You can check on the status of your DNS Settings using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx) or viewing the **Domains** tab in WordPress Hosting **Pro.**
-
-> Flush Google's DNS cache for faster propagation: [Google DNS Cache Flush Tool](https://developers.google.com/speed/public-dns/cache)
-
-**Part 2: Connect Domain in WordPress Hosting Pro**
-
-1. Log into WordPress Hosting **Pro** and go to the **Domains** tab.
-2. Click **Connect a Domain** and enter your domain.
-3. Wait a few minutes for the domain to show as "Connected."
-4. If needed, disable **Redirect to HTTPS** temporarily while the SSL certificate is provisioning. Remember to re-enable it once secure.
-5. Click **Make Primary** on the domain that you want all your visitors to be redirected to.
+Yes, you can connect multiple domains to your WordPress Hosting site. However, only one domain can be set as the primary domain. All other connected domains will automatically redirect to your primary domain. You can change which domain is primary at any time from the Domains tab.
 
 </details>
 
 <details>
-<summary>How do I move my domain to Cloudflare DNS?</summary>
+<summary>What happens if I delete a connected domain?</summary>
 
-1. Create an account at [Cloudflare](https://www.cloudflare.com/).
-2. Choose a free or paid plan.
-3. Add your domain.
-4. Cloudflare will display **nameservers** to replace at your domain registrar.
-5. Update your **domain's nameservers** to Cloudflare's.
-6. All DNS records must now be managed in the **Cloudflare DNS zone**.
-
-More details: [Cloudflare setup guide](https://support.cloudflare.com/hc/en-us/articles/201720164-Creating-a-Cloudflare-account-and-adding-a-website)
-
-</details>
-
-<details>
-<summary>How do I connect a Cloudflare-managed domain to WordPress Hosting Pro?</summary>
-
-You can connect a Cloudflare-managed domain to WordPress Hosting Pro by following a few key configuration steps in both Cloudflare and WordPress Hosting Pro.
-
-**Step-by-step instructions:**
-
-1. **Ensure your DNS records are set correctly**
-   * Add the necessary **A** and **CNAME** records for your domain in Cloudflare as described in the DNS setup instructions for WordPress Hosting Pro.
-   * A Record: `@ → 34.149.86.124`
-   * CNAME Record: `www → host.websiteprohosting.com`
-
-2. **In Cloudflare:**
-   * Go to the **SSL/TLS > Overview** tab and set **SSL** to `Full`
-   * Under **SSL/TLS > Edge Certificates**, turn **"Always Use HTTPS"** to `Off` temporarily
-
-3. **In WordPress Hosting Pro:**
-   * Go to the **Domains** tab and add your domain
-   * Wait for the domain status to show **"Connected"** (DNS propagation may take time)
-
-4. **Return to Cloudflare:**
-   * Once connected in WordPress Hosting Pro, go back to **Edge Certificates** and switch **"Always Use HTTPS"** to `On`
-
-**Additional Notes:**
-
-* **Four-level domains (e.g. `www.your.business.com`)** may face limitations when using Cloudflare's proxy (orange cloud) feature.
-  * **Solution 1:** Disable **DNS and HTTP Proxy (CDN)** mode for that domain
-  * **Solution 2:** Purchase a custom SSL certificate in Cloudflare under `SSL/TLS > Edge Certificates > Order SSL Certificate`
-
-> If HTTPS doesn't activate immediately, this is usually due to DNS caching. You can flush DNS manually or wait up to 24 hours for propagation.
-
-</details>
-
-<details>
-<summary>Why do DNS record changes take time to update?</summary>
-
-DNS records are cached by Internet Service Providers (ISPs) to improve global internet performance. That's why changes don't take effect instantly.
-
-**Two ways to influence DNS update speed:**
-
-* **Adjust TTL (Time To Live):**
-  * TTL tells systems how long to cache the record.
-  * Set it to 5–60 minutes for quicker propagation (if your provider allows it).
-* **Flush DNS manually:**
-  * Use [Google's DNS Flush Tool](https://developers.google.com/speed/public-dns/cache) to refresh their cache for your domain.
-
-Propagation can still take up to 24 hours depending on the ISP.
-
-</details>
-
-
-<details>
-<summary>Does WordPress Hosting Pro support AAAA Records or IPv6?</summary>
-
-Currently, **AAAA Records (IPv6) are not supported.** WordPress Hosting Pro requires only an **A Record** that points to the IPv4 address: `34.149.86.124`.
-
-</details>
-
-<details>
-<summary>How many subdomains can I use with WordPress Hosting Pro?</summary>
-
-There is no limit to the number of sub-domains allowed or supported by WordPress Hosting Pro, however, all sub-domains will be redirected to a single primary domain.
-
-For example, a customer can decide to have:
-* website.com (PRIMARY)
-* portal.website.com
-* portal2.website.com
-* portal3.website.com
-* portal100.website.com
-
-All these sub-domains can be added to WordPress Hosting Pro, but you can only have **1 primary domain**. All secondary domains will redirect to the primary domain.
-
-Important things to note:
-* The sub-domain CNAME DNS record has to point to [**host.websiteprohosting.com**](http://host.websiteprohosting.com/)
-* All the sub-domains will redirect to the primary domain.
-* Each sub-domain cannot be configured to redirect to anywhere else other than the primary domain on WordPress Hosting Pro.
-* When setting up sub-domains, you would add only the subdomain portion as the host in your record.
-
-</details>
-
-<details>
-<summary>How to Configure DNS Proxy Setup for Website Pro on Cloudflare</summary>
-
-If you're using WordPress Hosting Pro and want to configure your DNS settings on Cloudflare for optimized performance and security, follow the steps below.
-
-**Prerequisites**
-1. A Cloudflare account.
-2. Your domain added to Cloudflare.
-3. Access to your WordPress Hosting Pro hosting details (e.g., IP address or CNAME record).
-
-**Steps to Configure DNS Proxy**
-
-1. **Log in to Cloudflare**  
-   Navigate to Cloudflare's dashboard and log in with your credentials.
-
-2. **Select Your Domain**  
-   From the Cloudflare dashboard, choose the domain for which you want to configure DNS.
-
-3. **Go to DNS Settings**  
-   Click on the **DNS** tab in the Cloudflare interface.
-
-4. **Add or Edit DNS Records**  
-   Depending on your hosting configuration, you may need to either add new DNS records or modify existing ones.
-   * **A Record**:
-     * Type: `A`
-     * Name: Your root domain (e.g., `example.com`).
-     * Content: Your WordPress Hosting Pro-provided IP address (e.g., `34.149.86.124`).
-     * Proxy Status: **Click the cloud icon to disable the orange "Proxied" status**.
-   * **CNAME Record**:
-     * Type: `CNAME`
-     * Name: `www` or other subdomains.
-     * Content: Your WordPress Hosting Pro-provided CNAME (e.g., `host.websiteprohosting.com`).
-     * Proxy Status: **Enable the orange "Proxied" status**.
-
-   > **Note:** If the proxy status is set to **DNS Only**, Cloudflare's features such as caching and SSL won't be active for those records. You need to enable the proxy (orange cloud).
-
-5. **Verify DNS Changes**  
-   After updating your DNS settings, ensure the proxy status for both `A` and `CNAME` records is set to **Proxied** (orange cloud). This ensures Cloudflare optimizes and secures your website traffic.
-
-6. **Test Your Configuration**
-   * Visit your website to ensure it loads correctly.
-   * Use Cloudflare diagnostic tools to check for any configuration issues.
-
-**Troubleshooting**
-* **Website not resolving correctly?**  
-  Double-check the DNS entries and ensure the proxy status is enabled for the correct records.
-* **SSL Issues?**  
-  Make sure you have an active SSL certificate on Cloudflare. Under the **SSL/TLS** tab, choose "Full" or "Full (Strict)" depending on your server setup.
-
-By configuring the proxy status correctly, you'll be able to leverage Cloudflare's security and performance features effectively for your WordPress Hosting Pro setup.
+If you delete a connected domain from WordPress Hosting, it will no longer redirect to your site. Your DNS records will remain unchanged at your domain registrar, so you'll need to update or remove those DNS records if you want to use the domain elsewhere.
 
 </details>
