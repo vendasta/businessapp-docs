@@ -34,19 +34,6 @@ You have the ability to set any of your **connected** domains to be the **Pri
 
 ## Frequently Asked Questions
 
-<details>
-<summary>How long does it take for my new domain to work?</summary>
-
-DNS propagation can take anywhere from a few minutes to 48 hours. However, with most modern registrars, you will often see the site connect within 1-2 hours.
-
-</details>
-
-<details>
-<summary>Can I use a subdomain (e.g., shop.mysite.com)?</summary>
-
-Yes. You would simply follow the same steps but enter the full subdomain (e.g., `shop.mysite.com`) when connecting, and ensure your DNS records (CNAME or A record) in your registrar point specifically for that subdomain.
-
-</details>
 
 <details>
 <summary>What if I purchased my domain from GoDaddy/Namecheap?</summary>
@@ -228,28 +215,6 @@ Propagation can still take up to 24 hours depending on the ISP.
 
 </details>
 
-<details>
-<summary>Do I need to do anything to get an SSL certificate for WordPress Hosting Pro?</summary>
-
-No. **All WordPress Hosting Pro sites are automatically issued an SSL certificate** from Let's Encrypt. This typically completes within a few minutes, but can take up to 24 hours.
-
-</details>
-
-<details>
-<summary>Why does my site still show as "Not Secure" even with SSL?</summary>
-
-This issue is usually caused by **mixed content**—when some elements (like images or scripts) on your site still load over `http://` instead of `https://`.
-
-To troubleshoot:
-1. Open your site.
-2. Press **F12** or right-click and choose **Inspect**, then open the **Console** tab.
-3. Look for errors about insecure content
-
-Any `http://` assets must be updated to `https://` or replaced.
-
-Recommended guide: [How to fix mixed content in WordPress (WPBeginner)](https://www.wpbeginner.com/plugins/how-to-fix-the-mixed-content-error-in-wordpress-step-by-step)
-
-</details>
 
 <details>
 <summary>Does WordPress Hosting Pro support AAAA Records or IPv6?</summary>
