@@ -47,7 +47,9 @@ While daily automated backups provide ongoing protection, consider creating a ma
 
 You can restore your site to any available backup point directly from the **Backups** tab in your WordPress Hosting dashboard. Restoration time depends on your site size—small sites may restore in minutes, while larger sites can take longer.
 
-> **Important**: Restoring a backup will replace your current site with the selected backup version. All changes made after that backup point will be lost.
+:::important
+Restoring a backup will replace your current site with the selected backup version. All changes made after that backup point will be lost.
+:::
 
 ## Frequently Asked Questions
 

@@ -1,6 +1,6 @@
 ---
-title: "Email Status in Email History"
-sidebar_label: "Email Status in Email History"
+title: "Email Status"
+sidebar_label: "Email Status"
 description: "When you delve into the Activity section, you'll often encounter various email statuses. These statuses provide valuable insights into the performance of your"
 ---
 
