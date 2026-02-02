@@ -65,7 +65,7 @@ Tips:
 - Templates must be approved before they appear in the dropdown
 - WhatsApp requires templates for outbound messages sent outside an active conversation window
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>What if messages fail to send?</summary>

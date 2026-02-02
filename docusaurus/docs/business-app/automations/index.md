@@ -75,7 +75,7 @@ Use the Activity tab on an automation to see what ran, when it ran, and whether 
 - Connect external systems with Zapier
   - See: [Zapier](zapier.md)
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Can I get a response from an AI Employee inside an automation?</summary>

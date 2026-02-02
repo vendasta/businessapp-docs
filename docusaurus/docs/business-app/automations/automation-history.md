@@ -1,5 +1,5 @@
 ---
-title: Automation Activity & History
+title: Automation activity & history
 description: View and troubleshoot past automation runs using the Activity and History logs.
 tags: [automation, troubleshooting]
 keywords: [automation history, automation logs, troubleshoot workflows, automation success rate]
@@ -41,7 +41,7 @@ Use Automation Activity to see what ran, when it ran, and whether it succeeded. 
 - Monitor early: Review Activity after enabling to confirm expected behavior
 - Log context: Use tags or fields so you can filter runs and outcomes later
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>Why is my automation stuck in "Running"?</summary>
