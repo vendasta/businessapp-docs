@@ -1,6 +1,8 @@
 {
     "label": "WooCommerce",
     "position": 2,
+    "collapsible": true,
+    "collapsed": true,
     "link": {
       "type": "generated-index",
       "description": "Set Up Your WooCommerce Store"

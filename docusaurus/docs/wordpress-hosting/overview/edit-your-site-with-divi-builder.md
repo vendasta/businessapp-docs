@@ -1,6 +1,6 @@
 ---
 title: "Edit your site with Divi Builder"
-sidebar_label: "Edit your site with Divi Builder"
+sidebar_label: "Divi Builder"
 description: "Edit your site with Divi Builder \n \n \n Getting your business up and selling is possible with WordPress Hosting Standard, Pro or Premium. This powerful produc"
 ---
 

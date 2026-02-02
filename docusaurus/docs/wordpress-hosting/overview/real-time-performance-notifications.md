@@ -1,6 +1,6 @@
 ---
 title: "Real-time performance notifications"
-sidebar_label: "Real-time performance notifications"
+sidebar_label: "Performance Notifications"
 description: "Provide an excellent customer experience with real-time notifications on the status of your client websites, so you can quickly resolve issues and maintain e"
 ---
 
