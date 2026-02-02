@@ -10,7 +10,9 @@ Unpublishing a WordPress website can be done in several ways depending on your g
 
 To take a site offline completely in WordPress Hosting Pro, you can cancel or deactivate the WordPress Hosting product. This removes public access and stops all future backups.
 
-> **Note:** Deactivating a WordPress Hosting Pro product will make both the production and staging sites inaccessible and return a "site not found" error.
+:::info
+Deactivating a WordPress Hosting Pro product will make both the production and staging sites inaccessible and return a "site not found" error.
+:::
 
 ## Temporarily Hide a Site
 
