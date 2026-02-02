@@ -1,10 +1,6 @@
 {
   "label": "FAQs",
   "position": 5,
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "ad-intel/faqs/index"
-  }
+  "collapsed": true
 }
 

@@ -2,7 +2,7 @@
   "label": "Email History",
   "position": 10,
   "collapsible": true,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "doc",
     "id": "wordpress-hosting/email-history/index"

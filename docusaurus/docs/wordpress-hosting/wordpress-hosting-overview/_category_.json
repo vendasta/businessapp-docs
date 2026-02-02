@@ -2,7 +2,7 @@
   "label": "WordPress Hosting Overview",
   "position": 2,
   "collapsible": true,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "doc",
     "id": "wordpress-hosting/wordpress-hosting-overview/index"

@@ -1,6 +1,6 @@
 ---
 title: "Product Details - WordPress Hosting Pro"
-sidebar_label: "Product Details - WordPress Hosting Pro"
+sidebar_label: "Product Details"
 description: "Google-fast WordPress sites \n   \n  Hosting websites can be time-consuming, and stressful, and often requires the expertise of trained technical people. Moreove"
 ---
 

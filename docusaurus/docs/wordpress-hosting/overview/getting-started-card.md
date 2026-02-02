@@ -1,6 +1,6 @@
 ---
 title: "Getting Started Card"
-sidebar_label: "Getting Started Card"
+sidebar_label: "Getting Started"
 description: "WordPress Hosting Standard and Pro users will see a section on the product’s dashboard. This section has been designed to help guide users through all capabil"
 ---
 

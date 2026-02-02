@@ -1,6 +1,6 @@
 ---
 title: "WordPress Hosting Pro Security: Comprehensive Protection for Your WordPress Site"
-sidebar_label: "WordPress Hosting Pro Security: Comprehensive Protection for Your WordPress Site"
+sidebar_label: "Security"
 description: "Overview \n WordPress Hosting Pro hosting on Google Cloud Platform (GCP) is designed to provide high performance, security, and reliability. This article highli"
 ---
 

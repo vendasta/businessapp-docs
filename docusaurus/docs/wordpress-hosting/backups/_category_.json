@@ -2,7 +2,7 @@
   "label": "Backups",
   "position": 8,
   "collapsible": true,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "doc",
     "id": "wordpress-hosting/backups/index"
