@@ -7,10 +7,10 @@ Automations let you create workflows that run on their own when specific events 
 
 ## What you can automate
 
-- Send SMS or plain‑text emails when a contact is created or updated
+- Send SMS or plain-text emails when a contact is created or updated
 - Apply tags, update CRM fields, or create tasks based on activity
 - Notify your team or log sales activities when messages are sent/received
-- Kick off follow‑ups after meetings, orders, or invoices
+- Kick off follow-ups after meetings, orders, or invoices
 - Trigger workflows when a conversation summary is created
 - Create tasks, notes, and logged calls on opportunities
 - Get a response from an AI Employee as part of a workflow
@@ -21,13 +21,13 @@ Every automation includes:
 
 - Trigger: The event that starts your workflow (for example, When a contact is created)
 - Conditions: They are an optional part of an automation rule. After a trigger occurred, all conditions will be checked. The automation will be executed if all conditions are met.
-- Actions: What happens next (for example, Send SMS, Send plain text email, Update company)
+- Actions: What happens next (for example, Send SMS, Send plain-text email, Update company)
 
 ## Get started
 
 1. Go to Business App > Administration > Automations
-2. Select ``Create Automation``
-3. Choose a template from the gallery, or start from ``Blank``
+2. Select `Create Automation`
+3. Choose a template from the gallery, or start from `Blank`
 4. Add your Trigger, Conditions (optional), and Action steps from the right-side panel
 5. Save and toggle your automation On
 
@@ -55,7 +55,7 @@ If your automation updates the same record (for example, applies tags or updates
 - Stop the automation run: Use when later steps depend on earlier ones
 
 :::tip
-Use "Skip the step and continue" for non‑critical actions like logging or tagging so the rest of the workflow can complete.
+Use "Skip the step and continue" for non-critical actions like logging or tagging so the rest of the workflow can complete.
 :::
 
 ### Review activity
@@ -65,7 +65,7 @@ Use the Activity tab on an automation to see what ran, when it ran, and whether 
 ## Learn more
 
 - Builder and settings
-  - Entry settings, error handling, and activity are covered below
+  - Entry settings, error handling, and activity are covered above
 - Messaging actions
   - See: [Messaging](messaging.md)
 - Templates and recipes
