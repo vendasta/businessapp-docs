@@ -7,8 +7,8 @@
     "turndown": "^7.2.0"
   },
   "scripts": {
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "serve": "docusaurus serve"
+    "start": "cd docusaurus && docusaurus start",
+    "build": "cd docusaurus && docusaurus build",
+    "serve": "cd docusaurus && docusaurus serve"
   }
 }
