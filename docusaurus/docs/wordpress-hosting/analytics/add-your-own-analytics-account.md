@@ -2,7 +2,9 @@
 
 WordPress Hosting has a built-in dashboard that displays highlights of your site’s visitor information using [Google Analytics.](https://www.google.com/analytics/analytics/) However, we understand that you may want to dig deeper using your own account. That’s why WordPress Hosting provides an easy way to do just that.
 
-_Note: Plugins meant to support Google Analytics are available, but these often fail to track gather data in the WordPress Hosting environment._ 
+:::info
+Plugins meant to support Google Analytics are available, but these often fail to track or gather data in the WordPress Hosting environment.
+::: 
 
 1.  [Sign up](https://analytics.google.com/analytics/web/) for Google Analytics and configure it for your site, or just log in if you’ve already completed that step.
 2.  Click [Admin](https://support.google.com/analytics/answer/6132368)
