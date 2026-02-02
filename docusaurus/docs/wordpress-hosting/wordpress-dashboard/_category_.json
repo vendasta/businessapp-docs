@@ -4,8 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Everything inside WordPress: pages, plugins, themes, and more.",
-    "slug": "/wordpress-hosting/category/wordpress-dashboard"
+    "type": "doc",
+    "id": "wordpress-hosting/wordpress-dashboard/index"
   }
 }
