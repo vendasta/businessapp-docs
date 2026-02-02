@@ -2,18 +2,19 @@
 title: Zapier
 sidebar_position: 1
 ---
+
 Business App CRM can be connected to many 3rd party systems using Zapier.
 
 ## How Does it Work?
 
 ### Step 1: Selecting the Trigger
 
-In this step, you can select the trigger that initiates an action in your workflow. As an example when a New Payment in Quickbooks Online can be used as a trigger. However, you can choose from various other triggers available in Zapier.
+In this step, you can select the trigger that initiates an action in your workflow. As an example when a New Payment in QuickBooks Online can be used as a trigger. However, you can choose from various other triggers available in Zapier.
 
 
 ### Step 2: Choosing the App
 
-After selecting the trigger, you’ll need to choose the app that will carry out your desired action. In this scenario, that app would be Business App. This means that whenever a New Payment is received in Quickbooks online, an automation would be executed in the Business App CRM. As part of Business App in Zapier, various actions are possible.
+After selecting the trigger, you’ll need to choose the app that will carry out your desired action. In this scenario, that app would be Business App. This means that whenever a New Payment is received in QuickBooks online, an automation would be executed in the Business App CRM. As part of Business App in Zapier, various actions are possible.
 
 ![](./img/zapier_app.png)
 
@@ -69,7 +70,7 @@ For Automations Triggered manually for an Order or Triggered via API for an Orde
 
 ### Step 7: Automation ID
 
-In the 'Automation ID' field, enter the ID of the automation you want Zapier to run when a trigger occurs in an external system, such as Quickbooks
+In the 'Automation ID' field, enter the ID of the automation you want Zapier to run when a trigger occurs in an external system, such as QuickBooks
 
 ![](./img/zapier_automation_id.png)
 
