@@ -1,17 +1,27 @@
+---
+title: "Change User Roles"
+sidebar_label: "Change User Roles"
+description: "Learn how to change a user's WordPress role from Administrator to a different role using two different methods."
+---
+
 # Change User Roles
-To change a user’s WordPress role (from Administrator) you have two options.
 
-## Option 1
+To change a user's WordPress role from Administrator to a different role, you have two options:
 
-**Create User in Business Center–then change role  
-**Once you have created a Business Center user, log in to WordPress as that user.  Once you are in the WordPress dashboard, go to:
+## Option 1: Create User in Business App First
 
-*   **Users > Role**
+1. Create a user in Business App.
+2. Log in to WordPress as that user.
+3. Navigate to **Users > Role** in the WordPress dashboard.
+4. Select the desired role.
 
-## Option 2
+## Option 2: Create User in WordPress First
 
-**Create User in WordPress (with matching email as Business Center user)–then change role**  
-Create a WordPress user within WordPress with the same email you will use for the Business Center user. Change the user role of that user in WordPress, go to:
+1. Create a WordPress user with the same email address you'll use for the Business App user.
+2. Navigate to **Users > Role** in the WordPress dashboard.
+3. Change the user role to the desired role.
+4. Create the corresponding Business App user with the same email address.
 
-*   **Users > Role**
-*   Note: **emails must be the same**. For example, if Bob is a WordPress user with the email robert@email.com, the Business Center user that gets created for Bob must use robert@email.com and not bob@email.com.  If you create a Business Center user for Bob with the email bob@email.com, a new WordPress user will be created for Bob with bob@email.com and Bob will now have two WordPress users.
+:::warning
+Email addresses must match exactly between WordPress and Business App users. For example, if Bob is a WordPress user with the email `robert@email.com`, the Business App user must also use `robert@email.com`, not `bob@email.com`. If the emails don't match, a new WordPress user will be created, resulting in duplicate users.
+:::
