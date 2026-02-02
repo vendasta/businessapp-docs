@@ -2,7 +2,7 @@
 title: Templates and recipes
 ---
 
-Get started fast with pre‑built templates and step‑by‑step recipes you can customize.
+Get started fast with pre-built templates and step-by-step recipes you can customize.
 
 ## Using templates
 
@@ -40,6 +40,6 @@ Images for the review request flow are available here:
 <details>
 <summary>Is this paid?</summary>
 
-Automations are available to all Business App users. Specific actions (for example, SMS and plain‑text email) require Conversations Pro.
+Automations are available to all Business App users. Specific actions (for example, SMS and plain-text email) require Conversations Pro.
 </details>
 

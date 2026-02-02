@@ -2,22 +2,23 @@
 title: Zapier
 sidebar_position: 1
 ---
+
 Business App CRM can be connected to many 3rd party systems using Zapier.
 
-## How Does it Work?
+## How does it work?
 
-### Step 1: Selecting the Trigger
+### Step 1: Selecting the trigger
 
-In this step, you can select the trigger that initiates an action in your workflow. As an example when a New Payment in Quickbooks Online can be used as a trigger. However, you can choose from various other triggers available in Zapier.
+In this step, you can select the trigger that initiates an action in your workflow. As an example when a New Payment in QuickBooks Online can be used as a trigger. However, you can choose from various other triggers available in Zapier.
 
 
-### Step 2: Choosing the App
+### Step 2: Choosing the app
 
-After selecting the trigger, you’ll need to choose the app that will carry out your desired action. In this scenario, that app would be Business App. This means that whenever a New Payment is received in Quickbooks online, an automation would be executed in the Business App CRM. As part of Business App in Zapier, various actions are possible.
+After selecting the trigger, you’ll need to choose the app that will carry out your desired action. In this scenario, that app would be Business App. This means that whenever a New Payment is received in QuickBooks online, an automation would be executed in the Business App CRM. As part of Business App in Zapier, various actions are possible.
 
 ![](./img/zapier_app.png)
 
-### Step 3: Choosing the Action
+### Step 3: Choosing the action
 
 In this step, you’ll set the action to be performed when the trigger event happens. For this scenario, the action is to Run Automation in the Business App CRM.
 
@@ -25,7 +26,7 @@ Remember, you can change the action anytime by clicking on the dropdown menu and
 
 ![](./img/zapier_action.png)
 
-### Step 4: Signing In
+### Step 4: Signing in
 
 In this step, you’ll connect your Business App account. Click on “Sign in” to be redirected to the login page. Here, you’ll enter your Account ID and grant the necessary permissions. After this, you’ll be automatically redirected back to Zapier.
 
@@ -35,7 +36,7 @@ Note: You only need to complete this process once. In the future, you’ll be au
 
 ![](./img/zapier_allow_access.png)
 
-### Step 5: Entering the Organization ID
+### Step 5: Entering the organization ID
 
 In this step, you will need to enter the Organization ID, which is a mandatory field. This ID is automatically populated based on the Account ID you used when signing in.
 
@@ -69,7 +70,7 @@ For Automations Triggered manually for an Order or Triggered via API for an Orde
 
 ### Step 7: Automation ID
 
-In the 'Automation ID' field, enter the ID of the automation you want Zapier to run when a trigger occurs in an external system, such as Quickbooks
+In the 'Automation ID' field, enter the ID of the automation you want Zapier to run when a trigger occurs in an external system, such as QuickBooks
 
 ![](./img/zapier_automation_id.png)
 
@@ -81,7 +82,7 @@ Note: The automation must be turned on for it to be triggered via Zapier.
 
 ![](./img/zapier_automation_on.png)
 
-### Step 8: Testing the Step
+### Step 8: Testing the step
 
 Before publishing the Zap, be sure to test the step in Zapier. This can help identify any missing fields or incorrect data.
 

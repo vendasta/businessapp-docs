@@ -5,7 +5,7 @@ tags: [automation, messaging, sms, email]
 keywords: [automated SMS, automated email, messaging actions, workflow alerts, customer notifications]
 ---
 
-Automate outbound messages from your workflows using SMS or plain‑text email. Great for confirmations, reminders, and follow‑ups.
+Automate outbound messages from your workflows using SMS or plain-text email. Great for confirmations, reminders, and follow-ups.
 
 ## Send SMS
 
@@ -23,13 +23,13 @@ Sending SMS via automations requires Conversations Pro.
 Tips:
 - Keep messages short and actionable
 - Include your business name the first time you text a contact
-- Respect consent preferences and opt‑out rules
+- Respect consent preferences and opt-out rules
 - Use Conditions to limit frequency (for example, only for new leads)
 
-## Send plain‑text email
+## Send plain-text email
 
 :::note
-Sending plain‑text emails via automations requires Conversations Pro.
+Sending plain-text emails via automations requires Conversations Pro.
 :::
 
 1. Go to Business App > Administration > Automations
@@ -40,7 +40,7 @@ Sending plain‑text emails via automations requires Conversations Pro.
 6. Save and toggle the automation On
 
 Tips:
-- Use clear subjects and one primary call‑to‑action
+- Use clear subjects and one primary call-to-action
 - Personalize with the contact’s name and relevant details
 - Combine with Conditions to target the right audience
 
@@ -65,15 +65,12 @@ Tips:
 - Templates must be approved before they appear in the dropdown
 - WhatsApp requires templates for outbound messages sent outside an active conversation window
 
-- templates must be approved before they appear in the dropdown
-- WhatsApp requires templates for outbound messages sent outside an active conversation window
-
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>What if messages fail to send?</summary>
 
-Check the Activity tab for the run. Make sure required fields (for example, phone for SMS or email for plain‑text email) are present. If you see frequent failures, consider switching Error handling to "Skip the step and continue" in Settings so other steps can still complete.
+Check the Activity tab for the run. Make sure required fields (for example, phone for SMS or email for plain-text email) are present. If you see frequent failures, consider switching Error handling to "Skip the step and continue" in Settings so other steps can still complete.
 
 </details>
 
