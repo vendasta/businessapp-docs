@@ -86,3 +86,57 @@ Most of the time your site isn't going to be down, but you may notice some funct
 We recommend the following resource: [https://codex.wordpress.org/](https://codex.wordpress.org/)
 
 The guides and help offered by codex.wordpress.org are quite useful. Whether it's troubleshooting, learning how to use WordPress, tutorials, or more advanced topics like Writing Plugins, it is a great resource.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Why am I getting a memory limit error when editing with Divi or Elementor?</summary>
+
+Memory issues in Divi or Elementor are usually caused by:
+* Too many post revisions stored in the database
+* Conflicting plugins
+
+**Recommended steps:**
+
+1. **Backup your site.**
+2. Install the **WordPress Sweep plugin** to clear unnecessary post revisions.
+3. If issues persist, disable plugins one by one to find the culprit.
+
+**Known conflicting plugins include:**
+* MetaSlider
+* Photo Gallery
+* Recent Posts Widget With Thumbnails
+* Simple Custom Post Order
+* Smart Grid Gallery
+* Testimonial Rotator
+* Unbounce Loading Pages
+* WordPress Importer
+* WP-Optimize – Clean, Compress, Cache
+* WP Responsive Menu
+
+</details>
+
+<details>
+<summary>Why do I see a "Storage engine MyISAM is disabled" error?</summary>
+
+WordPress Hosting Pro supports only the **InnoDB** storage engine. Plugins or themes trying to use **MyISAM** will fail.
+
+**Why?**  
+This is a stability and reliability decision. MyISAM is outdated and lacks support for transactions and row-level locking.
+
+**Workaround:**  
+If the plugin requires MyISAM, contact the plugin developer to explore switching to InnoDB in the table creation script.
+
+</details>
+
+<details>
+<summary>What does the `WP_AUTO_UPDATE_CORE` error mean?</summary>
+
+This WordPress Site Health warning means that **core auto-updates are turned off**.
+
+**Why this is safe:**  
+Auto-updating WordPress core versions can break your site if your plugins/themes are not compatible. Manual updates are recommended to maintain stability.
+
+No action is needed unless you choose to handle updates differently.
+
+</details>

@@ -38,7 +38,7 @@ After reconnecting the domain, allow up to **30 minutes** for the SSL certificat
 *   Ensure only **one A record** exists, pointing to WordPress Hosting Pro’s IP (**34.149.86.124**).
 *   There should be **no AAAA record** in the DNS settings.
 
-If the issue persists, contact Support via **chat** or **email at support@vendasta.com** for further assistance.
+If the issue persists, contact Support via **chat** or **email** for further assistance.
 
 ## Frequently Asked Questions
 

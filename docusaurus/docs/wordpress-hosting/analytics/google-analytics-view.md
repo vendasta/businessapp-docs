@@ -4,7 +4,7 @@ sidebar_label: "Google Analytics View"
 description: "The Google Analytics view in WordPress Hosting Pro allows Partners and their clients to view their Top Traffic Sources and Page View metrics within the produc"
 ---
 
-The Google Analytics view in WordPress Hosting Pro allows Partners and their clients to view their Top Traffic Sources and Page View metrics within the product. Some available metrics include:
+The Google Analytics view in WordPress Hosting Pro allows you to view your Top Traffic Sources and Page View metrics within the product. Some available metrics include:
 
 *   Total Visitors
 *   Pageviews
@@ -44,4 +44,4 @@ When customers connect their own Google Analytics views, the platform pulls in d
 
 ### My client connected GA but there is no data
 
-Historically, the most likely issue resulting from this is Partners and their clients are connected to the incorrect view. In Google Analytics, users can configure their own view, with specific data collection and filtering behavior. As long as users connect a view that has data, the platform will pull the data in; in addition, it will pull in 12 months' worth of data upon connection.
+Historically, the most likely issue is being connected to the incorrect view. In Google Analytics, you can configure your own view with specific data collection and filtering behavior. As long as you connect a view that has data, the platform will pull the data in; in addition, it will pull in 12 months' worth of data upon connection.

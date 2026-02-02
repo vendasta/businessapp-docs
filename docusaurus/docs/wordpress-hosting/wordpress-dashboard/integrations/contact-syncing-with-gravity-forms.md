@@ -64,13 +64,13 @@ If contact sync isn’t working, verify the following:
 
 ### 4\. Updating Other Sites
 
-If similar syncing issues are occurring on other AGIDs or partner sites:
+If similar syncing issues are occurring on other sites:
 
 *   Check the **email notification settings**.
     
 *   Confirm field mapping and dynamic tag usage.
     
-*   Coordinate with the partner to apply the necessary fixes.
+*   Contact Support for assistance with applying the necessary fixes.
     
 
 ![Notification Settings](https://chatgpt.com/c/image-20250403-092650.png)

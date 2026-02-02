@@ -1,26 +1,24 @@
 ---
 title: "Import"
 sidebar_label: "Import"
-description: "To import your WordPress sites into WordPress Hosting Pro, follow these steps:  \n  1. Create an Account  \n  Go to the   Accounts   tab in Partner Center and c"
+description: "Learn how to import your existing WordPress sites into WordPress Hosting Pro using migration plugins or manual methods."
 ---
 
 To import your WordPress sites into WordPress Hosting Pro, follow these steps:
 
 **1\. Create an Account**
 
-Go to the [Accounts](https://partners.vendasta.com/manage-accounts) tab in Partner Center and create an account for each of your clients. All you’ll need is a single piece of business information—like their business name—and our system will find the rest. ([Instructions](https://support.vendasta.com/hc/en-us/articles/4406959813911))
+Create your WordPress Hosting account. All you'll need is basic business information—like your business name—and the system will help complete the setup.
 
-*   If you are on any of the paid subscriptions, you can also import your accounts via the [Lists](https://partners.vendasta.com/action-lists/manage?marketId=default) tab in Partner Center. ([Instructions](https://support.vendasta.com/hc/en-us/articles/4406958467607))
 
 **2\. Activate WordPress Hosting**
 
-Select the account in Partner Center and activate WordPress Hosting Pro. ([Instructions](https://support.vendasta.com/hc/en-us/articles/4406958134807))
+Activate WordPress Hosting Pro for your account. ([Instructions](https://support.vendasta.com/hc/en-us/articles/4406958134807))
 
-*   You can use the Lists tab in Partner Center to do this for every account at once (if you're on a paid subscription).
 
 **3\. Create a New Site**
 
-For each account in Partner Center, launch WordPress Hosting and create a site. All you’ll need is their name, tagline, and domain.
+Launch WordPress Hosting and create a site. You'll need your business name, tagline, and domain.
 
 **4\. Migrate the Old Site**
 
@@ -129,8 +127,8 @@ Expect to re-style or rebuild elements that do not transfer exactly.
 
 **No.** Wix is a proprietary website builder and does not support exporting into WordPress-compatible formats.
 
-If your client is on Wix:
-* You'll need to **rebuild their site manually** in WordPress using WordPress Hosting Pro
+If you're currently on Wix:
+* You'll need to **rebuild your site manually** in WordPress using WordPress Hosting Pro
 * Consider using similar themes or recreating layouts with page builders like Divi or Elementor
 
 </details>
