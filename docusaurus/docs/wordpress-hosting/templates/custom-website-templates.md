@@ -1,6 +1,6 @@
 ---
 title: "Custom Website Templates"
-sidebar_label: "Custom Website Templates"
+sidebar_label: "Custom Templates"
 description: "What are custom templates? \n Partners offering the  WordPress Hosting  product have the ability to create custom templates to either offer to their customers o"
 ---
 

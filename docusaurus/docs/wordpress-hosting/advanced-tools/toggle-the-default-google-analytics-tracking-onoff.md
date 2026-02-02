@@ -1,6 +1,6 @@
 ---
 title: "Toggle the Default Google Analytics Tracking On/Off"
-sidebar_label: "Toggle the Default Google Analytics Tracking On/Off"
+sidebar_label: "Google Analytics Toggle"
 description: "Even though Google has made some efforts to be GDPR compliant with the release of Google Analytics 4 (GA4), it is generally accepted that both Universal Analyt"
 ---
 

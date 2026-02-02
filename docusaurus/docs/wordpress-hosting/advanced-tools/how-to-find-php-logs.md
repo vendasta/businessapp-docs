@@ -1,6 +1,6 @@
 ---
 title: "How to Find PHP Logs"
-sidebar_label: "How to Find PHP Logs"
+sidebar_label: "PHP Logs"
 description: "If you're troubleshooting an issue or debugging your website, accessing PHP logs is crucial. WordPress Hosting Pro makes it easy to view these logs through the"
 ---
 

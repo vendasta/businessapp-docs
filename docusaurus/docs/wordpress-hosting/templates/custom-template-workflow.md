@@ -1,6 +1,6 @@
 ---
 title: "Custom Template Workflow"
-sidebar_label: "Custom Template Workflow"
+sidebar_label: "Template Workflow"
 description: "Partners can create and manage custom templates for all of their website accounts through the Templates tab in the  WordPress Hosting   Standard /Pro/Premium"
 ---
 
@@ -12,7 +12,7 @@ Creating and managing your templates is friction-free.
 
 Partners creating websites often have to spend a lot of time installing the same set of plugins, themes, and sometimes even content. With templates, Partners can save time by setting up templates as starting points for each website that they create, skipping over repeating manual work for each website. Making this process as easy as possible saves agencies even more time so they can focus more on delivering quality website content for their clients.
 
-### How do custom templates work?
+## How do custom templates work?
 
 **Duplicate Template**
 
@@ -60,20 +60,3 @@ Yes. You can create custom templates by importing an existing WordPress site and
 
 </details>
 
-<details>
-<summary>Where can I find help articles and documentation for Divi?</summary>
-
-Divi Builder is pre-installed with all WordPress Hosting Standard and Pro templates. To learn how to use Divi's visual editing tools and modules, visit Elegant Themes' official documentation here:
-
-[Divi Documentation](https://www.elegantthemes.com/documentation/divi/)
-
-This includes step-by-step tutorials on:
-* Editing sections, rows, and modules
-* Using the visual builder
-* Global styles and layout tools
-* Speed optimization
-* Theme customization
-
-> Note: Direct support for Divi's proprietary functionality is not provided beyond what is enabled in the default templates. For advanced Divi-specific questions, Elegant Themes support is recommended.
-
-</details>

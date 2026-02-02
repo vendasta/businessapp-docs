@@ -4,8 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Manage templates for your WordPress site.",
-    "slug": "/wordpress-hosting/category/templates"
+    "type": "doc",
+    "id": "wordpress-hosting/templates/index"
   }
 }
