@@ -1,6 +1,6 @@
 ---
 title: "Domain Setup"
-sidebar_label: "Domain Setup"
+sidebar_label: "Setup"
 description: "Complete guide to setting up and connecting your custom domain to WordPress Hosting. Includes DNS record configuration, domain connection steps, validation, and FAQs."
 tags: [wordpress-hosting, domains, dns, setup]
 keywords: [domain setup, connect custom domain, WordPress DNS records, domain registrar setup, point domain to WordPress, A record CNAME]

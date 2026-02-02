@@ -1,6 +1,6 @@
 ---
 title: "Set your preferred URL or domain"
-sidebar_label: "Set your preferred URL or domain"
+sidebar_label: "Preferred URL"
 description: "The preferred URL or domain can be set from the domains tab of WordPress Hosting.   \n   \n  Select the    Make Primary    button next to the domain you want to"
 ---
 

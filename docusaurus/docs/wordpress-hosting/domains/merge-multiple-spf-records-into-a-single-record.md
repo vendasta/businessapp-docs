@@ -1,6 +1,6 @@
 ---
 title: "Merge multiple SPF records into a single record"
-sidebar_label: "Merge multiple SPF records into a single record"
+sidebar_label: "Merge SPF Records"
 description: "To merge the SPF values, simply include all the parts into one single record, without repeating any mechanisms. Here's how to merge the following example SPF"
 ---
 
