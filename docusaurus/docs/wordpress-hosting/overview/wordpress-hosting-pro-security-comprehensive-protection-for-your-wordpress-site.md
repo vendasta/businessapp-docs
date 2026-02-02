@@ -43,7 +43,7 @@ All database connections operate within a **private network**, keeping them hidd
 **7\. Network Security Policies**
 
 *   **Private Network Isolation:** Google Kubernetes Engine (GKE) ensures containers communicate **only within an isolated private network**.
-*   **Firewall Rules:** Google Cloud firewall rules **restrict unauthorized IP access** while allowing custom partner configurations like Cloudflare and Sucuri.
+*   **Firewall Rules:** Google Cloud firewall rules **restrict unauthorized IP access** while allowing custom configurations for services like Cloudflare and Sucuri.
 *   **Virtual Private Cloud (VPC):** All services are hosted within a **VPC** to ensure secure internal communication.
 *   **DNS Security:** Secure DNS settings protect against **DNS spoofing** and other cyber threats.
 
@@ -87,3 +87,25 @@ WordPress Hosting Pro servers operate in **full-duplex mode**, enabling simultan
 WordPress Hosting Pro offers a **secure, high-performance hosting solution** powered by Google Cloud’s advanced infrastructure. With robust security features, **DDoS protection, rate limiting, IAM-based access control, private database connections, SSL encryption, and Google CDN**, your WordPress website remains optimized for **speed, security, and reliability**.
 
 For any further questions or security-related concerns, feel free to reach out to our support team.
+
+## Frequently Asked Questions
+
+<details>
+<summary>What is Google Cloud Armor?</summary>
+
+Google Cloud Armor is a firewall that protects websites by blocking malicious traffic and preventing common attacks. It safeguards against:
+
+* **Distributed Denial of Service (DDoS) Attacks**: Large-scale attacks aimed at overwhelming the website's server
+* **SQL Injections**: Attempts to manipulate a website's database through insecure inputs
+* **Brute Force Attacks**: Automated, high-frequency login attempts to gain unauthorized access
+
+**How to Set Up Google Cloud Armor**
+
+1. **Log in to Your Domain Provider's Account**
+   * Access the website where you purchased your domain
+2. **Update the A Record**
+   * For each domain, modify the **A record** to the following IP address: **34.149.86.124**
+
+For more guidance on domain configuration, see [Domain Setup](../../domains/connect-a-custom-domain.md).
+
+</details>

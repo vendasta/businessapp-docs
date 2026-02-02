@@ -71,7 +71,7 @@ Manage branch sites centrally with localized content updates.
 
 ### Email Hosting
 
-WordPress Hosting Premium does not include email hosting. Partners can connect their preferred third-party email provider (e.g., Google Workspace or Microsoft 365) for business communications.
+WordPress Hosting Premium does not include email hosting. You can connect your preferred third-party email provider (e.g., Google Workspace or Microsoft 365) for business communications.
 
 ### How to Use WordPress Hosting Premium
 
@@ -79,7 +79,7 @@ WordPress Hosting Premium does not include email hosting. Partners can connect t
 
 New Activation
 
-1.  Log in to Partner Center.
+1.  Log in to your dashboard.
     
 2.  Navigate to **Accounts > Manage Accounts**.
     
@@ -94,7 +94,7 @@ New Activation
 
 Upgrading from WordPress Hosting Standard or Pro
 
-1.  Locate the existing WordPress Hosting product in Partner Center.
+1.  Locate the existing WordPress Hosting product in your dashboard.
     
 2.  Select the three-dot menu > **Change Edition**.
     
@@ -105,7 +105,7 @@ Upgrading from WordPress Hosting Standard or Pro
 
 **Step 2: Launching the Product**
 
-1.  Access the setup screen via Partner Center.
+1.  Access the setup screen from your dashboard.
     
 2.  Choose a site template:
     
@@ -170,7 +170,7 @@ DNS propagation typically takes a few hours.
 A hosting solution for managing multiple WordPress sites through one interface. Ideal for agencies, institutions, and corporate teams.
 
 **Q: How can I activate WordPress Hosting Premium?**  
-Activate as a new product or upgrade from an existing WordPress Hosting Standard/Pro product via Partner Center.
+Activate as a new product or upgrade from an existing WordPress Hosting Standard/Pro product through your dashboard.
 
 **Q: Can I use my own domain?**  
 Yes. Custom domains can be applied to the main site using DNS records.
@@ -192,6 +192,6 @@ Yes. It will redirect to your Multisite domain automatically.
 <details>
 <summary>Can I upgrade from Standard to Premium later?</summary>
 
-Yes, you can upgrade your account edition at any time through the Partner Center or Marketplace. The system handles the migration of your existing site into the Premium environment.
+Yes, you can upgrade your account edition at any time through your dashboard or Marketplace. The system handles the migration of your existing site into the Premium environment.
 
 </details>

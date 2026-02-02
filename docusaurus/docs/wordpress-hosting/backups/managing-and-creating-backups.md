@@ -64,7 +64,7 @@ If a WordPress Hosting product (Standard or Pro) is canceled and fully deactivat
 * If the product is reactivated **within 90 days**, the site can be restored in the exact state it was in when canceled
 * After 90 days, the system will create a **final archive**, and then both the production and staging sites will be **permanently deleted**
 
-> **Tip:** If you know your client wants to cancel but may return later, reach out to Support before canceling. We can help you obtain a final copy of the website.
+> **Tip:** If you're planning to cancel but may return later, reach out to Support before canceling. We can help you obtain a final copy of the website.
 
 </details>
 
@@ -136,6 +136,6 @@ No. WordPress Hosting Pro is not fully compliant with HIPAA or GDPR regulations 
 **Why not?**  
 While cookie banners and consent tools can be added, full compliance — such as guaranteed data deletion or protected health information (PHI) handling — involves multiple systems beyond just the website backend. The platform cannot guarantee total control or deletion of all user data submitted via form fills.
 
-> If your client requires HIPAA or GDPR compliance, you may need to explore more specialized hosting or form-handling platforms.
+> If you require HIPAA or GDPR compliance, you may need to explore more specialized hosting or form-handling platforms.
 
 </details>

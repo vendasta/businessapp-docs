@@ -101,3 +101,18 @@ If a site exceeds the MySQL resource limit, it may result in HTTP 500 internal s
 5. **Security Measures** – Use security plugins and firewalls to prevent malicious attacks that generate excessive database queries.
 
 </details>
+
+<details>
+<summary>Why am I seeing "Access Denied" errors when importing a `.sql` file via phpMyAdmin?</summary>
+
+This error typically occurs when:
+* The `.sql` file includes `CREATE DATABASE` statements (not permitted)
+* You're trying to import into a non-existent database
+
+**To fix it:**
+* **Remove all `CREATE DATABASE` and `USE` commands** from your `.sql` file
+* Only use the two pre-created databases in WordPress Hosting Pro (Production and Staging)
+
+You cannot create new databases in WordPress Hosting Pro, only use the ones provisioned per site.
+
+</details>

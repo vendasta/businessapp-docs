@@ -4,19 +4,19 @@ sidebar_label: "Template Workflow"
 description: "Partners can create and manage custom templates for all of their website accounts through the Templates tab in the  WordPress Hosting   Standard /Pro/Premium"
 ---
 
-Partners can create and manage custom templates for all of their website accounts through the Templates tab in the WordPress Hosting Standard/Pro/Premium product.
+You can create and manage custom templates through the Templates tab in WordPress Hosting Standard/Pro/Premium.
 
-Custom templates allow partners to save themes, plugins, and site content for use when creating a new site. Only Partner Admin users in your organization have access to this tab, but the templates you create will be visible to anyone making a new site. Create and edit up to 12 of your own templates.
+Custom templates allow you to save themes, plugins, and site content for use when creating a new site. Admin users have access to this tab, and the templates you create will be visible when creating new sites. Create and edit up to 12 of your own templates.
 
-Creating and managing your templates is friction-free.
+Creating and managing your templates is straightforward.
 
-Partners creating websites often have to spend a lot of time installing the same set of plugins, themes, and sometimes even content. With templates, Partners can save time by setting up templates as starting points for each website that they create, skipping over repeating manual work for each website. Making this process as easy as possible saves agencies even more time so they can focus more on delivering quality website content for their clients.
+When creating websites, you often need to install the same set of plugins, themes, and sometimes even content repeatedly. With templates, you can save time by setting up templates as starting points for each website you create, skipping repetitive manual work and focusing on creating quality website content.
 
 ## How do custom templates work?
 
 **Duplicate Template**
 
-This feature lets Partners duplicate their existing templates, or create new ones using any of the pre-built templates as a starting point.
+This feature lets you duplicate your existing templates, or create new ones using any of the pre-built templates as a starting point.
 
 **NOTE:** You can only duplicate a template that has been published. To publish a template, click on **Edit Template > Template Management > Publish as Template.** ![](./img/5616708167191-c546cef087.png)
 

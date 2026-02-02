@@ -21,12 +21,11 @@ Accessing your WordPress Dashboard is handled securely through the WordPress Hos
 * Go to **My Products > WordPress Hosting Pro**
 * Click **WordPress Dashboard**
 
-**Partners (Admins):**
+**Admins:**
 
-1. Log into **Partner Center**
-2. Navigate to the client's account
-3. Click **WordPress Hosting Pro** to launch the product
-4. Click **WordPress Dashboard**
+1. Log into **Business App**
+2. Navigate to **My Products > WordPress Hosting Pro**
+3. Click **WordPress Dashboard**
 
 </details>
 

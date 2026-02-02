@@ -90,7 +90,7 @@ If a WordPress Hosting product (Standard or Pro) is canceled and fully deactivat
 * If the product is reactivated **within 90 days**, the site can be restored in the exact state it was in when canceled
 * After 90 days, the system will create a **final archive**, and then both the production and staging sites will be **permanently deleted**
 
-> **Tip:** If you know your client wants to cancel but may return later, reach out to Support before canceling. We can help you obtain a final copy of the website.
+> **Tip:** If you're planning to cancel but may return later, reach out to Support before canceling. We can help you obtain a final copy of the website.
 
 </details>
 
