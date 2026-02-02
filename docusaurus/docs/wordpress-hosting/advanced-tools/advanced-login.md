@@ -1,6 +1,6 @@
 ---
-title: "Captcha’s, reCaptcha’s and Advanced Login (Using /wp-admin page)"
-sidebar_label: "Captcha’s, reCaptcha’s and Advanced Login (Using /wp-admin page)"
+title: "Captcha's, reCaptcha's and Advanced Login (Using /wp-admin page)"
+sidebar_label: "Advanced Login"
 description: "If the Advanced Login feature is enabled, logging into the WordPress dashboard directly via SSO could be affected if a reCaptcha is set up"
 ---
 

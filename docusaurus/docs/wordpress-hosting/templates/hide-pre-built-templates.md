@@ -1,6 +1,6 @@
 ---
 title: "Hide pre-built templates"
-sidebar_label: "Hide pre-built templates"
+sidebar_label: "Hide Templates"
 description: "To prevent your clients from accessing the pre-built templates included in the initial WordPress Hosting setup, follow these simple steps: Go to the Pro"
 ---
 

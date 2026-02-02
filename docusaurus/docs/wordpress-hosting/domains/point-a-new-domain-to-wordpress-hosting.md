@@ -1,6 +1,6 @@
 ---
 title: "Point a new Domain to WordPress Hosting"
-sidebar_label: "Point a new Domain to WordPress Hosting"
+sidebar_label: "Point Domain"
 description: "If you recently purchased the domain (or just have never pointed your domain to a site), then these instructions should allow you to point your domain to your"
 ---
 

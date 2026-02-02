@@ -95,3 +95,23 @@ Changing the logo and contact information on your website
 **Congratulations, you now have the knowledge you need to edit your website!**
 
 _[WooCommerce](https://docs.woocommerce.com/) and [Divi Builder](https://www.elegantthemes.com/blog/theme-releases/divi-3)_ _have extensive documentation and tutorials on how to set up, edit, manage, and operate your store._
+
+## Frequently Asked Questions
+
+<details>
+<summary>Where can I find help articles and documentation for Divi?</summary>
+
+Divi Builder is pre-installed with all WordPress Hosting Standard and Pro templates. To learn how to use Divi's visual editing tools and modules, visit Elegant Themes' official documentation here:
+
+[Divi Documentation](https://www.elegantthemes.com/documentation/divi/)
+
+This includes step-by-step tutorials on:
+* Editing sections, rows, and modules
+* Using the visual builder
+* Global styles and layout tools
+* Speed optimization
+* Theme customization
+
+> Note: Direct support for Divi's proprietary functionality is not provided beyond what is enabled in the default templates. For advanced Divi-specific questions, Elegant Themes support is recommended.
+
+</details>
