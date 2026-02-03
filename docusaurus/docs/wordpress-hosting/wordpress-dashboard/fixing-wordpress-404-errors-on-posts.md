@@ -8,7 +8,7 @@ description: "Fixing WordPress 404 Errors on Posts  \n \n If you're encountering
 
 If you're encountering 404 errors on your WordPress posts, here are a few steps you can take to resolve the issue:
 
-![image.png](../img/33001665602583-c271d5a4d1.png)
+![image.png](./img/33001665602583-c271d5a4d1.png)
 
 ### 1\. Re-Save Permalink Settings
 
@@ -21,7 +21,7 @@ Often, simply reconfiguring your permalink structure can fix the problem.
 
 This action refreshes your permalink settings and flushes the rewrite rules, which commonly resolves 404 errors.
 
-![image.png](../img/33001665602583-e7cdc3cfaf.png)
+![image.png](./img/33001665602583-e7cdc3cfaf.png)
 
 ### 2\. Check for Plugin Conflicts
 

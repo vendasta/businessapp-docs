@@ -10,7 +10,7 @@ RSS makes it easy to automatically pull content from other sites and display it 
 
 To do this, navigate to the **Appearance > Widgets** page in the WordPress dashboard and then click the ‘Add Block’ (+) button at the top of the screen.
 
-![The WordPress RSS Widget](../img/33001916619415-3e4c1d2075.png)
+![The WordPress RSS Widget](./img/33001916619415-3e4c1d2075.png)
 
 ### Displaying Any RSS Feed With a Plugin
 
@@ -20,10 +20,10 @@ First, you need to install and activate the free WP RSS Aggregator plugin. For m
 
 Upon activation, you will be asked to add your first RSS feed URL. For this tutorial, we’ll add `https://wpbeginner.com/feed/`. Once you’ve entered the feed URL, click the ‘Next’ button at the bottom of the page.
 
-![Enter the Feed URL into WP RSS Aggregator's Settings](../img/33001916619415-860c7ef832.png)
+![Enter the Feed URL into WP RSS Aggregator's Settings](./img/33001916619415-860c7ef832.png)
 
 On the next page, you will see the latest feed items from the RSS feed you linked, click the ‘Create Draft Page’ button to add the feed to a new page draft or use the shortcode on the right to add them to any post, page, or widget area.
 
-![Click the 'Create Draft Page' Button to Preview the RSS Feed](../img/33001916619415-96ea01bc32.png)
+![Click the 'Create Draft Page' Button to Preview the RSS Feed](./img/33001916619415-96ea01bc32.png)
 
 For more information, You can refer to this article: [https://www.wpbeginner.com/wp-tutorials/how-to-display-any-rss-feed-on-your-wordpress-blog/](https://www.wpbeginner.com/wp-tutorials/how-to-display-any-rss-feed-on-your-wordpress-blog/)

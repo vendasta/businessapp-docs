@@ -23,10 +23,10 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
     
 3.  Click **Create Project**, name it (e.g., **Gmail SMTP**), and click **Create**.  
       
-    ![](../img/32998698678551-f664efbb74.png)![](../img/32998698678551-c30fff1231.png)
+    ![](./img/32998698678551-f664efbb74.png)![](./img/32998698678551-c30fff1231.png)
     
 
-### ![](../img/32998698678551-97cf4a5635.png)Step 2: Enable the Gmail API
+### ![](./img/32998698678551-97cf4a5635.png)Step 2: Enable the Gmail API
 
 1.  In the Google Cloud Console, navigate to **APIs & Services > Library**.
     
@@ -34,9 +34,9 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
     
 3.  Click **Create Credentials** to begin setting up your OAuth access  
       
-    ![nav.gif](../img/32998698678551-49b46ca0db.gif)  
+    ![nav.gif](./img/32998698678551-49b46ca0db.gif)  
     4\. Click **Create** **Credentials** to Generate Client ID.  
-    ![](../img/32998698678551-f45615ce38.png)
+    ![](./img/32998698678551-f45615ce38.png)
     
 
 ### Step 3: Set Up OAuth Consent Screen & Credentials
@@ -45,7 +45,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
     
 2.  Choose **User Type** as **External**, then click **Create**.  
       
-    ![](../img/32998698678551-10bb46f1c2.png)  
+    ![](./img/32998698678551-10bb46f1c2.png)  
       
     
     3\. Fill in:
@@ -56,7 +56,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
         
         1.  Click **Create** and copy both the **Client ID** and **Client Secret**.**Developer contact email**: Your Gmail address  
               
-            ![](../img/32998698678551-9e0b05c458.png)
+            ![](./img/32998698678551-9e0b05c458.png)
             
             4\. Skip scopes and click **Save and Continue**.
             
@@ -70,10 +70,10 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
             
         *   **Authorized redirect URI**: `[https://connect.wpmailsmtp.com/google](https://connect.wpmailsmtp.com/google)``   `
             
-            ### **![](../img/32998698678551-722250e5a5.png)  
-            ![](../img/32998698678551-03946a624b.png)  
+            ### **![](./img/32998698678551-722250e5a5.png)  
+            ![](./img/32998698678551-03946a624b.png)  
               
-            ![](../img/32998698678551-3b83e1836a.png)  
+            ![](./img/32998698678551-3b83e1836a.png)  
               
             **Step 4: Publish the App
             
@@ -94,7 +94,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
                 
             3.  Search for **WP Mail SMTP**, install, and activate it.  
                   
-                ![](../img/32998698678551-abd897df61.png)  
+                ![](./img/32998698678551-abd897df61.png)  
                   
                 
                 **Configure the Plugin**
@@ -115,7 +115,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
                     
                 4.  Save the settings.  
                       
-                    ![](../img/32998698678551-830e88fe8a.png)
+                    ![](./img/32998698678551-830e88fe8a.png)
                     
             
              **Authorize Gmail**
@@ -128,9 +128,9 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
                 
             4.  You’ll be redirected back to your site once authorization is complete.  
                   
-                ![](../img/32998698678551-617860fb6b.png)  
+                ![](./img/32998698678551-617860fb6b.png)  
                   
-                ![](../img/32998698678551-9ab46437e9.png)
+                ![](./img/32998698678551-9ab46437e9.png)
                 
                 ### Step 6: Disable WordPress Hosting Pro Mail System
                 
@@ -138,7 +138,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
                     
                 2.  Disable the **WordPress Hosting Pro Mail System** to allow WP Mail SMTP to take over.
                     
-                    ### ![](../img/32998698678551-b3abd4e6d9.png)Step 7: Test the Configuration
+                    ### ![](./img/32998698678551-b3abd4e6d9.png)Step 7: Test the Configuration
                     
                     1.  Install the **WP Mail SMTP Email Test** plugin (if not included).
                         
