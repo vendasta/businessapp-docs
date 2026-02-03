@@ -38,7 +38,9 @@ To set up your CNAME record, log in to your domain registrar and access your dom
 
 **TTL:** 3600 seconds (1 hour)
 
-> **Note:** We recommend setting a CNAME Record for subdomains. If you require an A Record for your root domain, use the value `34.149.86.124`.
+:::info
+We recommend setting a CNAME Record for subdomains. If you require an A Record for your root domain, use the value `34.149.86.124`.
+:::
 
 For more detailed information about DNS records, when to use each type, and DNS propagation, see [Understanding DNS Records](understanding-dns-records.md).
 
@@ -111,7 +113,6 @@ This can be done from the domains tab of WordPress Hosting Pro. Select the kabob
 
 </details>
 
-## Additional FAQs
 
 <details>
 <summary>How long does it take for my domain to connect?</summary>

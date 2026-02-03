@@ -1,4 +1,27 @@
-# Create New Users 
-To create WordPress users using WordPress Hosting, you must create a Business Center user and a WordPress user will get automatically created. Users are identified by email address. The Business Center email used will be the one associated with their WordPress login. All users created in Business Center will be assigned the Administrator role in WordPress by default. If you have existing WordPress users, they will need Business Center users created the **same emails** to be able to log in.
+---
+title: "Create New Users"
+sidebar_label: "Create New Users"
+description: "Learn how to create WordPress users through Business App. Users are automatically created in WordPress when you create them in Business App."
+---
 
-Example: You want to give Bob access to your WordPress website. You create him a Business Center user with the email bob@email.com. When he goes to the WordPress dashboard via WordPress Hosting, he will be logged in as an Administrator as the user bob@email.com.
+# Create New Users
+
+To create WordPress users using WordPress Hosting, you must create a Business App user. A WordPress user will be automatically created when you create the Business App user.
+
+## How It Works
+
+* Users are identified by their email address
+* The Business App email address is used for WordPress login
+* All users created in Business App are assigned the **Administrator** role in WordPress by default
+* If you have existing WordPress users, you must create Business App users with the **same email addresses** for them to be able to log in
+
+## Example
+
+You want to give Bob access to your WordPress website:
+
+1. Create a Business App user for Bob with the email `bob@email.com`
+2. When Bob accesses the WordPress dashboard via WordPress Hosting, he will be automatically logged in as an Administrator with the email `bob@email.com`
+
+:::info
+Email addresses must match exactly between Business App and WordPress. If you have an existing WordPress user, create the Business App user with the same email address to avoid creating duplicate users.
+:::

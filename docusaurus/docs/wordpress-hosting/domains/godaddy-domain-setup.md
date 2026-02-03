@@ -22,7 +22,9 @@ If you recently purchased your domain from GoDaddy (or it has never been pointed
 4. Click **Save**.
 5. Allow up to 24 hours for all changes to take full effect. During this time your old host may still be serving your site's traffic. You can check on the status of your DNS Settings using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx) or viewing the **Domains** tab in WordPress Hosting **Pro.**
 
-> Flush Google's DNS cache for faster propagation: [Google DNS Cache Flush Tool](https://developers.google.com/speed/public-dns/cache)
+:::tip
+Flush Google's DNS cache for faster propagation: [Google DNS Cache Flush Tool](https://developers.google.com/speed/public-dns/cache)
+:::
 
 ### Part 2: Connect Domain in WordPress Hosting Pro
 
