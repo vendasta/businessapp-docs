@@ -12,4 +12,6 @@ You can export your website from WordPress Hosting Standard or Pro using the **A
 2. Go to the plugin menu and click **Export > File**.
 3. Download the exported `.wpress` file to your local device.
 
-> **Note:** If your website has been deactivated, contact Support to request the most recent backup file (available for a limited time after cancellation).
+:::info
+If your website has been deactivated, contact Support to request the most recent backup file (available for a limited time after cancellation).
+:::
