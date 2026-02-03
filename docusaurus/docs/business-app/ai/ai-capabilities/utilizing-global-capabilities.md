@@ -1,6 +1,6 @@
 ---
-title: How to Utilize Global Capabilities
-sidebar_label: Utilizing Global Capabilities
+title: How to Use Global Capabilities
+sidebar_label: Using Global Capabilities
 sidebar_position: 4
 ---
 
