@@ -1,9 +1,6 @@
 {
   "label": "Analytics",
-  "position": 5,
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "wordpress-hosting/analytics/index"
-  }
+  "position": 3,
+  "collapsible": true,
+  "collapsed": true
 }

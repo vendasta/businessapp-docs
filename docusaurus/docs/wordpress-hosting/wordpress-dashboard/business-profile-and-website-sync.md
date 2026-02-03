@@ -18,7 +18,7 @@ It also provides website designers and developers with the flexibility to input 
 
 Before creating a new website with WordPress Hosting, ensure all business information is up-to-date and accurate in the Business App Business Profile section. 
 
-![Screenshot 2025-06-03 at 9.01.34 AM.png](../img/5577552611095-a44e0f295c.png)
+![Screenshot 2025-06-03 at 9.01.34 AM.png](./img/5577552611095-a44e0f295c.png)
 
 ### **Contact Information** 
 
@@ -26,7 +26,7 @@ Once your business information is correct, you can create your new website. One 
 
 Once the site is spun up they should see accurate contact information reflected on the front end of their website. 
 
-![ss2.jpg](../img/5577552611095-12c461b4b3.jpg)
+![ss2.jpg](./img/5577552611095-12c461b4b3.jpg)
 
 ### **Short Codes**
 
@@ -34,7 +34,7 @@ To use shortcodes and have the information from the Business Profile sync with a
 
 From here select the **Tools** tab and **Business Profile Render** sub-tab. 
 
-![ss3.jpg](../img/5577552611095-c22790ce52.jpg)
+![ss3.jpg](./img/5577552611095-c22790ce52.jpg)
 
 This plugin provides ways to automatically sync information on your site from the Company Name to a specific social network link. It includes both shortcodes and reusable blocks.
 

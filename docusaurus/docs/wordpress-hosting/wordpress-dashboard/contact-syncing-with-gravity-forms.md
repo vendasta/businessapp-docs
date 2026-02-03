@@ -17,7 +17,7 @@ When using Gravity Forms with CRM integration (like WordPress Hosting CRM), form
 
 > If fields are not mapped correctly, contact entries may not appear in the CRM.  
 >   
-> ![](../img/32998786914583-e631d12edc.png)
+> ![](./img/32998786914583-e631d12edc.png)
 
 ### 2\. Configure Email Notifications Correctly
 
