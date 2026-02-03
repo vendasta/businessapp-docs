@@ -65,6 +65,20 @@ The limit resets on the first day of each month.
 - Free Plan: 10 recipients/month
 - Trial accounts: 500 recipients for the duration of the trial
 
+### Understanding Email Delivery in Campaigns
+
+When you schedule automated emails in a campaign, it's important to understand how delivery works:
+
+**Yesware hands off emails to your email provider:** Yesware doesn't send emails directly. Instead, when you schedule a campaign, Yesware queues the emails and hands them off to your email provider (Gmail or Outlook) for actual delivery.
+
+**Expect time windows, not exact times:** Emails are delivered during a time window rather than at a precise moment. The actual send time can vary based on:
+
+- Your email provider's server load and availability
+- The size of your campaign (larger campaigns may take longer to process)
+- Email sending limits and throttling applied by your provider
+
+This handoff approach helps ensure better deliverability and prevents your emails from being flagged as spam.
+
 ### Campaign Status Definitions
 
 Within a Campaign, there are six possible recipient status types. Here's what each one means:
@@ -131,9 +145,15 @@ Once your recipients are added and your content is personalized, launch your cam
 <details>
 <summary>Is there a way to stagger emails within a campaign?</summary>
 
-Campaigns sends emails about 10-15 seconds apart when you send to a list of recipients. At this time, there is no way to alter this cadence.
+Campaign emails are queued and handed off to your email provider (Gmail or Outlook) for delivery. The emails are typically processed about 10-15 seconds apart when sending to a list of recipients.
 
-While it's a little more time-consuming, breaking up a large list into a few smaller ones and setting different send times for each batch when you add them to Campaigns is typically recommended.
+**Important to note:** Yesware doesn't directly send the emails. Instead, it hands them off to your email provider for delivery during the scheduled time window. Because of this:
+
+- Actual delivery times may vary based on email server availability and load
+- Larger campaigns may take longer to process completely
+- Delays can occur during high-traffic periods
+
+While it's a little more time-consuming, breaking up a large list into a few smaller ones and setting different send time windows for each batch when you add them to Campaigns is typically recommended. This helps manage expectations and provides better control over the delivery flow.
 
 </details>
 

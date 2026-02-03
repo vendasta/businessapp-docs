@@ -44,6 +44,19 @@ Campaign management includes:
 - Pause and resume functionality
 - CRM integration options
 
+## Understanding Email Delivery
+
+Before managing your campaigns, it's helpful to understand how email delivery works:
+
+**Yesware queues and hands off emails:** When you add recipients to a campaign, Yesware doesn't send the emails directly. Instead, it queues them and hands them off to your email provider (Gmail or Outlook) for delivery during the scheduled time window.
+
+**Delivery timing may vary:** Because your email provider handles the actual sending, delivery times can be affected by:
+- Email server availability and processing load
+- Campaign size (larger campaigns take longer to fully process)
+- Your email provider's sending limits and rate throttling
+
+**Plan for time windows:** When scheduling campaigns, expect emails to be delivered within a time window rather than at an exact moment. This helps ensure better deliverability and prevents spam flags.
+
 ## How to add recipients to a campaign
 
 You can add recipients to your Campaigns in several ways, depending on your plan level:
@@ -220,13 +233,13 @@ You can pause all activity for an individual Campaign. When paused, no automated
 ### Resume a campaign
 
 1. Click on `Resume Campaign` in the upper right corner
-2. For any recipient that had a send date/time that was scheduled in the past (meaning the date for which the original send was scheduled has come and gone since you paused the Campaign), you will be able to reschedule, or you can accept the default to send it immediately
+2. For any recipient that had a send time window that was scheduled in the past (meaning the time window for which the original send was scheduled has come and gone since you paused the Campaign), you will be able to reschedule, or you can accept the default to send it immediately
 3. Confirm you want to resume
 
 :::warning
 Pausing is a Campaign-wide action at the user-level, not something that can be done to recipients individually. When you pause a Campaign all actions related to recipients you added will cease. This would not affect recipients in shared Campaigns that other teammates added.
 
-Pausing a campaign will prevent follow-up touches from going out. If you have emails already going out, hitting the Pause button will not stop them since they are already queued in your inbox to go out.
+Pausing a campaign will prevent follow-up touches from going out. If you have emails already queued for delivery, hitting the Pause button may not stop them since they have already been handed off to your email provider for processing.
 :::
 
 ## How to reschedule a campaign touch
@@ -306,7 +319,14 @@ For any recipients that won't receive the follow-up email touch, as a workaround
 
 Currently, there is no way to limit the number of recipients for campaign emails when dealing with larger recipient lists. There is no throttle or toggle feature to send emails in smaller batches within a larger recipient pool.
 
-**Workaround:** To manage the number of emails being sent, you can adjust the timing of adding recipients to campaigns, sending smaller batches at different times, or modify the frequency of touchpoints within campaigns to control the flow of emails.
+**Important:** Remember that Yesware hands off emails to your email provider for delivery during scheduled time windows. Larger campaigns may experience longer processing times as your email provider works through the queue.
+
+**Workaround:** To manage the number of emails being sent and avoid delays, you can:
+- Adjust the timing of adding recipients to campaigns, sending smaller batches at different time windows
+- Break large lists into multiple smaller campaigns
+- Modify the frequency of touchpoints within campaigns to control the flow of emails
+
+This approach helps manage both your expectations and your email provider's ability to process sends efficiently.
 
 </details>
 
