@@ -42,6 +42,21 @@ When creating a campaign, you can:
 - Create campaign signatures
 - Configure removal settings for when recipients connect
 
+## Understanding email delivery
+
+When you schedule automated emails in a campaign, it's important to understand how the delivery process works:
+
+**Yesware queues emails for your email provider:** Yesware doesn't send emails directly. Instead, it hands off your campaign emails to your email provider (Gmail or Outlook) for delivery during the scheduled time window.
+
+**Delivery may be delayed:** The actual send time can vary depending on several factors:
+- Email server load and availability
+- Campaign size (larger campaigns may take longer to process)
+- Your email provider's sending limits and throttling
+
+**Time windows, not exact times:** Rather than expecting emails to send at a precise moment, think of scheduled sends as time windows during which your email provider will process and deliver the messages.
+
+This approach helps ensure deliverability and prevents your emails from being flagged as spam by spreading sends over a reasonable timeframe.
+
 ## How to create a campaign
 
 ### Step 1: Access the campaign builder
@@ -80,7 +95,7 @@ There is no limit to the number of touches you can include in a Campaign, and yo
 
 #### Touch types available
 
-- **Automated Email:** Sends automatically at the scheduled time
+- **Automated Email:** Queued for delivery during the scheduled time window
 - **Manual Email:** Requires you to review and send manually from your inbox
 - **Phone Call:** Creates a task reminder to call the recipient
 - **LinkedIn:** Creates a task for LinkedIn outreach (requires LinkedIn Sales Navigator integration)
@@ -88,7 +103,7 @@ There is no limit to the number of touches you can include in a Campaign, and yo
 
 #### Automated vs. manual email touches
 
-**Automated emails** send automatically at the scheduled time without any human intervention. Use automated emails for:
+**Automated emails** are queued for delivery during the scheduled time window without any human intervention. Use automated emails for:
 
 - High-volume outreach
 - Standard follow-up sequences
