@@ -1,29 +1,53 @@
 ---
-title: "Toggle the Default Google Analytics Tracking On/Off"
+title: "Toggle the default Google Analytics tracking on/off"
 sidebar_label: "Google Analytics Toggle"
-description: "Even though Google has made some efforts to be GDPR compliant with the release of Google Analytics 4 (GA4), it is generally accepted that both Universal Analyt"
+description: "Learn how to disable the default Google Analytics tracking code for GDPR compliance and privacy protection."
 ---
 
-Even though Google has made some efforts to be GDPR compliant with the release of Google Analytics 4 (GA4), it is generally accepted that both Universal Analytics and GA4 are not GDPR compliant with their default settings. All websites created with WordPress Hosting come with a default Google Analytics tracking code, even if you don't add your own Google Analytics account.
+## What is GDPR?
 
-### What is it?
+GDPR stands for **General Data Protection Regulation**. It's a European privacy law that protects people's personal information online. Even if your business isn't in Europe, GDPR affects any website that might have visitors from European countries.
 
-To give you the option to opt out of Google Analytics for GDPR compliance, you can disable the default Google Analytics functionality. By disabling Google Analytics in WordPress Hosting, the tracking code that typically appears on your website will no longer be present. Additionally, any data stored on servers that was extracted from Google Analytics will be deleted, and analytics components on the interface will be hidden.
+GDPR requires websites to:
+* Get permission before collecting personal data from visitors
+* Be transparent about what data is collected
+* Give visitors control over their data
 
-If you would like to turn Google Analytics back on, you can toggle it back on and the tracking code will be added again, data will resume being collected, and the analytics charts will resume functioning normally.
+## Why disable Google Analytics?
 
-### How to Toggle the Default Google Analytics Tacking On/OFF
+All websites created with WordPress Hosting come with a default Google Analytics tracking code, even if you don't add your own Google Analytics account. This tracking code collects information about your website visitors, such as:
+* Which pages they visit
+* How long they stay on your site
+* Where they came from (like search engines or social media)
 
-1\. Go to your WordPress Hosting dashboard
+While Google has made some improvements with Google Analytics 4 (GA4), both the older Universal Analytics and GA4 may not fully comply with GDPR requirements using their default settings. If you're concerned about privacy compliance or want to give your visitors more control, you can disable this default tracking.
 
-2\. Click on Advanced tools
+### What happens when you disable it?
 
-![mceclip1.png](img/12781597309591-100dba1dbb.png)
+When you disable Google Analytics in WordPress Hosting:
+* The tracking code is removed from your website
+* Any stored analytics data is deleted
+* Analytics charts and reports are hidden in your dashboard
 
-3\. Toggle the option for the Google Analytics Integration
+### What if you want to turn it back on?
 
-![mceclip0.png](img/12781597309591-5eac791f8e.png)
+You can always turn Google Analytics back on later. When you do:
+* The tracking code will be added back to your website
+* Data collection will resume
+* Analytics charts will start working again
 
-4\. Click on Accept
+## How to toggle the default Google Analytics tracking on/off
 
-![mceclip2.png](img/12781597309591-8c4094951e.png)
+1. Go to your WordPress Hosting dashboard.
+
+2. Click on **Advanced Tools**.
+
+![Advanced Tools menu option](img/12781597309591-100dba1dbb.png)
+
+3. Toggle the option for the **Google Analytics Integration**.
+
+![Google Analytics Integration toggle](img/12781597309591-5eac791f8e.png)
+
+4. Click **Accept**.
+
+![Accept button for Google Analytics changes](img/12781597309591-8c4094951e.png)

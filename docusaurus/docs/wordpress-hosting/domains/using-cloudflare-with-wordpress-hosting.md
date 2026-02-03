@@ -91,7 +91,9 @@ If you're using WordPress Hosting Pro and want to configure your DNS settings on
      * Content: Your WordPress Hosting Pro-provided CNAME (e.g., `host.websiteprohosting.com`).
      * Proxy Status: **Enable the orange "Proxied" status**.
 
-   > **Note:** If the proxy status is set to **DNS Only**, Cloudflare's features such as caching and SSL won't be active for those records. You need to enable the proxy (orange cloud).
+:::info
+If the proxy status is set to **DNS Only**, Cloudflare's features such as caching and SSL won't be active for those records. You need to enable the proxy (orange cloud).
+:::
 
 5. **Verify DNS Changes**  
    After updating your DNS settings, ensure the proxy status for both `A` and `CNAME` records is set to **Proxied** (orange cloud). This ensures Cloudflare optimizes and secures your website traffic.

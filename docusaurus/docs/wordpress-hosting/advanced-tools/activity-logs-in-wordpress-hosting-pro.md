@@ -1,12 +1,12 @@
 ---
-title: "Activity Logs in WordPress Hosting Pro"
+title: "Activity logs in WordPress Hosting Pro"
 sidebar_label: "Activity Logs"
 description: "The  Activity Logs  feature in WordPress Hosting Pro helps users track actions performed on their  staging site . It provides a record of significant activitie"
 ---
 
 The **Activity Logs** feature in WordPress Hosting Pro helps users track actions performed on their **staging site**. It provides a record of significant activities, making it easier to monitor changes and troubleshoot issues.
 
-### Supported Staging Site Activities
+### Supported staging site activities
 
 1. **Reset Staging from Template**
    * Logs when the staging environment is reset using a new template.
@@ -29,7 +29,7 @@ The activity logs include the following information:
 
 ![](./img/32999976946583-7a231c0d99.png)
 
-### White-Labelled Support in Activity Logs
+### White-labelled support in activity logs
 
 Activity logs also include visibility for **support-related actions**:
 
@@ -40,7 +40,7 @@ This ensures transparency for internal teams while maintaining a white-labelled 
 
 ![](./img/activity-support-logs.png)
 
-### How to Access Activity Logs
+### How to access activity logs
 
 1. Log in to your WordPress Hosting Pro dashboard.
 2. Navigate to the **Activity Logs** section under **Advanced Tools**.

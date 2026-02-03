@@ -24,9 +24,9 @@ If you're troubleshooting an issue or debugging your website, accessing PHP logs
     Review the logs to identify errors or warnings related to your PHP scripts, such as syntax errors, deprecated functions, or unhandled exceptions.
     
 
-### Tips
-
-*   **Use Logs for Debugging**: Use the logs to pinpoint the root cause of issues like white screens, 500 errors, or slow loading times.
+:::tip
+**Use Logs for Debugging**: Use the logs to pinpoint the root cause of issues like white screens, 500 errors, or slow loading times.
+:::
 
 By following these steps, you can efficiently access and review PHP logs to maintain and troubleshoot your website.
 
