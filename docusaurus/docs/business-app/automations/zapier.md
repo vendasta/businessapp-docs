@@ -18,7 +18,7 @@ In this step, you can select the trigger that initiates an action in your workfl
 
 After selecting the trigger, you’ll need to choose the app that will carry out your desired action. In this scenario, that app would be Business App. This means that whenever a New Payment is received in QuickBooks online, an automation would be executed in the Business App CRM. As part of Business App in Zapier, various actions are possible.
 
-![](./img/zapier_app.png)
+<img src={require('./img/zapier_app.png').default} alt="Zapier app selection" width="50%" />
 
 ### Step 3: Choosing the action
 
