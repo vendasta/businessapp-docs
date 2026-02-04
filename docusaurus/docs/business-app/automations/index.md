@@ -75,18 +75,11 @@ Use "Skip the step and continue" for non-critical actions like logging or taggin
 
 Use the Activity tab on an automation to see what ran, when it ran, and whether it succeeded. This is helpful for verification and troubleshooting.
 
-## Learn more
+## Additional resources
 
-- Builder and settings
-  - Entry settings, error handling, and activity are covered above
-- Messaging actions
-  - See: [Messaging](messaging.md)
-- Templates and recipes
-  - See: [Templates and recipes](templates-and-recipes.md)
-- Start from a form
-  - See: [Forms](../crm/forms.md)
-- Connect external systems with Zapier
-  - See: [Zapier](zapier.md)
+- [Messaging actions](messaging.md)
+- [Templates and recipes](templates-and-recipes.md)
+- [Zapier integration](zapier.md)
 
 ## Frequently asked questions (FAQs)
 
