@@ -27,8 +27,6 @@ Here's an example of a simple automation workflow. This example shows an automat
 
 ![Automation workflow example showing trigger and action](./img/automation-example.png)
 
-
-
 ## Get started
 
 
@@ -54,16 +52,18 @@ Each automation has a Settings tab where you control how and when your workflow 
 
 ### Entry settings
 
-- Only once per entity: Run a single time for each entity
-- Multiple times per entity: Run every time the trigger conditions are met
-- One at a time per entity: Ensure a new run starts only after the previous one finishes
+![Entry settings options in automation settings](./img/automations-entry-settings.png)
+
+- Only once per contact: Run a single time for each contact
+- Multiple times per contact: Run every time the trigger conditions are met
+- One at a time per contact: Ensure a new run starts only after the previous one finishes
 
 :::warning
-If your automation updates the same record (for example, applies tags or updates fields), prefer "One at a time per entity" to avoid overlapping runs and duplicate changes.
+If your automation updates the same record (for example, applies tags or updates fields), prefer "One at a time per contact" to avoid overlapping runs and duplicate changes.
 :::
 
 ### Error handling
-
+![Error handling settings options in automation settings](./img/automations-error-handling-settings.png)
 - Skip the step and continue: Recommended in most cases
 - Stop the automation run: Use when later steps depend on earlier ones
 
