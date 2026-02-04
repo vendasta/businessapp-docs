@@ -23,13 +23,26 @@ Every automation includes:
 - Conditions: They are an optional part of an automation rule. After a trigger occurred, all conditions will be checked. The automation will be executed if all conditions are met.
 - Actions: What happens next (for example, Send SMS, Send plain-text email, Update company)
 
+Here's an example of a simple automation workflow. This example shows an automation that sends an email when a form is submitted for a contact.
+
+![Automation workflow example showing trigger and action](./img/automation-example.png)
+
+
+
 ## Get started
+
+
+
+**To build your own:**
 
 1. Go to Business App > Administration > Automations
 2. Select `Create Automation`
-3. Choose a template from the gallery, or start from `Blank`
-4. Add your Trigger, Conditions (optional), and Action steps from the right-side panel
-5. Save and toggle your automation On
+3. **Add a Trigger**: The event that starts your workflow
+   - Example: "When a form is submitted for a contact", "Contact created", "Meeting booked"
+   - Add **Conditions** if needed to filter when it runs
+4. **Add an Action**: What happens when the trigger fires
+   - Example: "Send a plain text email via Inbox", "Send SMS", "Create task"
+5. Save and toggle your automation **On**
 
 :::tip
 New to automations? Start with a template and customize.
