@@ -88,7 +88,7 @@ WordPress Hosting Pro offers a **secure, high-performance hosting solution** pow
 
 For any further questions or security-related concerns, feel free to reach out to our support team.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>What is Google Cloud Armor?</summary>

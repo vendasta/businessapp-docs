@@ -61,7 +61,7 @@ This file exposes sensitive database credentials. You must delete it immediately
 * **Use phpMyAdmin instead:** For database management, use phpMyAdmin through the WordPress Hosting Pro dashboard under **Advanced Tools**.
 * **Keep credentials secure:** Never share your database credentials publicly or commit them to version control systems.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Can I use these credentials to connect to the database remotely?</summary>

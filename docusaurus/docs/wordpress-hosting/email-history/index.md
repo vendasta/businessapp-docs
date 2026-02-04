@@ -47,7 +47,7 @@ You will see a list of all the emails that have been delivered via your site. Cl
 
 ![Screenshot 2025-06-03 at 10.00.14 AM.png](img/4406951722775-7adfabddb2.png)
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Does WordPress Hosting Pro require an SPF record?</summary>

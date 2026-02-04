@@ -40,7 +40,7 @@ After reconnecting the domain, allow up to **30 minutes** for the SSL certificat
 
 If the issue persists, contact Support via **chat** or **email** for further assistance.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How long does it take for an SSL certificate to be issued?</summary>

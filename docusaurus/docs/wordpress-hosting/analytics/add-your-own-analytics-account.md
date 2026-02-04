@@ -20,7 +20,7 @@ Please keep in mind that this ID will run concurrently with WordPress Hosting’
 
 ![Under "Settings > General" you can enter a Google Analytics Tracking ID connected to your own Google Analytics Account.](img/smaller_GA_tracking_id.png)
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How do I add my Google Analytics account to WordPress Hosting Pro?</summary>

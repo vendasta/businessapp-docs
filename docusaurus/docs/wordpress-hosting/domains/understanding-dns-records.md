@@ -112,7 +112,7 @@ While A, CNAME, and CAA records are the primary types used for web hosting, you 
 
 * **[Merge multiple SPF records into a single record](merge-multiple-spf-records-into-a-single-record.md)**: SPF records are used for email authentication and preventing email spoofing.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>What's the difference between an A record and a CNAME record?</summary>

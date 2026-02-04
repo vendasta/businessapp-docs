@@ -38,7 +38,7 @@ There are 3 ways to reset your staging site:
 
 3. **Reset from template** - Reset the staging site from the template selection. This means the staging site will be different from your actual site, and it will install a fresh template from the template selections for you to work with.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Will search engines index my staging site?</summary>

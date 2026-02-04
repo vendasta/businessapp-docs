@@ -34,7 +34,7 @@ If you'd like migration assistance:
 2.  A member of our WordPress Hosting team will email you to begin the migration.
 3.  We'll move a copy of each site to WordPress Hosting and put it on a temporary domain.
 4.  You’ll repoint the domains and DNS records to WordPress Hosting.
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Can I import a WordPress site into WordPress Hosting Pro?</summary>

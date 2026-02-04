@@ -111,7 +111,7 @@ If the proxy status is set to **DNS Only**, Cloudflare's features such as cachin
 
 By configuring the proxy status correctly, you'll be able to leverage Cloudflare's security and performance features effectively for your WordPress Hosting Pro setup.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Do I need to use Cloudflare's proxy (orange cloud) for my DNS records?</summary>

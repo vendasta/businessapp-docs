@@ -123,7 +123,7 @@ DNS propagation typically takes a few hours.
 If upgrading from WordPress Hosting Standard or Pro, the original domain will redirect to the new Multisite domain. The legacy domain may display "SSL Pending" or "Disconnected" in the dashboard—this is expected and does not affect site availability.
 :::
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>What is WordPress Hosting Premium?</summary>

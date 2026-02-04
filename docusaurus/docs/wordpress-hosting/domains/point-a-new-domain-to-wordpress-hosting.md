@@ -31,7 +31,7 @@ For detailed information about DNS records and how they work, see [Understanding
 6.  Click **Make Primary** on the domain that you want all your visitors to be redirected to.
 7.  If you disabled **Redirect to HTTPS** temporarily in step 5 you should check this **Domains** tab frequently until the SSL Certificate is marked **secure**. As soon as you can you should enable **Redirect to HTTPS.**
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How do I know if my domain has never been used before?</summary>

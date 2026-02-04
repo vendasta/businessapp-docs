@@ -71,7 +71,7 @@ Your staging site has its own unique URL, separate from your production domain. 
 * **Preserve staging files** if you need to continue working after pushing to production
 * **Reset staging regularly** to keep it in sync with your production site
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Will search engines index my staging site?</summary>
