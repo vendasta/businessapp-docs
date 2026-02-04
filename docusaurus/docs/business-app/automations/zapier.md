@@ -1,6 +1,6 @@
 ---
 title: Zapier
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 Zapier is an online automation tool that allows you to connect different apps and services without the need for coding. It lets you create automated workflows, called "Zaps," that perform actions in one app when something happens in another app.

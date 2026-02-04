@@ -1,5 +1,6 @@
 ---
 title: Templates and recipes
+sidebar_position: 5
 ---
 
 Get started fast with pre-built templates and step-by-step recipes you can customize.

@@ -1,5 +1,6 @@
 ---
 title: Pause Campaign actions – Automation Builder
+sidebar_position: 2
 sidebar_label: Pause Campaign actions
 description: Use automation to pause campaigns for contacts or companies when lead conditions change.
 tags: [automations, campaigns, crm, contact-level, company-level]
