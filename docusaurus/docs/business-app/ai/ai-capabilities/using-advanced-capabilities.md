@@ -1,12 +1,14 @@
 ---
-title: How to Use Global Capabilities
-sidebar_label: Using Global Capabilities
+title: Using Advanced Capabilities
+sidebar_label: Using Advanced Capabilities
 sidebar_position: 4
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';
 
-This guide walks you through connecting global capabilities to your AI Employees. Global capabilities are pre-built integrations designed for common business needs, allowing you to quickly extend your AI Employee's functionality without building custom API connections from scratch.
+Before your AI Employee can use certain capabilities, you may need to configure API credentials or connect to external systems. This page provides setup instructions for capabilities that require additional configuration or are more complex to use.
+
+For general information on enabling and configuring capabilities, see [Configuring Capabilities](configuring-capabilities.md).
 
 ## Prerequisites
 
@@ -14,26 +16,7 @@ Before you begin:
 - You have an AI Employee created in Business App
 - You have access credentials for the external system you want to connect (required for some capabilities)
 
-### Step 1: Access global capabilities
-
-1. Navigate to <AISparkleIcon /> **AI** › **AI Workforce** in your Business App dashboard.
-2. Select an AI Employee.
-3. Click the **Configure** button.
-4. Scroll to the Capabilities section and click **Add a capability**.
-5. Browse the available global capabilities.
-
-### Step 2: Connect a global capability
-
-1. Locate the global capability you want to use.
-2. Click to enable the capability.
-3. Fill in any required variable fields (these vary by capability).
-4. Click **Save**.
-
-### Step 3: Test your connection
-
-1. Start a conversation with your AI Employee.
-2. Ask a question that should trigger the capability.
-3. Verify the AI retrieves and displays the correct information.
+---
 
 ## Check WooCommerce inventory
 
@@ -71,6 +54,8 @@ You will need to format these credentials for use in the **WooCommerceBasicAuth*
 :::note
 Do not include the word **Basic** in the **WooCommerceBasicAuth** field, it is added automatically.
 :::
+
+---
 
 ## Create email template
 
