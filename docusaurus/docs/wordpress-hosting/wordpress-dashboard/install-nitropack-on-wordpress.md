@@ -59,4 +59,8 @@ The tab on the bottom right is the **Configurations** where you can choose bet
 2.  **Medium**: Well-balanced optimization that is suitable for most cases.
 3.  **Strong**: The optimization includes advanced features like automatic image lazy loading and font definition modification. 
 4.  **Ludicrous**: A predefined configuration that enables all optimizations to achieve the highest possible score.
-5.  **Manual**: Customize your own optimization settings. If you activate this option, you get to see the **Advanced settings** for configuration custom.
+5.  **Manual**: Customize your own optimization settings. If you activate this option, you get to see the **Advanced settings** for configuration custom.
+
+## Related Articles
+
+For additional performance optimization tips, see [Understanding WebP Images](understanding-webp-how-to-use-next-gen-images-in-wordpress.md) to optimize your images for faster loading.

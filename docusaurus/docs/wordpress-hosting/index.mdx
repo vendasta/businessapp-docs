@@ -12,20 +12,17 @@ import Link from '@docusaurus/Link';
 
 This documentation helps you launch, manage, and grow your WordPress websites with confidence.
 
-<div className="row">
-  <div className="col col--4">
-    <Link className="card-link" to="/wordpress-hosting/category/overview">
-      <div className="card">
-        <div className="card__header">
-          <h3>Overview</h3>
-        </div>
-        <div className="card__body">
-          <p>Start here for key concepts and getting started resources.</p>
-        </div>
-      </div>
-    </Link>
-  </div>
+<style>{`
+  .row .col {
+    margin-bottom: 1.5rem;
+  }
+  .card-link .card {
+    min-height: 140px;
+    height: 100%;
+  }
+`}</style>
 
+<div className="row">
   <div className="col col--4">
     <Link className="card-link" to="/wordpress-hosting/wordpress-hosting-overview/">
       <div className="card">
@@ -33,7 +30,20 @@ This documentation helps you launch, manage, and grow your WordPress websites wi
           <h3>WordPress Hosting Overview</h3>
         </div>
         <div className="card__body">
-          <p>Learn about WordPress Hosting features, setup, and user management.</p>
+          <p>Learn about WordPress Hosting features and setup.</p>
+        </div>
+      </div>
+    </Link>
+  </div>
+
+  <div className="col col--4">
+    <Link className="card-link" to="/wordpress-hosting/analytics/">
+      <div className="card">
+        <div className="card__header">
+          <h3>Analytics</h3>
+        </div>
+        <div className="card__body">
+          <p>Measure performance and learn what drives results.</p>
         </div>
       </div>
     </Link>
@@ -53,13 +63,13 @@ This documentation helps you launch, manage, and grow your WordPress websites wi
   </div>
 
   <div className="col col--4">
-    <Link className="card-link" to="/wordpress-hosting/analytics/">
+    <Link className="card-link" to="/wordpress-hosting/category/overview">
       <div className="card">
         <div className="card__header">
-          <h3>Analytics</h3>
+          <h3>Overview</h3>
         </div>
         <div className="card__body">
-          <p>Measure performance and learn what drives results.</p>
+          <p>Start here for key concepts and getting started resources.</p>
         </div>
       </div>
     </Link>
@@ -118,19 +128,6 @@ This documentation helps you launch, manage, and grow your WordPress websites wi
   </div>
 
   <div className="col col--4">
-    <Link className="card-link" to="/wordpress-hosting/category/templates">
-      <div className="card">
-        <div className="card__header">
-          <h3>Templates</h3>
-        </div>
-        <div className="card__body">
-          <p>Use professionally designed layouts to build faster.</p>
-        </div>
-      </div>
-    </Link>
-  </div>
-
-  <div className="col col--4">
     <Link className="card-link" to="/wordpress-hosting/email-history/">
       <div className="card">
         <div className="card__header">
@@ -138,6 +135,19 @@ This documentation helps you launch, manage, and grow your WordPress websites wi
         </div>
         <div className="card__body">
           <p>Troubleshoot and track outgoing email from your site.</p>
+        </div>
+      </div>
+    </Link>
+  </div>
+
+  <div className="col col--4">
+    <Link className="card-link" to="/wordpress-hosting/category/templates">
+      <div className="card">
+        <div className="card__header">
+          <h3>Templates</h3>
+        </div>
+        <div className="card__body">
+          <p>Use professionally designed layouts to build faster.</p>
         </div>
       </div>
     </Link>
@@ -156,4 +166,3 @@ This documentation helps you launch, manage, and grow your WordPress websites wi
     </Link>
   </div>
 </div>
-
