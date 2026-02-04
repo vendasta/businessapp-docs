@@ -1,6 +1,6 @@
 ---
-title: Using Advanced Capabilities
-sidebar_label: Using Advanced Capabilities
+title: Using Complex Capabilities
+sidebar_label: Using Complex Capabilities
 sidebar_position: 4
 ---
 
