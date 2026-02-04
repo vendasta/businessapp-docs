@@ -1,5 +1,6 @@
 ---
 title: Send automated SMS alerts to any phone number
+sidebar_position: 4
 sidebar_label: Automated SMS to any phone number
 description: Use the Send an SMS message to a phone number action in Automations to send text alerts to any destination phone number.
 tags:
