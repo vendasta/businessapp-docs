@@ -20,7 +20,7 @@ Automations let you create workflows that run on their own when specific events 
 Every automation includes:
 
 - Trigger: The event that starts your workflow (for example, When a contact is created)
-- Conditions: They are an optional part of an automation rule. After a trigger occurred, all conditions will be checked. The automation will be executed if all conditions are met.
+- Conditions: They are an optional part of an automation rule. After a trigger occurrs, all conditions will be checked. The automation will be executed if all conditions are met.
 - Actions: What happens next (for example, Send SMS, Send plain-text email, Update company)
 
 ## Get started
