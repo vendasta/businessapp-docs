@@ -83,7 +83,7 @@ If you purchased your domain from Namecheap or another registrar, the process is
 
 For general domain connection instructions, see [Connect a Custom Domain](connect-a-custom-domain.md).
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How do I find the DNS management page in GoDaddy?</summary>

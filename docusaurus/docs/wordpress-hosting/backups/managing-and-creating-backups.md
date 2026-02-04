@@ -25,7 +25,7 @@ Users can create a new backup of their live site at any time from the Backups ta
 
 *   Backup Now: Instantly generates a backup of your live/production site, ensuring any recent changes are secured.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How long does a restoration take?</summary>

@@ -76,7 +76,7 @@ The A record that is returned should include an IP address of `34.149.86.124`
 **CNAME record**: Enter your subdomain (e.g. `www.business.com`): [https://mxtoolbox.com/DNSLookup.aspx](https://mxtoolbox.com/DNSLookup.aspx)  
 The record that is returned should reflect a Canonical Name of `host.websiteprohosting.com`
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>When do I use an A Record?</summary>

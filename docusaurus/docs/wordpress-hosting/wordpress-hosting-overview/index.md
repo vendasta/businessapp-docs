@@ -71,7 +71,7 @@ For detailed guides, see:
 * [Domains](../domains/connect-a-custom-domain.md) - Connect custom domains
 * [Advanced Tools](../advanced-tools/index.mdx) - Access advanced features
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Can I upgrade to PHP 8.1 on WordPress Hosting Pro?</summary>

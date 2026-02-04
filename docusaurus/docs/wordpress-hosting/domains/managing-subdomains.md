@@ -59,7 +59,7 @@ You can only have one primary domain. All other connected domains (including sub
 
 For more details, see [Set your preferred URL or domain](set-your-preferred-url-or-domain.md).
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Is there a limit to how many subdomains I can add?</summary>

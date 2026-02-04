@@ -48,7 +48,7 @@ If a plugin prevents access to the WordPress dashboard, you can:
 If you need to disable WordPress Hosting Pro's login override, you can toggle off **Hide Advanced Login** under **Advanced Tools** in the WordPress Hosting Pro dashboard.
 :::
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How does WordPress Hosting Pro handle WordPress login?</summary>

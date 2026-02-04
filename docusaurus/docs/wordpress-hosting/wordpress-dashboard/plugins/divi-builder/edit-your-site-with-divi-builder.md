@@ -96,7 +96,7 @@ Changing the logo and contact information on your website
 
 _[WooCommerce](https://docs.woocommerce.com/) and [Divi Builder](https://www.elegantthemes.com/blog/theme-releases/divi-3)_ _have extensive documentation and tutorials on how to set up, edit, manage, and operate your store._
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Where can I find help articles and documentation for Divi?</summary>

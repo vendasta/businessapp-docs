@@ -34,7 +34,7 @@ You can only duplicate a template that has been published. To publish a template
 
 ![Screenshot 2025-06-03 at 10.42.54 AM.png](img/5616708167191-2d58288672.png)
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Can I import my own custom templates to WordPress Hosting Standard or WordPress Hosting Pro?</summary>

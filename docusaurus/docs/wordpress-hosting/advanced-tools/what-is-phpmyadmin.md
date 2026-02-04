@@ -49,7 +49,7 @@ Here's what it is and what it's commonly used for:
 
 phpMyAdmin is a vital tool for WordPress administrators and developers, offering flexibility and control for managing database-related tasks.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How can I find the database connection string for my site?</summary>

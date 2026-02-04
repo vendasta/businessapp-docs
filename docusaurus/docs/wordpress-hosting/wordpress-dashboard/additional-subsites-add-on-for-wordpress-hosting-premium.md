@@ -37,7 +37,7 @@ When restoring backups, the system automatically respects your subsite limit:
 - The same rule applies when restoring from staging
 - You can reactivate deactivated subsites later if you increase your capacity
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How can I add more subsites?</summary>

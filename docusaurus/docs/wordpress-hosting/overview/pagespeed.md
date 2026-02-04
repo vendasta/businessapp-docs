@@ -20,7 +20,7 @@ If the website has recently been created the trend line will not appear as there
 
 ![Screen_Shot_2020-12-02_at_2.57.22_PM.png](img/4406951896727-2903624387.png)
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Why is my Google PageSpeed score low, especially on mobile?</summary>

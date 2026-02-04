@@ -144,7 +144,7 @@ Most of the time your site won't be completely down, but you may notice some fun
 
 For more WordPress troubleshooting help, visit [WordPress Codex](https://codex.wordpress.org/). The guides and help offered there are useful for troubleshooting, learning how to use WordPress, tutorials, and more advanced topics.
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>Why am I getting a memory limit error when editing with Divi or Elementor?</summary>

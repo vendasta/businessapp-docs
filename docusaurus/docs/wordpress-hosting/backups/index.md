@@ -51,7 +51,7 @@ You can restore your site to any available backup point directly from the **Back
 Restoring a backup will replace your current site with the selected backup version. All changes made after that backup point will be lost.
 :::
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQs)
 
 <details>
 <summary>How long does a restoration take?</summary>
