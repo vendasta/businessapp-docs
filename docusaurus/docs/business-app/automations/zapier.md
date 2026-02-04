@@ -3,6 +3,8 @@ title: Zapier
 sidebar_position: 1
 ---
 
+Zapier is an online automation tool that allows you to connect different apps and services without the need for coding. It lets you create automated workflows, called "Zaps," that perform actions in one app when something happens in another app.
+
 Business App CRM can be connected to many 3rd party systems using Zapier.
 
 ## How does it work?
