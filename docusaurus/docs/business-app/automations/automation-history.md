@@ -16,17 +16,17 @@ Use Automation Activity to see what ran, when it ran, and whether it succeeded. 
 
 ## What you’ll see
 
-- Entity: The record the run acted on (for example, Contact or Company)
-- Automation: The workflow name
-- Starting user: Who initiated the run (system or a user)
-- Time: When the last step in the run occurred
-- Stage: Current status of the run
+- **Contact**: The person or company the automation ran for
+- **Step**: The specific action in the workflow (e.g., "Send a webhook", "Create an opportunity", "Trigger")
+- **Activity**: What happened in that step (e.g., "Automation completed", "Sent webhook", "Opportunity was created")
+- **Started Time**: When the step occurred
 
-### Run stages
+### Activity statuses
 
-- Completed: The run finished successfully
-- Running: The workflow is in progress and steps update in real time
-- Canceled: The run was stopped before completion
+- **Automation completed**: The run finished successfully
+- **Running**: The workflow is in progress and steps update in real time
+- **Entered automation**: The automation was triggered and started
+- **Sent webhook / Created opportunity**: Specific actions that completed successfully
 
 
 ## Troubleshooting tips
