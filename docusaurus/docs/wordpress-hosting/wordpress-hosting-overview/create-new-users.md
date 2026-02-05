@@ -13,7 +13,6 @@ To create WordPress users using WordPress Hosting, you must create a Business Ap
 * Users are identified by their email address
 * The Business App email address is used for WordPress login
 * All users created in Business App are assigned the **Administrator** role in WordPress by default
-* If you have existing WordPress users, you must create Business App users with the **same email addresses** for them to be able to log in
 
 ## Example
 
@@ -21,7 +20,3 @@ You want to give Bob access to your WordPress website:
 
 1. Create a Business App user for Bob with the email `bob@email.com`
 2. When Bob accesses the WordPress dashboard via WordPress Hosting, he will be automatically logged in as an Administrator with the email `bob@email.com`
-
-:::info
-Email addresses must match exactly between Business App and WordPress. If you have an existing WordPress user, create the Business App user with the same email address to avoid creating duplicate users.
-:::
