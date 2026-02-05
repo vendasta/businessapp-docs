@@ -107,16 +107,14 @@ Once enabled, you'll be able to take full advantage of XML-RPC's capabilities wi
 
 ## Security Checklist
 
-| Task | Status |
-|------|--------|
-| Use strong, unique passwords | ✅ |
-| Enable multi-factor authentication | ✅ |
-| Keep WordPress, themes, and plugins updated | ✅ |
-| Install security plugins | ✅ |
-| Use SSL certificate | ✅ |
-| Limit admin access to trusted users | ✅ |
-| Regular backups and monitoring | ✅ |
-| Review XML-RPC needs (disable if not needed) | ✅ |
+- Use strong, unique passwords
+- Enable multi-factor authentication
+- Keep WordPress, themes, and plugins updated
+- Install security plugins
+- Use SSL certificate
+- Limit admin access to trusted users
+- Regular backups and monitoring
+- Review XML-RPC needs (disable if not needed)
 
 Following these steps can help keep your WordPress website safe from hackers and cyber threats.
 
