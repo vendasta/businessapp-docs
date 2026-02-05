@@ -1,21 +1,20 @@
 ---
-title: Set up Conversations for SMS messaging 
+title: Set up Conversations for SMS messaging
 sidebar_position: 4
 ---
 
-You can use Conversations to send and receive SMS and MMS messages with customers from a dedicated business phone number. Each business is assigned a local phone number for two-way communication based on the provided business address. SMS is available to businesses with a suppoorted edition of Conversations in Canada and the United States.
+You can use Conversations to send and receive SMS and MMS messages with customers from a dedicated business phone number. Each business is assigned a local phone number for two-way communication based on the provided business address. SMS is available to businesses with a supported edition of Conversations in Canada and the United States.
 
 ## SMS Registration and Setup
 
 Before you can send SMS messages, you'll need to complete the registration and configuration process.
 
-:::info Setup Required
-For detailed registration instructions and configuration steps, see [SMS Configuration](../administration/sms_configuration.md).
-:::
+- **US businesses**: Must complete A2P 10DLC registration before sending SMS. This includes updating your website to meet carrier compliance requirements.
+- **Canadian businesses**: Can use SMS immediately without registration.
 
-**Quick Overview:**
-- **US businesses**: Must complete A2P 10DLC registration before sending SMS
-- **Canadian businesses**: Can use SMS immediately without registration
+:::info US businesses: Complete registration first
+For detailed registration instructions, website requirements, and approval steps, see [SMS Registration for US Businesses](../../administration/sms_configuration.md).
+:::
 
 ## Sending SMS Messages
 

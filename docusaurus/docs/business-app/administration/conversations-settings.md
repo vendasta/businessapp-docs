@@ -33,8 +33,8 @@ Connect messaging channels so they appear in your unified inbox:
 - Set guardrails and escalation rules so complex messages are handed to a person.
 
 ## Compliance
-- Configure A2P 10DLC registration when sending SMS in supported regions.
-- Include opt-out language in automated texts (e.g., “Reply STOP to opt out”).
+- Configure A2P 10DLC registration when sending SMS in supported regions. US businesses must also meet website requirements for carrier approval. See [SMS Registration for US Businesses](./sms_configuration.md).
+- Include opt-out language in automated texts (e.g., "Reply STOP to opt out").
 
 ## Related
 - See also: [Email Configuration](./email_configuration.md)
@@ -57,7 +57,7 @@ You can assign an AI Employee to automatically respond on certain channels. [Lea
 <details>
 <summary>What is A2P 10DLC registration?</summary>
 
-A2P 10DLC (Application-to-Person 10-Digit Long Code) registration is a requirement for businesses sending SMS messages in the US and Canada. It verifies your business identity and campaign intent to improve deliverability and prevent spam.
+A2P 10DLC (Application-to-Person 10-Digit Long Code) registration is a requirement for US businesses sending SMS messages. It verifies your business identity and ensures your website meets carrier compliance requirements. See [SMS Registration for US Businesses](./sms_configuration.md) for the complete registration guide.
 </details>
 
 <details>
