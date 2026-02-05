@@ -34,7 +34,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
 
 ![Create Credentials](./img/32998698678551-f45615ce38.png)
 
-## Step 3: Set Up OAuth Consent Screen & Credentials
+## Step 3: Set up OAuth consent screen & credentials
 
 1.  Go to **Credentials** > **OAuth consent screen**.
 2.  Choose **User Type** as **External**, then click **Create**.
@@ -75,7 +75,7 @@ This article walks you through setting up Gmail SMTP for your WordPress website 
 Testing mode limits usage to 100 users. Publishing removes this limit.
 :::
 
-## Step 5: Configure WP Mail SMTP Plugin
+## Step 5: Configure WP Mail SMTP plugin
 
 ### Install the Plugin
 
@@ -85,7 +85,7 @@ Testing mode limits usage to 100 users. Publishing removes this limit.
 
 ![WP Mail SMTP Plugin](./img/32998698678551-abd897df61.png)
 
-### Configure the Plugin
+### Configure the plugin
 
 1.  Go to **WP Mail SMTP** > **Settings**.
 2.  Fill in:
@@ -118,7 +118,7 @@ Testing mode limits usage to 100 users. Publishing removes this limit.
 
 ![Disable WordPress Hosting Pro Mail System](./img/32998698678551-b3abd4e6d9.png)
 
-## Step 7: Test the Configuration
+## Step 7: Test the configuration
 
 1.  Install the **WP Mail SMTP Email Test** plugin (if not included).
 2.  Go to **WP Mail SMTP** > **Tools** > **Email Test**.
