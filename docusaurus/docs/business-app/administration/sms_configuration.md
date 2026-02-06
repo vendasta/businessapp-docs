@@ -12,58 +12,60 @@ This registration is only required for businesses located in the United States. 
 
 ## Before you begin
 
-US telephone carriers now manually review business websites before approving SMS registration. Your registration will remain pending or be rejected if your website doesn't meet their compliance requirements.
+To protect consumers from spam, US telephone carriers now manually review business websites before approving SMS messaging. If specific elements are missing, a registration may be rejected. Follow this guide to ensure your business's website meets the requirements before proceeding.
 
-Before submitting your registration, complete these website updates:
+Complete these website updates before submitting your registration:
 
 1. [Update your privacy policy](#step-1-update-your-privacy-policy)
-2. [Add opt-in checkboxes to web forms](#step-2-add-opt-in-checkboxes-to-web-forms)
-3. [Verify AI chat consent is enabled](#step-3-verify-ai-chat-consent-is-enabled) (if you use AI Chat Receptionist)
+2. [Update your terms of service](#step-2-update-your-terms-of-service)
+3. [Add opt-in checkboxes to web forms](#step-3-add-opt-in-checkboxes-to-web-forms)
+4. [Enable AI chat consent](#step-4-enable-ai-chat-consent) (if you use AI Chat Receptionist)
 
 ## Website requirements for approval
 
 ### Step 1: Update your privacy policy
 
-Your website's privacy policy must explicitly address how you handle SMS communications. Add the following statements to your privacy policy:
+The privacy policy on your business's website must explicitly state the following about how you handle SMS data:
 
-**Required privacy policy language:**
+| Requirement | Language to include |
+|-------------|---------------------|
+| No sharing of SMS data | Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. |
+| Opt-in disclosure | By providing your number, you consent to receive automated informational and promotional messages. |
+| Opt-out instructions | You can cancel the SMS service at any time. Just text "STOP" to our number. We will send a confirmation message to acknowledge your request. |
+| Help instructions | Reply HELP for assistance. |
+| Rates | Message and data rates may apply. Message frequency varies. |
 
-> **SMS/Text Messaging**
->
-> By providing your phone number, you consent to receive automated informational and promotional text messages from [Your Business Name]. Message and data rates may apply. Message frequency varies.
->
-> Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes.
->
-> You can cancel the SMS service at any time by texting "STOP" to our number. After you send the STOP message, we will send a confirmation text to acknowledge your request.
->
-> For assistance, reply "HELP" to any message.
+### Step 2: Update your terms of service
 
-### Step 2: Add opt-in checkboxes to web forms
+Carriers require your business's public terms of service document to describe your SMS program. Ensure your terms covers these topics:
 
-If your website has forms that collect phone numbers (such as "Contact Us" or appointment request forms), you must add a consent checkbox.
+| Requirement | Language to include |
+|-------------|---------------------|
+| Program description | By opting in, you agree to receive [Your Business Name] notifications and alerts. |
+| Standard phrases | Message and data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. |
+| SMS instructions | Text HELP for help or STOP to cancel. |
+
+### Step 3: Add opt-in checkboxes to web forms
+
+If you collect phone numbers on your website (such as a "Contact Us" form), you must provide a clear checkbox next to the phone field.
 
 **Checkbox requirements:**
 
-- Place a checkbox next to every phone number field
-- The checkbox must be **unchecked by default**
-- Include this text next to the checkbox:
+- **Add a checkbox**: Place a checkbox next to the phone field on every website form, with the text: "I agree to receive automated messages from [Your Business Name]. Message & data rates may apply. Reply STOP to opt out."
+- **Default setting**: The checkbox must be **unchecked by default**.
+- **Data logging**: Ensure your system records the phone number and the consent status at the moment the form is submitted.
 
-> "I agree to receive automated text messages from [Your Business Name]. Message and data rates may apply. Reply STOP to opt out."
+### Step 4: Enable AI chat consent
 
-**Data logging requirement:**
+Carriers require express written consent for automated outbound campaigns to phone numbers. Web chat must also get express consent to send messages via SMS.
 
-Your system must record consent status when forms are submitted. This means logging:
-- The phone number provided
-- Whether the consent checkbox was checked
-- The date and time of submission
+**Automated consent:** If you use our AI Chat Receptionist, an additional question is automatically enabled on the Lead Capture capability for accounts submitting A2P registration. The AI will ask:
 
-### Step 3: Verify AI chat consent is enabled
+> "Do you agree to receive text messages from us regarding appointments, service updates, and occasional promotional offers? Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe or HELP for help to any received SMS messages. Reply 'Yes' if you agree."
 
-If you use the AI Chat Receptionist, an additional consent question is automatically enabled when you submit A2P registration. The AI will ask website visitors:
+**Proactive verification:** If express written consent has not been collected for a phone number, a single initial SMS may be sent that says:
 
-> "Do you agree to receive text messages from us regarding appointments, service updates, and occasional promotional offers? Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe or HELP for help. Reply 'Yes' if you agree."
-
-This consent collection is required because carriers require express written consent before sending automated messages to phone numbers collected through chat.
+> "[Your Business Name] would like to send you text messages at this number. Message and data rates may apply. View our SMS policy at [Link]. Reply 'Yes' to opt-in."
 
 ## Submit your registration
 
@@ -109,8 +111,9 @@ The most common reason for rejection is missing or incomplete website requiremen
 | Issue | Solution |
 |-------|----------|
 | Privacy policy doesn't mention SMS | Add the [required privacy policy language](#step-1-update-your-privacy-policy) |
-| Missing STOP/HELP instructions in privacy policy | Include opt-out and help instructions |
-| Web forms missing consent checkbox | Add [opt-in checkboxes](#step-2-add-opt-in-checkboxes-to-web-forms) to all forms with phone fields |
+| Missing STOP/HELP instructions | Include opt-out and help instructions in your privacy policy |
+| Terms of service missing SMS program | Add the [required terms of service language](#step-2-update-your-terms-of-service) |
+| Web forms missing consent checkbox | Add [opt-in checkboxes](#step-3-add-opt-in-checkboxes-to-web-forms) to all forms with phone fields |
 | Consent checkbox is pre-checked | Change the default state to unchecked |
 
 ### Business information mismatches
