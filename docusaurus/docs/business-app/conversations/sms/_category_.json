@@ -1,6 +1,6 @@
 {
   "label": "SMS",
-  "position": 8,
+  "position": 3,
   "link": {
     "type": "doc",
     "id": "business-app/conversations/sms/index"
