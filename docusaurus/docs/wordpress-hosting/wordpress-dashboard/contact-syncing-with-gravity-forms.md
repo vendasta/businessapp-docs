@@ -67,10 +67,8 @@ If similar syncing issues are occurring on other sites:
 
 ## Summary Checklist
 
-| Task | Status |
-|------|--------|
-| Use domain-matching **From Email** | ✅ |
-| Set **Reply-To** to dynamic Email field | ✅ |
-| Use correct form merge tags | ✅ |
-| Validate fields haven't changed recently | ✅ |
-| Test form submission and CRM contact creation | ✅ |
+- Use domain-matching **From Email**
+- Set **Reply-To** to dynamic Email field
+- Use correct form merge tags
+- Validate fields haven't changed recently
+- Test form submission and CRM contact creation

@@ -1,6 +1,7 @@
 ---
 title: "WordPress Dashboard Login"
 sidebar_label: "Admin Dashboard"
+sidebar_position: 1
 description: "Learn how to securely access the WordPress Admin Dashboard through WordPress Hosting and understand how the custom login system works."
 ---
 

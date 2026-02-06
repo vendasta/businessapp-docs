@@ -1,6 +1,7 @@
 ---
 title: "Existing Users After Import"
 sidebar_label: "Existing Users"
+sidebar_position: 4
 description: "Learn how to handle existing WordPress users after importing a site into WordPress Hosting. Two options for maintaining user access."
 ---
 

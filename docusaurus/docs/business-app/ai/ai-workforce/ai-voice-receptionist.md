@@ -350,7 +350,7 @@ For additional troubleshooting, see [Conversations Phone Call Setup](../../conve
 <details>
 <summary>Can the AI book meetings on my calendar?</summary>
 
-Yes. Connect your calendar in <CRMIcon /> `CRM` > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then enable the **Book appointments with calendar** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](../../crm/my-meetings.md) for details.
+Yes. Connect your calendar in <CRMIcon /> `CRM` > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then enable the **Book appointments with calendar** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](../../crm/My meetings/) for details.
 </details>
 
 <details>

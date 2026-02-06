@@ -3,127 +3,95 @@ sidebar_position: 4
 ---
 
 # Blacklisted and Redundant Plugins
-Today, there are thousands of plugins available for WordPress sites and most of them will work with Website Pro seamlessly. In fact, Website Pro does not prevent users from installing any plugins. However, some plugins have functionality that interferes with the operation of your site in the Website Pro ecosystem. Such plugins could not jive for a couple of reasons. Though most often, it is because they provide duplicate (or the same) functionality that is already provided by Website Pro. These plugins include, but are not limited to:
 
-Caching Plugins
----------------
+WordPress Hosting supports thousands of WordPress plugins, and most work seamlessly. However, some plugins conflict with WordPress Hosting's built-in features because they provide duplicate functionality that's already included. These plugins can cause performance issues, unexpected behavior, or prevent built-in features from working correctly.
 
-Website Pro is built to make your sites fast. To help WordPress developers serve content as quickly as possible we have server-side caching already in place.
+## Caching Plugins
 
-Though plugin based caching features are common and often useful in other hosting platforms, they’re unlikely to improve things in the Website Pro environment. On a cache miss your site will experience the added overhead of populating the plugin’s slower PHP based caching system. In the case of a cache hit the content should be served from Website Pro’s automatic caching layer. The cache hit request will never even make it to your plugin. This leaves your site bloated with cached data that doesn’t get used. In addition, plugin-based caching solutions could cause issues or unexpected behaviour with Website Pro features like backing up and restoring your site.
+WordPress Hosting includes server-side caching to make your site fast. Caching plugins are unnecessary and can cause conflicts with WordPress Hosting's built-in caching system, potentially interfering with backups and restores.
 
-Examples of Plugins that can conflict with our platforms built-in caching structure:
+**Examples:**
+* A2 Optimized WP
+* W3 Total Cache
+* WP Super Cache
+* WP File Cache
 
-*   [A2 Optimized WP](https://en-ca.wordpress.org/plugins/a2-optimized-wp/)
-*   [W3 Total Cache](https://en-ca.wordpress.org/plugins/w3-total-cache/)
-*   WP Super Cache
-*   WP File Cache
-*   Divi Builder _Some functionality issues_ ([more information here](divi-builder/troubleshooting.md))
+## Backup Plugins
 
-Site Backup Plugins
--------------------
+WordPress Hosting automatically backs up your site daily and provides on-demand backup and restore capabilities. Backup plugins are unnecessary and can slow your site's performance. Some backup plugins store backups on your site itself, which uses up storage space unnecessarily.
 
-Website Pro has your back with a robust backup and restore system. Website Pro saves a copy of your entire site every day and preserves it in an isolated and incredibly reliable cloud-based file storage system. You can also backup on demand using the Website Pro dashboard or restore it to a previous backup if something goes wrong.
+**Examples:**
+* BackupBuddy
+* BackWPUp
+* BackUpWordPress
+* WP DB Backup
+* WP DB Manager
 
-With the backup services Website Pro provides, backup plugins are unnecessary and they have several downsides. Poorly configured backup plugins have been known to slow the performance of sites and even render them useless while backing up. Some of them will store the backups in your site itself, bloating the filesystem more every day. Save yourself the headache and leave backing up to us.
+## Login Security Plugins
 
-*   BackupBuddy
-*   BackWPUp
-*   BackUpWordPress
-*   WP DB Backup
-*   WP DB Manager
-*   [Others](https://wordpress.org/plugins/search.php?q=backup&sort= "https://wordpress.org/plugins/search.php?q=backup&sort=")
+WordPress Hosting provides secure login functionality automatically. Access to your WordPress Admin Dashboard is only available through WordPress Hosting's dashboard, which includes controlled access and "Sign in with Google" support.
 
-Login Plugins
--------------
+Plugins that alter the login process are unnecessary and may break the login workflow, potentially making your Admin Dashboard inaccessible. If this happens, you can use SFTP or phpMyAdmin (available in WordPress Hosting Pro) to disable or remove the plugin.
 
-One of the most straightforward ways for malicious attackers to gain entry to your WordPress site is through a brute force attack on the Admin Login page. Because of this, it is common practice for WordPress developers to use plugins to move, hide, or otherwise override the Admin Login process.The security of your login page is a necessity. That’s why this functionality is taken care of automatically by Website Pro.
+**Examples:**
+* Rename WP Login
+* [Jetpack](https://en-ca.wordpress.org/plugins/jetpack/) (some functionality issues)
 
-Access to your WordPress Admin Dashboard is only available via the Website Pro dashboard. This login is tightly controlled and supports an incredibly convenient “Sign in with Google” workflow.
+## SMTP/Email Plugins
 
-Because of [our integration](https://help.websitepro.hosting/?p=133) between Website Pro and the WordPress Admin Dashboard any plugin that alters the login should be unnecessary and is unlikely to work as expected. Even worse it might break the login workflow we have in place for you, leaving your Admin Dashboard inaccessible. If you find yourself in this situation it can be remedied using Website Pro’s SFTP and PHP My Admin integrations to disable or remove the plugin.
+WordPress Hosting provides reliable email delivery. Plugins that integrate with third-party email services via HTTP APIs (like SendGrid) should work, but plugins that attempt to use SMTP directly or operating system utilities are not supported.
 
-Examples of Plugins that might cause issues:
+**Examples:**
+* Configure SMTP
+* WP Mailing List
+* Other SMTP email plugins
 
-*   [Rename WP Login](https://en-ca.wordpress.org/plugins/rename-wp-login/)
-*   [Jetpack](https://en-ca.wordpress.org/plugins/jetpack/) _Some functionality issues_ ([more information here](https://help.websitepro.hosting/?p=8))
+## Security Plugins
 
-SMTP/Email Plugins
-------------------
+WordPress Hosting follows WordPress security best practices and prevents brute force attacks. Security plugins can interfere with caching mechanisms, add overhead, and conflict with WordPress Hosting's security systems.
 
-At Website Pro we provide a reliable email delivery mechanism but we understand that sometimes you want more control over how it’s delivered. Plugins that integrate with third-party email senders (like [SendGrid](https://sendgrid.com/)) over HTTP based APIs should work as expected in the Website Pro environment. However, keep in mind the standard wp\_mail function has been overridden already to support Website Pro’s email system. Some email plugins will refuse to function if that is the case.
+**Examples:**
+* Shield Security for WordPress (WP Simple Firewall)
 
-To promote compatibility with underlying hosting infrastructures Website Pro does not support plugins that directly attempt to use operating system utilities (like [Sendmail](https://en.wikipedia.org/wiki/Sendmail)) nor any plugin attempting to directly send mail using SMTP. But with email delivery already included and API based solutions available, hopefully, that’s not a problem.
-
-Examples of Plugins that might cause issues:
-
-*   [Configure SMTP](https://wordpress.org/plugins/configure-smtp/)
-*   WP Mailing List
-*   [SMTP email plugins](https://wordpress.org/plugins/search.php?q=SMTP "https://wordpress.org/plugins/search.php?q=SMTP")
-
-Security Plugins
-----------------
-
-For Website Pro, security is fundamental.  We follow WordPress best practices for hosting security and go the extra mile to keep your site safe. We prevent brute force attacks to your site’s login screen (see _Login Plugins_ above) and keep our hosting infrastructure up to date with the latest security patches and configurations.
-
-Several security plugins have been found to interfere with caching mechanisms, weigh down your site with a ton of overhead, and interfere with Website Pro’s security systems. We recommend you exercise caution when deciding to add security plugins.
-
-Examples of Plugins that might cause issues:
-
-*   [Shield Security for WordPress (WP Simple Firewall)](https://en-ca.wordpress.org/plugins/wp-simple-firewall/)
-
-Other things to watch out for
------------------------------
+## Other Incompatible Plugins
 
 ### Slider Revolution Plugin (Revslider)
 
-Older versions of Slider Revolution (Revslider) plugin has code that is incompatible with PHP 7. From Version 5.3.0.2 this issue should be rectified, but you might find that older versions that are bundled with themes may not support PHP 7. In the case where you have an incompatible Revslider plugin installed, it may result in a 500 error when accessing the WordPress Admin Dashboard.
+Older versions of Slider Revolution (Revslider) plugin have code that's incompatible with PHP 7. If you have an incompatible version installed, you may see a 500 error when accessing the WordPress Admin Dashboard.
 
-There are two options to fix the issue:
+**To fix this:**
 
-1.  Set up an SFTP user and remove the plugin entirely using an SFTP client like FileZilla. You can then install the newest version of the Revslider plugin.
-2.  Set up an SFTP user and change a line of code within the plugin
+1. **Remove and reinstall**: Use SFTP to remove the plugin entirely, then install the newest version (5.3.0.2 or later).
+2. **Update the code**: If you need to keep the old version temporarily, use SFTP to edit the plugin file and change a line of code. This requires technical knowledge and is not recommended for non-technical users.
 
-If you decide to try option 2, it requires a single line change. Depending on the version of the plugin you might find it in one of the following files:
+### Plugins That Modify Server Configuration
 
-*   revslider/inc\_php/framework/base\_admin.class.php
+Plugins that attempt to modify `.htaccess` or NGINX configuration files will not work. WordPress Hosting manages these files to maintain security and performance.
 
-*   revslider/includes/framework/base-admin.class.php
+**Examples:**
+* Redirection (may not function as expected)
 
-Somewhere around line 21, you’ll find the line:
+### Plugins That Use exec()
 
-**private static $arrMetaBoxes = ”;**
+Plugins that attempt to execute commands at the operating system level are disabled for security reasons.
 
-It must be changed to:
+**Examples:**
+* EWWW Image Optimizer
 
-**private static $arrMetaBoxes = array();**
+## Blacklisted Plugins
 
-Both of these options should allow you to access the WordPress Admin Dashboard again.
+The following plugins cannot be installed on WordPress Hosting:
 
-### Modifying .htaccess or NGINX configs
+* **Akeeba Backup**: WordPress Hosting includes backup functionality
+* **BackUpWordPress**: WordPress Hosting includes backup functionality
+* **BackWPup**: WordPress Hosting includes backup functionality
+* **EWWW Image Optimizer**: Uses exec() command which is disabled for security
+* **Login LockDown**: Functionality handled automatically by WordPress Hosting
+* **UpdraftPlus**: WordPress Hosting includes backup functionality
+* **WP Clean Up Optimizer**: Creates unreasonably large amounts of database data
+* **File Manager** (versions 6.0, 6.8 only): Contains security vulnerabilities
+* **WP phpMyAdmin**: WordPress Hosting includes phpMyAdmin access
 
-There are many plugins that try to create or modify Apache’s configuration files (.htaccess files) and/or NGINX configuration files. Any such changes made to these files by plugins or directly will not be recognized by Website Pro.  This is to ensure Website Pro maintains high levels of security and site speed. A site that relies on modifying those files might not function as expected in Website Pro.
-
-Examples of Plugins that might not function as expected:
-
-*   [Redirection](https://en-ca.wordpress.org/plugins/redirection/)
-
-### Plugins that use exec(…)
-
-Some plugins attempt to execute commands at the operating system level using the exec command. This command has been disabled in Website Pro to improve security.
-
-Example of Plugins that might not function as expected:
-
-*   [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/)
-
-The below plugins are blacklisted and cant be installed on the platform
-
-*   [Akeeba Backup](https://www.akeeba.com/ "https://www.akeeba.com/"): WebsitePro currently has a site backup solution integrated
-*   [BackUpWordPress](https://wordpress.org/plugins/backupwordpress/ "https://wordpress.org/plugins/backupwordpress/"): WebsitePro currently has a site backup solution integrated
-*   [BackWPup](https://en-ca.wordpress.org/plugins/backwpup/ "https://en-ca.wordpress.org/plugins/backwpup/"): WebsitePro currently has a site backup solution integrated
-*   [EWWW Image Optimizer](https://en-ca.wordpress.org/plugins/ewww-image-optimizer/ "https://en-ca.wordpress.org/plugins/ewww-image-optimizer/"): Plugins like this attempt to execute commands at the operating system level using the exec command. This command has been disabled in Website Pro to improve security.
-*   [Login LockDown](https://wordpress.org/plugins/login-lockdown/ "https://wordpress.org/plugins/login-lockdown/"): This functionality is handled by WebsitePro automatically
-*   [UpdraftPlus](https://wordpress.org/plugins/updraftplus/ "https://wordpress.org/plugins/updraftplus/"): WebsitePro currently has a site backup solution integrated
-*   [WP Clean Up Optimizer](https://en-ca.wordpress.org/plugins/wp-clean-up-optimizer/ "https://en-ca.wordpress.org/plugins/wp-clean-up-optimizer/"): This creates unreasonably large amounts of data in the database.
-*   [File Manager](https://en-ca.wordpress.org/plugins/wp-file-manager/ "https://en-ca.wordpress.org/plugins/wp-file-manager/") (ver. 6.0, 6.8 only): A [vulnerability](https://securityboulevard.com/2020/09/critical-vulnerability-in-file-manager-plugin-affecting-700k-wordpress-websites/ "https://securityboulevard.com/2020/09/critical-vulnerability-in-file-manager-plugin-affecting-700k-wordpress-websites/") was found in these versions.
-*   [WP phpMyAdmin](https://en-ca.wordpress.org/plugins/wp-phpmyadmin-extension/ "https://en-ca.wordpress.org/plugins/wp-phpmyadmin-extension/"): WebsitePro has a PhpMyAdmin dashboard already
+:::warning
+If you install a conflicting plugin and lose access to your Admin Dashboard, you can use SFTP or phpMyAdmin (available in WordPress Hosting Pro) to disable or remove the plugin.
+:::

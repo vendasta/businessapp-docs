@@ -6,7 +6,7 @@ description: "Learn about WordPress Hosting Pro's automated scheduled tasks syst
 
 Imagine never having to manually schedule a post, run backups, or send out those crucial emails again. That's the magic of **Cron Jobs** in WordPress, your website's very own automation wizard.
 
-## What Are Cron Jobs, Anyway?
+## What Are Cron Jobs?
 
 In simple terms, **cron jobs** are scheduled tasks that your WordPress site executes automatically at set intervals. Think of them as behind-the-scenes assistants handling repetitive chores like:
 
