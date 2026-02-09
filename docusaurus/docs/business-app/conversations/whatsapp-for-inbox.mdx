@@ -1,7 +1,7 @@
 ---
 title: WhatsApp for Conversations in Business App
 sidebar_label: "WhatsApp"
-sidebar_position: 6
+sidebar_position: 8
 description: Learn how to connect WhatsApp Business account to Conversations for international communication capabilities in Business App.
 ---
 
@@ -18,6 +18,13 @@ For businesses outside the U.S. and Canada, WhatsApp is a preferred communicatio
 ### Availability
 
 WhatsApp messaging channel is available in Conversations in Business App, for any accounts with either **Conversations AI Pro** or **AI-assisted Web Chat** products active on your account, internationally.
+
+### What's Included
+
+- Direct integration with Conversations (send and receive WhatsApp messages directly from Conversations)
+- WhatsApp message templates for outbound messaging
+  - Includes 250 outbound conversations per month (1,000 once verified by Meta)
+- Unlimited incoming messages
 
 ### Setting Up the WhatsApp Integration
 
@@ -39,20 +46,30 @@ Follow these steps to connect your WhatsApp Business account to Conversations:
    - Next, you'll be asked to connect your account. Click "Get Started."
      ![Connect to Digital Agency](./img/inbox/whatsapp_image_5.png)
 
-4. **Associate a WhatsApp Business Account:**
-   - Select an existing WhatsApp Business account or create a new one.
-     ![Select or create WhatsApp Business account](./img/inbox/whatsapp_image_6.png)
-   - If you are creating a new one, fill out the necessary details.
-   - **IMPORTANT NOTE –** Add your main phone number to associate with WhatsApp for business. You can use the assigned Conversations AI number, if in a country where SMS is supported and your account has been assigned a number (USA/Canada).
+4. **Connect Your Business Account:**
+   - Select **Get Started** to link your business to the platform called **Digital Agency**.
+     ![Connect to Digital Agency](./img/inbox/whatsapp_image_5.png)
+
+5. **Get your SMS/Phone number from Conversations:**
+   - In Business App, go to `Settings > Conversations Settings > Phone & SMS > Configure`.
+   - Take note of your number, as you'll need it to set up WhatsApp.
+   - **IMPORTANT NOTE –** You can use the assigned Conversations number if you're in a country where SMS is supported and your account has been assigned a number (USA/Canada).
      ![Add phone number](./img/inbox/whatsapp_image_7.png)
 
-5. **Verify Phone Number:**
-   - Temporarily enable call forwarding in **Conversations AI Settings** to receive the verification code from Meta by navigating to Conversations AI Settings > Your SMS/Phone Number > Settings > Temporarily select "Forward the call."
-   - Next, in the WhatsApp setup screen, enter the Conversations AI number, and then choose phone call verification method. You should receive a phone call at your forwarded number, with a code, to prove ownership.
-   - Once verified, you can return the call forwarding settings to the original configuration.
+6. **Temporarily Enable Call Forwarding:**
+   - Go to `Conversations Settings > Your SMS/Phone Number > Settings`.
+   - Enable **Forward the call** temporarily to receive the verification call.
+
+7. **Verify Ownership via Phone Call:**
+   - Return to the WhatsApp setup screen.
+   - Enter your Conversations number and select **Phone Call** as the verification method.
+   - You will receive a verification call with a code.
      ![Verify phone number](./img/inbox/whatsapp_image_8.png)
 
-6. **Complete the Setup:**
+8. **Restore Call Forwarding Settings:**
+   - After verification, disable call forwarding or return it to your original settings.
+
+9. **Complete the Setup:**
    - Confirm the app's ability to connect to WhatsApp on the final confirmation screen.
      ![Confirm connection](./img/inbox/whatsapp_image_9.png)
    - Wait for verification to complete.
@@ -63,23 +80,41 @@ Follow these steps to connect your WhatsApp Business account to Conversations:
 
 ### Sending Messages Through WhatsApp
 
-Once connected, you can send WhatsApp messages to customers using approved message templates.
+Your options for sending a WhatsApp message are different based on your conversation history with your customer:
+
+- If you are sending a WhatsApp message to someone who **has contacted you first**, you are free to write any message that meets WhatsApp guidelines.
+- If you are sending a message to someone who **has not contacted you first**, you must reply using a WhatsApp template.
+
+If your account is new and does not yet have any templates, the system will automatically submit a template for approval on your behalf. You can also create and submit additional templates anytime through the [Meta Business Help Center](https://business.facebook.com/latest/whatsapp_manager/message_templates).
+
+:::info
+Only approved templated messages can be sent as outbound cold messages. Once a customer initiates contact, you can reply with custom messages within a 24-hour window.
+:::
 
 **Key Notes:**
 
 - Outbound messages are billed by Meta, not Business App.
-- If your WhatsApp Business account is new and lacks approved templates, the system will automatically submit one for approval. Additional templates can be created and submitted via the [Meta Business Help Center](https://business.facebook.com/latest/whatsapp_manager/).
   ![Template management](./img/inbox/whatsapp_image_13.png)
 
 ### Enhancing Your Presence on WhatsApp
 
-Verified businesses enjoy enhanced features, including:
+Some advanced features and upgrades are controlled directly by Meta (WhatsApp's parent company). We provide this information to help you understand these options and how to access them.
 
-- Displaying your business name in WhatsApp chats.
-- Increasing the daily limit for business-initiated conversations (from 250 to 1,000).
+#### Verified WhatsApp Business Accounts
 
-To verify your business, visit the [WhatsApp Manager](https://business.facebook.com/latest/whatsapp_manager/).
+Verified businesses get benefits such as:
+- Increased messaging limits (from 250 to 1,000 daily business-initiated conversations)
+- Business name displayed in customer chats
+- Higher trust and visibility within WhatsApp
+
+To apply for verification, visit Meta's [WhatsApp Manager](https://business.facebook.com/latest/whatsapp_manager).
 ![WhatsApp verification](./img/inbox/whatsapp_image_14.png)
+
+### Getting WhatsApp Replies
+
+- Customer replies to your WhatsApp Business account automatically appear in the same Conversations thread
+- All WhatsApp history is retained alongside other channels like email, SMS, and web chat
+- Any team member can view and respond to WhatsApp conversations from the shared workspace
 
 ### Messaging Limits
 
@@ -95,9 +130,15 @@ Access to WhatsApp through Conversations AI is included with Conversations AI Pr
 - Unlimited incoming messages.
 - 250 outbound messages per month, with the option to increase to 1,000 after verification.
 
-When you want to expand beyond your included conversations per month, WhatsApp conversation pricing applies. [Learn more and see the rate card.](https://developers.facebook.com/docs/whatsapp/pricing#rate-cards)
+#### Conversation Expansion Beyond Free Limits
 
-For additional usage, WhatsApp conversation pricing applies and is managed directly within the Meta Business platform. A valid payment method must be added to your Meta Business account.
+After you exceed your included monthly conversations (250 or 1,000 if verified), WhatsApp applies conversation-based fees.
+
+:::warning
+These charges are billed directly by Meta and require a valid payment method in your Meta Business account.
+:::
+
+[Learn more and see the rate card.](https://developers.facebook.com/docs/whatsapp/pricing#rate-cards)
 
 ![Billing information](./img/inbox/whatsapp_image_16.png)
 
@@ -114,15 +155,13 @@ For more details, visit the [Meta Business Help Center](https://business.faceboo
 <details>
 <summary><strong>Can I connect an existing WhatsApp business account to Conversations AI, and still use the mobile app?</strong></summary>
 
-Not currently, but in the future WhatsApp is looking to provide better support for this. The feature is called "WhatsApp Coexistence" and is currently in closed beta at WhatsApp.
-
-If you have a WhatsApp for business account on your phone already, you can register a new (second) account for using with Conversations AI. In the future, we hope to support 'coexistence' as well.
+Not currently. WhatsApp is working on a feature called "WhatsApp Coexistence," which is in closed beta. If a business has a WhatsApp for business account on their phone already, they can register a new (second) account for using with Conversations. In the future, we hope to support 'coexistence' as well.
 </details>
 
 <details>
 <summary><strong>Why can't I write an outgoing message?</strong></summary>
 
-WhatsApp business only allows approved templated messages to be cold-sent to users, and there is a small charge for these messages. Once a customer messages you, you can write custom replies within a 24-hours window. Outside of this window, you can only send approved templated messages.
+Only approved templated messages can be sent as outbound cold messages. Once a customer initiates contact, you can reply with custom messages within a 24-hour window.
 </details>
 
 <details>
@@ -134,5 +173,5 @@ Your template may not be approved. You can check the status of approved template
 <details>
 <summary><strong>What will WhatsApp messaging cost me?</strong></summary>
 
-The first 250 (1,000 once verified) conversations each month are free so you can start to build experiences your customers will love. When you're ready to expand beyond 1,000 conversations per month, Meta's conversation pricing applies. [Learn more and see the rate card.](https://developers.facebook.com/docs/whatsapp/pricing#rate-cards)
+You can send 250 (or 1,000 once verified) outbound conversations per month at no charge. Beyond that, Meta's conversation pricing applies. A valid payment method must be added to your Meta account.
 </details>
