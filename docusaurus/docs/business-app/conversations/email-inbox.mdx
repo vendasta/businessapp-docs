@@ -1,7 +1,7 @@
 ---
 title: "Email: Send and receive email in Conversations"
 sidebar_label: "Email"
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 Conversations allows you to send and receive emails with leads and customers via Conversations from a shared email address.
@@ -13,16 +13,62 @@ When you get a new lead from web chat or a form, and that lead provides an email
 ### **Features**
 
 - Available to all users of Conversations AI, both Conversations AI Standard and Conversations AI Pro
-- Send emails to contacts using your assigned email address.
-- Receive email replies back into a team-shared Conversations, where anyone on your team can continue the conversation.
+- Send emails to contacts using your assigned email address
+- Receive email replies back into a team-shared Conversations, where anyone on your team can continue the conversation
 - Setup email forwarding to receive emails sent to your business-owned email address in Conversations
+- AI auto-response support for instant 24/7 customer support via email
 
-### **How to send a new message**
+## AI Auto-Response for Emails
 
-- To send an email to a new or existing contact, click the 'new message' button in Conversations and enter the email address of the person you'd like to send a message to.
-- When the customer replies to a sent email, their reply-to is automatically set to your assigned Conversations email address, and replies will appear in Conversations in the same conversation.
+The AI Chat Receptionist can automatically respond to inbound emails, providing instant 24/7 customer support via email just like other communication channels. When enabled, the AI will:
+
+- Automatically reply to customer emails within minutes
+- Answer questions using your business profile and knowledge base
+- Capture lead information and book appointments
+- Create a conversation thread in Conversations for your team to monitor
+
+**To enable AI auto-response for email:**
+
+1. Go to AI > AI Workforce in your dashboard
+2. Configure your AI Chat Receptionist
+3. In the Communication Channels section, enable the **Email** channel
+4. Your AI will now automatically respond to emails sent to your business
+
+Learn more about setting up and customizing your [AI Chat Receptionist](/business-app/ai/ai-workforce/ai-chat-receptionist/).
+
+## How Email Works in Conversations
+
+### Email Sender Address
+
+Conversations uses a shared email address to keep all customer conversations in one place. When you send a message, it appears to come from your business's assigned email (like `reply+xxxxx@businessapp.io`), but the sender's name and signature are visible to the customer. This helps your team collaborate without confusion over who sent what.
+
+### Email Reply-to Routing
+
+The reply-to feature ensures that responses from customers are automatically directed back to the shared Conversations thread. When a customer replies, their response lands in the same conversation where any team member can continue the discussion.
+
+![Email setup](./img/email_setup.png)
+
+## Sending Emails
+
+To send an email to a new or existing contact:
+
+1. Click **New Message** in Conversations
+2. Enter the recipient's email address
+3. Write your message, then select **Email** in the **Send via** dropdown menu
+
+:::info
+Your choices available in this menu depend on what contact information you have, and which channels you have connected to Conversations.
+:::
+
+4. Click **Send** to send your message
 
 ![New message interface](./img/inbox/inbox-email-2.jpg)
+
+## Receiving Email Replies
+
+- Customer replies automatically route back to your shared Conversations
+- The "reply-to" is set to your `reply+xxxxx@businessapp.io`, so all responses land in the same thread
+- Any team member can view and respond to email conversations from the shared workspace
 
 ### **Forward emails into Conversations from other email addresses**
 
@@ -62,4 +108,10 @@ Not currently. Your business uses one shared email address and Conversations. Bu
 <summary><strong>I see an area in Business App settings called "email configuration" – is this where I manage my email for Conversations?</strong></summary>
 
 No, not currently. The email configuration area in Business App settings is for managing email that's sent from Campaigns Pro and Reputation AI Premium. In the future, email configuration will be unified.
+</details>
+
+<details>
+<summary><strong>Is there a limit on how many emails I can send?</strong></summary>
+
+Yes, there is a daily email quota. If you're unable to send emails, you may have reached your daily limit. The quota resets every 24 hours.
 </details>
