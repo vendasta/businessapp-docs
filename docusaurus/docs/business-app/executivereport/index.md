@@ -47,6 +47,10 @@ If nothing changed for a product or section since your last report, that section
 
 You can learn more about specific parts of the report here:
 
+- **[Leads](./leads)** — Lead generation and customer interactions (phone, AI receptionist, web chat, forms, messaging)
+- **[Reputation](./reputation)** — Review Grade and how your online review presence is performing
+- **[Website](./website)** — Website performance (Website Pro and Google Analytics)
+- **[SEO](./seo)** — Google Search Console and MarketGoo data (queries, clicks, impressions)
 - **[Advertising](./advertising)** — Google Ads and Facebook Ads performance when you use Advertising Intelligence
 - **[Finance (QuickBooks)](./finance-quickbooks)** — Income, expenses, and invoice notifications from QuickBooks Online
 
