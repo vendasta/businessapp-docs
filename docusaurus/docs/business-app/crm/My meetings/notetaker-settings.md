@@ -1,6 +1,6 @@
 ---
 title: Customizing meeting recording settings
-sidebar_label: Customizing meeting recording settings
+sidebar_label: Recording settings
 description: Access and customize meeting settings, including bot settings, note-taker name, and compliance announcements.
 tags: [meetings, settings]
 keywords: [meeting settings, bot settings, note-taker, compliance announcement]

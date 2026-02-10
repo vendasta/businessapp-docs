@@ -1,6 +1,6 @@
 ---
 title: Managing Visibility Settings of recorded meetings– Overview
-sidebar_label: Managing Visibility Settings of recorded meetings
+sidebar_label: Visibility settings
 description: Manage access, privacy, and CRM logging for meeting recordings, transcripts, summaries, and AI insights.
 tags: [visibility-settings, meeting-recordings, ai-insights, notetaker]
 keywords: [private meetings, meeting visibility, recording settings]

@@ -23,19 +23,38 @@ Use Contacts to manage the people you engage with. Create and update contact rec
 - **Associations** with companies, opportunities, tasks, and lists
 - **Campaign actions** including scheduling, pausing, or resuming campaigns
 
+## Contacts vs. users
+
+**Contacts** are people you track in the CRM—customers, leads, or other individuals. They do not have access to Business App. **Users** are people who can log in to Business App and use the products available on your account.
+
+Contacts and users are separate. In some cases a user may have a corresponding contact record; the two can be linked by email. Changing a contact’s email disassociates that contact from any linked user. Removing a contact does not remove a user.
+
+## Where contacts come from
+
+Contacts can be added manually or imported via CSV. They are also created or updated automatically when data syncs from other products:
+
+- **Conversations** – When a message is sent or received to a new contact
+- **Customer Voice** – When a contact is created in Customer Voice
+- **Website** – When a contact form is submitted on your website
+- **Constant Contact** – When a contact is created there
+
+You can add, edit, and delete contacts to keep your data organized. Create contacts by first name, last name, phone number, or email, or use the import feature for bulk uploads.
+
 ## How to Use Contacts
 
 ### View and manage contacts
 
 1. Go to `CRM` > `Contacts`.
-2. Search, sort, and filter the table to find the right records.
+2. Search by first name, last name, email, or phone number. Filter by tags and other fields, and sort the table to find the right records.
 3. Click a contact to open the profile and edit details, log activity, and manage tasks.
 
 ### Import contacts (and companies)
 
 1. In `CRM` > `Contacts`, click `Import`.
-2. Upload a CSV and map columns to contact/company fields.
+2. Upload a CSV (up to 5 MB) and map columns to contact/company fields. You can add multiple columns as tags during the mapping step.
 3. Review, choose whether to update existing matches, and finish the import.
+
+If you upload a CSV that includes the same contacts again (matching by ID, external ID, or email), they will not be duplicated; existing records will be updated with the new information.
 
 ![CSV Upload](../img/contacts/csv-upload.jpg)
 ![Field Mapping](../img/contacts/field-mapping.jpg)
@@ -50,9 +69,9 @@ Each contact should include at least one of: first name, last name, email, or ph
 
 ### Export contacts
 
-1. In `CRM` > `Contacts`, select the checkbox at the top-left of the table.
-2. Choose `Select all…` > `Export` to export the displayed rows as CSV.
-
+1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table.
+2. Choose `Select all…` (or select specific rows), then `Actions` > `Export`.
+3. A notification is sent when your CSV is ready to download.
 
 :::info
 Exports respect your current filters and the set of rows displayed.
@@ -111,5 +130,11 @@ In the CSV, include an Owner Email column and map it during import. Matching is 
 <summary>Can I automatically log emails?</summary>
 
 Yes. Set up email auto-BCC and forwarding so sales emails are captured to the appropriate contact records.
+</details>
+
+<details>
+<summary>How are contacts different from users?</summary>
+
+Contacts are people you store in the CRM (e.g. customers, leads); they do not log in to Business App. Users are people who have access to Business App. The two are separate; changing a contact’s email disassociates them from any linked user, and removing a contact does not remove a user.
 </details>
 
