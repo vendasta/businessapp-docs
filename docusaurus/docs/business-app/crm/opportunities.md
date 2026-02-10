@@ -1,6 +1,7 @@
 ---
 title: Opportunities – Getting Started
 sidebar_label: Opportunities
+sidebar_position: 5
 description: Track and manage potential revenue using opportunities in your sales pipeline.
 tags: [crm, opportunities, pipeline, sales]
 keywords: [opportunity, sales pipeline, create opportunity, edit opportunity, close opportunity]
@@ -276,3 +277,4 @@ Yes. Activities logged on an opportunity are also shown on linked contacts and c
 
 Yes. Use the bulk action tools in the list view to update multiple records at once.
 </details>
+
