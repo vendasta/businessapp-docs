@@ -1,5 +1,6 @@
 ---
 title: How to send Yesware email campaigns to Business App CRM contacts
+sidebar_label: Yesware campaigns
 description: Learn how to send Yesware email campaigns (sequences, drip campaigns) to Business App CRM contacts. Step-by-step setup, integration, sending limits, and automation best practices included.
 sidebar_position: 7
 tags: [yesware, email campaigns, crm, contacts, automation]
@@ -142,7 +143,7 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 **CRM contact management:**
 - [CRM contacts overview](./contacts.md) - Learn about importing contacts, campaign management, and contact field customization
 - [Contact lists for targeted outreach](../lists.md) - Segment contacts before adding to Yesware campaigns
-- [CRM forms for lead capture](../forms.md) - Capture new leads that can be added to Yesware campaigns
+- [CRM forms for lead capture](../forms/index.md) - Capture new leads that can be added to Yesware campaigns
 
 **Business App automation options:**
 - [Automations overview](../automations/index.md) - Compare Yesware with native Business App automation options
@@ -150,7 +151,7 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 - [Email messaging in automations](../../../automations/messaging.md) - Alternative email options for bulk communications
 
 **Advanced workflows:**
-- [CRM opportunities](../opportunities.md) - Track deals that result from Yesware campaigns
+- [CRM opportunities](../opportunities/index.md) - Track deals that result from Yesware campaigns
 - [Activity feed](../activity-feed.md) - Monitor Yesware campaign responses and engagement
 
 ---
