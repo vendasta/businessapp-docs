@@ -1,5 +1,5 @@
 ---
-title: Executive Report – Advertising
+title: Advertising
 sidebar_label: Advertising
 sidebar_position: 3
 description: View Google Ads and Facebook Ads performance in the Executive Report when you use Advertising Intelligence.

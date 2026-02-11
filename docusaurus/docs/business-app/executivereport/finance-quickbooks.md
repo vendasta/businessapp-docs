@@ -1,5 +1,5 @@
 ---
-title: Executive Report – Finance (QuickBooks Online)
+title: Finance (QuickBooks Online)
 sidebar_label: Finance (QuickBooks)
 sidebar_position: 50
 description: View income, expenses, and invoice notifications from QuickBooks Online in the Executive Report.
