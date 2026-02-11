@@ -169,7 +169,7 @@ const config: Config = {
           // Executive Report: lead analytics merged into leads
           {
             from: '/business-app/executivereport/executive_report_lead_analytics',
-            to: '/business-app/executivereport/leads/',
+            to: '/business-app/executivereport/leads',
           },
         ],
         createRedirects(existingPath) {
