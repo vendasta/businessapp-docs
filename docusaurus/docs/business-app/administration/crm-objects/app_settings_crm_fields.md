@@ -16,14 +16,6 @@ Default contact and company records often don’t include everything your busine
 
 Custom fields let you tailor your system so it works for **your business**, keeping all important client information accessible and organized in one place.
 
-## Table of Contents
-
-- [What's Included with CRM Fields?](#whats-included-with-crm-fields)
-- [How to Create a CRM Field](#how-to-create-a-crm-field)
-- [Field Types and Options](#field-types-and-options)
-- [Managing and Editing CRM Fields](#managing-and-editing-crm-fields)
-- [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
-
 ## What's Included with CRM Fields?
 
 - Custom field creation for **Contacts** and **Companies**
