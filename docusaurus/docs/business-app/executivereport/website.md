@@ -1,5 +1,5 @@
 ---
-title: Executive Report – Website performance
+title: Website Performance
 sidebar_label: Website
 description: See website performance in the Executive Report with Website Pro and Google Analytics.
 ---

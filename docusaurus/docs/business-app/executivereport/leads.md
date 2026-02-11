@@ -1,5 +1,5 @@
 ---
-title: Executive Report – Leads
+title: Leads
 sidebar_label: Leads
 sidebar_position: 2
 description: Track lead generation and customer interactions in the Executive Report—phone calls, AI receptionist, web chat, forms, and messaging.
@@ -7,7 +7,9 @@ description: Track lead generation and customer interactions in the Executive Re
 
 ## What is the Leads section?
 
-The **Leads** section of the Executive Report gives you a single view of how many new leads and customer interactions your business is generating across all channels. Use it to see which lead sources are working and how your tools are performing.
+The **Leads** section of the Executive Report gives you a single view of how many new leads and customer interactions your business is generating across all channels. Use it to see which lead sources are working and how your tools are performing. In the report’s navigation dropdown, this section may appear as **Customer Relations**.
+
+![Customer Relations Lead Analytics](img/executive_report_lead_analytics.png)
 
 ## What’s included in Leads reporting
 
@@ -87,6 +89,15 @@ You’ll see counts per source, for example:
 - **Spot trends** — Watch lead volume and mix over time
 - **Improve quality** — Focus on the sources that bring the best leads
 
+## How to use lead source analytics
+
+1. **Enable a lead capture tool** in your Business App (e.g., web chat or contact form).
+2. **Capture at least one lead** through that source.
+3. Go to the **CRM** tab in Business App to confirm the lead was added — you should see a new contact with a source like **Web Chat**, **Form**, or similar.
+4. Wait for your next Executive Report (weekly or monthly) to see this data in the Leads (Customer Relations) section.
+
+Lead source data is based on contacts created during the reporting period. The report only shows data when leads have been captured and assigned a valid source.
+
 ## Getting the most from lead generation
 
 - **Use more than one channel** — Phone, chat, and forms together give a fuller picture
@@ -161,6 +172,12 @@ The report uses data from the last full period (weekly or monthly). You may need
 <summary>Which lead sources are included? Which are excluded?</summary>
 
 Leads are counted from every source **except** “bulk import” and “crm ui,” which are manual additions. All other sources (web chat, forms, AI receptionist, phone, SMS, Zapier, etc.) are included. To include a manually added contact in analytics, change its source to something other than “bulk import” or “crm ui.”
+</details>
+
+<details>
+<summary>Where do I find these analytics in the report?</summary>
+
+Open your Executive Report in Business App. In the top navigation bar dropdown, select **Customer Relations** (or **Leads**). That section includes cards summarizing your CRM activity and lead sources.
 </details>
 
 ## Related resources

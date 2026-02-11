@@ -1,5 +1,5 @@
 ---
-title: Executive Report – Reputation
+title: Reputation
 sidebar_label: Reputation
 description: See how your online review presence is performing with the Review Grade in the Executive Report.
 ---

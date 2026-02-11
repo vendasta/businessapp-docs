@@ -10,12 +10,6 @@ keywords: [Conversations settings, Business App inbox, messaging preferences, co
 
 Use Conversations Settings to configure your business phone and SMS, connect channels like Facebook and Instagram, and enable AI-powered replies. These settings control how messages are routed, which numbers and email addresses are used, and what automations or AI policies apply.
 
-## Table of Contents
-- Phone & SMS
-- Channel Connections
-- AI Replies
-- Compliance
-
 ## Phone & SMS
 - Choose your primary phone number for calling and texting.
 - Configure call forwarding and voicemail.

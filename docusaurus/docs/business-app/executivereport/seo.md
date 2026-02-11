@@ -1,5 +1,5 @@
 ---
-title: Executive Report – SEO (Google Search Console & MarketGoo)
+title: SEO (Google Search Console & MarketGoo)
 sidebar_label: SEO
 description: See SEO performance in the Executive Report with Google Search Console and MarketGoo data.
 ---

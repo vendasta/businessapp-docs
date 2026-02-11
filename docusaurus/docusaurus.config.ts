@@ -166,6 +166,11 @@ const config: Config = {
             from: '/social-marketing/getting-started/getting-started-with-social-marketing',
             to: '/social-marketing/getting-started-with-social-marketing',
           },
+          // Executive Report: lead analytics merged into leads
+          {
+            from: '/business-app/executivereport/executive_report_lead_analytics',
+            to: '/business-app/executivereport/leads/',
+          },
         ],
         createRedirects(existingPath) {
           // Only create redirects for business-app paths
