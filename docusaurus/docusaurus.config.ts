@@ -125,6 +125,11 @@ const config: Config = {
             from: '/wordpress-hosting/templates/hide-vendastas-pre-built-templates-from-clients',
             to: '/wordpress-hosting/templates/hide-pre-built-templates/',
           },
+          // Email Configuration moved under Email category (single Email section in sidebar)
+          {
+            from: '/business-app/administration/email_configuration',
+            to: '/business-app/administration/email/email-configuration/',
+          },
           // Legacy section redirects - redirect top-level paths only
           // Note: Do NOT include both trailing slash and non-trailing slash versions here.
           // The redirects plugin normalizes paths, and with directory-style output this can

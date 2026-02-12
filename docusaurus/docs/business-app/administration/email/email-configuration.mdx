@@ -1,6 +1,8 @@
 ---
 title: Email Configuration
-sidebar_position: 2
+sidebar_label: Email Configuration
+description: Authenticate your domain and improve email deliverability with SPF, DKIM, and DMARC.
+sidebar_position: 1
 ---
 Getting your emails to reach people's inboxes shows that you are sending the right messages at the right time. If people open, click, or complain about your emails, it can affect whether your emails are seen as good or spam. More positive actions mean your emails are more likely to be seen!
 
@@ -38,7 +40,7 @@ Configure your email settings via Business App > Settings > Email Configuration.
 
 :::info
 Business App uses HTTPS link branding for tracking links in campaign emails, which helps reduce deliverability warnings from some providers. Authenticating your domain further improves inbox placement and reputation.
-::::
+:::
 
 ## Warm up your email domain
 
@@ -52,8 +54,7 @@ It's recommended to start with 50 emails and increase slowly, avoiding more than
 
 Subject lines are key elements that influence whether someone will open your emails or not. While email service providers are getting better at filtering emails, it's still a good idea to steer clear of phrases commonly associated with spam.
 
-:::tip[Examples of phrases to avoid]
-
+:::tip Examples of phrases to avoid
 * Urgent!
 * FREE!!!
 * Act now
@@ -86,4 +87,22 @@ The shared sending domain is the default domain used by Business App for outboun
 <summary>Which should I use—shared domain or custom domain?</summary>
 
 Use the shared domain to get started quickly. For ongoing sending, we strongly recommend a custom domain to build your own sender reputation and reduce the impact of other senders. Link tracking uses HTTPS by default and works with both.
+</details>
+
+<details>
+<summary>Why can't I update my send-from name and address?</summary>
+
+You must be signed in directly to Business App (not through a link that opens it for you). Then go to **Settings → Email Configuration** and update the email address and sender name there.
+</details>
+
+<details>
+<summary>How long do DNS changes take?</summary>
+
+DNS record updates usually take 24–48 hours to propagate. Verification may show as pending until that completes.
+</details>
+
+<details>
+<summary>What if my emails go to spam?</summary>
+
+Check **Settings → Email Configuration** for verification status. Red exclamation points mean a record is not verified. Fix the DNS records (SPF, DMARC, DKIM) with your domain provider and wait for propagation.
 </details>
