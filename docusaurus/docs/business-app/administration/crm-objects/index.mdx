@@ -1,0 +1,183 @@
+---
+title: CRM objects and fields
+sidebar_label: CRM Objects
+description: Manage CRM objects like contacts, companies, opportunities, and custom fields in Business App.
+sidebar_position: 9
+---
+
+# CRM objects and fields
+
+CRM objects house the contacts, companies, and opportunities that power reporting, automations, and conversations in Business App. CRM Fields let you add custom data fields to your contact and company records.
+
+## What are CRM Fields?
+
+CRM Fields let you add custom data fields to your contact and company records. These fields can store information that isn't in the default setup—such as birthdays, service preferences, or internal notes. You can create and organize fields based on your business needs.
+
+This feature helps you go beyond standard fields like phone number or address and keep important contact and company details in one place, without separate spreadsheets or systems.
+
+![Custom Fields inside Administration](../img/administration_custom_field_contact.png)
+
+## Why are CRM Fields important?
+
+Default contact and company records often don't include everything your business needs to track. You might want to log whether someone has set an appointment, track preferences, or store internal status flags. Custom fields let you tailor the system so it works for **your business**, keeping important information accessible and organized.
+
+## What's included with CRM Objects and Fields?
+
+- Standard CRM objects: **Contacts**, **Companies**, and **Opportunities**
+- Custom field creation for **Contacts** and **Companies**
+- Multiple field types: Text, Number, Email, Phone number, Date, Boolean, and more
+- Searchable and editable fields in the Contacts and Companies sections
+- Full visibility and editing from the CRM fields manager
+
+:::info
+System fields (like company name or phone number) cannot be edited or deleted. Custom fields are fully configurable.
+:::
+
+## Core CRM objects
+
+- **Contacts** — Individual people you communicate with. Support phone, email, SMS, tasks, and marketing lists.
+- **Companies** — Businesses, locations, or accounts that own contacts and opportunities.
+- **Opportunities** — Pipeline stages for tracking sales deals or projects.
+
+### Create custom objects
+
+Beyond Contacts, Companies, and Opportunities, you can create custom object types that fit your business (e.g. service contracts, equipment assets, project milestones). To create a custom object:
+
+1. Go to **Administration → CRM Objects**
+2. Click **Create Custom Object**
+3. Configure the singular and plural names and default fields
+
+For more on extending records with custom fields, see [CRM Fields](./app_settings_crm_fields.md).
+
+## Contacts and companies
+
+- [Add booking links to contact cards](../../crm/My%20meetings/index.md)
+- Use the CRM to manage contacts, companies, and tasks.
+
+## Opportunities and pipeline
+
+- [Automate opportunity management](../../crm/opportunities/automations.md)
+- [Sales pipeline configuration](../../crm/opportunities/pipeline-setup.md)
+
+## How to create a CRM field
+
+1. In your app, go to **Administration** from the main menu.
+2. Select **CRM Objects** under the administration settings.
+3. On the **CRM Fields** page, you can manage both contact and company fields.
+4. Click **Create** to open the new field form.
+5. Choose the **Object** (Contact or Company) the field will apply to.
+6. Enter a **Field name** (e.g., "Birthday" or "Preferred contact method").
+7. (Optional) Add a **Field description** for internal clarity.
+8. Select the **Field type** (e.g., Text, Date, Boolean).
+9. Click **Create** to save your custom field.
+
+## Field types and options
+
+When creating a custom field, you can choose from:
+
+- **Text** — General text (e.g., address)
+- **Number** — Whole numbers (e.g., number of employees)
+- **Decimal number** — Decimal values (e.g., review score)
+- **Email** — Validated email
+- **Phone number** — Formatted phone number
+- **Date** — Calendar date (e.g., birthday)
+- **Date and time** — Date and time (e.g., next meeting)
+- **True or false** — Boolean yes/no
+
+Use **String List** when you want multiple values in a single field (e.g., preferred services).
+
+## Managing and editing CRM fields
+
+- All fields appear in the CRM fields manager under **Contacts** or **Companies**.
+- Click any field name to open and edit it.
+- You can update the description or field type; object and identifier may be locked after creation.
+- Custom fields you added can be deleted when no longer needed.
+
+:::note
+System fields (created by default) cannot be modified or deleted. Only custom fields allow full control.
+:::
+
+![CRM Fields inside Administration](../img/administration_custom_fields.png)
+
+## How you might use CRM fields
+
+- **Segment lists** by number of visits (e.g., "new customer" campaign vs loyalty offer).
+- **Track birthdays** to send greetings or coupons.
+- **Log service preferences** (e.g., favorite style or dietary restrictions).
+- **Flag high-value contacts** with a VIP true/false field for prioritized outreach or offers.
+- **Store secondary contact info** (e.g., emergency contact or backup phone).
+
+## Forms and lead capture
+
+- [Create lead capture forms](../../crm/forms/index.md)
+
+## Frequently asked questions
+
+<details>
+<summary>Can I create fields for both contacts and companies?</summary>
+
+Yes. Use the **Object** dropdown during setup to choose where the field should appear.
+
+</details>
+
+<details>
+<summary>Are there any limits on the number of custom fields?</summary>
+
+There is no strict limit, but too many fields can make records harder to manage.
+
+</details>
+
+<details>
+<summary>Can I search or filter by custom fields?</summary>
+
+Not all views support filtering by custom fields. Check your record view or export options.
+
+</details>
+
+<details>
+<summary>What's the difference between Text and String List?</summary>
+
+Text stores a single line. String List allows multiple values separated by commas or new entries.
+
+</details>
+
+<details>
+<summary>Can I edit system fields?</summary>
+
+No. System fields like **Company name** are locked and cannot be edited or removed.
+
+</details>
+
+<details>
+<summary>What happens if I delete a custom field?</summary>
+
+Deleting a field also deletes its data from all records.
+
+</details>
+
+<details>
+<summary>Can I use these fields in automation or integrations?</summary>
+
+Some integrations may support reading custom field data; use common formats when possible.
+
+</details>
+
+<details>
+<summary>Why can't I change the field type after creating it?</summary>
+
+Field types affect how data is stored. To change a type, you may need to create a new field.
+
+</details>
+
+<details>
+<summary>Is the field identifier editable?</summary>
+
+No. It's auto-generated and used for internal referencing.
+
+</details>
+
+## Tips
+
+- If you use integrations, keep field names consistent so data stays in sync.
+- Use lifecycle stages and tags to group contacts before campaigns.
+- Keep your team updated on how to use notes and tasks so reporting stays current.
