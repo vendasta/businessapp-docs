@@ -109,11 +109,11 @@ const config: Config = {
           // Specific redirects for renamed paths
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           {
             from: '/ai/ai-workforce/ai-receptionist',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           // Legacy Listing Sync permalink -> new Local SEO path
           {
