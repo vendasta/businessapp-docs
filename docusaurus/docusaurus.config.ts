@@ -109,26 +109,26 @@ const config: Config = {
           // Specific redirects for renamed paths
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist',
           },
           {
             from: '/ai/ai-workforce/ai-receptionist',
-            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist',
           },
           // Legacy Listing Sync permalink -> new Local SEO path
           {
             from: '/vendasta-products/local-seo/listing-sync',
-            to: '/local-seo/listing-sync/',
+            to: '/local-seo/listing-sync',
           },
           // Renamed: hide Vendasta's pre-built templates -> hide pre-built templates (gray-label)
           {
             from: '/wordpress-hosting/templates/hide-vendastas-pre-built-templates-from-clients',
-            to: '/wordpress-hosting/templates/hide-pre-built-templates/',
+            to: '/wordpress-hosting/templates/hide-pre-built-templates',
           },
           // Email Configuration moved under Email category (single Email section in sidebar)
           {
             from: '/business-app/administration/email_configuration',
-            to: '/business-app/administration/email/email-configuration/',
+            to: '/business-app/administration/email/email-configuration',
           },
           // Legacy section redirects - redirect top-level paths only
           // Note: Do NOT include both trailing slash and non-trailing slash versions here.
@@ -136,35 +136,35 @@ const config: Config = {
           // cause duplicate writes to the same `build/<path>/index.html` (EEXIST).
           {
             from: '/businessapp',
-            to: '/business-app/',
+            to: '/business-app',
           },
           {
             from: '/adintel',
-            to: '/ad-intel/',
+            to: '/ad-intel',
           },
           {
             from: '/localseo',
-            to: '/local-seo/',
+            to: '/local-seo',
           },
           {
             from: '/reputationmanagement',
-            to: '/reputation/',
+            to: '/reputation',
           },
           {
             from: '/reputation-management',
-            to: '/reputation/',
+            to: '/reputation',
           },
           {
             from: '/docs/reputation-management',
-            to: '/reputation/',
+            to: '/reputation',
           },
           {
             from: '/socialmarketing',
-            to: '/social-marketing/',
+            to: '/social-marketing',
           },
           {
             from: '/wordpresshosting',
-            to: '/wordpress-hosting/',
+            to: '/wordpress-hosting',
           },
           // Social Marketing getting-started restructure
           {
