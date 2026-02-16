@@ -103,3 +103,10 @@ Want to experience Business App in your preferred language? This guide offers a 
     The onboarding checklist will disappear, but you can always revisit completed tasks or explore new features in your dashboard.
   </div>
 </details>
+
+<details>
+  <summary><strong>How do I change the Contact Us contact in bottom left corner of Business App?</strong></summary>
+  <div>
+    The contact populated in the Contact Us contact is the assigned Salesperson for the account. This can be assigned or updated by an administrator on the Account Page of the business in Partner Center from Business Details > Edit > Administration > Sales.
+  </div>
+</details>
