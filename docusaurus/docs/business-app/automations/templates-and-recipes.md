@@ -1,8 +1,9 @@
 ---
 title: Templates and recipes
+sidebar_position: 5
 ---
 
-Get started fast with pre‑built templates and step‑by‑step recipes you can customize.
+Get started fast with pre-built templates and step-by-step recipes you can customize.
 
 ## Using templates
 
@@ -19,7 +20,7 @@ Get started fast with pre‑built templates and step‑by‑step recipes you can
 Purpose: Automatically follow up with customers to request a review after a service is completed or a lead is converted.
 
 :::note
-Requirements: Reputation Management Premium is a required product for the `Send review request` action. Messaging actions require Conversations Pro.
+Requirements: Reputation AI Premium is a required product for the `Send review request` action. Messaging actions require Conversations Pro.
 :::
 
 Steps:
@@ -40,6 +41,6 @@ Images for the review request flow are available here:
 <details>
 <summary>Is this paid?</summary>
 
-Automations are available to all Business App users. Specific actions (for example, SMS and plain‑text email) require Conversations Pro.
+Automations are available to all Business App users. Specific actions (for example, SMS and plain-text email) require Conversations Pro.
 </details>
 

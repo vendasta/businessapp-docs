@@ -1,4 +1,9 @@
 {
   "label": "Settings",
-  "position": 4
-} 
+  "position": 4,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "ad-intel/settings/index"
+  }
+}

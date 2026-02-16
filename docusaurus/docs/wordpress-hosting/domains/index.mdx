@@ -1,0 +1,127 @@
+---
+title: Domains Overview
+sidebar_label: Domains Overview
+description: Connect, manage, and configure your custom domain for WordPress Hosting. Set up DNS records, configure SSL certificates, and choose your primary domain.
+sidebar_position: 1
+tags: [wordpress-hosting, domains, dns, ssl, domain-management]
+keywords: [connect domain, custom domain, DNS setup, domain management, SSL certificate, primary domain]
+---
+
+## What is Domains?
+
+Your domain name is your website's address on the internet—it's how visitors find your business online. When you connect a custom domain to WordPress Hosting, you'll configure DNS records at your domain registrar to point visitors to your WordPress site. WordPress Hosting automatically provisions SSL certificates for all connected domains, ensuring your site is secure and trusted by browsers.
+
+## Why is Domains important?
+
+* Connect your custom domain to your WordPress site
+* Automatically receive SSL certificates for secure connections
+* Manage multiple domains from one location
+* Set a primary domain that visitors will see
+* Transfer domains from other hosts with zero downtime
+
+## What's included
+
+- **[Domain Setup](connect-a-custom-domain.md)**: Complete guide to setting up and connecting your custom domain, including DNS record configuration
+- **[Understanding DNS Records](understanding-dns-records.md)**: Comprehensive guide to DNS records, when to use A vs CNAME, and DNS propagation
+- **[GoDaddy Domain Setup](godaddy-domain-setup.md)**: GoDaddy-specific instructions for new domains and transferring domains
+- **[Using Cloudflare with WordPress Hosting](using-cloudflare-with-wordpress-hosting.md)**: Integrate Cloudflare DNS and CDN services with WordPress Hosting
+- **[Managing Subdomains](managing-subdomains.md)**: Learn about subdomain limits, configuration, and how they redirect to your primary domain
+- **[Point a new Domain to WordPress Hosting](point-a-new-domain-to-wordpress-hosting.md)**: Instructions for domains that have never been used before
+- **[Set your preferred URL or domain](set-your-preferred-url-or-domain.md)**: Choose which domain serves as your primary domain
+- **[Troubleshoot SSL issues in WordPress Hosting](troubleshoot-ssl-issues-in-wordpress-hosting.md)**: Resolve SSL certificate problems
+- **[Merge multiple SPF records into a single record](merge-multiple-spf-records-into-a-single-record.md)**: Combine SPF records for email authentication
+
+## How to Connect a Domain
+
+1. **Configure DNS Records** at your domain registrar:
+   - Add an **A Record** pointing to `34.149.86.124` for your root domain
+   - Add a **CNAME Record** pointing to `host.websiteprohosting.com` for the `www` subdomain
+2. **Connect the Domain** in WordPress Hosting:
+   - Go to the **Domains** tab
+   - Click **Connect a Domain**
+   - Enter your domain name and click **Add Domain**
+3. **Wait for Connection**:
+   - Your domain will show as **Pending** while DNS records propagate
+   - Once connected, WordPress Hosting will automatically provision an SSL certificate
+   - This typically takes a few minutes but can take up to 24 hours
+4. **Set Primary Domain**:
+   - Click **Make Primary** on the domain you want visitors to see
+   - All other connected domains will redirect to your primary domain
+
+## DNS Records Explained
+
+**A Record**: Points your root domain (e.g., `example.com`) directly to an IP address. Use this to connect your main domain to WordPress Hosting.
+
+**CNAME Record**: Points a subdomain (e.g., `www.example.com`) to another domain name. Use this for subdomains like `www`.
+
+**TTL (Time To Live)**: Controls how long DNS records are cached. Set to 3600 seconds (1 hour) or leave as default for faster updates.
+
+## SSL Certificates
+
+WordPress Hosting automatically issues SSL certificates from Let's Encrypt for all connected domains. This typically completes within a few minutes but can take up to 24 hours. Once issued, your site will be accessible via HTTPS, ensuring secure connections for your visitors.
+
+If your SSL certificate is pending for more than 30 minutes, see [Troubleshoot SSL issues in WordPress Hosting](troubleshoot-ssl-issues-in-wordpress-hosting.md) for help.
+
+## Primary Domain
+
+You can connect multiple domains to a single WordPress site, but only one can be set as the primary domain. All other connected domains will automatically redirect to your primary domain. This helps maintain consistent branding and improves SEO by consolidating traffic to a single URL.
+
+To change your primary domain, go to the **Domains** tab, find the domain you want to use, expand the options menu, and click **Make Primary**.
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>How long does it take for my domain to connect?</summary>
+
+DNS propagation can take anywhere from a few minutes to 48 hours. However, with most modern registrars, you will often see the site connect within 1-2 hours.
+
+</details>
+
+<details>
+<summary>Do I need to purchase an SSL certificate separately?</summary>
+
+No. WordPress Hosting automatically provisions SSL certificates from Let's Encrypt for all connected domains at no additional cost.
+
+</details>
+
+<details>
+<summary>Can I connect multiple domains to one site?</summary>
+
+Yes. You can connect multiple domains to a single WordPress site, but only one can be set as the primary domain. All other domains will redirect to your primary domain.
+
+</details>
+
+<details>
+<summary>What DNS records do I need to configure?</summary>
+
+You need either an A Record (for root domains) or a CNAME Record (for subdomains). For a complete setup, configure both: an A Record for your root domain pointing to `34.149.86.124`, and a CNAME Record for `www` pointing to `host.websiteprohosting.com`.
+
+</details>
+
+<details>
+<summary>Can I use a subdomain like shop.mysite.com?</summary>
+
+Yes. You can connect subdomains by following the same steps and ensuring your DNS records point specifically to that subdomain.
+
+</details>
+
+<details>
+<summary>What if my domain is managed by GoDaddy?</summary>
+
+The process is the same, but you can find GoDaddy-specific instructions in [GoDaddy Domain Setup](godaddy-domain-setup.md).
+
+</details>
+
+<details>
+<summary>What happens if I transfer a domain from another host?</summary>
+
+You can transfer your domain with zero downtime by connecting it in WordPress Hosting first, then updating your DNS records. Your old host will continue serving traffic until DNS propagation completes.
+
+</details>
+
+<details>
+<summary>Why does my site show as "Not Secure" even with SSL?</summary>
+
+This is usually caused by mixed content—when some elements on your site load over HTTP instead of HTTPS. Check your browser's console for errors and update any HTTP URLs to HTTPS.
+
+</details>

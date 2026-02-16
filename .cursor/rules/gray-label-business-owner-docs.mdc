@@ -1,0 +1,36 @@
+---
+description: Gray-label documentation standards for business owners - no Vendasta branding
+alwaysApply: true
+---
+
+# Gray-Label Documentation for Business Owners
+
+This documentation is written for **business owners** (end users), not partners, agencies, or resellers.
+
+## Audience Guidelines
+
+- Write as if speaking directly to a small business owner using the platform
+- Use "you" and "your business" - never reference third parties managing their account
+- Focus on benefits and outcomes, not technical implementation details
+- Assume the reader wants to accomplish a task, not understand the platform architecture
+
+## Gray-Label / Branding Rules
+
+**NEVER mention:**
+- "Vendasta" (the parent company)
+- Any partner/reseller/agency terminology
+- Platform internals or white-label concepts
+
+**Instead, use:**
+- "Business App" or the specific product name (WordPress Hosting, Local SEO, etc.)
+- Generic terms like "your provider" only if absolutely necessary
+- Product-focused language: "WordPress Hosting includes..." not "Vendasta's WordPress Hosting..."
+
+## Examples
+
+| Avoid | Use Instead |
+|-------|-------------|
+| "Vendasta's WordPress Hosting product" | "WordPress Hosting" |
+| "Vendasta has made it easier..." | "You can now easily..." |
+| "one of Vendasta's templates" | "one of the pre-built templates" |
+| "your partner provides..." | "this feature allows you to..." |

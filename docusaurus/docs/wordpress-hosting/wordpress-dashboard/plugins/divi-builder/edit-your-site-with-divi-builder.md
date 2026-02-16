@@ -1,4 +1,11 @@
+---
+title: "Edit your site with Divi Builder"
+sidebar_label: "Edit your site with Divi Builder"
+description: "Learn how to use Divi Builder to customize your WordPress site visually without coding. Edit text, images, add elements, and customize your site design."
+---
+
 # Edit your site with Divi Builder
+
 Getting your business up and selling is possible with Website Pro. This powerful product allows you to quickly and easily create a website and online store powered by WordPress and WooCommerce. To make the transition to ecommerce seamless, we also have a visual builder, called Divi Builder, within every Website Pro account. This allows you to design and create beautiful websites without having to write a single line of code. 
 
 Before we jump in, let’s make sure we’re familiar with Divi Builder.
@@ -88,3 +95,23 @@ Changing the logo and contact information on your website
 **Congratulations, you now have the knowledge you need to edit your website!**
 
 _[WooCommerce](https://docs.woocommerce.com/) and [Divi Builder](https://www.elegantthemes.com/blog/theme-releases/divi-3)_ _have extensive documentation and tutorials on how to set up, edit, manage, and operate your store._
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Where can I find help articles and documentation for Divi?</summary>
+
+Divi Builder is pre-installed with all WordPress Hosting Standard and Pro templates. To learn how to use Divi's visual editing tools and modules, visit Elegant Themes' official documentation here:
+
+[Divi Documentation](https://www.elegantthemes.com/documentation/divi/)
+
+This includes step-by-step tutorials on:
+* Editing sections, rows, and modules
+* Using the visual builder
+* Global styles and layout tools
+* Speed optimization
+* Theme customization
+
+> Note: Direct support for Divi's proprietary functionality is not provided beyond what is enabled in the default templates. For advanced Divi-specific questions, Elegant Themes support is recommended.
+
+</details>

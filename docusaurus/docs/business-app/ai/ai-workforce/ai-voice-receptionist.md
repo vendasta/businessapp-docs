@@ -25,7 +25,7 @@ Having an AI Voice Receptionist helps stop customers from moving on to the next 
 
 ## Setting up the AI Voice Receptionist
 
-### AI Voice Receptionist Call Flow & Routing
+### AI Voice Receptionist call flow & routing
 
 There are a number of ways to route calls to and from your Voice Receptionist to ensure that you never miss a lead.
 
@@ -67,21 +67,21 @@ Once a call reaches your AI Voice Receptionist, there are a number of potential 
    A text message is sent to callers, prompting them to leave a voicemail or schedule a callback.
 
 :::note
-While this guide will cover accessing these other options, it will focus on setting up the AI Voice Receptionist answer calls. For more detail on using the other options, see [Conversations Settings](/business-app/administration/conversations-settings).
+While this guide will cover accessing these other options, it will focus on setting up the AI Voice Receptionist to answer calls. For more detail on using the other options, see [Conversations Settings](../../administration/conversations-settings.md).
 :::
 
-### Prerequisites for AI Voice Receptionist Setup
+### Prerequisites for AI Voice Receptionist setup
 
-Before you get begin, make sure you've completed these prequisites so your AI Voice Receptionist setup goes smoothly.
+Before you begin, make sure you've completed these prerequisites so your AI Voice Receptionist setup goes smoothly.
 
 | What you need                     | Where to find it              | Notes                                                |
 | --------------------------------- | ----------------------------- | ---------------------------------------------------- |
-| AI Voice Receptionist access      | <AISparkleIcon /> `AI` > `AI Workforce`             | See the [Conversations AI Overview](/business-app/ai/ai-workforce/ai_workforce_overview) for edition and region availability.           |
-| Conversations AI phone number        | <SettingsIcon /> `Adminsitration` > `Conversations Settings` | You will need this number for call-forwarding and publishing. This number is assigned after activating an eligible edition of Conversations AI.                |
-| *(Optional)* Calendar connection    | <CRMIcon /> `CRM` > `My Meetings` > <SettingsIcon /> `Settings` > `Defaults` > `Connect Calendar`   | Let's your AI Voice Receptionist book meetings and appointments on the connected calendar.                          |
+| AI Voice Receptionist access      | <AISparkleIcon /> `AI` > `AI Workforce`             | See the [Conversations AI Overview](ai_workforce_overview.md) for edition and region availability.           |
+| Conversations AI phone number        | <SettingsIcon /> `Administration` > `Conversations Settings` | You will need this number for call-forwarding and publishing. This number is assigned after activating an eligible edition of Conversations AI.                |
+| *(Optional)* Calendar connection    | <CRMIcon /> `CRM` > `My Meetings` > <SettingsIcon /> `Settings` > `Defaults` > `Connect Calendar`   | Lets your AI Voice Receptionist book meetings and appointments on the connected calendar.                          |
 
-### Step 1: Set up your AI Voice Receptionist Profile and Communication Channels
-While your AI Voice Receptionist is capable of being a great representative for your business with very little configuration, there are a few things you can do to make them feel more on brand with your business and ensure they are set up correctly.
+### Step 1: Set up your AI Voice Receptionist profile and communication channels
+While your AI Voice Receptionist is capable of being a great representative for your business with very little configuration, there are a few things you can do to make them feel more on-brand and ensure they are set up correctly.
 
 To get started, go to <AISparkleIcon /> `AI > AI Workforce` and click `Configure` on the Voice Receptionist. 
 
@@ -104,7 +104,7 @@ Each voice family and voice have different strengths and weaknesses like respons
 #### Choose your AI Voice Receptionist's communication channels
 Under the `Channels` section, you will see all of the channels the AI Voice Receptionist can be assigned to work with. Your AI Voice Receptionist should be assigned to the Conversations AI phone number by default. 
 
-### Step 2: Configure Your AI Voice Receptionist Capabilities
+### Step 2: Configure your AI Voice Receptionist capabilities
 
 Your AI Voice Receptionist has a number of capabilities available by default that let them take calls like a human receptionist would. 
 
@@ -114,22 +114,22 @@ You can:
 - Add new custom capabilities to expand their skills.
 
 :::info Learn more about Capabilities
-For more detailed information on Capabilities, see the [AI Workforce Overview](/business-app/ai/ai-workforce/ai_workforce_overview#capabilities).
+For more detailed information on Capabilities, see the [AI Workforce Overview](ai_workforce_overview.md#capabilities).
 :::
 
 #### Default voice lead capture for AI Voice Receptionist
 The **default voice lead capture** capability guides your AI Employee to offer to help customers by answering questions and then gathering their contact information. This capability is turned on by default. 
 
-> **Note:** It this is turned off, the Voice Receptionist will not be able to capture caller information but *will* still answer questions to the best of their ability.
+> **Note:** If this is turned off, the Voice Receptionist will not be able to capture caller information but *will* still answer questions to the best of their ability.
 
 
 #### Book appointments with your calendar
 
 The **Book appointments with calendar** capability connects to your integrated calendar, enabling the AI Voice Receptionist to offer real-time availability to callers, collect all necessary booking details, and automatically create events on your calendar. 
 
-On the `Book appointments with calendar` panel, use the `Select event link to book with` dropdown to choose which calendar your receptionst should use to determine availability as well as which kind of appointments they can offer.
+On the `Book appointments with calendar` panel, use the `Select event link to book with` dropdown to choose which calendar your receptionist should use to determine availability as well as which kind of appointments they can offer.
 
-#### Additional Instructions for AI Voice Receptionist
+#### Additional instructions for AI Voice Receptionist
 
 The **Additional Instructions** capability lets you give your AI Voice Receptionist custom guidance to shape its responses, tone, and logic. It sits at the top of the AI’s prompt stack to refine how it interacts with callers. 
 
@@ -145,7 +145,7 @@ Some examples of instructions you might want to add include:
 You can extend your AI Voice Receptionist's capabilities by building your own custom capabilities. By adding your own "Tools" to custom capabilities, you can give your AI Voice Receptionist the ability to perform tasks that are specific to your business and build connections with other software you use.
 
 :::info Learn more about custom capabilities
-For more details on creating custom capabilities, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
+For more details on creating custom capabilities, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md.md).
 :::
 
 #### Transfer calls to other numbers {#transfer-calls-to-other-numbers}
@@ -168,7 +168,7 @@ Best practices:
 Once a call is transferred, recording ends and the system does not record or transcribe the destination leg. If the destination doesn't answer, the transfer is not reverted; the caller would need to call again to speak with the AI.
 :::
 
-### Step 3: Add Knowledge Sources to your AI Voice Receptionist
+### Step 3: Add knowledge sources to your AI Voice Receptionist
 
 The `Knowledge sources` panel lets you choose which information your AI Voice Receptionist can reference when answering calls. When your Voice Receptionist does not immediately have an answer to a caller's question, they will let the caller know they are taking a moment to look up information. If the Receptionist doesn't find the answer, they will let the caller know they don't have the information and offer to take a message and have someone call them back.
 
@@ -185,11 +185,11 @@ For more details on knowledge sources and adding them to the Knowledge Base, see
 :::
 ---
 
-## Test and Monitor Your AI Voice Receptionist
+## Test and monitor your AI Voice Receptionist
 
 Once your AI Voice Receptionist is set up, it’s important to test how it handles real calls and monitor its performance over time. This helps you ensure the AI is providing accurate answers, capturing leads, and delivering a professional experience to your callers. Regular testing and review will also help you spot opportunities to improve your AI’s responses as your business grows.
 
-### Testing and Reviewing the AI Voice Receptionist’s Responses
+### Testing and reviewing the AI Voice Receptionist's responses
 
 Click the `Try it` button on your AI Voice Receptionist's card from <AISparkleIcon /> `AI > AI Workforce` to quickly see the phone number assigned to your AI Voice Receptionist.
 
@@ -200,9 +200,9 @@ Before going live with your AI Voice Receptionist, you should test their respons
 - Offering to take a message and have someone call the caller back if they don't have an answer
 - Offering to book an appointment with your calendar
 
-### Monitor and Improve the AI Voice Receptionist
+### Monitor and improve the AI Voice Receptionist
 
-You can review call recordings and transcripts of of the conversations your AI Voice Receptionist has with callers by going to the `Conversations` tab in Business App. 
+You can review call recordings and transcripts of the conversations your AI Voice Receptionist has with callers by going to the `Conversations` tab in Business App.
 
 By reviewing the call recording and transcripts regularly, you can see how your AI Voice Receptionist is performing and make adjustments to your configuration as needed. 
 
@@ -220,7 +220,7 @@ If the AI Voice Receptionist is unable to capture a caller’s contact informati
 <summary>What do I need before setting up my AI Voice Receptionist?</summary>
 
 Before getting started, make sure you have:
-- **AI Voice Receptionist access** through an eligible edition (see [AI Workforce Overview](/business-app/ai/ai-workforce/ai_workforce_overview) for edition and region availability)
+- **AI Voice Receptionist access** through an eligible edition (see [AI Workforce Overview](ai_workforce_overview.md) for edition and region availability)
 - **Conversations AI phone number** assigned after activating Pro or Premium (found in Administration > Conversations Settings)
 - **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.md))
 - *(Optional)* **Calendar connection** for appointment booking (set up in CRM > My Meetings > Settings)
@@ -236,7 +236,7 @@ There are two main ways to route calls to your AI Voice Receptionist:
 1. **Direct calls to your Conversations number** - Calls made directly to your assigned Conversations phone number are automatically sent to your AI Receptionist
 2. **Forward calls from your business line** - Set up call forwarding from your existing business number to your Conversations number so customers can keep calling your familiar number
 
-For detailed call forwarding setup instructions, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md#call-forwarding-setup-in-conversations-optional).
+For detailed call forwarding setup instructions, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md).
 </details>
 
 <details>
@@ -290,7 +290,7 @@ For more details, see the [Knowledge Base Overview](../knowledge-base.md).
 
 Absolutely! You can extend your AI Voice Receptionist's capabilities by creating custom tools and integrations specific to your business needs. This allows your AI to perform tasks like checking inventory, scheduling specific services, or connecting with other software you use.
 
-For detailed guidance on creating custom capabilities, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities).
+For detailed guidance on creating custom capabilities, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md.md).
 </details>
 
 ### Operations and Performance
@@ -344,13 +344,13 @@ If your AI Voice Receptionist isn't answering calls, verify:
 3. **AI configuration** - Ensure your Voice Receptionist is configured and the "Phone call: Answer with Voice AI" setting is enabled
 4. **Call routing** - Check that calls are being routed to your Conversations number (not another destination)
 
-For additional troubleshooting, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md#troubleshooting-phone-call-setup-issues).
+For additional troubleshooting, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md).
 </details>
 
 <details>
 <summary>Can the AI book meetings on my calendar?</summary>
 
-Yes. Connect your calendar in <CRMIcon /> `CRM` > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then enable the **Book appointments with calendar** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](/business-app/crm/my-meetings) for details.
+Yes. Connect your calendar in <CRMIcon /> `CRM` > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then enable the **Book appointments with calendar** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](../../crm/My meetings/) for details.
 </details>
 
 <details>
@@ -373,5 +373,5 @@ AI Voice Receptionist is currently available for businesses located in the **Uni
 - Business address in a supported region
 - Phone number assignment through Conversations
 
-For the most up-to-date region availability, see the [AI Workforce Overview](/business-app/ai/ai-workforce/ai_workforce_overview).
+For the most up-to-date region availability, see the [AI Workforce Overview](ai_workforce_overview.md).
 </details>

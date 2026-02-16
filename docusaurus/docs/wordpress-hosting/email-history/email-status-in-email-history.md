@@ -1,12 +1,12 @@
 ---
-title: "Email Status in Email History"
-sidebar_label: "Email Status in Email History"
+title: "Email status"
+sidebar_label: "Email Status"
 description: "When you delve into the Activity section, you'll often encounter various email statuses. These statuses provide valuable insights into the performance of your"
 ---
 
 When you delve into the Activity section, you'll often encounter various email statuses. These statuses provide valuable insights into the performance of your email campaigns. Let's break down the most common ones:
 
-### Common Email Statuses
+### Common email statuses
 
 *   **Processed:** This indicates that the email has been successfully processed by the system. It's a combined status of "Delivered" and "Bounced" emails.
 *   **Delivered:** This means the email has been successfully delivered to the recipient's inbox.
@@ -17,7 +17,7 @@ When you delve into the Activity section, you'll often encounter various email s
 *   **Unsubscribed:** This shows that the recipient has opted out of receiving future emails from you.
 *   **Dropped:** This means the email was not sent due to various reasons like invalid email addresses, bounces, unsubscribes, or spam reports.
 
-### A Note on Unsubscribed Emails
+### A note on unsubscribed emails
 
 **Please be cautious when encountering "Unsubscribed" statuses.** While it might seem straightforward, it's crucial to verify that the unsubscribe was intentional. Sometimes, emails might be incorrectly marked as unsubscribed due to technical glitches or user error.
 

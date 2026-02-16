@@ -1,0 +1,104 @@
+---
+title: Manage integrations
+sidebar_label: Integrations
+description: Connect external services to Business App and use SSO and vendor-managed workflows.
+sidebar_position: 8
+---
+
+Integrations in Business App unlock data sharing, reporting, and automation between your app and external systems.
+
+Business App supports multiple integration types (direct, API key, SSO, and vendor-managed). Browse and connect from **Administration → Integrations**. Use the **Browse** and **Manage** tabs to add and manage integrations.
+
+### Benefits
+
+- Unified analytics across Executive Report and Marketing Funnel
+- Automated workflows such as review requests and contact sync
+- Enhanced features in Reputation AI, Local SEO, Social Marketing, and Website Pro
+
+## Using integrations to automate workflows
+
+Many integrations can be used to automate workflows, such as review requests. To enable this, enable Data Sync and select trigger events.
+
+1. Ensure the integration is connected (see **Integrations → Manage**).
+2. Open the integration settings to enable Data Sync and select the trigger events from your integration.
+3. Optionally, you can enable Automated Review Requests to trigger review requests when the trigger events occur.
+
+:::note Automated Review Requests
+Automated Review Requests require a Reputation AI Premium subscription.
+:::
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Examples by integration
+
+Trigger names and availability vary by integration. Review and select events in the integration's settings when enabling Data Sync.
+
+<Tabs>
+<TabItem value="jobber" label="Jobber">
+
+- Visit is completed
+- Job is completed
+
+</TabItem>
+
+<TabItem value="clio" label="Clio">
+
+You can influence whether contacts sync when a matter is closed via custom fields.
+
+**Closed Matter (Opt Out) — Contact custom field:**
+- Field Name: SyncOptOut
+- Type: Checkbox
+- Default: Checked
+
+**Closed Matter (Opt In) — Matter custom field:**
+- Field Name: SyncOptIn
+- Type: Checkbox
+- Default: Checked
+
+</TabItem>
+</Tabs>
+
+## FAQ
+
+<details>
+<summary>What permissions are required to connect?</summary>
+
+You must have access to the third-party account you are linking.
+
+</details>
+
+<details>
+<summary>Why do I need to sign in myself to connect?</summary>
+
+For security and compliance, you must authenticate directly to the third-party service. You cannot have someone else connect on your behalf.
+
+</details>
+
+<details>
+<summary>How do I reauthorize an expired connection?</summary>
+
+Open the integration from **Integrations → Manage** and follow the reconnect prompts.
+
+</details>
+
+<details>
+<summary>Do I need a specific subscription for automated review requests?</summary>
+
+Yes. Reputation AI Premium is required to enable automated review requests.
+
+</details>
+
+<details>
+<summary>How do I verify that data synced?</summary>
+
+Check the integration's Manage tab for recent activity and confirm updates in Business App.
+
+</details>
+
+<details>
+<summary>What triggers are supported?</summary>
+
+Triggers vary by integration. Use the integration settings to review available events.
+
+</details>

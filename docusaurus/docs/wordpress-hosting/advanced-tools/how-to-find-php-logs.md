@@ -1,6 +1,6 @@
 ---
 title: "How to Find PHP Logs"
-sidebar_label: "How to Find PHP Logs"
+sidebar_label: "PHP Logs"
 description: "If you're troubleshooting an issue or debugging your website, accessing PHP logs is crucial. WordPress Hosting Pro makes it easy to view these logs through the"
 ---
 
@@ -24,10 +24,14 @@ If you're troubleshooting an issue or debugging your website, accessing PHP logs
     Review the logs to identify errors or warnings related to your PHP scripts, such as syntax errors, deprecated functions, or unhandled exceptions.
     
 
-### Tips
-
-*   **Use Logs for Debugging**: Use the logs to pinpoint the root cause of issues like white screens, 500 errors, or slow loading times.
+:::tip
+**Use Logs for Debugging**: Use the logs to pinpoint the root cause of issues like white screens, 500 errors, or slow loading times.
+:::
 
 By following these steps, you can efficiently access and review PHP logs to maintain and troubleshoot your website.
 
-![-11-WordPress-Hosting-Pro-05-27-2025_03_02_PM.png](./img/33000075856151-1cafe40abe.png)
+![-11-WordPress-Hosting-Pro-05-27-2025_03_02_PM.png](img/33000075856151-1cafe40abe.png)
+
+## Related Articles
+
+For detailed information on how to use PHP logs for debugging WordPress issues, see [WordPress Debugging Basics](../wordpress-dashboard/wordpress-debugging-basics.md).

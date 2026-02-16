@@ -21,8 +21,8 @@ This page explains how Business App AI Employees—including AI Chat Receptionis
 
 ## How AI Employees generate answers
 AI Employees use a large language model (LLM) to draft responses based on:
-- Your configured capabilities. See [Configure capabilities](./ai-capabilities/configuring-capabilities.md).
-- Your knowledge base content, including uploaded files and website sources. See [Knowledge base](./knowledge-base.md).
+- Your configured capabilities. See [Configure capabilities](ai-capabilities/configuring-capabilities.md).
+- Your knowledge base content, including uploaded files and website sources. See [Knowledge base](knowledge-base.md).
 - Conversation context from the active chat, call, or task.
 
 :::warning
@@ -42,42 +42,59 @@ Do not add sensitive or unnecessary personal data to your knowledge base. Only i
 4. Remove duplicate or outdated documents that may conflict with newer content.
 
 ## Frequently asked questions (FAQs)
+
 <details>
 <summary>What AI model powers AI Employees?</summary>
+
 AI Employees run on enterprise‑grade LLMs that we evaluate and monitor for quality. Model names and versions are not disclosed and may change over time.
+
 </details>
 
 <details>
 <summary>Can I choose which model is used?</summary>
-AI Chat Receptionist and AI Voice Receptionist automatically use a supported model managed by Vendasta. AI Employees let you choose from the supported model options exposed in Business App settings, though we do not list the underlying provider names.
+
+AI Chat Receptionist and AI Voice Receptionist automatically use a supported model managed by the platform. AI Employees let you choose from the supported model options exposed in Business App settings, though we do not list the underlying provider names.
+
 </details>
 
 <details>
 <summary>Where do the assistants get their answers?</summary>
+
 From your configured capabilities, your knowledge base content, and the current conversation. They do not browse the open web beyond the sources you provide.
+
 </details>
 
 <details>
 <summary>How can I make answers more accurate?</summary>
+
 Provide clear, current content in the knowledge base and concise instructions in capabilities. Remove outdated or conflicting documents.
+
 </details>
 
 <details>
 <summary>Do AI Employees learn permanently from chats or calls?</summary>
+
 They use the active conversation for context. Persistent behavior comes from your capabilities and knowledge base, not from ad‑hoc user conversations.
+
 </details>
 
 <details>
 <summary>Can I prevent them from answering certain topics?</summary>
+
 Yes. Remove those topics from your knowledge base and add clear guidance in capability instructions about what the assistant should and should not answer.
+
 </details>
 
 <details>
 <summary>Do they use my website automatically?</summary>
+
 Only if you add your website as a source in the knowledge base. Otherwise, they rely on the documents and instructions you provide.
+
 </details>
 
 <details>
 <summary>Is my data shared with other businesses?</summary>
-No. Your account’s data, prompts, and responses are isolated. We monitor model performance in aggregate, but your content is not visible to other businesses.
+
+No. Your account's data, prompts, and responses are isolated. We monitor model performance in aggregate, but your content is not visible to other businesses.
+
 </details>

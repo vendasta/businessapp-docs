@@ -1,4 +1,9 @@
 {
   "label": "Advertisements",
-  "position": 2
-} 
+  "position": 2,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "ad-intel/advertisements/index"
+  }
+}
