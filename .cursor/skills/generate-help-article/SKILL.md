@@ -279,7 +279,7 @@ After generating the article:
 This skill follows and enforces:
 - Gray-label documentation standards (no Vendasta branding)
 - Article standards rule (evergreen content, voice, formatting)
-- Wistia video embedding format (when videos are needed)
+- Wistia video embedding format (`.cursor/rules/wistia-video-embedding.mdc`) — files must use `.mdx` extension
 - WordPress hosting slug patterns (if applicable to the feature)
 
 Always cross-reference these rules when generating content.
