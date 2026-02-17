@@ -3,6 +3,7 @@ title: Automations
 sidebar_position: 1
 ---
 
+# Automations Overview
 Automations let you create workflows that run on their own when specific events happen. Use them to save time, improve consistency, and respond to customers faster—without manual effort.
 
 <div
@@ -43,36 +44,81 @@ Automations let you create workflows that run on their own when specific events 
 
 Every automation includes:
 
-- Trigger: The event that starts your workflow (for example, When a contact is created)
-- Conditions: They are an optional part of an automation rule. After a trigger occurrs, all conditions will be checked. The automation will be executed if all conditions are met.
-- Actions: What happens next (for example, Send SMS, Send plain-text email, Update company)
+- **Trigger:** The event that starts your workflow (for example, When a contact is created)
+- **Conditions:** Optional filters that must be met for the automation to run (for example, Contact has specific tag, or Company field equals value)
+- **Actions:** What happens next (for example, Send SMS, Send plain-text email, Update company)
 
-Here's an example of a simple automation workflow. This example shows an automation that sends an email when a form is submitted for a contact.
+## How automations flow
 
-![Automation workflow example showing trigger and action](./img/automation-example.png)
+```
+            Event Occurs
+                  ↓
+              Trigger
+                  ↓
+         Are conditions met?
+                  ↓
+       ┌──────────┴──────────┐
+       ↓                     ↓
+      Yes                    No
+       ↓                     ↓
+  Execute Actions      Skip Automation
+       ↓
+    Complete
+```
 
-## Get started
+For example: **Form submitted** (event) → **When form is submitted for a contact** (trigger) → **Contact has "New Lead" tag?** (condition) → **Send welcome email** (action) → **Complete**
 
+## Getting started
 
+There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and actions already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
 
-**To build your own:**
+**To use a template:**
 
 1. Go to Business App > Administration > Automations
 2. Select `Create Automation`
-3. **Add a Trigger**: The event that starts your workflow
-   - Example: "When a form is submitted for a contact", "Contact created", "Meeting booked"
-   - Add **Conditions** if needed to filter when it runs
-4. **Add an Action**: What happens when the trigger fires
-   - Example: "Send a plain text email via Inbox", "Send SMS", "Create task"
+
+<div style={{ textAlign: 'center' }}>
+  <img src={require('./img/automations-create automations.png').default} alt="Create automation button in Automations page" width="25%" />
+</div>
+
+3. Choose a template from the gallery that matches your goal
+4. Customize the trigger, conditions, and actions as needed
 5. Save and toggle your automation **On**
 
-:::tip
-New to automations? Start with a template and customize.
-:::
+![Automation templates gallery showing available templates](./img/automations-template%20gallery.png)
 
-## Builder and settings
+**To build your own automation from scratch:**
 
-Each automation has a Settings tab where you control how and when your workflow runs.
+1. Go to Business App > Administration > Automations
+2. Select `Create Automation`
+
+3. Choose **Blank** to start from scratch. The automation builder opens with a workflow canvas.
+
+![Automation builder interface showing workflow canvas and trigger selection panel](./img/automations-builder%20UI.png)
+
+4. **Add a Trigger**: Select a trigger from the left menu to choose the event that starts your workflow
+   - Example: "When a form is submitted for a contact", "Contact created", "Meeting booked"
+   - Add **Conditions** if needed to filter when it runs
+
+<div style={{ textAlign: 'center' }}>
+  <img src={require('./img/automations-add condition.png').default} alt="Add conditions checkbox to filter when automation runs" width="50%" style={{ border: '1px solid #ddd', borderRadius: '4px' }} />
+</div>
+
+5. **Add an Action**: Select an action from the left menu to define what happens when the trigger fires
+   - Example: "Send a plain text email via Inbox", "Send SMS", "Create task"
+6. Save and toggle your automation **On**
+
+Here is an example of a simple automation workflow. This example shows an automation that sends an email when a form is submitted for a contact.
+
+<div style={{ textAlign: 'center' }}>
+
+![Automation workflow example showing trigger and action](./img/automation-example.png)
+
+</div>
+
+## Automation settings
+
+Each automation has a settings tab where you control how and when your workflow runs.
 
 ### Entry settings
 
