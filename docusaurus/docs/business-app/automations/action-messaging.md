@@ -9,7 +9,7 @@ keywords: [automated SMS, automated email, messaging actions, workflow alerts, c
 
 # Messaging actions
 
-Use messaging actions to send automated SMS, plain-text email, or WhatsApp template messages from your workflows. Each action runs when the workflow is triggered so you can notify the contact who triggered it or alert your team.
+Use messaging actions to send automated SMS or plain-text email from your workflows. Each action runs when the workflow is triggered so you can notify the contact who triggered it or alert your team.
 
 ## How to add a messaging action
 
@@ -74,7 +74,7 @@ Sending SMS via automations requires Conversations AI | Pro.
 
 <div style={{textAlign: 'center'}}>
 
-<img src={require('./img/automation-SMS.png').default} alt="Automation workflow: When Web Chat captures a lead trigger, Send an SMS message via Conversations step with SMS content and dynamic fields, then End." width="50%" />
+<img src={require('./img/automation-SMS.png').default} alt="Automation workflow: When Web Chat captures a lead trigger, Send an SMS message via Conversations step with SMS content and dynamic fields, then End." width="85%" />
 
 </div>
 
@@ -96,16 +96,6 @@ Requires Conversations Pro.
 
 </div>
 
-## Send WhatsApp template
-
-Send an approved WhatsApp template message to the contact who triggered the automation.
-
-:::note
-Requires Conversations AI (Standard, Pro, or Premium). A connected WhatsApp Business Account and a payment method are required. Only approved WhatsApp templates can be used for outbound messages; templates must be approved before they appear in the dropdown.
-:::
-
-**Setup:** After adding the action, choose **Send a WhatsApp template to a contact**, select an approved template from the dropdown, and populate any template variables. WhatsApp requires templates for outbound messages sent outside an active conversation window.
-
 ## Frequently asked questions
 
 <details>
@@ -116,22 +106,9 @@ Check the Activity tab for the run. Make sure required fields (e.g. phone for SM
 </details>
 
 <details>
-<summary>What is the difference between SMS and WhatsApp templates?</summary>
-
-SMS allows free-form text but has character limits and costs per segment. WhatsApp templates allow rich formatting and media but require pre-approval from Meta and must be used to start conversations.
-
-</details>
-
-<details>
 <summary>Can I include dynamic information in messages?</summary>
 
 Yes. Use the dynamic field inserter when writing the message to include contact details, form responses, or other automation data.
 
 </details>
 
-<details>
-<summary>Can I send a WhatsApp message when a new contact is created?</summary>
-
-Yes. Use the **Send WhatsApp template to a contact** action with a trigger such as "When a contact is created." Only approved templates can be used—free-form WhatsApp messages are not supported in automations.
-
-</details>
