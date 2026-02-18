@@ -1,6 +1,7 @@
 ---
 title: Messaging actions
 sidebar_position: 3
+sidebar_label: Messaging actions
 description: Send automated SMS and email messages as actions within your workflows.
 tags: [automation, messaging, sms, email]
 keywords: [automated SMS, automated email, messaging actions, workflow alerts, customer notifications]
@@ -8,45 +9,44 @@ keywords: [automated SMS, automated email, messaging actions, workflow alerts, c
 
 # Messaging actions
 
-Automate outbound messages from your workflows using SMS, email, or WhatsApp. Great for confirmations, reminders, follow-ups, and team notifications.
+Use messaging actions to send automated SMS, plain-text email, or WhatsApp template messages from your workflows. Each action runs when the workflow is triggered so you can notify the contact who triggered it or alert your team.
 
-## Send SMS to contact
-
-Send an SMS message to the contact who triggered the automation.
-
-:::note
-Sending SMS via automations requires Conversations Pro.
-:::
-
-**How to set it up:**
+## How to add a messaging action
 
 1. Go to Business App > Administration > Automations
-2. Create a new automation (or open an existing one)
-3. Choose a Trigger (for example, When a contact is created)
-4. Add Action > Send SMS
-5. Write your message and include dynamic fields as needed
-6. Save and toggle the automation On
+2. Open the Automation Builder (create a new automation or edit an existing one)
+3. Add a trigger (e.g. When a contact is created, Form submitted, WebChat captures a lead)
+4. Click the **+** symbol to add a step and select the messaging action you want
+5. Configure the action (recipient, message content, dynamic fields as needed)
+6. Save and turn the automation On
 
-**Tips:**
-- Keep messages short and actionable
-- Include your business name the first time you text a contact
-- Respect consent preferences and opt-out rules
-- Use Conditions to limit frequency (for example, only for new leads)
+{/* TODO: Add screenshot - Automation Builder with messaging actions in the step list
+<div style={{textAlign: 'center'}}>
 
-## Send SMS to any phone number
+![Automation Builder with messaging actions in the step list](./img/messaging-action-builder.png)
 
-Send an SMS alert to any phone number, including team members or external stakeholders not in your CRM. Perfect for internal notifications.
+</div>
+*/}
 
-:::info Requirement
-To use this action, **Conversations AI | Pro** must be enabled.
+## Send SMS
+
+Send an SMS to the contact who triggered the automation or to any phone number you specify (e.g. team members, numbers not in your CRM).
+
+:::note
+Sending SMS via automations requires Conversations AI | Pro.
 :::
 
-**What makes this different:**
+**To the contact who triggered the automation:** After adding the action (see [How to add a messaging action](#how-to-add-a-messaging-action)), choose **Send SMS**, write your message, and add dynamic fields as needed.
 
-| Action | Behavior |
-|--------|----------|
-| **Send SMS to contact** | Sends only to the contact who triggered the automation |
-| **Send SMS to any phone number** | Sends to any number you manually specify (team alerts) |
+**To any phone number:** After adding a step, select **Send an SMS message to a phone number**. Configure the **Phone Number** field with one or more destination numbers, enter the message content, and use the dynamic field inserter for variables if needed.
+
+{/* TODO: Add screenshot - Send SMS to a phone number step (Phone Number field and message body)
+<div style={{textAlign: 'center'}}>
+
+![Send SMS to a phone number step: Phone Number field and message body with dynamic field inserter](./img/messaging-sms-to-phone-step.png)
+
+</div>
+*/}
 
 **Example use cases:**
 
@@ -54,99 +54,67 @@ To use this action, **Conversations AI | Pro** must be enabled.
 |---------|--------|---------|
 | New visitor chats without booking | You receive SMS with visitor's name and message | Restart outreach quickly |
 | "Request a Quote" form submitted | Sales manager receives SMS with project details | Faster response for high-intent leads |
-| Contact tagged as VIP | Business owner receives SMS alert | Ensures timely personal follow-up |
+| Contact tagged as VIP | Business owner receives SMS alert | Timely personal follow-up |
 
-**How to set it up:**
+**Tips:**
+- Keep messages short and actionable; include your business name the first time you text a contact
+- Respect consent and opt-out rules; use Conditions to limit when the step runs (e.g. only for new leads)
 
-1. Go to Automations
-2. Open the Automation Builder
-3. Create a new automation or edit an existing one
-4. Add a trigger (Form Submitted, WebChat Captures a lead, Contact Created, etc.)
-5. Click the **+** symbol to add a step
-6. Select the action **Send an SMS message to a phone number**
-7. Configure the **Phone Number** field with one or more destination numbers
-8. Enter the SMS message content
-9. Insert variables using the dynamic field inserter if needed
-10. Save the action and turn on the automation
+## Example
 
-:::tip
-Use the Phone Number field to send alerts to internal or external recipients whose numbers are not stored in your CRM.
-:::
+**Scenario:** You want the sales manager to get an SMS as soon as someone submits the "Request a Quote" form, so high-intent leads get a fast response.
+
+**Trigger:** When a form is submitted (Request a Quote)
+
+**Action:** Send an SMS message to a phone number (sales manager’s number), with a short message that includes dynamic fields for the contact name and project details
+
+**How it works:** When the form is submitted, the automation runs and sends an SMS to the number you configured. The message can include form responses or contact data via the dynamic field inserter, so the recipient has context without opening the CRM.
+
+**Use case:** Ensures high-intent leads are followed up quickly while keeping the workflow automatic.
+
+{/* TODO: Add screenshot - Messaging automation workflow (form submitted → Send SMS to phone number → End)
+<div style={{textAlign: 'center'}}>
+
+![Messaging automation workflow: form submitted trigger, Send SMS to phone number action, then End.](./img/messaging-action-workflow.png)
+
+</div>
+*/}
 
 ## Send plain-text email
 
-Send a plain-text email to the contact who triggered the automation.
-
 :::note
-Sending plain-text emails via automations requires Conversations Pro.
+Requires Conversations Pro.
 :::
 
-**How to set it up:**
-
-1. Go to Business App > Administration > Automations
-2. Create a new automation (or open an existing one)
-3. Choose a Trigger (for example, When a contact is created)
-4. Add Action > Send a plain text email
-5. Set Subject and Body; include dynamic fields if needed
-6. Save and toggle the automation On
+**Setup:** After adding the action, choose **Send a plain text email**, then set the Subject and Body and add dynamic fields if needed.
 
 **Tips:**
-- Use clear subjects and one primary call-to-action
-- Personalize with the contact's name and relevant details
+- Use clear subjects and one primary call-to-action; personalize with the contact’s name and relevant details
 - Combine with Conditions to target the right audience
 
 ## Send WhatsApp template
 
-Send a WhatsApp template message to the contact who triggered the automation.
+Send an approved WhatsApp template message to the contact who triggered the automation.
 
 :::note
-Sending a WhatsApp message requires Conversations AI | Standard | Pro | Premium
+Requires Conversations AI (Standard, Pro, or Premium). A connected WhatsApp Business Account and a payment method are required. Only approved WhatsApp templates can be used for outbound messages; templates must be approved before they appear in the dropdown.
 :::
 
-**How to set it up:**
-
-1. Go to Business App > Administration > Automations
-2. Create a new automation (or open an existing one)
-3. Choose a Trigger (for example, When a contact is created)
-4. Add Action > Send a WhatsApp template to a contact
-5. Choose an approved template from the dropdown
-6. Populate template variables if needed
-7. Save and toggle the automation On
-
-**Tips:** 
-- A connected WhatsApp Business Account is required to send WhatsApp messages
-- Only approved WhatsApp templates can be used for outbound messages
-- A payment method must be added to the WhatsApp Business Account before messages can be delivered
-- Templates must be approved before they appear in the dropdown
-- WhatsApp requires templates for outbound messages sent outside an active conversation window
+**Setup:** After adding the action, choose **Send a WhatsApp template to a contact**, select an approved template from the dropdown, and populate any template variables. WhatsApp requires templates for outbound messages sent outside an active conversation window.
 
 ## Frequently asked questions
 
 <details>
 <summary>What if messages fail to send?</summary>
 
-Check the Activity tab for the run. Make sure required fields (for example, phone for SMS or email for plain-text email) are present. If you see frequent failures, consider switching Error handling to "Skip the step and continue" in Settings so other steps can still complete.
+Check the Activity tab for the run. Make sure required fields (e.g. phone for SMS, email for plain-text email) are present. If you see frequent failures, consider setting Error handling to "Skip the step and continue" in the automation Settings so other steps can still complete.
 
 </details>
 
 <details>
 <summary>What is the difference between SMS and WhatsApp templates?</summary>
 
-SMS allows for free-form text but has character limits and costs per segment. WhatsApp templates allow for rich formatting and media but require pre-approval from Meta and must be used for initiating conversations.
-
-</details>
-
-<details>
-<summary>Can I send SMS messages to numbers not in my CRM?</summary>
-
-Yes. Use the "Send SMS to any phone number" action. You can manually enter any phone number.
-
-</details>
-
-<details>
-<summary>When should I use "Send SMS to any phone number" instead of "Send SMS to contact"?</summary>
-
-Use **Send SMS to contact** to message the person who triggered the automation. Use **Send SMS to any phone number** to notify team members, owners, or external stakeholders about the event.
+SMS allows free-form text but has character limits and costs per segment. WhatsApp templates allow rich formatting and media but require pre-approval from Meta and must be used to start conversations.
 
 </details>
 
@@ -158,8 +126,8 @@ Yes. Use the dynamic field inserter when writing the message to include contact 
 </details>
 
 <details>
-<summary>Is it possible to send a WhatsApp message when a new contact is created?</summary>
+<summary>Can I send a WhatsApp message when a new contact is created?</summary>
 
-At this time, direct WhatsApp messaging through automations is not supported. Automations cannot trigger messages through a connected business WhatsApp account.
+Yes. Use the **Send WhatsApp template to a contact** action with a trigger such as "When a contact is created." Only approved templates can be used—free-form WhatsApp messages are not supported in automations.
 
 </details>
