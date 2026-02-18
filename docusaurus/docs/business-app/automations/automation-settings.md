@@ -88,5 +88,5 @@ No. Error handling is set at the automation level and applies to all steps. If y
 ## Related resources
 
 - [Automation activity & history](automation-activity.md) - Monitor and troubleshoot automation runs
-- [Messaging actions](messaging.md) - Configure SMS and email actions
+- [Messaging actions](action-messaging.md) - Configure SMS and email actions
 - [Automations overview](index.mdx) - Learn the basics of creating automations
