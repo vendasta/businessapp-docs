@@ -1,6 +1,6 @@
 ---
 title: Messaging actions
-sidebar_position: 3
+sidebar_position: 2
 sidebar_label: Messaging actions
 description: Send automated SMS and email messages as actions within your workflows.
 tags: [automation, messaging, sms, email]
@@ -23,7 +23,7 @@ Use messaging actions to send automated SMS or plain-text email from your workfl
 {/* TODO: Add screenshot - Automation Builder with messaging actions in the step list
 <div style={{textAlign: 'center'}}>
 
-![Automation Builder with messaging actions in the step list](./img/messaging-action-builder.png)
+![Automation Builder with messaging actions in the step list](../img/messaging-action-builder.png)
 
 </div>
 */}
@@ -43,7 +43,7 @@ Sending SMS via automations requires Conversations AI | Pro.
 {/* TODO: Add screenshot - Send SMS to a phone number step (Phone Number field and message body)
 <div style={{textAlign: 'center'}}>
 
-![Send SMS to a phone number step: Phone Number field and message body with dynamic field inserter](./img/messaging-sms-to-phone-step.png)
+![Send SMS to a phone number step: Phone Number field and message body with dynamic field inserter](../img/messaging-sms-to-phone-step.png)
 
 </div>
 */}
@@ -66,15 +66,15 @@ Sending SMS via automations requires Conversations AI | Pro.
 
 **Trigger:** When Web Chat captures a lead
 
-**Action:** Send an SMS message via Conversations to the phone number of the person handling the lead. In the step, add SMS content that greets the recipient by name using the dynamic field inserter (e.g. the assigned rep’s or owner’s name from the CRM). Include that they have a new lead and that a task was created in the CRM and a link was emailed.
+**Action:** Send an SMS message via Conversations to the phone number of the person handling the lead. In the step, add SMS content that greets the recipient by name using the dynamic field inserter (e.g. the assigned rep's or owner's name from the CRM). Include that they have a new lead and that a task was created in the CRM and a link was emailed.
 
-**How it works:** When Web Chat captures a lead, the automation runs and sends the SMS to the number you configured (e.g. the sales person’s or owner’s). The dynamic field pulls the recipient’s name so the message is personalized—for example, “Hi Sarah, you have a new lead!”—and they’re reminded about the CRM task and email.
+**How it works:** When Web Chat captures a lead, the automation runs and sends the SMS to the number you configured (e.g. the sales person's or owner's). The dynamic field pulls the recipient's name so the message is personalized—for example, "Hi Sarah, you have a new lead!"—and they're reminded about the CRM task and email.
 
 **Use case:** Ensures the right person is notified immediately when a lead comes from chat, with a personalized greeting and a reminder about the CRM task and email.
 
 <div style={{textAlign: 'center'}}>
 
-<img src={require('./img/automation-SMS.png').default} alt="Automation workflow: When Web Chat captures a lead trigger, Send an SMS message via Conversations step with SMS content and dynamic fields, then End." width="85%" />
+<img src={require('../img/automation-SMS.png').default} alt="Automation workflow: When Web Chat captures a lead trigger, Send an SMS message via Conversations step with SMS content and dynamic fields, then End." width="85%" />
 
 </div>
 
@@ -87,12 +87,12 @@ Requires Conversations Pro.
 **Setup:** After adding the action, choose **Send a plain text email** (via Inbox or Conversations), then set the Subject and Body and add dynamic fields if needed.
 
 **Tips:**
-- Use clear subjects and one primary call-to-action; personalize with the contact’s name and relevant details
+- Use clear subjects and one primary call-to-action; personalize with the contact's name and relevant details
 - Combine with Conditions to target the right audience
 
 <div style={{textAlign: 'center'}}>
 
-<img src={require('./img/automation-plain text email.png').default} alt="Automation workflow: When Newsletter signup form is submitted for a contact, Send a plain text email via Inbox or Conversations, then End." width="50%" />
+<img src={require('../img/automation-plain text email.png').default} alt="Automation workflow: When Newsletter signup form is submitted for a contact, Send a plain text email via Inbox or Conversations, then End." width="50%" />
 
 </div>
 

@@ -1,6 +1,6 @@
 ---
 title: Pause campaign actions
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: Pause campaign actions
 description: Use automation to pause campaigns for contacts or companies when lead conditions change.
 tags: [automations, campaigns, crm, contact-level, company-level]
@@ -47,7 +47,7 @@ Use these actions after a `Delay` step or condition check to respond intelligent
 
 <div style={{textAlign: 'center'}}>
 
-![Pause campaign automation workflow: trigger (company removed from List B, list_id contains Tier A), action (Pause Cruise in winter campaign), then End.](./img/pause-campaign.png)
+![Pause campaign automation workflow: trigger (company removed from List B, list_id contains Tier A), action (Pause Cruise in winter campaign), then End.](../img/pause-campaign.png)
 
 </div>
 
