@@ -1,9 +1,11 @@
 {
     "label": "Divi Builder",
     "position": 1,
+    "collapsible": true,
+    "collapsed": true,
     "link": {
-      "type": "generated-index",
-      "description": "Edit your site with the Divi Builder"
+      "type": "doc",
+      "id": "wordpress-hosting/wordpress-dashboard/plugins/divi-builder/edit-your-site-with-divi-builder"
     }
 }
   

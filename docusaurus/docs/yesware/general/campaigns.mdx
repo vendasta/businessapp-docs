@@ -1,0 +1,320 @@
+---
+title: "Multi-Channel Campaigns Guide"
+description: "Complete guide to creating, managing, and optimizing multi-channel campaigns in Yesware"
+sidebar_position: 2
+---
+
+# Multi-Channel Campaigns Guide
+
+Yesware's Campaigns feature allows you to execute multi-touch, multi-channel outreach directly from your inbox—helping you stay on task and maximize your results. You can personalize communication, track engagement, and manage tasks all in one place.
+
+## Creating and Sending Your First Campaign
+
+### For Gmail
+Click the "Campaigns" module at the top of your inbox, then select **"New Campaign"** in the upper right.
+
+### For Outlook
+Navigate to the Add-ins section of your Outlook ribbon and click **"Open Campaigns."** In the window that opens, click **"New Campaign."**
+
+---
+
+Next, name your Campaign and add your recipients. You can:
+- Upload a CSV file
+- Manually enter data into the recipient table
+- Add recipients via the "Add to Campaign" button from an email thread
+- (Enterprise only) Import recipients from Salesforce by selecting a Contact or Lead list, searching for an individual, or using the "Add to Campaign" option in Salesforce directly
+
+Note: You can continue adding recipients to a Campaign even after it's been created.
+
+## Touch Types and Personalization
+
+You can create an unlimited number of touches in a Campaign. Recommended range is between 5–10 touches. Yesware supports the following touch types:
+
+### Gmail Only Touch Types
+- **Manual Email** – Send personalized emails in real time via the Yesware Sidebar
+- **Custom Task** – Assign a task like sending a handwritten note or researching a lead
+- **Connect on Sales Navigator** – Send LinkedIn connection requests (Sales Navigator Team/Enterprise license required)
+- **InMail on Sales Navigator** – Send InMails via LinkedIn
+
+### Shared Touch Types (Gmail and Outlook)
+- **Automated Email** – Sends at a scheduled time with no manual input
+- **Phone Call** – Prompts you to call, log the outcome, and syncs it to Salesforce
+
+To personalize touches, use **merge fields**. These fields align with your CSV columns, Salesforce fields, or manually entered data. Click the **Insert Merge Field** button in the editor to drop in dynamic values. You can preview your Campaign with merged data under the **"Preview and Personalize"** tab.
+
+Schedule your first touch by choosing a date and time. You may send it immediately or specify a future send time. Campaigns can be fully customized by touch frequency, number of touches, and timing (e.g., 8 emails spaced 2 business days apart).
+
+## Managing Tasks with the Smart To-Do List (Gmail)
+
+Gmail users can use the **Smart To-Do List** in the Sidebar to stay on top of manual tasks. When a task is due, it will appear in the Sidebar with options to:
+- **Snooze** – Delay the task to a later time
+- **Skip** – Bypass the current step for a recipient
+- **Remove** – Remove the recipient from the Campaign
+
+Tasks can also be managed in bulk or individually in the **Manage Recipients** tab. You can filter by touch type, recipient, or domain.
+
+Total tasks are listed in red at the top of the Campaigns to-do list. You may want to use the refresh button in the Sidebar to ensure all your tasks have loaded. We will only show 500 to-do cards on the Campaigns sidebar at a time. If you have more than that, as you complete tasks, click the refresh button and the remaining tasks will begin to load.
+
+## Managing Campaigns and Recipients
+
+From the **Campaigns dashboard**, select any Campaign to:
+- Edit Campaign steps
+- Reschedule tasks
+- Skip or remove individual recipients
+- Move recipients to another Campaign
+- Export recipient data for reporting
+
+You can search across Campaigns by name, email address, or domain to take action efficiently.
+
+### Removing Recipients from a Campaign
+
+By default, recipients will automatically be removed from a Campaign if:
+- you've selected the "Remove recipients after connection" setting, and they have replied to your Campaigns email or you mark that you caught them on the phone
+- or they have booked a meeting through your Meeting Scheduler link
+
+If for some reason you need to manually remove a recipient from a Campaign, first use the Search bar at the top right of the Campaigns dashboard to search by name, email, or domain across all of your Campaigns if you're not sure which Campaign they would be on.
+
+Once your recipient appears, click on the **name of the Campaign** that they are on and you'll be brought to the Manage Recipients view. From there, select the check box next to the name of the recipient and click the "Remove" button in the menu above. Confirm.
+
+Alternatively, if you already know which Campaign your recipient is on, find that Campaign in your dashboard and click the More Actions kebab menu, then select the "Manage Recipients" option that appears.
+
+To remove multiple recipients at one time, simply select multiple check boxes before clicking "Remove." Their status will then change to MANUALLY REMOVED.
+
+**NOTE:** If the REMOVE button is greyed out, check the 'Status' of the recipient. The remove button work by removing ACTIVE recipients from the campaign's sequences. The RECIPIENTS tab is a log of every recipient that was added to the campaign at some point.
+
+## Sharing Campaigns with Teams
+
+Campaigns can be shared with your team by clicking **"Share"** at the bottom right of a Campaign. Select the appropriate team(s) to give access.
+
+When shared:
+- You retain ownership and editing rights of the master Campaign
+- Team members can only manage their own recipients
+- Others can duplicate the Campaign for personal use but cannot manage your data
+
+## Campaigns Reporting
+
+Reporting tools help you evaluate Campaign performance and optimize your outreach. The **Campaigns by Campaign** and **Campaigns by User** reports provide data on usage and outcomes across your team.
+
+For Enterprise users, Salesforce integration pulls contacts and leads into Yesware and syncs engagement activities (emails, calls, meetings) back into Salesforce. This enables full visibility into Campaign performance within your CRM.
+
+## Frequently Asked Questions
+
+### Can a campaign be archived?
+
+No, it's not possible to archive a campaign in Yesware but it can be deleted. **Please note**: a deleted campaign cannot be recovered.
+
+### How do I delete a campaign?
+
+To delete a Yesware campaign, first go to the **Campaigns** > select the specific campaign > click the Delete button in the bottom right corner. A confirmation window will appear and then click Delete Campaign to permanently remove it.
+
+Remember that this action is irreversible and all associated data will be lost.
+
+### How can I edit a Campaign?
+
+To edit your Campaign:
+
+Click the **More Actions kebab menu** on the Campaign you want to change.
+
+Select the **"Edit Touches"** option from the menu.
+
+As long as your Campaign doesn't have any recipients active, you can:
+- Add touches
+- Delete touches
+- Change touch types
+- Edit any content, then click **"Save and Exit"** in the bottom-left corner.
+
+If your Campaign **does have recipients active**:
+- You can update the **content** of any touch (e.g., email subject line and body, call details, etc.).
+- You **cannot delete** or **add** new touches.
+- Any edits made **won't override** custom content already added for individual recipients or for touches sending immediately.
+
+#### Gmail
+You can edit:
+- Email subject and body
+- Call description and talking points
+- Custom task subject & description
+
+#### Outlook
+You can edit:
+- Email subject and body
+- Call description and talking points
+
+### How do I reschedule a campaign once it has started?
+
+Watch this video to learn how to maintain your Gmail Campaigns once they have started.
+
+**Not a Yesware user yet? [Try a free trial](http://www.yesware.com/sign-up/).**
+
+### Can I remove a touch in a campaign?
+
+**To remove or add touches to a campaign with active recipients**, you will first need to make the campaign inactive. The workaround is to manually remove all recipients from the campaign, allowing you to edit the touches. Follow these steps:
+- **Navigate to the Campaign** you want to edit.
+- Click on the **Recipients** tab.
+- Select the checkbox next to **Personal Details** (this will select all recipients in the campaign).
+- Click **Remove** to remove all recipients. **Note:** Once recipients are removed, the campaign is effectively inactive
+- Click on **Edit Campaign** to make changes.
+- Scroll to **Touch 3** (or the touch you want to remove).
+- Click **Remove This Touch**.
+- Don't forget to click **Save & Exit** to save your changes.
+
+### How does the Campaign to-do list work with SFDC tasks?
+
+The Campaigns to-do list is designed to help you stay on task by creating to-do cards for each manual touch type that's currently due. Future activity is hidden from view. To-dos can be manual emails, phone calls, or custom tasks.
+
+Campaigns **do not** create tasks in Salesforce before the task is completed, but rather it syncs completed activities into SFDC tasks for that recipient for manual emails and phone calls after you have completed that touch type. This keeps SFDC up to date with the latest activity but does not overload it with incomplete tasks or activities. Yesware Campaigns has no relation to/impact on campaigns in Salesforce.
+
+### Is it possible to CC people on Yesware Campaigns?
+
+No, it is not possible to cc anybody on Campaigns emails. However, you can add a custom note/task touch on a campaign asking the rep to send a follow-up email cc'ing specific individuals. We use the same logic that Gmail/Outlook uses for email threading, so when you reply to an email thread and add a cc address, the recipient will be able to see all the messages in the thread.
+
+### Will my Campaign emails thread or show as Replies?
+
+Yes, when you create multi-touch campaigns, your prior messages will be quoted within the text you send. In addition, the messages should be threaded or shown in "conversation view" if they contain the same subject line and if "conversation view/threading" is turned on in your email client.
+
+### Where can I see how many meetings have been booked as a result of a Campaign?
+
+To see how many meetings have been booked as a result of a Campaign, you will need to visit the Campaign and scroll down to the reporting area. Just above the Campaign Insights, you will see an overview showing the number of Meetings Scheduled with this Campaign.
+
+If you do not see that metric, you may not have added a Meeting Scheduler link or Meeting Scheduler touch to your Campaign. You can also locate this information in the Reports area under Campaigns, by clicking on the specific campaign you want to see information on.
+
+### What touches can I add to a Gmail Campaign?
+
+Gmail Campaigns support the following touch types:
+- **Automated Email** – Sends at a scheduled time with no manual input
+- **Manual Email** – Send personalized emails in real time via the Yesware Sidebar
+- **Phone Call** – Prompts you to call, log the outcome, and syncs it to Salesforce
+- **Custom Task** – Assign a task like sending a handwritten note or researching a lead
+- **Connect on Sales Navigator** – Send LinkedIn connection requests (Sales Navigator Team/Enterprise license required)
+- **InMail on Sales Navigator** – Send InMails via LinkedIn
+
+### Why are first and last names missing on my campaign export?
+
+If first and last names are missing from your Campaign export, it's likely because:
+1. The CSV you uploaded didn't include first and last name columns
+2. The recipients were added manually without entering those fields
+3. If imported from Salesforce, those fields may be empty in your CRM
+
+To fix this, you can manually add first and last names to the recipient table in your Campaign before exporting.
+
+### Can I edit a name after uploading a CSV to a Campaign?
+
+Yes, you can easily edit the name by clicking directly into the box and making changes.
+
+If you'd like to add more recipients after uploading a CSV, simply click **"Add row"** as shown in the recipient table.
+
+### What are the best practices for uploading CSV files to Campaigns?
+
+To ensure your .CSV file uploads successfully into a Campaign, follow these formatting best practices:
+- Place the **Email** column first, in **Column A**.
+- Include **column headings** for all fields you plan to use as **Merge Fields** in your email body. The headings must match your merge fields **exactly**. For example, the column header `FirstName` will not work with the merge field `\{!First\}`.
+- Do **not** include any **blank email rows**. The upload process will stop at the first line without an email address.
+- Include **only the data you need** for the Campaign. Remove any unused rows, columns, or extra tabs before uploading.
+- The file must be saved as a **.CSV** (Comma Separated Values) file. Most spreadsheets default to `.xlsx`, so be sure to select **"Comma Separated Values (.csv)"** as the file type before saving.
+
+### How do I add an attachment to a Campaign?
+
+To add an attachment to a Campaign, click the **"Attachment"** button at the bottom of the compose area in Campaigns.
+
+Select the file you'd like to attach, and you will be presented with two checkboxes:
+- **Allow recipient to download**: This allows the recipient to download the attachment, which they can then keep or share. If they share the downloaded copy, you will not be able to track who else has seen the attachment.
+- **Ask the recipient to enter a name to access the presentation**: This enables more detailed analytics. If enabled, recipients will be asked to enter their name before viewing.
+
+Once you've made your selections, click **"Continue."** Yesware will convert your attachment to a presentation and insert it into the body of your email.
+
+**Note:** The attachment is inserted where your cursor is placed, so make sure your cursor is in the correct location before clicking the **"Attachment"** button.
+
+When your recipient views the attachment, a **Presentation Report** will appear in your **Tracking Activity Feed**, showing who opened it and how long they viewed it.
+
+### Can I create a signature to be added to my Campaign emails?
+
+Yes, you can! When you are creating a Campaign, you will see at the bottom of the touch the option to insert a signature. If you haven't already, you can create your signature by selecting the "Create" button. From here, you can re-create or create your signature and insert images and links to it.
+
+Feel free to copy and paste the text into the Signature creation box. (When pasting in the signature box, one must right-click and hit paste. **Do not use keyboard shortcuts**.)
+
+If you plan on adding an image to your signature it MUST be added using the 'Image' button. This image will need to be hosted on a site such as IMGUR.
+
+Save the image on your computer > Go to https://imgur.com/upload and upload your image > Once it is uploaded right click on it and 'Open image in new tab.'
+
+From the new tab, copy the URL.
+
+Click on the signature's image button> paste the URL > Hit Ok.
+
+Resize the image to your liking using the corners or the dimensions box > Then Save.
+
+Once you have created your signature, you can choose to have your signature included for each touch by toggling the "Include Campaigns Signature" button to the right.
+
+### How do I map fields to be merged from my CSV into my emails?
+
+If you're importing recipients to a Campaign via the **CSV method** (created in Excel or exported from Salesforce), your .CSV file will serve as the source of merged data. You'll need to map the columns from your CSV to the merge fields in your email.
+
+Here's how to do it:
+
+1. **Create your CSV file.** Whatever you name the columns in your CSV will become your merge field names. The **"Email"** column must be the **first column** in the file.
+2. **Insert merge fields into your email.** Use the format `\{!columnname\}` where `columnname` matches the header from your CSV. This is **case- and space-sensitive**. If you're using an existing Template, make sure your CSV column headers exactly match the merge fields in the Template.
+3. **Use the "Merge Field" button** at the bottom of the compose area to insert merge fields with accurate formatting, avoid manual errors, and quickly match fields to column headers.
+4. **Check the "Preview and Personalize" tab** to confirm that your fields are mapped correctly before sending your Campaign.
+
+### How do I create a list in Salesforce for Campaigns?
+
+The Salesforce lists for Campaigns can be pulled from your Contacts or Leads. The list views are retrieved from your Salesforce account.
+
+#### To view your current lists
+1. Log into your Salesforce account.
+2. Select the Contacts or Leads tab.
+3. Use the View drop-down menu to select a list.
+4. Click "Go" to see the contact list and fields for the selected view.
+
+#### To create a new list view in Salesforce Classic
+1. Log into your Salesforce account.
+2. Select the Contacts or Leads tab.
+3. Click "Create New View."
+
+From there, you can set up a new view using filters and select which fields you'd like to be displayed in the list. Please note, any of the fields you include in your Contact/Lead list will come over as column headers in the Recipients Table in Campaigns, so that you are able to pair them with merge fields and personalize your Campaigns emails.
+
+- Step 1: Name your list view
+- Step 2: Add filters. You can filter by all Contacts/Leads or just Contacts/Leads assigned to you. Add filter logic (example: if you're reaching out to Leads in a certain industry, filter by that field)
+- Step 3: Select fields to display. This will add the fields that will show in your list view in Campaigns.
+- Step 4: Click Save
+
+Once saved, you can use the list to add your recipients to a Campaign.
+
+#### To create a new list view in Salesforce Lightning
+1. Log into your Salesforce account.
+2. Select the Contacts or Leads tab.
+3. Click Settings gear icon + "New" on the top right
+
+From there, you can set up a new view using filters and select which fields you'd like to be displayed in the list.
+
+- Step 1: Name your list view, and select who can see the list
+- Step 2: Add filters. On the right of the screen, select all Contacts/Leads or just those assigned to you. Add additional filters by clicking the "add filter" button and selecting criteria. Click Save. You can also add filters by clicking the Settings gear button and then "edit list filters)
+- Step 3: Select fields to display. Click the Settings gear button & "select fields to display." From there, move the fields to the visible fields section. This will add the fields that will show in your list view in Campaigns. Click Save
+
+Once saved, you can use the list to add your recipients to a Campaign.
+
+### What causes auto-email errors in Campaigns?
+
+Automatic email errors in Campaigns can occur when Yesware loses its connection with your email client.
+
+#### Outlook: Auto-Email Error – "Unspecified Error"
+If you're seeing an "Unspecified Error" in Outlook Campaigns, follow these steps to reset your connection:
+1. In your **Outlook Inbox**, open the **Yesware Sidebar**.
+2. Select the **Menu** tab.
+3. Scroll down and click **Sign out** where it says *"Logged in As."*
+4. A new activation window will appear. Re-sign in using your **Microsoft credentials**.
+5. Then go to app.yesware.com, click your **email address** in the top right-hand corner, select **Log out**, then log back in when prompted.
+
+After completing these steps, return to your Campaign and click **"Try Again"** on the error message.
+
+#### Gmail: Multiple Automatic Email Errors
+If you encounter multiple automatic email errors in Gmail Campaigns, it often means your Gmail client needs to **reconfirm identity permissions with Yesware**.
+
+To resolve this, contact **support@yesware.com** for assistance with reconnecting your Gmail account.
+
+### Why did my campaign fail to start?
+
+When managing multiple campaigns, you may encounter a situation where one or more recipients in your current list are also active in another campaign. It's important to note that recipients cannot be active in more than one campaign at the same time.
+
+To resolve this issue, ensure that recipients complete their engagement in the other campaign, or you can manually remove the user from the campaign. Once this is done, you can successfully initiate the new campaign with the intended recipients.
+
+
+

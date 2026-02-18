@@ -3,25 +3,21 @@ title: CRM Fields
 sidebar_label: CRM Fields
 ---
 ## What are CRM Fields?
+
 CRM Fields allow you to add personalized data fields to your contact and company records in your app. These fields can store extra information that isn’t included in the default setup—such as birthdays, service preferences, or internal tracking notes. You can create and organize fields based on your business needs and the types of information you collect.
 
-This feature is useful for businesses that want to go beyond standard fields like phone number or address. It helps centralize key client or company details directly in your app, so you don’t have to manage separate spreadsheets or systems.
+This feature is useful for businesses that want to go beyond standard fields like phone number or address. It helps centralize key contact or company details directly in your app, so you don’t have to manage separate spreadsheets or systems.
 
 ![Custom Fields inside Administration](../img/administration_custom_field_contact.png)
 
 ## Why are CRM Fields Important?
-Default contact and company records often don’t include everything your business needs to track. For example, you might want to log whether a client has set an appointment, track dietary preferences, or store internal status flags. Without custom fields, this data may be lost or siloed outside your app.
 
-Custom fields let you tailor your system so it works for **your business**, keeping all important client information accessible and organized in one place.
+Default contact and company records often don’t include everything your business needs to track. For example, you might want to log whether someone has set an appointment, track dietary preferences, or store internal status flags. Without custom fields, this data may be lost or siloed outside your app.
 
-## Table of Contents
-- [What's Included with CRM Fields?](#whats-included-with-crm-fields)
-- [How to Create a CRM Field](#how-to-create-a-crm-field)
-- [Field Types and Options](#field-types-and-options)
-- [Managing and Editing CRM Fields](#managing-and-editing-crm-fields)
-- [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
+Custom fields let you tailor your system so it works for **your business**, keeping all important contact information accessible and organized in one place.
 
 ## What's Included with CRM Fields?
+
 - Custom field creation for **Contacts** and **Companies**
 - Multiple field types: `String`, `Date`, `Boolean`, `Phone number`, `String List`, and more
 - Searchable and editable fields in the Contacts and Companies sections
@@ -46,7 +42,7 @@ System fields (like company name or phone number) cannot be edited or deleted. C
 
 ## Field Types and Options
 
-The field type has a significant effect on the type of data that can be stored in the custom field and how the data can be filtered and sorted. 
+The field type has a significant effect on the type of data that can be stored in the custom field and how the data can be filtered and sorted.
 
 When creating a custom field, you can choose from the following field types:
 
@@ -57,7 +53,7 @@ When creating a custom field, you can choose from the following field types:
 - **Phone number** – Formatted phone number input
 - **Date** – Calendar date only (e.g., birthday)
 - **Date and time** – Combined date and time (e.g., next meeting)
-- **True or false** – Boolean yes/img/no field
+- **True or false** – Boolean yes/no field
 
 Use `String List` when you want to associate multiple values with a single field (e.g., preferred services).
 
@@ -79,9 +75,8 @@ Some ways you might use custom fields in your app include:
 - **Segmenting email lists** by number of visits — for example, sending a "new customer" campaign to contacts with fewer than 3 visits, and a loyalty offer to those with 3+ visits.
 - **Tracking birthdays** for contacts so you can automatically send a birthday greeting or coupon.
 - **Logging service preferences**, such as favorite haircut style or dietary restrictions for event bookings.
-- **Flagging high-value clients** with a VIP true/img/false field to prioritize outreach or provide special offers.
+- **Flagging high-value contacts** with a VIP true/false field to prioritize outreach or provide special offers.
 - **Storing secondary contact information**, like an emergency contact name or backup phone number, especially useful in childcare or health-related services.
-
 
 ### Frequently Asked Questions (FAQs)
 

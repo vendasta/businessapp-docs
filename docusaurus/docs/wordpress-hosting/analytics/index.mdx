@@ -1,0 +1,169 @@
+---
+title: Analytics Overview
+sidebar_label: Analytics Overview
+description: Track and understand your WordPress site performance with built-in analytics. View visitor metrics, traffic sources, and connect your own Google Analytics account for deeper insights.
+sidebar_position: 1
+tags: [wordpress-hosting, analytics, google-analytics, metrics, tracking]
+keywords: [analytics dashboard, Google Analytics, site metrics, visitor tracking, traffic sources, page views]
+---
+
+## What is Analytics?
+
+Analytics helps you understand how visitors interact with your website. WordPress Hosting includes a built-in analytics dashboard that displays key visitor metrics and traffic insights, giving you a clear view of your site's performance at a glance.
+
+You can use the default analytics view provided by WordPress Hosting, or connect your own Google Analytics account for more detailed and accurate data. The dashboard shows metrics like active users, page views, session duration, and where your traffic is coming from.
+
+## Why is Analytics important?
+
+* Track how many people visit your site
+* Understand which pages are most popular
+* See where your visitors come from (search engines, social media, direct visits)
+* Measure engagement with metrics like bounce rate and session duration
+* Make data-driven decisions to improve your site
+* Monitor your site's performance over time
+
+## What's included
+
+- **[Google Analytics View](google-analytics-view.md)**: Learn about the built-in analytics dashboard and available metrics
+- **[Add your own Google Analytics account](add-your-own-analytics-account.md)**: Connect your personal Google Analytics account for more accurate tracking
+
+## Key Metrics Explained
+
+The analytics dashboard displays several important metrics to help you understand your site's performance:
+
+### Active Users
+The number of distinct users who visited your site or app. This shows how many unique visitors you have.
+
+### Sessions
+The number of sessions that began on your site. A session starts when a user arrives and ends after 30 minutes of inactivity or when they leave.
+
+### Average Session Duration
+The average amount of time users spend on your site per session. Longer durations typically indicate higher engagement.
+
+### Page Views
+The total number of pages or screens that users viewed. This helps you understand which content is most popular.
+
+### Page Views per Session
+The average number of pages users view during a single session. Higher numbers suggest users are exploring more of your site.
+
+### New Users
+The number of users who interacted with your site for the first time. This helps you track growth and reach.
+
+### Bounce Rate
+The percentage of users who left your website after viewing only one page. Lower bounce rates generally indicate better engagement.
+
+### Engaged Sessions
+The number of sessions that lasted longer than 10 seconds, had a conversion event, or included 2 or more page views. This metric helps identify truly engaged visitors.
+
+## Traffic Sources
+
+The dashboard also shows where your visitors are coming from:
+
+* **Traffic sources**: A breakdown of how users found your site (organic search, direct visits, social media, referrals, etc.)
+* **Top referral sources**: Specific websites that drive traffic to your site
+
+## Default vs. Custom Google Analytics
+
+WordPress Hosting offers two ways to view analytics:
+
+### Default Google Analytics View
+When you first set up your site, WordPress Hosting can collect analytics data using a shared Google Analytics ID. While this provides basic metrics, the data may not be as accurate because the ID is shared across multiple sites.
+
+### Custom Google Analytics View (Recommended)
+Connecting your own Google Analytics account provides the most accurate data. You'll get:
+* More refined traffic metrics
+* Accurate data specific to your domain
+* The ability to toggle the amount of data shown
+* Access to 12 months of historical data (if available)
+
+**We strongly encourage connecting your own Google Analytics view** for the most accurate insights into your site's performance.
+
+## How to Get Started
+
+1. **View Default Analytics**: If you're using the default view, you'll see basic metrics in the Analytics dashboard. Look for a prompt at the top if you need to connect a Google Analytics view.
+
+2. **Connect Your Own Account**: For more accurate data, connect your own Google Analytics account:
+   * Go to **Business App > Administration > Connections** to connect Google Analytics
+   * Or add your Tracking ID in **WordPress Dashboard > Settings > General > Custom Google Analytics Tracking ID**
+
+3. **Review Your Metrics**: Once connected, you can view your analytics data for the past 12 months and going forward.
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Why should I connect my own Google Analytics account instead of using the default view?</summary>
+
+Connecting your own Google Analytics account provides more accurate data because:
+* The default view uses a shared Google Analytics ID across multiple sites, which can aggregate data incorrectly
+* Your own account tracks data specific to your domain only
+* You get access to more refined metrics and filtering options
+* You can view 12 months of historical data if available
+
+</details>
+
+<details>
+<summary>How much historical data will I see when I connect my Google Analytics account?</summary>
+
+When you connect your own Google Analytics view, WordPress Hosting pulls in data for the past 12 months (if available). Going forward, you'll continue to see real-time and historical data as it's collected.
+
+</details>
+
+<details>
+<summary>I connected my Google Analytics account but there's no data showing. What's wrong?</summary>
+
+The most common issue is connecting to the incorrect Google Analytics view. Make sure:
+* The view you connected has data in Google Analytics
+* The view is properly configured with data collection enabled
+* You've waited a few minutes for data to sync
+
+If you're still not seeing data, verify your connection in **Business App > Administration > Connections** and ensure your Tracking ID is correctly entered in **Settings > General**.
+
+</details>
+
+<details>
+<summary>Can I use Google Analytics plugins instead of the built-in method?</summary>
+
+While plugins are available, they often fail to track data properly in the WordPress Hosting environment. We recommend using the built-in Tracking ID field in **Settings > General** or manually adding the script in Divi Theme Options for the most reliable tracking.
+
+</details>
+
+<details>
+<summary>What time period does the analytics dashboard show?</summary>
+
+The analytics dashboard includes a date range selector (default: "Last 12 months") that allows you to filter data by time period. You can adjust this to view different time ranges as needed.
+
+</details>
+
+<details>
+<summary>How do I disable the default Google Analytics tracking for GDPR compliance?</summary>
+
+WordPress Hosting includes default Google Analytics tracking on all sites. To disable it for GDPR compliance:
+
+1. Go to your WordPress Hosting dashboard
+2. Click on **Advanced Tools**
+3. Toggle the option for **Google Analytics Integration** to off
+4. Click **Accept**
+
+When disabled, the tracking code is removed from your site, and any data stored on our servers from Google Analytics is deleted. Analytics charts in the interface will also be hidden. You can toggle it back on at any time if needed.
+
+For more detailed information, see [Toggle the Default Google Analytics Tracking On/Off](../advanced-tools/toggle-the-default-google-analytics-tracking-onoff.md) in Advanced Tools.
+
+</details>
+
+<details>
+<summary>What is a sitemap and why does it matter?</summary>
+
+A **sitemap** is a blueprint of your website that helps search engines like Google find and index all the pages on your site.
+
+There are two main types:
+* **XML sitemap** – Used by search engines to crawl your website effectively
+* **HTML sitemap** – Helps visitors navigate your site content
+
+To check if you have a sitemap:
+* Visit `https://yourdomain.com/sitemap.xml`
+
+If one isn't available, use a plugin like **Yoast SEO** or a tool such as [xml-sitemaps.com](https://www.xml-sitemaps.com/) to generate it.
+
+Sitemaps are especially useful for new websites, websites with few backlinks, or sites with deep page structures.
+
+</details>

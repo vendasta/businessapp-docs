@@ -1,7 +1,6 @@
 ---
 title: Campaigns
 description: Create, send, and track email marketing campaigns in Business App. Build audiences with CRM contacts and lists, personalize emails, and improve deliverability.
-slug: /campaigns
 keywords: [Business App campaigns, email marketing campaigns, create email campaign, send email campaign, campaign performance, marketing automation, CRM contacts lists]
 tags: [campaigns, email marketing, automation, crm]
 ---
@@ -38,7 +37,7 @@ Campaigns help you send the right message to the right people at the right time.
 5. Preview, then publish when ready
 
 :::tip Need inspiration?
-Check out our [Campaign Examples](./campaign-examples.mdx) for ready-to-use nurture sequences across different industries.
+Check out our [Campaign Examples](campaign-examples.mdx) for ready-to-use nurture sequences across different industries.
 :::
 
 ## Troubleshooting
@@ -71,9 +70,15 @@ Check out our [Campaign Examples](./campaign-examples.mdx) for ready-to-use nurt
 ## Frequently Asked Questions (FAQs)
 
 <details>
-<summary> How many emails can I send in a month?</summary>
+<summary>How many emails can I send in a month?</summary>
 
 A business can send up to 10,000 emails per month by default. Additional email sending may be available for purchase.
+</details>
+
+<details>
+<summary>Is there a daily sending limit?</summary>
+
+Yes. Even with purchased email allotments, there is a maximum daily quota of 300,000 emails per day per business. This limit resets every 24 hours.
 </details>
 
 <details>
@@ -91,7 +96,7 @@ Use the Preview option in the campaign builder to select a contact and see merge
 <details>
 <summary>Where do I change the `From` name and email?</summary>
 
-Go to Administration > Email Settings to configure the default sender name and email used by campaigns. See: [Email Configuration](../administration/email_configuration.md)
+Go to Administration > Email Settings to configure the default sender name and email used by campaigns. See: [Email Configuration](../administration/email/email-configuration)
 </details>
 
 <details>
@@ -115,13 +120,13 @@ Yes. From a contact profile, use the `Campaigns` section to schedule, pause, or 
 <details>
 <summary>Can form submissions add people to campaigns?</summary>
 
-Yes. Build an automation that triggers "When a form is submitted" to add the contact to a campaign or start a nurture workflow. See: [Forms](../crm/forms.md) and [Automations](../automations/index.md)
+Yes. Build an automation that triggers "When a form is submitted" to add the contact to a campaign or start a nurture workflow. See: [Forms](../crm/forms/index.md) and [Automations](../automations/index.md)
 </details>
 
 <details>
 <summary>Where do I troubleshoot email delivery issues?</summary>
 
-Use `Administration` > `Email History` to review sent emails and statuses, then verify domain authentication and deliverability settings. See: [Email History](../administration/email_history.md) and [Email Configuration](../administration/email_configuration.md)
+Use `Administration` > `Email History` to review sent emails and statuses, then verify domain authentication and deliverability settings. See: [Email history](../administration/email/email-history) and [Email Configuration](../administration/email/email-configuration)
 </details>
 
 <Head>
@@ -136,6 +141,14 @@ Use `Administration` > `Email History` to review sent emails and statuses, then 
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "A business can send up to 10,000 emails per month by default. Additional email sending may be available for purchase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a daily sending limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Even with purchased email allotments, there is a maximum daily quota of 300,000 emails per day per business. This limit resets every 24 hours."
           }
         },
         {

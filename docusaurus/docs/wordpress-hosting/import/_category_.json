@@ -4,8 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Bring an existing site into WordPress Hosting.",
-    "slug": "/wordpress-hosting/category/import"
+    "type": "doc",
+    "id": "wordpress-hosting/import/index"
   }
 }

@@ -4,8 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Start here for key concepts and getting started resources.",
-    "slug": "/wordpress-hosting/category/overview"
+    "type": "doc",
+    "id": "wordpress-hosting/overview/index"
   }
 }

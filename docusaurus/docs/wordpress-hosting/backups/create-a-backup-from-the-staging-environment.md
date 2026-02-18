@@ -1,6 +1,6 @@
 ---
-title: "Create a backup from the staging environment"
-sidebar_label: "Create a backup from the staging environment"
+title: "Backup from Staging"
+sidebar_label: "Backup from Staging"
 description: "WordPress Hosting users can create a backup from the staging environment. Users can make their website creation process smoother than ever before with the flex"
 ---
 

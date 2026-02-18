@@ -4,8 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Developer utilities, logs, and configuration for advanced use cases.",
-    "slug": "/wordpress-hosting/category/advanced-tools"
+    "type": "doc",
+    "id": "wordpress-hosting/advanced-tools/index"
   }
 }

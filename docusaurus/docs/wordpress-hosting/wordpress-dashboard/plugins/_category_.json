@@ -1,11 +1,7 @@
 {
     "label": "Plugins",
-    "position": 5,
+    "position": 9,
     "collapsible": true,
-    "collapsed": true,
-    "link": {
-      "type": "generated-index",
-      "description": "Plugins"
-    }
+    "collapsed": true
 }
   
