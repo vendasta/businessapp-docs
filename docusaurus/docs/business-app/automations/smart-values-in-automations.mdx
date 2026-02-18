@@ -1,0 +1,32 @@
+---
+title: Smart values in automations
+description: Use smart values to insert contact details, task IDs, and other automation data into messages automatically.
+sidebar_position: 5
+---
+
+# Smart values in automations
+
+## What are smart values?
+
+Smart values (also called dynamic values) are placeholders you add to message content—such as email body or SMS text—that are replaced with real data when the automation runs. For example, you can insert the contact's name, a task ID from the trigger, or a form response. That way your messages stay personalized and accurate without typing each value manually.
+
+## How to use them
+
+You can use smart values in any step that sends or displays text: **Send SMS**, **Send a plain text email**, and other messaging actions in the Automation Builder.
+
+- **In the Builder:** When you're editing the message (body, subject line, or other supported fields), use the **dynamic field inserter** to pick a value, or type the smart value syntax directly.
+- **Where they come from:** Values are based on the trigger and previous steps in the workflow (e.g. the contact who triggered it, or a task created in an earlier step).
+
+For steps and options, see [Messaging actions](./workflows/action-messaging).
+
+## Syntax and example
+
+Smart values use curly braces and dot notation. One example:
+
+`{.WorkflowStep.trigger.task_id}` — inserts the task ID from the trigger. When the automation runs, the recipient sees the actual task ID in the email or SMS instead of the placeholder.
+
+You can type this directly into the message field or use the dynamic field inserter in the step to see and insert available values for that workflow.
+
+## Tip
+
+The automation must be turned on for smart values to be filled when the message is sent. If a value isn't available (e.g. the trigger didn't provide it), the placeholder may be blank or show a fallback depending on the field.
