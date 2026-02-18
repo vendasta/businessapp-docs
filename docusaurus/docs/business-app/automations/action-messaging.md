@@ -60,25 +60,23 @@ Sending SMS via automations requires Conversations AI | Pro.
 - Keep messages short and actionable; include your business name the first time you text a contact
 - Respect consent and opt-out rules; use Conditions to limit when the step runs (e.g. only for new leads)
 
-## Example
+### Example
 
-**Scenario:** You want the sales manager to get an SMS as soon as someone submits the "Request a Quote" form, so high-intent leads get a fast response.
+**Scenario:** When Web Chat captures a lead, the person in charge of handling that lead (e.g. a sales rep or owner) gets an SMS right away. The message greets them by name, notifies them about the new lead, and mentions that a task was created in the CRM and a link was emailed.
 
-**Trigger:** When a form is submitted (Request a Quote)
+**Trigger:** When Web Chat captures a lead
 
-**Action:** Send an SMS message to a phone number (sales manager’s number), with a short message that includes dynamic fields for the contact name and project details
+**Action:** Send an SMS message via Conversations to the phone number of the person handling the lead. In the step, add SMS content that greets the recipient by name using the dynamic field inserter (e.g. the assigned rep’s or owner’s name from the CRM). Include that they have a new lead and that a task was created in the CRM and a link was emailed.
 
-**How it works:** When the form is submitted, the automation runs and sends an SMS to the number you configured. The message can include form responses or contact data via the dynamic field inserter, so the recipient has context without opening the CRM.
+**How it works:** When Web Chat captures a lead, the automation runs and sends the SMS to the number you configured (e.g. the sales person’s or owner’s). The dynamic field pulls the recipient’s name so the message is personalized—for example, “Hi Sarah, you have a new lead!”—and they’re reminded about the CRM task and email.
 
-**Use case:** Ensures high-intent leads are followed up quickly while keeping the workflow automatic.
+**Use case:** Ensures the right person is notified immediately when a lead comes from chat, with a personalized greeting and a reminder about the CRM task and email.
 
-{/* TODO: Add screenshot - Messaging automation workflow (form submitted → Send SMS to phone number → End)
 <div style={{textAlign: 'center'}}>
 
-![Messaging automation workflow: form submitted trigger, Send SMS to phone number action, then End.](./img/messaging-action-workflow.png)
+<img src={require('./img/automation-SMS.png').default} alt="Automation workflow: When Web Chat captures a lead trigger, Send an SMS message via Conversations step with SMS content and dynamic fields, then End." width="50%" />
 
 </div>
-*/}
 
 ## Send plain-text email
 
@@ -86,11 +84,17 @@ Sending SMS via automations requires Conversations AI | Pro.
 Requires Conversations Pro.
 :::
 
-**Setup:** After adding the action, choose **Send a plain text email**, then set the Subject and Body and add dynamic fields if needed.
+**Setup:** After adding the action, choose **Send a plain text email** (via Inbox or Conversations), then set the Subject and Body and add dynamic fields if needed.
 
 **Tips:**
 - Use clear subjects and one primary call-to-action; personalize with the contact’s name and relevant details
 - Combine with Conditions to target the right audience
+
+<div style={{textAlign: 'center'}}>
+
+<img src={require('./img/automation-plain text email.png').default} alt="Automation workflow: When Newsletter signup form is submitted for a contact, Send a plain text email via Inbox or Conversations, then End." width="50%" />
+
+</div>
 
 ## Send WhatsApp template
 
