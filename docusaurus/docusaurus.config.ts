@@ -51,7 +51,7 @@ const config: Config = {
       attributes: {
         type: 'text/javascript',
       },
-      innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-1Y49QBYD4L');`,
+      innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M8CQT5');`,
     },
     // Webchat widget script (simple approach)
     {
@@ -89,6 +89,9 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
+          // Show git-based last update metadata (Docker build now includes .git)
+          showLastUpdateTime: true,
+          // Note: Docusaurus will gracefully skip git metadata if .git is unavailable
         },
         blog: false,
         theme: {
@@ -103,56 +106,98 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
+          // Specific redirects for renamed paths
           {
             from: '/docs/ai/ai-workforce/ai-receptionist',
+            to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
+          },
+          {
+            from: '/ai/ai-workforce/ai-receptionist',
             to: '/business-app/ai/ai-workforce/ai-chat-receptionist/',
           },
           // Legacy Listing Sync permalink -> new Local SEO path
           {
             from: '/vendasta-products/local-seo/listing-sync',
-            to: '/local-seo/listing-sync/',
+            to: '/local-seo/listing-sync',
+          },
+          // Renamed: hide Vendasta's pre-built templates -> hide pre-built templates (gray-label)
+          {
+            from: '/wordpress-hosting/templates/hide-vendastas-pre-built-templates-from-clients',
+            to: '/wordpress-hosting/templates/hide-pre-built-templates',
+          },
+          // Email Configuration moved under Email category (single Email section in sidebar)
+          {
+            from: '/business-app/administration/email_configuration',
+            to: '/business-app/administration/email/email-configuration',
           },
           // Legacy section redirects - redirect top-level paths only
-          // Note: Only include trailing slash versions to avoid conflicts
+          // Note: Do NOT include both trailing slash and non-trailing slash versions here.
+          // The redirects plugin normalizes paths, and with directory-style output this can
+          // cause duplicate writes to the same `build/<path>/index.html` (EEXIST).
           {
             from: '/businessapp',
-            to: '/business-app/',
+            to: '/business-app',
           },
           {
             from: '/adintel',
-            to: '/ad-intel/',
+            to: '/ad-intel',
           },
           {
             from: '/localseo',
-            to: '/local-seo/',
+            to: '/local-seo',
           },
           {
             from: '/reputationmanagement',
-            to: '/reputation-management/',
+            to: '/reputation',
+          },
+          {
+            from: '/reputation-management',
+            to: '/reputation',
+          },
+          {
+            from: '/docs/reputation-management',
+            to: '/reputation',
           },
           {
             from: '/socialmarketing',
-            to: '/social-marketing/',
+            to: '/social-marketing',
           },
           {
             from: '/wordpresshosting',
-            to: '/wordpress-hosting/',
+            to: '/wordpress-hosting',
+          },
+          // Social Marketing getting-started restructure
+          {
+            from: '/social-marketing/getting-started/getting-started-with-social-marketing',
+            to: '/social-marketing/getting-started-with-social-marketing',
+          },
+          // Executive Report: lead analytics merged into leads
+          {
+            from: '/business-app/executivereport/executive_report_lead_analytics',
+            to: '/business-app/executivereport/leads',
           },
         ],
         createRedirects(existingPath) {
+          // Only create redirects for business-app paths
           if (!existingPath.startsWith('/business-app/')) {
             return undefined;
           }
 
           const remainder = existingPath.replace('/business-app/', '');
           const [section] = remainder.split('/');
+          
+          // Only create redirects for legacy business app sections
           if (!legacyBusinessAppSections.includes(section)) {
             return undefined;
           }
 
+          // Create redirects from both root-level and /docs/ paths
+          // Handle both trailing slash and non-trailing slash versions
           const legacyPath = `/${remainder}`;
           const docsLegacyPath = `/docs/${remainder}`;
           const redirects = [legacyPath];
+          
+          // Add /docs/ version if different
           if (docsLegacyPath !== legacyPath) {
             redirects.push(docsLegacyPath);
           }

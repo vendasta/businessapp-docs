@@ -1,4 +1,9 @@
 {
   "label": "Posts",
-  "position": 3
-} 
+  "position": 3,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "social-marketing/posts/index"
+  }
+}

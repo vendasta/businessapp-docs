@@ -1,6 +1,6 @@
 ---
-title: "Emails failing with a \"Deferred\" status"
-sidebar_label: "Emails failing with a \"Deferred\" status"
+title: "Deferred Status"
+sidebar_label: "Deferred Status"
 description: "A deferred event, or deferral, is simply an event SendGrid has received back from the receiving server:  \n \n  What does it tell us?  \n \n   That the receiving"
 ---
 

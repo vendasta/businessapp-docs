@@ -1,11 +1,6 @@
 {
   "label": "Analytics",
-  "position": 5,
+  "position": 3,
   "collapsible": true,
-  "collapsed": true,
-  "link": {
-    "type": "generated-index",
-    "description": "View and understand your WordPress site analytics.",
-    "slug": "/wordpress-hosting/category/analytics"
-  }
+  "collapsed": true
 }

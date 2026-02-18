@@ -4,35 +4,27 @@ sidebar_label: "Google Analytics View"
 description: "The Google Analytics view in WordPress Hosting Pro allows Partners and their clients to view their Top Traffic Sources and Page View metrics within the produc"
 ---
 
-The Google Analytics view in WordPress Hosting Pro allows Partners and their clients to view their Top Traffic Sources and Page View metrics within the product. Some available metrics include:
+The Google Analytics view in WordPress Hosting Pro allows you to view your Top Traffic Sources and Page View metrics within the product. Some available metrics include:
 
-*   Total Visitors
-*   Pageviews
-    
-*   Pages per Session
-    
-*   Bounce Rate
-    
-
-*   % of New Visits
-    
-*   Total Visits
-    
-*   Traffic Source
-    
-*   Top Referral Sources
-    
+* Total Visitors
+* Pageviews
+* Pages per Session
+* Bounce Rate
+* % of New Visits
+* Total Visits
+* Traffic Source
+* Top Referral Sources
 
 ### How to add your own Google Analytics account
 
-See [Add your own analytics account](./add-your-own-analytics-account) for steps on how to add your Google Analytics account
+See [Add your own analytics account](add-your-own-analytics-account.md) for steps on how to add your Google Analytics account
 
 ### How does the Google Analytics view work?
 
 When you set up a site on WordPress Hosting Pro, you have the option to either allow the platform to collect GA data for you, or you could connect your own GA account view.
 
-1.  **Default Google Analytics pulled in by the system**: Note, that if there is a prompt at the top informing you to connect a GA view, you are using the default view and not a custom view.![mceclip0.png](./img/4406961519255-54e96795a8.png)
-2.  **Custom Google Analytics View**: note for a custom connected view, you get the option to toggle the amount of data shown at the top and also more refined traffic metrics.![mceclip1.png](./img/4406961519255-a5f3988593.png)
+1. **Default Google Analytics pulled in by the system**: Note, that if there is a prompt at the top informing you to connect a GA view, you are using the default view and not a custom view.![mceclip0.png](img/4406961519255-54e96795a8.png)
+2. **Custom Google Analytics View**: note for a custom connected view, you get the option to toggle the amount of data shown at the top and also more refined traffic metrics.![mceclip1.png](img/4406961519255-a5f3988593.png)
 
 ### Which should I use?
 
@@ -44,4 +36,4 @@ When customers connect their own Google Analytics views, the platform pulls in d
 
 ### My client connected GA but there is no data
 
-Historically, the most likely issue resulting from this is Partners and their clients are connected to the incorrect view. In Google Analytics (outside of Vendasta), users can configure their own view, with specific data collection and filtering behavior. As long as users connect a view that has data, the platform will pull the data in; in addition, it will pull in 12 months' worth of data upon connection.
+Historically, the most likely issue is being connected to the incorrect view. In Google Analytics, you can configure your own view with specific data collection and filtering behavior. As long as you connect a view that has data, the platform will pull the data in; in addition, it will pull in 12 months' worth of data upon connection.

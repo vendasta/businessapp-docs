@@ -67,11 +67,12 @@ The set-up card will disappear when you complete each item
 
 
 ### Setup steps may include:
-- Connecting your Google Business Profile to start responding to reviews and syncing data.
-- Setting up your AI-powered web chat widget to capture leads directly from your website.
-- Importing customer contacts for easier messaging and review collection.
-- Registering for SMS to enable text conversations with your customers.
-- Exploring your store to add more tools as your needs grow.
+- **Meeting your AI Workforce**: Put lead capture on autopilot and engage customers around the clock. Start a chat and see what an AI employee can take off your plate. Navigate to AI > AI Workforce to chat with and configure your AI Employees.
+- **Connecting your Google Business Profile**: Collect and respond to Google Reviews, sync your Business Profile, and more.
+- **Setting up and installing Web Chat**: Instantly engage website visitors with AI trained on your business. Install the chat widget to get leads in Conversations.
+- **Connecting your business system**: Import existing customers from platforms like QuickBooks to automatically request reviews and manage relationships all in one place.
+- **Registering for SMS**: Register to send SMS messages to your customers and enable text conversations.
+- **Enabling push notifications** (Mobile App only): Don't miss important customer messages - manage your notifications to always be in the know.
 
 Each step is designed to show you quick wins and real value from day one.
 
@@ -86,11 +87,11 @@ Want to experience Business App in your preferred language? This guide offers a 
 1. Log in to Business App.
 2. Click your profile name in the top-right corner, then click the current language.
 
-   ![Language dropdown](./img/language.png)
+   ![Language dropdown](img/language.png)
 
 3. Select your preferred language from the available list.
 
-   ![Preferred language list](./img/preferred_language_list.png)
+   ![Preferred language list](img/preferred_language_list.png)
 
 ---
 

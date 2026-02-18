@@ -1,0 +1,9 @@
+{
+  "label": "NPS",
+  "position": 5,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "reputation/nps/index"
+  }
+}

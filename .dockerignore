@@ -22,7 +22,6 @@ docusaurus/build/
 *.log
 
 # Git
-.git/
 .gitignore
 .gcloudignore
 

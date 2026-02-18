@@ -4,8 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Troubleshoot outgoing email and delivery from your site.",
-    "slug": "/wordpress-hosting/category/email-history"
+    "type": "doc",
+    "id": "wordpress-hosting/email-history/index"
   }
 }

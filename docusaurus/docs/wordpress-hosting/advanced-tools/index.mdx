@@ -1,0 +1,282 @@
+---
+title: Advanced Tools
+sidebar_label: Advanced Tools
+description: "Developer utilities, logs, and configuration tools for advanced WordPress site management. Access PHP logs, manage databases, control caching, and configure security settings."
+sidebar_position: 1
+tags: [wordpress-hosting, advanced-tools, developer-tools, logs, database, caching, security]
+keywords: [WordPress advanced tools, PHP logs, phpMyAdmin, caching, activity logs, Google Analytics, captcha, WordPress debugging]
+---
+
+## What are Advanced Tools?
+
+Advanced Tools in WordPress Hosting provide developer utilities, logging capabilities, and configuration options for managing your WordPress site at a deeper level. These tools help you troubleshoot issues, monitor activity, manage databases, control caching behavior, and configure security settings.
+
+Advanced Tools are designed for users who need more control over their WordPress site's technical aspects, including debugging, database management, and performance optimization.
+
+## Why are Advanced Tools important?
+
+* **Troubleshooting**: Access logs and activity records to diagnose and fix issues quickly
+* **Performance Control**: Manage caching to see changes instantly or optimize site speed
+* **Database Management**: Direct access to your site's database for advanced operations
+* **Security Configuration**: Set up captchas, reCAPTCHAs, and advanced login options
+* **Monitoring**: Track site activity and changes through comprehensive logging
+* **Analytics Control**: Manage Google Analytics tracking settings for GDPR compliance
+
+## What's included
+
+- **[Activity Logs](activity-logs-in-wordpress-hosting-pro.md)**: Track actions performed on your staging site, including resets, backups, and pushes to live
+- **[Bypass Caching to See Changes](see-changes-on-your-site-instantly-with-new-caching-tools.md)**: Temporarily bypass caching or manually flush your site cache to view your most recent changes immediately
+- **[How to Find PHP Logs](how-to-find-php-logs.md)**: Access PHP logs through the Advanced Tools section for troubleshooting and debugging
+- **[What is phpMyAdmin?](what-is-phpmyadmin.md)**: Manage your WordPress database using the phpMyAdmin web-based interface
+- **[Toggle Google Analytics Tracking](toggle-the-default-google-analytics-tracking-onoff.md)**: Enable or disable default Google Analytics tracking for GDPR compliance
+- **[Captchas, reCAPTCHAs, and Advanced Login](advanced-login.md)**: Configure captcha protection and advanced login options for your WordPress admin page
+
+## Related Platform Features
+
+- **[Cron Jobs](../wordpress-dashboard/cron-jobs-on-wordpress-hosting.md)**: Learn about WordPress Hosting Pro's automated scheduled tasks system
+
+## Key Advanced Tools Features
+
+### Logging and Monitoring
+
+**Activity Logs** provide a comprehensive record of staging site activities, including:
+- Reset staging from template
+- Reset staging from backup
+- Push staging to live
+
+**PHP Logs** help you troubleshoot issues by providing detailed error and debug information directly from your WordPress Hosting Pro dashboard.
+
+### Caching Management
+
+Control how caching affects your site:
+- **Bypass Cache**: Temporarily skip caching to see changes immediately using `/?skip` URL parameter
+- **Caching Tools**: Use built-in tools to see changes instantly without waiting for cache to clear
+
+### Database Management
+
+**phpMyAdmin** provides a powerful web-based interface for:
+- Viewing and editing database content
+- Backing up and restoring databases
+- Resetting user passwords
+- Running SQL queries
+- Managing database structure
+
+### Security and Configuration
+
+**Advanced Login Options**:
+- Configure captcha and reCAPTCHA protection
+- Control access to `/wp-admin` login page
+- Set up enhanced captcha with failed login attempt thresholds
+
+**Google Analytics Control**:
+- Toggle default Google Analytics tracking on/off
+- Ensure GDPR compliance
+- Manage analytics data collection
+
+## How to Get Started
+
+1. **Access Advanced Tools**: Navigate to your WordPress Hosting Pro dashboard and select your website
+2. **Choose Your Tool**: Select the specific tool you need from the Advanced Tools section
+3. **Follow Documentation**: Refer to the individual guides for each tool to learn how to use them effectively
+4. **Use with Caution**: Advanced Tools provide powerful capabilities—always back up your site before making database changes or significant configuration updates
+
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>When should I use Advanced Tools?</summary>
+
+Use Advanced Tools when you need to:
+- Troubleshoot site issues or errors
+- Monitor staging site activity
+- Manage your site's database directly
+- Control caching behavior
+- Configure security settings like captchas
+- Adjust Google Analytics tracking for compliance
+
+</details>
+
+<details>
+<summary>Are Advanced Tools safe to use?</summary>
+
+Most Advanced Tools are safe when used correctly, but some require caution:
+- **phpMyAdmin**: Always back up your database before making changes
+- **Activity Logs**: Read-only, safe to use anytime
+- **PHP Logs**: Read-only, safe to use anytime
+- **Caching Tools**: Safe to use, but understand the impact on site performance
+- **Database Changes**: Always create backups before modifying database content
+
+</details>
+
+<details>
+<summary>Do I need technical knowledge to use Advanced Tools?</summary>
+
+Some tools require more technical knowledge than others:
+- **Activity Logs** and **PHP Logs**: Minimal technical knowledge needed—just read and understand the information
+- **Bypass Caching**: Very simple—just add `/?skip` to your URL
+- **phpMyAdmin**: Requires understanding of databases and SQL
+- **Security Configuration**: Moderate technical knowledge helpful but not required
+
+</details>
+
+<details>
+<summary>Can I break my site using Advanced Tools?</summary>
+
+Some Advanced Tools can potentially cause issues if used incorrectly:
+- **phpMyAdmin**: Incorrect database changes can break your site—always back up first
+- **Caching Tools**: Generally safe, but disabling caching may slow your site
+- **Activity Logs** and **PHP Logs**: Read-only, cannot break your site
+- **Security Settings**: Incorrect configuration may lock you out—follow documentation carefully
+
+Always back up your site before making significant changes through Advanced Tools.
+
+</details>
+
+<details>
+<summary>How do I use SFTP to access my site's file system?</summary>
+
+WordPress Hosting Pro allows you to connect via **SFTP** (Secure File Transfer Protocol), which encrypts your connection for secure file access.
+
+**Step 1: Add an SFTP key pair**
+
+1. Go to your WordPress Hosting **Pro Dashboard** and find the **SFTP section**.
+2. Click **Add Key**, name your key, and generate the key pair.
+3. **Download the private key** associated with your site. This is required to authenticate your SFTP session.
+
+**Step 2: Connect using FileZilla (or another SFTP client)**
+
+1. Open FileZilla and go to **File > Site Manager > New Site**.
+2. Configure the connection:
+   * **Host**: `sftp.websitepro.hosting`
+   * **Port**: `22`
+   * **Protocol**: `SFTP – SSH File Transfer Protocol`
+   * **Logon Type**: Key File
+   * **User**: Your provided username
+   * **Key file**: Browse and select your downloaded private key
+3. Click **Connect**
+
+Once connected, you'll be able to upload files, remove plugins/themes, and manage your site directly.
+
+</details>
+
+<details>
+<summary>Can I log in to WordPress Hosting Pro SFTP with a username and password?</summary>
+
+No. WordPress Hosting Pro does **not support password-based SFTP access**.
+
+To connect over SFTP, you must:
+* Generate a **key file** from the WordPress Hosting Pro dashboard
+* Use an SFTP client like FileZilla with your username and key file
+
+> For setup steps, see: How to use SFTP to access the file system in the WordPress Hosting dashboard under Advanced Tools.
+
+</details>
+
+<details>
+<summary>Can I check which PHP extensions are enabled?</summary>
+
+Yes. Follow these steps:
+
+1. On your computer, create a file named `phpinfo.php`.
+2. Add the following code:
+
+```php
+<?php
+phpinfo();
+?>
+```
+
+3. Upload this file to your site's `wp` directory using SFTP.
+4. Visit `yourdomain.com/phpinfo.php` in a browser.
+5. Look for the extensions section to confirm whether tools like `cURL` or `FTP` are enabled.
+6. **Delete the file after checking.**
+
+</details>
+
+<details>
+<summary>Can I make changes to the `php.ini` file?</summary>
+
+No. The `php.ini` file is not accessible or editable on WordPress Hosting Pro or Standard. This is part of our secure hosting environment. If you need help with a specific PHP configuration, please contact Support.
+
+</details>
+
+<details>
+<summary>How do I increase the file upload limit in WordPress?</summary>
+
+You can increase the upload limit using a plugin, but the maximum limit in WordPress Hosting Pro is **256 MB**.
+
+To increase the default upload limit:
+
+1. In WordPress, go to **Plugins > Add New**
+2. Install **Big File Uploads – Increase Maximum File Upload Size**
+3. Activate the plugin
+4. Navigate to **Media > Big File Uploads** and set your desired limit (up to 256 MB)
+
+> If you need to upload files larger than 256 MB, use **SFTP** to upload directly to your server.
+
+</details>
+
+<details>
+<summary>Can I increase the upload limit for the All-in-One WP Migration plugin?</summary>
+
+Yes, but it depends on the plugin version:
+
+* Default limit: **64 MB**
+* With free extension: **Up to 512 MB**
+* For larger sites: **Use the All-in-One WP Migration Unlimited extension**
+
+This extension is not installed by default. If you need help installing it, our support team can assist.
+
+</details>
+
+<details>
+<summary>Why can't I use plugins that require the XMLRPC.php file?</summary>
+
+The `xmlrpc.php` file enables remote access to WordPress, but it is **disabled by default** in WordPress Hosting Pro and WordPress Hosting Standard due to known security vulnerabilities.
+
+Plugins that rely on it, such as **Jetpack** or certain **Zapier** integrations, may not function correctly.
+
+For more context:
+* [What is XMLRPC.php? (Hostinger)](https://www.hostinger.com/tutorials/xmlrpc-wordpress)
+* [Why XMLRPC is blocked (WP Engine)](https://wpengine.com/resources/xmlrpc-php/)
+
+</details>
+
+<details>
+<summary>Can I hide the Advanced Tools tab?</summary>
+
+Admin users can remove the **Advanced Tools** tab from the WordPress Hosting dashboard.
+
+This prevents access to:
+* phpMyAdmin
+* SFTP
+* PHP logs
+* Advanced WordPress login option
+
+**To disable it:**
+
+1. Go to **Product Info** in your dashboard
+2. Click the **Admin Tools** tab
+3. Go to **Product Settings**
+4. Toggle off **Show Advanced Features**
+
+> This change applies globally and cannot be customized per account.
+
+Admin users will still be able to see and use all advanced tools.
+
+</details>
+
+<details>
+<summary>Do I get access to cPanel when hosting on WordPress Hosting Pro?</summary>
+
+No — **[cPanel](https://cpanel.net/) is not used** with WordPress Hosting Pro.
+
+WordPress Hosting Pro is a fully managed hosting environment built on Google Cloud infrastructure. It handles traditional cPanel features internally, including:
+* Domain management
+* Backups and restores
+* SSL provisioning
+
+If you need direct technical access, you can use:
+* **phpMyAdmin** for database management
+* **SFTP** (with a key file) for accessing your file system
+
+</details>

@@ -1,0 +1,122 @@
+---
+title: "Email Deliverability & Best Practices"
+description: "Best practices for ensuring your emails reach your recipients' inboxes"
+sidebar_position: 8
+---
+
+# Email Deliverability & Best Practices
+
+Ensuring your emails reach your recipients' inboxes is crucial for successful outreach. This guide covers best practices for avoiding spam filters and maintaining good email deliverability when using Yesware.
+
+## Understanding Email Deliverability
+
+Email deliverability refers to your ability to successfully deliver emails to your recipients' inboxes. Several factors affect deliverability, including your sender reputation, email content, authentication protocols, and recipient engagement.
+
+### How Yesware Sends Emails
+
+Yesware does not modify the IP address when it sends emails. Instead, Yesware transmits emails through your email server for delivery. This means:
+- Emails are sent from your own email server (Google or Microsoft)
+- Your sender reputation is based on your email provider's IP address
+- There are no "sent on behalf of" messages that can trigger spam filters
+- Recipients see emails as coming directly from you
+
+## Avoiding Spam Filters with Link Tracking
+
+Link Tracking enables you to see what content your prospects are interested in and prioritize your follow-ups by tracking when links within your email messages are clicked by the recipient. When link tracking is enabled, your links are replaced with trackable links which enable Yesware to know when the link was clicked on. Yesware then quickly redirects your recipient to the final destination.
+
+### Why Tracked Links May Be Flagged
+
+Some email spam filters may flag tracked links as spam because hiding the true destination of a linked message is a common tactic of what are known as phishing attacks where a bad URL is hidden behind what appears to be a legitimate URL.
+
+### Best Practices for Link Tracking
+
+To lessen the chance of your email being flagged as spam by your recipient's email filters, we recommend:
+
+1. **Use descriptive links**: For example, use [Yesware](http://www.yesware.com/) rather than [www.yesware.com](http://www.yesware.com) or the raw URL.
+
+2. **Format links as words, not full URLs**: Instead of "Check out www.yesware.com", use "Check out our [website](http://www.yesware.com)"
+
+3. **Avoid excessive links**: Don't include too many tracked links in a single email
+
+4. **Build sender reputation**: Consistent sending patterns and positive recipient engagement help build trust
+
+5. **Use a signature with images**: This encourages recipients to display images, which helps with tracking
+
+On rare occasions, the recipient's mail filters may flag emails as spam regardless of using descriptive links. There are additional best practices which can lessen the chances of your link-tracked email being flagged as spam: click [here](https://www.yesware.com/blog/email-spam/) to learn more.
+
+If, after taking these steps, your link-tracking enabled email continues to be flagged as spam, submit a support request via support@yesware.com
+
+## Email Authentication Protocols
+
+### DMARC, DKIM, and SPF
+
+DMARC (Domain-based Message Authentication, Reporting, and Conformance), DKIM (DomainKeys Identified Mail), and SPF (Sender Policy Framework) are email authentication protocols that help verify that emails are actually from who they claim to be from.
+
+These protocols are typically configured by your email provider (Google or Microsoft) and help establish your sender reputation.
+
+## Email Sending Limits
+
+### Provider Limits
+
+Yesware does not impose any restrictions on the number of daily emails you can send. However, the **limit on the number of emails** is determined by your email provider:
+
+- **Google Workspace**: Typically 2,000 emails per day
+- **Microsoft 365**: Varies by plan, typically 10,000 recipients per day
+
+### Campaign Limits
+
+Yesware does have a **monthly limit** on the number of contacts you can add to email campaigns created through Yesware. These limits are based on your subscription plan.
+
+For a complete list of features and limits by plan, please refer to our **pricing table**.
+
+## General Best Practices
+
+### Content Best Practices
+- Personalize your messages using merge fields
+- Avoid spam trigger words like "free," "guarantee," "no risk," etc.
+- Include a clear unsubscribe option for marketing emails
+- Use a professional email signature
+- Keep your email focused and concise
+
+### Sending Best Practices
+- Warm up new email accounts gradually
+- Maintain consistent sending patterns
+- Monitor your bounce rates and remove invalid addresses
+- Track engagement and adjust your approach based on results
+- Space out campaign touches appropriately
+
+### List Hygiene
+- Regularly clean your email lists
+- Remove bounced emails promptly
+- Respect opt-out requests immediately
+- Only email people who have expressed interest or have a business relationship with you
+
+## Frequently Asked Questions
+
+### What are some ways to avoid spam filters when using Link Tracking?
+
+To lessen the chance of your email being flagged as spam:
+
+1. **Use descriptive links**: For example, use [Yesware](http://www.yesware.com/) rather than [www.yesware.com](http://www.yesware.com)
+2. **Format links as words, not full URLs**: Instead of "Check out www.yesware.com", use "Check out our [website](http://www.yesware.com)"
+3. Avoid excessive links in a single email
+4. Build sender reputation through consistent sending and positive engagement
+
+On rare occasions, the recipient's mail filters may flag emails as spam regardless of using descriptive links. There are additional best practices which can lessen the chances of your link-tracked email being flagged as spam: click [here](https://www.yesware.com/blog/email-spam/) to learn more.
+
+### Will adding DMARC, DKIM, and SPF for Yesware improve my deliverability?
+
+No - Yesware does not modify the IP address when it sends emails. Instead, Yesware transmits the campaign emails to your email server for delivery. Due to this, we cannot improve email deliverability or prevent your emails from being identified as spam. If your IP address is flagged as a spam host, the issue must be resolved with your service provider.
+
+DMARC, DKIM, and SPF are configured by your email provider (Google or Microsoft) and apply to all emails sent from your domain, including those sent through Yesware.
+
+### What are Yesware's email sending limits?
+
+Yesware does not impose any restrictions on the number of daily emails you can send. However, the **limit on the number of emails** is determined by your email provider (either **Google** or **Microsoft**).
+
+Please note, We do have a **monthly limit** on the number of contacts you can add to email campaigns created through Yesware. These limits are based on your subscription plan.
+
+For a complete list of features and limits by plan, please refer to our **pricing table**.
+
+
+

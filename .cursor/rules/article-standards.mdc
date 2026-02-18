@@ -1,0 +1,169 @@
+---
+description: Writing standards and formatting conventions for Business App help articles
+globs: ["docusaurus/docs/**/*.{md,mdx}"]
+alwaysApply: false
+---
+
+# Business App Article Standards
+
+## Evergreen Content Principle
+
+Write only about the current, live state of the product.
+
+**Never include references to:**
+- Previously, Formerly, Used to
+- Before this update, Earlier versions
+- Legacy, Deprecated, Renamed
+- Has since changed
+- Historical comparisons of any kind
+
+**Rule**: If a detail cannot be written without referencing the past, omit it.
+
+## Voice and Style
+
+- **Tone**: Calm, clear, neutral
+- **Tense**: Present tense only
+- **Audience**: Small to medium-sized business users
+- **Perspective**: Second person ('you')
+
+**Prohibited language:**
+- Marketing or promotional language
+- Speculation or future-state phrasing
+- Hypothetical personas or scenarios
+- References to internal teams or partners
+
+## Content Policy
+
+- **Source-based only**: Use only information explicitly provided in source material
+- **No assumptions**: Do not infer functionality, UI, or workflows
+- **Live features only**: Document only currently available features
+
+## Frontmatter Requirements
+
+All documentation files must include YAML frontmatter at the top of the file.
+
+**Required fields:**
+- `title` - The page title (string)
+
+**Recommended fields:**
+- `sidebar_label` - Short label for sidebar navigation
+- `description` - Brief description for SEO
+- `tags` - Array of relevant tags
+- `keywords` - Array of keywords for search
+
+**Format rules:**
+- Each YAML key must be on its own line
+- Do not place multiple keys on one line
+- No text before the opening `---`
+- No text between opening `---` and first field
+- No text after closing `---` before content begins
+
+**Example:**
+```markdown
+---
+title: Connect Your Facebook Account
+sidebar_label: Connect Facebook
+description: Learn how to connect your Facebook account to manage posts and ads
+tags: [social-marketing, setup]
+keywords: [facebook, social media, connect account]
+---
+```
+
+## Heading Structure
+
+- **H2 (`##`)**: Main sections only
+- **H3 (`###`)**: Subsections only
+- Use plain, descriptive titles
+- No promotional or marketing language in headings
+
+## Formatting Conventions
+
+### Lists and Steps
+- **Bullet points**: For lists of items, features, or options
+- **Numbered lists**: For sequential steps or instructions only
+
+### Inline Code
+Use inline code (backticks) for:
+- UI labels: Click the `Save` button
+- Button names: Select `Connect Account`
+- Tab names: Go to the `Settings` tab
+- Field names: Enter your email in the `Email Address` field
+- Menu items: Navigate to `Tools` > `Integrations`
+
+### Callout Blocks
+
+**Info blocks** - Optional tips or helpful context:
+```markdown
+:::info
+This feature is available on all plans.
+:::
+```
+
+**Warning blocks** - Limitations or requirements:
+```markdown
+:::warning
+You must be an account administrator to access this feature.
+:::
+```
+
+## Images
+
+**Storage location**: All images must be stored in an `img` folder inside the feature folder.
+
+**Path format**: `./img/{image-name}.png`
+
+**Naming convention**:
+- Use kebab-case only (lowercase with hyphens)
+- Descriptive names: `connect-facebook-button.png` not `image1.png`
+
+**Requirements**:
+- Alt text is required for all images
+- No subfolders within the `img` directory
+- Supported formats: PNG, JPG, GIF
+
+**Example:**
+```markdown
+![Click the Connect button to link your account](./img/connect-button.png)
+```
+
+## Links
+
+### Internal Links
+- **Format**: Use relative paths only
+- **Example**: `[Connect account](../accounts/connect-profile.md)`
+- Use file extensions (`.md` or `.mdx`)
+- Paths are relative to current file location
+
+### External Links
+- **Format**: Use full URLs starting with `https://`
+- **Example**: `[Google setup guide](https://support.google.com/business/answer/2911778)`
+- Prefer HTTPS over HTTP
+- Open in same window (default behavior)
+
+## FAQs
+
+When including FAQs in articles:
+
+**Count**: Include 3–10 short FAQs per article
+
+**Format**: Use HTML details/summary tags for collapsible sections
+```markdown
+<details>
+<summary>How do I reset my password?</summary>
+
+Click the "Forgot Password" link on the login page and follow the instructions sent to your email.
+</details>
+```
+
+**Focus areas:**
+- Common setup issues
+- Terminology explanations
+- Feature limitations
+- Error resolution
+- General usage guidance
+
+**FAQ Guidelines:**
+- Keep answers concise (1-3 sentences ideal)
+- Use the same voice and style as main content
+- No speculation or "it depends" answers
+- Link to related articles when relevant

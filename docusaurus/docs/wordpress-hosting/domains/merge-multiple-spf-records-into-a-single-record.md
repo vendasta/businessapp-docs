@@ -1,29 +1,44 @@
 ---
 title: "Merge multiple SPF records into a single record"
-sidebar_label: "Merge multiple SPF records into a single record"
-description: "To merge the SPF values, simply include all the parts into one single record, without repeating any mechanisms. Here's how to merge the following example SPF"
+sidebar_label: "Merge SPF Records"
+description: "Learn how to merge multiple SPF records into a single record by combining all mechanisms without repeating any parts."
 ---
 
-To merge the SPF values, simply include all the parts into one single record, without repeating any mechanisms. Here's how to merge the following example SPF records for Outlook and MailerLite:
+# Merge multiple SPF records into a single record
 
-**v=spf1 a include:spf.protection.outlook.com -all**
+To merge SPF values, include all parts into one single record without repeating any mechanisms. Here's how to merge the following example SPF records for Outlook and MailerLite:
 
-**v=spf1 a mx include:\_spf.mlsend.com ~all**
+**Example SPF records:**
 
-**1\. The SPF record always begins with the version prefix:**
+* `v=spf1 a include:spf.protection.outlook.com -all`
+* `v=spf1 a mx include:_spf.mlsend.com ~all`
 
-**v=spf1**
+## Steps to merge SPF records
 
-**2\. Both records contain an "a" mechanism and the MailerLite SPF record contains a "mx" mechanism, so include both in the new record:**
+1. **The SPF record always begins with the version prefix:**
 
-**v=spf1 a mx**
+   ```
+   v=spf1
+   ```
 
-**3\. Then add both "include" mechanisms into the record, resulting in:**
+2. **Both records contain an "a" mechanism and the MailerLite SPF record contains an "mx" mechanism, so include both in the new record:**
 
-**v=spf1 a mx include:spf.protection.outlook.com include:\_spf.mlsend.com**
+   ```
+   v=spf1 a mx
+   ```
 
-4\. Lastly, we need to define how emails should be treated if they don't comply with the set rules. We do this by using the **all** mechanism. The last part has to be either **?all**, **\-all** or **~all**. It’s not possible to have more than one, so it is ultimately your choice which declaration of **all** your domains will use.
+3. **Then add both "include" mechanisms into the record:**
 
-**The merged SPF record would look like this:**
+   ```
+   v=spf1 a mx include:spf.protection.outlook.com include:_spf.mlsend.com
+   ```
 
-_**v=spf1 a mx include:spf.protection.outlook.com include:\_spf.mlsend.com ~all**_
+4. **Lastly, define how emails should be treated if they don't comply with the set rules.** Use the **all** mechanism. The last part must be either `?all`, `-all`, or `~all`. It's not possible to have more than one, so choose which declaration of **all** your domain will use.
+
+## The merged SPF record
+
+The merged SPF record would look like this:
+
+```
+v=spf1 a mx include:spf.protection.outlook.com include:_spf.mlsend.com ~all
+```

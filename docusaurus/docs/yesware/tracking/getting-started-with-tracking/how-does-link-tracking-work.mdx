@@ -1,0 +1,41 @@
+---
+title: "How does link tracking work?"
+description: "How does link tracking work?"
+sidebar_position: 114
+---
+
+# How does link tracking work?
+
+### How does link tracking work in Gmail and Outlook?
+Link tracking creates a special, trackable link in place of any URL you’ve included in your email. If the recipient clicks on the tracked link, our server gets pinged with the IP address and we then notify you of the link click, including who clicked the link, which email it was in when they clicked it, and what device it was clicked on (computer v. cell phone.) You can then use this to prioritize your follow-ups based on engagement. 
+### To enable Link Click Tracking in Gmail
+- Click the Yesware drop-down menu in the top left corner of Gmail.
+- Select Preferences.
+- Go to the "Tracking" section.
+- Toggle on "Track Links".
+Once you've enabled Link Click Tracking, anytime you insert a hyperlink, it will be converted to a trackable link automatically.
+You can verify that a link is going to be tracked by hovering over the hyperlinked URL or text and seeing that the destination includes "https://t.yesware.com/tl.....".
+**Best Practice:** we recommend naming your links rather than leaving them as a URL (For example: naming the link "[Yesware](https://www.yesware.com) instead of "[www.yesware.com](http://www.yesware.com)). This decreases the chances of your message being marked as spam.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Why do my links look like t.yesware.com?</summary>
+
+Yesware re-writes your URL to a tracking domain (t.yesware.com) to capture the click event before redirecting the user to your original destination.
+
+</details>
+
+<details>
+<summary>Can I track links in a plain text email?</summary>
+
+Yes, but we generally recommend using HTML format. In plain text, the full tracking URL (`http://t.yesware.com/...`) will be visible to the recipient, which may look suspicious.
+
+</details>
+
+<details>
+<summary>Does link tracking affect email deliverability?</summary>
+
+Occasionally, aggressive spam filters may flag tracking links. Using descriptive anchor text (e.g., "Click here") instead of raw URLs helps improve deliverability.
+
+</details>
