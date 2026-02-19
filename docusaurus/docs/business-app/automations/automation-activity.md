@@ -42,16 +42,16 @@ The Activity tab displays a log of every time your automation runs. Each row rep
 
 Check these in order:
 
-1. **Is the automation running?** In the automation list, the state must be **Running**, not Stopped or Paused. Turn it on if needed.
+1. **Is the automation running?** In the automation list, the state must be Running, not Stopped or Paused. Turn it on if needed.
 2. **Did the trigger event actually occur?** Confirm the event happened (for example, the contact was created, or the form was submitted) at the time you expected.
 3. **Do your conditions match?** Review the filter conditions on your trigger. The contact or company data might not meet the criteria (for example, a tag or field value doesn’t match).
 4. **Is the trigger configured correctly?** Ensure you chose the right event type and that any required fields are mapped.
-5. **Was there an error?** Open the Activity tab for this automation and look for failed or error entries around the time the automation should have run.
+5. **Was there an error?** Open the Activity tab for this automation. Use the Entity search or Filters to narrow to the right time or contact if needed, then look in the Activity column for steps that errored or were skipped around the time the automation should have run.
 
 ### "Automation ran but action failed"
 
-1. **Check the Activity tab** for the automation. Find the run that failed and look at each step’s status.
-2. **Identify the failed step** — the step that shows an error or failure. Read the message shown for that step; it usually explains what went wrong.
+1. **Check the Activity tab** for the automation. Use the Entity search or Filters to find the run if needed. Find the run that failed and look at each step’s Activity.
+2. **Identify the step that errored or was skipped.** Read the Activity details for that step; they usually explain what went wrong.
 3. **Common causes:**
    - **Missing required data** — A field the action needs (for example, phone for SMS or email for email) was empty or missing.
    - **Permission or sign-in** — The connection or account used by the action may need to be re-authenticated (for example, reconnect the integration).
@@ -60,13 +60,13 @@ Check these in order:
 
 ### "Automation is stuck"
 
-An automation may stay in **Running** for a while when:
+An automation may stay in Running for a while when:
 
 - **It’s waiting for a "Wait For" condition** — The workflow is paused until something happens (for example, a meeting is booked or a field changes). Check whether that condition can still be met.
 - **A delay step is still counting down** — If you added a "Wait" or delay, the run will continue after the delay ends.
 - **Rate limiting** — The system may temporarily pause runs when there’s heavy use; it will usually resume automatically.
 
-If it stays stuck for an unusually long time, check the Activity tab for that run and look for steps that might be timing out or waiting on an external system. If the problem continues, note when it happened and what you see in Activity when you ask for help.
+If it stays stuck for an unusually long time, use the Entity search or Filters to find the run if needed, then check the Activity tab and look for steps in the Activity column that might be timing out or waiting on an external system. If the problem continues, note when it happened and what you see in Activity when you ask for help.
 
 ### General tips
 

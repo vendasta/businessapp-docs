@@ -155,7 +155,7 @@ You can monitor product inquiry patterns through several methods:
 
 2. **AI Explanation Feature:** Click "Explanation" on AI responses to see exactly which tools were called and what products were searched
 
-3. **Automation Tracking:** Set up [automations](../../automations/index.md) to log product inquiries or notify your team about trending searches
+3. **Automation Tracking:** Set up [automations](../../automations/index) to log product inquiries or notify your team about trending searches
 
 This data helps you understand customer demand, optimize your inventory, and identify opportunities for targeted marketing campaigns.
 </details>

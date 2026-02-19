@@ -76,4 +76,4 @@ Automation behavior:
 4. In the `Update opportunity` step, set the correct pipeline and target stage.
 5. Customize the steps as needed for your process.
 
-See [Automations](../../automations/index.md) for more on building and managing automations.
+See [Automations](../../automations/index) for more on building and managing automations.

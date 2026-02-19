@@ -66,9 +66,9 @@ Only existing Yesware campaigns can be selected in Automations. Campaign creatio
 :::
 
 **Related automation guides:**
-- [Business App Automations overview](../automations/index.md) - Learn how to create your first automation workflow
-- [Automation templates and recipes](../../../automations/templates-and-recipes.md) - Pre-built workflows that can trigger Yesware campaigns
-- [Automation messaging options](../../../automations/messaging.md) - Compare Yesware with other messaging automation options
+- [Business App Automations overview](../automations/index) - Learn how to create your first automation workflow
+- [Automations](../../../automations/index) - Create workflows and use pre-built templates to trigger Yesware campaigns
+- [Messaging actions](../../../automations/workflows/action-messaging) - Compare Yesware with other SMS and email automation options
 
 ## Frequently asked questions
 
@@ -146,9 +146,9 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 - [CRM forms for lead capture](../forms/index.md) - Capture new leads that can be added to Yesware campaigns
 
 **Business App automation options:**
-- [Automations overview](../automations/index.md) - Compare Yesware with native Business App automation options
-- [Automation templates](../../../automations/templates-and-recipes.md) - Pre-built workflows for lead nurturing and follow-up
-- [Email messaging in automations](../../../automations/messaging.md) - Alternative email options for bulk communications
+- [Automations overview](../automations/index) - Compare Yesware with native Business App automation options
+- [Automations](../../../automations/index) - Pre-built templates and workflows for lead nurturing and follow-up
+- [Messaging actions in automations](../../../automations/workflows/action-messaging) - SMS and email options for bulk communications
 
 **Advanced workflows:**
 - [CRM opportunities](../opportunities/index.md) - Track deals that result from Yesware campaigns

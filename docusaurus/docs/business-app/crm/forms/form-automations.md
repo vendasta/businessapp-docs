@@ -27,4 +27,4 @@ Starting from a template is the fastest way to launch a reliable follow-up. You 
 The **Automation** tab shows all automations connected to the selected form.
 :::
 
-See [Automations](../../automations/index.md) for the full automation builder and more triggers and actions.
+See [Automations](../../automations/index) for the full automation builder and more triggers and actions.
