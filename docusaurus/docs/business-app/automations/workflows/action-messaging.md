@@ -108,7 +108,7 @@ Check the Activity tab for the run. Make sure required fields (e.g. phone for SM
 <details>
 <summary>Can I include dynamic information in messages?</summary>
 
-Yes. Use the dynamic field inserter when writing the message to include contact details, form responses, or other automation data. For the syntax and examples (e.g. task IDs, trigger data), see [Smart values in automations](../smart-values-in-automations).
+Yes. Use the dynamic field inserter when writing the message to include contact details, form responses, or other automation data. For the syntax and examples (e.g. task IDs, trigger data), see [Dynamic content in automations](../smart-values-in-automations).
 
 </details>
 
