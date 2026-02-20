@@ -1,32 +1,46 @@
 ---
-title: Smart values in automations
-description: Use smart values to insert contact details, task IDs, and other automation data into messages automatically.
+title: Dynamic content in automations
+description: Use dynamic content to insert contact details, task IDs, and other automation data into messages automatically.
 sidebar_position: 5
 ---
 
-# Smart values in automations
+# Dynamic content in automations
 
-## What are smart values?
+## What is dynamic content?
 
-Smart values (also called dynamic values) are placeholders you add to message content—such as email body or SMS text—that are replaced with real data when the automation runs. For example, you can insert the contact's name, a task ID from the trigger, or a form response. That way your messages stay personalized and accurate without typing each value manually.
+Dynamic content refers to placeholders you add to message content—such as email body or SMS text—that are replaced with real data when the automation runs. For example, you can insert the contact's name, a task ID from the trigger, or a form response. That way your messages stay personalized and accurate without typing each value manually.
 
-## How to use them
+## How to use it
 
-You can use smart values in any step that sends or displays text: **Send SMS**, **Send a plain text email**, and other messaging actions in the Automation Builder.
+You can use dynamic content in any step that sends or displays text: **Send SMS**, **Send a plain text email**, and other messaging actions in the Automation Builder.
 
-- **In the Builder:** When you're editing the message (body, subject line, or other supported fields), use the **dynamic field inserter** to pick a value, or type the smart value syntax directly.
-- **Where they come from:** Values are based on the trigger and previous steps in the workflow (e.g. the contact who triggered it, or a task created in an earlier step).
+- **In the Builder:** When you're editing the message (body, subject line, or other supported fields), use the **Insert dynamic content** button to pick a value, or type the syntax directly.
+- **Where it comes from:** Values are based on the trigger and previous steps in the workflow (e.g. the contact who triggered it, or a task created in an earlier step).
+
+<img src={require('./img/automations-smart values.png').default} alt="SMS content field showing dynamic content {.WorkflowStep.trigger.task_id} with the Insert dynamic content button" width="50%" />
 
 For steps and options, see [Messaging actions](./workflows/action-messaging).
 
-## Syntax and example
+## How the syntax works
 
-Smart values use curly braces and dot notation. One example:
+Dynamic content uses dot notation to locate the right piece of information. Think of it like an address with three parts:
 
-`{.WorkflowStep.trigger.task_id}` — inserts the task ID from the trigger. When the automation runs, the recipient sees the actual task ID in the email or SMS instead of the placeholder.
+| Part | What it means | Example |
+|------|---------------|---------|
+| **Step** | Which step in the workflow are we looking at? | `.WorkflowStep` |
+| **Object** | What did that step produce or receive? | `.trigger` |
+| **Property** | Which specific detail do we want? | `.task_id` |
 
-You can type this directly into the message field or use the dynamic field inserter in the step to see and insert available values for that workflow.
+**Example:** `{.WorkflowStep.trigger.task_id}`
+
+- `.WorkflowStep` — Look at the workflow step.
+- `.trigger` — Look at the event that started the automation.
+- `.task_id` — Grab the task ID from that event.
+
+When the automation runs, this placeholder is replaced with the actual task ID (e.g. "TSK-4821") in the email or SMS.
+
+You can type dynamic content directly into the message field or use the **Insert dynamic content** button in the step to browse and insert available values for your workflow.
 
 ## Tip
 
-The automation must be turned on for smart values to be filled when the message is sent. If a value isn't available (e.g. the trigger didn't provide it), the placeholder may be blank or show a fallback depending on the field.
+The automation must be turned on for dynamic content to be filled when the message is sent. If a value isn't available (e.g. the trigger didn't provide it), the placeholder may be blank or show a fallback depending on the field.
