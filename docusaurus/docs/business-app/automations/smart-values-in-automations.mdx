@@ -6,20 +6,18 @@ sidebar_position: 5
 
 # Dynamic content in automations
 
-## What is dynamic content?
-
 Dynamic content refers to placeholders you add to message content—such as email body or SMS text—that are replaced with real data when the automation runs. For example, you can insert the contact's name, a task ID from the trigger, or a form response. That way your messages stay personalized and accurate without typing each value manually.
 
 ## How to use it
 
-You can use dynamic content in any step that sends or displays text: **Send SMS**, **Send a plain text email**, and other messaging actions in the Automation Builder.
+You can use dynamic content in any step that sends or displays text: Send SMS, Send a plain text email, and other messaging actions in the Automation Builder.
+When you're editing the message (body, subject line, or other supported fields), click the **Insert dynamic content** button <img src={require('./img/dynamic content-insert button.png').default} alt="Insert dynamic content button" style={{height: '1.4em', verticalAlign: 'middle'}} /> to browse available values. to pick a value, or type the syntax directly.
 
-- **In the Builder:** When you're editing the message (body, subject line, or other supported fields), use the **Insert dynamic content** button to pick a value, or type the syntax directly.
-- **Where it comes from:** Values are based on the trigger and previous steps in the workflow (e.g. the contact who triggered it, or a task created in an earlier step).
+<img src={require('./img/automations-dynamic content-SMS body.png').default} alt="SMS content field showing dynamic content {.WorkflowStep.trigger.task_id} with the Insert dynamic content button" width="50%" />
 
-<img src={require('./img/automations-smart values.png').default} alt="SMS content field showing dynamic content {.WorkflowStep.trigger.task_id} with the Insert dynamic content button" width="50%" />
+**What type of content can you add?** Dynamic content can show automation details (such as the date and time the automation ran), or information from the trigger — the event that started the automation. For example, if the trigger is "When a company is added to a list," you can insert the company ID or the list ID into your message.
 
-For steps and options, see [Messaging actions](./workflows/action-messaging).
+<img src={require('./img/dynamic content-types.png').default} alt="Add dynamic content dialog showing Category, From a previous step, and Trigger dropdowns with options like Action Type, List ID, Company ID, and Namespace" width="50%" />
 
 ## How the syntax works
 
@@ -41,6 +39,6 @@ When the automation runs, this placeholder is replaced with the actual task ID (
 
 You can type dynamic content directly into the message field or use the **Insert dynamic content** button in the step to browse and insert available values for your workflow.
 
-## Tip
-
+:::note
 The automation must be turned on for dynamic content to be filled when the message is sent. If a value isn't available (e.g. the trigger didn't provide it), the placeholder may be blank or show a fallback depending on the field.
+:::
