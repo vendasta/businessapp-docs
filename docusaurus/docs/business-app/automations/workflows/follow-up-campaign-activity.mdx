@@ -1,7 +1,7 @@
 ---
-title: Follow up via email or SMS after campaign activity
+title: Campaign follow up
 description: Set up automations to follow up with contacts after they open campaign emails using Conversations AI Pro.
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 You can use automations in Business App to follow up with contacts by email or SMS after they open your campaign emails. This guide walks you through setting that up so you can engage people who have already shown interest.
@@ -14,7 +14,7 @@ Before you begin, make sure you have Conversations AI Pro and that your email an
 2. Set the trigger to **When a contact is modified** and use the field **Last campaign email open date**.
 3. (Recommended) Add **contact tags** before this step and use them in **Additional conditions** in the trigger section so the automation runs only for the right contacts.
 
-![Automation trigger configuration](./img/follow-up-automation-trigger.png)
+<img src={require('../img/follow-up-automation-trigger.png').default} alt="Automation trigger configuration" width="50%" />
 
 ## Step 2: Add a follow-up step
 
@@ -22,12 +22,12 @@ Depending on what you want to do, you can:
 
 - **Send a plain text email via Conversations** — a simple option for email follow-up.
 
-![Send email configuration](./img/follow-up-send-email.png)
+<img src={require('../img/follow-up-send-email.png').default} alt="Send email configuration" width="50%" />
 
 - **Build a more advanced workflow** — for example, send follow-up by email, then by SMS or in-app notifications if needed.
 
-![Advanced automation workflow](./img/follow-up-advanced-workflow.png)
+![Advanced automation workflow](../img/follow-up-advanced-workflow.png)
 
-When the automation runs, it will look similar to this:
+When the automation runs, the activity tab will look similar to this:
 
-![Automation run example](./img/follow-up-automation-run.png)
+![Automation run example](../img/follow-up-automation-run.png)
