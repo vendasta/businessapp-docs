@@ -72,31 +72,29 @@ For example: **Form submitted** (event) → **When form is submitted for a conta
 
 There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and actions already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
 
-**To use a template:**
+1. Go to **Business App** > **Automations**
 
-1. Go to Business App > Administration > Automations
-2. Select `Create Automation`
+:::tip
+You can also find Automations under **Business App** > **Administration** > **Automations**.
+:::
+
+2. Select **Create Automation**
 
 <div style={{ textAlign: 'center' }}>
   <img src={require('./img/automations-create automations.png').default} alt="Create automation button in Automations page" width="25%" />
 </div>
 
-3. Choose a template from the gallery that matches your goal
-4. Customize the trigger, conditions, and actions as needed
-5. Save and toggle your automation **On**
+3. Choose how you want to start:
+
+**From a template** — pick a template from the gallery that matches your goal. Templates come with triggers and actions pre-configured, so you just customize them for your business.
 
 ![Automation templates gallery showing available templates](./img/automations-template%20gallery.png)
 
-**To build your own automation from scratch:**
-
-1. Go to Business App > Administration > Automations
-2. Select `Create Automation`
-
-3. Choose **Blank** to start from scratch. The automation builder opens with a workflow canvas.
+**From scratch** — choose **Blank** to open an empty workflow canvas and build every step yourself.
 
 ![Automation builder interface showing workflow canvas and trigger selection panel](./img/automations-builder%20UI.png)
 
-4. **Add a Trigger**: Select a trigger from the left menu to choose the event that starts your workflow
+4. **Add a Trigger** — select the event that starts your workflow (templates have one pre-selected; adjust it if needed)
    - Example: "When a form is submitted for a contact", "Contact created", "Meeting booked"
    - Add **Conditions** if needed to filter when it runs
 
@@ -104,11 +102,14 @@ There are two ways to create an automation: start with a pre-built template or b
   <img src={require('./img/automations-add condition.png').default} alt="Add conditions checkbox to filter when automation runs" width="50%" style={{ border: '1px solid #ddd', borderRadius: '4px' }} />
 </div>
 
-5. **Add an Action**: Select an action from the left menu to define what happens when the trigger fires
+5. **Add an Action** — define what happens when the trigger fires (templates include actions already; you can edit, remove, or add more)
    - Example: "Send a plain text email via Inbox", "Send SMS", "Create task"
+
 6. Save and toggle your automation **On**
 
-Here is an example of a simple automation workflow. This example shows an automation that sends an email when a form is submitted for a contact.
+![Toggle automation on](./img/automation-toggle.png)
+
+Here is an example of a simple automation workflow that sends a review request when a note tagged "eligible_for_review_request" is created or modified for a contact.
 
 <div style={{ textAlign: 'center' }}>
 
@@ -116,21 +117,14 @@ Here is an example of a simple automation workflow. This example shows an automa
 
 </div>
 
-## Next steps
+## Related resources
 
-Once your automation is created, you can:
-
-**Core functionality:**
-- **[Configure settings](automation-settings.md)** - Control how often it runs and how errors are handled
-- **[Monitor activity](automation-activity.md)** - Review what ran, when it ran, and troubleshoot issues
-
-**Specific workflows:**
-- **[Messaging actions](workflows/action-messaging.md)** - Send SMS and email messages
-- **[Campaign actions](workflows/action-campaigns.md)** - Pause campaigns intelligently
-- **[Review request automation](workflows/use-case-review-requests.mdx)** - Collect customer reviews automatically
-
-**Integrations:**
-- **[Zapier integration](zapier.md)** - Connect with thousands of external apps
+- [Automation settings](automation-settings.md) - Control how often it runs and how errors are handled
+- [Automation activity](automation-activity.md) - Review what ran, when it ran, and troubleshoot issues
+- [Messaging actions](workflows/action-messaging.md) - Send SMS and email messages
+- [Campaign actions](workflows/action-campaigns.md) - Pause campaigns intelligently
+- [Review request automation](workflows/use-case-review-requests.mdx) - Collect customer reviews automatically
+- [Zapier integration](zapier.md) - Connect with thousands of external apps
 
 ## Frequently asked questions (FAQs)
 
