@@ -9,6 +9,8 @@ Some triggers are simple and are ready out-of-the-box. For example, the **A cont
 
 ![Trigger options example](./img/trigger-options.jpg)
 
+See [Automation conditions](automation-conditions.md) to learn how to filter when a trigger runs.
+
 ## Example: Company trigger
 
 The **When a Company is created or modified** trigger is a good example of a trigger that requires options. Instead of firing on every company update, you can specify which fields must change for the automation to run.
@@ -103,7 +105,7 @@ Choose the most specific trigger that matches your use case and think about how 
 | Trigger | Description | Example Use Case |
 |---|---|---|
 | A webhook is received | Starts the automation when an external system sends a POST request to the given URL with a user-defined payload. | Connect your automation to a third-party tool or service that supports webhooks. |
-| Triggered via Zapier | Starts the automation when the **Run Automation** action is used in the Zapier integration. | Trigger an automation from Zapier to update contacts in the CRM and pass along data from another app. |
+| Triggered via Zapier | Starts the automation when the **Run Automation** action is used in the Zapier integration. See [Zapier integration](zapier.md) for setup instructions. | Trigger an automation from Zapier to update contacts in the CRM and pass along data from another app. |
 
 ### Time-based
 
