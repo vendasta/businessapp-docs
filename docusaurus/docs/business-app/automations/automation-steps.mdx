@@ -1,9 +1,40 @@
 ---
-title: Automation Steps
+title: Steps
 sidebar_position: 3
 ---
 
 Automation steps are what happen after a trigger fires. Each step defines a specific action your workflow performs — sending a message, updating a record, creating a task, and so on. You can add multiple steps to a workflow and they run from top to bottom.
+
+## Step types
+
+There are two types of steps in the Automation Builder, distinguished by color:
+
+**Action steps (blue)** do the work — they send messages, update records, create tasks, log activities, and interact with your CRM and connected apps. Most steps are action steps.
+
+**Logic steps (purple)** control the flow of the automation — they don't perform an action themselves, but decide what happens next. Use them to introduce delays, branch based on conditions, jump to a different point in the workflow, or end the run early.
+
+<div style={{ display: 'flex', gap: '24px', justifyContent: 'center', alignItems: 'flex-start' }}>
+  <img src={require('./img/action-steps.png').default} alt="Action steps in the automation builder showing Companies, Contacts, Users, and Businesses categories in blue" width="45%" />
+  <img src={require('./img/logic-steps.png').default} alt="Logic steps in the automation builder showing Delays, Conditions, and Workflow categories in purple" width="45%" />
+</div>
+
+## Choosing the Right Steps
+
+Map out the entire customer journey before selecting steps. Make sure steps are in the right order and have any necessary prerequisites in place. Plan for what happens when a step fails, and always test each step individually and as part of the complete workflow before going live.
+
+## Common Step Patterns
+
+1. **Welcome new contacts**: Contact created → Send welcome email → Create follow-up task
+2. **Lead nurturing**: Contact created → Send campaign series → Log activity based on engagement
+3. **Payment follow-up**: Payment failure → Notify your team → Create follow-up task
+4. **Opportunity management**: Opportunity created → Update contact → Create a sales task
+5. **Review collection**: Transaction completed → Delay 2 days → Send review request
+
+## Performance Considerations
+
+- **Use appropriate delays**: Don't make workflows longer than necessary — only add delays when timing actually matters
+- **Keep conditions efficient**: Filter early so unnecessary steps don't run for contacts that don't qualify
+- **Group related steps**: Place steps that work on the same record together to keep workflows readable and easier to troubleshoot
 
 ## Step Reference
 
@@ -95,14 +126,14 @@ Automation steps are what happen after a trigger fires. Each step defines a spec
 | Add contact to Kixie powerlist | Adds a contact to a Kixie powerlist for automated outreach calling |
 | Remove contact from Kixie powerlist | Removes a contact from a Kixie powerlist |
 
-### Delays
+### Delays (logic steps)
 
 | Step | Description | Special Cases |
 |---|---|---|
 | Delay | Pauses the automation for a set amount of time before continuing to the next step | The automation run may be cancelled if the contact or company becomes ineligible for the workflow while waiting |
 | Delay until an event happens | Pauses the automation and waits until a specified event occurs (e.g. a task is completed, a campaign email is clicked) | |
 
-### Conditions
+### Conditions (logic steps)
 
 | Step | Description |
 |---|---|
@@ -110,7 +141,7 @@ Automation steps are what happen after a trigger fires. Each step defines a spec
 | Jump to a step | Skips forward or backward to a specific step in the workflow |
 | Rate filter | Limits how frequently the automation can proceed for a given contact, preventing the same person from moving through too often |
 
-### Workflow
+### Workflow (logic steps)
 
 | Step | Description |
 |---|---|
