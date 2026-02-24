@@ -1,0 +1,118 @@
+---
+title: Automation Steps
+sidebar_position: 3
+---
+
+Automation steps are what happen after a trigger fires. Each step defines a specific action your workflow performs — sending a message, updating a record, creating a task, and so on. You can add multiple steps to a workflow and they run from top to bottom.
+
+## Step Reference
+
+### Companies
+
+| Step | Description |
+|---|---|
+| Assign a company owner / salesperson | Assigns a team member as the owner or primary contact for a company record |
+
+### Contacts
+
+| Step | Description |
+|---|---|
+| Assign a contact owner / salesperson | Assigns a team member as the owner or primary contact for a contact record |
+
+### Users
+
+| Step | Description |
+|---|---|
+| Get my team member | Retrieves a specific team member from your account for use in later steps, such as assigning a record to them or sending them a notification |
+
+### Businesses
+
+| Step | Description | Special Cases |
+|---|---|---|
+| Create a company | Creates a new company record in your CRM | Duplicates are not checked. Company name is required |
+| Create a contact | Creates a new contact record in your CRM | |
+| Create an opportunity | Creates a new opportunity and adds it to your sales pipeline | Requires at least one of Company or Contact to be linked upstream. If both are provided, the opportunity is associated with both |
+| Get company from contact | Retrieves the company linked to a contact so it can be used in later steps | Returns an error if no associated company exists |
+| Get contact from company | Retrieves a contact linked to a company so it can be used in later steps | Returns an error if no associated contact exists |
+| Get custom object from company | Retrieves a custom object record linked to a company | |
+| Get custom object from contact | Retrieves a custom object record linked to a contact | |
+| Get opportunity from company | Retrieves an opportunity associated with a company | Returns an error if no associated opportunity exists |
+| Get opportunity from contact | Retrieves an opportunity associated with a contact | Returns an error if no associated opportunity exists |
+| Find contact | Searches for an existing contact record in your CRM based on specified criteria | |
+| Update company | Updates one or more fields on an existing company record | |
+| Update contact | Updates a contact record in your CRM. Supports appending to or clearing existing field values | |
+
+### Campaigns and Emails
+
+| Step | Description |
+|---|---|
+| Pause campaign for company | Pauses an ongoing campaign for the company. This applies to all contacts associated with the company (up to 50) |
+| Pause campaign for contact | Pauses an ongoing email campaign for the contact |
+| Start a campaign for the contact | Enrolls a contact in a specified email campaign |
+| Start a campaign for the company | Enrolls all contacts associated with a company in a specified email campaign |
+| Start a Yesware campaign for the contact | Enrolls a contact in a Yesware email sequence |
+| Send an email to contact | Sends an email to a contact's email address |
+| Send an email to company | Sends an email to the primary address on file for a company |
+| Send a review request | Sends a review request email to a contact |
+
+### Notifications
+
+| Step | Description |
+|---|---|
+| Notify a user | Sends an in-app and email notification to a specified team member |
+
+### Inbox
+
+| Step | Description |
+|---|---|
+| Send a plain text email via Conversations | Sends a plain-text email from your Conversations inbox to a contact |
+| Send an SMS message via Conversations | Sends an SMS message via your Conversations inbox to a contact |
+| Send an SMS message to a phone number | Sends an SMS to any phone number you specify, including numbers not in your CRM |
+| Send a WhatsApp template to a contact | Sends a pre-approved WhatsApp template message to a contact |
+
+### Advanced
+
+| Step | Description |
+|---|---|
+| Send a request to an AI employee | Sends a prompt or context to your AI Employee and retrieves its response for use in later steps |
+| Associate company with contact | Links a company record to a contact record in your CRM |
+| Log a call activity to the company | Logs a call record on a company's activity timeline |
+| Log a call activity to the contact | Logs a call record on a contact's activity timeline |
+| Add a note to the company | Adds a note to a company record |
+| Add a note to the contact | Adds a note to a contact record |
+| Create a CRM sales task for the company | Creates a new sales task associated with a company |
+| Create a CRM sales task for the contact | Creates a new sales task associated with a contact |
+| Get my business profile | Retrieves your business profile data for use in later steps, such as personalizing messages with your business name or address |
+| Modify a call activity for the company | Updates an existing call activity on a company's timeline |
+| Send a webhook | Sends an HTTP POST request with custom data to an external URL |
+| Send a prompt to AI | Sends a text prompt to an AI model and returns the response for use in later steps |
+| Format text | Transforms a text value using formatting rules (e.g. uppercase, trim, replace) before passing it to another step |
+
+### Integrations
+
+| Step | Description |
+|---|---|
+| Add contact to Kixie powerlist | Adds a contact to a Kixie powerlist for automated outreach calling |
+| Remove contact from Kixie powerlist | Removes a contact from a Kixie powerlist |
+
+### Delays
+
+| Step | Description | Special Cases |
+|---|---|---|
+| Delay | Pauses the automation for a set amount of time before continuing to the next step | The automation run may be cancelled if the contact or company becomes ineligible for the workflow while waiting |
+| Delay until an event happens | Pauses the automation and waits until a specified event occurs (e.g. a task is completed, a campaign email is clicked) | |
+
+### Conditions
+
+| Step | Description |
+|---|---|
+| If/else branch | Splits the workflow into two paths based on whether a condition is met, so different steps run for different scenarios |
+| Jump to a step | Skips forward or backward to a specific step in the workflow |
+| Rate filter | Limits how frequently the automation can proceed for a given contact, preventing the same person from moving through too often |
+
+### Workflow
+
+| Step | Description |
+|---|---|
+| A/B branch | Randomly splits contacts into two groups so you can test different workflow paths |
+| End this automation | Immediately stops the current automation run |

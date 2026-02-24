@@ -1,12 +1,12 @@
 ---
-title: Automation Settings
-sidebar_position: 3
+title: Automation settings
+sidebar_position: 4
 description: Configure how and when your automations run with entry settings and error handling options.
 tags: [automation, settings, configuration]
 keywords: [automation settings, entry settings, error handling, automation configuration, workflow settings]
 ---
 
-# Automation Settings
+# Automation settings
 
 Each automation has a Settings tab where you control how and when your workflow runs. These settings help you avoid duplicate runs, manage errors gracefully, and ensure automations behave as expected.
 
