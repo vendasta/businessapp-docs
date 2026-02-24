@@ -48,6 +48,14 @@ Error handling settings determine what happens when a step in your automation fa
 Use "Skip and continue" for non-critical actions like logging or tagging. Use "Stop on error" when steps must complete in sequence (for example, create opportunity → add note → assign to rep).
 :::
 
+## Timezone Configuration
+
+Set your preferred timezone for time-based automation steps and scheduling.
+
+## Notification Settings
+
+Subscribe to error notifications to be alerted when automations encounter issues.
+
 ## Frequently asked questions
 
 <details>
