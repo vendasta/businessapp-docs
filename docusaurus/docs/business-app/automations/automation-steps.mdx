@@ -22,19 +22,19 @@ There are two types of steps in the Automation Builder, distinguished by color:
 
 Map out the entire customer journey before selecting steps. Make sure steps are in the right order and have any necessary prerequisites in place. Plan for what happens when a step fails, and always test each step individually and as part of the complete workflow before going live.
 
-## Common Step Patterns
-
-1. **Welcome new contacts**: Contact created → Send welcome email → Create follow-up task
-2. **Lead nurturing**: Contact created → Send campaign series → Log activity based on engagement
-3. **Payment follow-up**: Payment failure → Notify your team → Create follow-up task
-4. **Opportunity management**: Opportunity created → Update contact → Create a sales task
-5. **Review collection**: Transaction completed → Delay 2 days → Send review request
-
 ## Performance Considerations
 
 - **Use appropriate delays**: Don't make workflows longer than necessary — only add delays when timing actually matters
 - **Keep conditions efficient**: Filter early so unnecessary steps don't run for contacts that don't qualify
 - **Group related steps**: Place steps that work on the same record together to keep workflows readable and easier to troubleshoot
+
+## Common Step Patterns
+
+- **Welcome new contacts**: Contact created → Send welcome email → Create follow-up task
+- **Lead nurturing**: Contact created → Send campaign series → Log activity based on engagement
+- **Payment follow-up**: Payment failure → Notify your team → Create follow-up task
+- **Opportunity management**: Opportunity created → Update contact → Create a sales task
+- **Review collection**: Transaction completed → Delay 2 days → Send review request
 
 ## Step Reference
 
