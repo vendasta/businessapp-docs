@@ -1,6 +1,6 @@
 ---
 title: Automation Settings
-sidebar_position: 1
+sidebar_position: 3
 description: Configure how and when your automations run with entry settings and error handling options.
 tags: [automation, settings, configuration]
 keywords: [automation settings, entry settings, error handling, automation configuration, workflow settings]
