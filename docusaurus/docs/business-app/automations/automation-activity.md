@@ -32,7 +32,7 @@ The Activity tab displays a log of every time your automation runs. Each row rep
   - **Automation completed** - The run finished successfully
   - **Running** - The workflow is in progress and steps update in real time
   - **Entered automation** - The automation was triggered and started
-  - **Sent webhook / Created opportunity** - Specific actions that completed successfully
+  - **Sent webhook / Created opportunity** - Specific steps that completed successfully
 
 - **Started Time** - When this step began executing
 
@@ -48,15 +48,15 @@ Check these in order:
 4. **Is the trigger configured correctly?** Ensure you chose the right event type and that any required fields are mapped.
 5. **Was there an error?** Open the Activity tab for this automation. Use the Entity search or Filters to narrow to the right time or contact if needed, then look in the Activity column for steps that errored or were skipped around the time the automation should have run.
 
-### "Automation ran but action failed"
+### "Automation ran but step failed"
 
 1. **Check the Activity tab** for the automation. Use the Entity search or Filters to find the run if needed. Find the run that failed and look at each step’s Activity.
 2. **Identify the step that errored or was skipped.** Read the Activity details for that step; they usually explain what went wrong.
 3. **Common causes:**
-   - **Missing required data** — A field the action needs (for example, phone for SMS or email for email) was empty or missing.
-   - **Permission or sign-in** — The connection or account used by the action may need to be re-authenticated (for example, reconnect the integration).
+   - **Missing required data** — A field the step needs (for example, phone for SMS or email for email) was empty or missing.
+   - **Permission or sign-in** — The connection or account used by the step may need to be re-authenticated (for example, reconnect the integration).
    - **External service issue** — The external app or service was unavailable or timed out; try again later.
-   - **Invalid data format** — The value passed to the action was in the wrong format (for example, a number where text was expected). Check your field mappings.
+   - **Invalid data format** — The value passed to the step was in the wrong format (for example, a number where text was expected). Check your field mappings.
 
 ### "Automation is stuck"
 

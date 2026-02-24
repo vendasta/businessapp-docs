@@ -46,7 +46,7 @@ Every automation includes:
 
 - **Trigger:** The event that starts your workflow (for example, When a contact is created)
 - **Conditions:** Optional filters that must be met for the automation to run (for example, Contact has specific tag, or Company field equals value)
-- **Actions:** What happens next (for example, Send SMS, Send plain-text email, Update company)
+- **Steps:** What happens next (for example, Send SMS, Send plain-text email, Update company)
 
 ## How automations flow
 
@@ -61,16 +61,16 @@ Every automation includes:
        ↓                     ↓
       Yes                    No
        ↓                     ↓
-  Execute Actions      Skip Automation
+  Execute Steps       Skip Automation
        ↓
     Complete
 ```
 
-For example: **Form submitted** (event) → **When form is submitted for a contact** (trigger) → **Contact has "New Lead" tag?** (condition) → **Send welcome email** (action) → **Complete**
+For example: **Form submitted** (event) → **When form is submitted for a contact** (trigger) → **Contact has "New Lead" tag?** (condition) → **Send welcome email** (step) → **Complete**
 
 ## Getting started
 
-There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and actions already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
+There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and steps already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
 
 1. Go to **Business App** > **Automations**
 
@@ -86,7 +86,7 @@ You can also find Automations under **Business App** > **Administration** > **Au
 
 3. Choose how you want to start:
 
-**From a template** — pick a template from the gallery that matches your goal. Templates come with triggers and actions pre-configured, so you just customize them for your business.
+**From a template** — pick a template from the gallery that matches your goal. Templates come with triggers and steps pre-configured, so you just customize them for your business.
 
 ![Automation templates gallery showing available templates](./img/automations-template%20gallery.png)
 
@@ -102,7 +102,7 @@ You can also find Automations under **Business App** > **Administration** > **Au
   <img src={require('./img/automations-add condition.png').default} alt="Add conditions checkbox to filter when automation runs" width="50%" style={{ border: '1px solid #ddd', borderRadius: '4px' }} />
 </div>
 
-5. **Add an Action** — define what happens when the trigger fires (templates include actions already; you can edit, remove, or add more)
+5. **Add a Step** — define what happens when the trigger fires (templates include steps already; you can edit, remove, or add more)
    - Example: "Send a plain text email via Inbox", "Send SMS", "Create task"
 
 6. Save and toggle your automation **On**
@@ -113,7 +113,7 @@ Here is an example of a simple automation workflow that sends a review request w
 
 <div style={{ textAlign: 'center' }}>
 
-![Automation workflow example showing trigger and action](./img/automation-example.png)
+![Automation workflow example showing trigger and step](./img/automation-example.png)
 
 </div>
 
@@ -123,8 +123,8 @@ Here is an example of a simple automation workflow that sends a review request w
 - [Automation conditions](automation-conditions.md) - Filter when your automation runs using AND/OR logic
 - [Automation settings](automation-settings.md) - Control how often it runs and how errors are handled
 - [Automation activity](automation-activity.md) - Review what ran, when it ran, and troubleshoot issues
-- [Messaging actions](workflows/action-messaging.md) - Send SMS and email messages
-- [Campaign actions](workflows/action-campaigns.md) - Pause campaigns intelligently
+- [Messaging steps](workflows/action-messaging.md) - Send SMS and email messages
+- [Campaign steps](workflows/action-campaigns.md) - Pause campaigns intelligently
 - [Review request automation](workflows/use-case-review-requests.mdx) - Collect customer reviews automatically
 - [Zapier integration](zapier.md) - Connect with thousands of external apps
 
@@ -133,19 +133,19 @@ Here is an example of a simple automation workflow that sends a review request w
 <details>
 <summary>Can I get a response from an AI Employee inside an automation?</summary>
 
-Yes. Add the "Get a response from an AI Employee" action to send context (for example, a conversation summary or form submission) to your AI Employee and use the response later in the workflow.
+Yes. Add the "Get a response from an AI Employee" step to send context (for example, a conversation summary or form submission) to your AI Employee and use the response later in the workflow.
 </details>
 
 <details>
 <summary>How do I trigger automations for entire lists?</summary>
 
-Use the **"Start automation for a list"** action in your automation builder. Select your target list (contacts, companies, or custom objects) and choose which automation to run. The automation will execute for each record in the list.
+Use the **"Start automation for a list"** step in your automation builder. Select your target list (contacts, companies, or custom objects) and choose which automation to run. The automation will execute for each record in the list.
 </details>
 
 <details>
-<summary>What are getter actions in automations?</summary>
+<summary>What are getter steps in automations?</summary>
 
-Getter actions let you retrieve related data during automation runs. For example, "Get company from contact" retrieves company information when your automation is processing a contact record. This helps you work with connected data across your CRM.
+Getter steps let you retrieve related data during automation runs. For example, "Get company from contact" retrieves company information when your automation is processing a contact record. This helps you work with connected data across your CRM.
 </details>
 
 <details>
