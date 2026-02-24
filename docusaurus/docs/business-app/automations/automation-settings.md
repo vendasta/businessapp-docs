@@ -19,7 +19,7 @@ Each automation has a Settings tab where you control how and when your workflow 
 
 ## Entry settings
 
-Entry settings control how frequently an automation can run for the same contact or company.
+Entry settings control how frequently an automation can run for the same contact or company. Many trigger events and conditions can be met multiple times. For example, A customer makes a payment trigger with the trigger options set to Succeeds or fails will fire each time a customer attempts to pay for an invoice or shopping cart purchase. The entry settings allow you to specify whether you want the automation workflow to start only the first time the trigger criterion is met or every time.
 
 ![Entry settings options in automation settings](./img/automations-entry-settings.png)
 
@@ -35,7 +35,7 @@ If your automation updates the same record (for example, applies tags or updates
 
 ## Error handling
 
-Error handling settings determine what happens when a step in your automation fails (for example, if a required field is missing or an API call times out).
+Error handling settings determine what happens when a step in your automation fails (for example, if a required field is missing or an API call times out). If at any point a step fails to complete, you can choose to have your automation ignore the error and continue with the following steps, or stop that specific automation run.
 
 ![Error handling settings options in automation settings](./img/automations-error-handling-settings.png)
 
