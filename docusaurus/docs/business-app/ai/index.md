@@ -29,28 +29,28 @@ Integrations (e.g. [ServiceTitan](./ai-workforce/ai-chat-receptionist/connect-th
 
 ## Key areas
 
-<div className="row business-app-cards">
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-workforce/ai_workforce_overview">
-      <div className="card">
+<div className="row business-app-cards" style={{ alignItems: 'stretch' }}>
+  <div className="col col--4" style={{ marginBottom: 'var(--ifm-spacing-vertical)' }}>
+    <Link className="card-link" to="./ai-workforce/ai_workforce_overview" style={{ height: '100%', display: 'block' }}>
+      <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div className="card__header"><h3>AI Workforce</h3></div>
-        <div className="card__body"><p>Configure employees: profile, channels, capabilities, and knowledge sources.</p></div>
+        <div className="card__body" style={{ flex: 1 }}><p>Configure employees: profile, channels, capabilities, and knowledge sources.</p></div>
       </div>
     </Link>
   </div>
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-capabilities/">
-      <div className="card">
+  <div className="col col--4" style={{ marginBottom: 'var(--ifm-spacing-vertical)' }}>
+    <Link className="card-link" to="./ai-capabilities/" style={{ height: '100%', display: 'block' }}>
+      <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div className="card__header"><h3>Capabilities</h3></div>
-        <div className="card__body"><p>Built-in skills (lead capture, booking, Q&A) and custom capabilities for APIs and integrations.</p></div>
+        <div className="card__body" style={{ flex: 1 }}><p>Built-in skills (lead capture, booking, Q&A) and custom capabilities for APIs and integrations.</p></div>
       </div>
     </Link>
   </div>
-  <div className="col col--4">
-    <Link className="card-link" to="knowledge-base.md">
-      <div className="card">
+  <div className="col col--4" style={{ marginBottom: 'var(--ifm-spacing-vertical)' }}>
+    <Link className="card-link" to="knowledge-base.md" style={{ height: '100%', display: 'block' }}>
+      <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div className="card__header"><h3>Knowledge Base</h3></div>
-        <div className="card__body"><p>Business profile, website, and documents your AI uses to answer questions accurately.</p></div>
+        <div className="card__body" style={{ flex: 1 }}><p>Business profile, website, and documents your AI uses to answer questions accurately.</p></div>
       </div>
     </Link>
   </div>
@@ -58,28 +58,28 @@ Integrations (e.g. [ServiceTitan](./ai-workforce/ai-chat-receptionist/connect-th
 
 ## Popular guides
 
-<div className="row business-app-cards">
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-workforce/ai-chat-receptionist">
-      <div className="card">
+<div className="row business-app-cards" style={{ alignItems: 'stretch' }}>
+  <div className="col col--4" style={{ marginBottom: 'var(--ifm-spacing-vertical)' }}>
+    <Link className="card-link" to="./ai-workforce/ai-chat-receptionist" style={{ height: '100%', display: 'block' }}>
+      <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div className="card__header"><h3>AI Chat Receptionist</h3></div>
-        <div className="card__body"><p>Set up chat, SMS, email, and messaging; capture leads and answer questions 24/7.</p></div>
+        <div className="card__body" style={{ flex: 1 }}><p>Set up chat, SMS, email, and messaging; capture leads and answer questions 24/7.</p></div>
       </div>
     </Link>
   </div>
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-workforce/ai-voice-receptionist">
-      <div className="card">
+  <div className="col col--4" style={{ marginBottom: 'var(--ifm-spacing-vertical)' }}>
+    <Link className="card-link" to="./ai-workforce/ai-voice-receptionist" style={{ height: '100%', display: 'block' }}>
+      <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div className="card__header"><h3>AI Voice Receptionist</h3></div>
-        <div className="card__body"><p>Answer calls 24/7, capture leads, book appointments, and route or transfer calls.</p></div>
+        <div className="card__body" style={{ flex: 1 }}><p>Answer calls 24/7, capture leads, book appointments, and route or transfer calls.</p></div>
       </div>
     </Link>
   </div>
-  <div className="col col--4">
-    <Link className="card-link" to="./ai-capabilities/creating-custom-capabilities">
-      <div className="card">
+  <div className="col col--4" style={{ marginBottom: 'var(--ifm-spacing-vertical)' }}>
+    <Link className="card-link" to="./ai-capabilities/creating-custom-capabilities" style={{ height: '100%', display: 'block' }}>
+      <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div className="card__header"><h3>Custom Capabilities</h3></div>
-        <div className="card__body"><p>Connect external systems and APIs so your AI can run your business workflows.</p></div>
+        <div className="card__body" style={{ flex: 1 }}><p>Connect external systems and APIs so your AI can run your business workflows.</p></div>
       </div>
     </Link>
   </div>
