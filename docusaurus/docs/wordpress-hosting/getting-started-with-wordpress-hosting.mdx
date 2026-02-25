@@ -1,0 +1,156 @@
+---
+title: Getting Started with WordPress Hosting
+description: Set up your WordPress site from a template or import an existing site. Customize your design, configure your store, connect your domain, and track performance.
+sidebar_position: 2
+---
+
+# Getting Started with WordPress Hosting
+
+WordPress Hosting helps you build and run fast, secure websites with built-in eCommerce, visual editing, and managed hosting. This guide walks you through choosing a template or importing a site, customizing your design, setting up your store, connecting your domain, and tracking performance.
+
+## Getting started checklist
+
+1. [Choose a template or import your site](#step-1-choose-a-template-or-import-your-site): Start from a pre-built layout or bring an existing WordPress site
+2. [Customize your site](#step-2-customize-your-site): Add your logo, colors, and content with Divi Builder
+3. [Set up your store (if selling online)](#step-3-set-up-your-store-if-selling-online): Configure WooCommerce for products, payments, and shipping
+4. [Connect your domain (Pro only)](#step-4-connect-your-domain-pro-only): Point your custom domain to your site
+5. [Connect analytics](#step-5-connect-analytics): Track visitors and performance with Google Analytics
+
+---
+
+## Step 1: Choose a template or import your site
+
+New sites start from a template or from an existing WordPress export. Templates include themes, plugins, and page layouts so you can launch quickly.
+
+### How to create a new site from a template
+
+1. Log in to Business App and open **WordPress Hosting**.
+2. Create a new site and choose one of the seven pre-built templates (Retail, Services, Education, B2B, Home Services, Art/Photography, or Health/Fitness).
+3. Enter your business name and tagline when prompted.
+4. The template installs Divi Builder and WooCommerce automatically.
+
+See the [Templates overview](./templates/index.mdx) for custom templates and hiding pre-built options.
+
+### How to import an existing WordPress site
+
+1. Create your WordPress Hosting account and a new site.
+2. Install the **All-in-One WP Migration** plugin on both your original site and the new WordPress Hosting site.
+3. On your original site: go to **All-in-One WP Migration** > **Export**, then download the export file.
+4. On your new site: go to **All-in-One WP Migration** > **Import**, then upload the file.
+
+See the [Import guide](./import/index.md) for migration options, file size limits, and manual import steps.
+
+:::info
+WordPress Hosting Standard uses subdomains only. Custom domains require **WordPress Hosting Pro**.
+:::
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Step 2: Customize your site
+
+Use Divi Builder to edit your site visually without coding. Add your logo, change theme colors, and update pages and images.
+
+### How to customize with Divi Builder
+
+1. Go to **WordPress Hosting** and open your site's **WordPress Dashboard**.
+2. Click **Customize your site** or go to your homepage with Divi Builder enabled.
+3. Edit text and images directly on the page. Use **Divi** > **General Settings** to add your logo and **Divi** > **Theme Customizer** to set theme colors.
+4. Add or edit pages from the **Pages** tab in WordPress.
+
+See [Edit your site with Divi Builder](./wordpress-dashboard/plugins/divi-builder/edit-your-site-with-divi-builder.md) for a full walkthrough.
+
+:::tip
+The **Getting Started Card** on your dashboard Overview page provides quick links to customize your homepage, add your logo, set theme colors, and add pages.
+:::
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Step 3: Set up your store (if selling online)
+
+If you use an eCommerce template, configure WooCommerce to add products, set up payments, and define shipping.
+
+### How to set up WooCommerce
+
+1. Go to **WordPress Hosting** > **WordPress Dashboard**.
+2. Open **WooCommerce** > **Settings** and click **Setup Wizard** (under the **Help** tab) to run the configuration.
+3. Add products under **Products** > **Add New**.
+4. Configure payment methods under **WooCommerce** > **Settings** > **Payments**.
+5. Set up shipping under **WooCommerce** > **Settings** > **Shipping**.
+
+See [Set up your WooCommerce store](./wordpress-dashboard/plugins/woocommerce/setup-your-woocommerce-store.md) and [WooCommerce Payments](./wordpress-dashboard/plugins/woocommerce/set-up-woocommerce-payments.md) for details.
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Step 4: Connect your domain (Pro only)
+
+WordPress Hosting Pro supports custom domains. Configure DNS at your registrar and connect the domain in WordPress Hosting.
+
+### How to connect a custom domain
+
+1. At your domain registrar, add an **A Record** for your root domain pointing to `34.149.86.124`.
+2. Add a **CNAME Record** for `www` pointing to `host.websiteprohosting.com`.
+3. Go to **WordPress Hosting** > **Domains**.
+4. Click **Connect a Domain**, enter your domain, and click **Add Domain**.
+5. Wait for the domain to show as **Connected**. WordPress Hosting provisions SSL automatically.
+6. Use **Make Primary** to set your main domain if you have multiple connected domains.
+
+See [Domain setup](./domains/connect-a-custom-domain.md) and the [Domains overview](./domains/index.mdx) for DNS details and troubleshooting.
+
+:::note
+DNS propagation can take from a few minutes to 48 hours. SSL certificates are issued automatically by Let's Encrypt.
+:::
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Step 5: Connect analytics
+
+Track visitors, page views, and traffic sources. Connect your own Google Analytics account for accurate, site-specific data.
+
+### How to connect Google Analytics
+
+1. Go to **Business App** > **Administration** > **Connections** to connect Google Analytics, or
+2. In **WordPress Dashboard** > **Settings** > **General**, enter your Tracking ID in **Custom Google Analytics Tracking ID**.
+
+See the [Analytics overview](./analytics/index.mdx) and [Add your own analytics account](./analytics/add-your-own-analytics-account.md) for setup and data options.
+
+:::tip
+Connecting your own Google Analytics account gives you more accurate data than the default shared view.
+:::
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Frequently asked questions
+
+<details>
+<summary>What is the difference between WordPress Hosting Standard and Pro?</summary>
+
+Standard includes templates, Divi Builder, WooCommerce, daily backups (2 retained), and subdomain-only hosting. Pro adds custom domains, staging environments, extended backup retention (up to 90 days), phpMyAdmin, SFTP, and no plugin restrictions.
+</details>
+
+<details>
+<summary>Do I need to buy SSL separately?</summary>
+
+No. WordPress Hosting automatically provisions free SSL certificates from Let's Encrypt for all connected domains.
+</details>
+
+<details>
+<summary>Where do I find the Getting Started Card?</summary>
+
+The Getting Started Card appears on your **Overview** page when you log into WordPress Hosting. It links to set up your store, customize your site, and connect analytics. See [Getting Started Card](./overview/getting-started-card.md) for details.
+</details>
+
+<details>
+<summary>Can I use a custom domain with Standard?</summary>
+
+No. Custom domains are only available with WordPress Hosting Pro. Standard sites use subdomains (e.g., mybusiness.websitepro.hosting).
+</details>
