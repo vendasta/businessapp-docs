@@ -62,7 +62,7 @@ Your app supports three different methods of connecting external platforms. Each
 | **SSO-Based**         | Secure logins and synced data             | Single sign-on authorization     |
 | **API-Key Based**     | Custom or advanced external connections   | Generate and use API credentials |
 
-Within each specific app (after you press `Connect`) you will be prompted with special instructions on how to nagivate and set up the connection. 
+Within each specific app (after you press `Connect`) you will be prompted with special instructions on how to navigate and set up the connection. 
 
 ## How to Manage or Disconnect Integrations
 1. From the `Connections` section, select the `Manage` tab.  

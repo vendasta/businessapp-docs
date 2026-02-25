@@ -79,7 +79,7 @@ A strong Knowledge Base is the foundation of effective AI Employee performance. 
 <details>
 <summary>What types of files can I upload to the Knowledge Base?</summary>
 
-You can upload common document formats such as PDF, DOCX, TXT, CSv, and PPTX files. Note that text-based will be most effective for the AI to read and process it effectively.
+You can upload common document formats such as PDF, DOCX, TXT, CSV, and PPTX files. Note that text-based will be most effective for the AI to read and process it effectively.
 
 </details>
 
