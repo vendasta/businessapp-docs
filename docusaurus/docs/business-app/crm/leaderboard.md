@@ -1,39 +1,17 @@
 ---
 title: Leaderboard
 sidebar_position: 8
-description: Track top-performing salespeople and teams using Leaderboard metrics in the CRM.
-tags: [leaderboard, crm]
-keywords: [sales leaderboard, performance, rankings]
+description: Information about the CRM Leaderboard availability.
 ---
 
-Use the Leaderboard to see top-performing salespeople and teams. Filter, compare time ranges, and identify coaching opportunities.
+# Leaderboard Availability
 
-## Why use the Leaderboard?
+The Leaderboard feature is a performance tracking tool available exclusively within **Partner Center**. It is not directly accessible within the client-facing **Business App**.
 
-- Recognize high performers and motivate your team
-- Spot trends and areas for improvement
-- Compare performance across time ranges
+Partners can use the Leaderboard in Partner Center to:
+- Track sales team performance
+- Compare revenue metrics
+- Filter by teams, markets, or custom date ranges
+- Export performance data to CSV
 
-## What’s included
-
-- **Rankings** by selected metrics
-- **Filters** by team or timeframe
-- **Drill-through** to underlying records
-
-## How to use the Leaderboard
-
-1. Go to `CRM` > `Leaderboard`.
-2. Select the metric and time range.
-3. Filter by team or salesperson as needed.
-
-![Leaderboard overview](img/leaderboard/leaderboard_overview.png)
-
-## Frequently Asked Questions (FAQs)
-
-<details>
-<summary>Which metrics are available?</summary>
-
-Common metrics include opportunities won, revenue, and activity volume. Availability may vary by configuration.
-</details>
-
-
+To access the Leaderboard, please log in to your **Partner Center** account and navigate to **CRM** > **Leaderboard**.
