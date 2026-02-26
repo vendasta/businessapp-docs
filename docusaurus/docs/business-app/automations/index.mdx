@@ -68,6 +68,18 @@ Every automation includes:
 
 For example: **Form submitted** (event) → **When form is submitted for a contact** (trigger) → **Contact has "New Lead" tag?** (condition) → **Send welcome email** (step) → **Complete**
 
+Here is an example of a simple automation workflow that sends a review request when a note tagged "eligible_for_review_request" is created or modified for a contact.
+
+<div style={{ textAlign: 'center' }}>
+
+![Automation workflow example showing trigger and step](./img/automation-example.png)
+
+</div>
+
+:::tip
+Before building an automation, run the process manually a couple of times to make sure it works the way you expect. Once you're confident in the process, automate it — you'll catch fewer surprises and build a more reliable workflow.
+:::
+
 ## Getting started
 
 There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and steps already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
@@ -105,17 +117,38 @@ You can also find Automations under **Business App** > **Administration** > **Au
 5. **Add a Step** — define what happens when the trigger fires (templates include steps already; you can edit, remove, or add more)
    - Example: "Send a plain text email via Inbox", "Send SMS", "Create task"
 
-6. Save and toggle your automation **On**
+6. **Edit automation details** — select ``Edit details`` from the side panel to name and organize your automation. Give it a title, add a description (or select ``Regenerate description`` to have AI draft one), apply tags to make it easier to find on the Automations page, and add notes.
+
+<div style={{ textAlign: 'center' }}>
+  <img src={require('./img/edit-automation-details-window.png').default} alt="Edit details panel showing Title, Description, Tags, and Notes fields" width="55%" />
+</div>
+
+7. Save and toggle your automation **On**
 
 ![Toggle automation on](./img/automation-toggle.png)
 
-Here is an example of a simple automation workflow that sends a review request when a note tagged "eligible_for_review_request" is created or modified for a contact.
+:::warning
+You must turn off your automation before you can edit its triggers, conditions, or steps.
+:::
 
-<div style={{ textAlign: 'center' }}>
+## Turning on an automation
 
-![Automation workflow example showing trigger and step](./img/automation-example.png)
+When you toggle an automation on, you'll be prompted to review and confirm three settings before it goes live:
 
-</div>
+- **Entry settings**: control how frequently the automation runs for the same contact or company (only once, multiple times, or one at a time)
+- **Error handling settings**: choose whether to skip a failed step and continue, or stop the run entirely
+- **Error notifications**: optionally subscribe to be notified when the automation encounters an error
+
+See [Automation settings](automation-settings.md) for a full explanation of each option.
+
+## Turning off an automation
+
+When you toggle an automation off, you'll be asked how to handle any runs that are currently in progress:
+
+- **Stop automation runs in progress** — immediately aborts all active runs. Stopped runs will not resume if the automation is turned back on.
+- **Drain automation runs** — allows runs in progress to complete. The automation turns off automatically once all ongoing runs have been processed.
+
+Use **Drain** when you want to avoid interrupting processes that are mid-workflow. Use **Stop** when you need to halt everything immediately — for example, if the automation is behaving unexpectedly.
 
 ## Related resources
 
