@@ -1,39 +1,27 @@
 ---
 title: Leaderboard
 sidebar_position: 8
-description: Track top-performing salespeople and teams using Leaderboard metrics in the CRM.
+description: Information about sales performance tracking and the Leaderboard.
 tags: [leaderboard, crm]
 keywords: [sales leaderboard, performance, rankings]
 ---
 
-Use the Leaderboard to see top-performing salespeople and teams. Filter, compare time ranges, and identify coaching opportunities.
+The Leaderboard is used to track top-performing salespeople and teams, allowing for performance comparison and identifying coaching opportunities.
+
+## Availability
+
+The Leaderboard feature is a high-level tracking tool managed at the organizational level. It is not directly accessible within the standard client-facing CRM interface.
 
 ## Why use the Leaderboard?
 
-- Recognize high performers and motivate your team
+- Recognize high performers and motivate teams
 - Spot trends and areas for improvement
-- Compare performance across time ranges
+- Compare performance across custom time ranges
 
-## What’s included
+## Accessing Performance Data
 
-- **Rankings** by selected metrics
-- **Filters** by team or timeframe
-- **Drill-through** to underlying records
+If you require access to sales performance rankings, metrics, or revenue comparisons, please contact your account administrator. They can provide reports and data exports (such as CSV files) from the primary management platform.
 
-## How to use the Leaderboard
-
-1. Go to `CRM` > `Leaderboard`.
-2. Select the metric and time range.
-3. Filter by team or salesperson as needed.
-
-![Leaderboard overview](img/leaderboard/leaderboard_overview.png)
-
-## Frequently Asked Questions (FAQs)
-
-<details>
-<summary>Which metrics are available?</summary>
-
-Common metrics include opportunities won, revenue, and activity volume. Availability may vary by configuration.
-</details>
-
-
+:::info
+For more information on the metrics available in your organization, reach out to your support team or administrator.
+:::
