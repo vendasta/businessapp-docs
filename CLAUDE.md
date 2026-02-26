@@ -3,7 +3,7 @@
 Agent guidance for the Business App documentation repository.
 This file is the first thing you should read. It tells you what this repo is, how it's structured, and how to work in it safely.
 
-For content and formatting standards, see the skills in `.cursor/skills/`.
+For content and formatting standards, see the skills in `.claude/skills/`.
 
 ---
 
@@ -22,17 +22,21 @@ The site is built and deployed via Google Cloud Run. A failed build blocks the e
 ├── CLAUDE.md                        ← You are here
 ├── CONTRIBUTING.md                  ← Authoring conventions, icon usage
 ├── README.md                        ← Setup and build commands
-├── .cursor/
-│   ├── rules/                       ← Content standards (apply these always)
-│   │   ├── article-standards.mdc    ← Voice, tense, evergreen content rules
-│   │   ├── gray-label-business-owner-docs.mdc ← No Vendasta branding — CRITICAL
-│   │   └── wistia-video-embedding.mdc ← Video embed format
-│   └── skills/                      ← How-to guides for specific tasks
+├── .agents/
+│   └── skills/                      ← Symlink to .claude/skills/ (Gemini CLI, Codex)
+├── .claude/
+│   ├── settings.local.json          ← Claude Code MCP config
+│   └── skills/                      ← How-to guides for specific tasks (auto-discovered)
 │       ├── generate-help-article/SKILL.md     ← Full article generation workflow
 │       ├── getting-started-guide/SKILL.md     ← Getting Started guide format
 │       ├── pre-push-validation/SKILL.md       ← Run this before every commit
 │       ├── training-video-teleprompter/SKILL.md
 │       └── what-did-i-get-done/SKILL.md
+├── .cursor/
+│   └── rules/                       ← Content standards (apply these always)
+│       ├── article-standards.mdc    ← Voice, tense, evergreen content rules
+│       ├── gray-label-business-owner-docs.mdc ← No Vendasta branding — CRITICAL
+│       └── wistia-video-embedding.mdc ← Video embed format
 ├── .github/
 │   └── workflows/                   ← CI/CD — do not edit unless asked
 ├── docusaurus/
@@ -102,7 +106,7 @@ For WordPress Hosting sections, the slug pattern is required:
 3. **Create `_category_.json`** — set the label and position
 4. **Create `index.md`** — follow the generate-help-article skill exactly
 5. **Add images to `./img/`** — kebab-case filenames, PNG preferred
-6. **Run pre-push validation** — follow `.cursor/skills/pre-push-validation/SKILL.md`
+6. **Run pre-push validation** — invoke the `pre-push-validation` skill
 7. **Fix any errors** — do not skip this step; broken files fail the Cloud Build
 8. **Commit with a clear message** — e.g. `docs: add AI Employee help article`
 
