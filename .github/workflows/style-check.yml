@@ -1,0 +1,19 @@
+name: Style Check
+
+on:
+  pull_request:
+    paths:
+      - 'docusaurus/docs/**/*.md'
+      - 'docusaurus/docs/**/*.mdx'
+
+jobs:
+  style-check:
+    name: Documentation style scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run style scan on changed files
+        run: bash .claude/skills/style-review/scripts/scan-style.sh
