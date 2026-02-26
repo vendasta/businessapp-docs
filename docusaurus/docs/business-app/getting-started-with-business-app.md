@@ -222,3 +222,9 @@ Go to **Administration** > **Connections** > **Manage** to see all active integr
 
 SMS is available for businesses located in the United States and Canada. US businesses must complete A2P 10DLC registration before sending messages. See [SMS setup](./conversations/sms/index.mdx) and [SMS registration for US businesses](./administration/sms_configuration.md) for details.
 </details>
+
+<details>
+<summary><strong>Is there a sales leaderboard in Business App?</strong></summary>
+
+Business App is designed for business owners to manage their online presence and marketing. Sales team performance tracking, including the sales leaderboard, is available to your service provider in a separate platform called Partner Center. If you have questions about your sales performance, please contact your account manager.
+</details>
