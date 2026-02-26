@@ -20,6 +20,7 @@ This documentation is written for **business owners** (end users), not partners,
 - "Vendasta" (the parent company)
 - Any partner/reseller/agency terminology
 - Platform internals or white-label concepts
+- "Partner Center" or any of its features, settings, or functions — Partner Center is a partner/reseller-facing platform and is entirely outside the scope of this repository. Never reference it, link to it, or describe functionality that lives within it.
 
 **Instead, use:**
 - "Business App" or the specific product name (WordPress Hosting, Local SEO, etc.)
@@ -34,3 +35,4 @@ This documentation is written for **business owners** (end users), not partners,
 | "Vendasta has made it easier..." | "You can now easily..." |
 | "one of Vendasta's templates" | "one of the pre-built templates" |
 | "your partner provides..." | "this feature allows you to..." |
+| "In Partner Center, you can..." | *(omit entirely — Partner Center is not part of Business App)* |
