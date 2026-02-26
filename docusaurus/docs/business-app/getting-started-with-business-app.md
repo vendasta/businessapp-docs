@@ -33,19 +33,19 @@ Business App is your one-stop dashboard for running your business online. This g
 
 ## Key features of Business App at a glance
 
-- **Manage your business profile**  
+- **Manage your business profile**
   Update your business info and make sure your details appear correctly wherever customers find you online.
 
-- **Connect and communicate**  
+- **Connect and communicate**
   Send and receive messages with your leads and customers, and respond to reviews or inquiries through Conversations.
 
-- **Track your performance**  
+- **Track your performance**
   See important business analytics such as website traffic, reviews, and leads either in your [Executive Report](./executivereport/index.md) or your [Home](./home.mdx) screen.
 
-- **Access your tools and products**  
+- **Access your tools and products**
   Quickly launch any apps or services you've activated to market your business, connect with customers, or boost productivity.
 
-- **Multi-location management**  
+- **Multi-location management**
   If you manage more than one business location, view and control them all from a single login.
 
 ---
@@ -221,4 +221,10 @@ Go to **Administration** > **Connections** > **Manage** to see all active integr
 <summary><strong>Is SMS available for my business?</strong></summary>
 
 SMS is available for businesses located in the United States and Canada. US businesses must complete A2P 10DLC registration before sending messages. See [SMS setup](./conversations/sms/index.mdx) and [SMS registration for US businesses](./administration/sms_configuration.md) for details.
+</details>
+
+<details>
+<summary><strong>Is there a leaderboard in Business App?</strong></summary>
+
+No, the leaderboard feature is not available in Business App. It is located in the Partner Center under `CRM` > `Leaderboard`, where it tracks sales team performance and revenue metrics for partners (agencies/resellers).
 </details>
