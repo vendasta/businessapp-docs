@@ -135,6 +135,9 @@ jobs:
           # ── Run Gemini CLI in non-interactive mode ─────────────────────────
           RESPONSE=$(cat /tmp/gemini-prompt.txt | gemini --output-format json 2>&1) || true
 
+          # Log the model name for observability.
+          echo "Gemini model: $(printf '%s' "$RESPONSE" | jq -r '.model // "unknown"' 2>/dev/null)"
+
           # Extract the text field from the JSON wrapper; fall back to raw if
           # the CLI did not wrap output in a JSON envelope.
           FINDINGS_RAW=$(printf '%s' "$RESPONSE" | jq -r '.response' 2>/dev/null \
