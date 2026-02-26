@@ -1,0 +1,208 @@
+name: Gemini Style Review
+# Checks documentation files changed in a PR against Business App style
+# guidelines using Gemini CLI and posts inline comments with committable
+# suggestion blocks directly on the PR diff.
+#
+# Requires:
+#   GEMINI_API_KEY — Google AI Studio API key, set as a repository secret.
+#
+# Limitations:
+#   - Forked PRs: GITHUB_TOKEN is read-only for forks; the job is skipped
+#     silently via the `if:` condition on the job.
+#   - Large changesets: file content is capped at ~50 KB total. Files beyond
+#     the cap are listed in the review body but not reviewed by Gemini.
+#   - Non-deterministic output: if Gemini returns non-JSON, the raw response
+#     is posted as a top-level review comment so findings are not silently lost.
+#   - Lines not in the diff: if inline comments fail because flagged lines are
+#     not part of the diff, findings are re-posted as a top-level text comment.
+
+on:
+  pull_request:
+    paths:
+      - 'docusaurus/docs/**'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  style-review:
+    name: Gemini style review
+    runs-on: ubuntu-latest
+    # Forked PRs cannot receive inline comments — GITHUB_TOKEN is read-only.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate Stylosaurus app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.STYLOSAURUS_APP_ID }}
+          private-key: ${{ secrets.STYLOSAURUS_PRIVATE_KEY }}
+
+      - name: Install Gemini CLI
+        run: npm install -g @google/gemini-cli
+
+      - name: Find changed documentation files
+        id: changed-files
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          bash .claude/skills/style-review/scripts/find-modified-docs.sh \
+            "origin/${BASE_REF}" > /tmp/changed-docs.txt
+          if [ -s /tmp/changed-docs.txt ]; then
+            echo "no_files=false" >> "$GITHUB_OUTPUT"
+            echo "Changed documentation files:"
+            cat /tmp/changed-docs.txt
+          else
+            echo "no_files=true" >> "$GITHUB_OUTPUT"
+            echo "No documentation files changed — skipping style review."
+          fi
+
+      - name: Run Gemini style review and post inline comments
+        if: steps.changed-files.outputs.no_files == 'false'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          # Abort gracefully if GEMINI_API_KEY is not configured yet.
+          if [ -z "${GEMINI_API_KEY:-}" ]; then
+            echo "GEMINI_API_KEY secret is not configured — skipping style review."
+            exit 0
+          fi
+
+          SIZE_LIMIT=51200  # ~50 KB total payload cap
+          TOTAL_SIZE=0
+          SKIPPED_FILES=""
+
+          # ── Build prompt ───────────────────────────────────────────────────
+          # Heredoc content is indented to match the YAML block scalar level so
+          # YAML parsing succeeds. The shell strips the leading spaces when
+          # writing to the file (YAML strips them before passing to the shell).
+          cat > /tmp/gemini-prompt.txt << 'PROMPT_EOF'
+          You are a documentation style reviewer for Business App, a gray-label SaaS product.
+
+          Review the documentation files below against the style criteria. Apply ALL criteria:
+          - Gray-label: never write "Vendasta", "Partner Center", "partner", "reseller", "agency", or "white-label"
+          - Evergreen: no historical language ("previously", "formerly", "used to", "before this update", "legacy", "deprecated") and no future-state language ("coming soon", "will be available", "on the roadmap")
+          - Voice: second-person ("you"/"your"), present tense, no third-person ("users", "the user"), no marketing language ("powerful", "robust", "seamless", "cutting-edge", "best-in-class", "revolutionary", "game-changing", "innovative", "amazing", "incredible", "awesome", "unlock")
+          - Formatting: no em dashes (—); all UI element names (buttons, tabs, fields, menu paths) must be in backticks
+
+          Output ONLY a valid JSON array. No markdown, no code fences, no explanation, no preamble.
+          Each finding must be an object with exactly these fields:
+            "file": the file path as shown in the === FILE: === header
+            "line": integer line number (1-indexed)
+            "issue": brief label (e.g. "Vendasta mention", "em dash", "third-person")
+            "original": the full content of that line exactly as it appears in the file
+            "replacement": the full corrected line content
+          If no issues found, output exactly: []
+
+          FILES TO REVIEW:
+          PROMPT_EOF
+
+          # Append each changed file's content up to SIZE_LIMIT.
+          while IFS= read -r FILE; do
+            [ -z "$FILE" ] && continue
+            if [ ! -f "$FILE" ]; then
+              echo "Warning: $FILE not found on disk, skipping."
+              continue
+            fi
+            FILE_SIZE=$(wc -c < "$FILE")
+            if [ $((TOTAL_SIZE + FILE_SIZE)) -le $SIZE_LIMIT ]; then
+              TOTAL_SIZE=$((TOTAL_SIZE + FILE_SIZE))
+              printf '\n=== FILE: %s ===\n' "$FILE" >> /tmp/gemini-prompt.txt
+              cat "$FILE" >> /tmp/gemini-prompt.txt
+              printf '\n' >> /tmp/gemini-prompt.txt
+            else
+              SKIPPED_FILES="${SKIPPED_FILES}\\n- ${FILE} (exceeds ~50 KB payload cap)"
+            fi
+          done < /tmp/changed-docs.txt
+
+          # ── Run Gemini CLI in non-interactive mode ─────────────────────────
+          RESPONSE=$(cat /tmp/gemini-prompt.txt | gemini --output-format json 2>&1) || true
+
+          # Extract the text field from the JSON wrapper; fall back to raw if
+          # the CLI did not wrap output in a JSON envelope.
+          FINDINGS_RAW=$(printf '%s' "$RESPONSE" | jq -r '.response' 2>/dev/null \
+            || printf '%s' "$RESPONSE")
+
+          # Strip markdown code fences if the model wrapped its output.
+          FINDINGS_RAW=$(printf '%s' "$FINDINGS_RAW" | sed '/^```/d')
+
+          # ── Parse findings and post PR review ──────────────────────────────
+          if FINDINGS=$(printf '%s' "$FINDINGS_RAW" | jq -c '.' 2>/dev/null); then
+            ISSUE_COUNT=$(printf '%s' "$FINDINGS" | jq 'length')
+
+            # Nothing to report and no skipped files — exit cleanly.
+            if [ "$ISSUE_COUNT" -eq 0 ] && [ -z "$SKIPPED_FILES" ]; then
+              echo "No style issues found. No review posted."
+              exit 0
+            fi
+
+            # Build review body.
+            BODY="**Gemini style review** — ${ISSUE_COUNT} issue(s) found."
+            if [ -n "$SKIPPED_FILES" ]; then
+              BODY="${BODY}
+
+          The following files were not reviewed (payload exceeded ~50 KB cap):
+          $(printf '%b' "$SKIPPED_FILES")"
+            fi
+
+            # Build the inline comments array with GitHub suggestion blocks.
+            COMMENTS=$(printf '%s' "$FINDINGS" | jq -c '[.[] | {
+              path: .file,
+              line: .line,
+              side: "RIGHT",
+              body: ("**Style issue:** " + .issue + "\n\n```suggestion\n" + .replacement + "\n```")
+            }]')
+
+            jq -n \
+              --arg body "$BODY" \
+              --argjson comments "$COMMENTS" \
+              '{body: $body, event: "COMMENT", comments: $comments}' > /tmp/review.json
+
+            if ! gh api \
+              --method POST \
+              "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
+              --input /tmp/review.json 2>/tmp/api-error.txt; then
+              # Inline comments fail when flagged lines are not in the PR diff.
+              # Re-post all findings as a top-level text comment.
+              FINDINGS_TEXT=$(printf '%s' "$FINDINGS" | jq -r \
+                '.[] | "**\(.issue)** — `\(.file)` line \(.line)\n> Original: `\(.original)`\n> Suggestion: `\(.replacement)`\n"')
+              gh api \
+                --method POST \
+                "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
+                --field body="**Gemini style review** — ${ISSUE_COUNT} issue(s) found (inline comments unavailable — some lines may not be in the diff):
+
+          ${FINDINGS_TEXT}" \
+                --field event="COMMENT"
+            fi
+
+          else
+            # Gemini returned output that could not be parsed as JSON.
+            # Post the raw response so findings are not silently lost.
+            TRUNCATED=$(printf '%s' "$RESPONSE" | head -c 10000)
+            gh api \
+              --method POST \
+              "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
+              --field body="**Gemini style review** — output could not be parsed as JSON. Raw Gemini output:
+
+          \`\`\`
+          ${TRUNCATED}
+          \`\`\`" \
+              --field event="COMMENT"
+          fi
