@@ -68,6 +68,14 @@ Every automation includes:
 
 For example: **Form submitted** (event) → **When form is submitted for a contact** (trigger) → **Contact has "New Lead" tag?** (condition) → **Send welcome email** (step) → **Complete**
 
+Here is an example of a simple automation workflow that sends a review request when a note tagged "eligible_for_review_request" is created or modified for a contact.
+
+<div style={{ textAlign: 'center' }}>
+
+![Automation workflow example showing trigger and step](./img/automation-example.png)
+
+</div>
+
 ## Getting started
 
 There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and steps already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
@@ -115,13 +123,30 @@ You can also find Automations under **Business App** > **Administration** > **Au
 
 ![Toggle automation on](./img/automation-toggle.png)
 
-Here is an example of a simple automation workflow that sends a review request when a note tagged "eligible_for_review_request" is created or modified for a contact.
+:::warning
+You must turn off your automation before you can edit its triggers, conditions, or steps.
+:::
 
-<div style={{ textAlign: 'center' }}>
+## Turning on an automation
 
-![Automation workflow example showing trigger and step](./img/automation-example.png)
+When you toggle an automation on, you'll be prompted to review and confirm three settings before it goes live:
 
-</div>
+- **Entry settings**: control how frequently the automation runs for the same contact or company (only once, multiple times, or one at a time)
+- **Error handling settings**: choose whether to skip a failed step and continue, or stop the run entirely
+- **Error notifications**: optionally subscribe to be notified when the automation encounters an error
+
+See [Automation settings](automation-settings.md) for a full explanation of each option.
+
+You'll then be asked to grant permission for the automation to access your account data. This is required for it to run. Select the account you want to activate this automation on and confirm access.
+
+## Turning off an automation
+
+When you toggle an automation off, you'll be asked how to handle any runs that are currently in progress:
+
+- **Stop automation runs in progress** — immediately aborts all active runs. Stopped runs will not resume if the automation is turned back on.
+- **Drain automation runs** — allows runs in progress to complete. The automation turns off automatically once all ongoing runs have been processed.
+
+Use **Drain** when you want to avoid interrupting processes that are mid-workflow. Use **Stop** when you need to halt everything immediately — for example, if the automation is behaving unexpectedly.
 
 ## Related resources
 
