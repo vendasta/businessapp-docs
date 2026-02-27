@@ -214,6 +214,65 @@ title: Scheduling Posts: A Guide     ✗
 
 ---
 
+## Rule Examples
+
+Use these as few-shot reference when reviewing. Each example shows the violation, the corrected version, and the expected severity.
+
+### Gray-label (blocker)
+
+| Violation | Correction |
+|-----------|------------|
+| `Vendasta's Business App makes it easy to manage reviews.` | `Business App makes it easy to manage reviews.` |
+| `Contact your reseller for billing questions.` | `Contact support for billing questions.` |
+| `This feature is provided by your partner.` | `This feature is included with your account.` |
+| `In Partner Center, you can configure white-label settings.` | *(omit entirely — Partner Center is not part of Business App)* |
+
+JSON output example:
+```json
+{"file": "docusaurus/docs/reputation/index.md", "line": 4, "issue": "Vendasta mention", "severity": "blocker", "original": "Vendasta's Business App makes it easy to manage reviews.", "replacement": "Business App makes it easy to manage reviews."}
+```
+
+### Evergreen (warning)
+
+| Violation | Correction |
+|-----------|------------|
+| `Previously, this feature required manual configuration.` | `This feature is configured automatically.` |
+| `This integration was formerly called Social Marketing Pro.` | `This integration connects your social accounts.` |
+| `Multi-location support is coming soon.` | *(omit — only document currently available features)* |
+
+JSON output example:
+```json
+{"file": "docusaurus/docs/social-marketing/index.md", "line": 12, "issue": "historical language", "severity": "warning", "original": "Previously, this feature required manual configuration.", "replacement": "This feature is configured automatically."}
+```
+
+### Voice and tone (warning)
+
+| Violation | Correction |
+|-----------|------------|
+| `Users can connect their Google account from the Settings tab.` | `You can connect your Google account from the \`Settings\` tab.` |
+| `The user must verify their email before proceeding.` | `You must verify your email before proceeding.` |
+| `Business App provides a seamless, powerful dashboard.` | `Business App provides a dashboard for managing your business.` |
+
+JSON output example:
+```json
+{"file": "docusaurus/docs/business-app/overview/index.md", "line": 7, "issue": "third-person", "severity": "warning", "original": "Users can connect their Google account from the Settings tab.", "replacement": "You can connect your Google account from the `Settings` tab."}
+```
+
+### Formatting (suggestion)
+
+| Violation | Correction |
+|-----------|------------|
+| `Click Save to apply your changes.` | `Click \`Save\` to apply your changes.` |
+| `Go to Settings — Advanced to configure this option.` | `Go to \`Settings\` > \`Advanced\` to configure this option.` |
+| `The Notifications tab — located in your account settings — controls alerts.` | `The \`Notifications\` tab, located in your account settings, controls alerts.` |
+
+JSON output example:
+```json
+{"file": "docusaurus/docs/business-app/notifications/index.md", "line": 22, "issue": "UI element not in backticks", "severity": "suggestion", "original": "Click Save to apply your changes.", "replacement": "Click `Save` to apply your changes."}
+```
+
+---
+
 ## Scripts Reference
 
 | Script | Purpose |
