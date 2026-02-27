@@ -137,17 +137,17 @@ jobs:
 
           # ── Run Gemini CLI ─────────────────────────────────────────────────
           echo "Running style review with model: ${GEMINI_MODEL}"
-          if ! RESPONSE=$(gemini --model "${GEMINI_MODEL}" --temperature 0.2 --yolo \
+          if ! RESPONSE=$(gemini --model "${GEMINI_MODEL}" --yolo \
               -p "$(cat /tmp/gemini-prompt.txt)" 2>&1); then
             echo "::warning::${GEMINI_MODEL} exited non-zero — trying fallback (${GEMINI_FALLBACK_MODEL})"
-            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
+            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --yolo \
               -p "$(cat /tmp/gemini-prompt.txt)" 2>&1) || true
           fi
 
           # Also fallback if response is empty or looks like an error message.
           if [ -z "${RESPONSE}" ] || printf '%s' "${RESPONSE}" | grep -qE '^(Error:|error:|{"error|Usage:)'; then
             echo "::warning::${GEMINI_MODEL} returned unusable output — trying fallback (${GEMINI_FALLBACK_MODEL})"
-            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
+            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --yolo \
               -p "$(cat /tmp/gemini-prompt.txt)" 2>&1) || true
           fi
 
