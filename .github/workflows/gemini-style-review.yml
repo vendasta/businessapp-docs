@@ -228,7 +228,7 @@ jobs:
           # ── Fetch PR diff line ranges ─────────────────────────────────────
           # GitHub only allows inline comments on lines within diff hunks.
           # Pre-filter findings so the API call never fails with 422.
-          gh api "/repos/${REPO}/pulls/${PR_NUMBER}/files" --per-page 100 --paginate > /tmp/pr-files.json
+          gh api "/repos/${REPO}/pulls/${PR_NUMBER}/files?per_page=100" --paginate > /tmp/pr-files.json
 
           cat > /tmp/split-findings.py << 'PYEOF'
           import sys, json, re

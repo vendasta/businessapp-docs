@@ -6,7 +6,7 @@ description: A test article with deliberate style violations for CI workflow tes
 
 # Style Review Test
 
-This article is used to test the Gemini style review CI workflow. It contains deliberate violations across all severity tiers. (trigger run 2)
+This article is used to test the Gemini style review CI workflow. It contains deliberate violations across all severity tiers. (trigger run 3)
 
 ## Blockers
 
