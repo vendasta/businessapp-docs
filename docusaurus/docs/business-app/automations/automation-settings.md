@@ -12,7 +12,7 @@ Each automation has a Settings tab where you control how and when your workflow 
 
 ## Where to find settings
 
-1. Go to Business App > Administration > Automations
+1. Go to Business App > Automations
 2. Open an automation
 3. Select the **Settings** tab
 4. Configure entry settings and error handling options
