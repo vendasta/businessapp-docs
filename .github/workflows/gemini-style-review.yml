@@ -99,6 +99,8 @@ jobs:
           cat > /tmp/gemini-prompt.txt << 'PROMPT_EOF'
           You are a documentation style reviewer for Business App, a gray-label SaaS product.
 
+          Before reviewing, read the complete style guide from `.claude/skills/style-review/SKILL.md`. It contains all rules, criteria, and examples you must apply.
+
           Review the documentation files below. Output ONLY a valid JSON array. No markdown, no code fences, no explanation, no preamble.
           Each finding must be an object with exactly these fields:
             "file": the file path as shown in the === FILE: === header
@@ -114,13 +116,6 @@ jobs:
 
           FILES TO REVIEW:
           PROMPT_EOF
-
-          # Embed the style guide directly into the prompt.
-          if [ -f ".claude/skills/style-review/SKILL.md" ]; then
-            printf '\nSTYLE GUIDE (from .claude/skills/style-review/SKILL.md):\n' >> /tmp/gemini-prompt.txt
-            cat ".claude/skills/style-review/SKILL.md" >> /tmp/gemini-prompt.txt
-            printf '\n' >> /tmp/gemini-prompt.txt
-          fi
 
           # Append each changed file's content up to SIZE_LIMIT.
           while IFS= read -r FILE; do
@@ -142,17 +137,17 @@ jobs:
 
           # ── Run Gemini CLI ─────────────────────────────────────────────────
           echo "Running style review with model: ${GEMINI_MODEL}"
-          if ! RESPONSE=$(gemini --model "${GEMINI_MODEL}" --temperature 0.2 \
+          if ! RESPONSE=$(gemini --model "${GEMINI_MODEL}" --temperature 0.2 --yolo \
               -p "$(cat /tmp/gemini-prompt.txt)" 2>&1); then
             echo "::warning::${GEMINI_MODEL} exited non-zero — trying fallback (${GEMINI_FALLBACK_MODEL})"
-            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 \
+            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
               -p "$(cat /tmp/gemini-prompt.txt)" 2>&1) || true
           fi
 
           # Also fallback if response is empty or looks like an error message.
           if [ -z "${RESPONSE}" ] || printf '%s' "${RESPONSE}" | grep -qE '^(Error:|error:|{"error|Usage:)'; then
             echo "::warning::${GEMINI_MODEL} returned unusable output — trying fallback (${GEMINI_FALLBACK_MODEL})"
-            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 \
+            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
               -p "$(cat /tmp/gemini-prompt.txt)" 2>&1) || true
           fi
 
