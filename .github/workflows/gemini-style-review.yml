@@ -99,43 +99,100 @@ jobs:
             echo "No documentation files changed -- skipping style review."
           fi
 
+      - name: Install Gemini CLI
+        if: steps.changed-files.outputs.no_files == 'false'
+        run: |
+          npm install --silent --no-audit --global @google/gemini-cli@latest
+          gemini --version
+
+      - name: Configure Gemini settings
+        if: steps.changed-files.outputs.no_files == 'false'
+        run: |
+          mkdir -p .gemini
+          echo '{"experimental": {"enableAgents": true}}' > .gemini/settings.json
+
       - name: Run Gemini style review
         if: steps.changed-files.outputs.no_files == 'false'
-        uses: google-github-actions/run-gemini-cli@v0
         id: gemini-review
-        with:
-          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-          gemini_model: ${{ env.GEMINI_MODEL }}
-          prompt: |
-            Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
-            Files to review: ${{ steps.changed-files.outputs.file_list }}
-            ${{ inputs.additional_context && format('Additional instructions from the reviewer: {0}', inputs.additional_context) || '' }}
-          settings: '{"experimental": {"enableAgents": true}}'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MODEL: ${{ env.GEMINI_MODEL }}
+          FILE_LIST: ${{ steps.changed-files.outputs.file_list }}
+          ADDITIONAL_CONTEXT: ${{ inputs.additional_context || '' }}
+        run: |
+          PROMPT="Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
+          Files to review: ${FILE_LIST}"
+          if [ -n "${ADDITIONAL_CONTEXT}" ]; then
+            PROMPT="${PROMPT}
+          Additional instructions from the reviewer: ${ADDITIONAL_CONTEXT}"
+          fi
+
+          gemini --model "${MODEL}" \
+            --output-format json \
+            --prompt "${PROMPT}" > /tmp/gemini-primary.json 2>/tmp/gemini-primary.log || true
+
+          if [ -s /tmp/gemini-primary.json ]; then
+            echo "Primary model produced output ($(wc -c < /tmp/gemini-primary.json) bytes)."
+          else
+            echo "Primary model produced no output."
+            cat /tmp/gemini-primary.log || true
+          fi
 
       - name: Fallback model on failure
-        if: steps.changed-files.outputs.no_files == 'false' && (failure() || steps.gemini-review.outputs.response == '')
-        uses: google-github-actions/run-gemini-cli@v0
+        if: steps.changed-files.outputs.no_files == 'false' && !cancelled()
         id: gemini-fallback
-        with:
-          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-          gemini_model: ${{ env.GEMINI_FALLBACK_MODEL }}
-          prompt: |
-            Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
-            Files to review: ${{ steps.changed-files.outputs.file_list }}
-            ${{ inputs.additional_context && format('Additional instructions from the reviewer: {0}', inputs.additional_context) || '' }}
-          settings: '{"experimental": {"enableAgents": true}}'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MODEL: ${{ env.GEMINI_FALLBACK_MODEL }}
+          FILE_LIST: ${{ steps.changed-files.outputs.file_list }}
+          ADDITIONAL_CONTEXT: ${{ inputs.additional_context || '' }}
+        run: |
+          # Only run fallback if primary output is empty or invalid JSON
+          if [ -s /tmp/gemini-primary.json ] && jq -e '.' /tmp/gemini-primary.json > /dev/null 2>&1; then
+            echo "Primary output is valid -- skipping fallback."
+            exit 0
+          fi
+
+          echo "Primary output missing or invalid -- running fallback model."
+
+          PROMPT="Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
+          Files to review: ${FILE_LIST}"
+          if [ -n "${ADDITIONAL_CONTEXT}" ]; then
+            PROMPT="${PROMPT}
+          Additional instructions from the reviewer: ${ADDITIONAL_CONTEXT}"
+          fi
+
+          gemini --model "${MODEL}" \
+            --output-format json \
+            --prompt "${PROMPT}" > /tmp/gemini-fallback.json 2>/tmp/gemini-fallback.log || true
+
+          if [ -s /tmp/gemini-fallback.json ]; then
+            echo "Fallback model produced output ($(wc -c < /tmp/gemini-fallback.json) bytes)."
+          else
+            echo "Fallback model produced no output."
+            cat /tmp/gemini-fallback.log || true
+          fi
 
       - name: Post PR review
-        if: steps.changed-files.outputs.no_files == 'false' && (steps.gemini-review.outputs.response != '' || steps.gemini-fallback.outputs.response != '')
+        if: steps.changed-files.outputs.no_files == 'false' && !cancelled()
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
           REPO: ${{ github.repository }}
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
           FILE_COUNT: ${{ steps.changed-files.outputs.file_count }}
-          RESPONSE: ${{ steps.gemini-review.outputs.response || steps.gemini-fallback.outputs.response }}
         run: |
           set -euo pipefail
+
+          # -- Read Gemini output from temp files --------------------------------
+          if [ -s /tmp/gemini-primary.json ]; then
+            RESPONSE=$(cat /tmp/gemini-primary.json)
+          elif [ -s /tmp/gemini-fallback.json ]; then
+            RESPONSE=$(cat /tmp/gemini-fallback.json)
+          else
+            echo "No Gemini output available from either model."
+            exit 1
+          fi
 
           echo "::debug::RESPONSE length: $(printf '%s' "${RESPONSE}" | wc -c)"
 
