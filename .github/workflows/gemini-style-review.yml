@@ -16,8 +16,8 @@ name: Gemini Style Review
 #     silently via the `if:` condition on the job.
 #   - Large changesets: file content is capped at ~50 KB total. Files beyond
 #     the cap are listed in the review body but not reviewed by Gemini.
-#   - Lines not in the diff: if inline comments fail because flagged lines are
-#     not part of the diff, findings are re-posted grouped by severity.
+#   - Lines not in the diff: findings on lines outside diff hunks are listed
+#     in the review body instead of as inline comments.
 
 on:
   pull_request:
@@ -225,8 +225,53 @@ jobs:
           PYEOF
           FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/validate-findings.py) || FINDINGS="[]"
 
+          # ── Fetch PR diff line ranges ─────────────────────────────────────
+          # GitHub only allows inline comments on lines within diff hunks.
+          # Pre-filter findings so the API call never fails with 422.
+          gh api "/repos/${REPO}/pulls/${PR_NUMBER}/files" --per-page 100 --paginate > /tmp/pr-files.json
+
+          cat > /tmp/split-findings.py << 'PYEOF'
+          import sys, json, re
+          pr_files = json.load(open('/tmp/pr-files.json'))
+          findings = json.load(sys.stdin)
+          diff_lines = {}
+          for f in pr_files:
+              fn = f['filename']
+              patch = f.get('patch', '')
+              if not patch:
+                  continue
+              lines = set()
+              cur = 0
+              for pl in patch.split('\n'):
+                  m = re.match(r'^@@ -\d+(?:,\d+)? \+(\d+)(?:,\d+)? @@', pl)
+                  if m:
+                      cur = int(m.group(1))
+                      continue
+                  if pl.startswith('-'):
+                      continue
+                  if pl.startswith('+') or pl.startswith(' '):
+                      lines.add(cur)
+                      cur += 1
+              diff_lines[fn] = lines
+          inline_f, body_f = [], []
+          for f in findings:
+              if f['line'] in diff_lines.get(f['file'], set()):
+                  inline_f.append(f)
+              else:
+                  body_f.append(f)
+          print(json.dumps({'inline': inline_f, 'body': body_f}))
+          PYEOF
+
           # ── Build severity counts and post PR review ────────────────────────
           if printf '%s' "${FINDINGS}" | jq -e 'type == "array"' > /dev/null 2>&1; then
+            SPLIT=$(printf '%s' "${FINDINGS}" | python3 /tmp/split-findings.py)
+            INLINE_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.inline')
+            BODY_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.body')
+            INLINE_COUNT=$(printf '%s' "${INLINE_FINDINGS}" | jq 'length')
+            BODY_COUNT=$(printf '%s' "${BODY_FINDINGS}" | jq 'length')
+
+            echo "::debug::Inline-eligible findings: ${INLINE_COUNT}, body-only: ${BODY_COUNT}"
+
             ISSUE_COUNT=$(printf '%s' "${FINDINGS}" | jq 'length')
             BLOCKER_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "blocker")] | length')
             WARNING_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "warning")] | length')
@@ -261,13 +306,47 @@ jobs:
           $(printf '%b' "${SKIPPED_FILES}")"
             fi
 
-            # Build inline comments with severity prefix and suggestion blocks.
-            COMMENTS=$(printf '%s' "${FINDINGS}" | jq -c '[.[] | {
-              path: .file,
-              line: .line,
-              side: "RIGHT",
-              body: ("**[" + (.severity // "warning" | ascii_upcase) + "] " + .issue + "**\n\n```suggestion\n" + .replacement + "\n```")
-            }]')
+            # Append out-of-diff findings to the review body.
+            if [ "${BODY_COUNT}" -gt 0 ]; then
+              BODY_BLOCKER_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
+                '.[] | select(.severity == "blocker") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+              BODY_WARNING_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
+                '.[] | select(.severity == "warning") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+              BODY_SUGGESTION_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
+                '.[] | select(.severity == "suggestion") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+
+              BODY="${BODY}
+
+          ---
+          **${BODY_COUNT} issue(s) outside the diff** (shown here because inline comments require lines in the diff):"
+
+              [ -n "${BODY_BLOCKER_ITEMS}" ] && BODY="${BODY}
+
+          #### Blockers
+          ${BODY_BLOCKER_ITEMS}"
+
+              [ -n "${BODY_WARNING_ITEMS}" ] && BODY="${BODY}
+
+          #### Warnings
+          ${BODY_WARNING_ITEMS}"
+
+              [ -n "${BODY_SUGGESTION_ITEMS}" ] && BODY="${BODY}
+
+          #### Suggestions
+          ${BODY_SUGGESTION_ITEMS}"
+            fi
+
+            # Build inline comments only for findings whose lines are in the diff.
+            if [ "${INLINE_COUNT}" -gt 0 ]; then
+              COMMENTS=$(printf '%s' "${INLINE_FINDINGS}" | jq -c '[.[] | {
+                path: .file,
+                line: .line,
+                side: "RIGHT",
+                body: ("**[" + (.severity // "warning" | ascii_upcase) + "] " + .issue + "**\n\n```suggestion\n" + .replacement + "\n```")
+              }]')
+            else
+              COMMENTS="[]"
+            fi
 
             jq -n \
               --arg body "${BODY}" \
@@ -276,50 +355,10 @@ jobs:
               --argjson comments "${COMMENTS}" \
               '{body: $body, event: $event, commit_id: $commit_id, comments: $comments}' > /tmp/review.json
 
-            if ! gh api \
+            gh api \
               --method POST \
               "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
-              --input /tmp/review.json 2>/tmp/api-error.txt; then
-              # Inline comments fail when flagged lines are not in the PR diff.
-              # Re-post findings grouped by severity as a top-level text comment.
-              BLOCKER_ITEMS=$(printf '%s' "${FINDINGS}" | jq -r \
-                '.[] | select(.severity == "blocker") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              WARNING_ITEMS=$(printf '%s' "${FINDINGS}" | jq -r \
-                '.[] | select(.severity == "warning") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              SUGGESTION_ITEMS=$(printf '%s' "${FINDINGS}" | jq -r \
-                '.[] | select(.severity == "suggestion") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-
-              FALLBACK_BODY="## Gemini style review — ${ISSUE_COUNT} issue(s)
-
-          > Inline comments unavailable — some flagged lines may not be in the diff.
-
-          | Severity | Count |
-          |----------|-------|
-          | Blocker | ${BLOCKER_COUNT} |
-          | Warning | ${WARNING_COUNT} |
-          | Suggestion | ${SUGGESTION_COUNT} |"
-
-              [ -n "${BLOCKER_ITEMS}" ] && FALLBACK_BODY="${FALLBACK_BODY}
-
-          ### Blockers
-          ${BLOCKER_ITEMS}"
-
-              [ -n "${WARNING_ITEMS}" ] && FALLBACK_BODY="${FALLBACK_BODY}
-
-          ### Warnings
-          ${WARNING_ITEMS}"
-
-              [ -n "${SUGGESTION_ITEMS}" ] && FALLBACK_BODY="${FALLBACK_BODY}
-
-          ### Suggestions
-          ${SUGGESTION_ITEMS}"
-
-              gh api \
-                --method POST \
-                "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
-                --field body="${FALLBACK_BODY}" \
-                --field event="COMMENT"
-            fi
+              --input /tmp/review.json
 
           else
             # Gemini returned output that could not be parsed as JSON.
