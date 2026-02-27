@@ -7,6 +7,6 @@
 
 BASE="${1:-origin/master}"
 
-git diff --name-only --diff-filter=AM "$BASE"...HEAD 2>/dev/null \
+git diff --name-only --diff-filter=AMR "$BASE"...HEAD 2>/dev/null \
   | grep -E '^docusaurus/docs/.*\.(md|mdx)$' \
   || true
