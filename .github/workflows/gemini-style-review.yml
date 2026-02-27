@@ -139,11 +139,11 @@ jobs:
           echo "Running style review with model: ${GEMINI_MODEL}"
           if ! RESPONSE=$(cat /tmp/gemini-prompt.txt | gemini \
               --model "${GEMINI_MODEL}" --temperature 0.2 --yolo \
-              --output-format json 2>&1); then
+              2>&1); then
             echo "::warning::${GEMINI_MODEL} exited non-zero — trying fallback (${GEMINI_FALLBACK_MODEL})"
             RESPONSE=$(cat /tmp/gemini-prompt.txt | gemini \
               --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
-              --output-format json 2>&1) || true
+              2>&1) || true
           fi
 
           # Also fallback if response is empty or looks like an error message.
@@ -151,14 +151,18 @@ jobs:
             echo "::warning::${GEMINI_MODEL} returned unusable output — trying fallback (${GEMINI_FALLBACK_MODEL})"
             RESPONSE=$(cat /tmp/gemini-prompt.txt | gemini \
               --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
-              --output-format json 2>&1) || true
+              2>&1) || true
           fi
+
+          echo "::debug::RESPONSE length: $(printf '%s' "${RESPONSE}" | wc -c)"
 
           # ── Extract and normalize findings ─────────────────────────────────
           # Extract the text field from the JSON wrapper; fall back to raw if
           # the CLI did not wrap output in a JSON envelope.
           FINDINGS_RAW=$(printf '%s' "${RESPONSE}" | jq -r '.response' 2>/dev/null \
             || printf '%s' "${RESPONSE}")
+
+          echo "::debug::FINDINGS_RAW (first 500): $(printf '%s' "${FINDINGS_RAW}" | head -c 500)"
 
           # Strip markdown code fences if the model wrapped its output.
           FINDINGS_RAW=$(printf '%s' "${FINDINGS_RAW}" | sed '/^```/d')
@@ -192,6 +196,8 @@ jobs:
             (.original | type == "string" and length > 0) and
             (.replacement | type == "string" and length > 0)
           )]' 2>/dev/null || echo "[]")
+
+          echo "::debug::FINDINGS after schema validation: ${FINDINGS}"
 
           # ── Validate line numbers against actual file content ───────────────
           # Verify each finding's "original" text appears at the claimed line.
