@@ -19,7 +19,7 @@ name: Gemini Style Review
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
     paths:
       - 'docusaurus/docs/**'
   workflow_dispatch:
@@ -196,6 +196,9 @@ jobs:
 
           echo "::debug::RESPONSE length: $(printf '%s' "${RESPONSE}" | wc -c)"
 
+          # Log the model name for observability.
+          echo "Gemini model: $(printf '%s' "${RESPONSE}" | jq -r '.model // "unknown"' 2>/dev/null)"
+
           # -- Extract and normalize findings ----------------------------------
           # Extract the text field from the JSON wrapper; fall back to raw if
           # the CLI did not wrap output in a JSON envelope.
@@ -306,6 +309,16 @@ jobs:
 
           # -- Build severity counts and post PR review -------------------------
           if printf '%s' "${FINDINGS}" | jq -e 'type == "array"' > /dev/null 2>&1; then
+
+            # Deduplicate: drop findings already commented by stylosaurus[bot].
+            EXISTING=$(gh api "/repos/${REPO}/pulls/${PR_NUMBER}/comments" \
+              | jq '[.[] | select(.user.login == "stylosaurus[bot]") | {path: .path, line: .line}]')
+            FINDINGS=$(printf '%s' "${FINDINGS}" | jq -c \
+              --argjson existing "${EXISTING}" \
+              '[.[] | . as $f | select(
+                ($existing | map(select(.path == $f.file and .line == $f.line)) | length) == 0
+              )]')
+
             SPLIT=$(printf '%s' "${FINDINGS}" | python3 /tmp/split-findings.py)
             INLINE_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.inline')
             BODY_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.body')
