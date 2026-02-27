@@ -18,6 +18,7 @@ name: Gemini Style Review
 
 on:
   pull_request:
+    types: [opened, reopened]
     paths:
       - 'docusaurus/docs/**'
 
@@ -148,6 +149,16 @@ jobs:
 
           # ── Parse findings and post PR review ──────────────────────────────
           if FINDINGS=$(printf '%s' "$FINDINGS_RAW" | jq -c '.' 2>/dev/null); then
+            # Fetch (path, line) pairs already commented by stylosaurus[bot] to avoid duplicates.
+            EXISTING=$(gh api "/repos/${REPO}/pulls/${PR_NUMBER}/comments" \
+              | jq '[.[] | select(.user.login == "stylosaurus[bot]") | {path: .path, line: .line}]')
+
+            FINDINGS=$(printf '%s' "$FINDINGS" | jq -c \
+              --argjson existing "$EXISTING" \
+              '[.[] | . as $f | select(
+                ($existing | map(select(.path == $f.file and .line == $f.line)) | length) == 0
+              )]')
+
             ISSUE_COUNT=$(printf '%s' "$FINDINGS" | jq 'length')
 
             # Nothing to report and no skipped files — exit cleanly.
