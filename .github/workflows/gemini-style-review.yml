@@ -19,8 +19,20 @@ name: Gemini Style Review
 
 on:
   pull_request:
+    types: [opened]
     paths:
       - 'docusaurus/docs/**'
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to review'
+        required: true
+        type: string
+      additional_context:
+        description: 'Additional instructions from @mention comment'
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: read
@@ -31,7 +43,14 @@ jobs:
     name: Gemini style review
     runs-on: ubuntu-latest
     # Forked PRs cannot receive inline comments -- GITHUB_TOKEN is read-only.
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    # workflow_dispatch is always allowed (triggered by dispatch workflow).
+    if: |
+      (
+        github.event_name == 'pull_request' &&
+        github.event.pull_request.head.repo.full_name == github.repository
+      ) || (
+        github.event_name == 'workflow_dispatch'
+      )
     env:
       GEMINI_MODEL: gemini-3-flash-preview
       GEMINI_FALLBACK_MODEL: gemini-2.5-flash
@@ -52,10 +71,20 @@ jobs:
       - name: Find changed documentation files
         id: changed-files
         env:
-          BASE_REF: ${{ github.base_ref }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          BASE_REF: ${{ github.base_ref || 'master' }}
+          EVENT_NAME: ${{ github.event_name }}
+          PR_NUMBER: ${{ inputs.pr_number || '' }}
         run: |
-          bash .claude/skills/style-review/scripts/find-modified-docs.sh \
-            "origin/${BASE_REF}" > /tmp/changed-docs.txt
+          if [ "${EVENT_NAME}" = "workflow_dispatch" ]; then
+            # For @mention dispatch: get changed files from PR API
+            gh pr view "${PR_NUMBER}" --repo "${{ github.repository }}" \
+              --json files --jq '.files[].path' \
+              | grep -E '^docusaurus/docs/.*\.(md|mdx)$' > /tmp/changed-docs.txt || true
+          else
+            bash .claude/skills/style-review/scripts/find-modified-docs.sh \
+              "origin/${BASE_REF}" > /tmp/changed-docs.txt
+          fi
           if [ -s /tmp/changed-docs.txt ]; then
             echo "no_files=false" >> "$GITHUB_OUTPUT"
             # Build space-separated file list for the prompt.
@@ -80,6 +109,7 @@ jobs:
           prompt: |
             Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
             Files to review: ${{ steps.changed-files.outputs.file_list }}
+            ${{ inputs.additional_context && format('Additional instructions from the reviewer: {0}', inputs.additional_context) || '' }}
           settings: '{"experimental": {"enableAgents": true}}'
 
       - name: Fallback model on failure
@@ -92,15 +122,16 @@ jobs:
           prompt: |
             Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
             Files to review: ${{ steps.changed-files.outputs.file_list }}
+            ${{ inputs.additional_context && format('Additional instructions from the reviewer: {0}', inputs.additional_context) || '' }}
           settings: '{"experimental": {"enableAgents": true}}'
 
       - name: Post PR review
         if: steps.changed-files.outputs.no_files == 'false' && (steps.gemini-review.outputs.response != '' || steps.gemini-fallback.outputs.response != '')
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
           REPO: ${{ github.repository }}
-          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
           FILE_COUNT: ${{ steps.changed-files.outputs.file_count }}
           RESPONSE: ${{ steps.gemini-review.outputs.response || steps.gemini-fallback.outputs.response }}
         run: |
