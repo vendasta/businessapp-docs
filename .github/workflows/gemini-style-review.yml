@@ -82,6 +82,7 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REPO: ${{ github.repository }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           set -euo pipefail
 
@@ -271,8 +272,9 @@ jobs:
             jq -n \
               --arg body "${BODY}" \
               --arg event "${REVIEW_EVENT}" \
+              --arg commit_id "${PR_HEAD_SHA}" \
               --argjson comments "${COMMENTS}" \
-              '{body: $body, event: $event, comments: $comments}' > /tmp/review.json
+              '{body: $body, event: $event, commit_id: $commit_id, comments: $comments}' > /tmp/review.json
 
             if ! gh api \
               --method POST \
