@@ -1,0 +1,39 @@
+# CODEOWNERS
+#
+# Each line is a file pattern followed by one or more owners.
+# The last matching pattern takes precedence.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global default — catches anything not matched by a more specific rule below
+* @haleyserrano @vendasta/documentation-pr-reviewers
+
+# Infrastructure — CI/CD, build, and server config
+/.github/         @maryam6samadi @vendasta/documentation-pr-reviewers
+/cloudbuild.yaml  @maryam6samadi @vendasta/documentation-pr-reviewers
+/Dockerfile       @maryam6samadi @vendasta/documentation-pr-reviewers
+/nginx.conf       @maryam6samadi @vendasta/documentation-pr-reviewers
+/scripts/         @maryam6samadi @vendasta/documentation-pr-reviewers
+
+# ── Product documentation ─────────────────────────────────────────────────────
+
+# Ad Intelligence
+/docusaurus/docs/ad-intel/          @haleyserrano @Cleyte @vendasta/documentation-pr-reviewers
+
+# Business App
+/docusaurus/docs/business-app/      @haleyserrano @CalCooper @vendasta/documentation-pr-reviewers
+
+# Local SEO
+/docusaurus/docs/local-seo/         @haleyserrano @rspychaj-va @vendasta/documentation-pr-reviewers
+
+# Reputation AI
+/docusaurus/docs/reputation/        @haleyserrano @emmamiitchell @vendasta/documentation-pr-reviewers
+
+# Social Marketing
+/docusaurus/docs/social-marketing/  @haleyserrano @CalCooper @vendasta/documentation-pr-reviewers
+
+# WordPress Hosting
+# TODO: smuthurajan (smuthurajan@vendasta.com, top contributor) — add their GitHub username when known
+/docusaurus/docs/wordpress-hosting/ @haleyserrano @vendasta/documentation-pr-reviewers
+
+# Yesware
+/docusaurus/docs/yesware/           @haleyserrano @emmamiitchell @vendasta/documentation-pr-reviewers
