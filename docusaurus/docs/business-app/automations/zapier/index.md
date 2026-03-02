@@ -27,6 +27,26 @@ The integration works in two ways:
 - **Push data outward** — keep external systems in sync when contacts, companies, or activities are created or updated
 - **No coding required** — everything is configured through Zapier's visual builder and the Business App automation builder
 
+## Connecting Business App to Zapier
+
+1. In Business App, go to **Administration** > **Integrations**
+
+![Integrations option in App settings](./img/zapier-integration-path.png)
+
+2. Locate the Zapier tile
+
+![Zapier tile in the Integrations page](./img/zapier_admin_integrations.jpg)
+
+3. Click **Connect** to be directed to Zapier
+
+![Connect button on the Zapier integration tile](./img/zapier_connect_button.jpg)
+
+4. On the Zapier page for Business App, you can browse existing Zap templates or start building your own
+
+![Business App on Zapier showing available integrations](./img/zapier-connecting-to-business-app.png)
+
+Once connected, your Business App account is linked to Zapier. You only need to do this once — the same connection is used across all your Zaps.
+
 ## How to get started
 
 Choose the direction that fits your use case:
