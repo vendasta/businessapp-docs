@@ -27,6 +27,16 @@ on:
   pull_request:
     paths:
       - 'docusaurus/docs/**'
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to review (used by gemini-dispatch.yml)'
+        required: true
+        type: string
+      additional_context:
+        description: 'Extra reviewer instructions from the @stylosaurus comment'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -37,7 +47,10 @@ jobs:
     name: Gemini style review
     runs-on: ubuntu-latest
     # Forked PRs cannot receive inline comments — GITHUB_TOKEN is read-only.
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    # workflow_dispatch (from gemini-dispatch.yml) always runs.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.pull_request.head.repo.full_name == github.repository
     env:
       GEMINI_MODEL: gemini-3-flash-preview
       GEMINI_FALLBACK_MODEL: gemini-2.5-flash
@@ -63,10 +76,29 @@ jobs:
       - name: Install Gemini CLI
         run: npm install -g @google/gemini-cli
 
+      - name: Resolve PR metadata
+        id: pr-meta
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          REPO: ${{ github.repository }}
+          # pull_request event sets these directly; workflow_dispatch passes pr_number as input.
+          EVENT_PR_NUMBER: ${{ github.event.pull_request.number }}
+          INPUT_PR_NUMBER: ${{ inputs.pr_number }}
+          EVENT_BASE_REF: ${{ github.base_ref }}
+        run: |
+          PR_NUMBER="${EVENT_PR_NUMBER:-$INPUT_PR_NUMBER}"
+          echo "pr_number=${PR_NUMBER}" >> "$GITHUB_OUTPUT"
+          if [ -n "${EVENT_BASE_REF}" ]; then
+            echo "base_ref=${EVENT_BASE_REF}" >> "$GITHUB_OUTPUT"
+          else
+            BASE=$(gh pr view "${PR_NUMBER}" --repo "${REPO}" --json baseRefName -q '.baseRefName')
+            echo "base_ref=${BASE}" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Find changed documentation files
         id: changed-files
         env:
-          BASE_REF: ${{ github.base_ref }}
+          BASE_REF: ${{ steps.pr-meta.outputs.base_ref }}
         run: |
           bash .claude/skills/style-review/scripts/find-modified-docs.sh \
             "origin/${BASE_REF}" > /tmp/changed-docs.txt
@@ -84,8 +116,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_NUMBER: ${{ steps.pr-meta.outputs.pr_number }}
           REPO: ${{ github.repository }}
+          ADDITIONAL_CONTEXT: ${{ inputs.additional_context }}
         run: |
           set -euo pipefail
 
@@ -120,6 +153,11 @@ jobs:
 
           FILES TO REVIEW:
           PROMPT_EOF
+
+          # Append additional reviewer context from @stylosaurus comment, if any.
+          if [ -n "${ADDITIONAL_CONTEXT:-}" ]; then
+            printf '\nADDITIONAL REVIEWER INSTRUCTIONS:\n%s\n' "${ADDITIONAL_CONTEXT}" >> /tmp/gemini-prompt.txt
+          fi
 
           # Append each changed file's content up to SIZE_LIMIT.
           while IFS= read -r FILE; do
