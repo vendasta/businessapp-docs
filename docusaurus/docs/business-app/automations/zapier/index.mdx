@@ -10,15 +10,10 @@ Zapier is an automation platform that connects thousands of apps and services. I
 
 The integration works in two directions:
 
-
-
-
 | Direction | What it does | Example |
 |---|---|---|
 | **Business App → Zapier** | Use the **Send a webhook** step in your _Business App_ automation to push data out to Zapier | Opportunity marked as won in Business App → create a new customer in QuickBooks Online |
 | **Zapier → Business App** | Use the **Run Automation** action in _Zapier_ to fire any of your automations | New QuickBooks payment → send a review request to the customer |
-
-
 
 ## Connecting Business App to Zapier
 
@@ -30,15 +25,19 @@ You'll need a [Zapier](https://zapier.com) account to use this integration. A fr
 
 2. Locate the Zapier tile
 
-![Zapier tile in the Integrations page](./img/zapier_admin_integrations.jpg)
+<img src={require('./img/zapier-integration-on-business-app.png').default} alt="Integrations page in Business App with Zapier searched and the Zapier tile visible" width="50%" />
 
-3. Click **Connect** to be directed to Zapier
+3. Make note of your Account ID, then click **Connect on Zapier**
 
-![Connect button on the Zapier integration tile](./img/zapier_connect_button.jpg)
+![Zapier integration tile showing the Connect on Zapier button and Account ID](./img/zapier-AGID.png)
 
-4. On the Zapier page for Business App, you can browse existing Zap templates or start building your own
+4. Click the orange **Connect Business App to 8,000+ apps** button on the Zapier page
 
 ![Business App on Zapier showing available integrations](./img/zapier-connecting-to-business-app.png)
+
+5. Zapier will prompt you to enter your Account ID. Enter your Account ID (from step 3), then click **Yes, Continue to Business App** to grant access
+
+![Allow Zapier to access your Business App Account prompt showing the Account ID field](./img/zapier-allow-access.png)
 
 Once connected, your Business App account is linked to Zapier. You only need to do this once — the same connection is used across all your Zaps.
 
@@ -62,7 +61,6 @@ Basic Zaps can be created on a free Zapier account. More complex multi-step Zaps
 
 Yes. Once you connect your Business App account to Zapier, you can use it across as many Zaps as you need. You only go through the sign-in and permissions step once.
 </details>
-
 
 <details>
 <summary>What happens if a Zap fails?</summary>
