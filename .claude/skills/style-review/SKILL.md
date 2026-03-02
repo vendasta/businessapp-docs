@@ -201,6 +201,12 @@ Links with non-descriptive anchor text: "click here", "here", "this link", "link
 **Wall-of-text paragraphs** (suggestion)
 Paragraphs exceeding ~5 sentences or ~150 words without a visual break. The right way to split depends on context: a sub-heading, bullet list, callout block, image reference, or simply shorter paragraphs.
 
+**Callout block misuse** (suggestion)
+`:::warning` used for tips or general info, `:::info` used for limitations or requirements, `:::tip` used for restrictions. Match the block type to the content: `:::warning` for limitations and requirements, `:::info` for helpful context, `:::tip` for best practices, `:::note` for plan restrictions or behavior caveats.
+
+**Heading-content mismatch** (suggestion)
+A section heading that promises one thing but the body discusses something else, or headings too vague to be useful: "More information", "Other details", "Additional notes", "Miscellaneous". Suggest a heading that accurately describes the section's actual content.
+
 ---
 
 ### FAQs

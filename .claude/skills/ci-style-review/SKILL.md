@@ -42,6 +42,8 @@ The scan script handles pattern-matchable violations. Your job in this step is t
 - **Link text quality** (suggestion): "click here", bare URLs, or other non-descriptive anchors
 - **Wall-of-text paragraphs** (suggestion): paragraphs exceeding ~5 sentences or ~150 words
 - **FAQ answer quality** (warning): vague hedging, overly long answers, voice/tone shifts
+- **Callout block misuse** (suggestion): block type doesn't match content (e.g. `:::warning` for a tip)
+- **Heading-content mismatch** (suggestion): heading promises one thing but body discusses another, or heading is too vague
 
 **Multiple violations on the same line:** If a single line has multiple distinct violations (e.g., a Vendasta mention AND historical language), emit separate findings for each. The post-processing pipeline handles multiple findings per line. Do not merge different violation types into a single finding.
 
