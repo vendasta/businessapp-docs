@@ -1,40 +1,119 @@
 ---
 title: Steps
 sidebar_position: 3
+description: Browse all available automation steps and learn how logic steps like delays, If/Else branches, and End This Automation work.
 ---
 
-Automation steps are what happen after a trigger fires. Each step defines a specific action your workflow performs — sending a message, updating a record, creating a task, and so on. You can add multiple steps to a workflow and they run from top to bottom.
+Automation steps are what happen after a trigger fires. Each step defines a specific action your workflow performs: sending a message, updating a record, creating a task, and so on. You can add multiple steps to a workflow and they run from top to bottom.
 
 ## Step types
 
 There are two types of steps in the Automation Builder, distinguished by color:
 
-**Action steps (blue)** do the work — they send messages, update records, create tasks, log activities, and interact with your CRM and connected apps. Most steps are action steps.
+**Action steps (blue)** do the work: they send messages, update records, create tasks, log activities, and interact with your CRM and connected apps. Most steps are action steps. See the [Step Reference](#step-reference) for the full list.
 
-**Logic steps (purple)** control the flow of the automation — they don't perform an action themselves, but decide what happens next. Use them to introduce delays, branch based on conditions, jump to a different point in the workflow, or end the run early.
+**Logic steps (purple)** control the flow of the automation: they don't perform an action themselves, but decide what happens next. Use them to introduce delays, branch based on conditions, jump to a different point in the workflow, or end the run early. See the [Step Reference](#step-reference) for the full list.
 
 <div style={{ display: 'flex', gap: '24px', justifyContent: 'center', alignItems: 'flex-start' }}>
   <img src={require('./img/action-steps.png').default} alt="Action steps in the automation builder showing Companies, Contacts, Users, and Businesses categories in blue" width="45%" />
   <img src={require('./img/logic-steps.png').default} alt="Logic steps in the automation builder showing Delays, Conditions, and Workflow categories in purple" width="45%" />
 </div>
 
-## Choosing the Right Steps
 
-Map out the entire customer journey before selecting steps. Make sure steps are in the right order and have any necessary prerequisites in place. Plan for what happens when a step fails, and always test each step individually and as part of the complete workflow before going live.
 
-## Performance Considerations
 
-- **Use appropriate delays**: Don't make workflows longer than necessary — only add delays when timing actually matters
-- **Keep conditions efficient**: Filter early so unnecessary steps don't run for contacts that don't qualify
-- **Group related steps**: Place steps that work on the same record together to keep workflows readable and easier to troubleshoot
+## Common logic steps
 
-## Common Step Patterns
+### Delay
 
-- **Welcome new contacts**: Contact created → Send welcome email → Create follow-up task
-- **Lead nurturing**: Contact created → Send campaign series → Log activity based on engagement
-- **Payment follow-up**: Payment failure → Notify your team → Create follow-up task
-- **Opportunity management**: Opportunity created → Update contact → Create a sales task
-- **Review collection**: Transaction completed → Delay 2 days → Send review request
+The **Delay** step pauses the automation for a fixed amount of time before moving to the next step. Use it when timing matters, for example, waiting a day before sending a follow-up, or giving a contact time to respond before escalating.
+
+**Example:**
+
+- **Trigger:** When a contact is created
+- **Step 1:** Delay 3 days
+- **Step 2:** Start the SMS campaign for the contact
+
+<div style={{ textAlign: 'center' }}>
+  <img src={require('./img/automations-step-delay.png').default} alt="Delay step in the Automation Builder showing a 3-day wait before starting an SMS campaign" width="60%" />
+</div>
+
+### Delay until an event happens
+
+The **Delay until an event happens** step pauses the automation and waits for a specific event to occur before continuing, rather than waiting a fixed amount of time. Use it when the next step depends on something happening, not just time passing.
+
+**Example:**
+
+- **Delay until:** A sales task is created or modified on the contact (wait up to 1 day)
+- **Event happened** → Send a review request
+- **Event did not happen** → End
+
+<div style={{ textAlign: 'center' }}>
+  <img src={require('./img/automations-delay-until-an-event-happens.png').default} alt="Delay until an event happens step showing two branches: Event happened leads to Send a review request, Event did not happen leads to End" width="75%" />
+</div>
+
+:::note
+If the contact becomes ineligible for the workflow while waiting (for example, the automation is turned off), the run may be cancelled.
+:::
+
+### If/Else branch
+
+The If/Else branch splits your workflow into multiple paths based on the conditions you define. You start with two branches, but you can add more to handle additional scenarios:
+
+- **If branch** — runs when the condition is true
+- **Else branch** — runs when no other condition is met (the fallback)
+
+Each branch can have its own steps, so the automation does something different depending on the situation.
+
+**How to add an If/Else branch:** Define your filter (for example: contact tag equals "Call", or city equals "Austin"). Add steps to the If branches and the Else branch as needed.
+
+<div style={{ textAlign: 'center' }}>
+  <img src={require('./img/automations-if:else branch.png').default} alt="If/else branch in the Automation Builder showing a Yes and No path based on a contact tag condition" width="60%" />
+</div>
+
+:::info Order matters
+Branches are checked from top to bottom. As soon as a condition is met, the automation follows that branch and skips the rest.
+:::
+
+### End This Automation
+
+The **End This Automation** step immediately stops the current run. It's most useful inside an If/Else branch when one path should proceed and the other should stop entirely, without needing to restructure your existing steps.
+
+{/* TODO: Add screenshot — End This Automation step in the workflow canvas */}
+
+**Example:**
+
+- **Trigger:** When a form is submitted
+- **If** contact already has tag "contacted" → End This Automation
+- **Else** → Send follow-up email → Create CRM task
+
+:::tip Hack: Use End Automation to simplify restructuring
+When you need to add an If/Else branch above a series of existing steps, you don't have to move each downstream step into the new branch. Instead, place the If/Else at the top, put **End Automation** in the branch that should stop, and leave your existing steps in the main flow below. This saves you from manually reorganizing everything.
+
+<div
+  className="wistia_responsive_padding"
+  style={{ padding: '56.25% 0 0 0', position: 'relative' }}
+>
+  <div
+    className="wistia_responsive_wrapper"
+    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+  >
+    <iframe
+      src="https://fast.wistia.net/embed/iframe/ihjc3imao8?web_component=true&seo=true"
+      title="End Automation step use case"
+      allow="autoplay; fullscreen"
+      allowTransparency
+      frameBorder="0"
+      scrolling="no"
+      className="wistia_embed"
+      name="wistia_embed"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </div>
+</div>
+<script src="https://fast.wistia.net/player.js" async></script>
+:::
 
 ## Step Reference
 
@@ -148,34 +227,6 @@ Map out the entire customer journey before selecting steps. Make sure steps are 
 | A/B branch | Randomly splits contacts into two groups so you can test different workflow paths |
 | End this automation | Immediately stops the current automation run |
 
-:::tip Hack: Use End Automation to simplify restructuring
-When you need to add an If/Else branch above a series of existing steps, you don't have to move each downstream step into the new branch. Instead, place the If/Else at the top, put **End Automation** in the branch that should stop, and leave your existing steps in the main flow below. This saves you from manually reorganizing everything.
-
-<div
-  className="wistia_responsive_padding"
-  style={{ padding: '56.25% 0 0 0', position: 'relative' }}
->
-  <div
-    className="wistia_responsive_wrapper"
-    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
-  >
-    <iframe
-      src="https://fast.wistia.net/embed/iframe/ihjc3imao8?web_component=true&seo=true"
-      title="End Automation step use case"
-      allow="autoplay; fullscreen"
-      allowTransparency
-      frameBorder="0"
-      scrolling="no"
-      className="wistia_embed"
-      name="wistia_embed"
-      width="100%"
-      height="100%"
-    ></iframe>
-  </div>
-</div>
-<script src="https://fast.wistia.net/player.js" async></script>
-:::
-
 ## Related resources
 
 - [Automation triggers](./automation-triggers) - Events that start your workflow
@@ -183,5 +234,5 @@ When you need to add an If/Else branch above a series of existing steps, you don
 - [Messaging steps](./workflows/action-messaging) - Send SMS and email messages via Conversations
 - [Campaign steps](./workflows/action-campaigns) - Pause and start campaigns from a workflow
 - [Review request automation](./workflows/use-case-review-requests) - Collect customer reviews automatically
-- [Smart values](./smart-values-in-automations) - Personalize steps with dynamic contact and company data
+- [Dynamic content](./smart-values-in-automations) - Personalize steps with dynamic contact and company data
 - [Automation settings](./automation-settings) - Control how often it runs and how errors are handled

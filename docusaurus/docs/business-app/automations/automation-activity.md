@@ -10,7 +10,7 @@ Use Automation Activity to see what ran, when it ran, and whether it succeeded. 
 
 ## Where to find it
 
-1. Go to Business App > Administration > Automations
+1. Go to Business App > Automations
 2. Open an automation
 3. Select the Activity tab to review recent runs
 
