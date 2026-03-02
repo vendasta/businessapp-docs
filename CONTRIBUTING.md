@@ -56,4 +56,22 @@ Feel free to use **any** icon from the Material collection—just remember to fo
 
 ---
 
+## Automated Style Review on Pull Requests
+
+When you open a PR that changes files under `docusaurus/docs/`, a **Gemini-powered style review** runs automatically. It checks your changes against the Business App style guidelines and posts inline comments with suggested fixes directly on the PR diff.
+
+What it checks:
+
+- **Gray-label compliance** -- no Vendasta branding, Partner Center, or partner/reseller/agency terms
+- **Evergreen content** -- no historical or future-state language
+- **Voice and tone** -- second-person, present tense, no marketing language
+- **Formatting** -- em dashes, UI elements in backticks, heading sentence case
+- **Build safety** -- missing frontmatter title, unquoted colons, JSX in `.md` files
+
+If blockers (gray-label violations) are found, the review requests changes. Otherwise, findings are posted as comments.
+
+The full style rules are documented in `.claude/skills/style-review/SKILL.md`.
+
+---
+
 Happy writing!

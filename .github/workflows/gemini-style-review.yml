@@ -3,8 +3,12 @@ name: Gemini Style Review
 # guidelines using Gemini CLI and posts inline comments with committable
 # suggestion blocks directly on the PR diff.
 #
-# Requires:
-#   GEMINI_API_KEY — Google AI Studio API key, set as a repository secret.
+# Setup (repository secrets required):
+#   GEMINI_API_KEY          — Google AI Studio API key. The workflow skips
+#                             gracefully if this is not configured.
+#   STYLOSAURUS_APP_ID      — GitHub App ID for a GitHub App with pull-request
+#                             write permission, used to post inline review comments.
+#   STYLOSAURUS_PRIVATE_KEY — Private key for the GitHub App above.
 #
 # Models:
 #   Primary:  GEMINI_MODEL (gemini-3-flash-preview)
