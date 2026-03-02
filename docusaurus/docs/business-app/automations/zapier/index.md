@@ -6,28 +6,23 @@ tags: [zapier, automations, integrations]
 keywords: [zapier, automation, integration, workflow, webhook, connect apps]
 ---
 
-Zapier is an automation platform that connects thousands of apps and services. With Business App's Zapier integration, you can link your automations to the other tools you already use — in both directions — without writing any code.
+Zapier is an automation platform that connects thousands of apps and services. In Zapier, automated workflows are called **Zaps**. Each Zap has a trigger (something that happens in one app) and one or more actions (things that happen in other apps as a result). With Business App's Zapier integration, you can link your Business App automations to the other external tools you already use without writing any code.
 
-The integration works in two ways:
+The integration works in two directions:
 
-- **Zapier triggers Business App** — An event in another app (such as a new payment in QuickBooks) fires one of your Business App automations.
-- **Business App triggers Zapier** — A step inside one of your automations sends data out to Zapier when something happens in Business App, which can then trigger actions in other apps.
 
-## What you can do
+
 
 | Direction | What it does | Example |
 |---|---|---|
-| **Zapier → Business App** | Use the **Run Automation** action in Zapier to fire any of your automations | New QuickBooks payment → send a review request to the customer |
-| **Business App → Zapier** | Use the **Send a webhook** step in your automation to push data out to Zapier | Contact created in Business App → add the contact to your HubSpot CRM |
+| **Business App → Zapier** | Use the **Send a webhook** step in your _Business App_ automation to push data out to Zapier | Opportunity marked as won in Business App → create a new customer in QuickBooks Online |
+| **Zapier → Business App** | Use the **Run Automation** action in _Zapier_ to fire any of your automations | New QuickBooks payment → send a review request to the customer |
 
-## Why use the Zapier integration?
 
-- **Automate across your tools** — connect the apps you use daily without manual data entry
-- **React to external events** — let your automations respond to things that happen outside Business App
-- **Push data outward** — keep external systems in sync when contacts, companies, or activities are created or updated
-- **No coding required** — everything is configured through Zapier's visual builder and the Business App automation builder
 
 ## Connecting Business App to Zapier
+
+You'll need a [Zapier](https://zapier.com) account to use this integration. A free Zapier account is enough to get started — more complex multi-step Zaps may require a paid plan.
 
 1. In Business App, go to **Administration** > **Integrations**
 
@@ -51,8 +46,8 @@ Once connected, your Business App account is linked to Zapier. You only need to 
 
 Choose the direction that fits your use case:
 
-- [Zapier triggers Business App](./zapier-triggers-business-app) — an event in another app fires one of your automations
-- [Business App triggers Zapier](./business-app-triggers-zapier) — an automation step pushes data out to Zapier
+- [Zapier → Business App](./zapier-triggers-business-app) — an event in another app fires one of your automations
+- [Business App → Zapier](./business-app-triggers-zapier) — an automation step pushes data out to Zapier
 
 ## Frequently Asked Questions
 
@@ -63,28 +58,11 @@ Basic Zaps can be created on a free Zapier account. More complex multi-step Zaps
 </details>
 
 <details>
-<summary>Does the automation need to be turned on for Zapier to trigger it?</summary>
-
-Yes. The automation must be active (toggled on) for it to run when triggered via Zapier. If the automation is off, incoming Zapier triggers will be ignored.
-</details>
-
-<details>
 <summary>Can I use the same Zapier account for multiple automations?</summary>
 
 Yes. Once you connect your Business App account to Zapier, you can use it across as many Zaps as you need. You only go through the sign-in and permissions step once.
 </details>
 
-<details>
-<summary>What trigger does my automation need to use for Zapier to fire it?</summary>
-
-Your automation must use the **Triggered via Zapier** trigger, found under the Advanced section of the trigger picker. See [Zapier triggers Business App](./zapier-triggers-business-app) for the full setup.
-</details>
-
-<details>
-<summary>Can I send data from Business App to any app that's in Zapier?</summary>
-
-Yes. The **Send a webhook** step posts data to a Zapier webhook URL, and from there you can connect to any of the 6,000+ apps available in Zapier. See [Business App triggers Zapier](./business-app-triggers-zapier) for the full setup.
-</details>
 
 <details>
 <summary>What happens if a Zap fails?</summary>

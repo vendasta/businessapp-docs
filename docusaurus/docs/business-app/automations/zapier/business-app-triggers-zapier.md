@@ -1,6 +1,6 @@
 ---
-title: Business App Triggers Zapier
-sidebar_label: Business App triggers Zapier
+title: "Business App → Zapier"
+sidebar_label: "Business App → Zapier"
 description: Use the Send a webhook step in a Business App automation to push data out to Zapier when something happens in Business App.
 tags: [zapier, automations, integrations, webhook]
 keywords: [business app zapier, send webhook, automation webhook, zapier webhook trigger]
@@ -114,4 +114,10 @@ If the webhook step fails (for example, due to a network error or an invalid URL
 <summary>Can I use this to sync contacts to my external CRM automatically?</summary>
 
 Yes. This is one of the most common use cases. Set your automation to trigger when a contact is created or modified, use the Send a webhook step to push the contact data to Zapier, then configure Zapier to create or update a record in your CRM (such as HubSpot, Salesforce, or Zoho).
+</details>
+
+<details>
+<summary>Can I send data to any app that's available in Zapier?</summary>
+
+Yes. The Send a webhook step posts data to a Zapier webhook URL, and from there you can trigger actions in any of the 8,000+ apps available in Zapier — CRMs, spreadsheets, email platforms, accounting tools, and more.
 </details>
