@@ -4,7 +4,7 @@ name: Gemini Style Review
 # suggestion blocks directly on the PR diff.
 #
 # Requires:
-#   GEMINI_API_KEY -- Google AI Studio API key, set as a repository secret.
+#   GEMINI_API_KEY — Google AI Studio API key, set as a repository secret.
 #
 # Models:
 #   Primary:  GEMINI_MODEL (gemini-3-flash-preview)
@@ -14,25 +14,15 @@ name: Gemini Style Review
 # Limitations:
 #   - Forked PRs: GITHUB_TOKEN is read-only for forks; the job is skipped
 #     silently via the `if:` condition on the job.
-#   - Lines not in the diff: findings on lines outside diff hunks are listed
-#     in the review body instead of as inline comments.
+#   - Large changesets: file content is capped at ~50 KB total. Files beyond
+#     the cap are listed in the review body but not reviewed by Gemini.
+#   - Lines not in the diff: if inline comments fail because flagged lines are
+#     not part of the diff, findings are re-posted grouped by severity.
 
 on:
   pull_request:
-    types: [opened, reopened]
     paths:
       - 'docusaurus/docs/**'
-  workflow_dispatch:
-    inputs:
-      pr_number:
-        description: 'PR number to review'
-        required: true
-        type: string
-      additional_context:
-        description: 'Additional instructions from @mention comment'
-        required: false
-        type: string
-        default: ''
 
 permissions:
   contents: read
@@ -42,15 +32,8 @@ jobs:
   style-review:
     name: Gemini style review
     runs-on: ubuntu-latest
-    # Forked PRs cannot receive inline comments -- GITHUB_TOKEN is read-only.
-    # workflow_dispatch is always allowed (triggered by dispatch workflow).
-    if: |
-      (
-        github.event_name == 'pull_request' &&
-        github.event.pull_request.head.repo.full_name == github.repository
-      ) || (
-        github.event_name == 'workflow_dispatch'
-      )
+    # Forked PRs cannot receive inline comments — GITHUB_TOKEN is read-only.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     env:
       GEMINI_MODEL: gemini-3-flash-preview
       GEMINI_FALLBACK_MODEL: gemini-2.5-flash
@@ -61,6 +44,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Generate Stylosaurus app token
         id: app-token
         uses: actions/create-github-app-token@v1
@@ -68,138 +56,104 @@ jobs:
           app-id: ${{ secrets.STYLOSAURUS_APP_ID }}
           private-key: ${{ secrets.STYLOSAURUS_PRIVATE_KEY }}
 
+      - name: Install Gemini CLI
+        run: npm install -g @google/gemini-cli
+
       - name: Find changed documentation files
         id: changed-files
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
-          BASE_REF: ${{ github.base_ref || 'master' }}
-          EVENT_NAME: ${{ github.event_name }}
-          PR_NUMBER: ${{ inputs.pr_number || '' }}
+          BASE_REF: ${{ github.base_ref }}
         run: |
-          if [ "${EVENT_NAME}" = "workflow_dispatch" ]; then
-            # For @mention dispatch: get changed files from PR API
-            gh pr view "${PR_NUMBER}" --repo "${{ github.repository }}" \
-              --json files --jq '.files[].path' \
-              | grep -E '^docusaurus/docs/.*\.(md|mdx)$' > /tmp/changed-docs.txt || true
-          else
-            bash .claude/skills/style-review/scripts/find-modified-docs.sh \
-              "origin/${BASE_REF}" > /tmp/changed-docs.txt
-          fi
+          bash .claude/skills/style-review/scripts/find-modified-docs.sh \
+            "origin/${BASE_REF}" > /tmp/changed-docs.txt
           if [ -s /tmp/changed-docs.txt ]; then
             echo "no_files=false" >> "$GITHUB_OUTPUT"
-            # Build space-separated file list for the prompt.
-            FILE_LIST=$(paste -sd ' ' /tmp/changed-docs.txt)
-            echo "file_list=${FILE_LIST}" >> "$GITHUB_OUTPUT"
-            FILE_COUNT=$(wc -l < /tmp/changed-docs.txt | tr -d ' ')
-            echo "file_count=${FILE_COUNT}" >> "$GITHUB_OUTPUT"
-            echo "Changed documentation files (${FILE_COUNT}):"
+            echo "Changed documentation files:"
             cat /tmp/changed-docs.txt
           else
             echo "no_files=true" >> "$GITHUB_OUTPUT"
-            echo "No documentation files changed -- skipping style review."
+            echo "No documentation files changed — skipping style review."
           fi
 
-      - name: Install Gemini CLI
+      - name: Run Gemini style review and post inline comments
         if: steps.changed-files.outputs.no_files == 'false'
-        run: |
-          npm install --silent --no-audit --global @google/gemini-cli@latest
-          gemini --version
-
-      - name: Configure Gemini settings
-        if: steps.changed-files.outputs.no_files == 'false'
-        run: |
-          mkdir -p .gemini
-          echo '{"experimental": {"enableAgents": true}}' > .gemini/settings.json
-
-      - name: Run Gemini style review
-        if: steps.changed-files.outputs.no_files == 'false'
-        id: gemini-review
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MODEL: ${{ env.GEMINI_MODEL }}
-          FILE_LIST: ${{ steps.changed-files.outputs.file_list }}
-          ADDITIONAL_CONTEXT: ${{ inputs.additional_context || '' }}
-        run: |
-          PROMPT="Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
-          Files to review: ${FILE_LIST}"
-          if [ -n "${ADDITIONAL_CONTEXT}" ]; then
-            PROMPT="${PROMPT}
-          Additional instructions from the reviewer: ${ADDITIONAL_CONTEXT}"
-          fi
-
-          gemini --model "${MODEL}" \
-            --output-format json \
-            --prompt "${PROMPT}" > /tmp/gemini-primary.json 2>/tmp/gemini-primary.log || true
-
-          if [ -s /tmp/gemini-primary.json ]; then
-            echo "Primary model produced output ($(wc -c < /tmp/gemini-primary.json) bytes)."
-          else
-            echo "Primary model produced no output."
-            cat /tmp/gemini-primary.log || true
-          fi
-
-      - name: Fallback model on failure
-        if: steps.changed-files.outputs.no_files == 'false' && !cancelled()
-        id: gemini-fallback
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MODEL: ${{ env.GEMINI_FALLBACK_MODEL }}
-          FILE_LIST: ${{ steps.changed-files.outputs.file_list }}
-          ADDITIONAL_CONTEXT: ${{ inputs.additional_context || '' }}
-        run: |
-          # Only run fallback if primary output is empty or invalid JSON
-          if [ -s /tmp/gemini-primary.json ] && jq -e '.' /tmp/gemini-primary.json > /dev/null 2>&1; then
-            echo "Primary output is valid -- skipping fallback."
-            exit 0
-          fi
-
-          echo "Primary output missing or invalid -- running fallback model."
-
-          PROMPT="Read the ci-style-review skill at .gemini/skills/ci-style-review/SKILL.md and follow it exactly.
-          Files to review: ${FILE_LIST}"
-          if [ -n "${ADDITIONAL_CONTEXT}" ]; then
-            PROMPT="${PROMPT}
-          Additional instructions from the reviewer: ${ADDITIONAL_CONTEXT}"
-          fi
-
-          gemini --model "${MODEL}" \
-            --output-format json \
-            --prompt "${PROMPT}" > /tmp/gemini-fallback.json 2>/tmp/gemini-fallback.log || true
-
-          if [ -s /tmp/gemini-fallback.json ]; then
-            echo "Fallback model produced output ($(wc -c < /tmp/gemini-fallback.json) bytes)."
-          else
-            echo "Fallback model produced no output."
-            cat /tmp/gemini-fallback.log || true
-          fi
-
-      - name: Post PR review
-        if: steps.changed-files.outputs.no_files == 'false' && !cancelled()
-        env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
           REPO: ${{ github.repository }}
-          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
-          FILE_COUNT: ${{ steps.changed-files.outputs.file_count }}
         run: |
           set -euo pipefail
 
-          # -- Read Gemini output from temp files --------------------------------
-          if [ -s /tmp/gemini-primary.json ]; then
-            RESPONSE=$(cat /tmp/gemini-primary.json)
-          elif [ -s /tmp/gemini-fallback.json ]; then
-            RESPONSE=$(cat /tmp/gemini-fallback.json)
-          else
-            echo "No Gemini output available from either model."
-            exit 1
+          # Abort gracefully if GEMINI_API_KEY is not configured yet.
+          if [ -z "${GEMINI_API_KEY:-}" ]; then
+            echo "GEMINI_API_KEY secret is not configured — skipping style review."
+            exit 0
+          fi
+
+          SIZE_LIMIT=51200  # ~50 KB total payload cap
+          TOTAL_SIZE=0
+          SKIPPED_FILES=""
+
+          # ── Build prompt ───────────────────────────────────────────────────
+          cat > /tmp/gemini-prompt.txt << 'PROMPT_EOF'
+          You are a documentation style reviewer for Business App, a gray-label SaaS product.
+
+          Before reviewing, read the complete style guide from `.claude/skills/style-review/SKILL.md`. It contains all rules, criteria, and examples you must apply.
+
+          Review the documentation files below. Output ONLY a valid JSON array. No markdown, no code fences, no explanation, no preamble.
+          Each finding must be an object with exactly these fields:
+            "file": the file path as shown in the === FILE: === header
+            "line": integer line number (1-indexed)
+            "issue": brief label (e.g. "Vendasta mention", "em dash", "third-person")
+            "severity": one of "blocker", "warning", "suggestion"
+              - "blocker": gray-label violations (Vendasta, Partner Center, partner/reseller/agency/white-label)
+              - "warning": evergreen violations, future-state language, voice or tense issues (third-person, passive voice, marketing language)
+              - "suggestion": formatting issues (em dashes, UI elements not in backticks)
+            "original": the full content of that line exactly as it appears in the file
+            "replacement": the full corrected line content
+          If no issues found, output exactly: []
+
+          FILES TO REVIEW:
+          PROMPT_EOF
+
+          # Append each changed file's content up to SIZE_LIMIT.
+          while IFS= read -r FILE; do
+            [ -z "$FILE" ] && continue
+            if [ ! -f "$FILE" ]; then
+              echo "Warning: $FILE not found on disk, skipping."
+              continue
+            fi
+            FILE_SIZE=$(wc -c < "$FILE")
+            if [ $((TOTAL_SIZE + FILE_SIZE)) -le $SIZE_LIMIT ]; then
+              TOTAL_SIZE=$((TOTAL_SIZE + FILE_SIZE))
+              printf '\n=== FILE: %s ===\n' "$FILE" >> /tmp/gemini-prompt.txt
+              cat "$FILE" >> /tmp/gemini-prompt.txt
+              printf '\n' >> /tmp/gemini-prompt.txt
+            else
+              SKIPPED_FILES="${SKIPPED_FILES}\\n- ${FILE} (exceeds ~50 KB payload cap)"
+            fi
+          done < /tmp/changed-docs.txt
+
+          # ── Run Gemini CLI ─────────────────────────────────────────────────
+          echo "Running style review with model: ${GEMINI_MODEL}"
+          if ! RESPONSE=$(gemini --model "${GEMINI_MODEL}" --temperature 0.2 --yolo \
+              -p "$(cat /tmp/gemini-prompt.txt)" 2>&1); then
+            echo "::warning::${GEMINI_MODEL} exited non-zero — trying fallback (${GEMINI_FALLBACK_MODEL})"
+            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
+              -p "$(cat /tmp/gemini-prompt.txt)" 2>&1) || true
+          fi
+
+          # Also fallback if response is empty or looks like an error message.
+          if [ -z "${RESPONSE}" ] || printf '%s' "${RESPONSE}" | grep -qE '^(Error:|error:|{"error|Usage:)'; then
+            echo "::warning::${GEMINI_MODEL} returned unusable output — trying fallback (${GEMINI_FALLBACK_MODEL})"
+            RESPONSE=$(gemini --model "${GEMINI_FALLBACK_MODEL}" --temperature 0.2 --yolo \
+              -p "$(cat /tmp/gemini-prompt.txt)" 2>&1) || true
           fi
 
           echo "::debug::RESPONSE length: $(printf '%s' "${RESPONSE}" | wc -c)"
 
-          # Log the model name for observability.
-          echo "Gemini model: $(printf '%s' "${RESPONSE}" | jq -r '.model // "unknown"' 2>/dev/null)"
-
-          # -- Extract and normalize findings ----------------------------------
+          # ── Extract and normalize findings ─────────────────────────────────
           # Extract the text field from the JSON wrapper; fall back to raw if
           # the CLI did not wrap output in a JSON envelope.
           FINDINGS_RAW=$(printf '%s' "${RESPONSE}" | jq -r '.response' 2>/dev/null \
@@ -242,7 +196,7 @@ jobs:
 
           echo "::debug::FINDINGS after schema validation: ${FINDINGS}"
 
-          # -- Validate line numbers against actual file content ----------------
+          # ── Validate line numbers against actual file content ───────────────
           # Verify each finding's "original" text appears at the claimed line.
           # Corrects line number if found nearby (+/-3 lines); drops if not found.
           cat > /tmp/validate-findings.py << 'PYEOF'
@@ -254,7 +208,7 @@ jobs:
               try:
                   lines = open(fp).readlines()
               except OSError:
-                  print('::warning::Dropping finding -- file not found: ' + fp, file=sys.stderr)
+                  print('::warning::Dropping finding — file not found: ' + fp, file=sys.stderr)
                   continue
               def matches(n, lines=lines, orig=orig):
                   return 0 < n <= len(lines) and orig in lines[n - 1]
@@ -265,84 +219,27 @@ jobs:
                   if corrected is not None:
                       f['line'] = corrected; validated.append(f)
                   else:
-                      print('::warning::Dropping finding -- original text not found near ' + fp + ':' + str(ln), file=sys.stderr)
+                      print('::warning::Dropping finding — original text not found near ' + fp + ':' + str(ln), file=sys.stderr)
           print(json.dumps(validated))
           PYEOF
           FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/validate-findings.py) || FINDINGS="[]"
 
-          # -- Fetch PR diff line ranges ----------------------------------------
-          # GitHub only allows inline comments on lines within diff hunks.
-          # Pre-filter findings so the API call never fails with 422.
-          gh api "/repos/${REPO}/pulls/${PR_NUMBER}/files?per_page=100" --paginate > /tmp/pr-files.json
-
-          cat > /tmp/split-findings.py << 'PYEOF'
-          import sys, json, re
-          pr_files = json.load(open('/tmp/pr-files.json'))
-          findings = json.load(sys.stdin)
-          diff_lines = {}
-          for f in pr_files:
-              fn = f['filename']
-              patch = f.get('patch', '')
-              if not patch:
-                  continue
-              lines = set()
-              cur = 0
-              for pl in patch.split('\n'):
-                  m = re.match(r'^@@ -\d+(?:,\d+)? \+(\d+)(?:,\d+)? @@', pl)
-                  if m:
-                      cur = int(m.group(1))
-                      continue
-                  if pl.startswith('-'):
-                      continue
-                  if pl.startswith('+') or pl.startswith(' '):
-                      lines.add(cur)
-                      cur += 1
-              diff_lines[fn] = lines
-          inline_f, body_f = [], []
-          for f in findings:
-              if f['line'] in diff_lines.get(f['file'], set()):
-                  inline_f.append(f)
-              else:
-                  body_f.append(f)
-          print(json.dumps({'inline': inline_f, 'body': body_f}))
-          PYEOF
-
-          # -- Build severity counts and post PR review -------------------------
+          # ── Build severity counts and post PR review ────────────────────────
           if printf '%s' "${FINDINGS}" | jq -e 'type == "array"' > /dev/null 2>&1; then
-
-            # Deduplicate: drop findings already commented by stylosaurus[bot].
-            EXISTING=$(gh api "/repos/${REPO}/pulls/${PR_NUMBER}/comments" \
-              | jq '[.[] | select(.user.login == "stylosaurus[bot]") | {path: .path, line: .line}]')
-            FINDINGS=$(printf '%s' "${FINDINGS}" | jq -c \
-              --argjson existing "${EXISTING}" \
-              '[.[] | . as $f | select(
-                ($existing | map(select(.path == $f.file and .line == $f.line)) | length) == 0
-              )]')
-
-            SPLIT=$(printf '%s' "${FINDINGS}" | python3 /tmp/split-findings.py)
-            INLINE_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.inline')
-            BODY_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.body')
-            INLINE_COUNT=$(printf '%s' "${INLINE_FINDINGS}" | jq 'length')
-            BODY_COUNT=$(printf '%s' "${BODY_FINDINGS}" | jq 'length')
-
-            echo "::debug::Inline-eligible findings: ${INLINE_COUNT}, body-only: ${BODY_COUNT}"
-
             ISSUE_COUNT=$(printf '%s' "${FINDINGS}" | jq 'length')
             BLOCKER_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "blocker")] | length')
             WARNING_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "warning")] | length')
             SUGGESTION_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "suggestion")] | length')
             REVIEW_EVENT=$([ "${BLOCKER_COUNT}" -gt 0 ] && echo "REQUEST_CHANGES" || echo "COMMENT")
 
-            # Nothing to report -- exit cleanly.
-            if [ "${ISSUE_COUNT}" -eq 0 ]; then
+            # Nothing to report and no skipped files — exit cleanly.
+            if [ "${ISSUE_COUNT}" -eq 0 ] && [ -z "${SKIPPED_FILES}" ]; then
               echo "No style issues found. No review posted."
               exit 0
             fi
 
-            # Build review body with intro and severity summary table.
-            BODY="Automated style review of ${FILE_COUNT} file(s) found ${ISSUE_COUNT} issue(s).
-
-          ## Gemini style review
+            # Build review body with severity summary table.
+            BODY="## Gemini style review — ${ISSUE_COUNT} issue(s)
 
           | Severity | Count |
           |----------|-------|
@@ -353,75 +250,74 @@ jobs:
             if [ "${BLOCKER_COUNT}" -gt 0 ]; then
               BODY="${BODY}
 
-          **${BLOCKER_COUNT} blocker(s) need to be fixed before this can merge.**"
+          **${BLOCKER_COUNT} blocker(s) found — changes requested.**"
             fi
 
-            # Append out-of-diff findings to the review body.
-            if [ "${BODY_COUNT}" -gt 0 ]; then
-              BODY_BLOCKER_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "blocker") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              BODY_WARNING_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "warning") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              BODY_SUGGESTION_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "suggestion") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-
+            if [ -n "${SKIPPED_FILES}" ]; then
               BODY="${BODY}
 
-          ---
-          **${BODY_COUNT} issue(s) outside the diff** (shown here because inline comments require lines in the diff):"
-
-              [ -n "${BODY_BLOCKER_ITEMS}" ] && BODY="${BODY}
-
-          #### Blockers
-          ${BODY_BLOCKER_ITEMS}"
-
-              [ -n "${BODY_WARNING_ITEMS}" ] && BODY="${BODY}
-
-          #### Warnings
-          ${BODY_WARNING_ITEMS}"
-
-              [ -n "${BODY_SUGGESTION_ITEMS}" ] && BODY="${BODY}
-
-          #### Suggestions
-          ${BODY_SUGGESTION_ITEMS}"
+          The following files were not reviewed (payload exceeded ~50 KB cap):
+          $(printf '%b' "${SKIPPED_FILES}")"
             fi
 
-            # Build inline comments only for findings whose lines are in the diff.
-            # Includes the reason (if present) below the severity badge.
-            if [ "${INLINE_COUNT}" -gt 0 ]; then
-              COMMENTS=$(printf '%s' "${INLINE_FINDINGS}" | jq -c '[.[] | {
-                path: .file,
-                line: .line,
-                side: "RIGHT",
-                body: (
-                  (if .reason and (.reason | length > 0)
-                   then .reason
-                   else ("**" + .issue + "**")
-                   end)
-                  + "\n\n> **" + (
-                    if .severity == "blocker" then "Blocker** -- must fix before merging."
-                    elif .severity == "warning" then "Warning**"
-                    else "Suggestion**"
-                    end
-                  )
-                  + "\n\n```suggestion\n" + .replacement + "\n```"
-                )
-              }]')
-            else
-              COMMENTS="[]"
-            fi
+            # Build inline comments with severity prefix and suggestion blocks.
+            COMMENTS=$(printf '%s' "${FINDINGS}" | jq -c '[.[] | {
+              path: .file,
+              line: .line,
+              side: "RIGHT",
+              body: ("**[" + (.severity // "warning" | ascii_upcase) + "] " + .issue + "**\n\n```suggestion\n" + .replacement + "\n```")
+            }]')
 
             jq -n \
               --arg body "${BODY}" \
               --arg event "${REVIEW_EVENT}" \
-              --arg commit_id "${PR_HEAD_SHA}" \
               --argjson comments "${COMMENTS}" \
-              '{body: $body, event: $event, commit_id: $commit_id, comments: $comments}' > /tmp/review.json
+              '{body: $body, event: $event, comments: $comments}' > /tmp/review.json
 
-            gh api \
+            if ! gh api \
               --method POST \
               "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
-              --input /tmp/review.json
+              --input /tmp/review.json 2>/tmp/api-error.txt; then
+              # Inline comments fail when flagged lines are not in the PR diff.
+              # Re-post findings grouped by severity as a top-level text comment.
+              BLOCKER_ITEMS=$(printf '%s' "${FINDINGS}" | jq -r \
+                '.[] | select(.severity == "blocker") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+              WARNING_ITEMS=$(printf '%s' "${FINDINGS}" | jq -r \
+                '.[] | select(.severity == "warning") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+              SUGGESTION_ITEMS=$(printf '%s' "${FINDINGS}" | jq -r \
+                '.[] | select(.severity == "suggestion") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+
+              FALLBACK_BODY="## Gemini style review — ${ISSUE_COUNT} issue(s)
+
+          > Inline comments unavailable — some flagged lines may not be in the diff.
+
+          | Severity | Count |
+          |----------|-------|
+          | Blocker | ${BLOCKER_COUNT} |
+          | Warning | ${WARNING_COUNT} |
+          | Suggestion | ${SUGGESTION_COUNT} |"
+
+              [ -n "${BLOCKER_ITEMS}" ] && FALLBACK_BODY="${FALLBACK_BODY}
+
+          ### Blockers
+          ${BLOCKER_ITEMS}"
+
+              [ -n "${WARNING_ITEMS}" ] && FALLBACK_BODY="${FALLBACK_BODY}
+
+          ### Warnings
+          ${WARNING_ITEMS}"
+
+              [ -n "${SUGGESTION_ITEMS}" ] && FALLBACK_BODY="${FALLBACK_BODY}
+
+          ### Suggestions
+          ${SUGGESTION_ITEMS}"
+
+              gh api \
+                --method POST \
+                "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
+                --field body="${FALLBACK_BODY}" \
+                --field event="COMMENT"
+            fi
 
           else
             # Gemini returned output that could not be parsed as JSON.
@@ -430,7 +326,7 @@ jobs:
             gh api \
               --method POST \
               "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" \
-              --field body="**Gemini style review** -- output could not be parsed. Raw Gemini output:
+              --field body="**Gemini style review** — output could not be parsed. Raw Gemini output:
 
           \`\`\`
           ${TRUNCATED}
