@@ -331,19 +331,38 @@ run_check \
 run_check \
   "UI elements not in inline code (button/tab/field names)" \
   "warning" \
-  "Click (Save|Cancel|Submit|Connect|Continue|Next|Back|Done|OK|Yes|No|Delete|Edit|Add|Remove|Create|Update|Send|Apply)[^'\`]"
+  "Click (Save|Cancel|Submit|Connect|Continue|Next|Back|Done|OK|Yes|No|Delete|Edit|Add|Remove|Create|Update|Send|Apply)([^'\`]|$)"
 
 run_check \
   "UI elements not in backticks (expanded verbs)" \
   "warning" \
-  "(Go to|Select|Open|Navigate to|Choose|Tap) (Settings|Dashboard|Reports|Tools|Integrations|Notifications|Profile|Accounts|Analytics|Overview|Home|Inbox|Calendar|Contacts|Billing|Help)[^'\`]"
+  "(Go to|Select|Open|Navigate to|Choose|Tap) (Settings|Dashboard|Reports|Tools|Integrations|Notifications|Profile|Accounts|Analytics|Overview|Home|Inbox|Calendar|Contacts|Billing|Help)([^'\`]|$)"
 
 check_h1_in_body
 
-run_check \
-  "Heading sentence case (words after first should be lowercase)" \
-  "warning" \
-  "^#{2,3} [A-Za-z]+ (A[^n ]|B[^u]|[CDEFHIJKLMNOPQRSTUVWXYZ])[a-z]"
+# Heading sentence case — custom check with exclusion list to reduce false positives
+check_heading_sentence_case() {
+  local results
+  results=$(printf '%s\n' "${FILES[@]}" \
+    | xargs grep -nE "^#{2,3} [A-Za-z]+ (A[^n ]|B[^u]|[CDEFHIJKLMNOPQRSTUVWXYZ])[a-z]" 2>/dev/null || true)
+  if [ -n "$results" ]; then
+    # Filter out known acceptable patterns:
+    #   Standard section names, product/brand proper nouns, common doc headings
+    results=$(echo "$results" | grep -ivE \
+      "Frequently Asked|Best Practices|How It Works|Getting Started|Related Articles|Next Steps|Need Help|Key (Concepts|Capabilities|Features|Benefits)|What You|For (Outlook|Chrome|Gmail|Safari|Firefox|Mac|Windows|Android|iOS)" \
+      | grep -ivE \
+      "Google|Facebook|Instagram|LinkedIn|WordPress|Salesforce|Outlook|Microsoft|YouTube|Twitter|Yelp|TripAdvisor|Apple|Amazon|Bing|Yahoo|Pinterest|Snapchat|TikTok|QuickBooks|Shopify|HubSpot|Mailchimp|Zapier|Stripe|PayPal|ActiveCampaign|Custom CSS" \
+      || true)
+  fi
+  if [ -n "$results" ]; then
+    yellow "  WARN — Heading sentence case (words after first should be lowercase)"
+    echo "$results" | sed 's/^/    /'
+    WARNINGS=$((WARNINGS + $(echo "$results" | wc -l)))
+  else
+    green "  PASS — Heading sentence case (words after first should be lowercase)"
+  fi
+}
+check_heading_sentence_case
 
 run_check \
   "Menu path without backticks or wrong separator" \
@@ -366,7 +385,7 @@ run_check \
 run_check \
   "Images outside ./img/ directory" \
   "warning" \
-  "!\[.*\]\(\.\./|\!\[.*\]\(\./images/|!\[.*\]\(\./img/.*/|!\[.*\]\(/img/"
+  "!\[.*\]\(\.\./|!\[.*\]\(\./images/|!\[.*\]\(\./img/.*/|!\[.*\]\(/img/"
 
 # ── Frontmatter ──────────────────────────────────────────────────────────────
 echo ""

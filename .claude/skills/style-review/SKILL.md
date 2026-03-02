@@ -28,10 +28,13 @@ bash .claude/skills/style-review/scripts/scan-style.sh [path-or-nothing-for-modi
 The script checks for:
 - Gray-label violations (Vendasta mentions, Partner Center, partner/reseller/agency terms)
 - Evergreen violations (historical references, future-state language)
-- Voice issues (third-person, passive voice)
-- Marketing language
+- Voice issues (third-person, passive voice, marketing language, speculation)
+- Heading formatting (sentence case, H1 in body, menu path separators)
 - Formatting issues (em dashes, UI elements not in inline code)
-- Image issues (missing alt text, non-kebab-case filenames)
+- Image conventions (missing alt text, non-kebab-case filenames, images outside `./img/`)
+- Link conventions (HTTP links, absolute internal links)
+- Frontmatter recommended fields (`sidebar_label`, `description`)
+- Build safety (missing title, unquoted colons, JSX in `.md`, unclosed blocks)
 
 ### Step 3: Qualitative review
 

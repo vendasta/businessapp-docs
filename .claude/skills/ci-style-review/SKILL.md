@@ -44,6 +44,7 @@ The scan script handles pattern-matchable violations. Your job in this step is t
 - **FAQ answer quality** (warning): vague hedging, overly long answers, voice/tone shifts
 - **Callout block misuse** (suggestion): block type doesn't match content (e.g. `:::warning` for a tip)
 - **Heading-content mismatch** (suggestion): heading promises one thing but body discusses another, or heading is too vague
+- **Subtle gray-label framing** (warning): the scan catches literal mentions of Vendasta, Partner Center, and partner/reseller/agency terms, but reviewers should still watch for indirect partner-provider framing that regex cannot detect (e.g., "your provider configured this for you")
 
 **Multiple violations on the same line:** If a single line has multiple distinct violations (e.g., a Vendasta mention AND historical language), emit separate findings for each. The post-processing pipeline handles multiple findings per line. Do not merge different violation types into a single finding.
 
