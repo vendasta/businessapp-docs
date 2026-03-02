@@ -88,6 +88,116 @@ run_check_icase() {
   fi
 }
 
+# ── Custom check: missing frontmatter title (BUILD-SAFETY) ───────────────────
+check_frontmatter_title() {
+  local results=""
+  for f in "${FILES[@]}"; do
+    local in_frontmatter=0 has_title=0
+    while IFS= read -r line; do
+      if [ "$line" = "---" ]; then
+        if [ $in_frontmatter -eq 1 ]; then
+          break
+        else
+          in_frontmatter=1
+          continue
+        fi
+      fi
+      if [ $in_frontmatter -eq 1 ]; then
+        echo "$line" | grep -qE '^title:' && has_title=1
+      fi
+    done < "$f"
+    if [ $in_frontmatter -eq 0 ] || [ $has_title -eq 0 ]; then
+      results+="$f: missing title in frontmatter"$'\n'
+    fi
+  done
+  results="${results%$'\n'}"
+  if [ -n "$results" ]; then
+    red "  FAIL — Missing frontmatter title (breaks build)"
+    echo "$results" | sed 's/^/    /'
+    ERRORS=$((ERRORS + $(echo "$results" | wc -l)))
+  else
+    green "  PASS — Missing frontmatter title (breaks build)"
+  fi
+}
+
+# ── Custom check: unquoted colons in frontmatter values (BUILD-SAFETY) ───────
+check_frontmatter_colons() {
+  local results=""
+  for f in "${FILES[@]}"; do
+    local in_frontmatter=0 line_num=0
+    while IFS= read -r line; do
+      line_num=$((line_num + 1))
+      if [ "$line" = "---" ]; then
+        if [ $in_frontmatter -eq 1 ]; then
+          break
+        else
+          in_frontmatter=1
+          continue
+        fi
+      fi
+      if [ $in_frontmatter -eq 1 ]; then
+        # Only check known string fields: title, sidebar_label, description
+        if echo "$line" | grep -qE '^(title|sidebar_label|description): '; then
+          # Extract the value (everything after "key: ")
+          local value
+          value=$(echo "$line" | sed 's/^[a-z_]*: //')
+          # Check if value contains a colon and is NOT quoted
+          if echo "$value" | grep -qF ':'; then
+            if ! echo "$value" | grep -qE '^".*"$' && ! echo "$value" | grep -qE "^'.*'$"; then
+              results+="$f:$line_num:$line"$'\n'
+            fi
+          fi
+        fi
+      fi
+    done < "$f"
+  done
+  results="${results%$'\n'}"
+  if [ -n "$results" ]; then
+    red "  FAIL — Unquoted colons in frontmatter values (breaks YAML parsing)"
+    echo "$results" | sed 's/^/    /'
+    ERRORS=$((ERRORS + $(echo "$results" | wc -l)))
+  else
+    green "  PASS — Unquoted colons in frontmatter values (breaks YAML parsing)"
+  fi
+}
+
+# ── Custom check: unclosed code blocks and callout blocks (BUILD-SAFETY) ─────
+check_unclosed_blocks() {
+  local code_results="" callout_results=""
+  for f in "${FILES[@]}"; do
+    # Count triple-backtick lines
+    local code_count
+    code_count=$(grep -cE '^\x60\x60\x60' "$f" 2>/dev/null) || code_count=0
+    if [ $((code_count % 2)) -ne 0 ]; then
+      code_results+="$f: $code_count triple-backtick lines (odd — likely unclosed)"$'\n'
+    fi
+    # Count ::: lines
+    local callout_count
+    callout_count=$(grep -cE '^:::' "$f" 2>/dev/null) || callout_count=0
+    if [ $((callout_count % 2)) -ne 0 ]; then
+      callout_results+="$f: $callout_count ::: lines (odd — likely unclosed)"$'\n'
+    fi
+  done
+  code_results="${code_results%$'\n'}"
+  callout_results="${callout_results%$'\n'}"
+
+  if [ -n "$code_results" ]; then
+    yellow "  WARN — Unclosed code blocks (odd number of triple-backtick lines)"
+    echo "$code_results" | sed 's/^/    /'
+    WARNINGS=$((WARNINGS + $(echo "$code_results" | wc -l)))
+  else
+    green "  PASS — Unclosed code blocks (odd number of triple-backtick lines)"
+  fi
+
+  if [ -n "$callout_results" ]; then
+    yellow "  WARN — Unclosed callout blocks (odd number of ::: lines)"
+    echo "$callout_results" | sed 's/^/    /'
+    WARNINGS=$((WARNINGS + $(echo "$callout_results" | wc -l)))
+  else
+    green "  PASS — Unclosed callout blocks (odd number of ::: lines)"
+  fi
+}
+
 # ── Custom check: H1 in body (skips frontmatter) ────────────────────────────
 check_h1_in_body() {
   local results=""
@@ -221,19 +331,38 @@ run_check \
 run_check \
   "UI elements not in inline code (button/tab/field names)" \
   "warning" \
-  "Click (Save|Cancel|Submit|Connect|Continue|Next|Back|Done|OK|Yes|No|Delete|Edit|Add|Remove|Create|Update|Send|Apply)[^'\`]"
+  "Click (Save|Cancel|Submit|Connect|Continue|Next|Back|Done|OK|Yes|No|Delete|Edit|Add|Remove|Create|Update|Send|Apply)([^'\`]|$)"
 
 run_check \
   "UI elements not in backticks (expanded verbs)" \
   "warning" \
-  "(Go to|Select|Open|Navigate to|Choose|Tap) (Settings|Dashboard|Reports|Tools|Integrations|Notifications|Profile|Accounts|Analytics|Overview|Home|Inbox|Calendar|Contacts|Billing|Help)[^'\`]"
+  "(Go to|Select|Open|Navigate to|Choose|Tap) (Settings|Dashboard|Reports|Tools|Integrations|Notifications|Profile|Accounts|Analytics|Overview|Home|Inbox|Calendar|Contacts|Billing|Help)([^'\`]|$)"
 
 check_h1_in_body
 
-run_check \
-  "Heading sentence case (words after first should be lowercase)" \
-  "warning" \
-  "^#{2,3} [A-Za-z]+ (A[^n ]|B[^u]|[CDEFHIJKLMNOPQRSTUVWXYZ])[a-z]"
+# Heading sentence case — custom check with exclusion list to reduce false positives
+check_heading_sentence_case() {
+  local results
+  results=$(printf '%s\n' "${FILES[@]}" \
+    | xargs grep -nE "^#{2,3} [A-Za-z]+ (A[^n ]|B[^u]|[CDEFHIJKLMNOPQRSTUVWXYZ])[a-z]" 2>/dev/null || true)
+  if [ -n "$results" ]; then
+    # Filter out known acceptable patterns:
+    #   Standard section names, product/brand proper nouns, common doc headings
+    results=$(echo "$results" | grep -ivE \
+      "Frequently Asked|Best Practices|How It Works|Getting Started|Related Articles|Next Steps|Need Help|Key (Concepts|Capabilities|Features|Benefits)|What You|For (Outlook|Chrome|Gmail|Safari|Firefox|Mac|Windows|Android|iOS)" \
+      | grep -ivE \
+      "Google|Facebook|Instagram|LinkedIn|WordPress|Salesforce|Outlook|Microsoft|YouTube|Twitter|Yelp|TripAdvisor|Apple|Amazon|Bing|Yahoo|Pinterest|Snapchat|TikTok|QuickBooks|Shopify|HubSpot|Mailchimp|Zapier|Stripe|PayPal|ActiveCampaign|Custom CSS" \
+      || true)
+  fi
+  if [ -n "$results" ]; then
+    yellow "  WARN — Heading sentence case (words after first should be lowercase)"
+    echo "$results" | sed 's/^/    /'
+    WARNINGS=$((WARNINGS + $(echo "$results" | wc -l)))
+  else
+    green "  PASS — Heading sentence case (words after first should be lowercase)"
+  fi
+}
+check_heading_sentence_case
 
 run_check \
   "Menu path without backticks or wrong separator" \
@@ -256,7 +385,7 @@ run_check \
 run_check \
   "Images outside ./img/ directory" \
   "warning" \
-  "!\[.*\]\(\.\./|\!\[.*\]\(\./images/|!\[.*\]\(\./img/.*/|!\[.*\]\(/img/"
+  "!\[.*\]\(\.\./|!\[.*\]\(\./images/|!\[.*\]\(\./img/.*/|!\[.*\]\(/img/"
 
 # ── Frontmatter ──────────────────────────────────────────────────────────────
 echo ""
@@ -275,6 +404,34 @@ run_check \
   "Absolute internal links (use relative paths)" \
   "warning" \
   "\]\(/docs/"
+
+# ── BUILD-SAFETY ──────────────────────────────────────────────────────────────
+echo ""
+bold "[ BUILD-SAFETY ] Checks that prevent Cloud Build failures"
+check_frontmatter_title
+
+check_frontmatter_colons
+
+# JSX / Wistia in .md files (not .mdx)
+MD_ONLY=()
+for f in "${FILES[@]}"; do
+  [[ "$f" == *.md ]] && [[ "$f" != *.mdx ]] && MD_ONLY+=("$f")
+done
+if [ ${#MD_ONLY[@]} -gt 0 ]; then
+  local_results=$(printf '%s\n' "${MD_ONLY[@]}" \
+    | xargs grep -nE '<iframe|<WistiaVideo|^import |className=' 2>/dev/null || true)
+  if [ -n "$local_results" ]; then
+    red "  FAIL — JSX/Wistia in .md files (must use .mdx for JSX content)"
+    echo "$local_results" | sed 's/^/    /'
+    ERRORS=$((ERRORS + $(echo "$local_results" | wc -l)))
+  else
+    green "  PASS — JSX/Wistia in .md files (must use .mdx for JSX content)"
+  fi
+else
+  green "  PASS — JSX/Wistia in .md files (no .md files to check)"
+fi
+
+check_unclosed_blocks
 
 # ── Summary ────────────────────────────────────────────────────────────────────
 echo ""

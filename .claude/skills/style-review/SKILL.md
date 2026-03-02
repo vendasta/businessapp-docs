@@ -28,10 +28,13 @@ bash .claude/skills/style-review/scripts/scan-style.sh [path-or-nothing-for-modi
 The script checks for:
 - Gray-label violations (Vendasta mentions, Partner Center, partner/reseller/agency terms)
 - Evergreen violations (historical references, future-state language)
-- Voice issues (third-person, passive voice)
-- Marketing language
+- Voice issues (third-person, passive voice, marketing language, speculation)
+- Heading formatting (sentence case, H1 in body, menu path separators)
 - Formatting issues (em dashes, UI elements not in inline code)
-- Image issues (missing alt text, non-kebab-case filenames)
+- Image conventions (missing alt text, non-kebab-case filenames, images outside `./img/`)
+- Link conventions (HTTP links, absolute internal links)
+- Frontmatter recommended fields (`sidebar_label`, `description`)
+- Build safety (missing title, unquoted colons, JSX in `.md`, unclosed blocks)
 
 ### Step 3: Qualitative review
 
@@ -185,11 +188,40 @@ Use for all UI elements:
 
 ---
 
+### Qualitative Checks (Reviewer Judgment Required)
+
+These issues cannot be caught by regex and require reading comprehension. Automated scans skip them.
+
+**Subtle evergreen violations** (warning)
+Language that implies change without using the banned keywords already listed above: "the new dashboard", "now supports", "recently added", "updated to include", "we've added", "you can now". These betray that something changed, which violates the evergreen principle.
+
+**Alt text quality** (suggestion)
+Images where alt text is generic or non-descriptive: single words like "screenshot", "image", "picture", "example", or text that doesn't describe what the image shows. Suggest a descriptive alternative based on the surrounding context.
+
+**Link text quality** (suggestion)
+Links with non-descriptive anchor text: "click here", "here", "this link", "link", "read more", or bare URLs used as the visible text. Suggest anchor text that tells the reader what they'll find at the destination.
+
+**Wall-of-text paragraphs** (suggestion)
+Paragraphs exceeding ~5 sentences or ~150 words without a visual break. The right way to split depends on context: a sub-heading, bullet list, callout block, image reference, or simply shorter paragraphs.
+
+**Callout block misuse** (suggestion)
+`:::warning` used for tips or general info, `:::info` used for limitations or requirements, `:::tip` used for restrictions. Match the block type to the content: `:::warning` for limitations and requirements, `:::info` for helpful context, `:::tip` for best practices, `:::note` for plan restrictions or behavior caveats.
+
+**Heading-content mismatch** (suggestion)
+A section heading that promises one thing but the body discusses something else, or headings too vague to be useful: "More information", "Other details", "Additional notes", "Miscellaneous". Suggest a heading that accurately describes the section's actual content.
+
+---
+
 ### FAQs
 
-- 3–10 FAQs per article using collapsible `<details>` format
-- Answers: 1–3 sentences, no speculation, no "it depends" answers
+- 3-10 FAQs per article using collapsible `<details>` format
 - Same voice and style as main content
+
+**FAQ answer quality** (warning)
+- Answers that dodge the question with vague hedging instead of giving a concrete answer
+- Answers exceeding 3 sentences
+- Answers that shift voice/tone away from the article's style
+- Note: words like "might" or "depends" are fine when factually accurate ("results might take up to 24 hours") -- the issue is when they replace a real answer ("it depends on your setup")
 
 ```markdown
 <details>

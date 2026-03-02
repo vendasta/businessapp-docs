@@ -35,12 +35,16 @@ Use your file-reading tool to load the full content of every file under review. 
 
 ### Step 4: Qualitative review
 
-For each file, apply the complete style criteria from Step 1. Pay special attention to:
+The scan script handles pattern-matchable violations. Your job in this step is to find issues that require reading comprehension. These are documented in the "Qualitative Checks" section of `style-review/SKILL.md`. Focus on:
 
-- **Gray-label violations** (blocker): Vendasta mentions, Partner Center, partner/reseller/agency/white-label
-- **Evergreen violations** (warning): historical references, future-state language
-- **Voice issues** (warning): third-person, passive voice, marketing language
-- **Formatting issues** (suggestion): em dashes, UI elements not in backticks
+- **Subtle evergreen language** (warning): phrases that imply change without using banned keywords
+- **Alt text quality** (suggestion): generic or non-descriptive image alt text
+- **Link text quality** (suggestion): "click here", bare URLs, or other non-descriptive anchors
+- **Wall-of-text paragraphs** (suggestion): paragraphs exceeding ~5 sentences or ~150 words
+- **FAQ answer quality** (warning): vague hedging, overly long answers, voice/tone shifts
+- **Callout block misuse** (suggestion): block type doesn't match content (e.g. `:::warning` for a tip)
+- **Heading-content mismatch** (suggestion): heading promises one thing but body discusses another, or heading is too vague
+- **Subtle gray-label framing** (warning): the scan catches literal mentions of Vendasta, Partner Center, and partner/reseller/agency terms, but reviewers should still watch for indirect partner-provider framing that regex cannot detect (e.g., "your provider configured this for you")
 
 **Multiple violations on the same line:** If a single line has multiple distinct violations (e.g., a Vendasta mention AND historical language), emit separate findings for each. The post-processing pipeline handles multiple findings per line. Do not merge different violation types into a single finding.
 
