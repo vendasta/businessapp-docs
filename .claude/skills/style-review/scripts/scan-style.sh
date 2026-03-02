@@ -88,6 +88,74 @@ run_check_icase() {
   fi
 }
 
+# ── Custom check: H1 in body (skips frontmatter) ────────────────────────────
+check_h1_in_body() {
+  local results=""
+  for f in "${FILES[@]}"; do
+    local in_frontmatter=0 past_frontmatter=0 line_num=0
+    while IFS= read -r line; do
+      line_num=$((line_num + 1))
+      if [ "$line" = "---" ]; then
+        if [ $in_frontmatter -eq 1 ]; then
+          past_frontmatter=1
+          in_frontmatter=0
+          continue
+        elif [ $past_frontmatter -eq 0 ]; then
+          in_frontmatter=1
+          continue
+        fi
+      fi
+      if [ $past_frontmatter -eq 1 ] && echo "$line" | grep -qE '^# [^#]'; then
+        results+="$f:$line_num:$line"$'\n'
+      fi
+    done < "$f"
+  done
+  results="${results%$'\n'}"
+  if [ -n "$results" ]; then
+    yellow "  WARN — H1 in body (Docusaurus uses frontmatter title as H1)"
+    echo "$results" | sed 's/^/    /'
+    WARNINGS=$((WARNINGS + $(echo "$results" | wc -l)))
+  else
+    green "  PASS — H1 in body (Docusaurus uses frontmatter title as H1)"
+  fi
+}
+
+# ── Custom check: frontmatter recommended fields ────────────────────────────
+check_frontmatter_fields() {
+  local results=""
+  for f in "${FILES[@]}"; do
+    local in_frontmatter=0 has_sidebar_label=0 has_description=0
+    while IFS= read -r line; do
+      if [ "$line" = "---" ]; then
+        if [ $in_frontmatter -eq 1 ]; then
+          break
+        else
+          in_frontmatter=1
+          continue
+        fi
+      fi
+      if [ $in_frontmatter -eq 1 ]; then
+        echo "$line" | grep -qE '^sidebar_label:' && has_sidebar_label=1
+        echo "$line" | grep -qE '^description:' && has_description=1
+      fi
+    done < "$f"
+    if [ $has_sidebar_label -eq 0 ]; then
+      results+="$f: missing sidebar_label"$'\n'
+    fi
+    if [ $has_description -eq 0 ]; then
+      results+="$f: missing description"$'\n'
+    fi
+  done
+  results="${results%$'\n'}"
+  if [ -n "$results" ]; then
+    yellow "  WARN — Frontmatter recommended fields (sidebar_label, description)"
+    echo "$results" | sed 's/^/    /'
+    WARNINGS=$((WARNINGS + $(echo "$results" | wc -l)))
+  else
+    green "  PASS — Frontmatter recommended fields (sidebar_label, description)"
+  fi
+}
+
 # ── CRITICAL: Gray-label ─────────────────────────────────────────────────────
 echo ""
 bold "[ CRITICAL ] Gray-label / branding"
@@ -155,6 +223,23 @@ run_check \
   "warning" \
   "Click (Save|Cancel|Submit|Connect|Continue|Next|Back|Done|OK|Yes|No|Delete|Edit|Add|Remove|Create|Update|Send|Apply)[^'\`]"
 
+run_check \
+  "UI elements not in backticks (expanded verbs)" \
+  "warning" \
+  "(Go to|Select|Open|Navigate to|Choose|Tap) (Settings|Dashboard|Reports|Tools|Integrations|Notifications|Profile|Accounts|Analytics|Overview|Home|Inbox|Calendar|Contacts|Billing|Help)[^'\`]"
+
+check_h1_in_body
+
+run_check \
+  "Heading sentence case (words after first should be lowercase)" \
+  "warning" \
+  "^#{2,3} [A-Za-z]+ (A[^n ]|B[^u]|[CDEFHIJKLMNOPQRSTUVWXYZ])[a-z]"
+
+run_check \
+  "Menu path without backticks or wrong separator" \
+  "warning" \
+  "(->|>>| — )[A-Z][a-z]"
+
 # ── Images ─────────────────────────────────────────────────────────────────────
 echo ""
 bold "[ IMAGES ] Image conventions"
@@ -167,6 +252,29 @@ run_check \
   "Non-kebab-case image filenames" \
   "warning" \
   "!\[.*\]\(.*[A-Z_].*\.(png|jpg|gif)\)"
+
+run_check \
+  "Images outside ./img/ directory" \
+  "warning" \
+  "!\[.*\]\(\.\./|\!\[.*\]\(\./images/|!\[.*\]\(\./img/.*/|!\[.*\]\(/img/"
+
+# ── Frontmatter ──────────────────────────────────────────────────────────────
+echo ""
+bold "[ FRONTMATTER ] Recommended frontmatter fields"
+check_frontmatter_fields
+
+# ── Links ─────────────────────────────────────────────────────────────────────
+echo ""
+bold "[ LINKS ] Link conventions"
+run_check \
+  "HTTP links (use HTTPS)" \
+  "warning" \
+  "\]\(http://"
+
+run_check \
+  "Absolute internal links (use relative paths)" \
+  "warning" \
+  "\]\(/docs/"
 
 # ── Summary ────────────────────────────────────────────────────────────────────
 echo ""
