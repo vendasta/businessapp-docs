@@ -6,19 +6,19 @@ tags: [zapier, automations, integrations, webhook]
 keywords: [business app zapier, send webhook, automation webhook, zapier webhook trigger]
 ---
 
-When something happens in Business App — like a contact being created or an activity being logged — you can push that data out to Zapier automatically using the **Send a webhook** step. From Zapier, that data can trigger actions in thousands of other apps.
-
-## Use case example
-
-**Contact created in Business App → add to HubSpot CRM**
-
-When a new contact is created in Business App, an automation fires and sends the contact's details to Zapier via webhook. Zapier receives the data and creates or updates a matching contact record in HubSpot. Both systems stay in sync without any manual copying.
+When something happens in Business App — like a contact being created or an activity being logged — you can push that data out to Zapier automatically using the **Send a webhook** step. From Zapier, that data can trigger actions in other external apps.
 
 ## Prerequisites
 
 - An active [Zapier](https://zapier.com/) account
 - A Business App automation with a **Send a webhook** step
 - The automation must be turned on
+
+## Example
+
+**Company created in Business App → create customer in QuickBooks Online**
+
+When a new company is added in Business App, an automation fires and sends the company's details to Zapier via webhook. Zapier receives the data and creates a matching customer record in QuickBooks Online — so your CRM and accounting software stay in sync without any manual re-entry.
 
 ## How to set up
 
@@ -28,43 +28,63 @@ There are two parts: setting up the receiving end in Zapier first, then connecti
 
 **Step 1:** Log in to [Zapier](https://zapier.com/) and click **Create Zap**.
 
-**Step 2:** Search for and select **Webhooks by Zapier** as the trigger app.
+**Step 2:** The Zap editor opens with a blank canvas showing a Trigger block and an Action block.
 
-**Step 3:** Select **Catch Hook** as the trigger event, then click **Continue**.
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-ready-for-setup.png').default} alt="Zapier canvas showing a Trigger block and an Action block ready to be configured" width="50%" />
+</div>
 
-**Step 4:** Copy the webhook URL that Zapier generates. You will paste this into your Business App automation in the next part.
+**Step 3:** Search for and select **Webhooks by Zapier** as the trigger app.
 
-:::tip
-Click **Continue** and then **Test trigger** in Zapier. It will show as waiting — that's expected. The test will complete once your automation sends its first request.
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-trigger-webhook.png').default} alt="Zapier app search showing Webhooks highlighted under Popular built-in tools" width="70%" />
+</div>
+
+**Step 4:** Select **Catch Hook** as the trigger event, then click **Continue**.
+
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-catch-webhook.png').default} alt="Zapier trigger setup showing Webhooks by Zapier selected with Catch Hook as the trigger event" width="75%" />
+</div>
+
+**Step 5:** In the **Pick Off A Child Key** field, enter the specific key you want Zapier to extract from the webhook request. This is useful if you only need a subset of the data sent to the webhook. You can also leave this blank to receive the full payload. Click **Continue**.
+
+**Step 6:** Copy the webhook URL that Zapier generates. You will paste this into your Business App automation in the next part.
+
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-webhook-url.png').default} alt="Zapier Test tab showing the generated webhook URL with a Copy button and a We're listening message" width="75%" />
+</div>
+
+:::note
+If you click **Test trigger** now, it will fail — that's expected. Zapier is listening for incoming data, but your Business App automation hasn't been connected yet and hasn't sent anything to this URL. The test will succeed after you complete Part 2 and your automation fires for the first time.
 :::
 
 ### Part 2: Connect the webhook in Business App
 
-**Step 5:** Go to **Business App** > **Automations** and open the automation you want to use, or create a new one.
+**Step 7:** Go to **Business App** > **Automations** and open the automation you want to use, or create a new one.
 
-**Step 6:** Set a trigger for your automation. For example, use **A contact is created or modified** to fire whenever a new contact is added.
+**Step 8:** Set a trigger for your automation. For example, use **A company is created or modified** to fire whenever a new company is added.
 
-**Step 7:** Add a **Send a webhook** step to your automation. You'll find it under **Advanced** in the step picker.
+**Step 9:** Add a **Send a webhook** step to your automation. You'll find it under **Advanced** in the step picker.
 
-**Step 8:** Paste the Zapier webhook URL into the URL field of the **Send a webhook** step.
+**Step 10:** Paste the Zapier webhook URL into the URL field of the **Send a webhook** step.
 
 :::note Screenshots needed
-Screenshots for Steps 7 and 8 (the Send a webhook step configuration in Business App) need to be added here.
+Screenshots for Steps 9 and 10 (the Send a webhook step configuration in Business App) need to be added here.
 :::
 
-**Step 9:** In the **Body** field, configure the data you want to send to Zapier. You can use [smart values](../smart-values-in-automations) to include dynamic contact or company data, such as the contact's name, email, or phone number.
+**Step 11:** In the **Body** field, configure the data you want to send to Zapier. You can use [smart values](../smart-values-in-automations) to include dynamic contact or company data, such as the company name, email, or phone number.
 
-**Step 10:** Save and turn on your automation.
+**Step 12:** Save and turn on your automation.
 
 ### Part 3: Complete the Zap in Zapier
 
-**Step 11:** Return to Zapier. Trigger your automation in Business App (for example, create a test contact) so Zapier receives a sample payload.
+**Step 13:** Return to Zapier. Trigger your automation in Business App (for example, create a test company) so Zapier receives a sample payload.
 
-**Step 12:** Back in Zapier, click **Test trigger**. If the webhook received data, Zapier will show the fields it captured.
+**Step 14:** Back in Zapier, click **Test trigger**. If the webhook received data, Zapier will show the fields it captured.
 
-**Step 13:** Add the action steps you want Zapier to perform — for example, **Create or Update Contact** in HubSpot, or **Add Row** in Google Sheets.
+**Step 15:** Add the action steps you want Zapier to perform — for example, **Create or Update Customer** in QuickBooks Online, or **Add Row** in Google Sheets.
 
-**Step 14:** Name your Zap, test it end to end, and turn it on.
+**Step 16:** Name your Zap, test it end to end, and turn it on.
 
 ## Frequently Asked Questions
 
@@ -113,7 +133,7 @@ If the webhook step fails (for example, due to a network error or an invalid URL
 <details>
 <summary>Can I use this to sync contacts to my external CRM automatically?</summary>
 
-Yes. This is one of the most common use cases. Set your automation to trigger when a contact is created or modified, use the Send a webhook step to push the contact data to Zapier, then configure Zapier to create or update a record in your CRM (such as HubSpot, Salesforce, or Zoho).
+Yes. This is one of the most common use cases. Set your automation to trigger when a contact is created or modified, use the Send a webhook step to push the contact data to Zapier, then configure Zapier to create or update a record in your external app (such as QuickBooks Online, Salesforce, or Zoho).
 </details>
 
 <details>
