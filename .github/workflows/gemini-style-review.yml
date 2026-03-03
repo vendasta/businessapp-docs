@@ -25,6 +25,7 @@ name: Gemini Style Review
 
 on:
   pull_request:
+    types: [opened]
     paths:
       - 'docusaurus/docs/**'
   workflow_dispatch:
