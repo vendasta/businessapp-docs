@@ -3,7 +3,7 @@
 Agent guidance for the Business App documentation repository.
 This file is the first thing you should read. It tells you what this repo is, how it's structured, and how to work in it safely.
 
-For content and formatting standards, see the skills in `.cursor/skills/`.
+For content and formatting standards, see the skills in `.claude/skills/`.
 
 ---
 
@@ -22,19 +22,24 @@ The site is built and deployed via Google Cloud Run. A failed build blocks the e
 ├── CLAUDE.md                        ← You are here
 ├── CONTRIBUTING.md                  ← Authoring conventions, icon usage
 ├── README.md                        ← Setup and build commands
-├── .cursor/
-│   ├── rules/                       ← Content standards (apply these always)
-│   │   ├── article-standards.mdc    ← Voice, tense, evergreen content rules
-│   │   ├── gray-label-business-owner-docs.mdc ← No Vendasta branding — CRITICAL
-│   │   └── wistia-video-embedding.mdc ← Video embed format
-│   └── skills/                      ← How-to guides for specific tasks
+├── .agents/
+│   └── skills/                      ← Symlink to .claude/skills/ (Gemini CLI, Codex)
+├── .claude/
+│   ├── settings.local.json          ← Claude Code MCP config
+│   └── skills/                      ← How-to guides for specific tasks (auto-discovered)
 │       ├── generate-help-article/SKILL.md     ← Full article generation workflow
 │       ├── getting-started-guide/SKILL.md     ← Getting Started guide format
 │       ├── pre-push-validation/SKILL.md       ← Run this before every commit
 │       ├── training-video-teleprompter/SKILL.md
 │       └── what-did-i-get-done/SKILL.md
+├── .cursor/
+│   └── rules/                       ← Content standards (apply these always)
+│       ├── article-standards.mdc    ← Voice, tense, evergreen content rules
+│       ├── gray-label-business-owner-docs.mdc ← No Vendasta branding — CRITICAL
+│       └── wistia-video-embedding.mdc ← Video embed format
 ├── .github/
-│   └── workflows/                   ← CI/CD — do not edit unless asked
+│   └── workflows/
+│       └── gemini-style-review.yml  ← Automated PR style review (see below)
 ├── docusaurus/
 │   ├── docs/                        ← ALL documentation lives here
 │   │   ├── business-app/            ← Main product docs
@@ -102,7 +107,7 @@ For WordPress Hosting sections, the slug pattern is required:
 3. **Create `_category_.json`** — set the label and position
 4. **Create `index.md`** — follow the generate-help-article skill exactly
 5. **Add images to `./img/`** — kebab-case filenames, PNG preferred
-6. **Run pre-push validation** — follow `.cursor/skills/pre-push-validation/SKILL.md`
+6. **Run pre-push validation** — invoke the `pre-push-validation` skill
 7. **Fix any errors** — do not skip this step; broken files fail the Cloud Build
 8. **Commit with a clear message** — e.g. `docs: add AI Employee help article`
 
@@ -135,6 +140,42 @@ Read the full SKILL.md file before using each skill.
 | `pre-push-validation` | Before every commit — catches errors that break the build |
 | `training-video-teleprompter` | Turning a doc into a teleprompter script for video |
 | `what-did-i-get-done` | Summarizing recent commits for a status update |
+| `style-review` | Reviewing docs for style, voice, gray-label, and formatting violations |
+| `ci-style-review` | Machine-readable JSON output for the Gemini CI workflow |
+
+---
+
+## Automated PR Style Review
+
+Every pull request that changes files under `docusaurus/docs/` triggers a **Gemini-powered style review** via `.github/workflows/gemini-style-review.yml`. You do not need to run this manually.
+
+**What it does:**
+1. Detects changed `.md`/`.mdx` files in the PR
+2. Runs the `scan-style.sh` deterministic checks (gray-label, evergreen, formatting, build safety)
+3. Sends file content to Gemini for qualitative review (subtle evergreen language, alt text quality, wall-of-text, etc.)
+4. Posts findings as inline PR comments with committable `suggestion` blocks
+5. Requests changes if blockers are found; posts a comment otherwise
+
+**How it works:**
+- Primary model: `gemini-3-flash-preview` with automatic fallback to `gemini-2.5-flash`
+- Findings are schema-validated and line-number-verified against actual file content before posting
+- Files are capped at ~50 KB total payload; excess files are listed but not reviewed
+- Forked PRs are skipped (read-only `GITHUB_TOKEN`)
+
+**Required repository secrets:**
+
+| Secret | Purpose |
+|--------|---------|
+| `GEMINI_API_KEY` | Google AI Studio API key for Gemini CLI |
+| `STYLOSAURUS_APP_ID` | GitHub App ID for posting PR reviews with write permissions |
+| `STYLOSAURUS_PRIVATE_KEY` | GitHub App private key paired with the App ID |
+
+The workflow skips gracefully if `GEMINI_API_KEY` is not configured.
+
+**Related files:**
+- `.claude/skills/style-review/SKILL.md` -- complete style rules (single source of truth)
+- `.claude/skills/style-review/scripts/scan-style.sh` -- deterministic regex checks
+- `.claude/skills/ci-style-review/SKILL.md` -- JSON output contract for the workflow
 
 ---
 
@@ -195,7 +236,7 @@ fix: repair broken link in [file path]
 ## What You Should NOT Do
 
 - Do not edit files in `docusaurus/src/` unless explicitly asked
-- Do not modify `.github/workflows/` unless explicitly asked
+- Do not modify `.github/workflows/` unless explicitly asked (see "Automated PR Style Review" above for how the workflow operates)
 - Do not create files outside `docusaurus/docs/` for documentation
 - Do not commit without running pre-push validation first
 - Do not invent features, UI labels, or functionality not in your source material

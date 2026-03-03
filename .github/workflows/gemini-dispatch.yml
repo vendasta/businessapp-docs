@@ -1,0 +1,59 @@
+name: Stylosaurus Dispatch
+# Thin dispatcher for @stylosaurus mentions in PR comments.
+# Routes to gemini-style-review.yml via workflow_dispatch on the PR's branch.
+#
+# This file MUST live on master for issue_comment events to fire.
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  actions: write
+
+jobs:
+  dispatch:
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '@stylosaurus') &&
+      contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.comment.author_association)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Stylosaurus app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.STYLOSAURUS_APP_ID }}
+          private-key: ${{ secrets.STYLOSAURUS_PRIVATE_KEY }}
+
+      - name: Acknowledge with reaction
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          REPO: ${{ github.repository }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+        run: |
+          gh api "/repos/${REPO}/issues/comments/${COMMENT_ID}/reactions" \
+            --method POST --field content='eyes'
+
+      - name: Extract context and dispatch
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          # Get PR head branch
+          HEAD_REF=$(gh pr view "${PR_NUMBER}" --repo "${REPO}" --json headRefName -q '.headRefName')
+
+          # Extract additional context (strip @stylosaurus and optional /review prefix)
+          CONTEXT=$(printf '%s' "${COMMENT_BODY}" | sed 's/^@stylosaurus\s*//' | sed 's/^\/review\s*//')
+
+          # Dispatch review workflow on the PR's branch
+          gh workflow run gemini-style-review.yml \
+            --repo "${REPO}" \
+            --ref "${HEAD_REF}" \
+            -f pr_number="${PR_NUMBER}" \
+            -f additional_context="${CONTEXT}"
