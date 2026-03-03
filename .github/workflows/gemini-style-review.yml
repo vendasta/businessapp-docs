@@ -23,7 +23,7 @@ name: Gemini Style Review
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize]
     paths:
       - 'docusaurus/docs/**'
   workflow_dispatch:
@@ -321,14 +321,39 @@ jobs:
           # -- Build severity counts and post PR review -------------------------
           if printf '%s' "${FINDINGS}" | jq -e 'type == "array"' > /dev/null 2>&1; then
 
-            # Deduplicate: drop findings already commented by stylosaurus[bot].
-            EXISTING=$(gh api "/repos/${REPO}/pulls/${PR_NUMBER}/comments" \
-              | jq '[.[] | select(.user.login == "stylosaurus[bot]") | {path: .path, line: .line}]')
-            FINDINGS=$(printf '%s' "${FINDINGS}" | jq -c \
-              --argjson existing "${EXISTING}" \
-              '[.[] | . as $f | select(
-                ($existing | map(select(.path == $f.file and .line == $f.line)) | length) == 0
-              )]')
+            # Deduplicate: drop findings whose replacement text was already
+            # suggested by stylosaurus[bot] on the same file.  Content-based
+            # matching is immune to line-number drift caused by edits above
+            # previously-flagged lines.
+            gh api "/repos/${REPO}/pulls/${PR_NUMBER}/comments" \
+              | jq '[.[] | select(.user.login == "stylosaurus[bot]")]' > /tmp/existing-comments.json
+
+            cat > /tmp/dedup-findings.py << 'PYEOF'
+          import sys, json, re
+
+          existing_raw = json.load(open('/tmp/existing-comments.json'))
+          findings = json.load(sys.stdin)
+
+          # Extract replacement text from existing stylosaurus suggestion blocks.
+          existing = []
+          for c in existing_raw:
+              m = re.search(r'```suggestion\n(.+?)\n```', c.get('body', ''), re.DOTALL)
+              if m:
+                  existing.append({'path': c['path'], 'replacement': m.group(1)})
+
+          # Drop findings whose replacement was already suggested on the same file.
+          deduped = []
+          for f in findings:
+              already = any(
+                  e['path'] == f['file'] and e['replacement'] == f['replacement']
+                  for e in existing
+              )
+              if not already:
+                  deduped.append(f)
+
+          print(json.dumps(deduped))
+          PYEOF
+            FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/dedup-findings.py) || FINDINGS="[]"
 
             SPLIT=$(printf '%s' "${FINDINGS}" | python3 /tmp/split-findings.py)
             INLINE_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.inline')
