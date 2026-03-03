@@ -6,12 +6,12 @@ tags: [zapier, automations, integrations, webhook]
 keywords: [business app zapier, send webhook, automation webhook, zapier webhook trigger]
 ---
 
-When something happens in Business App — like a contact being created or an activity being logged — you can push that data out to Zapier automatically using the **Send a webhook** step. From Zapier, that data can trigger actions in other external apps.
+When something happens in Business App — like a contact being created or an activity being logged — you can push that data out to Zapier automatically using the `Send a webhook` step. From Zapier, that data can trigger actions in other external apps.
 
 ## Prerequisites
 
 - An active [Zapier](https://zapier.com/) account
-- A Business App automation with a **Send a webhook** step
+- A Business App automation with a `Send a webhook` step
 - The automation must be turned on
 
 ## Example
@@ -26,7 +26,7 @@ There are three parts: setting up the receiving end in Zapier, connecting it to 
 
 ### Part 1: Set up the webhook in Zapier
 
-**Step 1:** Log in to [Zapier](https://zapier.com/) and click **Create Zap**.
+**Step 1:** Log in to [Zapier](https://zapier.com/) and click `Create Zap`.
 
 **Step 2:** The Zap editor opens with a blank canvas showing a Trigger block and an Action block.
 
@@ -34,19 +34,19 @@ There are three parts: setting up the receiving end in Zapier, connecting it to 
   <img src={require('./img/zapier-ready-for-setup.png').default} alt="Zapier canvas showing a Trigger block and an Action block ready to be configured" width="40%" />
 </div>
 
-**Step 3:** Search for and select **Webhooks by Zapier** as the trigger app.
+**Step 3:** Search for and select `Webhooks by Zapier` as the trigger app.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier-trigger-webhook.png').default} alt="Zapier app search showing Webhooks highlighted under Popular built-in tools" width="70%" />
 </div>
 
-**Step 4:** Select **Catch Hook** as the trigger event, then click **Continue**.
+**Step 4:** Select `Catch Hook` as the trigger event, then click `Continue`.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier-catch-webhook.png').default} alt="Zapier trigger setup showing Webhooks by Zapier selected with Catch Hook as the trigger event" width="75%" />
 </div>
 
-**Step 5:** In the **Pick Off A Child Key** field, enter the specific key you want Zapier to extract from the webhook request. This is useful if you only need a subset of the data sent to the webhook. You can also leave this blank to receive the full payload. Click **Continue**.
+**Step 5:** In the `Pick Off A Child Key` field, enter the specific key you want Zapier to extract from the webhook request. This is useful if you only need a subset of the data sent to the webhook. You can also leave this blank to receive the full payload. Click `Continue`.
 
 **Step 6:** Copy the webhook URL that Zapier generates. You will paste this into your Business App automation in the next part.
 
@@ -55,28 +55,28 @@ There are three parts: setting up the receiving end in Zapier, connecting it to 
 </div>
 
 :::note
-If you click **Test trigger** now, it will fail — that's expected. Zapier is listening for incoming data, but your Business App automation hasn't been connected yet and hasn't sent anything to this URL. The test will succeed after you complete Part 2 and your automation fires for the first time.
+If you click `Test trigger` now, it will fail — that's expected. Zapier is listening for incoming data, but your Business App automation hasn't been connected yet and hasn't sent anything to this URL. The test will succeed after you complete Part 2 and your automation fires for the first time.
 :::
 
 ### Part 2: Connect the webhook in Business App
 
-**Step 7:** Go to **Business App** > **Automations** and open the automation you want to use, or create a new one. Make sure it includes a **Send a webhook** step — that's what pushes data out to Zapier.
+**Step 7:** Go to **Business App** > **Automations** and open the automation you want to use, or create a new one. Make sure it includes a `Send a webhook` step — that's what pushes data out to Zapier.
 
-**Step 8:** Set a trigger for your automation. For example, use **A company is created or modified** to fire whenever a new company is added.
+**Step 8:** Set a trigger for your automation. For example, use `A company is created or modified` to fire whenever a new company is added.
 
-**Step 9:** Add a **Send a webhook** step to your automation. You'll find it under **Advanced** in the step picker.
+**Step 9:** Add a `Send a webhook` step to your automation. You'll find it under `Advanced` in the step picker.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/businessApp-send-a-webhook-step.png').default} alt="Send a webhook option under the Advanced section in the Business App automation step picker" width="75%" />
 </div>
 
-**Step 10:** Paste the Zapier webhook URL from step 6 into the URL field of the **Send a webhook** step.
+**Step 10:** Paste the Zapier webhook URL from step 6 into the URL field of the `Send a webhook` step.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/businessApp-Send-webhook-url.png').default} alt="Send a webhook step configuration in Business App showing the Zapier webhook URL pasted into the Webhook URL field" width="75%" />
 </div>
 
-**Step 11:** Expand the **JSON Body** section and add the keys you want to send to Zapier. For each entry:
+**Step 11:** Expand the `JSON Body` section and add the keys you want to send to Zapier. For each entry:
 
 - **Key**: Enter a name that describes the data — for example, `Company Name` or `Country`. This is the key that Zapier will receive and can map to fields in the external app (QuickBooks Online in this scenario).
 - **Value**: Use [dynamic content](../smart-values-in-automations) to insert the actual data from Business App — for example, the company's name or country pulled from the trigger.
@@ -91,7 +91,7 @@ If you click **Test trigger** now, it will fail — that's expected. Zapier is l
 
 ### Part 3: Complete the Zap in Zapier
 
-**Step 14:** Return to Zapier and click **Test trigger**. Each time your Business App automation fires, a new request appears here. Select the most recent one and click **Continue with selected record**.
+**Step 14:** Return to Zapier and click `Test trigger`. Each time your Business App automation fires, a new request appears here. Select the most recent one and click `Continue with selected record`.
 
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier-test-trigger.png').default} alt="Zapier Test tab showing the Test trigger button and We're listening message" width="40%" />
@@ -105,7 +105,7 @@ Zapier will show the data it captured — including the keys you defined in the 
   <img src={require('./img/zapier-payload.png').default} alt="Zapier test result showing Company Name and Country fields with values pulled from the Business App automation" width="75%" />
 </div>
 
-**Step 15:** Add the action steps you want Zapier to perform — for example, **Create a Customer** in QuickBooks Online.
+**Step 15:** Add the action steps you want Zapier to perform — for example, `Create a Customer` in QuickBooks Online.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier-quickbooks-action.png').default} alt="Zapier Zap editor showing Webhooks by Zapier as the trigger and QuickBooks Online as the action step" width="40%" />
@@ -124,7 +124,7 @@ You can send any data available in your automation using dynamic content — con
 <details>
 <summary>Where does the webhook URL come from?</summary>
 
-The URL is generated by Zapier and unique to each Zap. You copy it from the Zapier trigger setup (Step 6) and paste it into the **Send a webhook** step in Business App.
+The URL is generated by Zapier and unique to each Zap. You copy it from the Zapier trigger setup (Step 6) and paste it into the `Send a webhook` step in Business App.
 </details>
 
 <details>

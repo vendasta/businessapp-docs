@@ -24,7 +24,7 @@ When a customer pays an invoice in QuickBooks Online, Zapier fires an automation
 
 ### Step 1: Select the trigger
 
-In Zapier, create a new Zap and choose the app and event that will start your workflow. For example, select **QuickBooks Online** as the app and **New Payment** as the trigger event.
+In Zapier, create a new Zap and choose the app and event that will start your workflow. For example, select **QuickBooks Online** as the app and `New Payment` as the trigger event.
 
 You can use any trigger available in Zapier — the steps that follow are the same regardless of which trigger app you choose.
 
@@ -36,15 +36,15 @@ After setting up the trigger, search for and select **Business App** as the acti
 
 ### Step 3: Choose the action
 
-Select **Run Automation** as the action. This tells Zapier to fire one of your Business App automations when the trigger event occurs.
+Select `Run Automation` as the action. This tells Zapier to fire one of your Business App automations when the trigger event occurs.
 
-You can change the action at any time by clicking the dropdown and selecting a different option. Click **Continue** when ready.
+You can change the action at any time by clicking the dropdown and selecting a different option. Click `Continue` when ready.
 
 <img src={require('./img/zapier_action.png').default} alt="Run Automation selected as the action in Zapier" width="60%" />
 
 ### Step 4: Sign in to Business App
 
-Click **Sign in** to connect your Business App account. You'll be redirected to a login page where you'll enter your Account ID and grant the necessary permissions. After that, you'll be returned to Zapier automatically.
+Click `Sign in` to connect your Business App account. You'll be redirected to a login page where you'll enter your Account ID and grant the necessary permissions. After that, you'll be returned to Zapier automatically.
 
 You only need to do this once. Future Zaps using Business App will use the same connected account.
 
@@ -54,16 +54,16 @@ You only need to do this once. Future Zaps using Business App will use the same 
 
 ### Step 5: Enter the Organization ID
 
-The Organization ID field is required. It is automatically populated based on the Account ID you used when signing in.
+The `Organization ID` field is required. It is automatically populated based on the Account ID you used when signing in.
 
 <img src={require('./img/zapier_organization_id.png').default} alt="Organization ID field auto-populated in Zapier" width="60%" />
 
 ### Step 6: Set the trigger type
 
-In the **Trigger** field, select **Triggered via Zapier**. This must match the trigger your automation uses in Business App.
+In the `Trigger` field, select `Triggered via Zapier`. This must match the trigger your automation uses in Business App.
 
 :::note Screenshot needed
-The screenshots below reflect an older version of this step and need to be updated. The current trigger type to select is **Triggered via Zapier**.
+The screenshots below reflect an older version of this step and need to be updated. The current trigger type to select is `Triggered via Zapier`.
 :::
 
 <img src={require('./img/zapier_trigger_field.png').default} alt="Trigger field in Zapier showing the trigger type selection" width="60%" />
@@ -72,7 +72,7 @@ The screenshots below reflect an older version of this step and need to be updat
 
 ### Step 7: Enter the Automation ID
 
-In the **Automation ID** field, enter the ID of the automation you want Zapier to run. This field is a searchable dropdown — you can search by automation name or ID.
+In the `Automation ID` field, enter the ID of the automation you want Zapier to run. This field is a searchable dropdown — you can search by automation name or ID.
 
 <img src={require('./img/zapier_automation_id.png').default} alt="Automation ID field in Zapier" width="60%" />
 
@@ -88,16 +88,16 @@ Before publishing the Zap, use Zapier's test feature to confirm everything is wo
 
 <img src={require('./img/zapier_testing.png').default} alt="Testing the Zapier step before publishing" width="60%" />
 
-A **Run Automation Successful** message confirms the Zap is ready to publish.
+A `Run Automation Successful` message confirms the Zap is ready to publish.
 
 ## Setting up the automation in Business App
 
-Your automation must use the **Triggered via Zapier** trigger to be fireable from Zapier. To set this up:
+Your automation must use the `Triggered via Zapier` trigger to be fireable from Zapier. To set this up:
 
 1. Go to **Business App** > **Automations**
 2. Create a new automation or open an existing one
-3. Set the trigger to **Triggered via Zapier** (found under **Advanced** in the trigger picker)
-4. Add the steps you want to run (for example, **Send a review request** to a contact)
+3. Set the trigger to `Triggered via Zapier` (found under `Advanced` in the trigger picker)
+4. Add the steps you want to run (for example, `Send a review request` to a contact)
 5. Turn the automation on using the toggle at the top right
 
 ## Frequently Asked Questions
@@ -105,7 +105,7 @@ Your automation must use the **Triggered via Zapier** trigger to be fireable fro
 <details>
 <summary>What trigger does my automation need to use?</summary>
 
-Your automation must use the **Triggered via Zapier** trigger, found under the Advanced section of the trigger picker in Business App. Automations using other triggers cannot be fired from Zapier.
+Your automation must use the `Triggered via Zapier` trigger, found under the `Advanced` section of the trigger picker in Business App. Automations using other triggers cannot be fired from Zapier.
 </details>
 
 <details>
@@ -135,5 +135,5 @@ No. Once you connect your Business App account in Zapier, it stays connected. Yo
 <details>
 <summary>How do I find my Automation ID?</summary>
 
-Use the searchable dropdown in Zapier's Automation ID field — you can type the name of your automation and select it from the results. You don't need to look up the ID manually.
+Use the searchable dropdown in Zapier's `Automation ID` field — you can type the name of your automation and select it from the results. You don't need to look up the ID manually.
 </details>
