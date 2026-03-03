@@ -22,7 +22,7 @@ When a new company is added in Business App, an automation fires and sends the c
 
 ## How to set up
 
-There are two parts: setting up the receiving end in Zapier first, then connecting it to your Business App automation.
+There are three parts: setting up the receiving end in Zapier, connecting it to your Business App automation, then returning to Zapier to complete the Zap.
 
 ### Part 1: Set up the webhook in Zapier
 
@@ -60,19 +60,30 @@ If you click **Test trigger** now, it will fail — that's expected. Zapier is l
 
 ### Part 2: Connect the webhook in Business App
 
-**Step 7:** Go to **Business App** > **Automations** and open the automation you want to use, or create a new one.
+**Step 7:** Go to **Business App** > **Automations** and open the automation you want to use, or create a new one. Make sure it includes a **Send a webhook** step — that's what pushes data out to Zapier.
 
 **Step 8:** Set a trigger for your automation. For example, use **A company is created or modified** to fire whenever a new company is added.
 
 **Step 9:** Add a **Send a webhook** step to your automation. You'll find it under **Advanced** in the step picker.
 
-**Step 10:** Paste the Zapier webhook URL into the URL field of the **Send a webhook** step.
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/businessApp-send-a-webhook-step.png').default} alt="Send a webhook option under the Advanced section in the Business App automation step picker" width="75%" />
+</div>
 
-:::note Screenshots needed
-Screenshots for Steps 9 and 10 (the Send a webhook step configuration in Business App) need to be added here.
-:::
+**Step 10:** Paste the Zapier webhook URL from step 6 into the URL field of the **Send a webhook** step.
 
-**Step 11:** In the **Body** field, configure the data you want to send to Zapier. You can use [smart values](../smart-values-in-automations) to include dynamic contact or company data, such as the company name, email, or phone number.
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/businessApp-Send-webhook-url.png').default} alt="Send a webhook step configuration in Business App showing the Zapier webhook URL pasted into the Webhook URL field" width="75%" />
+</div>
+
+**Step 11:** Expand the **JSON Body** section and add the keys you want to send to Zapier. For each entry:
+
+- **Key**: Enter a name that describes the data — for example, `Company Name` or `Country`. This is the key that Zapier will receive and can map to fields in the external app (QuickBooks Online in this scenario).
+- **Value**: Use [dynamic content](../smart-values-in-automations) to insert the actual data from Business App — for example, the company's name or country pulled from the trigger.
+
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/businessApp-JSON body.png').default} alt="JSON Body section of the Send a webhook step showing Field and Value pairs with dynamic content values for Country and Company Name" width="75%" />
+</div>
 
 **Step 12:** Save and turn on your automation.
 
