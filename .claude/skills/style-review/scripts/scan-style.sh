@@ -329,6 +329,11 @@ run_check \
   "—"
 
 run_check \
+  "Arrow character (use a word like 'to', or a colon)" \
+  "suggestion" \
+  "→\|←\|↔\|⇒\|⟶"
+
+run_check \
   "UI elements not in inline code (button/tab/field names)" \
   "warning" \
   "Click (Save|Cancel|Submit|Connect|Continue|Next|Back|Done|OK|Yes|No|Delete|Edit|Add|Remove|Create|Update|Send|Apply)([^'\`]|$)"

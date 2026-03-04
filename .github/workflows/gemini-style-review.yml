@@ -19,7 +19,8 @@ name: Gemini Style Review
 #   - Forked PRs: GITHUB_TOKEN is read-only for forks; the job is skipped
 #     silently via the `if:` condition on the job.
 #   - Lines not in the diff: findings on lines outside diff hunks are listed
-#     in the review body instead of as inline comments.
+#     in a collapsible section in the review body.  They are informational
+#     only and never trigger REQUEST_CHANGES.
 
 on:
   pull_request:
@@ -292,6 +293,72 @@ jobs:
           PYEOF
           FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/validate-findings.py) || FINDINGS="[]"
 
+          # -- Merge same-line findings ----------------------------------------
+          # Multiple suggestions on the same line conflict in GitHub (each
+          # replaces the entire line).  Merge them into a single finding with
+          # a combined replacement so only one suggestion block is posted.
+          cat > /tmp/merge-findings.py << 'PYEOF'
+          import sys, json
+
+          SEVERITY_ORDER = {'blocker': 0, 'warning': 1, 'suggestion': 2}
+
+          def _diff_segment(original, replacement):
+              """Find the single differing segment between two strings."""
+              # Walk from start to find first divergence
+              start = 0
+              while start < len(original) and start < len(replacement) and original[start] == replacement[start]:
+                  start += 1
+              # Walk from end to find last divergence
+              end_o, end_r = len(original) - 1, len(replacement) - 1
+              while end_o > start and end_r > start and original[end_o] == replacement[end_r]:
+                  end_o -= 1
+                  end_r -= 1
+              return (original[start:end_o + 1], replacement[start:end_r + 1])
+
+          findings = json.load(sys.stdin)
+
+          # Group by file + line
+          groups = {}
+          order = []
+          for f in findings:
+              key = (f['file'], f['line'])
+              if key not in groups:
+                  groups[key] = []
+                  order.append(key)
+              groups[key].append(f)
+
+          merged = []
+          for key in order:
+              group = groups[key]
+              if len(group) == 1:
+                  merged.append(group[0])
+                  continue
+              base = group[0]
+              combined_line = base['original']
+              issues = []
+              reasons = []
+              best_severity = 'suggestion'
+              for g in group:
+                  old_seg, new_seg = _diff_segment(g['original'], g['replacement'])
+                  if old_seg and old_seg in combined_line:
+                      combined_line = combined_line.replace(old_seg, new_seg, 1)
+                  issues.append(g['issue'])
+                  reasons.append(g['reason'])
+                  if SEVERITY_ORDER.get(g['severity'], 2) < SEVERITY_ORDER.get(best_severity, 2):
+                      best_severity = g['severity']
+              merged.append({
+                  'file': base['file'],
+                  'line': base['line'],
+                  'issue': '; '.join(issues),
+                  'severity': best_severity,
+                  'reason': ' | '.join(reasons),
+                  'original': base['original'],
+                  'replacement': combined_line
+              })
+          print(json.dumps(merged))
+          PYEOF
+          FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/merge-findings.py) || FINDINGS="[]"
+
           # -- Fetch PR diff line ranges ----------------------------------------
           # GitHub only allows inline comments on lines within diff hunks.
           # Pre-filter findings so the API call never fails with 422.
@@ -374,10 +441,12 @@ jobs:
 
             echo "::debug::Inline-eligible findings: ${INLINE_COUNT}, body-only: ${BODY_COUNT}"
 
+            # Severity totals use only inline (in-diff) findings.
+            # Out-of-diff findings are informational and never trigger REQUEST_CHANGES.
             ISSUE_COUNT=$(printf '%s' "${FINDINGS}" | jq 'length')
-            BLOCKER_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "blocker")] | length')
-            WARNING_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "warning")] | length')
-            SUGGESTION_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "suggestion")] | length')
+            BLOCKER_COUNT=$(printf '%s' "${INLINE_FINDINGS}" | jq '[.[] | select(.severity == "blocker")] | length')
+            WARNING_COUNT=$(printf '%s' "${INLINE_FINDINGS}" | jq '[.[] | select(.severity == "warning")] | length')
+            SUGGESTION_COUNT=$(printf '%s' "${INLINE_FINDINGS}" | jq '[.[] | select(.severity == "suggestion")] | length')
             REVIEW_EVENT=$([ "${BLOCKER_COUNT}" -gt 0 ] && echo "REQUEST_CHANGES" || echo "COMMENT")
 
             # Nothing to report -- exit cleanly.
@@ -403,34 +472,41 @@ jobs:
           **${BLOCKER_COUNT} blocker(s) need to be fixed before this can merge.**"
             fi
 
-            # Append out-of-diff findings to the review body.
+            # Append out-of-diff findings as a collapsible section with mini diffs.
             if [ "${BODY_COUNT}" -gt 0 ]; then
-              BODY_BLOCKER_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "blocker") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              BODY_WARNING_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "warning") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              BODY_SUGGESTION_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "suggestion") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+              cat > /tmp/format-body-findings.py << 'PYEOF'
+          import sys, json
+
+          findings = json.load(sys.stdin)
+          parts = []
+          for f in findings:
+              sev = f.get('severity', 'suggestion')
+              parts.append(
+                  '**`{file}` line {line}** -- {issue} ({sev})\n'
+                  '> {reason}\n'
+                  '```diff\n'
+                  '- {original}\n'
+                  '+ {replacement}\n'
+                  '```'.format(
+                      file=f['file'], line=f['line'],
+                      issue=f['issue'], sev=sev,
+                      reason=f.get('reason', f['issue']),
+                      original=f['original'], replacement=f['replacement']
+                  )
+              )
+          print('\n\n'.join(parts))
+          PYEOF
+              BODY_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | python3 /tmp/format-body-findings.py)
 
               BODY="${BODY}
 
           ---
-          **${BODY_COUNT} issue(s) outside the diff** (shown here because inline comments require lines in the diff):"
+          <details>
+          <summary>${BODY_COUNT} pre-existing issue(s) on unchanged lines</summary>
 
-              [ -n "${BODY_BLOCKER_ITEMS}" ] && BODY="${BODY}
+          ${BODY_ITEMS}
 
-          #### Blockers
-          ${BODY_BLOCKER_ITEMS}"
-
-              [ -n "${BODY_WARNING_ITEMS}" ] && BODY="${BODY}
-
-          #### Warnings
-          ${BODY_WARNING_ITEMS}"
-
-              [ -n "${BODY_SUGGESTION_ITEMS}" ] && BODY="${BODY}
-
-          #### Suggestions
-          ${BODY_SUGGESTION_ITEMS}"
+          </details>"
             fi
 
             # Build inline comments only for findings whose lines are in the diff.

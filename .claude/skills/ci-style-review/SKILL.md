@@ -44,6 +44,7 @@ The scan script handles pattern-matchable violations. Your job in this step is t
 - **FAQ answer quality** (warning): vague hedging, overly long answers, voice/tone shifts
 - **Callout block misuse** (suggestion): block type doesn't match content (e.g. `:::warning` for a tip)
 - **Heading-content mismatch** (suggestion): heading promises one thing but body discusses another, or heading is too vague
+- **Arrow characters** (suggestion): `→`, `←`, `↔` and similar Unicode arrows in prose or headings should be replaced with words ("to", "from") or punctuation (colon, comma). Acceptable exceptions: code blocks, keyboard shortcut notation, and click-path separators where `>` is the preferred format. Use the label `"Arrow character"`, not `"em dash"`.
 - **Subtle gray-label framing** (warning): the scan catches literal mentions of Vendasta, Partner Center, and partner/reseller/agency terms, but reviewers should still watch for indirect partner-provider framing that regex cannot detect (e.g., "your provider configured this for you")
 
 **Multiple violations on the same line:** If a single line has multiple distinct violations (e.g., a Vendasta mention AND historical language), emit separate findings for each. The post-processing pipeline handles multiple findings per line. Do not merge different violation types into a single finding.
@@ -54,6 +55,7 @@ Before including a finding in output, re-read the file and confirm:
 
 1. The `line` number is correct (1-indexed, matching the file on disk)
 2. The `replacement` is a valid, complete fix for the content at that line
+3. The `replacement` fixes ONLY the violation described in `issue` and `reason` -- nothing else on the line. If a line has multiple violations, emit separate findings for each, where each `replacement` changes only what that finding describes.
 
 ### Step 6: Output JSON
 
@@ -92,7 +94,7 @@ Each finding is an object with exactly these fields:
 | `issue` | string | Brief label (e.g. "Vendasta mention", "em dash", "third-person") |
 | `severity` | string | One of: `blocker`, `warning`, `suggestion` |
 | `reason` | string | A brief, conversational sentence explaining *why* this matters. Write as if you're a helpful colleague leaving a code review comment. Don't repeat the issue label -- explain the impact. Good: "Business owners reading these docs don't know about Vendasta, so we use the product name directly." Bad: "Vendasta is not allowed in documentation." Good: "We only document features that are live today." Bad: "Future-state language violates evergreen content rules." |
-| `replacement` | string | The full corrected line content |
+| `replacement` | string | The full corrected line content. Must be the minimum change that addresses this specific `issue`. Do not fix other violations on the same line in the same replacement. |
 
 ### Severity levels
 
@@ -105,3 +107,4 @@ Each finding is an object with exactly these fields:
 - Do not modify any files. This is a read-only review.
 - Do not output markdown, prose, or explanation. JSON array only.
 - Do not invent findings. Every finding must be verifiable against the actual file content.
+- Each finding targets exactly one violation. If a line has an arrow AND a UI element in bold instead of backticks, emit two separate findings: one whose replacement fixes only the arrow, one whose replacement fixes only the formatting.

@@ -207,6 +207,9 @@ Paragraphs exceeding ~5 sentences or ~150 words without a visual break. The righ
 **Callout block misuse** (suggestion)
 `:::warning` used for tips or general info, `:::info` used for limitations or requirements, `:::tip` used for restrictions. Match the block type to the content: `:::warning` for limitations and requirements, `:::info` for helpful context, `:::tip` for best practices, `:::note` for plan restrictions or behavior caveats.
 
+**Arrow characters** (suggestion)
+`→`, `←`, `↔` and similar Unicode arrows in prose or headings should be replaced with words ("to", "from") or punctuation (colon, comma). Acceptable exceptions: code blocks, keyboard shortcut notation, and click-path separators where `>` is the preferred format (e.g., `Settings` > `Integrations`).
+
 **Heading-content mismatch** (suggestion)
 A section heading that promises one thing but the body discusses something else, or headings too vague to be useful: "More information", "Other details", "Additional notes", "Miscellaneous". Suggest a heading that accurately describes the section's actual content.
 
