@@ -8,97 +8,77 @@ keywords: [zapier trigger, run automation, zapier business app, quickbooks autom
 
 When an event happens in another app, like a new payment in QuickBooks or a new customer in your booking system, Zapier can fire one of your Business App automations automatically. This page walks you through setting that up.
 
-## Use case example
+## Prerequisites
+
+- An active [Zapier](https://zapier.com/) account
+- A Business App automation using the **Triggered via Zapier** trigger
+- The automation must be turned on
+
+## Example
 
 **New QuickBooks payment → send a review request**
 
 When a customer pays an invoice in QuickBooks Online, Zapier fires an automation in Business App that sends the customer a review request. No manual follow-up needed.
 
-## Prerequisites
-
-- An active [Zapier](https://zapier.com/) account
-- A Business App automation using the **Triggered via Zapier** trigger (see Step 6 below)
-- The automation must be turned on
-
 ## How to set up
 
-### Step 1: Select the trigger
+There are three parts: setting up the automation in Business App first, then configuring the Zap in Zapier, then testing and publishing.
 
-In Zapier, create a new Zap and choose the app and event that will start your workflow. For example, select **QuickBooks Online** as the app and `New Payment` as the trigger event.
+### Part 1: Set up the automation in Business App
+
+Your automation must use the `Triggered via Zapier` trigger so Zapier knows which automation to fire. You'll need its ID in Part 2.
+
+**Step 1:** Go to **Business App** > **Automations** and create a new automation or open an existing one.
+
+**Step 2:** Set the trigger to `Triggered via Zapier`, found under `Advanced` in the trigger picker.
+
+**Step 3:** Add the steps you want to run, for example `Send a review request` to a contact.
+
+**Step 4:** Turn the automation on using the toggle at the top right.
+
+### Part 2: Configure the Zap in Zapier
+
+**Step 5:** In Zapier, create a new Zap and choose the app and event that will start your workflow. For example, select **QuickBooks Online** as the app and `New Payment` as the trigger event.
 
 You can use any trigger available in Zapier: the steps that follow are the same regardless of which trigger app you choose.
 
-### Step 2: Choose Business App as the action app
+**Step 6:** After setting up the trigger, search for and select **Business App** as the action app.
 
-After setting up the trigger, search for and select **Business App** as the action app.
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-external-to-businessApp-automation.png').default} alt="Zapier Zap editor showing QuickBooks Online as the trigger and Business App as the action step" width="50%" />
+</div>
 
-<img src={require('./img/zapier_app.png').default} alt="Business App selected as the action app in Zapier" width="60%" />
+**Step 7:** Select `Run Automation` as the action. This tells Zapier to fire one of your Business App automations when the trigger event occurs. Click `Continue` when ready.
 
-### Step 3: Choose the action
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-run-automation-event.png').default} alt="Zapier action setup showing Business App selected with Run Automation as the action event" width="75%" />
+</div>
 
-Select `Run Automation` as the action. This tells Zapier to fire one of your Business App automations when the trigger event occurs.
-
-You can change the action at any time by clicking the dropdown and selecting a different option. Click `Continue` when ready.
-
-<img src={require('./img/zapier_action.png').default} alt="Run Automation selected as the action in Zapier" width="60%" />
-
-### Step 4: Sign in to Business App
-
-Click `Sign in` to connect your Business App account. You'll be redirected to a login page where you'll enter your Account ID and grant the necessary permissions. After that, you'll be returned to Zapier automatically.
+**Step 8:** In the `Account` field, click `Select` to connect your Business App account. You'll be redirected to a login page where you'll enter your Account ID and grant the necessary permissions. After that, you'll be returned to Zapier automatically.
 
 You only need to do this once. Future Zaps using Business App will use the same connected account.
 
-<img src={require('./img/zapier_signin.png').default} alt="Sign in prompt for connecting Business App to Zapier" width="60%" />
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier_allow_access.png').default} alt="Allow access screen for Business App permissions in Zapier" width="60%" />
+</div>
 
-<img src={require('./img/zapier_allow_access.png').default} alt="Allow access screen for Business App permissions in Zapier" width="60%" />
+**Step 9:** In the `Automation ID` field, search for and select the automation you set up in Part 1. The dropdown lists your available automations by name.
 
-### Step 5: Enter the Organization ID
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-set-businessApp-automation-id.png').default} alt="Zapier Automation ID field showing a searchable list of Business App automations to select from" width="75%" />
+</div>
 
-The `Organization ID` field is required. It is automatically populated based on the Account ID you used when signing in.
+### Part 3: Test and publish
 
-<img src={require('./img/zapier_organization_id.png').default} alt="Organization ID field auto-populated in Zapier" width="60%" />
+**Step 10:** Before publishing the Zap, use Zapier's test feature to confirm everything is working. This can catch missing fields or incorrect data before the Zap goes live.
 
-### Step 6: Set the trigger type
-
-In the `Trigger` field, select `Triggered via Zapier`. This must match the trigger your automation uses in Business App.
-
-:::note Screenshot needed
-The screenshots below reflect an older version of this step and need to be updated. The current trigger type to select is `Triggered via Zapier`.
-:::
-
-<img src={require('./img/zapier_trigger_field.png').default} alt="Trigger field in Zapier showing the trigger type selection" width="60%" />
-
-<img src={require('./img/zapier_trigger.png').default} alt="Trigger type dropdown in Zapier" width="60%" />
-
-### Step 7: Enter the Automation ID
-
-In the `Automation ID` field, enter the ID of the automation you want Zapier to run. This field is a searchable dropdown: you can search by automation name or ID.
-
-<img src={require('./img/zapier_automation_id.png').default} alt="Automation ID field in Zapier" width="60%" />
-
-<img src={require('./img/zapier_automation_id_searchable.png').default} alt="Automation ID searchable dropdown in Zapier" width="60%" />
-
-The automation must be turned on for it to run when triggered from Zapier.
-
-<img src={require('./img/zapier_automation_on.png').default} alt="Automation toggle set to on in Business App" width="60%" />
-
-### Step 8: Test the step
-
-Before publishing the Zap, use Zapier's test feature to confirm everything is working. This can catch missing fields or incorrect data before the Zap goes live.
-
-<img src={require('./img/zapier_testing.png').default} alt="Testing the Zapier step before publishing" width="60%" />
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier_testing.png').default} alt="Testing the Zapier step before publishing" width="60%" />
+</div>
 
 A `Run Automation Successful` message confirms the Zap is ready to publish.
 
-## Setting up the automation in Business App
-
-Your automation must use the `Triggered via Zapier` trigger to be fireable from Zapier. To set this up:
-
-1. Go to **Business App** > **Automations**
-2. Create a new automation or open an existing one
-3. Set the trigger to `Triggered via Zapier` (found under `Advanced` in the trigger picker)
-4. Add the steps you want to run (for example, `Send a review request` to a contact)
-5. Turn the automation on using the toggle at the top right
+**Step 11:** Name your Zap and turn it on.
 
 ## Frequently Asked Questions
 
