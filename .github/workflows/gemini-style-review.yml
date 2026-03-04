@@ -82,7 +82,9 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           if [ "${EVENT_NAME}" = "workflow_dispatch" ]; then
-            # For @mention dispatch: get changed files from PR API
+            # For @mention dispatch: get changed files and head SHA from PR API
+            PR_SHA=$(gh pr view "${PR_NUMBER}" --repo "${REPO}" --json headRefOid --jq '.headRefOid')
+            echo "pr_head_sha=${PR_SHA}" >> "$GITHUB_OUTPUT"
             gh pr view "${PR_NUMBER}" --repo "${REPO}" \
               --json files --jq '.files[].path' \
               | grep -E '^docusaurus/docs/.*\.(md|mdx)$' > /tmp/changed-docs.txt || true
@@ -190,7 +192,7 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
           REPO: ${{ github.repository }}
-          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          PR_HEAD_SHA: ${{ steps.changed-files.outputs.pr_head_sha || github.event.pull_request.head.sha || github.sha }}
           FILE_COUNT: ${{ steps.changed-files.outputs.file_count }}
         run: |
           set -euo pipefail
@@ -243,40 +245,49 @@ jobs:
           fi
 
           # Schema validation: drop findings missing required fields or wrong types.
+          # Note: `original` is not required from Gemini -- the validate step populates it from disk.
           FINDINGS=$(printf '%s' "${FINDINGS}" | jq -c '[.[] | select(
             (.file | type == "string" and length > 0) and
             (.line | type == "number" and . > 0) and
             (.issue | type == "string" and length > 0) and
-            (.original | type == "string" and length > 0) and
             (.replacement | type == "string" and length > 0)
           )]' 2>/dev/null || echo "[]")
 
           echo "::debug::FINDINGS after schema validation: ${FINDINGS}"
 
-          # -- Validate line numbers against actual file content ----------------
-          # Verify each finding's "original" text appears at the claimed line.
-          # Corrects line number if found nearby (+/-3 lines); drops if not found.
+          # -- Validate line numbers and populate `original` from disk -----------
+          # Gemini provides file + line + replacement; we read the actual line
+          # content from disk to populate `original`.  If Gemini also provided
+          # `original` and it matches nearby (+/-3), we correct the line number.
+          # Only drop findings where the file is missing or line is out of range.
           cat > /tmp/validate-findings.py << 'PYEOF'
           import sys, json
           findings = json.load(sys.stdin)
           validated = []
           for f in findings:
-              fp = f.get('file', ''); ln = int(f.get('line', 0)); orig = f.get('original', '')
+              fp = f.get('file', '')
+              ln = int(f.get('line', 0))
+              gemini_orig = f.get('original', '')
               try:
                   lines = open(fp).readlines()
               except OSError:
                   print('::warning::Dropping finding -- file not found: ' + fp, file=sys.stderr)
                   continue
-              def matches(n, lines=lines, orig=orig):
-                  return 0 < n <= len(lines) and orig in lines[n - 1]
-              if matches(ln):
-                  validated.append(f)
-              else:
-                  corrected = next((ln + d for d in [-1, 1, -2, 2, -3, 3] if matches(ln + d)), None)
-                  if corrected is not None:
-                      f['line'] = corrected; validated.append(f)
-                  else:
-                      print('::warning::Dropping finding -- original text not found near ' + fp + ':' + str(ln), file=sys.stderr)
+              if ln < 1 or ln > len(lines):
+                  print('::warning::Dropping finding -- line ' + str(ln) + ' out of range in ' + fp, file=sys.stderr)
+                  continue
+              # If Gemini provided original text, try to correct the line number
+              if gemini_orig:
+                  def matches(n):
+                      return 0 < n <= len(lines) and gemini_orig in lines[n - 1]
+                  if not matches(ln):
+                      corrected = next((ln + d for d in [-1, 1, -2, 2, -3, 3] if matches(ln + d)), None)
+                      if corrected is not None:
+                          ln = corrected
+                          f['line'] = ln
+              # Populate original from the actual file content
+              f['original'] = lines[ln - 1].rstrip('\n')
+              validated.append(f)
           print(json.dumps(validated))
           PYEOF
           FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/validate-findings.py) || FINDINGS="[]"

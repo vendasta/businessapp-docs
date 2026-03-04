@@ -52,11 +52,8 @@ The scan script handles pattern-matchable violations. Your job in this step is t
 
 Before including a finding in output, re-read the file and confirm:
 
-1. The `original` text appears **exactly** on the claimed `line` number
-2. The `line` number is correct (1-indexed, matching the file on disk)
-3. The `replacement` is a valid, complete fix for that line
-
-Drop any finding where the original text does not match. This prevents false positives that break the post-processing pipeline.
+1. The `line` number is correct (1-indexed, matching the file on disk)
+2. The `replacement` is a valid, complete fix for the content at that line
 
 ### Step 6: Output JSON
 
@@ -80,10 +77,11 @@ Each finding is an object with exactly these fields:
   "issue": "Vendasta mention",
   "severity": "blocker",
   "reason": "Gray-label product: business owners have no relationship with Vendasta.",
-  "original": "Vendasta's Business App makes it easy to manage reviews.",
   "replacement": "Business App makes it easy to manage reviews."
 }
 ```
+
+> **Note:** The `original` field is populated by the CI pipeline from the actual file content. Do not include it in your output.
 
 ### Field definitions
 
@@ -94,7 +92,6 @@ Each finding is an object with exactly these fields:
 | `issue` | string | Brief label (e.g. "Vendasta mention", "em dash", "third-person") |
 | `severity` | string | One of: `blocker`, `warning`, `suggestion` |
 | `reason` | string | A brief, conversational sentence explaining *why* this matters. Write as if you're a helpful colleague leaving a code review comment. Don't repeat the issue label -- explain the impact. Good: "Business owners reading these docs don't know about Vendasta, so we use the product name directly." Bad: "Vendasta is not allowed in documentation." Good: "We only document features that are live today." Bad: "Future-state language violates evergreen content rules." |
-| `original` | string | The full content of that line, exactly as it appears in the file |
 | `replacement` | string | The full corrected line content |
 
 ### Severity levels
