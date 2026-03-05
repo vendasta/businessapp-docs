@@ -52,7 +52,7 @@ The AI Support Employee is only as good as your knowledge base. The more complet
 1. Navigate to **AI** > **AI Workforce** in your Business App dashboard
 2. Click **Create Custom AI Employee**
 3. Set a name (e.g., "Support" or your preferred name) and upload an avatar image
-4. Click **Save** to create the employee profile
+4. Click `Save` to create the employee profile
 
 ### Step 2: Set the role prompt
 
