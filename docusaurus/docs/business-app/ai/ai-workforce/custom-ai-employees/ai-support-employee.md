@@ -148,7 +148,7 @@ The Capture Leads capability includes built-in phone number validation (checks d
 
 The built-in **Capture leads** capability is a starting point. For a support AI, you should edit its prompt to ensure it uses an empathetic "escalation" tone when transitioning from answering questions to collecting contact details.
 
-1. In the **Capabilities** section, click the **Edit** icon next to **Capture leads**
+1. In the `Capabilities` section, click the `Edit` icon next to `Capture leads`
 2. In the **Prompt** field, add strategy directives that define how to bridge into escalation. For example:
    - "When you cannot find an answer in the knowledge base, or when a customer has a complex problem, transition to lead capture by saying: 'I'm not exactly sure about that, but I'll have a human look into this. Can I get your name to start?'"
    - "Maintain an empathetic tone during escalation: 'I understand this is frustrating. I'd like to get one of my team members to help resolve this. What is your name?'"
