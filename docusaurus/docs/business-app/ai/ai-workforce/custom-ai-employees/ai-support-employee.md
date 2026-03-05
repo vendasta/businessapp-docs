@@ -49,10 +49,10 @@ The AI Support Employee is only as good as your knowledge base. The more complet
 
 ### Step 1: Create the AI Employee
 
-1. Navigate to **AI** > **AI Workforce** in your Business App dashboard
-2. Click **Create Custom AI Employee**
+1. Navigate to `AI` > `AI Workforce` in your Business App dashboard
+2. Click `Create Custom AI Employee`
 3. Set a name (e.g., "Support" or your preferred name) and upload an avatar image
-4. Click **Save** to create the employee profile
+4. Click `Save` to create the employee profile
 
 ### Step 2: Set the role prompt
 
@@ -140,48 +140,14 @@ The AI Support Employee relies on the **Capture leads** capability to handle esc
 The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the AI to answer questions using your connected knowledge sources without additional configuration.
 :::
 
-:::note
-The Capture Leads capability includes built-in phone number validation (checks digit counts for US/Canada/international) and fallback logic (if a customer won't provide a phone number, it asks for email instead).
-:::
-
 ### Step 5: Configure the escalation logic
 
 The built-in **Capture leads** capability is a starting point. For a support AI, you should edit its prompt to ensure it uses an empathetic "escalation" tone when transitioning from answering questions to collecting contact details.
 
-1. In the **Capabilities** section, click the **Edit** icon next to **Capture leads**
+1. In the `Capabilities` section, click the `Edit` icon next to `Capture leads`
 2. In the **Prompt** field, add strategy directives that define how to bridge into escalation. For example:
    - "When you cannot find an answer in the knowledge base, or when a customer has a complex problem, transition to lead capture by saying: 'I'm not exactly sure about that, but I'll have a human look into this. Can I get your name to start?'"
    - "Maintain an empathetic tone during escalation: 'I understand this is frustrating. I'd like to get one of my team members to help resolve this. What is your name?'"
-
-Alternatively, if you are using the older **Escalation bridge** field:
-
-1. In the **Capabilities** section, locate the **Capture leads** toggle
-2. Click **Configure**
-3. In the **Escalation bridge** field, copy and paste the following:
-
-```markdown
-## When to Escalate
-
-Only trigger escalation when your knowledge base does not contain the answer.
-
-Do not say "I don't know" flatly. Instead, bridge to expert help.
-
-Example bridge: "That is a great question. I don't have that specific detail in our resources right now, so I'd like to get our specialized team involved to make sure you get the most accurate answer. Would that be alright?"
-
-## Partial Success Logic
-
-If you can answer part of a customer's request but not all of it, resolve what you can first. Then offer to take a message for the part you cannot answer.
-
-Example: If you know the store hours but not the return window for a specific item, confirm the hours and then offer to take a message regarding the return window.
-
-## I Don't Know Protocol
-
-If the answer is not in your retrieved knowledge, do not make it up. Transition smoothly to escalation.
-
-If your knowledge base suggests the user "Contact us," ignore that instruction. They are already talking to you. Offer to take a message instead.
-```
-
-4. Click **Save**
 
 For more details on configuring built-in capabilities, see [Configuring Capabilities](../../ai-capabilities/configuring-capabilities.md).
 
@@ -224,7 +190,7 @@ Adjust the role prompt, HEARD capability, or Escalation capability based on what
 <details>
 <summary>Which editions support custom AI Employees?</summary>
 
-Custom AI Employees require the Conversations AI add-on.
+Custom AI Employees are available with Conversations AI.
 
 </details>
 
@@ -257,8 +223,8 @@ The AI Support Employee is designed for SMS and chat channels where markdown doe
 </details>
 
 <details>
-<summary>Can I customize the escalation bridge language?</summary>
+<summary>Can I customize the escalation language?</summary>
 
-Yes. The **Escalation bridge** field in the **Capture leads** configuration is fully editable. The bridge example ("That is a great question...") is a starting point: adjust it to match your brand voice. Keep the core logic intact: acknowledge the question, bridge to expert help, and ask for permission to take a message.
+Yes. The escalation directives in the `Capture leads` capability prompt are fully editable. The bridge examples are a starting point: adjust them to match your brand voice. Keep the core logic intact: acknowledge the question, bridge to expert help, and ask for the customer's name to start.
 
 </details>

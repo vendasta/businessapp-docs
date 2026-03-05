@@ -16,7 +16,7 @@ keywords:
 
 Custom AI Employees are specialized digital team members you build from scratch to handle specific business functions. Unlike pre-configured AI Employees (Chat Receptionist, Voice Receptionist, Reputation Specialist), custom employees give you full control over their role, behavior, and capabilities.
 
-## Pre-configured vs. custom AI Employees
+## Pre-configured vs. custom AI employees
 
 **Pre-configured AI Employees** come ready to use with a defined role, built-in capabilities, and tested prompts. They cover common use cases like answering customer chats, handling phone calls, and managing reviews. You can adjust their settings, but their core function is already set.
 
@@ -29,7 +29,7 @@ Custom AI Employees are specialized digital team members you build from scratch 
 
 ## When to build a custom AI Employee
 
-Build a custom AI Employee when you need a role that doesn't exist as a pre-configured option, such as:
+Build a custom AI Employee when you want to expand your workforce with a specialized role not covered by a pre-configured option, such as:
 
 - An **[AI Data Analyst](./ai-data-analyst.md)** that reasons through CRM, review, and social data to deliver structured insights
 - An **[Inside Sales Representative](./inside-sales-representative.md)** that qualifies inbound leads before capturing contact information or booking appointments

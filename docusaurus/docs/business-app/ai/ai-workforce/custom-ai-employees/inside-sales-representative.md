@@ -20,7 +20,7 @@ The Inside Sales Representative is a custom AI Employee that handles inbound cus
 
 ## Why build an Inside Sales Representative?
 
-Generic chat widgets capture contact forms but don't screen leads. Sales teams end up chasing inquiries that were never a good fit, or booking appointments that don't show because the customer's problem wasn't something the business could solve.
+When you need a dedicated sales-qualification role — one that actively confirms the business can serve a customer before capturing their details — a custom AI Employee built for sales gives you that control. Without lead qualification, sales teams often end up chasing inquiries that aren't a good fit, or booking appointments that don't convert.
 
 The Inside Sales Representative addresses this by:
 
@@ -50,10 +50,10 @@ The quality of your knowledge base directly affects lead qualification. If the A
 
 ### Step 1: Create the AI Employee
 
-1. Navigate to **AI** > **AI Workforce** in your Business App dashboard
-2. Click **Create Custom AI Employee**
+1. Navigate to `AI` > `AI Workforce` in your Business App dashboard
+2. Click `Create Custom AI Employee`
 3. Set a name (e.g., "Sales Rep" or your preferred name) and upload an avatar image
-4. Click **Save** to create the employee profile
+4. Click `Save` to create the employee profile
 
 ### Step 2: Set the role prompt
 
@@ -181,7 +181,7 @@ Adjust the role prompt or Discovery capability based on what you observe. Common
 <details>
 <summary>Which editions support custom AI Employees?</summary>
 
-Custom AI Employees require the Conversations AI add-on.
+Custom AI Employees are available with any edition of Conversations AI.
 
 </details>
 
