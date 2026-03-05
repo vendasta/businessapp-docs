@@ -20,13 +20,6 @@ Business data lives in multiple places: CRM records, customer reviews, NPS surve
 
 The AI Data Analyst addresses this by connecting to these data sources and applying consistent analytical reasoning to every response.
 
-## What's included?
-
-- **CRM data analysis** — query contacts, companies, activities, and associations to surface pipeline insights and account health
-- **Review and NPS analysis** — analyze customer feedback for sentiment trends, themes, and areas needing attention
-- **Social engagement analysis** — evaluate post performance across platforms with engagement breakdowns
-- **AIR Analysis Framework** — a custom capability that structures every analytical response into clear findings, interpretation, and recommendations
-
 ## Prerequisites
 
 Before setting up the AI Data Analyst:

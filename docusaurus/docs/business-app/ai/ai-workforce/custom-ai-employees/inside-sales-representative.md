@@ -7,7 +7,7 @@ tags: [ai-workforce, custom, sales, lead-capture, ai-employees]
 keywords: [inside sales representative, inside sales rep, AI sales, inbound lead qualification, lead capture, appointment booking, custom AI employee]
 ---
 
-The Inside Sales Representative is a custom AI Employee that handles inbound customer inquiries with a sales-first mindset. Rather than simply collecting contact details, it qualifies leads first — confirming the business can actually serve the customer's need before capturing their information. Qualified leads get booked into appointments. Unqualified ones are handled gracefully without wasting the sales team's time.
+The Inside Sales Representative is a custom AI Employee that handles inbound customer inquiries with a sales-first mindset. Rather than simply collecting contact details, it qualifies leads first — confirming the business can actually serve the customer's need before capturing their information. Qualified leads get booked into appointments, and the AI answers service and pricing questions using your knowledge base. Unqualified leads are handled gracefully without wasting the sales team's time.
 
 ## Why build an Inside Sales Representative?
 
@@ -20,13 +20,6 @@ The Inside Sales Representative addresses this by:
 - Collecting name, phone, and email in a structured sequence
 - Booking appointments directly when a calendar is connected
 - Handling objections naturally (e.g., customers who say "just email me")
-
-## What's included?
-
-- **Lead qualification** — confirms the business can help before advancing lead capture
-- **Lead capture** — collects name, phone, and email in sequence with validation
-- **Appointment booking** — schedules meetings using your connected calendar
-- **Knowledge base access** — answers questions about services, pricing, and FAQs using your business content
 
 ## Prerequisites
 
