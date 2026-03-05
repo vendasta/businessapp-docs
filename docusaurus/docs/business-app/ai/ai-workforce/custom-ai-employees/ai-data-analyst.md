@@ -4,7 +4,15 @@ sidebar_label: AI Data Analyst
 sidebar_position: 1
 description: Set up a custom AI Data Analyst that turns CRM data, reviews, and social engagement into actionable business insights using the AIR Analysis Framework.
 tags: [ai-workforce, custom, data-analyst, ai-employees]
-keywords: [AI data analyst, CRM analysis, review analysis, social engagement, AIR framework, custom AI employee]
+keywords:
+  [
+    AI data analyst,
+    CRM analysis,
+    review analysis,
+    social engagement,
+    AIR framework,
+    custom AI employee,
+  ]
 ---
 
 The AI Data Analyst is a custom AI Employee that helps users make data-backed decisions by analyzing CRM data, customer reviews, NPS feedback, and social engagement metrics. It uses a structured reasoning framework called AIR (Analyze, Interpret, Recommend) to deliver clear insights and actionable next steps instead of raw data dumps.
@@ -13,20 +21,16 @@ The AI Data Analyst is a custom AI Employee that helps users make data-backed de
 
 Business data lives in multiple places: CRM records, customer reviews, NPS surveys, and social media. Without a dedicated analyst, users often face:
 
-- CRM data that's hard to interpret without context
-- Review and NPS feedback that goes unanalyzed
-- Social media metrics with no clear takeaways
-- Decisions based on gut feeling instead of data
-
 The AI Data Analyst addresses this by connecting to these data sources and applying consistent analytical reasoning to every response.
 
-## Prerequisites
+## Before you begin
 
-Before setting up the AI Data Analyst:
+Before you begin, ensure you have the following:
 
-- Premium edition access
+- Conversations AI active
+- Access to **CRM AI** or **Reputation AI** (required for data analysis)
 - CRM data available in Business App (contacts, companies, activities)
-- Optionally: connected review sources (Google Business Profile, Facebook) and/or social media accounts
+- Optionally: connected review sources (Google Business Profile, Facebook) and social media accounts
 
 :::note
 These prompts were developed and tested using **Gemini Flash 3**. Select Gemini Flash 3 as the model for this AI Employee for best results.
@@ -64,7 +68,7 @@ You work across CRM data, customer reviews, NPS feedback, and any data the user 
 
 - Turn raw data into clear business signals.
 - Help users understand what's working, what isn't, and what to do next.
-- Always leave the user with a next action — never just a description.
+- Always leave the user with a next action: never just a description.
 
 ### What You Won't Do
 
@@ -90,7 +94,7 @@ The AIR (Analyze, Interpret, Recommend) framework is a custom capability that st
 5. In the **Prompt** field, copy and paste the following:
 
 ```markdown
-When responding to any analytical request — including CRM data, review/NPS data, or data provided directly by the user — you MUST reason through the AIR framework before responding: **Analyze > Interpret > Recommend**.
+When responding to any analytical request (including CRM data, review/NPS data, or data provided directly by the user) you MUST reason through the AIR framework before responding: **Analyze > Interpret > Recommend**.
 
 This framework applies to all data-driven responses. It does not apply to simple lookups (e.g., "What is John Smith's email?") or purely conversational exchanges.
 
@@ -121,7 +125,7 @@ Explain what the data means in the context of the user's business or goal.
 
 - Connect patterns to likely causes or implications.
 - Distinguish between what is certain (from data) and what is a reasonable inference (clearly flagged as such).
-- Use phrases like "This suggests...", "A likely explanation is...", or "This may indicate..." for inferences — never present inferences as facts.
+- Use phrases like "This suggests...", "A likely explanation is...", or "This may indicate..." for inferences: never present inferences as facts.
 
 #### Recommend
 
@@ -134,11 +138,11 @@ Provide specific, actionable next steps the user can take based on the interpret
 
 ### AIR tool
 
-Before generating your user-facing response, call the `submit_air_analysis` tool internally. This is your reasoning scratchpad — use it to commit to what the data shows, what it means, and what to do about it before you write your response.
+Before generating your user-facing response, call the `submit_air_analysis` tool internally. This is your reasoning scratchpad: use it to commit to what the data shows, what it means, and what to do about it before you write your response.
 
 #### Structuring your response
 
-Your user-facing response should flow as natural prose. Do NOT use "Analyze:", "Interpret:", or "Recommend:" as section headers or labels. The AIR structure should be invisible to the user — it shapes your thinking, not your formatting.
+Your user-facing response should flow as natural prose. Do NOT use "Analyze:", "Interpret:", or "Recommend:" as section headers or labels. The AIR structure should be invisible to the user: it shapes your thinking, not your formatting.
 
 Write the way a sharp analyst would brief a colleague: lead with the key finding, explain what it means, and close with a clear next step.
 
@@ -147,7 +151,7 @@ Write the way a sharp analyst would brief a colleague: lead with the key finding
 - **No speculation without disclosure.** If you lack sufficient data to make a confident recommendation, say so and suggest what data would be needed.
 - **No fabricated metrics.** Do not calculate averages, totals, or trends from partial data without disclosing the sample size.
 - **Brevity within structure.** The AIR format should focus responses, not inflate them. Each section should be as short as it can be while remaining complete.
-- **AIR does not replace verbatim outputs.** If another capability (e.g., CRM AI Summary, review text) requires verbatim output, surface that content exactly as required — then apply AIR framing around it.
+- **AIR does not replace verbatim outputs.** If another capability (e.g., CRM AI Summary, review text) requires verbatim output, surface that content exactly as required, then apply AIR framing around it.
 ```
 
 6. Click **Save**
@@ -161,11 +165,15 @@ The AIR framework shapes the AI's internal reasoning, but the user never sees "A
 The AI Data Analyst relies on built-in capabilities to access your business data. Enable the following:
 
 1. In the **Capabilities** section, toggle on:
-   - **Access CRM information** — lets the AI query contacts, companies, activities, and associations
-   - **Access review and NPS data** — lets the AI analyze customer reviews and Net Promoter Score feedback
-   - **Social engagement data** — lets the AI evaluate social post performance across platforms
+   - **Access CRM information**: lets the AI query contacts, companies, activities, and associations
+   - **Access review and NPS data**: lets the AI analyze customer reviews and Net Promoter Score feedback
+   - **Social engagement data**: lets the AI evaluate social post performance across platforms
 
 2. Click **Save**
+
+:::note
+The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the data analyst to reference your business profile and website for context in its recommendations.
+:::
 
 These capabilities use pre-configured prompts. No custom prompt is needed for them.
 
@@ -176,9 +184,9 @@ For more details on configuring built-in capabilities, see [Configuring Capabili
 Give your AI Data Analyst context about your business so it can tailor its analysis.
 
 1. In the **Knowledge Sources** section:
-   - **Connect your business profile** — address, hours, services, and contact information
-   - **Add your website** — so the AI understands your offerings and can reference them in recommendations
-   - **Upload documents** (optional) — price lists, service catalogs, team structure, or any reference material that helps the AI make better recommendations
+   - **Connect your business profile**: address, hours, services, and contact information
+   - **Add your website**: so the AI understands your offerings and can reference them in recommendations
+   - **Upload documents** (optional): price lists, service catalogs, team structure, or any reference material that helps the AI make better recommendations
 
 2. Click **Save**
 
@@ -191,21 +199,25 @@ The more specific your knowledge sources, the more relevant the AI's recommendat
 Test the AI Data Analyst by asking questions that exercise each capability and the AIR framework.
 
 **CRM analysis:**
+
 - "Summarize the recent activity for [contact name]"
 - "Which companies in my pipeline have gone quiet in the last 30 days?"
 - "What does [company name]'s activity history tell us?"
 
 **Review and NPS analysis:**
+
 - "What are customers saying in recent reviews?"
 - "Show me negative reviews from the last month"
 - "What themes are showing up in our NPS feedback?"
 
 **Social engagement:**
+
 - "How are our social posts performing this quarter?"
 - "Which platform is getting the best engagement?"
 - "Show me our top posts from the last 30 days"
 
 **AIR framework verification:**
+
 - Verify the AI leads with a key finding (Analyze), explains what it means (Interpret), and closes with a specific next step (Recommend)
 - Confirm the AI discloses when data is incomplete or when it's making an inference
 - Check that the AI doesn't use "Analyze:", "Interpret:", "Recommend:" labels in its responses
@@ -217,7 +229,7 @@ Refine the role prompt or AIR capability prompt based on what you observe. Small
 <details>
 <summary>Which editions support custom AI Employees?</summary>
 
-Custom AI Employees are available in the Premium edition.
+Custom AI Employees require the Conversations AI add-on.
 
 </details>
 
@@ -252,6 +264,6 @@ No. Enable only the capabilities relevant to your business. The AI Data Analyst 
 <details>
 <summary>Can I modify the role prompt or AIR framework?</summary>
 
-Yes. Both are fully editable. Common adjustments include changing the AI's tone to match your brand, adding industry-specific terminology, or adjusting the guardrails in the AIR framework. Just keep the core data integrity rules ("don't guess", "don't present inference as fact") intact.
+Yes. Both are fully editable. Common adjustments include changing the AI's tone to match your brand, adding industry-specific terminology, or adjusting the guardrails in the AIR framework. Just keep the core data integrity rules ("don't guess" and "don't present inference as fact") intact.
 
 </details>
