@@ -19,7 +19,7 @@ The AI Data Analyst is a custom AI Employee that helps you make data-backed deci
 
 ## Why build an AI Data Analyst?
 
-Business data lives in multiple places: CRM records, customer reviews, NPS surveys, and social media. Without a dedicated analyst, users often face:
+Business data lives in multiple places: CRM records, customer reviews, NPS surveys, and social media. Without a dedicated analyst, you often face:
 
 The AI Data Analyst addresses this by connecting to these data sources and applying consistent analytical reasoning to every response.
 
