@@ -43,7 +43,7 @@ These prompts were developed and tested using **Gemini Flash 3**. Select Gemini 
 1. Navigate to `AI` > `AI Workforce` in your Business App dashboard
 2. Click `Create Custom AI Employee`
 3. Set a name (e.g., "Data Analyst") and upload an avatar image
-4. Click **Save** to create the employee profile
+4. Click `Save` to create the employee profile
 
 ### Step 2: Set the role prompt
 
