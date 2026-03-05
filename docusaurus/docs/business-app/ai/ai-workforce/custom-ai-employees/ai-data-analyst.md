@@ -15,7 +15,7 @@ keywords:
   ]
 ---
 
-The AI Data Analyst is a custom AI Employee that helps users make data-backed decisions by analyzing CRM data, customer reviews, NPS feedback, and social engagement metrics. It uses a structured reasoning framework called AIR (Analyze, Interpret, Recommend) to deliver clear insights and actionable next steps instead of raw data dumps.
+The AI Data Analyst is a custom AI Employee that helps you make data-backed decisions by analyzing CRM data, customer reviews, NPS feedback, and social engagement metrics. It uses a structured reasoning framework called AIR (Analyze, Interpret, Recommend) to deliver clear insights and actionable next steps instead of raw data dumps.
 
 ## Why build an AI Data Analyst?
 
