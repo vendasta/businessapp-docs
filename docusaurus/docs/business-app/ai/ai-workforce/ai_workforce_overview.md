@@ -12,6 +12,7 @@ All AI Employees share a common structure: **name**, **purpose**, **channels**, 
 **Guides:**
 - [Set up the AI Chat Receptionist](./ai-chat-receptionist/)
 - [Set up the AI Voice Receptionist](ai-voice-receptionist.md)
+- [Custom AI Employees](./custom-ai-employees/)
 - [AI Capabilities Overview](../ai-capabilities/)
 - [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md)
 
