@@ -1,9 +1,9 @@
----
-title: "Violation Test: A Comprehensive Guide to Vendasta's Partner Features"
+title: Violation Test: A Comprehensive Guide to Vendasta's Partner Features
 sidebar_label: Violation Test
 description: "This article was formerly used to test our seamless and robust Partner Center features, but now it is used for violations."
 tags: [test, violations, Vendasta]
 keywords: [partner, reseller, agency, white-label, revolutionary]
+
 ---
 
 # Violation Test: H1 in body
@@ -26,7 +26,7 @@ Detailed instructions:
 
 ![Violation Test Image](./img/NonKebabCaseImage.png)
 
-Check out the [full documentation](https://google.com) or [internal info](/docusaurus/docs/business-app/administration/index.md).
+Check out the [full documentation](http://google.com) or [internal info](/docusaurus/docs/business-app/administration/index.md).
 
 Here is a large wall of text that is not broken up by any sub-headings or images. This is clearly a violation of our style guide because it is hard for small to medium-sized business owners to read. They are very busy and they need clear, concise instructions that are easy to scan. If you write a paragraph that is too long, like this one is becoming, the user might get confused or frustrated. You should always try to use sub-headings, bullet points, and images to break up your content and make it more readable for everyone. This is not just a style rule; it's a best practice for all documentation.
 
