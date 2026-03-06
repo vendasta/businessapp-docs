@@ -48,7 +48,7 @@ Common integrations include:
 5. Click the integration tile.  
 6. Follow the steps to authorize your account.
 
-Each integration has it's own required steps to connect. You can find these detailed set up steps outlined in each integration card once you click the `Browse` tab and click on a specific integration. Once connected, data will begin syncing automatically into your app (some integrations will take up to 48 hours to sync).
+Each integration has its own required steps to connect. You can find these detailed set up steps outlined in each integration card once you click the `Browse` tab and click on a specific integration. Once connected, data will begin syncing automatically into your app (some integrations will take up to 48 hours to sync).
 
 ![Facebook Integration Example](../img/app_settings_connections_facebook.png)
 
