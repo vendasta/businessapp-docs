@@ -1,4 +1,4 @@
-title: Violation Test: A Comprehensive Guide to Vendasta's Partner Features
+title: "Violation Test: A Comprehensive Guide to Business App Features"
 sidebar_label: Violation Test
 description: "This article was formerly used to test our seamless and robust Partner Center features, but now it is used for violations."
 tags: [test, violations, Vendasta]
