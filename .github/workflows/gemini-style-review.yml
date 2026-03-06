@@ -121,25 +121,51 @@ jobs:
           # Fetch review threads via GraphQL (REST does not expose isResolved).
           OWNER="${REPO%%/*}"
           REPO_NAME="${REPO##*/}"
-          gh api graphql -f query='
-            query($owner: String!, $repo: String!, $pr: Int!) {
-              repository(owner: $owner, name: $repo) {
-                pullRequest(number: $pr) {
-                  reviewThreads(first: 100) {
-                    nodes {
-                      isResolved
-                      path
-                      line
-                      comments(first: 20) {
-                        nodes { body author { login } }
+          # Paginate through all review threads (GraphQL returns max 100 per page).
+          CURSOR=""
+          echo '[]' > /tmp/all-threads.json
+          while true; do
+            CURSOR_ARG=""
+            if [ -n "${CURSOR}" ]; then
+              CURSOR_ARG="-f cursor=${CURSOR}"
+            fi
+            gh api graphql -f query='
+              query($owner: String!, $repo: String!, $pr: Int!, $cursor: String) {
+                repository(owner: $owner, name: $repo) {
+                  pullRequest(number: $pr) {
+                    reviewThreads(first: 100, after: $cursor) {
+                      pageInfo { hasNextPage endCursor }
+                      nodes {
+                        isResolved
+                        path
+                        line
+                        comments(first: 20) {
+                          nodes { body author { login } }
+                        }
                       }
                     }
                   }
                 }
               }
-            }
-          ' -f owner="${OWNER}" -f repo="${REPO_NAME}" -F pr="${PR_NUMBER}" \
-            > /tmp/review-threads.json 2>/dev/null || true
+            ' -f owner="${OWNER}" -f repo="${REPO_NAME}" -F pr="${PR_NUMBER}" \
+              ${CURSOR_ARG} > /tmp/threads-page.json 2>/dev/null || break
+
+            # Merge nodes into accumulated list.
+            jq -s '.[0] + (.[1].data.repository.pullRequest.reviewThreads.nodes // [])' \
+              /tmp/all-threads.json /tmp/threads-page.json > /tmp/all-threads-tmp.json
+            mv /tmp/all-threads-tmp.json /tmp/all-threads.json
+
+            # Check for next page.
+            HAS_NEXT=$(jq -r '.data.repository.pullRequest.reviewThreads.pageInfo.hasNextPage' /tmp/threads-page.json)
+            if [ "${HAS_NEXT}" != "true" ]; then
+              break
+            fi
+            CURSOR=$(jq -r '.data.repository.pullRequest.reviewThreads.pageInfo.endCursor' /tmp/threads-page.json)
+          done
+
+          # Wrap in the structure the Python script expects.
+          jq '{data:{repository:{pullRequest:{reviewThreads:{nodes:.}}}}}' \
+            /tmp/all-threads.json > /tmp/review-threads.json
 
           if [ ! -s /tmp/review-threads.json ]; then
             echo "No review threads found (new PR or API error)."
@@ -507,13 +533,18 @@ jobs:
               if already:
                   continue
 
-              # Drop if the original text matches a dismissed suggestion on the
-              # same file.  Matches on original text (not replacement) so Gemini
-              # non-determinism doesn't cause re-flagging.
+              # Drop if the finding matches a dismissed suggestion on the same
+              # file, near the same line.  Uses line proximity (within 5 lines)
+              # as primary match plus text as confirmation, so common phrases
+              # like "Click Save" dismissed on one line don't suppress unrelated
+              # findings on a different line.
               orig = f.get('original', '')
+              f_line = f.get('line', 0)
               is_dismissed = any(
-                  d['path'] == f['file'] and orig and d.get('original', '') and
-                  (orig in d['original'] or d['original'] in orig)
+                  d['path'] == f['file']
+                  and abs(f_line - d.get('line', 0)) <= 5
+                  and orig and d.get('original', '')
+                  and (orig in d['original'] or d['original'] in orig)
                   for d in dismissed
               )
               if is_dismissed:
