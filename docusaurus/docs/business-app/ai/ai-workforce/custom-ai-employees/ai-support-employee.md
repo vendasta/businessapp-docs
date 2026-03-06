@@ -83,7 +83,7 @@ You are speaking with customers via SMS and chat. Respond using plain text and s
 Always close by asking if the solution provided helps or if the customer needs further assistance.
 ```
 
-3. Click **Save**
+3. Click `Save`
 
 :::tip
 The key distinction here is resolution-first. The AI should attempt to answer from your knowledge base before asking for any contact information. Asking for details too early feels like friction, not service.
@@ -190,7 +190,7 @@ Adjust the role prompt, HEARD capability, or Escalation capability based on what
 <details>
 <summary>Which editions support custom AI Employees?</summary>
 
-Custom AI Employees are available with Conversations AI.
+Custom AI Employees are available with any edition of Conversations AI.
 
 </details>
 

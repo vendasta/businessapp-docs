@@ -77,7 +77,7 @@ You work across CRM data, customer reviews, NPS feedback, and any data the user 
 - Give a recommendation that isn't traceable to something in the data.
 ```
 
-3. Click **Save**
+3. Click `Save`
 
 :::tip
 The role prompt sets the foundation for how the AI communicates. The key principles are: data-first, direct, and always actionable. Adjust the tone to match your brand if needed, but keep the data integrity rules intact.
@@ -88,7 +88,7 @@ The role prompt sets the foundation for how the AI communicates. The key princip
 The AIR (Analyze, Interpret, Recommend) framework is a custom capability that structures how the AI reasons through every data question. It ensures responses follow a consistent pattern: state what the data shows, explain what it means, and recommend what to do next.
 
 1. In the AI Employee configuration, scroll to **Capabilities**
-2. Click **Add a capability**
+2. Click `Add a capability`
 3. Set the capability name to `AIRAnalysisFramework`
 4. Set the description to: "Structures analytical responses using the Analyze, Interpret, Recommend framework"
 5. In the **Prompt** field, copy and paste the following:
@@ -165,7 +165,7 @@ The AIR framework shapes the AI's internal reasoning, but you never see "Analyze
 The AIR framework prompt tells the AI to call `submit_air_analysis` as an internal reasoning scratchpad before generating each response. You need to create this as a separate custom capability, a no-op tool the AI uses to commit to its analysis before writing its answer.
 
 1. In the AI Employee configuration, scroll to **Capabilities**
-2. Click **Add a capability**
+2. Click `Add a capability`
 3. Set the capability name to `submit_air_analysis`
 4. Set the description to: "Call this tool before delivering any AIR-structured analytical response. Populate all three fields based solely on retrieved data or data provided directly by the user."
 5. Check **This function is a no-op and will not execute an API call**
@@ -177,7 +177,7 @@ The AIR framework prompt tells the AI to call `submit_air_analysis` as an intern
    | `interpretation` | What the data means. Inferences must be clearly flagged as such using phrases like "this suggests" or "a likely explanation is". |
    | `recommendation` | Specific, actionable next steps traceable to the analysis and interpretation. Include at least one concrete first action. |
 
-7. Click **Done**, then click **Save**
+7. Click `Done`, then click `Save`
 
 :::note
 This tool is invisible to you. The AI calls it internally before every analytical response to structure its reasoning. It never triggers an API call and produces no visible output.
@@ -192,7 +192,7 @@ The AI Data Analyst relies on built-in capabilities to access your data. Enable 
    - **Access review and NPS data**: lets the AI analyze customer reviews and Net Promoter Score feedback
    - **Social engagement data**: lets the AI evaluate social post performance across platforms
 
-2. Click **Save**
+2. Click `Save`
 
 :::note
 The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the data analyst to reference your business profile and website for context in its recommendations.
@@ -211,7 +211,7 @@ Give your AI Data Analyst context about your business so it can tailor its analy
    - **Add your website**: so the AI understands your offerings and can reference them in recommendations
    - **Upload documents** (optional): price lists, service catalogs, team structure, or any reference material that helps the AI make better recommendations
 
-2. Click **Save**
+2. Click `Save`
 
 :::tip
 The more specific your knowledge sources, the more relevant the AI's recommendations will be. For example, if the AI knows your service tiers, it can recommend upsell opportunities based on CRM data.
@@ -252,7 +252,7 @@ Refine the role prompt or AIR capability prompt based on what you observe. Small
 <details>
 <summary>Which editions support custom AI Employees?</summary>
 
-Custom AI Employees are available with Conversations AI.
+Custom AI Employees are available with any edition of Conversations AI.
 
 </details>
 

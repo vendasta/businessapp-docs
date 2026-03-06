@@ -1,5 +1,6 @@
 ---
 title: AI Workforce Overview
+sidebar_label: AI Workforce Overview
 description: Overview of AI Employees and the common structure for digital team members in Business App.
 tags: [ai-workforce, overview, ai-employees]
 keywords: [AI workforce, digital employees, AI automation, AI setup, Business App AI]
@@ -10,10 +11,10 @@ AI Employees are digital team members you can configure to automate conversation
 All AI Employees share a common structure: **name**, **purpose**, **channels**, **capabilities**, and **knowledge sources**. Specific roles (like Chat Receptionist or Voice Receptionist) may include additional options, but the basics are always the same.
 
 **Guides:**
-- [Set up the AI Chat Receptionist](./ai-chat-receptionist/)
+- [Set up the AI Chat Receptionist](./ai-chat-receptionist/index.mdx)
 - [Set up the AI Voice Receptionist](ai-voice-receptionist.md)
-- [Custom AI Employees](./custom-ai-employees/)
-- [AI Capabilities Overview](../ai-capabilities/)
+- [Custom AI Employees](./custom-ai-employees/index.md)
+- [AI Capabilities Overview](../ai-capabilities/index.mdx)
 - [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md)
 
 If you’re just getting started, the sections below give an overview of the main elements you’ll configure for any AI Employee.

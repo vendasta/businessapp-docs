@@ -113,7 +113,7 @@ The Discovery capability defines the qualification logic: when and how the AI co
 - **Flow:** 1. Name -> 2. Phone -> 3. Email (fallback).
 ```
 
-6. Click **Save**
+6. Click `Save`
 
 :::note
 For broad requests (e.g., "consultation"), the AI can capture name and phone while discovery questions are still in progress. For specific service requests, qualification should complete before moving to phone. In both cases, the AI must confirm the business can help before asking for email.
