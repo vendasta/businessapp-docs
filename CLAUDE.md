@@ -160,7 +160,9 @@ Every pull request that changes files under `docusaurus/docs/` triggers a **Gemi
 - Primary model: `gemini-3-flash-preview` with automatic fallback to `gemini-2.5-flash`
 - Findings are schema-validated and line-number-verified against actual file content before posting
 - Files are capped at ~50 KB total payload; excess files are listed but not reviewed
-- Forked PRs are skipped (read-only `GITHUB_TOKEN`)
+- Forked PRs and draft PRs are skipped; draft PRs are reviewed when marked ready
+- Concurrent runs for the same PR are cancelled in favor of the latest push
+- Suggestions that were replied to or resolved by the author are not re-flagged
 
 **Required repository secrets:**
 
