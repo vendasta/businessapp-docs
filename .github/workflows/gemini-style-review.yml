@@ -23,7 +23,7 @@ name: Gemini Style Review
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, ready_for_review]
     paths:
       - 'docusaurus/docs/**'
   workflow_dispatch:
@@ -42,16 +42,22 @@ permissions:
   contents: read
   pull-requests: write
 
+concurrency:
+  group: style-review-${{ github.event.pull_request.number || inputs.pr_number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   style-review:
     name: Gemini style review
     runs-on: ubuntu-latest
     # Forked PRs cannot receive inline comments -- GITHUB_TOKEN is read-only.
+    # Draft PRs are skipped -- review fires when the PR becomes ready.
     # workflow_dispatch (from gemini-dispatch.yml) always runs.
     if: |
       (
         github.event_name == 'pull_request' &&
-        github.event.pull_request.head.repo.full_name == github.repository
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        github.event.pull_request.draft != true
       ) || (
         github.event_name == 'workflow_dispatch'
       )
@@ -104,6 +110,148 @@ jobs:
             echo "No documentation files changed -- skipping style review."
           fi
 
+      - name: Collect dismissed suggestions
+        if: steps.changed-files.outputs.no_files == 'false'
+        id: dismissed
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
+          REPO: ${{ github.repository }}
+        run: |
+          # Fetch review threads via GraphQL (REST does not expose isResolved).
+          OWNER="${REPO%%/*}"
+          REPO_NAME="${REPO##*/}"
+          # Paginate through all review threads (GraphQL returns max 100 per page).
+          CURSOR=""
+          echo '[]' > /tmp/all-threads.json
+          while true; do
+            CURSOR_ARG=""
+            if [ -n "${CURSOR}" ]; then
+              CURSOR_ARG="-f cursor=${CURSOR}"
+            fi
+            gh api graphql -f query='
+              query($owner: String!, $repo: String!, $pr: Int!, $cursor: String) {
+                repository(owner: $owner, name: $repo) {
+                  pullRequest(number: $pr) {
+                    reviewThreads(first: 100, after: $cursor) {
+                      pageInfo { hasNextPage endCursor }
+                      nodes {
+                        isResolved
+                        path
+                        line
+                        comments(first: 20) {
+                          nodes { body author { login } }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ' -f owner="${OWNER}" -f repo="${REPO_NAME}" -F pr="${PR_NUMBER}" \
+              ${CURSOR_ARG} > /tmp/threads-page.json 2>/dev/null || break
+
+            # Merge nodes into accumulated list.
+            jq -s '.[0] + (.[1].data.repository.pullRequest.reviewThreads.nodes // [])' \
+              /tmp/all-threads.json /tmp/threads-page.json > /tmp/all-threads-tmp.json
+            mv /tmp/all-threads-tmp.json /tmp/all-threads.json
+
+            # Check for next page.
+            HAS_NEXT=$(jq -r '.data.repository.pullRequest.reviewThreads.pageInfo.hasNextPage' /tmp/threads-page.json)
+            if [ "${HAS_NEXT}" != "true" ]; then
+              break
+            fi
+            CURSOR=$(jq -r '.data.repository.pullRequest.reviewThreads.pageInfo.endCursor' /tmp/threads-page.json)
+          done
+
+          # Wrap in the structure the Python script expects.
+          jq '{data:{repository:{pullRequest:{reviewThreads:{nodes:.}}}}}' \
+            /tmp/all-threads.json > /tmp/review-threads.json
+
+          if [ ! -s /tmp/review-threads.json ]; then
+            echo "No review threads found (new PR or API error)."
+            echo "has_dismissed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          cat > /tmp/collect-dismissed.py << 'PYEOF'
+          import sys, json, re, os
+
+          data = json.load(open('/tmp/review-threads.json'))
+          threads = (data.get('data', {}).get('repository', {})
+                         .get('pullRequest', {}).get('reviewThreads', {})
+                         .get('nodes', []))
+
+          dismissed = []
+          for t in threads:
+              comments = t.get('comments', {}).get('nodes', [])
+              if not comments:
+                  continue
+              first = comments[0]
+              if first.get('author', {}).get('login') != 'stylosaurus[bot]':
+                  continue
+
+              is_resolved = t.get('isResolved', False)
+              has_human_reply = any(
+                  c.get('author', {}).get('login') != 'stylosaurus[bot]'
+                  for c in comments[1:]
+              )
+              if not (is_resolved or has_human_reply):
+                  continue
+
+              # Extract the replacement text from the suggestion block.
+              body = first.get('body', '')
+              m = re.search(r'```suggestion\n(.+?)\n```', body, re.DOTALL)
+              if not m:
+                  continue
+              replacement = m.group(1)
+
+              # Check if the suggestion was applied (replacement is in the file).
+              file_path = t.get('path', '')
+              line_num = t.get('line', 0)
+              try:
+                  lines = open(file_path).readlines()
+                  content = ''.join(lines)
+                  if replacement.rstrip('\n') in content:
+                      continue  # Applied, not dismissed.
+              except OSError:
+                  continue
+
+              # Capture the original text at the dismissed line (still present
+              # because the suggestion was not applied).
+              original_text = ''
+              if 0 < line_num <= len(lines):
+                  original_text = lines[line_num - 1].rstrip('\n')
+
+              # Collect the author's reason (first human reply, or generic).
+              reason = 'Resolved without comment'
+              for c in comments[1:]:
+                  if c.get('author', {}).get('login') != 'stylosaurus[bot]':
+                      reason = c.get('body', reason)[:200]
+                      break
+
+              dismissed.append({
+                  'path': file_path,
+                  'line': line_num,
+                  'original': original_text,
+                  'replacement': replacement,
+                  'reason': reason,
+              })
+
+          if dismissed:
+              with open('/tmp/dismissed-suggestions.json', 'w') as f:
+                  json.dump(dismissed, f)
+              print(f'Found {len(dismissed)} dismissed suggestion(s).')
+          else:
+              print('No dismissed suggestions found.')
+          PYEOF
+          python3 /tmp/collect-dismissed.py
+
+          if [ -f /tmp/dismissed-suggestions.json ]; then
+            echo "has_dismissed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_dismissed=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Install Gemini CLI
         if: steps.changed-files.outputs.no_files == 'false'
         run: |
@@ -136,6 +284,21 @@ jobs:
           if [ -n "${ADDITIONAL_CONTEXT}" ]; then
             PROMPT="${PROMPT}
           Additional instructions from the reviewer: ${ADDITIONAL_CONTEXT}"
+          fi
+          # Append dismissed suggestions so Gemini avoids re-flagging them.
+          if [ -f /tmp/dismissed-suggestions.json ]; then
+            DISMISSED_TEXT=$(python3 -c "
+          import json
+          items = json.load(open('/tmp/dismissed-suggestions.json'))
+          for d in items:
+              print(f\"- {d['path']} line {d['line']}: author said: {d['reason']}\")
+          " 2>/dev/null || true)
+            if [ -n "${DISMISSED_TEXT}" ]; then
+              PROMPT="${PROMPT}
+
+          The following issues were previously flagged and the PR author chose to keep them. Do NOT re-flag these:
+          ${DISMISSED_TEXT}"
+            fi
           fi
 
           gemini --model "${MODEL}" \
@@ -171,6 +334,20 @@ jobs:
           if [ -n "${ADDITIONAL_CONTEXT}" ]; then
             PROMPT="${PROMPT}
           Additional instructions from the reviewer: ${ADDITIONAL_CONTEXT}"
+          fi
+          if [ -f /tmp/dismissed-suggestions.json ]; then
+            DISMISSED_TEXT=$(python3 -c "
+          import json
+          items = json.load(open('/tmp/dismissed-suggestions.json'))
+          for d in items:
+              print(f\"- {d['path']} line {d['line']}: author said: {d['reason']}\")
+          " 2>/dev/null || true)
+            if [ -n "${DISMISSED_TEXT}" ]; then
+              PROMPT="${PROMPT}
+
+          The following issues were previously flagged and the PR author chose to keep them. Do NOT re-flag these:
+          ${DISMISSED_TEXT}"
+            fi
           fi
 
           gemini --model "${MODEL}" \
@@ -329,7 +506,7 @@ jobs:
               | jq '[.[] | select(.user.login == "stylosaurus[bot]")]' > /tmp/existing-comments.json
 
             cat > /tmp/dedup-findings.py << 'PYEOF'
-          import sys, json, re
+          import sys, json, re, os
 
           existing_raw = json.load(open('/tmp/existing-comments.json'))
           findings = json.load(sys.stdin)
@@ -341,15 +518,42 @@ jobs:
               if m:
                   existing.append({'path': c['path'], 'replacement': m.group(1)})
 
-          # Drop findings whose replacement was already suggested on the same file.
+          # Load dismissed suggestions (resolved threads / human replies).
+          dismissed = []
+          if os.path.isfile('/tmp/dismissed-suggestions.json'):
+              dismissed = json.load(open('/tmp/dismissed-suggestions.json'))
+
           deduped = []
           for f in findings:
+              # Drop if replacement was already suggested on the same file.
               already = any(
                   e['path'] == f['file'] and e['replacement'] == f['replacement']
                   for e in existing
               )
-              if not already:
-                  deduped.append(f)
+              if already:
+                  continue
+
+              # Drop if the finding matches a dismissed suggestion on the same
+              # file, near the same line.  Uses line proximity (within 5 lines)
+              # as primary match plus text as confirmation, so common phrases
+              # like "Click Save" dismissed on one line don't suppress unrelated
+              # findings on a different line.
+              orig = f.get('original', '')
+              f_line = f.get('line', 0)
+              is_dismissed = any(
+                  d['path'] == f['file']
+                  and abs(f_line - d.get('line', 0)) <= 5
+                  and orig and d.get('original', '')
+                  and (orig in d['original'] or d['original'] in orig)
+                  for d in dismissed
+              )
+              if is_dismissed:
+                  print('::notice::Skipping dismissed finding: '
+                        + f['file'] + ':' + str(f.get('line', '?')),
+                        file=sys.stderr)
+                  continue
+
+              deduped.append(f)
 
           print(json.dumps(deduped))
           PYEOF
@@ -384,7 +588,9 @@ jobs:
           |----------|-------|
           | Blocker | ${BLOCKER_COUNT} |
           | Warning | ${WARNING_COUNT} |
-          | Suggestion | ${SUGGESTION_COUNT} |"
+          | Suggestion | ${SUGGESTION_COUNT} |
+
+          **Tip:** Use **Add suggestion to batch** on each suggestion, then **Commit suggestions** once to apply them in a single commit."
 
             if [ "${BLOCKER_COUNT}" -gt 0 ]; then
               BODY="${BODY}
