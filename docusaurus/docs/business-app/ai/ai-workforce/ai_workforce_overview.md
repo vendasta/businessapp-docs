@@ -1,5 +1,6 @@
 ---
 title: AI Workforce Overview
+sidebar_label: AI Workforce Overview
 description: Overview of AI Employees and the common structure for digital team members in Business App.
 tags: [ai-workforce, overview, ai-employees]
 keywords: [AI workforce, digital employees, AI automation, AI setup, Business App AI]
@@ -10,9 +11,10 @@ AI Employees are digital team members you can configure to automate conversation
 All AI Employees share a common structure: **name**, **purpose**, **channels**, **capabilities**, and **knowledge sources**. Specific roles (like Chat Receptionist or Voice Receptionist) may include additional options, but the basics are always the same.
 
 **Guides:**
-- [Set up the AI Chat Receptionist](./ai-chat-receptionist/)
+- [Set up the AI Chat Receptionist](./ai-chat-receptionist/index.mdx)
 - [Set up the AI Voice Receptionist](ai-voice-receptionist.md)
-- [AI Capabilities Overview](../ai-capabilities/)
+- [Custom AI Employees](./custom-ai-employees/index.md)
+- [AI Capabilities Overview](../ai-capabilities/index.mdx)
 - [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md)
 
 If you’re just getting started, the sections below give an overview of the main elements you’ll configure for any AI Employee.
@@ -25,8 +27,8 @@ If you’re just getting started, the sections below give an overview of the mai
 
 The **Profile** section is where you set the basics: how your AI Employee appears and how they introduce themselves to customers.
 
-- **Name & Avatar** — The display name and image used across your channels. Choose a friendly, memorable name and a profile image (e.g. your logo or a custom avatar) that fits the role or your brand.
-- **Purpose** — The job description and behavioral guidelines for your AI. Write a clear, short summary of what they should do—tone, greeting, and key tasks. Be specific.
+- **Name & Avatar**: The display name and image used across your channels. Choose a friendly, memorable name and a profile image (e.g. your logo or a custom avatar) that fits the role or your brand.
+- **Purpose**: The job description and behavioral guidelines for your AI. Write a clear, short summary of what they should do, such as tone, greeting, and key tasks. Be specific.
 
 :::tip
 Use bullets or a numbered list to clarify instructions. For example: “Introduce yourself as the business receptionist,” “Speak in a friendly, concise way,” “Always collect name, email, and phone before ending the conversation.”
@@ -36,7 +38,7 @@ Use bullets or a numbered list to clarify instructions. For example: “Introduc
 
 ### Channels
 
-The **Channels** section is where you choose where your AI Employee will work. Channels are the places your AI can interact with customers—website chat, SMS, email, phone calls, and more.
+The **Channels** section is where you choose where your AI Employee will work. Channels are the places your AI can interact with customers, such as website chat, SMS, email, phone calls, and more.
 
 Turn on the channels that make sense for your business. You can enable or disable them at any time.
 
@@ -56,7 +58,7 @@ Start with one or two channels while you get comfortable, then expand as you see
 
 ### Capabilities
 
-The **Capabilities** section is where you decide what your AI Employee can do. Capabilities are like skills or tasks you turn on or off—e.g. capturing leads, booking appointments, answering FAQs.
+The **Capabilities** section is where you decide what your AI Employee can do. Capabilities are like skills or tasks you turn on or off, such as capturing leads, booking appointments, and answering FAQs.
 
 - **Turn on** the capabilities that matter most for your workflow.
 - **Add or adjust** capabilities as your business needs change.
@@ -74,10 +76,10 @@ You can experiment with different capabilities and update them any time as your 
 
 The **Knowledge Sources** section is where you give your AI information about your business so it can give accurate, up-to-date answers.
 
-- **Connect your business profile** — Address, hours, services, contact info.
-- **Add your website** — So the AI can answer questions about your offerings, prices, or policies.
-- **Upload documents or custom text** — Menus, price lists, terms, or FAQs.
-- **Review and update regularly** — Keep sources current so the AI never gives outdated info.
+- **Connect your business profile**: Address, hours, services, and contact info.
+- **Add your website**: This allows the AI to answer questions about your offerings, prices, or policies.
+- **Upload documents or custom text**: Menus, price lists, terms, or FAQs.
+- **Review and update regularly**: Keep sources current so the AI never gives outdated info.
 
 :::tip
 The more up-to-date and specific your knowledge sources, the more helpful and accurate your AI Employee will be.
