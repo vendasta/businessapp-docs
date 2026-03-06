@@ -54,6 +54,8 @@ The AI Support Employee is only as good as your knowledge base. The more complet
 3. Set a name (e.g., "Support" or your preferred name) and upload an avatar image
 4. Click `Save` to create the employee profile
 
+![AI Employee profile section showing name, role, and avatar fields](./img/support-employee-profile.png)
+
 ### Step 2: Set the role prompt
 
 The role prompt defines the AI's personality and communication style. This one establishes an empathetic, resolution-first support voice optimized for SMS and chat.
@@ -84,6 +86,8 @@ Always close by asking if the solution provided helps or if the customer needs f
 ```
 
 3. Click `Save`
+
+![Role prompt field with the empathetic support expert prompt pasted in](./img/support-employee-role-prompt.png)
 
 :::tip
 The key distinction here is resolution-first. The AI should attempt to answer from your knowledge base before asking for any contact information. Asking for details too early feels like friction, not service.
@@ -122,6 +126,8 @@ If the user presents a problem, failure, or frustration, follow the full HEARD s
 
 6. Click `Save`
 
+![Custom capability configuration showing name, description, and prompt fields for the HEARD framework](./img/support-employee-heard-capability.png)
+
 :::note
 The HEARD sequence is invisible to the customer as a label: it shapes how the AI structures its response, not what it says explicitly. Customers experience it as a natural, empathetic interaction.
 :::
@@ -135,6 +141,8 @@ The AI Support Employee relies on the `Capture leads` capability to handle escal
    - **Book appointments** (optional): checks calendar availability and schedules meetings (requires calendar connected in Business App)
 
 2. Click `Save`
+
+![Capabilities section showing Capture leads and Support HEARD Framework](./img/support-employee-capabilities.png)
 
 :::note
 The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the AI to answer questions using your connected knowledge sources without additional configuration.
@@ -162,6 +170,8 @@ Your knowledge base is the AI's primary resource for resolving inquiries. The mo
    - **Documents** (optional): return policies, warranty terms, service procedures, or any detailed reference material
 
 2. Click `Save`
+
+![Knowledge sources section showing Business Profile and Business Website connected](./img/support-employee-knowledge-sources.png)
 
 :::tip
 Review your escalation transcripts after the AI goes live. Common escalation topics represent gaps in your knowledge base: add that content and the AI will handle those questions directly in future conversations.

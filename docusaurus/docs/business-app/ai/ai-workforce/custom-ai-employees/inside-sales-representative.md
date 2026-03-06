@@ -55,6 +55,8 @@ The quality of your knowledge base directly affects lead qualification. If the A
 3. Set a name (e.g., "Sales Rep" or your preferred name) and upload an avatar image
 4. Click `Save` to create the employee profile
 
+![AI Employee profile section showing name, role, and avatar fields](./img/inside-sales-profile.png)
+
 ### Step 2: Set the role prompt
 
 The role prompt defines how the AI presents itself and approaches every conversation. This is what turns a generic chatbot into a confident inbound sales consultant.
@@ -79,6 +81,8 @@ Use the predominant language of the conversation or the primary language of the 
 ```
 
 3. Click `Save`
+
+![Role prompt field with the sales consultant prompt pasted in](./img/inside-sales-role-prompt.png)
 
 :::tip
 The key distinction here is "do not just take a message." The AI should actively guide conversations toward an outcome (an appointment), not passively collect information. Customize the tone to match your brand, but keep the strategy directives intact.
@@ -115,6 +119,8 @@ The Discovery capability defines the qualification logic: when and how the AI co
 
 6. Click `Save`
 
+![Custom capability configuration showing name, description, and prompt fields for the Discovery capability](./img/inside-sales-discovery-capability.png)
+
 :::note
 For broad requests (e.g., "consultation"), the AI can capture name and phone while discovery questions are still in progress. For specific service requests, qualification should complete before moving to phone. In both cases, the AI must confirm the business can help before asking for email.
 :::
@@ -128,6 +134,8 @@ The Inside Sales Representative relies on two built-in capabilities for the core
    - **Book appointments**: checks calendar availability and schedules meetings (requires calendar connected in Business App)
 
 2. Click `Save`
+
+![Capabilities section showing Discovery and Qualification, Capture leads, and Book appointments](./img/inside-sales-capabilities.png)
 
 :::note
 The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the AI to answer questions about your services, pricing, and policies using your knowledge sources without additional configuration.
@@ -150,6 +158,8 @@ Knowledge sources are critical for this AI Employee. The AI uses them to determi
    - **FAQs** (optional): common questions and answers the AI can surface during conversations
 
 2. Click `Save`
+
+![Knowledge sources section showing Business Profile and Business Website connected](./img/inside-sales-knowledge-sources.png)
 
 :::tip
 If a customer asks about a service that isn't in your knowledge base, the AI may not qualify or disqualify them accurately. Make sure your services list is complete and specific. For example, instead of "HVAC services," list "furnace repair, AC installation, duct cleaning": especially if there are services you don't offer that customers commonly ask about.

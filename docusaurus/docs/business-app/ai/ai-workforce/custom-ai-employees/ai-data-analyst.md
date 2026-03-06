@@ -45,6 +45,8 @@ These prompts were developed and tested using **Gemini Flash 3**. Select Gemini 
 3. Set a name (e.g., "Data Analyst") and upload an avatar image
 4. Click `Save` to create the employee profile
 
+![AI Employee profile section showing name, role, and avatar fields](./img/data-analyst-profile.png)
+
 ### Step 2: Set the role prompt
 
 The role prompt defines your AI Data Analyst's personality and behavior. It tells the AI to lead with data, be direct, and always provide actionable next steps.
@@ -78,6 +80,8 @@ You work across CRM data, customer reviews, NPS feedback, and any data the user 
 ```
 
 3. Click `Save`
+
+![Role prompt field with the data analyst prompt pasted in](./img/data-analyst-role-prompt.png)
 
 :::tip
 The role prompt sets the foundation for how the AI communicates. The key principles are: data-first, direct, and always actionable. Adjust the tone to match your brand if needed, but keep the data integrity rules intact.
@@ -156,17 +160,19 @@ Write the way a sharp analyst would brief a colleague: lead with the key finding
 
 6. Click `Save`
 
+![Custom capability configuration showing name, prompt, and linked tool for the AIR Analysis Framework](./img/data-analyst-air-capability.png)
+
 :::note
 The AIR framework shapes the AI's internal reasoning, but you never see "Analyze:", "Interpret:", or "Recommend:" labels. Responses read as natural briefings, not templated output.
 :::
 
-### Step 4: Create the AIR reasoning tool
+#### Add the AIR reasoning tool
 
-The AIR framework prompt tells the AI to call `submit_air_analysis` as an internal reasoning scratchpad before generating each response. You need to create this as a separate custom capability, a no-op tool the AI uses to commit to its analysis before writing its answer.
+The AIR framework prompt tells the AI to call `submit_air_analysis` as an internal reasoning scratchpad before generating each response. You add this as a tool inside the AIR Analysis Framework capability you just created.
 
-1. In the AI Employee configuration, scroll to **Capabilities**
-2. Click `Add a capability`
-3. Set the capability name to `submit_air_analysis`
+1. In the AIR Analysis Framework capability, scroll to the **Tools** section
+2. Click `+ Add a tool`
+3. Set the tool name to `submit_air_analysis`
 4. Set the description to: "Call this tool before delivering any AIR-structured analytical response. Populate all three fields based solely on retrieved data or data provided directly by the user."
 5. Check **This function is a no-op and will not execute an API call**
 6. Add the following parameters (all with Location = Body, Type = String, Required = true, Set by AI = true):
@@ -179,20 +185,24 @@ The AIR framework prompt tells the AI to call `submit_air_analysis` as an intern
 
 7. Click `Done`, then click `Save`
 
+![Tool configuration showing submit_air_analysis with analysis, interpretation, and recommendation parameters](./img/data-analyst-air-tool.png)
+
 :::note
 This tool is invisible to you. The AI calls it internally before every analytical response to structure its reasoning. It never triggers an API call and produces no visible output.
 :::
 
-### Step 5: Enable built-in capabilities
+### Step 4: Enable built-in capabilities
 
-The AI Data Analyst relies on built-in capabilities to access your data. Enable the following:
+The AI Data Analyst needs access to your business data. Enable every data capability that applies to your business -- the more data sources the AI can reach, the richer its analysis will be. You need at least one enabled for the analyst to be useful.
 
-1. In the **Capabilities** section, toggle on:
-   - **Access CRM information**: lets the AI query contacts, companies, activities, and associations
-   - **Access review and NPS data**: lets the AI analyze customer reviews and Net Promoter Score feedback
-   - **Social engagement data**: lets the AI evaluate social post performance across platforms
+1. In the **Capabilities** section, toggle on any of the following that apply:
+   - **Access CRM information**: contacts, companies, activities, and associations
+   - **Access review and NPS data**: customer reviews and Net Promoter Score feedback
+   - **Social engagement data**: social post performance across platforms
 
 2. Click `Save`
+
+![Capabilities section showing AIR Analysis Framework, Access CRM information, and Access review and NPS data](./img/data-analyst-capabilities.png)
 
 :::note
 The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the data analyst to reference your business profile and website for context in its recommendations.
@@ -202,7 +212,7 @@ These capabilities use pre-configured prompts. No custom prompt is needed for th
 
 For more details on configuring built-in capabilities, see [Configuring Capabilities](../../ai-capabilities/configuring-capabilities.md).
 
-### Step 6: Add knowledge sources
+### Step 5: Add knowledge sources
 
 Give your AI Data Analyst context about your business so it can tailor its analysis.
 
@@ -213,11 +223,13 @@ Give your AI Data Analyst context about your business so it can tailor its analy
 
 2. Click `Save`
 
+![Knowledge sources section showing Business Profile and Business Website connected](./img/data-analyst-knowledge-sources.png)
+
 :::tip
 The more specific your knowledge sources, the more relevant the AI's recommendations will be. For example, if the AI knows your service tiers, it can recommend upsell opportunities based on CRM data.
 :::
 
-### Step 7: Test and refine
+### Step 6: Test and refine
 
 Test the AI Data Analyst by asking questions that exercise each capability and the AIR framework.
 
