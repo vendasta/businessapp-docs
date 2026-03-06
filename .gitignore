@@ -152,3 +152,6 @@ docusaurus/broken_links_full_report.csv
 # Backup files
 *.bak
 
+# Claude Code worktrees
+.claude/worktrees/
+
