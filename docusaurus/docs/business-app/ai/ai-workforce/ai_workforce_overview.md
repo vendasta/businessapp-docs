@@ -77,8 +77,8 @@ The **Knowledge Sources** section is where you give your AI information about yo
 
 - **Connect your business profile**: Address, hours, services, and contact info.
 - **Add your website**: This allows the AI to answer questions about your offerings, prices, or policies.
-- **Upload documents or custom text** — Menus, price lists, terms, or FAQs.
-- **Review and update regularly** — Keep sources current so the AI never gives outdated info.
+- **Upload documents or custom text**: Menus, price lists, terms, or FAQs.
+- **Review and update regularly**: Keep sources current so the AI never gives outdated info.
 
 :::tip
 The more up-to-date and specific your knowledge sources, the more helpful and accurate your AI Employee will be.

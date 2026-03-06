@@ -20,7 +20,7 @@ The Inside Sales Representative is a custom AI Employee that handles inbound cus
 
 ## Why build an Inside Sales Representative?
 
-When you need a dedicated sales-qualification role — one that actively confirms the business can serve a customer before capturing their details — a custom AI Employee built for sales gives you that control. Without lead qualification, sales teams often end up chasing inquiries that aren't a good fit, or booking appointments that don't convert.
+When you need a dedicated sales-qualification role, one that actively confirms the business can serve a customer before capturing their details, a custom AI Employee built for sales gives you that control. Without lead qualification, sales teams often end up chasing inquiries that aren't a good fit, or booking appointments that don't convert.
 
 The Inside Sales Representative addresses this by:
 
@@ -59,7 +59,7 @@ The quality of your knowledge base directly affects lead qualification. If the A
 
 The role prompt defines how the AI presents itself and approaches every conversation. This is what turns a generic chatbot into a confident inbound sales consultant.
 
-1. Open the **Purpose** field in the AI Employee configuration
+1. Open the `Purpose` field in the AI Employee configuration
 2. Copy and paste the following role prompt:
 
 ```markdown
@@ -78,7 +78,7 @@ Keep the conversation moving forward by always asking a specific qualifying or l
 Use the predominant language of the conversation or the primary language of the country where the business is located.
 ```
 
-3. Click **Save**
+3. Click `Save`
 
 :::tip
 The key distinction here is "do not just take a message." The AI should actively guide conversations toward an outcome (an appointment), not passively collect information. Customize the tone to match your brand, but keep the strategy directives intact.
@@ -88,8 +88,8 @@ The key distinction here is "do not just take a message." The AI should actively
 
 The Discovery capability defines the qualification logic: when and how the AI confirms the business can serve a customer's need before proceeding with lead capture. This is what separates this AI Employee from a basic lead form.
 
-1. In the AI Employee configuration, scroll to **Capabilities**
-2. Click **Add a capability**
+1. In the AI Employee configuration, scroll to `Capabilities`
+2. Click `Add a capability`
 3. Set the capability name to `LeadDiscovery`
 4. Set the description to: "Qualifies inbound leads by confirming the business can serve their need before capturing contact information"
 5. In the **Prompt** field, copy and paste the following:
@@ -123,11 +123,11 @@ For broad requests (e.g., "consultation"), the AI can capture name and phone whi
 
 The Inside Sales Representative relies on two built-in capabilities for the core lead capture and booking flow. Enable both:
 
-1. In the **Capabilities** section, toggle on:
+1. In the `Capabilities` section, toggle on:
    - **Capture leads**: handles the name, phone, and email sequence, including phone number validation and objection handling
    - **Book appointments**: checks calendar availability and schedules meetings (requires calendar connected in Business App)
 
-2. Click **Save**
+2. Click `Save`
 
 :::note
 The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the AI to answer questions about your services, pricing, and policies using your knowledge sources without additional configuration.
@@ -143,13 +143,13 @@ For more details on configuring built-in capabilities, see [Configuring Capabili
 
 Knowledge sources are critical for this AI Employee. The AI uses them to determine whether it can actually serve a customer's request during the discovery phase. To guide the AI effectively, ensure your knowledge sources contain detailed information about your offerings.
 
-1. In the **Knowledge Sources** section, add:
+1. In the `Knowledge Sources` section, add:
    - **Business profile**: address, hours, phone, and service area
    - **Services list**: a clear, specific list of what the business does and does not offer. The more specific, the better the AI qualifies leads.
    - **Website**: so the AI can reference your offerings, pricing, and policies
    - **FAQs** (optional): common questions and answers the AI can surface during conversations
 
-2. Click **Save**
+2. Click `Save`
 
 :::tip
 If a customer asks about a service that isn't in your knowledge base, the AI may not qualify or disqualify them accurately. Make sure your services list is complete and specific. For example, instead of "HVAC services," list "furnace repair, AC installation, duct cleaning": especially if there are services you don't offer that customers commonly ask about.

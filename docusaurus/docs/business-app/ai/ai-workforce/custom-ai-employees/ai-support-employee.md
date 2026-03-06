@@ -89,12 +89,12 @@ Always close by asking if the solution provided helps or if the customer needs f
 The key distinction here is resolution-first. The AI should attempt to answer from your knowledge base before asking for any contact information. Asking for details too early feels like friction, not service.
 :::
 
-### Step 3: Add the HEARD Framework capability
+### Step 3: Add the HEARD framework capability
 
 The HEARD framework is a custom capability that defines how the AI handles different types of inquiries. Simple factual questions get a direct answer. Complaints and troubleshooting get a structured, empathetic sequence. This ensures the AI always responds appropriately to the customer's situation.
 
-1. In the AI Employee configuration, scroll to **Capabilities**
-2. Click **Add a capability**
+1. In the AI Employee configuration, scroll to `Capabilities`
+2. Click `Add a capability`
 3. Set the capability name to `HEARDSupportFramework`
 4. Set the description to: "Applies a tiered support framework: direct resolution for simple questions, empathetic troubleshooting sequence for complaints and problems"
 5. In the **Prompt** field, copy and paste the following:
@@ -120,7 +120,7 @@ If the user presents a problem, failure, or frustration, follow the full HEARD s
 - **Diagnose/Escalate:** If the information is not available, explain: "I don't have that specific detail available right now, but I can leave a detailed message for a team member to follow up with you."
 ```
 
-6. Click **Save**
+6. Click `Save`
 
 :::note
 The HEARD sequence is invisible to the customer as a label: it shapes how the AI structures its response, not what it says explicitly. Customers experience it as a natural, empathetic interaction.
@@ -128,13 +128,13 @@ The HEARD sequence is invisible to the customer as a label: it shapes how the AI
 
 ### Step 4: Enable built-in capabilities
 
-The AI Support Employee relies on the **Capture leads** capability to handle escalation and message capture.
+The AI Support Employee relies on the `Capture leads` capability to handle escalation and message capture.
 
-1. In the **Capabilities** section, toggle on:
+1. In the `Capabilities` section, toggle on:
    - **Capture leads**: handles name, phone, and email collection
    - **Book appointments** (optional): checks calendar availability and schedules meetings (requires calendar connected in Business App)
 
-2. Click **Save**
+2. Click `Save`
 
 :::note
 The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the AI to answer questions using your connected knowledge sources without additional configuration.
@@ -155,13 +155,13 @@ For more details on configuring built-in capabilities, see [Configuring Capabili
 
 Your knowledge base is the AI's primary resource for resolving inquiries. The more complete it is, the fewer escalations you'll generate.
 
-1. In the **Knowledge Sources** section, add:
+1. In the `Knowledge Sources` section, add:
    - **Business profile**: address, hours, phone, and service area
    - **Website**: services, pricing, and policies customers commonly ask about
    - **FAQs** (recommended): written answers to your most common support questions
    - **Documents** (optional): return policies, warranty terms, service procedures, or any detailed reference material
 
-2. Click **Save**
+2. Click `Save`
 
 :::tip
 Review your escalation transcripts after the AI goes live. Common escalation topics represent gaps in your knowledge base: add that content and the AI will handle those questions directly in future conversations.

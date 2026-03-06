@@ -154,7 +154,7 @@ Write the way a sharp analyst would brief a colleague: lead with the key finding
 - **AIR does not replace verbatim outputs.** If another capability (e.g., CRM AI Summary, review text) requires verbatim output, surface that content exactly as required, then apply AIR framing around it.
 ```
 
-6. Click **Save**
+6. Click `Save`
 
 :::note
 The AIR framework shapes the AI's internal reasoning, but you never see "Analyze:", "Interpret:", or "Recommend:" labels. Responses read as natural briefings, not templated output.
@@ -162,7 +162,7 @@ The AIR framework shapes the AI's internal reasoning, but you never see "Analyze
 
 ### Step 4: Create the AIR reasoning tool
 
-The AIR framework prompt tells the AI to call `submit_air_analysis` as an internal reasoning scratchpad before generating each response. You need to create this as a separate custom capability — a no-op tool the AI uses to commit to its analysis before writing its answer.
+The AIR framework prompt tells the AI to call `submit_air_analysis` as an internal reasoning scratchpad before generating each response. You need to create this as a separate custom capability, a no-op tool the AI uses to commit to its analysis before writing its answer.
 
 1. In the AI Employee configuration, scroll to **Capabilities**
 2. Click **Add a capability**
@@ -180,7 +180,7 @@ The AIR framework prompt tells the AI to call `submit_air_analysis` as an intern
 7. Click **Done**, then click **Save**
 
 :::note
-This tool is invisible to users. The AI calls it internally before every analytical response to structure its reasoning. It never triggers an API call and produces no visible output.
+This tool is invisible to you. The AI calls it internally before every analytical response to structure its reasoning. It never triggers an API call and produces no visible output.
 :::
 
 ### Step 5: Enable built-in capabilities
@@ -264,7 +264,7 @@ It can access any data you have available in Business App: CRM data (contacts, c
 </details>
 
 <details>
-<summary>Will users see the AIR framework labels in responses?</summary>
+<summary>Will I see the AIR framework labels in responses?</summary>
 
 No. The AIR framework is invisible to you. The AI uses it internally to structure its thinking, but responses read as natural prose. You should never see "Analyze:", "Interpret:", or "Recommend:" headers in the AI's output.
 
