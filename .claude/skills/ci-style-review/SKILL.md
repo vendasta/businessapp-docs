@@ -99,9 +99,19 @@ Each finding is an object with exactly these fields:
 
 ### Severity levels
 
-- **`blocker`**: Gray-label violations. Vendasta mentions, Partner Center references, partner/reseller/agency/white-label terminology. These expose internal branding to end users.
-- **`warning`**: Evergreen violations, future-state language, voice or tense issues (third-person, passive voice, marketing language). These degrade content quality.
-- **`suggestion`**: Formatting issues (em dashes, UI elements not in backticks). These affect consistency but not correctness.
+Severity is mandatory, not discretionary. Use the table below to assign severity. Do NOT escalate or downgrade from this table. A gray-label violation is always a blocker, never a warning. A formatting issue is always a suggestion, never a warning.
+
+| Pattern | Severity | Notes |
+|---------|----------|-------|
+| Vendasta mention, Partner Center reference, partner/reseller/agency/white-label terminology | `blocker` | Always -- exposes internal branding to end users |
+| Subtle gray-label framing (e.g. "your provider configured this") | `blocker` | Always -- indirect partner-provider language is still a gray-label violation |
+| Evergreen violation, future-state language ("new", "now", "recently", "coming soon") | `warning` | Always -- implies impermanence |
+| Third-person voice, passive voice, marketing language | `warning` | Always -- degrades content quality |
+| FAQ quality issues, heading-content mismatch, callout misuse | `warning` | Always -- misleads or confuses readers |
+| Formatting (em dash, backticks on UI elements, heading case, image conventions) | `suggestion` | Always -- affects consistency, not correctness |
+| Alt text quality, link text quality, wall-of-text paragraphs | `suggestion` | Always -- affects readability, not correctness |
+
+If a pattern is not in this table, use your best judgment but lean toward `suggestion` for cosmetic issues and `warning` for content-quality issues. Never use `blocker` for anything other than gray-label violations.
 
 ## Constraints
 

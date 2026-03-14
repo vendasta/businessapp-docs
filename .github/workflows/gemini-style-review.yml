@@ -272,7 +272,7 @@ jobs:
       - name: Install Gemini CLI
         if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false'
         run: |
-          npm install --silent --no-audit --global @google/gemini-cli@latest
+          npm install --silent --no-audit --global @google/gemini-cli@~0.33
           gemini --version
 
       - name: Configure Gemini settings
@@ -551,19 +551,38 @@ jobs:
           reviews_raw = json.load(open('/tmp/existing-reviews.json'))
           findings = json.load(sys.stdin)
 
-          # Extract replacement text from existing inline suggestion blocks.
-          existing = set()
+          # --- Build dedup indexes ---
+
+          # 1. Exact replacement match: (file, replacement)
+          existing_replacements = set()
           for c in existing_raw:
               m = re.search(r'```suggestion\n(.+?)\n```', c.get('body', ''), re.DOTALL)
               if m:
-                  existing.add((c['path'], m.group(1)))
+                  existing_replacements.add((c['path'], m.group(1)))
 
-          # Extract file + replacement pairs from previous review bodies.
-          # Body findings follow the format: - `file` line N: ... Fix: `replacement`
-          body_pattern = re.compile(r'- `([^`]+)` line \d+: .+?\n\s*> Fix: `([^`]+)`')
+          # 2. File + line match for inline comments (same line already commented on)
+          existing_file_lines = set()
+          for c in existing_raw:
+              path = c.get('path', '')
+              line = c.get('line') or c.get('original_line') or c.get('position')
+              if path and line:
+                  existing_file_lines.add((path, int(line)))
+
+          # 3. Original-text match: (file, original) -- catches replacement-text drift
+          existing_originals = set()
+
+          # Extract file + replacement + original pairs from previous review bodies.
+          # Body findings format: - `file` line N: ...
+          #   > `original text`
+          #   > Fix: `replacement`
+          body_repl_pattern = re.compile(r'- `([^`]+)` line \d+: .+\n\s*> `[^`]+`\n\s*> Fix: `([^`]+)`')
+          body_orig_pattern = re.compile(r'- `([^`]+)` line \d+: .+\n\s*> `([^`]+)`')
           for r in reviews_raw:
-              for m in body_pattern.finditer(r.get('body', '') or ''):
-                  existing.add((m.group(1), m.group(2)))
+              body = r.get('body', '') or ''
+              for m in body_repl_pattern.finditer(body):
+                  existing_replacements.add((m.group(1), m.group(2)))
+              for m in body_orig_pattern.finditer(body):
+                  existing_originals.add((m.group(1), m.group(2)))
 
           # Load dismissed suggestions (resolved threads / human replies).
           dismissed = []
@@ -572,9 +591,27 @@ jobs:
 
           deduped = []
           for f in findings:
-              # Drop if replacement was already suggested on the same file
-              # (covers both inline comments and body findings from prior reviews).
-              if (f['file'], f['replacement']) in existing:
+              file_path = f['file']
+              replacement = f['replacement']
+              orig = f.get('original', '')
+              f_line = f.get('line', 0)
+
+              # Drop if replacement was already suggested on the same file.
+              if (file_path, replacement) in existing_replacements:
+                  continue
+
+              # Drop if the same original text was already flagged on the same file
+              # (catches cases where Gemini generates different replacement wording).
+              if orig and (file_path, orig) in existing_originals:
+                  print('::notice::Skipping (original-text match): '
+                        + file_path + ':' + str(f_line), file=sys.stderr)
+                  continue
+
+              # Drop if the same file+line was already commented on by stylosaurus
+              # (weaker signal, but prevents re-flagging the exact same line).
+              if (file_path, f_line) in existing_file_lines:
+                  print('::notice::Skipping (file+line match): '
+                        + file_path + ':' + str(f_line), file=sys.stderr)
                   continue
 
               # Drop if the finding matches a dismissed suggestion on the same
@@ -582,10 +619,8 @@ jobs:
               # as primary match plus text as confirmation, so common phrases
               # like "Click Save" dismissed on one line don't suppress unrelated
               # findings on a different line.
-              orig = f.get('original', '')
-              f_line = f.get('line', 0)
               is_dismissed = any(
-                  d['path'] == f['file']
+                  d['path'] == file_path
                   and abs(f_line - d.get('line', 0)) <= 5
                   and orig and d.get('original', '')
                   and (orig in d['original'] or d['original'] in orig)
@@ -593,8 +628,7 @@ jobs:
               )
               if is_dismissed:
                   print('::notice::Skipping dismissed finding: '
-                        + f['file'] + ':' + str(f.get('line', '?')),
-                        file=sys.stderr)
+                        + file_path + ':' + str(f_line), file=sys.stderr)
                   continue
 
               deduped.append(f)
