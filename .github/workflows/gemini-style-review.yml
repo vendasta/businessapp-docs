@@ -637,6 +637,44 @@ jobs:
           PYEOF
             FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/dedup-findings.py) || FINDINGS="[]"
 
+            # Merge findings that target the same file+line into a single
+            # comment so GitHub suggestion blocks don't conflict.
+            cat > /tmp/merge-same-line.py << 'PYEOF'
+          import sys, json
+          from collections import defaultdict
+
+          findings = json.load(sys.stdin)
+          groups = defaultdict(list)
+          for f in findings:
+              groups[(f['file'], f['line'])].append(f)
+
+          SEV = {'blocker': 0, 'warning': 1, 'suggestion': 2}
+          merged = []
+          for key, group in groups.items():
+              if len(group) == 1:
+                  merged.append(group[0])
+                  continue
+              # Highest severity first.
+              group.sort(key=lambda f: SEV.get(f.get('severity', 'suggestion'), 3))
+              base = dict(group[0])
+              # Pick the replacement with the most changes from the original.
+              orig = base.get('original', '')
+              best_repl = max(group, key=lambda f: sum(
+                  a != b for a, b in zip(f.get('replacement', ''), orig)
+              ) + abs(len(f.get('replacement', '')) - len(orig)))
+              base['replacement'] = best_repl['replacement']
+              # Combine issue labels (deduplicated).
+              issues = list(dict.fromkeys(f['issue'] for f in group))
+              base['issue'] = ' + '.join(issues)
+              # Combine reasons (deduplicated).
+              reasons = [f.get('reason', '') for f in group if f.get('reason')]
+              base['reason'] = '\n\n'.join(dict.fromkeys(reasons))
+              merged.append(base)
+
+          print(json.dumps(merged))
+          PYEOF
+            FINDINGS=$(printf '%s' "${FINDINGS}" | python3 /tmp/merge-same-line.py) || FINDINGS="${FINDINGS}"
+
             SPLIT=$(printf '%s' "${FINDINGS}" | python3 /tmp/split-findings.py)
             INLINE_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.inline')
             BODY_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.body')

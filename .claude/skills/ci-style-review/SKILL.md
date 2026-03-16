@@ -46,7 +46,13 @@ The scan script handles pattern-matchable violations. Your job in this step is t
 - **Heading-content mismatch** (suggestion): heading promises one thing but body discusses another, or heading is too vague
 - **Subtle gray-label framing** (warning): the scan catches literal mentions of Vendasta, Partner Center, and partner/reseller/agency terms, but reviewers should still watch for indirect partner-provider framing that regex cannot detect (e.g., "your provider configured this for you")
 
-**Multiple violations on the same line:** If a single line has multiple distinct violations (e.g., a Vendasta mention AND historical language), emit separate findings for each. The post-processing pipeline handles multiple findings per line. Do not merge different violation types into a single finding.
+**Multiple violations on the same line:** If a single line has multiple violations:
+
+1. **Same category** (e.g., two UI elements needing backticks): emit ONE finding whose `replacement` fixes ALL issues of that category on the line.
+
+2. **Different categories** (e.g., a Vendasta mention AND a backtick issue): emit separate findings, but each finding's `replacement` must be the fully corrected line — fixing every violation on that line, not just the one being reported. This ensures any single suggestion can be applied independently without leaving other issues unfixed.
+
+In both cases, the `replacement` field must always represent the complete corrected line.
 
 ### Step 5: Verify every finding
 
