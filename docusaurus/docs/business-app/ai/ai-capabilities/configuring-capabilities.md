@@ -16,17 +16,17 @@ Before you begin:
 
 ## Step 1: Access AI Employee configuration
 
-1. Navigate to **AI** > **AI Workforce** in your Business App dashboard.
+1. Navigate to `AI` > `AI Workforce` in your Business App dashboard.
 2. Locate the AI Employee you want to configure.
 3. Click the `Configure` button next to the employee's name.
 
 :::tip
-If you don't see the Configure button, verify you have the necessary permissions to modify AI Employee settings.
+If you don't see the `Configure` button, verify you have the necessary permissions to modify AI Employee settings.
 :::
 
 ## Step 2: Open the capabilities section
 
-1. In the AI Employee configuration panel, scroll down to the **Capabilities** section.
+1. In the AI Employee configuration panel, scroll down to the `Capabilities` section.
 2. You'll see a grid of capability cards showing the capabilities currently assigned to this AI Employee.
 
 ## Step 3: Add or remove capabilities
@@ -40,8 +40,8 @@ To add a capability:
 
 To remove a capability:
 
-1. Click the **three-dot menu** (⋮) on the capability card.
-2. Select **Remove** from the menu.
+1. Click the `three-dot menu` (⋮) on the capability card.
+2. Select `Remove` from the menu.
 
 ### Common capability configurations
 
@@ -105,7 +105,7 @@ Get contact info when needed.
 
 ## Step 5: Save and test your configuration
 
-1. **Click "Save Changes"** at the bottom of the configuration panel.
+1. Click `Save Changes` at the bottom of the configuration panel.
 2. **Test the capabilities** by starting a conversation with your AI Employee.
 3. **Try different scenarios** to ensure capabilities activate correctly:
    - Ask questions that should trigger knowledge base access

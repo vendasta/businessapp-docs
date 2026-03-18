@@ -87,9 +87,9 @@ To get started, go to **AI** > `AI Workforce` and click `Configure` on the Voice
 
 Give your AI Voice Receptionist a friendly, professional name and upload a photo or icon. Your Voice Receptionist will use this name when speaking to callers, and the photo helps you quickly identify it among your other AI Employees in the app. 
 
-#### Set your AI Voice Receptionist's purpose
+#### Set your AI Voice Receptionist's role
 
-The Purpose section is where you define how your AI Voice Receptionist should behave and what it should prioritize. Include instructions about your business's voice, how the AI should greet callers, what information it should emphasize, and any important policies or procedures. This is where you make your AI Voice Receptionist uniquely suited to represent your business.
+The `Role` section is where you define how your AI Voice Receptionist should behave and what it should prioritize. Include instructions about your business's voice, how the AI should greet callers, what information it should emphasize, and any important policies or procedures. This is where you make your AI Voice Receptionist uniquely suited to represent your business.
 
 #### Choose your AI Voice Receptionist's voice
 
@@ -152,8 +152,8 @@ Enable your AI Voice Receptionist to live-transfer callers to one or more phone 
 
 How to enable:
 1. Go to `AI > AI Workforce > Voice Receptionist > Configure`
-2. In Capabilities, click "Add new capability"
-3. Select "Transfer call"
+2. In `Capabilities`, click `Add new capability`
+3. Select `Transfer call`
 4. Add one or more destination numbers and define criteria (e.g., sales vs. support, business hours)
 
 ![Transfer Call capability](../img/voice-receptionist-transfer.png)
