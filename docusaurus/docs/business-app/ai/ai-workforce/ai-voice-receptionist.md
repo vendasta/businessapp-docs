@@ -212,7 +212,7 @@ If the AI Voice Receptionist is unable to capture a caller’s contact informati
 
 ## Frequently asked questions
 
-### Getting Started
+### Getting started
 
 <details>
 <summary>What do I need before setting up my AI Voice Receptionist?</summary>
@@ -245,7 +245,7 @@ Yes! You can set up call forwarding from your existing business number to your a
 Most mobile carriers support simple star-codes for call forwarding. Check your [Conversations Settings](../../administration/conversations-settings.md) for carrier-specific activation codes and step-by-step instructions.
 </details>
 
-### Configuration and Customization
+### Configuration and customization
 
 <details>
 <summary>How do I choose the best voice for my business?</summary>
@@ -291,7 +291,7 @@ Absolutely! You can extend your AI Voice Receptionist's capabilities by creating
 For detailed guidance on creating custom capabilities, see [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md).
 </details>
 
-### Operations and Performance
+### Operations and performance
 
 <details>
 <summary>What happens if the AI can't answer a caller's question?</summary>

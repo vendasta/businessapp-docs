@@ -40,29 +40,29 @@ The AI doesn't read your entire Knowledge Base for every message. It retrieves t
 - **Better Customer Experience** - Customers get precise, up-to-date answers
 - **Time Savings** - Less need for human intervention in routine inquiries
 
-## Best Practices
+## Best practices
 
-### Keep Information Current
+### Keep information current
 - Review and update your Knowledge Base regularly
 - Remove outdated pricing, policies, or service information
 - Add new products, services, or procedures as they become available
 
-### Organize by Topic
+### Organize by topic
 - Group related information together
 - Use clear, descriptive titles for documents
 - Create separate entries for different aspects of your business
 
-### Write for AI Understanding
+### Write for AI understanding
 - Use clear, direct language
 - Include specific details and examples
 - Avoid ambiguous terms or internal jargon
 
-### Test and Iterate
+### Test and iterate
 - Monitor how your AI Employees use the knowledge
 - Identify gaps where customers aren't getting good answers
 - Add missing information based on common questions
 
-## Getting Started
+## Getting started
 
 To build an effective Knowledge Base:
 
