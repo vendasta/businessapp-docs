@@ -31,9 +31,9 @@ When a customer asks a question, your AI Employee:
 4. Uses the retrieved information to provide an accurate, contextual answer
 5. Falls back to general assistance if no specific knowledge is found
 
-The AI doesn't read your entire Knowledge Base for every message—it retrieves the most relevant portions based on the customer's question. For general conversation or questions the AI can answer without specific business information, it may not perform a lookup at all.
+The AI doesn't read your entire Knowledge Base for every message. It retrieves the most relevant portions based on the customer's question. For general conversation or questions the AI can answer without specific business information, it may not perform a lookup at all.
 
-## Benefits of a Well-Maintained Knowledge Base
+## Benefits of a well-maintained Knowledge Base
 
 - **Consistent Answers** - All AI Employees give the same accurate information
 - **Reduced Training Time** - New AI Employees instantly have access to business knowledge
@@ -74,7 +74,7 @@ To build an effective Knowledge Base:
 
 A strong Knowledge Base is the foundation of effective AI Employee performance. The time you invest in creating comprehensive, accurate knowledge sources will pay dividends in better customer interactions and reduced manual support needs.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>What types of files can I upload to the Knowledge Base?</summary>
@@ -86,7 +86,7 @@ You can upload files in the following formats: PDF, DOCX, TXT, CSV, PPTX, XLSX, 
 <details>
 <summary>How often should I update my Knowledge Base?</summary>
 
-You should update your Knowledge Base whenever your business information changes—such as new products, price adjustments, or updated policies. Regular reviews (e.g., monthly) help ensure accuracy.
+You should update your Knowledge Base whenever your business information changes, such as new products, price adjustments, or updated policies. Regular reviews (e.g., monthly) help ensure accuracy.
 
 :::note
 If you find yourself updating your Knowledge Base very often, you may want to consider giving your AI a Capability that connects to your systems and uses live info instead.
