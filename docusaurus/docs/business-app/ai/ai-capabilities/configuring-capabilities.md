@@ -1,6 +1,6 @@
 ---
-title: How to Configure AI Capabilities
-sidebar_label: Configuring Capabilities
+title: How to configure AI capabilities
+sidebar_label: Configuring capabilities
 sidebar_position: 2
 ---
 
@@ -17,9 +17,9 @@ Before you begin:
 
 ## Step 1: Access AI Employee configuration
 
-1. Navigate to <AISparkleIcon /> **AI** › **AI Workforce** in your Business App dashboard.
+1. Navigate to <AISparkleIcon /> `AI` > `AI Workforce` in your Business App dashboard.
 2. Locate the AI Employee you want to configure.
-3. Click the **Configure** button next to the employee's name.
+3. Click the `Configure` button next to the employee's name.
 
 :::tip
 If you don't see the Configure button, verify you have the necessary permissions to modify AI Employee settings.
@@ -34,7 +34,7 @@ If you don't see the Configure button, verify you have the necessary permissions
 
 To add a capability:
 
-1. Click the **Add Capability** button at the bottom of the Capabilities section.
+1. Click the `Add Capability` button at the bottom of the `Capabilities` section.
 2. Select the capability you want from the dialog that appears.
 3. **Review the capability description** to understand what it does.
 4. **Customize the capability's instructions** (optional) to tailor how it behaves for your business.
