@@ -18,7 +18,7 @@ Before you begin:
 
 ## Step 1: Access AI Employee configuration
 
-1. Navigate to <AISparkleIcon /> `AI` > `AI Workforce` in your Business App dashboard.
+1. Navigate to **AI** > **AI Workforce** in your Business App dashboard.
 2. Locate the AI Employee you want to configure.
 3. Click the `Configure` button next to the employee's name.
 
