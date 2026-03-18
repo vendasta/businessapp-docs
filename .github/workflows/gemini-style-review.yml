@@ -78,7 +78,24 @@ jobs:
           app-id: ${{ secrets.STYLOSAURUS_APP_ID }}
           private-key: ${{ secrets.STYLOSAURUS_PRIVATE_KEY }}
 
+      - name: Check if triggered by bot commit
+        if: github.event_name == 'pull_request'
+        id: bot-check
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          AUTHOR=$(gh api "/repos/${REPO}/commits/${HEAD_SHA}" --jq '.author.login // empty')
+          if [ "${AUTHOR}" = "stylosaurus[bot]" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Skipping -- commit authored by stylosaurus[bot] (suggestion apply)."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Find changed documentation files
+        if: steps.bot-check.outputs.skip != 'true'
         id: changed-files
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
@@ -111,7 +128,7 @@ jobs:
           fi
 
       - name: Collect dismissed suggestions
-        if: steps.changed-files.outputs.no_files == 'false'
+        if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false'
         id: dismissed
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
@@ -253,19 +270,19 @@ jobs:
           fi
 
       - name: Install Gemini CLI
-        if: steps.changed-files.outputs.no_files == 'false'
+        if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false'
         run: |
-          npm install --silent --no-audit --global @google/gemini-cli@latest
+          npm install --silent --no-audit --global @google/gemini-cli@~0.33
           gemini --version
 
       - name: Configure Gemini settings
-        if: steps.changed-files.outputs.no_files == 'false'
+        if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false'
         run: |
           mkdir -p .gemini
           echo '{"experimental": {"enableAgents": true}}' > .gemini/settings.json
 
       - name: Run Gemini style review
-        if: steps.changed-files.outputs.no_files == 'false'
+        if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false'
         id: gemini-review
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -313,7 +330,7 @@ jobs:
           fi
 
       - name: Fallback model on failure
-        if: steps.changed-files.outputs.no_files == 'false' && !cancelled()
+        if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false' && !cancelled()
         id: gemini-fallback
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -361,8 +378,26 @@ jobs:
             cat /tmp/gemini-fallback.log || true
           fi
 
+      - name: Dismiss previous Stylosaurus reviews
+        if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false' && !cancelled()
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
+          REPO: ${{ github.repository }}
+        run: |
+          # Dismiss any previous CHANGES_REQUESTED reviews from stylosaurus so only the latest review blocks.
+          gh api "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" --paginate \
+            | jq -r '.[] | select(.user.login == "stylosaurus[bot]" and .state == "CHANGES_REQUESTED") | .id' \
+            | while read -r REVIEW_ID; do
+                echo "Dismissing review ${REVIEW_ID}"
+                gh api --method PUT \
+                  "/repos/${REPO}/pulls/${PR_NUMBER}/reviews/${REVIEW_ID}/dismissals" \
+                  -f message="Superseded by newer review." \
+                  -f event="DISMISS" || true
+              done
+
       - name: Post PR review
-        if: steps.changed-files.outputs.no_files == 'false' && !cancelled()
+        if: steps.bot-check.outputs.skip != 'true' && steps.changed-files.outputs.no_files == 'false' && !cancelled()
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
@@ -505,18 +540,49 @@ jobs:
             gh api "/repos/${REPO}/pulls/${PR_NUMBER}/comments" \
               | jq '[.[] | select(.user.login == "stylosaurus[bot]")]' > /tmp/existing-comments.json
 
+            # Also fetch previous review bodies for body-finding dedup.
+            gh api "/repos/${REPO}/pulls/${PR_NUMBER}/reviews" --paginate \
+              | jq '[.[] | select(.user.login == "stylosaurus[bot]") | {body}]' > /tmp/existing-reviews.json
+
             cat > /tmp/dedup-findings.py << 'PYEOF'
           import sys, json, re, os
 
           existing_raw = json.load(open('/tmp/existing-comments.json'))
+          reviews_raw = json.load(open('/tmp/existing-reviews.json'))
           findings = json.load(sys.stdin)
 
-          # Extract replacement text from existing stylosaurus suggestion blocks.
-          existing = []
+          # --- Build dedup indexes ---
+
+          # 1. Exact replacement match: (file, replacement)
+          existing_replacements = set()
           for c in existing_raw:
               m = re.search(r'```suggestion\n(.+?)\n```', c.get('body', ''), re.DOTALL)
               if m:
-                  existing.append({'path': c['path'], 'replacement': m.group(1)})
+                  existing_replacements.add((c['path'], m.group(1)))
+
+          # 2. File + line match for inline comments (same line already commented on)
+          existing_file_lines = set()
+          for c in existing_raw:
+              path = c.get('path', '')
+              line = c.get('line') or c.get('original_line') or c.get('position')
+              if path and line:
+                  existing_file_lines.add((path, int(line)))
+
+          # 3. Original-text match: (file, original) -- catches replacement-text drift
+          existing_originals = set()
+
+          # Extract file + replacement + original pairs from previous review bodies.
+          # Body findings format: - `file` line N: ...
+          #   > `original text`
+          #   > Fix: `replacement`
+          body_repl_pattern = re.compile(r'- `([^`]+)` line \d+: .+\n\s*> `[^`]+`\n\s*> Fix: `([^`]+)`')
+          body_orig_pattern = re.compile(r'- `([^`]+)` line \d+: .+\n\s*> `([^`]+)`')
+          for r in reviews_raw:
+              body = r.get('body', '') or ''
+              for m in body_repl_pattern.finditer(body):
+                  existing_replacements.add((m.group(1), m.group(2)))
+              for m in body_orig_pattern.finditer(body):
+                  existing_originals.add((m.group(1), m.group(2)))
 
           # Load dismissed suggestions (resolved threads / human replies).
           dismissed = []
@@ -525,12 +591,27 @@ jobs:
 
           deduped = []
           for f in findings:
+              file_path = f['file']
+              replacement = f['replacement']
+              orig = f.get('original', '')
+              f_line = f.get('line', 0)
+
               # Drop if replacement was already suggested on the same file.
-              already = any(
-                  e['path'] == f['file'] and e['replacement'] == f['replacement']
-                  for e in existing
-              )
-              if already:
+              if (file_path, replacement) in existing_replacements:
+                  continue
+
+              # Drop if the same original text was already flagged on the same file
+              # (catches cases where Gemini generates different replacement wording).
+              if orig and (file_path, orig) in existing_originals:
+                  print('::notice::Skipping (original-text match): '
+                        + file_path + ':' + str(f_line), file=sys.stderr)
+                  continue
+
+              # Drop if the same file+line was already commented on by stylosaurus
+              # (weaker signal, but prevents re-flagging the exact same line).
+              if (file_path, f_line) in existing_file_lines:
+                  print('::notice::Skipping (file+line match): '
+                        + file_path + ':' + str(f_line), file=sys.stderr)
                   continue
 
               # Drop if the finding matches a dismissed suggestion on the same
@@ -538,10 +619,8 @@ jobs:
               # as primary match plus text as confirmation, so common phrases
               # like "Click Save" dismissed on one line don't suppress unrelated
               # findings on a different line.
-              orig = f.get('original', '')
-              f_line = f.get('line', 0)
               is_dismissed = any(
-                  d['path'] == f['file']
+                  d['path'] == file_path
                   and abs(f_line - d.get('line', 0)) <= 5
                   and orig and d.get('original', '')
                   and (orig in d['original'] or d['original'] in orig)
@@ -549,8 +628,7 @@ jobs:
               )
               if is_dismissed:
                   print('::notice::Skipping dismissed finding: '
-                        + f['file'] + ':' + str(f.get('line', '?')),
-                        file=sys.stderr)
+                        + file_path + ':' + str(f_line), file=sys.stderr)
                   continue
 
               deduped.append(f)
@@ -588,9 +666,7 @@ jobs:
           |----------|-------|
           | Blocker | ${BLOCKER_COUNT} |
           | Warning | ${WARNING_COUNT} |
-          | Suggestion | ${SUGGESTION_COUNT} |
-
-          **Tip:** Use **Add suggestion to batch** on each suggestion, then **Commit suggestions** once to apply them in a single commit."
+          | Suggestion | ${SUGGESTION_COUNT} |"
 
             if [ "${BLOCKER_COUNT}" -gt 0 ]; then
               BODY="${BODY}
@@ -626,6 +702,14 @@ jobs:
 
           #### Suggestions
           ${BODY_SUGGESTION_ITEMS}"
+            fi
+
+            # Add batch-apply tip only when there are inline suggestions.
+            if [ "${INLINE_COUNT}" -gt 0 ]; then
+              BODY="${BODY}
+
+          ---
+          **Tip:** Use **Add suggestion to batch** on each suggestion, then **Commit suggestions** once to apply them in a single commit."
             fi
 
             # Build inline comments only for findings whose lines are in the diff.
