@@ -28,16 +28,21 @@ If you don't see the Configure button, verify you have the necessary permissions
 ## Step 2: Open the capabilities section
 
 1. In the AI Employee configuration panel, scroll down to the **Capabilities** section.
-2. Click to expand the section if it's collapsed.
-3. You'll see a list of available built-in capabilities with toggle switches.
+2. You'll see a grid of capability cards showing the capabilities currently assigned to this AI Employee.
 
-## Step 3: Enable desired capabilities
+## Step 3: Add or remove capabilities
 
-For each capability you want to activate:
+To add a capability:
 
-1. **Review the capability description** to understand what it does.
-2. **Toggle the capability switch** to the "on" position.
-3. **Add specific instructions** (optional) to customize how the capability behaves.
+1. Click the **Add Capability** button at the bottom of the Capabilities section.
+2. Select the capability you want from the dialog that appears.
+3. **Review the capability description** to understand what it does.
+4. **Customize the capability's instructions** (optional) to tailor how it behaves for your business.
+
+To remove a capability:
+
+1. Click the **three-dot menu** (⋮) on the capability card.
+2. Select **Remove** from the menu.
 
 ### Common capability configurations
 
@@ -73,8 +78,8 @@ For each capability you want to activate:
 
 For more precise control over capability behavior:
 
-1. **Click the "Add Instructions" link** beneath each enabled capability.
-2. **Write clear, specific instructions** that define:
+1. **Click a capability card** to expand its configuration.
+2. **Write clear, specific instructions** in the prompt field that define:
    - When to use the capability
    - What information to collect
    - How to respond in different scenarios
@@ -140,7 +145,7 @@ After initial setup:
 ### Capabilities conflicting
 - **Review capability priorities**: Some capabilities may override others
 - **Clarify instructions**: Make trigger conditions more specific
-- **Disable conflicting capabilities**: Temporarily turn off capabilities that interfere
+- **Remove conflicting capabilities**: Temporarily remove capabilities that interfere
 
 ## Advanced configuration tips
 

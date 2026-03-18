@@ -79,7 +79,7 @@ A strong Knowledge Base is the foundation of effective AI Employee performance. 
 <details>
 <summary>What types of files can I upload to the Knowledge Base?</summary>
 
-You can upload common document formats such as PDF, DOCX, TXT, CSV, and PPTX files. Note that text-based will be most effective for the AI to read and process it effectively.
+You can upload files in the following formats: PDF, DOCX, TXT, CSV, PPTX, XLSX, XLS, HTML, Markdown (.md), JSON, JSONL, and image files (JPG, JPEG, PNG). The maximum file size is 50 MB. Text-based formats tend to be the most effective for the AI to read and process.
 
 </details>
 
@@ -97,7 +97,7 @@ If you find yourself updating your Knowledge Base very often, you may want to co
 <details>
 <summary>Can I restrict knowledge to specific AI Employees?</summary>
 
-Knowledge sources are generally shared across your AI workforce, but you can configure specific AI Employees to prioritize certain information through their instructions and prompts.
+Yes. When adding or editing a knowledge source, you can choose which AI Employees have access to it. This lets you assign specific knowledge to specific employees rather than sharing everything across your entire workforce.
 
 </details>
 
