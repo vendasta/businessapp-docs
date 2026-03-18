@@ -1,4 +1,5 @@
 ---
+description: Learn how to enable and configure built-in capabilities for your AI Employees to handle business tasks.
 title: How to configure AI capabilities
 sidebar_label: Configuring capabilities
 sidebar_position: 2
