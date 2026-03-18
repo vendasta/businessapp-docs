@@ -10,7 +10,7 @@ keywords: [AI Knowledge Base, AI data sources, business info for AI, AI training
 The Knowledge Base is a reference library your AI Employees can search when answering customer questions. When the AI determines a lookup would be helpful, it performs a semantic search and retrieves relevant content to inform its response.
 
 :::tip Knowledge base vs. capabilities
-**Knowledge Base** is for reference information the AI retrieves when relevant—like FAQs, pricing, and policies. If certain information must appear in **every** response or you need the AI to follow specific behavior patterns, add that to your AI Employee's instructions using [custom Capabilities](/business-app/ai/ai-capabilities/creating-custom-capabilities) instead.
+**Knowledge Base** is for reference information the AI retrieves when relevant, such as FAQs, pricing, and policies. If certain information must appear in **every** response or you need the AI to follow specific behavior patterns, add that to your AI Employee's instructions using [custom Capabilities](./ai-capabilities/creating-custom-capabilities.md) instead.
 :::
 
 ## What is your Knowledge Base?
