@@ -22,7 +22,7 @@ Your Knowledge Base is a collection of information sources that your AI Employee
 - **Custom Documents** - Uploaded files like FAQs, price lists, policies, or procedures
 - **Manual Knowledge Entries** - Custom text you've written specifically for your AI team
 
-## How AI Employees Use Knowledge
+## How AI employees use knowledge
 
 When a customer asks a question, your AI Employee:
 1. Understands what the customer is asking
