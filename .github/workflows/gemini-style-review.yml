@@ -87,9 +87,10 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           AUTHOR=$(gh api "/repos/${REPO}/commits/${HEAD_SHA}" --jq '.author.login // empty')
-          if [ "${AUTHOR}" = "stylosaurus[bot]" ]; then
+          MESSAGE=$(gh api "/repos/${REPO}/commits/${HEAD_SHA}" --jq '.commit.message // empty')
+          if [ "${AUTHOR}" = "stylosaurus[bot]" ] || printf '%s' "${MESSAGE}" | grep -qi '^Apply suggestions from code review'; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Skipping -- commit authored by stylosaurus[bot] (suggestion apply)."
+            echo "Skipping -- suggestion-apply commit detected (author=${AUTHOR})."
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
@@ -575,14 +576,14 @@ jobs:
           # Body findings format: - `file` line N: ...
           #   > `original text`
           #   > Fix: `replacement`
-          body_repl_pattern = re.compile(r'- `([^`]+)` line \d+: .+\n\s*> `[^`]+`\n\s*> Fix: `([^`]+)`')
-          body_orig_pattern = re.compile(r'- `([^`]+)` line \d+: .+\n\s*> `([^`]+)`')
+          body_repl_pattern = re.compile(r'- `([^`]+)` line (\d+): .+\n\s*> `[^`]+`\n\s*> Fix: `([^`]+)`')
+          body_orig_pattern = re.compile(r'- `([^`]+)` line (\d+): .+\n\s*> `([^`]+)`')
           for r in reviews_raw:
               body = r.get('body', '') or ''
               for m in body_repl_pattern.finditer(body):
-                  existing_replacements.add((m.group(1), m.group(2)))
+                  existing_replacements.add((m.group(1), m.group(3)))
               for m in body_orig_pattern.finditer(body):
-                  existing_originals.add((m.group(1), m.group(2)))
+                  existing_originals.add((m.group(1), int(m.group(2)), m.group(3)))
 
           # Load dismissed suggestions (resolved threads / human replies).
           dismissed = []
@@ -601,8 +602,14 @@ jobs:
                   continue
 
               # Drop if the same original text was already flagged on the same file
-              # (catches cases where Gemini generates different replacement wording).
-              if orig and (file_path, orig) in existing_originals:
+              # near the same line (catches Gemini generating different replacement wording).
+              # Uses line proximity (within 3 lines) so line-number drift from
+              # edits doesn't defeat dedup, while identical text on distant lines
+              # is still flagged independently.
+              if orig and any(
+                  fp == file_path and abs(ln - f_line) <= 3 and txt == orig
+                  for fp, ln, txt in existing_originals
+              ):
                   print('::notice::Skipping (original-text match): '
                         + file_path + ':' + str(f_line), file=sys.stderr)
                   continue
