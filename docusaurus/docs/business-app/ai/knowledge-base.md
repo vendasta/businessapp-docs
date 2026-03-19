@@ -9,8 +9,8 @@ keywords: [AI Knowledge Base, AI data sources, business info for AI, AI training
 
 The Knowledge Base is a reference library your AI Employees can search when answering customer questions. When the AI determines a lookup would be helpful, it performs a semantic search and retrieves relevant content to inform its response.
 
-:::tip Knowledge Base vs Capabilities
-**Knowledge Base** is for reference information the AI retrieves when relevant—like FAQs, pricing, and policies. If certain information must appear in **every** response or you need the AI to follow specific behavior patterns, add that to your AI Employee's instructions using [custom Capabilities](/business-app/ai/ai-capabilities/creating-custom-capabilities) instead.
+:::tip Knowledge base vs. capabilities
+**Knowledge Base** is for reference information the AI retrieves when relevant, such as FAQs, pricing, and policies. If certain information must appear in **every** response or you need the AI to follow specific behavior patterns, add that to your AI Employee's instructions using [custom Capabilities](./ai-capabilities/creating-custom-capabilities.md) instead.
 :::
 
 ## What is your Knowledge Base?
@@ -22,7 +22,7 @@ Your Knowledge Base is a collection of information sources that your AI Employee
 - **Custom Documents** - Uploaded files like FAQs, price lists, policies, or procedures
 - **Manual Knowledge Entries** - Custom text you've written specifically for your AI team
 
-## How AI Employees Use Knowledge
+## How AI employees use knowledge
 
 When a customer asks a question, your AI Employee:
 1. Understands what the customer is asking
@@ -31,38 +31,38 @@ When a customer asks a question, your AI Employee:
 4. Uses the retrieved information to provide an accurate, contextual answer
 5. Falls back to general assistance if no specific knowledge is found
 
-The AI doesn't read your entire Knowledge Base for every message—it retrieves the most relevant portions based on the customer's question. For general conversation or questions the AI can answer without specific business information, it may not perform a lookup at all.
+The AI doesn't read your entire Knowledge Base for every message. It retrieves the most relevant portions based on the customer's question. For general conversation or questions the AI can answer without specific business information, it may not perform a lookup at all.
 
-## Benefits of a Well-Maintained Knowledge Base
+## Benefits of a well-maintained Knowledge Base
 
 - **Consistent Answers** - All AI Employees give the same accurate information
 - **Reduced Training Time** - New AI Employees instantly have access to business knowledge
 - **Better Customer Experience** - Customers get precise, up-to-date answers
 - **Time Savings** - Less need for human intervention in routine inquiries
 
-## Best Practices
+## Best practices
 
-### Keep Information Current
+### Keep information current
 - Review and update your Knowledge Base regularly
 - Remove outdated pricing, policies, or service information
 - Add new products, services, or procedures as they become available
 
-### Organize by Topic
+### Organize by topic
 - Group related information together
 - Use clear, descriptive titles for documents
 - Create separate entries for different aspects of your business
 
-### Write for AI Understanding
+### Write for AI understanding
 - Use clear, direct language
 - Include specific details and examples
 - Avoid ambiguous terms or internal jargon
 
-### Test and Iterate
+### Test and iterate
 - Monitor how your AI Employees use the knowledge
 - Identify gaps where customers aren't getting good answers
 - Add missing information based on common questions
 
-## Getting Started
+## Getting started
 
 To build an effective Knowledge Base:
 
@@ -74,19 +74,19 @@ To build an effective Knowledge Base:
 
 A strong Knowledge Base is the foundation of effective AI Employee performance. The time you invest in creating comprehensive, accurate knowledge sources will pay dividends in better customer interactions and reduced manual support needs.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>What types of files can I upload to the Knowledge Base?</summary>
 
-You can upload common document formats such as PDF, DOCX, TXT, CSV, and PPTX files. Note that text-based will be most effective for the AI to read and process it effectively.
+You can upload files in the following formats: PDF, DOCX, TXT, CSV, PPTX, XLSX, XLS, HTML, Markdown (.md), JSON, JSONL, and image files (JPG, JPEG, PNG). The maximum file size is 50 MB. Text-based formats tend to be the most effective for the AI to read and process.
 
 </details>
 
 <details>
 <summary>How often should I update my Knowledge Base?</summary>
 
-You should update your Knowledge Base whenever your business information changes—such as new products, price adjustments, or updated policies. Regular reviews (e.g., monthly) help ensure accuracy.
+You should update your Knowledge Base whenever your business information changes, such as new products, price adjustments, or updated policies. Regular reviews (e.g., monthly) help ensure accuracy.
 
 :::note
 If you find yourself updating your Knowledge Base very often, you may want to consider giving your AI a Capability that connects to your systems and uses live info instead.
@@ -97,7 +97,7 @@ If you find yourself updating your Knowledge Base very often, you may want to co
 <details>
 <summary>Can I restrict knowledge to specific AI Employees?</summary>
 
-Knowledge sources are generally shared across your AI workforce, but you can configure specific AI Employees to prioritize certain information through their instructions and prompts.
+Yes. When adding or editing a knowledge source, you can choose which AI Employees have access to it. This lets you assign specific knowledge to specific employees rather than sharing everything across your entire workforce.
 
 </details>
 

@@ -1,6 +1,7 @@
 ---
-title: AI Chat Receptionist Overview 
-description: Set up your AI Chat Receptionist to capture leads and answer questions 24/7 across web chat, email, SMS, Facebook Messenger, and WhatsApp. Configure purpose, capabilities, and knowledge.
+title: AI Chat receptionist overview
+description: Set up your AI Chat Receptionist to capture leads and answer questions 24/7 across web chat, email, SMS, Facebook, Instagram, and WhatsApp. Configure role, capabilities, and knowledge.
+sidebar_label: AI Chat Receptionist
 sidebar_position: 2
 keywords: [AI chat receptionist, website chatbot, email bot, SMS chatbot, Facebook Messenger bot, WhatsApp business bot, live chat AI, lead capture bot, 24/7 chat support, AI customer service, multi-channel chat, conversational AI, automated messaging, auto-reply email]
 tags: [ai, chat, lead capture, automation, customer service, sms, social media]
@@ -49,7 +50,7 @@ The AI Chat Receptionist helps you capture leads and respond to website visitors
 
 The AI Chat Receptionist ensures that your business never misses an opportunity by engaging website visitors instantly, around the clock. By capturing leads and answering common questions 24/7, it turns casual browsers into qualified prospects, even when your team is offline.
 
-Beyond capturing leads and answering questions around the clock, the Chat Receptionist reduces friction and drop-off by initiating conversations with context-driven prompts instead of overwhelming forms, handles ambiguity and complex inquiries by understanding free-form requests and adapting in real time without forcing users into rigid menu paths, and fosters trust through natural, empathetic interactions and personalized greetings. It also scales effortlessly with your business as it adapts to new offerings and workflows without rebuilding extensive decision trees, while delivering timely, personalized responses that guide visitors down the sales funnel and drive higher customer satisfaction and conversion rates.
+It also handles multiple visitors at once, delivering timely responses that guide them through your site's information.
  
 ## Set up the AI Chat Receptionist
 
@@ -62,21 +63,21 @@ Go to <AISparkleIcon /> `AI > AI workforce` and then click `Configure` on the Ch
 - **Name and Image**  
 Give your AI a friendly, professional name and photo. The AI Receptionist knows their name and the photo will help you distinguish between other AI Employees in your app.
 
-- **Purpose**  
-The Purpose prompt sets the tone and behavior of your AI Chat Receptionist. Include instructions about your business's voice, how the AI should greet visitors, and any important policies or information it should share. This is where you define what makes your AI Chat Receptionist uniquely suited to your business.
+- **Role**
+The Role prompt sets the tone and behavior of your AI Chat Receptionist. Include instructions about your business's voice, how the AI should greet visitors, and any important policies or information it should share. This is where you define what makes your AI Chat Receptionist uniquely suited to your business.
 
-- **Communication Channels**
-Your AI Chat Receptionist is assigned to the **Web Chat** channel by default. This channel is always active and cannot be disabled. You can also assign your AI Receptionist to additional channels like **Email** and **SMS** to automatically respond to inbound customer messages across all your communication channels.
+- **Triggers**
+Your AI Chat Receptionist is assigned to the **Web Chat** trigger by default. This trigger is always active and cannot be disabled. You can also assign your AI Receptionist to additional triggers like **Email**, **SMS**, **Facebook**, **Instagram**, and **WhatsApp** to automatically respond to inbound customer messages across all your communication channels.
 
 :::note
 The Web Chat widget isn't automatically added to your website! You'll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](/business-app/conversations/conversations-ai-web-chat-overview)
 
-To enable email auto-response, simply enable the Email channel in your AI Chat Receptionist settings. Learn more about [setting up Conversations for Emails](/business-app/conversations/conversations-send-receive-emails).
+To enable email auto-response, simply enable the Email trigger in your AI Chat Receptionist settings. Learn more about [setting up Conversations for Emails](/business-app/conversations/conversations-send-receive-emails).
 :::
 
-#### Example purpose prompts by business type {#example-purpose-by-business-type}
+#### Example Role prompts by business type {#example-purpose-by-business-type}
 
-Use the examples below as starting points for your **Purpose** prompt. Pick the tab that best matches your business type (or choose **Generic**), copy the prompt into your Purpose field, and tailor the voice, services, and policies to your brand. Keep it specific and concise—the AI will follow these directions in every conversation.
+Use the examples below as starting points for your **Role** prompt. Pick the tab that best matches your business type (or choose **Generic**), copy the prompt into your Role field, and tailor the voice, services, and policies to your brand. Keep it specific and concise. The AI will follow these directions in every conversation.
 
 <Tabs groupId="business-type" queryString="business-type">
   <TabItem value="home-services" label="Home Services" default>
@@ -225,11 +226,11 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
   Connect your calendar to let the AI help customers schedule meetings. It will offer available time slots and collect all necessary booking details automatically. 
 
 - **Custom Capabilities**  
-  Expand your AI Chat Receptionist's skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../../../ai-capabilities/creating-custom-capabilities.md.md) in depth.
+  Expand your AI Chat Receptionist's skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../../../ai-capabilities/creating-custom-capabilities.md) in depth.
 
 #### Example additional instructions capabilities by business type {#example-custom-capabilities-and-additional-instructions-by-business-type}
 
- The examples below show how you can use simple text instructions in Capabilities to help your AI Chat Receptionist understand how to handle different customer types. These complement your Purpose prompt by focusing on operational requirements, qualification data, routing rules, and response formats.
+ The examples below show how you can use simple text instructions in Capabilities to help your AI Chat Receptionist understand how to handle different customer types. These complement your Role prompt by focusing on operational requirements, qualification data, routing rules, and response formats.
 
 
 
@@ -501,7 +502,7 @@ Bot: Provide Careers page (no booking link).
 :::info AI Receptionist Taking Actions 
  These instructions will change how your AI Receptionist communicates with customers but it will *not* change the actions it can take with Business App or other systems. 
  
- Getting your AI Receptionist to take actions requires adding the appropriate Tool to your Custom Capabilities. For more information on Tools, see [Creating Custom Capabilities](../../../ai-capabilities/creating-custom-capabilities.md.md).
+ Getting your AI Receptionist to take actions requires adding the appropriate Tool to your Custom Capabilities. For more information on Tools, see [Creating Custom Capabilities](../../../ai-capabilities/creating-custom-capabilities.md).
  :::
 
 ### Step 3: Add knowledge to the AI Chat Receptionist
@@ -514,7 +515,7 @@ To respond accurately to general inquiries, your AI Chat Receptionist needs cont
 
 ## Preview your AI Chat Receptionist in action {#test-the-ai-chat-receptionists-responses}
 
-Once your AI Chat Receptionist is set up, it's important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. **For Partners**: This testing environment is also perfect for demonstrating the AI Chat Receptionist's capabilities to prospective clients during sales presentations.
+Once your AI Chat Receptionist is set up, it's important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. This testing environment is also perfect for seeing how the AI Chat Receptionist behaves in a live setting.
 
 To test your AI Chat Receptionist before going live (or to demo it to clients):
 
@@ -567,7 +568,7 @@ When testing your AI Chat Receptionist, simulate real customer interactions by a
 
 ### Monitor and improve the AI Chat Receptionist
 
-Regularly review the `Conversations` and `Anonymous Visitors` tabs in Conversations to make sure your Chat Receptionist is interacting with visitors as you expected. 
+Regularly review the `Conversations` and `Anonymous Visitors` tabs in `Conversations` to make sure your Chat Receptionist is interacting with visitors as you expected.
 
 :::note
 Conversations are placed in the `Anonymous Visitors` tab when the AI Chat Receptionist was unable to identify their contact information during the conversation.
@@ -581,16 +582,16 @@ Responses from the AI Chat Receptionist include a clickable `Explanation` that e
 ## Frequently asked questions about the AI Chat Receptionist
 
 <details>
-<summary>What should I include in the Purpose prompt?</summary>
+<summary>What should I include in the Role prompt?</summary>
 
-Your Purpose prompt sets the tone and behavior of your AI Chat Receptionist. Include instructions about your business’s voice, how the AI should greet visitors, and any important policies or information it should share.
+Your Role prompt sets the tone and behavior of your AI Chat Receptionist. Include instructions about your business’s voice, how the AI should greet visitors, and any important policies or information it should share.
 
 </details>
 
 <details>
 <summary>How often should I update my AI Chat Receptionist’s knowledge?</summary>
 
-Regularly review and update your AI’s Purpose prompt and knowledge sources to ensure the responses stay accurate and aligned with your latest business offerings and policies. Once a month is a good starting point for many businesses, but your business might need to do it more or less often. 
+Regularly review and update your AI’s Role prompt and knowledge sources to ensure the responses stay accurate and aligned with your latest business offerings and policies. Once a month is a good starting point for many businesses, but your business might need to do it more or less often. 
 
 </details>
 
@@ -606,10 +607,10 @@ The AI Chat Receptionist is **non-deterministic**, which means it may provide di
 
 You know your business best! To improve your AI’s accuracy, take a moment to write down:
 
-- The services you offer—and those you don’t  
+- The services you offer, and those you don’t
 - The most common questions your customers ask  
 - The key information the AI should always collect from visitors
 
-Use this info to write clear Purpose prompts and add any relevant content to your AI’s knowledge base that might be missing.
+Use this info to write clear Role prompts and add any relevant content to your AI’s knowledge base that might be missing.
 
 </details>
