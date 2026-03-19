@@ -67,12 +67,16 @@ If your automation needs more than one piece of data from the external app, clic
 
 **Step 7:** In Zapier, create a new Zap and choose the app and event that will start your workflow. For example, select **Google Forms** as the app and `New Form Response` as the trigger event.
 
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier-google form.png').default} alt="Zapier Zap editor showing Google Forms selected as the trigger app with New Form Response as the trigger event" width="75%" />
+</div>
+
 You can use any trigger available in Zapier: the steps that follow are the same regardless of which trigger app you choose.
 
 **Step 8:** After setting up the trigger, search for and select **Business App** as the action app.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-  <img src={require('./img/zapier-external-to-businessApp-automation.png').default} alt="Zapier Zap editor showing QuickBooks Online as the trigger and Business App as the action step" width="50%" />
+  <img src={require('./img/zapier-external-to-businessApp-automation.png').default} alt="Zapier Zap editor showing Google Forms as the trigger and Business App as the action step" width="50%" />
 </div>
 
 **Step 9:** Select `Run Automation` as the action. This tells Zapier to fire one of your Business App automations when the trigger event occurs. Click `Continue` when ready.
@@ -95,17 +99,23 @@ You only need to do this once. Future Zaps using Business App will use the same 
   <img src={require('./img/zapier-set-businessApp-automation-id.png').default} alt="Zapier Automation ID field showing a searchable list of Business App automations to select from" width="75%" />
 </div>
 
-### Part 3: Test and publish
-
-**Step 12:** Before publishing the Zap, use Zapier's test feature to confirm everything is working. This can catch missing fields or incorrect data before the Zap goes live.
+**Step 12:** Once the automation is selected, the payload data fields you defined in Part 1 appear below. Map each field to the corresponding value from your trigger app — in this example, map `company-name` to the Google Form question that collects the company name. This tells Zapier exactly which piece of incoming data to pass to Business App.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-  <img src={require('./img/zapier_testing.png').default} alt="Testing the Zapier step before publishing" width="60%" />
+  <img src={require('./img/zapier_sending-key-values.png').default} alt="Zapier action configuration showing the company-name payload field mapped to the Google Form question asking what company the respondent is with" width="75%" />
+</div>
+
+### Part 3: Test and publish
+
+**Step 13:** Before publishing the Zap, use Zapier's test feature with a sample Google Form response to confirm everything is working. A **Run Automation Successful** message confirms the automation ran correctly in Business App.
+
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/zapier_run-automation-successful.png').default} alt="Zapier test page showing a Run Automation Successful message confirming the Business App automation ran correctly" width="75%" />
 </div>
 
 A `Run Automation Successful` message confirms the Zap is ready to publish.
 
-**Step 13:** Name your Zap and turn it on.
+**Step 13:** Name your Zap and publish it.
 
 ## Frequently Asked Questions
 
