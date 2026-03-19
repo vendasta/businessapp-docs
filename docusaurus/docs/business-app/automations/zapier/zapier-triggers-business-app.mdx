@@ -15,7 +15,7 @@ When an event happens in another app, like a new payment in QuickBooks or a new 
 - A Business App automation using the **Triggered via Zapier** trigger
 - The automation must be turned on
 
-## Examples
+## Example
 
 **Google Form event registration → send a confirmation email**
 
@@ -31,7 +31,7 @@ The steps below use Google Forms as the example trigger app. Your external app (
 
 Your automation must use the `Triggered via Zapier` trigger so Zapier knows which automation to fire.
 
-**Step 1:** Go to **Business App** > **Automations** and create a new automation or open an existing one.
+**Step 1:** Go to `Business App` > `Automations` and create a new automation or open an existing one.
 
 **Step 2:** Set the trigger to `Triggered via Zapier`, found under `Advanced` in the trigger picker.
 
@@ -45,9 +45,9 @@ Your automation must use the `Triggered via Zapier` trigger so Zapier knows whic
   <img src={require('./img/businessApp-AutomationID.png').default} alt="Edit trigger side panel in Business App showing the Account ID and Automation ID fields" width="75%" />
 </div>
 
-**Step 4:** Define your **Payload data**. This is the data your external app will send to Business App when the automation runs. For each piece of data, enter a **Key name** (a label you choose — make it descriptive, like `company-name`) and select its **Type**.
+**Step 4:** Define your **Payload data**. This is the data your external app will send to Business App when the automation runs. For each piece of data, enter a **Key name** (make it descriptive, like `company-name`) and select its **Type**.
 
-The Type should reflect how that data is used in Business App. In this example, the Google Form collects a company name, and in Business App a company is identified by its **Company Id** — so set the Type to `Company Id`.
+The Type should reflect how that data is used in Business App. In this example, the Google Form collects a company name, and in Business App a company is identified by its **Company Id**, so set the Type to `Company Id`.
 
 If your automation needs more than one piece of data from the external app, click <img src={require('./img/businessApp-add-data-value.png').default} alt="Add data value button" style={{ verticalAlign: 'middle', display: 'inline', width: '15%' }} /> to add additional fields.
 
@@ -55,7 +55,7 @@ If your automation needs more than one piece of data from the external app, clic
   <img src={require('./img/BusinessApp-payload data.png').default} alt="Payload data section in the Business App trigger editor showing a company-name key with Company Id selected as the type" width="75%" />
 </div>
 
-**Step 5:** Add the steps you want the automation to run. Because the payload only provides a company name, you can't send an email directly — you first need to identify who to email. Add a `Get contact from company` step to retrieve a contact at that company, then add a `Send a plain text email via Conversations` step to send them the confirmation.
+**Step 5:** Add the steps you want the automation to run. Because the payload only provides a company name, you can't send an email directly. You first need to identify who to email. Add a `Get contact from company` step to retrieve a contact at that company, then add a `Send a plain text email via Conversations` step to send them the confirmation.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/businessApp-steps-sfter-zapier-trigger.png').default} alt="Business App automation showing a Get contact from company step followed by a Send a plain text email via Conversations step" width="60%" />
@@ -99,7 +99,7 @@ You only need to do this once. Future Zaps using Business App will use the same 
   <img src={require('./img/zapier-set-businessApp-automation-id.png').default} alt="Zapier Automation ID field showing a searchable list of Business App automations to select from" width="75%" />
 </div>
 
-**Step 12:** Once the automation is selected, the payload data fields you defined in Part 1 appear below. Map each field to the corresponding value from your trigger app — in this example, map `company-name` to the Google Form question that collects the company name. This tells Zapier exactly which piece of incoming data to pass to Business App.
+**Step 12:** Once the automation is selected, the payload data fields you defined in Part 1 appear below. Map each field to the corresponding value from your trigger app. In this example, map `company-name` to the Google Form question that collects the company name. This tells Zapier exactly which piece of incoming data to pass to Business App.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier_sending-key-values.png').default} alt="Zapier action configuration showing the company-name payload field mapped to the Google Form question asking what company the respondent is with" width="75%" />
@@ -113,9 +113,7 @@ You only need to do this once. Future Zaps using Business App will use the same 
   <img src={require('./img/zapier_run-automation-successful.png').default} alt="Zapier test page showing a Run Automation Successful message confirming the Business App automation ran correctly" width="75%" />
 </div>
 
-A `Run Automation Successful` message confirms the Zap is ready to publish.
-
-**Step 13:** Name your Zap and publish it.
+**Step 14:** Name your Zap and publish it.
 
 ## Frequently Asked Questions
 
@@ -137,11 +135,6 @@ Yes. The trigger that fires your Business App automation can come from any app a
 If the automation is off, incoming Zapier triggers will be ignored. The automation must be active for it to run.
 </details>
 
-<details>
-<summary>Can I pass data from the trigger app into my automation?</summary>
-
-Yes. When Zapier fires the automation, it can include data from the trigger event. How that data is used depends on how your automation steps are configured. Check the Zapier documentation for details on mapping fields between steps.
-</details>
 
 <details>
 <summary>Do I need to sign in to Business App every time I create a new Zap?</summary>
