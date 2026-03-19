@@ -124,6 +124,14 @@ Your registration information must exactly match your IRS records. Common mismat
 - Address doesn't match IRS records
 - EIN belongs to a different business entity
 
+### Newly issued EINs
+
+If your business has a new EIN, it can take **30 to 90 days** for that information to appear in the databases used for verification. The brand registration process relies on automated checks against these databases, and if your EIN and legal business name are not yet found together in the expected source, the system rejects the registration, even if the information you provided is correct.
+
+Check the date on your IRS CP 575 EIN Confirmation Letter. If fewer than 90 days have passed, wait and resubmit your registration after the recommended period.
+
+While you wait, you can use all other product features normally, but SMS messaging to US numbers is not available until your registration is approved.
+
 ## FAQs
 
 <details>
@@ -151,6 +159,13 @@ No. Once you complete A2P registration, it applies to all SMS-enabled products i
 <summary>What if my registration is rejected?</summary>
 
 Review the [rejection reasons](#why-registrations-are-rejected) above and make the necessary updates to your website or business information. Then resubmit your registration.
+
+</details>
+
+<details>
+<summary>My EIN is correct but my brand registration keeps getting rejected. Why?</summary>
+
+If your business has a new EIN, the verification databases may not have your information yet. It can take 30 to 90 days after your EIN is issued for the data to propagate. Check the date on your IRS CP 575 EIN Confirmation Letter and wait the recommended period before resubmitting.
 
 </details>
 
