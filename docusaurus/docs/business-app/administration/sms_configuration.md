@@ -165,7 +165,7 @@ Review the [rejection reasons](#why-registrations-are-rejected) above and make t
 <details>
 <summary>My EIN is correct but my brand registration keeps getting rejected. Why?</summary>
 
-If your business recently received a new EIN, the verification databases may not have your information yet. It can take 30 to 90 days after your EIN is issued for the data to propagate. Check the date on your IRS CP 575 EIN Confirmation Letter and wait the recommended period before resubmitting.
+If your business has a new EIN, the verification databases may not have your information yet. It can take 30 to 90 days after your EIN is issued for the data to propagate. Check the date on your IRS CP 575 EIN Confirmation Letter and wait the recommended period before resubmitting.
 
 </details>
 
