@@ -66,7 +66,7 @@ The header displays:
 
 The page contains four tabs:
 - **Summary**
-- **All Insights**
+- **Sales Coaching**
 - **Guests**
 - **Transcript**
 
@@ -98,9 +98,9 @@ A breakdown of major discussion points. Topics often include approximate time ma
 
 Use the Summary tab to quickly recall goals and next steps without reviewing the full video.
 
-## Exploring the AI Insights tab
+## Exploring the Sales Coaching tab
 
-The **AI Insights** tab contains detailed analytics generated from the meeting transcript.
+The **Sales Coaching** tab contains detailed analytics generated from the meeting transcript.
 
 ### Conversation metrics
 
@@ -139,7 +139,7 @@ Based on the clarity report, this section suggests ways to improve future conver
 
 ### Scoring frameworks
 
-The All Insights tab may include sales-qualification frameworks, such as:
+The Sales Coaching tab may include sales-qualification frameworks, such as:
 - **RAVEN** (rapport, assessment, value delivery, engagement)
 - **BANT** (budget, authority, need, timeline)
 - **MEDDPICC** (metrics, economic buyer, decision criteria, decision process, paper process, pain identification, champion, competition)
