@@ -126,7 +126,7 @@ Your registration information must exactly match your IRS records. Common mismat
 
 ### Newly issued EINs
 
-If your business recently received a new EIN, it can take **30 to 90 days** for that information to appear in the databases used for verification. The brand registration process relies on automated checks against these databases, and if your EIN and legal business name are not yet found together in the expected source, the system rejects the registration — even if the information you provided is correct.
+If your business has a new EIN, it can take **30 to 90 days** for that information to appear in the databases used for verification. The brand registration process relies on automated checks against these databases, and if your EIN and legal business name are not yet found together in the expected source, the system rejects the registration, even if the information you provided is correct.
 
 Check the date on your IRS CP 575 EIN Confirmation Letter. If fewer than 90 days have passed, wait and resubmit your registration after the recommended period.
 
