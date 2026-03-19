@@ -11,22 +11,25 @@ When an event happens in another app, like a new payment in QuickBooks or a new 
 ## Prerequisites
 
 - An active [Zapier](https://zapier.com/) account
+- An account with the external app you want to use as your trigger (for example, QuickBooks Online, Google Forms, or any other Zapier-supported app)
 - A Business App automation using the **Triggered via Zapier** trigger
 - The automation must be turned on
 
-## Example
+## Examples
 
-**New QuickBooks payment → send a review request**
+**Google Form event registration → send a confirmation email**
 
-When a customer pays an invoice in QuickBooks Online, Zapier fires an automation in Business App that sends the customer a review request. No manual follow-up needed.
+When someone fills out your event registration form in Google Forms and provides their company name, Zapier passes that data to a Business App automation. The automation looks up a contact at that company and sends them a confirmation email letting them know their company is registered for the event.
 
 ## How to set up
 
 There are three parts: setting up the automation in Business App first, then configuring the Zap in Zapier, then testing and publishing.
 
+The steps below use Google Forms as the example trigger app. Your external app (Google Form, QuickBooks, etc.) should already be set up and collecting data before you begin.
+
 ### Part 1: Set up the automation in Business App
 
-Your automation must use the `Triggered via Zapier` trigger so Zapier knows which automation to fire. You'll need its ID in Part 2.
+Your automation must use the `Triggered via Zapier` trigger so Zapier knows which automation to fire.
 
 **Step 1:** Go to **Business App** > **Automations** and create a new automation or open an existing one.
 
@@ -36,29 +39,49 @@ Your automation must use the `Triggered via Zapier` trigger so Zapier knows whic
   <img src={require('./img/businessApp-triggered-via-zap.png').default} alt="Triggered via Zapier option under the Advanced section in the Business App trigger picker" width="75%" />
 </div>
 
-**Step 3:** Add the steps you want to run, for example `Send a review request` to a contact.
+**Step 3:** In the trigger's side panel, note your **Account ID** and **Automation ID**. You'll need both when setting up the Zap in Zapier.
 
-**Step 4:** Turn the automation on using the toggle at the top right.
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/businessApp-AutomationID.png').default} alt="Edit trigger side panel in Business App showing the Account ID and Automation ID fields" width="75%" />
+</div>
+
+**Step 4:** Define your **Payload data**. This is the data your external app will send to Business App when the automation runs. For each piece of data, enter a **Key name** (a label you choose — make it descriptive, like `company-name`) and select its **Type**.
+
+The Type should reflect how that data is used in Business App. In this example, the Google Form collects a company name, and in Business App a company is identified by its **Company Id** — so set the Type to `Company Id`.
+
+If your automation needs more than one piece of data from the external app, click <img src={require('./img/businessApp-add-data-value.png').default} alt="Add data value button" style={{ verticalAlign: 'middle', display: 'inline', width: '15%' }} /> to add additional fields.
+
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/BusinessApp-payload data.png').default} alt="Payload data section in the Business App trigger editor showing a company-name key with Company Id selected as the type" width="75%" />
+</div>
+
+**Step 5:** Add the steps you want the automation to run. Because the payload only provides a company name, you can't send an email directly — you first need to identify who to email. Add a `Get contact from company` step to retrieve a contact at that company, then add a `Send a plain text email via Conversations` step to send them the confirmation.
+
+<div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+  <img src={require('./img/businessApp-steps-sfter-zapier-trigger.png').default} alt="Business App automation showing a Get contact from company step followed by a Send a plain text email via Conversations step" width="60%" />
+</div>
+
+**Step 6:** Turn the automation on using the toggle at the top right.
 
 ### Part 2: Configure the Zap in Zapier
 
-**Step 5:** In Zapier, create a new Zap and choose the app and event that will start your workflow. For example, select **QuickBooks Online** as the app and `New Payment` as the trigger event.
+**Step 7:** In Zapier, create a new Zap and choose the app and event that will start your workflow. For example, select **Google Forms** as the app and `New Form Response` as the trigger event.
 
 You can use any trigger available in Zapier: the steps that follow are the same regardless of which trigger app you choose.
 
-**Step 6:** After setting up the trigger, search for and select **Business App** as the action app.
+**Step 8:** After setting up the trigger, search for and select **Business App** as the action app.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier-external-to-businessApp-automation.png').default} alt="Zapier Zap editor showing QuickBooks Online as the trigger and Business App as the action step" width="50%" />
 </div>
 
-**Step 7:** Select `Run Automation` as the action. This tells Zapier to fire one of your Business App automations when the trigger event occurs. Click `Continue` when ready.
+**Step 9:** Select `Run Automation` as the action. This tells Zapier to fire one of your Business App automations when the trigger event occurs. Click `Continue` when ready.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier-run-automation-event.png').default} alt="Zapier action setup showing Business App selected with Run Automation as the action event" width="75%" />
 </div>
 
-**Step 8:** In the `Account` field, click `Select` to connect your Business App account. You'll be redirected to a login page where you'll enter your Account ID and grant the necessary permissions. After that, you'll be returned to Zapier automatically.
+**Step 10:** In the `Account` field, click `Select` to connect your Business App account. You'll be redirected to a login page where you'll enter your Account ID and grant the necessary permissions. After that, you'll be returned to Zapier automatically.
 
 You only need to do this once. Future Zaps using Business App will use the same connected account.
 
@@ -66,7 +89,7 @@ You only need to do this once. Future Zaps using Business App will use the same 
   <img src={require('./img/zapier_allow_access.png').default} alt="Allow access screen for Business App permissions in Zapier" width="60%" />
 </div>
 
-**Step 9:** In the `Automation ID` field, search for and select the automation you set up in Part 1. The dropdown lists your available automations by name.
+**Step 11:** In the `Automation ID` field, search for and select the automation you set up in Part 1. The dropdown lists your available automations by name.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier-set-businessApp-automation-id.png').default} alt="Zapier Automation ID field showing a searchable list of Business App automations to select from" width="75%" />
@@ -74,7 +97,7 @@ You only need to do this once. Future Zaps using Business App will use the same 
 
 ### Part 3: Test and publish
 
-**Step 10:** Before publishing the Zap, use Zapier's test feature to confirm everything is working. This can catch missing fields or incorrect data before the Zap goes live.
+**Step 12:** Before publishing the Zap, use Zapier's test feature to confirm everything is working. This can catch missing fields or incorrect data before the Zap goes live.
 
 <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
   <img src={require('./img/zapier_testing.png').default} alt="Testing the Zapier step before publishing" width="60%" />
@@ -82,7 +105,7 @@ You only need to do this once. Future Zaps using Business App will use the same 
 
 A `Run Automation Successful` message confirms the Zap is ready to publish.
 
-**Step 11:** Name your Zap and turn it on.
+**Step 13:** Name your Zap and turn it on.
 
 ## Frequently Asked Questions
 
