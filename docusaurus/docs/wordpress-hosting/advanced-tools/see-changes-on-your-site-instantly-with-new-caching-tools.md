@@ -25,4 +25,4 @@ This forces your browser to pull the latest version of the page without waiting 
 
 To ensure website visitors always see the latest version of your files, click the **Flush Cache** button on the product **Overview page** after making changes. This will clear the cache for your site instantly.
 
-![screenshot-www.websitepro.hosting-2021.11.15-12_30_22.jpg](img/4406957286807-8972de13c8.jpg)
+![Flush Cache button on the WordPress Hosting Overview page](img/bypass-caching/flush-cache-button.jpg)

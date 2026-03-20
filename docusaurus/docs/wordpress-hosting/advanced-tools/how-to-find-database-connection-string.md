@@ -20,7 +20,7 @@ Although you can't connect to the database remotely, you can display your site's
 
 ### Step 1: Connect via SFTP
 
-1. Connect to your WordPress Hosting Pro file system using an SFTP client (like FileZilla, Cyberduck, or WinSCP).
+1. Connect to your WordPress Hosting file system using an SFTP client (like FileZilla, Cyberduck, or WinSCP).
 2. Navigate to your site's root directory (usually the `public_html` or `www` folder).
 
 ### Step 2: Create a temporary PHP file
@@ -57,8 +57,8 @@ This file exposes sensitive database credentials. You must delete it immediately
 
 ## Important notes
 
-* **Remote connections not supported:** WordPress Hosting Pro databases are isolated in a secure network and cannot be accessed remotely using tools like MySQL Workbench or other database clients.
-* **Use phpMyAdmin instead:** For database management, use phpMyAdmin through the WordPress Hosting Pro dashboard under **Advanced Tools**.
+* **Remote connections not supported:** WordPress Hosting databases are isolated in a secure network and cannot be accessed remotely using tools like MySQL Workbench or other database clients.
+* **Use phpMyAdmin instead:** For database management, use phpMyAdmin through the WordPress Hosting dashboard under **Advanced Tools**.
 * **Keep credentials secure:** Never share your database credentials publicly or commit them to version control systems.
 
 ## Frequently Asked Questions (FAQs)
@@ -66,7 +66,7 @@ This file exposes sensitive database credentials. You must delete it immediately
 <details>
 <summary>Can I use these credentials to connect to the database remotely?</summary>
 
-No. WordPress Hosting Pro databases are isolated in a secure network and cannot be accessed remotely. Even with the connection credentials, remote database tools like MySQL Workbench will not work. Use phpMyAdmin through the WordPress Hosting Pro dashboard under **Advanced Tools** for database management.
+No. WordPress Hosting databases are isolated in a secure network and cannot be accessed remotely. Even with the connection credentials, remote database tools like MySQL Workbench will not work. Use phpMyAdmin through the WordPress Hosting dashboard under **Advanced Tools** for database management.
 
 </details>
 
@@ -87,6 +87,6 @@ The database credentials are stored in your WordPress configuration file (`wp-co
 <details>
 <summary>Can I use these credentials with phpMyAdmin?</summary>
 
-You don't need these credentials to use phpMyAdmin. phpMyAdmin is accessed directly through the WordPress Hosting Pro dashboard under **Advanced Tools** and automatically connects to your database using the correct credentials. See [What is phpMyAdmin?](./what-is-phpmyadmin.md) for more information.
+You don't need these credentials to use phpMyAdmin. phpMyAdmin is accessed directly through the WordPress Hosting dashboard under **Advanced Tools** and automatically connects to your database using the correct credentials. See [What is phpMyAdmin?](./what-is-phpmyadmin.md) for more information.
 
 </details>
