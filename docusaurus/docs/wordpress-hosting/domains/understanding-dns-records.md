@@ -14,9 +14,9 @@ The **Domain Name System (DNS)** is a collection of standards and infrastructure
 
 Think of it like giving a taxi driver the name of a place, such as "the mall," instead of the exact address; the driver can look up the location and find the directions.
 
-DNS records serve as "listings" for domain addresses. They're configured on **NameServers**, which respond to queries about domains, such as "Where can I find mybusiness.com?" WordPress Hosting Pro works with three main types of DNS records:
+DNS records serve as "listings" for domain addresses. They're configured on **NameServers**, which respond to queries about domains, such as "Where can I find mybusiness.com?" WordPress Hosting works with three main types of DNS records:
 
-## Types of DNS Records Used by WordPress Hosting Pro
+## Types of DNS Records Used by WordPress Hosting
 
 ### 1. A Records
 
@@ -45,11 +45,11 @@ If there is **no CAA Record** (or if it's empty), any Certificate Authority can 
 
 ### When should I use an A Record?
 
-Use an **A Record** when connecting your **primary/root domain**, such as `mybusiness.com`, directly to your WordPress Hosting Pro site.
+Use an **A Record** when connecting your **primary/root domain**, such as `mybusiness.com`, directly to your WordPress Hosting site.
 
 ### When should I use a CNAME Record?
 
-Use a **CNAME Record** any time you want a subdomain (like `www` or `blog`) to point to your WordPress Hosting Pro site.
+Use a **CNAME Record** any time you want a subdomain (like `www` or `blog`) to point to your WordPress Hosting site.
 
 Examples:
 * `www.business.com`
@@ -59,7 +59,7 @@ For the "Host" field in the record, only enter the subdomain part (e.g., `www` o
 
 ### Do I need an A Record or CNAME or both?
 
-To connect a domain to WordPress Hosting Pro, you'll need either an **A Record** or a **CNAME Record**, depending on what part of the domain you're connecting:
+To connect a domain to WordPress Hosting, you'll need either an **A Record** or a **CNAME Record**, depending on what part of the domain you're connecting:
 
 * Use an **A Record** to link the **root domain** (e.g., `mybusiness.com`).
 * Use a **CNAME Record** to link a **subdomain** (e.g., `www.mybusiness.com`).
@@ -68,7 +68,7 @@ You must use at least one of these. It's common to use both: an A Record for the
 
 ## How to Configure DNS Records
 
-To connect a domain to WordPress Hosting Pro:
+To connect a domain to WordPress Hosting:
 
 **A Record**
 * Host: `@`
@@ -80,7 +80,7 @@ To connect a domain to WordPress Hosting Pro:
 
 Additionally, be aware of **CAA Records**:
 * If no CAA Record exists, any certificate authority (CA) can issue an SSL certificate.
-* If using a CAA Record, you **must authorize** `letsencrypt.org` (used by WordPress Hosting Pro) to issue certificates.
+* If using a CAA Record, you **must authorize** `letsencrypt.org` (used by WordPress Hosting) to issue certificates.
 
 For a complete guide on setting up these records and connecting your domain, see [Domain Setup](connect-a-custom-domain.md).
 
@@ -102,9 +102,9 @@ Propagation can still take up to 24 hours depending on the ISP.
 
 ## IPv6 and AAAA Records
 
-### Does WordPress Hosting Pro support AAAA Records or IPv6?
+### Does WordPress Hosting support AAAA Records or IPv6?
 
-Currently, **AAAA Records (IPv6) are not supported.** WordPress Hosting Pro requires only an **A Record** that points to the IPv4 address: `34.149.86.124`.
+Currently, **AAAA Records (IPv6) are not supported.** WordPress Hosting requires only an **A Record** that points to the IPv4 address: `34.149.86.124`.
 
 ## Other DNS Record Types
 
@@ -138,13 +138,13 @@ DNS records are cached by Internet Service Providers (ISPs) around the world to 
 <details>
 <summary>What is a CAA record and do I need one?</summary>
 
-A CAA (Certificate Authority Authorization) record controls which Certificate Authorities can issue SSL certificates for your domain. If you don't have a CAA record, any CA can issue certificates (this is the most common setup). If you do have a CAA record, you must authorize `letsencrypt.org` for WordPress Hosting Pro to automatically provision SSL certificates.
+A CAA (Certificate Authority Authorization) record controls which Certificate Authorities can issue SSL certificates for your domain. If you don't have a CAA record, any CA can issue certificates (this is the most common setup). If you do have a CAA record, you must authorize `letsencrypt.org` for WordPress Hosting to automatically provision SSL certificates.
 
 </details>
 
 <details>
 <summary>Can I use IPv6 (AAAA records) with WordPress Hosting?</summary>
 
-No, WordPress Hosting Pro currently only supports IPv4 addresses. You should use an A record pointing to the IPv4 address `34.149.86.124`. Do not create AAAA records, as they are not supported and may cause connection issues.
+No, WordPress Hosting currently only supports IPv4 addresses. You should use an A record pointing to the IPv4 address `34.149.86.124`. Do not create AAAA records, as they are not supported and may cause connection issues.
 
 </details>
