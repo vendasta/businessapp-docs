@@ -87,6 +87,20 @@ The more up-to-date and specific your knowledge sources, the more helpful and ac
 
 ---
 
+## Custom AI Employees
+
+Pre-configured AI Employees (Chat Receptionist, Voice Receptionist) come ready to use with a defined role and built-in capabilities. **Custom AI Employees** start as a blank slate — you define the role prompt, capabilities, knowledge sources, and channels from scratch to handle specialized business functions.
+
+Build a custom AI Employee when you need a role that isn't covered by a pre-configured option, such as:
+
+- **[AI Data Analyst](./custom-ai-employees/ai-data-analyst.md)** — analyzes CRM, review, and social data to deliver structured insights
+- **[Inside Sales Representative](./custom-ai-employees/inside-sales-representative.md)** — qualifies inbound leads before capturing contact information or booking appointments
+- **[AI Support Employee](./custom-ai-employees/ai-support-employee.md)** — resolves customer inquiries via chat and SMS, and escalates when a question falls outside the knowledge base
+
+See [Custom AI Employees](./custom-ai-employees/index.md) for the full setup process and additional examples.
+
+---
+
 ## Frequently Asked Questions
 
 <details>
