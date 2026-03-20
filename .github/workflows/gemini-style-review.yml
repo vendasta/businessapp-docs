@@ -639,26 +639,35 @@ jobs:
 
             SPLIT=$(printf '%s' "${FINDINGS}" | python3 /tmp/split-findings.py)
             INLINE_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.inline')
-            BODY_FINDINGS=$(printf '%s' "${SPLIT}" | jq -c '.body')
+            BODY_FINDINGS_ALL=$(printf '%s' "${SPLIT}" | jq -c '.body')
+            # Only surface blockers for lines outside the diff — warnings and
+            # suggestions on unchanged lines are noise for the PR author.
+            BODY_FINDINGS=$(printf '%s' "${BODY_FINDINGS_ALL}" | jq -c '[.[] | select(.severity == "blocker")]')
+            BODY_SUPPRESSED=$(printf '%s' "${BODY_FINDINGS_ALL}" | jq '[.[] | select(.severity != "blocker")] | length')
             INLINE_COUNT=$(printf '%s' "${INLINE_FINDINGS}" | jq 'length')
             BODY_COUNT=$(printf '%s' "${BODY_FINDINGS}" | jq 'length')
 
-            echo "::debug::Inline-eligible findings: ${INLINE_COUNT}, body-only: ${BODY_COUNT}"
+            echo "::debug::Inline-eligible findings: ${INLINE_COUNT}, body-only blockers: ${BODY_COUNT}, body-only suppressed: ${BODY_SUPPRESSED}"
 
-            ISSUE_COUNT=$(printf '%s' "${FINDINGS}" | jq 'length')
-            BLOCKER_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "blocker")] | length')
-            WARNING_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "warning")] | length')
-            SUGGESTION_COUNT=$(printf '%s' "${FINDINGS}" | jq '[.[] | select(.severity == "suggestion")] | length')
+            # Combine inline findings (all severities) + body findings (blockers only)
+            # for accurate reported counts.
+            REPORTED_FINDINGS=$(jq -n --argjson i "${INLINE_FINDINGS}" --argjson b "${BODY_FINDINGS}" '$i + $b')
+            BLOCKER_COUNT=$(printf '%s' "${REPORTED_FINDINGS}" | jq '[.[] | select(.severity == "blocker")] | length')
+            WARNING_COUNT=$(printf '%s' "${REPORTED_FINDINGS}" | jq '[.[] | select(.severity == "warning")] | length')
+            SUGGESTION_COUNT=$(printf '%s' "${REPORTED_FINDINGS}" | jq '[.[] | select(.severity == "suggestion")] | length')
             REVIEW_EVENT=$([ "${BLOCKER_COUNT}" -gt 0 ] && echo "REQUEST_CHANGES" || echo "COMMENT")
 
+            # Reported count excludes suppressed out-of-diff non-blockers.
+            REPORTED_COUNT=$(( INLINE_COUNT + BODY_COUNT ))
+
             # Nothing to report -- exit cleanly.
-            if [ "${ISSUE_COUNT}" -eq 0 ]; then
-              echo "No style issues found. No review posted."
+            if [ "${REPORTED_COUNT}" -eq 0 ]; then
+              echo "No reportable style issues found (${BODY_SUPPRESSED} non-blocker(s) on unchanged lines omitted). No review posted."
               exit 0
             fi
 
             # Build review body with intro and severity summary table.
-            BODY="Automated style review of ${FILE_COUNT} file(s) found ${ISSUE_COUNT} issue(s).
+            BODY="Automated style review of ${FILE_COUNT} file(s) found ${REPORTED_COUNT} issue(s).
 
           ## Gemini style review
 
@@ -674,34 +683,24 @@ jobs:
           **${BLOCKER_COUNT} blocker(s) need to be fixed before this can merge.**"
             fi
 
-            # Append out-of-diff findings to the review body.
+            # Append out-of-diff blocker findings to the review body.
+            # Non-blocker findings on unchanged lines are suppressed to reduce noise.
             if [ "${BODY_COUNT}" -gt 0 ]; then
               BODY_BLOCKER_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "blocker") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              BODY_WARNING_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "warning") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
-              BODY_SUGGESTION_ITEMS=$(printf '%s' "${BODY_FINDINGS}" | jq -r \
-                '.[] | select(.severity == "suggestion") | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
+                '.[] | "- `\(.file)` line \(.line): **\(.issue)**\n  > `\(.original)`\n  > Fix: `\(.replacement)`"')
 
               BODY="${BODY}
 
           ---
-          **${BODY_COUNT} issue(s) outside the diff** (shown here because inline comments require lines in the diff):"
+          **${BODY_COUNT} blocker(s) outside the diff** (shown here because inline comments require lines in the diff):
 
-              [ -n "${BODY_BLOCKER_ITEMS}" ] && BODY="${BODY}
-
-          #### Blockers
           ${BODY_BLOCKER_ITEMS}"
+            fi
 
-              [ -n "${BODY_WARNING_ITEMS}" ] && BODY="${BODY}
+            if [ "${BODY_SUPPRESSED}" -gt 0 ]; then
+              BODY="${BODY}
 
-          #### Warnings
-          ${BODY_WARNING_ITEMS}"
-
-              [ -n "${BODY_SUGGESTION_ITEMS}" ] && BODY="${BODY}
-
-          #### Suggestions
-          ${BODY_SUGGESTION_ITEMS}"
+          _${BODY_SUPPRESSED} non-blocker issue(s) on unchanged lines were omitted. Run the style-review skill locally to see all findings._"
             fi
 
             # Add batch-apply tip only when there are inline suggestions.
