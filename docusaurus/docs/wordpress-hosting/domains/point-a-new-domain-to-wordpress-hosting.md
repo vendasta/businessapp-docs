@@ -1,10 +1,10 @@
 ---
 title: "Point a new Domain to WordPress Hosting"
 sidebar_label: "Point Domain"
-description: "If you recently purchased the domain (or just have never pointed your domain to a site), then these instructions should allow you to point your domain to your"
+description: "Step-by-step instructions for pointing a newly purchased domain to your WordPress Hosting Pro or Premium site, including DNS configuration and domain connection."
 ---
 
-If you recently purchased the domain (or just have never pointed your domain to a site), then these instructions should allow you to point your domain to your WordPress Hosting Pro site.
+Custom domains can be connected on **WordPress Hosting Pro** and **WordPress Hosting Premium** plans. If you recently purchased a domain (or have never pointed it to a site), follow these instructions to connect it.
 
 If your domain is managed in GoDaddy, see [GoDaddy Domain Setup](godaddy-domain-setup.md) for GoDaddy-specific instructions.
 
@@ -22,7 +22,7 @@ For detailed information about DNS records and how they work, see [Understanding
 
 **Part 2: Configuring your WordPress Hosting Site**
 
-1.  Log into WordPress Hosting Pro and navigate to the **Domains** tab
+1.  Log into WordPress Hosting and navigate to the **Domains** tab
 2.  Click **Connect a Domain**
 3.  Enter the domain name you purchased. Click **Add Domain.**
 4.  Your domain will show up in the table and it will be marked **pending** while WordPress Hosting gets ready to handle requests on that domain. This should take a minute.
@@ -30,6 +30,19 @@ For detailed information about DNS records and how they work, see [Understanding
     *   It is also normal for your SSL Certificate to be **pending** at this point. It may take several minutes to obtain an SSL Certificate. If you can't wait for the SSL Certificate you can expand **Advanced Settings** and disable **Redirect to HTTPS** temporarily. _It is very important to re-enable this setting_ because serving traffic on **HTTPS** is much safer and it improves your site's ranking in Search Engines.
 6.  Click **Make Primary** on the domain that you want all your visitors to be redirected to.
 7.  If you disabled **Redirect to HTTPS** temporarily in step 5 you should check this **Domains** tab frequently until the SSL Certificate is marked **secure**. As soon as you can you should enable **Redirect to HTTPS.**
+
+## Set Your Primary Domain
+
+Once you have one or more domains connected, you can choose which one is the **primary domain**. All other connected domains redirect to it.
+
+1. On the **Domains** tab, find the domain you want to use as your primary
+2. Click **Make Primary** next to that domain
+
+![Domains tab with Make Primary button](img/preferred-url/preferred-url-setting.png)
+
+The current primary domain is indicated by a **Primary** label.
+
+![Primary domain indicator on domains list](img/preferred-url/preferred-url-confirmation.png)
 
 ## Frequently Asked Questions (FAQs)
 
@@ -64,6 +77,6 @@ You can speed up DNS propagation by reducing the TTL (Time To Live) value on you
 <details>
 <summary>What if my domain shows as "Disconnected" after I add it?</summary>
 
-If your domain shows as "Disconnected" after adding it, this is normal during the initial setup. WordPress Hosting Pro checks for DNS records, and if they haven't propagated yet, it will show as disconnected. Once your DNS records propagate (which can take up to 24 hours), the status will change to "Connected." You can check DNS propagation using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx).
+If your domain shows as "Disconnected" after adding it, this is normal during the initial setup. WordPress Hosting checks for DNS records, and if they haven't propagated yet, it will show as disconnected. Once your DNS records propagate (which can take up to 24 hours), the status will change to "Connected." You can check DNS propagation using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx).
 
 </details>

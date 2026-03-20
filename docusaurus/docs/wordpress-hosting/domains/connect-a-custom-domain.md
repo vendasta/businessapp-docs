@@ -6,7 +6,13 @@ tags: [wordpress-hosting, domains, dns, setup]
 keywords: [domain setup, connect custom domain, WordPress DNS records, domain registrar setup, point domain to WordPress, A record CNAME]
 ---
 
-To connect a custom domain to WordPress Hosting, you'll need to configure DNS records at your domain registrar and then connect the domain in WordPress Hosting Pro.
+Custom domain connection is available on **WordPress Hosting Pro** and **WordPress Hosting Premium** plans. WordPress Hosting Standard does not support custom domains.
+
+:::info
+If you're on a Standard plan, you'll need to upgrade to Pro or Premium before you can connect a custom domain.
+:::
+
+To connect a custom domain, you'll need to configure DNS records at your domain registrar and then connect the domain in your WordPress Hosting dashboard.
 
 ## Overview
 
@@ -44,7 +50,7 @@ We recommend setting a CNAME Record for subdomains. If you require an A Record f
 
 For more detailed information about DNS records, when to use each type, and DNS propagation, see [Understanding DNS Records](understanding-dns-records.md).
 
-## Part 2: Connect Domain in WordPress Hosting Pro
+## Part 2: Connect Domain in WordPress Hosting
 
 1. Log into WordPress Hosting and navigate to the **Domains** tab
 2. Click **Connect a Domain**
@@ -62,11 +68,11 @@ You have the ability to set any of your **connected** domains to be the **Primar
 2. Find the domain in the list, expand the options menu on the right side, then click **Make Primary**.
 3. All of your domains will then redirect to this domain.
 
-For more information on managing multiple domains and setting your primary domain, see [Set your preferred URL or domain](set-your-preferred-url-or-domain.md).
+For more information on managing multiple domains and setting your primary domain, see [Set your primary domain](point-a-new-domain-to-wordpress-hosting.md#set-your-primary-domain).
 
 ## Part 3: Validate DNS Records
 
-Once the above records are set up, WordPress Hosting Pro will automatically validate them. The domain will show as **Pending** until WordPress Hosting detects the correct DNS records, then it will change to **Connected**.
+Once the above records are set up, WordPress Hosting will automatically validate them. The domain will show as **Pending** until WordPress Hosting detects the correct DNS records, then it will change to **Connected**.
 
 You can also manually check to see if your domains are propagating by looking them up on MxToolbox:
 
@@ -81,7 +87,7 @@ The record that is returned should reflect a Canonical Name of `host.websiteproh
 <details>
 <summary>When do I use an A Record?</summary>
 
-You would use an A record if you want your root domain, for example, `business.com`, to point to your site on WordPress Hosting Pro.
+You would use an A record if you want your root domain, for example, `business.com`, to point to your site on WordPress Hosting.
 
 </details>
 
@@ -95,21 +101,21 @@ You would use a CNAME record any time you want a subdomain to point to your webs
 <details>
 <summary>What is the base requirement for linking my domain?</summary>
 
-To link your domain to WordPress Hosting Pro you must use at least one A record or CNAME record. Which one you use depends on whether you want to link the root domain or a subdomain to WordPress Hosting Pro. To link the root domain you would use an A record. To link a subdomain you would use a CNAME record.
+To link your domain to WordPress Hosting you must use at least one A record or CNAME record. Which one you use depends on whether you want to link the root domain or a subdomain to WordPress Hosting. To link the root domain you would use an A record. To link a subdomain you would use a CNAME record.
 
 </details>
 
 <details>
 <summary>Do I need to do anything to setup SSL?</summary>
 
-All WordPress Hosting Pro sites are automatically provisioned with a Let's Encrypt SSL certificate, so you would not need to follow any extra steps to set this up.
+All WordPress Hosting sites are automatically provisioned with a Let's Encrypt SSL certificate, so you would not need to follow any extra steps to set this up.
 
 </details>
 
 <details>
 <summary>How do I set the preferred URL?</summary>
 
-This can be done from the domains tab of WordPress Hosting Pro. Select the kabob menu next to the domain you want to use, then select Make Primary. This will make it so that when the site is accessed from any of its connected domains, the user is redirected to your primary one.
+This can be done from the domains tab of WordPress Hosting. Select the kabob menu next to the domain you want to use, then select Make Primary. This will make it so that when the site is accessed from any of its connected domains, the user is redirected to your primary one.
 
 </details>
 

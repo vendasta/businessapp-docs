@@ -20,15 +20,15 @@ If you recently purchased your domain from GoDaddy (or it has never been pointed
    * Add an **A Record** for `@` that points to `34.149.86.124`.
    * Add a **CNAME Record** for `www` that points to `host.websiteprohosting.com`.
 4. Click **Save**.
-5. Allow up to 24 hours for all changes to take full effect. During this time your old host may still be serving your site's traffic. You can check on the status of your DNS Settings using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx) or viewing the **Domains** tab in WordPress Hosting **Pro.**
+5. Allow up to 24 hours for all changes to take full effect. During this time your old host may still be serving your site's traffic. You can check on the status of your DNS Settings using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx) or viewing the **Domains** tab in WordPress Hosting.
 
 :::tip
 Flush Google's DNS cache for faster propagation: [Google DNS Cache Flush Tool](https://developers.google.com/speed/public-dns/cache)
 :::
 
-### Part 2: Connect Domain in WordPress Hosting Pro
+### Part 2: Connect Domain in WordPress Hosting
 
-1. Log into WordPress Hosting **Pro** and go to the **Domains** tab.
+1. Log into WordPress Hosting and go to the **Domains** tab.
 2. Click **Connect a Domain** and enter your domain.
 3. Wait a few minutes for the domain to show as "Connected."
 4. If needed, disable **Redirect to HTTPS** temporarily while the SSL certificate is provisioning. Remember to re-enable it once secure.
@@ -42,7 +42,7 @@ If your domain is currently pointing to a site on another host, follow these ins
 
 ### Part 1: Configuring your WordPress Hosting Site
 
-1. Log into WordPress Hosting Pro and navigate to the **Domains** tab.
+1. Log into WordPress Hosting and navigate to the **Domains** tab.
 2. Click **Connect a Domain.**
 3. Enter the domain name. Click **Add Domain.**
 4. Your domain will show up in the table and it will be marked **pending** while WordPress Hosting gets ready to handle requests on that domain (this should take a minute).
@@ -57,7 +57,7 @@ If your domain is currently pointing to a site on another host, follow these ins
 2. Select your domain name from the list to access the **Domain Settings** page.
 3. Scroll down to **Additional Settings** and select **Manage DNS.**
 
-![GoDaddy DNS Management](img/4406954035351-e1bef1ac6d.png)
+![GoDaddy DNS Management page](img/godaddy-domain/godaddy-dns-settings.png)
 
 4. On the **DNS Management** page, find the **Records** section.
 5. Click the pencil icon at the right side of the row with the **Name** **"@"**, make sure it is an **"A"** record, and change the value to be _**34.149.86.124.**_
@@ -102,14 +102,14 @@ In GoDaddy, the root domain record may appear as `@` or as your domain name (e.g
 <details>
 <summary>Do I need to disable HTTPS redirect during setup?</summary>
 
-For domains being transferred from another host, it's recommended to temporarily disable **Redirect to HTTPS** in WordPress Hosting Pro's Advanced Settings while the SSL certificate is provisioning. This prevents potential connection issues during the transition. Once your domain shows as "Connected" and SSL is active, re-enable the HTTPS redirect.
+For domains being transferred from another host, it's recommended to temporarily disable **Redirect to HTTPS** in WordPress Hosting's Advanced Settings while the SSL certificate is provisioning. This prevents potential connection issues during the transition. Once your domain shows as "Connected" and SSL is active, re-enable the HTTPS redirect.
 
 </details>
 
 <details>
 <summary>How long does it take for GoDaddy DNS changes to take effect?</summary>
 
-DNS changes in GoDaddy typically take a few minutes to several hours to propagate. It can take up to 24 hours for changes to fully propagate across all internet service providers. You can check propagation status using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx) or by monitoring the Domains tab in WordPress Hosting Pro.
+DNS changes in GoDaddy typically take a few minutes to several hours to propagate. It can take up to 24 hours for changes to fully propagate across all internet service providers. You can check propagation status using tools like [MxToolbox DNS Lookup](https://mxtoolbox.com/DNSLookup.aspx) or by monitoring the Domains tab in WordPress Hosting.
 
 </details>
 
