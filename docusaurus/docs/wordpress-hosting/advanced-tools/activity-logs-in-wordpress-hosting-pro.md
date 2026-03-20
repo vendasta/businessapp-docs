@@ -1,10 +1,10 @@
 ---
-title: "Activity logs in WordPress Hosting Pro"
+title: "Activity Logs in WordPress Hosting"
 sidebar_label: "Activity Logs"
-description: "The  Activity Logs  feature in WordPress Hosting Pro helps users track actions performed on their  staging site . It provides a record of significant activitie"
+description: "Track actions performed on your staging site with the Activity Logs feature in WordPress Hosting."
 ---
 
-The **Activity Logs** feature in WordPress Hosting Pro helps users track actions performed on their **staging site**. It provides a record of significant activities, making it easier to monitor changes and troubleshoot issues.
+The **Activity Logs** feature in WordPress Hosting helps you track actions performed on your **staging site**. It provides a record of significant activities, making it easier to monitor changes and troubleshoot issues.
 
 ### Supported staging site activities
 
@@ -15,7 +15,7 @@ The **Activity Logs** feature in WordPress Hosting Pro helps users track actions
 3. **Push Staging to Live**
    * Logs when changes from the staging environment are pushed to the live site.
 
-### Details Provided in Activity Logs
+### Details provided in activity logs
 
 The activity logs include the following information:
 
@@ -27,23 +27,18 @@ The activity logs include the following information:
 * **Description**: A brief explanation of the action.
 * **Completed**: The date and time when the activity was completed.
 
-![](./img/32999976946583-7a231c0d99.png)
+![Activity log details showing columns for each entry](./img/activity-logs/activity-log-details.png)
 
-### White-labelled support in activity logs
+### Support actions in activity logs
 
-Activity logs also include visibility for **support-related actions**:
+When a support action is performed on your site, activity logs display it as **"Support user"** to keep the record clear and consistent.
 
-* For **internal teams**: The actual **support email** associated with the activity is displayed.
-* For **clients and small businesses**: The log anonymizes support details, and they will only see the label **"Support user"**.
-
-This ensures transparency for internal teams while maintaining a white-labelled experience for end clients.  
-
-![](./img/activity-support-logs.png)
+![Activity log entry showing a support user action](./img/activity-logs/activity-support-logs.png)
 
 ### How to access activity logs
 
-1. Log in to your WordPress Hosting Pro dashboard.
+1. Log in to your WordPress Hosting dashboard.
 2. Navigate to the **Activity Logs** section under **Advanced Tools**.
 3. View detailed records of actions performed on your staging site.
 
-![](./img/32999976946583-4ff89922c4.png)
+![Activity Logs section in the Advanced Tools menu](./img/activity-logs/activity-logs-section.png)

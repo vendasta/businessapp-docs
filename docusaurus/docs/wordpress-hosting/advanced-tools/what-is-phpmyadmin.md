@@ -1,16 +1,14 @@
 ---
 title: "What is phpMyAdmin?"
 sidebar_label: "phpMyAdmin"
-description: "phpMyAdmin is an open source web-based tool that allows you to manage the database of your WordPress site. Learn how to access and use phpMyAdmin in WordPress Hosting Pro."
+description: "phpMyAdmin is an open source web-based tool that allows you to manage the database of your WordPress site. Learn how to access and use phpMyAdmin in WordPress Hosting."
 ---
 
-### What is phpMyAdmin?
+phpMyAdmin is an open-source web-based tool that allows you to manage the database of your WordPress site. It provides a graphical user interface (GUI) for interacting with the MySQL database that stores all the essential data for your WordPress Hosting site, making it easier to perform database-related tasks without requiring advanced knowledge of SQL commands.
 
-phpMyAdmin is an open source web-based tool that allows you to manage the database of your WordPress site. It's a powerful interface for interacting with the MySQL database that stores all the essential data for your WordPress Hosting Pro. It provides a graphical user interface (GUI) to manage and interact with databases, making it easier for users to perform database-related tasks without requiring advanced knowledge of SQL commands.
+Here's what phpMyAdmin is commonly used for:
 
-Here's what it is and what it's commonly used for:
-
-1. **Managing the WordPress Hosting Pro Database**
+1. **Managing the WordPress Hosting Database**
    * WordPress stores all content, settings, and user data in its database. phpMyAdmin allows you to view, edit, and manage this database.
 
 2. **Backing Up the Database**
@@ -37,10 +35,10 @@ Here's what it is and what it's commonly used for:
 9. **Adding or Editing Data**
    * Manually add or update content, settings, or plugin data in the database.
 
-**Here's how you can access phpMyAdmin in WordPress Hosting Pro:**
+**Here's how you can access phpMyAdmin in WordPress Hosting:**
 
-* Log in to your WordPress Hosting Pro product.
-* Once you're in the WordPress Hosting Pro dashboard, navigate to **Advanced Tools** and click on **phpMyAdmin**.
+* Log in to your WordPress Hosting product.
+* Once you're in the WordPress Hosting dashboard, navigate to **Advanced Tools** and click on **phpMyAdmin**.
 
 :::important
 * **Use with Caution**: phpMyAdmin gives you direct access to your database, so making changes without understanding their implications can break your site.
@@ -61,7 +59,7 @@ See [How to find database connection string](./how-to-find-database-connection-s
 <details>
 <summary>Can I connect to the database using MySQL Workbench or other remote clients?</summary>
 
-No. WordPress Hosting Pro site databases are **isolated inside a secure network**. For that reason:
+No. WordPress Hosting site databases are **isolated inside a secure network**. For that reason:
 
 * Remote database tools like MySQL Workbench **will not work**
 * Direct configuration file transfers or database exports from other hosts may not be compatible
@@ -75,11 +73,11 @@ If you're migrating a site, we recommend using supported plugins like **All-in-O
 
 WordPress Hosting does not currently impose restrictions on database sizes.
 
-For WordPress Hosting Pro accounts, certain MySQL resource limits are in place to manage extreme scenarios, such as traffic surges caused by attacks on websites. These limits, set at approximately 720000 queries per hour, are designed to handle normal site traffic comfortably and are unlikely to be exceeded under typical conditions.
+For WordPress Hosting accounts, certain MySQL resource limits are in place to manage extreme scenarios, such as traffic surges caused by attacks on websites. These limits, set at approximately 720000 queries per hour, are designed to handle normal site traffic comfortably and are unlikely to be exceeded under typical conditions.
 
 If a site exceeds the MySQL resource limit, it may result in HTTP 500 internal server errors or PHP error logs indicating that the user has exceeded the "max_questions" resource limit. Such issues are generally caused by poorly optimized plugins or themes, rather than limitations of the platform itself.
 
-**How to Prevent and Resolve MySQL Limit Issues**
+**How to prevent and resolve MySQL limit issues**
 
 1. **Optimize Plugins and Themes** – Regularly audit and update plugins and themes to ensure they are well-coded and efficient.
 2. **Monitor Site Traffic** – Use monitoring tools to track traffic spikes and detect unusual activity.
@@ -99,8 +97,8 @@ This error typically occurs when:
 **To fix it:**
 
 * **Remove all `CREATE DATABASE` and `USE` commands** from your `.sql` file
-* Only use the two pre-created databases in WordPress Hosting Pro (Production and Staging)
+* Only use the two pre-created databases in WordPress Hosting (Production and Staging)
 
-You cannot create new databases in WordPress Hosting Pro, only use the ones provisioned per site.
+You cannot create new databases in WordPress Hosting, only use the ones provisioned per site.
 
 </details>
