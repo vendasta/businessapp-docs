@@ -81,13 +81,13 @@ Some **third-party services** and **plugins** (such as social media schedulers, 
 **What it does:**  
 By enabling XML-RPC, you can use these external tools more effectively and improve your site's functionality.
 
-### Why Doesn't WordPress Hosting Pro Enable XML-RPC by Default?
+### Why Doesn't WordPress Hosting Enable XML-RPC by Default?
 
-**WordPress Hosting Pro** does **not enable XML-RPC by default**. This is because **XML-RPC** can pose certain **security risks** if not properly managed. Here are some reasons why it's kept disabled by default:
+**WordPress Hosting** does **not enable XML-RPC by default**. This is because **XML-RPC** can pose certain **security risks** if not properly managed. Here are some reasons why it's kept disabled by default:
 
 1.  **Security Vulnerabilities** – XML-RPC has been historically targeted by **brute-force attacks** and **DDoS attacks**. Since it allows external services to communicate with your website, it opens a door that could potentially be exploited by attackers to gain unauthorized access or flood your site with malicious traffic.
 
-2.  **Performance Concerns** – Enabling XML-RPC requires additional resources to handle incoming requests, which could **affect server performance** if not managed properly, especially on high-traffic sites. By disabling it by default, WordPress Hosting Pro ensures that unnecessary features do not consume server resources.
+2.  **Performance Concerns** – Enabling XML-RPC requires additional resources to handle incoming requests, which could **affect server performance** if not managed properly, especially on high-traffic sites. By disabling it by default, WordPress Hosting ensures that unnecessary features do not consume server resources.
 
 3.  **Minimal Use for Most Users** – Many WordPress users don't need XML-RPC for basic website management. If your site doesn't require remote publishing, mobile app integration, or external app interactions, leaving XML-RPC disabled can help reduce potential attack vectors.
 
@@ -99,9 +99,9 @@ If you need XML-RPC for any of the reasons mentioned above, such as using mobile
 *   **Remote content publishing** or **post scheduling** through third-party tools.
 *   Integrating your WordPress site with **external services** or plugins that require XML-RPC, like **Jetpack** or **social media posting apps**.
 
-### How to Enable XML-RPC on WordPress Hosting Pro
+### How to Enable XML-RPC on WordPress Hosting
 
-On **WordPress Hosting Pro**, XML-RPC is disabled by default, but it can easily be enabled upon **request**. If you need XML-RPC for any of the reasons mentioned, contact support. The team will review your request and enable XML-RPC for your site, ensuring that you have access to the features and integrations you need.
+On **WordPress Hosting**, XML-RPC is disabled by default, but it can easily be enabled upon **request**. If you need XML-RPC for any of the reasons mentioned, contact support. The team will review your request and enable XML-RPC for your site, ensuring that you have access to the features and integrations you need.
 
 Once enabled, you'll be able to take full advantage of XML-RPC's capabilities without compromising your website's performance or security.
 

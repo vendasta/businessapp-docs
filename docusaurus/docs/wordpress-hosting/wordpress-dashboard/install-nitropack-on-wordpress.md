@@ -8,10 +8,10 @@ Here is the step-by-step guide on how to install NitroPack on WordPress:
 
 1.  Log in to your **WordPress admin** dashboard and go to **Plugins > Add New**.
 
-    ![Add new plugin NitroPack](./img/29661864746903-25d14fbe3a.png)
+![Add new plugin NitroPack](./img/install-nitropack-on-wordpress/add-nitropack-plugin.png)
 2.  Search “**NitroPack by NitroPack LLC”** then click **Install Now** button.  
     
-    ![NitroPack Review: Features, Pricing & More (2025)](./img/29661864746903-11f167c649.jpg)
+![NitroPack search results in plugin directory](./img/install-nitropack-on-wordpress/nitropack-search-results.jpg)
     
 3.  Go to **Plugins > Installed Plugins.**
 4.  Click **Activate** link on NitroPack.

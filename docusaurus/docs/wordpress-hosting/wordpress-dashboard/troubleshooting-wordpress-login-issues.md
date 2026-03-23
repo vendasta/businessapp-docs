@@ -45,18 +45,18 @@ If you're not comfortable using FTP, contact support for assistance with disabli
 
 ### 5. 500 Error When Logging In (Jetpack)
 
-If you're receiving a 500 error when attempting to log in and have the **Jetpack by WordPress.com** plugin installed, this may be caused by Jetpack's WordPress.com login feature conflicting with WordPress Hosting Pro.
+If you're receiving a 500 error when attempting to log in and have the **Jetpack by WordPress.com** plugin installed, this may be caused by Jetpack's WordPress.com login feature conflicting with WordPress Hosting.
 
 **Why this happens:**
 
-WordPress Hosting Pro does not support logins from other sources. If you have enabled **WordPress.com login** in Jetpack settings, you'll get this error because the system doesn't support logins from external sources.
+WordPress Hosting does not support logins from other sources. If you have enabled **WordPress.com login** in Jetpack settings, you'll get this error because the system doesn't support logins from external sources.
 
 **Solution:**
 
 Disable the "WordPress.com log in" feature in Jetpack:
 
-1.  Go to your WordPress Admin page. Use the **"WordPress Dashboard"** button in WordPress Hosting Pro. If you're unable to access it because you continue to receive 500 error codes, try:
-    *   Copy the URL of your site from the left-hand side panel of the WordPress Hosting Pro dashboard
+1.  Go to your WordPress Admin page. Use the **"WordPress Dashboard"** button in WordPress Hosting. If you're unable to access it because you continue to receive 500 error codes, try:
+    *   Copy the URL of your site from the left-hand side panel of the WordPress Hosting dashboard
     *   Paste your URL into the address field of your browser
     *   Add `/wp-admin` to the end of the URL, and hit enter. This should redirect you to your WordPress admin page.
 
@@ -83,7 +83,7 @@ If you've tried these solutions and still can't access your WordPress dashboard,
 
 ## Always Keep Backups
 
-Before making changes, always back up your website. WordPress Hosting Pro creates daily backups automatically, which you can restore if something goes wrong.
+Before making changes, always back up your website. WordPress Hosting creates daily backups automatically, which you can restore if something goes wrong.
 
 By following these steps, you should be able to regain access to your WordPress site quickly!
 

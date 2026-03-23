@@ -1,16 +1,16 @@
 ---
 title: "WooCommerce Order Info in Contact List"
 sidebar_label: "Order Info in Contact List"
-description: "Having exceptional customer relationships is crucial to the success of any business. By automatically syncing the information of purchasing customers, clients can create targeted campaigns, ask for reviews, or contact their customers individually to nurture their existing clientele, improve customer retention, drive loyalty, and increase repeat purchases or orders."
+description: "Having exceptional customer relationships is crucial to the success of any business. By automatically syncing the information of purchasing customers, you can create targeted campaigns, ask for reviews, or contact customers individually to nurture relationships, improve retention, and increase repeat purchases."
 ---
 
-Having exceptional customer relationships is crucial to the success of any business. By automatically syncing the information of purchasing customers, clients can create targeted campaigns, ask for reviews, or contact their customers individually to nurture their existing clientele, improve customer retention, drive loyalty, and increase repeat purchases or orders.
+Having exceptional customer relationships is crucial to the success of any business. By automatically syncing the information of purchasing customers, you can create targeted campaigns, ask for reviews, or contact your customers individually to nurture relationships, improve customer retention, drive loyalty, and increase repeat purchases or orders.
 
 ## How It Works
 
-When a new customer makes an order on a client's WooCommerce-enabled WordPress Hosting **Standard or Pro** website, their information (name, email address, and phone number) will be automatically synced to the client's Customer List in Business App. This allows clients to contact them through email, phone, Customer Voice, or other ways to build and strengthen their customer relationships.
+When a new customer makes an order on your WooCommerce-enabled WordPress Hosting **Standard or Pro** website, their information (name, email address, and phone number) will be automatically synced to your Customer List in Business App. This allows you to contact them through email, phone, Customer Voice, or other ways to build and strengthen your customer relationships.
 
-It's simple and automatic. When a customer makes an order through a client's online store that is powered by WooCommerce, the information entered during checkout (name, email address, and phone number) is immediately synced to Customer List in Business App. These customers will appear on the list with "WordPress Hosting Pro" as the source.
+It's simple and automatic. When a customer makes an order through your online store that is powered by WooCommerce, the information entered during checkout (name, email address, and phone number) is immediately synced to your Customer List in Business App. These customers will appear on the list with "WordPress Hosting Pro" as the source.
 
 ## Order Details from WooCommerce
 

@@ -14,7 +14,7 @@ Resetting your WordPress site removes all content, settings, and customizations,
 
 **Important steps before resetting:**
 
-1.  **Create a backup** – WordPress Hosting Pro creates daily backups automatically. Make sure you have a recent backup you can restore if needed.
+1.  **Create a backup** – WordPress Hosting creates daily backups automatically. Make sure you have a recent backup you can restore if needed.
 2.  **Export important content** – If you have content you want to keep, export it before resetting.
 3.  **Note your current setup** – Write down which plugins and themes you're using so you can reinstall them if needed.
 
@@ -31,7 +31,7 @@ Resetting your WordPress site removes all content, settings, and customizations,
 
 1.  In the dashboard, go to **Tools** > **WP Reset**.
 
-![WP Reset Plugin](./img/33001688626583-94250bbb40.png)
+![WP Reset Plugin](./img/reset-your-wordpress-website-using-a-plugin/wp-reset-plugin.png)
 
 ### Step 3: Reset the Site
 
@@ -54,7 +54,7 @@ After resetting, you'll need to:
 
 If you reset your site by mistake or want to go back, you can restore from a backup:
 
-1.  Go to WordPress Hosting Pro dashboard.
+1.  Go to WordPress Hosting dashboard.
 2.  Navigate to the **Backups** tab.
 3.  Find the backup you want to restore.
 4.  Click **Restore** and confirm.

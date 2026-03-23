@@ -4,7 +4,7 @@ sidebar_label: "Debugging Basics"
 description: "Learn how to debug common WordPress problems using built-in tools like backups, PHP logs, SFTP access, and staging environments."
 ---
 
-This guide helps you debug common problems that can occur on your WordPress website using tools available in WordPress Hosting Pro. These can range from conflicting plugins preventing certain features from working, all the way to internal server errors that bring the website down.
+This guide helps you debug common problems that can occur on your WordPress website using tools available in WordPress Hosting. These can range from conflicting plugins preventing certain features from working, all the way to internal server errors that bring the website down.
 
 ## When to Use Debugging Tools
 
@@ -19,11 +19,11 @@ Use these debugging tools when:
 
 ### Daily Backups
 
-WordPress Hosting Pro automatically creates daily backups of your website. These backups allow you to restore your site to a previous working state if something goes wrong.
+WordPress Hosting automatically creates daily backups of your website. These backups allow you to restore your site to a previous working state if something goes wrong.
 
-![Daily Backups](./img/4406960816663-453505e265.png)
+![Daily Backups](./img/wordpress-debugging-basics/daily-backups.png)
 
-Within WordPress Hosting Pro under the **Backups** tab, you'll see a list of backups that are created. By default, when you create a WordPress Hosting Pro install, there will be a base backup (clean install). Subsequent backups are created daily.
+Within WordPress Hosting under the **Backups** tab, you'll see a list of backups that are created. By default, when you create a WordPress Hosting install, there will be a base backup (clean install). Subsequent backups are created daily.
 
 The backup list shows information to help you decide which backup to restore:
 *   WordPress version
@@ -37,7 +37,7 @@ You can restore a backup by clicking the **Restore** link to the right of the ba
 
 PHP logs record errors that occur on your website. They show the date of the error and a full trace of how the problem occurred.
 
-![PHP Logs](./img/4406960816663-bc47dc5a2b.png)
+![PHP Logs](./img/wordpress-debugging-basics/php-logs.png)
 
 These logs help identify:
 *   Which plugin or theme is causing an error
@@ -52,7 +52,7 @@ For step-by-step instructions on how to access PHP logs, see [How to Find PHP Lo
 
 **SFTP** (Secure File Transfer Protocol) is a way to access your website files directly. This allows you to rename, delete, or edit files when you can't access your WordPress dashboard.
 
-![SFTP Access](./img/4406960816663-9d0a28be81.png)
+![SFTP Access](./img/wordpress-debugging-basics/sftp-access.png)
 
 SFTP access can be found on the **Advanced Tools** tab, under the **WordPress Dashboard** button. This allows you to set up a key that can be used with an SFTP client. The most common SFTP client is FileZilla, which allows you to access the website files directly.
 
@@ -64,7 +64,7 @@ If you're not comfortable using SFTP, contact support for assistance with file a
 
 A staging environment is a copy of your live website where you can test changes without affecting your actual site. This is useful for troubleshooting and testing updates.
 
-![Staging Environment](./img/4406960816663-80676bd613.png)
+![Staging Environment](./img/wordpress-debugging-basics/staging-environment.png)
 
 When you first get to the **Staging Environment** tab, you need to enable it, which will take a copy of the live website. This tool includes a toggle for **WP_Debug**, which displays errors or warnings as they occur on your site.
 
@@ -82,7 +82,7 @@ An internal server error means there's a problem with the code on your WordPress
 *   A theme with an issue
 *   A code problem that can't be resolved
 
-![Internal Server Error](./img/4406960816663-1a47873035.png)
+![Internal Server Error](./img/wordpress-debugging-basics/internal-server-error.png)
 
 **Ways to fix this:**
 
@@ -101,7 +101,7 @@ The error shown in the PHP logs might indicate that a theme has incorrect syntax
 *   Use SFTP to open the file and correct the syntax issue
 *   Or enable staging environment with WP_Debug to see the error clearly
 
-![PHP Log Error Example](./img/4406960816663-91cba3dbc7.png)
+![PHP Log Error Example](./img/wordpress-debugging-basics/php-log-error-example.png)
 
 ### Site Cannot Be Reached
 
@@ -111,11 +111,11 @@ If your site shows "This site can't be reached" or similar, this usually isn't a
 *   Your domain's nameservers aren't pointing to your hosting
 *   There's a problem with your domain's connection to your hosting
 
-![Site Cannot Be Reached](./img/4406960816663-c666767cc2.png)
+![Site Cannot Be Reached](./img/wordpress-debugging-basics/site-cannot-be-reached.png)
 
 **Solution:**
 
-Contact whoever you registered your domain with or the company that manages your nameservers. If you need help setting up your domain with WordPress Hosting Pro, see [Domain Setup](../../domains/connect-a-custom-domain.md).
+Contact whoever you registered your domain with or the company that manages your nameservers. If you need help setting up your domain with WordPress Hosting, see [Domain Setup](../../domains/connect-a-custom-domain.md).
 
 ## General Debugging Steps
 
@@ -176,7 +176,7 @@ Memory issues in Divi or Elementor are usually caused by:
 <details>
 <summary>Why do I see a "Storage engine MyISAM is disabled" error?</summary>
 
-WordPress Hosting Pro supports only the **InnoDB** storage engine. Plugins or themes trying to use **MyISAM** will fail.
+WordPress Hosting supports only the **InnoDB** storage engine. Plugins or themes trying to use **MyISAM** will fail.
 
 **Why?**  
 This is a stability and reliability decision. MyISAM is outdated and lacks support for transactions and row-level locking.

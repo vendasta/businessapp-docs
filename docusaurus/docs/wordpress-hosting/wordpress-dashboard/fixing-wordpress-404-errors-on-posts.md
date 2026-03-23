@@ -14,7 +14,7 @@ A **301 redirect** is a permanent redirection that automatically sends users to 
 
 If you're experiencing 404 errors on pages or posts that should exist, try these troubleshooting steps:
 
-![image.png](./img/33001665602583-c271d5a4d1.png)
+![Troubleshooting 404 errors steps](./img/fixing-wordpress-404-errors-on-posts/permalink-settings.png)
 
 ### 1. Re-Save Permalink Settings
 
@@ -27,7 +27,7 @@ Often, simply reconfiguring your permalink structure can fix the problem.
 
 This action refreshes your permalink settings and flushes the rewrite rules, which commonly resolves 404 errors.
 
-![image.png](./img/33001665602583-e7cdc3cfaf.png)
+![Save Permalinks settings](./img/fixing-wordpress-404-errors-on-posts/save-permalinks.png)
 
 ### 2. Check for Plugin Conflicts
 

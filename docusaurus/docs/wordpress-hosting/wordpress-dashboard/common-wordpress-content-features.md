@@ -98,7 +98,7 @@ To display an RSS feed using WordPress's built-in widget:
 4. Enter the RSS feed URL you want to display.
 5. Configure the number of items to show and other display options.
 
-![The WordPress RSS Widget](./img/33001916619415-3e4c1d2075.png)
+![The WordPress RSS Widget](./img/common-wordpress-content-features/rss-widget.png)
 
 ### Method 2: Using a Plugin
 
@@ -116,14 +116,14 @@ For more advanced RSS feed functionality, you can use a plugin like **WP RSS Agg
 2. Enter the feed URL (e.g., `https://example.com/feed/`).
 3. Click the **Next** button.
 
-![Enter the Feed URL into WP RSS Aggregator's Settings](./img/33001916619415-860c7ef832.png)
+![Enter the Feed URL into WP RSS Aggregator's Settings](./img/common-wordpress-content-features/rss-aggregator-settings.png)
 
 **Step 3: Display the Feed**
 
 1. On the next page, you'll see the latest feed items from the RSS feed you linked.
 2. Click the **Create Draft Page** button to add the feed to a new page draft, or use the **shortcode** on the right to add them to any post, page, or widget area.
 
-![Click the 'Create Draft Page' Button to Preview the RSS Feed](./img/33001916619415-96ea01bc32.png)
+![Click the 'Create Draft Page' Button to Preview the RSS Feed](./img/common-wordpress-content-features/rss-create-draft-page.png)
 
 ### Which Method Should You Choose?
 
