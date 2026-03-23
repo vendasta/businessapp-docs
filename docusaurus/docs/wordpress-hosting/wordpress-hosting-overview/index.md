@@ -74,18 +74,18 @@ For detailed guides, see:
 ## Frequently Asked Questions (FAQs)
 
 <details>
-<summary>Can I upgrade to PHP 8.1 on WordPress Hosting Pro?</summary>
+<summary>Can I upgrade to PHP 8.1 on WordPress Hosting?</summary>
 
-Yes. WordPress Hosting Pro supports PHP 8.1. Before upgrading, ensure your site uses WordPress 6.0 or higher, all themes and plugins are up to date, and you have created a backup.
+Yes. WordPress Hosting supports PHP 8.1. Before upgrading, ensure your site uses WordPress 6.0 or higher, all themes and plugins are up to date, and you have created a backup.
 
-To upgrade: Go to your WordPress Hosting Pro dashboard, click **Change PHP version**, select **8.1.1**, and click **Accept**. You can roll back if needed.
+To upgrade: Go to your WordPress Hosting dashboard, click **Change PHP version**, select **8.1.1**, and click **Accept**. You can roll back if needed.
 
 </details>
 
 <details>
-<summary>Is WordPress Hosting Pro suitable for high-traffic websites?</summary>
+<summary>Is WordPress Hosting suitable for high-traffic websites?</summary>
 
-Yes. WordPress Hosting Pro is optimized for high traffic with unlimited pageviews, database storage, and bandwidth. It uses Google Cloud Platform's C2 machines and automatically scales resources based on demand.
+Yes. WordPress Hosting is optimized for high traffic with unlimited pageviews, database storage, and bandwidth. It uses Google Cloud Platform's C2 machines and automatically scales resources based on demand.
 
 </details>
 
@@ -103,7 +103,7 @@ See [Blacklisted and Redundant Plugins](../wordpress-dashboard/plugins/blacklist
 </details>
 
 <details>
-<summary>How does WordPress Hosting Pro manage WordPress updates?</summary>
+<summary>How does WordPress Hosting manage WordPress updates?</summary>
 
 Minor WordPress core updates are applied automatically to keep sites secure. Plugin auto-updates are off by default, but you can enable them manually from the dashboard.
 

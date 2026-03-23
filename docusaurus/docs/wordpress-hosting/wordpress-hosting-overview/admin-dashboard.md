@@ -24,7 +24,7 @@ WordPress Hosting uses a **custom Single Sign-On (SSO) integration** that:
 To log into the WordPress Dashboard:
 
 1. Log into **Business App**
-2. Navigate to **My Products > WordPress Hosting Pro**
+2. Navigate to **My Products > WordPress Hosting**
 3. Click **WordPress Dashboard**
 
 You'll be automatically logged in, and a WordPress user will be created to match your Business App account if one doesn't already exist.
@@ -46,23 +46,23 @@ If a plugin prevents access to the WordPress dashboard, you can:
 3. Access the WordPress dashboard again
 
 :::info
-If you need to disable WordPress Hosting Pro's login override, you can toggle off **Hide Advanced Login** under **Advanced Tools** in the WordPress Hosting Pro dashboard.
+If you need to disable WordPress Hosting's login override, you can toggle off **Hide Advanced Login** under **Advanced Tools** in the WordPress Hosting dashboard.
 :::
 
 ## Frequently Asked Questions (FAQs)
 
 <details>
-<summary>How does WordPress Hosting Pro handle WordPress login?</summary>
+<summary>How does WordPress Hosting handle WordPress login?</summary>
 
-WordPress Hosting Pro uses a **custom SSO (Single Sign-On) integration** to provide secure access to the WordPress Admin Dashboard:
+WordPress Hosting uses a **custom SSO (Single Sign-On) integration** to provide secure access to the WordPress Admin Dashboard:
 
 * Clicking the "WordPress Dashboard" button generates a WordPress user that matches the Business App user
 * Unauthenticated access attempts to `/wp-admin` are redirected or denied
 * This login method enhances site security and centralizes user management
 
-> **Note:** Plugins that alter or override login behavior—such as _Rename wp-login.php_—can interfere with WordPress Hosting Pro's login system and **should not be used**. If a plugin locks you out, you can use **SFTP access** to remove it from your file system.
+> **Note:** Plugins that alter or override login behavior—such as _Rename wp-login.php_—can interfere with WordPress Hosting's login system and **should not be used**. If a plugin locks you out, you can use **SFTP access** to remove it from your file system.
 
-To disable the WordPress Hosting Pro login override, toggle off **Hide Advanced Login** under **Advanced Tools** in the WordPress Hosting Pro dashboard.
+To disable the WordPress Hosting login override, toggle off **Hide Advanced Login** under **Advanced Tools** in the WordPress Hosting dashboard.
 
 </details>
 
@@ -87,9 +87,9 @@ There are two supported methods for updating a WordPress user's role:
 </details>
 
 <details>
-<summary>Can I edit the `.htaccess` file on WordPress Hosting Pro?</summary>
+<summary>Can I edit the `.htaccess` file on WordPress Hosting?</summary>
 
-WordPress Hosting Pro is hosted on **NGINX**, which does not use `.htaccess` files (an Apache-only feature). While you can **view** the `.htaccess` file via SFTP, any changes made to it **will have no effect**.
+WordPress Hosting is hosted on **NGINX**, which does not use `.htaccess` files (an Apache-only feature). While you can **view** the `.htaccess` file via SFTP, any changes made to it **will have no effect**.
 
 This ensures platform-wide performance and security consistency.
 
@@ -101,10 +101,10 @@ This ensures platform-wide performance and security consistency.
 Yes, but only when using a **custom domain**.
 
 * The `robots.txt` file is **not accessible** on:
-  * The default WordPress Hosting Pro domain (`yourbusiness.websitepro.hosting`)
+  * The default WordPress Hosting domain (`yourbusiness.websitepro.hosting`)
   * The staging domain (`yourbusiness-staging.websitepro.hosting`)
 * The file **is accessible** when the site is live on a **custom domain** (e.g., `www.yourbusiness.com/robots.txt`)
 
-This behavior supports white-labeling and privacy during development.
+This behavior supports branding consistency and privacy during development.
 
 </details>
