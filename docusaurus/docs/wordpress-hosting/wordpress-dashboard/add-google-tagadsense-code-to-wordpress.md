@@ -16,7 +16,7 @@ Adding a Google Tag or AdSense code to your WordPress site is a straightforward 
 1. In the menu on the left, click **Appearance**.
 2. From the dropdown menu, select **Theme File Editor**.
 
-![](./img/33001966700823-34d9a56cd1.png)
+![Theme File Editor with Appearance menu](./img/add-google-tagadsense-code-to-wordpress/theme-file-editor.png)
 
 ## Step 3: Locate the Header File
 
@@ -30,7 +30,7 @@ Adding a Google Tag or AdSense code to your WordPress site is a straightforward 
 2. Paste the code snippet within the `<head>` tag in the header file.
 3. Click **Update File** to save your changes.
 
-![](./img/33001966700823-b2fba11835.png)
+![Add code within the head tag in header.php](./img/add-google-tagadsense-code-to-wordpress/add-code-to-header.png)
 
 :::important
 

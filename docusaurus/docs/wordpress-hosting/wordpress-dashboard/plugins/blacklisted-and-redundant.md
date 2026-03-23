@@ -31,7 +31,7 @@ WordPress Hosting automatically backs up your site daily and provides on-demand 
 
 WordPress Hosting provides secure login functionality automatically. Access to your WordPress Admin Dashboard is only available through WordPress Hosting's dashboard, which includes controlled access and "Sign in with Google" support.
 
-Plugins that alter the login process are unnecessary and may break the login workflow, potentially making your Admin Dashboard inaccessible. If this happens, you can use SFTP or phpMyAdmin (available in WordPress Hosting Pro) to disable or remove the plugin.
+Plugins that alter the login process are unnecessary and may break the login workflow, potentially making your Admin Dashboard inaccessible. If this happens, you can use SFTP or phpMyAdmin (available in WordPress Hosting) to disable or remove the plugin.
 
 **Examples:**
 * Rename WP Login
@@ -93,5 +93,5 @@ The following plugins cannot be installed on WordPress Hosting:
 * **WP phpMyAdmin**: WordPress Hosting includes phpMyAdmin access
 
 :::warning
-If you install a conflicting plugin and lose access to your Admin Dashboard, you can use SFTP or phpMyAdmin (available in WordPress Hosting Pro) to disable or remove the plugin.
+If you install a conflicting plugin and lose access to your Admin Dashboard, you can use SFTP or phpMyAdmin (available in WordPress Hosting) to disable or remove the plugin.
 :::
