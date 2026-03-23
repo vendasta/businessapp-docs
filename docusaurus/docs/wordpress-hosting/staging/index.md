@@ -50,7 +50,7 @@ You can import backups (including All-in-One WP Migration backups) directly into
 
 ## How It Works
 
-1. **Create a staging environment** from your WordPress Hosting Pro dashboard
+1. **Create a staging environment** from your WordPress Hosting dashboard
 2. **Make your changes** in the staging environment—test plugins, update content, modify themes
 3. **Test thoroughly** to ensure everything works as expected
 4. **Push to production** when you're ready to go live
@@ -60,7 +60,7 @@ You can import backups (including All-in-One WP Migration backups) directly into
 Your staging site has its own unique URL, separate from your production domain. This allows you to:
 
 * View and test changes without affecting your live site
-* Share the staging URL with team members or clients for review
+* Share the staging URL with team members or users for review
 * Work on updates without visitor interruption
 
 ## Best Practices
@@ -102,9 +102,9 @@ If your staging site is taking longer than expected, give it additional time or 
 </details>
 
 <details>
-<summary>Does WordPress Hosting Pro block SEO bots from crawling temporary URLs?</summary>
+<summary>Does WordPress Hosting block SEO bots from crawling temporary URLs?</summary>
 
-Yes. WordPress Hosting Pro automatically restricts SEO bots from indexing temporary URLs (e.g. `sitename.websitepro.hosting`).
+Yes. WordPress Hosting automatically restricts SEO bots from indexing temporary URLs (e.g. `sitename.websitepro.hosting`).
 
 **Why this matters:**
 

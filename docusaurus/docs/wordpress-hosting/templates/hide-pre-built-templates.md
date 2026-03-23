@@ -16,12 +16,12 @@ Within the **Product Settings** section, you'll see an option labeled **Show Inc
 
 When the included Website templates are enabled:
 
-![Show Included Templates enabled - templates visible](img/28760299656087-dfca0e567c.png)
+![Show Included Templates enabled - templates visible](img/hide-pre-built-templates/hide-templates-setting.png)
 
-![Templates list showing pre-built templates](img/28760299656087-d2f0b2ec10.png)
+![Templates list showing pre-built templates](img/hide-pre-built-templates/templates-disabled-view.png)
 
 When the included Website templates are disabled:
 
-![Show Included Templates disabled - templates hidden](img/28760299656087-cbbe6c030b.png)
+![Show Included Templates disabled - templates hidden](img/hide-pre-built-templates/templates-enabled-view.png)
 
-![Templates list without pre-built templates](img/28760299656087-fd2d9dbf7a.png)
+![Templates list without pre-built templates](img/hide-pre-built-templates/templates-disabled-setting.png)

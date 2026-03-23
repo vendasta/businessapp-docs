@@ -1,7 +1,7 @@
 ---
 title: "Custom Template Workflow"
 sidebar_label: "Template Workflow"
-description: "Partners can create and manage custom templates for all of their website accounts through the Templates tab in the WordPress Hosting Standard/Pro/Premium"
+description: "Create and manage custom templates through the Templates tab in WordPress Hosting Standard/Pro/Premium."
 ---
 
 You can create and manage custom templates through the Templates tab in WordPress Hosting Standard/Pro/Premium.
@@ -22,17 +22,17 @@ This feature lets you duplicate your existing templates, or create new ones usin
 You can only duplicate a template that has been published. To publish a template, click on **Edit Template > Template Management > Publish as Template**.
 :::
 
-![Publish as Template option](./img/5616708167191-c546cef087.png)
+![Publish as Template option](./img/custom-template-workflow/workflow-step-1.png)
 
-1. Go to **WordPress Hosting > Templates** and hover over a template. You will now see a **Duplicate** option.
+1. Go to **WordPress Hosting > Templates** and hover over a template. You will now see a **Duplicate** option.
 
-![Screenshot 2025-06-03 at 10.42.28 AM.png](img/5616708167191-645bb34d14.png)
+![Duplicate template option on hover](img/custom-template-workflow/workflow-step-2.png)
 
 2. Clicking on **Duplicate** will prompt you to define a new template name. Simply type in your new template name and click **Create Template**.
 3. To edit the template, click on **Edit Template**. You will be taken to the WordPress Dashboard where you can edit your site.
 4. To save the changes made to your new custom template, click **Update Template** under Template Management.
 
-![Screenshot 2025-06-03 at 10.42.54 AM.png](img/5616708167191-2d58288672.png)
+![Update Template option in Template Management](img/custom-template-workflow/workflow-step-3.png)
 
 ## Frequently Asked Questions (FAQs)
 
@@ -64,4 +64,3 @@ Yes. You can create custom templates by importing an existing WordPress site and
 * Treat templates as a **starting point**; additional customizations can be made on a per-site basis after launch.
 
 </details>
-

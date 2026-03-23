@@ -17,14 +17,14 @@ With templates, you can set up your preferred configuration once and reuse it fo
 ### How do custom templates work?
 
 :::info
-Partners have the ability to add up to 12 of their own templates. Should you wish to add more, you will need to first delete one of your existing templates.
+You can add up to 12 of your own templates. To add more, you will need to first delete one of your existing templates.
 :::
 
 1. Access WordPress Hosting from an account that has **not** completed its site setup.
 2. Navigate to the **Templates** tab.
 3. Click **+Add New**.
 
-![Add New Template button](./img/4406957721879-9c75a6e9dd.png)
+![Add New Template button](./img/custom-website-templates/custom-templates-list.png)
 
 4. Enter your template's name and domain.
 5. Click **Create Template**.
@@ -35,4 +35,4 @@ Once you're satisfied with how your template looks, click **Save as Template**. 
 
 To edit a previously created template, click **Edit Template** on that template's card.
 
-![Edit Template button](img/4406957721879-fc30407057.png)
+![Edit Template button](img/custom-website-templates/add-custom-template.png)
