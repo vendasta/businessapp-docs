@@ -72,11 +72,12 @@ The page contains four tabs:
 
 You can select any tab to jump directly to that section.
 
-### Share button (Internal share only)
+### Share button
 
 In the top-right corner, the **Share** button lets you:
-- Set visibility (Private, All, Anyone with the link)
-- Copy a shareable link to the meeting
+- Set visibility (`Private`, `All of your company`, `Anyone with the link`)
+- Copy an internal meeting link
+- Turn an external meeting link on or off
 
 ## Using the Summary tab
 
@@ -168,7 +169,7 @@ Each entry includes:
 
 You can scroll to find specific statements or copy text for notes. Select **Download transcript** to save the transcript as a file for offline use or attachments.
 
-## Sharing meeting details (Internal share only)
+## Share meeting details
 
 To share a meeting with others:
 
@@ -177,8 +178,14 @@ To share a meeting with others:
    - Private: These meeting recordings are visible to you and other internal participants of your company. These meeting recordings are not logged in the CRM.
    - All of your company: These meeting recordings are visible to you and other internal participants of your company. These meeting recordings are logged in the CRM.
    - Anyone with the link: These meeting recordings are visible to anyone with the link internally within your company. These meeting recordings are not logged in the CRM.
-3. Copy the generated link.
-4. Optionally, set a custom start time to direct viewers to a specific point in the meeting. This is useful if you want to share a specific section of the meeting.
+3. In the link section, choose the tab you want to use:
+   - Internal link: Copy the existing internal URL. A short hint below the field explains who can use this link.
+   - External link: Turn on the toggle to generate an external URL, then copy it. When the toggle is off, there is no external URL to copy.
+4. Optional: Set a custom start time to direct viewers to a specific point in the meeting.
+
+When the external link toggle is on, the `External link` tab shows a green status icon. If you turn the toggle off, the external URL is disabled and a confirmation message appears. If you turn the toggle on again, the same external URL is reused. The external link field also includes a short hint below the URL.
+
+Copying either the internal or external link shows a confirmation message.
 
 Sharing meeting details helps keep everyone aligned without scheduling additional meetings.
 
