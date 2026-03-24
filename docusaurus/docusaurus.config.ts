@@ -176,6 +176,15 @@ const config: Config = {
             from: '/business-app/executivereport/executive_report_lead_analytics',
             to: '/business-app/executivereport/leads',
           },
+          // Conversations email: renamed and moved into email/ subfolder
+          {
+            from: '/business-app/conversations/email-inbox',
+            to: '/business-app/conversations/email/',
+          },
+          {
+            from: '/business-app/conversations/conversations-send-receive-emails',
+            to: '/business-app/conversations/email/',
+          },
         ],
         createRedirects(existingPath) {
           // Only create redirects for business-app paths
