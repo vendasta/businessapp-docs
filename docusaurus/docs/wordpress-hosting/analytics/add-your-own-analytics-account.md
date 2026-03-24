@@ -17,27 +17,27 @@ Plugins meant to support Google Analytics are available, but these often fail to
 4.  Select a property from the menu in the _PROPERTY_ column
 5.  Under _PROPERTY_, click **Tracking Info > Tracking Code**. Your [tracking ID](https://support.google.com/analytics/answer/7372977) is displayed at the top of the page
 6.  Copy that Tracking ID
-7.  Sign into to your WordPress Hosting site’s WordPress admin panel
+7.  Sign in to your WordPress Hosting site’s WordPress admin panel
 8.  Navigate to **Settings > General Code** and scroll to the bottom
 9.  Paste that Tracking ID into the **Custom Google Analytics Tracking ID** and click **Save Changes**
 
 Please keep in mind that this ID will run concurrently with WordPress Hosting’s built-in analytic tracking, which will remain on the WordPress Hosting dashboard.
 
-![Under "Settings > General" you can enter a Google Analytics Tracking ID connected to your own Google Analytics Account.](img/smaller_GA_tracking_id.png)
+![Custom Google Analytics Tracking ID field under Settings General](img/add-analytics-account/ga-tracking-id-field.png)
 
 ## Frequently Asked Questions (FAQs)
 
 <details>
-<summary>How do I add my Google Analytics account to WordPress Hosting Pro?</summary>
+<summary>How do I add my Google Analytics account to WordPress Hosting?</summary>
 
-There are two ways to install Google Analytics in WordPress Hosting Pro: using the built-in settings or by manually injecting the tracking code.
+There are two ways to install Google Analytics in WordPress Hosting: using the built-in settings or by manually injecting the tracking code.
 
 **Method 1: Use the Tracking ID field in Settings**
 
 1. Sign in to your [Google Analytics account](https://analytics.google.com/).
 2. Navigate to: **Admin > Property Settings > Tracking Info > Tracking Code**
 3. Copy your **Tracking ID** (format: `UA-XXXXXXX-X` or `G-XXXXXXX`)
-4. In your WordPress dashboard (WordPress Hosting Pro):
+4. In your WordPress dashboard:
    * Go to **Settings > General**
    * Scroll to the bottom and paste your Tracking ID into the **Custom Google Analytics Tracking ID** field
    * Click **Save Changes**

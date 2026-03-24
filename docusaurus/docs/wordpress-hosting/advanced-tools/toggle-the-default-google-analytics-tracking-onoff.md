@@ -42,12 +42,12 @@ You can always turn Google Analytics back on later. When you do:
 
 2. Click on **Advanced Tools**.
 
-![Advanced Tools menu option](img/12781597309591-100dba1dbb.png)
+![Advanced Tools menu option](img/google-analytics-toggle/advanced-tools-menu.png)
 
 3. Toggle the option for the **Google Analytics Integration**.
 
-![Google Analytics Integration toggle](img/12781597309591-5eac791f8e.png)
+![Google Analytics Integration toggle](img/google-analytics-toggle/ga-integration-toggle.png)
 
 4. Click **Accept**.
 
-![Accept button for Google Analytics changes](img/12781597309591-8c4094951e.png)
+![Accept button for Google Analytics changes](img/google-analytics-toggle/ga-toggle-accept.png)

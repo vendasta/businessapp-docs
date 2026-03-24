@@ -1,12 +1,12 @@
 ---
 title: "Reset Staging Site"
 sidebar_label: "Reset Staging Site"
-description: "WordPress Hosting Pro provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs.    \n 1. Reset to Live Si"
+description: "WordPress Hosting provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs."
 ---
 
-WordPress Hosting Pro provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs.  
+WordPress Hosting provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs.  
   
-![](./img/32998460062487-43958d6f8c.png)
+![Staging site reset options](./img/resetting-staging/reset-staging-site.png)
 
 ### 1\. Reset to Live Site
 

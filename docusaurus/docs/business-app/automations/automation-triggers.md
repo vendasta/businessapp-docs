@@ -105,7 +105,7 @@ Choose the most specific trigger that matches your use case and think about how 
 | Trigger | Description | Example Use Case |
 |---|---|---|
 | A webhook is received | Starts the automation when an external system sends a POST request to the given URL with a user-defined payload. | Connect your automation to a third-party tool or service that supports webhooks. |
-| Triggered via Zapier | Starts the automation when the **Run Automation** action is used in the Zapier integration. See [Zapier integration](zapier.md) for setup instructions. | Trigger an automation from Zapier to update contacts in the CRM and pass along data from another app. |
+| Triggered via Zapier | Starts the automation when the **Run Automation** action is used in the Zapier integration. See [Zapier → Business App](./zapier/zapier-triggers-business-app) for setup instructions. | Trigger an automation from Zapier to update contacts in the CRM and pass along data from another app. |
 
 ### Time-based
 

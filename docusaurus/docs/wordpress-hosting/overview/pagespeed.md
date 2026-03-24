@@ -10,7 +10,7 @@ This additional PageSpeed data can help you understand the impact of any recent 
 
 PageSpeed scores are measured weekly for both desktop and mobile, if a user would like to see an updated score they can do so by clicking the **refresh** button in the bottom left corner of the card. 
 
-![Screen_Shot_2020-12-02_at_2.51.06_PM.png](img/4406951896727-9ec755a565.png)
+![PageSpeed card showing desktop and mobile scores](img/pagespeed/pagespeed-card.png)
 
 If a user clicks to **Improve Desktop** or **Mobile Speed** they will be taken to Google's PageSpeed Insights in another tab. From here, a user can dig into what is causing their site to receive its score and what to change to improve it. 
 
@@ -18,7 +18,7 @@ When a user clicks to **Learn more** a Google article will open in a new tab inf
 
 If the website has recently been created the trend line will not appear as there is not enough data to support it. 
 
-![Screen_Shot_2020-12-02_at_2.57.22_PM.png](img/4406951896727-2903624387.png)
+![PageSpeed card for a newly created website](img/pagespeed/pagespeed-new-site.png)
 
 ## Frequently Asked Questions (FAQs)
 
@@ -48,15 +48,15 @@ Even with a low PageSpeed score, try loading your site manually on both desktop 
 </details>
 
 <details>
-<summary>What is caching, and how does it work in WordPress Hosting Pro?</summary>
+<summary>What is caching, and how does it work in WordPress Hosting?</summary>
 
-Caching stores parts of your website so they can load faster for visitors. WordPress Hosting Pro uses multiple caching layers, including:
+Caching stores parts of your website so they can load faster for visitors. WordPress Hosting uses multiple caching layers, including:
 
 * **Nginx reverse proxy caching** (active for 1 hour)
 * **Google Cloud CDN** (serves content from nearby servers)
 * Optional plugin-level caching (e.g., from Divi)
 
-WordPress Hosting Pro caches public-facing pages that meet all the following conditions:
+WordPress Hosting caches public-facing pages that meet all the following conditions:
 
 * HTTP status is 200 (OK)
 * Request is a GET or HEAD
@@ -70,12 +70,12 @@ Caching is bypassed for:
 * URLs with query parameters
 
 To clear your site's cache:
-* Go to WordPress Hosting Pro > Overview
+* Go to WordPress Hosting > Overview
 * Click the **Flush Cache** button
 
 You can also bypass the cache by appending a query string to any URL (e.g., `example.com/page?v=123`).
 
-If you're using WordPress Hosting Pro's staging environment (available on Pro only), cache is automatically cleared when updates are pushed live.
+If you're using WordPress Hosting's staging environment (available on Pro only), cache is automatically cleared when updates are pushed live.
 
 </details>
 
@@ -85,7 +85,7 @@ If you're using WordPress Hosting Pro's staging environment (available on Pro on
 If your changes only appear when logged in as an admin or after waiting an hour, this is likely due to caching.
 
 To resolve:
-* Click **Flush Cache** in your WordPress Hosting Pro dashboard
+* Click **Flush Cache** in your WordPress Hosting dashboard
 * Wait one hour (the default cache expiration time)
 * Use staging to make changes and then push to live (cache clears automatically)
 * **Tip** - If you would like to access the un-cached version of a page, use a query param, i.e., add a _?v=12345_ to the page URL you'd like to access (so [www.mysite.com](http://www.mysite.com/) becomes [www.mysite.com?v=123456](http://www.mysite.com/?v=123456), bear in mind any random number will work) to the end of the URL. This will be slower to load the page, but it will bypass the NGINX cache.
@@ -128,18 +128,18 @@ You can also reach out to Marketing Services for support with image cleanup and 
 </details>
 
 <details>
-<summary>What is a CDN, and how does WordPress Hosting Pro use it?</summary>
+<summary>What is a CDN, and how does WordPress Hosting use it?</summary>
 
 A **Content Delivery Network (CDN)** speeds up your site by storing and serving content from servers that are geographically close to your visitors.
 
-All WordPress Hosting Pro sites use **Google Cloud CDN** by default, which provides:
+All WordPress Hosting sites use **Google Cloud CDN** by default, which provides:
 * Faster global load times
 * Better performance in mobile and remote environments
 * Built-in security and privacy protections
 * 1-click cache clearing for global content updates
 
 To disable the CDN:
-* Visit your WordPress Hosting Pro dashboard
+* Visit your WordPress Hosting dashboard
 * Toggle **Enable CDN** off
 
 More about CDN functionality: [What is Cloud CDN? (Google)](https://cloud.google.com/blog/topics/developers-practitioners/what-cloud-cdn-and-how-does-it-work)

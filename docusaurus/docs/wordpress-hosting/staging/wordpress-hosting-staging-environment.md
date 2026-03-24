@@ -12,25 +12,25 @@ When it comes to managing your website, ensuring it runs smoothly and without in
 
 Below is a staging view, for a site that hasn't created a staging environment:
 
-![mceclip0.png](img/4406961488151-d5926f8a9e.png)
+![Staging tab view before creating a staging environment](img/staging-environment/staging-tab-overview.png)
 
 The site below has a staging environment:
 
-![mceclip1.png](img/4406961488151-3adbd3a7b9.png)
+![Staging tab view with an active staging environment](img/staging-environment/staging-push-to-live.png)
 
-In the staging environment, customers can test out their site updates, and once satisfied push to live.
+In the staging environment, you can test out your site updates, and once satisfied push to live.
 
 :::tip
 If you still want the staging files to be present after pushing the site to live, check the **"Preserve the Staging files"** checkbox or they will be deleted.
 :::
 
-![mceclip2.png](img/4406961488151-d1e41336e3.png)
+![Preserve the Staging files checkbox option](img/staging-environment/staging-preserve-files.png)
 
 ### Resetting a Staging Site
 
 There are 3 ways to reset your staging site:
 
-![blobid0.png](img/4406961488151-597243ad1e.png)
+![Staging site reset options](img/staging-environment/staging-reset-options.png)
 
 1. **Reset to live site** - This will reset the staging site and make an exact copy of the live site currently.
 
@@ -69,9 +69,9 @@ If your staging site is taking longer than expected, give it additional time or 
 </details>
 
 <details>
-<summary>Does WordPress Hosting Pro block SEO bots from crawling temporary URLs?</summary>
+<summary>Does WordPress Hosting block SEO bots from crawling temporary URLs?</summary>
 
-Yes. WordPress Hosting Pro automatically restricts SEO bots from indexing temporary URLs (e.g. `sitename.websitepro.hosting`).
+Yes. WordPress Hosting automatically restricts SEO bots from indexing temporary URLs (e.g. `sitename.websitepro.hosting`).
 
 **Why this matters:**
 

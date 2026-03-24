@@ -61,7 +61,7 @@ Restoration time depends on the size of your site. Small sites may restore in mi
 </details>
 
 <details>
-<summary>Does WordPress Hosting Pro provide automated daily backups? How long are they kept?</summary>
+<summary>Does WordPress Hosting provide automated daily backups? How long are they kept?</summary>
 
 Yes. All WordPress Hosting Pro and Standard sites are backed up daily, and users can also create manual backups at any time.
 
@@ -70,7 +70,7 @@ Yes. All WordPress Hosting Pro and Standard sites are backed up daily, and users
 * **WordPress Hosting Pro**: Backups are retained for **up to 90 days**
 * **WordPress Hosting Standard**: Only the **most recent daily backup** is available
 
-You can view and restore backups at any time from the **Backups** tab in the WordPress Hosting Pro dashboard.
+You can view and restore backups at any time from the **Backups** tab in the WordPress Hosting dashboard.
 
 > Manual backups are especially useful before major site updates, staging deployments, or plugin/theme changes.
 
@@ -97,10 +97,10 @@ If a WordPress Hosting product (Standard or Pro) is canceled and fully deactivat
 <details>
 <summary>Will I receive notifications if a backup fails?</summary>
 
-**No, not at this time.** WordPress Hosting Pro does not currently send failure notifications for daily or manual backups.
+**No, not at this time.** WordPress Hosting does not currently send failure notifications for daily or manual backups.
 
 We recommend:
-* Regularly checking the **Backups** tab in the WordPress Hosting Pro dashboard
+* Regularly checking the **Backups** tab in the WordPress Hosting dashboard
 * Reviewing backup history to confirm recent versions are available and secure
 * Performing manual backups before major edits or plugin installations
 
