@@ -19,7 +19,7 @@ Your download contains **all files and documentation**, you will need to extrac
 
 Now that you’ve downloaded the zip file, you will need to extract the files from the zip folder in order to locate the installable WordPress zip file.
 
-Make sure you select the zip file which has the title of the theme you’ve purchased. You can find this file by searching for the file which has your theme name and the zip extension. For e.g. we’ve downloaded the ‘Krobs - Personal Onepage Responsive WordPress’ theme, so the file is titled krobs.zip’ (themename.zip).
+Make sure you select the zip file which has the title of the theme you’ve purchased. You can find this file by searching for the file which has your theme name and the zip extension. For example, we’ve downloaded the ‘Krobs - Personal Onepage Responsive WordPress’ theme, so the file is titled krobs.zip’ (themename.zip).
 
 ### How to install your WordPress theme
 
