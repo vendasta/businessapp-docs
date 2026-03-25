@@ -130,6 +130,15 @@ const config: Config = {
             from: '/business-app/administration/email_configuration',
             to: '/business-app/administration/email/email-configuration',
           },
+          // WhatsApp overview moved and merged into whatsapp/whatsapp-for-inbox (two reorganizations)
+          {
+            from: '/business-app/conversations/conversations-whatsapp-overview',
+            to: '/business-app/conversations/whatsapp/whatsapp-for-inbox',
+          },
+          {
+            from: '/business-app/conversations/setup/conversations-whatsapp-overview',
+            to: '/business-app/conversations/whatsapp/whatsapp-for-inbox',
+          },
           // Legacy section redirects - redirect top-level paths only
           // Note: Do NOT include both trailing slash and non-trailing slash versions here.
           // The redirects plugin normalizes paths, and with directory-style output this can
