@@ -228,6 +228,25 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
 - **Custom Capabilities**  
   Expand your AI Chat Receptionist's skills by adding custom capabilities tailored to your unique business needs. You can learn more about [Custom Capabilities](../../../ai-capabilities/creating-custom-capabilities.md) in depth.
 
+#### Book multiple services in one session
+
+You can let your AI Chat Receptionist book multiple services in one conversation when those services are part of the same `Service Menu/Group`.
+
+To enable multi-service booking:
+
+1. Go to `AI` > `AI Workforce` > `Chat Receptionist` > `Configure`.
+2. In `Capabilities`, add `Book Multiple Services`.
+3. Select the `Service Menu/Group` the AI should use.
+4. Keep `Book Appointments` enabled and select the booking link the AI should use.
+5. Click `Save`, then test in Web Chat with a request that includes more than one service.
+
+When enabled:
+- The AI confirms the services before booking.
+- The AI looks for back-to-back availability for the full session.
+- If no combined slot is available, the AI offers alternatives, such as a different time or splitting the booking.
+- The AI collects all required contact and intake details before confirmation.
+- The system sends one consolidated confirmation per enabled notification channel.
+
 #### Example additional instructions capabilities by business type {#example-custom-capabilities-and-additional-instructions-by-business-type}
 
  The examples below show how you can use simple text instructions in Capabilities to help your AI Chat Receptionist understand how to handle different customer types. These complement your Role prompt by focusing on operational requirements, qualification data, routing rules, and response formats.
@@ -411,7 +430,7 @@ Bot: Collect info → Provide booking link.
 User: "I'm with State Farm Insurance."  
 Bot: Enterprise/Multi link.  
  
-**Example C — Travel agency:**
+**Example C — Travel planning service:**
 User: "Can you help me plan a vacation to Italy?"  
 Bot: Collect info → Provide booking link.
 ```

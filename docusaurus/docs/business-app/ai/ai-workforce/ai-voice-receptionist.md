@@ -127,6 +127,24 @@ The **Book appointments with calendar** capability connects to your integrated c
 
 On the `Book appointments with calendar` panel, use the `Select event link to book with` dropdown to choose which calendar your receptionist should use to determine availability as well as which kind of appointments they can offer.
 
+#### Book multiple services in one call
+
+You can configure your AI Voice Receptionist to book multiple services in one call when those services are grouped in the same `Service Menu/Group`.
+
+How to enable:
+1. Go to `AI` > `AI Workforce` > `Voice Receptionist` > `Configure`.
+2. In `Capabilities`, add `Book Multiple Services`.
+3. Select the `Service Menu/Group` to use for multi-service requests.
+4. Keep `Book appointments with calendar` enabled and select the event link to book with.
+5. Click `Save`, then test with a caller request that includes multiple services.
+
+When this is enabled:
+- The AI confirms the services before finalizing the booking.
+- The AI offers back-to-back options that fit the full service session.
+- If a combined slot is not available, the AI offers alternatives, such as another time or splitting the booking.
+- The AI collects required booking details before confirmation.
+- The system sends one consolidated confirmation per enabled notification channel.
+
 #### Additional instructions for AI Voice Receptionist
 
 The **Additional Instructions** capability lets you give your AI Voice Receptionist custom guidance to shape its responses, tone, and logic. It sits at the top of the AI’s prompt stack to refine how it interacts with callers. 
@@ -197,6 +215,7 @@ Before going live with your AI Voice Receptionist, you should test their respons
 - Answering common questions accurately
 - Offering to take a message and have someone call the caller back if they don't have an answer
 - Offering to book an appointment with your calendar
+- Handling requests that include multiple services in one booking session (if `Book Multiple Services` is enabled)
 
 ### Monitor and improve the AI Voice Receptionist
 
