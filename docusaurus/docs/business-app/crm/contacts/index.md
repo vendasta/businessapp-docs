@@ -3,7 +3,7 @@ title: Contacts
 sidebar_position: 1
 description: Manage people you engage with. Import/export, organize, and take action on contacts across campaigns, tasks, and opportunities.
 tags: [contacts, crm]
-keywords: [crm contacts, import contacts, export contacts, contact fields, campaigns]
+keywords: [crm contacts, import contacts, export contacts, contact fields, campaigns, contact owner, assign salesperson, salesperson]
 ---
 
 Use Contacts to manage the people you engage with. Create and update contact records, import and export in bulk, associate contacts with companies and opportunities, and take action with campaigns, lists, and tasks.
@@ -89,6 +89,20 @@ Exports respect your current filters and the set of rows displayed.
 1. From the Contacts table, select records and use actions to add them to a `List`.
 2. Trigger or schedule automations for the selected list.
 
+### Set or change the Contact owner
+
+The **Contact owner** field controls which team member is responsible for a contact. This is the field to use when you want to assign a salesperson or team member to a contact.
+
+1. Open a contact profile.
+2. Find the **Contact owner** field in the contact details panel.
+3. Click the field and select a team member from the dropdown.
+
+You can also set the Contact owner in bulk by selecting multiple contacts from the table, then using `Actions` > `Assign owner`.
+
+:::tip
+Looking for a "Salesperson" or "Assign salesperson" field? The field is called **Contact owner**. Set this field to assign a team member to the contact.
+:::
+
 ### Log activity and create tasks
 
 1. On a contact profile, use the activity area to log notes, emails, calls, messages, and meetings.
@@ -118,6 +132,12 @@ Yes. Choose to update matches by ID, external ID, or email when reviewing the im
 <summary>Where can I see import history and errors?</summary>
 
 After an import completes, review the import summary in `CRM` > `Contacts` to see successes, failures, and error details for each row.
+</details>
+
+<details>
+<summary>How do I assign a salesperson to a contact?</summary>
+
+Use the **Contact owner** field. There is no separate "Salesperson" or "Assign salesperson" field. To assign a team member, open the contact profile, find the **Contact owner** field, and select the person from the dropdown. You can also assign owners in bulk from the contacts table using `Actions` > `Assign owner`.
 </details>
 
 <details>
