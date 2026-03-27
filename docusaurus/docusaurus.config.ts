@@ -33,9 +33,6 @@ const config: Config = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
 
-  markdown: {
-    format: 'detect',
-  },
 
   // Custom head tags for Cookiebot integration
   headTags: [
