@@ -1,0 +1,37 @@
+name: Sync Docs to Target Repos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docusaurus/docs/**"
+  workflow_dispatch:
+    inputs:
+      sync_name:
+        description: "Sync a specific mapping by name (leave blank for all)"
+        required: false
+        type: string
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq \
+            https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Run docs sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.DOCS_SYNC_TOKEN }}
+          GH_TOKEN: ${{ secrets.DOCS_SYNC_TOKEN }}
+        run: |
+          ARGS=""
+          if [[ -n "${{ inputs.sync_name }}" ]]; then
+            ARGS="--name \"${{ inputs.sync_name }}\""
+          fi
+          bash scripts/sync-docs.sh $ARGS
