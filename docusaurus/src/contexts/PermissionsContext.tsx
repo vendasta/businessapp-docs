@@ -22,7 +22,11 @@ export const PermissionsProvider: React.FC<{ children: ReactNode }> = ({ childre
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
-        return JSON.parse(stored);
+        const parsed: string[] = JSON.parse(stored);
+        // Add any products that exist in config but aren't in the stored list
+        const allProductIds = products.map(p => p.id);
+        const merged = Array.from(new Set([...parsed, ...allProductIds.filter(id => !parsed.includes(id))]));
+        return merged;
       }
     } catch (e) {
       console.error('Error reading permissions from localStorage:', e);

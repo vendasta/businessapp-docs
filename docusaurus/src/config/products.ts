@@ -64,6 +64,14 @@ export const products: Product[] = [
     path: '/yesware/',
     tagline: 'Sales Engagement and Email Marketing Platform',
   },
+  {
+    id: 'calendarhero',
+    name: 'CalendarHero',
+    logo: '/img/calendarhero-logo.png',
+    sidebarId: 'calendarheroSidebar',
+    path: '/calendarhero/',
+    tagline: 'AI-powered meeting scheduling and calendar automation',
+  },
 ];
 
 export const getProductById = (id: string): Product | undefined => {
