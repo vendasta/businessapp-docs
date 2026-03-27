@@ -1,0 +1,17 @@
+# Documentation Sync Configuration
+# Defines which doc folders should be synced to other repositories.
+# Sync is one-way: this repo is the source of truth.
+
+syncs:
+  - name: "Yesware Docs"
+    source_path: "docusaurus/docs/yesware"
+    target_repo: "vendasta/yesware-docs"
+    target_path: "docusaurus/docs"
+    target_branch: "master"
+
+  # Add more sync mappings as needed:
+  # - name: "Reputation Docs"
+  #   source_path: "docusaurus/docs/reputation"
+  #   target_repo: "org/reputation-docs"
+  #   target_path: "docs/reputation"
+  #   target_branch: "main"
