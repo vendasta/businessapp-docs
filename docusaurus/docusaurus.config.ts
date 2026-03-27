@@ -33,6 +33,10 @@ const config: Config = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
 
+  markdown: {
+    format: 'detect',
+  },
+
   // Custom head tags for Cookiebot integration
   headTags: [
     {
@@ -90,7 +94,7 @@ const config: Config = {
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
           // Show git-based last update metadata (Docker build now includes .git)
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
           // Note: Docusaurus will gracefully skip git metadata if .git is unavailable
         },
         blog: false,
