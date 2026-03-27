@@ -3,7 +3,7 @@ title: Companies
 sidebar_position: 3
 description: Manage organizations in your CRM. Create, enrich, and segment companies; associate contacts and opportunities; and log sales activity.
 tags: [companies, crm]
-keywords: [crm companies, company fields, logging activity, lead scoring, find accounts]
+keywords: [crm companies, company fields, logging activity, lead scoring, find accounts, owner, assign salesperson, salesperson]
 ---
 
 Use Companies to manage the organizations you sell to and serve. Keep company data accurate, track engagement, and associate contacts, opportunities, tasks, and lists.
@@ -49,6 +49,18 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 2. Search by business type and location, select new businesses, and click `Create companies`.
 3. Open `View companies` to work your new list.
 
+### Set or change the Owner
+
+The **Owner** field controls which team member is responsible for a company. This is the field to use when you want to assign a salesperson or team member to a company.
+
+1. Open a company profile.
+2. Find the **Owner** field in the company details panel.
+3. Click the field and select a team member from the dropdown.
+
+:::tip
+Looking for a "Salesperson" or "Assign salesperson" field? The field is called **Owner**. Set this field to assign a team member to the company.
+:::
+
 ### Optional: Lead Scoring
 
 If enabled, configure scoring criteria in `Administration` > `Score` and use the score to prioritize outreach in the company table.
@@ -68,9 +80,15 @@ Company records include identifiers, name, website, address, contact details, li
 </details>
 
 <details>
+<summary>How do I assign a salesperson to a company?</summary>
+
+Use the **Owner** field. There is no separate "Salesperson" or "Assign salesperson" field. Open the company profile, find the **Owner** field, and select the team member from the dropdown.
+</details>
+
+<details>
 <summary>Can I log activities automatically?</summary>
 
-Yes. Platform actions like company creation, salesperson changes, and opportunity wins/losses are logged automatically. You can also enable email auto-capture and use automations for additional activity logging.
+Yes. Platform actions like company creation, owner changes, and opportunity wins/losses are logged automatically. You can also enable email auto-capture and use automations for additional activity logging.
 </details>
 
 <details>
