@@ -2,7 +2,7 @@ name: Sync Docs to Target Repos
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - "docusaurus/docs/**"
   workflow_dispatch:
