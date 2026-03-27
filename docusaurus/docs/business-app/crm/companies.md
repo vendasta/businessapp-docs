@@ -3,7 +3,7 @@ title: Companies
 sidebar_position: 3
 description: Manage organizations in your CRM. Create, enrich, and segment companies; associate contacts and opportunities; and log sales activity.
 tags: [companies, crm]
-keywords: [crm companies, company fields, logging activity, lead scoring, find accounts, company owner, assign salesperson, salesperson]
+keywords: [crm companies, company fields, logging activity, lead scoring, find accounts, owner, assign salesperson, salesperson]
 ---
 
 Use Companies to manage the organizations you sell to and serve. Keep company data accurate, track engagement, and associate contacts, opportunities, tasks, and lists.
@@ -49,16 +49,16 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 2. Search by business type and location, select new businesses, and click `Create companies`.
 3. Open `View companies` to work your new list.
 
-### Set or change the Company owner
+### Set or change the Owner
 
-The **Company owner** field controls which team member is responsible for a company. This is the field to use when you want to assign a salesperson or team member to a company.
+The **Owner** field controls which team member is responsible for a company. This is the field to use when you want to assign a salesperson or team member to a company.
 
 1. Open a company profile.
-2. Find the **Company owner** field in the company details panel.
+2. Find the **Owner** field in the company details panel.
 3. Click the field and select a team member from the dropdown.
 
 :::tip
-Looking for a "Salesperson" or "Assign salesperson" field? The field is called **Company owner**. Set this field to assign a team member to the company.
+Looking for a "Salesperson" or "Assign salesperson" field? The field is called **Owner**. Set this field to assign a team member to the company.
 :::
 
 ### Optional: Lead Scoring
@@ -82,7 +82,7 @@ Company records include identifiers, name, website, address, contact details, li
 <details>
 <summary>How do I assign a salesperson to a company?</summary>
 
-Use the **Company owner** field. There is no separate "Salesperson" or "Assign salesperson" field. Open the company profile, find the **Company owner** field, and select the team member from the dropdown.
+Use the **Owner** field. There is no separate "Salesperson" or "Assign salesperson" field. Open the company profile, find the **Owner** field, and select the team member from the dropdown.
 </details>
 
 <details>
