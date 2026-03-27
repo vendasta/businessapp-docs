@@ -17,7 +17,7 @@ The Knowledge Base is a reference library your AI Employees can search when answ
 
 Your Knowledge Base is a collection of information sources that your AI Employees can search during conversations. This includes:
 
-- **Business Profile Information** - Your basic business details, hours, location, services, and business attributes (such as accessibility and amenities)
+- **Business Profile Information** - Your basic business details, hours, location, services, and business attributes (such as accessibility and amenities, including Google and Bing attributes when available)
 - **Website Content** - Pages from your website that contain relevant customer information
 - **Custom Documents** - Uploaded files like FAQs, price lists, policies, or procedures
 - **Manual Knowledge Entries** - Custom text you've written specifically for your AI team
@@ -133,7 +133,7 @@ To avoid this:
 <details>
 <summary>Can AI answer questions about my business attributes, such as accessibility or amenities?</summary>
 
-Yes. AI Employees can use business attributes from your Business Profile in Knowledge Base lookups when that data is available.
+Yes. AI Employees can use business attributes from your Business Profile in Knowledge Base lookups, including Google and Bing attributes when available.
 
 If you update attributes in your Business Profile, save your changes so the updated profile data can be used in future AI responses after syncing.
 
