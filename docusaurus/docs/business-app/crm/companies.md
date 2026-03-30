@@ -63,19 +63,21 @@ Looking for a "Salesperson" or "Assign salesperson" field? The field is called *
 
 ### Take bulk actions on companies
 
-Select one or more companies from the table, then click the **⚡ Actions** button to act on them without leaving the page. Available actions include:
+Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page.
 
-- **Add to list** — add selected companies to an existing list
-- **Remove from list** — remove selected companies from a list
-- **Assign owner** — set or change the owner for all selected companies at once
+![Actions button](img/actions-button.png)
+
+Available actions include:
+
+- **Delete companies** — remove the selected companies from your CRM
+- **Add to static list** — add selected companies to a static list
 - **Start automation** — run an automation on the selected companies immediately
-- **Export** — download the selected companies as a CSV
 
 To start an automation in bulk:
 
 1. Go to `CRM` > `Companies`.
 2. Select the companies you want to include (use filters and search to narrow the list first, if needed).
-3. Click **⚡ Actions** > **Start automation**.
+3. Click `Actions` > `Start automation`.
 4. Choose the automation you want to run from the list.
 5. Confirm to start the automation for all selected companies.
 
