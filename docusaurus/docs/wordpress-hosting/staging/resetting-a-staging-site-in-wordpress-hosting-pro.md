@@ -18,7 +18,7 @@ This option creates an **exact copy** of your current live site in the staging e
 
 Select this option to reset the staging site using a backup from your **backup list**.
 
-*   Ideal for comparing your current live site to an earlier version or recovering content from a previous state.
+*   Ideal for comparing your current live site to a selected backup snapshot or recovering content from a backup.
 
 ### 3\. Reset from Template
 
