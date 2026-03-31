@@ -40,6 +40,18 @@ This plugin provides ways to automatically sync information on your site from th
 
 Specific instructions on how to properly utilize each type of block are located within the tab in WordPress.
 
+### Booking link shortcode
+
+You can show your booking URL anywhere shortcodes are supported by using:
+
+`[business_profile attr="booking_url"]`
+
+This shortcode outputs the booking URL as plain text.
+
+If no booking URL is set in your Business Profile, the output is `Booking URL not available`.
+
+If the booking URL is not valid, the output is `Invalid booking URL`.
+
 ## Updating Header Contact Information
 
 To make changes to the contact details displayed in your website's header, follow these steps:
