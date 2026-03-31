@@ -26,3 +26,5 @@ Use this option to install a **fresh template** on your staging site.
 
 *   Perfect for experimenting with new designs or starting with a blank canvas.
 *   This setup will differ from your live site, allowing you to explore creative changes without affecting the production environment.
+*   This option is available for single-site and WordPress Hosting Premium multisite staging sites.
+*   You will only see templates that are available to your account.
