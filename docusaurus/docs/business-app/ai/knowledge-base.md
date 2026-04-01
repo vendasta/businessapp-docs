@@ -17,7 +17,7 @@ The Knowledge Base is a reference library your AI Employees can search when answ
 
 Your Knowledge Base is a collection of information sources that your AI Employees can search during conversations. This includes:
 
-- **Business Profile Information** - Your basic business details, hours, location, and services
+- **Business Profile Information** - Your basic business details, hours, location, services, and business attributes (such as accessibility and amenities, including Google and Bing attributes when available)
 - **Website Content** - Pages from your website that contain relevant customer information
 - **Custom Documents** - Uploaded files like FAQs, price lists, policies, or procedures
 - **Manual Knowledge Entries** - Custom text you've written specifically for your AI team
@@ -46,6 +46,7 @@ The AI doesn't read your entire Knowledge Base for every message. It retrieves t
 - Review and update your Knowledge Base regularly
 - Remove outdated pricing, policies, or service information
 - Add new products, services, or procedures as they become available
+- Update your Business Profile details and attributes when they change, then save so AI responses can use the latest profile data after syncing
 
 ### Organize by topic
 - Group related information together
@@ -126,6 +127,15 @@ To avoid this:
 - Ensure your Knowledge Base content aligns with your AI's configured instructions
 - Use the **Explanation** feature to audit responses and identify conflicts
 - Keep authoritative business rules in your AI's instructions (via Capabilities) and factual reference information in the Knowledge Base
+
+</details>
+
+<details>
+<summary>Can AI answer questions about my business attributes, such as accessibility or amenities?</summary>
+
+Yes. AI Employees can use business attributes from your Business Profile in Knowledge Base lookups, including Google and Bing attributes when available.
+
+If you update attributes in your Business Profile, save your changes so the updated profile data can be used in future AI responses after syncing.
 
 </details>
 
