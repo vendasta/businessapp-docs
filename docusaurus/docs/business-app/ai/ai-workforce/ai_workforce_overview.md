@@ -13,7 +13,6 @@ All AI Employees share a common structure: **name**, **purpose**, **channels**, 
 **Guides:**
 - [Set up the AI Chat Receptionist](./ai-chat-receptionist/index.mdx)
 - [Set up the AI Voice Receptionist](ai-voice-receptionist.md)
-- [Set up the Social Media Manager](./social-media-manager.md)
 - [Custom AI Employees](./custom-ai-employees/index.md)
 - [AI Capabilities Overview](../ai-capabilities/index.mdx)
 - [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md)
@@ -99,30 +98,6 @@ Build a custom AI Employee when you need a role that isn't covered by a pre-conf
 - **[AI Support Employee](./custom-ai-employees/ai-support-employee.md)** — resolves customer inquiries via chat and SMS, and escalates when a question falls outside the knowledge base
 
 See [Custom AI Employees](./custom-ai-employees/index.md) for the full setup process and additional examples.
-
----
-
-## Social media manager defaults
-
-When you activate the Social Media Manager AI Employee, the `Social Calendar Generation` setup includes pre-configured defaults so you can start generating weekly plans right away.
-
-### Default model
-
-- **AI model:** `Gemini Flash Latest` (recommended)
-
-### Default trigger schedule
-
-| Setting | Default |
-| --- | --- |
-| **Schedule type** | `On a schedule` |
-| **Frequency** | Weekly |
-| **Day of week** | Monday |
-| **Time** | 9:00 AM |
-| **Timezone** | Automatically uses the timezone set in your Business App |
-| **Start date** | Today |
-| **End date** | `No end date` |
-
-These defaults are available in both web and mobile.
 
 ---
 
