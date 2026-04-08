@@ -64,6 +64,17 @@ To remove a capability:
   Send confirmation details to the customer.
   ```
 
+#### Multi-service booking
+- **What it does**: Books multiple services in one booking session when the services are in the same `Service Menu/Group`
+- **Prerequisites**: Enable `Book appointments` and choose a booking link or event type for scheduling
+- **Recommended instructions**:
+  ```
+  Confirm all requested services before booking.
+  Offer back-to-back times that fit the full session.
+  If no combined slot is available, offer another time or split the booking.
+  Collect all required contact and intake details once before confirmation.
+  ```
+
 #### Communication style
 - **What it does**: Maintains consistent tone and brand voice
 - **Recommended instructions**:
