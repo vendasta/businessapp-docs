@@ -1,0 +1,66 @@
+---
+title: "Link Tracking"
+description: "Enable and use link tracking in Yesware to see when recipients click links in your emails."
+---
+
+# Link Tracking
+
+Link tracking lets you see when a recipient clicks a hyperlink in your email — including which link they clicked, which email it was in, and what device they used. Use this to prioritize follow-ups based on engagement.
+
+When a tracked link is clicked, Yesware's server is pinged with the IP address and you receive a click notification.
+
+:::tip
+Name your links rather than leaving them as raw URLs (e.g., use "our website" instead of "www.yesware.com"). This reduces the chance of your message being flagged as spam.
+:::
+
+## Enable Link Tracking in Gmail
+
+1. Click the **Yesware dropdown** in the top left corner of Gmail
+2. Select **Preferences**
+3. Go to the **Tracking** section
+4. Toggle on **Track Links**
+
+Once enabled, any hyperlink you insert is automatically converted to a trackable link. You can verify a link is tracked by hovering over it — if the destination includes `https://t.yesware.com/tl...`, it's being tracked.
+
+## Insert a Tracked Link in Outlook
+
+1. Open a compose window and click **Open Sidebar** in your ribbon
+2. Select the **Insert Tracked Link** tab
+3. Fill in the fields:
+   - **Text to Display** — the word or phrase to hyperlink
+   - **URL** — the destination link
+   - **Title** — optional text shown when the recipient hovers over the link
+
+:::tip
+Links added to Templates are automatically set up as tracked links.
+:::
+
+## Frequently Asked Questions
+
+<details>
+<summary>Why do my links look like t.yesware.com?</summary>
+
+Yesware rewrites your URL to a tracking domain (`t.yesware.com`) to capture the click event before redirecting the recipient to your original destination. The recipient lands on your intended page — Yesware just records the click in between.
+
+</details>
+
+<details>
+<summary>Can I track links in a plain text email?</summary>
+
+Yes, but HTML format is recommended. In plain text, the full tracking URL (`http://t.yesware.com/...`) is visible to the recipient, which can look suspicious.
+
+</details>
+
+<details>
+<summary>Does link tracking affect email deliverability?</summary>
+
+Occasionally, aggressive spam filters may flag tracking links. Using descriptive anchor text (e.g., "Click here" or "Visit our site") instead of raw URLs helps improve deliverability.
+
+</details>
+
+<details>
+<summary>Can I search for emails in the Tracking Feed in Outlook?</summary>
+
+The Activity Feed does not currently have a search option. To find activity for a specific email, use Outlook's search bar or your Sent folder to locate the thread, then click on it and select the **Message** tab in the Yesware Sidebar to view its tracking history. You can also search the [Tracking Report](https://app.yesware.com/reports/tracking) directly.
+
+</details>
