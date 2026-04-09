@@ -1,0 +1,196 @@
+---
+title: "Meeting Scheduler"
+description: "Complete guide to setting up and using Meeting Scheduler in Yesware."
+---
+
+# Meeting Scheduler
+
+Meeting Scheduler provides reps with a complete automated workflow for booking meetings with customers and prospects, eliminating the back and forth emails in booking a meeting by creating a scheduling link you can send to your recipients, which allows them to book meetings directly on your calendar.
+
+## Setting Up Meeting Scheduler
+
+To set up Meeting Scheduler, open a new email message and click on the calendar icon in the Yesware Sidebar to launch the Meeting Scheduler menu. Next, click the gear icon to open up the [Meeting Scheduler settings](https://app.yesware.com/account/meeting_scheduler).
+
+### Basic Settings
+
+**Display Name:** Enter what name you want to appear when an individual goes to book a meeting with you. It will say "Book a time with *Display Name*."
+
+**Welcome Message:** A greeting or instructions to your recipients. You can leave the default or leave it blank.
+
+**Meeting Link Text to Display:** Pre-hyperlinked text inserted into your emails — e.g., "Click here to book a meeting with me."
+
+**My Calendar Link URL:** A custom URL that directs recipients to your booking page.
+
+**Web Conferencing:** If you use Zoom or Microsoft Teams, enable the integration to automatically insert a meeting link into booked meetings. See [Zoom Integration](./zoom-integration.mdx).
+
+### Advanced Settings
+
+**Prevent Last Minute Meetings:** Prevent recipients from booking at the last minute. Configure a limit in minutes or hours.
+
+**Breathing Room:** Buffer time before and after meetings. A 15-minute Breathing Room ensures you always have 15 minutes free on either side of any booked meeting.
+
+**Working Hours:** Block off times you're unavailable so you have complete control over when meetings can be booked.
+
+Click **Save Details** when done.
+
+## Creating Meeting Types
+
+Meeting Types let you define the different kinds of meetings you routinely have — Intro Calls (30 min), Demos (60 min), etc. You can send a specific meeting type to an invitee or let them choose from all your types.
+
+To get started, click **Create Meeting Type**.
+
+### Meeting Type Settings
+
+**Meeting Type Name:** A clear, concise name like "Demo," "Discovery Call," or "Quick Connect."
+
+**Meeting Duration:** How long should this meeting last when booked?
+
+**Meeting Location:** Enter dial-in details, or click **Virtual Meeting** to select Zoom or Microsoft Teams to auto-generate a meeting link.
+
+**Meeting Description:** Let recipients know what the meeting will be about.
+
+**Meeting Link Text to Display:** Pre-hyperlinked text for this meeting type — e.g., "Click here for a product demo."
+
+**Direct URL to Meeting:** A custom URL that sends recipients directly to book this specific meeting type.
+
+### Advanced Meeting Type Settings
+
+**Add Custom Questions:** Request additional info from your recipient — phone number, company name, etc.
+
+**Add to Calendar:** Choose which of your owned calendars this meeting type books onto.
+
+**Add Others to Meeting:** Add colleagues to the meeting so their schedule is considered when showing availability.
+
+**Reschedule Link Settings:** By default, all meeting types include a reschedule link. Uncheck this to remove it.
+
+**Working Hours:** Set custom working hours for this meeting type, independent of your main Meeting Scheduler settings.
+
+Click **Save Meeting Type** when done.
+
+## Suggesting Specific Times for Meetings
+
+### Gmail
+1. Open a new email and click the calendar icon at the bottom of the compose window
+2. Choose **Select Custom Availability**
+3. Click and drag on your calendar to select the times you want to offer
+4. Set a title, duration, location, and description, then click **Share Custom Times**
+
+Your recipient clicks the link and chooses from the available times. Only slots still free on your calendar appear. When they book, everyone on the original email receives a calendar invite and you get a confirmation from Yesware Meeting Scheduler.
+
+### Outlook
+1. Open the Yesware Sidebar in your compose window
+2. Click the **Insert Meeting Link** tab
+3. Choose **Select Custom Availability** and follow the same steps as above
+
+## Using Meeting Scheduler Links
+
+You can insert a Meeting Scheduler link in several places:
+
+- **Compose window** — Open the Sidebar, click **Insert Meeting Link**, and select your link
+- **Templates** — Click **Insert Meeting Link** at the bottom of the compose area
+- **Campaigns** — Click **Insert Meeting Link** at the bottom of the email touch compose area
+- **Email signature** — Copy your link from [Meeting Scheduler Settings](https://app.yesware.com/account/meeting_scheduler) and paste it into your signature
+
+## How Calendar Availability Works
+
+When a recipient opens your Meeting Scheduler link, only time slots that are still free on your calendar are shown — reflected in their time zone. Meeting Scheduler connects directly with Google Calendar (Gmail) or Outlook Calendar (Outlook) and checks for conflicts in real time.
+
+## Frequently Asked Questions
+
+<details>
+<summary>What does my recipient see when I send a Meeting Scheduler link?</summary>
+
+Your recipient sees your current availability in their time zone, filtered by the working hours you set. If you send your general calendar link, they'll see all your meeting types and can choose the one that suits them. After selecting a meeting type, they choose a date and time, enter their name and email, and click **Schedule**. They receive a confirmation email and a calendar invite.
+
+</details>
+
+<details>
+<summary>Can I add a Meeting Scheduler link to a Campaign?</summary>
+
+Yes. In the compose area for an email touch, click the **Meeting Link** button and choose your general calendar link or a specific meeting type. Once a recipient books a meeting, they are removed from the Campaign — this counts as a "connection."
+
+</details>
+
+<details>
+<summary>Can I see how many meetings were booked from a Campaign?</summary>
+
+Yes. The Campaigns dashboard includes a **Meetings Booked** column showing how many meetings were booked via a Meeting Scheduler link in each Campaign. This counts only the first meeting booked per recipient, from any touch in the Campaign or from a thread that started with a Campaign touch.
+
+</details>
+
+<details>
+<summary>Can I set up different working hours for a specific meeting type?</summary>
+
+Yes. Open the meeting type, scroll to the **Working Hours** tab, and check **Set Meeting Type Working Hours**. Select the days and hours for that meeting type and click **Save Meeting Type**.
+
+</details>
+
+<details>
+<summary>Will Meeting Scheduler allow back-to-back meetings?</summary>
+
+Not if you use Breathing Room. Under **Advanced Settings** in your Meeting Scheduler settings, set a Breathing Room duration — for example, 15 minutes — and that buffer will be enforced before and after every booked meeting.
+
+</details>
+
+<details>
+<summary>What does the meeting duration selector do?</summary>
+
+When using Custom Availability, the duration selector sets the meeting length. You select large blocks of available time and Meeting Scheduler automatically breaks them into bookable slots of that duration.
+
+</details>
+
+<details>
+<summary>Will Meeting Scheduler events sync to Salesforce?</summary>
+
+**Gmail (Enterprise only):** Yes. Meeting events sync automatically if the recipient has a matching Contact or Lead in your Salesforce environment and your Salesforce Sync is enabled.
+
+**Outlook:** No. Meeting Scheduler events in Outlook do not automatically sync to Salesforce.
+
+</details>
+
+<details>
+<summary>How do I update my name in Meeting Scheduler?</summary>
+
+Go to your **Meeting Scheduler settings**, click **Edit Details**, update your **Display Name** (and the calendar link URL if your name appears there), then click **Save Details**. Changes appear immediately.
+
+</details>
+
+<details>
+<summary>What happens if my recipient is out of office?</summary>
+
+If an out-of-office reply is detected from a Campaign recipient, you'll be alerted and given a task to reschedule their next touch. Select **Reschedule** on the To Do card, choose a new date, and click **Set**.
+
+</details>
+
+<details>
+<summary>What happens if the original meeting times are no longer available?</summary>
+
+Meeting Scheduler checks your calendar for conflicts in real time. If a time slot becomes unavailable after you've sent the link, it won't be shown to the recipient.
+
+</details>
+
+<details>
+<summary>Can I add another Google Calendar to Meeting Scheduler?</summary>
+
+Yes. Your Google Calendar syncs automatically to the email you signed up with, but you can add another:
+
+1. In Google Calendar, click the **gear icon** and select **Subscribe to a new calendar**
+2. Enter the additional email address
+3. When prompted that you don't have access, click **Request Access**
+4. The other account receives a permission email — click **Accept Request**
+5. Go to your [Meeting Scheduler settings](https://app.yesware.com/meeting_scheduler), edit a meeting type, and select the new calendar from the **Book on Calendar** dropdown
+
+</details>
+
+<details>
+<summary>How do I troubleshoot Google Calendar Sync issues?</summary>
+
+1. Go to your [Salesforce Preference page](https://app.yesware.com/crm/services) and **Disable** Calendar Sync
+2. Refresh Gmail
+3. Open Google Calendar in a separate tab and select **Yesware > Deactivate**
+4. Go back and **Enable** Calendar Sync
+5. Refresh Gmail, open Google Calendar, and select **Yesware > Activate**
+
+Contact Yesware Support if the issue persists.
+
+</details>

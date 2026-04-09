@@ -1,0 +1,91 @@
+---
+title: "Team Meeting Types"
+description: "Create shared meeting types for your team, set up Round Robin scheduling, and add personalized meeting titles."
+---
+
+# Team Meeting Types
+
+Team Leaders can create Meeting Types for their entire team, ensuring consistent meeting content and scheduling across all members.
+
+## Creating a Team Meeting Type
+
+1. Go to your [Meeting Scheduler Settings](https://app.yesware.com/meeting_scheduler/)
+2. In the **Team Meeting Types** area, click **Create Team Meeting Type**
+3. Select the team for which you'd like to create the meeting type
+4. Choose whether to enable [Round Robin](#round-robin-scheduling)
+5. Fill in the meeting type details: name, duration, description, link display text, and URL
+6. Under **Advanced Settings**, add any custom questions and colleagues to include
+7. Click **Save Meeting Type**
+
+Once saved, the meeting type is available to all team members and their recipients.
+
+:::note
+- Meetings book on each team member's default calendar
+- The location field is blank unless the team member has set up the [Zoom integration](./zoom-integration.mdx)
+- Team Meeting Types can only be edited by Team Leaders of that specific team
+- A Team Meeting Type belongs to one team only and cannot be shared across multiple teams
+:::
+
+## Round Robin Scheduling
+
+Round Robin is available on the **Enterprise plan** for Gmail and Outlook. It rotates meeting bookings across available team members, so recipients always see available times and get routed to whoever is free.
+
+### Setting Up Round Robin
+
+1. Open an existing Team Meeting Type or create a new one
+2. Toggle **Round Robin Meeting ON**
+3. Select up to **15 teammates** to include in the rotation
+4. Click **Done** and fill in the meeting type details
+5. Save
+
+### How Booking Logic Works
+
+Meeting Scheduler shows all times where at least one team member is available. If multiple members are free at the selected time, the booking goes to whoever had a meeting least recently in that rotation — ensuring even distribution.
+
+Additional colleagues added under **Colleague Calendars and Availability** are added to the invite but their availability is not checked.
+
+Breathing Room, Working Hours, and Last Minute Meeting Protection settings apply to each member individually.
+
+### Managing the Round Robin
+
+To update who's in the rotation, go to the meeting type settings and toggle teammates on or off. If a member is removed from the team on your [Teams page](https://app.yesware.com/account/member_teams), they are automatically removed from the Round Robin.
+
+:::note
+You need at least read access to a teammate's calendar for their availability to be considered. Without read access, they'll still be added to the invite but availability won't be checked. The Team Leader creating the Round Robin must have read access to all members' calendars.
+:::
+
+## Personalized Meeting Titles
+
+By default, booked meetings use the Meeting Type Name as the calendar title. Personalized Meeting Titles let you replace this with dynamic fields pulled from the recipient's booking responses.
+
+### Setting Up a Personalized Meeting Title
+
+1. In the meeting type settings, click **+ Add Personalized Meeting Title**
+2. Build your title using **Insert Custom** fields — options include Name, Company, Host Name, Host Email, Meeting Type Name, Attendee Email, Attendee Name, and Attendee Company Name
+3. The selected fields become required questions for the recipient during booking
+4. Save the meeting type
+
+The personalized title will appear on the calendar event for all attendees once the meeting is booked.
+
+## Frequently Asked Questions
+
+<details>
+<summary>How many teammates can I add to a Round Robin?</summary>
+
+Up to 15 teammates per Round Robin rotation.
+
+</details>
+
+<details>
+<summary>Can I add colleagues who don't use Yesware?</summary>
+
+Yes. You can add non-Yesware colleagues to a meeting type. They'll be included in the calendar invite, but their availability won't be checked unless you have read access to their calendar.
+
+</details>
+
+<details>
+<summary>Can the same colleague be on multiple meeting types?</summary>
+
+Yes. A colleague can appear on as many meeting types as needed, and they don't need to be a Yesware user to be added.
+
+</details>

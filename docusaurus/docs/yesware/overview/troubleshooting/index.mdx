@@ -1,0 +1,54 @@
+---
+title: "Troubleshooting Common Issues"
+description: "Solutions to common problems and issues with Yesware."
+---
+
+# Troubleshooting Common Issues
+
+If you're experiencing issues with Yesware, start by checking the [Yesware status page](https://status.yesware.com/) — subscribe to updates to stay on top of any ongoing incidents.
+
+If there's no status to explain your issue, the steps below resolve the majority of problems for both Gmail and Outlook users.
+
+## Gmail (Chrome)
+
+Work through these steps in order:
+
+1. **Update Chrome** — Go to `chrome://settings/help` and confirm you're on the latest version. If prompted to relaunch, do so.
+2. **Uninstall Yesware** — Go to `chrome://extensions`, click **Remove** next to Yesware, and refresh Gmail.
+3. **Clear cache** — Go to `chrome://settings/clearBrowserData`, switch to the **Advanced** tab, set Time Range to **All Time**, check Cookies, Cached images, and Hosted app data, then click **Clear Data**.
+4. **Clear local storage** — Go to **Chrome menu > More Tools > Developer Tools > Console**, type `localStorage.clear()` next to the `>` symbol, press Enter, then close the pane and refresh Gmail.
+5. **Reinstall Yesware** — Download and reinstall from [yesware.com/install](https://www.yesware.com/install).
+6. **Restart Chrome** — Close Chrome completely, reopen it, and sign back into Gmail.
+
+## Outlook
+
+1. **Update Outlook** — Make sure you're running the latest version
+2. **Check the sidebar is pinned** — In compose windows, confirm the Yesware sidebar is open and pinned
+3. **Remove and reinstall the add-in** — Click **Get Add-ins** in Outlook, go to **My Add-ins**, remove Yesware, then re-add it
+4. **Check your Outlook version** — Some features require Outlook Version 2008 (Build 13127.21064) or above
+
+## Authentication Issues
+
+### Outlook sidebar is asking me to log in when sending a tracked email
+
+This usually happens when authentication between your email and Yesware has broken. To fix it:
+
+1. Open Chrome and go to [Outlook.com](https://outlook.com/)
+2. Sign in to your account
+3. Click into an email in your inbox and select **More Actions**
+4. Select **Yesware > Open Yesware** and log in when prompted
+
+Once logged in through Outlook Web, close and reopen your Outlook desktop app — you should be authenticated automatically.
+
+If the issue persists, contact [support@yesware.com](mailto:support@yesware.com).
+
+## When to Contact Support
+
+Reach out to [support@yesware.com](mailto:support@yesware.com) if:
+
+- Basic troubleshooting steps don't resolve the issue
+- You're seeing a persistent error message
+- Features stopped working unexpectedly after working before
+- You need help with account-specific configuration
+
+When contacting support, include: a description of the issue, steps you've already tried, your email client (Gmail or Outlook), your Outlook version if applicable, and any screenshots or error messages.

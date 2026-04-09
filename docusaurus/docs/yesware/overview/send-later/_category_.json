@@ -2,5 +2,9 @@
   "label": "Send Later",
   "position": 1,
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "yesware/overview/send-later/index"
+  }
 }

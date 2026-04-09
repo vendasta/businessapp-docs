@@ -1,0 +1,76 @@
+---
+title: "Gmail Troubleshooting"
+description: "Step-by-step troubleshooting for Yesware tracking and activity issues in Gmail."
+---
+
+# Gmail Troubleshooting
+
+If Yesware isn't working as expected in Gmail, start by checking the [Yesware status page](https://status.yesware.com/). Subscribe to updates so you're notified of any ongoing incidents.
+
+If there's no status to explain the issue, follow the steps below.
+
+## Step 1 — Send a Test Email
+
+Send a tracked email to [test@yesware.com](mailto:test@yesware.com). Then check your [Tracking Report](https://app.yesware.com/reports/tracking) to see if an open event appears within a few seconds.
+
+- **If events appear in the Tracking Report** but you're not seeing notifications in Gmail, the issue is with your browser or notification settings — follow the steps below.
+- **If no events appear in the Tracking Report**, tracking isn't being applied at all — skip to [Tracking Not Being Applied](#tracking-not-being-applied).
+
+## Notifications Not Appearing (Tracking Is Working)
+
+### Check pop-up notification settings
+Go to **Yesware > Preferences > Notifications** and make sure **Event Notifications** is toggled on. Click **Save & Reload**.
+
+### Check for conflicting Chrome extensions
+Go to `chrome://extensions/` and remove any extensions with similar functionality to Yesware, including:
+- Other tracking tools (Boomerang, Hunter, EmailTracker)
+- Pop-up blockers (Adblock, Adblock Plus, Ghostery)
+- Outreach tools (HubSpot, Salesforce)
+- Antivirus add-ins (McAfee, Norton)
+
+Log out and back into Gmail after removing any extensions.
+
+### Check cookie settings
+1. In Chrome, go to **Settings > Advanced > Privacy and Security > Site Settings > Cookies**
+2. Toggle **Block third-party cookies** to **Off**
+3. Make sure `yesware.com` is listed under your **Allow** tab
+4. Refresh Gmail
+
+### Clear cache and local storage
+
+**Clear cache:**
+1. Go to `chrome://settings/clearBrowserData`
+2. Set time range to **All Time** and check: Cookies and other site data, Cached images and files, Hosted app data
+3. Click **Clear Data** and refresh Gmail
+
+**Clear local storage:**
+1. Go to **Chrome menu > More Tools > Developer Tools**
+2. Click the **Console** tab
+3. Next to the `>` symbol, type: `localStorage.clear()` and press Enter
+4. Close Developer Tools and refresh Gmail
+
+### Gather console logs for support
+If the issue persists, send console logs to [support@yesware.com](mailto:support@yesware.com):
+
+**Browser console logs:** Chrome menu > More Tools > Developer Tools > Console — copy or screenshot any errors.
+
+**Background console logs:** Go to `chrome://extensions/`, enable Developer Mode, click **Inspect views** on the Yesware background page — copy or screenshot any errors.
+
+## Tracking Not Being Applied
+
+### Check that tracking is enabled
+Open a compose window and confirm the **Track** checkbox is checked at the bottom. If you don't see it, go to **Yesware > Preferences > Inbox** and toggle **Compose Toolbar** on. Click **Save & Reload**.
+
+### Check for conflicting extensions
+Follow the same steps as above to remove conflicting Chrome extensions.
+
+### Update Chrome
+Go to `chrome://settings/help` and confirm you're on the latest version. If not, update and relaunch Chrome.
+
+### Clear cache, local storage, and reinstall Yesware
+1. Uninstall Yesware from `chrome://extensions/`
+2. Clear cache and local storage using the steps above
+3. Reinstall Yesware from [yesware.com/install](https://www.yesware.com/install)
+4. Restart Chrome and sign back into Gmail
+
+If the problem persists after all steps, contact [support@yesware.com](mailto:support@yesware.com) with your console logs and a description of the issue.
