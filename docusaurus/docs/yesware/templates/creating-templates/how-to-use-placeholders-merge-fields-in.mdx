@@ -1,34 +1,46 @@
 ---
 title: "How to Use Placeholders/Merge Fields in Templates"
-description: "How to Use Placeholders/Merge Fields in Templates"
-sidebar_position: 59
+description: How to add and use Text, Dropdown, and Salesforce merge fields in Yesware templates.
+sidebar_label: "Merge Fields"
+sidebar_position: 4
 ---
 
-# How to Use Placeholders/Merge Fields in Templates
+# Merge Fields
 
-Yesware offers two types of merge fields, **Text Fields** and **Dropdown Fields, **that allow you to personalize Templates quickly and efficiently. Enterprise users can also leverage **Salesforce Fields** for deeper personalization.
-These merge fields can be used in both Gmail and Outlook, with slight differences in how Templates are inserted during email composition.
-### Merge Field Types (Shared Across Gmail &amp; Outlook)
-**1. Text Field**
-In the Template editor, click **"Merge Field"** and then select **"Text Field."**
-Give the field a name and click **"OK."**
-Text Fields serve as blank, freeform inputs you can populate later.
-If you use the **same field name** (e.g., `"Name"`) multiple times in a Template, filling in one will populate **all instances**.
-**2. Dropdown Field**
-In the Template editor, click **"Merge Field"** and then select **"Dropdown Field."**
-Name the field and create up to **five options**.
-Dropdown Fields function as a **picklist** when you're composing or previewing the Template.
-### Using Templates with Merge Fields
-**For Gmail**
-Open a **compose window**.
-Click the **“Templates”** button at the bottom of the email draft.
-Select the Template you want to use.
-Click:
-**“Fill In”** to populate your merge fields interactively.
-**“Insert”** to drop the template as-is (use only if the Template doesn’t require field input).
-**For Outlook**
-Open a **compose window**.
-Click the **“Add a Template”** button in the Outlook ribbon.
-Find and select the desired Template.*(No separate "Fill In" option; fields are filled within the Template workflow itself.)*
-### Merge Fields in Campaigns (Gmail &amp; Outlook)
-You can insert Templates with Merge Fields into **Campaigns** to send personalized emails to hundreds of recipients—all while only composing a single email. Merge Fields ensure each message feels individually crafted.
+Merge fields let you personalize templates for each recipient. Yesware offers three types, available in both Gmail and Outlook.
+
+## Text Field
+
+A free-form blank for custom text input.
+
+1. In the template editor, click **Merge Field** → **Text Field**.
+2. Name the field and click **OK**.
+
+If you use the same field name (e.g., "Name") multiple times in one template, filling in one fills them all.
+
+## Dropdown Field
+
+A picklist with up to five options you define when creating the template.
+
+1. In the template editor, click **Merge Field** → **Dropdown Field**.
+2. Name the field and create up to five options.
+
+## Salesforce Field *(Enterprise only)*
+
+Pulls data automatically from the matching Contact or Lead record in Salesforce.
+
+1. In the template editor, click **Merge Field** → **Salesforce Field**.
+2. Start typing the Salesforce field name — matching options appear.
+3. Select a field and click **OK**.
+
+Yesware checks the first recipient in the **To** field. If a match is found in Salesforce, the field is populated automatically.
+
+## Using merge fields when sending
+
+**Gmail** — Click **Fill In** to populate fields interactively, or **Insert** if the template has no merge fields.
+
+**Outlook** — Click **Add a Template** in the ribbon, then click the template itself (not Insert) to fill in merge fields before sending.
+
+## Merge fields in Campaigns
+
+Templates with merge fields can be inserted into Campaigns for personalized bulk outreach, matching fields to CSV columns, table data, or Salesforce fields.
