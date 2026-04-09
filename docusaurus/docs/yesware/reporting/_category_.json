@@ -1,6 +1,10 @@
 {
-  "label": "Reporting",
+  "label": "Reports",
   "position": 4,
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "yesware/reporting/index"
+  }
 }
