@@ -1,0 +1,35 @@
+---
+title: "Why doesn't my message have tracking data?"
+description: "Why doesn't my message have tracking data?"
+sidebar_position: 256
+---
+
+# Why doesn't my message have tracking data?
+
+If you're not seeing any tracking data associated with an email, there are several possible explanations. These apply to both Gmail and Outlook users, with some platform-specific variations.
+### Common Reasons for Missing Tracking Data
+1. **The message is inbound and hasn’t received a tracked reply**
+Yesware only tracks activity for emails that **you’ve sent with tracking enabled**. If you open an inbound message and haven’t replied with tracking turned on, no data will be available.
+2. **Tracking was not enabled on the sent email**
+**Gmail**:You may have forgotten to check the **Track** checkbox at the bottom of the compose window, or tracking was disabled in your Preferences.
+**Outlook**:You may not have had the **Yesware Sidebar open**, or tracking was turned off in your settings.
+Also note:Tracking will not function if the message was sent in **plain-text mode**.
+3. **The recipient has images disabled**
+Yesware’s tracking is **image-based**. If the recipient’s email client blocks images by default:
+Opens will **not be registered**
+You may still see **link clicks**, **presentation views**, or **replies**, even if the open wasn't recorded
+4. **The message hasn’t been opened yet**
+If the recipient simply hasn’t opened your email yet, no tracking event will be generated.
+5. **You sent the message to a colleague and Colleague Events are turned off**
+By default, Yesware can exclude internal sends from your tracking data. You can toggle this setting in your Preferences.
+6. **Your Yesware login expired (Gmail only)**
+If you’re using Gmail and your Yesware session expired, the tracking pixel may not have been inserted. Try logging out and back in again.
+### How to Make Sure Your Emails Are Tracked
+**Gmail**
+Confirm the **Track** checkbox is checked in the compose window.
+Go to **Preferences** via the Yesware dropdown in Gmail, and toggle on **"Track Opens."**
+Make sure **Conversation View** is turned **ON** in your Gmail settings to see thread-level tracking.
+Ensure **plain-text mode is disabled**:In the compose window, click the three dots and uncheck **"Plain Text Mode."**
+**Outlook**
+Keep the **Yesware Sidebar open** when sending to ensure tracking is applied.
+Verify that open and click tracking are enabled in your **Yesware Settings**.

@@ -1,0 +1,135 @@
+---
+title: "Activity & Email Tracking"
+description: "Complete guide to email tracking in Yesware — how it works, what you can track, and answers to common questions."
+---
+
+# Activity & Email Tracking
+
+Email tracking tells you when your messages are opened, clicked, and re-opened in real time — all so you can follow up smarter.
+
+**Tracking tells you:**
+- When your messages are opened, clicked, and re-opened in real time
+- On what device your message was opened
+- When your links are clicked
+
+## How It Works
+
+When you send an email with Yesware, an invisible pixel is embedded at the end of your outgoing message. When your message is opened, you receive a notification. Your recipient won't see a thing — unlike read receipts, the tracking pixel is completely invisible.
+
+## Send a Tracked Email
+
+Compose an email as usual and make sure the **Track** checkbox is checked. Your email won't look any different to the recipient — the only difference is the invisible tracking pixel.
+
+:::tip
+You can check your tracking settings by hovering over the Track button. To change settings, go to the Yesware menu (top left of Gmail), then click **Preferences**. Toggle on **Track Opens** and/or **Track Links**.
+:::
+
+With **Track Links** on, you can see any link clicked within your email. Follow [deliverability best practices](../overview/deliverability.mdx) to keep messages out of spam.
+
+To track attachments uploaded from your computer, click the blue paperclip icon. The tracked attachment appears as a stylized link in your message.
+
+:::tip
+To track Google Drive attachments, make sure Link Tracking is enabled so you can attach it as a tracked link.
+:::
+
+## Tracking in Plain Text Mode
+
+**Yesware tracking does not work in plain-text mode.** Because tracking relies on an invisible image-based pixel, plain-text emails (which strip all formatting and images) will disable tracking entirely.
+
+To ensure your emails are tracked, send them using HTML or rich text formatting.
+
+### Gmail
+1. Open a new compose window
+2. Click the **three stacked dots** in the toolbar (next to the trash icon)
+3. Uncheck **Plain Text Mode**
+
+### Outlook
+Make sure your compose window is set to use **HTML format**, not plain text.
+
+## Presentation Tracking
+
+Once a recipient opens and views a presentation, you are notified through the Yesware Activity Feed. Select the presentation name in the Activity Feed to view the report — it includes a summary of how many people were sent the presentation, how many views it received, and the average time spent viewing. Engagement is shown per page and per user.
+
+You can also find the presentation report by clicking the eyeball icon in the top right corner of the original email, or through the [Tracking Report](https://app.yesware.com/reports/tracking) in your account.
+
+Presentation view reports sync to Salesforce if you are on the Enterprise plan with Salesforce Sync enabled.
+
+## Following Up with Tracking Data
+
+You get notifications as soon as recipients open a tracked email or link — showing when they opened it and what device they used.
+
+You'll see a pop-up notification in real time, and you can also access tracking event data in the Activity Feed, in your inbox/sent folders, or within an email thread.
+
+Filter by **Recent Activity**, **Not Opened**, and **Opened/Not Replied** to better prioritize.
+
+Filter by **Scheduled** to see future scheduled activity, like any Reminders you've set or emails scheduled using Send Later.
+
+To see a detailed view showing all tracking activity for a given thread, click on the event within the Activity Feed. You can also click the subject line within the Activity Feed to go directly to the email thread.
+
+Use the **Tracking icons** in your Inbox and Sent folders to see at a quick glance who's engaging with your emails. When the eye icon is dark blue, hover over it to see recent activity.
+
+## Best Practices
+
+- Add an image to your email signature to encourage recipients to display images — this helps ensure the tracking pixel loads.
+- If an email is sent to several people, CC'd, or forwarded, Yesware cannot differentiate between opens. You'll see notifications like "Eleanor or 5 others opened."
+- Enable Link Tracking to see what content prospects are interested in. If recipients have high spam filters, format links as hyperlinked words (e.g., "Visit our [website](https://www.yesware.com)") rather than full URLs.
+
+## Privacy and Legality
+
+Tracking is legal. This technology has been used in the marketing world for nearly 20 years. Yesware's [terms of use](https://www.yesware.com/terms/) outline how tracking information is used. The personal information collected is used only for the application, and is never shared without your consent. See the [privacy policy](https://www.yesware.com/privacy/) for full details.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Why am I receiving an open notification right after I send a tracked email?</summary>
+
+If you receive open event notifications only a few seconds after sending, your email may have gone through the recipient's virus scanner, or was "pre-opened" by their email client. This is a rare occurrence and there is no workaround since it's caused by settings on the recipient's end.
+
+</details>
+
+<details>
+<summary>What does my recipient see when I send an email using Yesware?</summary>
+
+Nothing. Yesware embeds an invisible pixel at the end of your outgoing message. Your recipient has the same experience as usual. Yesware also sends email from your own email server, so there are no "sent on behalf of" messages that can trigger spam filters.
+
+Note: if a recipient has images turned off, they may see a prompt like "Load images from this user?" — this is caused by the invisible pixel image and is the same approach used by major email marketing platforms.
+
+</details>
+
+<details>
+<summary>Why did I receive a reply when there was no open event?</summary>
+
+For an open event to be recorded, the recipient must open the message and load the tracking pixel. If they have images disabled, the message can be read without loading the pixel. Reply data is tracked because it originates from your inbox. This is rare but does happen, usually with Outlook users or Apple users who opt out of sharing data.
+
+</details>
+
+<details>
+<summary>Why is my Activity Feed blank?</summary>
+
+A blank Activity Feed is usually caused by Yesware cookies being blocked. To fix this:
+
+1. Paste `chrome://settings/cookies` into a new browser window
+2. Make sure **Clear cookies and site data when you close all windows** is **OFF**
+3. Under **Sites that can always use cookies**, click **Add** and enter: `[*.]yesware.com`
+4. Click **Add** again and enter: `[*.]google.com`
+5. Refresh Gmail
+
+If this doesn't resolve the issue, contact Yesware Support.
+
+</details>
+
+<details>
+<summary>Why do I see duplicate notifications?</summary>
+
+If you're receiving duplicate notifications across different devices, it's likely because mobile devices (iPhone and Android) typically create two notifications for one open event. When a mobile device opens an email, two data requests are made — one from the phone's IP and one from a data center IP — resulting in two notifications.
+
+</details>
+
+<details>
+<summary>I sent a test email to myself and don't see any tracking — why not?</summary>
+
+Yesware does not track when you open your own email. To test tracking, send an email to [test@yesware.com](mailto:test@yesware.com). The test recipient will open your email and you should see a new tracking event in your Activity Feed within seconds.
+
+If you want to test with more control, send to yourself at an alternative email address and open it on your mobile device using **data (not Wi-Fi)** — using the same Wi-Fi network tells Yesware it's you, and no notification is sent.
+
+</details>

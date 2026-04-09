@@ -1,0 +1,12 @@
+---
+title: "How is Yesware responding to recent privacy updates?"
+description: "How is Yesware responding to recent privacy updates?"
+sidebar_position: 181
+---
+
+# How is Yesware responding to recent privacy updates?
+
+Due to some [Apple updates](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/), we may not be able to display the recipient's location or device data if they are opt-in to the privacy updates. With email tracking, we are only able to display the information that is shared with us. It’s possible with these updates that no information or false information is shared with us in order to protect the privacy of recipients. 
+We have made some updates related to server and proxy opens. These server and proxy opens typically result in an immediate opening after the email was sent. Yesware infers that some opens might come from proxies, email security devices, or other infrastructure; and ignores opens from those systems to present a cleaner view of recipient interactions with your emails. Because of the proxy opens, as well as the Apple updates, you might notice fewer open events due to the clean-up of immediate opens and Apple Proxy notifications.
+Outside of the privacy updates, there are other situations that don’t allow us to display open tracking events. If a recipient chooses to disable images, this will prevent our tracking pixel from loading and showing an open event. If you are sending to a recipient that has a strong firewall it might scan the email and trip our pixel or any links. Servers are also able to scan emails when they are sent out or come into an inbox, so they may be tripped that way as well. 
+With all of this said, we are recommending that you use at least one link in an email as we are able to collect information this way. When recipients click on the link we are able to pick up their location and device data.
