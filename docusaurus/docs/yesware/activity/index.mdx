@@ -182,3 +182,71 @@ Start by confirming the Yesware Sidebar is open in your compose window. If track
 4. **Check for conflicting add-ins** — remove add-ins with similar functionality (other tracking tools like Boomerang or Hunter, outreach tools like HubSpot or Salesforce add-ins, or antivirus add-ins like McAfee)
 
 </details>
+
+<details>
+<summary>Can recipients tell if their email is being tracked?</summary>
+
+No. Yesware uses an invisible tracking pixel to monitor opens and engagement. Unlike traditional read receipts, the pixel is completely hidden — your recipient won't notice any difference in their email experience.
+
+</details>
+
+<details>
+<summary>Does Yesware track email addresses in the CC field?</summary>
+
+No. Yesware only tracks email addresses in the **To** field. CC'd addresses are not tracked.
+
+</details>
+
+<details>
+<summary>Can I tell which specific recipient opened an email with multiple people on it?</summary>
+
+No. When an email is sent to multiple recipients, Yesware cannot identify exactly who opened it. You'll see a general notification like "John Smith or 5 others opened." To track opens accurately, send to one recipient at a time.
+
+</details>
+
+<details>
+<summary>Can I search the Activity Feed?</summary>
+
+The Activity Feed does not currently have a search option. To find activity for a specific email:
+
+- Use Gmail's or Outlook's search bar to locate the thread in your Sent folder
+- Open the email and click the **Tracking** eyeball icon (Gmail) or select the **Message** tab in the Yesware Sidebar (Outlook) to view its tracking history
+
+You can also search the [Tracking Report](https://app.yesware.com/reports/tracking) directly.
+
+</details>
+
+<details>
+<summary>Why doesn't my message have tracking data?</summary>
+
+A few common reasons:
+
+- **Tracking wasn't enabled** — in Gmail, the Track checkbox wasn't checked; in Outlook, the Yesware Sidebar wasn't open when you sent
+- **Plain-text mode was on** — tracking requires HTML format; plain-text emails disable the tracking pixel
+- **The recipient has images disabled** — opens won't register, but link clicks and replies may still be tracked
+- **The email hasn't been opened yet**
+- **Colleague Events are off** — internal sends may be excluded from your tracking data by default
+- **Your Yesware session expired (Gmail)** — log out and back in, then resend
+
+</details>
+
+<details>
+<summary>Why does the Activity Feed show "Opened by Google image proxy (66.249.82.0)"?</summary>
+
+This IP address belongs to a Google image proxy server. When a recipient opens your email, Google sometimes loads the tracking pixel through its own proxy server rather than from the recipient's IP. Yesware has no way to prevent this — whether images are loaded by the recipient's IP or Google's proxy is entirely controlled by Google.
+
+</details>
+
+<details>
+<summary>Are emails sent to .mil or .gov domains tracked?</summary>
+
+Not reliably. Military and government domains often use specialized security software that blocks tracking features. Tracking events may not be registered for emails sent to these addresses. If you need confirmation of receipt, follow up directly.
+
+</details>
+
+<details>
+<summary>Will Yesware count a bounce message as a reply?</summary>
+
+No. If Yesware detects a bounce, it is not counted as a reply. The bounce is recorded in your [Tracking Report](https://app.yesware.com/reports/tracking) — click the subject line in the report for detailed information. On the Enterprise plan with Salesforce Sync enabled, bounce notices are also synced to Salesforce.
+
+</details>
