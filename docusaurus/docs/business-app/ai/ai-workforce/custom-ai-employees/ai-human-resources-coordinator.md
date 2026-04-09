@@ -1,12 +1,12 @@
 ---
-title: AI HR Employee
-sidebar_label: AI HR Employee
+title: AI Human Resources Coordinator
+sidebar_label: AI Human Resources Coordinator
 sidebar_position: 4
-description: Set up a custom AI HR Employee that answers general Human Resources questions, cites company policies, and redirects employees to the right person or resource when a question falls outside scope.
+description: Set up a custom AI Human Resources Coordinator that answers general Human Resources questions, cites company policies, and redirects employees to the right person or resource when a question falls outside scope.
 tags: [ai-workforce, custom, hr, people-operations, ai-employees]
 keywords:
   [
-    AI HR employee,
+    AI Human Resources Coordinator,
     people operations AI,
     HR policy assistant,
     internal AI employee,
@@ -16,9 +16,9 @@ keywords:
   ]
 ---
 
-The AI HR Employee is a custom AI Employee built for internal use. It answers general Human Resources questions, links to official policy documents when they exist, and redirects employees to the right person or resource when a question falls outside scope or requires access to personal records. It is designed to help employees get fast, accurate guidance on HR topics without routing every inquiry to your HR team.
+The AI Human Resources Coordinator is a custom AI Employee built for internal use. It answers general Human Resources questions, links to official policy documents when they exist, and redirects employees to the right person or resource when a question falls outside scope or requires access to personal records. It is designed to help employees get fast, accurate guidance on HR topics without routing every inquiry to your HR team.
 
-## Why build an AI HR Employee?
+## Why build an AI Human Resources Coordinator?
 
 HR teams spend a significant portion of their time answering the same general questions about leave, benefits, onboarding, and forms. Without a self-serve option, employees face:
 
@@ -27,7 +27,7 @@ HR teams spend a significant portion of their time answering the same general qu
 - Misrouted requests to the wrong team when the right path isn't obvious
 - HR staff pulled away from complex, high-value work to answer questions the handbook already covers
 
-The AI HR Employee addresses this by giving employees an always-available first point of contact for general HR questions, while keeping personal and sensitive matters with a human.
+The AI Human Resources Coordinator addresses this by giving employees an always-available first point of contact for general HR questions, while keeping personal and sensitive matters with a human.
 
 ## Before you begin
 
@@ -42,10 +42,10 @@ These prompts were developed and tested using **Gemini Flash 3**. Select Gemini 
 :::
 
 :::tip
-The AI HR Employee is only as accurate as its knowledge sources. Before launch, confirm that your policy documents are up to date and that the knowledge base reflects your current handbook.
+The AI Human Resources Coordinator is only as accurate as its knowledge sources. Before launch, confirm that your policy documents are up to date and that the knowledge base reflects your current handbook.
 :::
 
-## How to set up the AI HR Employee
+## How to set up the AI Human Resources Coordinator
 
 ### Step 1: Create the AI Employee
 
@@ -148,7 +148,7 @@ The three levels are invisible to the employee as labels. They shape how the AI 
 
 ### Step 4: Enable built-in capabilities
 
-The AI HR Employee works primarily from its knowledge base and PolicyScope logic. No additional built-in capabilities are required, but you may optionally enable the following:
+The AI Human Resources Coordinator works primarily from its knowledge base and PolicyScope logic. No additional built-in capabilities are required, but you may optionally enable the following:
 
 1. In the **Capabilities** section, toggle on as needed:
    - **Capture leads** (optional): enables the AI to collect the employee's name and contact details when escalating a question to HR, so the HR team has context before following up
@@ -164,7 +164,7 @@ For more details on configuring built-in capabilities, see [Configuring Capabili
 
 ### Step 5: Add knowledge sources
 
-Your knowledge base is the foundation of the AI HR Employee's accuracy. Connect every policy and reference document your employees regularly ask about.
+Your knowledge base is the foundation of the AI Human Resources Coordinator's accuracy. Connect every policy and reference document your employees regularly ask about.
 
 1. In the **Knowledge Sources** section, add:
    - **HR policy documents**: employee handbook, leave policies, benefits guides, onboarding and offboarding checklists
@@ -194,7 +194,7 @@ The PolicyScope capability references HR contacts for personal or sensitive ques
 
 ### Step 7: Test and refine
 
-Run test questions across all three PolicyScope levels before announcing the AI HR Employee to your team.
+Run test questions across all three PolicyScope levels before announcing the AI Human Resources Coordinator to your team.
 
 **Level 1: General policy question**
 Ask a question your knowledge base covers directly, such as "How many days of PTO do I get?" or "What's the process for requesting a leave of absence?" The AI should answer from the knowledge base and link to the policy document.
@@ -215,7 +215,7 @@ Refine the role prompt, PolicyScope capability, or escalation contacts based on 
 
 ## Optional: Keep policies current with Google Drive sync
 
-If your HR policies live in Google Drive, you can connect them to your AI HR Employee using Google Apps Script. When a policy document is updated in Drive, the script detects the change and refreshes the knowledge the AI uses — so your employee is always working from current information without manual re-uploads.
+If your HR policies live in Google Drive, you can connect them to your AI Human Resources Coordinator using Google Apps Script. When a policy document is updated in Drive, the script detects the change and refreshes the knowledge the AI uses — so your employee is always working from current information without manual re-uploads.
 
 This setup uses a Google Sheet as a structured index of your policy documents. An Apps Script reads from your Drive folders, writes document names and content into the Sheet, and a deployed web app makes that Sheet available to the AI Employee as a live knowledge source.
 
@@ -385,7 +385,7 @@ If you update the script later, you must create a new deployment (or redeploy) f
 
 ### Step 5: Add the web app as a capability in the AI Employee
 
-Now connect the deployed web app to your AI HR Employee as a custom capability with a live tool.
+Now connect the deployed web app to your AI Human Resources Coordinator as a custom capability with a live tool.
 
 1. In the AI Employee configuration, scroll to **Capabilities**
 2. Click `Add a capability`
@@ -418,7 +418,7 @@ If no policy is found, say so and redirect the employee to the HR team rather th
 9. Click **Done**, then click **Save**
 
 :::note
-Test the tool by chatting with your AI HR Employee and asking about a policy that exists in your Drive folders. The AI should retrieve the document name and link from the Sheet and include them in its response. If nothing is returned, confirm the Sheet was populated (Step 3 tip) and that the web app URL is correct.
+Test the tool by chatting with your AI Human Resources Coordinator and asking about a policy that exists in your Drive folders. The AI should retrieve the document name and link from the Sheet and include them in its response. If nothing is returned, confirm the Sheet was populated (Step 3 tip) and that the web app URL is correct.
 :::
 
 ## Frequently Asked Questions
@@ -468,6 +468,6 @@ Update the source document and re-upload or reconnect it in the Knowledge Source
 <details>
 <summary>Can the AI take action for the employee, like submitting a form?</summary>
 
-No. The AI HR Employee provides information and direction only. It will tell an employee which form to use and where to find it, but it will not submit forms, send messages, or open tickets on their behalf. This is by design to keep sensitive HR actions within human control.
+No. The AI Human Resources Coordinator provides information and direction only. It will tell an employee which form to use and where to find it, but it will not submit forms, send messages, or open tickets on their behalf. This is by design to keep sensitive HR actions within human control.
 
 </details>
