@@ -1,0 +1,207 @@
+---
+title: "Activity & Email Tracking"
+description: "Complete guide to email tracking in Yesware — how it works, what you can track, and answers to common questions."
+---
+
+# Activity & Email Tracking
+
+Email tracking tells you when your messages are opened, clicked, and re-opened in real time — all so you can follow up smarter.
+
+**Tracking tells you:**
+- When your messages are opened, clicked, and re-opened in real time
+- On what device your message was opened
+- When your links are clicked
+
+A **tracking event** is logged each time a tracked email is opened, a link is clicked, or an attachment or presentation is viewed. All events appear chronologically in your **Activity Feed**. Users on Pro, Premium, and Enterprise plans can view unlimited tracking events.
+
+## How It Works
+
+When you send an email with Yesware, an invisible pixel is embedded at the end of your outgoing message. When your message is opened, you receive a notification. Your recipient won't see a thing — unlike read receipts, the tracking pixel is completely invisible.
+
+## Send a Tracked Email
+
+### Gmail
+
+Compose an email as usual and make sure the **Track** checkbox is checked. Your email won't look any different to the recipient — the only difference is the invisible tracking pixel.
+
+:::tip
+Check your tracking settings by hovering over the Track button. To change settings, go to the Yesware menu (top left of Gmail), then click **Preferences**. Toggle on **Track Opens** and/or **Track Links**.
+:::
+
+### Outlook
+
+Open the **Yesware Sidebar** in your compose window (click **Open Sidebar** in the ribbon — pinning it is recommended). Make sure **Track Email Opens** is toggled on, then hit Send.
+
+:::tip
+If you use Outlook's Mac Desktop App or an older version of Outlook (below Version 2008, Build 13127.21064), you may need to use the **Send with Yesware** button instead of the standard Send button to track emails.
+:::
+
+## Tracking in Plain Text Mode
+
+**Yesware tracking does not work in plain-text mode.** Because tracking relies on an invisible image-based pixel, plain-text emails (which strip all formatting and images) will disable tracking entirely.
+
+To ensure your emails are tracked, send them using HTML or rich text formatting.
+
+### Gmail
+1. Open a new compose window
+2. Click the **three stacked dots** in the toolbar (next to the trash icon)
+3. Uncheck **Plain Text Mode**
+
+### Outlook
+Make sure your compose window is set to use **HTML format**, not plain text.
+
+## Following Up with Tracking Data
+
+You get notifications as soon as recipients open a tracked email or link — showing when they opened it and what device they used.
+
+You'll see a pop-up notification in real time, and you can also access tracking event data in the Activity Feed, in your inbox/sent folders, or within an email thread.
+
+Filter by **Recent Activity**, **Not Opened**, and **Opened/Not Replied** to better prioritize.
+
+Filter by **Scheduled** to see future scheduled activity, like any Reminders you've set or emails scheduled using Send Later.
+
+To see a detailed view showing all tracking activity for a given thread, click on the event within the Activity Feed. You can also click the subject line within the Activity Feed to go directly to the email thread.
+
+Use the **Tracking icons** in your Inbox and Sent folders to see at a quick glance who's engaging with your emails. When the eye icon is dark blue, hover over it to see recent activity.
+
+## Turning Off Tracking
+
+### Gmail
+
+**For a single email:** Uncheck the **Track** checkbox at the bottom of the compose window before sending.
+
+**For a sent email:** Go to the Activity Feed, select the message, and slide the **Tracking toggle** to the left. Or open the thread and click the **Tracking icon** in the top right to toggle it off.
+
+**Globally:** Go to the Yesware dropdown > **Preferences** > **Tracking**, set **Track Opens** to OFF, and click **Save and Reload**.
+
+### Outlook
+
+**For a new email:** Open the Yesware Sidebar and toggle **Track Email Opens** to OFF before sending.
+
+Note: In Outlook, you cannot turn off tracking for a message after it has already been sent.
+
+## Best Practices
+
+- Add an image to your email signature to encourage recipients to display images — this helps ensure the tracking pixel loads.
+- If an email is sent to several people, CC'd, or forwarded, Yesware cannot differentiate between opens. You'll see notifications like "Eleanor or 5 others opened."
+- Enable Link Tracking to see what content prospects are interested in. If recipients have high spam filters, format links as hyperlinked words (e.g., "Visit our [website](https://www.yesware.com)") rather than full URLs.
+
+## Privacy and Legality
+
+Tracking is legal. This technology has been used in the marketing world for nearly 20 years. Yesware's [terms of use](https://www.yesware.com/terms/) outline how tracking information is used. The personal information collected is used only for the application, and is never shared without your consent. See the [privacy policy](https://www.yesware.com/privacy/) for full details.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Can recipients tell if their email is being tracked?</summary>
+
+No. Yesware uses an invisible tracking pixel — unlike traditional read receipts, the pixel is completely hidden. Your recipient won't notice any difference in their email experience.
+
+</details>
+
+<details>
+<summary>Does Yesware track email addresses in the CC field?</summary>
+
+No. Yesware only tracks email addresses in the **To** field. CC'd addresses are not tracked.
+
+</details>
+
+<details>
+<summary>Are emails sent to .mil or .gov domains tracked?</summary>
+
+Not reliably. Military and government domains often use specialized security software that blocks tracking features. If you need confirmation of receipt, follow up directly.
+
+</details>
+
+<details>
+<summary>Why am I receiving an open notification right after I send a tracked email?</summary>
+
+If you receive open event notifications only a few seconds after sending, your email may have gone through the recipient's virus scanner, or was "pre-opened" by their email client. This is a rare occurrence and there is no workaround since it's caused by settings on the recipient's end.
+
+</details>
+
+<details>
+<summary>What does my recipient see when I send an email using Yesware?</summary>
+
+Nothing. Yesware embeds an invisible pixel at the end of your outgoing message. Your recipient has the same experience as usual. Yesware also sends email from your own email server, so there are no "sent on behalf of" messages that can trigger spam filters.
+
+Note: if a recipient has images turned off, they may see a prompt like "Load images from this user?" — this is caused by the invisible pixel image and is the same approach used by major email marketing platforms.
+
+</details>
+
+<details>
+<summary>Why did I receive a reply when there was no open event?</summary>
+
+For an open event to be recorded, the recipient must open the message and load the tracking pixel. If they have images disabled, the message can be read without loading the pixel. Reply data is tracked because it originates from your inbox. This is rare but does happen, usually with Outlook users or Apple users who opt out of sharing data.
+
+</details>
+
+<details>
+<summary>Why is my Activity Feed blank?</summary>
+
+A blank Activity Feed is usually caused by Yesware cookies being blocked. To fix this:
+
+1. Paste `chrome://settings/cookies` into a new browser window
+2. Make sure **Clear cookies and site data when you close all windows** is **OFF**
+3. Under **Sites that can always use cookies**, click **Add** and enter: `[*.]yesware.com`
+4. Click **Add** again and enter: `[*.]google.com`
+5. Refresh Gmail
+
+If this doesn't resolve the issue, contact Yesware Support.
+
+</details>
+
+<details>
+<summary>Why do I see duplicate notifications?</summary>
+
+Mobile devices (iPhone and Android) typically create two notifications for one open event. When a mobile device opens an email, two data requests are made — one from the phone's IP and one from a data center IP — resulting in two notifications.
+
+</details>
+
+<details>
+<summary>I sent a test email to myself and don't see any tracking — why not?</summary>
+
+Yesware does not track when you open your own email. To test tracking, send an email to [test@yesware.com](mailto:test@yesware.com). The test recipient will open your email and you should see a new tracking event in your Activity Feed within seconds.
+
+If you want to test with more control, send to yourself at an alternative email address and open it on your mobile device using **data (not Wi-Fi)** — using the same Wi-Fi network tells Yesware it's you, and no notification is sent.
+
+</details>
+
+<details>
+<summary>How is Yesware affected by Apple's privacy updates?</summary>
+
+Apple's privacy updates may prevent Yesware from displaying a recipient's location or device data if they have opted into Apple's privacy protections. Yesware also filters out opens that appear to come from proxies, email security devices, or other infrastructure — so you may notice fewer open events as a result of this cleanup. Using at least one tracked link per email is recommended, since link clicks can still capture location and device data even when open tracking is limited.
+
+</details>
+
+<details>
+<summary>Why do I see my tracked messages in my Drafts folder? (Outlook)</summary>
+
+When you use **Send with Yesware**, Yesware saves a draft briefly to add the tracking pixel before sending. If you see a message in your Drafts folder, that means Send with Yesware is working. Messages move from Drafts to your Sent folder once Outlook syncs — this can take a minute. To confirm an email has sent, check your **Sent folder**.
+
+</details>
+
+<details>
+<summary>How do I turn off tracking notifications in Outlook?</summary>
+
+To stop receiving notifications for emails sent to colleagues (Colleague Events):
+
+1. Open the Yesware Sidebar and choose the **Menu** tab
+2. Select **My Preferences**
+3. Switch the **Colleague Events** toggle to OFF
+
+</details>
+
+<details>
+<summary>Email tracking isn't working in Outlook — how do I fix it?</summary>
+
+Start by confirming the Yesware Sidebar is open in your compose window. If tracking still isn't working, try these steps in order:
+
+1. **Reset authentication** — log out of Yesware and log back in via the Menu tab in the Sidebar
+2. **Run the diagnostic tool** — download and run the [Yesware diagnostic tool](https://outlook-install.yesware.com/2.0/diag/yfodiag.exe) with Outlook closed; send results to [support@yesware.com](mailto:support@yesware.com)
+3. **Reinstall Yesware** — click Get Add-ins in Outlook, go to My Add-ins, remove Yesware, then re-add it
+4. **Check for conflicting add-ins** — remove add-ins with similar functionality (other tracking tools like Boomerang or Hunter, outreach tools like HubSpot or Salesforce add-ins, or antivirus add-ins like McAfee)
+
+</details>
+
+

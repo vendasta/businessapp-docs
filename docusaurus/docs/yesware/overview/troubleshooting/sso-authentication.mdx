@@ -1,0 +1,29 @@
+---
+title: "SSO & Authentication Issues"
+description: "Troubleshoot Single Sign-On and authentication problems with Yesware."
+---
+
+# SSO & Authentication Issues
+
+## Activating Yesware with SSO or VPN
+
+Many organizations use Single Sign-On (SSO) or VPN for security. These can cause issues when Yesware tries to authenticate, often resulting in a login loop during activation.
+
+**Fix:** Disconnect from your SSO network or VPN tunnel, connect to a different network or Wi-Fi hotspot, then go through the Yesware activation process. Once activated, you can reconnect to your usual network.
+
+## Some Features Not Working with SSO
+
+If you use SSO and certain Yesware features have stopped working, the SSO token used in place of your credentials may have expired, causing Yesware to lose access.
+
+**Fix:** Log out of Gmail or Outlook and sign back in to refresh the token. If the issue persists, temporarily disable SSO, log back into Gmail or Outlook, and then re-enable SSO.
+
+## Outlook Sidebar Asking You to Log In
+
+If Outlook's sidebar prompts you to log in every time you try to send a tracked email, authentication between your account and Yesware may have broken. Fix it by re-authenticating through Outlook Web:
+
+1. Open Chrome and go to [Outlook.com](https://outlook.com/)
+2. Sign in to your account
+3. Click into an email and select **More Actions**
+4. Select **Yesware > Open Yesware** and log in when prompted
+
+Close and reopen your Outlook desktop app — you should now be authenticated. If the issue persists, contact [support@yesware.com](mailto:support@yesware.com).

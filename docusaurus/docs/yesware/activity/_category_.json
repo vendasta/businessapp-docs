@@ -1,0 +1,10 @@
+{
+  "label": "Activity",
+  "position": 12,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "yesware/activity/index"
+  }
+}

@@ -1,0 +1,70 @@
+---
+title: "Viewing Engagement Data"
+description: "Understand how to view and interpret your email tracking data in Yesware."
+---
+
+# Viewing Engagement Data
+
+## Why Doesn't My Message Have Tracking Data?
+
+If you're not seeing tracking data for a sent email, here are the most common reasons:
+
+**Tracking wasn't enabled when you sent**
+- Gmail: the **Track** checkbox wasn't checked in the compose window
+- Outlook: the **Yesware Sidebar wasn't open** when you sent, or tracking was turned off in settings
+
+**The email was sent in plain-text mode**
+Yesware's tracking pixel requires HTML format. Plain-text emails disable tracking entirely.
+
+**The recipient has images disabled**
+Yesware tracking is image-based. If the recipient blocks images, opens won't register — but link clicks, presentation views, and replies may still be tracked.
+
+**The email hasn't been opened yet**
+
+**Colleague Events are turned off**
+Internal sends may be excluded from your tracking data by default. Toggle this in your Preferences.
+
+**Your Yesware session expired (Gmail only)**
+If your session expired, the tracking pixel may not have been inserted. Log out and back in, then resend.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Can I search the Activity Feed?</summary>
+
+The Activity Feed does not currently have a search option. To find activity for a specific email:
+
+- Use Gmail's or Outlook's search bar to locate the thread in your Sent folder
+- Open the email and click the **Tracking** eyeball icon (Gmail) or select the **Message** tab in the Yesware Sidebar (Outlook) to view its tracking history
+
+You can also search the [Tracking Report](https://app.yesware.com/reports/tracking) directly.
+
+</details>
+
+<details>
+<summary>Can I tell which specific recipient opened an email with multiple people on it?</summary>
+
+No. When an email is sent to multiple recipients, Yesware cannot identify exactly who opened it. You'll see a general notification like "John Smith or 5 others opened." To track opens accurately, send to one recipient at a time.
+
+</details>
+
+<details>
+<summary>Why am I not able to see all recipients who opened my email?</summary>
+
+If you send an email to multiple recipients (To, CC, or BCC), you'll receive a notification that "somebody" opened it when any one person on the email opens it. Yesware records the date, time, device, and IP address, but cannot identify which specific recipient opened the message — everyone receives the same email with the same tracking pixel. To track a specific recipient's opens, send to that person individually.
+
+</details>
+
+<details>
+<summary>Will Yesware count a bounce message as a reply?</summary>
+
+No. If Yesware detects a bounce, it is not counted as a reply. The bounce is recorded in your [Tracking Report](https://app.yesware.com/reports/tracking) — click the subject line in the report for detailed information. On the Enterprise plan with Salesforce Sync enabled, bounce notices are also synced to Salesforce.
+
+</details>
+
+<details>
+<summary>Why does the Activity Feed show "Opened by Google image proxy (66.249.82.0)"?</summary>
+
+This IP address belongs to a Google image proxy server. When a recipient opens your email, Google sometimes loads the tracking pixel through its own proxy server rather than from the recipient's IP. Yesware has no control over this — whether the pixel is loaded by the recipient's IP or Google's proxy is entirely up to Google.
+
+</details>

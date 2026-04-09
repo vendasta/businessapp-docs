@@ -1,0 +1,227 @@
+---
+title: "Installing Yesware"
+description: "Install Yesware for Gmail or Outlook, check system requirements, manage the Free Plan, and uninstall when needed."
+---
+
+# Installing Yesware
+
+Yesware works inside your Gmail or Outlook (O365) inbox. Installation takes about a minute.
+
+## System Requirements
+
+### Gmail
+- **Browser**: Current version of Chrome only
+- **Email hosting**: Gmail (Google-hosted accounts only)
+
+### Outlook (O365)
+- **Account**: Microsoft 365 (O365) hosted directly through Microsoft — GoDaddy-hosted and other third-party providers are not supported
+- **Windows**: Outlook Web App on Chrome or Edge (Windows 10 or higher), or Outlook 2016 desktop v16.0+ (Windows 10 v1903+, Office 365 v1905+)
+- **Mac**: Outlook Web App on Chrome, or Outlook 2016 desktop v16.13+ (macOS 10.12 or higher)
+- **Update channel**: Set to Current or Semi-Annual (Targeted) — Semi-Annual only does not receive the latest version of Yesware
+
+:::info
+On Outlook for Mac, use the legacy Outlook experience. Go to **Help > Revert to Legacy Outlook**. This setting resets after 30 days and will need to be toggled again.
+:::
+
+## Installing Yesware
+
+### Gmail
+1. Go to [yesware.com/install](https://www.yesware.com/install) and select Gmail.
+2. Sign in with your Google account and grant Yesware access.
+3. If you're on the Enterprise plan, you'll also be prompted to authenticate with Salesforce.
+
+Already have an account? Use the [direct Gmail install link](https://app.yesware.com/install) — it won't overwrite your existing account.
+
+### Outlook (O365)
+1. Visit [Microsoft AppSource](https://appsource.microsoft.com/en-us/product/office/WA104380259) and click **Get it Now**.
+2. Close and re-open Outlook.
+3. Open or compose an email. Click the blue **Y** that appears in the Outlook ribbon to open the Yesware Sidebar.
+4. Sign in with your email address to connect your account.
+
+If you're on the Enterprise plan, you'll also be prompted to authenticate with Salesforce.
+
+## Opening the Sidebar
+
+The Sidebar is where you access tracking, templates, campaigns, and Meeting Scheduler. In Outlook, there are two Sidebars — one for your inbox and one for composing — and both need to be opened and pinned.
+
+### Outlook Desktop
+Click the blue **Y** in the ribbon when viewing or composing an email.
+
+### Outlook Web App
+1. Open any email and click the ellipsis (**...**) in the upper right corner of the message.
+2. Scroll to **Yesware** and click **Open Yesware**.
+3. Click the pushpin icon to pin the Sidebar so it stays open.
+
+For the **New Message Sidebar**, open and pin it separately while composing a new email. It must be open to send tracked emails — confirm tracking is active by checking the **ON** button in the Sidebar.
+
+## Keeping Yesware Up to Date (Gmail)
+
+Chrome extensions update automatically, but you can force an update at any time:
+
+1. Open a new tab and go to `chrome://extensions`
+2. Enable **Developer mode** in the top right corner
+3. Click **Update extensions now**
+
+## The Free Plan
+
+When your trial ends without a paid subscription, your account moves to the Free Plan automatically. The Free Plan includes:
+
+- Email tracking for emails sent within the last 24 hours (up to 40 events)
+- 10 Campaign recipients per month
+- Unlimited Templates (stats not included)
+- Unlimited Meeting Scheduler link insertions
+- Unlimited Response Insights
+- Unlimited Reminders and Send Later (Gmail)
+
+Your data — teams, templates, campaigns, and tracking history — is preserved from your trial or previous subscription.
+
+To access the Free Plan, the Gmail extension or Outlook add-in must be installed. Install it at [yesware.com/install](https://www.yesware.com/install).
+
+## Uninstalling Yesware
+
+### Gmail (Chrome)
+1. Open a new tab and go to `chrome://extensions`
+2. Find Yesware on the list and click **Remove**
+3. Refresh Gmail
+
+### Outlook (O365)
+1. Click **Get Add-ins** in the Outlook ribbon
+2. Go to **My add-ins** and find Yesware
+3. Click the ellipsis (**...**) and select **Remove**
+4. Close Outlook
+
+:::note
+Uninstalling Yesware does not cancel a paid subscription. To cancel, go to [app.yesware.com/account/plan](https://app.yesware.com/account/plan) and select **Cancel Renewal**.
+:::
+
+When you remove the extension or add-in, Yesware stops collecting email and tracking data. For data erasure requests, contact [support@yesware.com](mailto:support@yesware.com).
+
+## Frequently Asked Questions
+
+<details>
+<summary>Does Yesware offer a mobile app?</summary>
+
+No. Yesware does not offer a mobile app for Gmail or Outlook.
+
+</details>
+
+<details>
+<summary>Does Yesware work with alias or "Send As" email addresses?</summary>
+
+No. Yesware authenticates through your primary inbox and can only send tracked emails from the address you used to log in. Alias and "Send As" addresses are not supported.
+
+</details>
+
+<details>
+<summary>Can I use Yesware if Gmail is configured within Outlook?</summary>
+
+No. Yesware does not support crossover mail servers. If your email is hosted by Gmail, install Yesware through Gmail. If you want to use Yesware in Outlook, you need a Microsoft O365-hosted email account.
+
+</details>
+
+<details>
+<summary>Is Yesware compatible with GoDaddy-hosted Outlook accounts?</summary>
+
+No. The Outlook add-in requires an email account hosted directly through Microsoft 365 (O365). GoDaddy-hosted addresses are not supported, even when accessed through the Outlook client.
+
+</details>
+
+<details>
+<summary>Does Yesware have a public-facing API?</summary>
+
+No. Yesware does not offer a public-facing API.
+
+</details>
+
+<details>
+<summary>What are known conflicts with Yesware for Gmail?</summary>
+
+Yesware for Gmail is designed for an unmodified Gmail interface on the current version of Chrome. Known conflicts include:
+
+**Gmail settings**: Plain text mode; Conversation View turned off
+
+**Gmail Labs features**: Send & Archive, Multiple Inboxes, Preview Pane, Right-side chat, SMS in chat
+
+**Browser extensions**: FastestChrome, Gist for Chrome, Ginger Software, Boomerang, Hunter, EmailTracker, Adblocker, Adblocker Plus, Ghostery, HubSpot, Salesforce, or any extension that occupies space in the compose window
+
+</details>
+
+<details>
+<summary>How do I allow third-party cookies for Yesware in Chrome?</summary>
+
+Yesware requires third-party cookies for certain features, including the Google Calendar dashboard.
+
+1. Go to `chrome://settings/cookies`
+2. Select **Allow all cookies** or **Block third-party cookies in Incognito**
+
+If you prefer to block third-party cookies but still use Yesware, add an exception:
+
+1. Under **Sites that can always use cookies**, click **Add**
+2. Enter `[*.]yesware.com` (type this — do not copy and paste)
+3. Check **Including third-party cookies on this site**
+4. Click **Add**, then refresh Gmail
+
+</details>
+
+<details>
+<summary>What are Global Policies?</summary>
+
+Global Policies let admins and account managers enable Yesware features by default for all members of an account.
+
+**Gmail**: Go to the Yesware dropdown at the top of Gmail > **My Account** > **Global Policies**
+
+**Outlook**: Open the Yesware Sidebar > **Menu** > **Manage My Teams** > **Settings** > **Global Policies**
+
+Save each change individually. To adjust settings for a specific user, use their **Permissions** panel instead.
+
+</details>
+
+<details>
+<summary>What are Yesware BETA features?</summary>
+
+BETA features are experimental. Yesware does not offer formal support for them and may change or remove them at any time. To share feedback, click **Submit a Request** in the Help Center.
+
+</details>
+
+<details>
+<summary>How do I upgrade from the COM version of Yesware to the O365 add-in?</summary>
+
+**Step 1 — Uninstall the COM add-in:**
+1. Close Outlook
+2. Open Control Panel > Programs & Features
+3. Select **Yesware for Outlook** and click **Uninstall**
+
+**Step 2 — Install the O365 add-in:**
+1. In Outlook, click **Get Add-ins**, search for Yesware, and click **Add** — or go directly to [Microsoft AppSource](https://appsource.microsoft.com/en-us/product/office/WA104380259)
+2. Open any email and click the **Yesware icon** in your Outlook ribbon
+3. Sign in with your email to connect your account
+
+</details>
+
+<details>
+<summary>I can't install Yesware for O365 — what should I do?</summary>
+
+**Installing via Outlook Web App:**
+- Confirm your mailbox is hosted by O365, not a third-party provider like GoDaddy
+- Use Chrome to access Outlook on the web
+
+**Installing via Outlook Desktop:**
+- Use the **Get Add-ins** button in the Outlook toolbar
+- Confirm your mailbox is O365-hosted
+- Make sure Microsoft Office is up to date
+
+If the issue persists, try repairing Microsoft Office:
+
+1. Open Control Panel > Uninstall a Program
+2. Right-click your Microsoft Office installation and select **Change**
+3. Choose **Repair** and follow the prompts
+4. Restart your computer when complete
+
+</details>
+
+<details>
+<summary>I can't uninstall the Yesware O365 add-in — what should I do?</summary>
+
+This is usually caused by an admin setting in Microsoft 365. If you're the admin, confirm that users have permission to manage add-ins. If you're not the admin, ask your IT team to review the settings. See [Microsoft's help center](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-addins-in-the-admin-center?view=o365-worldwide) for instructions.
+
+</details>

@@ -1,0 +1,59 @@
+---
+title: "Zoom Integration"
+description: "Connect Zoom to Yesware Meeting Scheduler to automatically generate video conferencing links for booked meetings."
+---
+
+# Zoom Integration
+
+Yesware's Zoom integration automatically inserts Zoom meeting details when someone books a time through Meeting Scheduler. Available on **Premium and Enterprise plans** for both Gmail and Outlook, and works with free or paid Zoom accounts.
+
+## Connecting Your Zoom Account
+
+1. Go to your [Meeting Scheduler Settings](https://app.yesware.com/meeting_scheduler)
+2. Click **Edit Details** on your My Calendar Link
+3. Under **Web Conferencing**, find the Zoom option:
+   - **Gmail**: Click **Connect Zoom Account**
+   - **Outlook**: Click **Link Account** under Zoom
+4. Complete the connection in the popup window — it closes automatically when successful
+
+## Adding Zoom to a Meeting Type
+
+1. Open an existing meeting type or create a new one
+2. Go to **Meeting Location**
+3. Click **Virtual Meeting** and select **Zoom**
+4. A Zoom link will be auto-generated whenever that meeting type is booked
+
+## Adding Zoom to Custom Availability Links
+
+When creating a Custom Availability link, click the **Zoom** button in the **Location** section. The Zoom link is automatically included when the recipient books.
+
+## What the Recipient Sees
+
+Once a booking is confirmed, the Zoom meeting details appear in the calendar invite sent to all attendees.
+
+:::note
+If your Zoom account is set to use a Personal Meeting ID (PMI), Yesware will use it. Otherwise, a unique Zoom ID is generated per meeting (recommended for security). Password-protected meetings are only supported if your Zoom admin has enabled passwords at the org level. Zoom settings cannot be managed within Yesware on a per-meeting basis.
+:::
+
+## Disconnecting Zoom
+
+1. Log in to your Zoom account and go to the [Zoom App Marketplace](https://marketplace.zoom.us/)
+2. Click **Manage > Installed Apps** or search for Yesware
+3. Click the Yesware app and select **Uninstall**
+
+## Frequently Asked Questions
+
+<details>
+<summary>Zoom links are missing from my scheduled meetings — how do I fix this?</summary>
+
+Re-establish the connection by following these steps:
+
+1. Go to **My Calendar Link Settings > Web Conferencing > Zoom** and click **Unlink Zoom Account**
+2. For each meeting type, go to **Meeting Location** and remove the Zoom link
+3. Go back to **My Calendar Link Settings** and reconnect your Zoom account
+4. Re-select Zoom as the location for each meeting type
+5. Book a test meeting to confirm Zoom links are now generating correctly
+
+If you don't see an **Unlink** option, use the **Link** button instead to re-establish the connection.
+
+</details>
