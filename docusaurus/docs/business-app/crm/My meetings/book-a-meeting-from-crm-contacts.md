@@ -25,8 +25,6 @@ This feature **sends the contact an email** so they can choose their own time sl
 
 4. In the dialog, select the **event type** you want to use. The event type determines the booking link sent and the email subject and description.
 
-   ![Select event type for meeting request](../img/my-meetings/meeting-request-event-select.png)
-
 5. Click **Send**.
 
 The contact receives an email with your booking link. They click the link, choose an available date and time, and confirm. The meeting is then added to your calendar automatically.
