@@ -1,0 +1,81 @@
+---
+title: Getting Started with Salesforce
+sidebar_label: Getting Started
+description: How to connect Yesware to Salesforce, how sync logic works, and how to use your data for reporting.
+---
+
+Yesware's Salesforce integration automatically syncs your email activity, engagement events, and calendar meetings to the right Contact, Lead, Account, or Opportunity — no manual data entry required.
+
+:::info
+Salesforce integration is available on the **Enterprise plan** only. Your Salesforce edition must have API access — Enterprise and Unlimited editions include this by default. Group and Professional editions require you to contact Salesforce to request API access separately.
+:::
+
+## How sync logic works
+
+When you send an email with Salesforce Sync enabled, Yesware checks the first email address in the **To** field for a matching Contact or Lead in Salesforce.
+
+- **Lead match** — Yesware syncs the task to the Lead's Activity History only.
+- **Contact match** — Yesware syncs the task to the Contact's Activity History and the associated Account. If that Contact is a Contact Role on an open Opportunity, it also syncs to the Opportunity.
+- **Multiple matches** — Yesware prefers Leads over Contacts, then Contacts with open Opportunities, then the record with the most recent activity, then the most recently modified record.
+- **No match** — The activity is not synced.
+
+The same logic applies to Calendar Sync — events are matched to the first guest's email address using the same priority order.
+
+## Activity fields in Salesforce
+
+Every Yesware action creates a completed Task in Salesforce with a standardised subject line:
+
+| Activity | Salesforce task subject |
+|---|---|
+| Email sent | Message Sent: [subject] |
+| Email opened | Message Opened: [subject] |
+| Reply received | Reply: [subject] |
+| Link clicked | Link Clicked in Message: [subject] |
+| Attachment opened | Attachment Opened: [subject] |
+| Presentation viewed | Presentation Viewed: [subject] |
+| Bounce received | Bounce: [subject] |
+| Calendar event synced | [event synced] |
+
+You can use these custom Yesware fields to build reports in Salesforce:
+
+| Field | What it tracks |
+|---|---|
+| **Yesware Activity Type** | Type of activity: Message Sent, Message Opened, Reply, Link Clicked, Attachment Opened, Bounce, Event Synced |
+| **Yesware Template Name** | Which template was used — useful for comparing messaging effectiveness |
+| **Yesware Is Campaign** | True/False — whether the task was created as part of a Yesware Campaign |
+
+For a full walkthrough on building reports and dashboards using these fields, see [Team Reporting](measure-your-team-s-yesware-effectiveness-with.mdx) and [Dashboards](using-yesware-data-to-build-salesforce-dashboards.mdx).
+
+## Salesforce AppExchange
+
+Yesware offers a free Managed Package on the Salesforce AppExchange that adds pre-built reports and dashboards directly to your Salesforce environment. It gives managers and team leaders instant visibility into rep activity and messaging effectiveness. Installing it is optional — you don't need it to use Yesware.
+
+## Common questions
+
+<details>
+<summary>Will Yesware automatically create a Contact or Lead if one doesn't exist?</summary>
+
+No. Yesware does not auto-create Contacts or Leads. If no matching record is found, the email and its events will not sync — even if Send to Salesforce is enabled. You can create records directly from the Yesware Salesforce Sidebar before sending.
+
+</details>
+
+<details>
+<summary>Does Yesware support Salesforce SSO?</summary>
+
+If your Salesforce environment uses SSO, click **Use Custom Domain** on the Salesforce login screen, enter your company's custom domain, and complete your usual SSO login. This allows Yesware to authenticate correctly.
+
+</details>
+
+<details>
+<summary>Can I use Yesware if someone has delegated their email account to me?</summary>
+
+Emails sent via delegated access cannot be tracked by Yesware. Aliases, "Send As" addresses, and delegated accounts are not compatible. Use a standalone email account with its own login credentials for all tracked emails.
+
+</details>
+
+<details>
+<summary>How do I add the "Add to Campaign" button in Salesforce for Outlook?</summary>
+
+Go to the Yesware Salesforce Campaigns page and authenticate. Select **Install Chrome Extension** and add the Yesware extension from the Chrome Web Store. Once installed, log in to Salesforce, then click the Yesware button in the upper-right corner of Salesforce and select **Link my Office 365 Account Now**.
+
+</details>

@@ -1,0 +1,70 @@
+---
+title: Salesforce Calendar Sync
+sidebar_label: Calendar
+description: How to sync Google Calendar and Outlook calendar events to Salesforce using Yesware.
+---
+
+Calendar Sync automatically logs your meetings to the right Contact, Lead, Account, or Opportunity in Salesforce. Events sync from Google Calendar or Outlook — and with a Salesforce package installed, you can also sync events from Salesforce back into your calendar.
+
+:::info
+Calendar Sync is available on the **Enterprise plan** only.
+:::
+
+## Enable Calendar Sync
+
+Go to **Salesforce Preferences** in your Yesware account and toggle on **Enable Yesware Calendar Sync**. Make sure you have the latest version of the Yesware extension installed with all permissions enabled. You can return to this page at any time to disable it.
+
+## Sync a Gmail event
+
+1. Open Google Calendar and create a new event.
+2. Toggle on **Sync Calendar Event to Salesforce**.
+3. Add guests using the **Add Guests From Salesforce** box, or through the native Google Calendar guest field.
+4. Use the **Contact/Lead** and **Account/Opportunity** dropdowns to confirm which Salesforce records the event should sync to. By default, Yesware selects the first guest added.
+5. Click **Save**.
+
+You can sync events up to 30 days in the past and any future events. If [Shared Activities](https://help.salesforce.com/) is enabled in Salesforce, you can relate the meeting to more than one Contact.
+
+To sync an **inbound event**, open the event, confirm Calendar Sync is toggled on, verify the associated records, and click **Save**. Any edits to already-synced events update in Salesforce automatically.
+
+For a full walkthrough including two-way sync, see [Calendar Sync in Gmail](how-do-i-use-yesware-calendar-sync.mdx).
+
+## Sync an Outlook (O365) event
+
+1. Open a new meeting in Outlook and click **Invite Attendees**.
+2. Add your attendees.
+3. Click the **Yesware Y** in the Outlook ribbon to open the Yesware Sidebar within the invite.
+4. With Salesforce Sync toggled on, a unique sync address is automatically added to the attendees list.
+5. Send the invite.
+
+The meeting syncs as an open activity to the first recipient who has a matching Contact or Lead in Salesforce. Note that retroactive syncing and syncing of inbound invites are not supported in O365.
+
+For full details, see [Calendar Sync in Outlook](how-do-i-use-the-salesforce-calendar.mdx).
+
+## Where synced events appear
+
+Events appear under **Open Events** on the associated Salesforce record until the meeting time passes, then move to **Activity History**. All Yesware-synced events include **[event synced]** in the Salesforce event's Description field — this tag only appears in Salesforce, not in your calendar.
+
+If no matching record is found and none is manually selected, the event still syncs to Salesforce but without an associated Contact, Lead, Account, or Opportunity.
+
+## Common questions
+
+<details>
+<summary>Can I sync recurring events?</summary>
+
+Yes. For daily recurring events, Yesware syncs up to a year's worth of occurrences — Salesforce imposes this limit. Events set to repeat indefinitely in Google Calendar are synced up to that maximum.
+
+</details>
+
+<details>
+<summary>What are Shared Activities?</summary>
+
+Shared Activities is a Salesforce setting that lets you relate up to 50 Contacts (but only one Lead) to a single event. With it enabled, you can sync a calendar meeting to more than one Contact. Your Salesforce administrator must enable it first, then contact Yesware support to activate it for Calendar Sync on your account.
+
+</details>
+
+<details>
+<summary>Can I sync events from Salesforce into my calendar?</summary>
+
+Yes, but this requires a Salesforce package that your administrator must install — it's not included by default. Contact Yesware support to request the package.
+
+</details>
