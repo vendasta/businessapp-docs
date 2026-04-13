@@ -36,7 +36,7 @@ CalendarHero supports all of your favorite chat platforms! Once installed you ca
 
 - [Webex Messaging](https://calendarhero.com/webex-meetings)
 
-- [SMS](https://calendarhero.com/sms)
+- SMS *(no longer available for new integrations; existing connections continue to work)*
 
 ### 
   
