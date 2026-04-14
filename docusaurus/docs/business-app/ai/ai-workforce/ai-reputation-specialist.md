@@ -213,6 +213,15 @@ No. It only responds to reviews received after the trigger is enabled.
 </details>
 
 <details>
+<summary>What happens when a customer edits a review?</summary>
+
+If an unpublished AI draft response already exists for that review, the draft is updated to reflect the latest review content and star rating.
+
+If a response has already been posted for that review, no draft is shown in the review card.
+
+</details>
+
+<details>
 <summary>Can the AI analyze reviews without responding?</summary>
 
 Yes. Enable only the `Explore Reviews & NPS Data` capability to use analysis features without posting responses.
