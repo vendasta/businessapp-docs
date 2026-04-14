@@ -1,0 +1,102 @@
+---
+title: ATS
+description: Connect your applicant tracking system to CalendarHero to sync candidates, access candidate details in briefings, and automatically log meetings in Greenhouse.
+---
+
+CalendarHero integrates with applicant tracking systems (ATS) so recruiters and hiring managers can schedule interviews faster. Your assistant syncs candidate contacts from your ATS, surfaces candidate details in meeting briefings, and — for Greenhouse — automatically logs all meeting activity back to the candidate record.
+
+## Supported ATS providers
+
+- Greenhouse (includes meeting automation and activity feed logging)
+- BreezyHR
+- Workable
+- Lever ([requires an API key — see below](#lever-api-key))
+- Zoho Recruit ([requires an app-specific password for Google/Microsoft sign-in — see below](#zoho-recruit))
+- FreshTeam
+
+## Adding an ATS integration
+
+Go to the [Integration Directory → ATS tab](https://app.calendarhero.com/settings/accounts/add#ats) and click **Add** next to your ATS provider.
+
+Team plan admins can add Greenhouse at the organization level from the [Team Integration Directory](https://app.calendarhero.com/org/accounts/add). All other ATS providers are added at the individual user level.
+
+You can connect multiple ATS providers. When candidate information is requested, CalendarHero returns details from the relevant ATS.
+
+## Scheduling with ATS contacts
+
+Once an ATS is connected, CalendarHero syncs candidate information automatically. Candidates appear in your contacts list so you can schedule meetings by name without needing to look up their email address.
+
+The ATS remains the source of truth — any updates made in your ATS sync back to CalendarHero. It may take up to 15 minutes for newly added candidates to appear.
+
+## Candidate information in briefings and insights
+
+**Meeting briefings** — Before a meeting with a candidate, your briefing includes a direct link to their record in the ATS. Click the link to open their application, resume, and any attached documents.
+
+**People insights** — Ask your assistant "Who is [name]?" to pull up candidate details on demand — including their current status, position, and a link to any attached documents such as their resume and cover letter. The specific information returned depends on what's available in your ATS.
+
+## Greenhouse meeting automation
+
+When Greenhouse is connected, CalendarHero automatically logs meeting activity to the candidate's record — no manual entry needed.
+
+**What gets logged:**
+- When a meeting request is sent to the candidate
+- When each follow-up reminder is sent
+- When the day-of meeting reminder is sent
+- When the candidate selects a time
+- When the candidate declines the meeting
+- When the meeting is booked
+- When the meeting is postponed or cancelled
+
+**What gets updated:**
+When a meeting is booked, the hiring manager's name, meeting date, and location are logged to Greenhouse under the candidate's current stage. Rescheduled meetings update automatically.
+
+**Requirements for Greenhouse automation:**
+- Greenhouse must be added as an ATS provider
+- The candidate and hiring manager must both exist in Greenhouse before the meeting is scheduled
+- The hiring manager (as set in Greenhouse) must be the meeting creator or an invitee
+- The candidate must be invited to the same meeting as the hiring manager
+
+## Lever API key
+
+When adding Lever from the Integration Directory, you'll be asked for a Lever API key. Create and manage your API keys from the [Lever Integrations & API page](https://hire.lever.co/settings/integrations) under the **API Credentials** tab.
+
+Your Lever API key must have the following permissions:
+
+- read-opportunity, read-opportunity-panel, read-candidate
+- list-users, list-opportunities, list-opportunity-panels, list-candidates
+- create-opportunity-panel, update-opportunity-panel, delete-opportunity-panel
+- create-opportunity-note, delete-opportunity-note
+
+Once you have your key, paste it into the API Key field in the Integration Directory and click **Add**.
+
+## Zoho Recruit
+
+If you sign in to Zoho Recruit using a Google or Microsoft account, you must generate an app-specific password to connect the integration:
+
+1. Log in to Zoho Recruit
+2. Go to [accounts.zoho.com/home#security/app_password](https://accounts.zoho.com/home#security/app_password)
+3. Click **Generate** and enter an app name (for example, "CalendarHero")
+4. Copy the generated password and use it when adding Zoho Recruit in the Integration Directory
+
+## Frequently asked questions
+
+<details>
+<summary>Does ATS integration cost extra?</summary>
+
+No. ATS integration is included with all CalendarHero plans at no additional cost. The number of people insights and meeting requests available may vary by plan.
+
+</details>
+
+<details>
+<summary>Can I connect more than one ATS at the same time?</summary>
+
+Yes. You can add multiple ATS providers, and CalendarHero will return information from the relevant ATS based on the candidate. If a candidate exists in multiple connected systems, information from each ATS may be combined.
+
+</details>
+
+<details>
+<summary>How long does it take for candidates to sync after I add an ATS?</summary>
+
+Initial sync happens automatically when you connect the ATS. Newly added candidates may take up to 15 minutes to appear in CalendarHero. Your ATS is the source of truth, so updates made in the ATS sync back to CalendarHero on an ongoing basis.
+
+</details>

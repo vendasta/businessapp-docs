@@ -1,0 +1,68 @@
+---
+title: Managing Calendars
+description: Add multiple calendars, set your default booking calendar, control free/busy availability, and troubleshoot calendar access issues.
+---
+
+## Adding a calendar
+
+To add a new calendar, go to the [Integrations Directory → Calendars](https://app.calendarhero.com/settings/accounts/add#calendar), click **Add** next to your provider, and follow the authorization steps.
+
+When you add a calendar that has multiple calendars associated with it (common with Google and Microsoft accounts), make sure you select the correct one using the radio buttons provided. You can update this at any time from **Calendar Settings**.
+
+You can view all connected calendars from your [Installed Integrations list](https://app.calendarhero.com/settings/accounts/list#calendar), and see your calendar events in CalendarHero's built-in [Calendar view](https://app.calendarhero.com/calendar).
+
+## Default calendar
+
+Your default calendar is where CalendarHero books meetings. Only one calendar can be set as default at a time. All other connected calendars are used to check availability only.
+
+To set your default: go to [Installed Integrations → Calendar](https://app.calendarhero.com/settings/accounts/list#calendar), click **…** next to your preferred calendar, and select **Set as Default**. You can also set it from [General Meeting Settings](https://app.calendarhero.com/settings/meeting/general).
+
+Your default calendar must have **read and write** permissions — a read-only calendar cannot be used for booking. If your calendar shows "READ-ONLY," contact your Google Workspace or Microsoft 365 administrator to update the permissions.
+
+**Google users** — CalendarHero automatically sets your primary Google calendar as the default. Google does not allow changing which calendar is primary, but you can still set a different calendar as your CalendarHero default.
+
+## Booking calendar per meeting type
+
+You can customize which calendar meetings are booked into per meeting type. Open any meeting type → **Availability → My Booking Calendar** and select a calendar from the dropdown. If your preferred calendar isn't listed, add it first from the Integrations Directory.
+
+This only affects future meetings — existing pending and scheduled meetings are not changed.
+
+## Free and busy status
+
+CalendarHero uses your calendar's free/busy status to determine availability:
+
+- **Busy** events block that time — CalendarHero will not offer those slots to invitees.
+- **Free**, **Tentative**, and **Working Elsewhere** (Outlook) events are treated as available.
+
+If you're being double-booked, check whether the existing event in your calendar is marked as **Free** instead of **Busy** — CalendarHero treats free events as open time.
+
+**Google Calendar** — new events default to Busy. You can manually mark any event as Free or Busy from the event settings.
+
+**Outlook Calendar** — events you create default to Busy, but events you're invited to (but haven't accepted) default to Tentative, which CalendarHero treats as available. Microsoft 365 Outlook users can customize which statuses CalendarHero treats as unavailable — click the calendar icon next to your Microsoft calendar in the [Integrations list](https://app.calendarhero.com/settings/accounts/list#calendar) to configure this.
+
+## Frequently asked questions
+
+<details>
+<summary>Microsoft won't let me add a second account — how do I fix this?</summary>
+
+Microsoft sometimes auto-logs you into your original account. To add a different Microsoft calendar:
+
+1. Go to [login.microsoftonline.com](https://login.microsoftonline.com) and sign out
+2. Sign in with the Microsoft account you want to add
+3. Go to the [Integrations Directory → Calendars](https://app.calendarhero.com/settings/accounts/add#calendar) and click **Add** next to Microsoft
+
+</details>
+
+<details>
+<summary>My organization blocked third-party calendar access — how do I enable it?</summary>
+
+CalendarHero requires permission from Microsoft 365 to sync with your calendar. If you see a restricted access warning, ask your Microsoft 365 admin to enable **Integrated Apps** in the Office 365 Admin Center under **Settings → Services & add-ins → Integrated Apps**. Once enabled, you can authorize CalendarHero to sync your calendar.
+
+</details>
+
+<details>
+<summary>Can I use CalendarHero with iCloud or Exchange On-Premises?</summary>
+
+Yes, with some limitations. Group Classes and certain shared availability settings (External On-Behalf, On-Behalf without ownership transfer, and Collective with omit my availability) are not supported with iCloud or Exchange On-Premises. For full feature access, use Google, Microsoft 365, or Exchange Online/Hybrid as your booking calendar.
+
+</details>

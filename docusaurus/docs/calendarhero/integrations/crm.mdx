@@ -1,0 +1,83 @@
+---
+title: CRM
+description: Connect your CRM to CalendarHero to sync contacts, automatically log meetings, surface deal info in briefings, and search CRM records.
+---
+
+CalendarHero integrates with your CRM so you can schedule meetings with leads faster, keep your CRM up to date automatically, and access deal information before every meeting.
+
+## What CRM integrations do
+
+**Contact sync** — CalendarHero imports your CRM contacts so you can schedule meetings by name without looking up email addresses.
+
+**Meeting logging** — Meetings scheduled through CalendarHero are automatically logged to the associated contact, deal/opportunity, and company records in your CRM — no manual data entry required.
+
+**Meeting briefings** — When you have a meeting with a CRM contact, your pre-meeting briefing includes a direct link to their contact and deal record in the CRM.
+
+**CRM search** — Use Unified Search in chat or on the web to search your CRM records directly from CalendarHero.
+
+**CRM query and modify (beta)** — On Professional or Team plans, you can query and update CRM information from chat. This feature is off by default and can be manually enabled. Supported actions include viewing, editing, and creating deals/opportunities, logging activity, and accessing related CRM info in meeting briefings.
+
+## Supported CRM providers
+
+| Provider | Contact sync | Meeting logging | Briefing links | Search | Query/modify |
+|---|---|---|---|---|---|
+| Salesforce | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HubSpot | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Freshsales | ✓ | ✓ | ✓ | ✓ | — |
+| Copper | ✓ | ✓ | ✓ | — | — |
+| Pipedrive | ✓ | ✓ | ✓ | ✓ | — |
+| Outreach.io | ✓ | — | ✓ | ✓ | — |
+| Close.io | ✓ | — | — | — | — |
+| Insightly | ✓ | — | — | — | — |
+| Salesflare | ✓ | ✓ | ✓ | ✓ | — |
+| Mailchimp | ✓ | ✓ | ✓ | ✓ | — |
+| ActiveCampaign | ✓ | ✓ | ✓ | ✓ | — |
+| SalesLoft | ✓ | ✓ | ✓ | — | — |
+
+## Adding a CRM integration
+
+Go to the [Integration Directory → CRM tab](https://app.calendarhero.com/settings/accounts/add#crm) and click **Add** next to your CRM provider.
+
+Team plan admins can add CRM integrations at the organization level from the [Team Integration Directory → CRM](https://app.calendarhero.com/org/accounts/add#crm). For CRM providers that require individual user authorization, each member must connect their own account.
+
+## Salesforce: enabling API access
+
+CalendarHero requires API access to integrate with Salesforce. API access is controlled by your Salesforce administrator.
+
+**Enable by Profile:**
+1. In Salesforce, click the Gear icon → **Setup**
+2. Search for **Profiles** in the Quick Find box and select it
+3. Click **Edit** next to the profile you want to update
+4. Under **Administrative Permissions**, check **API Enabled** and click **Save**
+
+**Enable by Permission Set:**
+1. Click the Gear icon → **Setup**
+2. Search for **Permission Sets** and select it
+3. Select the relevant permission set
+4. Click **System → System Permissions → Edit**
+5. Check **API Enabled** and click **Save**
+
+If you're unable to enable API access, contact your Salesforce administrator — API availability may depend on your Salesforce edition.
+
+## Frequently asked questions
+
+<details>
+<summary>I'm getting a permissions error when connecting HubSpot — how do I fix it?</summary>
+
+HubSpot requires specific user roles and account-level tools to allow third-party integrations. If you see a permissions error when connecting, check that your HubSpot user role has the necessary permissions. Contact your HubSpot administrator if the error persists — this is a HubSpot restriction and not something CalendarHero can override.
+
+</details>
+
+<details>
+<summary>How does CRM contact sync work?</summary>
+
+When you connect a CRM, CalendarHero imports your contacts automatically. The CRM remains the source of truth — any updates made in your CRM sync back to CalendarHero. When you schedule a meeting and reference a contact by name, CalendarHero looks them up from your synced list.
+
+</details>
+
+<details>
+<summary>How are meetings logged in the CRM?</summary>
+
+When a meeting is booked through CalendarHero, the meeting details are automatically logged to the associated contact, deal, and company records in your CRM. No manual action is required. If a meeting is rescheduled or cancelled, those updates are reflected in the CRM as well.
+
+</details>

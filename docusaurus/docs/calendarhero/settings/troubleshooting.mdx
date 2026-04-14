@@ -1,0 +1,95 @@
+---
+title: Troubleshooting
+description: Resolve common CalendarHero issues — integration errors, timezone mismatches, duplicate notifications, Microsoft setup, and more.
+---
+
+## Integration errors
+
+If a connected integration loses access or encounters a problem, an error message appears on your Dashboard, in your morning briefing, and on the affected integration card in [My Integrations](https://app.calendarhero.com/settings/accounts/list).
+
+**To fix most integration errors:**
+1. Go to [My Integrations](https://app.calendarhero.com/settings/accounts/list)
+2. Click **…** next to the affected integration and select **Remove**
+3. Go to the [Integration Directory](https://app.calendarhero.com/settings/accounts/add) and re-add the integration
+4. Re-authorizing gives CalendarHero fresh access and resolves most errors
+
+If the error is on a calendar integration and affects a scheduled meeting, return to the Task card after re-adding and click **Add to Calendar** to add the meeting manually.
+
+## Scheduling error on a Task card
+
+A **Scheduling Error** on an Upcoming Task card means a booked meeting failed to add to your booking calendar due to a calendar integration error. You should also receive an email alert.
+
+1. Remove the affected calendar integration from [My Integrations](https://app.calendarhero.com/settings/accounts/list)
+2. Re-add it from the [Integration Directory → Calendars](https://app.calendarhero.com/settings/accounts/add#calendar)
+3. Return to the Task card and click **Add to Calendar**
+
+If the error persists, [contact support](https://calendarhero.com/get-support).
+
+## Duplicate notifications
+
+Duplicate notifications are usually caused by the same email address being connected more than once under the same integration type. Go to [My Integrations](https://app.calendarhero.com/settings/accounts/list) and remove the duplicate connection.
+
+## Timezone mismatch
+
+If your assistant is using the wrong timezone, go to [General Meeting Settings](https://app.calendarhero.com/settings/meeting/general), uncheck the **Learned** box next to the timezone field, and select your correct timezone from the dropdown.
+
+## CalendarHero booked over an all-day event
+
+CalendarHero only blocks time for events marked as **Busy** in your calendar. All-day events default to **Free** in most calendar apps, which CalendarHero treats as available time. To prevent booking during an all-day event, open the event in your calendar and change its status to **Busy**.
+
+## Collective availability scheduling conflict error
+
+When using a Collective availability meeting type with **Include My Availability** enabled, do not add yourself as an invitee. Adding the meeting creator as an invitee causes a scheduling conflict error. Remove your own email from the invitees list to resolve it.
+
+## Microsoft: enabling bots and tabs in Teams/Office 365
+
+If CalendarHero is not responding in Microsoft Teams, your Office 365 admin may need to enable bots. To enable:
+
+1. Go to [portal.office.com](https://portal.office.com) with an admin account
+2. Click the Admin icon
+3. Go to **Settings → Services & add-ins → Microsoft Teams**
+4. Under **Bots & Tabs**, make sure bots are enabled
+5. Click **Save**
+
+Allow up to 1 hour for the change to take effect.
+
+## Microsoft integration upgrade prompt
+
+If you see an **Upgrade Now** button on a Microsoft integration (such as Office 365 or Outlook), click it and follow the re-authentication steps to accept updated app permissions. This is required to maintain fast sync speeds and should only take a minute.
+
+**Individual users:** Go to [My Integrations](https://app.calendarhero.com/settings/accounts/list), click **Upgrade Now** on any affected Microsoft integration, and re-authenticate.
+
+**Team admins:** Go to [Corporate-Wide Integrations](https://app.calendarhero.com/org/accounts/list), click **Upgrade Now** on any affected org-level integration (such as Active Directory), and re-authenticate.
+
+## Removing a chat platform connection
+
+To disconnect a chat platform (Slack, Teams, etc.), go to [Installed Integrations → Messenger](https://app.calendarhero.com/settings/accounts/list#messenger) and click **Remove** next to the platform. The next time someone messages your assistant on that platform, it will restart from the beginning.
+
+## Revoking Google account access
+
+To remove your Google account from CalendarHero, go to [My Integrations](https://app.calendarhero.com/settings/accounts/list), click **X** next to your Google account, and follow the prompts.
+
+If your Google account shows an error, removing and re-adding it will re-sync the connection automatically.
+
+## Frequently asked questions
+
+<details>
+<summary>Why can't I see CalendarHero tabs in Microsoft Teams?</summary>
+
+The Dashboard, Settings, Tasks, and Skills Help tabs inside Teams are only available to users who sign in with a Microsoft account. If you use a Google account with CalendarHero, the tabs won't appear — but you can still use your assistant via chat in Teams and access all settings at [app.calendarhero.com](https://app.calendarhero.com).
+
+</details>
+
+<details>
+<summary>My HubSpot integration shows a permissions error — how do I fix it?</summary>
+
+HubSpot requires specific user roles to allow third-party integrations. Remove the integration, confirm your HubSpot user has the necessary permissions, and re-add it from the [Integration Directory](https://app.calendarhero.com/settings/accounts/add#crm). Contact your HubSpot admin if the error persists.
+
+</details>
+
+<details>
+<summary>Can I access CalendarHero settings from within a chat app?</summary>
+
+From Slack or Teams, say **"settings"** in your assistant chat and it will give you a link to open settings in your browser. For full settings access, use the web app at [app.calendarhero.com](https://app.calendarhero.com).
+
+</details>

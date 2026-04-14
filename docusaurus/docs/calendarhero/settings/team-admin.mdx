@@ -1,0 +1,88 @@
+---
+title: Team & Admin
+description: Set up and manage a CalendarHero Team plan, onboard members, configure org-wide settings, and view team reports.
+---
+
+The Team plan lets your organization use CalendarHero together — with shared availability, org-wide settings, centralized billing, and usage reporting. One member must be designated as the administrator to manage the plan.
+
+## Creating a team plan
+
+To create a Team plan, go to [Settings → Billing](https://app.calendarhero.com/settings/billing) and upgrade. The first person to create a plan for your organization's email domain becomes the initial admin.
+
+Only one Team plan can exist per org domain. If a plan already exists for your domain, ask your current admin to add you as a member.
+
+## Adding members
+
+**Automatic onboarding** — Go to [Admin Settings](https://app.calendarhero.com/org/settings) and enable **Automatically add users with the domain**. Any new user who signs up with your org's email domain is automatically added to the plan. You can limit this to specific email addresses by listing them in the provided text box.
+
+**Manual invites** — If auto-add is disabled, members can be added manually by an admin. Contact support if you need help adding members outside your domain.
+
+Once added, members get access to all Team plan features immediately.
+
+## Managing members
+
+Admins manage members from the [Users overview page](https://app.calendarhero.com/org/manageusers).
+
+- **Access levels** — set a member as Admin (can edit team settings and user access) or User (has team plan access but can't manage settings)
+- **Remove** — removes the member from the org and downgrades their account to Basic. Their CalendarHero account is not deleted.
+- **Delete** — removes the member and permanently deletes their account and all associated data. This cannot be undone.
+
+## Admin settings
+
+Team admins can configure org-wide settings at [Admin Settings](https://app.calendarhero.com/org/settings):
+
+- **Organization name and logo** — set your org's display name and branding
+- **Assistant name and title** — set the assistant name for all members, and optionally lock it to prevent individual overrides
+- **Integrations** — enable org-wide integrations (CRM, ATS, room booking, etc.) or restrict which integrations members can add individually
+- **Productivity settings** — customize the minutes used to calculate time savings in member briefings
+- **Email customization** — set a custom invite email template and footer for the whole org
+
+## Co-worker scheduling
+
+Team plan users on Google Calendar can enable **Instant Co-worker Scheduling** to automatically see when colleagues are free when creating a meeting. CalendarHero uses Google's free/busy permissions to check availability — no meeting details are shared.
+
+This setting is on by default. To manage it: go to [My Integrations → Calendar](https://app.calendarhero.com/settings/accounts/list#calendar) → click **… → Calendar Settings → Instant Co-worker Scheduling**.
+
+## Team reporting
+
+Admins can view and download usage reports from the [Admin Reports dashboard](https://app.calendarhero.com/org/reports). Reports can be filtered by day, week, or month.
+
+Tracked metrics include:
+
+- Meetings requested, scheduled, rescheduled, and cancelled
+- Meetings booked via personal scheduling links
+- Morning and meeting briefings sent
+- People insights requested
+- Introductions and reminders requested
+- Hours saved (calculated using customizable per-task values)
+
+Click **View** to see results in the dashboard or **Download** to export as a CSV.
+
+## Saving calculations
+
+CalendarHero automatically estimates time saved per user based on scheduling activity. These savings appear in each user's morning briefing.
+
+Admins can customize the per-task minute values used in the calculation from [Admin Settings → Productivity](https://app.calendarhero.com/org/settings). This affects all members' savings totals.
+
+## Frequently asked questions
+
+<details>
+<summary>Can I run a pilot before rolling out to my whole team?</summary>
+
+Yes. Upgrade to the Team plan, then go to [Admin Settings](https://app.calendarhero.com/org/settings) and enter only the specific email addresses you want to include in the **Allowed Users** field. Only those users will be added when they sign up — everyone else with your domain will not be automatically added.
+
+</details>
+
+<details>
+<summary>What happens to a member's data if I remove them?</summary>
+
+Removing a member downgrades their account to Basic and removes them from the org, but their CalendarHero account and data remain intact. Deleting a member permanently removes their account and all associated data, including meeting types and settings — this cannot be undone.
+
+</details>
+
+<details>
+<summary>Can multiple people be admins?</summary>
+
+Yes. There must always be at least one admin, but you can add additional admins from [Admin Settings](https://app.calendarhero.com/org/settings). Admins share full access to billing, member management, and org-wide settings.
+
+</details>
