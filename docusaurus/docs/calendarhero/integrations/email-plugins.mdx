@@ -1,0 +1,108 @@
+---
+title: Email Plugins
+description: Schedule meetings and share availability without leaving your inbox using the CalendarHero Gmail add-on or Microsoft Outlook plugin.
+---
+
+If you spend most of your time in email, CalendarHero's email plugins let you share your scheduling link, insert available times, and create meeting requests — all from inside your inbox.
+
+## Gmail add-on
+
+The CalendarHero Gmail add-on adds a scheduling sidebar to your Gmail inbox. It requires a CalendarHero account — sign up at [calendarhero.com/start](https://calendarhero.com/start) if you haven't already.
+
+### Installing the Gmail add-on
+
+1. Open the [CalendarHero for Gmail listing](https://gsuite.google.com/marketplace/app/calendarhero_for_gmail/682596370674) in the Google Workspace Marketplace
+2. Click **Install** and approve the required permissions
+3. Open Gmail — the CalendarHero add-on icon now appears in the right-side sidebar
+
+### Using the Gmail add-on
+
+**Share a scheduling link or available times** — When composing or replying to an email, click the CalendarHero icon at the bottom of the compose window and select a meeting type. Then:
+
+- Click **Insert Scheduling Link** to paste your personal scheduling link directly into the email
+- Click **Share Available Times** to embed a preview of your next available times in the email body
+
+Available times are intelligently selected based on your current availability and meeting type settings. Up to 9 times are included, and invitees can always click **View More Times** to open your full scheduling page.
+
+**Start a meeting request** — While reading an email, click the CalendarHero icon in the right sidebar. Select a meeting type from the dropdown and click **Schedule Meeting With...** to open the web scheduler with the sender pre-filled as the invitee.
+
+**View people insights** — While reading an email, click the CalendarHero icon and then **Insights On...** to view discoverable contact information for the email sender.
+
+## Microsoft Outlook plugin
+
+The CalendarHero Outlook plugin brings scheduling features directly into your Outlook inbox. It includes three tabs: **Share**, **Schedule**, and **Help**.
+
+### Installing for individual users
+
+Individual users install the plugin by adding a custom add-in to Outlook using the CalendarHero manifest URL.
+
+**Manifest URL:** `https://assets.calendarhero.com/extension/outlook.xml`
+
+**Outlook on the web (new version):**
+1. Select any email and click **"..."** (More actions)
+2. Click **Get Add-ins**
+3. Go to the **My Add-ins** tab and scroll to the bottom
+4. Click **+ Add a Custom Add-in** and paste the manifest URL
+
+**Outlook on the web (older version):**
+Go to **Settings → Manage Add-Ins → Custom Add-ins → My Add-ins → + Add a Custom Add-in** and paste the URL.
+
+**Outlook Windows app:**
+Go to **File → Manage Add-ins** (opens in browser) → **Add from a URL** and paste the manifest URL.
+
+**Outlook on Exchange:**
+Download the manifest file from the URL above and upload it through the add-in manager.
+
+Once installed, click the CalendarHero button in your inbox to open the plugin. The first time you open it, click **Authenticate** to log in with your Microsoft account.
+
+### Installing for organizations (admins only)
+
+Admins can deploy the plugin to all users in their organization through the Microsoft 365 admin portal:
+
+1. Go to your [Microsoft 365 Administration page](https://admin.microsoft.com)
+2. Navigate to **Settings → Services & Add-ins → Deploy Add-in**
+3. Browse for the add-in using the manifest URL: `https://assets.calendarhero.com/extension/outlook.xml`
+4. Specify which users have access and deploy
+
+### Using the Outlook plugin
+
+**Share tab** — Share your availability directly in any email:
+- **Share Scheduling Link** — copies your scheduling link to paste into an email
+- **Share Available Times** — copies a preview of your available times to paste into an email
+
+**Schedule tab** — Create a full meeting request without leaving Outlook:
+1. Add invitees by name or email (the plugin auto-fills the contact from the email you're reading)
+2. Select your meeting type to populate duration, location, and other settings
+3. Customize any details as needed
+4. Click **Send Invite** to have your assistant send the invitation, or **Get Invite Link** to copy a private meeting link
+
+**Help tab** — Access frequently asked questions and quick-start guides.
+
+**Accessing the plugin:**
+- From the inbox: click the CalendarHero button in the toolbar (or under **"..."** on mobile)
+- From a reply: the plugin button appears below the reply box
+- From a calendar event: click **"..."** and select **CalendarHero**
+- Pin the plugin to keep it open as you navigate between emails
+
+## Frequently asked questions
+
+<details>
+<summary>What versions of Outlook does the plugin support?</summary>
+
+The plugin supports Office 2013 for Windows (Build 15.0.4855.1000 or later), Office 2016 for Windows (Build 16.0.4390.1000 or later), Office 365 for Windows, Office 365 for iPad (1.22 or later), Office 365 for Mac (15.20 or later), Outlook Online, and Outlook Online Server.
+
+</details>
+
+<details>
+<summary>The add-ins menu is missing from my Outlook — what should I do?</summary>
+
+If you don't see the Add-ins menu in your version of Outlook, your IT administrator may have disabled this option. Contact your admin and ask them to enable add-in management for your account.
+
+</details>
+
+<details>
+<summary>Can I use the Gmail add-on and Outlook plugin at the same time?</summary>
+
+Yes. If you use both Gmail and Outlook, you can install both plugins and they will work independently. Each plugin connects to the same CalendarHero account.
+
+</details>

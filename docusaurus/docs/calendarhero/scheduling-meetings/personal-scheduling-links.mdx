@@ -1,0 +1,87 @@
+---
+title: Personal Scheduling Links
+description: Share a public URL so anyone can self-book a meeting with you based on your availability.
+---
+
+Your personal scheduling link is a public URL you can share with anyone so they can book a meeting with you based on your real-time availability. Each [meeting type](./meeting-types) has its own scheduling link, so its settings automatically apply when an invitee books through that link.
+
+All scheduling links start with `https://calendarhero.to/` followed by a custom name you set. If you don't set one, CalendarHero generates a unique link automatically.
+
+To view and manage your scheduling links, go to [Settings → Meeting Types](https://app.calendarhero.com/settings/meeting).
+
+## Ways to share your link
+
+- Paste it in the body of an email
+- Add it to your email signature
+- Embed it in a web lead form
+- Share it via SMS, LinkedIn, or chat
+
+## Add times to email
+
+Rather than sharing a link, you can copy a preview of your available times directly into an email. Go to your Dashboard or Meeting Type list, click **… → Add Times to Email**, then copy the times to your clipboard. Up to 9 available times are inserted, and invitees can click **View More Times** to see additional slots. This option requires a Professional or Team plan.
+
+The Gmail add-on and Outlook plugin also let you insert available times into a new or replied email directly from your inbox.
+
+## Find Times
+
+If you have an active meeting request and want to accelerate scheduling — for example, if an invitee hasn't responded — use **Find Times**. From your Active Tasks, click **… → Find Times** on the meeting request. CalendarHero instantly suggests the best available times based on current invitee responses and real-time calendar availability. Select a time and click **Book Now** to confirm immediately.
+
+## Private invite links
+
+Private invite links let you share a scheduling link for a specific meeting without having your assistant send the invite. In the web scheduler, choose **Get Invite Link** instead of sending an invite. A unique link is generated that you can share directly with invitees via email, SMS, or any channel you prefer.
+
+Private invite links are tied to a single meeting and can only be used by the invitees you added. They expire after the meeting ends. You can retrieve the link from the Task card if you didn't copy it when it was generated.
+
+## Embed on your website
+
+Add your scheduling page directly to your website using one of three embed styles:
+
+- **Inline embed** — loads inside your page content. Best for a dedicated booking page with a single meeting type.
+- **Slide out** — a floating button that opens the scheduler in a side panel. Best when you want scheduling available across multiple pages.
+- **Directory embed** — displays multiple meeting types on a single page (see [Meeting directories](#meeting-directories) below).
+
+To get the embed code, go to a meeting type → **Add to my Website**, choose your preferred style, and paste the code into your site. The embed is responsive (minimum 320px wide). To change the default height of 630px, update the `height` parameter in the embed code.
+
+## Meeting directories
+
+A meeting directory is a public landing page that lists multiple meeting types so invitees can choose the one that fits their needs. All users have access to a default directory. Professional and Team plan users can create unlimited custom directories.
+
+To create a directory, go to [Settings → Meeting Directories](https://app.calendarhero.com/settings/meeting/directories), click **+ New Directory**, and add the meeting types you want to include. Each directory has its own shareable URL and can also be embedded on your website.
+
+## Frequently asked questions
+
+<details>
+<summary>What are the Basic plan limitations for scheduling links?</summary>
+
+Basic plan users are limited to one personal scheduling link (for the default meeting type only). Short links expire after 2 weeks, though the full URL never expires. There is no limit on how many meetings can be booked through the link, but web app scheduling is capped at 5 meetings per month. [Upgrade to a Pro or Team plan](https://calendarhero.com/pricing) for unlimited scheduling links and custom meeting types.
+
+</details>
+
+<details>
+<summary>Can I auto-populate an invitee's name and email?</summary>
+
+Yes. You can append `?email=` and `&name=` parameters to your scheduling link URL to pre-fill the invitee's details on the scheduling page. For example:
+
+```
+https://calendarhero.to/yourlink?email=jane@example.com&name=Jane Smith
+```
+
+This is useful when sharing a link from a lead form where you already have the contact's information.
+
+</details>
+
+<details>
+<summary>Can I update my scheduling link name?</summary>
+
+Yes, but once you change it the old link stops working. Anyone who saved or shared the old link will need the new one. The meetings previously booked with the old link are not affected.
+
+</details>
+
+<details>
+<summary>What's the difference between a private invite link and a personal scheduling link?</summary>
+
+A personal scheduling link is public and reusable — anyone can book through it at any time. A private invite link is generated for a specific meeting and can only be used by the invitees you added. It expires once the meeting ends.
+
+Use personal scheduling links for open booking (email signatures, website embeds). Use private invite links when you want to control who can schedule a specific meeting.
+
+</details>

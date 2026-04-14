@@ -1,0 +1,111 @@
+---
+title: Meeting Types
+description: Create and customize meeting types to pre-configure your scheduling settings and reuse them for faster meeting scheduling.
+---
+
+Meeting types let you pre-configure your scheduling settings — duration, availability window, location, video conferencing, and more — and reuse them every time you schedule. Instead of setting everything up each time, you select a meeting type and all the settings apply automatically.
+
+CalendarHero includes several out-of-the-box meeting types (Default Meeting, Call, Video, Coffee). Professional and Team plan users can create unlimited custom meeting types.
+
+To manage your meeting types, go to [Settings → Meeting Types](https://app.calendarhero.com/settings/meeting).
+
+## Key settings
+
+**Name & link** — Give your meeting type a name (this cannot be edited after saving) and set a custom personal scheduling link.
+
+**Availability** — Set the duration, availability window (days and times), date range, lead time, daily meeting limits, and priority. You can also enable shared availability options for team scheduling.
+
+**Location & conferencing** — Enter a physical location, phone number, or connect a video conferencing provider like Zoom or Webex. You can allow invitees to suggest or edit the location.
+
+**Invitee experience** — Add meeting instructions, set the confirmation behavior, collect custom invitee questions, and configure language settings.
+
+**Collect payments** — Enable Stripe payment collection for meetings booked via personal scheduling links or embeds.
+
+## General settings
+
+Your global meeting settings apply across all meeting types unless overridden at the meeting type level. Go to [Settings → Meeting → General](https://app.calendarhero.com/settings/meeting/general) to adjust these.
+
+- **Default calendar** — the calendar CalendarHero writes events to. Required for scheduling.
+- **Time zone** — auto-detected, but editable manually.
+- **Working days** — days your assistant considers when sending briefings and applying default availability.
+- **Daily downtime** — blocks a percentage of your open time to prevent your schedule from being fully booked.
+- **Travel buffer** — automatically adds travel time before and after in-person meetings.
+- **Email CC** — receive a copy of meeting invite emails sent by your assistant.
+- **Daily briefing** — receive a morning summary of your upcoming meetings at a time you choose.
+
+## Sharing meeting types
+
+Team plan members can share meeting types with others in their organization. When shared, a copy appears in the recipient's meeting type list — updates to the original do not affect shared copies.
+
+Team admins can enable **Auto-Share with New Members** to automatically share selected meeting types with anyone who joins the plan.
+
+To share a meeting type: go to [Settings → Meeting Types](https://app.calendarhero.com/settings/meeting), click **…** on the meeting type, and select **Share**.
+
+## Frequently asked questions
+
+<details>
+<summary>Why are my meeting types inactive?</summary>
+
+Basic plan users are limited to the three out-of-the-box meeting types (Default Meeting, Call, and Coffee) and cannot create custom meeting types. If you created custom meeting types during a trial, you need to [upgrade to a Professional or Team plan](https://calendarhero.com/pricing) to use them again.
+
+</details>
+
+<details>
+<summary>How do I set lead time?</summary>
+
+Lead time is the minimum amount of notice required before a meeting can be scheduled. It prevents invitees from booking last-minute meetings without giving you time to prepare. The default is 4 hours, but you can customize it per meeting type under **Availability → Lead Time**. This is especially useful when using personal scheduling links.
+
+</details>
+
+<details>
+<summary>How do I prioritize external meetings over internal ones?</summary>
+
+Enable the **Schedule over Internal Meetings** option under a meeting type's Availability settings. When on, CalendarHero treats your existing internal meetings as free time and offers those slots to external invitees. This is useful for prioritizing client calls or VIP prospects when schedules are busy. Note: this may result in double-bookings, so use it selectively.
+
+</details>
+
+<details>
+<summary>How do I limit the number of meetings per day?</summary>
+
+Open a meeting type, go to **Availability**, and enter a number in the **Meeting Limits** field. Once that limit is reached for the day, no more times are offered for that meeting type — even if you still have free time. Note: meeting limits are overridden when you schedule at a specific time rather than letting invitees choose.
+
+</details>
+
+<details>
+<summary>Can I add an agenda to my meeting?</summary>
+
+Yes. In the web scheduler, enter your agenda in the **Agenda / Description** field on the Details step. In chat, say "Add Agenda" after your initial meeting request and your assistant will prompt you. The agenda appears on the meeting invite email, the scheduling page, and the calendar event.
+
+For Corporate plan users, custom agenda templates with multiple question prompts can be configured by an admin under **Admin Menu → Applications → Meeting Scheduler**.
+
+</details>
+
+<details>
+<summary>How do I customize the meeting title?</summary>
+
+Set a default title per meeting type under **Settings → Meeting Types → Name & Link**. You can use dynamic variables to automatically insert invitee names or the meeting owner's name — for example, `Sales Demo{{" with "}}{{invitees}}` displays as "Sales Demo with Luke/Leia" once invitees are known.
+
+You can also override the title on the fly in the web scheduler, or mention it in quotes when scheduling via chat — for example, *"Schedule a call with Sarah for 'Q1 Review'"*.
+
+</details>
+
+<details>
+<summary>Can I attach a PDF to my meeting link?</summary>
+
+There is no direct file attachment option. As a workaround, use the **Consent Form** question type under **Invitee Experience → Add a Question**. Paste a link to the document in the text field, and mark the question as required if you want invitees to confirm before booking.
+
+</details>
+
+<details>
+<summary>Can I prevent scheduling on statutory holidays?</summary>
+
+Yes. In any meeting type, enable **Prevent Scheduling on Holidays** under the Availability settings. CalendarHero will not offer times on statutory holidays for the country set in your location settings. Supported countries include the United States, Canada, and the United Kingdom. For unsupported regions or custom holidays, add busy blocks to your connected calendar instead.
+
+</details>
+
+<details>
+<summary>Can I block specific email addresses from booking?</summary>
+
+There is no built-in blocklist for email addresses. As an alternative, gate your scheduling link behind a form on your website — only contacts who complete the form would receive the link.
+
+</details>
