@@ -11,6 +11,7 @@ Use Forms to capture leads from your website directly into the CRM. Embed a form
 
 - Convert website visitors into contacts automatically
 - Reduce manual data entry with mapped fields and defaults
+- Keep CRM records current — form submission values automatically overwrite the corresponding CRM fields, so your data stays accurate without manual updates
 - Trigger automations (auto-reply, nurture campaigns, routing)
 - Improve data quality with reCAPTCHA and UTM capture
 

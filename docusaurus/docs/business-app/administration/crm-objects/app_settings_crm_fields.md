@@ -68,6 +68,19 @@ NOTE: System fields (created by default) cannot be modified or deleted. Only cus
 
 ![CRM Fields inside Administration](../img/administration_custom_fields.png)
 
+## Field Change History
+
+Every update made to a CRM field is automatically logged in Field Change History. Whether a field was updated by a form submission, the AI Sales Assistant, a teammate, or the system, you can see exactly what the previous value was, what it changed to, and who or what made the update.
+
+Field Change History may only be available on certain subscriptions.
+
+### How to view Field Change History
+
+1. Go to **Business App** > **CRM**.
+2. Open any contact, company, or opportunity record.
+3. Click the **History** icon in the top right corner of the record.
+4. Review the list of field changes, including the previous value, new value, and who or what made the update.
+
 ## How Might I use CRM Fields
 
 Some ways you might use custom fields in your app include:
@@ -79,6 +92,13 @@ Some ways you might use custom fields in your app include:
 - **Storing secondary contact information**, like an emergency contact name or backup phone number, especially useful in childcare or health-related services.
 
 ### Frequently Asked Questions (FAQs)
+
+<details>
+<summary>What is Field Change History?</summary>
+
+Field Change History logs every update made to a CRM field. You can see the previous value, the new value, and who or what made the change — whether that's a form submission, the AI Sales Assistant, a teammate, or the system. This feature may only be available on certain subscriptions. To view it, open any contact, company, or opportunity record and click the **History** icon in the top right corner.
+
+</details>
 
 <details>
 <summary>Can I create fields for both contacts and companies?</summary>
