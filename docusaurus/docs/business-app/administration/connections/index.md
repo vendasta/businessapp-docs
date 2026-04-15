@@ -36,6 +36,9 @@ Common integrations include:
 - **Jobber** – Connects field service workflows  
 - **Gingr**, **PetExec**, **Pet Resort Pro**, **Paw Partner**, **PawLoyalty** – Connect customer and service data for pet-related businesses  
 
+### CRM Tools
+- **HubSpot** – Two-way sync for Contacts and Companies between HubSpot and Business App
+
 ### Finance and Productivity Tools
 - **QuickBooks Online / Personal** – Syncs invoices, transactions, and billing data
 - **Zapier** – Connects and automates workflows with thousands of apps  
@@ -79,6 +82,7 @@ Each integration sends specific data to your app, depending on its purpose. For 
 - **Website performance** from Google Analytics  
 - **Search visibility** from Google Business Profile  
 - **Customer and job data** from Housecall Pro or Jobber  
+- **Contacts and Companies** from HubSpot (two-way sync — changes in either system update the other within minutes)
 - **Financial records** from QuickBooks 
 
 ## Quick Add Via Settings
@@ -90,6 +94,24 @@ You can also connect platforms directly from the `Settings` > `Connections` page
 Connecting your accounts early is one of the most important steps you can take to start seeing value in Business App. The metrics pulled in through Connections power analytics in the Executive Report and Marketing Funnel.
 
 ## Frequently Asked Questions (FAQs) {#frequently-asked-questions-faqs}
+
+<details>
+<summary>What does the HubSpot integration sync?</summary>
+
+The HubSpot integration keeps Contacts and Companies in sync between HubSpot and Business App. Any updates made in one platform automatically appear in the other within minutes.
+</details>
+
+<details>
+<summary>How do I connect HubSpot?</summary>
+
+Go to **Administration → Connections → Browse**, select HubSpot, and click **Connect HubSpot**. Choose your sync options, then authorize the connection using your HubSpot account.
+</details>
+
+<details>
+<summary>Will deleting a record in HubSpot delete it in Business App?</summary>
+
+No. Deletions in one system do not automatically remove records in the other.
+</details>
 
 <details>
 <summary>How do I reconnect an integration that has expired?</summary>
