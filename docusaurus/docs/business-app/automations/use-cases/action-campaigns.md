@@ -1,49 +1,30 @@
 ---
-title: Pause campaign steps
+title: Pause campaigns when lead conditions change
 sidebar_position: 1
-sidebar_label: Pause campaign steps
-description: Use automation to pause campaigns for contacts or companies when lead conditions change.
+sidebar_label: Pause campaigns
+description: Automatically pause campaigns for contacts or companies when leads go cold, bounce, or no longer qualify.
 tags: [automations, campaigns, crm, contact-level, company-level]
 keywords: [pause campaign, automation builder, meeting booked, email bounce, lead score, crm updates]
 ---
 
+When a lead books a meeting, bounces an email, or drops off a target list, continuing to send campaign messages can feel irrelevant — or worse, damage the relationship. You can build automations that pause campaigns automatically when conditions change, so your outreach stays timely without manual intervention.
 
+## When to use this
 
-The **Pause campaign** step in the automation builder allows you to automatically stop campaigns for a contact or an entire company when specific conditions are met. These steps ensure your outreach stays relevant and reduces manual intervention.
+- A contact books a meeting and no longer needs nurture emails
+- An email bounces and you want to stop further sends to that contact
+- A company is removed from a target list and should stop receiving campaign messages
+- A lead score drops below a threshold and outreach should pause until the lead re-qualifies
 
-Campaigns should align with the real-time status of leads. The Pause campaign steps allow you to automatically pause campaigns based on dynamic lead conditions, keeping communication timely and relevant.
+## Example: Pause a campaign when a company leaves a target list
 
+You're running a "Cruise in winter" campaign for Tier A companies. When a company is removed from List B, and that list is tagged as Tier A, you want to automatically pause the campaign for that company.
 
+1. **Trigger:** Set the trigger to **When a company is removed from a list** and select **List B**.
+2. **Condition:** Add a condition where `list_id` contains **Tier A**.
+3. **Action:** Add the **Pause campaign for company** step and select the **Cruise in winter** campaign.
 
-## How to set up
-
-To use the Pause campaign step, add it to any automation in your workflow. The setup process is the same for both contact-level and company-level campaign pausing.
-
-
-1. Open the Automation Builder.
-2. Choose or create a workflow.
-3. Add a trigger (e.g., meeting booked).
-4. Insert the **Pause campaign for contact** or **Pause campaign for company** step.
-5. Configure the rest of your workflow as needed.
-
-
-:::tip
-Use these steps after a `Delay` step or condition check to respond intelligently to lead behavior.
-:::
-
-## Example
-
-**Scenario:** You're running a "Cruise in winter" campaign for Tier A companies. When a company is removed from List B, and that list is tagged as Tier A, you want to automatically pause the campaign for that company.
-
-**Trigger:** When a company is removed from a list: **List B**
-
-**Conditions:** list_id contains **Tier A**
-
-**Step:** Pause the **Cruise in winter** campaign for company
-
-**How it works:** When a company is removed from List B, the automation checks if the list ID contains "Tier A". If true, it pauses the "Cruise in winter" campaign for the entire company, stopping all campaign messages to every contact in that organization.
-
-**Use case:** This is useful when companies graduate from your target list (became customers, unsubscribed, or no longer qualify) and you want to immediately stop ongoing campaign outreach.
+When a company is removed from List B, the automation checks if the list ID contains "Tier A". If true, it pauses the "Cruise in winter" campaign for the entire company, stopping all campaign messages to every contact in that organization.
 
 <div style={{textAlign: 'center'}}>
 
@@ -51,25 +32,15 @@ Use these steps after a `Delay` step or condition check to respond intelligently
 
 </div>
 
-## FAQs
+:::tip
+Add a **Delay** step before the pause action to give leads time to re-engage before the campaign stops.
+:::
 
-<details>
-<summary>When should I use the Pause campaign step for contacts?</summary>
+## Contact-level vs. company-level pausing
 
-Use it when a specific lead takes action, such as booking a meeting or bouncing an email.
+| Level | Step name | When to use |
+|-------|-----------|-------------|
+| Contact | Pause campaign for contact | A specific lead takes action (books a meeting, bounces an email) |
+| Company | Pause campaign for company | A business as a whole goes cold or no longer qualifies, and you want to stop outreach to all associated contacts |
 
-</details>
-
-<details>
-<summary>When should I use the Pause campaign step for companies?</summary>
-
-Use it when a business as a whole goes cold or becomes unqualified, and you want to pause outreach to all associated contacts.
-
-</details>
-
-<details>
-<summary>Can I use both steps in the same automation?</summary>
-
-Yes. You can combine contact and company-level logic in a single workflow.
-
-</details>
+You can combine both in the same automation — for example, pause a contact's campaign immediately on bounce, and pause the company's campaign if all contacts in that company have bounced.
