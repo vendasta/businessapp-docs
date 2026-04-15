@@ -49,7 +49,7 @@ The AI Sales Assistant addresses these challenges by automating CRM updates and 
 
 ## What's included with the AI Sales Assistant?
 
-- **Automated CRM updates**: Automatically update CRM contact and company records after customer meetings and calls, based on meeting participants and conversation content captured through Conversation Intelligence
+- **Automated CRM updates**: Automatically update CRM contact, company, opportunity, and custom object records after customer meetings and calls, or on a schedule using the automation time trigger. Configure which fields the AI can update and how it handles existing values.
 - **Conversational CRM insights**: Ask natural-language questions to get specific, company-level insights from your CRM data and meeting content — no need to run reports or search through records manually
 - **Activity creation**: Create sales activities directly from the AI Sales Assistant based on meeting outcomes and CRM data, helping you stay on top of follow-ups and next steps
 
@@ -100,12 +100,28 @@ You can customize the prompt used by this capability to adjust how the AI Sales 
 
 #### Auto update CRM records
 
-The Auto update CRM records capability allows the AI Sales Assistant to automatically update your CRM contact and company records after each customer meeting or call.
+The Auto update CRM records capability allows the AI Sales Assistant to automatically update your CRM records after each customer meeting or call, or on a schedule using the automation time trigger.
 
-- Extracts key details from meeting content captured through Conversation Intelligence
-- Updates CRM records based on meeting participants and conversation outcomes
-- Creates activities based on action items and follow-ups identified during meetings
-- Keeps your CRM accurate and current without manual data entry
+**What the AI can update:**
+
+- Contact and company fields based on meeting content captured through Conversation Intelligence
+- Opportunity details, including price and pipeline stage
+- Custom object fields, such as vehicle year and model, or any fields your business tracks
+
+**How updates are controlled:**
+
+- Choose which fields the AI is allowed to update
+- Set the overwrite preference for each field: **Always overwrite** replaces existing values; **Overwrite if empty** only fills in fields that are blank
+- Field restrictions are respected — the AI will not update a field with a value that falls outside the defined options
+
+**Automation time trigger:**
+
+In addition to updating records after meetings, you can configure an automation time trigger to prompt the AI Sales Assistant to find and act on data updates on a schedule, without waiting for a meeting to trigger it.
+
+**To configure the Update CRM capability:**
+
+1. Go to **Business App** > **CRM** > **AI Sales Assistant** > **Configure**
+2. In the **Update CRM** capability, configure the overwrite preference for each field (**Always overwrite** or **Overwrite if empty**)
 
 :::note
 Review the default update settings to ensure they align with your sales process. You can adjust which fields are updated and how the AI Sales Assistant interprets meeting data.
@@ -166,7 +182,19 @@ No. You can enable or configure each capability independently. For example, you 
 <details>
 <summary>How does the AI Sales Assistant update my CRM?</summary>
 
-After a meeting is recorded and analyzed, the AI Sales Assistant extracts relevant details from the conversation — such as participant information, discussion outcomes, and action items — and updates the corresponding CRM contact and company records automatically.
+After a meeting is recorded and analyzed, the AI Sales Assistant extracts relevant details from the conversation — such as participant information, discussion outcomes, and action items — and updates the corresponding CRM records automatically. This includes contacts, companies, opportunities, and custom object fields. You can configure which fields the AI is allowed to update and whether it should always overwrite existing values or only fill in empty ones.
+</details>
+
+<details>
+<summary>Which CRM records can the AI Sales Assistant update?</summary>
+
+The AI Sales Assistant can update contacts, companies, opportunities (including price and pipeline stage), and custom object fields. You configure which fields it can update and the overwrite preference for each one.
+</details>
+
+<details>
+<summary>What is the overwrite preference setting?</summary>
+
+When configuring the Update CRM capability, you set an overwrite preference for each field. **Always overwrite** replaces the existing value whenever the AI has new data. **Overwrite if empty** only fills in the field if it is currently blank. Field restrictions are always respected — the AI will not update a field with a value outside the defined options.
 </details>
 
 <details>
