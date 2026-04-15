@@ -1,76 +1,36 @@
 ---
-title: Messaging steps
+title: Send automated notifications with SMS and email
 sidebar_position: 2
-sidebar_label: Messaging steps
-description: Send automated SMS and email messages as steps within your workflows.
+sidebar_label: Automated notifications
+description: Automatically notify your team or contacts via SMS and email when leads come in, forms are submitted, or CRM events occur.
 tags: [automation, messaging, sms, email]
 keywords: [automated SMS, automated email, messaging steps, workflow alerts, customer notifications]
 ---
 
-# Messaging steps
-
-Use messaging steps to send automated SMS or plain-text email from your workflows. Each step runs when the workflow is triggered so you can notify the contact who triggered it or alert your team.
-
-## How to add a messaging step
-
-1. Go to Business App > Administration > Automations
-2. Open the Automation Builder (create a new automation or edit an existing one)
-3. Add a trigger (e.g. When a contact is created, Form submitted, WebChat captures a lead)
-4. Click the **+** symbol to add a step and select the messaging step you want
-5. Configure the step (recipient, message content, dynamic fields as needed)
-6. Save and turn the automation On
-
-{/* TODO: Add screenshot - Automation Builder with messaging steps in the step list
-<div style={{textAlign: 'center'}}>
-
-![Automation Builder with messaging steps in the step list](../img/messaging-action-builder.png)
-
-</div>
-*/}
-
-## Send SMS
-
-Send an SMS to the contact who triggered the automation or to any phone number you specify (e.g. team members, numbers not in your CRM).
+When a new lead comes in from chat, a quote request lands, or a VIP contact is tagged, the faster you respond, the better your chances of closing the deal. You can build automations that send SMS or email notifications the moment these events happen — no manual follow-up needed.
 
 :::note
-Sending SMS via automations requires Conversations AI | Pro.
+SMS notifications require Conversations AI | Pro. Plain-text email notifications require Conversations Pro.
 :::
 
-**To the contact who triggered the automation:** After adding the step (see [How to add a messaging step](#how-to-add-a-messaging-step)), choose **Send SMS**, write your message, and add dynamic fields as needed.
+## When to use this
 
-**To any phone number:** After adding a step, select **Send an SMS message to a phone number**. Configure the **Phone Number** field with one or more destination numbers, enter the message content, and use the dynamic field inserter for variables if needed.
+| Trigger | Notification | Benefit |
+|---------|--------------|---------|
+| Web Chat captures a lead | SMS to the assigned sales rep | Immediate follow-up on hot leads |
+| "Request a Quote" form submitted | SMS to the sales manager with project details | Faster response for high-intent leads |
+| Contact tagged as VIP | SMS alert to the business owner | Timely personal outreach |
+| Newsletter signup form submitted | Welcome email to the new subscriber | Instant engagement while interest is high |
 
-{/* TODO: Add screenshot - Send SMS to a phone number step (Phone Number field and message body)
-<div style={{textAlign: 'center'}}>
+## Example: Alert your team when Web Chat captures a lead
 
-![Send SMS to a phone number step: Phone Number field and message body with dynamic field inserter](../img/messaging-sms-to-phone-step.png)
+When Web Chat captures a lead, the person handling that lead gets an SMS right away with a personalized greeting and details about the new lead.
 
-</div>
-*/}
+1. **Trigger:** Set the trigger to **When Web Chat captures a lead**.
+2. **Action:** Add the **Send an SMS message to a phone number** step. Enter the phone number of the person handling leads (e.g. sales rep or owner).
+3. **Message:** Use the dynamic field inserter to greet the recipient by name and include lead details — for example, "Hi Sarah, you have a new lead! A task was created in the CRM and a link was emailed."
 
-**Example use cases:**
-
-| Trigger | Step | Benefit |
-|---------|--------|---------|
-| New visitor chats without booking | You receive SMS with visitor's name and message | Restart outreach quickly |
-| "Request a Quote" form submitted | Sales manager receives SMS with project details | Faster response for high-intent leads |
-| Contact tagged as VIP | Business owner receives SMS alert | Timely personal follow-up |
-
-**Tips:**
-- Keep messages short and actionable; include your business name the first time you text a contact
-- Respect consent and opt-out rules; use Conditions to limit when the step runs (e.g. only for new leads)
-
-### Example
-
-**Scenario:** When Web Chat captures a lead, the person in charge of handling that lead (e.g. a sales rep or owner) gets an SMS right away. The message greets them by name, notifies them about the new lead, and mentions that a task was created in the CRM and a link was emailed.
-
-**Trigger:** When Web Chat captures a lead
-
-**Step:** Send an SMS message via Conversations to the phone number of the person handling the lead. In the step, add SMS content that greets the recipient by name using the dynamic field inserter (e.g. the assigned rep's or owner's name from the CRM). Include that they have a new lead and that a task was created in the CRM and a link was emailed.
-
-**How it works:** When Web Chat captures a lead, the automation runs and sends the SMS to the number you configured (e.g. the sales person's or owner's). The dynamic field pulls the recipient's name so the message is personalized—for example, "Hi Sarah, you have a new lead!"—and they're reminded about the CRM task and email.
-
-**Use case:** Ensures the right person is notified immediately when a lead comes from chat, with a personalized greeting and a reminder about the CRM task and email.
+When the automation runs, the SMS is sent immediately to the configured number with personalized content pulled from the CRM.
 
 <div style={{textAlign: 'center'}}>
 
@@ -78,17 +38,13 @@ Sending SMS via automations requires Conversations AI | Pro.
 
 </div>
 
-## Send plain-text email
+## Example: Send a welcome email on form submission
 
-:::note
-Requires Conversations Pro.
-:::
+When a contact submits a signup form, send them a plain-text email to acknowledge their submission and set expectations.
 
-**Setup:** After adding the step, choose **Send a plain text email** (via Inbox or Conversations), then set the Subject and Body and add dynamic fields if needed.
-
-**Tips:**
-- Use clear subjects and one primary call-to-action; personalize with the contact's name and relevant details
-- Combine with Conditions to target the right audience
+1. **Trigger:** Set the trigger to **When a form is submitted**.
+2. **Action:** Add the **Send a plain text email** step (via Inbox or Conversations).
+3. **Message:** Set the subject line and body. Use dynamic fields to personalize with the contact's name and relevant form details.
 
 <div style={{textAlign: 'center'}}>
 
@@ -96,19 +52,18 @@ Requires Conversations Pro.
 
 </div>
 
-## Frequently asked questions
+## SMS options: contact vs. phone number
 
-<details>
-<summary>What if messages fail to send?</summary>
+| Step | Sends to | When to use |
+|------|----------|-------------|
+| Send SMS | The contact who triggered the automation | Notifying the lead or customer directly |
+| Send an SMS message to a phone number | Any phone number you specify | Alerting team members or numbers not in your CRM |
 
-Check the Activity tab for the run. Make sure required fields (e.g. phone for SMS, email for plain-text email) are present. If you see frequent failures, consider setting Error handling to "Skip the step and continue" in the automation Settings so other steps can still complete.
+## Tips
 
-</details>
-
-<details>
-<summary>Can I include dynamic information in messages?</summary>
-
-Yes. Use the dynamic field inserter when writing the message to include contact details, form responses, or other automation data. For the syntax and examples (e.g. task IDs, trigger data), see [Dynamic content in automations](../smart-values-in-automations).
-
-</details>
+- Keep SMS messages short and actionable — include your business name the first time you text a contact
+- Use clear email subjects with one primary call-to-action
+- Add **Conditions** to limit when notifications fire (e.g. only for new leads, only during business hours)
+- Personalize messages with the contact's name and relevant details using [dynamic content](../smart-values-in-automations)
+- If messages fail to send, check the **Activity** tab — make sure required fields (phone for SMS, email for plain-text email) are present on the contact
 
