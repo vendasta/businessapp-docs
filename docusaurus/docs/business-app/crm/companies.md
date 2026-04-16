@@ -61,6 +61,30 @@ The **Owner** field controls which team member is responsible for a company. Thi
 Looking for a "Salesperson" or "Assign salesperson" field? The field is called **Owner**. Set this field to assign a team member to the company.
 :::
 
+### Take bulk actions on companies
+
+Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page.
+
+![Actions button](img/actions-button.png)
+
+Available actions include:
+
+- **Delete companies** — remove the selected companies from your CRM
+- **Add to static list** — add selected companies to a static list
+- **Start automation** — run an automation on the selected companies immediately
+
+To start an automation in bulk:
+
+1. Go to `CRM` > `Companies`.
+2. Select the companies you want to include (use filters and search to narrow the list first, if needed).
+3. Click `Actions` > `Start automation`.
+4. Choose the automation you want to run from the list.
+5. Confirm to start the automation for all selected companies.
+
+:::tip
+Bulk actions are a fast way to run automations on demand — for example, sending a campaign to a segment of companies or assigning owners across a batch of new accounts. You don't need to build a new automation; just pick an existing one.
+:::
+
 ### Optional: Lead Scoring
 
 If enabled, configure scoring criteria in `Administration` > `Score` and use the score to prioritize outreach in the company table.

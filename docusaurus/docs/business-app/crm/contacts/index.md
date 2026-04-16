@@ -84,10 +84,32 @@ Exports respect your current filters and the set of rows displayed.
 
 ![Three dots menu](../img/contacts/pause-resume-campaigns/three-dots-menu.jpg)
 
-### Add contacts to lists or automations
+### Take bulk actions on contacts
 
-1. From the Contacts table, select records and use actions to add them to a `List`.
-2. Trigger or schedule automations for the selected list.
+Select one or more contacts from the table, then click the **Actions** button to act on them without leaving the page.
+
+![Actions button](../img/actions-button.png)
+
+Available actions include:
+
+- **Delete contacts** — remove the selected contacts from your CRM
+- **Add to static list** — add selected contacts to a static list
+- **Request reviews** — send review requests to the selected contacts
+- **Add to campaign** — add selected contacts to a campaign
+- **Add to Yesware campaign** — add selected contacts to a Yesware campaign
+- **Start automation** — run an automation on the selected contacts immediately
+
+To start an automation in bulk:
+
+1. Go to `CRM` > `Contacts`.
+2. Select the contacts you want to include (use filters and search to narrow the list first, if needed).
+3. Click `Actions` > `Start automation`.
+4. Choose the automation you want to run from the list.
+5. Confirm to start the automation for all selected contacts.
+
+:::tip
+Bulk actions are a fast way to run automations on demand — for example, sending a campaign to a specific segment or assigning owners across a batch of new leads. You don't need to build a new automation; just pick an existing one.
+:::
 
 ### Set or change the Owner
 
