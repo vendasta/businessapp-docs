@@ -1,11 +1,12 @@
 ---
-title: Availability Settings
+title: Meeting Settings
+sidebar_label: Meeting Settings
 description: Control when and how invitees can book meetings with you using availability windows, date ranges, buffer times, and more.
 ---
 
 CalendarHero gives you precise control over when meetings can be scheduled. These settings work together to define the window of time invitees can see and book — layered on top of your real-time calendar availability.
 
-Most availability settings live at the [meeting type level](../scheduling-meetings/meeting-types), so you can configure different rules for different types of meetings.
+Most availability settings live at the [meeting type level](./meeting-types), so you can configure different rules for different types of meetings.
 
 ## Availability window
 
@@ -38,13 +39,13 @@ Control how frequently time slots appear on the scheduling page for each meeting
 
 For example, with a 15-minute increment and a 30-minute meeting starting at 9 am, invitees see: 9:00, 9:15, 9:30, 9:45, etc.
 
-The global **Hourly Offsets** setting in General Settings applies to meeting types where you've left the start time at the legacy "Display Hourly Offsets" setting.
+The global **Hourly Offsets** setting in General Settings applies to meeting types where you've left the start time at the legacy "Display Hourly Offsets" setting. You can enable any combination of offsets: **:00**, **:15**, **:30**, and **:45**.
 
-## Daily downtime
+## Daily down-time
 
-Daily downtime blocks a percentage of your available time to prevent your schedule from being fully booked. For example, if you're available 8 am–6 pm (10 hours) and set downtime to 10%, CalendarHero blocks 1 hour of that day automatically.
+Daily down-time blocks a percentage of your available time to prevent your schedule from being fully booked. For example, if you're available 8 am–6 pm (10 hours) and set down-time to 10%, CalendarHero blocks 1 hour of that day automatically.
 
-Once the day reaches the downtime threshold, no more times are offered for it. Update this setting in [General Settings](https://app.calendarhero.com/settings/meeting#general).
+Once the day reaches the down-time threshold, no more times are offered for it. Update this setting in [General Settings](https://app.calendarhero.com/settings/meeting#general).
 
 ## Buffer time
 
@@ -56,14 +57,9 @@ Buffer time moves automatically if you reschedule a meeting using CalendarHero. 
 
 ## Travel buffer
 
-When booking in-person meetings at a physical address via chat, CalendarHero can automatically detect travel time and prompt you to add travel blocks around the meeting.
+For external meetings, CalendarHero can automatically create calendar blocks before and after the meeting to account for travel time. Invitees do not see these blocks, and they update automatically if the meeting is rescheduled or canceled.
 
-- Tell your assistant the full address when scheduling — for example, *"Book a meeting with Sam at 150 Eglinton Ave E, Toronto."*
-- If the location requires travel time, your assistant asks if you want to add travel blocks.
-- When confirmed, two calendar events are automatically added (one before, one after) for travel. Invitees do not see these blocks.
-- Travel blocks update automatically if the meeting is rescheduled or canceled.
-
-Travel buffer is on by default. To disable it, go to [General Meeting Settings](https://app.calendarhero.com/settings/meeting#general).
+Travel buffer is on by default. To disable it, go to [General Meeting Settings](https://app.calendarhero.com/settings/meeting#general) and check **Disable creating before & after meetings to block travel time for external meetings**.
 
 ## Frequently asked questions
 
