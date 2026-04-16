@@ -19,7 +19,7 @@ Your Confirmation can be customized from any of your [Meeting Types](/calendarhe
 
   - We recommend 5 seconds so that the invitee can first read the important scheduling confirmation details that appear on the CalendarHero confirmation page. However, this can be set to 0 for an instant redirect.
 
-- Enter your custom URL - e.g. [www.mymarketingwebsite.com]()
+- Enter your custom URL - e.g. `www.mymarketingwebsite.com`
 
   - Note: For security reasons "https://" links are required
 

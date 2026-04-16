@@ -5,7 +5,7 @@ sidebar_position: 29
 
 Using CalendarHero with your favourite chat platform? CalendarHero is built to understand a large number of requests and you can use plain English to communicate with the assistant. To get you started, try these commands below.  
 
-We also recommend this handy [Quick Start Guide (Blog)]() or jump right to How do I Schedule Meetings?
+We also recommend the Quick Start Guide (Blog) or jump right to How do I Schedule Meetings?
 
 What else can your assistant do? Check out this overview
 
