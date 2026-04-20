@@ -20,13 +20,13 @@ Yesware's reporting suite gives you clear insight into how your outreach is perf
 
 | Report | What it shows |
 |---|---|
-| [My Dashboard](./what-is-my-dashboard-in-reporting.mdx) | Personal activity snapshot for the last 7 days |
-| [Email Activity Report](./what-data-is-shown-in-the-email.mdx) | Sends, open rates, and reply rates for you and your team |
-| [Templates Report](./what-data-is-shown-on-the-templates.mdx) | Template usage and performance by user and by template |
-| [Campaigns Report](./what-data-is-shown-on-the-campaigns.mdx) | Campaign open, click, and connection rates |
-| [Recipient Engagement Report](./what-data-is-shown-on-the-recipient.mdx) | Engagement history for individual recipients |
-| [Link Click Engagement Report](./what-data-is-shown-on-the-link.mdx) | Which tracked links recipients are clicking |
-| [Salesforce Reporting](./salesforce-reporting.mdx) | Yesware activity reports inside Salesforce (Enterprise only) |
+| [My Dashboard](./what-is-my-dashboard-in-reporting) | Personal activity snapshot for the last 7 days |
+| [Email Activity Report](./what-data-is-shown-in-the-email) | Sends, open rates, and reply rates for you and your team |
+| [Templates Report](./what-data-is-shown-on-the-templates) | Template usage and performance by user and by template |
+| [Campaigns Report](./what-data-is-shown-on-the-campaigns) | Campaign open, click, and connection rates |
+| [Recipient Engagement Report](./what-data-is-shown-on-the-recipient) | Engagement history for individual recipients |
+| [Link Click Engagement Report](./what-data-is-shown-on-the-link) | Which tracked links recipients are clicking |
+| [Salesforce Reporting](./salesforce-reporting) | Yesware activity reports inside Salesforce (Enterprise only) |
 
 ## Frequently asked questions
 

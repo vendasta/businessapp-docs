@@ -1,5 +1,5 @@
 ---
-title: managing-contacts
+title: Managing Contacts
 sidebar_label: Managing Contacts
 description: Learn how to manage contacts by adding notes, viewing timelines, enriching data, and exporting contact lists.
 tags:

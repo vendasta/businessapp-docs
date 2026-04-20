@@ -1,5 +1,5 @@
 ---
-title: getting-started-with-contacts
+title: Getting Started with Contacts
 sidebar_label: Getting Started
 description: Learn how to access and use Contacts to manage your professional relationships and track interactions.
 tags:
@@ -66,7 +66,7 @@ Contacts does not integrate with Salesforce, but you can submit feedback via the
 
 If you're a Gmail user, you can also manage Contacts directly from your Yesware Sidebar:
 
-1. Click the **Y icon** to open the Yesware sidebar.
+1. Click the **Yesware icon** to open the Yesware sidebar.
 2. Click the **phone book icon** to access the Contacts tab.
 3. Use the **search bar** to find a profile by name or email.
 4. Click on a contact to view and edit their details.
