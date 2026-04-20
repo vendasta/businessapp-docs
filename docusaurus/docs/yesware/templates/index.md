@@ -54,7 +54,7 @@ Not directly. Take a screenshot of the video, insert it as an image in the templ
 <details>
 <summary>Can I use dynamic Salesforce fields in templates?</summary>
 
-Yes, on the Enterprise plan. When you select a template, Yesware looks up the first recipient in the To field and auto-fills any Salesforce merge fields with matching Contact or Lead data. See [Dynamic Templates](../settings/salesforce/sync/how-do-dynamic-templates-work-with-salesforce.mdx) for details.
+Yes, on the Enterprise plan. When you select a template, Yesware looks up the first recipient in the To field and auto-fills any Salesforce merge fields with matching Contact or Lead data. See [Dynamic Templates](../settings/salesforce/sync/how-do-dynamic-templates-work-with-salesforce) for details.
 
 </details>
 
