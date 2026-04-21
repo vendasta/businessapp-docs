@@ -110,6 +110,13 @@ for ((i = 0; i < SYNC_COUNT; i++)); do
   rm -rf "$TARGET_DIR/${TARGET_PATH:?}/"*
   cp -r "$SOURCE_FULL/"* "$TARGET_DIR/$TARGET_PATH/"
 
+  # Fix Docusaurus IDs: strip the source folder prefix (e.g. "yesware/")
+  # In businessapp-docs, IDs include the parent folder (e.g. "yesware/activity/index")
+  # but in the target repo the files live at the root of docs, so the prefix must go.
+  SOURCE_PREFIX="$(basename "$SOURCE_PATH")"
+  find "$TARGET_DIR/$TARGET_PATH" -name "_category_.json" -exec \
+    sed -i "s|\"id\": \"${SOURCE_PREFIX}/|\"id\": \"|g" {} +
+
   # Configure git identity for the commit
   cd "$TARGET_DIR"
   git config user.name "docs-sync[bot]"
