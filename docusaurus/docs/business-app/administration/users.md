@@ -22,7 +22,7 @@ The Users page displays a table of everyone who has access to your Business App.
 - **Last Name**
 - **Phone**
 
-Each row also has an actions menu (three dots) with options to **Edit Permissions** or **Remove user**.
+Each row also has an actions menu (three dots) with options to **Edit Profile**, **Edit Permissions**, or **Remove user**.
 
 ## Invite a user
 
@@ -54,6 +54,22 @@ Changes take effect immediately.
 :::info
 The tabs available in the permissions list match the tabs configured for your Business App. If a tab does not appear in the list, it is not enabled for your account.
 :::
+
+## Edit a user's profile
+
+If you have **User Management** permissions, you can update another team member's profile details on their behalf — including their name, email, and phone number.
+
+1. On the **Users** page, find the user whose profile you want to update.
+2. Click the actions menu (three dots) on that user's row.
+3. Select **Edit Profile**.
+4. In the sidebar, update any of the following fields:
+   - **First name**
+   - **Last name**
+   - **Email**
+   - **Phone**
+5. Click **Save**.
+
+Changes take effect immediately. Users can also update their own profile details from their account settings.
 
 ## Remove a user
 
@@ -92,7 +108,7 @@ Permissions control which tabs a user can see in Business App. For example, you 
 <details>
 <summary>Can I edit a user's information after inviting them?</summary>
 
-You can edit a user's permissions at any time. To update a user's profile details (such as name or phone number), the user can update their own information through their account settings.
+Yes. If you have **User Management** permissions, you can update another team member's profile details — including their name, email, and phone number — by selecting **Edit Profile** from the actions menu on their row. You can also update their permissions at any time. Users can also edit their own profile details from their account settings.
 
 </details>
 
