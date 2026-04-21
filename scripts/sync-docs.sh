@@ -110,8 +110,12 @@ for ((i = 0; i < SYNC_COUNT; i++)); do
   rm -rf "$TARGET_DIR/${TARGET_PATH:?}/"*
   cp -r "$SOURCE_FULL/"* "$TARGET_DIR/$TARGET_PATH/"
 
-  # Check for changes
+  # Configure git identity for the commit
   cd "$TARGET_DIR"
+  git config user.name "docs-sync[bot]"
+  git config user.email "docs-sync[bot]@users.noreply.github.com"
+
+  # Check for changes
   git add -A
   if git diff --cached --quiet; then
     echo "  No changes detected, skipping."
