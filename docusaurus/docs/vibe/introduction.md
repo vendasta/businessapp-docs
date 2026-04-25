@@ -82,4 +82,4 @@ Applications built with Vibe use:
 - [Prompting Guide](./guides/prompting.md) — Write effective prompts
 - [Visual Editor & Themes](./guides/visual-editor.md) — Customize your application's look
 - [Plan Mode](./guides/plan-mode.md) — Control how Vibe approaches complex changes
-- [Integrations](./guides/integrations.md) — Connect to Forms and image generation
+- [Connectors](./guides/connectors.md) — Wire your app into Forms, SSO, Analytics, and AI image generation

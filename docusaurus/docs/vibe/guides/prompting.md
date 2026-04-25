@@ -155,4 +155,4 @@ Trying to build an entire complex application in a single prompt usually leads t
 
 - [Plan Mode](./plan-mode.md) — Use Plan mode for complex changes to review the approach before code is written
 - [Visual Editor & Themes](./visual-editor.md) — Make visual adjustments directly without writing prompts
-- [Integrations](./integrations.md) — Add forms and generated images to your application
+- [Connectors](./connectors.md) — Add forms, sign-in, analytics, and generated images to your application
