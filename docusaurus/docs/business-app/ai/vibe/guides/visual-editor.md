@@ -24,8 +24,8 @@ Available themes include:
 - Default, Glacier, Harvest, Lavender, Emerald, Coral, Midnight, Sand, Rose, Sunflower, Crimson, Slate, Ocean, and more.
 
 <figure>
-  <img src="/img/vibe/design-mode-themes.png" alt="Design mode theme picker" />
-  <figcaption>The Design mode panel showing the theme picker with Light/Dark toggle and color palettes</figcaption>
+  <img src="/img/vibe/design-mode-themes.png" alt="Design mode Themes tab with Light selected, Default theme active, and the color palette list (Default, Glacier, Harvest, Lavender, Emerald) on the left next to the live application preview." />
+  <figcaption>The Design mode Themes tab pairs the Light/Dark toggle and color palette picker with a live preview of the changes.</figcaption>
 </figure>
 
 ### Applying a Theme
@@ -48,8 +48,8 @@ When you select an element, Vibe gets exact context about what you clicked: the 
 You can select up to ten elements at once. Vibe handles each one in the same prompt.
 
 <figure>
-  <img src="/img/vibe/visual-editor-selected.png" alt="Visual editor with element selected" />
-  <figcaption>The Visual edits panel showing text, color, spacing, and typography controls for a selected heading element</figcaption>
+  <img src="/img/vibe/visual-editor-selected.png" alt="Hero headline selected in Design mode: a blue outline marks the element, an inline 'Ask Vibe' chat appears next to it, and the left Visual edits panel shows the element's tag, text content, layout, and color controls." />
+  <figcaption>Selecting a hero headline opens a small inline 'Ask Vibe' chat near the element and a full Visual edits panel on the left with text, layout, and color controls.</figcaption>
 </figure>
 
 ### Two ways to ask for a change

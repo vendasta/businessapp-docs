@@ -23,7 +23,7 @@ The screenshot is what Vibe *sees*; the HTML is what it *reads*; the branding is
 
 > Build me a similar site to https://example.com
 
-Vibe captures the page, extracts the colors, sets a custom theme from them, and scaffolds the layout. You'll get a plan first describing what it found and what it intends to build, so you can approve, edit, or cancel before any code is written.
+Vibe captures the page, extracts the colors, sets a custom theme from them, and scaffolds the layout. The plan that drives the run is captured in the `COMPLETED` block at the end so you can confirm what Vibe pulled from the source page.
 
 ## Steering the clone
 
