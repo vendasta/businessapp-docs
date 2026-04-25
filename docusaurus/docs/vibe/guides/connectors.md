@@ -114,7 +114,9 @@ When your prompt mentions metrics, dashboards, or "per location" cuts, Vibe's su
 
 You don't need to "enable" the connector explicitly. Describe what you want to see and Vibe handles the wiring.
 
-## SSO (member sign-in)
+## SSO {#sso-member-sign-in}
+
+Member sign-in via OAuth/OIDC.
 
 SSO lets your customers sign into your generated app using their existing account. The connector wires the login UI into the OAuth/OIDC flow, so you don't have to manage passwords, password resets, or session storage yourself.
 
