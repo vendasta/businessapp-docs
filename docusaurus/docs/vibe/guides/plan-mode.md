@@ -1,92 +1,90 @@
 ---
-title: Plan Mode
+title: Planning
 sidebar_position: 3
 unlisted: true
 ---
 
-# Plan Mode
+# Planning
 
-Plan mode gives you more control over complex changes by letting you review and approve Vibe's implementation plan before any code is written.
+Every Vibe generation starts with a plan. You see what Vibe intends to do before any code is written, and you choose whether to approve, edit, or cancel. There's no toggle to enable — planning is the default flow on every request.
 
-## How Plan Mode Works
+## How plans work
 
-By default, Vibe starts generating code as soon as it understands your request. With Plan mode enabled, Vibe pauses after the planning phase and shows you a detailed plan of what it intends to do. You can then:
+When you send a prompt, Vibe analyzes the request and produces a structured plan. The plan describes which files will be created or modified, what changes will be made, and how the parts fit together. The plan appears in the chat in a `PLAN` container with three actions:
 
-- **Approve** the plan as-is and let Vibe proceed
-- **Edit** the plan to adjust the approach before code is generated
-- **Cancel** to discard the plan and start over
+- **Approve** — Vibe begins code generation using the plan as its instruction set.
+- **Edit** — adjust the plan in place before approving.
+- **Cancel** — discard the plan; the conversation returns to idle so you can try a different prompt.
 
-## Enabling Plan Mode
+While the plan is waiting, the chat shows an "Awaiting approval" state with step-dots indicating progress through the conversation. Vibe pauses here until you act.
 
-Click the **Plan** toggle at the bottom-left of the chat input. When active, the button appears highlighted. The setting is remembered across sessions.
+For a small change — tweaking text, recoloring a button, swapping a single image — Vibe still produces a plan, but the plan is short and approving it is usually a single click.
 
-## The Plan Mode Flow
+## Approving a plan
 
-1. **Send your prompt** — Describe what you want as usual
-2. **Review the plan** — Vibe shows a draft plan in the chat. The plan outlines which files will be created or modified and what changes will be made.
-3. **Edit if needed** — The plan appears in an editable text area. You can modify it to change the approach, remove steps, or add instructions.
-4. **Approve** — Click the Approve button to start code generation based on the plan.
+Click **Approve**. The same conversation continues into generation; you don't move to a new screen, refresh, or wait for a new run to start. The plan stays visible (read-only) so you can scroll up and see what was approved while generation runs below it.
 
-Once approved, Vibe executes the plan. The plan appears as read-only while generation is in progress.
+When generation finishes, a `COMPLETED` block appears at the bottom of the conversation, with collapsible details for the plan that ran and the files that were touched.
 
-## When to Use Plan Mode
+## Editing a plan before approval
 
-Plan mode is most valuable when:
+Click into the plan body and edit it like any other document. Useful edits:
 
-- **Making large changes** — Restructuring navigation, adding multiple pages, or reworking a major section
-- **You want to understand the approach** — Before Vibe writes code, you can see exactly what it plans to do
-- **Complex multi-file edits** — When changes span many files, reviewing the plan helps catch issues early
-- **You have a specific implementation preference** — Edit the plan to steer Vibe toward your preferred approach
+- **Remove steps** Vibe proposed but you don't want.
+- **Add instructions** for things Vibe missed.
+- **Reorder** so the most important changes happen first.
+- **Replace placeholders** with specifics — exact copy, exact colors, exact data.
 
-For simple changes like tweaking text, adjusting colors, or adding a small element, you can leave Plan mode off. Vibe handles these quickly without needing a plan.
+For example, a plan that says "Add a testimonials section with placeholder content" can be edited to "Add a testimonials section with these three real quotes: …, …, …" before you approve.
 
-## Editing a Plan
+After editing, click **Approve** to run the modified plan.
 
-When a draft plan appears, the content is editable. You can:
+## Cancelling a plan
 
-- **Remove steps** you don't want
-- **Add instructions** for things Vibe missed
-- **Reorder priorities** so the most important changes happen first
-- **Clarify specifics** like exact text, colors, or layout preferences
+Click **Cancel** if the plan is going somewhere you don't want. Vibe terminates the run, the chat returns to idle, and you can send a new prompt without anything from the cancelled plan persisting.
 
-For example, if Vibe's plan says "Add a testimonials section with placeholder content," you could edit it to: "Add a testimonials section with these three real quotes: [quote 1], [quote 2], [quote 3]."
+Cancel is the right move when:
 
-## Clarifying Questions
+- Vibe misunderstood the request and the plan reflects the wrong intent.
+- The proposed scope is bigger than you wanted.
+- You realize you want to approach the problem differently.
 
-Whether Plan mode is on or off, Vibe may ask clarifying questions before proceeding with generation. This happens when your prompt is ambiguous or when there are important decisions that could go multiple ways.
+If you'd rather steer Vibe than start over, edit the plan instead.
 
-### How Clarifying Questions Work
+## Clarifying questions
 
-1. **You send a prompt** — e.g., "Add an authentication system"
-2. **Vibe analyzes** your request and identifies ambiguities
-3. **Questions appear** in the chat as interactive cards with:
-   - **Choice questions** — Pick one option from a set of chips
-   - **Confirm questions** — Yes/No buttons
-   - **Text questions** — Free-form text input
-4. **You answer** all questions (or skip any you don't have a preference for)
-5. **Click Continue** — Vibe proceeds with your answers incorporated
+When a prompt has more than one reasonable interpretation, Vibe pauses and asks before producing a plan. Questions arrive in three shapes:
+
+- **Choice** — pick one option from a short list of chips.
+- **Confirmation** — yes / no.
+- **Free text** — a one-line answer for things that don't fit a small option set.
+
+You answer in the chat, and Vibe resumes the same conversation. There's no new run, no refresh, no reconnect — it's the same exchange paused and continued.
 
 ### Example
 
-If you prompt "Add a contact section," Vibe might ask:
+For the prompt "Add a contact section," Vibe might ask:
 
-- **Where should the contact section go?** → Before footer / After hero / New page
-- **What fields should the form include?** → Name + Email only / Name + Email + Phone + Message / Custom
+- **Where should the contact section go?** → *Before footer* · *After hero* · *New page*
+- **What fields should the form include?** → *Name + email* · *Name + email + phone + message* · *Custom*
 
-Your answers guide the generation, resulting in output that matches your intent rather than the AI's assumptions.
+Answer those and Vibe proceeds straight to a plan that reflects your choices.
 
-### When Does Vibe Ask Questions?
+### When Vibe asks questions vs. proposes a plan straight away
 
-Vibe asks questions when:
+Vibe asks questions when the prompt has genuine ambiguity. Specific prompts get a plan immediately; vague prompts get questions first.
 
-- The request has multiple valid interpretations
-- Important design decisions need user input (e.g., layout choice, content structure)
-- The scope of the change is unclear
+A few patterns that produce fewer questions:
 
-Specific, detailed prompts result in fewer questions. If Vibe is confident it understands your request, it proceeds directly.
+- **Be specific about content.** "Add a team page with these four members…" beats "Add a team page."
+- **Name the layout.** "Sticky top nav with hamburger on mobile" beats "navigation."
+- **Describe the audience.** "For small business owners who aren't tech-savvy" gives Vibe enough context to choose tone, density, and copy without asking.
 
-## Next Steps
+If Vibe is confident it understands the request, it skips the questions and shows you a plan directly. You can still edit or cancel from there.
 
-- [Prompting Guide](./prompting.md) — Write clearer prompts to reduce ambiguity
-- [Visual Editor & Themes](./visual-editor.md) — Make quick visual adjustments without prompts
-- [Troubleshooting](./troubleshooting.md) — Handle build errors and other issues
+## Next steps
+
+- [Prompting guide](./prompting.md) — write prompts that produce strong plans.
+- [Prompting library](./prompting-library.md) — concrete plan-friendly prompts you can paste.
+- [Visual editor and themes](./visual-editor.md) — make targeted changes without going through a full plan cycle.
+- [Error handling and troubleshooting](./troubleshooting.md) — what to do when something goes sideways during generation.
