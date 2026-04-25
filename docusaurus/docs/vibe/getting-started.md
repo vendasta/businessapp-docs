@@ -68,20 +68,21 @@ Type your first prompt in the chat input at the bottom of the chat panel. Here a
 
 Press **Enter** or click the send button to submit your prompt.
 
-## Step 4: Watch Vibe Build
+## Step 4: Plan, approve, build
 
-After submitting your prompt, Vibe streams the generation process in real-time:
+After submitting your prompt, Vibe runs through a consistent flow you can follow in the chat:
 
-1. **Analysis** — Vibe interprets your request and may show its understanding
-2. **Generation** — You'll see files being created and modified in the chat
-3. **Build** — The application is compiled and the preview updates
+1. **Plan** — Vibe analyzes your request and produces a structured plan in a `PLAN` container. The plan describes what will be built and which files it will touch.
+2. **Approve** — The chat enters an "Awaiting approval" state. Approve the plan to start code generation, edit it to adjust the approach first, or cancel to discard and try a different prompt.
+3. **Generate** — Vibe writes the code, with status events streaming inline as it works. Type errors and build problems are caught and fixed automatically as it goes.
+4. **Complete** — A `COMPLETED` block appears at the bottom of the conversation. Expand it to see the plan that ran and the files that changed.
 
 <figure>
   <img src="/img/vibe/generation-in-progress.png" alt="Generation in progress" />
   <figcaption>Vibe generating code with the implementation plan and progress visible in the chat</figcaption>
 </figure>
 
-Each generation shows a summary of what was done, including the number of tasks completed and files changed. You can expand these to see the details.
+The chat auto-scrolls to follow new events as they arrive. If you scroll up to read older context, follow-tail pauses; scroll back near the bottom and it resumes.
 
 <figure>
   <img src="/img/vibe/generation-complete.png" alt="Completed generation with preview" />
@@ -106,9 +107,10 @@ Each prompt builds on the current state of your application. Vibe understands th
 
 The chat panel shows your conversation history with Vibe. Each exchange shows:
 
-- **Your message** — What you asked for
-- **Vibe's response** — A summary of what was understood and done, with expandable details for tasks completed and files changed
-- **Feedback buttons** — Thumbs up/down to rate each generation
+- **Your message** — What you asked for.
+- **Vibe's response** — Streamed inline as the work happens: clarifying questions (when needed), the `PLAN` container with approve/edit/cancel actions, status events as files are written, and a `COMPLETED` block at the end with collapsible details for the plan that ran and the files that changed.
+- **Inline screenshots** — When Vibe captures a reference site or runs a visual check, the screenshot appears inline in the status row.
+- **Feedback buttons** — Thumbs up/down to rate each generation.
 
 ### Chat Input
 
@@ -116,14 +118,13 @@ At the bottom of the chat panel, you'll find:
 
 | Control | Description |
 |---------|-------------|
-| **Text input** | Type your prompt here. Press Enter to send, Shift+Enter for a new line. |
-| **Plan toggle** | Enable Plan mode to review changes before they're made. See [Plan Mode](./guides/plan-mode.md). |
-| **Microphone** | Record voice input — Vibe transcribes your speech into a prompt. |
+| **Text input** | Type your prompt here. Press Enter to send, Shift+Enter for a new line. Paste a URL in the input to clone a reference site (see [Cloning a reference site](./clone-from-url.md)). |
+| **Microphone** | Record voice input. Vibe transcribes your speech into a prompt. |
 | **Image upload** | Attach screenshots or mockups to show Vibe what you want. |
 
 <figure>
   <img src="/img/vibe/chat-input.png" alt="Chat input controls" />
-  <figcaption>The chat input with Plan toggle, microphone, and image upload buttons</figcaption>
+  <figcaption>The chat input with microphone and image upload buttons</figcaption>
 </figure>
 
 ### Preview, Design, and Code Modes
@@ -143,21 +144,26 @@ Use the tabs at the top to switch between views:
 
 The top-right toolbar provides:
 
-- **Refresh** — Reload the preview
-- **Fullscreen** — Expand the preview to full screen
-- **Download** — Download your project as a ZIP file
-- **Checkpoints** — Browse and restore previous versions of your project
+- **Refresh** — Reload the preview.
+- **Fullscreen** — Expand the preview to full screen.
+- **Download** — Download a complete archive of your project: full source, all assets, and the git history of every checkpoint.
+- **Checkpoints** — Browse and restore previous versions of your project.
 
 ## Tips for New Users
 
 - **Start simple** — Begin with a clear, focused prompt. You can always add complexity in later iterations.
-- **Be specific** — Instead of "make it look better", try "increase the padding around cards to 24px and add a subtle shadow".
+- **Be specific** — Instead of "make it look better," try "increase the padding around cards to 24px and add a subtle shadow."
 - **Iterate in small steps** — Make one or two changes per prompt rather than rewriting the whole application.
-- **Use images** — If you have a design mockup or a website you like, attach a screenshot to show Vibe what you're going for.
-- **Try Plan mode** — For big changes, enable Plan mode to see what Vibe intends to do before it starts.
+- **Use images** — If you have a design mockup, attach a screenshot to show Vibe what you're going for.
+- **Paste a URL** — If a website you like is closer to your target than words can describe, paste its URL and Vibe will clone the look and structure as a starting point.
+- **Read the plan** — Every generation produces a plan you can approve, edit, or cancel. For big changes, the plan is the right moment to catch a misalignment before any code is written.
 
 ## Next Steps
 
-- [Prompting Guide](./guides/prompting.md) — Learn how to write effective prompts
-- [Visual Editor & Themes](./guides/visual-editor.md) — Customize colors and styles visually
-- [Plan Mode](./guides/plan-mode.md) — Review and approve changes before they're made
+- [Prompting Guide](./guides/prompting.md) — The principles behind effective prompts.
+- [Prompting library](./guides/prompting-library.md) — Concrete prompts you can paste, organized by intent.
+- [Cloning a reference site](./clone-from-url.md) — Start from an existing site by pasting its URL.
+- [Visual Editor & Themes](./guides/visual-editor.md) — Customize colors and styles, and click elements in design mode to edit them precisely.
+- [Planning](./guides/plan-mode.md) — How every generation flows through plan, approve, generate, complete.
+- [Connectors](./guides/connectors.md) — Wire your app into Forms, SSO, Analytics, and AI image generation.
+- [Error handling and troubleshooting](./guides/troubleshooting.md) — How auto-fix works and what to do when it doesn't.
