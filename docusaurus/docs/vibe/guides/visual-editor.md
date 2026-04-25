@@ -39,44 +39,53 @@ Theme changes update the `theme.css` file in your project, which defines the CSS
 
 Every theme supports both light and dark appearances. Use the toggle at the top of the Themes panel to switch between them. The mode is saved per-project, so different projects can have different appearance settings.
 
-## Visual Edits
+## Editing a specific element
 
-Click the **Visual edits** tab in Design mode to make element-level changes. This lets you click on elements in the preview and modify their properties directly.
+Click any element in the live preview to select it. A blue outline marks the selection. You can also click **Select parent** to walk the selection up to the containing element.
 
-### Selecting Elements
+When you select an element, Vibe gets exact context about what you clicked: the source file, the line and column in that file, the JSX tag, the CSS classes, and the text content. That context travels with any prompt you send while the element is selected, so when you ask for a change Vibe edits the right element directly — no guesswork from prose descriptions.
 
-Click any element in the live preview to select it. A blue outline indicates the selected element. You can also click **Select parent** to move the selection up to the containing element.
+You can select up to ten elements at once. Vibe handles each one in the same prompt.
 
 <figure>
   <img src="/img/vibe/visual-editor-selected.png" alt="Visual editor with element selected" />
   <figcaption>The Visual edits panel showing text, color, spacing, and typography controls for a selected heading element</figcaption>
 </figure>
 
-### What You Can Edit
+### Two ways to ask for a change
 
-Depending on the type of element selected, different editing options appear:
+Once an element is selected, you have two paths:
 
-#### Text Elements
-- Edit the text content directly
-- Changes are synced back to the source code
+- **Inline quick-edit** — A small chat input appears near the selection. Type a one-line change ("make this bigger and bolder," "change the color to navy") and press enter. Best for fast tweaks where you don't need to leave the canvas.
+- **Main Design panel chat** — Open the Design panel chat for longer changes that need more context, more steps, or a follow-up question from Vibe. The selection still travels with the prompt, so Vibe knows what you're talking about.
 
-#### Image Elements
-- Change the image source URL
-- Set alt text
-- Adjust object-fit and object-position
-- Configure loading behavior (lazy/eager)
+Both paths produce the same result. Pick whichever fits the change you have in mind.
 
-#### Icon Elements (Lucide Icons)
-- Browse and pick from 900+ Lucide icons
-- Adjust icon size
-- Change icon color
+### Direct edits without the chat
 
-#### Link Elements
-- Edit the href URL
-- Set the target (new tab, same tab)
-- Configure title and rel attributes
+For some properties you can edit the value directly in the Visual edits panel without sending a prompt.
 
-### Style Properties
+#### Text elements
+- Edit the text content directly.
+- Changes are synced back to the source code.
+
+#### Image elements
+- Change the image source URL.
+- Set alt text.
+- Adjust object-fit and object-position.
+- Configure loading behavior (lazy/eager).
+
+#### Icon elements (Lucide icons)
+- Browse and pick from 900+ Lucide icons.
+- Adjust icon size.
+- Change icon color.
+
+#### Link elements
+- Edit the href URL.
+- Set the target (new tab, same tab).
+- Configure title and rel attributes.
+
+### Style properties
 
 For any selected element, you can modify:
 
@@ -88,24 +97,20 @@ For any selected element, you can modify:
 | **Effects** | Box shadow (none, sm, md, lg, xl), opacity, border radius |
 | **Layout** | Display (flex/grid), direction, justify, align, gap, wrap |
 
-All changes made in the visual editor update the source code, so they persist and can be seen in the Code view.
+All changes update the source code, so they persist and you can see them in Code mode.
 
-## When to Use the Visual Editor vs. Prompts
+## Visual editor vs. main chat
 
-| Task | Use Visual Editor | Use a Prompt |
-|------|:---:|:---:|
-| Change theme colors across the app | Yes | |
-| Toggle light/dark mode | Yes | |
-| Tweak padding on a specific card | Yes | |
-| Swap an icon | Yes | |
-| Add a new section to the page | | Yes |
-| Restructure the navigation | | Yes |
-| Change the font on a specific heading | Yes | |
-| Build a new page from scratch | | Yes |
-| Adjust a single image's alt text | Yes | |
-| Add responsive behavior | | Yes |
+Both the visual editor and the main chat reach the same generation engine. The difference is what context travels with the prompt and how scoped the change is.
 
-The visual editor is best for **small, targeted adjustments** to individual elements. For structural changes, adding new features, or making broad changes across multiple components, use the chat prompt.
+| Best for the visual editor | Best for the main chat |
+|---|---|
+| Targeted edits to a specific element you can see | New sections, pages, or features |
+| Theme changes across the whole app | Restructuring navigation or layout |
+| Swapping icons, images, or alt text | Adding responsive behavior |
+| Style tweaks: padding, color, font size on one element | Multi-component changes that aren't about a single element |
+
+The visual editor is best for *small, targeted adjustments anchored to something on screen*. For structural changes or anything that doesn't start from "this thing right here," the main chat is the right entry point.
 
 ## Returning to Chat
 
@@ -113,5 +118,6 @@ Click **Back to chat** at the bottom of the Design panel to return to the chat i
 
 ## Next Steps
 
-- [Prompting Guide](./prompting.md) — Write effective prompts for larger changes
-- [Plan Mode](./plan-mode.md) — Review complex changes before they're applied
+- [Prompting Guide](./prompting.md) — Write effective prompts for larger changes.
+- [Prompting library](./prompting-library.md) — Concrete prompts you can paste, including ones that pair well with element selection.
+- [Planning](./plan-mode.md) — Review the plan Vibe produces for any non-trivial change before it's applied.
