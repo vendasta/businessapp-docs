@@ -6,7 +6,9 @@ unlisted: true
 
 # Prompting Guide
 
-Writing effective prompts is the most important skill for getting great results from Vibe. This guide covers best practices, example prompts, and common patterns to help you build faster.
+Writing effective prompts is the most important skill for getting great results from Vibe. This guide covers the principles behind effective prompts: be specific, iterate in small steps, reference visual style, describe what you want rather than how to build it.
+
+> Looking for ready-made prompts you can paste? See the [prompting library](./prompting-library.md) for recipes organized by intent (scaffold, refine, clone, connect, debug).
 
 ## Prompting Principles
 
