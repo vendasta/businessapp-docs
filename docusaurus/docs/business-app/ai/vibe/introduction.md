@@ -20,7 +20,7 @@ Vibe turns natural language prompts into real, deployable web applications. Inst
 The entire process streams in real time, so you can watch your application take shape as the AI works.
 
 <figure>
-  <img src="/img/vibe/editor-overview.png" alt="The Vibe editor with a generated app: chat panel on the left showing the COMPLETED summary, live preview of the generated marketing site on the right, and Preview/Design/Code mode tabs at the top." />
+  <img src="./img/editor-overview.png" alt="The Vibe editor with a generated app: chat panel on the left showing the COMPLETED summary, live preview of the generated marketing site on the right, and Preview/Design/Code mode tabs at the top." />
   <figcaption>The Vibe editor pairs a streaming chat panel with a live preview. After a successful run, the chat shows a `COMPLETED` block and the preview renders your application.</figcaption>
 </figure>
 
@@ -45,7 +45,10 @@ When your request is ambiguous, Vibe pauses and asks before going further. Quest
 Attach images to your prompts to show Vibe what you want. Use the microphone button to dictate your changes using voice — Vibe transcribes your speech into a prompt.
 
 ### Connectors
-Vibe wires your generated app into live platform features. Forms capture submissions, Analytics surfaces multi-location dashboards, SSO gates a members area against your customers' existing accounts, and Image Generation produces hosted brand-quality images on demand. See [Connectors](./guides/connectors.md).
+Vibe wires your generated app into live platform features. The Forms connector captures submissions, the Analytics connector surfaces multi-location dashboards, and the Single sign-on connector gates a members area against your customers' existing accounts. See [Connectors](./guides/connectors/index.md).
+
+### Image generation
+Vibe produces hosted brand-quality images on demand whenever your prompt asks for them — no setup required. See [Image generation](./guides/image-generation.md).
 
 ### Code Editor
 Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
@@ -85,5 +88,6 @@ Applications built with Vibe use:
 - [Prompting library](./guides/prompting-library.md) — Concrete prompts you can paste, organized by intent.
 - [Visual Editor & Themes](./guides/visual-editor.md) — Customize your application's look.
 - [Planning](./guides/plan-mode.md) — How a generation flows through plan, build, validate, fix, complete.
-- [Connectors](./guides/connectors.md) — Wire your app into Forms, SSO, Analytics, and AI image generation.
+- [Connectors](./guides/connectors/index.md) — Wire your app into Forms, Single sign-on, and Analytics.
+- [Image generation](./guides/image-generation.md) — Produce hosted images on demand from your prompts.
 - [Error handling and troubleshooting](./guides/troubleshooting.md) — How auto-fix works and what to do when it doesn't.

@@ -20,7 +20,7 @@ Vibe lives in Business App alongside your other AI tools.
 You see your Vibe project list. If this is your first time, the list is empty and invites you to create your first app.
 
 <figure>
-  <img src="/img/vibe/vibe-nav-entry.png" alt="Business App left navigation with the AI section expanded and Vibe highlighted, showing the empty Vibe project list" />
+  <img src="./img/vibe-nav-entry.png" alt="Business App left navigation with the AI section expanded and Vibe highlighted, showing the empty Vibe project list" />
   <figcaption>Vibe lives under AI in the Business App left navigation, alongside Workforce, Capabilities, and Knowledge base.</figcaption>
 </figure>
 
@@ -29,14 +29,14 @@ You see your Vibe project list. If this is your first time, the list is empty an
 Once you're in Vibe, you'll see a project list. Click **+ Create a new app** to create your first application.
 
 <figure>
-  <img src="/img/vibe/project-list.png" alt="Empty Vibe project list with the Create a new app button" />
+  <img src="./img/project-list.png" alt="Empty Vibe project list with the Create a new app button" />
   <figcaption>An empty Vibe project list — the starting point for your first app.</figcaption>
 </figure>
 
 Give your project a name and an optional description, then click **Create**.
 
 <figure>
-  <img src="/img/vibe/create-project.png" alt="Create a new app dialog with the App Name and Description fields filled in" />
+  <img src="./img/create-project.png" alt="Create a new app dialog with the App Name and Description fields filled in" />
   <figcaption>The create project dialog asks for a name and an optional description.</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ The editor has three main areas:
 - **Mode Tabs** (top) — Switch between Preview, Design, and Code views
 
 <figure>
-  <img src="/img/vibe/empty-project.png" alt="Newly created Vibe project — empty chat panel on the left, welcome state with example prompts on the right" />
+  <img src="./img/empty-project.png" alt="Newly created Vibe project — empty chat panel on the left, welcome state with example prompts on the right" />
   <figcaption>A new project: the chat panel waits for your first prompt while the preview area shows starter examples.</figcaption>
 </figure>
 
@@ -83,16 +83,11 @@ After you submit your prompt, Vibe runs through a consistent sequence you can fo
 7. **Completed** — A `COMPLETED` block appears at the bottom of the conversation with collapsible "Architecture & Navigation" and "Files" details.
 
 <figure>
-  <img src="/img/vibe/generation-in-progress.png" alt="Vibe actively editing files during generation" />
+  <img src="./img/generation-in-progress.png" alt="Vibe actively editing files during generation" />
   <figcaption>Vibe streams its work into the chat as it runs — a status row per file edit, image generation step, and validation check.</figcaption>
 </figure>
 
 The chat auto-scrolls to follow new events as they arrive. If you scroll up to read older context, follow-tail pauses; scroll back near the bottom and it resumes.
-
-<figure>
-  <img src="/img/vibe/generation-complete.png" alt="Completed generation with the live application visible in the preview" />
-  <figcaption>When the run finishes, the `COMPLETED` block appears with collapsible plan and file details, and the preview shows your running app.</figcaption>
-</figure>
 
 ## Step 5: Iterate and Refine
 
@@ -130,7 +125,7 @@ At the bottom of the chat panel, you find:
 | **Send** | Submit the prompt to Vibe. |
 
 <figure>
-  <img src="/img/vibe/chat-input.png" alt="The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls" />
+  <img src="./img/chat-input.png" alt="The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls" />
   <figcaption>The chat input combines free-text, an image attach control, a mode selector, voice input, and a send button.</figcaption>
 </figure>
 
@@ -143,7 +138,7 @@ Use the tabs at the top to switch between views:
 - **Code** — File explorer and code editor to view or manually edit source files
 
 <figure>
-  <img src="/img/vibe/code-view.png" alt="Code mode with the file tree open and App.tsx loaded in the editor" />
+  <img src="./img/code-view.png" alt="Code mode with the file tree open and App.tsx loaded in the editor" />
   <figcaption>Code mode pairs a file tree with a syntax-highlighted editor for direct source edits.</figcaption>
 </figure>
 
@@ -172,5 +167,6 @@ The top-right toolbar provides:
 - [Cloning a reference site](./clone-from-url.md) — Start from an existing site by pasting its URL.
 - [Visual Editor & Themes](./guides/visual-editor.md) — Customize colors and styles, and click elements in design mode to edit them precisely.
 - [Planning](./guides/plan-mode.md) — How Vibe sequences your generation: plan, build, validate, fix, complete.
-- [Connectors](./guides/connectors.md) — Wire your app into Forms, SSO, Analytics, and AI image generation.
+- [Connectors](./guides/connectors/index.md) — Wire your app into Forms, Single sign-on, and Analytics.
+- [Image generation](./guides/image-generation.md) — Produce hosted images on demand from your prompts.
 - [Error handling and troubleshooting](./guides/troubleshooting.md) — How auto-fix works and what to do when it doesn't.

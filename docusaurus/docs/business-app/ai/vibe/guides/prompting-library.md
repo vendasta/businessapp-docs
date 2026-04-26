@@ -8,7 +8,7 @@ unlisted: true
 
 Concrete prompts you can paste into Vibe, organized by intent. These are starting points, not recipes you have to follow exactly. Edit any prompt with your own business name, content, and constraints, and Vibe will adapt.
 
-For the principles behind why these work, see the [prompting guide](./prompting.md). For the connectors several of these activate, see the [connectors guide](./connectors.md).
+For the principles behind why these work, see the [prompting guide](./prompting.md). For the connectors several of these activate, see the [connectors guide](./connectors/index.md).
 
 ## Scaffolding a new app
 
@@ -24,7 +24,7 @@ What to expect: a single-page site with the seven sections in order, themed in s
 
 > Create a website for a dental clinic called "Bright Smile Dental." Include a home page with services, a team page with dentist bios and photos, an FAQ page with common questions, and a booking page with a contact form.
 
-What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](./connectors.md#forms).
+What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](./connectors/forms.md).
 
 ### Service business with multi-location
 
@@ -36,7 +36,7 @@ What to expect: a multi-page service business site themed to your description. A
 
 > Build a minimalist photography portfolio. Full-screen hero with the photographer's name "Elena Voss" and a tagline. Below, a masonry-style image gallery. Include an About page with a bio and a Contact page with a form.
 
-What to expect: a single-photographer-style portfolio with placeholder gallery images. Ask for [generated images](./connectors.md#image-generation) in a follow-up prompt to fill the gallery.
+What to expect: a single-photographer-style portfolio with placeholder gallery images. Ask for [generated images](./image-generation.md) in a follow-up prompt to fill the gallery.
 
 ### E-commerce listing page
 
@@ -102,7 +102,7 @@ What to expect: the reference site's structure and visual style, with your busin
 
 > Add a contact form at the bottom of the landing page. Collect name, email, and message. Style it to match the rest of the page.
 
-What to expect: a form rendered in your theme, wired through the [Forms connector](./connectors.md#forms) so submissions are captured automatically.
+What to expect: a form rendered in your theme, wired through the [Forms connector](./connectors/forms.md) so submissions are captured automatically.
 
 ### Lead capture popup
 
@@ -122,7 +122,7 @@ What to expect: a stepped form component with state preserved across steps. Subm
 
 > Build an owner dashboard showing service requests per location for the last 30 days, top three services this month, and a bar chart of weekly revenue.
 
-What to expect: a dashboard page that activates the [Analytics connector](./connectors.md#analytics). The numbers are wired to live data, not placeholders.
+What to expect: a dashboard page that activates the [Analytics connector](./connectors/analytics.md). The numbers are wired to live data, not placeholders.
 
 ### Single-metric tile
 
@@ -142,7 +142,7 @@ What to expect: a comparison table tied to the analytics connector with a workin
 
 > Add a "Members" area with a sign-in screen. After signing in, members see their loyalty points, recent orders, and a profile section with their name and email.
 
-What to expect: a gated area wired through the [SSO connector](./connectors.md#sso-member-sign-in). The sign-in itself completes when your trusted-tester program contact has provisioned an OAuth client for your project.
+What to expect: a gated area wired through the [Single sign-on connector](./connectors/single-sign-on.md). The sign-in itself completes once Single sign-on is enabled in Project Settings, which provisions the OAuth client for your project.
 
 ### Gated content
 
@@ -199,5 +199,6 @@ What to expect: Vibe surfaces the diff in chat. From there you can ask for a par
 ## Next steps
 
 - [Prompting guide](./prompting.md) for the principles behind these recipes.
-- [Connectors](./connectors.md) for what the Forms, Analytics, SSO, and Image Generation connectors do under the hood.
+- [Connectors](./connectors/index.md) for what the Forms, Analytics, and Single sign-on connectors do under the hood.
+- [Image generation](./image-generation.md) for how Vibe creates hosted images from your prompts.
 - [Visual editor and themes](./visual-editor.md) for changes you make by clicking instead of typing.

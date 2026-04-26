@@ -69,4 +69,4 @@ Vibe replaces sections rather than rebuilding everything. Useful when only part 
 
 - [Prompting library](./guides/prompting-library.md) — more URL-based recipes (URL-only, URL with brand override, URL with content override).
 - [Visual editor and themes](./guides/visual-editor.md) — refine the cloned theme after generation.
-- [Connectors](./guides/connectors.md) — wire your cloned site into Forms, Analytics, or SSO.
+- [Connectors](./guides/connectors/index.md) — wire your cloned site into Forms, Analytics, or Single sign-on.
