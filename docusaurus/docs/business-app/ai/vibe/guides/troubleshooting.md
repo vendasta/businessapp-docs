@@ -131,3 +131,9 @@ If a problem persists after auto-fix, manual prompts, and a checkpoint restore:
 - Refresh the page and re-send your prompt as a fresh attempt.
 - Restore the last checkpoint where things were working and try a smaller step from there.
 - Reach out to your trusted-tester program contact with what you tried and what error you saw.
+
+## Next Steps
+
+- [Planning](./plan-mode.md) — Understand how Vibe plans so you can catch misalignments early
+- [Prompting Guide](./prompting.md) — Write clearer prompts that produce fewer errors
+- [Getting Started](../getting-started.md) — Review the full generation flow end to end

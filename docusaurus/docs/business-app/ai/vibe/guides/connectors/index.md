@@ -32,3 +32,10 @@ Most realistic apps use more than one connector. You don't need to declare them 
 
 That single prompt activates Forms (contact), Single sign-on (members area), and Analytics (owner dashboard). The supervisor agent identifies which connector each part of the request needs and wires the UI accordingly.
 
+## Next Steps
+
+- [Forms](./forms.md) — Capture contact form and lead submissions from your app
+- [Single sign-on](./single-sign-on.md) — Gate a members area with existing customer accounts
+- [Analytics](./analytics.md) — Surface multi-location metrics for signed-in users
+- [Prompting Library](../prompting-library.md) — Ready-made prompts for each connector
+

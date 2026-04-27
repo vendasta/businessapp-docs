@@ -41,3 +41,9 @@ When your prompt mentions metrics, dashboards, or per-location cuts, Vibe's supe
 
 You don't need to "enable" the connector inside a prompt — turning it on once in Project Settings is enough. Describe what you want to see and Vibe handles the wiring.
 
+## Next Steps
+
+- [Connectors](./index.md) — Overview of all connectors and how to combine them
+- [Single sign-on](./single-sign-on.md) — Gate your analytics dashboard behind a sign-in screen
+- [Prompting Library](../prompting-library.md) — Ready-made dashboard prompts organized by use case
+

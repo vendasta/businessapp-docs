@@ -63,3 +63,9 @@ A few patterns that produce fewer questions:
 
 If Vibe is confident it understands the request, it skips the questions and shows you a plan directly. You can still edit or cancel from there.
 
+## Next Steps
+
+- [Prompting Guide](./prompting.md) — Write specific prompts that produce cleaner plans with fewer questions
+- [Troubleshooting](./troubleshooting.md) — What to do when a generation doesn't go as planned
+- [Getting Started](../getting-started.md) — Walk through a full generation end to end
+

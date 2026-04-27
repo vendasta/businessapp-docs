@@ -106,3 +106,9 @@ Both the visual editor and the main chat reach the same generation engine. The d
 
 The visual editor is best for *small, targeted adjustments anchored to something on screen*. For structural changes or anything that doesn't start from "this thing right here," the main chat is the right entry point.
 
+## Next Steps
+
+- [Prompting Guide](./prompting.md) — Write effective prompts for changes that go beyond the visual editor
+- [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [Prompting Library](./prompting-library.md) — Ready-made prompts for common refinements
+
