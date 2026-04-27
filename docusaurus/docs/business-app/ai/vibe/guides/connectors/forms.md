@@ -58,8 +58,3 @@ Forms inherit your application's theme automatically — primary color, border r
 
 Forms use structured style fields (background color, border, primary color, etc.) that pull from your theme, so visual consistency is the default.
 
-## Next steps
-
-- [Single sign-on](./single-sign-on.md) — gate forms behind a member sign-in.
-- [Analytics](./analytics.md) — surface submission counts and trends in a dashboard.
-- [Prompting library — Forms](../prompting-library.md#connecting-to-forms) — paste-ready prompts for contact forms, lead capture popups, and multi-step bookings.

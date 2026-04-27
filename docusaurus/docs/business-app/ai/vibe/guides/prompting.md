@@ -153,9 +153,3 @@ Trust Vibe to handle the implementation. Focus on what you want the user to see 
 ### Massive All-at-Once Prompts
 Trying to build an entire complex application in a single prompt usually leads to worse results than building iteratively. Break it into logical pieces.
 
-## Next Steps
-
-- [Plan Mode](./plan-mode.md) — Use Plan mode for complex changes to review the approach before code is written
-- [Visual Editor & Themes](./visual-editor.md) — Make visual adjustments directly without writing prompts
-- [Connectors](./connectors/index.md) — Add forms, sign-in, and analytics to your application
-- [Image generation](./image-generation.md) — Add hosted images to your application from a prompt

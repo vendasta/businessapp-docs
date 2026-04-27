@@ -139,13 +139,3 @@ The top-right toolbar provides:
 - **Paste a URL** — If a website you like is closer to your target than words can describe, paste its URL and Vibe will clone the look and structure as a starting point.
 - **Read the COMPLETED block** — The collapsible "Architecture & Navigation" and "Files" details show what shipped. After a big change, expanding them is the fastest way to confirm Vibe interpreted your prompt the way you meant it.
 
-## Next Steps
-
-- [Prompting Guide](./guides/prompting.md) — The principles behind effective prompts.
-- [Prompting library](./guides/prompting-library.md) — Concrete prompts you can paste, organized by intent.
-- [Cloning a reference site](./guides/clone-from-url.md) — Start from an existing site by pasting its URL.
-- [Visual Editor & Themes](./guides/visual-editor.md) — Customize colors and styles, and click elements in design mode to edit them precisely.
-- [Planning](./guides/plan-mode.md) — How Vibe sequences your generation: plan, build, validate, fix, complete.
-- [Connectors](./guides/connectors/index.md) — Wire your app into Forms, Single sign-on, and Analytics.
-- [Image generation](./guides/image-generation.md) — Produce hosted images on demand from your prompts.
-- [Error handling and troubleshooting](./guides/troubleshooting.md) — How auto-fix works and what to do when it doesn't.

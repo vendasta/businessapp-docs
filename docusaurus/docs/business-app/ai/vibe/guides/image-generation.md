@@ -46,7 +46,3 @@ If Vibe picks the wrong ratio, ask it to regenerate:
 - **Specify where it's going.** Telling Vibe the placement (hero banner, card thumbnail, profile photo) helps it pick the right aspect ratio without you having to ask explicitly.
 - **Iterate.** If the first image isn't right, ask for a regeneration with adjusted descriptions.
 
-## Next steps
-
-- [Prompting library — Generating images](./prompting-library.md#generating-images) — paste-ready prompts for hero photography, logos, and style-consistent illustration sets.
-- [Visual editor and themes](./visual-editor.md) — fine-tune the styling around generated images after the fact.

@@ -106,8 +106,3 @@ Both the visual editor and the main chat reach the same generation engine. The d
 
 The visual editor is best for *small, targeted adjustments anchored to something on screen*. For structural changes or anything that doesn't start from "this thing right here," the main chat is the right entry point.
 
-## Next Steps
-
-- [Prompting Guide](./prompting.md) — Write effective prompts for larger changes.
-- [Prompting library](./prompting-library.md) — Concrete prompts you can paste, including ones that pair well with element selection.
-- [Planning](./plan-mode.md) — Review the plan Vibe produces for any non-trivial change before it's applied.

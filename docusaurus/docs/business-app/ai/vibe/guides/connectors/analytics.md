@@ -41,8 +41,3 @@ When your prompt mentions metrics, dashboards, or per-location cuts, Vibe's supe
 
 You don't need to "enable" the connector inside a prompt — turning it on once in Project Settings is enough. Describe what you want to see and Vibe handles the wiring.
 
-## Next steps
-
-- [Single sign-on](./single-sign-on.md) — gate the dashboard behind a member sign-in so the data has a clear scope.
-- [Forms](./forms.md) — pair submission counts and trends from your forms with the rest of the dashboard.
-- [Prompting library — Analytics](../prompting-library.md#connecting-to-analytics) — paste-ready prompts for owner dashboards, KPI tiles, and multi-location comparisons.
