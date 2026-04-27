@@ -1,32 +1,31 @@
 ---
-title: Users
-sidebar_label: Users
+title: User Management
+sidebar_label: User Management
 description: View, invite, and manage users and their permissions in your Business App.
 sidebar_position: 3
 tags: [users, permissions, team, administration]
-keywords: [users, invite user, permissions, team members, remove user, edit permissions]
+keywords: [users, invite user, permissions, team members, remove user, edit permissions, user management]
 ---
 
-The **Users** page lets you manage who has access to your Business App. You can view all current users, invite new team members, set permissions for each person, and remove users who no longer need access.
+The **User Management** page lets you manage who has access to your Business App. You can view all current users, invite new team members, set permissions for each person, and remove users who no longer need access.
 
-To open this page, go to `Administration` > `Users`.
+To open this page, go to `Administration` > `User Management`.
 
 ![The Users page showing a table of team members with options to invite, edit permissions, or remove users](./img/users-list.png)
 
 ## View users
 
-The Users page displays a table of everyone who has access to your Business App. Each row shows the user's:
+The User Management page displays a table of everyone who has access to your Business App. Each row shows the user's profile image and:
 
 - **Email**
-- **First Name**
-- **Last Name**
+- **Name**
 - **Phone**
 
-Each row also has an actions menu (three dots) with options to **Edit Profile**, **Edit Permissions**, or **Remove user**.
+Each row also has an actions menu (three dots) with options to **Edit contact info**, **Edit Permissions**, or **Remove user**.
 
 ## Invite a user
 
-1. On the **Users** page, click **Invite user**.
+1. On the **User Management** page, click **Invite user**.
 2. In the **Add team member** sidebar, fill in the following fields:
    - **First name** (optional)
    - **Last name** (optional)
@@ -43,7 +42,7 @@ The invited user receives a welcome email with instructions to access your Busin
 
 You can change which tabs a user can access at any time.
 
-1. On the **Users** page, find the user you want to update.
+1. On the **User Management** page, find the user you want to update.
 2. Click the actions menu (three dots) on that user's row.
 3. Select **Edit Permissions**.
 4. Check or uncheck tabs to adjust what this user can see.
@@ -61,11 +60,11 @@ You cannot remove your own access to the **Users** or **Administration** tabs. T
 
 ## Edit a user's profile
 
-If you have **User Management** permissions, you can update another team member's profile details on their behalf — including their name, email, and phone number.
+If you have **User Management** permissions, you can update another team member's contact details on their behalf — including their name, email, and phone number.
 
-1. On the **Users** page, find the user whose profile you want to update.
+1. On the **User Management** page, find the user whose information you want to update.
 2. Click the actions menu (three dots) on that user's row.
-3. Select **Edit Profile**.
+3. Select **Edit contact info**.
 4. In the sidebar, update any of the following fields:
    - **First name**
    - **Last name**
@@ -77,7 +76,7 @@ Changes take effect immediately. You can also update your own email address, nam
 
 ## Remove a user
 
-1. On the **Users** page, find the user you want to remove.
+1. On the **User Management** page, find the user you want to remove.
 2. Click the actions menu (three dots) on that user's row.
 3. Select **Remove user**.
 4. In the confirmation dialog, review the user's name and click **Remove user** to confirm.
@@ -89,9 +88,9 @@ Removing a user cannot be undone. The user immediately loses access to your Busi
 ## Frequently Asked Questions (FAQs)
 
 <details>
-<summary>Where do I find the Users page?</summary>
+<summary>Where do I find the User Management page?</summary>
 
-Go to `Administration` > `Users`. The URL ends with `administration/users` after your business ID.
+Go to `Administration` > `User Management`. The URL ends with `administration/users` after your business ID.
 
 </details>
 
@@ -112,7 +111,7 @@ Permissions control which tabs a user can see in Business App. For example, you 
 <details>
 <summary>Can I edit a user's information after inviting them?</summary>
 
-Yes. If you have **User Management** permissions, you can update another team member's profile details — including their name, email, and phone number — by selecting **Edit Profile** from the actions menu on their row. You can also update their permissions at any time. Users can also edit their own profile details from their account settings.
+Yes. If you have **User Management** permissions, you can update another team member's contact details — including their name, email, and phone number — by selecting **Edit contact info** from the actions menu on their row. You can also update their permissions at any time. Users can also edit their own profile details from their account settings.
 
 </details>
 
