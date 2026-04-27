@@ -5,6 +5,10 @@ sidebar_position: 1
 
 # Introduction to Vibe
 
+:::warning Beta feature
+Vibe is currently available to trusted testers only. If you're interested in early access, contact your account representative.
+:::
+
 Vibe is an AI-powered application builder. Describe what you want in plain English, and Vibe generates a fully functional React application — complete with components, routing, styling, and a live preview.
 
 ## What is Vibe?
