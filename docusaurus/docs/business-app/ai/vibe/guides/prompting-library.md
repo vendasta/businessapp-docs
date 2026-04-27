@@ -82,7 +82,7 @@ When you have a website you want to start from, paste its URL.
 
 > Build me a similar site to https://example.com
 
-What to expect: Vibe captures the page (screenshot, branding, layout, content), extracts colors and typography, and scaffolds a faithful clone. See the dedicated [clone-from-URL guide](../clone-from-url.md) for what gets captured and how.
+What to expect: Vibe captures the page (screenshot, branding, layout, content), extracts colors and typography, and scaffolds a faithful clone. See the dedicated [clone-from-URL guide](./clone-from-url.md) for what gets captured and how.
 
 ### URL with brand override
 

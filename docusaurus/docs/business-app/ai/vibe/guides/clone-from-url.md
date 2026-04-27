@@ -1,5 +1,5 @@
 ---
-title: Cloning a reference site
+title: Cloning a Reference Site
 sidebar_position: 3
 unlisted: true
 ---

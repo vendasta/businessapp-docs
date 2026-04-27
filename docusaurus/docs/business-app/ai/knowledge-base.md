@@ -1,7 +1,7 @@
 ---
 title: Knowledge Base Overview
 sidebar_label: Knowledge Base
-sidebar_position: 3
+sidebar_position: 4
 description: Centralize information for AI Employees to reference when answering customer questions.
 tags: [ai-employees, knowledge-base, setup]
 keywords: [AI Knowledge Base, AI data sources, business info for AI, AI training data, document upload]
