@@ -129,3 +129,4 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 - [Connectors](./guides/connectors/index.md) — Wire your app into forms, analytics, and sign-on
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
+- [Use Cases](./use-cases/landing-page.md) — See real examples of what you can build with Vibe
