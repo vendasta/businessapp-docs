@@ -1,7 +1,6 @@
 ---
 title: Introduction to Vibe
 sidebar_position: 1
-unlisted: true
 ---
 
 # Introduction to Vibe
@@ -115,3 +114,14 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 
 </details>
 
+## Next Steps
+
+- [Getting Started](./getting-started.md) — Create your first app and learn the basics
+- [Prompting Guide](./guides/prompting.md) — Write prompts that get better results
+- [Cloning a Reference Site](./guides/clone-from-url.md) — Scaffold an app from any URL
+- [Visual Editor & Themes](./guides/visual-editor.md) — Apply themes and edit elements visually
+- [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
+- [Image Generation](./guides/image-generation.md) — Generate hosted images in your app
+- [Connectors](./guides/connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
+- [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
