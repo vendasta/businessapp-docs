@@ -55,6 +55,10 @@ Changes take effect immediately.
 The tabs available in the permissions list match the tabs configured for your Business App. If a tab does not appear in the list, it is not enabled for your account.
 :::
 
+:::note
+You cannot remove your own access to the **Users** or **Administration** tabs. This prevents accidental self-lockout.
+:::
+
 ## Edit a user's profile
 
 If you have **User Management** permissions, you can update another team member's profile details on their behalf — including their name, email, and phone number.
@@ -69,7 +73,7 @@ If you have **User Management** permissions, you can update another team member'
    - **Phone**
 5. Click **Save**.
 
-Changes take effect immediately. Users can also update their own profile details from their account settings.
+Changes take effect immediately. You can also update your own email address, name, and phone number directly from your account settings.
 
 ## Remove a user
 
