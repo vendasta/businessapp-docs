@@ -139,3 +139,9 @@ The top-right toolbar provides:
 - **Paste a URL** — If a website you like is closer to your target than words can describe, paste its URL and Vibe will clone the look and structure as a starting point.
 - **Read the COMPLETED block** — The collapsible "Architecture & Navigation" and "Files" details show what shipped. After a big change, expanding them is the fastest way to confirm Vibe interpreted your prompt the way you meant it.
 
+## Next Steps
+
+- [Prompting Guide](./guides/prompting.md) — Learn the principles behind effective prompts
+- [Visual Editor & Themes](./guides/visual-editor.md) — Apply themes and make targeted edits without prompts
+- [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
+

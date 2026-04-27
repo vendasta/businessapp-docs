@@ -153,3 +153,9 @@ Trust Vibe to handle the implementation. Focus on what you want the user to see 
 ### Massive All-at-Once Prompts
 Trying to build an entire complex application in a single prompt usually leads to worse results than building iteratively. Break it into logical pieces.
 
+## Next Steps
+
+- [Prompting Library](./prompting-library.md) — Ready-made prompts organized by intent you can paste and adapt
+- [Cloning a Reference Site](./clone-from-url.md) — Use a URL as your starting point instead of describing from scratch
+- [Visual Editor & Themes](./visual-editor.md) — Make targeted element-level edits without writing a prompt
+

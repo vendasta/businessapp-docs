@@ -48,3 +48,9 @@ The supervisor agent recognizes phrases like "sign in", "members area", "gated",
 
 Single sign-on pairs naturally with the [Analytics connector](./analytics.md) for member-specific data, and with the [Forms connector](./forms.md) when a form should be visible only to signed-in members.
 
+## Next Steps
+
+- [Connectors](./index.md) — Overview of all connectors and how to combine them
+- [Analytics](./analytics.md) — Surface member-specific metrics behind your sign-in gate
+- [Prompting Library](../prompting-library.md) — Ready-made SSO prompts for members areas and gated content
+

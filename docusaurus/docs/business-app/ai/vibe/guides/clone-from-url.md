@@ -65,3 +65,9 @@ Vibe replaces sections rather than rebuilding everything. Useful when only part 
 - **Single-page references work best.** Most clones target one page. If you want a multi-page site, scaffold the first page from a URL, then use follow-up prompts to add additional pages.
 - **Iterate after the first clone.** The first generation gets you 70% of the way. Use the prompting library's [refining recipes](./prompting-library.md#refining-an-existing-app) to push it the rest of the way.
 
+## Next Steps
+
+- [Visual Editor & Themes](./visual-editor.md) — Apply a different theme or tweak elements in your cloned app
+- [Prompting Library](./prompting-library.md) — Refining recipes for polishing a clone after the first generation
+- [Connectors](./connectors/index.md) — Wire your cloned app into forms, analytics, and sign-on
+

@@ -196,3 +196,9 @@ What to expect: Vibe reverts the most recent edit. For a precise rollback, use t
 
 What to expect: Vibe surfaces the diff in chat. From there you can ask for a partial restore (keep one component from the checkpoint, leave the rest as-is).
 
+## Next Steps
+
+- [Prompting Guide](./prompting.md) — The principles behind why these prompts work
+- [Cloning a Reference Site](./clone-from-url.md) — Use a URL as your starting point instead of a prompt
+- [Connectors](./connectors/index.md) — Understand the connectors several of these prompts activate
+
