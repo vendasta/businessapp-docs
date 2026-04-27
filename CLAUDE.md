@@ -138,6 +138,7 @@ Read the full SKILL.md file before using each skill.
 | `generate-help-article` | Creating any new feature documentation page |
 | `getting-started-guide` | Creating or editing a Getting Started guide |
 | `pre-push-validation` | Before every commit — catches errors that break the build |
+| `product-brief` | Ingesting a weekly CPO product brief and updating all relevant docs |
 | `training-video-teleprompter` | Turning a doc into a teleprompter script for video |
 | `what-did-i-get-done` | Summarizing recent commits for a status update |
 | `style-review` | Reviewing docs for style, voice, gray-label, and formatting violations |
