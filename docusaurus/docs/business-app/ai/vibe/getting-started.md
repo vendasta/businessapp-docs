@@ -19,26 +19,17 @@ Vibe lives in Business App alongside your other AI tools.
 
 You see your Vibe project list. If this is your first time, the list is empty and invites you to create your first app.
 
-<figure>
-  <img src="./img/vibe-nav-entry.png" alt="Business App left navigation with the AI section expanded and Vibe highlighted, showing the empty Vibe project list" />
-  <figcaption>Vibe lives under AI in the Business App left navigation, alongside Workforce, Capabilities, and Knowledge base.</figcaption>
-</figure>
+![Business App left navigation with the AI section expanded and Vibe highlighted, showing the empty Vibe project list](./img/vibe-nav-entry.png)
 
 ## Step 2: Create a New Project
 
 Once you're in Vibe, you'll see a project list. Click **+ Create a new app** to create your first application.
 
-<figure>
-  <img src="./img/project-list.png" alt="Empty Vibe project list with the Create a new app button" />
-  <figcaption>An empty Vibe project list — the starting point for your first app.</figcaption>
-</figure>
+![Empty Vibe project list with the Create a new app button](./img/project-list.png)
 
 Give your project a name and an optional description, then click **Create**.
 
-<figure>
-  <img src="./img/create-project.png" alt="Create a new app dialog with the App Name and Description fields filled in" />
-  <figcaption>The create project dialog asks for a name and an optional description.</figcaption>
-</figure>
+![Create a new app dialog with the App Name and Description fields filled in](./img/create-project.png)
 
 ## Step 3: Write Your First Prompt
 
@@ -50,10 +41,7 @@ The editor has three main areas:
 - **Preview** (center) — A live preview of your application
 - **Mode Tabs** (top) — Switch between Preview, Design, and Code views
 
-<figure>
-  <img src="./img/empty-project.png" alt="Newly created Vibe project — empty chat panel on the left, welcome state with example prompts on the right" />
-  <figcaption>A new project: the chat panel waits for your first prompt while the preview area shows starter examples.</figcaption>
-</figure>
+![Newly created Vibe project — empty chat panel on the left, welcome state with example prompts on the right](./img/empty-project.png)
 
 Type your first prompt in the chat input at the bottom of the chat panel. Here are some good starting prompts:
 
@@ -82,10 +70,7 @@ After you submit your prompt, Vibe runs through a consistent sequence you can fo
 6. **Checking for errors** — If anything is broken, Vibe fixes it before declaring the run finished. See [Error handling and troubleshooting](./guides/troubleshooting.md) for how the auto-fix layers work.
 7. **Completed** — A `COMPLETED` block appears at the bottom of the conversation with collapsible "Architecture & Navigation" and "Files" details.
 
-<figure>
-  <img src="./img/generation-in-progress.png" alt="Vibe actively editing files during generation" />
-  <figcaption>Vibe streams its work into the chat as it runs — a status row per file edit, image generation step, and validation check.</figcaption>
-</figure>
+![Vibe actively editing files during generation](./img/generation-in-progress.png)
 
 The chat auto-scrolls to follow new events as they arrive. If you scroll up to read older context, follow-tail pauses; scroll back near the bottom and it resumes.
 
@@ -118,16 +103,13 @@ At the bottom of the chat panel, you find:
 
 | Control | Description |
 |---------|-------------|
-| **Text input** | Type your prompt here. Press Enter to send, Shift+Enter for a new line. Paste a URL in the input to clone a reference site (see [Cloning a reference site](./clone-from-url.md)). |
+| **Text input** | Type your prompt here. Press Enter to send, Shift+Enter for a new line. Paste a URL in the input to clone a reference site (see [Cloning a reference site](./guides/clone-from-url.md)). |
 | **+ (image)** | Attach screenshots or mockups to show Vibe what you want. |
 | **Mode selector** | Pick the generation mode for the next prompt. |
 | **Microphone** | Record voice input. Vibe transcribes your speech into a prompt. |
 | **Send** | Submit the prompt to Vibe. |
 
-<figure>
-  <img src="./img/chat-input.png" alt="The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls" />
-  <figcaption>The chat input combines free-text, an image attach control, a mode selector, voice input, and a send button.</figcaption>
-</figure>
+![The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls](./img/chat-input.png)
 
 ### Preview, Design, and Code Modes
 
@@ -137,10 +119,7 @@ Use the tabs at the top to switch between views:
 - **Design** — Visual editor for themes, colors, and element-level edits. See [Visual Editor](./guides/visual-editor.md).
 - **Code** — File explorer and code editor to view or manually edit source files
 
-<figure>
-  <img src="./img/code-view.png" alt="Code mode with the file tree open and App.tsx loaded in the editor" />
-  <figcaption>Code mode pairs a file tree with a syntax-highlighted editor for direct source edits.</figcaption>
-</figure>
+![Code mode with the file tree open and App.tsx loaded in the editor](./img/code-view.png)
 
 ### Toolbar
 
@@ -160,13 +139,3 @@ The top-right toolbar provides:
 - **Paste a URL** — If a website you like is closer to your target than words can describe, paste its URL and Vibe will clone the look and structure as a starting point.
 - **Read the COMPLETED block** — The collapsible "Architecture & Navigation" and "Files" details show what shipped. After a big change, expanding them is the fastest way to confirm Vibe interpreted your prompt the way you meant it.
 
-## Next Steps
-
-- [Prompting Guide](./guides/prompting.md) — The principles behind effective prompts.
-- [Prompting library](./guides/prompting-library.md) — Concrete prompts you can paste, organized by intent.
-- [Cloning a reference site](./clone-from-url.md) — Start from an existing site by pasting its URL.
-- [Visual Editor & Themes](./guides/visual-editor.md) — Customize colors and styles, and click elements in design mode to edit them precisely.
-- [Planning](./guides/plan-mode.md) — How Vibe sequences your generation: plan, build, validate, fix, complete.
-- [Connectors](./guides/connectors/index.md) — Wire your app into Forms, Single sign-on, and Analytics.
-- [Image generation](./guides/image-generation.md) — Produce hosted images on demand from your prompts.
-- [Error handling and troubleshooting](./guides/troubleshooting.md) — How auto-fix works and what to do when it doesn't.

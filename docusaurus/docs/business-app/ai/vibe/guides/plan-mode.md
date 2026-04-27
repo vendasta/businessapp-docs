@@ -63,9 +63,3 @@ A few patterns that produce fewer questions:
 
 If Vibe is confident it understands the request, it skips the questions and shows you a plan directly. You can still edit or cancel from there.
 
-## Next steps
-
-- [Prompting guide](./prompting.md) — write prompts that produce strong plans.
-- [Prompting library](./prompting-library.md) — concrete plan-friendly prompts you can paste.
-- [Visual editor and themes](./visual-editor.md) — make targeted changes without going through a full plan cycle.
-- [Error handling and troubleshooting](./troubleshooting.md) — what to do when something goes sideways during generation.

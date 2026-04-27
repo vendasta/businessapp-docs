@@ -82,7 +82,7 @@ When you have a website you want to start from, paste its URL.
 
 > Build me a similar site to https://example.com
 
-What to expect: Vibe captures the page (screenshot, branding, layout, content), extracts colors and typography, and scaffolds a faithful clone. See the dedicated [clone-from-URL guide](../clone-from-url.md) for what gets captured and how.
+What to expect: Vibe captures the page (screenshot, branding, layout, content), extracts colors and typography, and scaffolds a faithful clone. See the dedicated [clone-from-URL guide](./clone-from-url.md) for what gets captured and how.
 
 ### URL with brand override
 
@@ -196,9 +196,3 @@ What to expect: Vibe reverts the most recent edit. For a precise rollback, use t
 
 What to expect: Vibe surfaces the diff in chat. From there you can ask for a partial restore (keep one component from the checkpoint, leave the rest as-is).
 
-## Next steps
-
-- [Prompting guide](./prompting.md) for the principles behind these recipes.
-- [Connectors](./connectors/index.md) for what the Forms, Analytics, and Single sign-on connectors do under the hood.
-- [Image generation](./image-generation.md) for how Vibe creates hosted images from your prompts.
-- [Visual editor and themes](./visual-editor.md) for changes you make by clicking instead of typing.

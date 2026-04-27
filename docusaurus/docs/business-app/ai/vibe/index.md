@@ -19,21 +19,18 @@ Vibe turns natural language prompts into real, deployable web applications. Inst
 
 The entire process streams in real time, so you can watch your application take shape as the AI works.
 
-<figure>
-  <img src="./img/editor-overview.png" alt="The Vibe editor with a generated app: chat panel on the left showing the COMPLETED summary, live preview of the generated marketing site on the right, and Preview/Design/Code mode tabs at the top." />
-  <figcaption>The Vibe editor pairs a streaming chat panel with a live preview. After a successful run, the chat shows a `COMPLETED` block and the preview renders your application.</figcaption>
-</figure>
+![The Vibe editor with a generated app: chat panel on the left showing the COMPLETED summary, live preview of the generated marketing site on the right, and Preview/Design/Code mode tabs at the top.](./img/editor-overview.png)
 
 ## Key Features
 
 ### Chat-Based Development
-Describe what you want in the chat panel. Vibe interprets your request and generates or modifies your application. You can iterate by sending follow-up messages to refine the result.
+Describe what you want in the chat panel. Vibe interprets the request and generates or modifies the application. Send follow-up messages to refine the result. Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean.
 
 ### Planning
 Every generation produces a structured plan that drives the run. The plan, the architecture, and the file list are captured in the `COMPLETED` block at the end of each run so you can verify what was built. See [Planning](./guides/plan-mode.md).
 
 ### Cloning a reference site
-Paste a URL and Vibe captures the screenshot, branding, layout, and content of that page, then scaffolds a faithful clone you can refine. The captured colors become a custom theme automatically. See [Cloning a reference site](./clone-from-url.md).
+Paste a URL and Vibe captures the screenshot, branding, layout, and content of that page, then scaffolds a faithful clone you can refine. The captured colors become a custom theme automatically. See [Cloning a reference site](./guides/clone-from-url.md).
 
 ### Visual Editor & Themes
 Switch to Design mode to browse pre-built color themes, toggle between light and dark mode, and make targeted edits by clicking elements in the preview. When you click an element, Vibe gets exact source context (file, line, JSX tag, classes), so any change you ask for lands precisely on the element you selected. See [Visual editor and themes](./guides/visual-editor.md).
@@ -80,14 +77,41 @@ Applications built with Vibe use:
 - **shadcn/ui** component library (50+ pre-built components)
 - **Lucide** icons
 
-## Next Steps
+## Frequently Asked Questions
 
-- [Getting Started](./getting-started.md) — Create your first project.
-- [Cloning a reference site](./clone-from-url.md) — Start from an existing site by pasting its URL.
-- [Prompting Guide](./guides/prompting.md) — The principles behind effective prompts.
-- [Prompting library](./guides/prompting-library.md) — Concrete prompts you can paste, organized by intent.
-- [Visual Editor & Themes](./guides/visual-editor.md) — Customize your application's look.
-- [Planning](./guides/plan-mode.md) — How a generation flows through plan, build, validate, fix, complete.
-- [Connectors](./guides/connectors/index.md) — Wire your app into Forms, Single sign-on, and Analytics.
-- [Image generation](./guides/image-generation.md) — Produce hosted images on demand from your prompts.
-- [Error handling and troubleshooting](./guides/troubleshooting.md) — How auto-fix works and what to do when it doesn't.
+<details>
+<summary>Do I need coding experience to use Vibe?</summary>
+
+No. You describe what you want in plain English and Vibe handles the code. If you want to make manual edits, Code mode gives you direct access to the source files.
+
+</details>
+
+
+<details>
+<summary>Can I start from an existing website?</summary>
+
+Yes. Paste any URL into the chat input and Vibe captures the page's screenshot, branding, layout, and content, then scaffolds a clone you can refine. See [Cloning a reference site](./guides/clone-from-url.md).
+
+</details>
+
+<details>
+<summary>What if Vibe misunderstands my request?</summary>
+
+When a prompt is ambiguous, Vibe pauses and asks clarifying questions before generating. If the result isn't what you wanted, send a follow-up prompt to correct it or restore a previous checkpoint.
+
+</details>
+
+<details>
+<summary>How do I undo a change I don't like?</summary>
+
+Vibe creates checkpoints automatically as you iterate. Open the Checkpoints panel from the toolbar to view diffs and restore any previous version.
+
+</details>
+
+<details>
+<summary>What languages can I use in the chat?</summary>
+
+Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean.
+
+</details>
+

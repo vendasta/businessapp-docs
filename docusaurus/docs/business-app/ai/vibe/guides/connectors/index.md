@@ -18,10 +18,7 @@ There are three connectors today:
 
 Connectors are managed per project, in **Project Settings**. Open a project, click the settings icon in the toolbar, and scroll to **Shared connectors**. Toggle a connector on to make it available to every prompt in the project; toggle it off to remove it from the supervisor agent's options.
 
-<figure>
-  <img src="../../img/project-settings.png" alt="Vibe Project Settings page showing the Overview card and the Shared connectors section with Single sign-on, Forms, and Analytics each toggled on" />
-  <figcaption>Project Settings is where you turn connectors on and off. Each connector says what it does and whether it is enabled for the project.</figcaption>
-</figure>
+![Vibe Project Settings page showing the Overview card and the Shared connectors section with Single sign-on, Forms, and Analytics each toggled on](../../img/project-settings.png)
 
 When a connector is **enabled**, the supervisor agent can wire your generated UI into the underlying service automatically. When a connector is **disabled**, prompts that would normally activate it fall back to mocked or static behavior — useful when you want to design without committing to live integrations yet.
 
@@ -35,10 +32,3 @@ Most realistic apps use more than one connector. You don't need to declare them 
 
 That single prompt activates Forms (contact), Single sign-on (members area), and Analytics (owner dashboard). The supervisor agent identifies which connector each part of the request needs and wires the UI accordingly.
 
-## Next steps
-
-- [Single sign-on](./single-sign-on.md) — gate parts of your app behind member sign-in.
-- [Forms](./forms.md) — capture leads, contact requests, and structured submissions.
-- [Analytics](./analytics.md) — build dashboards wired to live data.
-- [Prompting library](../prompting-library.md) — concrete prompts grouped by connector.
-- [Error handling and troubleshooting](../troubleshooting.md) — what to do if a connector doesn't activate as expected.
