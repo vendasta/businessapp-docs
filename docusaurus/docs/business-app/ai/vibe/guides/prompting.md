@@ -78,7 +78,7 @@ When editing an existing application, be precise about what you want changed and
 **Portfolio:**
 > Build a minimalist photography portfolio. Full-screen hero with the photographer's name "Elena Voss" and a tagline. Below, a masonry-style image gallery. Include an About page with a bio and a Contact page with a form.
 
-**E-commerce:**
+**E-commerce** *(coming soon)*
 > Create a product listing page for a sneaker store. Show a grid of 8 product cards, each with an image placeholder, name, price, and "Add to Cart" button. Include filters on the left for brand, size, and price range. Add a header with logo, search bar, and cart icon.
 
 ### Modifying an Existing Project
