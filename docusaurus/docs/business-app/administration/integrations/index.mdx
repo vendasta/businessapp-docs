@@ -44,17 +44,29 @@ Trigger names and availability vary by integration. Review and select events in 
 
 <TabItem value="clio" label="Clio">
 
-You can influence whether contacts sync when a matter is closed via custom fields.
+You can control whether contacts sync when a matter is closed by adding a custom field in Clio. Two configurations are available — choose one based on how you want to manage syncing.
 
 **Closed Matter (Opt Out) — Contact custom field:**
-- Field Name: SyncOptOut
+
+Syncs all customers by default. Check the field on a contact to exclude them.
+
+- Field Name: `BroadlyOptOut` (case-sensitive)
 - Type: Checkbox
 - Default: Checked
+- Required: No
+
+To configure: In Clio, go to **Settings → Custom Fields → Contact Custom Fields → Individual Fields**, click **Add**, and enter the details above.
 
 **Closed Matter (Opt In) — Matter custom field:**
-- Field Name: SyncOptIn
+
+Syncs a customer only if the field is checked on the Matter.
+
+- Field Name: `SendBroadlyThankYou` (case-sensitive, no extra spaces)
 - Type: Checkbox
 - Default: Checked
+- Required: No
+
+To configure: In Clio, go to **Settings → Custom Fields → Matter Custom Fields → Individual Fields**, click **Add**, and enter the details above.
 
 </TabItem>
 </Tabs>
