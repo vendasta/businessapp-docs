@@ -44,17 +44,49 @@ Trigger names and availability vary by integration. Review and select events in 
 
 <TabItem value="clio" label="Clio">
 
-You can influence whether contacts sync when a matter is closed via custom fields.
+The Clio integration syncs customer data when a Matter is marked as closed. You can add a custom field in Clio to control which contacts are included or excluded. Two configurations are available — choose one.
 
-**Closed Matter (Opt Out) — Contact custom field:**
-- Field Name: SyncOptOut
-- Type: Checkbox
-- Default: Checked
+---
 
-**Closed Matter (Opt In) — Matter custom field:**
-- Field Name: SyncOptIn
-- Type: Checkbox
-- Default: Checked
+**Option 1: Opt-Out (Contact custom field)**
+
+Syncs all customers by default. Check the field on a contact to exclude them.
+
+1. Log in to your Clio dashboard.
+2. Go to **Settings** → **Custom Fields**.
+3. Make sure you are in the **Contact Custom Fields** section.
+4. Select **Individual Fields**.
+5. Click the green **Add** button and fill in the following:
+   - **Field Name:** `BroadlyOptOut` *(case-sensitive)*
+   - **Type:** Checkbox
+   - **Default:** Checked
+   - **Required:** Leave unchecked
+6. Click **Save**.
+
+When a Matter closes, Clio checks this field on the contact:
+- **Checked** → contact is **not** synced
+- **Unchecked** (default) → contact **syncs** to Business App
+
+---
+
+**Option 2: Opt-In (Matter custom field)**
+
+Syncs a customer only if the field is explicitly checked on the Matter.
+
+1. Log in to your Clio dashboard.
+2. Go to **Settings** → **Custom Fields**.
+3. Make sure you are in the **Matter Custom Fields** section.
+4. Select **Individual Fields**.
+5. Click the green **Add** button and fill in the following:
+   - **Field Name:** `SendBroadlyThankYou` *(case-sensitive, no extra spaces)*
+   - **Type:** Checkbox
+   - **Default:** Checked
+   - **Required:** Leave unchecked
+6. Click **Save**.
+
+When a Matter closes, Clio checks this field on the Matter:
+- **Checked** → contact **syncs** to Business App
+- **Unchecked** → contact is **not** synced
 
 </TabItem>
 </Tabs>
