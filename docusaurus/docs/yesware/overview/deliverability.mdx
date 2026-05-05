@@ -53,7 +53,7 @@ If, after taking these steps, your link-tracking enabled email continues to be f
 
 DMARC (Domain-based Message Authentication, Reporting, and Conformance), DKIM (DomainKeys Identified Mail), and SPF (Sender Policy Framework) are email authentication protocols that help verify that emails are actually from who they claim to be from.
 
-These protocols are typically configured by your email provider (Google or Microsoft) and help establish your sender reputation.
+These DNS records are issued and provided by your email service provider (Google or Microsoft) — not by Yesware. They apply to all emails sent from your domain, including those sent through Yesware, and help establish your sender reputation.
 
 ## Email Sending Limits
 
@@ -109,7 +109,7 @@ On rare occasions, the recipient's mail filters may flag emails as spam regardle
 
 No - Yesware does not modify the IP address when it sends emails. Instead, Yesware transmits the campaign emails to your email server for delivery. Due to this, we cannot improve email deliverability or prevent your emails from being identified as spam. If your IP address is flagged as a spam host, the issue must be resolved with your service provider.
 
-DMARC, DKIM, and SPF are configured by your email provider (Google or Microsoft) and apply to all emails sent from your domain, including those sent through Yesware.
+DMARC, DKIM, and SPF DNS records are issued and provided by your email service provider (Google or Microsoft) — not by Yesware. They apply to all emails sent from your domain, including those sent through Yesware.
 
 ### What are Yesware's email sending limits?
 
