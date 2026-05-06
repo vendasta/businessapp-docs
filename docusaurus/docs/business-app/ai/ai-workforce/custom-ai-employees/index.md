@@ -49,6 +49,10 @@ Every custom AI Employee follows these steps:
 
 For detailed instructions, see [How to Create Custom Capabilities](../../ai-capabilities/creating-custom-capabilities.md).
 
+:::tip Web Chat sees the visitor's current URL
+Custom AI Employees assigned to the **Web Chat** channel receive the visitor's current page URL with every message — the same as the AI Chat Receptionist. See [Make responses page-aware with the visitor's current URL](../ai-chat-receptionist/index.mdx#make-responses-page-aware-with-the-visitors-current-url) for how to tune prompts to use it.
+:::
+
 ## Available guides
 
 - [AI Data Analyst](./ai-data-analyst.md): analyze CRM data, reviews, and social engagement with structured AIR (Analyze, Interpret, Recommend) reasoning
