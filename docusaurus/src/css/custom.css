@@ -124,6 +124,11 @@
   border-radius: var(--ifm-global-radius, 2px);
 }
 
+.img-screenshot {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
 .markdown table td p + p {
   margin-top: 0.6em;
 }
