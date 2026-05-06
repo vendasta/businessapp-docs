@@ -4,6 +4,9 @@ sidebar_position: 2
 unlisted: true
 ---
 
+import projectCard from './img/project-card.png';
+import sharedConnectors from './img/shared-connectors.png';
+
 # Forms
 
 The Forms connector turns your generated app into something your customers can actually fill out. Use it for contact forms, lead capture, appointment requests, surveys, and newsletter sign-ups.
@@ -16,7 +19,15 @@ You don't need to provision a backend, configure a database, or wire up email no
 
 ## Enabling the connector
 
-Open **Project Settings**, scroll to **Shared connectors**, and toggle **Forms** on. Once enabled, every prompt in the project that asks for form-like behavior is wired through the connector automatically.
+On your project card, click **Configure**.
+
+<img src={projectCard} alt="Project card showing Build and Configure buttons" className="img-screenshot" />
+
+On the project settings page, scroll to **Shared connectors** and toggle **Forms** on.
+
+<img src={sharedConnectors} alt="Shared connectors section with Forms enabled" className="img-screenshot" />
+
+Once enabled, every prompt in the project that asks for form-like behavior is wired through the connector automatically.
 
 ## When to use it
 
@@ -63,4 +74,3 @@ Forms use structured style fields (background color, border, primary color, etc.
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Single sign-on](./single-sign-on.md) — Gate a form behind a sign-in screen
 - [Prompting Library](../prompting-library.md) — Ready-made form prompts organized by use case
-

@@ -1,5 +1,6 @@
 ---
-title: Prompting library
+title: Prompting Library
+sidebar_label: Prompting Library
 sidebar_position: 2
 unlisted: true
 ---
