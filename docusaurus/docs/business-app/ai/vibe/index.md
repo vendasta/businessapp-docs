@@ -47,6 +47,9 @@ Attach images to your prompts to show Vibe what you want. Use the microphone but
 ### Connectors
 Vibe wires your generated app into live platform features. The Forms connector captures submissions, the Analytics connector surfaces multi-location dashboards, and the Single sign-on connector gates a members area against your customers' existing accounts. See [Connectors](./guides/connectors/index.md).
 
+### Business Knowledge
+Every project has a built-in knowledge base pre-loaded with the location's Business Profile — name, services, hours, contact info, brand voice, and FAQs. When you ask Vibe to build a Contact page or add an About section, it fills in real details about the business instead of placeholder text. You can extend the knowledge base from the project settings page by adding URLs, files, or notes. See [Business Knowledge](./guides/business-knowledge.md).
+
 ### Image generation
 Vibe produces hosted brand-quality images on demand whenever your prompt asks for them — no setup required. See [Image generation](./guides/image-generation.md).
 
@@ -62,9 +65,9 @@ When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
 
 1. **You describe** what you want in the chat panel.
 2. **Clarification** — If the request is ambiguous, Vibe asks structured questions before continuing.
-3. **Planning** — A planning agent produces a structured plan describing the architecture, navigation, and which files will be touched.
+3. **Planning** — A planning agent produces a structured plan describing the architecture, navigation, and which files will be touched. The plan also commits to a named design system — palette, fonts, and UI primitives — before any code is written.
 4. **Generation** — A generation agent writes the code file by file, applying the theme, generating images, and editing components in real time. Type-check and build verification run continuously to catch and fix issues.
-5. **Validation** — Vibe takes a screenshot of the rendered preview and runs a build check; anything broken is auto-fixed before the run finishes.
+5. **Validation** — Vibe takes a screenshot of the rendered preview and runs a build check. Before declaring the task complete, Vibe runs a final type check and self-corrects any remaining issues — up to three rounds. If they can't be resolved, the run finishes with a "verified with issues" status instead of a silent claim of success.
 6. **Preview** — The live preview updates as soon as the build is clean.
 7. **Iteration** — You review the result and send follow-up prompts to refine it. Runtime errors in the preview trigger an auto-fix banner.
 
@@ -121,6 +124,7 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 ## Next Steps
 
 - [Getting Started](./getting-started.md) — Create your first app and learn the basics
+- [Business Knowledge](./guides/business-knowledge.md) — Use real business details in your generated apps
 - [Prompting Guide](./guides/prompting.md) — Write prompts that get better results
 - [Cloning a Reference Site](./guides/clone-from-url.md) — Scaffold an app from any URL
 - [Visual Editor & Themes](./guides/visual-editor.md) — Apply themes and edit elements visually
@@ -129,4 +133,4 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 - [Connectors](./guides/connectors/index.md) — Wire your app into forms, analytics, and sign-on
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
-- [Use Cases](./use-cases/landing-page.md) — See real examples of what you can build with Vibe
+- [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe

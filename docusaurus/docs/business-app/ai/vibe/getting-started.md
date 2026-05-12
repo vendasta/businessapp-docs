@@ -31,6 +31,8 @@ Give your project a name and an optional description, then click **Create**.
 
 ![Create a new app dialog with the App Name and Description fields filled in](./img/create-project.png)
 
+As soon as the project is created, Vibe loads the Business Profile for the selected location — name, services, hours, and contact details — into the project's knowledge base. Your prompts can draw on that information without you having to include it. See [Business Knowledge](./guides/business-knowledge.md) to learn how to add more context.
+
 ## Step 3: Write Your First Prompt
 
 After creating your project, you'll land in the Vibe editor. This is where you build your application through conversation.
