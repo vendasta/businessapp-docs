@@ -52,7 +52,7 @@ The supervisor agent recognizes phrases like "sign in", "members area", "gated",
 - A session-aware layout that knows when a member is signed in and exposes their identity to the rest of the app.
 - A sign-out control wired to the same flow so members can end their session cleanly.
 
-Single sign-on pairs naturally with the [Analytics connector](./analytics.md) for member-specific data, and with the [Forms connector](./forms.md) when a form should be visible only to signed-in members.
+Single sign-on pairs naturally with the [Analytics connector](./analytics.md) for member-specific data, and with the [Forms connector](./forms) when a form should be visible only to signed-in members.
 
 ## Next Steps
 

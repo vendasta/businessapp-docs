@@ -11,7 +11,7 @@ Connectors let your Vibe-built app do real work, not just look like it could. Ea
 There are three connectors today:
 
 - [Single sign-on](./single-sign-on.md) — let your customers sign in with their existing account.
-- [Forms](./forms.md) — capture form submissions from your app.
+- [Forms](./forms) — capture form submissions from your app.
 - [Analytics](./analytics.md) — surface in-app metrics for signed-in users.
 
 ## Enabling a connector
@@ -34,7 +34,7 @@ That single prompt activates Forms (contact), Single sign-on (members area), and
 
 ## Next Steps
 
-- [Forms](./forms.md) — Capture contact form and lead submissions from your app
+- [Forms](./forms) — Capture contact form and lead submissions from your app
 - [Single sign-on](./single-sign-on.md) — Gate a members area with existing customer accounts
 - [Analytics](./analytics.md) — Surface multi-location metrics for signed-in users
 - [Prompting Library](../prompting-library.md) — Ready-made prompts for each connector
