@@ -41,15 +41,23 @@ Reach for Forms when you want any of the following in your generated app:
 
 ## Building an app with a form
 
-Describe the form you want as part of any prompt:
+Describe the form you want as part of any prompt. By default, Vibe creates a contact form that captures information about a person (name, email, phone, and similar contact details).
 
-> Add a contact form at the bottom of the landing page. Collect name, email, and message.
+> Add a contact form at the bottom of the landing page. Collect first name, last name, email, and phone number.
 
 > Create a lead capture popup that asks for name, email, and company size.
 
 > Add a "Book an appointment" form to the services page with fields for name, phone, preferred service, and preferred date.
 
 Vibe renders a form styled to match your application's theme. Submissions are captured by Business App's Forms backend automatically, so you don't have to wire up a backend yourself.
+
+### Using an existing form
+
+If you already have a form set up in Business App, you can tell Vibe to embed it instead of creating a new one:
+
+> Use the existing inquiry form on the contact page instead of creating a new one.
+
+Vibe will look up the available forms and wire the matching one into the page.
 
 ## Editing a form
 

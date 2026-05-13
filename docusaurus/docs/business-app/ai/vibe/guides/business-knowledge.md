@@ -14,6 +14,20 @@ When you ask Vibe to build something that involves real business details — "bu
 
 This happens automatically. There's no toggle to enable and no setup required.
 
+### Phrases that trigger business knowledge
+
+Certain phrases reliably tell Vibe to pull from the Business Profile:
+
+- **"my business information"** — pulls contact details, hours, and location data
+- **"business profile"** — explicitly references the Business Profile record
+- **"my hours of operation"** — pulls the location's hours directly
+
+For example:
+
+> Create a contact page that shows my business information and hours of operation.
+
+Using these phrases produces more accurate results than leaving Vibe to infer that business details are needed.
+
 ## Adding your own knowledge
 
 You can extend the knowledge base from the project settings page. Open **Project Settings** and find the **Knowledge** section. You can add:
