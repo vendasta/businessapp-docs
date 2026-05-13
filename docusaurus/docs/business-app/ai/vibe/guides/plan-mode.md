@@ -13,7 +13,7 @@ Every Vibe generation starts with a plan. The plan describes which files will be
 A typical run progresses through these stages, visible inline in the chat:
 
 1. **Preparing environment** — the sandbox spins up.
-2. **Thinking** — Vibe internalizes your request and works out the architecture.
+2. **Thinking** — Vibe internalizes your request, works out the architecture, and commits to a named design system — palette, typography, and UI primitives — before any code is written.
 3. **Applying theme** — the visual style you described is set.
 4. **Generating images** — any imagery the design needs is created.
 5. **Editing files** — each component, page, and configuration file appears as Vibe writes it.

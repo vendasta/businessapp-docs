@@ -16,6 +16,7 @@ Vibe runs three layers of automatic error handling. Each layer catches a differe
 |---|---|---|
 | **Type and compile checks** | TypeScript errors, missing imports, type mismatches | Inline, while Vibe is writing or editing files |
 | **Build verification** | Errors that only show up when the project is bundled | After file changes are written, before the preview updates |
+| **Verified completion** | Remaining type errors before the run declares success | After all file edits, before the COMPLETED block appears |
 | **Runtime auto-fix** | Errors that happen in the live preview after the app loads | When the app crashes or throws while you're using it |
 
 You don't have to enable any of this. It's the default behavior on every generation.
@@ -31,6 +32,12 @@ You'll know this layer ran when Vibe sends a follow-up edit immediately after a 
 After a batch of file changes, Vibe builds the project to confirm everything compiles. If the build fails, the agent reads the error, decides whether it can fix it, and edits the offending files autonomously. The chat shows what it tried and what it fixed.
 
 You'll see status updates like "Building project," then either a success message and an updated preview, or a follow-up edit cycle that resolves the failure.
+
+### Verified completion
+
+Before the `COMPLETED` block appears, Vibe runs a final type check against the full project. If issues are found, the agent sees the errors and corrects them — up to three rounds of self-correction. If the project can't reach a clean state in three attempts, the run finishes with a **"verified with issues"** status. That's a clear signal that something needs attention, not a silent claim of success.
+
+You'll see "verified with issues" in the COMPLETED block header when this happens. Treat it the same as a build error: copy the error text and send it back as a prompt, or roll back to a clean checkpoint.
 
 ### Runtime auto-fix
 
