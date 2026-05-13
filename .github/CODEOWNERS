@@ -1,0 +1,4 @@
+# SRE owned files
+/cloudbuild.yaml         @vendasta/sre
+/cloudbuild-*.yaml       @vendasta/sre
+/build/                  @vendasta/sre
