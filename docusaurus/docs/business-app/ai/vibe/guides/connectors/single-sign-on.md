@@ -14,6 +14,12 @@ Single sign-on layers on Business App's customer authentication. When you enable
 
 The OAuth client ID for the project is shown in the **Overview** card on the Project Settings page once the connector is enabled.
 
+**Who can sign in:** Any user who already has access to your Business App account can sign in to your Vibe-built app. This connector is not intended for signing in your business's end customers or website visitors — it's for members of your Business App account (owners, staff, managers). There are no per-user access controls within that group at this time; if someone has Business App access for the account, they can sign in.
+
+:::caution Work in progress
+Access controls for sign-in are still being developed. More granular controls are coming in a future update.
+:::
+
 ## Enabling the connector
 
 Open **Project Settings**, scroll to **Shared connectors**, and toggle **Single sign-on** on. Toggling it on provisions the OAuth client automatically — there's nothing you need to configure manually for the redirect flow to start working in your generated app.
