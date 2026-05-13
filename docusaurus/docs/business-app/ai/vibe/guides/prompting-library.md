@@ -25,7 +25,7 @@ What to expect: a single-page site with the seven sections in order, themed in s
 
 > Create a website for a dental clinic called "Bright Smile Dental." Include a home page with services, a team page with dentist bios and photos, an FAQ page with common questions, and a booking page with a contact form.
 
-What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](./connectors/forms.md).
+What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](./connectors/forms).
 
 ### Service business with multi-location
 
@@ -103,7 +103,7 @@ What to expect: the reference site's structure and visual style, with your busin
 
 > Add a contact form at the bottom of the landing page. Collect name, email, and message. Style it to match the rest of the page.
 
-What to expect: a form rendered in your theme, wired through the [Forms connector](./connectors/forms.md) so submissions are captured automatically.
+What to expect: a form rendered in your theme, wired through the [Forms connector](./connectors/forms) so submissions are captured automatically.
 
 ### Lead capture popup
 
