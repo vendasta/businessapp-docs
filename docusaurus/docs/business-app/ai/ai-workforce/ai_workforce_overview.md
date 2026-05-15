@@ -93,9 +93,9 @@ Pre-configured AI Employees (Chat Receptionist, Voice Receptionist) come ready t
 
 Build a custom AI Employee when you need a role that isn't covered by a pre-configured option, such as:
 
-- **[AI Data Analyst](./custom-ai-employees/ai-data-analyst.md)** — analyzes CRM, review, and social data to deliver structured insights
+- **[AI Data Analyst](./custom-ai-employees/ai-data-analyst.mdx)** — analyzes CRM, review, and social data to deliver structured insights
 - **[Inside Sales Representative](./custom-ai-employees/inside-sales-representative.md)** — qualifies inbound leads before capturing contact information or booking appointments
-- **[AI Support Employee](./custom-ai-employees/ai-support-employee.md)** — resolves customer inquiries via chat and SMS, and escalates when a question falls outside the knowledge base
+- **[AI Support Employee](./custom-ai-employees/ai-support-employee.mdx)** — resolves customer inquiries via chat and SMS, and escalates when a question falls outside the knowledge base
 
 See [Custom AI Employees](./custom-ai-employees/index.md) for the full setup process and additional examples.
 

@@ -31,9 +31,9 @@ Custom AI Employees are specialized digital team members you build from scratch 
 
 Build a custom AI Employee when you want to expand your workforce with a specialized role not covered by a pre-configured option, such as:
 
-- An **[AI Data Analyst](./ai-data-analyst.md)** that reasons through CRM, review, and social data to deliver structured insights
+- An **[AI Data Analyst](./ai-data-analyst.mdx)** that reasons through CRM, review, and social data to deliver structured insights
 - An **[Inside Sales Representative](./inside-sales-representative.md)** that qualifies inbound leads before capturing contact information or booking appointments
-- An **[AI Support Employee](./ai-support-employee.md)** that resolves customer inquiries via chat and SMS, and escalates with structured message capture when a question falls outside the knowledge base
+- An **[AI Support Employee](./ai-support-employee.mdx)** that resolves customer inquiries via chat and SMS, and escalates with structured message capture when a question falls outside the knowledge base
 - A **compliance assistant** that checks processes against internal policies
 - Any role where the default AI Employees don't match your workflow
 
@@ -55,6 +55,6 @@ Custom AI Employees assigned to the **Web Chat** channel receive the visitor's c
 
 ## Available guides
 
-- [AI Data Analyst](./ai-data-analyst.md): analyze CRM data, reviews, and social engagement with structured AIR (Analyze, Interpret, Recommend) reasoning
+- [AI Data Analyst](./ai-data-analyst.mdx): analyze CRM data, reviews, and social engagement with structured AIR (Analyze, Interpret, Recommend) reasoning
 - [Inside Sales Representative](./inside-sales-representative.md): qualify inbound leads, capture contact information, and book appointments with a sales-first conversational approach
-- [AI Support Employee](./ai-support-employee.md): resolve customer support inquiries via chat and SMS, with structured empathy for complaints and automatic escalation when questions fall outside the knowledge base
+- [AI Support Employee](./ai-support-employee.mdx): resolve customer support inquiries via chat and SMS, with structured empathy for complaints and automatic escalation when questions fall outside the knowledge base
