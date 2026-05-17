@@ -11,7 +11,7 @@ keywords: [analytics dashboard, Google Analytics, site metrics, visitor tracking
 
 Analytics helps you understand how visitors interact with your website. WordPress Hosting includes a built-in analytics dashboard that displays key visitor metrics and traffic insights, giving you a clear view of your site's performance at a glance.
 
-You can use the default analytics view provided by WordPress Hosting, or connect your own Google Analytics account for more detailed and accurate data. The dashboard shows metrics like active users, page views, session duration, and where your traffic is coming from.
+You can use the default analytics view provided by WordPress Hosting, or connect your own Google Analytics 4 (GA4) property for site-specific data. The dashboard shows metrics like active users, page views, session duration, and where your traffic is coming from.
 
 ## Why is Analytics important?
 
@@ -25,7 +25,8 @@ You can use the default analytics view provided by WordPress Hosting, or connect
 ## What's included
 
 - **[Google Analytics View](google-analytics-view.md)**: Learn about the built-in analytics dashboard and available metrics
-- **[Add your own Google Analytics account](add-your-own-analytics-account.md)**: Connect your personal Google Analytics account for more accurate tracking
+- **[Add your own Google Analytics account](add-your-own-analytics-account.md)**: Connect your GA4 property and add a custom Measurement ID
+- **[Toggle the default Google Analytics tracking on/off](../advanced-tools/toggle-the-default-google-analytics-tracking-onoff.md)**: Enable or disable default tracking without removing your connection
 
 ## Key Metrics Explained
 
@@ -67,24 +68,22 @@ The dashboard also shows where your visitors are coming from:
 WordPress Hosting offers two ways to view analytics:
 
 ### Default Google Analytics View
-When you first set up your site, WordPress Hosting can collect analytics data using a shared Google Analytics ID. While this provides basic metrics, the data may not be as accurate because the ID is shared across multiple sites.
+When you first set up your site, WordPress Hosting can collect analytics data using a shared Google Analytics ID. This provides basic metrics, but the ID is shared across multiple sites.
 
-### Custom Google Analytics View (Recommended)
-Connecting your own Google Analytics account provides the most accurate data. You'll get:
+### Custom Google Analytics View
+Connecting your own Google Analytics account gives you data specific to your site. You can:
 * More refined traffic metrics
 * Accurate data specific to your domain
 * The ability to toggle the amount of data shown
 * Access to 12 months of historical data (if available)
 
-**We strongly encourage connecting your own Google Analytics view** for the most accurate insights into your site's performance.
-
 ## How to Get Started
 
 1. **View Default Analytics**: If you're using the default view, you'll see basic metrics in the Analytics dashboard. Look for a prompt at the top if you need to connect a Google Analytics view.
 
-2. **Connect Your Own Account**: For more accurate data, connect your own Google Analytics account:
+2. **Connect Your Own Account**: Connect your own Google Analytics account:
    * Go to **Business App > Administration > Connections** to connect Google Analytics
-   * Or add your Tracking ID in **WordPress Dashboard > Settings > General > Custom Google Analytics Tracking ID**
+   * Or add your GA4 Measurement ID (`G-XXXXXXXXXX`) in **WordPress Dashboard > Settings > General > Custom Google Analytics Tracking ID**
 
 3. **Review Your Metrics**: Once connected, you can view your analytics data for the past 12 months and going forward.
 
@@ -93,7 +92,7 @@ Connecting your own Google Analytics account provides the most accurate data. Yo
 <details>
 <summary>Why should I connect my own Google Analytics account instead of using the default view?</summary>
 
-Connecting your own Google Analytics account provides more accurate data because:
+Connecting your own Google Analytics account gives you site-specific data because:
 * The default view uses a shared Google Analytics ID across multiple sites, which can aggregate data incorrectly
 * Your own account tracks data specific to your domain only
 * You get access to more refined metrics and filtering options
@@ -116,14 +115,14 @@ The most common issue is connecting to the incorrect Google Analytics view. Make
 * The view is properly configured with data collection enabled
 * You've waited a few minutes for data to sync
 
-If you're still not seeing data, verify your connection in **Business App > Administration > Connections** and ensure your Tracking ID is correctly entered in **Settings > General**.
+If you're still not seeing data, verify your connection in **Business App > Administration > Connections** and ensure your GA4 Measurement ID is correctly entered in **Settings > General**.
 
 </details>
 
 <details>
 <summary>Can I use Google Analytics plugins instead of the built-in method?</summary>
 
-While plugins are available, they often fail to track data properly in the WordPress Hosting environment. We recommend using the built-in Tracking ID field in **Settings > General** or manually adding the script in Divi Theme Options for the most reliable tracking.
+While plugins are available, they often fail to track data properly in the WordPress Hosting environment. Use the built-in tracking field in **Settings > General** or manually add the script in Divi Theme Options.
 
 </details>
 
