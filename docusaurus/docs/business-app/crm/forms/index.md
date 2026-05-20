@@ -19,7 +19,7 @@ Use Forms to capture leads from your website directly into the CRM. Embed a form
 Use UTM parameters in the links you publish (ads, social media, email) so form submissions capture where leads came from and you can see which channels perform best.
 :::
 
-## What's included
+## What’s included
 
 - **Form Builder** with configurable fields and defaults
 - **Design** controls for container, fonts, button, and custom CSS
@@ -27,8 +27,15 @@ Use UTM parameters in the links you publish (ads, social media, email) so form s
 - **Embed code** for easy installation on any site
 - **File upload** field so visitors can attach documents or images
 - **Form automations** – trigger follow-up from the form’s Automation tab
+- **Public landing page and QR code flyer** – every form has a shareable public URL and a printable QR code flyer with your account branding
 
 For the full list of contact, company, and generic fields you can add, see [Form field reference](supported-fields.md).
+
+## Share a form with a QR code flyer
+
+Every form has a default public landing page. From the form, you can generate a printable QR code flyer that links directly to that page. The flyer pulls your account branding automatically, so it's ready to print and display in-store, at events, or anywhere you want customers to scan and submit.
+
+This works for any form — lead capture, promotions, surveys, or any other type you build.
 
 ## What's in this section
 

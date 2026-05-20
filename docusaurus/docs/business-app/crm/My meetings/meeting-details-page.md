@@ -28,6 +28,10 @@ You can:
 - Read or download the full transcript
 - Share meeting details with controlled visibility
 
+## Meeting summary notifications
+
+When an AI-generated summary is ready for a recorded meeting, Business App sends you both an email notification and an in-app notification. You can open the meeting directly from either notification to review the summary, action items, and transcript.
+
 ## How to access the Meeting Details page
 
 1. Open the CRM.

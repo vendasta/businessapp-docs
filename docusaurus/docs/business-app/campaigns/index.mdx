@@ -153,6 +153,12 @@ Yes. Build an automation that triggers "When a form is submitted" to add the con
 Use `Administration` > `Email History` to review sent emails and statuses, then verify domain authentication and deliverability settings. See: [Email history](../administration/email/email-history) and [Email Configuration](../administration/email/email-configuration)
 </details>
 
+<details>
+<summary>Why am I seeing consent validation errors when adding recipients to a campaign?</summary>
+
+If your account has the email marketing consent setting enabled, campaigns require explicit marketing consent before a contact can be added. When this setting is on, any recipient missing email or SMS consent triggers a validation error. You can review and update consent settings in `Administration` > `Email Configuration`. Contacts need to have consent recorded on their profile before they can receive campaign emails.
+</details>
+
 <Head>
   <script type="application/ld+json">
     {JSON.stringify({

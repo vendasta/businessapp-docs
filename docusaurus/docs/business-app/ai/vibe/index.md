@@ -59,6 +59,12 @@ Switch to Code mode to view and edit the generated source code directly. Browse 
 ### Checkpoints
 Vibe automatically creates checkpoints as you iterate. You can view diffs between versions and restore previous states if needed.
 
+### Credits
+Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
+
+### Custom Domains (Professional)
+On the Professional plan, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.md).
+
 ## How It Works
 
 When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
@@ -134,3 +140,5 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
+- [Credits](./credits.md) — Understand how credits work and how to purchase more
+- [Custom Domains](./guides/custom-domain.md) — Publish your app to a domain you own (Professional)
