@@ -23,6 +23,8 @@ The User Management page displays a table of everyone who has access to your Bus
 
 Each row also has an actions menu (three dots) with options to **Edit contact info**, **Edit Permissions**, or **Remove user**.
 
+Results load in pages, so the table stays responsive even for accounts with a large number of users.
+
 ## Invite a user
 
 1. On the **User Management** page, click **Invite user**.
