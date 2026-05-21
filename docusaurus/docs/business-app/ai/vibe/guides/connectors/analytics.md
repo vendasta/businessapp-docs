@@ -10,7 +10,9 @@ The Analytics connector turns your app into a multi-location dashboard. It surfa
 
 ## What it layers on
 
-Analytics layers on the in-app metrics that Business App already aggregates for the signed-in member's businesses and locations. When the connector is enabled, Vibe routes dashboard prompts through that data layer instead of generating placeholder numbers. The numbers in the preview are live values from the platform, refreshed when the page reloads.
+Analytics layers on the in-app metrics that Business App already aggregates for the signed-in member's businesses and locations. The metrics available are the same ones that appear across Business App's products — reviews, listings, reputation, social, and more. Think of them as all the stat cards you see throughout the platform, including everything that surfaces in the Executive Report.
+
+When the connector is enabled, Vibe routes dashboard prompts through that data layer instead of generating placeholder numbers. You describe what you want to see in plain language; Vibe identifies the right metric and builds the query automatically. The numbers in the preview are live values from the platform, refreshed when the page reloads.
 
 Because the data is pulled from authenticated APIs scoped to the signed-in member, the [Single sign-on](./single-sign-on.md) connector must be enabled for Analytics to work.
 

@@ -6,9 +6,15 @@ unlisted: true
 
 # Custom Domains
 
-On the Professional plan, you can publish your Vibe app to a domain you own. After you add a domain, Vibe automatically provisions an SSL certificate once your DNS records are verified.
+Every Vibe project gets a default published URL automatically. On the Professional plan, you can also publish to a domain you own. TLS is provisioned automatically for both your default URL and any custom domain — you don't need to purchase or manage certificates.
 
-## Requirements
+## Your default domain
+
+Every project includes a default URL that's ready as soon as you publish. You can view and edit this URL in the **Publish** section of your project. No DNS setup is required — it's provisioned and secured automatically.
+
+Visiting the bare domain (without `www`) redirects to the full URL automatically.
+
+## Requirements for custom domains
 
 Custom domains require the Professional plan. If you're on a different plan, upgrade first through the self-checkout flow in Business App. See [Credits](../credits.md) for information on plan upgrades.
 
