@@ -54,6 +54,17 @@ The supervisor agent recognizes phrases like "sign in", "members area", "gated",
 
 Single sign-on pairs naturally with the [Analytics connector](./analytics.md) for member-specific data, and with the [Forms connector](./forms) when a form should be visible only to signed-in members.
 
+## Iframe limitation
+
+Single sign-on does not work when your Vibe app is embedded inside an iframe. Browser sandboxing prevents the OAuth redirect flow from completing inside an embedded frame.
+
+If your app will be displayed inside an iframe, use one of these approaches:
+
+- **Open in a new tab** — add a sign-in button that opens the full app URL in a new tab so the OAuth flow can complete outside the iframe.
+- **Pop-up sign-in** — prompt Vibe to implement sign-in as a pop-up window rather than a redirect. Pop-ups are not subject to the same iframe sandboxing restrictions.
+
+If your app is standalone (not embedded in another page), this limitation does not apply.
+
 ## Next Steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
