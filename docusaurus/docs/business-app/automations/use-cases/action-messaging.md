@@ -43,12 +43,12 @@ When the automation runs, the SMS is sent immediately to the configured number w
 When a contact submits a signup form, send them a plain-text email to acknowledge their submission and set expectations.
 
 1. **Trigger:** Set the trigger to **When a form is submitted**.
-2. **Action:** Add the **Send a plain text email** step (via Inbox or Conversations).
+2. **Action:** Add the **Send a plain text email** step (via Conversations AI).
 3. **Message:** Set the subject line and body. Use dynamic fields to personalize with the contact's name and relevant form details.
 
 <div style={{textAlign: 'center'}}>
 
-<img src={require('../img/automation-plain text email.png').default} alt="Automation workflow: When Newsletter signup form is submitted for a contact, Send a plain text email via Inbox or Conversations, then End." width="50%" />
+<img src={require('../img/automation-plain text email.png').default} alt="Automation workflow: When Newsletter signup form is submitted for a contact, Send a plain text email via Conversations AI, then End." width="50%" />
 
 </div>
 
