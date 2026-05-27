@@ -86,7 +86,7 @@ Choose the most specific trigger that matches your use case and think about how 
 |---|---|---|
 | An opportunity is created or modified | Starts the workflow when an opportunity is created, moves into a new pipeline stage, and/or is closed. | When a new opportunity is created, send yourself a notification to follow up. |
 
-### Inbox
+### Conversations AI
 
 | Trigger | Description |
 |---|---|

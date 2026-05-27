@@ -3,8 +3,8 @@ title: Conversations Settings
 sidebar_label: Conversations Settings
 sidebar_position: 5
 description: Manage your messaging settings, channel connections, and AI preferences in Business App.
-tags: [business-app, conversations, inbox, settings]
-keywords: [Conversations settings, Business App inbox, messaging preferences, channel connections]
+tags: [business-app, conversations, conversations-ai, settings]
+keywords: [Conversations AI settings, Business App conversations, messaging preferences, channel connections]
 ---
 
 ## Overview
@@ -49,7 +49,7 @@ Connect messaging channels so they appear in your unified inbox:
 - [Web Chat](../conversations/web-chat/index.mdx)
 - [Facebook Messenger](../conversations/facebook-messenger.mdx)
 - [Instagram Messages](../conversations/instagram-messenger.mdx)
-- [WhatsApp for Inbox](../conversations/whatsapp-for-inbox.mdx)
+- [WhatsApp for Conversations AI](../conversations/whatsapp-for-inbox.mdx)
 
 ## Frequently asked questions
 
