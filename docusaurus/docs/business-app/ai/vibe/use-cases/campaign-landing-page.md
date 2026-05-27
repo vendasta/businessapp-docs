@@ -14,7 +14,7 @@ A seasonal promotion, a new service launch, a limited-time offer — these usual
 
 > Build a landing page for a seasonal promotion. Use my business information for the details. Include a hero section with a generated image and a headline about the promotion, a short section highlighting what's included, and a lead capture form at the bottom that collects name, email, and phone number. Keep the design clean and professional.
 
-## What Vibe Bbilt
+## What Vibe built
 
 From that single prompt, Vibe produced a three-section landing page:
 
