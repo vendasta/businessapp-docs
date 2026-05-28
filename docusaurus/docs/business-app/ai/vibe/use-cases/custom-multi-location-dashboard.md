@@ -22,6 +22,10 @@ The SSO connector gates the dashboard to members of your Business App account, m
 The SSO connector signs in users with their existing Business App account credentials. Only people who already have access to your Business App account can sign in. If you need to share data with someone who has no Business App access at all, SSO is not the right approach for that.
 :::
 
+## Before you start
+
+Enable the **SSO connector** in **Project Settings → Shared connectors** before prompting for a sign-in screen. The SSO connector is what gates the dashboard to members of your Business App account. If it isn't enabled first, the sign-in UI will appear but authentication will not complete.
+
 ## The prompts
 
 **Starting prompt:**
@@ -74,8 +78,6 @@ From those prompts, Vibe produced a gated, fully connected dashboard with:
 **Using the group ID pulled real data.** Prompting with the specific multi-location group ID told Vibe exactly which account's data to connect. Without it, the dashboard used placeholder values. Once the group ID was in the prompt, the live metrics appeared.
 
 **Connecting data one section at a time produced better results.** Trying to connect all data sources in a single prompt led to incomplete results. Breaking it into focused prompts, Reputation AI first, then leads and bookings, then revenue, gave Vibe a clear target each time and made it easier to spot what wasn't working yet.
-
-**Enable SSO in Project Settings before prompting for a sign-in screen.** The SSO connector needs to be toggled on in **Project Settings** under **Shared connectors** before it will work. Asking for a sign-in gate before enabling the connector produces a login UI that doesn't complete authentication.
 
 **Visual polish works best as a final step.** Asking for a multi-coloured redesign early can overwrite structure that Vibe is still building. Saving the visual prompt for the end, once the data connections are working, means the redesign applies to a stable layout rather than a work-in-progress.
 
