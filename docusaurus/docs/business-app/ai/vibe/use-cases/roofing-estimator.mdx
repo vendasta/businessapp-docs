@@ -10,6 +10,10 @@ description: "Build a roofing quote estimator with lead capture using Vibe."
 
 A service estimator is one of the strongest demonstrations of what Vibe can do for a trade or home services client. This example walks through building a quote calculator for a roofing company, complete with a contact intake form that routes leads directly to the CRM.
 
+## Before you start
+
+Enable the **Forms connector** in **Project Settings → Shared connectors** before running the prompt. The contact intake form routes leads to Business App through this connector. If it isn't enabled first, the form will appear in the app but submissions won't be captured.
+
 ## The prompt
 
 > Build a roofing quote estimator for my business. Use my business information for the company name and contact details. Include fields for home square footage, number of stories, roof pitch, and material type (asphalt shingles, architectural shingles, and metal roofing). Show an estimated cost range based on the selections, and add a note that the estimate is subject to a full inspection. At the bottom, include a contact intake form that captures the customer's name, email, phone number, and property address. Keep the design clean and professional.
@@ -41,8 +45,6 @@ From that single prompt, Vibe produced:
 **Specifying each input field produced a cleaner result.** Listing the exact fields (square footage, stories, pitch, material type) gave Vibe a precise target and avoided a generic output that would need more follow-up prompting to correct.
 
 ## Tips for this use case
-
-**Enable the Forms connector before prompting for a contact intake form.** The Forms connector needs to be turned on in **Project Settings → Shared connectors** before it will route submissions to Business App. If it isn't enabled first, the form will appear in the app but leads won't be captured.
 
 **Add real material and labour costs to Business Knowledge.** The default output uses general pricing approximations. For more accurate estimates, go to **Project Settings → Knowledge** and add a Note with the client's actual material and labour rates. Once it's there, prompt Vibe to use it:
 
