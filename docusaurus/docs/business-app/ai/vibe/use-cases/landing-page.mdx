@@ -1,0 +1,126 @@
+---
+title: "Build a landing page"
+description: A case study and walkthrough for building a landing page with Vibe, based on a cat-run pizza restaurant example with a contact form wired to the CRM.
+sidebar_position: 1
+---
+
+# Build a landing page
+
+Vibe is a strong fit for a landing page or small marketing site. You describe what the page should contain, iterate with focused follow-ups, and end up with a styled, responsive page with real images and working features.
+This page walks through the full flow using a real example: a multi-page site for a cat-run pizza restaurant, built from a single starting prompt, with a contact form that writes submissions back to the CRM.
+
+## The starting point
+
+Every Vibe project starts from a blank editor. You land on a "Build your website with AI" splash with a chat panel on the left and example prompts you can borrow from.
+
+<img src={require('./img/vibe-blank.png').default} alt="Blank Vibe editor before any prompt is sent" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+
+## Step 1: Enable the Forms connector
+
+Before you write your starting prompt, enable the Forms connector so Vibe can wire any contact form you build to the CRM. Without it, Vibe will still generate a form, but submissions will not flow to the CRM.
+From the project card, click **Configure**.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/vibe-configure-project.png').default} alt="Vibe project card with Build and Configure buttons" style={{width: '50%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+In **Shared connectors**, toggle **Forms** on. The badge changes to **Enabled**.
+
+<img src={require('./img/vibe-connectors.png').default} alt="Shared connectors panel with Forms toggled on and labeled Enabled" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+
+For more on connectors, see [Integrations](../guides/integrations.md).
+
+## Step 2: Write the starting prompt
+
+Start broad and let Vibe scaffold the full page in one pass. Follow the [Prompting Guide](../guides/prompting.md) principle of describing what you want, not how to build it. A good starting prompt names the business concept, identifies the key visuals, lists the sections you expect, and calls out any integrations you want.
+The starting prompt:
+
+> make a website for my pizza restaurant that is run by cats. show images of cats making pizzas please along with a menu, about us section, and a contact intake. Connect the contact intake to the CRM.
+
+The prompt is short but specific: it names the business (pizza restaurant run by cats), calls out the hero visual (cats making pizzas), lists the sections (menu, about us, contact intake), and directs Vibe to wire the contact intake into the CRM.
+
+## Step 3: Let Vibe plan and generate
+
+After you send a starting prompt, Vibe generates a plan, executes it, and shows the files it creates in real time. Because the Forms connector is enabled, Vibe also calls into the Forms service to map your contact fields to the CRM. See [Plan Mode](../guides/plan-mode.md) for how to review and edit the plan before generation.
+
+<img src={require('./img/vibe-plan-and-files.png').default} alt="Vibe's plan and generated files for the cat pizzeria project, including a call to the Forms service" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+
+The prompt triggered a plan covering:
+
+- A multi-page architecture with React Router for Home, Menu, and About pages
+- Shared layout components: Navbar (Our Story, Menu, Book a Table), Footer, and a Layout wrapper
+- Page-specific content: a hero with Reserve Your Table and View the Menu CTAs on Home, a pizza grid on Menu, and an origin story with staff cards on About
+- A contact intake form mapping First Name, Last Name, Email, and Message directly to the CRM through the Forms connector
+- Unsplash placeholder images of cats and pizzas to bring the concept to life
+- A playful, warm visual direction using semantic color tokens
+
+## Step 4: The result
+
+From that single prompt, Vibe produced a full multi-page site with navigation, a menu grid, an about page with staff profiles, themed imagery, and a contact form wired into the CRM.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/vibe-cat-pizza-landing-page.png').default} alt="The finished cat-run pizzeria site with hero, navigation, and themed content" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+The contact page renders the form Vibe generated and connected to Forms.
+
+<img src={require('./img/vibe-contact-form.png').default} alt="The contact form on the finished site, with First Name, Last Name, Email, and Message fields" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+
+## Step 5: View submissions in the CRM
+
+Because you enabled the Forms connector, Vibe registered a form in Forms when it built the contact intake. To find it, go to **CRM > Forms**, then click the form to view its submissions.
+The most useful flow is automatic: contact information from every submission appears in **CRM > Contacts**, so leads land directly in the same place your team already manages customers.
+
+## Step 6: Visual editing in the Design tab
+
+Once the site is built, visual editing speeds up targeted refinements. Open Design mode, switch to the **Design** tab, and click any element in the live preview, such as a heading, a button, an image, or a card. Vibe highlights the selection with a blue outline and maps it back to the exact file and line in the source code.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/vibe-design-tab.png').default} alt="Vibe visual editing with the hero heading selected in the cat pizzeria site" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+With an element selected, any prompt you write is scoped to that element automatically. Vibe already knows which heading or button you mean because it sends the file, line, and element details along with your request. That makes refinements feel closer to "point and say what you want" than writing instructions for an AI.
+Examples of prompts that work well with an element selected:
+
+- "Make this heading smaller and adjust the padding"
+- "Change this button to a warmer orange and add a subtle shadow"
+- "Add a hover animation to this card"
+
+After a targeted edit on the selected heading, the hero reflects the change exactly where you pointed:
+
+<img src={require('./img/vibe-design-tab-result.png').default} alt="Resized hero headline reading Authentic Italian Pizza, Hand-Kneaded by Paws." style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+
+For the full reference on visual editing, including themes, light and dark toggle, and in-panel style controls, see [Visual Editor & Themes](../guides/visual-editor.md).
+
+## Iteration path from here
+
+This example shows how much a single well-formed prompt can produce. To polish or extend a similar site, use focused follow-up prompts rather than broad rewrites.
+Common next steps for a landing page:
+
+1. Apply a theme in Design mode to match the brand. See [Visual Editor & Themes](../guides/visual-editor.md).
+2. Replace placeholder images with AI-generated ones, for example: "Regenerate the hero image with a 16:9 aspect ratio and warmer lighting." See [Integrations](../guides/integrations.md#image-generation).
+3. Tune the contact form: "Add a phone number field to the contact form" or "Show a thank-you message after submission."
+4. Add targeted sections through prompts: "Add a testimonials section before the footer with three customer quotes."
+5. Use the Visual Editor for small adjustments such as padding, font size, or icon swaps.
+
+## When to pick this use case
+
+Choose Vibe for a landing page when you need:
+
+- A one-page or small multi-page marketing site for a business, product, or campaign
+- Lead capture through a contact form that feeds the CRM
+- A polished visual result without spending time in a traditional website builder
+- A page you can iterate on in minutes rather than hours
+
+Skip this pattern if you need heavy e-commerce, a CMS with editorial workflows, or marketing automation beyond a form submission.
+
+## Related
+
+Pair this example with these guides as you build:
+
+- [Getting Started with Vibe](../getting-started.md): create your first project and learn the editor
+- [Prompting Guide](../guides/prompting.md): write prompts that produce strong first results
+- [Plan Mode](../guides/plan-mode.md): review and approve Vibe's implementation plan before code is generated
+- [Visual Editor & Themes](../guides/visual-editor.md): branding and element-level edits
+- [Integrations](../guides/integrations.md): Forms and image generation
+- [Troubleshooting](../guides/troubleshooting.md): recover from errors and stuck generations
