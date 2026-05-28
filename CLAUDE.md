@@ -127,6 +127,8 @@ These apply to every file you create or edit. Read the full rules in `.cursor/ru
 
 **No internal references.** Never mention partners, resellers, agencies, or internal teams.
 
+**Image formatting.** All screenshots automatically render with a frame and drop shadow via global CSS. Do not add inline styles or extra CSS classes to images for this purpose.
+
 ---
 
 ## Skills Available to You

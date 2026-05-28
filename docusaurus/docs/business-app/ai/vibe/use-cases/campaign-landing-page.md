@@ -10,6 +10,10 @@ description: "Build a seasonal promotion landing page with a generated hero imag
 
 A seasonal promotion, a new service launch, a limited-time offer — these usually mean scrambling for a developer, a designer, or both. This use case shows how to build a polished campaign landing page in one prompt, using your business's own information and a built-in lead capture form.
 
+## Before you start
+
+Enable the **Forms connector** in **Project Settings → Shared connectors** before running the prompt. The lead capture form routes submissions to Business App through this connector. If it isn't enabled first, the form will appear in the app but submissions won't be captured.
+
 ## The prompt
 
 > Build a landing page for a seasonal promotion. Use my business information for the details. Include a hero section with a generated image and a headline about the promotion, a short section highlighting what's included, and a lead capture form at the bottom that collects name, email, and phone number. Keep the design clean and professional.
@@ -35,7 +39,7 @@ From that single prompt, Vibe produced a three-section landing page:
 
 **The generated image matched the tone.** The hero background is a Vibe-generated image, not a stock photo or placeholder. The prompt's instruction to "keep the design clean and professional" carried through to the image style.
 
-**The Forms connector wired itself automatically.** Because the prompt asked for a lead capture form, the Forms connector activated and routed submissions to Business App's Forms backend. Leads appear in the same place as any other form submission — no separate setup needed.
+**The Forms connector routed submissions to Business App.** Because the Forms connector was enabled before the prompt ran, Vibe wired the lead capture form to Business App's Forms backend automatically. Leads appear in the same place as any other form submission.
 
 ## Tips for this use case
 
