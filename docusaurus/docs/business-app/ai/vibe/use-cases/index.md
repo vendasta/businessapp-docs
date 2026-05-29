@@ -2,7 +2,6 @@
 title: "Vibe Use Cases"
 sidebar_label: "Overview"
 sidebar_position: 0
-draft: true
 description: "Practical guidance for building real tools with Vibe for your clients — what to build, how to approach it, and what to expect."
 ---
 
@@ -41,10 +40,6 @@ What gets built with Vibe is also a living thing. As a client's business changes
 If the build involves pricing, services, or specific content, point Vibe at a real source rather than expecting it to guess.
 
 > Here is our services page: [URL]. Use the pricing from that page to build the calculator.
-
-:::note[To do before publishing]
-Clarify what database options are available for clients who need Vibe to pull from structured data rather than a URL. What formats are supported? Does the client need to set anything up first?
-:::
 
 ### Use "contact intake" for CRM lead capture
 
@@ -85,7 +80,3 @@ If Vibe asks for an API endpoint or webhook URL, that's a sign the connection ne
 About 90% of most projects can be built through prompting alone. The last 10% — usually specific integrations or complex logic — may need additional technical help to finish.
 
 The goal is to get as far as possible through prompting, then clearly identify what's left so the right support can be lined up for those final pieces.
-
----
-
-*This article is based on internal testing and is being reviewed for accuracy before publication.*
