@@ -1,7 +1,7 @@
 ---
 title: Visual Editor & Themes
 sidebar_position: 2
-unlisted: true
+unlisted: false
 ---
 
 # Visual Editor & Themes

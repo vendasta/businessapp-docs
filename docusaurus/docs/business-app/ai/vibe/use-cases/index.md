@@ -2,6 +2,8 @@
 title: "Vibe Use Cases"
 sidebar_label: "Overview"
 sidebar_position: 0
+draft: false
+description: "Practical guidance for building real tools with Vibe for your clients — what to build, how to approach it, and what to expect."
 description: "Practical guidance for building real tools with Vibe — what to build, how to approach it, and what to expect."
 ---
 

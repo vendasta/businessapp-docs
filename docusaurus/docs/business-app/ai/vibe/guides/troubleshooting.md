@@ -1,7 +1,7 @@
 ---
 title: Error Handling & Troubleshooting
 sidebar_position: 5
-unlisted: true
+unlisted: false
 ---
 
 # Error Handling & Troubleshooting

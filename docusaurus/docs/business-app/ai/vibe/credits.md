@@ -1,7 +1,7 @@
 ---
 title: Credits
-sidebar_position: 3
-unlisted: true
+sidebar_position: 6
+unlisted: false
 ---
 
 # Credits

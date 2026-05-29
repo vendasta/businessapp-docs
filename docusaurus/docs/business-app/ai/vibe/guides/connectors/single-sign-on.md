@@ -1,7 +1,7 @@
 ---
 title: Single sign-on
 sidebar_position: 1
-unlisted: true
+unlisted: false
 ---
 
 # Single sign-on
