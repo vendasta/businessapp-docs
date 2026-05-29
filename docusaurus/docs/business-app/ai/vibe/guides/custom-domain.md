@@ -21,12 +21,18 @@ Custom domains require the Professional plan. If you're on a different plan, upg
 ## Add a Custom Domain
 
 1. Open your Vibe project.
-2. Go to **Project Settings**.
+2. Go to **Publish**.
 3. Under **Custom Domain**, enter your domain name and save.
 4. Follow the DNS verification steps — Vibe displays the records you need to add with your domain registrar.
 5. Once your DNS records propagate and verification completes, Vibe provisions the SSL certificate automatically.
 
-<!-- screenshot needed: custom domain field in Project Settings -->
-<!-- screenshot needed: DNS verification records panel -->
+<!-- screenshot needed: custom domain field in Publish workflow -->
+<!-- screenshot needed: DNS verification records panel in Publish workflow -->
 
 Your app becomes available at your custom domain after the certificate is provisioned.
+
+If you add a `www` subdomain, Vibe automatically redirects it to your main domain.
+
+## Remove a Custom Domain
+
+To remove a custom domain, go to **Publish** and remove it with one click. Your project continues to be available at its default URL.
