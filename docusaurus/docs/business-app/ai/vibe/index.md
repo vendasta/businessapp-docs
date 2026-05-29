@@ -59,8 +59,8 @@ When your request is ambiguous, Vibe pauses and asks before going further. Quest
 ### Multi-Modal Input
 Attach images to your prompts to show Vibe what you want. Use the microphone button to dictate your changes using voice — Vibe transcribes your speech into a prompt.
 
-### Image generation
-Vibe produces hosted brand-quality images on demand whenever your prompt asks for them — no setup required. See [Image generation](./guides/image-generation.md).
+### Images
+Vibe gives you two ways to add images to your app: generate them from a text description, or import your own. Generated images are hosted and embedded automatically — no setup required. See [Images](./guides/image-generation.md).
 
 ### Code Editor
 Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
@@ -134,7 +134,7 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 - [Cloning a Reference Site](./guides/clone-from-url.md) — Scaffold an app from any URL
 - [Visual Editor & Themes](./guides/visual-editor.md) — Apply themes and edit elements visually
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
-- [Image Generation](./guides/image-generation.md) — Generate hosted images in your app
+- [Images](./guides/image-generation.md) — Generate images from a prompt or import your own
 - [Connectors](./guides/connectors/index.md) — Wire your app into forms, analytics, and sign-on
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior

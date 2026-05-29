@@ -21,9 +21,11 @@ The amount of credits an action uses depends on its size:
 
 Credits are tied to the account they were issued to and cannot be transferred to other accounts.
 
-When your included credits are used up, Vibe prompts you to purchase additional credits before you can continue building.
+Your remaining credit balance is visible in the chat input area and on each project card, so you always know how many credits you have left.
 
-<!-- screenshot needed: credit usage indicator / prompt when credits run out -->
+When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App — no support ticket or wait time required.
+
+<!-- screenshot needed: Upgrade dialog when credits run out -->
 
 ## Credit Allowances by Plan
 

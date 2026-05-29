@@ -66,7 +66,7 @@ After you submit your prompt, Vibe runs through a consistent sequence you can fo
 
 1. **Preparing environment** — Vibe spins up a sandbox for your project.
 2. **Thinking** — Vibe internalizes your request and works out the architecture.
-3. **Applying theme and generating images** — Vibe sets the visual style you described and creates any imagery the design needs.
+3. **Applying theme and images** — Vibe sets the visual style you described and generates or places any imagery the design needs.
 4. **Editing files** — Each component, page, and configuration file streams in as Vibe writes it. You see entries like "Editing Navbar.tsx", "Editing Home.tsx", and "Editing OwnerDashboard.tsx" appear in real time.
 5. **Validating** — Vibe takes a screenshot of the result, checks the design, and runs a build to surface errors.
 6. **Checking for errors** — If anything is broken, Vibe fixes it before declaring the run finished. See [Error handling and troubleshooting](./guides/troubleshooting.md) for how the auto-fix layers work.
