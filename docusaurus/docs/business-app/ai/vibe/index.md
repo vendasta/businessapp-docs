@@ -72,7 +72,7 @@ Vibe automatically creates checkpoints as you iterate. You can view diffs betwee
 Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
 
 ### Custom Domains (Professional)
-On the Professional plan, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.md).
+On the Professional plan, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
 ## How It Works
 
@@ -140,4 +140,4 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
 - [Credits](./credits.md) — Understand how credits work and how to purchase more
-- [Custom Domains](./guides/custom-domain.md) — Publish your app to a domain you own (Professional)
+- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Professional)

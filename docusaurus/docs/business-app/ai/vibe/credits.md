@@ -39,6 +39,6 @@ When your included credits are used up, Vibe opens an Upgrade dialog where you c
 
 ## Purchasing More Credits
 
-You can buy additional credit packs directly in Business App through the self-checkout flow. From the same flow, you can upgrade your subscription to the Professional plan, which includes a higher credit allowance and unlocks additional features like [custom domains](./guides/custom-domain.md).
+You can buy additional credit packs directly in Business App through the self-checkout flow. From the same flow, you can upgrade your subscription to the Professional plan, which includes a higher credit allowance and unlocks additional features like [custom domains](./guides/custom-domain.mdx).
 
 ![Vibe Professional upgrade modal showing credit pack options](./img/buy-more-credits.webp)
