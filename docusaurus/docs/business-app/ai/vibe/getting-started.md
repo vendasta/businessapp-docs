@@ -1,12 +1,12 @@
 ---
 title: Getting Started
-sidebar_position: 2
-unlisted: true
+sidebar_position: 3
+unlisted: false
 ---
 
 # Getting Started
 
-This guide walks you through creating your first application with Vibe.
+By the end of this guide, you'll have sent your first prompt and seen Vibe generate a working app in the live preview.
 
 ## Step 1: Open Vibe in Business App
 

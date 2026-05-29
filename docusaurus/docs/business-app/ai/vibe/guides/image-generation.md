@@ -1,7 +1,7 @@
 ---
 title: Image generation
 sidebar_position: 6
-unlisted: true
+unlisted: false
 ---
 
 # Image generation

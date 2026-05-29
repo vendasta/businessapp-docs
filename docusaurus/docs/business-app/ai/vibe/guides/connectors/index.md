@@ -1,7 +1,7 @@
 ---
 title: Connectors
 sidebar_position: 0
-unlisted: true
+unlisted: false
 ---
 
 # Connectors

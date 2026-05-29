@@ -2,7 +2,7 @@
 title: "Campaign Landing Page with Lead Capture"
 sidebar_label: "Campaign Landing Page"
 sidebar_position: 2
-draft: true
+draft: false
 description: "Build a seasonal promotion landing page with a generated hero image, a highlights section, and a lead capture form — in a single prompt."
 ---
 

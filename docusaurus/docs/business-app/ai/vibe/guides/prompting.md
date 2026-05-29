@@ -1,7 +1,7 @@
 ---
 title: Prompting Guide
 sidebar_position: 1
-unlisted: true
+unlisted: false
 ---
 
 # Prompting Guide

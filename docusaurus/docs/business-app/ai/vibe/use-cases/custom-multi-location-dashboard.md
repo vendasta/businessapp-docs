@@ -2,7 +2,7 @@
 title: "Build a Custom Multi-Location Dashboard"
 sidebar_label: "Custom Multi-Location Dashboard"
 sidebar_position: 3
-draft: true
+draft: false
 description: "Use Vibe to build a gated, custom-branded multi-location performance dashboard for your team, organized around the KPIs that matter to your business."
 ---
 

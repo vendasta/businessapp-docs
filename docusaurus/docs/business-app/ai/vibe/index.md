@@ -5,29 +5,44 @@ sidebar_position: 1
 
 # Introduction to Vibe
 
-:::warning Beta feature
-Vibe is currently available to trusted testers only. If you're interested in early access, contact your account representative.
-:::
+Vibe is an AI-powered app builder built into Business App. Describe what you want in plain English, and Vibe builds it — a working web application with real design, live preview, and direct connections to the Business App tools you already use.
 
-Vibe is an AI-powered application builder. Describe what you want in plain English, and Vibe generates a fully functional React application — complete with components, routing, styling, and a live preview.
-
-## What is Vibe?
-
-Vibe turns natural language prompts into real, deployable web applications. Instead of writing code from scratch, you describe what you want to build and Vibe's multi-agent AI system handles the rest:
-
-- **Planning** — Every generation starts with a structured plan that drives the rest of the run. The plan is captured in the `COMPLETED` block at the end so you can confirm Vibe interpreted your request correctly.
-- **Generation** — Writes React components, pages, and styling, with type and build errors caught and fixed automatically as it goes.
-- **Building** — Compiles the application and verifies it runs cleanly. Errors that survive the build trigger an auto-fix pass.
-- **Preview** — Shows you the result in a live preview that updates as changes are made.
-
-The entire process streams in real time, so you can watch your application take shape as the AI works.
+You don't need to know how to code. You describe what you want; Vibe handles everything else.
 
 ![The Vibe editor with a generated app: chat panel on the left showing the COMPLETED summary, live preview of the generated marketing site on the right, and Preview/Design/Code mode tabs at the top.](./img/editor-overview.png)
+
+## Who is Vibe for?
+
+**Service business owners** — Build customer-facing tools that do real work: a quote estimator where visitors enter their details and get an instant price range, a booking request page, or a seasonal promotion landing page with a lead capture form that routes submissions directly to your CRM.
+
+**Multi-location owners and managers** — Build a custom dashboard that shows performance across all your locations in exactly the layout your team needs — leads, bookings, revenue, and review ratings in one place, gated behind a sign-in screen.
+
+**Any business running a campaign or promotion** — Build a polished landing page for a seasonal sale, a new service launch, or a limited-time offer. Start from a prompt, get a fully designed page with a working lead capture form in one generation.
+
+**Anyone with an idea and no developer** — If you have something in mind — a client portal, a pricing calculator, a company presentation — Vibe is where you start. No technical setup, no waiting on anyone else.
+
+## What You Can Build
+
+Here are examples of real builds to give you a sense of what Vibe produces:
+
+- **A service quote estimator** — Visitors enter their details and get an instant price range. A contact intake form at the bottom routes leads directly to your CRM.
+- **A campaign landing page** — A hero, a highlights section, and a lead capture form, built from a single prompt using your real business name, hours, and contact details.
+- **A multi-location performance dashboard** — Leads, bookings, revenue, and review ratings across all your locations. Gated behind a sign-in screen so only your team can access it.
+- **A business website** — A multi-page marketing site with navigation, service descriptions, team bios, and a contact form, refined through follow-up prompts.
+- **A slide deck** — A web-based presentation for a pitch or internal meeting, navigable with arrow keys and shareable as a link.
+
+See [Use Cases](./use-cases/index.md) for step-by-step walkthroughs of these and more.
 
 ## Key Features
 
 ### Chat-Based Development
 Describe what you want in the chat panel. Vibe interprets the request and generates or modifies the application. Send follow-up messages to refine the result. Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean.
+
+### Business Knowledge
+Every project has a built-in knowledge base pre-loaded with the location's Business Profile — name, services, hours, contact info, brand voice, and FAQs. When you ask Vibe to build a Contact page or add an About section, it fills in real details about the business instead of placeholder text. You can extend the knowledge base from the project settings page by adding URLs, files, or notes. See [Business Knowledge](./guides/business-knowledge.md).
+
+### Connectors
+Vibe wires your generated app into the Business App tools you already use — so what you build isn't a standalone tool, it's connected to your business. The Forms connector captures submissions and routes them directly to your CRM. The Analytics connector pulls live performance data into custom dashboards. The Single sign-on connector gates a members area behind your customers' existing Business App accounts. See [Connectors](./guides/connectors/index.md).
 
 ### Planning
 Every generation produces a structured plan that drives the run. The plan, the architecture, and the file list are captured in the `COMPLETED` block at the end of each run so you can verify what was built. See [Planning](./guides/plan-mode.md).
@@ -43,12 +58,6 @@ When your request is ambiguous, Vibe pauses and asks before going further. Quest
 
 ### Multi-Modal Input
 Attach images to your prompts to show Vibe what you want. Use the microphone button to dictate your changes using voice — Vibe transcribes your speech into a prompt.
-
-### Connectors
-Vibe wires your generated app into live platform features. The Forms connector captures submissions, the Analytics connector surfaces multi-location dashboards, and the Single sign-on connector gates a members area against your customers' existing accounts. See [Connectors](./guides/connectors/index.md).
-
-### Business Knowledge
-Every project has a built-in knowledge base pre-loaded with the location's Business Profile — name, services, hours, contact info, brand voice, and FAQs. When you ask Vibe to build a Contact page or add an About section, it fills in real details about the business instead of placeholder text. You can extend the knowledge base from the project settings page by adding URLs, files, or notes. See [Business Knowledge](./guides/business-knowledge.md).
 
 ### Image generation
 Vibe produces hosted brand-quality images on demand whenever your prompt asks for them — no setup required. See [Image generation](./guides/image-generation.md).
@@ -78,16 +87,6 @@ When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
 7. **Iteration** — You review the result and send follow-up prompts to refine it. Runtime errors in the preview trigger an auto-fix banner.
 
 All of this happens through a streaming interface — status updates, file changes, screenshots, and the live preview update in real time.
-
-## Tech Stack
-
-Applications built with Vibe use:
-
-- **React 18+** with TypeScript
-- **Vite** for fast builds
-- **Tailwind CSS** for styling
-- **shadcn/ui** component library (50+ pre-built components)
-- **Lucide** icons
 
 ## Frequently Asked Questions
 

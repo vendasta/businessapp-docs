@@ -1,7 +1,7 @@
 ---
 title: Analytics
 sidebar_position: 3
-unlisted: true
+unlisted: false
 ---
 
 # Analytics
