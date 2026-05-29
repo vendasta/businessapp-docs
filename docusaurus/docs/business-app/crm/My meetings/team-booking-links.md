@@ -55,12 +55,25 @@ Meetings rotate evenly across all available team members in a set sequence. Each
 
 ### Priority assignment
 
-Meetings go to the highest-priority available member first. If that person is unavailable, the system moves to the next priority level, and so on.
+Customers see available time slots only — the system silently assigns the right provider based on your ranked order. No customer input required.
 
-- Priority is set top to bottom — drag team members to reorder.
-- Useful for senior/junior structures where certain people should handle most bookings.
+**How it works:**
 
-**Best for:** Teams with different experience levels or hierarchical routing.
+- When a customer selects a time slot, the system checks your ranked list and assigns the highest-priority provider who is free at that moment.
+- **Priority waterfall** — If your top-ranked provider is not available at the selected time, the system moves to the next in line and keeps going until a free provider is found. Your order is always respected.
+- **Combined availability** — Customers see a unified calendar of slots across your entire team. A slot appears as long as at least one provider is free.
+- **No provider picker on the booking page** — Customers see times, pick one, and confirm. Provider selection controls are not shown.
+- **Default order** — If you have not manually ranked your providers, the system defaults to the order they were added to the event type.
+
+To reorder providers, drag team members up or down in the event type editor. The order you set drives assignment logic.
+
+![Priority assignment — drag to reorder providers](../img/my-meetings/priority-assignment-editor.png)
+
+**Best for:** Service businesses where specific staff should be booked first (e.g., master stylist, top closer, most experienced practitioner), or hierarchical structures where senior members should handle most bookings.
+
+:::note
+Customers are not shown their assigned provider before confirming. The assignment happens at booking confirmation — the customer selects a time, confirms, and the system assigns. To allow customers to choose a specific provider, use the **Client selection** assignment method instead.
+:::
 
 ### Client selection
 
