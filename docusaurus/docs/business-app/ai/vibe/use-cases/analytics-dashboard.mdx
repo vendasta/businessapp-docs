@@ -1,0 +1,82 @@
+---
+title: "Analytics Dashboard with SSO"
+sidebar_label: "Analytics Dashboard with SSO"
+sidebar_position: 4
+draft: true
+description: "Build a sign-in-protected analytics dashboard showing real business data using Vibe."
+---
+
+import sharedConnectors from './img/vibe-sso-analytics-connectors.png';
+import ssoPage from './img/vibe-sso-page.png';
+
+# Analytics Dashboard with SSO
+
+A protected analytics dashboard is one of Vibe's more compelling use cases: a private area where the business owner or their team can sign in and see live performance data pulled directly from their Business App account. This example walks through building a review analytics dashboard with single sign-on authentication, using real reputation data from the account.
+
+## Before you start
+
+This use case requires two connectors, enabled in the correct order. Open **Project Settings**, scroll to **Shared connectors**, and turn them on in this sequence:
+
+1. Toggle **Single sign-on** on first.
+2. Toggle **Analytics** on.
+
+<img src={sharedConnectors} alt="Shared connectors section showing Single sign-on and Analytics toggles enabled" className="img-screenshot" />
+
+SSO must come first. The Analytics connector pulls data from authenticated APIs scoped to the signed-in user, and without an active SSO session those requests have nothing to run against. Both need to be on before you run any of the prompts below.
+
+## Step 1: Set up authentication
+
+Build the login layer first, before adding any data. Keeping authentication and data as separate prompts makes it easier to verify each piece is working before moving on.
+
+> Using SSO, I would like to create an authenticated dashboard area that lets users sign in. Display a user profile badge to show that they are logged in, and for now nothing else.
+
+Vibe adds a navbar with a sign-in option. When a user clicks it, they are redirected through Business App's SSO flow and returned to the dashboard as an authenticated user. Their name appears in the profile badge to confirm they are signed in.
+
+<img src={ssoPage} alt="Vibe-generated dashboard showing a navbar with a signed-in user profile badge" className="img-screenshot" />
+
+**Who can sign in:** Only users who are already members of the Business App account can authenticate. This is not an open login; people outside the business cannot sign in, even with a valid email address.
+
+**If this app will be embedded in an iframe:** SSO redirect flows are blocked by browser sandboxing when running inside an iframe. Add a note to your prompt to open the sign-in step in a pop-up window instead:
+
+> Using SSO, I would like to create an authenticated dashboard area. Open the sign-in flow in a pop-up window so it works when the page is embedded. Display a user profile badge to show that they are logged in, and for now nothing else.
+
+## Step 2: Add analytics data
+
+Once authentication is confirmed working, add the data. Vibe pulls from the same metrics that power the Executive Report, so any stat visible there is available here.
+
+> For the last 90 days, add my average review rating to the dashboard. Also add a bar chart that breaks down the total number of reviews received in that time period by star rating, from one to five stars.
+
+From that prompt, Vibe produces:
+
+- An average review rating KPI card for the past 90 days
+- A bar chart showing how many reviews landed at each star rating (1–5)
+
+The data is live and reflects actual reviews in the account, not placeholder values.
+
+## Step 3: Add a review breakdown table
+
+> Beneath the review rating cards, add a table breakdown of the individual reviews themselves.
+
+Vibe adds a table listing each review with its source (Google, Facebook, etc.). Review text availability depends on the platform.
+
+## What made this work
+
+**Authentication before data.** Running the SSO prompt first, with no data in it, kept the two concerns separate. If the login flow doesn't work, the SSO connector setup is the issue, not an analytics query. Mixing both into one prompt makes problems much harder to trace.
+
+**Describing the metric, not the widget.** The prompts asked for an average rating and a breakdown by number of stars, not a "chart" or a "widget." Vibe interpreted the intent and chose the right visualizations (a KPI card and a bar chart) on its own.
+
+**Building incrementally.** Each prompt added one piece. Starting with authentication, then a chart, then a table made each step verifiable before moving to the next.
+
+## Tips for this use case
+
+**Review data is a good starting point.** It's visual, immediately understandable, and most accounts have some activity to render. Once you've confirmed the Analytics connector is working with review data, expanding to other metrics is straightforward.
+
+**Many more metrics are available.** Vibe has access to the full set of metrics that power the Executive Report: listings data, social activity, ad performance, and more. Use plain language to describe what you want:
+
+> Add a card showing my total new leads in the last 30 days.
+
+> Show a chart of my Google Business Profile views over the last six months.
+
+If a metric appears in the Executive Report, it is likely available in Vibe.
+
+**This dashboard can be published to a custom domain.** Once the layout is ready, publish from Vibe and point a domain at it. Business App handles TLS automatically — no certificate setup required.
