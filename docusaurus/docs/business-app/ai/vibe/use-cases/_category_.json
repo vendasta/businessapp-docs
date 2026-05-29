@@ -2,7 +2,6 @@
   "label": "Use Cases",
   "position": 3,
   "link": {
-    "type": "doc",
-    "id": "business-app/ai/vibe/use-cases/index"
+    "type": "generated-index"
   }
 }
