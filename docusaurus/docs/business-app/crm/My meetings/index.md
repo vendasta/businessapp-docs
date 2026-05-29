@@ -24,6 +24,9 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 - **Microsoft Teams video conferencing integration**
 - **Multi‑host events (up to five hosts)**
 - **Groups and Service Menus** for organized booking catalogues
+- **Multi-Service Booking** — let customers book multiple services in a single session
+- **AI Chat & Voice Receptionist booking** — your AI employees handle multi-service bookings end-to-end
+- **Limit future meetings** — control how far ahead customers can schedule
 - **SMS confirmations and reminders** (requires Conversations AI Pro or Premium)
 
 ## Book a meeting
@@ -118,9 +121,13 @@ You can also configure additional options per event type. Settings here override
 
   ![Add to my website embed code](../img/my-meetings/add-to-website.png)
 
-- **Limit future meetings** — Control how far into the future meetings can be scheduled. Set limits by days, weeks, months, or a custom date range.
+- **Limit future meetings** — Control how far into the future meetings can be scheduled. Two options are available:
+  - **Rolling window** — Enter a number and select Days, Weeks, or Months (e.g., "4 weeks into the future"). The window advances daily, keeping availability a fixed look-ahead from today. Use this for ongoing event types.
+  - **Fixed date range** — Set a specific start and end date. Useful for seasonal promotions, limited-availability campaigns, or events with a hard end date.
 
-  ![Limit future meetings](../img/my-meetings/booking-horizon.png)
+  If no limit is set, bookings are accepted with no future date restriction.
+
+  ![Limit future meetings — rolling window and fixed date range options](../img/my-meetings/limit-future-meetings-options.png)
 
 ![New event type options](../img/my-meetings/new-event-type-options.png)
 
