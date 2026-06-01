@@ -6,27 +6,58 @@ tags: [ai-workforce, social-media, social-ai-premium]
 keywords: [ai social media manager, social calendar, social media automation, ai image generation, social posts, ai workforce, social ai premium]
 ---
 
-The AI Social Media Manager is a new AI employee in AI Workforce. It runs your social media program autonomously — generating a full social calendar on a schedule, writing platform-ready posts, sourcing or generating images, and drafting, scheduling, or publishing content across every connected network.
+The **AI Social Media Manager** is an AI employee that runs your social media program autonomously. It generates a full social calendar on a schedule you define, writes platform-ready posts, sources or generates images, and drafts, schedules, or publishes content across every connected network.
 
 You can also work with it conversationally at any time: generate posts, pull performance data, update drafts, or delete content through a natural language chat interface inside Business App.
 
-:::note
 The AI Social Media Manager is available in the **Social AI Premium** edition for single-location businesses.
-:::
 
----
+## Why is the AI Social Media Manager important?
 
-## What's new
+Maintaining an active, varied presence across every social network takes constant effort — researching topics, tailoring posts per platform, sourcing images, and keeping a steady cadence. Without a system to run your social program, you may encounter:
 
-- A new AI employee in AI Workforce designed specifically for social media management
-- A built-in **Social Calendar Generation trigger** that runs your social program automatically on a schedule you define
-- Eight pre-configured capabilities covering the full content lifecycle — from research and writing to image generation and publishing
-- Conversational access to generate posts, review performance, and manage content on demand
-- Email and in-app notifications when the AI drafts or schedules posts
+- Inconsistent posting that weakens reach and engagement
+- Time spent writing and reformatting the same content for each network
+- Generic posts that ignore current trends, observances, and industry news
+- Difficulty understanding what content is actually performing
 
----
+The AI Social Media Manager addresses these challenges by automating the full content lifecycle — from research and writing to image generation and publishing — across all your connected networks, while still giving you conversational control over every post.
 
-## Default capabilities
+## What's included with the AI Social Media Manager?
+
+- **Automated social calendar generation**: Generate a complete social calendar automatically on a schedule you define, using the Social Calendar Generation trigger
+- **Platform-ready posts**: Write posts adapted per network, with tone, hashtags, CTAs, and platform-specific variations
+- **Image sourcing and generation**: Generate images sized for each platform with AI, or source royalty-free images from Pexels and Pixabay
+- **Multi-network publishing**: Draft, schedule, or publish content across every connected social network
+- **Conversational performance insights**: Ask about engagement metrics and content performance through chat to inform future posts
+- **Conversational post management**: Generate, edit, and delete drafts and scheduled posts through chat, without leaving Business App
+- **Notifications**: Receive email and in-app notifications when the AI drafts or schedules posts
+
+## How to set up the AI Social Media Manager
+
+### Core requirements
+
+Ensure your setup includes:
+
+- Social AI Premium edition access
+- One or more connected social networks under integrations
+- A single-location business profile
+
+### Step 1: Set up your AI Social Media Manager profile
+
+While the AI Social Media Manager can start working with minimal configuration, setting up its profile helps ensure it represents your brand accurately and is easy to identify within your AI Workforce.
+
+1. Go to `AI > AI Workforce`
+2. Click `Configure` on the AI Social Media Manager
+3. Name your AI and upload an identifying image
+
+This helps you recognize the AI Social Media Manager during configuration and when reviewing its activity.
+
+![AI Social Media Manager configuration screen](../img/AI-SMM-configure.png)
+
+### Step 2: Understand capabilities
+
+The AI Social Media Manager is released with eight core capabilities that cover the full content lifecycle. Each capability is fully editable and can be configured to match how you want the AI to research, write, illustrate, and publish your posts. You can also add custom capabilities using **+ Add Capability**.
 
 | Capability | What it does |
 | --- | --- |
@@ -39,11 +70,15 @@ The AI Social Media Manager is available in the **Social AI Premium** edition fo
 | **Social Post Performance Data** | Retrieves engagement metrics across networks to inform future content and answer performance questions conversationally |
 | **Draft, Schedule, and Publish Social Posts** | Saves generated posts as drafts, scheduled posts, or live publications based on your configuration |
 
-All eight capabilities are fully editable. You can also add custom capabilities using **+ Add Capability**.
+### Step 3: Add knowledge sources
 
----
+Add relevant knowledge base content to help the AI Social Media Manager write accurate, on-brand posts. This can include information about your products, services, audience, and brand voice. For a complete guide, see the [Knowledge Sources section in the AI Workforce Overview](./ai_workforce_overview.md).
 
-## Social Calendar Generation trigger
+:::note
+Knowledge sources used by the AI Social Media Manager are shared with **Write with AI** in Social Marketing. The Social Post Generation Instructions capability governs Write with AI inside Social AI only — it does not affect the standalone Social Marketing composer.
+:::
+
+### Step 4: Configure the Social Calendar Generation trigger
 
 The trigger controls when the AI runs autonomously.
 
@@ -55,37 +90,32 @@ The trigger controls when the AI runs autonomously.
 | **Start date** | Date the trigger begins | — |
 | **End date** | Date the trigger stops | — |
 
----
+![Social Calendar Generation trigger settings](../img/AI-SMM-trigger-settings.jpg)
 
-## Social Calendar Generation capability settings
+### Step 5: Configure the Social Calendar Generation capability
 
 When the trigger fires, the AI reads these settings to build and publish the calendar.
 
 | Setting | Description | Default |
 | --- | --- | --- |
-| **Goal** | What the posts should achieve | — |
+| **Goal** | What the posts should achieve | e.g., "Boost brand awareness and drive more leads" |
 | **Total posts** | Number of unique post topics per run; each topic produces one post per active network | 3 |
 | **Content split** | Percentage mix across content types (must total 100%) | 40% Business · 30% Engagement · 30% Industry |
 | **Post length** | Length and structure of each post | 2–3 sentences: hook → value → call to action |
 | **Post optimization** | How posts are adapted per network | Unique variation per network |
 | **Images** | Image source — AI-generated or Stock | AI-generated |
 | **Networks** | Which platforms to post to | Active Networks (all connected networks) |
+| **Cadence** | How far out posts are scheduled — accepts natural language (e.g., "next week", "the next 30 days") | Next week |
+| **Posting time** | What time posts go live — accepts a specific time or a preference. When set to **Best time**, the AI selects the highest-engagement window per network using performance data | Best time |
 | **Save as** | Draft, Scheduled, or Published | Draft |
 
----
+![Generate Social Calendar capability settings](../img/AI-SMM-calendar-capability.jpg)
 
-## How to get started
+### Step 6: Start using the AI Social Media Manager
 
-1. Go to `AI > AI Workforce` and open the **AI Social Media Manager**
-2. *(Optional)* Rename the employee and update the profile photo
-3. Open the **Social Calendar Generation** trigger and set your frequency, time, time zone, start date, and end date
-4. Open the **Social Calendar Generation** capability and configure your goal, post count, content split, image source, networks, and save behavior
-5. Review and adjust any other default capabilities as needed
-6. Save — the AI will run automatically on your defined schedule
+Save your configuration, and the AI Social Media Manager runs automatically on your defined schedule. Each run generates the calendar, writes the posts, attaches images, and drafts, schedules, or publishes them per your settings.
 
-Once active, each run generates the calendar, writes the posts, attaches images, and drafts, schedules, or publishes them per your settings.
-
----
+You can also chat with the AI Social Media Manager at any time to generate posts or a full calendar on demand, independent of the trigger schedule.
 
 ## Working conversationally
 
@@ -98,11 +128,15 @@ Chat with the AI Social Media Manager at any time to:
 
 To edit a draft or scheduled post manually, click the **kebab menu** on the post and select **Edit**, or use the **AI Assist** panel.
 
+![Editing a draft post from the kebab menu](../img/AI-SMM-edit-post.jpg)
+
+Use the **AI Image Assist** panel within the post editor to regenerate, upload, or remove the post image.
+
+![AI Image Assist panel in the post editor](../img/AI-SMM-edit-image.jpg)
+
 :::note
 To edit images, social networks, or advanced post options, click **Launch** to open Social Marketing. This is the only action that takes you outside of Business App.
 :::
-
----
 
 ## Recommended models
 
@@ -111,15 +145,17 @@ To edit images, social networks, or advanced post options, click **Launch** to o
 | Written content generation | Gemini Flash Latest |
 | Image generation | Nano Banana 2 |
 
----
-
 ## Notifications
 
-When the AI Social Media Manager drafts or schedules posts, you receive an **email notification** and an **in-app notification** in Business App. To disable either, click the **bell icon** inside the AI Social Media Manager and turn off the relevant notification type.
+When the AI Social Media Manager drafts or schedules posts, you receive an **email notification** and an **in-app notification** in Business App.
 
----
+![Email notification for a new social calendar](../img/AI-SMM-email-notification.png)
 
-## Frequently asked questions
+To disable either, click the **bell icon** inside the AI Social Media Manager and turn off the relevant notification type for **New Social Calendar Draft Post** and **New Social Calendar Scheduled Post**.
+
+![Notification settings for social calendar posts](../img/AI-SMM-notification-settings.png)
+
+## Frequently Asked Questions
 
 <details>
 <summary>Which edition includes the AI Social Media Manager?</summary>
@@ -169,5 +205,19 @@ Yes. You can chat with the AI Social Media Manager at any time to generate posts
 <summary>Can I schedule draft posts directly in Business App?</summary>
 
 Yes. You can schedule draft posts from Business App. Note that scheduling drafts is not available from the Social Marketing app.
+
+</details>
+
+<details>
+<summary>What language are posts written in?</summary>
+
+The Social Post Generation Instructions capability includes localization rules that align each post with your business's region and language. Adjust the localization settings in that capability to change the language or regional focus.
+
+</details>
+
+<details>
+<summary>Why does the AI generate different content each run?</summary>
+
+The AI Social Media Manager operates in a reasoning mode — before generating, it weighs your configured instructions, your business knowledge, and current external trends. Because it factors in fresh signals (trending topics, observance days, performance data) on every run, output varies from run to run rather than repeating a fixed template.
 
 </details>

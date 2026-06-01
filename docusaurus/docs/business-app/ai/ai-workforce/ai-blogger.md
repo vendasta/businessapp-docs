@@ -6,28 +6,57 @@ tags: [ai-workforce, blogging, social-ai-premium]
 keywords: [ai blogger, blog calendar, wordpress, seo blog posts, ai workforce, social ai premium, blog automation]
 ---
 
-The AI Blogger is a new AI employee in AI Workforce. It runs your blogging program autonomously — generating a complete blog calendar on a schedule, writing long-form SEO-optimized posts, sourcing or generating featured images, and drafting, scheduling, or publishing directly to WordPress.
+The **AI Blogger** is an AI employee that runs your blogging program autonomously. It generates a complete blog calendar on a schedule you define, writes long-form SEO-optimized posts, sources or generates featured images, and drafts, schedules, or publishes directly to WordPress.
 
 You can also work with it conversationally at any time: draft new posts, refine existing content, reschedule, or delete posts through a natural language chat interface inside Business App.
 
-:::note
 The AI Blogger is available in the **Social AI Premium** edition for single-location businesses. Blog publishing requires a connected **WordPress** site.
-:::
 
----
+## Why is the AI Blogger important?
 
-## What's new
+Publishing consistent, search-optimized blog content takes time and editorial discipline that's hard to sustain alongside day-to-day work. Without a system to run your blogging program, you may encounter:
 
-- A new AI employee in AI Workforce designed specifically for blogging
-- A built-in **Blog Calendar Generation trigger** that runs your blog program automatically on a schedule you define
-- Seven pre-configured capabilities covering the full content lifecycle — from topic research and writing to image generation and WordPress publishing
-- Long-form posts (up to 1,450–1,550 words) optimized for SEO, Google Snippets, and AI Overviews by default
-- Conversational post management — edit, reschedule, and delete drafts and scheduled posts without leaving Business App
-- Email and in-app notifications when the AI drafts or schedules posts
+- Long gaps between posts that hurt search visibility and audience trust
+- Time spent researching topics, writing, and sourcing images for every post
+- Content that isn't structured for Google Snippets and AI Overviews
+- Drafts that never make it to the schedule or to WordPress
 
----
+The AI Blogger addresses these challenges by automating the full content lifecycle — from topic research and writing to image generation and WordPress publishing — on a schedule you control, while still letting you review and refine every post.
 
-## Default capabilities
+## What's included with the AI Blogger?
+
+- **Automated blog calendar generation**: Generate a complete blog calendar automatically on a schedule you define, using the Blog Calendar Generation trigger
+- **Long-form SEO-optimized posts**: Produce posts of up to 1,450–1,550 words optimized for SEO, Google Snippets, and AI Overviews by default
+- **Image sourcing and generation**: Generate WordPress-optimized featured images with AI, or source royalty-free images from Pexels and Pixabay
+- **Direct WordPress publishing**: Draft, schedule, or publish posts directly to a connected WordPress site
+- **Conversational post management**: Edit, reschedule, and delete drafts and scheduled posts through chat, without leaving Business App
+- **Notifications**: Receive email and in-app notifications when the AI drafts or schedules posts
+
+## How to set up the AI Blogger
+
+### Core requirements
+
+Ensure your setup includes:
+
+- Social AI Premium edition access
+- A connected WordPress site under integrations
+- A single-location business profile
+
+### Step 1: Set up your AI Blogger profile
+
+While the AI Blogger can start working with minimal configuration, setting up its profile helps ensure it represents your brand accurately and is easy to identify within your AI Workforce.
+
+1. Go to `AI > AI Workforce`
+2. Click `Configure` on the AI Blogger
+3. Name your AI and upload an identifying image
+
+This helps you recognize the AI Blogger during configuration and when reviewing its activity.
+
+![AI Blogger configuration screen](../img/AI-Blogger-configure.jpg)
+
+### Step 2: Understand capabilities
+
+The AI Blogger is released with seven core capabilities that cover the full content lifecycle. Each capability is fully editable and can be configured to match how you want the AI to research, write, illustrate, and publish your posts. You can also add custom capabilities using **+ Add Capability**.
 
 | Capability | What it does |
 | --- | --- |
@@ -39,11 +68,15 @@ The AI Blogger is available in the **Social AI Premium** edition for single-loca
 | **List Integration Connections** | Fetches your active blog platform connections so the AI publishes only to connected WordPress sites |
 | **Manage Blog Posts** | Publishes posts to WordPress and lets you list, edit, reschedule, and delete drafts and scheduled posts conversationally |
 
-All seven capabilities are fully editable. You can also add custom capabilities using **+ Add Capability**.
+Click any capability to open and edit it. For example, the **Customize Blog Post Instructions** capability controls how each post is written:
 
----
+![Customize Blog Post Instructions capability](../img/AI-Blogger-blog-post-instructions.jpg)
 
-## Blog Calendar Generation trigger
+### Step 3: Add knowledge sources
+
+Add relevant knowledge base content to help the AI Blogger write accurate, on-brand posts. This can include information about your products, services, audience, and brand voice. For a complete guide, see the [Knowledge Sources section in the AI Workforce Overview](./ai_workforce_overview.md).
+
+### Step 4: Configure the Blog Calendar Generation trigger
 
 The trigger controls when the AI runs autonomously.
 
@@ -55,9 +88,9 @@ The trigger controls when the AI runs autonomously.
 | **Start date** | Date the trigger begins | — |
 | **End date** | Date the trigger stops | — |
 
----
+![Blog Calendar Generation trigger settings](../img/AI-Blogger-trigger-settings.jpg)
 
-## Generate Blog Calendar capability settings
+### Step 5: Configure the Generate Blog Calendar capability
 
 When the trigger fires, the AI reads these settings to build and publish the calendar.
 
@@ -76,21 +109,11 @@ When the trigger fires, the AI reads these settings to build and publish the cal
 **Save as = Published** publishes immediately on every run and is not recommended for a future calendar — use **Schedule** instead.
 :::
 
----
+### Step 6: Start using the AI Blogger
 
-## How to get started
+Save your configuration, and the AI Blogger runs automatically on your defined schedule. Each run generates the calendar, writes the blog post, attaches the featured image, and drafts, schedules, or publishes it per your settings.
 
-1. Go to `AI > AI Workforce` and open the **AI Blogger**
-2. *(Optional)* Rename the employee and update the profile photo
-3. Connect a **WordPress** site under integrations if not already connected
-4. Open the **Blog Calendar Generation** trigger and set your frequency, time, time zone, start date, and end date
-5. Open the **Generate Blog Calendar** capability and configure your goal, post count, blog length, image source, networks, cadence, posting time, and save behavior
-6. Review and adjust any other default capabilities as needed (e.g., refine the blog instructions, select your preferred image generation model)
-7. Save — the AI will run automatically on your defined schedule
-
-Once active, each run generates the calendar, writes the blog post, attaches the featured image, and drafts, schedules, or publishes it per your settings.
-
----
+You can also chat with the AI Blogger at any time to generate a new post or calendar on demand, independent of the trigger schedule.
 
 ## Managing posts after generation
 
@@ -99,9 +122,13 @@ Once active, each run generates the calendar, writes the blog post, attaches the
 - **Conversationally** — chat with the AI Blogger to update any draft or scheduled post (e.g., "Update Tuesday's draft to mention our new spring promotion")
 - **Manually** — click the **kebab menu (⋮)** on any post to open the post editor, then use the **AI Assist panel** for AI-powered rewrites
 
+![Editing a blog post in the post editor](../img/AI-Blogger-edit-post.jpg)
+
 ### Editing the featured image
 
 Click the **kebab menu (⋮)** on any post, select **Edit**, and use the **AI Image Assist panel** to regenerate or refine the featured image.
+
+![AI Image Assist panel for the featured image](../img/AI-Blogger-edit-image.jpg)
 
 ### Deleting posts
 
@@ -112,8 +139,6 @@ Click the **kebab menu (⋮)** on any post, select **Edit**, and use the **AI Im
 
 Drafts can be moved directly to the schedule from the Business App post list — no need to log into WordPress.
 
----
-
 ## Recommended models
 
 | Use case | Recommended model |
@@ -121,15 +146,11 @@ Drafts can be moved directly to the schedule from the Business App post list —
 | Written content generation | Gemini Flash Latest |
 | Image generation | Nano Banana 2 |
 
----
-
 ## Notifications
 
 When the AI Blogger drafts or schedules posts, you receive an **email notification** and an **in-app notification** in Business App. To disable either, click the **bell icon** inside the AI Blogger and turn off the relevant notification type.
 
----
-
-## Frequently asked questions
+## Frequently Asked Questions
 
 <details>
 <summary>Which edition includes the AI Blogger?</summary>
@@ -141,7 +162,7 @@ The AI Blogger is available in the Social AI Premium edition.
 <details>
 <summary>Which blog platforms are supported?</summary>
 
-WordPress is supported at launch. Connect your WordPress site under integrations before running the AI Blogger.
+WordPress is supported. Connect your WordPress site under integrations before running the AI Blogger.
 
 </details>
 
@@ -193,5 +214,19 @@ Yes. The AI Blogger automatically checks for content duplication against previou
 <summary>Can I run the AI Blogger manually outside of the schedule?</summary>
 
 Yes. You can chat with the AI Blogger at any time to generate a new post or calendar on demand, independent of the trigger schedule.
+
+</details>
+
+<details>
+<summary>What language are the blog posts written in?</summary>
+
+The Customize Blog Post Instructions capability includes localization rules that align each post with your business's region and language. Adjust the localization settings in that capability to change the language or regional focus.
+
+</details>
+
+<details>
+<summary>Why does the AI generate different content each run?</summary>
+
+The AI Blogger operates in a reasoning mode — before generating, it weighs your configured instructions, your business knowledge, and trending customer questions surfaced through web search. Because it factors in fresh search intent on every run, output varies from run to run rather than repeating a fixed template.
 
 </details>
