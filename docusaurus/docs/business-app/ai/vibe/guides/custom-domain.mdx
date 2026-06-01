@@ -1,0 +1,40 @@
+---
+title: Custom Domains
+sidebar_position: 4
+unlisted: false
+---
+
+# Custom Domains
+
+Every Vibe project gets a default published URL automatically. On the Professional plan, you can also publish to a domain you own. TLS is provisioned automatically for both your default URL and any custom domain, so you don't need to purchase or manage certificates.
+
+## Your default domain
+
+Every project includes a default URL that's ready as soon as you publish. You can view and edit this URL in the **Publish** section of your project. No DNS setup is required. It's provisioned and secured automatically.
+
+<img src={require('./img/vibe-publish-url.png').default} alt="Vibe project publish URL" width="60%" />
+
+Visiting the bare domain (without `www`) redirects to the full URL automatically.
+
+## Requirements for custom domains
+
+Custom domains require the Professional plan. If you're on a different plan, upgrade first through the self-checkout flow in Business App. See [Credits](../credits.md) for information on plan upgrades.
+
+## Add a Custom Domain
+
+1. Open your Vibe project.
+2. Go to **Publish**.
+3. Under **Custom Domain**, enter your domain name and click **Add**.
+4. Follow the DNS verification steps. Vibe displays the records you need to add with your domain registrar.
+
+<img src={require('./img/vibe-custom-dns.png').default} alt="DNS verification records displayed in Vibe" width="100%" />
+
+5. Once your DNS records propagate and verification completes, Vibe provisions the SSL certificate automatically.
+
+<!-- screenshot needed: DNS verification records panel in Publish workflow -->
+
+Your app becomes available at your custom domain after the certificate is provisioned. If you add a `www` subdomain, Vibe automatically redirects it to your main domain.
+
+## Remove a Custom Domain
+
+To remove a custom domain, go to **Publish** and remove it with one click. Your project continues to be available at its default URL.
