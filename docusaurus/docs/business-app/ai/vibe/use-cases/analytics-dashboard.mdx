@@ -20,25 +20,28 @@ This use case requires two connectors, enabled in the correct order. Open **Proj
 1. Toggle **Single sign-on** on first.
 2. Toggle **Analytics** on.
 
-<img src={sharedConnectors} alt="Shared connectors section showing Single sign-on and Analytics toggles enabled" className="img-screenshot" />
-
 SSO must come first. The Analytics connector pulls data from authenticated APIs scoped to the signed-in user, and without an active SSO session those requests have nothing to run against. Both need to be on before you run any of the prompts below.
+
+
+<img src={sharedConnectors} alt="Shared connectors section showing Single sign-on and Analytics toggles enabled" className="img-screenshot" />
 
 ## Step 1: Set up authentication
 
 Build the login layer first, before adding any data. Keeping authentication and data as separate prompts makes it easier to verify each piece is working before moving on.
 
-> Using SSO, I would like to create an authenticated dashboard area that lets users sign in. Display a user profile badge to show that they are logged in, and for now nothing else.
+> Using SSO, I would like to create an authenticated dashboard area. Open the sign-in flow in a pop-up window so it works when the page is embedded. Display a user profile badge to show that they are logged in, and for now nothing else.
 
-Vibe adds a navbar with a sign-in option. When a user clicks it, they are redirected through Business App's SSO flow and returned to the dashboard as an authenticated user. Their name appears in the profile badge to confirm they are signed in.
-
-<img src={ssoPage} alt="Vibe-generated dashboard showing a navbar with a signed-in user profile badge" className="img-screenshot" />
+Vibe adds a navbar with a sign-in option. When a user clicks it, a pop-up window opens for the sign-in flow. Once authenticated, the pop-up closes and the user's name appears in the profile badge to confirm they are signed in.
 
 **Who can sign in:** Only users who are already members of the Business App account can authenticate. This is not an open login; people outside the business cannot sign in, even with a valid email address.
 
-**If this app will be embedded in an iframe:** SSO redirect flows are blocked by browser sandboxing when running inside an iframe. Add a note to your prompt to open the sign-in step in a pop-up window instead:
+<img src={ssoPage} alt="Vibe-generated dashboard showing a navbar with a signed-in user profile badge" className="img-screenshot" />
 
-> Using SSO, I would like to create an authenticated dashboard area. Open the sign-in flow in a pop-up window so it works when the page is embedded. Display a user profile badge to show that they are logged in, and for now nothing else.
+:::note
+
+**If you see "refused to connect" when signing in:** This happens when the sign-in flow is not set up to open in a pop-up window. The SSO provider blocks its login page from loading inside an iframe to prevent clickjacking attacks, and Vibe's built-in preview window runs inside one. To sign in during testing, open your browser's Developer Tools (right-click anywhere on the page and select **Inspect**, or press `F12`), then use the search function to look for `sandbox`. This will surface the Vibe app's URL in the page source. Right-click the link and open it in a new tab. This breaks the page out of the iframe and lets you sign in with your Business App credentials normally. When the dashboard is published, it runs as a standalone page and the restriction does not apply.
+
+:::
 
 ## Step 2: Add analytics data
 
@@ -79,4 +82,4 @@ Vibe adds a table listing each review with its source (Google, Facebook, etc.). 
 
 If a metric appears in the Executive Report, it is likely available in Vibe.
 
-**This dashboard can be published to a custom domain.** Once the layout is ready, publish from Vibe and point a domain at it. Business App handles TLS automatically — no certificate setup required.
+**This dashboard can be published to a custom domain.** Once the layout is ready, publish from Vibe and point a domain at it. Business App handles TLS automatically with no certificate setup required.
