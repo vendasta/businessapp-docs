@@ -6,7 +6,7 @@ unlisted: false
 
 # Analytics
 
-The Analytics connector turns your app into a multi-location dashboard. It surfaces metrics like sales per location, top items, customer trends, and time-series data — without you wiring up data plumbing yourself. Vibe builds the UI; the connector provides the data.
+The Analytics connector gives your Vibe app access to live Business App data. It surfaces metrics like reviews, reputation, leads, social activity, and more — without you wiring up data plumbing yourself. Vibe builds the UI; the connector provides the data.
 
 ## What it layers on
 
@@ -31,7 +31,7 @@ With both enabled, your dashboard prompts are wired to live data scoped to the s
 
 Reach for Analytics when:
 
-- You operate multiple locations and want a single view of how each is doing.
+- You want a dashboard showing live performance data from your Business App account.
 - You want a stakeholder dashboard for a business owner or manager.
 - You want a trend view (last 30 days, last quarter) of a key metric.
 - You want a member-facing summary, like a loyalty status page or an account-activity panel.
