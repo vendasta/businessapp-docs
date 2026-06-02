@@ -1,7 +1,7 @@
 ---
 title: "Build a Custom Multi-Location Dashboard"
 sidebar_label: "Custom Multi-Location Dashboard"
-sidebar_position: 3
+sidebar_position: 4
 draft: false
 description: "Use Vibe to build a gated, custom-branded multi-location performance dashboard for your team, organized around the KPIs that matter to your business."
 ---
@@ -24,7 +24,12 @@ The SSO connector signs in users with their existing Business App account creden
 
 ## Before you start
 
-Enable the **SSO connector** in **Project Settings → Shared connectors** before prompting for a sign-in screen. The SSO connector is what gates the dashboard to members of your Business App account. If it isn't enabled first, the sign-in UI will appear but authentication will not complete.
+This use case requires two connectors, enabled in the correct order. Open **Project Settings**, scroll to **Shared connectors**, and turn them on in this sequence:
+
+1. Toggle **Single sign-on** on first.
+2. Toggle **Analytics** on.
+
+SSO must come first. It gates the dashboard to members of your Business App account — if it isn't enabled first, the sign-in UI will appear but authentication will not complete. Both need to be on before you run any of the prompts below.
 
 ## The prompts
 

@@ -187,13 +187,14 @@ def main():
     # Collect all markdown files
     markdown_files = []
     for directory in ARTICLE_DIRS:
-        for path in Path(directory).rglob("*.md"):
-            # Skip README, changelog, and hidden files
-            if path.name.lower() in ("readme.md", "changelog.md", "contributing.md"):
-                continue
-            if any(part.startswith(".") for part in path.parts):
-                continue
-            markdown_files.append(str(path))
+        for ext in ("*.md", "*.mdx"):
+            for path in Path(directory).rglob(ext):
+                # Skip README, changelog, and hidden files
+                if path.name.lower() in ("readme.md", "changelog.md", "contributing.md"):
+                    continue
+                if any(part.startswith(".") for part in path.parts):
+                    continue
+                markdown_files.append(str(path))
 
     print(f"Found {len(markdown_files)} Markdown files to check.\n")
 
