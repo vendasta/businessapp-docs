@@ -61,7 +61,7 @@ If Vibe picks the wrong ratio, ask it to regenerate:
 
 ## Next Steps
 
-- [Visual Editor & Themes](./visual-editor.md) — Fine-tune how images fit into your design
+- [Visual Editor](./visual-editor.md) — Fine-tune how images fit into your design
 - [Prompting Library](./prompting-library.md) — See image generation prompts organized by use case
 - [Connectors](./connectors/index.md) — Add live data alongside your generated visuals
 
