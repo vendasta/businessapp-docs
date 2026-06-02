@@ -157,5 +157,5 @@ Trying to build an entire complex application in a single prompt usually leads t
 
 - [Prompting Library](./prompting-library.md) — Ready-made prompts organized by intent you can paste and adapt
 - [Cloning a Reference Site](./clone-from-url.md) — Use a URL as your starting point instead of describing from scratch
-- [Visual Editor & Themes](./visual-editor.md) — Make targeted element-level edits without writing a prompt
+- [Visual Editor](./visual-editor.md) — Make targeted element-level edits without writing a prompt
 

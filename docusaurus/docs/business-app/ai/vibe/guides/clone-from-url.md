@@ -51,12 +51,11 @@ Vibe replaces sections rather than rebuilding everything. Useful when only part 
 
 - A starting point for a site that doesn't exist yet, when describing the aesthetic in words is harder than just pointing.
 - Reproducing a layout pattern (a hero structure, a pricing grid, a testimonial carousel) that you've seen and liked.
-- Producing a custom theme from a real-world color palette without picking the colors yourself.
 
 ## What clone isn't
 
 - A pixel-perfect production copy. Clone is a starting point, not a forgery.
-- A way to circumvent the original site's content, branding, or trademarks. The captured branding gets turned into a *theme* you can edit, and the captured content is editable copy you should replace with your own. Use the clone for structure and inspiration; supply your own brand and content for anything you ship.
+- A way to circumvent the original site's content, branding, or trademarks. The captured branding becomes editable colors and styles, and the captured content is editable copy you should replace with your own. Use the clone for structure and inspiration; supply your own brand and content for anything you ship.
 - A guarantee of fidelity for complex interactions (animations, custom JavaScript behavior, dynamic data loads). Clone reproduces the static layout and content; you'll add interactivity in follow-up prompts.
 
 ## Tips for better results
@@ -67,7 +66,7 @@ Vibe replaces sections rather than rebuilding everything. Useful when only part 
 
 ## Next Steps
 
-- [Visual Editor & Themes](./visual-editor.md) — Apply a different theme or tweak elements in your cloned app
+- [Visual Editor](./visual-editor.md) — Tweak elements in your cloned app visually
 - [Prompting Library](./prompting-library.md) — Refining recipes for polishing a clone after the first generation
 - [Connectors](./connectors/index.md) — Wire your cloned app into forms, analytics, and sign-on
 

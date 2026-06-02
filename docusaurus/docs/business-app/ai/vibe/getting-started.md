@@ -118,7 +118,7 @@ At the bottom of the chat panel, you find:
 Use the tabs at the top to switch between views:
 
 - **Preview** — Live preview of your built application
-- **Design** — Visual editor for themes, colors, and element-level edits. See [Visual Editor](./guides/visual-editor.md).
+- **Design** — Visual editor for colors and element-level edits. See [Visual Editor](./guides/visual-editor.md).
 - **Code** — File explorer and code editor to view or manually edit source files
 
 ![Code mode with the file tree open and App.tsx loaded in the editor](./img/code-view.png)
@@ -144,6 +144,6 @@ The top-right toolbar provides:
 ## Next Steps
 
 - [Prompting Guide](./guides/prompting.md) — Learn the principles behind effective prompts
-- [Visual Editor & Themes](./guides/visual-editor.md) — Apply themes and make targeted edits without prompts
+- [Visual Editor](./guides/visual-editor.md) — Make targeted edits without prompts
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
 

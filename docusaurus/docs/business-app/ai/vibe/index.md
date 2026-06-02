@@ -50,8 +50,12 @@ Every generation produces a structured plan that drives the run. The plan, the a
 ### Cloning a reference site
 Paste a URL and Vibe captures the screenshot, branding, layout, and content of that page, then scaffolds a faithful clone you can refine. The captured colors become a custom theme automatically. See [Cloning a reference site](./guides/clone-from-url.md).
 
-### Visual Editor & Themes
-Turn on the **Visual edits** button in the chat composer to browse pre-built color themes, toggle between light and dark mode, and make targeted edits by clicking elements in the preview. When you click an element, Vibe gets exact source context (file, line, JSX tag, classes), so any change you ask for lands precisely on the element you selected. See [Visual editor and themes](./guides/visual-editor.md).
+### Visual Editor
+Turn on the **Visual edits** button in the chat composer to make targeted edits by clicking elements in the preview. When you click an element, Vibe gets exact source context (file, line, JSX tag, classes), so any change you ask for lands precisely on the element you selected. See [Visual Editor](./guides/visual-editor.md).
+
+<!-- THEMES: restore the following to the section above when themes feature launches:
+"browse pre-built color themes, toggle between light and dark mode, and make targeted edits..."
+-->
 
 ### Clarifying Questions
 When your request is ambiguous, Vibe pauses and asks before going further. Questions arrive as structured prompts — pick a chip, confirm yes or no, or type a one-line answer. The conversation resumes the moment you respond.
@@ -132,7 +136,7 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 - [Business Knowledge](./guides/business-knowledge.md) — Use real business details in your generated apps
 - [Prompting Guide](./guides/prompting.md) — Write prompts that get better results
 - [Cloning a Reference Site](./guides/clone-from-url.md) — Scaffold an app from any URL
-- [Visual Editor & Themes](./guides/visual-editor.md) — Apply themes and edit elements visually
+- [Visual Editor](./guides/visual-editor.md) — Edit elements visually without prompts
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
 - [Images](./guides/image-generation.md) — Generate images from a prompt or import your own
 - [Connectors](./guides/connectors/index.md) — Wire your app into forms, analytics, and sign-on
