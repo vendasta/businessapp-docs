@@ -6,7 +6,9 @@ unlisted: false
 
 # Visual Editor & Themes
 
-Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Switch to **Design** mode using the tab at the top of the editor.
+Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Turn on the **Visual edits** button in the chat composer to enter design mode.
+
+![The Vibe editor with the chat composer at the bottom left. The Visual edits button sits in the composer toolbar next to the add and Code controls, with the live application preview filling the panel on the right.](../img/design-mode-themes.png)
 
 ## Theme System
 
@@ -22,8 +24,6 @@ In Design mode, the left panel shows the **Themes** tab with:
 
 Available themes include:
 - Default, Glacier, Harvest, Lavender, Emerald, Coral, Midnight, Sand, Rose, Sunflower, Crimson, Slate, Ocean, and more.
-
-![Design mode Themes tab with Light selected, Default theme active, and the color palette list (Default, Glacier, Harvest, Lavender, Emerald) on the left next to the live application preview.](../img/design-mode-themes.png)
 
 ### Applying a Theme
 
