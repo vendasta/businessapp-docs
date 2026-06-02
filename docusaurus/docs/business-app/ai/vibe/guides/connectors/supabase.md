@@ -2,7 +2,6 @@
 title: Supabase Backend
 sidebar_label: Supabase Backend
 sidebar_position: 5
-draft: true
 ---
 
 # Supabase Backend
