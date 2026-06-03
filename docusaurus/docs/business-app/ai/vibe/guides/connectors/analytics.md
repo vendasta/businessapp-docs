@@ -21,7 +21,7 @@ Because the data is pulled from authenticated APIs scoped to the signed-in membe
 The Analytics connector requires **Single sign-on** to be enabled. Analytics data is pulled from authenticated APIs scoped to a signed-in user — without SSO, there is no authenticated session to make those requests against.
 
 To set up both:
-1. Open **Project Settings** and scroll to **Shared connectors**.
+1. From the projects list click **Configure**, or inside the project click **+** in the chat box and select **Connectors**.
 2. Toggle **Single sign-on** on first.
 3. Toggle **Analytics** on.
 

@@ -8,15 +8,16 @@ unlisted: false
 
 Connectors let your Vibe-built app do real work, not just look like it could. Each connector is a thin layer over a Business App service: instead of mocking a contact form or hardcoding a fake login button, the generated UI hooks into the live platform feature behind it. You ask for the behavior in plain English; the supervisor agent activates the connectors that are turned on for your project.
 
-There are three connectors today:
+There are four connectors today:
 
 - [Single sign-on](./single-sign-on.md) — let your customers sign in with their existing account.
 - [Forms](./forms) — capture form submissions from your app.
 - [Analytics](./analytics.md) — surface in-app metrics for signed-in users.
+- [Supabase](./supabase.md) — connect your app to a Supabase database.
 
 ## Enabling a connector
 
-Connectors are managed per project, in **Project Settings**. Open a project, click the settings icon in the toolbar, and scroll to **Shared connectors**. Toggle a connector on to make it available to every prompt in the project; toggle it off to remove it from the supervisor agent's options.
+Connectors are managed per project. You can access them two ways: from the projects list, click **Configure** on the project card; or inside a project, click **+** in the chat box and select **Connectors**. Toggle a connector on to make it available to every prompt in the project; toggle it off to remove it from the supervisor agent's options.
 
 ![Vibe Project Settings page showing the Overview card and the Shared connectors section with Single sign-on, Forms, and Analytics each toggled on](../../img/project-settings.png)
 

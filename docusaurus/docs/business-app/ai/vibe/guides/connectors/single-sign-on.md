@@ -22,7 +22,7 @@ Access controls for sign-in are still being developed. More granular controls ar
 
 ## Enabling the connector
 
-Open **Project Settings**, scroll to **Shared connectors**, and toggle **Single sign-on** on. Toggling it on provisions the OAuth client automatically — there's nothing you need to configure manually for the redirect flow to start working in your generated app.
+From the projects list click **Configure**, or inside the project click **+** in the chat box and select **Connectors**. Toggle **Single sign-on** on. Toggling it on provisions the OAuth client automatically — there's nothing you need to configure manually for the redirect flow to start working in your generated app.
 
 If you ask for a sign-in experience before the connector is enabled, Vibe will scaffold the UI but the sign-in itself won't complete until you turn the connector on.
 

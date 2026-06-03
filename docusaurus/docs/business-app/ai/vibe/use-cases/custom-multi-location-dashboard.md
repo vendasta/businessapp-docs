@@ -24,7 +24,7 @@ The SSO connector signs in users with their existing Business App account creden
 
 ## Before you start
 
-This use case requires two connectors, enabled in the correct order. Open **Project Settings**, scroll to **Shared connectors**, and turn them on in this sequence:
+This use case requires two connectors, enabled in the correct order. Open **Connectors** from the project — either via **Configure** on the project card or **+** in the chat box — and turn them on in this sequence:
 
 1. Toggle **Single sign-on** on first.
 2. Toggle **Analytics** on.
