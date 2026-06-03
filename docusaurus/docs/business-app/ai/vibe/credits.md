@@ -10,14 +10,14 @@ Vibe uses credits to measure AI activity. Your subscription includes a credit al
 
 ## How Credits Work
 
-Activity in Vibe — generating applications, editing pages, and running builds — consumes credits. Each Vibe subscription includes a credit allowance that resets each billing period.
+A credit is used each time you send a message to Vibe. How many credits a message costs depends on the complexity of the task. Each Vibe subscription includes a credit allowance that resets each billing period.
 
-The amount of credits an action uses depends on its size:
-
-| Action | Credit cost |
-|--------|-------------|
-| Large edit or full site generation | ~500 credits |
-| Small edit | 50–100 credits |
+| Action | Example prompt | Credits |
+|--------|---------------|---------|
+| Style or copy edits | "Change the colour theme to blue" | ~150 |
+| Insert a snippet | "Add AI Receptionist web chat widget with the script on the page" | ~100 |
+| Generate a new component | "Add a contact form and connected to my CRM" | ~300 |
+| Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 
 Credits are tied to the account they were issued to and cannot be transferred to other accounts.
 
