@@ -19,7 +19,7 @@ There are four connectors today:
 
 Connectors are managed per project. You can access them two ways: from the projects list, click **Configure** on the project card; or inside a project, click **+** in the chat box and select **Connectors**. Toggle a connector on to make it available to every prompt in the project; toggle it off to remove it from the supervisor agent's options.
 
-![Vibe Project Settings page showing the Overview card and the Shared connectors section with Single sign-on, Forms, and Analytics each toggled on](../../img/project-settings.png)
+![Vibe Project Settings page showing the Overview card and the Shared connectors section with Single sign-on, Forms, and Analytics each toggled on](../img/project-settings.png)
 
 When a connector is **enabled**, the supervisor agent can wire your generated UI into the underlying service automatically. When a connector is **disabled**, prompts that would normally activate it fall back to mocked or static behavior — useful when you want to design without committing to live integrations yet.
 
