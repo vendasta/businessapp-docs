@@ -16,8 +16,8 @@ The amount of credits an action uses depends on its size:
 
 | Action | Credit cost |
 |--------|-------------|
-| Large edit or full site generation | ~5 credits |
-| Small edit | 0.5–1 credit |
+| Large edit or full site generation | ~500 credits |
+| Small edit | 50–100 credits |
 
 Credits are tied to the account they were issued to and cannot be transferred to other accounts.
 
