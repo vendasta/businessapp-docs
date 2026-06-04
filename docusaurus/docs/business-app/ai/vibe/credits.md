@@ -30,8 +30,8 @@ When your included credits are used up, Vibe opens an Upgrade dialog where you c
 | Plan | Credits | Projects & published apps |
 |------|---------|--------------------------|
 | Free | 250/day, refreshed daily | Up to 1 |
-| Standard ($19/mo) | 10,000/month | Up to 5 |
-| Pro ($49/mo) | 25,000/month | Unlimited |
+| Standard | 10,000/month | Up to 5 |
+| Pro | 25,000/month | Unlimited |
 
 ### Free
 
@@ -44,7 +44,7 @@ Ideal for exploring Vibe and shipping your first app.
 - Image generation and uploads
 - Auto checkpoints and live error recovery
 
-### Standard ($19/mo)
+### Standard
 
 Ideal for shipping apps with full business context. Includes all Free features, plus:
 
@@ -52,7 +52,7 @@ Ideal for shipping apps with full business context. Includes all Free features, 
 - Analytics and SSO connectors
 - White-label support (platform badge removed from your published app)
 
-### Pro ($49/mo)
+### Pro
 
 Ideal for building professional apps with the full feature set. Includes all Standard features, plus:
 
@@ -61,15 +61,4 @@ Ideal for building professional apps with the full feature set. Includes all Sta
 
 ## Add-On Credits
 
-Add-on credit packs are ideal for expanding and sustaining large-scale builds. You can purchase them at any time from within Business App.
-
-| Pack size | Price |
-|-----------|-------|
-| 10,000 credits | $19 |
-| 25,000 credits | $47.50 |
-| 50,000 credits | $95 |
-| 100,000 credits | $190 |
-
-Unused add-on credits carry over into the next month as long as your add-on remains active.
-
-![Vibe Professional upgrade modal showing credit pack options](./img/buy-more-credits.webp)
+Add-on credit packs are available for purchase in sizes of 10,000, 25,000, 50,000, and 100,000 credits. Unused add-on credits carry over into the next month as long as your add-on remains active. For pricing, see the [Vibe listing](https://partners.vendasta.com/marketplace/products/MP-M56KKRF7Z3Z7NJFXRKDF67NXJLF8BN28).
