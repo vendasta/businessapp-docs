@@ -145,6 +145,7 @@ Read the full SKILL.md file before using each skill.
 | `what-did-i-get-done` | Summarizing recent commits for a status update |
 | `style-review` | Reviewing docs for style, voice, gray-label, and formatting violations |
 | `ci-style-review` | Machine-readable JSON output for the Gemini CI workflow |
+| `article-verifications` | Verifying flagged articles for quality, accuracy, freshness, and link health |
 
 ---
 
