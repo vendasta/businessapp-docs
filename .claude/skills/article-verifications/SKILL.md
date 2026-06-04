@@ -21,13 +21,25 @@ Review flagged articles to confirm they are accurate, current, and compliant wit
 
 ### Step 1: Identify articles to verify
 
-The user provides a list of article file paths. If none are provided, ask for them before proceeding.
+**If file paths were provided by the user**, use those and skip to Step 2.
 
-Example input:
+**If no file paths were provided**, fetch today's open verification issues from GitHub:
+
+```bash
+gh issue list --repo vendasta/businessapp-docs --label review-due --limit 5 --json number,title,body
 ```
-docusaurus/docs/business-app/ai/vibe/credits.md
-docusaurus/docs/business-app/inbox/index.md
-```
+
+From each issue, extract:
+- The **file path** from the `File:` line in the issue body (e.g. `docusaurus/docs/ad-intel/overview/cheat-sheet-for-advertising-intelligence.mdx`)
+- The **issue number** — store this alongside the file path so issues can be closed after verification
+
+Announce what was found before proceeding:
+
+> "Found [N] open review-due issues. Verifying:
+> - `path/to/article.mdx` (issue #NNN)
+> - ..."
+
+If no open issues are found, tell the user and stop.
 
 ### Step 2: Read each article
 
@@ -161,7 +173,7 @@ Use AskUserQuestion:
 
 **After all items for an article are complete**, move straight to the next article without a summary — keep momentum going.
 
-**After all articles are complete**, output a short closing summary:
+**After all articles are complete**, output a short closing summary. If issues were fetched from GitHub, include a ready-to-use PR closing block:
 
 ```
 ## Approval flow complete
@@ -174,7 +186,93 @@ Use AskUserQuestion:
 
 **Still needs follow-up** — [N] item(s)
 - [Article title]: [what's outstanding and why — SME review, manual rename, etc.]
+
+**PR closing keywords**
+Add this to your PR description to link and auto-close the verified issues on merge:
+Closes #NNN, #NNN, #NNN
 ```
+
+Only include issues that reached **Pass** or **Needs Update** (i.e. all fixes applied) in the closing keywords block. Leave **Needs SME Review** issues out — they should stay open until the SME question is resolved.
+
+### Step 9: Comment on GitHub issues
+
+**Only run this step if issues were fetched from GitHub in Step 1.**
+
+For each issue, post a comment with the verification outcome so there is a record on the issue itself. Do not close the issues — they will be closed automatically when the PR that contains `Closes #NNN` is merged.
+
+```bash
+gh issue comment [NNN] --repo vendasta/businessapp-docs --body "[comment]"
+```
+
+The comment should follow this format:
+
+```
+**Article verification complete** — [Pass / Needs Update / Needs SME Review]
+
+[1–2 sentences describing what was found and fixed. If items are still outstanding, name them specifically.]
+
+Verified by Claude Code on [today's date]. Changes will be included in an upcoming PR.
+```
+
+Post a comment for every issue — including SME review ones. For SME review issues, note what question still needs answering so it is clear why the issue remains open.
+
+Do this automatically without asking — it is just a log entry, not a destructive action.
+
+### Step 10: Create pull request
+
+**Only run this step if issues were fetched from GitHub in Step 1.**
+
+After posting comments, offer to create the PR. Give the user a brief summary of what will be in it before asking:
+
+> "Ready to open a PR with all the changes from this verification run. It will include `Closes #NNN, #NNN` in the description to auto-close the linked issues on merge."
+
+Use AskUserQuestion:
+- Question: `Create the PR now?`
+- Option 1: `Yes — create it`
+- Option 2: `No — I'll create it manually`
+
+If the user confirms, first ensure all changes are committed on a branch:
+
+```bash
+git status
+```
+
+If there are uncommitted changes, commit them:
+
+```bash
+git add -A
+git commit -m "docs: verify articles — [brief summary of articles covered]
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+```
+
+Then push and create the PR:
+
+```bash
+git push -u origin HEAD
+gh pr create \
+  --title "docs: verify flagged articles — [date]" \
+  --body "$(cat <<'EOF'
+## Summary
+[Bullet list of what was verified and what changed per article]
+
+## Issues resolved
+Closes #NNN, #NNN, #NNN
+
+## Still needs follow-up
+[Any Needs SME Review items, or "None"]
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+EOF
+)"
+```
+
+Only include `Closes #NNN` for issues with status **Pass** or **Needs Update** (all fixes applied). Leave SME review issues out of the closing keywords so they remain open.
+
+If the user declines, remind them to add the closing keywords to their PR description manually and show the block again:
+
+> "When you create the PR, add this to the description to link the issues:
+> `Closes #NNN, #NNN`"
 
 ---
 
