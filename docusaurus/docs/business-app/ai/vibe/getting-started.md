@@ -43,7 +43,7 @@ The editor has three main areas:
 - **Preview** (center) — A live preview of your application
 - **Mode Tabs** (top) — Switch between Preview, Design, and Code views
 
-![Newly created Vibe project — empty chat panel on the left, welcome state with example prompts on the right](./img/empty-project.png)
+![The Vibe editor with a generated app: chat panel on the left showing the COMPLETED summary, live preview of the generated marketing site on the right, and Preview/Design/Code mode tabs at the top.](./img/editor-overview.png)
 
 Type your first prompt in the chat input at the bottom of the chat panel. Here are some good starting prompts:
 
