@@ -1,27 +1,26 @@
 ---
 title: "Add Google Analytics Account"
 sidebar_label: "Add Google Analytics Account"
+description: "Connect your Google Analytics 4 property in WordPress Hosting and add a custom Measurement ID."
 ---
 
-# Add Google Analytics Account
-
-WordPress Hosting has a built-in dashboard that displays highlights of your site’s visitor information using [Google Analytics.](https://www.google.com/analytics/analytics/) However, we understand that you may want to dig deeper using your own account. That’s why WordPress Hosting provides an easy way to do just that.
+WordPress Hosting includes built-in analytics. You can also connect your own Google Analytics 4 (GA4) property to track data for your site.
 
 :::info
 Plugins meant to support Google Analytics are available, but these often fail to track or gather data in the WordPress Hosting environment.
 ::: 
 
-1.  [Sign up](https://analytics.google.com/analytics/web/) for Google Analytics and configure it for your site, or just log in if you’ve already completed that step.
-2.  Click [Admin](https://support.google.com/analytics/answer/6132368)
-3.  Select your site’s account from the menu in the _ACCOUNT_ column
-4.  Select a property from the menu in the _PROPERTY_ column
-5.  Under _PROPERTY_, click **Tracking Info > Tracking Code**. Your [tracking ID](https://support.google.com/analytics/answer/7372977) is displayed at the top of the page
-6.  Copy that Tracking ID
-7.  Sign in to your WordPress Hosting site’s WordPress admin panel
-8.  Navigate to **Settings > General Code** and scroll to the bottom
-9.  Paste that Tracking ID into the **Custom Google Analytics Tracking ID** and click **Save Changes**
+1.  Sign in to [Google Analytics](https://analytics.google.com/analytics/web/).
+2.  Open **Admin**.
+3.  Select your GA4 property.
+4.  Open **Data Streams** and select your website stream.
+5.  Copy your **Measurement ID** (format: `G-XXXXXXXXXX`).
+6.  Sign in to your WordPress site.
+7.  Go to **Settings** > **General** and scroll to the bottom.
+8.  Paste the ID into **Custom Google Analytics Tracking ID**.
+9.  Click **Save Changes**.
 
-Please keep in mind that this ID will run concurrently with WordPress Hosting’s built-in analytic tracking, which will remain on the WordPress Hosting dashboard.
+Your custom GA4 ID can run at the same time as the connected analytics integration.
 
 ![Custom Google Analytics Tracking ID field under Settings General](img/add-analytics-account/ga-tracking-id-field.png)
 
@@ -30,29 +29,26 @@ Please keep in mind that this ID will run concurrently with WordPress Hosting’
 <details>
 <summary>How do I add my Google Analytics account to WordPress Hosting?</summary>
 
-There are two ways to install Google Analytics in WordPress Hosting: using the built-in settings or by manually injecting the tracking code.
+There are two setup options:
 
-**Method 1: Use the Tracking ID field in Settings**
+1. Connect Google Analytics in **Business App** > **Administration** > **Connections**.
+2. Add a GA4 Measurement ID in **Settings** > **General** > **Custom Google Analytics Tracking ID**.
 
-1. Sign in to your [Google Analytics account](https://analytics.google.com/).
-2. Navigate to: **Admin > Property Settings > Tracking Info > Tracking Code**
-3. Copy your **Tracking ID** (format: `UA-XXXXXXX-X` or `G-XXXXXXX`)
-4. In your WordPress dashboard:
-   * Go to **Settings > General**
-   * Scroll to the bottom and paste your Tracking ID into the **Custom Google Analytics Tracking ID** field
-   * Click **Save Changes**
+You can use both at the same time.
 
-To ensure accurate data syncing, also verify that Google Analytics is connected in:
+</details>
 
-> **Business App > Administration > Connections**
+<details>
+<summary>How does GA4 tracking load on my site?</summary>
 
-**Method 2: Add the script manually in Divi**
+When Google Analytics is connected, the GA4 `gtag.js` tracking code is added to your site's `<head>` automatically. The script loads asynchronously to reduce page impact.
 
-1. In your WordPress dashboard, go to **Divi > Theme Options**
-2. Paste your Google Analytics `gtag.js` script into the **Body Code** section
-3. Save changes
+</details>
 
-This ensures the script loads on all pages across your site.
+<details>
+<summary>Can I turn tracking off without removing my connection?</summary>
+
+Yes. You can turn default tracking on or off in **Advanced Tools** with the **Google Analytics Integration** toggle. This does not remove your Google Analytics connection.
 
 </details>
 

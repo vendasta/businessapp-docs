@@ -21,13 +21,13 @@ See [Add your own analytics account](add-your-own-analytics-account.md) for step
 
 ### How does the Google Analytics view work?
 
-When you set up a site on WordPress Hosting, you have the option to either allow the platform to collect GA data for you, or you can connect your own GA account view.
+When you set up a site on WordPress Hosting, you can use the default analytics setup or connect your own GA4 property.
 
-1. **Default Google Analytics pulled in by the system**: If there is a prompt at the top informing you to connect a GA view, you are using the default view and not a custom view.
+1. **Default Google Analytics pulled in by the system**: If there is a prompt at the top informing you to connect a Google Analytics view, you are using the default view and not a custom view.
 
    ![Default Google Analytics view with connection prompt](img/google-analytics-view/default-ga-view.png)
 
-2. **Custom Google Analytics view**: For a custom connected view, you get the option to toggle the amount of data shown at the top and also more refined traffic metrics.
+2. **Custom Google Analytics view**: For a custom connected view, you can connect Google Analytics through **Business App** > **Administration** > **Connections** and optionally add your own GA4 Measurement ID in **Settings** > **General** > **Custom Google Analytics Tracking ID**. This gives you more refined traffic metrics.
 
    ![Custom Google Analytics view with refined metrics](img/google-analytics-view/custom-ga-view.png)
 
@@ -37,7 +37,7 @@ We _strongly_ encourage you to connect your own view, as it provides the most ac
 
 ### How much Google Analytics data does the platform collect?
 
-When you connect your own Google Analytics view, the platform pulls in data for the past 12 months. Provided you select a view that has 12 months of historical data, you will have access to that data, and data going forward as well.
+When you connect your own Google Analytics view, the platform pulls in data for the past 12 months. If your connected view has 12 months of historical data, you can access that data plus data going forward.
 
 ### A user connected GA but there is no data
 
