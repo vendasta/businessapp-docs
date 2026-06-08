@@ -17,7 +17,7 @@ When your prompt includes a URL, Vibe captures four things from the page:
 - **The HTML structure** as a layout specification. Vibe reads the section ordering, the grid layouts, the component patterns.
 - **The text content as markdown.** Headlines, body copy, link text, button labels.
 
-The screenshot is what Vibe *sees*; the HTML is what it *reads*; the branding is what it *applies*; the markdown is what it *writes back*. Together those four channels are enough to reconstruct a faithful version of the page.
+The screenshot is what Vibe *sees*; the HTML is what it *reads*; the branding is what it *applies*; the markdown is what it *writes back*. Together those four channels are enough to reconstruct a faithful version of the page. Vibe reads only what it needs from each page, so cloning runs are fast and credit-efficient.
 
 ## A simple clone
 

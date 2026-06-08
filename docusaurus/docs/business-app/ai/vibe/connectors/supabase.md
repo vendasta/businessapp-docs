@@ -39,3 +39,7 @@ You need an existing Supabase project with three values ready:
 7. Click **Add Connection**.
 
 Once connected, enable the Supabase connector in your Vibe settings to start building against your project.
+
+## Secrets and API keys
+
+When your Vibe app needs a Supabase API key, Vibe shows you exactly which secret to add and links directly to the right page in your Supabase dashboard. Your keys go into your project's environment — never into the chat. If a required key is missing, your app surfaces a clear error message instead of failing silently.
