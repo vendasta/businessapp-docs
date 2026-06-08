@@ -12,7 +12,6 @@ Required environment variables (set as GitHub Actions secrets):
   GOOGLE_CHAT_WEBHOOK   - Incoming webhook URL from your Google Chat space
 
 Optional environment variables:
-  REVIEW_THRESHOLD_DAYS - Days since last update before flagging (default: 180)
   ARTICLE_DIRS          - Comma-separated list of directories to scan (default: ".")
   ARTICLE_LABEL         - GitHub Issue label to use (default: "review-due")
   MAX_ARTICLES_PER_RUN  - Max new issues to create per run, oldest-first (default: 5)
@@ -33,7 +32,6 @@ from pathlib import Path
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")  # e.g. "org/repo"
 GOOGLE_CHAT_WEBHOOK = os.environ.get("GOOGLE_CHAT_WEBHOOK", "")
-REVIEW_THRESHOLD_DAYS = int(os.environ.get("REVIEW_THRESHOLD_DAYS", "180"))
 ARTICLE_DIRS = [d.strip() for d in os.environ.get("ARTICLE_DIRS", ".").split(",")]
 ARTICLE_LABEL = os.environ.get("ARTICLE_LABEL", "review-due")
 MAX_ARTICLES_PER_RUN = int(os.environ.get("MAX_ARTICLES_PER_RUN", "5"))
@@ -180,7 +178,7 @@ def main():
         print("ERROR: GITHUB_TOKEN and GITHUB_REPOSITORY must be set.")
         sys.exit(1)
 
-    print(f"🔍 Scanning for articles not updated in {REVIEW_THRESHOLD_DAYS}+ days...")
+    print(f"🔍 Scanning for oldest articles to flag for review...")
     print(f"   Directories: {ARTICLE_DIRS}")
     print(f"   Dry run: {DRY_RUN}\n")
 
@@ -198,38 +196,35 @@ def main():
 
     print(f"Found {len(markdown_files)} Markdown files to check.\n")
 
-    # Check age of each file
-    stale = []
+    # Get age of each file and sort oldest-first
+    articles = []
     for filepath in sorted(markdown_files):
         last_updated = get_last_commit_date(filepath)
         if last_updated is None:
             print(f"  ⚠️  Could not determine last commit date for: {filepath}")
             continue
-        age = days_since(last_updated)
-        if age >= REVIEW_THRESHOLD_DAYS:
-            stale.append({
-                "filepath": filepath,
-                "last_updated": last_updated,
-                "age_days": age,
-                "issue_url": None
-            })
+        articles.append({
+            "filepath": filepath,
+            "last_updated": last_updated,
+            "age_days": days_since(last_updated),
+            "issue_url": None
+        })
 
-    # Sort oldest-first so the most overdue articles are always prioritised
-    stale.sort(key=lambda x: x["age_days"], reverse=True)
+    articles.sort(key=lambda x: x["age_days"], reverse=True)
 
-    print(f"Found {len(stale)} article(s) due for review.\n")
+    print(f"Found {len(articles)} article(s) total.\n")
 
-    if not stale:
-        print("✅ No articles flagged. All content is up to date.")
+    if not articles:
+        print("✅ No articles found.")
         return
 
     if DRY_RUN:
         print(f"DRY RUN — no issues will be created or notifications sent.")
         print(f"  Would flag up to {MAX_ARTICLES_PER_RUN} article(s) this run (oldest first):\n")
-        for item in stale[:MAX_ARTICLES_PER_RUN]:
+        for item in articles[:MAX_ARTICLES_PER_RUN]:
             print(f"  Would flag: {item['filepath']} ({item['age_days']} days old)")
-        if len(stale) > MAX_ARTICLES_PER_RUN:
-            print(f"\n  ...{len(stale) - MAX_ARTICLES_PER_RUN} more article(s) queued for future runs.")
+        if len(articles) > MAX_ARTICLES_PER_RUN:
+            print(f"\n  ...{len(articles) - MAX_ARTICLES_PER_RUN} more article(s) queued for future runs.")
         return
 
     # Ensure the label exists in the repo
@@ -240,10 +235,10 @@ def main():
     already_open = get_open_review_issues()
     print(f"  {len(already_open)} article(s) already have open issues.\n")
 
-    # Create issues for newly stale articles — cap at MAX_ARTICLES_PER_RUN
+    # Create issues — cap at MAX_ARTICLES_PER_RUN, oldest-first
     created = 0
     skipped = 0
-    for item in stale:
+    for item in articles:
         if created >= MAX_ARTICLES_PER_RUN:
             print(f"  ⏸️  Daily cap of {MAX_ARTICLES_PER_RUN} reached — remaining articles queued for tomorrow.")
             break
@@ -263,7 +258,7 @@ def main():
     print(f"\nSummary: {created} issue(s) created, {skipped} already existed.\n")
 
     # Send Google Chat notification (only for newly created issues)
-    newly_flagged = [item for item in stale if item.get("issue_url")]
+    newly_flagged = [item for item in articles if item.get("issue_url")]
     if newly_flagged:
         print("Sending Google Chat notification...")
         send_gchat_notification(newly_flagged)
