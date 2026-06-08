@@ -6,7 +6,7 @@ tags: [tasks, crm, sales]
 keywords: [sales tasks, task queue, crm tasks, activity, views, filters]
 ---
 
-Tasks help you plan and track the actions required to move deals forward—calls, emails, follow-ups, and more.
+Tasks help you plan and track the actions required to move deals forward: calls, emails, follow-ups, and more.
 
 ## Why use Tasks?
 
@@ -14,7 +14,7 @@ Tasks help you plan and track the actions required to move deals forward—calls
 - Prioritize daily work across contacts, companies, and opportunities
 - Improve visibility and handoffs across the team
 
-## What’s Included with Tasks?
+## What’s included with Tasks?
 
 - **Create from CRM records** (Contacts, Companies, Opportunities)
 - **Task table** for pipeline-wide task management
@@ -22,9 +22,9 @@ Tasks help you plan and track the actions required to move deals forward—calls
 - **Views and filters** to focus on the most important work
 - **Task Queue** to complete tasks consecutively
 
-## How to Use Tasks
+## How to use Tasks
 
-### Create from a Contact or Company
+### Create from a contact or company
 
 1. Go to `CRM` > `Contacts` (or `Companies`).
 2. Click the record name to open the profile.
@@ -32,7 +32,7 @@ Tasks help you plan and track the actions required to move deals forward—calls
 
 ![Create tasks from a CRM record](img/tasks/create-tasks-from-crm-record.png)
 
-### Create from the Task Table
+### Create from the task table
 
 1. Go to `CRM` > `Tasks`.
 2. Click `Create task` and enter details:
@@ -50,7 +50,7 @@ Tasks help you plan and track the actions required to move deals forward—calls
 Use tags and priority to organize your daily queue, then save a view for today’s focus tasks.
 :::
 
-### View and Filter Tasks
+### View and filter tasks
 
 1. Go to `CRM` > `Tasks`.
 2. Click `Add filter` to filter tasks and save common filters as `Views`.
@@ -61,7 +61,7 @@ Use tags and priority to organize your daily queue, then save a view for today�
 Views are personal by default. Name them clearly so you can reuse them.
 :::
 
-### Edit, Complete, or Delete Tasks
+### Edit, complete, or delete tasks
 
 Within a CRM record’s activity timeline:
 
@@ -77,7 +77,7 @@ From the task table:
 - Delete: kebab menu > `Delete task`, and confirm.
 - Complete: change status in the `Task status` column.
 
-### Work Faster with Task Queue
+### Work faster with task queue
 
 1. Go to `CRM` > `Tasks` and apply filters or open a saved view.
 2. Click `Start [x] tasks` to work through them consecutively.
@@ -90,7 +90,7 @@ From the task table:
 The task queue works best with a narrowly filtered set of tasks (same type or segment) to reduce context switching.
 :::
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Can I associate a task with multiple records?</summary>
