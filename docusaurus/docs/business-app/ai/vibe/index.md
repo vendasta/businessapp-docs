@@ -36,7 +36,7 @@ See [Use Cases](./use-cases/index.md) for step-by-step walkthroughs of these and
 ## Key Features
 
 ### Chat-Based Development
-Describe what you want in the chat panel. Vibe interprets the request and generates or modifies the application. Send follow-up messages to refine the result. Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean.
+Describe what you want in the chat panel. Vibe interprets the request and generates or modifies the application. Send follow-up messages to refine the result. Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean. On projects with multiple collaborators, each prompt shows the sender's avatar, name, and a timestamp.
 
 ### Business Knowledge
 Every project has a built-in knowledge base pre-loaded with the location's Business Profile — name, services, hours, contact info, brand voice, and FAQs. When you ask Vibe to build a Contact page or add an About section, it fills in real details about the business instead of placeholder text. You can extend the knowledge base from the project settings page by adding URLs, files, or notes. See [Business Knowledge](./guides/business-knowledge.md).
@@ -51,7 +51,7 @@ Every generation produces a structured plan that drives the run. The plan, the a
 Paste a URL and Vibe captures the screenshot, branding, layout, and content of that page, then scaffolds a faithful clone you can refine. The captured colors become a custom theme automatically. See [Cloning a reference site](./guides/clone-from-url.md).
 
 ### Visual Editor
-Turn on the **Visual edits** button in the chat composer to make targeted edits by clicking elements in the preview. When you click an element, Vibe gets exact source context (file, line, JSX tag, classes), so any change you ask for lands precisely on the element you selected. See [Visual Editor](./guides/visual-editor.md).
+Toggle **Visual edits** in the chat composer to flip design mode on and off. When on, click any element in the live preview to select it — Vibe gets exact source context (file, line, JSX tag, classes), so any change you ask for lands precisely on the element you selected. Toggle it off to return to regular prompting. See [Visual Editor](./guides/visual-editor.md).
 
 <!-- THEMES: restore the following to the section above when themes feature launches:
 "browse pre-built color themes, toggle between light and dark mode, and make targeted edits..."
@@ -85,7 +85,7 @@ When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
 1. **You describe** what you want in the chat panel.
 2. **Clarification** — If the request is ambiguous, Vibe asks structured questions before continuing.
 3. **Planning** — A planning agent produces a structured plan describing the architecture, navigation, and which files will be touched. The plan also commits to a named design system — palette, fonts, and UI primitives — before any code is written.
-4. **Generation** — A generation agent writes the code file by file, applying the theme, generating images, and editing components in real time. Type-check and build verification run continuously to catch and fix issues.
+4. **Generation** — A generation agent writes the code file by file, applying the theme, generating images, and editing components in real time. Type-check and build verification run continuously to catch and fix issues. You can stop the run at any time by clicking **Stop** — the last working preview stays on screen and your prompt returns to the input.
 5. **Validation** — Vibe takes a screenshot of the rendered preview and runs a build check. Before declaring the task complete, Vibe runs a final type check and self-corrects any remaining issues — up to three rounds. If they can't be resolved, the run finishes with a "verified with issues" status instead of a silent claim of success.
 6. **Preview** — The live preview updates as soon as the build is clean.
 7. **Iteration** — You review the result and send follow-up prompts to refine it. Runtime errors in the preview trigger an auto-fix banner.

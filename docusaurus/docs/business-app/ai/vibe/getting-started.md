@@ -23,7 +23,7 @@ You see your Vibe project list. If this is your first time, the list is empty an
 
 ## Step 2: Create a New Project
 
-Once you're in Vibe, you'll see a project list. Click **+ Create a new app** to create your first application.
+Once you're in Vibe, you'll see a project list. Each card shows a live preview thumbnail of the app you built. Click **+ Create a new app** to create your first application.
 
 ![Empty Vibe project list with the Create a new app button](./img/project-list.png)
 
@@ -76,6 +76,8 @@ After you submit your prompt, Vibe runs through a consistent sequence you can fo
 
 The chat auto-scrolls to follow new events as they arrive. If you scroll up to read older context, follow-tail pauses; scroll back near the bottom and it resumes.
 
+While a generation is in progress, you can type your next message in the chat input — it won't interrupt the current run. To stop a run early, click the **Stop** button in the chat input. The generation halts almost immediately, the last working preview stays on screen, and your original prompt returns to the input so you can edit and resend.
+
 ## Step 5: Iterate and Refine
 
 Your first generation is just the starting point. Use follow-up prompts to refine your application:
@@ -99,6 +101,8 @@ The chat panel shows your conversation history with Vibe. Each exchange shows:
 - **Inline screenshots** — When Vibe captures a reference site or runs a visual check, the screenshot appears inline in the status row.
 - **Feedback buttons** — Thumbs up/down to rate each generation.
 
+On projects with multiple collaborators, each prompt shows the sender's avatar, name, and a timestamp, so it's clear who asked for what.
+
 ### Chat Input
 
 At the bottom of the chat panel, you find:
@@ -107,9 +111,11 @@ At the bottom of the chat panel, you find:
 |---------|-------------|
 | **Text input** | Type your prompt here. Press Enter to send, Shift+Enter for a new line. Paste a URL in the input to clone a reference site (see [Cloning a reference site](./guides/clone-from-url.md)). |
 | **+ (image)** | Attach screenshots or mockups to show Vibe what you want. |
+| **Visual edits** | Toggle design mode on or off. When on, click any element in the live preview to select it; toggle off to return to prompting. |
 | **Mode selector** | Pick the generation mode for the next prompt. |
 | **Microphone** | Record voice input. Vibe transcribes your speech into a prompt. |
 | **Send** | Submit the prompt to Vibe. |
+| **Stop** | (Appears during a generation.) Halt the current run. The last working preview stays on screen and your prompt returns to the input. |
 
 ![The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls](./img/chat-input.png)
 

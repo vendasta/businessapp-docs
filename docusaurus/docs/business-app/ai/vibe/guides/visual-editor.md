@@ -6,7 +6,7 @@ unlisted: false
 
 # Visual Editor
 
-Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Turn on the **Visual edits** button in the chat composer to enter design mode.
+Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Toggle the **Visual edits** button in the chat composer to flip design mode on and off — click elements in the live preview when it's on, then toggle it off to return to prompting. No hunting for a separate control.
 
 <!-- THEMES: restore the following image and section when themes feature launches
 ![The Vibe editor in design mode: the left panel shows the Appearance Light/Dark toggle, the current theme, and the color palette list (Default, Glacier, Harvest, Lavender, and more), with the Visual edits button active in the chat composer below it.](../img/design-mode-themes.png)
