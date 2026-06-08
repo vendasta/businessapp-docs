@@ -25,10 +25,6 @@ on:
         options:
           - "false"
           - "true"
-      threshold_days:
-        description: "Days since last update before flagging (leave blank to use default)"
-        required: false
-        default: ""
 
 jobs:
   flag-articles:
@@ -62,9 +58,6 @@ jobs:
           # Change ARTICLE_DIRS to target a specific folder, e.g. "docs,articles"
           # Leave as "." to scan the entire repo
           ARTICLE_DIRS: "docusaurus/docs"
-          # How many days without an update before an article is flagged
-          # Override here or via workflow_dispatch input
-          REVIEW_THRESHOLD_DAYS: ${{ inputs.threshold_days || '180' }}
           # Max new issues to create per daily run (oldest articles first)
           MAX_ARTICLES_PER_RUN: "5"
           # Label applied to review issues in GitHub
