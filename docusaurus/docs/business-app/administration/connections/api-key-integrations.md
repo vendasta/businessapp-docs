@@ -28,7 +28,7 @@ The marketing page describes what the integration does and the data it syncs. Cl
 The pre-connect form outlines the next steps and lets you configure your data sync preferences before the connection is established:
 
 - **Sync customer data** — Enable or disable automatic contact syncing to your CRM.
-- **Automated review requests** — Enable to send review requests automatically when customer data syncs. Requires a Reputation Management Premium subscription. If you do not have this subscription, this option is locked and can be unlocked by upgrading.
+- **Automated review requests** — Enable to send review requests automatically when customer data syncs. Requires a Reputation AI Premium subscription. If you do not have this subscription, this option is locked and can be unlocked by upgrading.
 
 Click **Add Connection** to continue.
 
@@ -92,7 +92,7 @@ No. Each business location requires its own Business App account and its own API
 <details>
 <summary>Can I enable automated review requests later?</summary>
 
-Yes. Open the Connection Settings page for the integration and update your sync preferences at any time. Automated review requests require a Reputation Management Premium subscription.
+Yes. Open the Connection Settings page for the integration and update your sync preferences at any time. Automated review requests require a Reputation AI Premium subscription.
 
 </details>
 

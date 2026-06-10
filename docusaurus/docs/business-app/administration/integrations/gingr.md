@@ -86,8 +86,8 @@ The connection status updates to **Connected** only after a reservation has been
 </details>
 
 <details>
-<summary>Do I need Reputation Management to use this integration?</summary>
+<summary>Do I need Reputation AI to use this integration?</summary>
 
-Syncing customer data to your CRM works with any account. Automated review requests require a Reputation Management subscription.
+Syncing customer data to your CRM works with any account. Automated review requests require a Reputation AI subscription.
 
 </details>
