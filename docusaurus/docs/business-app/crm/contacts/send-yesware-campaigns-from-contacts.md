@@ -7,7 +7,7 @@ tags: [yesware, email campaigns, crm, contacts, automation]
 keywords: [yesware campaigns, business app crm, email sequences, drip campaigns, contact outreach, email automation]
 ---
 
-Use this guide to start a Yesware email campaign (also known as an email sequence or drip campaign) directly from the `CRM` > `Contacts` table in your Business App. You can select contacts, add them to an existing Yesware campaign, and optionally trigger additional actions using Business App Automations.
+Use this guide to start a Yesware email campaign (also known as an email sequence or drip campaign) directly from the `CRM` > `Contacts` table in your Business App. You can select contacts, add them to an existing Yesware campaign, and optionally trigger additional actions using Business App Workflows.
 
 :::note
 While you can add contacts to Yesware campaigns and see key activities in the contact timeline from the Business App CRM, you must create and manage those campaigns in the Yesware platform.
@@ -51,9 +51,9 @@ If a selected contact is already active in a different Yesware campaign, you'll 
 Yesware campaigns are sent out directly via the user's Gmail or Outlook inboxes. While this can help with opens and clicks, it also means that they are subject to the daily send limits of email providers and any other restrictions that may apply.
 :::
 
-## How to launch Yesware campaigns using Business App Automations
+## How to launch Yesware campaigns using Business App Workflows
 
-Automations give you another way to launch Yesware campaigns beyond the Contacts table. Any existing Yesware campaign can be triggered by an automation using the `Send a Yesware campaign for the contact` step.
+Workflows give you another way to launch Yesware campaigns beyond the Contacts table. Any existing Yesware campaign can be triggered by a workflow using the `Send a Yesware campaign for the contact` step.
 
 Example triggers include:
 - When a contact is added to a specific list
@@ -62,13 +62,13 @@ Example triggers include:
 - When a contact replies to a specific email
 
 :::info
-Only existing Yesware campaigns can be selected in Automations. Campaign creation and sharing must still be managed directly within Yesware.
+Only existing Yesware campaigns can be selected in Workflows. Campaign creation and sharing must still be managed directly within Yesware.
 :::
 
-**Related automation guides:**
-- [Business App Automations overview](../automations/index) - Learn how to create your first automation workflow
-- [Automations](../../../automations/index) - Create workflows and use pre-built templates to trigger Yesware campaigns
-- [Messaging actions](../../../automations/workflows/action-messaging) - Compare Yesware with other SMS and email automation options
+**Related workflow guides:**
+- [Business App Workflows overview](../automations/index) - Learn how to create your first workflow
+- [Workflows](../../../automations/index) - Create workflows and use pre-built templates to trigger Yesware campaigns
+- [Messaging actions](../../../automations/workflows/action-messaging) - Compare Yesware with other SMS and email options
 
 ## Frequently asked questions
 
@@ -81,7 +81,7 @@ Yes. Adding contacts to a Yesware campaign is available in both Business App and
 <details>
 <summary>Where do I create and manage Yesware email campaigns?</summary>
 
-Campaigns are created in Yesware (Gmail/Outlook). Once created, they appear in the `Add to Yesware Campaign` dropdown and in Automations within your Business App.
+Campaigns are created in Yesware (Gmail/Outlook). Once created, they appear in the `Add to Yesware Campaign` dropdown and in Workflows within your Business App.
 </details>
 
 <details>
@@ -97,15 +97,15 @@ Reply activities from Yesware are logged on the contact timeline in the Business
 </details>
 
 <details>
-<summary>What's the difference between Yesware campaigns and Business App email automations?</summary>
+<summary>What's the difference between Yesware campaigns and Business App email workflows?</summary>
 
-Yesware campaigns send from your personal Gmail/Outlook inbox with higher open rates but lower volume limits. Business App email automations send from marketing servers with higher volume capacity but may have lower personal connection. Yesware is better for sales outreach, while Business App automations work better for marketing newsletters and bulk communications.
+Yesware campaigns send from your personal Gmail/Outlook inbox with higher open rates but lower volume limits. Business App email workflows send from marketing servers with higher volume capacity but may have lower personal connection. Yesware is better for sales outreach, while Business App workflows work better for marketing newsletters and bulk communications.
 </details>
 
 <details>
 <summary>How many contacts can I add to a Yesware campaign from Business App?</summary>
 
-You can add up to 100 contacts at a time from the Contacts table. For larger lists, you'll need to select contacts in batches of 100 or use Business App Automations to add contacts over time based on triggers.
+You can add up to 100 contacts at a time from the Contacts table. For larger lists, you'll need to select contacts in batches of 100 or use Business App Workflows to add contacts over time based on triggers.
 </details>
 
 <details>
@@ -145,10 +145,10 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 - [Contact lists for targeted outreach](../lists.md) - Segment contacts before adding to Yesware campaigns
 - [CRM forms for lead capture](../forms/index.md) - Capture new leads that can be added to Yesware campaigns
 
-**Business App automation options:**
-- [Automations overview](../automations/index) - Compare Yesware with native Business App automation options
-- [Automations](../../../automations/index) - Pre-built templates and workflows for lead nurturing and follow-up
-- [Messaging actions in automations](../../../automations/workflows/action-messaging) - SMS and email options for bulk communications
+**Business App workflow options:**
+- [Workflows overview](../automations/index) - Compare Yesware with native Business App workflow options
+- [Workflows](../../../automations/index) - Pre-built templates and workflows for lead nurturing and follow-up
+- [Messaging actions in workflows](../../../automations/workflows/action-messaging) - SMS and email options for bulk communications
 
 **Advanced workflows:**
 - [CRM opportunities](../opportunities/index.md) - Track deals that result from Yesware campaigns

@@ -59,7 +59,7 @@ BusinessApp.io is the official mobile app that gives you access to your dashboar
 
 ### Coming soon
 - My Products page
-- Automations
+- Workflows
 - Campaigns
 
 ## Progressive Web App (PWA)

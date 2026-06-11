@@ -3,11 +3,11 @@ title: Send automated notifications with SMS and email
 sidebar_position: 2
 sidebar_label: Automated notifications
 description: Automatically notify your team or contacts via SMS and email when leads come in, forms are submitted, or CRM events occur.
-tags: [automation, messaging, sms, email]
+tags: [workflow, messaging, sms, email]
 keywords: [automated SMS, automated email, messaging steps, workflow alerts, customer notifications]
 ---
 
-When a new lead comes in from chat, a quote request lands, or a VIP contact is tagged, the faster you respond, the better your chances of closing the deal. You can build automations that send SMS or email notifications the moment these events happen — no manual follow-up needed.
+When a new lead comes in from chat, a quote request lands, or a VIP contact is tagged, the faster you respond, the better your chances of closing the deal. You can build workflows that send SMS or email notifications the moment these events happen — no manual follow-up needed.
 
 :::note
 SMS notifications require Conversations AI | Pro. Plain-text email notifications require Conversations Pro.
@@ -34,7 +34,7 @@ When the automation runs, the SMS is sent immediately to the configured number w
 
 <div style={{textAlign: 'center'}}>
 
-<img src={require('../img/automation-SMS.png').default} alt="Automation workflow: When Web Chat captures a lead trigger, Send an SMS message via Conversations step with SMS content and dynamic fields, then End." width="85%" />
+<img src={require('../img/automation-SMS.png').default} alt="Workflow: When Web Chat captures a lead trigger, Send an SMS message via Conversations step with SMS content and dynamic fields, then End." width="85%" />
 
 </div>
 
@@ -48,7 +48,7 @@ When a contact submits a signup form, send them a plain-text email to acknowledg
 
 <div style={{textAlign: 'center'}}>
 
-<img src={require('../img/automation-plain text email.png').default} alt="Automation workflow: When Newsletter signup form is submitted for a contact, Send a plain text email via Conversations AI, then End." width="50%" />
+<img src={require('../img/automation-plain text email.png').default} alt="Workflow: When Newsletter signup form is submitted for a contact, Send a plain text email via Conversations AI, then End." width="50%" />
 
 </div>
 
@@ -66,4 +66,5 @@ When a contact submits a signup form, send them a plain-text email to acknowledg
 - Add **Conditions** to limit when notifications fire (e.g. only for new leads, only during business hours)
 - Personalize messages with the contact's name and relevant details using [dynamic content](../smart-values-in-automations)
 - If messages fail to send, check the **Activity** tab — make sure required fields (phone for SMS, email for plain-text email) are present on the contact
+
 

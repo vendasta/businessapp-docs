@@ -58,9 +58,9 @@ Yes. Add a **File upload** field to let visitors attach a document or image when
 </details>
 
 <details>
-<summary>Can I trigger automations from a specific form?</summary>
+<summary>Can I trigger workflows from a specific form?</summary>
 
-Yes. Open your form and use the `Automation` tab to create or manage a workflow for that specific form. You can also build it from the Automations area by choosing the "When a form is submitted" trigger. See [Automate follow-up from your form](form-automations.md).
+Yes. Open your form and use the `Workflow` tab to create or manage a workflow for that specific form. You can also build it from the Workflows area by choosing the "When a form is submitted" trigger. See [Automate follow-up from your form](form-automations.md).
 </details>
 
 <details>
@@ -88,9 +88,9 @@ Use the toggle at the top-right of the `Automation` tab.
 </details>
 
 <details>
-<summary>Can I delete a form automation from the tab?</summary>
+<summary>Can I delete a form workflow from the tab?</summary>
 
-Not yet. To delete, go to the main Automations page, open the automation, and delete it there.
+Not yet. To delete, go to the main Workflows page, open the workflow, and delete it there.
 </details>
 
 <details>

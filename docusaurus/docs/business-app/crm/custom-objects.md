@@ -15,7 +15,7 @@ Custom objects are available with CRM AI Standard and Pro editions. See [CRM AI 
 
 - **Configurable fields**: text, number, date, dropdowns, and more
 - **Bulk Import**: upload CSVs, map fields, and populate records at scale
-- **Automations**: trigger workflows on object create, update, list entry, or list exit — and update custom object fields from automation actions
+- **Workflows**: trigger workflows on object create, update, list entry, or list exit — and update custom object fields from workflow actions
 - **Smart lists**: segment custom object records with the same filter power as contacts and companies
 - **API**: programmatically create, update, and sync custom object records from external systems
 
@@ -105,7 +105,7 @@ Create a **Demo** object linked to opportunities with fields like:
 - Who presented
 - Who researched
 
-Automations can then update demo records or move opportunities forward based on booking events.
+Workflows can then update demo records or move opportunities forward based on booking events.
 
 ## API support
 

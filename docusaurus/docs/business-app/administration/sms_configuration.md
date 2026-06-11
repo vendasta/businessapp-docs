@@ -98,7 +98,7 @@ Registration approval typically takes **1-4 weeks**. A third-party verification 
 You'll receive a notification when your registration is approved. Once approved, you can send SMS messages from:
 
 - Conversations
-- Automations
+- Workflows
 - Campaigns
 - Reputation (review requests)
 
@@ -151,7 +151,7 @@ Not at this time. A2P 10DLC registration requires an EIN. We're investigating su
 <details>
 <summary>Do I need to register again if I already registered for another product?</summary>
 
-No. Once you complete A2P registration, it applies to all SMS-enabled products including Conversations, Automations, Campaigns, and Reputation.
+No. Once you complete A2P registration, it applies to all SMS-enabled products including Conversations, Workflows, Campaigns, and Reputation.
 
 </details>
 

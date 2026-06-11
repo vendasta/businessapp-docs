@@ -71,18 +71,18 @@ Available actions include:
 
 - **Delete companies** — remove the selected companies from your CRM
 - **Add to static list** — add selected companies to a static list
-- **Start automation** — run an automation on the selected companies immediately
+- **Start workflow** — run a workflow on the selected companies immediately
 
-To start an automation in bulk:
+To start a workflow in bulk:
 
 1. Go to `CRM` > `Companies`.
 2. Select the companies you want to include (use filters and search to narrow the list first, if needed).
-3. Click `Actions` > `Start automation`.
-4. Choose the automation you want to run from the list.
-5. Confirm to start the automation for all selected companies.
+3. Click `Actions` > `Start workflow`.
+4. Choose the workflow you want to run from the list.
+5. Confirm to start the workflow for all selected companies.
 
 :::tip
-Bulk actions are a fast way to run automations on demand — for example, sending a campaign to a segment of companies or assigning owners across a batch of new accounts. You don't need to build a new automation; just pick an existing one.
+Bulk actions are a fast way to run workflows on demand — for example, sending a campaign to a segment of companies or assigning owners across a batch of new accounts. You don't need to build a new workflow; just pick an existing one.
 :::
 
 ### Optional: Lead Scoring
@@ -112,7 +112,7 @@ Use the **Owner** field. There is no separate "Salesperson" or "Assign salespers
 <details>
 <summary>Can I log activities automatically?</summary>
 
-Yes. Platform actions like company creation, owner changes, and opportunity wins/losses are logged automatically. You can also enable email auto-capture and use automations for additional activity logging.
+Yes. Platform actions like company creation, owner changes, and opportunity wins/losses are logged automatically. You can also enable email auto-capture and use workflows for additional activity logging.
 </details>
 
 <details>

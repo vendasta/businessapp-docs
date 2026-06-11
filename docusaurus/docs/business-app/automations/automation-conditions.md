@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 
-Conditions work alongside [automation triggers](automation-triggers.md) to give you precise control over when a workflow runs. Trigger conditions allow you to further filter the triggers that start your workflows. There are a number of trigger conditions you can filter on, including tags, contact fields, account location, and more.
+Conditions work alongside [workflow triggers](automation-triggers.md) to give you precise control over when a workflow runs. Trigger conditions allow you to further filter the triggers that start your workflows. There are a number of trigger conditions you can filter on, including tags, contact fields, account location, and more.
 
 When applying multiple conditions, you can specify which logical operator (AND or OR) should be used when putting these conditions together.
 
@@ -21,7 +21,7 @@ When using the AND operator, the trigger conditions are met only when ***all*** 
 ## Best Practices
 
 - Use AND conditions when all criteria must be met
-- Use OR conditions when any criteria can trigger the automation
+- Use OR conditions when any criteria can trigger the workflow
 - Keep conditions simple and testable
 - Document complex condition logic
 - Regularly review and update conditions as your business changes

@@ -12,7 +12,7 @@ Use Contacts to manage the people you engage with. Create and update contact rec
 
 - Centralize people data for sales and marketing
 - Keep profiles up to date with default and custom fields
-- Start campaigns and automations from contact segments
+- Start campaigns and workflows from contact segments
 - Track activity and tasks to move deals forward
 
 ## What’s Included with Contacts?
@@ -97,18 +97,18 @@ Available actions include:
 - **Request reviews** — send review requests to the selected contacts
 - **Add to campaign** — add selected contacts to a campaign
 - **Add to Yesware campaign** — add selected contacts to a Yesware campaign
-- **Start automation** — run an automation on the selected contacts immediately
+- **Start workflow** — run a workflow on the selected contacts immediately
 
-To start an automation in bulk:
+To start a workflow in bulk:
 
 1. Go to `CRM` > `Contacts`.
 2. Select the contacts you want to include (use filters and search to narrow the list first, if needed).
-3. Click `Actions` > `Start automation`.
-4. Choose the automation you want to run from the list.
-5. Confirm to start the automation for all selected contacts.
+3. Click `Actions` > `Start workflow`.
+4. Choose the workflow you want to run from the list.
+5. Confirm to start the workflow for all selected contacts.
 
 :::tip
-Bulk actions are a fast way to run automations on demand — for example, sending a campaign to a specific segment or assigning owners across a batch of new leads. You don't need to build a new automation; just pick an existing one.
+Bulk actions are a fast way to run workflows on demand — for example, sending a campaign to a specific segment or assigning owners across a batch of new leads. You don't need to build a new workflow; just pick an existing one.
 :::
 
 ### Set or change the Owner

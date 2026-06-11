@@ -6,7 +6,7 @@ tags: [campaigns, email marketing, crm, contacts, lists]
 keywords: [send campaign, add recipients, campaign contacts, campaign list, start campaign, email campaign send]
 ---
 
-Publishing a campaign does not send it automatically. After you publish, you need to add contacts or a list as recipients to begin sending. You can do this directly from the Contacts table, through an automation from Contacts, or by starting an automation from a List.
+Publishing a campaign does not send it automatically. After you publish, you need to add contacts or a list as recipients to begin sending. You can do this directly from the Contacts table, through a workflow from Contacts, or by starting a workflow from a List.
 
 ## Prerequisites
 
@@ -43,18 +43,18 @@ Use this method to send a campaign to one or more specific contacts immediately 
 Contacts without a valid email address appear as "contacts with issues" and are excluded from sending. The **Estimated recipients** count reflects only contacts who will actually receive the email.
 :::
 
-### Start an automation from Contacts
+### Start a workflow from Contacts
 
-Use this method to enroll selected contacts into a campaign-based automation workflow.
+Use this method to enroll selected contacts into a campaign-based workflow.
 
 1. Go to **CRM** > **Contacts**
 2. Select one or more contacts using the checkboxes
-3. Click `Actions` > `Start automation`
-4. Select a campaign-based automation to enroll the selected contacts
+3. Click `Actions` > `Start workflow`
+4. Select a campaign-based workflow to enroll the selected contacts
 
-The automation runs immediately for the selected contacts and enrolls them according to the automation's configured steps and delays.
+The workflow runs immediately for the selected contacts and enrolls them according to the workflow's configured steps and delays.
 
-### Start an automation from a List
+### Start a workflow from a List
 
 Use this method to enroll all current members of a list into a campaign at once.
 
@@ -116,15 +116,15 @@ Yes. You can add eligible contacts or lists to an active campaign at any time. N
 </details>
 
 <details>
-<summary>What is the difference between sending directly and using an automation?</summary>
+<summary>What is the difference between sending directly and using a workflow?</summary>
 
-Sending directly (via **Add to campaign**) gives you a real-time preview and lets you confirm or schedule the send immediately. Using **Start automation** enrolls contacts into a workflow that may include delays, conditions, and other steps beyond just sending an email.
+Sending directly (via **Add to campaign**) gives you a real-time preview and lets you confirm or schedule the send immediately. Using **Start workflow** enrolls contacts into a workflow that may include delays, conditions, and other steps beyond just sending an email.
 </details>
 
 <details>
-<summary>Does starting an automation from a list add future list members automatically?</summary>
+<summary>Does starting a workflow from a list add future list members automatically?</summary>
 
-No. Starting an automation from a list enrolls only the current members at the time you run it. To automatically enroll future members, set up a membership trigger automation instead. See [Lists](../crm/lists.md).
+No. Starting a workflow from a list enrolls only the current members at the time you run it. To automatically enroll future members, set up a membership trigger workflow instead. See [Lists](../crm/lists.md).
 </details>
 
 <details>
@@ -142,7 +142,7 @@ Yes. The Send campaign page includes a **Send from** dropdown where you can sele
 <details>
 <summary>How do I create a list to use when sending a campaign?</summary>
 
-Go to **CRM** > **Lists** and click `Create` to set up a static or smart list. Once your list has members, you can use it to start a campaign automation. See [Lists](../crm/lists.md).
+Go to **CRM** > **Lists** and click `Create` to set up a static or smart list. Once your list has members, you can use it to start a campaign workflow. See [Lists](../crm/lists.md).
 </details>
 
 <details>

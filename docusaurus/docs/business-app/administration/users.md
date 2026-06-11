@@ -106,7 +106,7 @@ The user receives a welcome email with instructions to set up their account and 
 <details>
 <summary>What are permissions?</summary>
 
-Permissions control which tabs a user can see in Business App. For example, you can give a team member access to **Conversations** and **CRM** but hide **Store** and **Automations**. You set permissions when inviting a user and can update them at any time from the actions menu.
+Permissions control which tabs a user can see in Business App. For example, you can give a team member access to **Conversations** and **CRM** but hide **Store** and **Workflows**. You set permissions when inviting a user and can update them at any time from the actions menu.
 
 </details>
 

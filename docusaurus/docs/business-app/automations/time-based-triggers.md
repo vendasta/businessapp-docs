@@ -1,28 +1,28 @@
 ---
 title: Time-based triggers
-description: Learn how to set up automations that run on a schedule using the On a schedule trigger.
+description: Learn how to set up workflows that run on a schedule using the On a schedule trigger.
 sidebar_position: 7
 sidebar_label: Time-based triggers
-tags: [automations, scheduled, triggers, recurring, time-based]
-keywords: [scheduled automation, recurring automation, daily automation, weekly automation, monthly automation, time-based trigger, on a schedule]
+tags: [workflows, scheduled, triggers, recurring, time-based]
+keywords: [scheduled workflow, recurring workflow, daily workflow, weekly workflow, monthly workflow, time-based trigger, on a schedule]
 ---
 
-Run automations on a recurring schedule without waiting for an event to trigger them. The **On a schedule** trigger is useful for routine tasks like sending team reminders, weekly notifications, or monthly check-ins.
+Run workflows on a recurring schedule without waiting for an event to trigger them. The **On a schedule** trigger is useful for routine tasks like sending team reminders, weekly notifications, or monthly check-ins.
 
 ## How time-based triggers work
 
-Unlike event-based triggers that run when something happens (like a company or contact creation), time-based triggers run at times you define. You set the frequency, time of day, and date range, and the automation runs automatically.
+Unlike event-based triggers that run when something happens (like a company or contact creation), time-based triggers run at times you define. You set the frequency, time of day, and date range, and the workflow runs automatically.
 
 **Key benefits:**
 - Automate recurring tasks without manual intervention
-- Run automations at optimal times for your audience
+- Run workflows at optimal times for your audience
 - Set start and end dates to control when the schedule is active
 
 ## Set up the On a schedule trigger
 
-**Step 1** — Go to `Business App` > `Automations`.
+**Step 1** — Go to `Business App` > `Workflows`.
 
-**Step 2** — Click `Create automation` or open an existing automation.
+**Step 2** — Click `Create workflow` or open an existing workflow.
 
 **Step 3** — In the trigger selection, find **Time-based** and select **On a schedule**.
 
@@ -62,7 +62,7 @@ Run the automation on specific days of the month.
 | **End of month** | Run on the last day of the month, regardless of how many days it has |
 
 :::tip
-Use the **End of month** option for consistent month-end notifications. This ensures the automation runs on the 28th, 30th, or 31st depending on the month.
+Use the **End of month** option for consistent month-end notifications. This ensures the workflow runs on the 28th, 30th, or 31st depending on the month.
 :::
 
 ## Date boundaries
@@ -76,7 +76,7 @@ Control when your time-based automation is active.
 
 ## Timezone
 
-The schedule runs based on your automation's timezone setting. All times you enter are interpreted in this timezone.
+The schedule runs based on your workflow's timezone setting. All times you enter are interpreted in this timezone.
 
 ## Example use cases
 
@@ -101,18 +101,18 @@ Invoke an AI employee to generate insights and share them with your team:
 
 ## Troubleshooting
 
-### Automation did not run at the scheduled time
+### Workflow did not run at the scheduled time
 
-- Verify the automation is turned **on** (running state)
+- Verify the workflow is turned **on** (running state)
 - Check that the current date is within the **Start date** and **End date** range
-- Confirm the timezone is set correctly in automation settings
+- Confirm the timezone is set correctly in workflow settings
 
 ### Schedule options not appearing correctly
 
 - Ensure you have selected at least one day for weekly or monthly frequencies
 - For monthly schedules, remember that selecting day 31 only runs in months with 31 days
 
-### Automation runs at unexpected times
+### Workflow runs at unexpected times
 
 - Double-check your timezone configuration
 - Remember that daylight saving time changes may affect the actual run time in your local time
@@ -120,5 +120,5 @@ Invoke an AI employee to generate insights and share them with your team:
 ## Related resources
 
 - [Triggers](automation-triggers.md)
-- [Automation conditions](automation-conditions.md)
-- [Automation settings](automation-settings.md)
+- [Workflow conditions](automation-conditions.md)
+- [Workflow settings](automation-settings.md)

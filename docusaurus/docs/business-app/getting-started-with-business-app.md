@@ -101,7 +101,7 @@ Your [Business Profile](./administration/business_profile.mdx) is the central so
 3. Click **Save** to apply changes.
 
 :::tip
-Complete your profile early. Other features in Business App use this data to power automations, AI responses, and reporting.
+Complete your profile early. Other features in Business App use this data to power workflows, AI responses, and reporting.
 :::
 
 [Back to checklist](#getting-started-checklist)
@@ -110,7 +110,7 @@ Complete your profile early. Other features in Business App use this data to pow
 
 ## Step 3: Connect key integrations
 
-Connections bring your most important business data into one place. When you connect platforms like Google Business Profile and QuickBooks, Business App can sync location details, power your [Executive Report](./executivereport/index.md), and trigger automations.
+Connections bring your most important business data into one place. When you connect platforms like Google Business Profile and QuickBooks, Business App can sync location details, power your [Executive Report](./executivereport/index.md), and trigger workflows.
 
 ### How to add integrations
 

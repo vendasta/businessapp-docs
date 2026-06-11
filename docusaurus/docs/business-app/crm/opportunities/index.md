@@ -34,7 +34,7 @@ Managing opportunities lets you visualize, organize, and act on deals across dif
 
 - **[Create, edit, and close opportunities](create-edit-close.md)** – Create from the page or import CSV; edit from profile or table view; close won/lost in pipeline, profile, or stage field.
 - **[Pipeline setup](pipeline-setup.md)** – Set up a pipeline, add and remove stages, add or remove pipelines, and use close probability for forecasting.
-- **[Opportunity automations](automations.md)** – Create opportunities from webchat, trigger campaigns by stage, and move opportunities to a stage when a meeting is booked.
+- **[Opportunity workflows](automations.md)** – Create opportunities from webchat, trigger campaigns by stage, and move opportunities to a stage when a meeting is booked.
 
 ## Frequently Asked Questions (FAQs)
 
@@ -57,9 +57,9 @@ If you choose to update matches, rows that match by ID or external ID will overw
 </details>
 
 <details>
-<summary>Which automation actions are available for opportunities?</summary>
+<summary>Which workflow actions are available for opportunities?</summary>
 
-You can create tasks, notes, and logged calls tied directly to an opportunity, update fields, and move an opportunity to a specific stage as part of an automation.
+You can create tasks, notes, and logged calls tied directly to an opportunity, update fields, and move an opportunity to a specific stage as part of a workflow.
 </details>
 
 <details>
@@ -71,7 +71,7 @@ Go to `CRM` → `Opportunities`, then click `Set up a pipeline` and follow the p
 <details>
 <summary>Can I automate the creation of opportunities?</summary>
 
-Yes. You can use the automation builder to trigger opportunity creation when specific conditions are met. See [Opportunity automations](automations.md).
+Yes. You can use the workflow builder to trigger opportunity creation when specific conditions are met. See [Opportunity workflows](automations.md).
 </details>
 
 <details>

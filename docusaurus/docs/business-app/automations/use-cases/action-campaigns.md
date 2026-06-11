@@ -3,11 +3,11 @@ title: Pause campaigns when lead conditions change
 sidebar_position: 1
 sidebar_label: Pause campaigns
 description: Automatically pause campaigns for contacts or companies when leads go cold, bounce, or no longer qualify.
-tags: [automations, campaigns, crm, contact-level, company-level]
-keywords: [pause campaign, automation builder, meeting booked, email bounce, lead score, crm updates]
+tags: [workflows, campaigns, crm, contact-level, company-level]
+keywords: [pause campaign, workflow builder, meeting booked, email bounce, lead score, crm updates]
 ---
 
-When a lead books a meeting, bounces an email, or drops off a target list, continuing to send campaign messages can feel irrelevant — or worse, damage the relationship. You can build automations that pause campaigns automatically when conditions change, so your outreach stays timely without manual intervention.
+When a lead books a meeting, bounces an email, or drops off a target list, continuing to send campaign messages can feel irrelevant — or worse, damage the relationship. You can build workflows that pause campaigns automatically when conditions change, so your outreach stays timely without manual intervention.
 
 ## When to use this
 
@@ -24,11 +24,11 @@ You're running a "Cruise in winter" campaign for Tier A companies. When a compan
 2. **Condition:** Add a condition where `list_id` contains **Tier A**.
 3. **Action:** Add the **Pause campaign for company** step and select the **Cruise in winter** campaign.
 
-When a company is removed from List B, the automation checks if the list ID contains "Tier A". If true, it pauses the "Cruise in winter" campaign for the entire company, stopping all campaign messages to every contact in that organization.
+When a company is removed from List B, the workflow checks if the list ID contains "Tier A". If true, it pauses the "Cruise in winter" campaign for the entire company, stopping all campaign messages to every contact in that organization.
 
 <div style={{textAlign: 'center'}}>
 
-![Pause campaign automation workflow: trigger (company removed from List B, list_id contains Tier A), step (Pause Cruise in winter campaign), then End.](../img/pause-campaign.png)
+![Pause campaign workflow: trigger (company removed from List B, list_id contains Tier A), step (Pause Cruise in winter campaign), then End.](../img/pause-campaign.png)
 
 </div>
 

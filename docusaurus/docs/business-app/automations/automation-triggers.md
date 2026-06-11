@@ -3,25 +3,25 @@ title: Triggers
 sidebar_position: 1
 ---
 
-Automation triggers are specific actions that start your workflows. There are numerous triggers to choose from, and we're frequently adding more.
+Workflow triggers are specific events that start your workflows. There are numerous triggers to choose from, and we're frequently adding more.
 
 Some triggers are simple and are ready out-of-the-box. For example, the **A contact is created** trigger will start whenever any contact is created. Other triggers may require specifying trigger options. For example, the **A sales order status is changed** trigger requires that you specify the sales order origin and status that it's changed to.
 
 ![Trigger options example](./img/trigger-options.jpg)
 
-See [Automation conditions](automation-conditions.md) to learn how to filter when a trigger runs.
+See [Workflow conditions](automation-conditions.md) to learn how to filter when a trigger runs.
 
 ## Example: Company trigger
 
-The **When a Company is created or modified** trigger is a good example of a trigger that requires options. Instead of firing on every company update, you can specify which fields must change for the automation to run.
+The **When a Company is created or modified** trigger is a good example of a trigger that requires options. Instead of firing on every company update, you can specify which fields must change for the workflow to run.
 
-**Step 1** – Go to **Business App** → **Automations**.
+**Step 1** – Go to **Business App** → **Workflows**.
 
-**Step 2** – Create an automation and set the trigger to **When a Company is created or modified**.
+**Step 2** – Create a workflow and set the trigger to **When a Company is created or modified**.
 
-**Step 3** – In the side panel, choose the fields that must change for the automation to run. This prevents every company update from triggering the automation.
+**Step 3** – In the side panel, choose the fields that must change for the workflow to run. This prevents every company update from triggering the workflow.
 
-**Step 4** – Turn the automation on using the toggle at the top right.
+**Step 4** – Turn the workflow on using the toggle at the top right.
 
 ![Company trigger configuration screen](./img/business-app/automations/update-company-trigger-1.png)
 
@@ -32,6 +32,7 @@ The **When a Company is created or modified** trigger is a good example of a tri
 ## Trigger Configuration Tips
 
 Choose the most specific trigger that matches your use case and think about how often it will fire. If a trigger could fire many times at once, make sure your workflow can handle that scale. Always test with real data before going live.
+
 
 ### Common Trigger Patterns
 
@@ -97,21 +98,21 @@ Choose the most specific trigger that matches your use case and think about how 
 
 | Trigger | Description | Example Use Case |
 |---|---|---|
-| Triggered manually for a company | Starts the automation on demand for a selected company, much like a shortcut you run whenever needed. | Manually tag or update a company record without waiting for a scheduled trigger. |
-| Triggered manually for a contact | Starts the automation on demand for a selected contact, much like a shortcut you run whenever needed. | Manually kick off a follow-up sequence for a specific contact at any time. |
+| Triggered manually for a company | Starts the workflow on demand for a selected company, much like a shortcut you run whenever needed. | Manually tag or update a company record without waiting for a scheduled trigger. |
+| Triggered manually for a contact | Starts the workflow on demand for a selected contact, much like a shortcut you run whenever needed. | Manually kick off a follow-up sequence for a specific contact at any time. |
 
 ### Advanced
 
 | Trigger | Description | Example Use Case |
 |---|---|---|
-| A webhook is received | Starts the automation when an external system sends a POST request to the given URL with a user-defined payload. | Connect your automation to a third-party tool or service that supports webhooks. |
-| Triggered via Zapier | Starts the automation when the **Run Automation** action is used in the Zapier integration. See [Zapier → Business App](./zapier/zapier-triggers-business-app) for setup instructions. | Trigger an automation from Zapier to update contacts in the CRM and pass along data from another app. |
+| A webhook is received | Starts the workflow when an external system sends a POST request to the given URL with a user-defined payload. | Connect your workflow to a third-party tool or service that supports webhooks. |
+| Triggered via Zapier | Starts the workflow when the **Run Automation** action is used in the Zapier integration. See [Zapier → Business App](./zapier/zapier-triggers-business-app) for setup instructions. | Trigger a workflow from Zapier to update contacts in the CRM and pass along data from another app. |
 
 ### Time-based
 
 | Trigger | Description |
 |---|---|
-| On a schedule | Runs the automation automatically at a set time and frequency (daily, weekly, etc.) |
+| On a schedule | Runs the workflow automatically at a set time and frequency (daily, weekly, etc.) |
 
 ### Integrations
 

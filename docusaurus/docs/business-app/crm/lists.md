@@ -1,29 +1,29 @@
 ---
 title: Lists
 sidebar_position: 7
-description: Create static or smart lists to segment contacts and companies, trigger automations, and streamline CRM workflows.
-tags: [lists, crm, segmentation, automations]
-keywords: [smart lists, static lists, crm lists, trigger automation, segment contacts, segment companies]
+description: Create static or smart lists to segment contacts and companies, trigger workflows, and streamline CRM workflows.
+tags: [lists, crm, segmentation, workflows]
+keywords: [smart lists, static lists, crm lists, trigger workflow, segment contacts, segment companies]
 ---
 
-Use Lists to organize contacts and companies into meaningful segments for outreach, automation, and reporting. There are two types:
+Use Lists to organize contacts and companies into meaningful segments for outreach, workflows, and reporting. There are two types:
 
 - **Static Lists**: You add or remove members manually, ideal for fixed groups such as event attendees.
 - **Smart Lists**: You define rules, and the list updates automatically as data changes (attributes and behaviors).
 
 ## Why use Lists?
 
-Lists make it easy to target the right audience, kick off automations, and keep teams aligned on who to engage.
+Lists make it easy to target the right audience, kick off workflows, and keep teams aligned on who to engage.
 
 - Centralize segmentation for contacts and companies
 - Reduce manual work with automatically updating smart lists
-- Trigger automations when membership changes
+- Trigger workflows when membership changes
 
 ## What’s included with Lists?
 
 - **Static Lists** for manual curation
 - **Smart Lists** for rule-based segmentation
-- **Start Automation** actions from a list
+- **Start Workflow** actions from a list
 - **Membership Triggers** to automate when contacts/companies are added or removed
 
 ## How to use Lists
@@ -54,16 +54,16 @@ Keep static lists small and intentional, use them for one-time actions or short-
 
 ![Smart List Criteria](img/lists/smart-list-criteria.jpg)
 
-### Start an automation from a list
+### Start a workflow from a list
 
 1. Go to `CRM` > `Lists` and locate your list.
-2. Open the action menu (three dots) and select `Start Automation`.
-3. Choose an automation for contacts or companies (based on the list type) and run it.
+2. Open the action menu (three dots) and select `Start Workflow`.
+3. Choose a workflow for contacts or companies (based on the list type) and run it.
 
-![Start Automation](img/lists/start-automation.jpg)
+![Start Workflow](img/lists/start-automation.jpg)
 
 :::info
-Automations run immediately for the list’s current members. Use membership triggers to handle future additions or removals.
+Workflows run immediately for the list’s current members. Use membership triggers to handle future additions or removals.
 :::
 
 ### Automate when membership changes

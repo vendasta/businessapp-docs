@@ -914,7 +914,7 @@ Monitor customer service patterns through several methods:
 
 3. **Custom Capability Analytics:** Monitor which API calls are made most frequently through the "Explanation" feature
 
- 4. **Business Intelligence:** Set up [automations](../../automations/index) to log AI-generated appointments and analyze trends
+ 4. **Business Intelligence:** Set up [workflows](../../automations/index) to log AI-generated appointments and analyze trends
 
 This data can inform staffing, inventory, and service offerings based on customer demand patterns.
 </details>
@@ -968,7 +968,7 @@ The integration respects ServiceTitan's existing permission structure, so custom
 <details>
 <summary>Can I create automated follow-up workflows based on job completion?</summary>
 
-You can create follow-up workflows using ServiceTitan webhooks and Business App automations:
+You can create follow-up workflows using ServiceTitan webhooks and Business App workflows:
 
 **Job Completion Follow-ups:**
 - Automatic customer satisfaction surveys
@@ -977,12 +977,12 @@ You can create follow-up workflows using ServiceTitan webhooks and Business App 
 - Review request campaigns for positive experiences
 
 **Implementation Options:**
- 1. Use ServiceTitan webhooks to trigger Business App [automations](../../automations/index)
+ 1. Use ServiceTitan webhooks to trigger Business App [workflows](../../automations/index)
  2. Set up [Zapier](../../../automations/zapier.md) integrations between ServiceTitan and Business App
 3. Create scheduled follow-up tasks in your AI workflow
 
 **Example Workflow:**
-When a ServiceTitan job is marked "Completed" → trigger Business App automation → send personalized follow-up message through AI Receptionist → schedule satisfaction survey → book next maintenance appointment if needed.
+When a ServiceTitan job is marked "Completed" → trigger Business App workflow → send personalized follow-up message through AI Receptionist → schedule satisfaction survey → book next maintenance appointment if needed.
 
 This provides a consistent customer experience beyond the initial service call.
 </details>

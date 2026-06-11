@@ -1,10 +1,10 @@
 ---
-title: Automations
+title: Workflows
 sidebar_position: 1
 ---
 
-# Automations Overview
-Automations let you create workflows that run on their own when specific events happen. Use them to save time, improve consistency, and respond to customers faster—without manual effort.
+# Workflows Overview
+Workflows let you create automated processes that run on their own when specific events happen. Use them to save time, improve consistency, and respond to customers faster—without manual effort.
 
 <div
   className="wistia_responsive_padding"
@@ -16,7 +16,7 @@ Automations let you create workflows that run on their own when specific events 
   >
     <iframe
       src="https://fast.wistia.net/embed/iframe/er5hu3kuzk?web_component=true&seo=true"
-      title="Automations overview walkthrough"
+      title="Workflows overview walkthrough"
       allow="autoplay; fullscreen"
       allowTransparency
       frameBorder="0"
@@ -30,7 +30,7 @@ Automations let you create workflows that run on their own when specific events 
 </div>
 <script src="https://fast.wistia.net/player.js" async></script>
 
-## What you can automate
+## What you can do with workflows
 
 - Send SMS or plain-text emails when a contact is created or updated
 - Apply tags, update CRM fields, or create tasks based on activity
@@ -42,13 +42,13 @@ Automations let you create workflows that run on their own when specific events 
 
 ## How it works
 
-Every automation includes:
+Every workflow includes:
 
 - **Trigger:** The event that starts your workflow (for example, When a contact is created)
-- **Conditions:** Optional filters that must be met for the automation to run (for example, Contact has specific tag, or Company field equals value)
+- **Conditions:** Optional filters that must be met for the workflow to run (for example, Contact has specific tag, or Company field equals value)
 - **Steps:** What happens next (for example, Send SMS, Send plain-text email, Update company)
 
-## How automations flow
+## How workflows run
 
 ```
             Event Occurs
@@ -61,134 +61,134 @@ Every automation includes:
        ↓                     ↓
       Yes                    No
        ↓                     ↓
-  Execute Steps       Skip Automation
+  Execute Steps       Skip Workflow
        ↓
     Complete
 ```
 
 For example: **Form submitted** (event) → **When form is submitted for a contact** (trigger) → **Contact has "New Lead" tag?** (condition) → **Send welcome email** (step) → **Complete**
 
-Here is an example of a simple automation workflow that sends a review request when a note tagged "eligible_for_review_request" is created or modified for a contact.
+Here is an example of a simple workflow that sends a review request when a note tagged "eligible_for_review_request" is created or modified for a contact.
 
 <div style={{ textAlign: 'center' }}>
 
-![Automation workflow example showing trigger and step](./img/automation-example.png)
+![Workflow example showing trigger and step](./img/automation-example.png)
 
 </div>
 
 :::tip
-Before building an automation, run the process manually a couple of times to make sure it works the way you expect. Once you're confident in the process, automate it — you'll catch fewer surprises and build a more reliable workflow.
+Before building a workflow, run the process manually a couple of times to make sure it works the way you expect. Once you're confident in the process, automate it — you'll catch fewer surprises and build a more reliable workflow.
 :::
 
 ## Getting started
 
-There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and steps already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
+There are two ways to create a workflow: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and steps already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
 
-1. Go to **Business App** > **Automations**
+1. Go to **Business App** > **Workflows**
 
 :::tip
-You can also find Automations under **Business App** > **Administration** > **Automations**.
+You can also find Workflows under **Business App** > **Administration** > **Workflows**.
 :::
 
-2. Select **Create Automation**
+2. Select **Create Workflow**
 
 <div style={{ textAlign: 'center' }}>
-  <img src={require('./img/automations-create automations.png').default} alt="Create automation button in Automations page" width="25%" />
+  <img src={require('./img/automations-create automations.png').default} alt="Create workflow button in Workflows page" width="25%" />
 </div>
 
 3. Choose how you want to start:
 
 **From a template** — pick a template from the gallery that matches your goal. Templates come with triggers and steps pre-configured, so you just customize them for your business.
 
-![Automation templates gallery showing available templates](./img/automations-template%20gallery.png)
+![Workflow templates gallery showing available templates](./img/automations-template%20gallery.png)
 
 **From scratch** — choose **Blank** to open an empty workflow canvas and build every step yourself.
 
-![Automation builder interface showing workflow canvas and trigger selection panel](./img/automations-builder%20UI.png)
+![Workflow builder interface showing workflow canvas and trigger selection panel](./img/automations-builder%20UI.png)
 
 4. **Add a Trigger** — select the event that starts your workflow (templates have one pre-selected; adjust it if needed)
    - Example: "When a form is submitted for a contact", "Contact created", "Meeting booked"
    - Add **Conditions** if needed to filter when it runs
 
 <div style={{ textAlign: 'center' }}>
-  <img src={require('./img/automations-add condition.png').default} alt="Add conditions checkbox to filter when automation runs" width="50%" style={{ border: '1px solid #ddd', borderRadius: '4px' }} />
+  <img src={require('./img/automations-add condition.png').default} alt="Add conditions checkbox to filter when workflow runs" width="50%" style={{ border: '1px solid #ddd', borderRadius: '4px' }} />
 </div>
 
 5. **Add a Step** — define what happens when the trigger fires (templates include steps already; you can edit, remove, or add more)
    - Example: "Send a plain text email via Conversations AI", "Send SMS", "Create task"
 
-6. **Edit automation details** — select ``Edit details`` from the side panel to name and organize your automation. Give it a title, add a description (or select ``Regenerate description`` to have AI draft one), apply tags to make it easier to find on the Automations page, and add notes.
+6. **Edit workflow details** — select ``Edit details`` from the side panel to name and organize your workflow. Give it a title, add a description (or select ``Regenerate description`` to have AI draft one), apply tags to make it easier to find on the Workflows page, and add notes.
 
 <div style={{ textAlign: 'center' }}>
   <img src={require('./img/edit-automation-details-window.png').default} alt="Edit details panel showing Title, Description, Tags, and Notes fields" width="55%" />
 </div>
 
-7. Save and toggle your automation **On**
+7. Save and toggle your workflow **On**
 
-![Toggle automation on](./img/automation-toggle.png)
+![Toggle workflow on](./img/automation-toggle.png)
 
 :::warning
-You must turn off your automation before you can edit its triggers, conditions, or steps.
+You must turn off your workflow before you can edit its triggers, conditions, or steps.
 :::
 
-## Turning on an automation
+## Turning on a workflow
 
-When you toggle an automation on, you'll be prompted to review and confirm three settings before it goes live:
+When you toggle a workflow on, you'll be prompted to review and confirm three settings before it goes live:
 
-- **Entry settings**: control how frequently the automation runs for the same contact or company (only once, multiple times, or one at a time)
+- **Entry settings**: control how frequently the workflow runs for the same contact or company (only once, multiple times, or one at a time)
 - **Error handling settings**: choose whether to skip a failed step and continue, or stop the run entirely
-- **Error notifications**: optionally subscribe to be notified when the automation encounters an error
+- **Error notifications**: optionally subscribe to be notified when the workflow encounters an error
 
-See [Automation settings](automation-settings.md) for a full explanation of each option.
+See [Workflow settings](automation-settings.md) for a full explanation of each option.
 
-## Turning off an automation
+## Turning off a workflow
 
-When you toggle an automation off, you'll be asked how to handle any runs that are currently in progress:
+When you toggle a workflow off, you'll be asked how to handle any runs that are currently in progress:
 
-- **Stop automation runs in progress** — immediately aborts all active runs. Stopped runs will not resume if the automation is turned back on.
-- **Drain automation runs** — allows runs in progress to complete. The automation turns off automatically once all ongoing runs have been processed.
+- **Stop workflow runs in progress** — immediately aborts all active runs. Stopped runs will not resume if the workflow is turned back on.
+- **Drain workflow runs** — allows runs in progress to complete. The workflow turns off automatically once all ongoing runs have been processed.
 
-Use **Drain** when you want to avoid interrupting processes that are mid-workflow. Use **Stop** when you need to halt everything immediately — for example, if the automation is behaving unexpectedly.
+Use **Drain** when you want to avoid interrupting processes that are mid-workflow. Use **Stop** when you need to halt everything immediately — for example, if the workflow is behaving unexpectedly.
 
-## Run automations from the CRM
+## Run workflows from the CRM
 
-You can also start automations directly from your CRM without visiting the Automations page. In `CRM` > `Contacts` or `CRM` > `Companies`, select one or more records, click the `Actions` button, and choose `Start automation`. This lets you run an existing automation on a specific set of records on demand.
+You can also start workflows directly from your CRM without visiting the Workflows page. In `CRM` > `Contacts` or `CRM` > `Companies`, select one or more records, click the `Actions` button, and choose `Start workflow`. This lets you run an existing workflow on a specific set of records on demand.
 
 See [Contacts — Take bulk actions](../crm/contacts/index.md#take-bulk-actions-on-contacts) and [Companies — Take bulk actions](../crm/companies.md#take-bulk-actions-on-companies) for details.
 
 ## Related resources
 
-- [Automation triggers](automation-triggers.md) - Full list of available triggers by category
-- [Automation conditions](automation-conditions.md) - Filter when your automation runs using AND/OR logic
-- [Automation settings](automation-settings.md) - Control how often it runs and how errors are handled
-- [Automation activity](automation-activity.md) - Review what ran, when it ran, and troubleshoot issues
+- [Workflow triggers](automation-triggers.md) - Full list of available triggers by category
+- [Workflow conditions](automation-conditions.md) - Filter when your workflow runs using AND/OR logic
+- [Workflow settings](automation-settings.md) - Control how often it runs and how errors are handled
+- [Workflow activity](automation-activity.md) - Review what ran, when it ran, and troubleshoot issues
 - [Messaging steps](use-cases/action-messaging.md) - Send SMS and email messages
 - [Campaign steps](use-cases/action-campaigns.md) - Pause campaigns intelligently
-- [Review request automation](review-requests.mdx) - Collect customer reviews automatically
+- [Review request workflows](review-requests.mdx) - Collect customer reviews automatically
 - [Zapier integration](zapier.md) - Connect with thousands of external apps
 
 ## Frequently asked questions (FAQs)
 
 <details>
-<summary>Can I get a response from an AI Employee inside an automation?</summary>
+<summary>Can I get a response from an AI Employee inside a workflow?</summary>
 
 Yes. Add the "Get a response from an AI Employee" step to send context (for example, a conversation summary or form submission) to your AI Employee and use the response later in the workflow.
 </details>
 
 <details>
-<summary>How do I trigger automations for entire lists?</summary>
+<summary>How do I trigger workflows for entire lists?</summary>
 
-Use the **"Start automation for a list"** step in your automation builder. Select your target list (contacts, companies, or custom objects) and choose which automation to run. The automation will execute for each record in the list.
+Use the **"Start workflow for a list"** step in your workflow builder. Select your target list (contacts, companies, or custom objects) and choose which workflow to run. The workflow will execute for each record in the list.
 </details>
 
 <details>
-<summary>What are getter steps in automations?</summary>
+<summary>What are getter steps in workflows?</summary>
 
-Getter steps let you retrieve related data during automation runs. For example, "Get company from contact" retrieves company information when your automation is processing a contact record. This helps you work with connected data across your CRM.
+Getter steps let you retrieve related data during workflow runs. For example, "Get company from contact" retrieves company information when your workflow is processing a contact record. This helps you work with connected data across your CRM.
 </details>
 
 <details>
-<summary>What's the difference between regular automations and list automations?</summary>
+<summary>What's the difference between regular workflows and list workflows?</summary>
 
-Regular automations trigger based on events (like "when a contact is created"). List automations let you manually trigger a workflow for an entire existing list of records, making them ideal for bulk operations and targeted campaigns.
+Regular workflows trigger based on events (like "when a contact is created"). List workflows let you manually trigger a workflow for an entire existing list of records, making them ideal for bulk operations and targeted campaigns.
 </details>

@@ -155,7 +155,7 @@ You can monitor product inquiry patterns through several methods:
 
 2. **AI Explanation Feature:** Click "Explanation" on AI responses to see exactly which tools were called and what products were searched
 
-3. **Automation Tracking:** Set up [automations](../../automations/index) to log product inquiries or notify your team about trending searches
+3. **Workflow Tracking:** Set up [workflows](../../automations/index) to log product inquiries or notify your team about trending searches
 
 This data helps you understand customer demand, optimize your inventory, and identify opportunities for targeted marketing campaigns.
 </details>
@@ -256,7 +256,7 @@ export const faqSchema = {
       name: 'How can I track which products customers are asking about most?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can monitor product inquiry patterns through several methods. Review the Conversations tab to see which products customers mention most frequently. Use the AI Explanation feature to see which tools were called and what products were searched. Set up automations to log product inquiries or notify your team about trending searches. These insights help you understand customer demand, optimize inventory, and identify opportunities for targeted marketing campaigns.',
+        text: 'You can monitor product inquiry patterns through several methods. Review the Conversations tab to see which products customers mention most frequently. Use the AI Explanation feature to see which tools were called and what products were searched. Set up workflows to log product inquiries or notify your team about trending searches. These insights help you understand customer demand, optimize inventory, and identify opportunities for targeted marketing campaigns.',
       },
     },
     {

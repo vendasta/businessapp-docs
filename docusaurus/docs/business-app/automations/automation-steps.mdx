@@ -1,10 +1,10 @@
 ---
 title: Steps
 sidebar_position: 3
-description: Browse all available automation steps and learn how logic steps like delays, If/Else branches, and End This Automation work.
+description: Browse all available workflow steps and learn how logic steps like delays, If/Else branches, and End This Workflow work.
 ---
 
-Automation steps are what happen after a trigger fires. Each step defines a specific action your workflow performs: sending a message, updating a record, creating a task, and so on. You can add multiple steps to a workflow and they run from top to bottom.
+Workflow steps are what happen after a trigger fires. Each step defines a specific action your workflow performs: sending a message, updating a record, creating a task, and so on. You can add multiple steps to a workflow and they run from top to bottom.
 
 ## Step types
 
@@ -12,11 +12,11 @@ There are two types of steps in the Automation Builder, distinguished by color:
 
 **Action steps (blue)** do the work: they send messages, update records, create tasks, log activities, and interact with your CRM and connected apps. Most steps are action steps. See the [Step Reference](#step-reference) for the full list.
 
-**Logic steps (purple)** control the flow of the automation: they don't perform an action themselves, but decide what happens next. Use them to introduce delays, branch based on conditions, jump to a different point in the workflow, or end the run early. See the [Step Reference](#step-reference) for the full list.
+**Logic steps (purple)** control the flow of the workflow: they don't perform an action themselves, but decide what happens next. Use them to introduce delays, branch based on conditions, jump to a different point in the workflow, or end the run early. See the [Step Reference](#step-reference) for the full list.
 
 <div style={{ display: 'flex', gap: '24px', justifyContent: 'center', alignItems: 'flex-start' }}>
-  <img src={require('./img/action-steps.png').default} alt="Action steps in the automation builder showing Companies, Contacts, Users, and Businesses categories in blue" width="45%" />
-  <img src={require('./img/logic-steps.png').default} alt="Logic steps in the automation builder showing Delays, Conditions, and Workflow categories in purple" width="45%" />
+  <img src={require('./img/action-steps.png').default} alt="Action steps in the workflow builder showing Companies, Contacts, Users, and Businesses categories in blue" width="45%" />
+  <img src={require('./img/logic-steps.png').default} alt="Logic steps in the workflow builder showing Delays, Conditions, and Workflow categories in purple" width="45%" />
 </div>
 
 
@@ -26,7 +26,7 @@ There are two types of steps in the Automation Builder, distinguished by color:
 
 ### Delay
 
-The **Delay** step pauses the automation for a fixed amount of time before moving to the next step. Use it when timing matters, for example, waiting a day before sending a follow-up, or giving a contact time to respond before escalating.
+The **Delay** step pauses the workflow for a fixed amount of time before moving to the next step. Use it when timing matters, for example, waiting a day before sending a follow-up, or giving a contact time to respond before escalating.
 
 **Example:**
 
@@ -35,12 +35,12 @@ The **Delay** step pauses the automation for a fixed amount of time before movin
 - **Step 2:** Start the SMS campaign for the contact
 
 <div style={{ textAlign: 'center' }}>
-  <img src={require('./img/automations-step-delay.png').default} alt="Delay step in the Automation Builder showing a 3-day wait before starting an SMS campaign" width="60%" />
+  <img src={require('./img/automations-step-delay.png').default} alt="Delay step in the Workflow Builder showing a 3-day wait before starting an SMS campaign" width="60%" />
 </div>
 
 ### Delay until an event happens
 
-The **Delay until an event happens** step pauses the automation and waits for a specific event to occur before continuing, rather than waiting a fixed amount of time. Use it when the next step depends on something happening, not just time passing.
+The **Delay until an event happens** step pauses the workflow and waits for a specific event to occur before continuing, rather than waiting a fixed amount of time. Use it when the next step depends on something happening, not just time passing.
 
 **Example:**
 
@@ -53,7 +53,7 @@ The **Delay until an event happens** step pauses the automation and waits for a 
 </div>
 
 :::note
-If the contact becomes ineligible for the workflow while waiting (for example, the automation is turned off), the run may be cancelled.
+If the contact becomes ineligible for the workflow while waiting (for example, the workflow is turned off), the run may be cancelled.
 :::
 
 ### If/Else branch
@@ -68,7 +68,7 @@ Each branch can have its own steps, so the automation does something different d
 **How to add an If/Else branch:** Define your filter (for example: contact tag equals "Call", or city equals "Austin"). Add steps to the If branches and the Else branch as needed.
 
 <div style={{ textAlign: 'center' }}>
-  <img src={require('./img/automations-if-else-branch.png').default} alt="If/else branch in the Automation Builder showing a Yes and No path based on a contact tag condition" width="60%" />
+  <img src={require('./img/automations-if-else-branch.png').default} alt="If/else branch in the Workflow Builder showing a Yes and No path based on a contact tag condition" width="60%" />
 </div>
 
 :::info Order matters
@@ -77,7 +77,7 @@ Branches are checked from top to bottom. As soon as a condition is met, the auto
 
 ### End This Automation
 
-The **End This Automation** step immediately stops the current run. It's most useful inside an If/Else branch when one path should proceed and the other should stop entirely, without needing to restructure your existing steps.
+The **End This Workflow** step immediately stops the current run. It's most useful inside an If/Else branch when one path should proceed and the other should stop entirely, without needing to restructure your existing steps.
 
 {/* TODO: Add screenshot — End This Automation step in the workflow canvas */}
 
@@ -87,8 +87,8 @@ The **End This Automation** step immediately stops the current run. It's most us
 - **If** contact already has tag "contacted" → End This Automation
 - **Else** → Send follow-up email → Create CRM task
 
-:::tip Hack: Use End Automation to simplify restructuring
-When you need to add an If/Else branch above a series of existing steps, you don't have to move each downstream step into the new branch. Instead, place the If/Else at the top, put **End Automation** in the branch that should stop, and leave your existing steps in the main flow below. This saves you from manually reorganizing everything.
+:::tip Hack: Use End Workflow to simplify restructuring
+When you need to add an If/Else branch above a series of existing steps, you don't have to move each downstream step into the new branch. Instead, place the If/Else at the top, put **End Workflow** in the branch that should stop, and leave your existing steps in the main flow below. This saves you from manually reorganizing everything.
 
 <div
   className="wistia_responsive_padding"
@@ -210,7 +210,7 @@ When you need to add an If/Else branch above a series of existing steps, you don
 
 | Step | Description | Special Cases |
 |---|---|---|
-| Delay | Pauses the automation for a set amount of time before continuing to the next step | The automation run may be cancelled if the contact or company becomes ineligible for the workflow while waiting |
+| Delay | Pauses the workflow for a set amount of time before continuing to the next step | The workflow run may be cancelled if the contact or company becomes ineligible for the workflow while waiting |
 | Delay until an event happens | Pauses the automation and waits until a specified event occurs (e.g. a task is completed, a campaign email is clicked) | |
 
 ### Conditions (logic steps)
@@ -226,14 +226,14 @@ When you need to add an If/Else branch above a series of existing steps, you don
 | Step | Description |
 |---|---|
 | A/B branch | Randomly splits contacts into two groups so you can test different workflow paths |
-| End this automation | Immediately stops the current automation run |
+| End this workflow | Immediately stops the current workflow run |
 
 ## Related resources
 
-- [Automation triggers](./automation-triggers) - Events that start your workflow
-- [Automation conditions](./automation-conditions) - Filter when your automation runs using AND/OR logic
+- [Workflow triggers](./automation-triggers) - Events that start your workflow
+- [Workflow conditions](./automation-conditions) - Filter when your workflow runs using AND/OR logic
 - [Messaging steps](./use-cases/action-messaging) - Send SMS and email messages via Conversations
 - [Campaign steps](./use-cases/action-campaigns) - Pause and start campaigns from a workflow
-- [Review request automation](./review-requests) - Collect customer reviews automatically
+- [Review request workflows](./review-requests) - Collect customer reviews automatically
 - [Dynamic content](./smart-values-in-automations) - Personalize steps with dynamic contact and company data
-- [Automation settings](./automation-settings) - Control how often it runs and how errors are handled
+- [Workflow settings](./automation-settings) - Control how often it runs and how errors are handled
