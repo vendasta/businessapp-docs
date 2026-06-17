@@ -1,0 +1,289 @@
+---
+sidebar_position: 1
+title: Reviews Basics
+description: Learn how the review request system works, what the review request cadence looks like, what the Google Review Widget is, and how to display recent reviews on your website with Review Stream.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+import CommentBox from "@site/src/components/CommentBox";
+
+Reviews are the foundation of local business credibility — and getting them consistently is one of the hardest parts of running a small business. The app automates the asking, consolidates the monitoring, and gives you tools to put your best reviews front and center.
+
+:::tip What you'll learn
+Understand how review requests are sent and timed, how the Smarter Ask technology routes follow-ups, what makes the Google Review Widget special, and how to display recent reviews on your website with Review Stream.
+:::
+
+---
+
+<FlipCardGrid>
+  <FlipCard front="⭐ How Reviews Work" back="Automate review requests, monitor all reviews in one place, and build a consistent stream of recent feedback." subtext="Core reviews feature" />
+  <FlipCard front="📅 Review Request Cadence" back="Understand when review requests go out, what triggers follow-ups, and how the Smarter Ask technology works." subtext="Timing & sequencing" />
+  <FlipCard front="🔧 Google Review Widget" back="An exclusive Google API integration that loads the review form faster and increases review completion rates." subtext="Exclusive Google access" />
+  <FlipCard front="🌊 Review Stream & Settings" back="Automatically display 4 and 5-star Google and Facebook reviews on your website. Review settings live in Settings > Messaging." subtext="Website display + settings" />
+</FlipCardGrid>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">⭐</span>How Reviews Work</div>
+
+The reviews feature is designed to do the heavy lifting — automatically asking customers for reviews, keeping all responses in one place, and ensuring a steady flow of fresh, relevant feedback for the business.
+
+### Ask for Reviews Automatically
+
+> When a customer is added to the app, a review request is sent on their behalf automatically — no manual follow-up required. This default delay is set to 4 hours after the customer is added, giving the business just enough time to complete the service before the request goes out.
+
+### Monitor Reviews in One Place
+
+> Instead of checking Google, Facebook, Yelp, and other sites separately, all reviews are consolidated into a single view. This makes it easier to spot trends, respond promptly, and stay on top of what customers are saying.
+
+### Consistent, Recent Reviews
+
+> Automation ensures reviews come in regularly — not just in bursts when the team remembers to ask. Consistent, recent reviews carry more weight with both potential customers and search engines.
+
+### Review Gating Is Not Allowed
+
+> The app cannot block negative reviews from being posted online. This practice — known as **review gating** — violates Google's policy and can lead to a business's Google page being taken down or suspended. All customers receive review requests regardless of their expected sentiment.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>An HVAC company sets up their integration so that every customer is added to the app when service is marked complete. Four hours later, a review request goes out automatically. Over the next 90 days, their Google review count climbs from 12 to 47 — without the owner manually asking a single customer.</p>
+  </div>
+</div>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📅</span>Review Request Cadence</div>
+
+The review request system follows a smart sequence designed to maximize response rates and avoid overwhelming customers with too many requests.
+
+### Initial Request
+
+> By default, the first review request is sent via **text** and the second via **email**. The initial request directs the customer to Google via the Google Review Widget — Google is the top priority given its importance for local search visibility.
+
+### Smarter Ask Technology
+
+> The follow-up review request uses **Smarter Ask** technology to determine which review sites the customer is most likely already logged into. This removes the sign-in barrier and makes it easier for customers to complete a review. Currently supported sites: Google, Yelp, Facebook, Nextdoor, and TripAdvisor.
+
+### If the Customer Leaves a Positive Review
+
+> Another review request is sent **3 days later**, thanking the customer and directing them to a different review site to spread the love across platforms.
+
+### If the Customer Ignores the Initial Request
+
+> A follow-up request is sent **5 days later** to give the customer a second chance to leave a review or provide feedback.
+
+### If the Customer Leaves a Negative Review
+
+> No additional review requests are sent. The automation stops to avoid pressuring a customer who is already dissatisfied.
+
+### Disabling Automated Follow-Ups
+
+> Businesses can prevent future review requests from going out to specific customers. This is managed through the Disabling Automated Follow-Ups setting.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A dental office adds a patient after their cleaning. Four hours later, a text review request goes out linking to Google. The patient ignores it. Five days later, a follow-up email arrives — this time the Smarter Ask technology routes them to Yelp, where they already have an account. They leave a 5-star review in under a minute. Three days after that, another request goes out pointing them toward Facebook to round out the business's review presence.</p>
+  </div>
+</div>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔧</span>Google Review Widget</div>
+
+The Google Review Widget is an exclusive integration with Google's review platform that provides a direct, faster path for customers to leave a Google review.
+
+### What Makes It Exclusive
+
+> Access to Google's review widget is considered private and is only granted to a handful of select businesses that have passed Google's approval process. Most competitors do not have this integration — it is a meaningful differentiator.
+
+### Faster Form Load = Higher Review Rate
+
+> When customers click the review request link, the Google review form loads significantly faster through this widget compared to the standard Google review flow. A faster form means less friction and a higher rate of completed reviews.
+
+### Trackable Reviews
+
+> Because the widget is a direct API integration, it can track which reviews were left as a direct result of a review request. This gives a clear picture of how the automation is driving real outcomes.
+
+### Where It Fits
+
+> The Google Review Widget is integrated into the default **Direct to Review** strategy. It is the destination for the initial review request sent to every new customer.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A roofing company's initial review request links to Google via the Review Widget. The form loads in under a second on the customer's phone. The customer taps five stars, writes two sentences, and hits submit — all in under 90 seconds. The business can see in their reporting that this review came directly from their automated request.</p>
+  </div>
+</div>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🌊</span>Review Stream &amp; Settings</div>
+
+Review Stream automatically pulls recent high-quality reviews onto a business's website, and all review-related settings are managed in one place.
+
+### Review Stream
+
+> The Review Stream automatically displays all recent **4 and 5-star reviews** from Google and Facebook directly on the business's website. It also shows selected keywords and owner responses. To install, the business sends a **code snippet** to their web team or site developer to add to the website.
+
+### What Review Stream Shows
+
+> Review Stream pulls the most recent positive reviews, selected keywords, and any owner responses — giving website visitors immediate social proof without having to navigate away to Google or Facebook.
+
+### Settings for Reviews
+
+> All messaging and review settings are found in **Settings &gt; Messaging**. This includes the review request delay, request method (text vs. email), and other cadence configurations.
+
+### Best Practice
+
+> Automation is a powerful tool, but the quality of reviews ultimately reflects the quality of the business and the customer experience it delivers. The best results come from businesses that genuinely care about their customers — the automation just makes sure those happy customers are asked at the right moment.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A pet grooming business installs Review Stream on their homepage by sending the code snippet to the person who manages their website. Within a day, their five most recent 5-star Google reviews are displaying live on the homepage, complete with the owner's responses. New visitors see the reviews immediately and call to book without ever leaving the website.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Settings > Messaging" back="The central location for all review request settings — adjust timing, method, and cadence from here." subtext="Review configuration" />
+  <FlipCard front="Smarter Ask Technology" back="Routes follow-up review requests to the site the customer is most likely already logged into — reducing friction and increasing completions." subtext="Google, Yelp, Facebook, Nextdoor, TripAdvisor" />
+  <FlipCard front="Review Stream Code Snippet" back="Send to your web developer to install automatic display of 4 and 5-star reviews on your website." subtext="Website social proof" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    {
+      type: "truefalse",
+      statement: "The app can prevent negative reviews from being posted online by filtering which customers receive review requests.",
+      correct: false,
+      explanation: "**How Reviews Work** explains that review gating violates Google's policy and can lead to page suspension. All customers receive review requests regardless of expected sentiment."
+    },
+    {
+      type: "mcq",
+      question: "By default, how long after a customer is added does the first review request go out?",
+      options: ["Immediately", "1 hour", "4 hours", "24 hours"],
+      correctIndex: 2,
+      explanation: "**How Reviews Work** states that the default delay for the first review request is 4 hours after the customer is added."
+    },
+    {
+      type: "whicharea",
+      principle: "A business owner wants to know where to adjust the delay before review requests go out. Which section covers this?",
+      correctArea: "🌊 Review Stream & Settings",
+      explanation: "**Review Stream & Settings** explains that all review-related settings, including the request delay and method, are found in Settings > Messaging."
+    },
+    {
+      type: "mcq",
+      question: "What happens if a customer ignores the initial review request?",
+      options: ["No further requests are sent", "A follow-up is sent 3 days later", "A follow-up is sent 5 days later", "A follow-up is sent immediately via a different channel"],
+      correctIndex: 2,
+      explanation: "**Review Request Cadence** states that if a customer ignores the initial request, a follow-up is sent 5 days later."
+    },
+    {
+      type: "whicharea",
+      principle: "A customer asks what makes the review link in their initial request special compared to a standard Google review link. Which section explains this?",
+      correctArea: "🔧 Google Review Widget",
+      explanation: "**Google Review Widget** explains that the widget is an exclusive Google API integration that loads the review form faster than the standard flow, increasing the completion rate."
+    },
+    {
+      type: "truefalse",
+      statement: "The Smarter Ask technology routes follow-up review requests to the site the customer is most likely already logged into.",
+      correct: true,
+      explanation: "**Review Request Cadence** describes Smarter Ask as a technology that determines which review sites the customer is most likely already logged into, removing the sign-in barrier."
+    },
+    {
+      type: "fillblank",
+      principle: "Review Stream displays all recent _____ and _____ star reviews from Google and Facebook on the business website.",
+      before: "Review Stream displays recent",
+      answer: "4 and 5",
+      after: "star reviews",
+      hint: "Only the top two ratings are displayed.",
+      explanation: "**Review Stream & Settings** specifies that Review Stream automatically displays all recent 4 and 5-star reviews from Google and Facebook."
+    },
+    {
+      type: "match",
+      instruction: "Match each review cadence scenario to the correct outcome.",
+      pairs: [
+        { term: "Customer leaves a positive review", definition: "Another request goes out 3 days later for a different review site" },
+        { term: "Customer ignores the initial request", definition: "A follow-up is sent 5 days later" },
+        { term: "Customer leaves a negative review", definition: "No additional review requests are sent" },
+        { term: "Customer receives the initial request", definition: "Directed to Google via the Google Review Widget" }
+      ],
+      explanation: "These pairings reflect the cadence logic described in Review Request Cadence."
+    },
+    {
+      type: "truefalse",
+      statement: "Most competitors have access to the same Google Review Widget integration.",
+      correct: false,
+      explanation: "**Google Review Widget** explains that access is exclusive and only granted to a handful of businesses that have passed Google's approval process. Most competitors do not have this integration."
+    },
+    {
+      type: "whicharea",
+      principle: "A business owner wants to add live social proof to their website homepage showing their most recent positive reviews. Which section covers how to do this?",
+      correctArea: "🌊 Review Stream & Settings",
+      explanation: "**Review Stream & Settings** explains that Review Stream installs on the website via a code snippet and automatically displays recent 4 and 5-star reviews from Google and Facebook."
+    },
+    {
+      type: "sort",
+      instruction: "Sort these review request events into the correct order as they happen in the default cadence.",
+      items: [
+        { label: "Customer is added to the app", correctBucket: "first" },
+        { label: "First review request sent via text (to Google)", correctBucket: "second" },
+        { label: "Follow-up sent via Smarter Ask (if ignored) or to a second site (if positive)", correctBucket: "third" }
+      ],
+      buckets: [
+        { id: "first", label: "First" },
+        { id: "second", label: "Second" },
+        { id: "third", label: "Third" }
+      ],
+      explanation: "**How Reviews Work** and **Review Request Cadence** together describe this sequence: customer is added, first request goes out after 4 hours, and follow-ups are triggered based on the customer's response."
+    },
+    {
+      type: "mcq",
+      question: "Which review sites does the Smarter Ask technology currently support for follow-up requests?",
+      options: ["Google and Yelp only", "Google, Yelp, Facebook, Nextdoor, and TripAdvisor", "Google, Facebook, and Yelp only", "Any site the customer has an account on"],
+      correctIndex: 1,
+      explanation: "**Review Request Cadence** lists the currently supported Smarter Ask sites: Google, Yelp, Facebook, Nextdoor, and TripAdvisor."
+    },
+    {
+      type: "fillblank",
+      principle: "To install Review Stream on a website, the business sends a _____ to their web developer.",
+      before: "The business sends a",
+      answer: "code snippet",
+      after: "to their web developer.",
+      hint: "It's a small piece of embeddable code.",
+      explanation: "**Review Stream & Settings** states that Review Stream is installed by sending a code snippet to the web team or site developer."
+    },
+    {
+      type: "truefalse",
+      statement: "Automation alone is sufficient to guarantee great reviews, regardless of the quality of the business's customer experience.",
+      correct: false,
+      explanation: "**Review Stream & Settings** notes that the quality of reviews ultimately reflects the quality of the business and customer experience. Automation ensures the ask goes out at the right moment, but the results depend on how well the business serves its customers."
+    }
+  ]}
+/>
+
+---
+
+## Share a Reflection
+
+<CommentBox prompt="What aspect of the reviews system do you think will be most impactful for your customers? Share any questions you have about the review request cadence or the Google Review Widget." />
+
+---
+
+For more on connecting review sites and managing your online profiles, explore the **Online Profiles** settings in the app and the related Help Center articles on review management.

@@ -1,0 +1,55 @@
+---
+sidebar_position: 3
+title: Set Up Storefront Payments and Explore Your Shopping Cart
+description: Watch step-by-step videos to set up your Storefront to accept online payments and explore the Shopping Cart experience from your customers' perspective.
+---
+
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+import CommentBox from "@site/src/components/CommentBox";
+
+Explore the Shopping Cart from your customers' perspective and learn how to configure your Storefront to accept online payments. Follow along inside the Vendasta platform as you watch each step-by-step walkthrough.
+
+:::tip What you'll cover
+Setting up your Public Store and Business App storefront for online purchases, managing sign-ins, configuring packages for the Shopping Cart, and accepting payments.
+:::
+
+---
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://fast.wistia.net/embed/iframe/4omuhoxdjs"
+  title="Set up Storefront Payments and Explore Your Shopping Cart"
+  style={{border: 'none'}}
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen={true}
+/>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "truefalse", statement: "Customers can browse and add products to their cart through both the Public Store and the Store tab inside Business App.", correct: true, explanation: "The Shopping Cart is accessible from two locations: the Public Store (your external storefront) and the Store tab inside Business App." },
+    { type: "mcq", question: "What must be configured for packages to appear in both the Public Store and Business App?", options: ["The package must be marked as 'featured'", "The package must be configured to be available for purchase in both locations", "Packages are automatically available in both locations once created", "Only premium-tier partners can enable packages in both locations"], correctIndex: 1, explanation: "Packages must be specifically configured so they are available for purchase in both the Public Store and Business App's Store tab." },
+    { type: "truefalse", statement: "New customer sign-ins from the Public Store can be created and managed through the Vendasta platform.", correct: true, explanation: "Creating and managing new sign-ins from the Public Store is part of the Shopping Cart and Storefront setup process." },
+    { type: "mcq", question: "Which best describes the Shopping Cart experience covered in this course?", options: ["It is only available for internal team purchases", "It is explored from the perspective of your customers purchasing from your Public Store or Business App", "It only applies to digital product downloads", "It requires a custom domain before it can be activated"], correctIndex: 1, explanation: "This course walks through the Shopping Cart from your customers' perspective, showing how they view and purchase from your Public Store or Business App Store tab." },
+    { type: "truefalse", statement: "Partners who have not configured Vendasta Payments can still accept credit card payments through the Shopping Cart.", correct: false, explanation: "Without Vendasta Payments set up, the Shopping Cart checkout will submit a sales order instead of processing a credit card payment." },
+    { type: "fillblank", principle: "To accept online payments through your Storefront, you must first set up _____ through Vendasta Payments.", before: "", answer: "Stripe Connect", after: "", hint: "It's the payment platform integrated into Vendasta.", explanation: "Accepting credit card payments through the Shopping Cart requires connecting a Stripe Connect account via Vendasta Payments." },
+    { type: "mcq", question: "What happens when a customer adds a product to their cart in Business App's Store tab?", options: ["The order is automatically fulfilled and charged", "The partner receives an email alert to process the order manually", "The customer goes through the Shopping Cart checkout to complete the purchase", "The product is added to their account as a free trial"], correctIndex: 2, explanation: "When customers add a product to their cart in Business App, they proceed through the Shopping Cart checkout process to complete the purchase." },
+    { type: "truefalse", statement: "Your Public Store and Business App Store tab can share the same package and product configuration.", correct: true, explanation: "Packages configured to be available in both locations appear in both the Public Store and the Business App Store tab, giving customers a consistent shopping experience." }
+  ]}
+/>
+
+---
+
+## Share a Reflection
+
+<CommentBox prompt="As you set up your Storefront payments, what aspects of the customer shopping experience are most important to get right for your clients?" />
+
+---
+
+For more on Vendasta Payments and invoicing setup, see the **Set Up Payments and Create Invoices** course, or take the full **Streamline Billing With Merchant Services** course in the Academy.

@@ -1,0 +1,179 @@
+---
+sidebar_position: 1
+title: Payments Basics
+description: Learn how Payments works, how to set it up, and how to handle common objections from businesses.
+---
+
+import { FlipCard, FlipCardGrid } from '@site/src/components/FlipCard';
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+import CommentBox from '@site/src/components/CommentBox';
+
+Payments is one of the most impactful features you can introduce to a business. It enables mobile and online payment collection, gets businesses paid faster, and integrates directly into the inbox workflow their team already uses. This lesson covers how it works, how to set it up, and how to handle pushback.
+
+:::tip
+Payments works best for businesses that already use the inbox regularly — the payment request flow is built right into the conversation view, so adoption tends to feel natural.
+:::
+
+<FlipCardGrid>
+  <FlipCard front="💳 How Payments Works" back="Businesses send payment requests directly from the conversation view in Inbox. Stripe powers the processing behind the scenes." />
+  <FlipCard front="🏦 Setting Up Payments" back="Navigate to Payments > Payments Setup > Connect a bank account to get started. The whole setup is self-serve." />
+  <FlipCard front="🛡️ Common Objections" back="Most businesses already have a payment processor. Learn the right questions to ask so you can position Payments as a complement or upgrade." />
+</FlipCardGrid>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">💳</span>How Payments Works</div>
+
+> **Payment requests** are sent directly from the conversation view in Inbox — the same place the business is already communicating with customers.
+
+> **Payment processor** Payments is powered by Stripe, a trusted and widely used payment platform.
+
+> **Key benefits** include mobile payments, same-day payouts, convenient online payment links, and time savings for the business.
+
+<div className="in-practice">
+
+**In Practice:** When walking a business through Payments, open the inbox and show how a payment request appears in the conversation thread. Seeing it in context — rather than as a standalone feature — makes the workflow click immediately.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🏦</span>Setting Up Payments</div>
+
+> **Setup path** To connect Payments, navigate to Payments > Payments Setup > Connect a bank account. The business will follow the Stripe onboarding flow.
+
+> **What's enabled** Once connected, the business can send payment requests from any customer conversation in Inbox. Customers receive a link and can pay online.
+
+<div className="in-practice">
+
+**In Practice:** If a business hesitates during setup, reassure them that Stripe is one of the most trusted payment processors in the world. Millions of businesses use it for exactly this kind of mobile and online payment workflow.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🛡️</span>Common Objections</div>
+
+> **"I'm happy with my current solution"** Ask about their current processing fee. Does their solution support Apple Pay or Google Pay? Can their team collect payments by phone? These questions often reveal gaps Payments can fill.
+
+> **"People pay in the shop"** Ask how often they need to collect payment over the phone, or for jobs completed at a customer's home. Payments handles those situations easily.
+
+> **"I get a better rate with my existing processor"** Payments doesn't have to replace their current processor. Even as a backup option, the convenience — especially for Google/Apple Pay or remote payments — can be worth a slightly higher fee.
+
+<div className="in-practice">
+
+**In Practice:** The goal isn't always a full switch. Framing Payments as an additional tool — one that covers scenarios their current processor can't — lowers resistance and opens the door to adoption.
+
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="📖 Payments Help Article" back="Step-by-step guide to connecting and using Payments, including how to send a payment request from Inbox." />
+  <FlipCard front="🌐 Payments Overview Page" back="The public-facing benefits page — great for sharing with businesses who want to understand the value before committing." />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={4}
+  questions={[
+    {
+      id: "pay-basics-1",
+      type: "mcq",
+      question: "Where do businesses send payment requests from?",
+      options: [
+        "The Payments tab under Settings",
+        "The conversation view in Inbox",
+        "A dedicated Send Payment tab under Payments",
+        "Via a third-party integration only"
+      ],
+      correctIndex: 1,
+      explanation: "Payment requests are sent directly from the conversation view in Inbox, keeping everything in one place."
+    },
+    {
+      id: "pay-basics-2",
+      type: "mcq",
+      question: "Where does a business navigate to connect their bank account for Payments?",
+      options: [
+        "Settings > Payments > Connect Payments",
+        "Payments > Payments Setup > Connect a bank account",
+        "Inbox > Send Payment > Connect Bank",
+        "Admin > Billing > Add Bank Account"
+      ],
+      correctIndex: 1,
+      explanation: "The setup path is Payments > Payments Setup > Connect a bank account."
+    },
+    {
+      id: "pay-basics-3",
+      type: "mcq",
+      question: "Which payment processor powers Payments?",
+      options: [
+        "PayPal",
+        "Square",
+        "Stripe",
+        "Quickbooks Payments"
+      ],
+      correctIndex: 2,
+      explanation: "Payments is powered by Stripe, a globally trusted payment platform."
+    },
+    {
+      id: "pay-basics-4",
+      type: "truefalse",
+      question: "All of the following are benefits of Payments: mobile payments, same-day payouts, convenient online payments, and time savings.",
+      correct: true,
+      explanation: "All four are genuine benefits of Payments. There is no trick — they are all accurate."
+    },
+    {
+      id: "pay-basics-5",
+      type: "whicharea",
+      question: "A business says, 'I get a better rate with my existing processor.' Which section covers how to handle this objection?",
+      areas: ["💳 How Payments Works", "🏦 Setting Up Payments", "🛡️ Common Objections"],
+      correctArea: "🛡️ Common Objections",
+      explanation: "Rate objections are covered in Common Objections — Payments can serve as a backup for scenarios where convenience outweighs cost."
+    },
+    {
+      id: "pay-basics-6",
+      type: "fillblank",
+      question: "Payment requests are sent from the ______ view in Inbox.",
+      answer: "conversation",
+      explanation: "The conversation view in Inbox is where payment requests are initiated."
+    },
+    {
+      id: "pay-basics-7",
+      type: "match",
+      question: "Match each objection to the best response strategy.",
+      pairs: [
+        { left: "I'm happy with my current solution", right: "Ask about processing fees and Apple/Google Pay support" },
+        { left: "People pay in the shop", right: "Ask about phone-based or remote payment collection" },
+        { left: "I get a better rate elsewhere", right: "Position Payments as a backup for convenience scenarios" }
+      ],
+      explanation: "Each objection has a targeted response that highlights a gap the current processor likely doesn't fill."
+    },
+    {
+      id: "pay-basics-8",
+      type: "sort",
+      question: "Sort these steps into the correct order for setting up Payments.",
+      items: [
+        { id: "step-a", text: "Navigate to Payments > Payments Setup" },
+        { id: "step-b", text: "Click Connect a bank account" },
+        { id: "step-c", text: "Complete the Stripe onboarding flow" },
+        { id: "step-d", text: "Send a test payment request from Inbox" }
+      ],
+      correctBucket: ["step-a", "step-b", "step-c", "step-d"],
+      explanation: "Setup flows from the Payments menu through Stripe onboarding, then the feature becomes available in Inbox."
+    }
+  ]}
+/>
+
+---
+
+<CommentBox prompt="What's the most common pushback you hear about Payments, and what's worked best for you in responding to it?" />
+
+---
+
+*Vendasta Learn — Payments Basics*

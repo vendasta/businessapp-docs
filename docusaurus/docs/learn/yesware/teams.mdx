@@ -1,0 +1,101 @@
+---
+sidebar_position: 5
+title: Yesware Teams
+description: Test your knowledge on Yesware teams. Roles, limits, subscriptions, and adding users across payment accounts.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Yesware Teams let you share templates, campaigns, and content. Learn who can use vs create content, team limits, which subscriptions have access, and how to add users—including across payment accounts.
+
+:::tip Access
+Teams are available on Premium and Enterprise. Pro and Free Forever do not have access.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">👤</span>Team Roles</div>
+
+### Members
+
+> Can **use** team content but **cannot create or edit** into a team folder. Team leaders and administrators can create and edit.
+
+### Team Leaders
+
+> Can create, edit, and manage team content. Can add users to the team.
+
+### Administrators
+
+> Full admin access. Can manage teams and users.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📊</span>Team Limits</div>
+
+### Number of Teams
+
+> There is **no limit** on the number of teams an organization can have.
+
+### Subscriptions with Access
+
+> **Premium and Enterprise** have access to Teams. Pro and Free Forever do not.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">💳</span>Cross-Account Teams</div>
+
+> Users on **different payment accounts** can be on the same team—**if both users are on Premium or higher**. Yesware support can add them. Users cannot add cross-account teammates without support.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">➕</span>Adding Users to a Team</div>
+
+### Method 1
+
+> Yesware > Teams > Select the team or create new > Click "Add a user to team" > Select the user's email
+
+### Method 2
+
+> Yesware > User management > Select user > Edit > Add user to team
+
+### Why Add User Button Might Not Work
+
+> If the "Add user to team" button doesn't work, the most likely reason is that **the user is not on the same payment account**. Cross-account adds require support.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A team leader creates a "SDR Team" folder, adds 5 members, and shares top-performing templates. Members use the templates but can't edit the originals. When a new rep joins, the leader adds them via Teams > Add user to team. The new rep has instant access to the shared library.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Members" back="Use content. Not create/edit." subtext="Role" />
+  <FlipCard front="Premium+" back="Teams access. Cross-account with support." subtext="Subscription" />
+  <FlipCard front="Same Account" back="Add user button requires same payment account." subtext="Requirement" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "mcq", question: "Which role can use team content but cannot create or edit content in a team folder?", options: ["Members", "Team leaders", "Administrators", "Billing contacts"], correctIndex: 0, explanation: "**Members** may use team content; **team leaders** and **administrators** can create and edit." },
+    { type: "mcq", question: "What limit does the lesson state for how many teams an organization can have?", options: ["No limit", "250 teams", "500 teams", "One team per subscription tier"], correctIndex: 0, explanation: "**Number of Teams** states there is **no limit** on teams." },
+    { type: "mcq", question: "Which subscriptions include access to Teams?", options: ["Premium and Enterprise", "Pro and Free Forever", "Pro only", "Any paid plan including Pro"], correctIndex: 0, explanation: "**Subscriptions with Access** limits Teams to **Premium and Enterprise**; Pro and Free Forever do not." },
+    { type: "mcq", question: "When can users on different payment accounts be on the same team?", options: ["When both are on Premium or higher and Yesware support adds them", "Whenever they invite each other from the Teams UI", "Only if they share one billing email", "Never, cross-account teams are not supported"], correctIndex: 0, explanation: "**Cross-Account Teams** allows it **if both are Premium+** and support adds them; users cannot self-add cross-account." },
+    { type: "mcq", question: "Why might the “Add user to team” button fail for self-service adds?", options: ["The user is not on the same payment account", "The team already has 75 members", "The invitee uses Gmail instead of Outlook", "The team leader is on Pro instead of Enterprise"], correctIndex: 0, explanation: "**Why Add User Button Might Not Work** cites the user **not** being on the same payment account; cross-account needs support." }
+  ]}
+/>
+
+---
+
+Teams enable collaboration. Share templates and campaigns, and add users from the same payment account—or contact support for cross-account teams.

@@ -1,0 +1,107 @@
+---
+sidebar_position: 8
+title: Getting Started with Yesware
+description: Get started with Yesware. Installation, tracking, sidebars, Outlook vs Gmail differences, and preferences.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Get started with Yesware. Learn installation, how tracking works, sidebar differences between Outlook and Gmail, and key preferences. Understand what must be true for emails to track.
+
+:::tip Installation
+Gmail: Install from Google Web Store. Outlook: One install for desktop covers web; no reinstall needed for web.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📧</span>Email Tracking Requirements</div>
+
+### For Outlook Add-in
+
+> For an email to track: (1) **Yesware Compose / New Email sidebar must be opened**, (2) **Track email Opens must be toggled to ON**. The email does not need a tracked link or attachment, or the word "Yesware."
+
+### What Yesware Tracks
+
+> **Individually sent emails** and **emails sent through campaigns**. Yesware does **not** track if recipients are BCC'd or CC'd.
+
+### Attachments
+
+> Yesware **cannot** track attachments added through the regular Outlook or Gmail attachment buttons. Use Yesware's attachment flow for tracking.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📱</span>Sidebars</div>
+
+### Count
+
+> **Outlook: 2 sidebars. Gmail: 1 sidebar.**
+
+### What Displays (Outlook Inbox Sidebar)
+
+> **Recent engagement events** (Opens, Link clicks, etc.)—not all tracked emails regardless of engagement, or only open events.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">💻</span>Cross-Device and Installation</div>
+
+### Gmail
+
+> Gmail users **cannot** seamlessly use Yesware between different computers without taking additional actions. Re-authentication or setup may be needed per device.
+
+### Outlook
+
+> Outlook users **can** seamlessly use Yesware between different computers without additional actions. One install for desktop Outlook also works for web—no reinstall needed for web version.
+
+### Gmail Installation
+
+> Install Yesware for Gmail from the **Google Web Store**—not from a yesware.com download or within Gmail inbox.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">⚙️</span>Preferences and Integrations</div>
+
+### Toggle Options
+
+> Users can toggle ON or OFF: **Track Opens**, **Track Links**, **Colleague Events**. Meeting scheduler is configured separately.
+
+### Salesforce (Outlook)
+
+> Enable/disable via: **Yesware Inbox sidebar > Menu > Integrations > Turn ON & Link / Turn OFF & Unlink**. Not via Menu > Salesforce or sign out/sign in.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A new user installs Yesware from the Google Web Store, opens the Compose sidebar when drafting emails, and ensures Track Opens is ON. They send a test email—it appears on their Personal Tracking Report. They toggle Colleague Events ON to see team engagement. Within 5 minutes they're tracking.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Compose Open" back="Required for Outlook tracking." subtext="Must-do" />
+  <FlipCard front="Track Opens ON" back="Toggle in preferences." subtext="Must-do" />
+  <FlipCard front="Google Web Store" back="Gmail installation source." subtext="Install" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "truefalse", statement: "Gmail users can seamlessly use Yesware between different computers without additional actions.", correct: false, explanation: "**Cross-Device and Installation > Gmail** says seamless use across computers is **not** possible without extra steps (re-authentication or setup per device)." },
+    { type: "truefalse", statement: "Outlook users can seamlessly use Yesware between different computers.", correct: true, explanation: "**Cross-Device and Installation > Outlook** states Outlook users **can** use Yesware across computers without extra actions." },
+    { type: "mcq", question: "For the Outlook add-in, what must be true for an email to track?", options: ["The Yesware Compose/New Email sidebar is open and Track email Opens is ON", "The message must include a tracked link", "The subject line must include the word “Yesware”", "The email must be sent only from a Campaign (not individually)"], correctIndex: 0, explanation: "**Email Tracking Requirements > For Outlook Add-in** lists (1) Compose/New Email sidebar opened and (2) Track email Opens ON—it says a tracked link or “Yesware” in the body is **not** required. **What Yesware Tracks** also covers individually sent mail and campaigns." },
+    { type: "mcq", question: "How many Yesware sidebars are there for Outlook compared to Gmail?", options: ["Outlook: 2 sidebars; Gmail: 1 sidebar", "Outlook: 1 sidebar; Gmail: 1 sidebar", "Outlook: 2 sidebars; Gmail: 2 sidebars", "Outlook: 1 sidebar; Gmail: 2 sidebars"], correctIndex: 0, explanation: "**Sidebars > Count** states **Outlook: 2** and **Gmail: 1**." },
+    { type: "mcq", question: "Where should Gmail users install Yesware from?", options: ["The Google Web Store", "A download hosted on yesware.com", "The inbox settings menu inside Gmail", "The Microsoft Store"], correctIndex: 0, explanation: "**Gmail Installation** says to install from the **Google Web Store**, not a yesware.com download or inside the inbox." }
+  ]}
+/>
+
+---
+
+Get set up in under 5 minutes. Open the Compose sidebar, toggle Track Opens ON, and start tracking.

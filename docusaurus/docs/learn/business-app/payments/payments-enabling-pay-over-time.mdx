@@ -1,0 +1,179 @@
+---
+sidebar_position: 3
+title: "Payments: Enabling Pay Over Time"
+description: A step-by-step guide to setting up Pay Over Time in the app, understanding the Wisetack approval process, and answering common questions.
+---
+
+import { FlipCard, FlipCardGrid } from '@site/src/components/FlipCard';
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+import CommentBox from '@site/src/components/CommentBox';
+
+Once a business is ready to offer Pay Over Time to their customers, enabling it involves a few straightforward steps — but there are important prerequisites and timelines to understand. This lesson walks through the full setup process, what to expect during Wisetack's approval review, and how to answer the questions that come up most often.
+
+:::tip
+Stripe Payments must be fully set up before Pay Over Time can be enabled. If Payments isn't connected yet, start there first.
+:::
+
+<FlipCardGrid>
+  <FlipCard front="🔧 Setting Up Pay Over Time" back="Initiate the Wisetack application directly from the app. Stripe must already be connected." />
+  <FlipCard front="⏳ Approval Process" back="Wisetack reviews applications in up to 5 business days (usually 2–3). Criteria: $200K+ revenue, 1+ year in business, good reviews." />
+  <FlipCard front="❓ Common Questions" back="Why confirm job completion before releasing payment? What happens in a dispute? These Q&As cover the most frequent questions." />
+</FlipCardGrid>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🔧</span>Setting Up Pay Over Time</div>
+
+> **Prerequisite** Stripe (Payments) must be connected before Pay Over Time can be enabled. The setup option will not appear otherwise.
+
+> **Initiation** Once Payments is connected, navigate to the Pay Over Time setup section in the app. Starting the setup kicks off the Wisetack application on the business's behalf.
+
+> **Already submitted?** If a business attempts to re-apply while their application is still pending, they will be directed to a confirmation screen indicating the application has already been submitted.
+
+> **If declined** Wisetack sends a decline email outlining the criteria. If the business later meets the criteria and wants to re-apply, contact support to obtain a new application link.
+
+<div className="in-practice">
+
+**In Practice:** Walk through setup with the business in real time when possible. It's quick, and completing it together ensures nothing gets missed — especially making sure Stripe is connected first.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">⏳</span>Approval Process</div>
+
+> **Review timeline** Wisetack reviews applications within up to 5 business days, though most decisions come through in 2–3 business days.
+
+> **Criteria** Wisetack evaluates annual revenue ($200K+), time in business (1+ year), and customer experience data including online reviews.
+
+> **If approved** The business receives an email confirmation from Wisetack. Pay Over Time automatically becomes available on all invoices over $500 — no additional activation needed.
+
+> **If declined** Wisetack sends an email explaining the criteria. Once the business meets the requirements, a new application link is needed — this is handled through support.
+
+<div className="in-practice">
+
+**In Practice:** Set the right expectation upfront: approval is not instant. Let the business know to expect a response within 2–3 business days, and suggest they enable Payments in the meantime if they haven't already.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">❓</span>Common Questions</div>
+
+> **Why confirm job completion before releasing payment?** About 10% of end-customers are declined by Wisetack. If the job is already done and the customer is declined, the business can still collect payment — but only through Stripe (not Pay Over Time). For high-ticket jobs, it's best practice to send the invoice before work begins so the customer can apply and get approved in advance.
+
+> **What happens in a dispute?** If a dispute arises, Wisetack contacts the business directly, verifies the job details and amounts with both parties, then pulls back the funds and adjusts the customer's loan balance accordingly. The business doesn't need to manage this process — Wisetack handles it.
+
+<div className="in-practice">
+
+**In Practice:** The "why confirm before releasing?" question comes up frequently from businesses with high-ticket services. The practical advice is simple: send the invoice early. That way, the customer is pre-approved and the business knows the funds are secured before the work begins.
+
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="📋 Pay Over Time Setup Steps" back="In-app guide for initiating the Wisetack application after Stripe Payments is connected." />
+  <FlipCard front="📞 Support for Re-Applications" back="If a declined business re-qualifies and needs a new Wisetack application link, contact support to get one generated." />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={4}
+  questions={[
+    {
+      id: "epot-1",
+      type: "mcq",
+      question: "What must be set up before Pay Over Time can be enabled?",
+      options: [
+        "Campaigns",
+        "Stripe Payments",
+        "Web Chat",
+        "Review Requests"
+      ],
+      correctIndex: 1,
+      explanation: "Stripe Payments must be fully connected before the Pay Over Time setup option becomes available."
+    },
+    {
+      id: "epot-2",
+      type: "mcq",
+      question: "How long does Wisetack typically take to review a Pay Over Time application?",
+      options: [
+        "Same day",
+        "1 business day",
+        "2–3 business days (up to 5)",
+        "5–7 business days"
+      ],
+      correctIndex: 2,
+      explanation: "Wisetack typically reviews applications in 2–3 business days, with a maximum of 5 business days."
+    },
+    {
+      id: "epot-3",
+      type: "truefalse",
+      question: "If a business tries to re-apply for Pay Over Time while their application is still pending, Wisetack will start a second review.",
+      correct: false,
+      explanation: "If a pending application already exists, the business is directed to a confirmation screen indicating the application was already submitted — no second review is started."
+    },
+    {
+      id: "epot-4",
+      type: "whicharea",
+      question: "A business asks: 'What happens if a customer disputes the job after using Pay Over Time?' Which section covers this?",
+      areas: ["🔧 Setting Up Pay Over Time", "⏳ Approval Process", "❓ Common Questions"],
+      correctArea: "❓ Common Questions",
+      explanation: "Dispute handling is addressed in the Common Questions section — Wisetack manages the process directly with both parties."
+    },
+    {
+      id: "epot-5",
+      type: "fillblank",
+      question: "If a business is declined by Wisetack and later meets the criteria, they need a new ________ link from support to re-apply.",
+      answer: "application",
+      explanation: "Declined businesses cannot re-apply on their own — they need a new application link generated through support."
+    },
+    {
+      id: "epot-6",
+      type: "match",
+      question: "Match each scenario to the correct outcome.",
+      pairs: [
+        { left: "Business applies and is approved", right: "Pay Over Time appears on invoices over $500 automatically" },
+        { left: "Business applies while still pending", right: "Directed to confirmation screen — application already submitted" },
+        { left: "Business is declined by Wisetack", right: "Receives email with criteria; needs new link to re-apply" },
+        { left: "End-customer is declined by Wisetack", right: "Business can still collect via Stripe" }
+      ],
+      explanation: "Each scenario has a distinct outcome that's important to understand when setting expectations with businesses."
+    },
+    {
+      id: "epot-7",
+      type: "truefalse",
+      question: "For high-ticket jobs, it's best practice to send the invoice before work begins so the customer can get pre-approved for Pay Over Time.",
+      correct: true,
+      explanation: "Sending the invoice early ensures the customer is pre-approved before work starts, protecting the business if the customer is declined by Wisetack."
+    },
+    {
+      id: "epot-8",
+      type: "sort",
+      question: "Arrange the Pay Over Time setup steps in the correct order.",
+      items: [
+        { id: "setup-a", text: "Confirm Stripe Payments is connected" },
+        { id: "setup-b", text: "Navigate to Pay Over Time setup in the app" },
+        { id: "setup-c", text: "Submit the Wisetack application" },
+        { id: "setup-d", text: "Wait for Wisetack approval (2–3 business days)" },
+        { id: "setup-e", text: "Pay Over Time appears on invoices over $500" }
+      ],
+      correctBucket: ["setup-a", "setup-b", "setup-c", "setup-d", "setup-e"],
+      explanation: "Setup requires Stripe first, then initiating the Wisetack application from the app, waiting for approval, and the feature activates automatically."
+    }
+  ]}
+/>
+
+---
+
+<CommentBox prompt="What questions do you anticipate getting most often when helping a business enable Pay Over Time? How would you handle them?" />
+
+---
+
+*Vendasta Learn — Payments: Enabling Pay Over Time*

@@ -1,0 +1,233 @@
+---
+sidebar_position: 3
+title: Locations Report
+description: Learn how to use the Locations Report to compare performance across multiple business locations, drill into customer detail, and handle common objections.
+---
+
+import { FlipCard, FlipCardGrid } from '@site/src/components/FlipCard';
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+import CommentBox from '@site/src/components/CommentBox';
+
+The Locations Report is designed for businesses operating across more than one location. It provides a side-by-side view of performance data — leads, customer activity, review request response rates, and sentiment — so owners and managers can identify which locations are thriving and which may need attention.
+
+:::tip
+The Locations Report is most valuable for multi-location businesses. If a business has only one location, this report is not their primary use case — point them toward the Team Report instead.
+:::
+
+<FlipCardGrid>
+  <FlipCard front="📍 What the Locations Report Tracks" back="Leads, customers added, review requests sent, response rates, and customer sentiment — all compared across locations in real time." />
+  <FlipCard front="🔍 Reading the Report Data" back="Clickable columns reveal customer-level detail. Understand what 'Not Asked,' 'Asked,' and 'Responded' mean for each contact." />
+  <FlipCard front="📱 Mobile, Filter &amp; Export" back="Access on mobile as location cards. Filter by brand and location. Export to CSV with one click." />
+  <FlipCard front="🙅 Handling Objections" back="Keep it simple: start with 1–2 metrics, show how fast it is to check on mobile, and make the data actionable from the first conversation." />
+</FlipCardGrid>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📍</span>What the Locations Report Tracks</div>
+
+> **Access** Navigate to Reports > Locations from the left menu.
+
+> **Columns** The report includes: Locations, Leads, Customers Added, Customers Asked (review requests sent), Response Rate, and Customer Sentiment (Promoters, Passives, Detractors).
+
+> **NPS note** Same as the Team Report: NPS and Passives are only meaningful for businesses using the NPS review strategy. For Direct to Review, NPS is n/a and Passives are 0.
+
+> **Real-time updates** Data in the Locations Report updates in real time, providing an always-current view of each location's activity.
+
+<div className="in-practice">
+
+**In Practice:** When introducing this report to a multi-location business owner, frame it as their at-a-glance dashboard for holding each location accountable. They shouldn't need to call each location manager to know how they're performing — this report shows it in seconds.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🔍</span>Reading the Report Data</div>
+
+> **Clickable columns** The Customers Added and Customers Asked columns are clickable. Clicking either reveals a customer-level detail view showing: customer name, email, phone, date added, and review request status.
+
+> **Review request statuses** Each contact shows one of three statuses: **Not Asked** (hover to see why — missing info, invalid info, or added too recently to ask again), **Asked** (review request sent, awaiting response), or **Responded** (for Direct to Review = review left; for Yes/No/NPS strategy = survey completed and routed online).
+
+> **Date selector** Defaults to the last 1 month. Presets for past week and year available, plus a custom range back to the year 2000.
+
+<div className="in-practice">
+
+**In Practice:** The "Not Asked" hover detail is often an eye-opener for businesses. Many don't realize that missing or invalid contact info is blocking their review requests from going out. Showing them this during a check-in creates an immediate, actionable to-do: clean up their contact data.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📱</span>Mobile, Filter &amp; Export</div>
+
+> **Mobile view** On mobile, the report displays as cards — one per location — instead of rows in a table.
+
+> **Filters** The left filter selects brands or groups. The right filter narrows to specific locations within the selected brand. These filters work the same as in the Team Report.
+
+> **Export** Data can be exported to CSV for use in external reports or stakeholder presentations.
+
+<div className="in-practice">
+
+**In Practice:** For business owners who travel between locations, the mobile card view makes it easy to do a quick check between meetings. Exporting to CSV is useful for any business that integrates location performance data into broader operational reports.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🙅</span>Handling Objections</div>
+
+> **"I don't understand the data"** Same approach as the Team Report: show 1–2 metrics rather than the full table. Make it quick and relevant to what they care about most — usually leads or response rate.
+
+> **"I already track this manually"** Ask what their manual process looks like, then show one thing the Locations Report does faster. Even saving 10 minutes a week builds the case.
+
+> **"I don't have time to look at reports"** Lead with the mobile experience. A 30-second card-by-card check on their phone is a realistic habit to build. The report is accessible, not burdensome.
+
+> **"I look but don't act on the data"** Connect one metric to one action. Example: if a location's response rate drops, that's the signal to check whether review requests are going out. Anchor the data to a decision.
+
+<div className="in-practice">
+
+**In Practice:** The objection-handling approach for the Locations Report mirrors the Team Report — keep it simple, start small, and make the first win fast. A business owner who checks one number and takes one action is more valuable than one who ignores a complex dashboard.
+
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="📋 Locations Report Guide" back="Full walkthrough of report columns, filters, click-through detail views, and export functionality." />
+  <FlipCard front="📊 Team Report" back="If a business has a single location, the Team Report is the better fit for tracking individual performance." />
+  <FlipCard front="📱 Mobile App" back="Check the Locations Report on the go — mobile displays location cards sorted for quick scanning." />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    {
+      id: "locrpt-1",
+      type: "mcq",
+      question: "Where do you access the Locations Report?",
+      options: [
+        "Team > Locations",
+        "Admin > Reports > Locations",
+        "Reports > Locations (left menu)",
+        "Settings > Analytics > Locations"
+      ],
+      correctIndex: 2,
+      explanation: "The Locations Report is accessed via Reports > Locations from the left menu."
+    },
+    {
+      id: "locrpt-2",
+      type: "truefalse",
+      question: "The Locations Report is primarily designed for single-location businesses.",
+      correct: false,
+      explanation: "The Locations Report is best suited for multi-location businesses. Single-location businesses get more value from the Team Report."
+    },
+    {
+      id: "locrpt-3",
+      type: "mcq",
+      question: "What does a 'Not Asked' status mean for a contact in the Locations Report detail view?",
+      options: [
+        "The customer declined to receive a review request",
+        "The review request was sent but not opened",
+        "No review request has been sent — hover to see why",
+        "The customer is on the DNC list"
+      ],
+      correctIndex: 2,
+      explanation: "'Not Asked' means no review request has been sent yet. Hovering over the status reveals the reason — missing info, invalid info, or added too recently."
+    },
+    {
+      id: "locrpt-4",
+      type: "whicharea",
+      question: "A business owner wants to see customer names and phone numbers for everyone who received a review request at their downtown location. Which section covers this?",
+      areas: ["📍 What the Locations Report Tracks", "🔍 Reading the Report Data", "📱 Mobile, Filter & Export", "🙅 Handling Objections"],
+      correctArea: "🔍 Reading the Report Data",
+      explanation: "Clicking the Customers Asked column opens a customer-level detail view with names, contact info, and review request status."
+    },
+    {
+      id: "locrpt-5",
+      type: "fillblank",
+      question: "In the Locations Report, data updates in ________ time, providing an always-current view.",
+      answer: "real",
+      explanation: "The Locations Report displays real-time data — it doesn't require a manual refresh to reflect current activity."
+    },
+    {
+      id: "locrpt-6",
+      type: "match",
+      question: "Match each review request status to its meaning.",
+      pairs: [
+        { left: "Not Asked", right: "No request sent — hover to see why (missing info, invalid info, too recent)" },
+        { left: "Asked", right: "Review request sent, no response yet" },
+        { left: "Responded", right: "Survey completed or review left, depending on review strategy" }
+      ],
+      explanation: "The three statuses track the full journey of a review request — from no contact through to a completed response."
+    },
+    {
+      id: "locrpt-7",
+      type: "truefalse",
+      question: "For businesses using the Direct to Review strategy, 'Responded' means the customer completed a survey and was routed online.",
+      correct: false,
+      explanation: "For Direct to Review, 'Responded' means a review was left directly. The survey-and-routing flow applies to the Yes/No/NPS strategy."
+    },
+    {
+      id: "locrpt-8",
+      type: "whicharea",
+      question: "A regional manager wants to export location performance data to include in a quarterly business review. Which section covers this?",
+      areas: ["📍 What the Locations Report Tracks", "🔍 Reading the Report Data", "📱 Mobile, Filter & Export", "🙅 Handling Objections"],
+      correctArea: "📱 Mobile, Filter & Export",
+      explanation: "Export functionality — downloading the report to CSV — is covered in Mobile, Filter & Export."
+    },
+    {
+      id: "locrpt-9",
+      type: "mcq",
+      question: "How far back can the custom date range selector in the Locations Report go?",
+      options: [
+        "12 months",
+        "3 years",
+        "Back to the year 2000",
+        "Back to account creation date only"
+      ],
+      correctIndex: 2,
+      explanation: "The custom date range in the Locations Report can go all the way back to the year 2000."
+    },
+    {
+      id: "locrpt-10",
+      type: "sort",
+      question: "Arrange the steps to drill into customer-level detail for a specific location.",
+      items: [
+        { id: "loc-a", text: "Navigate to Reports > Locations" },
+        { id: "loc-b", text: "Select the brand using the left filter" },
+        { id: "loc-c", text: "Select the specific location using the right filter" },
+        { id: "loc-d", text: "Click on the 'Customers Added' or 'Customers Asked' column" },
+        { id: "loc-e", text: "Review customer names, contact info, and review request status" }
+      ],
+      correctBucket: ["loc-a", "loc-b", "loc-c", "loc-d", "loc-e"],
+      explanation: "Drill-down requires navigating to the report, filtering to the right location, then clicking the relevant column to open the customer detail view."
+    },
+    {
+      id: "locrpt-11",
+      type: "fillblank",
+      question: "On mobile, the Locations Report displays as ________ — one per location — instead of rows.",
+      answer: "cards",
+      explanation: "The mobile version of the Locations Report shows one card per location, making it easy to scan on the go."
+    },
+    {
+      id: "locrpt-12",
+      type: "truefalse",
+      question: "The left filter in the Locations Report selects a specific location, and the right filter selects the brand.",
+      correct: false,
+      explanation: "The left filter selects brands or groups. The right filter then narrows to specific locations within the selected brand — not the other way around."
+    }
+  ]}
+/>
+
+---
+
+<CommentBox prompt="For a multi-location business owner, which metric in the Locations Report do you think would be most immediately compelling — and why? How would you make the case in a short conversation?" />
+
+---
+
+*Vendasta Learn — Locations Report*

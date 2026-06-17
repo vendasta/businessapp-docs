@@ -1,0 +1,85 @@
+---
+sidebar_position: 3
+title: Yesware Templates
+description: Test your knowledge on Yesware templates. Merge fields, team sharing, link tracking, and Salesforce integration.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Yesware templates let you send rich emails in a fraction of the time. Create, share, and personalize with merge fields. Learn how team sharing works, what integrates with merge fields, and tracking behavior.
+
+:::tip Merge fields
+Text fields and dropdown fields allow personalization. Salesforce integration works with merge fields.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📝</span>Merge Fields</div>
+
+### Text Fields
+
+> Act as placeholders or fill-in-the-blanks. You fill them in manually while crafting emails.
+
+### Dropdown Fields
+
+> Create a predetermined list to choose from—e.g., days of the week for quick selection.
+
+### Integration
+
+> **Salesforce integration** works with merge fields in templates. Meeting Scheduler and Prospector do not populate merge fields the same way.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">👥</span>Team Sharing</div>
+
+When a team leader shares a template with the team, team members **cannot edit the original**. They **can duplicate and edit the copy**. They cannot edit the shared template's email content, subject line, or title directly.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔗</span>Link Tracking and Custom Fonts</div>
+
+### Links
+
+> Links included in templates do **not** always be tracked by default. Tracking must be enabled or configured where applicable.
+
+### Custom Fonts
+
+> There is **no** way to import custom fonts into the templates tool. Use available system fonts.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A rep creates a template with {!First Name} and a dropdown for {!Day of Week}. They share it with the team. A teammate duplicates it, adds their own intro, and uses it in a campaign. The merge fields pull from the prospect list via Salesforce—and the template saves 10 minutes per email.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Salesforce" back="Works with merge fields in templates." subtext="Integration" />
+  <FlipCard front="Duplicate" back="Team members duplicate and edit—not edit shared." subtext="Sharing" />
+  <FlipCard front="Text & Dropdown" back="Merge field types for personalization." subtext="Fields" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "truefalse", statement: "Links included in templates are always tracked.", correct: false, explanation: "**Link Tracking** states links in templates are **not** always tracked—tracking must be enabled or configured where applicable." },
+    { type: "mcq", question: "If a team leader shares a template, what can team members do?", options: ["Duplicate the template and edit their own copy", "Edit the shared template’s body, subject, and title directly", "Edit only the subject line while the body stays locked", "Use it read-only with no duplicate option"], correctIndex: 0, explanation: "**Team Sharing** says members **cannot** edit the original but **can duplicate and edit the copy**." },
+    { type: "mcq", question: "Which integration is called out as working with merge fields in templates?", options: ["Salesforce integration", "Meeting Scheduler", "Prospector", "Campaigns only"], correctIndex: 0, explanation: "**Integration** notes **Salesforce integration** works with merge fields; Meeting Scheduler and Prospector do not populate merge fields the same way." },
+    { type: "truefalse", statement: "There is a way to import custom fonts into the templates tool.", correct: false, explanation: "**Custom Fonts** states there is **no** way to import custom fonts—use available system fonts." },
+    { type: "whicharea", principle: "Where would you learn about text fields and dropdown fields?", correctArea: "📝 Merge Fields", explanation: "**Merge Fields** defines **Text Fields** and **Dropdown Fields**." }
+  ]}
+/>
+
+---
+
+Templates save time when composing emails. Use merge fields, share with your team, and combine with campaigns for maximum impact.

@@ -1,0 +1,106 @@
+---
+sidebar_position: 4
+title: Yesware Meeting Scheduler
+description: Test your knowledge on Yesware's meeting scheduler. Plan types, branding, working hours, and integrations.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Yesware's Meeting Scheduler lets prospects book meetings directly from your calendar. Learn which plans have unlimited team meeting links, how to remove branding, working hours, and troubleshooting.
+
+:::tip Unlimited meeting links
+Premium, Enterprise, and Pro subscriptions have unlimited team meeting links. Free Forever does not.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📅</span>Subscription and Meeting Links</div>
+
+### Unlimited Team Meeting Links
+
+> **Premium, Enterprise, and Pro** subscriptions have an unlimited number of team meeting links. Free Forever does not.
+
+### Gmail Integrations
+
+> Gmail users **cannot** utilize both Google Meet and Microsoft Teams integrations at the same time. Choose one.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🏷️</span>Removing Yesware Branding</div>
+
+To remove Yesware branding from a user's meeting scheduler booking page:
+
+1. Check the user's subscription
+2. Open a Jira ticket
+3. View the user's account
+4. Confirm the change on the user's end
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔗</span>Meeting Type URL and Save Button</div>
+
+### Changing Meeting Type URL
+
+> **Changing the meeting type URL will break the previous meeting scheduler link.** Recipients with the old link will no longer be able to book.
+
+### Save Button Greyed Out
+
+> If the Save meeting type button is greyed out, the most likely cause is that the user **didn't fill out the direct URL to meeting option**. Other required fields may also be missing.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">⏰</span>Working Hours and Calendar</div>
+
+### Calendar Sync
+
+> Users **can** choose which calendar they want synced with their meeting scheduler.
+
+### Working Hours
+
+> The meeting scheduler only allows recipients to book during a user's defined working hours. Edit these in:
+- **Yesware > Meeting Scheduler > Edit settings**
+- **Yesware > Meeting Scheduler > Edit button on specific meeting type**
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">✉️</span>Confirmation Notifications</div>
+
+> When a meeting is booked, **both the recipient and the invitee** receive confirmation notifications.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A rep sets working hours 9–5, creates a 30-minute meeting type with Google Meet, and shares the link in their email signature. A prospect books for 2 PM Tuesday. Both receive confirmations. The rep never has to send a "when are you free?" email again.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Unlimited Links" back="Premium, Enterprise, Pro." subtext="Plans" />
+  <FlipCard front="URL Change" back="Breaks previous link. Plan carefully." subtext="Warning" />
+  <FlipCard front="Both Notified" back="Recipient and invitee get confirmation." subtext="Bookings" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "mcq", question: "Which subscriptions include unlimited team meeting links?", options: ["Premium, Enterprise, and Pro", "Free Forever only", "Enterprise only", "Pro and Free Forever"], correctIndex: 0, explanation: "**Unlimited Team Meeting Links** lists Premium, Enterprise, and Pro; **Free Forever** does not." },
+    { type: "truefalse", statement: "Gmail users can utilize both Google Meet and Microsoft Teams integrations.", correct: false, explanation: "**Gmail Integrations** says users **cannot** use both Google Meet and Microsoft Teams at the same time—they must choose one." },
+    { type: "mcq", question: "What is the documented sequence to remove Yesware branding from a user’s meeting scheduler booking page?", options: ["Check subscription → open a Jira ticket → view the account → confirm on the user’s end", "Toggle branding off in Meeting Scheduler settings", "Remove branding from the user profile in admin only", "Email support without checking subscription tier"], correctIndex: 0, explanation: "**Removing Yesware Branding** lists: check subscription, open Jira, view account, confirm with the user." },
+    { type: "truefalse", statement: "Changing the meeting type URL will break the previous meeting scheduler link.", correct: true, explanation: "**Changing Meeting Type URL** warns that changing the URL **breaks** the previous link for recipients." },
+    { type: "mcq", question: "When a meeting is booked, who receives confirmation notifications?", options: ["Both the recipient and the invitee", "Only the person who booked (recipient)", "Only the calendar owner (invitee)", "Neither party automatically"], correctIndex: 0, explanation: "**Confirmation Notifications** states **both** recipient and invitee receive confirmations." }
+  ]}
+/>
+
+---
+
+Set up your meeting types, define working hours, and let prospects book when it works for them.

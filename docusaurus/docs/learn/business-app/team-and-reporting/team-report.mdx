@@ -1,0 +1,228 @@
+---
+sidebar_position: 2
+title: Team Report
+description: Learn how to read, filter, and export the Team Report — and how to address common objections from businesses who aren't sure how to use performance data.
+---
+
+import { FlipCard, FlipCardGrid } from '@site/src/components/FlipCard';
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+import CommentBox from '@site/src/components/CommentBox';
+
+The Team Report gives businesses a clear view of how each team member is performing when it comes to customer engagement and review generation. Whether a business wants to identify who needs coaching or celebrate top performers, this report makes that data visible and actionable.
+
+:::tip
+Team members must be associated with customers before their data appears in the Team Report. If a business sees missing data, check whether team members have been properly linked to contacts.
+:::
+
+<FlipCardGrid>
+  <FlipCard front="📊 What the Team Report Tracks" back="Customers added, review requests sent, response rates, star ratings, and customer sentiment — all broken down by team member." />
+  <FlipCard front="🔍 Reading the Report" back="Understand each column: NPS, Promoters/Passives/Detractors, Review Generation Breakout by platform. Know what applies to your review strategy." />
+  <FlipCard front="📱 Mobile &amp; Export" back="Access the report on mobile as cards instead of rows. Export the full dataset to a spreadsheet with one click." />
+  <FlipCard front="🙅 Handling Objections" back="Businesses that don't 'get' data or think they're too busy still benefit. Start with 1–2 metrics and show quick wins to build the habit." />
+</FlipCardGrid>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📊</span>What the Team Report Tracks</div>
+
+> **Access** Navigate to Reports > Team from the left menu.
+
+> **Metrics tracked** For each team member, the report shows: Customers Added, Customers Asked (review requests sent), Response Rate, Customer Sentiment (Promoters, Passives, Detractors), NPS score, and a Review Generation Breakout by platform (Google, Facebook, Yelp, Nextdoor).
+
+> **NPS note** NPS and Passives are only meaningful for businesses using the NPS review strategy. For businesses using Direct to Review, NPS shows as n/a and Passives show as 0.
+
+<div className="in-practice">
+
+**In Practice:** When walking a business through the Team Report for the first time, focus on Response Rate and Customer Sentiment before going into NPS or platform breakouts. Those two columns give an immediate, intuitive read on how each team member is performing.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🔍</span>Reading the Report</div>
+
+> **Date selector** Defaults to the last 1 month. Preset options for the past week or year, plus a custom range that goes back to the year 2000.
+
+> **Brand and location filters** The left filter selects brands or "Other locations." The right filter then narrows to specific locations within the selected group. A specific location must be selected to see team-level activity.
+
+> **Columns explained** Each column represents a distinct performance dimension. Response Rate shows what percentage of customers who were asked actually responded to a review request.
+
+<div className="in-practice">
+
+**In Practice:** If a business has multiple locations, remind them to select a specific location from the right filter — otherwise they won't see team data. It's a small step that causes a lot of confusion when skipped.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📱</span>Mobile &amp; Export</div>
+
+> **Mobile view** On mobile, the report displays as cards rather than rows — one card per team member. Cards are sorted alphabetically by team member name by default.
+
+> **Exporting** Click the "Export" button in the upper right to download the full report as a spreadsheet. This is useful for sharing performance data with stakeholders or incorporating it into external reporting.
+
+<div className="in-practice">
+
+**In Practice:** The mobile view is particularly useful for managers who check in on team performance between appointments. Knowing the report is accessible — and fast to check — on a phone lowers the barrier for regular use.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🙅</span>Handling Objections</div>
+
+> **"I don't understand the data"** Start with quick insights rather than a full walkthrough. Focus on 1–2 metrics that matter most to their goals. The report isn't about replacing their existing system — it's about adding visibility they don't currently have.
+
+> **"I use manual methods already"** Same approach: find one metric the report shows faster than their manual process, and anchor the conversation there.
+
+> **"I look at the data but don't know what to do with it"** Share specific examples — "when your response rate drops below 20%, it usually means review requests aren't going out on time." Make the data actionable with a concrete threshold or next step.
+
+> **"I don't have time"** Emphasize the mobile app: the Team Report takes about 30 seconds to check on a phone. Building a quick weekly habit is easier than committing to a full reporting session.
+
+<div className="in-practice">
+
+**In Practice:** Objections to reporting are almost always about confidence, not capability. Businesses that feel overwhelmed by data just need a simpler entry point. One metric, one action, one habit — then build from there.
+
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="📋 Team Report Guide" back="Detailed walkthrough of each column, filter option, and export functionality in the Team Report." />
+  <FlipCard front="📱 Mobile App Access" back="Instructions for checking the Team Report on mobile — including the card view layout and default sort order." />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    {
+      id: "teamrpt-1",
+      type: "mcq",
+      question: "Where do you access the Team Report?",
+      options: [
+        "Team > Team Management > Reports",
+        "Reports > Team (left menu)",
+        "Settings > Analytics > Team",
+        "Admin > Performance > Team"
+      ],
+      correctIndex: 1,
+      explanation: "The Team Report is accessed via Reports > Team from the left menu."
+    },
+    {
+      id: "teamrpt-2",
+      type: "mcq",
+      question: "What does the 'Response Rate' column in the Team Report show?",
+      options: [
+        "The percentage of customers who left a review",
+        "The average star rating for the team member",
+        "The percentage of customers asked who responded to a review request",
+        "The number of messages sent by the team member"
+      ],
+      correctIndex: 2,
+      explanation: "Response Rate shows what percentage of customers who received a review request actually responded to it."
+    },
+    {
+      id: "teamrpt-3",
+      type: "truefalse",
+      question: "For businesses using the Direct to Review strategy, the NPS column shows a meaningful score.",
+      correct: false,
+      explanation: "NPS is only meaningful for businesses using the NPS review strategy. For Direct to Review, NPS shows as n/a and Passives show as 0."
+    },
+    {
+      id: "teamrpt-4",
+      type: "whicharea",
+      question: "A business manager wants to download the Team Report to share with the owner. Which section covers this?",
+      areas: ["📊 What the Team Report Tracks", "🔍 Reading the Report", "📱 Mobile & Export", "🙅 Handling Objections"],
+      correctArea: "📱 Mobile & Export",
+      explanation: "Export functionality is covered in Mobile & Export — the Export button in the upper right downloads the report as a spreadsheet."
+    },
+    {
+      id: "teamrpt-5",
+      type: "fillblank",
+      question: "To see team activity for a specific location, you must select that location from the ________ filter.",
+      answer: "right",
+      explanation: "The right filter narrows to specific locations within the selected brand. A specific location must be selected to see team-level data."
+    },
+    {
+      id: "teamrpt-6",
+      type: "truefalse",
+      question: "On mobile, the Team Report displays as rows, sorted by response rate by default.",
+      correct: false,
+      explanation: "On mobile, the report displays as cards (not rows), sorted alphabetically by team member name by default."
+    },
+    {
+      id: "teamrpt-7",
+      type: "whicharea",
+      question: "A business owner says 'I look at the data but I don't know what to do with it.' Which section addresses this?",
+      areas: ["📊 What the Team Report Tracks", "🔍 Reading the Report", "📱 Mobile & Export", "🙅 Handling Objections"],
+      correctArea: "🙅 Handling Objections",
+      explanation: "The Handling Objections section covers businesses that see data but need help making it actionable — start with 1–2 metrics and share concrete examples."
+    },
+    {
+      id: "teamrpt-8",
+      type: "match",
+      question: "Match each Team Report column to what it measures.",
+      pairs: [
+        { left: "Customers Added", right: "New contacts linked to this team member" },
+        { left: "Response Rate", right: "Percentage of asked customers who responded" },
+        { left: "NPS", right: "% promoters minus % detractors" },
+        { left: "Review Generation Breakout", right: "Reviews generated per platform (Google, Facebook, etc.)" }
+      ],
+      explanation: "Each column in the Team Report measures a specific dimension of team member performance."
+    },
+    {
+      id: "teamrpt-9",
+      type: "mcq",
+      question: "What is the default date range shown in the Team Report?",
+      options: [
+        "Last 7 days",
+        "Last 1 month",
+        "Last 3 months",
+        "Last 1 year"
+      ],
+      correctIndex: 1,
+      explanation: "The Team Report defaults to the last 1 month. Presets for week and year are also available, plus a custom range."
+    },
+    {
+      id: "teamrpt-10",
+      type: "sort",
+      question: "Arrange these steps to filter the Team Report to a specific location.",
+      items: [
+        { id: "rpt-a", text: "Navigate to Reports > Team" },
+        { id: "rpt-b", text: "Select a brand or group using the left filter" },
+        { id: "rpt-c", text: "Select a specific location using the right filter" },
+        { id: "rpt-d", text: "Review team member data for that location" }
+      ],
+      correctBucket: ["rpt-a", "rpt-b", "rpt-c", "rpt-d"],
+      explanation: "Filtering requires selecting a brand first (left filter), then narrowing to a specific location (right filter) before team data appears."
+    },
+    {
+      id: "teamrpt-11",
+      type: "fillblank",
+      question: "Click the ________ button in the upper right of the Team Report to download the data as a spreadsheet.",
+      answer: "Export",
+      explanation: "The Export button in the upper right downloads the full Team Report to a spreadsheet."
+    },
+    {
+      id: "teamrpt-12",
+      type: "truefalse",
+      question: "The Team Report can display data with a custom date range going back as far as the year 2000.",
+      correct: true,
+      explanation: "The custom date range selector in the Team Report supports dates going back to the year 2000."
+    }
+  ]}
+/>
+
+---
+
+<CommentBox prompt="What's your go-to way to introduce the Team Report to a business that's skeptical about data? Which metric do you start with, and why?" />
+
+---
+
+*Vendasta Learn — Team Report*

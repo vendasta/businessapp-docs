@@ -1,0 +1,243 @@
+---
+sidebar_position: 1
+title: Campaigns Basics
+description: Learn how to create, send, and manage text and email campaigns — including recipient management and TCPA compliance requirements.
+---
+
+import { FlipCard, FlipCardGrid } from '@site/src/components/FlipCard';
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+import CommentBox from '@site/src/components/CommentBox';
+
+Campaigns lets businesses create and send targeted text and email messages to reach their customers — whether to promote a service, send a reminder, or re-engage someone who hasn't been in touch in a while. This lesson covers how to build a campaign, manage recipients, and stay compliant with TCPA requirements.
+
+:::caution
+Campaigns is currently in beta, and active development has paused. Some details covered in this lesson may be subject to change. Check in with your team for the latest status before walking a business through setup.
+:::
+
+<FlipCardGrid>
+  <FlipCard front="📣 What Campaigns Do" back="Send custom text and email campaigns to promoters, detractors, and leads. Use templates for promotions and service reminders, or start from scratch." />
+  <FlipCard front="✉️ Creating &amp; Sending a Campaign" back="Start from 'New Campaign' or 'Templates.' Choose email or text, edit the content, select recipients, and send." />
+  <FlipCard front="👥 Managing Recipients" back="Choose recipients manually or use suggested groups. Email limit: 1,500. Text limit: 500. 'Select All' only available within limits." />
+  <FlipCard front="📋 TCPA Compliance" back="Text campaigns require express written consent. Understand the three consent types and the options for collecting them properly." />
+</FlipCardGrid>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📣</span>What Campaigns Do</div>
+
+> **Core purpose** Campaigns lets businesses create custom text and email campaigns to engage and retain existing customers, re-engage past customers, and promote services to the right audience.
+
+> **Audience targeting** Send to promoters, detractors, or leads using industry templates designed for common business scenarios.
+
+> **Use cases** Promotional offers, service reminders, win-back messages for customers who haven't booked recently, and personalized follow-ups.
+
+<div className="in-practice">
+
+**In Practice:** Position Campaigns as a retention and re-engagement tool — not just marketing. Businesses often think of email as a "send blast" activity, but the real value is in reaching the right group (like detractors or lapsed customers) with a relevant message at the right time.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">✉️</span>Creating &amp; Sending a Campaign</div>
+
+> **Starting a campaign** Click "New Campaign" to build from scratch, or click "Templates" to start from a pre-built template. Both paths lead to the same editor.
+
+> **Campaign type** Choose either an Email or Text campaign. This determines the editor experience and recipient limits.
+
+> **Templates available** Promotions and Reminders templates are available for both email and text. Starting from a template or blank are both valid options.
+
+> **Email Campaign Editor** Edit the subject line and body (the dotted blue area is the editable zone). Then select your recipients.
+
+> **Text Campaign Editor** Same editing workflow as email. Note: there is a 320-character limit for text campaigns. The Send button is disabled until the message is within the limit.
+
+> **What cannot be edited** The "Hello" greeting auto-personalizes to each recipient. The call to action ("call us" for email, "reply" for text), the signature (pulled from Admin Setup), and the banner image (edited in Admin Setup) are all locked.
+
+> **Saving drafts** Click "Save" in the upper left at any time to save the campaign as a draft and return to it later.
+
+<div className="in-practice">
+
+**In Practice:** When showing the editor for the first time, immediately point out what is and isn't editable. Businesses often try to change the greeting or CTA and get frustrated. Knowing the locked fields upfront sets the right expectations.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">👥</span>Managing Recipients</div>
+
+> **Manual selection** Choose recipients individually from the business's contact list.
+
+> **Suggested groups** Choose from pre-built segments: recent promoters, detractors, or leads from the last 3 months. These can be customized further after selection.
+
+> **Recipient limits** Email campaigns support up to 1,500 recipients. Text campaigns support up to 500. These limits exist to avoid triggering spam filters.
+
+> **"Select All" availability** The "Select All" option is only available if the total recipient count is within the applicable limit.
+
+<div className="in-practice">
+
+**In Practice:** Suggested groups are a great starting point for businesses that aren't sure who to target. Detractors are particularly valuable — a well-timed personal message to an unhappy customer can turn the relationship around before they leave a negative review.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📋</span>TCPA Compliance</div>
+
+> **Three consent types** Conversational consent is implied (casual back-and-forth). Informational consent is express (appointment reminders, welcome texts). Promotional consent requires express *written* consent.
+
+> **Text campaigns require express written consent** Because text campaigns are promotional in nature, businesses must have express written consent from all recipients before sending.
+
+> **Ways to collect express written consent** An opt-in checkbox on a form, a keyword text reply, sign-up at the point of sale, or a text opt-in on the business website.
+
+> **Web Chat** Web Chat automatically secures express written consent during the chat flow — no additional action needed from the business.
+
+> **DNC list** If a business cannot confirm proper express written consent for certain contacts, those contacts must be added to a Do Not Contact (DNC) list.
+
+<div className="in-practice">
+
+**In Practice:** TCPA compliance is non-negotiable. If a business pushes back on the consent requirements, explain that the liability is on them — not the platform. Walk them through the easiest consent collection method for their workflow, whether that's a POS sign-up or a web form checkbox.
+
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="📚 TCPA Compliance Guide" back="Detailed breakdown of consent types, collection methods, and DNC list requirements for text campaigns." />
+  <FlipCard front="🖊️ Campaign Templates" back="Pre-built Promotions and Reminders templates for both email and text to help businesses get started quickly." />
+  <FlipCard front="⚙️ Admin Setup" back="Where to update the business signature and banner image that appear in all campaign emails." />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    {
+      id: "camp-1",
+      type: "mcq",
+      question: "What is the character limit for text campaigns?",
+      options: [
+        "160 characters",
+        "280 characters",
+        "320 characters",
+        "500 characters"
+      ],
+      correctIndex: 2,
+      explanation: "Text campaigns have a 320-character limit. The Send button is disabled until the message is within this limit."
+    },
+    {
+      id: "camp-2",
+      type: "mcq",
+      question: "What is the maximum number of recipients for a text campaign?",
+      options: [
+        "250",
+        "500",
+        "1,000",
+        "1,500"
+      ],
+      correctIndex: 1,
+      explanation: "Text campaigns are capped at 500 recipients. Email campaigns allow up to 1,500."
+    },
+    {
+      id: "camp-3",
+      type: "truefalse",
+      question: "Businesses can edit the 'Hello' greeting in a campaign to use a custom salutation.",
+      correct: false,
+      explanation: "The 'Hello' greeting is locked — it auto-personalizes to each recipient's name. It cannot be manually edited."
+    },
+    {
+      id: "camp-4",
+      type: "whicharea",
+      question: "A business wants to send a promotional text to 400 of their recent customers. Which section covers how to select those recipients?",
+      areas: ["📣 What Campaigns Do", "✉️ Creating & Sending a Campaign", "👥 Managing Recipients", "📋 TCPA Compliance"],
+      correctArea: "👥 Managing Recipients",
+      explanation: "Recipient selection — including manual picks, suggested groups, and limits — is covered in Managing Recipients."
+    },
+    {
+      id: "camp-5",
+      type: "mcq",
+      question: "What type of consent is required to send promotional text campaigns?",
+      options: [
+        "Implied conversational consent",
+        "Express informational consent",
+        "Express written consent",
+        "No consent is required for existing customers"
+      ],
+      correctIndex: 2,
+      explanation: "Promotional text campaigns require express written consent — the highest level of TCPA consent."
+    },
+    {
+      id: "camp-6",
+      type: "fillblank",
+      question: "The business signature that appears in campaign emails is pulled from ________ Setup.",
+      answer: "Admin",
+      explanation: "The signature (and banner image) in campaigns are pulled from Admin Setup and cannot be edited within the campaign editor itself."
+    },
+    {
+      id: "camp-7",
+      type: "truefalse",
+      question: "Web Chat automatically collects express written consent from website visitors who use it.",
+      correct: true,
+      explanation: "Web Chat is designed to capture express written consent as part of its flow, making it TCPA-compliant for text follow-ups."
+    },
+    {
+      id: "camp-8",
+      type: "whicharea",
+      question: "A business asks why they can't send a text blast to all 800 of their contacts at once. Which section explains the reasoning?",
+      areas: ["📣 What Campaigns Do", "✉️ Creating & Sending a Campaign", "👥 Managing Recipients", "📋 TCPA Compliance"],
+      correctArea: "👥 Managing Recipients",
+      explanation: "Recipient limits (500 for text, 1,500 for email) are covered in Managing Recipients — they exist to avoid spam filter triggers."
+    },
+    {
+      id: "camp-9",
+      type: "match",
+      question: "Match each consent type to its correct description.",
+      pairs: [
+        { left: "Conversational consent", right: "Implied — casual back-and-forth communication" },
+        { left: "Informational consent", right: "Express — appointment reminders, welcome texts" },
+        { left: "Promotional consent", right: "Express written — required for text campaigns" }
+      ],
+      explanation: "TCPA defines three tiers of consent. Promotional text campaigns require the highest tier: express written consent."
+    },
+    {
+      id: "camp-10",
+      type: "sort",
+      question: "Arrange the steps to create and send a text campaign in the correct order.",
+      items: [
+        { id: "camp-step-a", text: "Click 'New Campaign' or 'Templates'" },
+        { id: "camp-step-b", text: "Select 'Text' as the campaign type" },
+        { id: "camp-step-c", text: "Edit the campaign message (within 320 characters)" },
+        { id: "camp-step-d", text: "Select recipients (up to 500)" },
+        { id: "camp-step-e", text: "Send the campaign" }
+      ],
+      correctBucket: ["camp-step-a", "camp-step-b", "camp-step-c", "camp-step-d", "camp-step-e"],
+      explanation: "The campaign creation flow goes: start > choose type > edit content > select recipients > send."
+    },
+    {
+      id: "camp-11",
+      type: "fillblank",
+      question: "To save a campaign and return to it later, click ________ in the upper left of the editor.",
+      answer: "Save",
+      explanation: "The 'Save' button in the upper left saves the campaign as a draft for later editing or sending."
+    },
+    {
+      id: "camp-12",
+      type: "truefalse",
+      question: "The 'Select All' option for recipients is always available regardless of how many contacts the business has.",
+      correct: false,
+      explanation: "'Select All' is only available when the total contact count is within the campaign's recipient limit (1,500 for email, 500 for text)."
+    }
+  ]}
+/>
+
+---
+
+<CommentBox prompt="Have you encountered a business that was hesitant about TCPA compliance requirements? How did you explain it, and what helped them move forward?" />
+
+---
+
+*Vendasta Learn — Campaigns Basics*

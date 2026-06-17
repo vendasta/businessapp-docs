@@ -1,0 +1,142 @@
+---
+sidebar_position: 4
+title: Quotes
+description: Learn how to send quotes to clients, give them the option to accept or decline, and convert accepted quotes into invoices—all from within the app.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+import CommentBox from "@site/src/components/CommentBox";
+
+Quotes let businesses communicate the cost of goods, services, and labor before work begins. Clients can accept or decline, and accepted quotes convert directly to invoices—keeping everything in one streamlined flow.
+
+:::tip What you'll learn
+How to send a quote from a conversation or contact page, how clients accept or decline, and how to convert an accepted quote into an invoice.
+:::
+
+---
+
+<FlipCardGrid>
+  <FlipCard front="📋 Sending Quotes" back="Send quotes from a conversation or contact details page, with optional deposit requests." subtext="2 entry points" />
+  <FlipCard front="✅ Client Response" back="Clients accept or decline the quote — the conversation updates automatically either way." subtext="Real-time" />
+  <FlipCard front="🔄 Convert to Invoice" back="Accepted quotes convert to invoices with line items and notes pre-populated." subtext="One click" />
+</FlipCardGrid>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📋</span>Sending Quotes</div>
+
+Quotes can be initiated in two ways — directly from a customer conversation or from the contact details page.
+
+### From the Conversation View
+
+> Open a customer conversation and select the option to send a quote. This keeps the quote in context with the ongoing customer communication thread.
+
+### From the Contact Details Page
+
+> Navigate to a contact's details page and initiate a quote from there. Both methods produce the same quote for the customer.
+
+### Requesting a Deposit
+
+> When creating a quote, you have the option to check "Request Deposit" and enter a deposit amount. This lets customers know what is expected upfront before work begins.
+
+### Viewing a Sent Quote
+
+> After a quote is sent, it appears in the conversation activity thread. To see the customer-facing version of the quote, tap the "Sent" date hyperlink in the conversation.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A plumbing business receives an inquiry through the app from a customer asking about the cost to replace a water heater. The technician sends a quote from the conversation view with itemized labor and parts costs, including a 20% deposit request. The customer sees the quote immediately and can accept or decline without a phone call.</p>
+  </div>
+</div>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">✅</span>Client Response</div>
+
+Once a quote is sent, the client can accept or decline it directly from the quote link they receive.
+
+### Accepting a Quote
+
+> After the client taps "Accept," a confirmation modal appears. The conversation history updates to reflect that the quote was accepted, giving both parties a clear record.
+
+### Declining a Quote
+
+> If the client declines, the conversation history also updates accordingly. This gives the business immediate visibility into client decisions without needing to follow up manually.
+
+### Real-Time Conversation Updates
+
+> Any action the client takes — accepting or declining — is reflected in the conversation thread in real time. No need to check a separate system.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A landscaping client receives a quote via text link for a seasonal cleanup package. She taps "Accept" and a confirmation appears on her screen. The business owner, checking the app a few minutes later, sees the updated conversation showing the accepted quote — and starts scheduling the job immediately.</p>
+  </div>
+</div>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔄</span>Convert to Invoice</div>
+
+Accepted quotes can be converted into invoices directly from the Quote Details view, saving time and reducing data entry errors.
+
+### One-Click Conversion
+
+> Open the accepted quote in Quote Details and select the convert-to-invoice option. The invoice is pre-populated with the same line items, prices, and notes from the quote.
+
+### Edit Before Sending
+
+> Before sending the invoice, you can edit the line items and notes if anything has changed since the quote was accepted. Once you're satisfied, send the invoice as normal.
+
+### No Invoice Limit on Line Items
+
+> There is no limit to how many line items you can add when creating a quote or invoice. Add as many goods, services, or labor entries as the job requires.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>An HVAC technician completes a job that matches the original quote exactly. From the Quote Details, they convert the accepted quote to an invoice in one tap — all line items carry over automatically. They add a note about the warranty and send it to the customer, who pays via the Stripe link the same afternoon.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Send a Quote" back="Open a conversation or contact page and select the quote option. Add line items, optional deposit, and send." subtext="2 entry points" />
+  <FlipCard front="Convert to Invoice" back="From Quote Details, convert an accepted quote to a pre-populated invoice in one step." subtext="Edit before sending" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={4}
+  questions={[
+    { type: "mcq", question: "In how many ways can a user send a quote to a customer?", options: ["1 — only from the Payments tab", "2 — from a conversation or from the contact details page", "3 — from conversation, contact details, or the Reports tab", "Quotes can only be sent via email"], correctIndex: 1, explanation: "**Sending Quotes** explains that quotes can be initiated from the conversation view or from the contact details page — two entry points that both produce the same outcome." },
+    { type: "truefalse", statement: "There is a limit to how many line items you can add when creating a quote.", correct: false, explanation: "**Convert to Invoice** clarifies that there is no limit to how many line items you can add when creating a quote or invoice." },
+    { type: "whicharea", principle: "Where would you learn about what happens in the conversation thread when a client accepts or declines a quote?", correctArea: "✅ Client Response", explanation: "**Client Response** explains that any action a client takes — accepting or declining — is reflected in the conversation thread in real time." },
+    { type: "mcq", question: "What happens when you convert an accepted quote to an invoice?", options: ["A blank invoice is created that you fill in from scratch", "The invoice is pre-populated with the line items, prices, and notes from the quote", "The quote is deleted and replaced with a new invoice form", "The invoice is automatically sent to the client without review"], correctIndex: 1, explanation: "**Convert to Invoice** states that when a quote is converted, the invoice is pre-populated with the same line items, related prices, and any notes from the quote — and you can edit before sending." },
+    { type: "truefalse", statement: "You can request a deposit amount when sending a quote.", correct: true, explanation: "**Sending Quotes** notes that when creating a quote, you can check 'Request Deposit' and enter a deposit amount to communicate upfront payment expectations." },
+    { type: "whicharea", principle: "Where would you learn about how to initiate a quote from a customer conversation?", correctArea: "📋 Sending Quotes", explanation: "**Sending Quotes** covers both entry points: from the conversation view and from the contact details page, as well as deposit requests and viewing the sent quote." },
+    { type: "match", instruction: "Match each quote action to its description.", pairs: [{ term: "Send from conversation view", definition: "Keeps the quote in context with the ongoing customer thread" }, { term: "Request Deposit", definition: "Optional — enter an amount the customer owes upfront" }, { term: "Convert to Invoice", definition: "One-click action from Quote Details — pre-populates line items from the quote" }, { term: "View sent quote", definition: "Tap the 'Sent' date hyperlink in the conversation to see the customer-facing version" }], explanation: "These pairings draw from Sending Quotes and Convert to Invoice." },
+    { type: "sort", instruction: "Sort these steps in the order they happen when sending and closing a quote.", items: [{ label: "Send the quote from a conversation or contact page", correctBucket: "first" }, { label: "Client accepts or declines the quote", correctBucket: "second" }, { label: "Convert accepted quote to a pre-populated invoice", correctBucket: "third" }], buckets: [{ id: "first", label: "Step 1: Send" }, { id: "second", label: "Step 2: Client responds" }, { id: "third", label: "Step 3: Invoice" }], explanation: "The quote workflow flows from Sending Quotes → Client Response → Convert to Invoice." }
+  ]}
+/>
+
+---
+
+## Share a Reflection
+
+<CommentBox prompt="How do you think sending quotes before work begins could change how you communicate pricing with clients? What types of jobs would benefit most from this workflow?" />
+
+---
+
+Quotes work hand in hand with Payments. See **Payments Basics** to learn about sending payment requests and connecting your payment processor.

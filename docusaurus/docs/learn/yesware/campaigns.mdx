@@ -1,0 +1,102 @@
+---
+sidebar_position: 2
+title: Yesware Campaigns
+description: Test your knowledge on Yesware campaigns. Recipient limits, touch types, merge fields, and campaign dashboard visibility.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Yesware campaigns let you craft personalized, multi-touch messages to prospects right from your inbox. Learn recipient limits, touch types for Gmail and Outlook, merge field formatting, and troubleshooting.
+
+:::tip Touch types
+Both Gmail and Outlook users have access to Automated email and Phone call. Gmail also has Manual email, LinkedIn Mail, and Custom task.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">👥</span>Campaign Limits and Setup</div>
+
+### Recipient Limit
+
+> You can add up to **900 recipients** at a single time when building a campaign.
+
+### Outlook Signatures
+
+> Yesware does **not** automatically import Outlook email signatures into the campaign feature. You'll need to add signatures manually if desired.
+
+### Campaign Failed to Start
+
+> If you get "your campaign failed to start," the most likely issue is an **incorrectly formatted .csv** file. Check column headers, delimiters, and data format.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">✉️</span>Touch Types</div>
+
+### Gmail and Outlook (Both)
+
+- **Automated email** — Scheduled, automated messages
+- **Phone call** — Manual touch type for calling
+
+### Gmail Only
+
+- Manual email, LinkedIn Mail, Custom task
+
+### Adding Touches After Launch
+
+> If you launch a campaign with two touches and then add two more, recipients would **not** automatically receive the new touches. Plan your touches before launching.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔗</span>Merge Fields</div>
+
+Merge fields pull data from your prospect list. Format: `{!Header Name}` — use the exact header from your CSV. Example: For a header "First Name", use `{!First Name}`. Case-sensitive.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📋</span>Campaign Dashboard and Manual Touches</div>
+
+### Visibility
+
+> Only the **user that launched the campaign** has visibility into engagement metrics from the campaign dashboard—not all members, and not only account owners.
+
+### Where to Complete Manual Touches (Gmail)
+
+> **Yesware sidebar > Campaign 'To-do List' tab** — not within the campaigns tab, compose window, or app.yesware.com.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>An SDR creates a campaign with 500 recipients, uses {!First Name} and {!Company} in the template, and launches with 3 automated emails plus 2 phone call touches. They complete manual touches from the To-do List tab in the Yesware sidebar. When a prospect opens, they get a notification and follow up within the hour.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="900 Recipients" back="Max per add. Format CSV correctly." subtext="Limit" />
+  <FlipCard front="To-do List" back="Yesware sidebar. Complete manual touches." subtext="Gmail" />
+  <FlipCard front="{!Header}" back="Merge field format. Case-sensitive." subtext="Personalization" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "mcq", question: "What is the limit of recipients that can be added at a single time?", options: ["900 recipients", "1,000 recipients", "500 recipients", "Unlimited recipients"], correctIndex: 0, explanation: "**Campaign Limits and Setup > Recipient Limit** states you can add up to 900 recipients at one time." },
+    { type: "truefalse", statement: "Yesware automatically imports Outlook email signatures into the campaign feature.", correct: false, explanation: "**Outlook Signatures** says Yesware does **not** automatically import Outlook signatures—you add them manually if needed." },
+    { type: "mcq", question: "Which two touch types do both Gmail and Outlook users have access to?", options: ["Automated email and Phone call", "Manual email and LinkedIn Mail", "Custom task and Automated email", "Phone call and Manual email"], correctIndex: 0, explanation: "**Gmail and Outlook (Both)** lists Automated email and Phone call for both platforms." },
+    { type: "mcq", question: "If a user sees “your campaign failed to start,” what does the page identify as the most likely cause?", options: ["An incorrectly formatted .csv file", "Too many touches scheduled per day", "Using merge fields in the subject line", "Launching before saving the campaign name"], correctIndex: 0, explanation: "**Campaign Failed to Start** points to an **incorrectly formatted .csv** as the most likely issue." },
+    { type: "mcq", question: "Who has visibility into engagement metrics from the campaign dashboard?", options: ["Only the user who launched the campaign", "Every member on the team", "Only account owners", "Account owners plus shared admins by default"], correctIndex: 0, explanation: "**Visibility** states only the user who launched the campaign sees those metrics—not all members, and not only account owners." }
+  ]}
+/>
+
+---
+
+Campaigns keep you on track and on task. Plan your touches, format your CSV, and complete manual touches from the To-do List.

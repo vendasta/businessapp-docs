@@ -1,0 +1,57 @@
+---
+sidebar_position: 2
+title: Set Up Payments and Create Invoices
+description: Watch step-by-step video walkthroughs for making your Store payment-ready, creating and sending invoices, configuring automated collections, and applying taxes.
+---
+
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+import CommentBox from "@site/src/components/CommentBox";
+
+Make your Store payment-ready and start invoicing clients with confidence. This course walks you through setting up Vendasta Payments, creating and sending invoices, configuring automated collection methods, and applying taxes—all step by step.
+
+:::tip What you'll cover
+Setting up your Store for payments, creating and sending invoices, configuring automated billing, and applying tax rates to client purchases.
+:::
+
+---
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://fast.wistia.net/embed/iframe/6ar0gt02w5"
+  title="Set up Payments and Create Invoices"
+  style={{border: 'none'}}
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen={true}
+/>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "mcq", question: "To set up payment information as a new partner without existing billing details, where do you navigate?", options: ["Partner Center > Administration > Vendasta Payments > Settings > Complete Account Setup", "Partner Center > Administration > Vendasta Payments > Settings > Manage Account", "Partner Center > Administration > Default Billing Settings > Invoices", "Partner Center > Business > Accounts > Invoices"], correctIndex: 0, explanation: "New partners access and set up payment information by navigating to Partner Center > Administration > Vendasta Payments > Settings > Complete Account Setup." },
+    { type: "truefalse", statement: "For partners who have not set up Vendasta Payments to accept credit card payments, the Shopping Cart checkout process will always submit a sales order.", correct: true, explanation: "Without Vendasta Payments configured, all Shopping Cart checkouts default to a sales order submission." },
+    { type: "mcq", question: "Which of the following is a perk of the new package pricing model?", options: ["Manual price updates are required for each Shopping Cart purchase", "Automatic price consistency across Shopping Cart, sales orders, and invoices", "Only works with new packages created after the model was introduced", "Forces a single retail price across all products"], correctIndex: 1, explanation: "The new package pricing model ensures consistent pricing automatically across Shopping Cart purchases, sales orders, and invoices—no manual updates needed." },
+    { type: "truefalse", statement: "If you do not set a retail price for products you sell, packages and invoices will default to the Suggested Retail Price for your store's currency.", correct: true, explanation: "Without a custom retail price set, the system defaults to the Suggested Retail Price for the store's currency." },
+    { type: "truefalse", statement: "Invoices can only be created manually—there is no way to automate invoice generation.", correct: false, explanation: "With Merchant Services, invoices can be manually created or automatically generated according to account subscriptions, set to occur monthly, yearly, or as the subscription renews." },
+    { type: "mcq", question: "Where do you toggle on Billing Automations?", options: ["Partner Center > Business > Accounts > Invoices", "Partner Center > Administration > Default Billing Settings", "Partner Center > Default Billing Settings > Invoices", "Partner Center > Administration > Billing Settings > Invoices"], correctIndex: 1, explanation: "Billing Automations are off by default and can be toggled on under Partner Center > Administration > Default Billing Settings." },
+    { type: "truefalse", statement: "Tax rates you define are automatically applied to Shopping Cart purchases and applicable sales orders.", correct: true, explanation: "Tax rates defined in your settings are automatically applied to Shopping Cart purchases and sales orders generated from Shopping Carts." },
+    { type: "truefalse", statement: "You can create an invoice directly from within an individual client account, not just from the Billing tab.", correct: true, explanation: "Navigate to Partner Center > Businesses > Accounts > Manage Accounts > select account > Options menu next to Open Business Center > Create Invoice." },
+    { type: "mcq", question: "What happens when you change Default Billing Settings?", options: ["All existing accounts are updated immediately", "Only accounts created after you save the new settings use the new defaults", "The settings apply only to your 10 most recent accounts", "Billing settings cannot be changed once set"], correctIndex: 1, explanation: "Changing Default Billing Settings only affects accounts created after you save—existing accounts retain their previous billing settings." },
+    { type: "fillblank", principle: "The new package pricing model allows flexibility to add or omit items per package without needing to _____ the package price.", before: "", answer: "recalculate", after: "", hint: "Think about what you no longer have to do manually when items change.", explanation: "One perk of the new package pricing model is that you have the flexibility to add or omit items per package without needing to recalculate the package price." }
+  ]}
+/>
+
+---
+
+## Share a Reflection
+
+<CommentBox prompt="After watching the walkthrough, what step in the payments or invoicing setup do you think will have the biggest impact on your client billing workflow?" />
+
+---
+
+For a full Academy deep dive on Merchant Services, invoicing, and recurring subscriptions, take the **Streamline Billing With Merchant Services** course.

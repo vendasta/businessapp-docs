@@ -1,0 +1,232 @@
+---
+sidebar_position: 1
+title: Team Basics
+description: Learn how to add and manage team members, understand permission levels, use Team Chat, and associate team members with reviews.
+---
+
+import { FlipCard, FlipCardGrid } from '@site/src/components/FlipCard';
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+import CommentBox from '@site/src/components/CommentBox';
+
+The Team feature helps businesses manage who's involved in customer communications, track individual performance, and keep internal coordination running smoothly — all from the same interface they use with customers. This lesson covers adding team members, understanding permissions, using Team Chat, and linking team members to reviews.
+
+:::tip
+Only Admins can invite, edit, or remove other team members. If someone is having trouble with team management, check their role first.
+:::
+
+<FlipCardGrid>
+  <FlipCard front="👥 Managing Team Members" back="Add team members with name, phone, email, job title, and role. Edit or remove them from Team Management at any time." />
+  <FlipCard front="🔐 Team Permissions" back="Three roles: Member, Manager, Admin. Admins have full access. Members can message customers. Managers cannot edit Messaging Settings." />
+  <FlipCard front="💬 Team Chat" back="Communicate internally without leaving the app. Send group messages, private messages to individuals, and share photos or receipts." />
+  <FlipCard front="🏅 Associating Team Members with Reviews" back="Link team members to customers to track individual performance — response rates, star ratings, and who's driving results." />
+</FlipCardGrid>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">👥</span>Managing Team Members</div>
+
+> **Why add team members** Team members are added to help manage customer communications, send review requests, and track performance data at the individual level.
+
+> **Adding a team member** Navigate to Team > Team Management > Invite. Enter the team member's name, phone number, email address, and job title, then select their app role.
+
+> **Editing a team member** Go to Team > Team Management, select the team member, click Edit in the upper right, update the fields, and click Save.
+
+> **Removing a team member** From the same Edit screen, click "Remove from Team" to delete the team member from the account.
+
+<div className="in-practice">
+
+**In Practice:** When onboarding a new business, walk through adding at least one additional team member together — even if it's just the owner's assistant or a front-desk employee. Getting the team populated early increases platform adoption and makes the reporting data more meaningful from day one.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🔐</span>Team Permissions</div>
+
+> **Members** Can message customers directly. Standard day-to-day users of the platform.
+
+> **Managers** Can message customers and access most features, but cannot edit Messaging Settings (for example, they cannot change the SMS review request image).
+
+> **Admins** Have full access to all features and settings, including inviting, editing, and removing other team members. Only Admins can manage team membership.
+
+<div className="in-practice">
+
+**In Practice:** The most common permission confusion is around Managers not being able to edit Messaging Settings. If a Manager reports they can't change a setting, this is expected behavior — an Admin needs to make that change. Set this expectation during onboarding.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">💬</span>Team Chat</div>
+
+> **Purpose** Team Chat allows the business's internal team to communicate with each other from the same interface they use to message customers — keeping everything in one place.
+
+> **Access** Navigate to Team in the left menu, then send a message to the whole team or to a specific individual.
+
+> **What you can do** Send group messages to the whole team, send private messages to individual members, share photos, receipts, and tips, and confirm who is actively managing a specific lead.
+
+<div className="in-practice">
+
+**In Practice:** Team Chat is especially valuable for service businesses with multiple technicians in the field. Instead of switching between apps for internal coordination and customer communication, everything lives in one place. Lead with that context when introducing the feature.
+
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🏅</span>Associating Team Members with Reviews</div>
+
+> **Why associate** Linking team members to customers enables tracking of individual performance — including review request response rates and average star ratings per team member.
+
+> **Manual association** Invite all team members to the app, then assign an "Assisting Team Member" when adding a new contact.
+
+> **Via integration** Some integrations automatically include technician information and associate it with the relevant customer — no manual assignment required.
+
+> **Value created** Association data makes it easy to identify underperformers who need coaching, recognize top performers, and even run review-collection contests to motivate the team.
+
+<div className="in-practice">
+
+**In Practice:** Businesses that run review contests based on team member performance see significant increases in review request response rates. Even framing the data as a leaderboard — not a performance review — tends to drive engagement from the team.
+
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="👤 Team Management Guide" back="Step-by-step instructions for inviting, editing, and removing team members from the app." />
+  <FlipCard front="📊 Team Report" back="Once team members are associated with customers, use the Team Report to track performance metrics per individual." />
+  <FlipCard front="🔗 Integration Auto-Association" back="Learn which integrations automatically link technician data to customers, saving manual assignment time." />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    {
+      id: "team-1",
+      type: "mcq",
+      question: "Which role is required to invite, edit, or remove other team members?",
+      options: [
+        "Member",
+        "Manager",
+        "Admin",
+        "Any role can manage team members"
+      ],
+      correctIndex: 2,
+      explanation: "Only Admins can invite, edit, or remove other team members from the account."
+    },
+    {
+      id: "team-2",
+      type: "mcq",
+      question: "Where do you go to add a new team member?",
+      options: [
+        "Settings > Users > Add New",
+        "Team > Team Management > Invite",
+        "Admin > Staff > New Member",
+        "Reports > Team > Add Member"
+      ],
+      correctIndex: 1,
+      explanation: "New team members are added via Team > Team Management > Invite."
+    },
+    {
+      id: "team-3",
+      type: "truefalse",
+      question: "A Manager can edit the SMS review request image in Messaging Settings.",
+      correct: false,
+      explanation: "Managers cannot edit Messaging Settings. Only Admins have permission to change items like the SMS review request image."
+    },
+    {
+      id: "team-4",
+      type: "whicharea",
+      question: "A technician wants to message a colleague about which customer they're currently handling. Which section covers this?",
+      areas: ["👥 Managing Team Members", "🔐 Team Permissions", "💬 Team Chat", "🏅 Associating Team Members with Reviews"],
+      correctArea: "💬 Team Chat",
+      explanation: "Team Chat enables internal communication — including confirming who's managing which lead — without leaving the app."
+    },
+    {
+      id: "team-5",
+      type: "fillblank",
+      question: "To save changes when editing a team member's profile, click ________ after making updates.",
+      answer: "Save",
+      explanation: "After editing a team member's details, click Save to confirm the changes."
+    },
+    {
+      id: "team-6",
+      type: "whicharea",
+      question: "A business owner wants to know which technician has the highest average star rating. Which section explains how to enable this tracking?",
+      areas: ["👥 Managing Team Members", "🔐 Team Permissions", "💬 Team Chat", "🏅 Associating Team Members with Reviews"],
+      correctArea: "🏅 Associating Team Members with Reviews",
+      explanation: "Associating team members with customers enables tracking of individual performance metrics including star ratings."
+    },
+    {
+      id: "team-7",
+      type: "match",
+      question: "Match each team role to its key permission characteristic.",
+      pairs: [
+        { left: "Member", right: "Can message customers directly" },
+        { left: "Manager", right: "Cannot edit Messaging Settings" },
+        { left: "Admin", right: "Full access including team management" }
+      ],
+      explanation: "The three roles have distinct permission levels. Admin is the only role with full access to team management and all settings."
+    },
+    {
+      id: "team-8",
+      type: "truefalse",
+      question: "Some integrations automatically associate technician data with customers, eliminating the need for manual team member assignment.",
+      correct: true,
+      explanation: "Certain integrations include technician information and auto-associate it with the relevant customer record."
+    },
+    {
+      id: "team-9",
+      type: "mcq",
+      question: "Which of the following can you do in Team Chat?",
+      options: [
+        "Send group messages to the whole team only",
+        "Send private messages to individual team members only",
+        "Group messages, private messages, and share photos or receipts",
+        "Read-only access to customer messages"
+      ],
+      correctIndex: 2,
+      explanation: "Team Chat supports group messages, private messages, photo and receipt sharing, and lead coordination — all from the same interface."
+    },
+    {
+      id: "team-10",
+      type: "sort",
+      question: "Arrange the steps to manually associate a team member with a customer.",
+      items: [
+        { id: "assoc-a", text: "Invite all team members to the app" },
+        { id: "assoc-b", text: "Navigate to add a new contact" },
+        { id: "assoc-c", text: "Assign the 'Assisting Team Member' field" },
+        { id: "assoc-d", text: "Save the contact record" }
+      ],
+      correctBucket: ["assoc-a", "assoc-b", "assoc-c", "assoc-d"],
+      explanation: "Team members must be in the app before they can be assigned to a contact. Association is done at the time of adding the contact."
+    },
+    {
+      id: "team-11",
+      type: "fillblank",
+      question: "Team Chat is accessed from the ________ option in the left menu.",
+      answer: "Team",
+      explanation: "Team Chat is accessed via the Team option in the left navigation menu."
+    },
+    {
+      id: "team-12",
+      type: "truefalse",
+      question: "Businesses can use team member association data to run review-collection contests among their staff.",
+      correct: true,
+      explanation: "Associating team members with reviews creates a performance leaderboard that businesses can use for recognition programs and contests."
+    }
+  ]}
+/>
+
+---
+
+<CommentBox prompt="How do you typically introduce the Team feature to a business owner? Do you lead with performance tracking, internal chat, or something else — and why?" />
+
+---
+
+*Vendasta Learn — Team Basics*

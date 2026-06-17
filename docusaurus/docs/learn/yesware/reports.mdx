@@ -1,0 +1,99 @@
+---
+sidebar_position: 7
+title: Yesware Reports
+description: Test your knowledge on Yesware reports. Reporting periods, subscription access, export options, and filters.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Yesware reports help you analyze campaigns, templates, and engagement. Learn which reports have 30-day limits, which subscriptions have access, how often data updates, and what filters are available.
+
+:::tip Data refresh
+Reporting data is updated every 1–2 hours. Not daily, weekly, or instantly.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📅</span>Reporting Periods</div>
+
+### 30-Day or Less Restriction
+
+> **Recipient engagement** and **Link click engagement** reports are restricted to 30 days or less. Templates by templates and Personal tracking report are not restricted the same way.
+
+### 365-Day Limit
+
+> Unless a report is restricted to 30 days, the reporting period limit for all other reports is **365 days**—not 180, 90, or 2 years.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📊</span>Subscription Access</div>
+
+### Who Has Reports
+
+> **Enterprise, Premium, and Pro** have access to Yesware reports. **Free Forever** does not.
+
+### Enterprise/Premium Only
+
+> **Campaigns by user** reports are present only with Enterprise or Premium. Templates by user, Personal tracking, Recipient engagement, and Link click engagement may be available on other plans.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📤</span>Export and Data Refresh</div>
+
+### Personal Tracking Report Export
+
+> The personal tracking report **cannot** be exported in CSV format. It would not be exported as Excel either.
+
+### Data Update Frequency
+
+> Reporting data is updated every **1–2 hours**—not every 24 hours, weekly, 48 hours, or instantly.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔍</span>Reporting Filters</div>
+
+Besides filtering for teams and reporting periods:
+
+- **Include colleague emails** — Add teammate data to the view
+- **Exclude own data** — Remove your own emails from the report
+- **Exclude campaigns and templates without activity** — Focus on active content
+
+---
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A sales manager runs a Campaigns by user report for the last 90 days, filters by their team, excludes inactive campaigns, and sees that Template A has a 35% reply rate vs Template B at 12%. They share Template A with the team and reply rates improve across the board.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="30 Days" back="Recipient engagement, Link click engagement." subtext="Limit" />
+  <FlipCard front="365 Days" back="Max for other reports." subtext="Limit" />
+  <FlipCard front="1-2 Hours" back="Data refresh frequency." subtext="Update" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "mcq", question: "Which reports are restricted to 30 days or less?", options: ["Recipient engagement and Link click engagement", "Templates by templates", "Personal tracking report", "Campaigns by user only"], correctIndex: 0, explanation: "**30-Day or Less Restriction** names **Recipient engagement** and **Link click engagement**; Templates by templates and Personal tracking are not restricted the same way." },
+    { type: "mcq", question: "Unless a report is restricted to 30 days, what is the maximum reporting period for other reports?", options: ["365 days", "180 days", "90 days", "730 days"], correctIndex: 0, explanation: "**365-Day Limit** states the cap is **365 days**, not 180, 90, or 2 years." },
+    { type: "mcq", question: "Which subscriptions can access Yesware reports?", options: ["Enterprise, Premium, and Pro", "Free Forever", "Pro and Free Forever only", "Enterprise only"], correctIndex: 0, explanation: "**Who Has Reports** includes **Enterprise, Premium, and Pro**; **Free Forever** does not." },
+    { type: "mcq", question: "Can the Personal Tracking Report be exported?", options: ["No—it cannot be exported as CSV or Excel", "Yes, as a CSV download", "Yes, as an Excel workbook", "Yes, as a scheduled PDF"], correctIndex: 0, explanation: "**Personal Tracking Report Export** says it **cannot** be exported in CSV and would not be Excel either." },
+    { type: "mcq", question: "How often does reporting data refresh?", options: ["Every 1–2 hours", "Once every 24 hours", "Once per week", "In real time as events occur"], correctIndex: 0, explanation: "**Data Update Frequency** states updates every **1–2 hours**, not daily, weekly, or instantly." }
+  ]}
+/>
+
+---
+
+Use reports to find your highest-achieving campaigns and help grow your sales team. Data refreshes every 1-2 hours.

@@ -1,0 +1,190 @@
+---
+sidebar_position: 6
+title: "Inbox Tools: Saved Replies & Snoozing Conversations"
+description: Learn how to use Saved Replies to respond consistently and quickly, and how to snooze conversations so important follow-ups never fall through the cracks.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+import CommentBox from "@site/src/components/CommentBox";
+
+A busy Inbox is a good problem to have — but only if you have the tools to manage it. Saved Replies and Snoozing help your team respond faster, stay consistent, and follow up at exactly the right time.
+
+:::tip What you'll learn
+Use Saved Replies to build a library of reusable messages with dynamic tags, and use Snooze to schedule a reminder to follow up on any conversation at the right moment.
+:::
+
+---
+
+<FlipCardGrid>
+  <FlipCard front="💌 Saved Replies" back="Create, store, and send reusable messages with custom variable tags. Available to all team members in every conversation." subtext="Settings > Saved Replies" />
+  <FlipCard front="😴 Snoozing Conversations" back="Snooze a conversation to be reminded at a future time. Wakes up at the top of the Inbox automatically." subtext="Conversation menu > Snooze" />
+</FlipCardGrid>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">💌</span>Saved Replies</div>
+
+Saved Replies allow any team member to quickly find and send pre-written messages to leads and customers — saving time, ensuring accuracy, and keeping messaging consistent across the team.
+
+### Sending a Saved Reply
+
+> In any conversation view, tap the **➕** symbol on the left side and select **Use a Saved Reply**. A list of available saved replies appears — select one and the message text auto-populates in the message box. Edit it if needed before sending, or send as-is.
+
+### Managing Saved Replies
+
+> All saved replies are managed under **Settings &gt; Saved Replies**. Three replies come pre-loaded by default: **Appointment Reminder**, **Request Mobile Number**, and **Thanks for the Review**. Use the **pencil icon** to edit a reply or the **trash icon** to delete it.
+
+### Creating New Saved Replies
+
+> To create a new reply, select the **New** link in the upper right or the **Create a new reply** button in the lower right. Add a title and a message, then save it. The new reply immediately becomes available to all team members in conversations.
+
+### Custom Tags (Variables)
+
+> Saved replies support custom tags that act as variables, automatically resolving to real content when used in a conversation. Supported tags: **{{Customer First Name}}**, **{{Customer Full Name}}**, **{{Business Name}}**, **{{Business Street Address}}**, **{{Business Full Address}}**. In Settings, tags display as variable placeholders. In a live conversation, they resolve to the actual values.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A front desk team member gets a new lead asking about appointment availability. Rather than typing a full message from scratch, they tap ➕, select the "Appointment Reminder" saved reply, swap in the specific time, and hit send. The reply goes out in seconds with the business name and address already filled in from the custom tags — no typos, no extra effort.</p>
+  </div>
+</div>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">😴</span>Snoozing Conversations</div>
+
+Snoozing lets you set a reminder to return to a conversation at a future date and time. When the snooze expires, the conversation jumps to the top of the Inbox automatically — so nothing gets forgotten.
+
+### How to Snooze a Conversation
+
+> Open a conversation, then tap the **menu in the upper right corner**. Select **Snooze**, then choose when to **Snooze Until**. Once snoozed, the Inbox preview confirms the snooze time.
+
+### What Happens When It Wakes Up
+
+> When the snooze time arrives, the conversation is bumped to the top of the Inbox. The conversation preview shows when it was originally snoozed. After a team member replies, the preview returns to normal — the snooze indicator disappears.
+
+### Who Can Snooze
+
+> All user roles — Members, Managers, and Admins — can snooze conversations. Anyone can see that a conversation is snoozed, but there is no record of who snoozed it. If knowing who snoozed is important, leave a note in the conversation before snoozing.
+
+### Dismissing a Snooze
+
+> There is no manual "unsnooze" option. The only way to dismiss a snooze is to reply to the contact — via a direct message, a payment request, or a review request. Once a reply is sent, the snooze is dismissed automatically.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A service manager finishes a conversation with a customer who said they'd call back next Tuesday. Rather than hoping to remember, they snooze the conversation until Tuesday morning. When Tuesday arrives, the conversation jumps to the top of the Inbox with a reminder of when it was snoozed. The manager follows up, the customer is impressed by the prompt check-in, and the job is booked.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Settings > Saved Replies" back="Manage, edit, delete, and create all saved replies from this central settings page." subtext="Team-wide access" />
+  <FlipCard front="Custom Variable Tags" back="Use {{Customer First Name}}, {{Business Name}}, and other tags to personalize saved replies automatically." subtext="Dynamic placeholders" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={4}
+  questions={[
+    {
+      type: "mcq",
+      question: "How do you access Saved Replies from within a conversation?",
+      options: ["Tap the bell icon in the upper right", "Tap the ➕ symbol and select Use a Saved Reply", "Go to Settings > Saved Replies > Send", "Open the contact record and select Quick Reply"],
+      correctIndex: 1,
+      explanation: "**Saved Replies** explains that you tap the ➕ symbol in a conversation view and select 'Use a Saved Reply' to access and send a saved reply."
+    },
+    {
+      type: "truefalse",
+      statement: "Custom tags like {{Customer First Name}} display as real values when viewed in Settings > Saved Replies.",
+      correct: false,
+      explanation: "**Saved Replies** clarifies that in Settings, tags display as variable placeholders (e.g., {{Customer First Name}}). They only resolve to real content when used inside a live conversation."
+    },
+    {
+      type: "whicharea",
+      principle: "A team member wants to set a reminder to follow up with a customer next week without losing the conversation in a busy Inbox. Which feature covers this?",
+      correctArea: "😴 Snoozing Conversations",
+      explanation: "**Snoozing Conversations** is designed exactly for this — snoozing a conversation sends it away and brings it back to the top of the Inbox at the chosen time."
+    },
+    {
+      type: "fillblank",
+      principle: "By default, three saved replies are pre-loaded: Appointment Reminder, Request Mobile Number, and _____.",
+      before: "Appointment Reminder, Request Mobile Number, and",
+      answer: "Thanks for the Review",
+      after: "",
+      hint: "It's a message sent after a customer leaves feedback.",
+      explanation: "**Saved Replies** lists the three default pre-loaded replies: Appointment Reminder, Request Mobile Number, and Thanks for the Review."
+    },
+    {
+      type: "truefalse",
+      statement: "You can manually unsnooze a conversation by selecting Unsnooze from the conversation menu.",
+      correct: false,
+      explanation: "**Snoozing Conversations** explains that there is no manual unsnooze option. The only way to dismiss a snooze is to reply to the contact via a direct message, payment request, or review request."
+    },
+    {
+      type: "match",
+      instruction: "Match each Saved Replies action to how it is performed.",
+      pairs: [
+        { term: "Send a saved reply", definition: "Tap ➕ in a conversation > Use a Saved Reply > select reply > send" },
+        { term: "Edit a saved reply", definition: "Settings > Saved Replies > pencil icon" },
+        { term: "Delete a saved reply", definition: "Settings > Saved Replies > trash icon" },
+        { term: "Create a new saved reply", definition: "Settings > Saved Replies > New link or Create a new reply button" }
+      ],
+      explanation: "These pairings reflect the Sending, Managing, and Creating sections within Saved Replies."
+    },
+    {
+      type: "whicharea",
+      principle: "A business owner wants to know who on the team snoozed a specific conversation. Which section explains the limitation here?",
+      correctArea: "😴 Snoozing Conversations",
+      explanation: "**Snoozing Conversations** addresses this directly — anyone can see that a conversation is snoozed, but there is no way to see who snoozed it. The workaround is to leave a note before snoozing."
+    },
+    {
+      type: "sort",
+      instruction: "Sort these actions into the correct category: Saved Replies or Snoozing.",
+      items: [
+        { label: "Use the ➕ symbol to insert a pre-written message", correctBucket: "saved" },
+        { label: "Set a future time for a conversation to reappear at the top of the Inbox", correctBucket: "snooze" },
+        { label: "Use {{Business Name}} as a dynamic variable in a message", correctBucket: "saved" },
+        { label: "Dismiss the reminder by sending a direct message to the contact", correctBucket: "snooze" }
+      ],
+      buckets: [
+        { id: "saved", label: "Saved Replies" },
+        { id: "snooze", label: "Snoozing Conversations" }
+      ],
+      explanation: "These actions map directly to the features described in the Saved Replies and Snoozing Conversations sections."
+    },
+    {
+      type: "mcq",
+      question: "Which user roles are able to snooze conversations?",
+      options: ["Admins only", "Managers and Admins only", "All roles — Members, Managers, and Admins", "Only the team member who created the conversation"],
+      correctIndex: 2,
+      explanation: "**Snoozing Conversations** specifies that all user roles — Members, Managers, and Admins — can snooze conversations."
+    },
+    {
+      type: "truefalse",
+      statement: "After a snoozed conversation 'wakes up' and a team member replies, the snooze indicator disappears from the conversation preview.",
+      correct: true,
+      explanation: "**Snoozing Conversations** explains that after a reply is sent, the conversation preview reverts to normal with no mention of snoozing."
+    }
+  ]}
+/>
+
+---
+
+## Share a Reflection
+
+<CommentBox prompt="Which Inbox tool — Saved Replies or Snoozing — do you think will make the biggest difference in your day-to-day workflow? What saved reply would you create first?" />
+
+---
+
+For more on managing your Inbox, see the **Inbox Basics** courses on navigation, leads, and adding contacts.

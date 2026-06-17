@@ -1,0 +1,266 @@
+---
+sidebar_position: 2
+title: "Inbox Basics: Adding Contacts"
+description: Learn the different ways to add contacts to your Inbox — from automated integrations to manual entry, file uploads, and Kiosk Mode.
+---
+
+import { FlipCard, FlipCardGrid } from '@site/src/components/FlipCard';
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+import CommentBox from '@site/src/components/CommentBox';
+
+Before you can send review requests, campaigns, payment requests, or text messages, a contact must exist in your Inbox. This page covers every method available for adding contacts — so you can choose the approach that fits your workflow.
+
+:::tip
+The best contact strategy uses a mix of methods: automated integrations for ongoing additions, file uploads for existing customer lists, and manual entry or Kiosk Mode for one-off situations.
+:::
+
+<FlipCardGrid>
+  <FlipCard
+    front="🔄 Automated Ways to Add Contacts"
+    back="Connect integrations to automatically add contacts when a job or service is completed. Web Chat and Google Messaging also push contacts automatically as leads arrive."
+  />
+  <FlipCard
+    front="👤 Add Contacts Individually"
+    back="Manually add a single contact from Inbox > Add > Add Contact. Enter name, phone, and email — then choose whether to send a review request immediately or delay it."
+  />
+  <FlipCard
+    front="📁 Add Contacts from File"
+    back="Upload a list of existing customers using .csv, .txt, .xls, .xlsx, or .tsv files. Match columns to required fields and choose whether to send review requests."
+  />
+  <FlipCard
+    front="📲 Kiosk Mode"
+    back="A customer-facing screen where clients can self-enter their contact info on-site — ideal for waiting rooms, front desks, or any in-person touchpoint."
+  />
+</FlipCardGrid>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">🔄</span>Automated Ways to Add Contacts</div>
+
+### Integrations
+
+> Hundreds of integrations are available that automatically add contacts to your Inbox when a service is completed — no manual entry required.
+
+### How integrations work
+
+> When a job is marked complete in a connected software (like a field service or scheduling tool), the customer is automatically added to your Inbox and a review request can be triggered immediately.
+
+### Leads as automatic contacts
+
+> Contacts can also be added automatically when a lead comes in through Web Chat or Google Messaging. The visitor's info collected during the chat flow is pushed directly into your Inbox.
+
+<div className="in-practice">
+**In practice:** A plumbing company uses a job management integration. Every time a technician closes a work order, the customer is automatically added to the Inbox and a review request goes out — without the office team needing to do anything manually.
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">👤</span>Add Contacts Individually</div>
+
+### How to add a single contact
+
+> Navigate to Inbox > Add > Add Contact. Enter the contact's name, phone number, and email address, then save.
+
+### Review request options
+
+> After adding a contact, you can choose to send a review request immediately, set a delivery delay, or select "Don't send a review request" if the customer isn't ready.
+
+### What you can do after adding
+
+> Once a contact exists in your Inbox, you can send them campaigns, review requests, payment requests, and text messages.
+
+### Assigning a team member
+
+> If you are an Admin or Manager, you can assign an Assisting Team Member to a contact. This associates the team member with any reviews the contact leaves.
+
+<div className="in-practice">
+**In practice:** A salon owner adds a new walk-in customer manually after their appointment. She sets a 2-day delay on the review request so it arrives after the client has had time to appreciate the service — and assigns the stylist who did the work so the review is credited to them.
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📁</span>Add Contacts from File</div>
+
+### How to upload
+
+> Go to Inbox > Add > Add from File. Select your file, then map the columns in your spreadsheet to the required fields in the app.
+
+### Supported file formats
+
+> Accepted formats are: .csv, .txt, .xls, .xlsx, and .tsv. PDF files are not supported for contact uploads.
+
+### Required fields
+
+> Each contact needs at minimum a name plus either a phone number or an email address. Both are recommended for full functionality.
+
+### Review request options
+
+> When uploading a file, you can choose to send review requests to all contacts in the list, or add them to your Inbox without sending any requests.
+
+<div className="in-practice">
+**In practice:** A new client has been in business for 10 years and has a spreadsheet of 400 past customers. They export it as a .csv, upload it through Add from File, and choose to send review requests to the full list — generating a wave of new Google reviews in the first week.
+</div>
+
+---
+
+## <div className="principle-area"><span className="principle-area__icon">📲</span>Kiosk Mode</div>
+
+### What Kiosk Mode is
+
+> Kiosk Mode provides a customer-facing screen where clients can enter their own contact information directly — no staff involvement needed.
+
+### Best use cases
+
+> Kiosk Mode is ideal for physical locations like waiting rooms, front desks, service counters, or any place where customers are present while waiting. A tablet set up with Kiosk Mode lets customers opt in on their own.
+
+### What happens after entry
+
+> Once a customer submits their info through Kiosk Mode, they are added to your Inbox as a contact — ready to receive review requests, texts, or campaigns.
+
+<div className="in-practice">
+**In practice:** A tire shop places a tablet in their waiting room with Kiosk Mode open. While customers wait for their vehicle, they enter their info themselves. By the time the car is ready, they're already in the Inbox — and a review request goes out automatically after the appointment closes.
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard
+    front="📥 Add a Contact"
+    back="Go to Inbox > Add > Add Contact to manually enter a contact's name, phone, and email. Set your review request preference before saving."
+  />
+  <FlipCard
+    front="📁 Upload a Contact List"
+    back="Go to Inbox > Add > Add from File. Use .csv, .txt, .xls, .xlsx, or .tsv files — not .pdf. Map your columns and choose review request settings."
+  />
+  <FlipCard
+    front="🔌 Connect an Integration"
+    back="Browse available integrations in your settings to automate contact additions whenever a job or service is completed in your existing software."
+  />
+</FlipCardGrid>
+
+---
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    {
+      type: "mcq",
+      question: "Which of the following file formats is NOT accepted for contact uploads?",
+      options: [".csv", ".xlsx", ".pdf", ".tsv"],
+      correctIndex: 2,
+      explanation: "PDF files are not supported. Accepted formats are .csv, .txt, .xls, .xlsx, and .tsv."
+    },
+    {
+      type: "truefalse",
+      question: "You can send a text message to a contact before they have been added to your Inbox.",
+      correct: false,
+      explanation: "Contacts must be added to the Inbox before you can send them review requests, campaigns, payment requests, or texts."
+    },
+    {
+      type: "whicharea",
+      question: "A client's field service software automatically adds new customers when a job is completed. Which section describes this?",
+      areas: [
+        "🔄 Automated Ways to Add Contacts",
+        "👤 Add Contacts Individually",
+        "📁 Add Contacts from File",
+        "📲 Kiosk Mode"
+      ],
+      correctArea: "🔄 Automated Ways to Add Contacts",
+      explanation: "Integrations that automatically add contacts upon job completion are covered in the Automated Ways to Add Contacts section."
+    },
+    {
+      type: "fillblank",
+      question: "To upload a list of existing customers, navigate to Inbox > Add > Add from ________.",
+      answer: "File",
+      explanation: "The 'Add from File' option in the Inbox lets you upload a spreadsheet of existing contacts."
+    },
+    {
+      type: "mcq",
+      question: "What is the minimum information required when adding a contact from a file?",
+      options: [
+        "Name and email only",
+        "Phone number and email",
+        "Name plus either a phone number or an email",
+        "Name, phone, and email — all three are required"
+      ],
+      correctIndex: 2,
+      explanation: "Each contact requires at minimum a name plus either a phone number or an email address. Having both is recommended."
+    },
+    {
+      type: "truefalse",
+      question: "Kiosk Mode allows customers to enter their own contact information on a screen at your business location.",
+      correct: true,
+      explanation: "Kiosk Mode is a customer-facing screen designed for in-person contact collection — ideal for waiting rooms and front desks."
+    },
+    {
+      type: "whicharea",
+      question: "A client wants to set up a tablet in their lobby so customers can sign themselves up. Which section covers this?",
+      areas: [
+        "🔄 Automated Ways to Add Contacts",
+        "👤 Add Contacts Individually",
+        "📁 Add Contacts from File",
+        "📲 Kiosk Mode"
+      ],
+      correctArea: "📲 Kiosk Mode",
+      explanation: "Kiosk Mode is designed for exactly this use case — a customer-facing screen for on-site self-entry of contact information."
+    },
+    {
+      type: "match",
+      question: "Match each contact method to its best use case.",
+      pairs: [
+        { term: "Integration", definition: "Auto-adds contacts when a job is completed in another software" },
+        { term: "Add from File", definition: "Uploads a list of hundreds of existing customers at once" },
+        { term: "Kiosk Mode", definition: "Lets customers enter their own info on a tablet in your waiting room" },
+        { term: "Add Contact", definition: "Manually adds a single new customer with a name and phone number" }
+      ],
+      explanation: "Each method serves a different contact-adding scenario — from bulk uploads to one-off manual entry and automated flows."
+    },
+    {
+      type: "sort",
+      question: "Put the steps to manually add a contact in the correct order.",
+      items: [
+        { id: "a", text: "Navigate to Inbox" },
+        { id: "b", text: "Click Add > Add Contact" },
+        { id: "c", text: "Enter name, phone, and email" },
+        { id: "d", text: "Choose review request preference" },
+        { id: "e", text: "Save the contact" }
+      ],
+      correctOrder: ["a", "b", "c", "d", "e"],
+      explanation: "The correct sequence is: Inbox → Add > Add Contact → enter info → set review request preference → save."
+    },
+    {
+      type: "mcq",
+      question: "When an Admin adds a contact individually, what extra option is available that Members don't have?",
+      options: [
+        "Setting a review request delay",
+        "Assigning an Assisting Team Member",
+        "Uploading a profile photo",
+        "Selecting the contact's preferred channel"
+      ],
+      correctIndex: 1,
+      explanation: "Admins and Managers can assign an Assisting Team Member to a contact, which associates that team member with reviews the contact leaves."
+    },
+    {
+      type: "truefalse",
+      question: "When uploading a file of contacts, you must send a review request to every contact on the list.",
+      correct: false,
+      explanation: "When uploading a file, you can choose to send review requests or simply add the contacts to your Inbox without sending any requests."
+    },
+    {
+      type: "fillblank",
+      question: "Web Chat and Google Messaging add contacts automatically to your Inbox when a ________ comes in.",
+      answer: "lead",
+      explanation: "When a lead arrives through Web Chat or Google Messaging, the visitor's contact info is automatically pushed into your Inbox."
+    }
+  ]}
+/>
+
+---
+
+<CommentBox prompt="Which contact-adding method do you think will be most useful for your clients — and why?" />
+
+---
+
+*Part of the Messaging module. Continue to Inbox Basics: Leads.*

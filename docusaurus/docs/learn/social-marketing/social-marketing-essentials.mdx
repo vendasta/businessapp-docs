@@ -1,0 +1,118 @@
+---
+sidebar_position: 1
+title: Social Marketing Essentials
+description: Learn how Social Marketing helps you respond to customers, generate leads, and collaborate—from connecting accounts to drafting, scheduling, and AI-powered content creation.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Social Marketing helps you stay competitive in the fast-paced digital world by engaging consumers on social media. Respond to customers easily, generate quality leads, and collaborate seamlessly with clients and co-workers—all from one dashboard.
+
+:::tip Key capabilities
+Connect accounts, draft and schedule posts, manage a content calendar, use Clickable.bio for shoppable Instagram, respond to customer posts, discover content from RSS feeds, track performance with Insights, and create content at scale with AI.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔗</span>Getting Started</div>
+
+Connect your social accounts before posting. You can draft and schedule content, explore the Overview page, and leverage the calendar to plan ahead.
+
+### Connecting Accounts
+
+> Social Marketing &gt; Settings &gt; Connect Accounts. Click the **+** next to the social network you want to connect, log in, and follow the prompts. Networks usually connect the account you're already logged in as—so when connecting on behalf of a customer, use an incognito or private browsing session.
+
+### Overview Page
+
+> The Overview page shows your connected accounts, recent posts, and quick access to My Posts, the calendar, and key features. Explore each section to manage your social presence.
+
+### Content Calendar
+
+> Draft and schedule posts in the calendar. Plan your content without posts going live before they're finalized. Schedule across networks and view everything in one place.
+
+### Clickable.bio
+
+> Clickable.bio transforms Instagram posts into a shoppable gallery of images, turning social fans into paying customers. Available free on Social Marketing Pro. Set up in Social Marketing and compose Instagram posts with links.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📝</span>Posts and Content</div>
+
+### Customer Posts
+
+> Easily access the posts your customers are commenting on. Respond without leaving the dashboard. Filter by network and status to stay on top of engagement.
+
+### Content from RSS Feeds
+
+> Not sure what to post? Social Marketing's content feature finds interesting and relevant content from RSS feeds. Develop targeted content that keeps customers engaged and interested.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A local bakery connects Facebook and Instagram in Social Marketing, schedules a week of posts from the content RSS feed, and uses the calendar to plan a holiday promotion. When a customer comments on a post, they respond from the dashboard without switching apps. Insights show that lunch-hour posts get the most shares—so they adjust the schedule for the following month.</p>
+  </div>
+</div>
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📊</span>Insights &amp; Settings</div>
+
+### Insights
+
+> See how your posts are performing on all networks. Track reactions, comments, shares, and engagement. Discover how your links are performing and how often they're shared.
+
+### Settings
+
+> Connect different accounts, add or edit quick responses for social posts to expedite replies, and reconnect expired social connections from the Social Marketing Admin Dashboard.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🤖</span>Create with AI</div>
+
+Customize your AI tools to scale content creation in Social Marketing.
+
+### AI Common Instructions
+
+> Social Marketing &gt; Settings &gt; AI Settings. Add free-form text to guide the AI when generating social posts from the composer. Complete sentences work best— avoid subheadings, titles, or bullets in the box. This improves brand consistency, lowers mistakes, and boosts efficiency.
+
+### Bulk Create Social Posts with AI
+
+> Craft entire campaigns in minutes. Generate text and imagery for multiple posts and channels from a single AI prompt. Provide a prompt and image keyword, select networks, post quantity, length, and tone. Review and customize by account, then schedule or save as drafts.
+
+### AI Chat Editor
+
+> Converse with the AI webchat to refine messaging tone and improve social posts without adjusting individual settings or creating entirely new prompts.
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Connect Accounts" back="Settings &gt; Connect Accounts. Use incognito for customer accounts." subtext="Setup" />
+  <FlipCard front="Content &amp; RSS" back="Find relevant content from feeds. Keep customers engaged." subtext="Ideas" />
+  <FlipCard front="AI Settings" back="Customize AI instructions. Bulk create and refine with chat." subtext="Scale" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "mcq", question: "Where do you connect social media accounts in Social Marketing?", options: ["Social Marketing > Settings > Connect Accounts", "The Overview page under quick links", "My Posts after you publish", "Insights under account preferences"], correctIndex: 0, explanation: "Under **Getting Started > Connecting Accounts**, the path is Social Marketing > Settings > Connect Accounts (the + next to each network)." },
+    { type: "truefalse", statement: "When connecting an account on behalf of a customer, it's recommended to use an incognito or private browsing session.", correct: true, explanation: "**Connecting Accounts** explains that networks usually connect whoever is logged in—incognito avoids linking the wrong profile." },
+    { type: "whicharea", principle: "Where would you learn about Clickable.bio and the content calendar?", correctArea: "🔗 Getting Started", explanation: "**Getting Started** covers the Overview page, Content Calendar, and Clickable.bio together." },
+    { type: "match", instruction: "Match the feature to its purpose.", pairs: [{ term: "Content (RSS)", definition: "Pull interesting, relevant items from RSS feeds to post" }, { term: "Customer Posts", definition: "See and reply to customer comments from one dashboard" }, { term: "Insights", definition: "Measure reactions, comments, shares, and link performance" }, { term: "AI Common Instructions", definition: "Free-form guidance so generated posts match your brand" }], explanation: "These pairings mirror **Posts and Content**, **Insights & Settings**, and **Create with AI**." },
+    { type: "fillblank", principle: "AI Common Instructions should be written as _____, not bullets or subheadings.", before: "", answer: "complete sentences", after: "", hint: "Think about what helps the AI understand your brand.", explanation: "**AI Common Instructions** says complete sentences work best and to avoid subheadings, titles, or bullets in the box." },
+    { type: "truefalse", statement: "Clickable.bio is available free on any Social Marketing Pro account.", correct: true, explanation: "**Clickable.bio** states it is available free on Social Marketing Pro." },
+    { type: "mcq", question: "What does Bulk Create with AI allow you to do?", options: ["Remove scheduled posts in bulk before they publish", "Generate text and imagery for multiple posts and channels from one prompt", "Reconnect expired social logins for every network at once", "Filter customer comments by sentiment in the inbox"], correctIndex: 1, explanation: "**Bulk Create Social Posts with AI** describes generating text and imagery for multiple posts and channels from a single prompt." },
+    { type: "truefalse", statement: "You can reconnect expired social connections from the Social Marketing Admin Dashboard.", correct: true, explanation: "**Settings** notes you can reconnect expired social connections from the Social Marketing Admin Dashboard." }
+  ]}
+/>
+
+---
+
+Explore Social Marketing in the Vendasta Marketplace to get started. For platform walkthroughs, visit the Vendasta Resource Centre.

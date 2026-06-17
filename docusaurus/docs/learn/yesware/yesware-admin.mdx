@@ -1,0 +1,107 @@
+---
+sidebar_position: 9
+title: Yesware Admin
+description: Test your knowledge on Yesware admin. Subscription management, license transfer, impersonation, CRM settings, and troubleshooting.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Yesware Admin covers subscription management, user profiles, license transfers, impersonation, and troubleshooting. Learn where to find billing info, how to remove users, and how to diagnose Salesforce and tracking issues.
+
+:::tip Subscription info
+Admin > User profile > Payment account — plan type, billing cycle, etc.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">💳</span>Subscription and Billing</div>
+
+### Finding Subscription Info
+
+> **Admin > User profile > Payment account** — Plan type, billing cycle, and related info. Not: Impersonate, Edit, or User profile alone.
+
+### Finding Unknown Subscription
+
+> If a user doesn't remember the email for a subscription they want to cancel: (1) Search for accounts associated with the requester's name, (2) Have Billing search Zuora via the credit card that was charged. Not: search by last charge date only—there may be no other way without email.
+
+### Seat Licenses
+
+> Support **can** exceed the number of available seat licenses when adding users to a payment account—in certain cases. Verify with internal policies.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔄</span>License Transfer and Removing Users</div>
+
+### Why Remove Might Fail
+
+> A user/Support cannot remove an email from a payment account if **the email is the last remaining Leader on a Team**. Not: they're a manager, or they have templates.
+
+### Team Ownership Transfer
+
+> Support **can** transfer ownership of Teams between different payment accounts.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">👤</span>Impersonation</div>
+
+> Changes Support makes while impersonating users **all apply** on the user's end. This includes campaigns, meeting scheduler, and other tools. All changes are correct/synced.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">🔧</span>Technical Troubleshooting</div>
+
+### Delete Cached Authentication Token
+
+> **Admin > User profile > Scroll to "More" option > Authentication Status > Choose the token to delete > Delete.** Not: Edit > Set authentication clear, or Payment account > More.
+
+### Salesforce Integration Issues
+
+> To check for Salesforce issues: **Admin > User profile > Scroll to "CRM settings" > CRM service Config > Show > Tasks > Failed Tasks.** Not: Impersonate, Tracking Report, or verifying login URL only.
+
+### Tracking Disabled But Still Tracking
+
+> If a user disabled tracking but emails still track, the cause is likely: **the account has the Forced tracking policy enabled**. Not: user still has Yesware installed, or emails contain tracked links.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">👥</span>Account Owner Permissions</div>
+
+> Account owner sets permissions for individual users: **app.yesware.com > Settings > Plans & Usage > Users & teams > Click on the individual(s) > Edit > Select permissions.** Not: Team permissions > Manage members > Edit, or Teams > Edit permissions.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A user reports emails still tracking after they disabled it. Support checks Admin > User profile > Payment account and sees Forced tracking policy is ON. They explain the policy overrides individual settings. A manager reports Salesforce sync failures—Support checks CRM settings > Failed Tasks and finds the auth token expired. They delete the token; user re-links; sync resumes.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Payment Account" back="Admin > User profile. Subscription info." subtext="Location" />
+  <FlipCard front="Last Team Leader" back="Cannot remove if last leader on team." subtext="Blocker" />
+  <FlipCard front="Failed Tasks" back="CRM settings. Check Salesforce sync." subtext="Troubleshooting" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "mcq", question: "Where do you find a user's Yesware subscription info (plan, billing cycle)?", options: ["Admin > User profile > Payment account", "Admin > User profile > Impersonate", "Admin > User profile > Edit only", "Admin home without opening a user"], correctIndex: 0, explanation: "**Finding Subscription Info** specifies **Admin > User profile > Payment account**—not Impersonate, Edit alone, or profile alone." },
+    { type: "truefalse", statement: "Support can exceed the number of available seat licenses when adding users to a payment account.", correct: true, explanation: "**Seat Licenses** states Support **can** exceed available seats in certain cases (follow internal policy)." },
+    { type: "mcq", question: "Why might a user or Support be unable to remove an email from a payment account?", options: ["The email is the last remaining Leader on a Team", "The user holds a manager title in Salesforce", "The user has saved email templates", "The payment account has more than 50 seats"], correctIndex: 0, explanation: "**Why Remove Might Fail** blocks removal when the email is the **last remaining Leader on a Team**." },
+    { type: "truefalse", statement: "Support can transfer ownership of Teams between different payment accounts.", correct: true, explanation: "**Team Ownership Transfer** states Support **can** transfer team ownership across payment accounts." },
+    { type: "mcq", question: "Where should Support look first for Salesforce sync failures?", options: ["Admin > User profile > CRM settings > CRM service Config > Show > Tasks > Failed Tasks", "Admin > Impersonate > Recent touches", "The user’s Personal Tracking Report", "The CRM login URL field only"], correctIndex: 0, explanation: "**Salesforce Integration Issues** directs you to **Failed Tasks** under CRM service Config—not impersonation or the tracking report alone." }
+  ]}
+/>
+
+---
+
+Admin tools support subscription management, user profiles, and troubleshooting. Use Payment account for billing info and CRM settings for failed tasks.

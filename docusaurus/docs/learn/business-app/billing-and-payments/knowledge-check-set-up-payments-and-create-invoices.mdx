@@ -1,0 +1,42 @@
+---
+sidebar_position: 4
+title: "Knowledge Check: Set Up Payments and Create Invoices"
+description: Test your knowledge on Merchant Services, billing, payments, and invoices. Passing score is 80%.
+---
+
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+import CommentBox from "@site/src/components/CommentBox";
+
+Test your knowledge on Merchant Services: billing, payments, and invoices. The passing score is 80%. You can return to this quiz at any time.
+
+:::tip Before you start
+Make sure you've completed **Billing and Payment Basics** and **Set Up Payments and Create Invoices** before taking this assessment.
+:::
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={8}
+  questions={[
+    { type: "mcq", question: "For new partners without existing billing information, how do you access and set up payment information?", options: ["Partner Center > Administration > Vendasta Payments > Settings > Complete Account Setup", "Partner Center > Administration > Vendasta Payments > Settings > Manage Account", "Partner Center > Administration > Default Billing Settings", "Partner Center > Business > Accounts > Invoices"], correctIndex: 0, explanation: "New partners access payment setup by navigating to Partner Center > Administration > Vendasta Payments > Settings > Complete Account Setup." },
+    { type: "truefalse", statement: "For partners who have not set up Vendasta Payments to accept credit card payments, the Shopping Cart checkout process will always submit a sales order.", correct: true, explanation: "Without Vendasta Payments configured, Shopping Cart checkouts default to submitting a sales order." },
+    { type: "mcq", question: "Which of the following is a perk of the new package pricing model?", options: ["Manual line item updates required for each individual purchase", "Automatic price consistency across Shopping Cart, sales orders, and invoices", "Locks prices so they cannot be changed after a package is created", "Requires recalculating the package price when items are added or removed"], correctIndex: 1, explanation: "The new package pricing model ensures automatic price consistency across Shopping Cart purchases, sales orders, and invoices. No manual updates required." },
+    { type: "truefalse", statement: "If you do not set a retail price for the products you sell, packages and invoices will default to the Suggested Retail Price for your store's currency.", correct: true, explanation: "Without a custom retail price, the system automatically defaults to the Suggested Retail Price." },
+    { type: "truefalse", statement: "Invoices must always be manually created—there is no way to automate invoice generation.", correct: false, explanation: "With Merchant Services, invoices can be manually created or automatically generated based on account subscriptions—monthly, yearly, or at renewal." },
+    { type: "truefalse", statement: "You can create an invoice directly from within an individual client account, not just from the Billing tab.", correct: true, explanation: "Navigate to Partner Center > Businesses > Accounts > Manage Accounts > select account > Options menu next to Open Business Center > Create Invoice." },
+    { type: "mcq", question: "Where do you access and toggle on Billing Automations?", options: ["Partner Center > Business > Accounts > Invoices", "Partner Center > Administration > Default Billing Settings", "Partner Center > Default Billing Settings > Invoices", "Partner Center > Administration > Billing Settings > Invoices"], correctIndex: 1, explanation: "Billing Automations are off by default. Toggle them on under Partner Center > Administration > Default Billing Settings." },
+    { type: "truefalse", statement: "Tax rates you define are automatically applied to Shopping Cart purchases and applicable sales orders.", correct: true, explanation: "Defined tax rates are automatically applied to Shopping Cart purchases and to sales orders generated from Shopping Carts containing items that can't be purchased with a credit card." }
+  ]}
+/>
+
+---
+
+## Share a Reflection
+
+<CommentBox prompt="Which billing or invoicing feature surprised you most? Share how you plan to use it with your clients." />
+
+---
+
+Ready for more? Continue with **Set Up Storefront Payments and Explore Your Shopping Cart**, or take the full **Streamline Billing With Merchant Services** course in the Academy.

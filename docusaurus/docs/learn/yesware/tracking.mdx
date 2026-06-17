@@ -1,0 +1,97 @@
+---
+sidebar_position: 6
+title: Yesware Tracking
+description: Test your knowledge on Yesware tracking. Personal tracking report, engagement events, forwarded emails, and troubleshooting.
+---
+
+import FlipCard, { FlipCardGrid } from "@site/src/components/FlipCard";
+import KnowledgeCheck from "@site/src/components/KnowledgeCheck";
+
+Yesware tracking lets you monitor engagement—opens, link clicks, and more. Learn how the personal tracking report works, what details you can see, why opens might not record, and how forwarded emails are tracked.
+
+:::tip Reporting
+Yesware has the same reporting options for Outlook and Gmail users—no separate views.
+:::
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📊</span>Personal Tracking Report</div>
+
+### Functions
+
+> View a list of all tracked emails and all associated engagement events. Test tracking functionality to verify successful tracking. Not primarily for: overall open rate percentages or quick link click rankings.
+
+### Reporting Parity
+
+> Yesware has **the same** reporting options for Outlook and Gmail users—no separate views.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">📍</span>Engagement Details</div>
+
+### What You Can See
+
+> If available: **geolocation** of the engagement event, **device information**. Not typically: whether the recipient has ever opened any of your emails in the past, or if the email landed in Junk/Spam.
+
+### Location Discrepancy
+
+> If the location listed doesn't match where you know the recipient resides, the cause is likely: **the recipient is using a device with security measures and/or a VPN**. Not: they were in a different location, used a different domain, or you forgot to enable location tracking.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">❌</span>Why an Open Might Not Record</div>
+
+> The most likely cause: **the recipient has images disabled**, which prevents the Yesware tracking pixel from functioning. Not: they opened and closed within one minute, opened on phone, or you forgot a tracked link.
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">✅</span>How Support Verifies Tracking</div>
+
+> Support verifies tracking by: (1) **Tracking pixel is present** in test emails sent to Support, (2) **Emails are listed** on the Personal Tracking Report. Not solely: viewing user profile or user confirmation.
+
+### To Confirm Pixel in Email
+
+> Have the user send a test tracked email > Open the email > Click email details (three dots beside reply) > Show Original > Ctrl/Cmd+F and search for **"GIF"** > Confirm search results. Not: search for "JPG" or "tracking pixel."
+
+---
+
+<div className="principle-area"><span className="principle-area__icon">↗️</span>Forwarded Emails</div>
+
+> Forwarded tracked emails will have **all engagement events listed under the primary/initial recipient**, regardless of whether the events were performed by another recipient. Yesware does not track new recipients separately for forwarded emails.
+
+<div className="in-practice">
+  <span className="in-practice__icon">💬</span>
+  <div className="in-practice__body">
+    <span className="in-practice__label">In Practice</span>
+    <p>A rep sends a tracked email to a prospect. The prospect forwards it to their boss. The boss opens and clicks. All engagement events appear under the original prospect's record—not the boss's. The rep knows the email was engaged with but can't attribute it to the new recipient.</p>
+  </div>
+</div>
+
+---
+
+## Key Resources
+
+<FlipCardGrid>
+  <FlipCard front="Same for All" back="Outlook and Gmail have same reporting." subtext="Parity" />
+  <FlipCard front="Images On" back="Recipient must allow images for pixel to work." subtext="Requirement" />
+  <FlipCard front="Search GIF" back="Show Original > Search 'GIF' to verify pixel." subtext="Verification" />
+</FlipCardGrid>
+
+---
+
+## Knowledge Check
+
+<KnowledgeCheck
+  sessionSize={5}
+  questions={[
+    { type: "truefalse", statement: "Yesware has different reporting options for Outlook vs Gmail users.", correct: false, explanation: "**Reporting Parity** states Outlook and Gmail have the **same** reporting options—no separate views." },
+    { type: "mcq", question: "According to the lesson, the Personal Tracking Report is not primarily for which of the following?", options: ["Seeing overall open-rate percentages or quick link-click rankings", "Viewing tracked emails and their engagement events", "Testing whether tracking is working", "Reviewing engagement events tied to tracked sends"], correctIndex: 0, explanation: "**Personal Tracking Report > Functions** says it is **not** primarily for overall open-rate percentages or quick link-click rankings." },
+    { type: "mcq", question: "What is the most likely reason an open is not recorded?", options: ["The recipient has images disabled", "The recipient opened and closed within one minute", "The recipient opened on a phone", "The sender forgot to add a tracked link"], correctIndex: 0, explanation: "**Why an Open Might Not Record** points to **images disabled**, which stops the tracking pixel." },
+    { type: "mcq", question: "When a tracked email is forwarded, where do engagement events appear?", options: ["Under the primary or initial recipient, even if someone else engaged", "On each new recipient’s own tracking row", "They are discarded for forwarded mail", "Only if the forwarder opts in"], correctIndex: 0, explanation: "**Forwarded Emails** says all events stay under the **primary/initial recipient**." },
+    { type: "whicharea", principle: "Where would you learn about geolocation and device information for engagement events?", correctArea: "📍 Engagement Details", explanation: "**What You Can See** lists geolocation and device information when available." }
+  ]}
+/>
+
+---
+
+Track opens and clicks. Use the Personal Tracking Report to verify tracking and prioritize engaged prospects.
