@@ -1,0 +1,184 @@
+.container {
+  position: relative;
+}
+
+/* Floating "Comment" button near selection */
+.floatingBtn {
+  position: absolute;
+  z-index: 50;
+  transform: translate(-50%, -100%);
+  animation: fadeIn 0.15s ease;
+}
+
+.addCommentBtn {
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.addCommentBtn:hover {
+  background: var(--ifm-color-primary-dark);
+}
+
+/* Comment form popover */
+.formPopover {
+  position: absolute;
+  z-index: 60;
+  transform: translate(-50%, -100%);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  animation: fadeIn 0.15s ease;
+}
+
+.formHeader {
+  margin-bottom: 0.5rem;
+}
+
+.selectedPreview {
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  font-style: italic;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.formTextarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  resize: vertical;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cancelBtn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  background: none;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--ifm-font-color-base);
+}
+
+.cancelBtn:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.submitBtn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: var(--ifm-color-primary-dark);
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Highlighted text in content */
+.highlight {
+  background: rgba(255, 213, 79, 0.35);
+  border-bottom: 2px solid rgba(255, 193, 7, 0.6);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.highlight:hover {
+  background: rgba(255, 213, 79, 0.55);
+}
+
+[data-theme='dark'] .highlight {
+  background: rgba(255, 213, 79, 0.2);
+  border-bottom-color: rgba(255, 193, 7, 0.4);
+}
+
+[data-theme='dark'] .highlight:hover {
+  background: rgba(255, 213, 79, 0.35);
+}
+
+/* Tooltip for highlights */
+.tooltip {
+  position: absolute;
+  z-index: 70;
+  transform: translate(-50%, -100%);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  max-width: 300px;
+  font-size: 0.8rem;
+  color: var(--ifm-font-color-base);
+  white-space: pre-wrap;
+  pointer-events: none;
+  animation: fadeIn 0.15s ease;
+}
+
+/* Success message */
+.successMsg {
+  position: absolute;
+  z-index: 60;
+  transform: translate(-50%, -100%);
+  background: #22c55e;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+  white-space: nowrap;
+  animation: fadeInOut 3s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -100%) translateY(4px); }
+  10% { opacity: 1; transform: translate(-50%, -100%) translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -100%) translateY(4px); }
+  to { opacity: 1; transform: translate(-50%, -100%) translateY(0); }
+}

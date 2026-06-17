@@ -1,0 +1,62 @@
+.container {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+}
+
+.hint {
+  color: var(--ifm-color-primary);
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0;
+}
+
+.completeBtn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: var(--ifm-color-primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.completeBtn:hover:not(:disabled) {
+  background: var(--ifm-color-primary-dark);
+}
+
+.completeBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.completedState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.checkmark {
+  font-size: 2rem;
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.completedText {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #22c55e;
+}
+
+.completedDate {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+}

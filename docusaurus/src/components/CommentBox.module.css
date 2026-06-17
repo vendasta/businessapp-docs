@@ -1,0 +1,118 @@
+.container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.discussionWrap {
+  margin: 1rem 0 0.5rem;
+  padding: 0.65rem 0;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discussionHint {
+  margin: 0 0 0.4rem;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.8rem;
+}
+
+.discussionTextarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  margin-bottom: 0.45rem;
+}
+
+.discussionSubmit {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.discussionSubmit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.prompt {
+  margin: 0.5rem 0 1rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 0.75rem;
+}
+
+.submitBtn {
+  padding: 0.5rem 1rem;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.thanks {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+.monitorHint {
+  font-size: 0.85em;
+  color: var(--ifm-color-content-secondary);
+  font-weight: 400;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 0.9em;
+  margin: 0.5rem 0 0;
+}
+
+.dbTip {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content-secondary);
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.dbTip code {
+  font-size: 0.78em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.signInHint {
+  color: var(--ifm-color-primary);
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}

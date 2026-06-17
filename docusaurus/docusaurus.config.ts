@@ -265,7 +265,20 @@ const config: Config = {
         alt: 'Business App logo',
         src: 'img/Business App.svg',
       },
-      items: [],
+      items: [
+        {
+          label: 'Docs',
+          to: '/',
+          position: 'left',
+          activeBaseRegex: '^(?!/learn)',
+        },
+        {
+          label: 'Learn',
+          to: '/learn',
+          position: 'left',
+          activeBaseRegex: '^/learn',
+        },
+      ],
     },
     footer: {
       style: 'dark',
