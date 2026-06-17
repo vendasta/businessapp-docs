@@ -14,24 +14,37 @@ The AI web chat widget automatically captures leads from your website and answer
 
 ## Setup process
 
-### Step 1: Test before installing
+### Step 1: Open your web chat widgets
 
-1. Go to `AI` > `AI Workforce` in Business App
-2. Click `Configure` on the Chat Receptionist card
-3. Click `Try it` to open a demo widget on your `My Listing` page for testing
+1. Go to `Conversations`, then open `Settings` to reach the **Conversations settings** page.
+2. On the **Web Chat** card ("Capture new leads from your website with an AI-assisted chat widget"), click `Manage widgets`.
+3. The **Web Chat configuration** page lists all of your web chat widgets, with each widget's **Assigned Employees**, **Status**, and **Widget type**. Click `Try it` on a widget to preview it before installing.
 
-### Step 2: Configure Web Chat settings
+### Step 2: Create a new web chat widget
 
-1. In the Chat Receptionist configuration, go to the `Web Chat Settings` tab
-2. **Widget Name**: Enter a unique name to identify this widget (usually your domain)
+1. On the **Web Chat configuration** page, click `New Web Chat`.
+2. **Widget name**: Enter a unique name to identify this widget internally (usually your domain or the page it's for).
 
-### Step 3: Set up AI Assistant
+:::tip Run more than one widget
+You can create multiple web chat widgets and assign a different AI employee to each — for example, a sales widget on your pricing page and a support widget on your help page. To add another, return to the **Web Chat configuration** page and click `New Web Chat` again.
+:::
 
-1. Go to the `AI Assistant` settings card to train and customize:
-   - **Select an AI Assistant**: Choose a pre-built AI Assistant (like Chat Receptionist)
-   - Add business knowledge: Click `Add knowledge` > Select `Website` to scrape your website content
-   - Add custom Q&A: Manually enter frequently asked questions and answers
-   - Set business profile info: Ensure location, services, and hours are correct
+### Step 3: Assign an AI employee
+
+The AI employee is the digital teammate that replies to messages sent to this widget. Every web chat widget needs one assigned.
+
+1. In the **AI employee** card, click `Select employee`.
+2. In the **Select employee** dialog, choose the employee that should handle this widget:
+   - **Chat Receptionist**: the ready-to-use AI employee for capturing leads and answering visitor questions.
+   - **A custom AI employee**: a specialized employee you've built, such as an Inside Sales Representative or AI Support Employee. Custom employees appear in this list once you create them.
+3. Click `Ok` to assign the employee.
+4. To adjust the assigned employee's knowledge, personality, or capabilities, click `Configure` on the **AI employee** card.
+
+:::info One employee per widget
+A widget can have only one AI employee assigned at a time, but you can assign the same AI employee to more than one widget. If a widget shows a **No assigned employee** warning, open it and assign one before installing it on your site.
+:::
+
+To build a specialized employee for web chat, see [Custom AI Employees](../../ai/ai-workforce/custom-ai-employees/index.md).
 
 ### Step 4: Customize messages
 
@@ -46,18 +59,20 @@ Configure how visitors interact with the widget:
 
 ### Step 5: Customize appearance
 
-Match the widget to your brand:
+Match the widget to your brand in the **Appearance** section:
 
-- **Primary Color**: Main widget color (header, branding)
-- **Primary Text Color**: Text color for primary elements
-- **Accent Color**: Send button and chat bubble color  
-- **Accent Text Color**: Text color for accent elements
-- **Position**: Choose bottom corner position (left/right)
-- **Mobile Popup**: Enable/disable message popup for mobile visitors (vs. just chat button)
+- **Primary color**: Main widget color (header, branding)
+- **Primary text color**: Text color for primary elements (`Dark` or `Light`)
+- **Accent color**: Color of the send button and chat bubbles
+- **Accent text color**: Text color for accent elements (`Dark` or `Light`)
+- **Web Chat bottom corner position**: Show the widget in the `Left` or `Right` bottom corner
+- **Mobile Call-to-Action Popup**: When enabled, the message popup shows on mobile screens for new visitors. When disabled, only the circular chat button appears.
+
+When you're done configuring the widget, click `Next` to save it.
 
 ### Step 6: Install on website
 
-In the `Web Chat Settings` tab, scroll down to find your widget code. There are two widget types — choose one based on how you want the chat to appear on your site.
+Open the widget from the **Web Chat configuration** page (click its name, or use the `⋮` menu and choose `Embed`) to find your installation code. There are two widget types — choose one based on how you want the chat to appear on your site.
 
 ## Widget types
 
@@ -65,7 +80,7 @@ In the `Web Chat Settings` tab, scroll down to find your widget code. There are 
 
 The floating widget places a chat button in the bottom corner of every page on your site. Visitors click it to open the chat.
 
-To get the code: go to `AI` > `AI Workforce` > `Configure` on the Chat Receptionist > `Web Chat Settings` > scroll down to the **Floating Chat Widget** section and copy the JavaScript.
+To get the code: open the widget from the **Web Chat configuration** page, expand the **Floating chat widget** section, and copy the JavaScript.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -123,7 +138,7 @@ This method works for most website builders that let you add custom header code,
 
 The embedded widget places a fixed chat box directly on a specific page or location on your site, rather than a floating button. Use this when you want the chat to appear inline, such as on a contact page or landing page.
 
-To get the code: go to `AI` > `AI Workforce` > `Configure` on the Chat Receptionist > `Web Chat Settings` > scroll down to the **Embedded Chat Widget** section and copy the JavaScript.
+To get the code: open the widget from the **Web Chat configuration** page, expand the **Embedded chat widget** section, and copy the JavaScript.
 
 **To install the embedded widget:**
 
