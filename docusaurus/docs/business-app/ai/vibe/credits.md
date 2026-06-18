@@ -19,7 +19,7 @@ A credit is used each time you send a message to Vibe. How many credits a messag
 | Generate a new component | "Add a contact form and connected to my CRM" | ~300 |
 | Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 
-Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance at any time under **Administration > AI Settings > Credits**.
+Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under **Administration > AI Settings > Credits** — this section appears only when you have an active product that uses AI credits.
 
 When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App — no support ticket or wait time required.
 

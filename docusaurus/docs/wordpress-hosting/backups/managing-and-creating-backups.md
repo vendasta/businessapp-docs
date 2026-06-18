@@ -27,6 +27,12 @@ You can create a new backup of your live site at any time from the Backups tab. 
 
 *   Backup Now: Instantly generates a backup of your live/production site, ensuring any recent changes are secured.
 
+### Creating a backup from staging
+
+You can also create a new backup of your staging site at any time from the `Backups` tab.
+
+![The Backups tab in WordPress Hosting staging environment](img/create-backup-staging.png)
+
 ## Frequently Asked Questions (FAQs)
 
 <details>
