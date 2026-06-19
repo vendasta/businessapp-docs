@@ -101,6 +101,30 @@ See [Custom AI Employees](./custom-ai-employees/index.md) for the full setup pro
 
 ---
 
+## Social media manager defaults
+
+When you activate the Social Media Manager AI Employee, the `Social Calendar Generation` setup includes pre-configured defaults so you can start generating weekly plans right away.
+
+### Default model
+
+- **AI model:** `Gemini Flash Latest` (recommended)
+
+### Default trigger schedule
+
+| Setting | Default |
+| --- | --- |
+| **Schedule type** | `On a schedule` |
+| **Frequency** | Weekly |
+| **Day of week** | Monday |
+| **Time** | 9:00 AM |
+| **Timezone** | Automatically uses the timezone set in your Business App |
+| **Start date** | Today |
+| **End date** | `No end date` |
+
+These defaults are available in both web and mobile.
+
+---
+
 ## Frequently Asked Questions
 
 <details>
