@@ -37,6 +37,8 @@ There are 3 ways to reset your staging site:
 2. **Reset from backup** - This will reset the staging site from whichever backup you select from the backup list. This is a better approach when you need to compare the actual site vs the content of an older backup.
 
 3. **Reset from template** - Reset the staging site from the template selection. This means the staging site will be different from your actual site, and it will install a fresh template from the template selections for you to work with.
+   - Available for single-site and WordPress Hosting Premium multisite staging sites.
+   - Template options in the selection modal depend on templates available to your account.
 
 ## Frequently Asked Questions (FAQs)
 
