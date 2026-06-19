@@ -1,7 +1,7 @@
 ---
 title: "Business Profile and Website Sync"
 sidebar_label: "Business Profile Sync"
-description: "Learn how to sync business information from Business App to your WordPress website, including contact information, shortcodes, and header updates."
+description: "Learn how to sync business information from Business App to your WordPress website, including contact information, shortcodes, widgets, and header updates."
 ---
 
 You can easily update business information on your website created with WordPress Hosting Standard or Pro.
@@ -39,6 +39,17 @@ From here select the **Tools** tab and **Business Profile Render** sub-tab.
 This plugin provides ways to automatically sync information on your site from the Company Name to a specific social network link. It includes both shortcodes and reusable blocks.
 
 Specific instructions on how to properly utilize each type of block are located within the tab in WordPress.
+
+### What you can render
+
+With the Business Profile Render plugin, you can display:
+
+* Business name
+* Address
+* Phone number
+* Business hours
+
+You can place these values using shortcodes or blocks anywhere they fit your site layout.
 
 ## Updating Header Contact Information
 
