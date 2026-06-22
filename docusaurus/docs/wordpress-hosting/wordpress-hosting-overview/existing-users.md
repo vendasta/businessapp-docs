@@ -5,8 +5,6 @@ sidebar_position: 4
 description: "Learn how to handle existing WordPress users after importing a site into WordPress Hosting. Two options for maintaining user access."
 ---
 
-# Existing Users After Import
-
 When you import an existing site into WordPress Hosting, your WordPress users will not initially be able to log in. To maintain your users' ability to log in, you have two options:
 
 ## Option 1: Delete and Recreate Users
