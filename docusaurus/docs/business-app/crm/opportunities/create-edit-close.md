@@ -8,11 +8,11 @@ description: Create opportunities from the page or CSV import; edit from profile
 
 You can manage opportunities in two views:
 
-**Pipeline View** – Manage opportunities visually by stage. Click `Set up a pipeline` if none exists. Drag and drop opportunities to update their stage. Use filters and search to find records.
+`Pipeline View` – Manage opportunities visually by stage. Click `Set up a pipeline` if none exists. Drag and drop opportunities to update their stage. Use filters and search to find records.
 
 ![Opportunities Pipeline View](../img/opportunities/opportunity-1.png)
 
-**List View** – Click the `List` icon to switch. Configure columns, sort by fields such as expected close date, and use bulk actions.
+`List View` – Click the `List` icon to switch. Configure columns, sort by fields such as expected close date, and use bulk actions.
 
 ![Opportunities List View](../img/opportunities/opportunity-2.png)
 
