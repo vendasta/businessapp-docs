@@ -32,8 +32,8 @@ You can see what’s happening across your ad channels in one place. That makes 
 ### Connect your ad accounts
 
 1. With Advertising Intelligence active, connect your Facebook Ads and/or Google Ads accounts in the product.
-2. Go to the **Executive Report** in Business App and choose a time period.
-3. In the **Advertising** section, you’ll see **Facebook Ads** and **Google Ads** (depending on which accounts are connected).
+2. Go to the `Executive Report` in Business App and choose a time period.
+3. In the `Advertising` section, you’ll see `Facebook Ads` and `Google Ads` (depending on which accounts are connected).
 
 ### Viewing performance data
 
@@ -41,7 +41,7 @@ In the Executive Report, the Advertising section shows a summary of your Google 
 
 ## When data updates
 
-Advertising data in the Executive Report is updated every Sunday, starting the week after you connect an account. You’ll get regular updates so you can track performance over time.
+The weekly Executive Report is updated and sent on Mondays, starting the week after you connect an account. You'll get regular updates so you can track performance over time.
 
 ## Supported platforms
 
