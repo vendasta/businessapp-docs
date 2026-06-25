@@ -15,7 +15,7 @@ The **AI** section in Business App lets you deploy and configure AI Employees th
 
 **Capabilities** are the skills you turn on or off for each employee: lead capture, appointment booking, answering FAQs, transferring calls, or custom actions that connect to your tools (e.g. ServiceTitan, Shopify). Built-in capabilities cover common tasks; [custom capabilities](./ai-capabilities/creating-custom-capabilities.md) let you connect APIs and external systems.
 
-**Knowledge Base** is the reference library your AI Employees search when answering questions. It includes your business profile, website content, uploaded documents (FAQs, price lists, policies), and custom text. The AI retrieves only the relevant parts for each question—it doesn’t read everything every time. Keeping the Knowledge Base up to date helps your AI give accurate, consistent answers.
+**Knowledge Base** is the reference library your AI Employees search when answering questions. It includes your business profile, website content, uploaded documents (FAQs, price lists, policies), and custom text. The AI retrieves only the relevant parts for each question—it doesn't read everything every time. Keeping the Knowledge Base up to date helps your AI give accurate, consistent answers.
 
 ## AI roles and integrations
 
@@ -24,6 +24,7 @@ The **AI** section in Business App lets you deploy and configure AI Employees th
 | **AI Chat Receptionist** | Answers web chat, SMS, email, Facebook Messenger, and WhatsApp 24/7; captures leads and answers questions using your knowledge. |
 | **AI Voice Receptionist** | Answers phone calls 24/7; captures lead info, books appointments, and can transfer calls. |
 | **AI Reputation Specialist** | Automates review responses and helps you analyze reviews and NPS data. |
+| **AI Search Specialist** | Automatically refreshes your business description monthly when new services or tracked keywords should be reflected. |
 
 Integrations (e.g. [ServiceTitan](./ai-workforce/ai-chat-receptionist/connect-the-ai-receptionist-with-servicetitan), [Shopify](./ai-workforce/ai-chat-receptionist/connect-the-ai-receptionist-with-shopify)) extend what your AI can do—such as scheduling jobs or looking up products—by connecting your AI Employees to your existing tools.
 
@@ -88,6 +89,7 @@ Integrations (e.g. [ServiceTitan](./ai-workforce/ai-chat-receptionist/connect-th
 ## More resources
 
 - [AI Reputation Specialist](./ai-workforce/ai-reputation-specialist) — Automate review responses and explore NPS and review data.
+- [AI Search Specialist](./ai-workforce/ai-search-specialist) — Automatically keep your business description up to date based on your services and tracked keywords.
 - [AI models and privacy](./ai-models-and-privacy) — How AI generates answers, model disclosure, and data handling.
 
 ## FAQs
@@ -101,11 +103,11 @@ Go to <AISparkleIcon /> **AI** → **AI Workforce** in Business App. Choose the 
 <details>
 <summary>How do AI Employees get my business information?</summary>
 
-Your Business Profile is included by default. Add more in the [Knowledge Base](knowledge-base.md): website content, documents, and custom text. AI Employees only use this when it’s relevant to the question.
+Your Business Profile is included by default. Add more in the [Knowledge Base](knowledge-base.md): website content, documents, and custom text. AI Employees only use this when it's relevant to the question.
 </details>
 
 <details>
-<summary>What’s the difference between Knowledge Base and Capabilities?</summary>
+<summary>What's the difference between Knowledge Base and Capabilities?</summary>
 
 **Knowledge Base** is reference information the AI looks up when needed (FAQs, pricing, policies). **Capabilities** define what the AI can *do*—e.g. capture leads, book appointments, or call an API. Use capabilities when you need consistent behavior or actions; use the Knowledge Base for facts and content.
 </details>
