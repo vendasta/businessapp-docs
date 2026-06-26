@@ -163,6 +163,29 @@ Use the conversational interface to:
 
 ![Configure AI Reputation Specialist](../img/AI-Rep-Spec-16.png)
 
+## Email and in-app notifications for AI draft responses
+
+When the AI Reputation Specialist generates a draft review response, you receive a notification by email and in the app. The notification lets you act on the draft without opening the app first.
+
+The action buttons in the notification email vary by review source:
+
+| Review source | Available buttons |
+|---|---|
+| Connected Google or Facebook account | **Edit**, **Approve & Post** |
+| All other sources (Yelp, TripAdvisor, etc.) | **Edit**, **Respond on source** |
+
+- **Edit** — Opens the draft editor in the Reviews page so you can refine the response before posting.
+- **Approve & Post** — Takes you to the Reviews page and shows a confirmation prompt. The response is not posted automatically — you must click the confirm button on the page to publish it.
+- **Respond on source** — Opens the draft editor and directs you to respond manually on the review platform.
+
+If you click a link while not logged in, you'll sign in first and then land on the review.
+
+If the draft has already been posted when you click a link, you'll see the published response — no duplicate post, no error.
+
+Email links expire after 15 days. Clicking an expired link shows a notification in the app.
+
+To manage this notification, go to **Settings → Notification Settings** and look for **AI Review Response Draft Ready** under **Review Management**.
+
 ## Frequently Asked Questions (FAQs)
 
 <details>
