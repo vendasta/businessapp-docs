@@ -1,0 +1,10 @@
+{
+  "label": "AEO Audit",
+  "position": 10,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "local-seo/aeo-audit/index"
+  }
+}
