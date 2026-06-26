@@ -6,7 +6,7 @@ description: See website performance in the Executive Report with Website Pro an
 
 ## What is the Website section?
 
-The **Website** section of the Executive Report shows how your website is performing. If you use Website Standard/Pro (WordPress) or connect Google Analytics, you’ll see traffic, engagement, and referral data in one place—alongside the rest of your marketing in the report.
+The **Website** section of the Executive Report shows how your website is performing. When Website Standard/Pro (WordPress) or Google Analytics is connected, the report shows traffic, engagement, and referral data in one place alongside the rest of your marketing.
 
 ## Why it’s useful
 
@@ -24,8 +24,8 @@ Website performance appears in the Executive Report when Website Standard/Pro is
 
 You can add more detail by connecting Google Analytics:
 
-1. Go to **Business App** > **Administration** > **Connections**
-2. Open **Browse Integrations** and add **Google Analytics**
+1. Go to `Business App` → `Administration` → `Connections`
+2. Open `Browse Integrations` and add **Google Analytics**
 3. Complete the connection steps
 
 Once connected, Google Analytics data appears in the **Website** section of the Executive Report.
@@ -47,7 +47,7 @@ With Google Analytics connected, the report can show:
 
 ## What you need to set up
 
-- **Website Pro data** — Website Standard/Pro active for your account and WordPress site connected
-- **Google Analytics data** — Connect Google Analytics in **Business App** > **Administration** > **Connections** > **Browse Integrations**
+- **Website Pro data**: Website Standard/Pro active for your account and WordPress site connected
+- **Google Analytics data**: Connect Google Analytics in `Business App` → `Administration` → `Connections` → `Browse Integrations`
 
 Both give you useful website performance data in your Executive Report.
