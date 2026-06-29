@@ -21,19 +21,23 @@ Write for time-pressed SMB operators. Use plain language, short sentences, activ
 - **Hard limit: every section ≤500 words.** Under no circumstances may any section exceed 500 words. If needed, split content into additional sections to stay under the limit.
 - **Single-scene mode.** If the user specifies "single scene," produce exactly one section that is ≤500 words.
 - **No meta in output.** No meta notes, stage directions, or bracketed comments in the final script.
+- **No em dashes.** Never use em dashes (—) anywhere in the script. Rewrite sentences to avoid them.
 
 ## Scope: what to include
 
-Include only what can be **shown** in the walkthrough. The video must have on-screen movements and actions, not voiceover alone. Best practices are included only if they can be demonstrated in the walkthrough; otherwise omit them.
+Include only what can be **shown** in the walkthrough. The video must have on-screen movements and actions, not voiceover alone.
+
+- **No voiceover-only lines.** Every sentence (other than the brief opening and closing lines) must correspond to something happening on screen — a click, a navigation step, a setting being chosen, or an outcome the viewer can see. If there is nothing to show while a line is read, cut it.
+- **No tips or best practices.** Omit advice, recommendations, and "you should" guidance unless the action itself is being performed on screen. Do not narrate things the presenter cannot point to.
+- **Drop undemonstrable prerequisites.** Only include prerequisite or setup context if those steps are actually shown in the walkthrough. If a prerequisite cannot be shown, leave it out rather than narrating it over a static screen.
 
 ## Transformation goals (work backward from a great video)
 
-1. **Open** with a one-sentence purpose and value: what this enables for a small business.
-2. **Prerequisites** (if any): express briefly as narrative (e.g., "Before you connect, make sure you have…").
-3. **Configuration/setup:** walk through in a linear story—where to go, what to click, what to choose, what to expect.
-4. **Usage:** if the doc includes "how to use it," add a concise usage paragraph once connected.
-5. **Troubleshooting:** if provided in the doc, add a short paragraph with the most actionable checks.
-6. **Close** with a quick recap and an encouragement to test and refine.
+1. **Open** with a very short intro — one line, maximum two — that starts with the words "In this walkthrough" and states what the video covers. Keep it tight; do not pad it with value statements or background.
+2. **Configuration/setup:** walk through in a linear story—where to go, what to click, what to choose, what to expect. Include prerequisites only if they are shown on screen.
+3. **Usage:** if the doc includes "how to use it," add a concise usage paragraph once connected — only for steps performed on screen.
+4. **Troubleshooting:** include only if the checks are demonstrated on screen.
+5. **Close** with a short, conversational conclusion (two to three sentences) that wraps up and pitches the viewer to try the feature. Use a relaxed sign-off tone — e.g., "And that's the [feature] in a nutshell…" or "So that's the full flow…" — optionally fold in a quick recap of the key steps, and end on an inviting call to action like "go try it for your own business." Do not start it with "In this walkthrough" (that opener is for the intro only). Keep it tight.
 
 Use brand-agnostic language; use "Business App" as the environment name only when needed.
 
@@ -58,7 +62,7 @@ Use brand-agnostic language; use "Business App" as the environment name only whe
 1. Read the user's overview walkthrough document (or the topic they specify).
 2. Extract only content that corresponds to visible, demonstrable steps in the UI.
 3. Apply all strict rules and editing moves.
-4. Structure the script: open → prerequisites (if any) → setup/configuration → usage (if applicable) → troubleshooting (if applicable) → close.
+4. Structure the script: short "In this walkthrough" open → setup/configuration → usage (if applicable) → troubleshooting (if applicable) → short close. Include only on-screen, demonstrable steps; cut any line with nothing to show.
 5. Output plain text only, with sections separated by a single blank line and no section over 500 words.
 6. If the user said "single scene," output one section only (≤500 words).
 
@@ -71,3 +75,6 @@ Use brand-agnostic language; use "Business App" as the environment name only whe
 | "new," "latest," "recently," dates | Evergreen phrasing |
 | Headings, bullets, Markdown, "PAUSE" | Flowing prose only |
 | Content that can't be shown on screen | Only demonstrable steps and outcomes |
+| Tips, best practices, "you should…" advice | Only narrate actions performed on screen |
+| Long intros/outros, "test and refine" coaching | One-to-two-line open starting "In this walkthrough"; one-to-two-line close that pitches trying the feature |
+| Em dashes (—) | Rewrite the sentence to avoid them |
