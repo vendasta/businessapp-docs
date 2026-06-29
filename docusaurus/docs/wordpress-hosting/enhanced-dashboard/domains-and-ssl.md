@@ -4,7 +4,7 @@ sidebar_label: Domains & SSL
 sidebar_position: 7
 description: Connect a custom domain, configure DNS, set a primary domain, and monitor SSL.
 tags: [wordpress-hosting, dashboard, domains, ssl, dns]
-keywords: [custom domain, DNS, A record, CNAME, primary domain, alias domain, SSL certificate, HTTPS]
+keywords: [custom domain, DNS, A record, CNAME, TXT record, domain verification, primary domain, alias domain, SSL certificate, HTTPS]
 ---
 
 The **Domain & SSL** panel is where you connect a custom domain to your site, monitor SSL certificates, and choose which domain visitors see in their browser. The primary domain is the one all your other connected domains redirect to.
@@ -27,6 +27,18 @@ At your DNS provider, add these two records:
 | **CNAME** (`www` subdomain) | `www` | `wphost.websitepro.hosting` | Leave as default |
 
 Then click **+ Add domain** in the panel, enter the domain, and confirm. SSL is issued automatically once DNS propagates — usually within an hour, occasionally up to 48 hours.
+
+## Verify domain ownership
+
+Occasionally, when you add a domain that's been used somewhere before, the panel asks for one extra step — a one-time TXT record at your DNS provider:
+
+![Domain & SSL panel showing the TXT record verification banner with name, value, and Verify and retry button](img/domains-ssl-txt-verification.png)
+
+1. Copy the **TXT record name** and **value** from the banner. Each has a copy icon.
+2. Add a **TXT** record at your DNS provider with those exact values. Leave the TTL at its default.
+3. Click **Verify and retry**. If you see *Not verified yet. DNS changes take a few minutes. Try again shortly*, wait a couple of minutes and click again.
+
+You can leave the TXT record in place after verification — it doesn't affect your site.
 
 ## Existing domains keep working
 
