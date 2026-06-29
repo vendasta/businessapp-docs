@@ -4,7 +4,7 @@ sidebar_label: Domains & SSL
 sidebar_position: 7
 description: Connect a custom domain, configure DNS, set a primary domain, and monitor SSL.
 tags: [wordpress-hosting, dashboard, domains, ssl, dns]
-keywords: [custom domain, DNS, A record, CNAME, primary domain, alias domain, SSL certificate, HTTPS]
+keywords: [custom domain, DNS, A record, CNAME, TXT record, domain verification, primary domain, alias domain, SSL certificate, HTTPS]
 ---
 
 The **Domain & SSL** panel is where you connect a custom domain to your site, monitor SSL certificates, and choose which domain visitors see in their browser. The primary domain is the one all your other connected domains redirect to.
@@ -27,6 +27,29 @@ At your DNS provider, add these two records:
 | **CNAME** (`www` subdomain) | `www` | `wphost.websitepro.hosting` | Leave as default |
 
 Then click **+ Add domain** in the panel, enter the domain, and confirm. SSL is issued automatically once DNS propagates — usually within an hour, occasionally up to 48 hours.
+
+## Verify a domain that was used elsewhere
+
+If the domain you're adding has been associated with another WordPress host in the past, the add will fail with a message like:
+
+> **example.com points to another host. Add this TXT record to verify ownership, then retry.**
+
+This is a privacy safeguard — only the owner of the domain can release it. The panel surfaces the TXT record you need to add at your DNS provider to prove ownership.
+
+![Domain & SSL panel showing the TXT record verification prompt for a domain that points to another host](img/domains-ssl-txt-verification.png)
+
+To complete verification:
+
+1. Copy the **TXT record name** and **value** shown in the verification banner. Each field has a copy icon.
+2. At your DNS provider, add a **TXT** record using those exact values. Leave the TTL at its default.
+3. Wait for DNS to propagate. This usually takes a few minutes but can occasionally take longer.
+4. Back in the panel, click **Verify and retry**.
+
+Once verification succeeds, the domain finishes being added and SSL is issued automatically. You can leave the TXT record in place — it doesn't affect your site once verification is complete.
+
+:::tip
+If you remember which host the domain was previously connected to, an alternative is to remove the domain mapping there first. Be careful not to cancel the domain registration itself — only detach the domain from the old host.
+:::
 
 ## Existing domains keep working
 
@@ -101,4 +124,10 @@ The legacy A record IPs and CNAME targets only continue to serve sites that were
 <summary>Visitors land on the wrong domain</summary>
 
 Check which domain is marked **Primary**. Promote the correct one with **Make primary**.
+</details>
+
+<details>
+<summary>Verify and retry keeps failing after I added the TXT record</summary>
+
+DNS propagation can take a few minutes to a few hours. Use [dnschecker.org](https://dnschecker.org) and look up the TXT record for your domain — once the value you added shows up worldwide, **Verify and retry** will succeed. If the TXT record is correct globally but verification still fails after a few hours, contact support.
 </details>
