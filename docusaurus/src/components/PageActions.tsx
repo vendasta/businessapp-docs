@@ -9,7 +9,10 @@ import {MdContentCopy} from 'react-icons/md';
 import TurndownService from 'turndown';
 import styles from './PageActions.module.css';
 
-const CLAUDE_PROMPT_MAX_LENGTH = 7000;
+// Conservative ceiling for the full prefilled-prompt URL (including the tool's
+// base and the percent-encoded query). Long enough to embed most pages, short
+// enough to stay under proxy/server URL limits across the supported tools.
+const MAX_AI_URL_LENGTH = 8000;
 
 const getArticleMarkdown = (): string => {
   if (typeof window === 'undefined') return '';
@@ -19,34 +22,57 @@ const getArticleMarkdown = (): string => {
   return turndown.turndown(article.innerHTML);
 };
 
-const buildClaudePrompt = ({
+// Build a tool URL (base already includes the query param, e.g. ".../?q=") with
+// the page content embedded as Markdown. Budgets against the final encoded URL
+// length so the embedded content is truncated — and ultimately dropped in favour
+// of a page-URL-only prompt — before the URL grows past MAX_AI_URL_LENGTH.
+const buildAIUrl = ({
+  queryBase,
   pageUrl,
   markdown
 }: {
+  queryBase: string;
   pageUrl: string;
   markdown: string;
 }): string => {
   const basePrompt = `You are assisting me with the Business App documentation page at ${pageUrl}. Summarize the content and be prepared to answer follow-up questions.`;
+  const toUrl = (prompt: string) => `${queryBase}${encodeURIComponent(prompt)}`;
+  const fits = (prompt: string) => toUrl(prompt).length <= MAX_AI_URL_LENGTH;
 
   if (markdown) {
     const sectionHeader = '\n\n---\nPage content (Markdown):\n';
     const fullPrompt = `${basePrompt}${sectionHeader}${markdown}`;
-    if (fullPrompt.length <= CLAUDE_PROMPT_MAX_LENGTH) {
-      return fullPrompt;
+    if (fits(fullPrompt)) {
+      return toUrl(fullPrompt);
     }
 
+    // Binary-search the largest Markdown slice whose encoded URL still fits.
+    // Encoding expansion is non-linear, so measure the real URL each step.
     const truncationNote = `\n\n(Content truncated. Open ${pageUrl} for the full page.)`;
-    const available =
-      CLAUDE_PROMPT_MAX_LENGTH -
-      basePrompt.length -
-      sectionHeader.length -
-      truncationNote.length;
-    if (available > 0) {
-      return `${basePrompt}${sectionHeader}${markdown.slice(0, available)}${truncationNote}`;
+    const build = (length: number) =>
+      `${basePrompt}${sectionHeader}${markdown.slice(0, length)}${truncationNote}`;
+    let lo = 0;
+    let hi = markdown.length;
+    let bestPrompt = '';
+    while (lo <= hi) {
+      const mid = Math.floor((lo + hi) / 2);
+      const candidate = build(mid);
+      if (fits(candidate)) {
+        bestPrompt = candidate;
+        lo = mid + 1;
+      } else {
+        hi = mid - 1;
+      }
+    }
+    if (bestPrompt) {
+      return toUrl(bestPrompt);
     }
   }
 
-  return `${basePrompt}\n\nPlease open the page above to read the full content before helping me.`;
+  // No markdown, or not even a truncated slice fits: send a page-URL-only prompt.
+  return toUrl(
+    `${basePrompt}\n\nPlease open the page above to read the full content before helping me.`
+  );
 };
 
 interface PageActionsProps {
@@ -62,51 +88,20 @@ export default function PageActions({
 }: PageActionsProps): ReactNode {
   const [copied, setCopied] = useState(false);
 
-  const getPrompt = () => {
-    if (typeof window === 'undefined') return '';
-    const url = window.location.href;
-    return `Please open ${url} and summarize the information for me. I will ask you questions afterwards about my specific situation.`;
-  };
-
-  const handleOpenChatGPT = () => {
-    if (typeof window === 'undefined') return;
-    const prompt = getPrompt();
-    const chatUrl = `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`;
-    window.open(chatUrl, '_blank');
-  };
-
-  const handleOpenClaude = () => {
+  const openInAI = (queryBase: string) => {
     if (typeof window === 'undefined') return;
     const pageUrl = window.location.href;
     const markdown = getArticleMarkdown();
-    const prompt = buildClaudePrompt({
-      pageUrl,
-      markdown
-    });
-    const claudeUrl = `https://claude.ai/new?q=${encodeURIComponent(prompt)}`;
-    window.open(claudeUrl, '_blank');
+    const url = buildAIUrl({queryBase, pageUrl, markdown});
+    window.open(url, '_blank');
   };
 
-  const handleOpenPerplexity = () => {
-    if (typeof window === 'undefined') return;
-    const prompt = getPrompt();
-    const perplexityUrl = `https://www.perplexity.ai/search/new?q=${encodeURIComponent(prompt)}`;
-    window.open(perplexityUrl, '_blank');
-  };
-
-  const handleOpenGemini = () => {
-    if (typeof window === 'undefined') return;
-    const prompt = getPrompt();
-    const geminiUrl = `https://gemini.google.com/app?query=${encodeURIComponent(prompt)}`;
-    window.open(geminiUrl, '_blank');
-  };
-
-  const handleOpenGrok = () => {
-    if (typeof window === 'undefined') return;
-    const prompt = getPrompt();
-    const grokUrl = `https://x.com/i/grok?text=${encodeURIComponent(prompt)}`;
-    window.open(grokUrl, '_blank');
-  };
+  const handleOpenChatGPT = () => openInAI('https://chatgpt.com/?q=');
+  const handleOpenClaude = () => openInAI('https://claude.ai/new?q=');
+  const handleOpenPerplexity = () =>
+    openInAI('https://www.perplexity.ai/search/new?q=');
+  const handleOpenGemini = () => openInAI('https://gemini.google.com/app?query=');
+  const handleOpenGrok = () => openInAI('https://x.com/i/grok?text=');
 
   const handleCopyMarkdown = async () => {
     if (typeof window === 'undefined') return;
