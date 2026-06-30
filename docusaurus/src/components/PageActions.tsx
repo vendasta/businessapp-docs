@@ -7,24 +7,9 @@ import GeminiLogo from '@site/static/img/gemini.svg';
 import GrokLogo from '@site/static/img/grok.svg';
 import {MdContentCopy} from 'react-icons/md';
 import TurndownService from 'turndown';
-import {useDoc} from '@docusaurus/plugin-content-docs/client';
-import siteConfig from '@generated/docusaurus.config';
 import styles from './PageActions.module.css';
 
 const CLAUDE_PROMPT_MAX_LENGTH = 7000;
-const GITHUB_DEFAULT_BRANCH = 'master';
-const SITE_DIRECTORY_IN_REPO = 'docusaurus';
-
-const {organizationName, projectName} = siteConfig;
-
-const GITHUB_BLOB_BASE_URL = `https://github.com/${organizationName}/${projectName}/blob/${GITHUB_DEFAULT_BRANCH}/`;
-const GITHUB_RAW_BASE_URL = `https://raw.githubusercontent.com/${organizationName}/${projectName}/${GITHUB_DEFAULT_BRANCH}/`;
-
-interface ClaudeSourceInfo {
-  repoPath: string;
-  blobUrl: string;
-  rawUrl: string;
-}
 
 const getArticleMarkdown = (): string => {
   if (typeof window === 'undefined') return '';
@@ -34,27 +19,12 @@ const getArticleMarkdown = (): string => {
   return turndown.turndown(article.innerHTML);
 };
 
-const toRepoPathFromSource = (source: string | undefined): ClaudeSourceInfo | null => {
-  if (!source) return null;
-  const withoutAlias = source.replace(/^@site\//, '');
-  const repoPath = withoutAlias.startsWith(`${SITE_DIRECTORY_IN_REPO}/`)
-    ? withoutAlias
-    : `${SITE_DIRECTORY_IN_REPO}/${withoutAlias}`;
-  return {
-    repoPath,
-    blobUrl: `${GITHUB_BLOB_BASE_URL}${repoPath}`,
-    rawUrl: `${GITHUB_RAW_BASE_URL}${repoPath}`
-  };
-};
-
 const buildClaudePrompt = ({
   pageUrl,
-  markdown,
-  sourceInfo
+  markdown
 }: {
   pageUrl: string;
   markdown: string;
-  sourceInfo: ClaudeSourceInfo | null;
 }): string => {
   const basePrompt = `You are assisting me with the Business App documentation page at ${pageUrl}. Summarize the content and be prepared to answer follow-up questions.`;
 
@@ -64,13 +34,19 @@ const buildClaudePrompt = ({
     if (fullPrompt.length <= CLAUDE_PROMPT_MAX_LENGTH) {
       return fullPrompt;
     }
+
+    const truncationNote = `\n\n(Content truncated. Open ${pageUrl} for the full page.)`;
+    const available =
+      CLAUDE_PROMPT_MAX_LENGTH -
+      basePrompt.length -
+      sectionHeader.length -
+      truncationNote.length;
+    if (available > 0) {
+      return `${basePrompt}${sectionHeader}${markdown.slice(0, available)}${truncationNote}`;
+    }
   }
 
-  if (sourceInfo) {
-    return `${basePrompt}\n\nThe entire Markdown source for this page is publicly available here:\n${sourceInfo.rawUrl}\n\n(Readable GitHub view: ${sourceInfo.blobUrl})\n\nPlease reference that file so you have the full content before helping me.`;
-  }
-
-  return `${basePrompt}\n\nThe full content could not be embedded automatically. Please reference the page directly if you need additional details.`;
+  return `${basePrompt}\n\nPlease open the page above to read the full content before helping me.`;
 };
 
 interface PageActionsProps {
@@ -85,8 +61,6 @@ export default function PageActions({
   align = 'start'
 }: PageActionsProps): ReactNode {
   const [copied, setCopied] = useState(false);
-  const docContext = useDoc();
-  const claudeSourceInfo = toRepoPathFromSource(docContext?.metadata?.source);
 
   const getPrompt = () => {
     if (typeof window === 'undefined') return '';
@@ -107,8 +81,7 @@ export default function PageActions({
     const markdown = getArticleMarkdown();
     const prompt = buildClaudePrompt({
       pageUrl,
-      markdown,
-      sourceInfo: claudeSourceInfo
+      markdown
     });
     const claudeUrl = `https://claude.ai/new?q=${encodeURIComponent(prompt)}`;
     window.open(claudeUrl, '_blank');
