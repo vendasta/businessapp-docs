@@ -15,7 +15,7 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 - Associate contacts and opportunities to see full context
 - Enrich with custom fields and segment for targeting
 
-## What’s Included with Companies?
+## What's Included with Companies?
 
 - **Companies table and profile** for searching, filtering, and editing records
 - **Default fields** (name, website, address, lifecycle, UTM, source, social URLs, etc.) and support for custom fields
@@ -69,7 +69,7 @@ Select one or more companies from the table, then click the **Actions** button t
 
 Available actions include:
 
-- **Delete companies** — remove the selected companies from your CRM
+- **Delete companies** — remove the selected companies from your CRM. Type `Delete` in the confirmation modal to proceed.
 - **Add to static list** — add selected companies to a static list
 - **Start automation** — run an automation on the selected companies immediately
 
@@ -120,5 +120,3 @@ Yes. Platform actions like company creation, owner changes, and opportunity wins
 
 Yes. Use `Find Accounts` to search for local businesses and add them in bulk without duplicates.
 </details>
-
-
