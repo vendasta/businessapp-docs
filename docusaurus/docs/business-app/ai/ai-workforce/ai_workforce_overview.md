@@ -13,11 +13,12 @@ All AI Employees share a common structure: **name**, **purpose**, **channels**, 
 **Guides:**
 - [Set up the AI Chat Receptionist](./ai-chat-receptionist/index.mdx)
 - [Set up the AI Voice Receptionist](ai-voice-receptionist.md)
+- [AI Search Specialist](./ai-search-specialist.md)
 - [Custom AI Employees](./custom-ai-employees/index.md)
 - [AI Capabilities Overview](../ai-capabilities/index.mdx)
 - [Creating Custom Capabilities](../ai-capabilities/creating-custom-capabilities.md)
 
-If you’re just getting started, the sections below give an overview of the main elements you’ll configure for any AI Employee.
+If you're just getting started, the sections below give an overview of the main elements you'll configure for any AI Employee.
 
 ---
 
@@ -31,7 +32,7 @@ The **Profile** section is where you set the basics: how your AI Employee appear
 - **Purpose**: The job description and behavioral guidelines for your AI. Write a clear, short summary of what they should do, such as tone, greeting, and key tasks. Be specific.
 
 :::tip
-Use bullets or a numbered list to clarify instructions. For example: “Introduce yourself as the business receptionist,” “Speak in a friendly, concise way,” “Always collect name, email, and phone before ending the conversation.”
+Use bullets or a numbered list to clarify instructions. For example: "Introduce yourself as the business receptionist," "Speak in a friendly, concise way," "Always collect name, email, and phone before ending the conversation."
 :::
 
 ---
@@ -112,5 +113,5 @@ You can enable as many available channels as you like. One AI Employee can handl
 <details>
 <summary>What happens if I disable a capability?</summary>
 
-The AI Employee will no longer perform that task. If a customer asks for it, the AI will say it can’t help with that request. The capability remains available so you can turn it back on later.
+The AI Employee will no longer perform that task. If a customer asks for it, the AI will say it can't help with that request. The capability remains available so you can turn it back on later.
 </details>
