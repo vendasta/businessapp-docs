@@ -8,13 +8,13 @@ keywords: [automation settings, entry settings, error handling, automation confi
 
 # Automation settings
 
-Each automation has a Settings tab where you control how and when your workflow runs. These settings help you avoid duplicate runs, manage errors gracefully, and ensure automations behave as expected.
+Each automation has an Advanced section, in the left menu, where you control how and when your workflow runs. These settings help you avoid duplicate runs, manage errors gracefully, and ensure automations behave as expected.
 
 ## Where to find settings
 
 1. Go to Business App > Automations
 2. Open an automation
-3. Select the **Settings** tab
+3. In the left menu, select **Advanced**
 4. Configure entry settings and error handling options
 
 ## Entry settings
