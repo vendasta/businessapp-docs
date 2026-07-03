@@ -121,11 +121,13 @@ The **default voice lead capture** capability guides your AI Employee to offer t
 > **Note:** If this is turned off, the Voice Receptionist will not be able to capture caller information but *will* still answer questions to the best of their ability.
 
 
-#### Book appointments with your calendar
+#### Book Multi-Service Appointment
 
-The **Book appointments with calendar** capability connects to your integrated calendar, enabling the AI Voice Receptionist to offer real-time availability to callers, collect all necessary booking details, and automatically create events on your calendar. 
+The **Book Multi-Service Appointment** capability connects to a Service Menu, enabling the AI Voice Receptionist to offer callers real-time availability, collect all necessary booking details, and confirm one or more services in a single call. See [Book Multi-Service Appointments with AI](../../crm/My meetings/groups-and-service-menus.md#book-multi-service-appointments-with-ai) for setup steps and event type requirements.
 
-On the `Book appointments with calendar` panel, use the `Select event link to book with` dropdown to choose which calendar your receptionist should use to determine availability as well as which kind of appointments they can offer.
+:::note
+Your Voice Receptionist configuration may show two capabilities: **Book appointments with calendar** and **Book Multi-Service Appointment**. Use **Book Multi-Service Appointment** — it's a complete replacement. If **Book appointments with calendar** is visible in your configuration, it displays an **Upgrade available** badge; switch to Book Multi-Service Appointment for multi-service support and continued updates.
+:::
 
 #### Additional instructions for AI Voice Receptionist
 
@@ -371,7 +373,7 @@ For additional troubleshooting, see [Voice AI](../../conversations/phone-calls.m
 <details>
 <summary>Can the AI book meetings on my calendar?</summary>
 
-Yes. Connect your calendar in **CRM** > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then enable the **Book appointments with calendar** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](../../crm/My meetings/) for details.
+Yes. Connect your calendar in **CRM** > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then add the **Book Multi-Service Appointment** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](../../crm/My meetings/) for details.
 </details>
 
 <details>
