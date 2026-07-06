@@ -99,6 +99,11 @@ Under the `Profile` accordion, click on the `Speech` tab to reveal the dropdown 
 Each voice family and voice have different strengths and weaknesses like response speed, expressiveness, and multi-lingual capabilities. While you will see a "Recommended" voice family and voice for your business, you can choose a different voice if you prefer!
 :::
 
+If you've found a voice you like in the ElevenLabs Voice Library, you can use it by entering its voice ID in the `Speech` tab. The voice is applied as long as it doesn't require an additional surcharge.
+
+- If the voice ID requires a surcharge, you'll see an error explaining that the voice can't be used.
+- If the voice ID doesn't match a voice in the library, you'll see an error explaining that the ID isn't valid.
+
 #### Choose your AI Voice Receptionist's communication channels
 Under the `Channels` section, you will see all of the channels the AI Voice Receptionist can be assigned to work with. Your AI Voice Receptionist should be assigned to the Conversations AI phone number by default. 
 
@@ -267,7 +272,7 @@ Each voice family and voice have different strengths like response speed, expres
 3. Preview different voices by selecting them and clicking the play button
 4. Choose the voice that best matches your brand and provides the clarity your callers need
 
-While you'll see a "Recommended" voice for your business, you can select any voice that fits your preferences.
+While you'll see a "Recommended" voice for your business, you can select any voice that fits your preferences. You can also enter the voice ID of a specific voice you've found in the ElevenLabs Voice Library, as long as it doesn't require an additional surcharge.
 </details>
 
 <details>
@@ -341,6 +346,15 @@ This allows your team to review interactions, follow up with callers, and mainta
 </details>
 
 ### Troubleshooting
+
+<details>
+<summary>Why can't I use the ElevenLabs voice ID I entered?</summary>
+
+There are two reasons a voice ID from the ElevenLabs Voice Library might not work:
+
+- **The voice requires a surcharge.** You'll see an error explaining that the voice can't be used, and you'll need to choose a different voice.
+- **The voice ID doesn't match a voice in the library.** You'll see an error explaining that the ID isn't valid. Double-check the ID and try again.
+</details>
 
 <details>
 <summary>Why isn't my call transfer working?</summary>
