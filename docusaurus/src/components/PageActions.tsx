@@ -22,10 +22,30 @@ const getArticleMarkdown = (): string => {
   return turndown.turndown(article.innerHTML);
 };
 
+// Derive the same-origin raw-Markdown URL for a page from its URL. Mirrors the
+// raw-markdown plugin's permalink→file mapping:
+//   'https://host/business-app/reviews/' -> 'https://host/business-app/reviews.md'
+//   'https://host/'                       -> 'https://host/index.md'
+// Because it is built from the page's own URL, it stays on whatever (gray-label)
+// domain the reader is on and never references an internal repo or brand.
+const toMdUrl = (pageUrl: string): string => {
+  try {
+    const url = new URL(pageUrl);
+    const trimmed = url.pathname.replace(/\/+$/, '');
+    url.pathname = `${trimmed === '' ? '/index' : trimmed}.md`;
+    url.search = '';
+    url.hash = '';
+    return url.toString();
+  } catch {
+    return pageUrl;
+  }
+};
+
 // Build a tool URL (base already includes the query param, e.g. ".../?q=") with
-// the page content embedded as Markdown. Budgets against the final encoded URL
-// length so the embedded content is truncated — and ultimately dropped in favour
-// of a page-URL-only prompt — before the URL grows past MAX_AI_URL_LENGTH.
+// the page content embedded as Markdown. If the fully-embedded prompt would push
+// the encoded URL past MAX_AI_URL_LENGTH, fall back to referencing the page's
+// complete same-origin .md file (see toMdUrl) instead of embedding a truncated
+// slice — so the assistant always gets the full page.
 const buildAIUrl = ({
   queryBase,
   pageUrl,
@@ -45,33 +65,15 @@ const buildAIUrl = ({
     if (fits(fullPrompt)) {
       return toUrl(fullPrompt);
     }
-
-    // Binary-search the largest Markdown slice whose encoded URL still fits.
-    // Encoding expansion is non-linear, so measure the real URL each step.
-    const truncationNote = `\n\n(Content truncated. Open ${pageUrl} for the full page.)`;
-    const build = (length: number) =>
-      `${basePrompt}${sectionHeader}${markdown.slice(0, length)}${truncationNote}`;
-    let lo = 0;
-    let hi = markdown.length;
-    let bestPrompt = '';
-    while (lo <= hi) {
-      const mid = Math.floor((lo + hi) / 2);
-      const candidate = build(mid);
-      if (fits(candidate)) {
-        bestPrompt = candidate;
-        lo = mid + 1;
-      } else {
-        hi = mid - 1;
-      }
-    }
-    if (bestPrompt) {
-      return toUrl(bestPrompt);
-    }
   }
 
-  // No markdown, or not even a truncated slice fits: send a page-URL-only prompt.
+  // The page is too long to embed inline (or has no scrapeable Markdown): point
+  // the tool at the complete, same-origin raw Markdown file instead of sending a
+  // truncated slice. The .md URL is served by the raw-markdown build plugin and
+  // stays on the reader's own (gray-label) domain — no brand/repo leak.
+  const mdUrl = toMdUrl(pageUrl);
   return toUrl(
-    `${basePrompt}\n\nPlease open the page above to read the full content before helping me.`
+    `${basePrompt}\n\nThe complete Markdown for this page is available at ${mdUrl}\n\nPlease read that file for the full content before helping me.`
   );
 };
 

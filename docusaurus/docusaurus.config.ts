@@ -103,6 +103,10 @@ const config: Config = {
   ],
 
   plugins: [
+    // Emits a raw-Markdown copy of each doc at <permalink>.md for the AI page
+    // actions ("Open in Claude", etc.) to link to on long pages. See
+    // plugins/raw-markdown/README.md.
+    './plugins/raw-markdown',
     [
       '@docusaurus/plugin-client-redirects',
       {
