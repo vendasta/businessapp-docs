@@ -35,6 +35,17 @@ The graph provides visual insights showing:
 
 ![Graph Insights](img/graph-insights.png)
 
+### No of surveys and conversion rate
+
+The Requests report also tracks two customer-level metrics:
+
+- **No of surveys**: The number of surveys sent to customers.
+  - Integration and automation requests count per job or transaction. If the same contact has 3 jobs in the selected period, that counts as 3 surveys.
+  - Manual requests with no linked transaction each count as 1 survey.
+- **Conversion Rate**: The percentage of surveyed transactions that received an NPS or review response, calculated as (surveyed transactions with a response ÷ total surveyed transactions) × 100.
+
+Channel and Request Type filters don't apply to **No of surveys** or **Conversion Rate**. Both metrics respect the date range, location, and team filters you select.
+
 ### Interactive features
 
 - **Mouse over data points**: View detailed information for specific dates
@@ -103,4 +114,16 @@ Common causes include:
 - No Preferred Review Sites have been configured in Settings.
 - Listing Builder is not active for the account, which is required for review request delivery.
 
+</details>
+
+<details>
+<summary>What counts toward No of surveys?</summary>
+
+Integration and automation requests count per job or transaction, so a contact with 3 jobs in the selected period counts as 3 surveys. Each manual request with no linked transaction counts as 1 survey.
+</details>
+
+<details>
+<summary>Do the Channel and Request Type filters affect No of surveys or Conversion Rate?</summary>
+
+No. Those filters don't apply to **No of surveys** or **Conversion Rate**. Both metrics still respect the date range, location, and team filters you select.
 </details>
