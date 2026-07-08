@@ -1,8 +1,8 @@
 ---
 title: "Build a Custom Multi-Location Dashboard"
 sidebar_label: "Custom Multi-Location Dashboard"
-sidebar_position: 3
-draft: true
+sidebar_position: 4
+draft: false
 description: "Use Vibe to build a gated, custom-branded multi-location performance dashboard for your team, organized around the KPIs that matter to your business."
 ---
 
@@ -21,6 +21,15 @@ The SSO connector gates the dashboard to members of your Business App account, m
 :::note
 The SSO connector signs in users with their existing Business App account credentials. Only people who already have access to your Business App account can sign in. If you need to share data with someone who has no Business App access at all, SSO is not the right approach for that.
 :::
+
+## Before you start
+
+This use case requires two connectors, enabled in the correct order. Open **Connectors** from the project — either via **Configure** on the project card or **+** in the chat box — and turn them on in this sequence:
+
+1. Toggle **Single sign-on** on first.
+2. Toggle **Analytics** on.
+
+SSO must come first. It gates the dashboard to members of your Business App account — if it isn't enabled first, the sign-in UI will appear but authentication will not complete. Both need to be on before you run any of the prompts below.
 
 ## The prompts
 
@@ -74,8 +83,6 @@ From those prompts, Vibe produced a gated, fully connected dashboard with:
 **Using the group ID pulled real data.** Prompting with the specific multi-location group ID told Vibe exactly which account's data to connect. Without it, the dashboard used placeholder values. Once the group ID was in the prompt, the live metrics appeared.
 
 **Connecting data one section at a time produced better results.** Trying to connect all data sources in a single prompt led to incomplete results. Breaking it into focused prompts, Reputation AI first, then leads and bookings, then revenue, gave Vibe a clear target each time and made it easier to spot what wasn't working yet.
-
-**Enable SSO in Project Settings before prompting for a sign-in screen.** The SSO connector needs to be toggled on in **Project Settings** under **Shared connectors** before it will work. Asking for a sign-in gate before enabling the connector produces a login UI that doesn't complete authentication.
 
 **Visual polish works best as a final step.** Asking for a multi-coloured redesign early can overwrite structure that Vibe is still building. Saving the visual prompt for the end, once the data connections are working, means the redesign applies to a stable layout rather than a work-in-progress.
 

@@ -53,6 +53,19 @@ For detailed instructions, see [How to Create Custom Capabilities](../../ai-capa
 Custom AI Employees assigned to the **Web Chat** channel receive the visitor's current page URL with every message — the same as the AI Chat Receptionist. See [Make responses page-aware with the visitor's current URL](../ai-chat-receptionist/index.mdx#make-responses-page-aware-with-the-visitors-current-url) for how to tune prompts to use it.
 :::
 
+## Assign a custom AI employee to web chat
+
+Once you've built a custom AI employee, put it to work on your website by assigning it to a web chat widget:
+
+1. Go to `Conversations`, then open `Settings`.
+2. On the **Web Chat** card, click `Manage widgets` to open the **Web Chat configuration** page.
+3. Click `New Web Chat` to add a widget, or open an existing widget to edit it.
+4. In the **AI employee** card, click `Select employee`.
+5. In the **Select employee** dialog, choose your custom AI employee, then click `Ok`.
+6. Click `Next` to save, then install the widget on your site.
+
+Each widget uses one AI employee at a time, and the same employee can be assigned to multiple widgets. For the full setup and installation walkthrough, see [Web chat setup & usage](../../../conversations/web-chat/index.mdx).
+
 ## Available guides
 
 - [AI Data Analyst](./ai-data-analyst.mdx): analyze CRM data, reviews, and social engagement with structured AIR (Analyze, Interpret, Recommend) reasoning

@@ -1,0 +1,108 @@
+---
+title: Connecting a WordPress Blog to Social Marketing
+sidebar_label: WordPress Blog Connection
+sidebar_position: 4
+description: Learn how to connect your WordPress blog to Social Marketing so you can schedule and publish blog content directly to your website.
+tags: [social-marketing, wordpress, integrations, settings]
+keywords: [wordpress blog connection, blog post connector, social marketing wordpress, connect wordpress]
+---
+
+# Connecting a WordPress Blog to Social Marketing
+
+Social Marketing lets you connect your WordPress blog so you can schedule and publish blog content directly to your website from within the platform. The connection is made through the **Blog Post Connector** plugin, which you install on your WordPress site.
+
+---
+
+## Before You Begin
+
+- You must have administrator access to your WordPress site.
+- The Blog Post Connector plugin can only be installed on WordPress sites.
+- Each WordPress website can only be connected to one Social Marketing account at a time.
+
+---
+
+## How to Connect Your WordPress Blog
+
+### Step 1: Open the WordPress Blog connection
+
+1. In Social Marketing, go to **Settings > Connections**.
+
+   ![Social Marketing Settings](./img/wordpress/social-marketing-connection-settings.png)
+
+2. Navigate to the **Integrations** tab and select **WordPress Blog**.
+
+   ![WordPress Connection Settings](./img/wordpress/wordpress-connection-settings.png)
+
+3. Click **Add** to begin setting up a new connection.
+
+   ![Add WordPress Connection Settings](./img/wordpress/add-wordpress-connection-settings.png)
+
+### Step 2: Download and install the plugin
+
+1. On the **Add WordPress Blog** page, download the Blog Post Connector plugin file.
+
+   ![Add WordPress Blog page](./img/wordpress/add-wordpress-blog-page.png)
+
+2. Log in to your WordPress Admin Dashboard.
+3. Go to **Plugins > Add New Plugin**.
+
+   ![WordPress admin dashboard](./img/wordpress/wordpress-admin-dashboard.png)
+
+4. Click **Upload Plugin** and select the downloaded plugin file.
+
+   ![WordPress upload plugin page](./img/wordpress/wordpress-upload-plugin-page.png)
+
+5. Click **Install Now**, then **Activate** the plugin.
+
+### Step 3: Get your access token
+
+1. In your WordPress Admin Dashboard, go to **Settings > Blog Post Connector**.
+
+   ![WordPress access token](./img/wordpress/wordpress-access-token-page.png)
+
+2. Copy your **Access Token**. You can also generate a new token from this page if needed.
+
+### Step 4: Complete the connection in Social Marketing
+
+1. Return to Social Marketing and go to **Settings > Connections > WordPress Blog > Add New**.
+2. Paste the **Access Token** you copied from WordPress.
+
+   ![WordPress copy access token](./img/wordpress/wordpress-copy-access-token-page.png)
+
+3. Enter your **Website URL**.
+4. Click **Save**.
+
+   ![WordPress save connection](./img/wordpress/wordpress-save-connection.png)
+
+Your WordPress blog is connected to Social Marketing.
+
+---
+
+## Things to Know
+
+- The Blog Post Connector plugin only works on WordPress sites.
+- A website can only be connected to one Social Marketing account. If the website is already connected to another account, you will not be able to connect it again until it is removed from the other account.
+
+  ![Same WordPress website connection](./img/wordpress/same-wordpress-website-connection.png)
+
+- The **Website URL** and **Access Token** must match the WordPress site where you generated the token, or the connection will fail.
+
+  ![WordPress valid access token](./img/wordpress/wordpress-valid-connection-key.png)
+
+---
+
+## Frequently Asked Questions
+
+<details>
+<summary>What happens if I generate a new access token in WordPress?</summary>
+
+Generating a new access token in WordPress will invalidate the previous token. If your blog is already connected to Social Marketing, you will need to update the connection with the new token to restore functionality.
+
+</details>
+
+<details>
+<summary>Can I connect more than one WordPress blog?</summary>
+
+You can add multiple WordPress blog connections from the **Settings > Connections > WordPress Blog** page by clicking **Add** for each site.
+
+</details>

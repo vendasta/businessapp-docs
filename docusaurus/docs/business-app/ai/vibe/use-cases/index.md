@@ -2,90 +2,71 @@
 title: "Vibe Use Cases"
 sidebar_label: "Overview"
 sidebar_position: 0
-draft: true
+draft: false
 description: "Practical guidance for building real tools with Vibe for your clients — what to build, how to approach it, and what to expect."
 ---
 
 # Vibe Use Cases
 
-This section covers practical, real-world builds you can create for your clients using Vibe. Each use case includes the prompt used, what Vibe produced, and tips for refining the result.
+This section covers practical, real-world builds you can create using Vibe. Each use case includes the prompt used, what Vibe produced, and tips for refining the result.
 
-Before diving into individual use cases, this page covers the approach and expectations that apply across all of them.
+This page covers the approach and patterns that apply across all of them.
 
-## What You Can Build for Your Clients
+## What You Can Build
 
-Vibe lets you build custom tools for a client's business using plain language prompts — no coding required. Here are the types of things you can build:
+Vibe lets you build custom tools using plain language prompts — no coding required. Examples include:
 
-- **Service estimators and quote calculators** — Let their customers input details and get an instant price estimate
-- **Lead capture tools** — Collect contact information and feed it into their CRM
-- **Custom dashboards** — Pull information from different sources into one view
-- **Landing pages and websites** — Public-facing pages for their business or a specific campaign
+- **Landing pages** — Public-facing pages for a business or a specific campaign, with generated images and lead capture
+- **Custom dashboards** — Gated, branded views that pull live data from Business App and display it the way your team actually reviews it
+- **Lead capture tools** — Forms that route submissions directly into Business App
+- **Service estimators and quote calculators** — Let customers input details and get an instant price estimate
 - **Scheduling tools** — Manage bookings, team schedules, or appointment flows
 
-## Setting Client Expectations: Think in Versions
+## How to Approach a Build
 
-The most common mistake when starting with Vibe is trying to build something complete in one shot. Set this expectation with your clients upfront.
+### Think in versions
 
-The right approach is to think in versions. The first prompt produces a working starting point. From there, you refine with follow-up prompts, test the result, note what needs to change, and prompt again.
+The most common mistake is trying to build something complete in one prompt. The right approach is to think in versions — the first prompt produces a working starting point, and each follow-up refines it.
 
 - **The first version will not be perfect.** That's normal and expected.
 - **Each prompt should focus on one or two things.** Trying to add many features at once leads to worse results.
 - **Testing is part of building.** After each version, click through what was built and identify what to adjust next.
 
-What gets built with Vibe is also a living thing. As a client's business changes — their pricing, their services, their processes — the tool will need to be updated. Help them understand that ongoing maintenance is part of the value, not a sign that something went wrong.
+### Connect data one section at a time
+
+When a build pulls in live data from multiple sources, connect them one at a time rather than all at once. Asking Vibe to connect everything in a single prompt often produces incomplete results. Prompting for each data source separately — Reputation AI first, then leads and bookings, then revenue — gives Vibe a clear target and makes it easier to spot what isn't working yet.
+
+If a section shows empty or placeholder data, prompt specifically for that section:
+
+> The leads section isn't showing data. Connect it to the multi-location group and pull the real figures.
+
+### Save visual polish for last
+
+Ask for design changes — colors, layout, visual styling — after the structure and data connections are working. Applying a visual redesign to a work-in-progress can overwrite structure Vibe is still building. Once the build is stable, a single follow-up prompt can restyle the whole thing.
 
 ## Prompting Tips
 
-### Give it source material
+### Use "my business information" to pull from Business Profile
 
-If the build involves pricing, services, or specific content, point Vibe at a real source rather than expecting it to guess.
+The phrase **use my business information** tells Vibe to pull details — address, hours, contact info, services — directly from the Business Profile. This happens automatically with no additional setup. It's enough to include the phrase in the prompt.
 
-> Here is our services page: [URL]. Use the pricing from that page to build the calculator.
+> Build a landing page for a seasonal promotion. Use my business information for the details.
 
-:::note[To do before publishing]
-Clarify what database options are available for clients who need Vibe to pull from structured data rather than a URL. What formats are supported? Does the client need to set anything up first?
-:::
+### Enable connectors before you prompt
 
-### Use "contact intake" for CRM lead capture
+Some builds require a connector to be enabled before running the prompt. Open **Connectors** via **Configure** on the project card or **+** in the chat box, and toggle the required connector on. If it isn't enabled first, the UI will appear but the functionality won't work.
 
-When you want a form to send leads to the client's CRM, use the phrase **contact intake** in your prompt. Using "contact form" may produce a form that doesn't connect to the CRM.
+| What you're building | Connector to enable first |
+|---|---|
+| Lead capture form routed to Business App | Forms connector |
+| Gated dashboard for Business App users | SSO connector |
 
-**Use this:**
-> Add a contact intake form that captures the customer's name, email, and quote details.
+### Use specific IDs for real data
 
-**Instead of:**
-> Add a contact form.
+When connecting a build to live Business App data, include the specific group ID or account ID in your prompt. Without it, Vibe uses placeholder values. With it, the live metrics appear.
+
+> Please add in the Reputation AI Average Review rating for multi-location group [your-group-ID]
 
 ### Be patient during generation
 
 Building a complex application takes time. Vibe works through the build step by step — writing files, applying design, validating the result. A detailed project can take a few minutes. If the progress indicator looks frozen, give it more time before assuming something went wrong.
-
-### Let it ask questions
-
-If a prompt involves something complex — like connecting to an external service or building a specific workflow — Vibe may ask clarifying questions before it builds. Answer those questions specifically. The more detail you provide upfront, the better the result.
-
-## Connecting to the Client's Other Tools
-
-Vibe can connect to other products and services through APIs. Some connections work out of the box with the right prompt. Others require additional setup.
-
-**What tends to work well:**
-- Lead capture that saves to the CRM (use "contact intake")
-- Pulling in content from a URL
-- Building forms with multiple fields and logic
-
-**What may require extra steps:**
-- Connecting to third-party platforms not built into the system
-- Complex multi-step workflows between different products
-- Real-time data from external databases
-
-If Vibe asks for an API endpoint or webhook URL, that's a sign the connection needs some technical setup. You can still build the front-end of the tool and connect the back-end later.
-
-## What to Expect
-
-About 90% of most projects can be built through prompting alone. The last 10% — usually specific integrations or complex logic — may need additional technical help to finish.
-
-The goal is to get as far as possible through prompting, then clearly identify what's left so the right support can be lined up for those final pieces.
-
----
-
-*This article is based on internal testing and is being reviewed for accuracy before publication.*

@@ -46,7 +46,7 @@ Connect messaging channels so they appear in your unified inbox:
 - [Email Configuration](./email/email-configuration)
 - [SMS Configuration](./sms_configuration.md)
 - [Conversations overview](../conversations/index.mdx)
-- [Web Chat](../conversations/web-chat/index.mdx)
+- [Web Chat](../conversations/web-chat)
 - [Facebook Messenger](../conversations/facebook-messenger.mdx)
 - [Instagram Messages](../conversations/instagram-messenger.mdx)
 - [WhatsApp for Conversations AI](../conversations/whatsapp-for-inbox.mdx)

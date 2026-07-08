@@ -127,6 +127,8 @@ These apply to every file you create or edit. Read the full rules in `.cursor/ru
 
 **No internal references.** Never mention partners, resellers, agencies, or internal teams.
 
+**Image formatting.** All screenshots automatically render with a frame and drop shadow via global CSS. Do not add inline styles or extra CSS classes to images for this purpose.
+
 ---
 
 ## Skills Available to You
@@ -143,6 +145,7 @@ Read the full SKILL.md file before using each skill.
 | `what-did-i-get-done` | Summarizing recent commits for a status update |
 | `style-review` | Reviewing docs for style, voice, gray-label, and formatting violations |
 | `ci-style-review` | Machine-readable JSON output for the Gemini CI workflow |
+| `article-verifications` | Verifying flagged articles for quality, accuracy, freshness, and link health |
 
 ---
 

@@ -42,7 +42,7 @@ You (or whoever manages your site) need a Google Search Console account with you
 
 ![Connect Search Console to Business App](img/google-search-console-connection.jpg)
 
-- Go to **Business App** > **Administration** > **Connections** > **Browse Integrations**
+- Go to `Business App` → `Administration` → `Connections` → `Browse Integrations`
 - Find the **Google Search Console** card and click it to add an account (one connection per account)
 - Sign in with a Google account that has access to the Search Console property
 - Choose the property you want to connect
@@ -58,7 +58,7 @@ You can choose which search terms (keywords) appear in the Executive Report.
 
 - When you first connect, the report automatically pulls in the top 10 queries by clicks
 - You can edit this list: add or remove keywords, up to 20 total
-- Go to **Business App** > **Administration** > **Connections** and click the **Google Search Console** card to edit queries
+- Go to `Business App` → `Administration` → `Connections` and click the **Google Search Console** card to edit queries
 
 ![Google Search Console card](img/google-search-console-card.jpg)
 

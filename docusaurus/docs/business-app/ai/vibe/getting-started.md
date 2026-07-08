@@ -1,12 +1,12 @@
 ---
 title: Getting Started
-sidebar_position: 2
-unlisted: true
+sidebar_position: 1
+unlisted: false
 ---
 
 # Getting Started
 
-This guide walks you through creating your first application with Vibe.
+By the end of this guide, you'll have sent your first prompt and seen Vibe generate a working app in the live preview.
 
 ## Step 1: Open Vibe in Business App
 
@@ -23,7 +23,7 @@ You see your Vibe project list. If this is your first time, the list is empty an
 
 ## Step 2: Create a New Project
 
-Once you're in Vibe, you'll see a project list. Click **+ Create a new app** to create your first application.
+Once you're in Vibe, you'll see a project list. Each card shows a live preview thumbnail of the app you built. Click **+ Create a new app** to create your first application.
 
 ![Empty Vibe project list with the Create a new app button](./img/project-list.png)
 
@@ -43,7 +43,7 @@ The editor has three main areas:
 - **Preview** (center) — A live preview of your application
 - **Mode Tabs** (top) — Switch between Preview, Design, and Code views
 
-![Newly created Vibe project — empty chat panel on the left, welcome state with example prompts on the right](./img/empty-project.png)
+![The Vibe editor with a generated app: chat panel on the left showing the COMPLETED summary, live preview of the generated marketing site on the right, and Preview/Design/Code mode tabs at the top.](./img/editor-overview.png)
 
 Type your first prompt in the chat input at the bottom of the chat panel. Here are some good starting prompts:
 
@@ -66,7 +66,7 @@ After you submit your prompt, Vibe runs through a consistent sequence you can fo
 
 1. **Preparing environment** — Vibe spins up a sandbox for your project.
 2. **Thinking** — Vibe internalizes your request and works out the architecture.
-3. **Applying theme and generating images** — Vibe sets the visual style you described and creates any imagery the design needs.
+3. **Applying theme and images** — Vibe sets the visual style you described and generates or places any imagery the design needs.
 4. **Editing files** — Each component, page, and configuration file streams in as Vibe writes it. You see entries like "Editing Navbar.tsx", "Editing Home.tsx", and "Editing OwnerDashboard.tsx" appear in real time.
 5. **Validating** — Vibe takes a screenshot of the result, checks the design, and runs a build to surface errors.
 6. **Checking for errors** — If anything is broken, Vibe fixes it before declaring the run finished. See [Error handling and troubleshooting](./guides/troubleshooting.md) for how the auto-fix layers work.
@@ -75,6 +75,8 @@ After you submit your prompt, Vibe runs through a consistent sequence you can fo
 ![Vibe actively editing files during generation](./img/generation-in-progress.png)
 
 The chat auto-scrolls to follow new events as they arrive. If you scroll up to read older context, follow-tail pauses; scroll back near the bottom and it resumes.
+
+While a generation is in progress, you can type your next message in the chat input — it won't interrupt the current run. To stop a run early, click the **Stop** button in the chat input. The generation halts almost immediately, the last working preview stays on screen, and your original prompt returns to the input so you can edit and resend.
 
 ## Step 5: Iterate and Refine
 
@@ -99,6 +101,8 @@ The chat panel shows your conversation history with Vibe. Each exchange shows:
 - **Inline screenshots** — When Vibe captures a reference site or runs a visual check, the screenshot appears inline in the status row.
 - **Feedback buttons** — Thumbs up/down to rate each generation.
 
+On projects with multiple collaborators, each prompt shows the sender's avatar, name, and a timestamp, so it's clear who asked for what.
+
 ### Chat Input
 
 At the bottom of the chat panel, you find:
@@ -107,9 +111,11 @@ At the bottom of the chat panel, you find:
 |---------|-------------|
 | **Text input** | Type your prompt here. Press Enter to send, Shift+Enter for a new line. Paste a URL in the input to clone a reference site (see [Cloning a reference site](./guides/clone-from-url.md)). |
 | **+ (image)** | Attach screenshots or mockups to show Vibe what you want. |
+| **Visual edits** | Toggle design mode on or off. When on, click any element in the live preview to select it; toggle off to return to prompting. |
 | **Mode selector** | Pick the generation mode for the next prompt. |
 | **Microphone** | Record voice input. Vibe transcribes your speech into a prompt. |
 | **Send** | Submit the prompt to Vibe. |
+| **Stop** | (Appears during a generation.) Halt the current run. The last working preview stays on screen and your prompt returns to the input. |
 
 ![The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls](./img/chat-input.png)
 
@@ -118,7 +124,7 @@ At the bottom of the chat panel, you find:
 Use the tabs at the top to switch between views:
 
 - **Preview** — Live preview of your built application
-- **Design** — Visual editor for themes, colors, and element-level edits. See [Visual Editor](./guides/visual-editor.md).
+- **Design** — Visual editor for colors and element-level edits. See [Visual Editor](./guides/visual-editor.md).
 - **Code** — File explorer and code editor to view or manually edit source files
 
 ![Code mode with the file tree open and App.tsx loaded in the editor](./img/code-view.png)
@@ -144,6 +150,6 @@ The top-right toolbar provides:
 ## Next Steps
 
 - [Prompting Guide](./guides/prompting.md) — Learn the principles behind effective prompts
-- [Visual Editor & Themes](./guides/visual-editor.md) — Apply themes and make targeted edits without prompts
+- [Visual Editor](./guides/visual-editor.md) — Make targeted edits without prompts
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
 

@@ -1,12 +1,15 @@
 ---
-title: Visual Editor & Themes
+title: Visual Editor
 sidebar_position: 2
-unlisted: true
+unlisted: false
 ---
 
-# Visual Editor & Themes
+# Visual Editor
 
-Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Switch to **Design** mode using the tab at the top of the editor.
+Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Toggle the **Visual edits** button in the chat composer to flip design mode on and off — click elements in the live preview when it's on, then toggle it off to return to prompting. No hunting for a separate control.
+
+<!-- THEMES: restore the following image and section when themes feature launches
+![The Vibe editor in design mode: the left panel shows the Appearance Light/Dark toggle, the current theme, and the color palette list (Default, Glacier, Harvest, Lavender, and more), with the Visual edits button active in the chat composer below it.](../img/design-mode-themes.png)
 
 ## Theme System
 
@@ -23,8 +26,6 @@ In Design mode, the left panel shows the **Themes** tab with:
 Available themes include:
 - Default, Glacier, Harvest, Lavender, Emerald, Coral, Midnight, Sand, Rose, Sunflower, Crimson, Slate, Ocean, and more.
 
-![Design mode Themes tab with Light selected, Default theme active, and the color palette list (Default, Glacier, Harvest, Lavender, Emerald) on the left next to the live application preview.](../img/design-mode-themes.png)
-
 ### Applying a Theme
 
 - **Hover** over a theme to preview it temporarily — the live preview updates instantly so you can see how it looks.
@@ -35,6 +36,7 @@ Theme changes update the `theme.css` file in your project, which defines the CSS
 ### Light and Dark Mode
 
 Every theme supports both light and dark appearances. Use the toggle at the top of the Themes panel to switch between them. The mode is saved per-project, so different projects can have different appearance settings.
+-->
 
 ## Editing a specific element
 
@@ -100,7 +102,8 @@ Both the visual editor and the main chat reach the same generation engine. The d
 | Best for the visual editor | Best for the main chat |
 |---|---|
 | Targeted edits to a specific element you can see | New sections, pages, or features |
-| Theme changes across the whole app | Restructuring navigation or layout |
+<!-- THEMES: restore this row when themes feature launches: | Theme changes across the whole app | Restructuring navigation or layout | -->
+| Style tweaks across sections | Restructuring navigation or layout |
 | Swapping icons, images, or alt text | Adding responsive behavior |
 | Style tweaks: padding, color, font size on one element | Multi-component changes that aren't about a single element |
 

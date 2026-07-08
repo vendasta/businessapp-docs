@@ -1,7 +1,7 @@
 ---
 title: Credits
-sidebar_position: 3
-unlisted: true
+sidebar_position: 5
+unlisted: false
 ---
 
 # Credits
@@ -10,33 +10,53 @@ Vibe uses credits to measure AI activity. Your subscription includes a credit al
 
 ## How Credits Work
 
-Activity in Vibe — generating applications, editing pages, and running builds — consumes credits. Each Vibe subscription includes a monthly credit allowance that resets each billing period.
+A credit is used each time you send a message to Vibe. How many credits a message costs depends on the complexity of the task. Each Vibe subscription includes a credit allowance that resets each billing period.
 
-The amount of credits an action uses depends on its size:
+| Action | Example prompt | Credits |
+|--------|---------------|---------|
+| Style or copy edits | "Change the colour theme to blue" | ~150 |
+| Insert a snippet | "Add AI Receptionist web chat widget with the script on the page" | ~100 |
+| Generate a new component | "Add a contact form and connected to my CRM" | ~300 |
+| Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 
-| Action | Credit cost |
-|--------|-------------|
-| Large edit or full site generation | ~5 credits |
-| Small edit | 0.5–1 credit |
+Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under **Administration > AI Settings > Credits** — this section appears only when you have an active product that uses AI credits.
 
-Credits are tied to the account they were issued to and cannot be transferred to other accounts.
-
-When your included credits are used up, Vibe prompts you to purchase additional credits before you can continue building.
-
-<!-- screenshot needed: credit usage indicator / prompt when credits run out -->
+When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App — no support ticket or wait time required.
 
 ## Credit Allowances by Plan
 
-<!-- TODO: Verify plan credit allowances and credit pack costs before publishing. 
-     Transcript said 250/month but UI showed 100/month — confirm with Jesse which is correct.
-     Also confirm credit pack pricing (100/month and 200/month add-ons shown in screenshot). -->
+| Plan | Credits | Projects & published apps |
+|------|---------|--------------------------|
+| Free | 250/day, refreshed daily | Up to 1 |
+| Standard | 10,000/month | Up to 5 |
+| Pro | 25,000/month | Unlimited |
 
-| Plan | Monthly credits |
-|------|----------------|
-| Professional | 100 |
+### Free
 
-## Purchasing More Credits
+Ideal for exploring Vibe and shipping your first app.
 
-You can buy additional credit packs directly in Business App through the self-checkout flow. From the same flow, you can upgrade your subscription to the Professional plan, which includes a higher credit allowance and unlocks additional features like [custom domains](./guides/custom-domain.md).
+**Features included:**
+- Chat, voice prompting, plan mode, site cloning, and visual editor
+- Business knowledge integration
+- Native CRM lead-form connector
+- Image generation and uploads
+- Auto checkpoints and live error recovery
 
-![Vibe Professional upgrade modal showing credit pack options](./img/buy-more-credits.webp)
+### Standard
+
+Ideal for shipping apps with full business context. Includes all Free features, plus:
+
+- Custom domain support
+- Analytics and SSO connectors
+- White-label support (platform badge removed from your published app)
+
+### Pro
+
+Ideal for building professional apps with the full feature set. Includes all Standard features, plus:
+
+- Download project (.zip)
+- Supabase connector
+
+## Add-On Credits
+
+Add-on credit packs are available for purchase in sizes of 10,000, 25,000, 50,000, and 100,000 credits. Unused add-on credits carry over into the next month as long as your add-on remains active. For pricing, see the [Vibe listing](https://partners.vendasta.com/marketplace/products/MP-M56KKRF7Z3Z7NJFXRKDF67NXJLF8BN28).

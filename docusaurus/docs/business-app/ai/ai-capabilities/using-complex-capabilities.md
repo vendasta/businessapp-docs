@@ -2,6 +2,7 @@
 title: Using Complex Capabilities
 sidebar_label: Using Complex Capabilities
 sidebar_position: 4
+description: "Set up API credentials and external connections for AI Employee capabilities that require additional configuration."
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';
@@ -40,9 +41,9 @@ The **WooCommerceBasicAuth** field requires an authentication key that allows yo
 #### To generate this key:
 
 1. Log in to your WordPress admin dashboard.
-2. Navigate to **WooCommerce** › **Settings** › **Advanced** › **REST API**.
-3. Click **Add Key** to create new API credentials.
-4. Set the permissions to **Read**.
+2. Navigate to `WooCommerce` → `Settings` → `Advanced` → `REST API`.
+3. Click `Add Key` to create new API credentials.
+4. Set the permissions to `Read`.
 5. Generate and copy your credentials.
 
 :::warning
@@ -73,6 +74,6 @@ Chat with your AI Employee that has the **Create email template** capability ass
 
 After your AI Employee creates a template:
 
-1. Navigate to **Campaigns** in the right navigation panel.
-2. Click **Templates**.
-3. Your created templates appear under **My templates**.
+1. Navigate to `Campaigns` in the right navigation panel.
+2. Click `Templates`.
+3. Your created templates appear under `My templates`.

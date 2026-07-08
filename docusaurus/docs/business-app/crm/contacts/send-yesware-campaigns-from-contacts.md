@@ -23,9 +23,9 @@ Before you can send contacts a Yesware campaign, make sure that:
 
 ## How to launch Yesware campaigns from the Business App CRM contacts table
 
-1. Go to `CRM` > `Contacts` in your Business App.
+1. Go to `CRM` → `Contacts` in your Business App.
 2. Select one or more contacts in the table.
-3. Click `Actions` > `Add to Yesware Campaign`.
+3. Click `Actions` → `Add to Yesware Campaign`.
 4. Choose the desired Yesware campaign from the dropdown (campaigns previously created in Yesware).
 5. Confirm to add the selected contacts to the campaign.
 
@@ -48,7 +48,7 @@ If a selected contact is already active in a different Yesware campaign, you'll 
 - Use clear subject lines and relevant content; avoid spam trigger phrases like "free", "limited time", "exclusive", etc.
 
 :::warning
-Yesware campaigns are sent out directly via the user's Gmail or Outlook inboxes. While this can help with opens and clicks, it also means that they are subject to the daily send limits of email providers and any other restrictions that may apply.
+Yesware campaigns are sent out directly via your Gmail or Outlook inbox. While this can help with opens and clicks, it also means that they are subject to the daily send limits of email providers and any other restrictions that may apply.
 :::
 
 ## How to launch Yesware campaigns using Business App Automations
@@ -66,17 +66,10 @@ Only existing Yesware campaigns can be selected in Automations. Campaign creatio
 :::
 
 **Related automation guides:**
-- [Business App Automations overview](../automations/index) - Learn how to create your first automation workflow
-- [Automations](../../../automations/index) - Create workflows and use pre-built templates to trigger Yesware campaigns
-- [Messaging actions](../../../automations/workflows/action-messaging) - Compare Yesware with other SMS and email automation options
+- [Business App Automations overview](../../automations/index) - Learn how to create your first automation workflow
+- [Automations](../../automations/index) - Create workflows and use pre-built templates to trigger Yesware campaigns
 
 ## Frequently asked questions
-
-<details>
-<summary>Can I send Yesware campaigns from both Business App and Partner Center?</summary>
-
-Yes. Adding contacts to a Yesware campaign is available in both Business App and Partner Center platforms.
-</details>
 
 <details>
 <summary>Where do I create and manage Yesware email campaigns?</summary>
@@ -141,19 +134,15 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 ## See also
 
 **CRM contact management:**
-- [CRM contacts overview](./contacts.md) - Learn about importing contacts, campaign management, and contact field customization
+- [CRM contacts overview](./index.md) - Learn about importing contacts, campaign management, and contact field customization
 - [Contact lists for targeted outreach](../lists.md) - Segment contacts before adding to Yesware campaigns
 - [CRM forms for lead capture](../forms/index.md) - Capture new leads that can be added to Yesware campaigns
 
 **Business App automation options:**
-- [Automations overview](../automations/index) - Compare Yesware with native Business App automation options
-- [Automations](../../../automations/index) - Pre-built templates and workflows for lead nurturing and follow-up
-- [Messaging actions in automations](../../../automations/workflows/action-messaging) - SMS and email options for bulk communications
+- [Automations overview](../../automations/index) - Compare Yesware with native Business App automation options
+- [Automations](../../automations/index) - Pre-built templates and workflows for lead nurturing and follow-up
 
 **Advanced workflows:**
 - [CRM opportunities](../opportunities/index.md) - Track deals that result from Yesware campaigns
 - [Activity feed](../activity-feed.md) - Monitor Yesware campaign responses and engagement
 
----
-
-Source: Release reference "Starting a Yesware Campaign in Business App".

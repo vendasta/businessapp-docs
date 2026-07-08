@@ -1,14 +1,27 @@
 ---
-title: Image generation
+title: Images
 sidebar_position: 6
-unlisted: true
+unlisted: false
 ---
 
-# Image generation
+# Images
+
+Vibe gives you two ways to add images to your app: generate them from a text description, or import your own.
+
+## Import your own images
+
+You can attach your own images directly in the chat and tell Vibe what to do with them.
+
+1. Click the **+** icon in the bottom-left corner of the chat input.
+2. Select **Attach images**.
+3. Choose the image or images you want to use.
+4. Type what you want Vibe to do with them and send.
+
+![Vibe chat input showing the + menu with Attach images option](./img/attach-images.png)
+
+## Asking for a generated image
 
 Image generation is built into Vibe. When your prompt mentions an image, Vibe sends a description to the platform's image model, gets back a hosted image, and embeds the URL directly in your generated app. The result is a real asset, not a `lorem ipsum` graphic — and not something you have to enable in Project Settings. It's always available.
-
-## Asking for an image
 
 Mention the image in any prompt:
 
@@ -48,7 +61,7 @@ If Vibe picks the wrong ratio, ask it to regenerate:
 
 ## Next Steps
 
-- [Visual Editor & Themes](./visual-editor.md) — Fine-tune how images fit into your design
+- [Visual Editor](./visual-editor.md) — Fine-tune how images fit into your design
 - [Prompting Library](./prompting-library.md) — See image generation prompts organized by use case
 - [Connectors](./connectors/index.md) — Add live data alongside your generated visuals
 

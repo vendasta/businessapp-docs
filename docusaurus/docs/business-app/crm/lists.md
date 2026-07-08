@@ -8,7 +8,7 @@ keywords: [smart lists, static lists, crm lists, trigger automation, segment con
 
 Use Lists to organize contacts and companies into meaningful segments for outreach, automation, and reporting. There are two types:
 
-- **Static Lists**: You add or remove members manually—ideal for fixed groups such as event attendees.
+- **Static Lists**: You add or remove members manually, ideal for fixed groups such as event attendees.
 - **Smart Lists**: You define rules, and the list updates automatically as data changes (attributes and behaviors).
 
 ## Why use Lists?
@@ -19,14 +19,14 @@ Lists make it easy to target the right audience, kick off automations, and keep 
 - Reduce manual work with automatically updating smart lists
 - Trigger automations when membership changes
 
-## What’s Included with Lists?
+## What’s included with Lists?
 
 - **Static Lists** for manual curation
 - **Smart Lists** for rule-based segmentation
 - **Start Automation** actions from a list
 - **Membership Triggers** to automate when contacts/companies are added or removed
 
-## How to Use Lists
+## How to use Lists
 
 ### Create a List
 
@@ -35,7 +35,7 @@ Lists make it easy to target the right audience, kick off automations, and keep 
 
 ![CRM Lists Navigation](img/lists/list-navigation.jpg)
 
-### Create a Static List
+### Create a static list
 
 1. Specify filters to select initial members and click `Save`.
 2. Add or remove members any time from the `Contacts` or `Companies` tables.
@@ -44,17 +44,17 @@ Lists make it easy to target the right audience, kick off automations, and keep 
 ![Static List Save](img/lists/static-list-save.jpg)
 
 :::tip
-Keep static lists small and intentional—use them for one-time actions or short-term targeting.
+Keep static lists small and intentional, use them for one-time actions or short-term targeting.
 :::
 
-### Create a Smart List
+### Create a smart list
 
 1. Define rules (for example, “Companies with a contact who opened a marketing email in the last 2 weeks” or “Companies with listing grade C/D/F”).
 2. Click `Save`. Membership updates automatically as data changes.
 
 ![Smart List Criteria](img/lists/smart-list-criteria.jpg)
 
-### Start an Automation from a List
+### Start an automation from a list
 
 1. Go to `CRM` > `Lists` and locate your list.
 2. Open the action menu (three dots) and select `Start Automation`.
@@ -66,7 +66,7 @@ Keep static lists small and intentional—use them for one-time actions or short
 Automations run immediately for the list’s current members. Use membership triggers to handle future additions or removals.
 :::
 
-### Automate When Membership Changes
+### Automate when membership changes
 
 Available triggers:
 
@@ -87,7 +87,7 @@ Use these to send follow-ups, notify sales, or update CRM stages automatically.
 
 ![Delete List](img/lists/delete-list.jpg)
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Can I share lists with my team?</summary>

@@ -9,6 +9,10 @@ SMS Review Requesting in Reputation AI Premium lets you request reviews from cus
 Before you can send SMS review requests, US-based businesses must complete A2P 10DLC registration. This includes updating your website to meet carrier compliance requirements. See [SMS Registration for US Businesses](/business-app/administration/sms_configuration) for the complete registration guide.
 :::
 
+:::info UK businesses: Registration required
+UK-based businesses using SMS review requests must register their phone numbers with UK carriers. This requirement took effect May 27, 2024 for new numbers and September 30, 2024 for existing numbers. Registration is submitted on your behalf — contact support to initiate the process. Approval typically takes 2–4 business days. Unregistered UK numbers are blocked by carriers.
+:::
+
 Reputation AI Premium users will see three options for sending out review requests:
 
 1. Email and SMS
@@ -65,4 +69,30 @@ If your business has a new EIN, the verification databases may not have your inf
 <summary>Can I edit the submitted registration answers once the registration has been approved?</summary>
 
 Once the SMS registration form has been submitted for A2P 10DLC compliance, the form becomes locked and further edits, including changes to the Authorized Representative, are not possible directly within the platform. This is to comply with carrier and third-party verification requirements, which stipulate that all submitted information must match government records and cannot be altered after submission for security reasons.
+</details>
+
+<details>
+<summary>Why didn't my SMS review request send?</summary>
+
+There are several reasons an SMS review request may not deliver:
+
+- **A2P registration not approved** (US only) — SMS to US numbers requires A2P 10DLC registration to be approved. Check your registration status in **Administration > Conversations Settings > Phone & SMS**.
+- **Daily send limit reached** — SMS review requests are limited to 150 per day per account. The limit resets at midnight. Bulk sends over the limit automatically roll over and continue the following day.
+- **Recipient opted out** — If the recipient previously texted STOP to your number, they will not receive future SMS messages. They must text START to re-subscribe.
+- **Unsupported country** — SMS is not available in all countries. If a contact's phone number is in an unsupported region, the message will not be sent.
+
+</details>
+
+<details>
+<summary>What is the daily SMS send limit?</summary>
+
+You can send up to 150 SMS review requests per day. The limit resets at midnight. If you upload a bulk list that exceeds 150 contacts, the remaining messages automatically roll over and are sent on subsequent days — you do not need to resend them manually.
+
+</details>
+
+<details>
+<summary>A customer says they stopped receiving my SMS messages — how do I fix this?</summary>
+
+If a customer previously texted STOP to your number, they are automatically unsubscribed and will not receive any future SMS from your account. They must text START to your number to re-subscribe. You cannot manually override an opt-out on their behalf — this is required by carrier compliance rules.
+
 </details>

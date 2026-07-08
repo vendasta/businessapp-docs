@@ -115,6 +115,14 @@ When you need to add an If/Else branch above a series of existing steps, you don
 <script src="https://fast.wistia.net/player.js" async></script>
 :::
 
+## Search for steps in the editor
+
+When editing a long automation, press **Cmd+F** (Mac) or **Ctrl+F** (Windows) inside the automation editor to open step search. Type any keyword — a step name, action type, or phrase like "email" or "update contact" — and matching steps are highlighted so you can jump directly to what you need.
+
+- Search is case-insensitive
+- Works across all trigger and action steps
+- Use the arrow keys or Enter to move between matches, or click a highlighted step to jump to it
+
 ## Step Reference
 
 ### Companies
@@ -170,7 +178,7 @@ When you need to add an If/Else branch above a series of existing steps, you don
 
 | Step | Description |
 |---|---|
-| Notify a user | Sends an in-app and email notification to a specified team member |
+| Notify a user | Sends an in-app and email notification to a team member. Select a specific user, or insert a dynamic user ID from a previous step so the notification routes to the right person automatically |
 
 ### Conversations AI
 
@@ -180,6 +188,7 @@ When you need to add an If/Else branch above a series of existing steps, you don
 | Send an SMS message via Conversations | Sends an SMS message via your Conversations inbox to a contact |
 | Send an SMS message to a phone number | Sends an SMS to any phone number you specify, including numbers not in your CRM |
 | Send a WhatsApp template to a contact | Sends a pre-approved WhatsApp template message to a contact |
+| Make outbound call with an employee | Places an outbound AI phone call to a contact using a selected AI Employee |
 
 ### Advanced
 
@@ -235,5 +244,5 @@ When you need to add an If/Else branch above a series of existing steps, you don
 - [Messaging steps](./use-cases/action-messaging) - Send SMS and email messages via Conversations
 - [Campaign steps](./use-cases/action-campaigns) - Pause and start campaigns from a workflow
 - [Review request automation](./review-requests) - Collect customer reviews automatically
-- [Dynamic content](./smart-values-in-automations) - Personalize steps with dynamic contact and company data
+- [Dynamic content](./dynamic-content-in-automations) - Personalize steps with dynamic contact and company data
 - [Automation settings](./automation-settings) - Control how often it runs and how errors are handled

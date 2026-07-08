@@ -122,7 +122,7 @@ Connections bring your most important business data into one place. When you con
 Common connections to set up early:
 
 - **Google Business Profile**: Syncs location details and visibility metrics. Data can appear in your Executive Report within about 5 minutes. For setup details, see [Business Profile](./administration/business_profile.mdx) and [Integrations](./administration/connections/index.md).
-- **QuickBooks Online**: Import existing customers, automate review requests from invoiced customers, and surface financial insights. See [QuickBooks integration](./administration/integrations/quickbooks.mdx) for connection steps.
+- **QuickBooks Online**: Import existing customers, automate review requests from invoiced customers, and surface financial insights. See [QuickBooks integration](./administration/integrations/quickbooks) for connection steps.
 
 [Back to checklist](#getting-started-checklist)
 
@@ -130,7 +130,7 @@ Common connections to set up early:
 
 ## Step 4: Set up AI and web chat
 
-[AI Workforce](./ai/ai-workforce/ai_workforce_overview.md) lets you automate conversations, capture leads, and answer customer questions 24/7. The [Web Chat](./conversations/web-chat/index.mdx) widget engages website visitors and sends leads directly to your Conversations inbox.
+[AI Workforce](./ai/ai-workforce/ai_workforce_overview.md) lets you automate conversations, capture leads, and answer customer questions 24/7. The [Web Chat](./conversations/web-chat) widget engages website visitors and sends leads directly to your Conversations inbox.
 
 ### Meet your AI Workforce
 

@@ -106,9 +106,9 @@ Yes! You can add media queries and responsive CSS rules in the Custom CSS sectio
 </details>
 
 <details>
-<summary>What CSS classes can I target for form styling?</summary>
+<summary>What CSS can I use to style my form from my website?</summary>
 
-You can target standard form elements like `.form-container`, `input[type="text"]`, `input[type="email"]`, `.submit-button`, and other standard HTML form elements. Use your browser's developer tools to inspect the form structure.
+CSS entered in the **Design tab** (Custom CSS editor) works normally — you can use standard selectors like `input`, `label`, or `.submit-button` there. If you want to apply styles from your website's own stylesheet, use the `::part()` pseudo-element instead, since the form renders in an isolated container that blocks outside selectors. See [Style a form from your website's stylesheet](form-builder.md#style-a-form-from-your-websites-stylesheet) for the full list of available part names and examples.
 </details>
 
 <details>

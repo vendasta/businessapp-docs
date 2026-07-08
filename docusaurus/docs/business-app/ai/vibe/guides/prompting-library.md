@@ -2,7 +2,7 @@
 title: Prompting Library
 sidebar_label: Prompting Library
 sidebar_position: 2
-unlisted: true
+unlisted: false
 ---
 
 # Prompting library
@@ -69,7 +69,7 @@ What to expect: a focused change to the navigation component with mobile-specifi
 
 ### Adjust copy on a specific element
 
-(After clicking the element in design mode.)
+(After turning on **Visual edits** and clicking the element.)
 
 > Change this headline to "Built for service businesses who hate paperwork" and make it slightly bolder.
 

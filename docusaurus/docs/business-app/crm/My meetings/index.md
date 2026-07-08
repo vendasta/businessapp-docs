@@ -28,6 +28,7 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 - **AI Chat & Voice Receptionist booking** — your AI employees handle multi-service bookings end-to-end
 - **Limit future meetings** — control how far ahead customers can schedule
 - **SMS confirmations and reminders** (requires Conversations AI Pro or Premium)
+- **Audio recording** — record in-person meeting audio from the My Meetings page and upload it to the CRM
 
 ## Book a meeting
 
