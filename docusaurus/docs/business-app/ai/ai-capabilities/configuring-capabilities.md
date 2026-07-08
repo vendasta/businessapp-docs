@@ -103,6 +103,17 @@ Get contact info when needed.
 - Test different phrasings to see what works best
 :::
 
+### Tailor a capability to specific channels
+
+Your AI Employee knows which channel it's responding on, so a capability's instructions can reference the channel by name. This is useful when a task should behave differently depending on where the customer reaches out — for example, collecting fewer details for lead capture over SMS than by email:
+
+```
+When capturing a lead on SMS, ask for name and phone number only, one question at a time, and keep each message short.
+When capturing a lead by email, you can ask for name, email, phone, and preferred appointment time in a single reply.
+```
+
+For guidance on channel-specific behavior across the whole AI Employee, see [Adjust responses by channel](../ai-workforce/ai_workforce_overview.md#adjust-responses-by-channel).
+
 ## Step 5: Save and test your configuration
 
 1. Click `Save Changes` at the bottom of the configuration panel.

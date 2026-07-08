@@ -87,6 +87,39 @@ The more up-to-date and specific your knowledge sources, the more helpful and ac
 
 ---
 
+## Adjust responses by channel
+
+Your AI Employee knows which channel a conversation is happening on, so a single employee can respond differently depending on where a customer reaches out. A text message and an email often call for different lengths and tones, and your AI can adapt to each one automatically.
+
+There's no separate menu for this. Instead, you write **channel-specific instructions** in the same places you write your other instructions, and the AI applies them only when it's responding on that channel:
+
+- **The Purpose field** (labeled `Role` on the Chat and Voice Receptionists) — best for behavior that should apply across everything the employee does, such as tone, greeting style, or reply length per channel.
+- **A capability's instructions** — best for shaping a single task, such as how much information to collect for lead capture on SMS versus email.
+
+Both approaches work, and you can combine them. Reference the channel by name in your instructions and describe how you want the AI to behave there.
+
+### Example instructions
+
+Add lines like these to your Purpose field or a capability's instructions:
+
+```text wrap
+When responding on SMS, keep replies short and conversational. Use plain text only — no bullet points, headings, or markdown, since text messages display them as raw symbols. Aim for one or two sentences.
+
+When responding by email, you can write longer, more detailed replies. Open with a professional greeting and sign off with the business name.
+
+When responding on web chat, keep answers brief and friendly, and offer to continue the conversation or book an appointment.
+```
+
+:::tip
+Only add channel-specific instructions for the channels where the default behavior isn't quite right. For everything else, your AI Employee falls back to its general Purpose and capability instructions.
+:::
+
+:::note
+These instructions change *how* your AI Employee communicates on each channel. They don't change *which* actions it can take — those come from its capabilities. See the [AI Capabilities Overview](../ai-capabilities/index.mdx).
+:::
+
+---
+
 ## Custom AI Employees
 
 Pre-configured AI Employees (Chat Receptionist, Voice Receptionist) come ready to use with a defined role and built-in capabilities. **Custom AI Employees** start as a blank slate — you define the role prompt, capabilities, knowledge sources, and channels from scratch to handle specialized business functions.
@@ -113,4 +146,10 @@ You can enable as many available channels as you like. One AI Employee can handl
 <summary>What happens if I disable a capability?</summary>
 
 The AI Employee will no longer perform that task. If a customer asks for it, the AI will say it can’t help with that request. The capability remains available so you can turn it back on later.
+</details>
+
+<details>
+<summary>Can one AI Employee respond differently on different channels?</summary>
+
+Yes. Your AI Employee knows which channel it's responding on, so you can have it behave differently on SMS, email, web chat, and other channels. Add channel-specific instructions to the Purpose field (or `Role` field) or to a capability's instructions. See [Adjust responses by channel](#adjust-responses-by-channel).
 </details>
