@@ -39,6 +39,7 @@ Your Executive Report includes:
 - **Automatic email delivery** — no sign-in required to open the report from the email link
 - **Mobile-friendly layout** — view it on any device
 - **Fast updates** — data from Google Business Profile can appear in the report within about 5 minutes after you connect it
+- **Booking activity** from My Meetings — appointment counts, AI booking attribution, and calendar health, when Meeting Scheduler is active on your account
 
 ![Executive Report detail](img/executive-report-detail.jpg)
 
@@ -55,6 +56,7 @@ You can learn more about specific parts of the report here:
 - **[Advertising](./advertising)** — Google Ads and Facebook Ads performance when you use Advertising Intelligence
 - **[Finance (QuickBooks)](./finance-quickbooks)** — Income, expenses, and invoice notifications from QuickBooks Online
 - **Campaigns** — Delivered, opened, and clicked stats for your email campaigns and standalone emails, with breakdowns by date range
+- **My Meetings** — Appointment activity, AI booking performance, and calendar health (see the [My Meetings card](../home.mdx#my-meetings-card) on the Home page for details)
 
 ## When Is New Data Updated in the Executive Report
 
