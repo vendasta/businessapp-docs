@@ -158,7 +158,7 @@ No. Once you complete A2P registration, it applies to all SMS-enabled products i
 <details>
 <summary>What if my registration is rejected?</summary>
 
-Review the [rejection reasons](#why-registrations-are-rejected) above and make the necessary updates to your website or business information. Then resubmit your registration.
+The registration status shows the specific reason for the failure. Review it along with the [rejection reasons](#why-registrations-are-rejected) above, make the necessary updates to your website or business information, then resubmit your registration.
 
 </details>
 
