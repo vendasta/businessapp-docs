@@ -8,15 +8,13 @@ tags: [social-marketing, insights, analytics]
 keywords: [social media insights, monitoring social data, track social posts, reach and engagement, social marketing analytics]
 ---
 
-# Content and data monitored by Social Marketing
-
 Social Marketing tracks data on the Reach and Engagement (Facebook reactions, shares, likes, etc.) on all posts made through the app and in some instances, posts made outside of the product. This data appears in the Post Performance tab in Social Marketing. However, certain social networks restrict the information Social Marketing can pull in from posts published before an account has been connected to Social Marketing.
 
 The tables below specify what kinds of posts and relevant information can be gathered by Social Marketing.
 
 ## Newly-connected accounts
 
-Once an account has been connected to Social Marketing, the app will begin pulling in the following information for posts made on that account before it was connected.
+Once an account has been connected to Social Marketing, the app pulls in the following information for posts made on that account before it was connected.
 
 | | Previous posts | Reach and Engagement data on previous posts | Customer replies to previous posts |
 |--------------|--------------|--------------|---------------|
@@ -26,13 +24,13 @@ Once an account has been connected to Social Marketing, the app will begin pulli
 | Google Business Profile (GBP) | Yes | Yes | No |
 | LinkedIn | No | No | No |
 
-Social Marketing will pull in historical data and post-performance for posts made organically through Facebook\*, X\*\*, Instagram, and GBP\*\*\*.
+<!-- SME review (2026-07-13): The LinkedIn row above conflicts with insights/index.mdx, which states reconnecting a LinkedIn account pulls in "up to 1,000 previous posts." Needs SME confirmation on which reflects current behavior. Tracked via GitHub issue follow-up comment. -->
 
-*\* Due to Facebook API restrictions, only data from the last 100 posts made before the connection date will be reported within Social Marketing.*
+Social Marketing pulls in historical data and post-performance for posts made organically through Facebook\*, X\*\*, Instagram, and GBP\*\*\*.
 
-*\*\* Due to X API limitations we support the last 10 posts for an active user (an active user is defined as having made at least one post in the last month)*
-
-*\*\*\* Due to Google Business Profile API restrictions, all previous posts will be shown, but only reach and engagement data from 530 days before the connection date will be reported within Social Marketing.*
+- *\* Due to Facebook API restrictions, only data from the last 100 posts made before the connection date is reported within Social Marketing.*
+- *\*\* Due to X API limitations, we support the last 10 posts for an active user (an active user is defined as having made at least one post in the last month).*
+- *\*\*\* Due to Google Business Profile API restrictions, all previous posts are shown, but only reach and engagement data from 530 days before the connection date is reported within Social Marketing.*
 
 ## Posts published through Social Marketing
 
@@ -46,11 +44,10 @@ The following information is monitored for posts that have been published via So
 | Google Business Profile | Yes | Yes | No |
 | LinkedIn | Yes | Yes | No |
 
-*\* Due to X API restrictions, only Engagement data (reposts and favorites) will be reported within Social Marketing.*
+- *\* Due to X API restrictions, only Engagement data (reposts and favorites) is reported within Social Marketing.*
+- *\*\* Due to X API limitations, we support the last 10 posts for an active user (an active user is defined as having made at least one post in the last month).*
 
-*\*\* Due to X API limitations we support the last 10 posts for an active user (an active user is defined as having made at least one post in the last month)*
-
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>Why can't I see older Facebook posts?</summary>
