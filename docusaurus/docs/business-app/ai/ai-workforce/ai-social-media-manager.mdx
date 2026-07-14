@@ -85,21 +85,21 @@ The AI Social Media Manager is released with eight core capabilities that cover 
 
 | Capability | What it does |
 | --- | --- |
-| **Social Calendar Generation** | Controls what the AI posts — goal, total posts, content split, post length, image source, networks, and save behavior |
-| **Social Post Generation Instructions** | Controls how posts are written — tone, platform variations, hashtags, CTAs, localization, and brand guardrails |
-| **AI Image Generation** | Generates images sized for each platform using your chosen AI model (GPT Image 1.5 or Nano Banana 2) |
-| **Web Search** | Searches for current trends, observance days, and industry news to keep posts timely and relevant |
-| **Stock Image Sourcing** | Sources royalty-free images from Pexels and Pixabay when AI image generation is not selected or has reached its limit |
+| **Configure Social Media Calendar** | Controls what the AI posts — goal, total posts, content split, post length, image source, networks, cadence, posting time, and save behavior |
+| **Customize Social Post Instructions** | Controls how posts are written — tone, platform variations, hashtags, CTAs, localization, and brand guardrails |
+| **AI Image Generation** | Generates images sized for each platform using your chosen AI model (Nano Banana 2 or GPT Image 2) |
+| **Search Web** | Searches for current trends, observance days, and industry news to keep posts timely and relevant |
+| **Find Royalty-Free Images** | Sources royalty-free images from Pexels and Pixabay when AI image generation is not selected or has reached its limit |
 | **List Integration Connections** | Fetches your active social network connections so the AI posts only to connected platforms |
 | **Social Post Performance Data** | Retrieves engagement metrics across networks to inform future content and answer performance questions conversationally |
-| **Draft, Schedule, and Publish Social Posts** | Saves generated posts as drafts, scheduled posts, or live publications based on your configuration |
+| **Manage Social Posts** | Publishes posts as drafts, scheduled, or live, and lets you list, edit, reschedule, and delete existing posts conversationally |
 
 ### Step 3: Add knowledge sources
 
 Add relevant knowledge base content to help the AI Social Media Manager write accurate, on-brand posts. This can include information about your products, services, audience, and brand voice. For a complete guide, see the [Knowledge Sources section in the AI Workforce Overview](./ai_workforce_overview.md).
 
 :::note
-Knowledge sources used by the AI Social Media Manager are shared with **Write with AI** in Social AI. The Social Post Generation Instructions capability governs Write with AI inside Social AI only — it does not affect the standalone Social AI composer.
+Knowledge sources used by the AI Social Media Manager are shared with **Write with AI** in Social AI. The Customize Social Post Instructions capability governs Write with AI inside Social AI only — it does not affect the standalone Social AI composer.
 :::
 
 ### Step 4: Configure the Social Calendar Generation trigger
@@ -116,7 +116,7 @@ The trigger controls when the AI runs autonomously.
 
 ![Social Calendar Generation trigger settings](../img/AI-SMM-trigger-settings.jpg)
 
-### Step 5: Configure the Social Calendar Generation capability
+### Step 5: Configure the Social Media Calendar capability
 
 When the trigger fires, the AI reads these settings to build and publish the calendar.
 
@@ -207,7 +207,7 @@ The AI Social Media Manager works with any network you have connected: Facebook,
 <details>
 <summary>What happens if the AI image generation limit is reached?</summary>
 
-The AI Social Media Manager automatically falls back to Stock Image Sourcing (Pexels and Pixabay) when the AI image generation limit is reached.
+The AI Social Media Manager automatically falls back to Find Royalty-Free Images (Pexels and Pixabay) when the AI image generation limit is reached.
 
 </details>
 
@@ -235,7 +235,7 @@ Yes. You can schedule draft posts from Business App. Note that scheduling drafts
 <details>
 <summary>What language are posts written in?</summary>
 
-The Social Post Generation Instructions capability includes localization rules that align each post with your business's region and language. Adjust the localization settings in that capability to change the language or regional focus.
+The Customize Social Post Instructions capability includes localization rules that align each post with your business's region and language. Adjust the localization settings in that capability to change the language or regional focus.
 
 </details>
 
