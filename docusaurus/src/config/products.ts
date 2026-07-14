@@ -42,7 +42,7 @@ export const products: Product[] = [
   },
   {
     id: 'socialmarketing',
-    name: 'Social Marketing',
+    name: 'Social AI',
     logo: '/img/Social-Marketing.svg',
     sidebarId: 'socialmarketingSidebar',
     path: '/social-marketing/',

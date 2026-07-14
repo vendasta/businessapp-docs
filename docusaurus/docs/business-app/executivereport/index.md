@@ -155,7 +155,7 @@ Most active products push data to the report, including:
 - Google Business Profile
 - Reputation AI
 - Local SEO
-- Social Marketing
+- Social AI
 - Advertising Intelligence (Google Ads, Facebook Ads)
 - Website Pro
 - Marketgoo, Metricool, SEO tools
