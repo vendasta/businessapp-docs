@@ -20,11 +20,11 @@ Contact fields and Company fields write to two different record types. A form wi
 - Street address line 1, Street address line 2, City/locality, State/province/region, Zip/postal code, Country
 - Timezone, Birth year, Gender
 - UTM Campaign, UTM Medium, UTM Source, UTM Content, UTM Term
-- Market ID, Owner, Required, External ID
+- Market ID, Owner, External ID
 
 ## Company fields
 
-- Company name, Website, Phone number, Fax number
+- Company name, Company website, Phone number, Fax number
 - Street address line 1–2, City/locality, State/province/region, Zip/postal code, Country
 - Number of employees, Legal structure
 - Lifecycle stage
