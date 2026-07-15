@@ -21,7 +21,7 @@ A credit is used each time you send a message to Vibe. How many credits a messag
 
 Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under **Administration > AI Settings > Credits** — this section appears only when you have an active product that uses AI credits.
 
-When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App — no support ticket or wait time required.
+When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App — no support ticket or wait time required. The dialog shows the image and description for each available plan or add-on so you know what you're purchasing before you check out.
 
 ## Credit Allowances by Plan
 
