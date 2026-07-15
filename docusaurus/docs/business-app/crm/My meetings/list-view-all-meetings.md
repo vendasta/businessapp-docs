@@ -38,6 +38,8 @@ By default, the list shows meetings for all team members. Use the **Users** filt
 
 Filter selections are saved automatically — the next time you open My Meetings, your filter is preserved.
 
+Team members who are no longer active on your account appear greyed out in the **Users** filter. Hover over an inactive team member to see a tooltip: **"One or more team members are no longer active."**
+
 ---
 
 ## Managing a team member's meetings
@@ -52,7 +54,7 @@ From the list view, you can act on any meeting regardless of who it belongs to:
 
 ## Past meetings from former staff
 
-Meetings booked by team members who have since left the business remain visible in the list view. You can use the **Past** toggle and the **Users** filter to look up historical appointments for any former staff member.
+Meetings booked by team members who have since left the business remain visible in the list view. You can use the **Past** toggle and the **Users** filter to look up historical appointments for any former staff member. Inactive team members are shown in grey in the **Users** filter, so you can quickly spot which meetings may need reassignment.
 
 ---
 
