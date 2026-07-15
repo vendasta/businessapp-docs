@@ -48,7 +48,7 @@ This works for any form — lead capture, promotions, surveys, or any other type
 <details>
 <summary>My form isn't always capturing UTM fields, why might that be?</summary>
 
-For the form to capture UTM, they must be still present in the browser address bar. If a user clicks away from your landing page, to visit a second page on your website, and you don't have a UTM preservation tool active, the UTM can be lost and won't be captured if they fill out a form. One tactic to prevent this is removing all links from your landing page, to ensure leads fill out the form on the landing page and nowhere else.
+A few things can cause this: UTM parameters must still be present in the browser address bar when the form is submitted, your form needs the relevant UTM fields (Campaign, Medium, Source, Content, Term) added to it, and any redirect before the form loads must preserve the URL parameters. If a visitor clicks to a second page on your site before submitting and you don't have a UTM preservation tool active, the values can be lost, so removing links from your landing page is one way to keep leads on the page with the form. See [Form field reference](supported-fields.md).
 </details>
 
 <details>
@@ -115,4 +115,28 @@ CSS entered in the **Design tab** (Custom CSS editor) works normally — you can
 <summary>What fields can I add to a form?</summary>
 
 Forms support many contact fields, company fields, and generic types (text, paragraph, number, dropdown, radio, checkbox, date). See [Form field reference](supported-fields.md) for the full list.
+</details>
+
+<details>
+<summary>Why is Company name a required field on my form?</summary>
+
+`Company name` is required whenever you add the company fields group to a form and can't be made optional, similar to how `Email` is always required for contact fields. If you don't need to capture company data, use contact fields only and leave out the company fields group.
+</details>
+
+<details>
+<summary>I submitted a form but the record I expected wasn't updated, why?</summary>
+
+Forms have two separate field groups, contact fields and company fields, that write to two different record types. If your form only includes contact fields, submissions only create or update a Contact record, so add fields from the company fields group if you also want to create or update a Company record. See [Form field reference](supported-fields.md).
+</details>
+
+<details>
+<summary>Can I change the default country code for phone number fields?</summary>
+
+Yes. Phone number fields default to `+1`. Select the field in the form builder and set a different `Default country code` in its field settings. See [Build and publish a form](form-builder.md#setting-a-default-country-code).
+</details>
+
+<details>
+<summary>Can I let visitors select multiple checkbox options?</summary>
+
+There's no dedicated multi-select field type. Add the `Checkbox` field once for each option you want to offer, and label each one clearly. See [Build and publish a form](form-builder.md#adding-multiple-checkbox-options).
 </details>

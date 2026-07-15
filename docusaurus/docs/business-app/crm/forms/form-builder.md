@@ -39,6 +39,25 @@ You can add a **File upload** field so visitors can attach a document or image w
 Files submitted through Forms are processed the same as files uploaded in CRM: a single file per submission is supported and an AI-generated summary appears after processing.
 :::
 
+### Setting a default country code
+
+`Phone number` fields default to `+1`. If most of your visitors are outside North America, set a different default:
+
+1. In the form builder, select the `Phone number` field, or `Additional phone number` if you're using it.
+2. Open the field settings and set `Default country code` to the code you want.
+3. Save the form.
+
+This setting applies per phone field. If your form includes both `Phone number` and `Additional phone number`, set the default for each one.
+
+### Adding multiple checkbox options
+
+There's no dedicated multi-select field type. To let visitors choose more than one option, add the `Checkbox` field once for each option you want to offer:
+
+1. In the form builder, choose `Add field` and select `Checkbox`.
+2. Set the field label to the option you want to offer, for example "Interested in: SEO".
+3. Repeat for each additional option.
+4. Save the form.
+
 ## Step 2: Customize the styling
 
 Set the form width (e.g. 100%) and manage the width in your page builder. In the **Design** tab, style the container, font, and button.
