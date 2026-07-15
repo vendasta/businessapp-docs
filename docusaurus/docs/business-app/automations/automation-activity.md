@@ -1,20 +1,20 @@
 ---
 title: Automation activity
 sidebar_position: 5
-description: View and troubleshoot past automation runs using the Activity and History logs.
+description: View and troubleshoot past automation runs using the Activity log.
 tags: [automation, troubleshooting]
-keywords: [automation history, automation logs, troubleshoot workflows, automation success rate]
+keywords: [automation activity, automation logs, troubleshoot workflows, automation success rate]
 ---
 
 Use Automation Activity to see what ran, when it ran, and whether it succeeded. This helps you verify outcomes and troubleshoot issues.
 
 ## Where to find it
 
-1. Go to Business App > Automations
+1. Go to `Business App` → `Automations`
 2. Open an automation
-3. Select the Activity tab to review recent runs
+3. Select the `Activity` tab to review recent runs
 
-![Automation activity tab showing recent runs](./img/automations-activity%20tab.png)
+![Automation activity tab showing recent runs](./img/automations-activity-tab.png)
 
 ## Understanding the Activity log
 
@@ -53,18 +53,18 @@ Check these in order:
 1. **Check the Activity tab** for the automation. Use the Entity search or Filters to find the run if needed. Find the run that failed and look at each step’s Activity.
 2. **Identify the step that errored or was skipped.** Read the Activity details for that step; they usually explain what went wrong.
 3. **Common causes:**
-   - **Missing required data** — A field the step needs (for example, phone for SMS or email for email) was empty or missing.
-   - **Permission or sign-in** — The connection or account used by the step may need to be re-authenticated (for example, reconnect the integration).
-   - **External service issue** — The external app or service was unavailable or timed out; try again later.
-   - **Invalid data format** — The value passed to the step was in the wrong format (for example, a number where text was expected). Check your field mappings.
+   - **Missing required data**: A field the step needs (for example, phone for SMS or email for email) was empty or missing.
+   - **Permission or sign-in**: The connection or account used by the step may need to be re-authenticated (for example, reconnect the integration).
+   - **External service issue**: The external app or service was unavailable or timed out; try again later.
+   - **Invalid data format**: The value passed to the step was in the wrong format (for example, a number where text was expected). Check your field mappings.
 
 ### "Automation is stuck"
 
 An automation may stay in Running for a while when:
 
-- **It’s waiting for a "Wait For" condition** — The workflow is paused until something happens (for example, a meeting is booked or a field changes). Check whether that condition can still be met.
-- **A delay step is still counting down** — If you added a "Wait" or delay, the run will continue after the delay ends.
-- **Rate limiting** — The system may temporarily pause runs when there’s heavy use; it will usually resume automatically.
+- **It’s waiting for a `Wait For` condition**: The workflow is paused until something happens (for example, a meeting is booked or a field changes). Check whether that condition can still be met.
+- **A delay step is still counting down**: If you added a `Wait` or delay, the run will continue after the delay ends.
+- **Rate limiting**: The system may temporarily pause runs when there’s heavy use; it will usually resume automatically.
 
 If it stays stuck for an unusually long time, use the Entity search or Filters to find the run if needed, then check the Activity tab and look for steps in the Activity column that might be timing out or waiting on an external system. If the problem continues, note when it happened and what you see in Activity when you ask for help.
 
@@ -86,7 +86,7 @@ If it stays stuck for an unusually long time, use the Entity search or Filters t
 <details>
 <summary>Why is my automation stuck in "Running"?</summary>
 
-A "Running" status usually means the workflow is waiting for something—for example, a delay step, a "Wait For" condition, or an external service. See [Automation is stuck](#automation-is-stuck) above for causes and what to check.
+A `Running` status usually means the workflow is waiting for something, for example, a delay step, a `Wait For` condition, or an external service. See [Automation is stuck](#automation-is-stuck) above for causes and what to check.
 
 </details>
 
