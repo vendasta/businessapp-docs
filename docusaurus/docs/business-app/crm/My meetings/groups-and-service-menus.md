@@ -41,6 +41,7 @@ Groups and Service Menus are shared across your organization. Any team member ca
    - **Color** — Pick a color to identify the group.
    - **Event types** — Add the event types you want in the group. You can mix personal and team event types.
    - **Multi-selection** — Toggle **on** to let customers pick more than one service from this group (e.g., add-ons and upgrades). Leave **off** if they should pick only one (e.g., a primary service category where options are mutually exclusive).
+   - **Redirect to a custom URL** — Turn on to send customers to a custom HTTPS URL after they book through this group, instead of the default confirmation page, with an optional delay in seconds. This setting applies to every booking made through the group — individual event type redirect settings inside it are not used. See [Redirect to a custom URL](#redirect-to-a-custom-url) below.
 
    ![Group editor — Multi-selection toggle](../img/my-meetings/group-multi-selection-toggle.png)
 
@@ -84,6 +85,7 @@ The **General Personal Event Link** and **General Team Event Link** groups are c
    - **Color** — Pick a color.
    - **Groups & event types** — Add one or more Groups and/or individual Event Types.
    - **Multi-selection** — Turn **on** to allow customers to select services across groups in a single booking session. Defaults to **on** for new menus, **off** for existing menus.
+   - **Redirect to a custom URL** — Turn on to send customers to a custom HTTPS URL after they book through this service menu, instead of the default confirmation page, with an optional delay in seconds. This setting applies to every booking made through the service menu — individual group and event type redirect settings are not used. See [Redirect to a custom URL](#redirect-to-a-custom-url) below.
 
    :::note
    If you add a Group with multi-selection enabled to a Service Menu that has it turned off, the app shows a warning. Enable multi-selection on the Service Menu to resolve it, or keep it off if you want the overall session to remain single-service.
@@ -106,6 +108,37 @@ When a customer clicks your Service Menu link:
 1. They see all Groups and direct Event Types in the menu.
 2. If they choose a Group, they then see the event types within it and select one (or multiple, if multi-selection is enabled on that group).
 3. They pick an available date and time and confirm.
+
+---
+
+## Redirect to a custom URL
+
+Event types, Groups, and Service Menus can each redirect customers to a custom URL after they book, instead of showing the default confirmation page. The setting is independent at each level — there's no global toggle, and enabling a redirect on a Group or Service Menu doesn't enable it on the event types inside it, or the other way around.
+
+### Which setting applies
+
+- **Booking an event type directly** — Uses that event type's own redirect setting. If it's off, the customer sees the default confirmation page.
+- **Booking through a Group** — Uses only the group's redirect setting, regardless of what the event types inside it have configured. If the group's redirect is off, the customer sees the default confirmation page.
+- **Booking through a Service Menu** — Uses only the service menu's redirect setting, regardless of what the groups or event types inside it have configured. If it's off, the customer sees the default confirmation page.
+
+### Conflict warning
+
+If a Group's or Service Menu's redirect toggle is off while one or more of the event types inside it have their own redirect URL set, a warning banner appears on the Redirect to a custom URL card:
+
+> Action Required: Some events have redirect URLs set. Add a group-level URL here, otherwise all bookings will fall back to the default confirmation page.
+
+(Service menus show the same message, referencing events and groups.)
+
+To clear the banner, either turn on the toggle and enter a Group- or Service Menu-level URL, or leave it off and accept that all bookings through that Group or Service Menu land on the default confirmation page. The banner clears automatically once you save with the toggle on and a valid URL entered.
+
+### What to know
+
+- The customer's booking confirmation email always sends, regardless of the redirect configuration.
+- For Group and Service Menu bookings, the redirect fires once, after every service in the booking is confirmed.
+- For team and round-robin event types, the redirect URL comes from the event type setting — it doesn't change based on which host is assigned.
+- Redirect doesn't apply to meetings you book yourself from a CRM contact — those bookings don't show a public confirmation page.
+- If a customer books through an embedded widget on your website, the redirect breaks out of the widget to the full browser window.
+- Redirect only applies to bookings submitted through the guest-facing booking form. It doesn't apply to bookings made through an AI Chat or AI Voice Receptionist.
 
 ---
 

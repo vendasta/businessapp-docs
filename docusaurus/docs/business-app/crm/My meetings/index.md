@@ -130,6 +130,8 @@ You can also configure additional options per event type. Settings here override
 
   ![Limit future meetings — rolling window and fixed date range options](../img/my-meetings/limit-future-meetings-options.png)
 
+- **Redirect to a custom URL** — Turn on this toggle to send customers to a custom page after they book, instead of the default confirmation page. Enter an HTTPS URL (HTTP and malformed URLs are rejected) and, optionally, a delay in seconds before the redirect fires — the default is 3 seconds, the maximum is 60, and 0 redirects as soon as the confirmation page loads. The confirmation page always shows first. Turning the toggle off and back on keeps your previously saved URL and delay. See [Redirect to a custom URL](./groups-and-service-menus#redirect-to-a-custom-url) for how this setting interacts with Groups and Service Menus.
+
 ![New event type options](../img/my-meetings/new-event-type-options.png)
 
 :::note
