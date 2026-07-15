@@ -153,3 +153,9 @@ The AI Employee will no longer perform that task. If a customer asks for it, the
 
 Yes. Your AI Employee knows which channel it's responding on, so you can have it behave differently on SMS, email, web chat, and other channels. Add channel-specific instructions to the Purpose field (or `Role` field) or to a capability's instructions. See [Adjust responses by channel](#adjust-responses-by-channel).
 </details>
+
+<details>
+<summary>What happens if an AI Employee requires a subscription I don't have?</summary>
+
+If an AI Employee requires a product you don't currently have, you'll see an upgrade option on that employee's card on the AI Workforce page. Selecting it takes you through the purchase flow for the required product, where you can review pricing and complete your purchase. See [Taking action on a package](../../store/index.mdx#taking-action-on-a-package) for more on the purchase flow.
+</details>
