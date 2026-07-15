@@ -29,6 +29,7 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 - **Limit future meetings** — control how far ahead customers can schedule
 - **SMS confirmations and reminders** (requires Conversations AI Pro or Premium)
 - **Audio recording** — record in-person meeting audio from the My Meetings page and upload it to the CRM
+- **Automatic booking page language** — booking pages display in your customer's browser language automatically
 
 ## Book a meeting
 
@@ -137,6 +138,14 @@ You can also configure additional options per event type. Settings here override
 :::note
 If a meeting type is deleted, it will not cancel existing bookings. The link is deactivated and no longer accepts new bookings. Deleted event types cannot be restored — you will need to create a new one.
 :::
+
+## Booking page language
+
+Booking pages automatically display in your customer's browser language, so customers can book without changing any settings themselves. This applies everywhere customers reach your booking pages — personal and team event type links, Groups, Service Menus, and the embedded website widget.
+
+- Every step of the booking flow is translated, including service selection, date and time selection, the contact form, confirmations, cancellations, and rescheduling.
+- If a customer's browser language isn't supported, the page displays in English.
+- Content you write yourself — such as service names, descriptions, and staff bios — always displays exactly as you entered it and is not translated.
 
 ## Frequently Asked Questions
 
