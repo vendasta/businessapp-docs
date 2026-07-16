@@ -122,8 +122,8 @@ Yes! The Shopify Storefront integration works across all communication channels 
 - [SMS messaging](../../../conversations/conversations-send-receive-sms.md) (Conversations Pro required)
 - [WhatsApp](../../../conversations/conversations-whatsapp-overview.md)
 - Phone calls (with [AI Voice Receptionist](../ai-voice-receptionist.md))
-- [Facebook Messenger](../../../conversations/conversations-setup-facebook-messenger.md)
-- [Instagram DMs](../../../conversations/conversations-setup-instagram.md)
+- [Facebook Messenger](../../../conversations/facebook-messenger.mdx)
+- [Instagram DMs](../../../conversations/instagram-messenger.mdx)
 
  The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
 </details>
