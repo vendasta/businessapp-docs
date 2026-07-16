@@ -19,7 +19,7 @@ Lists make it easy to target the right audience, kick off automations, and keep 
 - Reduce manual work with automatically updating smart lists
 - Trigger automations when membership changes
 
-## What’s included with Lists?
+## What's included with Lists?
 
 - **Static Lists** for manual curation
 - **Smart Lists** for rule-based segmentation
@@ -49,7 +49,7 @@ Keep static lists small and intentional, use them for one-time actions or short-
 
 ### Create a smart list
 
-1. Define rules (for example, “Companies with a contact who opened a marketing email in the last 2 weeks” or “Companies with listing grade C/D/F”).
+1. Define rules (for example, "Companies with a contact who opened a marketing email in the last 2 weeks" or "Companies with listing grade C/D/F").
 2. Click `Save`. Membership updates automatically as data changes.
 
 ![Smart List Criteria](img/lists/smart-list-criteria.jpg)
@@ -63,7 +63,7 @@ Keep static lists small and intentional, use them for one-time actions or short-
 ![Start Automation](img/lists/start-automation.jpg)
 
 :::info
-Automations run immediately for the list’s current members. Use membership triggers to handle future additions or removals.
+Automations run immediately for the list's current members. Use membership triggers to handle future additions or removals.
 :::
 
 ### Automate when membership changes
@@ -83,7 +83,7 @@ Use these to send follow-ups, notify sales, or update CRM stages automatically.
 
 1. Go to `CRM` > `Lists`, find the list.
 2. Open the action menu (three dots) and select `Delete`.
-3. Confirm deletion.
+3. In the confirmation modal, type `Delete` and confirm.
 
 ![Delete List](img/lists/delete-list.jpg)
 
@@ -96,7 +96,7 @@ Yes. Lists are shared so your team works from the same up-to-date data.
 </details>
 
 <details>
-<summary>What’s the difference between static and smart lists?</summary>
+<summary>What's the difference between static and smart lists?</summary>
 
 Static lists are manually managed. Smart lists update automatically based on rules you define.
 </details>
@@ -106,5 +106,3 @@ Static lists are manually managed. Smart lists update automatically based on rul
 
 There is no enforced limit. Create as many lists as needed to support your workflows.
 </details>
-
-

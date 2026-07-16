@@ -15,7 +15,7 @@ Use Contacts to manage the people you engage with. Create and update contact rec
 - Start campaigns and automations from contact segments
 - Track activity and tasks to move deals forward
 
-## What’s Included with Contacts?
+## What's Included with Contacts?
 
 - **Contacts table and profile** for searching, filtering, and editing records
 - **Import and export** to manage data at scale
@@ -27,7 +27,7 @@ Use Contacts to manage the people you engage with. Create and update contact rec
 
 **Contacts** are people you track in the CRM—customers, leads, or other individuals. They do not have access to Business App. **Users** are people who can log in to Business App and use the products available on your account.
 
-Contacts and users are separate. In some cases a user may have a corresponding contact record; the two can be linked by email. Changing a contact’s email disassociates that contact from any linked user. Removing a contact does not remove a user.
+Contacts and users are separate. In some cases a user may have a corresponding contact record; the two can be linked by email. Changing a contact's email disassociates that contact from any linked user. Removing a contact does not remove a user.
 
 ## Where contacts come from
 
@@ -60,7 +60,7 @@ If you upload a CSV that includes the same contacts again (matching by ID, exter
 ![Field Mapping](../img/contacts/field-mapping.jpg)
 
 :::warning
-Updating existing contacts during import will overwrite the mapped fields on matching records (by ID, external ID, or email). Export a backup first if you’re unsure.
+Updating existing contacts during import will overwrite the mapped fields on matching records (by ID, external ID, or email). Export a backup first if you're unsure.
 :::
 
 :::note
@@ -92,7 +92,7 @@ Select one or more contacts from the table, then click the **Actions** button to
 
 Available actions include:
 
-- **Delete contacts** — remove the selected contacts from your CRM
+- **Delete contacts** — remove the selected contacts from your CRM. Type `Delete` in the confirmation modal to proceed.
 - **Add to static list** — add selected contacts to a static list
 - **Request reviews** — send review requests to the selected contacts
 - **Add to campaign** — add selected contacts to a campaign
@@ -177,6 +177,5 @@ Yes. Set up email auto-BCC and forwarding so sales emails are captured to the ap
 <details>
 <summary>How are contacts different from users?</summary>
 
-Contacts are people you store in the CRM (e.g. customers, leads); they do not log in to Business App. Users are people who have access to Business App. The two are separate; changing a contact’s email disassociates them from any linked user, and removing a contact does not remove a user.
+Contacts are people you store in the CRM (e.g. customers, leads); they do not log in to Business App. Users are people who have access to Business App. The two are separate; changing a contact's email disassociates them from any linked user, and removing a contact does not remove a user.
 </details>
-
