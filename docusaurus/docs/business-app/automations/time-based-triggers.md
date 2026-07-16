@@ -20,15 +20,15 @@ Unlike event-based triggers that run when something happens (like a company or c
 
 ## Set up the On a schedule trigger
 
-**Step 1** — Go to `Business App` > `Automations`.
+**Step 1**: Go to `Business App` → `Automations`.
 
-**Step 2** — Click `Create automation` or open an existing automation.
+**Step 2**: Click `Create automation` or open an existing automation.
 
-**Step 3** — In the trigger selection, find **Time-based** and select **On a schedule**.
+**Step 3**: In the trigger selection, find **Time-based** and select **On a schedule**.
 
-**Step 4** — Configure the schedule options (see below).
+**Step 4**: Configure the schedule options (see below).
 
-**Step 5** — Add your automation steps and save.
+**Step 5**: Add your automation steps and save.
 
 ![On a schedule trigger configuration](./img/time-based-trigger-config.png)
 
