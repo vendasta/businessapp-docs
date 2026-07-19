@@ -18,6 +18,7 @@ Custom objects are available with CRM AI Standard and Pro editions. See [CRM AI 
 - **Automations**: trigger workflows on object create, update, list entry, or list exit — and update custom object fields from automation actions
 - **Smart lists**: segment custom object records with the same filter power as contacts and companies
 - **API**: programmatically create, update, and sync custom object records from external systems
+- **Campaign personalization**: include custom object field values as merge fields in campaign emails triggered through automations
 
 ## Why use custom objects?
 
@@ -74,6 +75,7 @@ Custom objects work seamlessly with automations and smart lists, enabling powerf
 - Update custom object fields
 - Retrieve associated contacts, companies, or opportunities
 - Send notifications or follow-up messages
+- Start a campaign for the associated contact, with custom object field values available as merge fields in the email content
 
 This supports vertical-specific workflows such as service reminders, asset management, demo tracking, and multi-step sales processes.
 
@@ -91,7 +93,7 @@ A grooming business creates a **Pet** object with a field for **Last Grooming Da
 - **Automation**:
   1. When a Pet enters the list
   2. Retrieve the associated contact
-  3. Send an SMS (Conversation AI required) or email reminder (Campaign Pro required)
+  3. Start a campaign for that contact — the email can include custom object field values (such as the pet's name or last grooming date) as merge fields to personalize the message
 
 ### Sales-specific objects
 
@@ -152,5 +154,12 @@ Yes. Custom object upsert is supported via API.
 <summary>Which CRM AI editions include custom objects?</summary>
 
 Custom objects are included with CRM AI Standard and Pro. See [CRM AI Plans](./index.mdx#crm-ai-plans) for the full feature comparison.
+
+</details>
+
+<details>
+<summary>Can I include custom object data in campaign emails?</summary>
+
+Yes. When a campaign is triggered through an automation linked to a custom object, you can include custom object field values as merge fields in the email content. This lets you personalize each email with data specific to that custom object record — for example, a service date, asset name, or job type.
 
 </details>
