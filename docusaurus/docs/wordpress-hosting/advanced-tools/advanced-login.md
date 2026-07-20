@@ -12,7 +12,7 @@ When the toggle is turned off, you can log in directly using `www.domainname.com
 
 ### Enhanced captcha settings
 
-You can configure Enhanced Captcha from your WordPress dashboard under **Settings > General**. From here, you can enable or disable captcha and adjust the failed login attempt threshold.
+You can configure Enhanced Captcha from your WordPress dashboard under `Settings` → `General`. From here, you can enable or disable captcha and adjust the failed login attempt threshold.
 
 ![Enhanced Captcha settings page in the WordPress dashboard](./img/advanced-login/enhanced-captcha-settings.png)
 
