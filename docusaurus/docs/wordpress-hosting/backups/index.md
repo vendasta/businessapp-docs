@@ -6,24 +6,24 @@ tags: [wordpress-hosting, backups, security, restore]
 keywords: [WordPress backups, website restore, manual backup WordPress, automated backups, data protection]
 ---
 
-WordPress Hosting provides a robust backup system to protect your website data. Your site is automatically backed up daily, and you can create manual backups at any time to safeguard your work before making major changes.
+WordPress Hosting provides a backup system to protect your website data. Your site is automatically backed up daily, and you can create manual backups at any time to safeguard your work before making major changes.
 
-## How Backups Work
+## How backups work
 
 WordPress Hosting uses a dual-layered backup system for comprehensive protection:
 
 **Automated Daily Backups**: Your website is automatically backed up every day, ensuring your latest updates are safeguarded without requiring any manual intervention.
 
-**Manual Backup Capability**: Create a backup instantly whenever you need one—especially useful before major site updates, plugin installations, or theme changes.
+**Manual Backup Capability**: Create a backup instantly whenever you need one, especially useful before major site updates, plugin installations, or theme changes.
 
-## Backup Retention
+## Backup retention
 
 Backup retention varies by your WordPress Hosting plan:
 
 * **WordPress Hosting Pro**: Backups are retained for **up to 90 days**, giving you access to multiple restore points for comprehensive project tracking and risk management.
 * **WordPress Hosting Standard**: Only the **most recent daily backup** is available, emphasizing the importance of proactive backup management.
 
-## What's Included in a Backup
+## What's included in a backup
 
 Each backup captures your complete website, including:
 
@@ -33,7 +33,7 @@ Each backup captures your complete website, including:
 * Installed plugins and themes
 * Site configuration
 
-## When to Create Manual Backups
+## When to create manual backups
 
 While daily automated backups provide ongoing protection, consider creating a manual backup before:
 
@@ -43,11 +43,11 @@ While daily automated backups provide ongoing protection, consider creating a ma
 * Deploying changes from staging to production
 * Making significant configuration changes
 
-## Restoring a Backup
+## Restoring a backup
 
-You can restore your site to any available backup point directly from the **Backups** tab in your WordPress Hosting dashboard. Restoration time depends on your site size—small sites may restore in minutes, while larger sites can take longer.
+You can restore your site to any available backup point directly from the `Backups` tab in your WordPress Hosting dashboard. Restoration time depends on your site size. Small sites may restore in minutes, while larger sites can take longer.
 
-:::important
+:::warning
 Restoring a backup will replace your current site with the selected backup version. All changes made after that backup point will be lost.
 :::
 
@@ -63,16 +63,18 @@ Restoration time depends on the size of your site. Small sites may restore in mi
 <details>
 <summary>Does WordPress Hosting provide automated daily backups? How long are they kept?</summary>
 
-Yes. All WordPress Hosting Pro and Standard sites are backed up daily, and users can also create manual backups at any time.
+Yes. All WordPress Hosting Pro and Standard sites are backed up daily, and you can also create manual backups at any time.
 
 **Backup retention:**
 
 * **WordPress Hosting Pro**: Backups are retained for **up to 90 days**
 * **WordPress Hosting Standard**: Only the **most recent daily backup** is available
 
-You can view and restore backups at any time from the **Backups** tab in the WordPress Hosting dashboard.
+You can view and restore backups at any time from the `Backups` tab in the WordPress Hosting dashboard.
 
-> Manual backups are especially useful before major site updates, staging deployments, or plugin/theme changes.
+:::tip
+Manual backups are especially useful before major site updates, staging deployments, or plugin/theme changes.
+:::
 
 </details>
 
@@ -85,12 +87,14 @@ If a WordPress Hosting product (Standard or Pro) is canceled and fully deactivat
 * The site will return a **"site not found"** error to visitors
 * **Backups stop being created** from the moment of cancellation
 
-**For WordPress Hosting Pro users:**
+**If you have WordPress Hosting Pro:**
 
 * If the product is reactivated **within 90 days**, the site can be restored in the exact state it was in when canceled
 * After 90 days, the system will create a **final archive**, and then both the production and staging sites will be **permanently deleted**
 
-> **Tip:** If you're planning to cancel but may return later, reach out to Support before canceling. We can help you obtain a final copy of the website.
+:::tip
+If you're planning to cancel but may return later, reach out to Support before canceling. We can help you obtain a final copy of the website.
+:::
 
 </details>
 
@@ -100,7 +104,7 @@ If a WordPress Hosting product (Standard or Pro) is canceled and fully deactivat
 **No, not at this time.** WordPress Hosting does not currently send failure notifications for daily or manual backups.
 
 We recommend:
-* Regularly checking the **Backups** tab in the WordPress Hosting dashboard
+* Regularly checking the `Backups` tab in the WordPress Hosting dashboard
 * Reviewing backup history to confirm recent versions are available and secure
 * Performing manual backups before major edits or plugin installations
 

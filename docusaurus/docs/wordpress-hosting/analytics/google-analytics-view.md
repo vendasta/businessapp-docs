@@ -39,6 +39,6 @@ We _strongly_ encourage you to connect your own view, as it provides the most ac
 
 When you connect your own Google Analytics view, the platform pulls in data for the past 12 months. Provided you select a view that has 12 months of historical data, you will have access to that data, and data going forward as well.
 
-### A user connected GA but there is no data
+### You connected GA, but there is no data
 
 The most likely issue is being connected to the incorrect view. In Google Analytics, you can configure your own view with specific data collection and filtering behavior. As long as you connect a view that has data, the platform will pull the data in; in addition, it will pull in 12 months' worth of data upon connection.
