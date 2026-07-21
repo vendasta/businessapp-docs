@@ -90,6 +90,26 @@ Your first generation is just the starting point. Use follow-up prompts to refin
 
 Each prompt builds on the current state of your application. Vibe understands the context of what's already been built and makes targeted changes.
 
+## Step 6: Publish Your Site
+
+Once you're happy with what Vibe has built, publish it to make it live at a real URL.
+
+In the toolbar, click `Publish`. Vibe shows your site's address, a default URL generated automatically from your project name. No DNS setup or hosting configuration is required; it's live and secured with TLS as soon as you publish.
+
+Want a different subdomain? Click the pencil icon next to the address to edit it.
+
+Publishing again after further edits updates the same URL, you don't get a new link each time, so it's safe to share right away and keep iterating.
+
+### Using your own domain
+
+On the Professional plan, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
+
+The published site can move to your own domain this way, while the in-editor preview link stays on its default address.
+
+### Taking your project elsewhere
+
+If you ever need to move a project off Vibe entirely, use **Download** in the toolbar to export the complete source, assets, and checkpoint history. See [Toolbar](#toolbar) above.
+
 ## Understanding the Interface
 
 ### Chat Panel
