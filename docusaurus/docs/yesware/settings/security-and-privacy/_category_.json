@@ -1,0 +1,10 @@
+{
+  "label": "Security & Privacy",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "yesware/settings/security-and-privacy/index"
+  }
+}
