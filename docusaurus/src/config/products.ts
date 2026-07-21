@@ -51,7 +51,7 @@ export const products: Product[] = [
   {
     id: 'website',
     name: 'WordPress Hosting',
-    logo: '/img/Wordpress-Hosting.png',
+    logo: '/img/WordPress-Hosting.png',
     sidebarId: 'websiteSidebar',
     path: '/wordpress-hosting/',
     tagline: 'Build and manage beautiful, professional websites',
