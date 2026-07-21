@@ -94,11 +94,11 @@ Each prompt builds on the current state of your application. Vibe understands th
 
 Once you're happy with what Vibe has built, publish it to make it live at a real URL.
 
-In the toolbar, click `Publish`. Vibe shows your site's address — a default URL generated automatically from your project name. No DNS setup or hosting configuration is required; it's live and secured with TLS as soon as you publish.
+In the toolbar, click `Publish`. Vibe shows your site's address, a default URL generated automatically from your project name. No DNS setup or hosting configuration is required; it's live and secured with TLS as soon as you publish.
 
 Want a different subdomain? Click the pencil icon next to the address to edit it.
 
-Publishing again after further edits updates the same URL — you don't get a new link each time, so it's safe to share right away and keep iterating.
+Publishing again after further edits updates the same URL, you don't get a new link each time, so it's safe to share right away and keep iterating.
 
 ### Using your own domain
 
