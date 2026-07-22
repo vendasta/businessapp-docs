@@ -130,6 +130,13 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 
 </details>
 
+<details>
+<summary>Are Vibe sites SEO-friendly?</summary>
+
+Yes. Vibe generates React single-page applications served as static client-side apps. Search engines that execute JavaScript, including Google, can index them. Meta tags aren't added automatically — ask Vibe to include them for any page that needs them.
+
+</details>
+
 ## Next Steps
 
 - [Getting Started](./getting-started.md) — Create your first app and learn the basics

@@ -59,4 +59,12 @@ Ideal for building professional apps with the full feature set. Includes all Sta
 
 ## Add-On Credits
 
-Add-on credit packs are available for purchase in sizes of 10,000, 25,000, 50,000, and 100,000 credits. Unused add-on credits carry over into the next month as long as your add-on remains active. For pricing, see the [Vibe listing](https://partners.vendasta.com/marketplace/products/MP-M56KKRF7Z3Z7NJFXRKDF67NXJLF8BN28).
+Add-on credit packs are available for purchase in sizes of 10,000, 25,000, 50,000, and 100,000 credits. Unused add-on credits carry over into the next month as long as your add-on remains active. For current pricing, open the Upgrade dialog in Business App — it shows the image and description for each available add-on before you check out.
+
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>Can I stop a generation to save credits?</summary>
+
+Yes. Click the **Stop** button in the chat input while a generation is running. It halts almost instantly, keeps your last working preview on screen, and returns your prompt to the input box so you can edit and resend it.
+</details>

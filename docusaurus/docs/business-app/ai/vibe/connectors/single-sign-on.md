@@ -65,6 +65,14 @@ If your app will be displayed inside an iframe, use one of these approaches:
 
 If your app is standalone (not embedded in another page), this limitation does not apply.
 
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>I see "User not found" when I try to sign in to a Vibe-built app. What does that mean?</summary>
+
+Only users who already have access to this Business App account can sign in through the Single sign-on connector. This sign-in screen is for account members — owners, staff, and managers — not your business's customers or website visitors.
+</details>
+
 ## Next Steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them

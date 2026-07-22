@@ -111,6 +111,7 @@ A blank preview panel or a stuck loading spinner usually means one of:
 - **The preview lost connection.** Click the refresh button in the top-right toolbar.
 - **There's a build error the chat missed.** Switch to Code mode to inspect files directly.
 - **The dev server needs a kick.** Send Vibe a prompt: "The preview isn't loading, can you check the build?"
+- **A previous prompt replaced the React entry point.** If an earlier change swapped `index.html` for static HTML, the app loses its React entry point and shows a blank screen. Prompt Vibe to "rebuild this as a proper React app" to restore it.
 
 ## Files don't seem to have changed
 
@@ -138,6 +139,20 @@ If a problem persists after auto-fix, manual prompts, and a checkpoint restore:
 - Refresh the page and re-send your prompt as a fresh attempt.
 - Restore the last checkpoint where things were working and try a smaller step from there.
 - Reach out to your trusted-tester program contact with what you tried and what error you saw.
+
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>How long does it take for changes to appear on the live site after publishing?</summary>
+
+Changes typically appear within 30 seconds. Browser caching can add up to 20 minutes of delay — try a hard refresh (Ctrl+Shift+R / Cmd+Shift+R) or open the site in an incognito window if you don't see the latest version.
+</details>
+
+<details>
+<summary>My published site isn't updating even after I publish new changes. What should I do?</summary>
+
+First confirm you clicked **Publish** and not just saved your work. If the live site hasn't updated after a minute, do a hard refresh. If it still shows old content after 20 minutes, contact support and include your project URL.
+</details>
 
 ## Next Steps
 

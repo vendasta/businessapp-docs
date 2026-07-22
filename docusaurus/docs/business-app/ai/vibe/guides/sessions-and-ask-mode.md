@@ -90,7 +90,7 @@ Yes. The context and understanding built during an Ask mode conversation automat
 <details>
 <summary>Do I need to activate anything to use Sessions and Ask mode?</summary>
 
-Vibe must be activated in the marketplace for your account before you can access these features.
+No. Sessions and Ask mode are built into every Vibe project — open Vibe from the AI section in Business App and they're ready to use.
 </details>
 
 <details>
