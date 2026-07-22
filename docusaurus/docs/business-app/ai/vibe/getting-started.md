@@ -76,7 +76,9 @@ After you submit your prompt, Vibe runs through a consistent sequence you can fo
 
 The chat auto-scrolls to follow new events as they arrive. If you scroll up to read older context, follow-tail pauses; scroll back near the bottom and it resumes.
 
-While a generation is in progress, you can type your next message in the chat input — it won't interrupt the current run. To stop a run early, click the **Stop** button in the chat input. The generation halts almost immediately, the last working preview stays on screen, and your original prompt returns to the input so you can edit and resend.
+While a generation is in progress, you can keep typing and sending messages. Instead of interrupting the current run, each message you send joins a queue above the chat input and fires automatically once the current generation finishes. See [Message Queue](./guides/message-queue.md) for the full behavior, including pausing, editing, and removing queued messages.
+
+To stop a run early, click the **Stop** button in the chat input. The generation halts almost immediately, the last working preview stays on screen, your original prompt returns to the input so you can edit and resend, and your message queue pauses so nothing queued fires into the interrupted state.
 
 ## Step 5: Iterate and Refine
 
@@ -135,7 +137,7 @@ At the bottom of the chat panel, you find:
 | **Mode selector** | Pick the generation mode for the next prompt. |
 | **Microphone** | Record voice input. Vibe transcribes your speech into a prompt. |
 | **Send** | Submit the prompt to Vibe. |
-| **Stop** | (Appears during a generation.) Halt the current run. The last working preview stays on screen and your prompt returns to the input. |
+| **Stop** | (Appears during a generation.) Halt the current run and pause your message queue. The last working preview stays on screen and your prompt returns to the input. |
 
 ![The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls](./img/chat-input.png)
 
@@ -172,4 +174,5 @@ The top-right toolbar provides:
 - [Prompting Guide](./guides/prompting.md) — Learn the principles behind effective prompts
 - [Visual Editor](./guides/visual-editor.md) — Make targeted edits without prompts
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
+- [Message Queue](./guides/message-queue.md) — Queue follow-up prompts while Vibe is generating
 

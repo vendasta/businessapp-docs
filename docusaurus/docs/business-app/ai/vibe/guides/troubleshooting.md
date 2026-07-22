@@ -139,8 +139,13 @@ If a problem persists after auto-fix, manual prompts, and a checkpoint restore:
 - Restore the last checkpoint where things were working and try a smaller step from there.
 - Reach out to your trusted-tester program contact with what you tried and what error you saw.
 
+## If a generation fails while you have queued messages
+
+A failed generation automatically pauses your message queue, so a queued message doesn't fire into a broken state. Your queued messages stay intact — work through the recovery steps above, then resume the queue from the queue panel. See [Message Queue](./message-queue.md) for the full behavior.
+
 ## Next Steps
 
 - [Planning](./plan-mode.md) — Understand how Vibe plans so you can catch misalignments early
 - [Prompting Guide](./prompting.md) — Write clearer prompts that produce fewer errors
+- [Message Queue](./message-queue.md) — Queue follow-up prompts while Vibe is generating
 - [Getting Started](../getting-started.md) — Review the full generation flow end to end
