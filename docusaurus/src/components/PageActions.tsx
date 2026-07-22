@@ -22,30 +22,11 @@ const getArticleMarkdown = (): string => {
   return turndown.turndown(article.innerHTML);
 };
 
-// Derive the same-origin raw-Markdown URL for a page from its URL. Mirrors the
-// raw-markdown plugin's permalink→file mapping:
-//   'https://host/business-app/reviews/' -> 'https://host/business-app/reviews.md'
-//   'https://host/'                       -> 'https://host/index.md'
-// Because it is built from the page's own URL, it stays on whatever (gray-label)
-// domain the reader is on and never references an internal repo or brand.
-const toMdUrl = (pageUrl: string): string => {
-  try {
-    const url = new URL(pageUrl);
-    const trimmed = url.pathname.replace(/\/+$/, '');
-    url.pathname = `${trimmed === '' ? '/index' : trimmed}.md`;
-    url.search = '';
-    url.hash = '';
-    return url.toString();
-  } catch {
-    return pageUrl;
-  }
-};
-
 // Build a tool URL (base already includes the query param, e.g. ".../?q=") with
 // the page content embedded as Markdown. If the fully-embedded prompt would push
-// the encoded URL past MAX_AI_URL_LENGTH, fall back to referencing the page's
-// complete same-origin .md file (see toMdUrl) instead of embedding a truncated
-// slice — so the assistant always gets the full page.
+// the encoded URL past MAX_AI_URL_LENGTH, fall back to referencing the live page
+// URL (which the assistant can open and read) instead of embedding a truncated
+// slice — so the assistant always works from the complete page.
 const buildAIUrl = ({
   queryBase,
   pageUrl,
@@ -68,12 +49,10 @@ const buildAIUrl = ({
   }
 
   // The page is too long to embed inline (or has no scrapeable Markdown): point
-  // the tool at the complete, same-origin raw Markdown file instead of sending a
-  // truncated slice. The .md URL is served by the raw-markdown build plugin and
-  // stays on the reader's own (gray-label) domain — no brand/repo leak.
-  const mdUrl = toMdUrl(pageUrl);
+  // the tool at the live page URL, which the assistant can open and read in full,
+  // instead of sending a truncated slice.
   return toUrl(
-    `${basePrompt}\n\nThe complete Markdown for this page is available at ${mdUrl}\n\nPlease read that file for the full content before helping me.`
+    `${basePrompt}\n\nPlease open the page above and read the full content before helping me.`
   );
 };
 

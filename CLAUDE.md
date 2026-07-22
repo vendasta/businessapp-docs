@@ -229,28 +229,6 @@ Run pre-push validation before every commit to catch all of these.
 
 ---
 
-## AI Page Actions ("Open in Claude", etc.)
-
-Every doc page shows a column of buttons under the table of contents — "Open in
-Claude", "Open in ChatGPT", "Copy as Markdown", and so on. This is
-`docusaurus/src/components/PageActions.tsx`, injected via the
-`docusaurus/src/theme/TOC/` swizzle. Each button prefills the assistant with the
-current page: short pages are embedded inline in the tool URL; **long pages link
-the assistant to a same-origin `<permalink>.md` file** so it gets the complete
-page without truncation.
-
-Those `.md` files are produced at build time by the local
-`docusaurus/plugins/raw-markdown/` plugin and served as `text/plain` by the
-`location ~ \.md$` block in `nginx.conf`. The three pieces are coupled — see
-`docusaurus/plugins/raw-markdown/README.md` before touching any of them.
-
-**Gray-label rule (do not undo this):** the long-page fallback must stay a
-**same-origin** `.md` URL. Do **not** replace it with a link to the GitHub source
-repo — that would leak the internal org/repo name to end users and violate the
-gray-label rule.
-
----
-
 ## Commit Message Format
 
 ```
