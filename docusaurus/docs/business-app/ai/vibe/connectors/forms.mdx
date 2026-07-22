@@ -77,6 +77,20 @@ Forms inherit your application's theme automatically — primary color, border r
 
 Forms use structured style fields (background color, border, primary color, etc.) that pull from your theme, so visual consistency is the default.
 
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>How do I get my form to create contacts in the CRM, not just form submissions?</summary>
+
+Use words like "contact" or "company" when you describe the form — for example, "build me a contact intake form." That tells Vibe which CRM entity type to create. A generic request like "build me a form" may capture submissions without creating a CRM record.
+</details>
+
+<details>
+<summary>My form submissions use "Email Address" as a field label, but automations fail with "channel Email not available." How do I fix this?</summary>
+
+The CRM requires the field to be labeled exactly **Email** (not "Email Address") for automations to recognize it. Rename the field in the form builder, or ask Vibe to use standard CRM field labels when you prompt it.
+</details>
+
 ## Next Steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them

@@ -11,8 +11,6 @@ Every Vibe project gets a default published URL automatically. On the Profession
 
 Every project includes a default URL that's ready as soon as you publish. You can view and edit this URL in the **Publish** section of your project. No DNS setup is required. It's provisioned and secured automatically.
 
-<img src={require('./img/vibe-publish-url.png').default} alt="Vibe project publish URL" width="60%" />
-
 Visiting the bare domain (without `www`) redirects to the full URL automatically.
 
 ## Requirements for custom domains
@@ -26,8 +24,6 @@ Custom domains require the Professional plan. If you're on a different plan, upg
 3. Under **Custom Domain**, enter your domain name and click **Add**.
 4. Follow the DNS verification steps. Vibe displays the records you need to add with your domain registrar.
 
-<img src={require('./img/vibe-custom-dns.png').default} alt="DNS verification records displayed in Vibe" width="100%" />
-
 5. Once your DNS records propagate and verification completes, Vibe provisions the SSL certificate automatically.
 
 <!-- screenshot needed: DNS verification records panel in Publish workflow -->
@@ -37,3 +33,11 @@ Your app becomes available at your custom domain after the certificate is provis
 ## Remove a Custom Domain
 
 To remove a custom domain, go to **Publish** and remove it with one click. Your project continues to be available at its default URL.
+
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>My custom domain shows "Verifying" for a long time. What should I do?</summary>
+
+DNS propagation can take up to 48 hours depending on your registrar. Make sure the CNAME or A records match exactly what Vibe displayed. If you entered the wrong records, remove the domain and re-add it to get fresh verification instructions.
+</details>
