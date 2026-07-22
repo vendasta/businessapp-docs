@@ -6,33 +6,33 @@ tags: [wordpress-hosting, domains, subdomains, dns, alternate-domains]
 keywords: [alternate domains, subdomains, subdomain limits, primary domain, CNAME subdomain, single-site, WordPress Hosting Pro]
 ---
 
-This guide applies to **WordPress Hosting Pro** (single-site). On a single-site installation, you can connect additional domains and subdomains, but they all function as **alternate domains** — every one of them redirects to your primary domain.
+This guide applies to **WordPress Hosting Pro** (single-site). On a single-site installation, you can connect additional domains and subdomains, but they all function as **alternate domains**: every one of them redirects to your primary domain.
 
 :::tip Looking for subdirectory-based Multisite?
 To manage multiple sites under a single domain using subdirectories (e.g., `yourdomain.com/site1`, `yourdomain.com/site2`), see [WordPress Hosting Premium](../overview/wordpress-hosting-premium.md).
 :::
 
-## How Many Alternate Domains Can I Add?
+## How many alternate domains can I add?
 
 There is no limit to the number of alternate domains or subdomains you can connect to WordPress Hosting Pro. However, all of them redirect to your single **primary domain**.
 
 For example, you could connect:
-* `website.com` — **Primary domain**
-* `www.website.com` — redirects to primary
-* `portal.website.com` — redirects to primary
-* `shop.website.com` — redirects to primary
-* `myotherdomain.com` — redirects to primary
+* `website.com`: **Primary domain**
+* `www.website.com`: redirects to primary
+* `portal.website.com`: redirects to primary
+* `shop.website.com`: redirects to primary
+* `myotherdomain.com`: redirects to primary
 
 You can only have **one primary domain**. All other connected domains are alternate domains that redirect visitors to it.
 
-## Important Things to Note
+## Important things to note
 
-* The CNAME DNS record for each subdomain must point to [**host.websiteprohosting.com**](http://host.websiteprohosting.com/).
-* All alternate domains and subdomains redirect to the primary domain — this cannot be changed on a single-site installation.
+* The CNAME DNS record for each subdomain must point to `host.websiteprohosting.com`.
+* All alternate domains and subdomains redirect to the primary domain. This cannot be changed on a single-site installation.
 * Each alternate domain cannot be configured to point to a different destination.
 * When setting up subdomains, enter only the subdomain portion as the host in your DNS record (e.g., `www` or `shop`, not `www.yourdomain.com`).
 
-## Setting Up Subdomain DNS Records
+## Setting up subdomain DNS records
 
 To set up a subdomain, you'll need to create a CNAME record at your domain registrar:
 
@@ -45,20 +45,20 @@ To set up a subdomain, you'll need to create a CNAME record at your domain regis
 
 For detailed DNS configuration instructions, see [Understanding DNS Records](understanding-dns-records.md).
 
-## Connecting Alternate Domains in WordPress Hosting Pro
+## Connecting alternate domains in WordPress Hosting Pro
 
-1. Log into WordPress Hosting Pro and navigate to the **Domains** tab
-2. Click **Connect a Domain**
+1. Log into WordPress Hosting Pro and navigate to the `Domains` tab
+2. Click `Connect a Domain`
 3. Enter the full subdomain name (e.g., `shop.yourdomain.com`)
-4. Click **Add Domain**
+4. Click `Add Domain`
 5. The subdomain will be added and will automatically redirect to your primary domain
 
-## Setting Your Primary Domain
+## Setting your primary domain
 
 You can only have one primary domain. All other connected alternate domains redirect to it. To change which domain is primary:
 
-1. On the **Domains** tab
-2. Find the domain in the list, expand the options menu on the right side, then click **Make Primary**
+1. On the `Domains` tab
+2. Find the domain in the list, expand the options menu on the right side, then click `Make Primary`
 3. All of your domains will then redirect to this domain
 
 For more details, see [Set your primary domain](point-a-new-domain-to-wordpress-hosting.md#set-your-primary-domain).
@@ -89,7 +89,7 @@ You need to create a CNAME record for each subdomain. The HOST field should cont
 <details>
 <summary>How do I change which domain is primary?</summary>
 
-Go to the Domains tab in WordPress Hosting Pro, find the domain you want to make primary, expand the options menu (three dots), and click "Make Primary." All other alternate domains will then redirect to this new primary domain.
+Go to the `Domains` tab in WordPress Hosting Pro, find the domain you want to make primary, expand the options menu (three dots), and click `Make Primary`. All other alternate domains will then redirect to this new primary domain.
 
 </details>
 
