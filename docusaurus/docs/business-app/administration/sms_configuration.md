@@ -29,7 +29,7 @@ The privacy policy on your business's website must explicitly state the followin
 
 | Requirement | Language to include |
 |-------------|---------------------|
-| No sharing of SMS data | Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. |
+| No sharing of SMS data | Text messaging originator opt-in data and consent will not be shared with any third parties, excluding aggregators and providers of the text message services. |
 | Opt-in disclosure | By providing your number, you consent to receive automated informational and promotional messages. |
 | Opt-out instructions | You can cancel the SMS service at any time. Just text "STOP" to our number. We will send a confirmation message to acknowledge your request. |
 | Help instructions | Reply HELP for assistance. |
@@ -61,7 +61,7 @@ Carriers require express written consent for automated outbound campaigns to pho
 
 **Automated consent:** If you use our AI Chat Receptionist, an additional question is automatically enabled on the Lead Capture capability for accounts submitting A2P registration. The AI will ask:
 
-> "Do you agree to receive text messages from us regarding appointments, service updates, and occasional promotional offers? Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe or HELP for help to any received SMS messages. Reply 'Yes' if you agree."
+> "Do you agree to receive text messages from us regarding appointments, service updates, and occasional promotional offers? Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe or HELP for help to any received SMS messages. View our Privacy Policy at [Link] and Terms at [Link]. Reply 'Yes' if you agree or 'No' to decline."
 
 **Proactive verification:** If express written consent has not been collected for a phone number, a single initial SMS may be sent that says:
 
