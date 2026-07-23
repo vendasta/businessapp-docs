@@ -93,6 +93,12 @@ Choose the most specific trigger that matches your use case and think about how 
 | A contact communication summary is created | Fires when an AI-generated summary of a conversation is created for a contact |
 | Web Chat captures a lead | Fires when a visitor submits their information through the Web Chat widget |
 
+### Social Marketing
+
+| Trigger | Description |
+|---|---|
+| When a social comment is received | Fires when a new comment is posted on a connected Facebook, Instagram, LinkedIn, or X account. Filter the trigger to specific networks — if none are selected, all networks are included. |
+
 ### Manual
 
 | Trigger | Description | Example Use Case |
