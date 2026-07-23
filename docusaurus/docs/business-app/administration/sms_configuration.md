@@ -67,6 +67,14 @@ Carriers require express written consent for automated outbound campaigns to pho
 
 > "[Your Business Name] would like to send you text messages at this number. Message and data rates may apply. View our SMS policy at [Link]. Reply 'Yes' to opt-in."
 
+## Check your submission with the AI Verification assistant
+
+On the review step of the registration form, click **Analyse** to have the AI Verification assistant check your entry before you send it to carriers. The assistant looks at your campaign details together with the pages you linked — your privacy policy, terms of service, and any opt-in or contact forms — and checks them against the requirements above.
+
+While it works, you'll see its progress. When it finishes, it shows a list of findings tagged by severity (**Must fix** and **Recommended**), each with the specific change to make, and highlights the form fields that need attention.
+
+Reviewing the assistant's findings is optional and doesn't block you from submitting. Use it as a quick check to catch issues before carrier review.
+
 ## Submit your registration
 
 Once your website meets the requirements above, you can submit your A2P 10DLC registration.
