@@ -29,6 +29,8 @@ This feature **sends the contact an email** so they can choose their own time sl
 
 The contact receives an email with your booking link. They click the link, choose an available date and time, and confirm. The meeting is then added to your calendar automatically.
 
+Because the link is generated from the contact's profile, the booking form automatically fills in their known name, email, and phone number — so they don't have to re-enter details you already have. These fields stay fully editable, so the contact can update or clear any value before confirming, and any detail that isn't on file is simply left blank for them to fill in.
+
 ## Customizing the invitation email
 
 The subject and description of the meeting request email come from the **Customize invitation email** settings on each event type. To personalize it:
