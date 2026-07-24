@@ -1,6 +1,6 @@
 ---
 name: article-verifications
-description: Verifies flagged Business App articles for quality, accuracy, and freshness. Reviews brand standards, style, grammar, links, and content currency. Produces a structured verification report with recommended actions for each article.
+description: Verifies flagged Business App articles for quality, accuracy, and freshness. Reviews brand standards, style, grammar, links, content currency, and product logo currency in screenshots. Produces a structured verification report with recommended actions for each article.
 ---
 
 # Article Verifications
@@ -88,6 +88,16 @@ For every hit found outside today's batch, open it and check any `#anchor` fragm
 
 This is how a self-referential loop gets caught: Page A defers to Page B for a topic's details ("see Page B for details") while Page B has no content on that topic and defers back to Page A. Anchor resolution surfaces the symptom (a dead fragment) even when the underlying cause (missing content, circular deferral) needs a human judgment call — flag it as a **Needs SME Review** item rather than guessing where the content should live.
 
+### Step 4c: Check screenshots for outdated product logos
+
+Foundational product logos have changed. Any screenshot captured before the rebrand may still show an old logo mark, which is now inaccurate.
+
+For each image referenced in the article (`![alt](./img/filename.png)`), use the Read tool to view the image directly. Look specifically at areas where product branding appears — top nav bars, sidebar headers, login/splash screens, favicons rendered in browser chrome.
+
+Compare what you see against the current logo defined for that product line in `docusaurus/src/config/products.ts` (the `logo` field, keyed by `id`/`name`). If the screenshot shows a different mark, an old wordmark, or a superseded icon style, flag it — the image needs to be recaptured with current branding.
+
+Not every screenshot needs this check — skip images that don't show any product branding (e.g. a cropped form field or a settings toggle with no header visible).
+
 ### Step 5: Run qualitative review
 
 Apply every criterion in the **Verification Criteria** section below to each article. Read closely — automated checks catch patterns, but this step catches judgment calls.
@@ -173,6 +183,18 @@ Use AskUserQuestion with options tailored to the context, e.g.:
 Use AskUserQuestion:
 - `Yes — rename the file`
 - `No — leave the filename as-is`
+
+**Outdated logo in screenshot:**
+
+```
+**Issue:** This screenshot shows an outdated logo — it doesn't match the current branding defined in `docusaurus/src/config/products.ts` for [product name].
+**Location:** ![alt text](./img/filename.png), referenced at line [N]
+**Note:** This image needs to be recaptured with current branding. No text edit can fix this — it requires a new screenshot.
+```
+
+Use AskUserQuestion:
+- `Flag it with an inline comment for image replacement`
+- `Leave it as-is — I'll handle the recapture separately`
 
 **SME review item** (no change can be proposed without product knowledge):
 
@@ -377,6 +399,21 @@ Flag if:
 
 ---
 
+### 8. Product logo currency
+
+Foundational product logos have changed. Screenshots taken before the rebrand still show the old marks and no longer match the product.
+
+**Source of truth:** `docusaurus/src/config/products.ts` — the `logo` field for each product entry is the current, correct logo.
+
+**Flag any image that:**
+- Shows a product logo/wordmark that doesn't match the current logo in `products.ts` for that product line
+- Shows an old icon style in a nav bar, sidebar header, or login screen
+- Mixes an old logo for one product with current UI chrome elsewhere in the same screenshot (a sign it's a stale composite)
+
+Do not guess whether a subtle icon variant is "old" or "current" — if uncertain, flag it for SME review rather than asserting it's outdated.
+
+---
+
 ## Fix Authorization
 
 ### Auto-fix (apply immediately, no approval needed)
@@ -396,6 +433,7 @@ These require the user to confirm before making any edit:
 - **Content accuracy** — any step, claim, or description that may not match the current product
 - **Structural rewrites** — articles that need a new angle, are missing sections, or require SME input on correctness
 - **File renames** — any change to a filename (affects URLs and may break inbound links)
+- **Outdated logos in screenshots** — the image itself must be recaptured with current branding; this cannot be edited in place
 
 ---
 
@@ -430,6 +468,10 @@ Produce one block per article. Use this exact structure:
 - ../accounts/connect-profile.md — file not found (broken internal link)
 - ../accounts/connect-profile.md#old-heading — file exists but anchor not found (heading was likely renamed)
 - Inbound: `other-article.mdx` links here with `#section-that-no-longer-exists` — broken by this verification's heading changes
+
+**Logo check**
+[Results of the Step 4c screenshot review. Use "No product branding visible in images" or "All screenshots reflect current branding" if applicable.]
+- ./img/connect-account.png — shows the outdated logo mark in the top nav; needs recapture with current branding
 
 **Needs verification**
 [UI element names, navigation paths, product references, or content claims to spot-check against the live product. Use "None" if nothing stands out.]
@@ -472,6 +514,9 @@ The article is mostly clear and well-structured. Two audience-language issues an
 **Link check**
 - https://businessapp.vendasta.com/ai — 301 Redirect to https://businessapp.vendasta.com/products/ai (redirect acceptable, destination valid)
 
+**Logo check**
+- No product branding visible in images
+
 **Needs verification**
 - Step 3: "Credits" tab under AI settings — verify this tab name is current in the live product.
 
@@ -486,4 +531,5 @@ The article is mostly clear and well-structured. Two audience-language issues an
 - **Never infer functionality** from the article text. If a step or feature claim cannot be verified from other current documentation, flag it for SME review.
 - **Apply auto-fixes immediately, flag the rest** — sentence casing, audience language, UI formatting, and blockquote-to-callout fixes are applied directly without asking. All other changes require explicit approval before editing.
 - **Check every link** — do not skip link checks even if the article looks clean. This includes anchor fragments (Step 4) and inbound links from other articles into the ones you're editing (Step 4b) — a heading rename that looks harmless in isolation can silently break a link on a page you never opened.
+- **Check every screenshot for logo currency** — do not skip Step 4c even if the article text looks clean. A screenshot can be fully accurate in what it depicts and still show a superseded logo mark. Never auto-replace an image — always flag it for recapture.
 - **Report on every article** — even articles that pass should appear in the output with "Status: Pass" and a brief confirmation.
