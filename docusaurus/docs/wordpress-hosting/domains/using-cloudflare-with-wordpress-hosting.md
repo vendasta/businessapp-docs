@@ -8,7 +8,7 @@ keywords: [Cloudflare DNS, Cloudflare CDN, Cloudflare proxy, WordPress Hosting C
 
 Cloudflare provides DNS management and CDN (Content Delivery Network) services that can enhance your WordPress Hosting site's performance and security. This guide covers how to integrate Cloudflare with WordPress Hosting.
 
-## Moving Your Domain to Cloudflare DNS
+## Moving your domain to Cloudflare DNS
 
 If you want to use Cloudflare's DNS management instead of your domain registrar's DNS:
 
@@ -21,11 +21,11 @@ If you want to use Cloudflare's DNS management instead of your domain registrar'
 
 More details: [Cloudflare setup guide](https://support.cloudflare.com/hc/en-us/articles/201720164-Creating-a-Cloudflare-account-and-adding-a-website)
 
-## Connecting a Cloudflare-Managed Domain
+## Connecting a Cloudflare-managed domain
 
 If your domain is already managed by Cloudflare, follow these steps to connect it to WordPress Hosting:
 
-### Step 1: Configure DNS Records in Cloudflare
+### Step 1: Configure DNS records in Cloudflare
 
 1. **Ensure your DNS records are set correctly**
    * Add the necessary **A** and **CNAME** records for your domain in Cloudflare.
@@ -34,30 +34,32 @@ If your domain is already managed by Cloudflare, follow these steps to connect i
 
 For detailed DNS configuration instructions, see [Understanding DNS Records](understanding-dns-records.md).
 
-### Step 2: Configure SSL Settings in Cloudflare
+### Step 2: Configure SSL settings in Cloudflare
 
-1. Go to the **SSL/TLS > Overview** tab and set **SSL** to `Full`
-2. Under **SSL/TLS > Edge Certificates**, turn **"Always Use HTTPS"** to `Off` temporarily
+1. Go to the `SSL/TLS` → `Overview` tab and set `SSL` to `Full`
+2. Under `SSL/TLS` → `Edge Certificates`, turn `Always Use HTTPS` to `Off` temporarily
 
-### Step 3: Connect Domain in WordPress Hosting
+### Step 3: Connect domain in WordPress Hosting
 
-1. Go to the **Domains** tab and add your domain
-2. Wait for the domain status to show **"Connected"** (DNS propagation may take time)
+1. Go to the `Domains` tab and add your domain
+2. Wait for the domain status to show `Connected` (DNS propagation may take time)
 
 ### Step 4: Re-enable HTTPS in Cloudflare
 
-1. Once connected in WordPress Hosting, go back to **Edge Certificates** in Cloudflare
-2. Switch **"Always Use HTTPS"** to `On`
+1. Once connected in WordPress Hosting, go back to `Edge Certificates` in Cloudflare
+2. Switch `Always Use HTTPS` to `On`
 
 **Additional Notes:**
 
 * **Four-level domains (e.g. `www.your.business.com`)** may face limitations when using Cloudflare's proxy (orange cloud) feature.
-  * **Solution 1:** Disable **DNS and HTTP Proxy (CDN)** mode for that domain
-  * **Solution 2:** Purchase a custom SSL certificate in Cloudflare under `SSL/TLS > Edge Certificates > Order SSL Certificate`
+  * **Solution 1:** Disable `DNS and HTTP Proxy (CDN)` mode for that domain
+  * **Solution 2:** Purchase a custom SSL certificate in Cloudflare under `SSL/TLS` → `Edge Certificates` → `Order SSL Certificate`
 
-> If HTTPS doesn't activate immediately, this is usually due to DNS caching. You can flush DNS manually or wait up to 24 hours for propagation.
+:::note
+If HTTPS doesn't activate immediately, this is usually due to DNS caching. You can flush DNS manually or wait up to 24 hours for propagation.
+:::
 
-## Configuring DNS Proxy Setup
+## Configuring DNS proxy setup
 
 If you're using WordPress Hosting and want to configure your DNS settings on Cloudflare for optimized performance and security, follow the steps below.
 
@@ -65,9 +67,9 @@ If you're using WordPress Hosting and want to configure your DNS settings on Clo
 
 1. A Cloudflare account.
 2. Your domain added to Cloudflare.
-3. Access to your WordPress Hosting hosting details (e.g., IP address or CNAME record).
+3. Access to your WordPress Hosting details (e.g., IP address or CNAME record).
 
-### Steps to Configure DNS Proxy
+### Steps to configure DNS proxy
 
 1. **Log in to Cloudflare**  
    Navigate to Cloudflare's dashboard and log in with your credentials.
@@ -76,7 +78,7 @@ If you're using WordPress Hosting and want to configure your DNS settings on Clo
    From the Cloudflare dashboard, choose the domain for which you want to configure DNS.
 
 3. **Go to DNS Settings**  
-   Click on the **DNS** tab in the Cloudflare interface.
+   Click on the `DNS` tab in the Cloudflare interface.
 
 4. **Add or Edit DNS Records**  
    Depending on your hosting configuration, you may need to either add new DNS records or modify existing ones.
@@ -84,7 +86,7 @@ If you're using WordPress Hosting and want to configure your DNS settings on Clo
      * Type: `A`
      * Name: Your root domain (e.g., `example.com`).
      * Content: Your WordPress Hosting-provided IP address (e.g., `34.149.86.124`).
-     * Proxy Status: **Click the cloud icon to disable the orange "Proxied" status**.
+     * Proxy Status: **Click the cloud icon to disable the orange `Proxied` status**.
    * **CNAME Record**:
      * Type: `CNAME`
      * Name: `www` or other subdomains.
@@ -111,7 +113,7 @@ If the proxy status is set to **DNS Only**, Cloudflare's features such as cachin
 
 By configuring the proxy status correctly, you'll be able to leverage Cloudflare's security and performance features effectively for your WordPress Hosting setup.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Do I need to use Cloudflare's proxy (orange cloud) for my DNS records?</summary>
