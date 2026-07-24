@@ -21,6 +21,10 @@ Complete these website updates before submitting your registration:
 3. [Add opt-in checkboxes to web forms](#step-3-add-opt-in-checkboxes-to-web-forms)
 4. [Enable AI chat consent](#step-4-enable-ai-chat-consent) (if you use AI Chat Receptionist)
 
+:::tip See a working example
+The registration form includes a link to an example website that shows what a compliant contact form, privacy policy, and terms of service look like.
+:::
+
 ## Website requirements for approval
 
 ### Step 1: Update your privacy policy
