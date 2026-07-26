@@ -25,7 +25,7 @@ Custom fields let you tailor your system so it works for **your business**, keep
 - Full visibility and editing from the custom field manager
 
 :::info
-System fields (like company name or phone number) cannot be edited or deleted. Custom fields are fully configurable.
+System fields cannot be edited or deleted. For certain standard fields—including **Email**, **Phone number**, **First name**, and **Last name** (Contacts only), as well as **Record source**, **Record source drill down 1**, and **Record source drill down 2**—the **Customize Options** control is disabled. These fields use values required by system features or integrations.
 :::
 
 ## How to Create a CRM Field
@@ -64,7 +64,12 @@ Use `String List` when you want to associate multiple values with a single field
 - You can update the description or field type, but object and identifier may be locked after creation.
 - Fields that were added manually can be deleted when no longer needed.
 
-NOTE: System fields (created by default) cannot be modified or deleted. Only custom fields allow full control.
+System fields cannot be modified or deleted. For the following standard fields, the **Customize Options** control is disabled because their values are required by system features or integrations:
+
+- **Email**, **Phone number**, **First name**, **Last name** (Contact records only)
+- **Record source**, **Record source drill down 1**, **Record source drill down 2**
+
+Only custom fields allow full editing control.
 
 ![CRM Fields inside Administration](../img/administration_custom_fields.png)
 
@@ -131,7 +136,9 @@ Not all views support filtering by custom fields. Check your record view or expo
 <details>
 <summary>Can I edit system fields?</summary>
 
-No. System fields like `Company name` are locked and cannot be edited or removed.
+No. System fields are locked and cannot be edited or removed.
+
+For certain standard fields—**Email**, **Phone number**, **First name**, **Last name** (Contacts only), **Record source**, **Record source drill down 1**, and **Record source drill down 2**—the **Customize Options** control is also disabled. When you open one of these fields, a message explains that its values are required by system features or integrations and cannot be changed.
 
 </details>
 
