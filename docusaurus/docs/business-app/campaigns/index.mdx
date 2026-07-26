@@ -49,6 +49,7 @@ Campaigns help you send the right message to the right people at the right time.
 - Build emails in a visual editor using templates and content blocks
 - Create multi‑step campaigns with delays
 - Send to specific contacts and lists associated with your companies
+- Add listing and review links, like your Facebook Page, as merge fields
 - Pause, resume, or edit campaigns before publishing
 - Preview and test campaigns as a specific account
 - Monitor how many marketing emails have been sent during the current billing period using the progress bar at the top of the Campaigns page
@@ -65,6 +66,21 @@ Campaigns help you send the right message to the right people at the right time.
 
 :::tip Need inspiration?
 Check out our [Campaign Examples](campaign-examples.mdx) for ready-to-use nurture sequences across different industries.
+:::
+
+## Add listing and review links with merge fields
+
+Use merge fields to add links to your business's online listings directly in campaign emails, making it easy for recipients to visit your pages or leave a review.
+
+Available listing merge fields include:
+
+- **Facebook Page URL** — pulled automatically from the **Social** tab of your [Business Profile](../administration/business_profile.mdx#social)
+- **Other listing URLs**, such as a Google Business Profile or additional review page link — available as merge fields once the matching custom field is set up for your account
+
+To add one, open the email you're editing in the campaign builder, then insert the merge field where you want the link to appear.
+
+:::note
+Listing merge fields resolve directly from your account, so real links appear in preview right away—no need to select a specific contact first.
 :::
 
 ## Troubleshooting
@@ -154,6 +170,12 @@ Yes. Build an automation that triggers "When a form is submitted" to add the con
 <summary>Where do I troubleshoot email delivery issues?</summary>
 
 Use `Administration` > `Email History` to review sent emails and statuses, then verify domain authentication and deliverability settings. See: [Email history](../administration/email/email-history) and [Email Configuration](../administration/email/email-configuration)
+</details>
+
+<details>
+<summary>Why does a listing merge field show a placeholder instead of a link?</summary>
+
+The Facebook Page URL fills in automatically once your Business Profile is complete. Other listing merge fields depend on a custom field being set up and filled in for your account—reach out to your administrator if a link isn't appearing correctly.
 </details>
 
 <details>
