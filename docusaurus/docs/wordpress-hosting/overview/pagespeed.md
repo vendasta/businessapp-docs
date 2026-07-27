@@ -152,9 +152,10 @@ More about CDN functionality: [What is Cloud CDN? (Google)](https://cloud.google
 A bounce rate below 10% may suggest a technical issue rather than high engagement. One common cause is duplicate Google Analytics tags, often from both a theme and a plugin.
 
 To troubleshoot:
-1. Install the [Google Tag Assistant Chrome extension](https://www.analyticsmania.com/post/google-tag-assistant-tutorial/)
+1. Install the Google Tag Assistant Chrome extension
 2. Visit your site and click through a few pages
 3. Use the Tag Assistant to identify tag errors:
+   <!-- SME review: confirm these tag-status labels still match the current Tag Assistant extension UI -->
    * Red: Major issue
    * Yellow: Minor warning
    * Blue: Non-standard implementation

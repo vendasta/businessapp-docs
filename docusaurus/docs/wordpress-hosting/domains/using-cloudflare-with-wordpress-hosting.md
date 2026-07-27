@@ -109,7 +109,7 @@ If the proxy status is set to **DNS Only**, Cloudflare's features such as cachin
 * **Website not resolving correctly?**  
   Double-check the DNS entries and ensure the proxy status is enabled for the correct records.
 * **SSL Issues?**  
-  Make sure you have an active SSL certificate on Cloudflare. Under the **SSL/TLS** tab, choose "Full" or "Full (Strict)" depending on your server setup.
+  Make sure you have an active SSL certificate on Cloudflare. Under the `SSL/TLS` tab, choose "Full" or "Full (Strict)" depending on your server setup.
 
 By configuring the proxy status correctly, you'll be able to leverage Cloudflare's security and performance features effectively for your WordPress Hosting setup.
 
@@ -139,7 +139,7 @@ Set your SSL/TLS mode to **"Full"** (not "Full Strict") when using WordPress Hos
 <details>
 <summary>Can I use Cloudflare with a four-level domain (like www.your.business.com)?</summary>
 
-Four-level domains may face limitations with Cloudflare's proxy feature. If you encounter issues, you can either disable the DNS and HTTP Proxy (CDN) mode for that domain, or purchase a custom SSL certificate in Cloudflare under SSL/TLS > Edge Certificates > Order SSL Certificate.
+Four-level domains may face limitations with Cloudflare's proxy feature. If you encounter issues, you can either disable the `DNS and HTTP Proxy (CDN)` mode for that domain, or purchase a custom SSL certificate in Cloudflare under `SSL/TLS` → `Edge Certificates` → `Order SSL Certificate`.
 
 </details>
 
