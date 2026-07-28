@@ -4,10 +4,8 @@ sidebar_position: 4
 unlisted: false
 ---
 
-# CRM
-
-:::info Early access
-The CRM connector is in early access. Availability and behavior may change before general release.
+:::info Trusted tester
+The CRM connector is available to trusted testers. Availability and behavior may change before general release.
 :::
 
 The CRM connector gives your Vibe app access to your account's contacts, companies, and opportunities. Instead of mocking up a contact list or a deals table, Vibe wires the generated UI directly to the same records you manage in [CRM](/business-app/crm).
@@ -19,8 +17,10 @@ CRM layers on Business App's CRM product. When the connector is enabled, Vibe ca
 - **Contacts** — the people in your CRM, along with their contact details.
 - **Companies** — the businesses and organizations linked to your contacts.
 - **Opportunities** — deals tracked across your sales pipeline, including stage.
+- **Custom objects** — any custom object types configured in your CRM.
+- **Activities** — logged activity records, including tasks.
 
-A contacts table, company directory, or pipeline view built in Vibe reflects the same records you manage elsewhere in [CRM](/business-app/crm) — there's no separate data set to keep in sync.
+A contacts table, company directory, or pipeline view built in Vibe reflects the same records you manage elsewhere in [CRM](/business-app/crm) — there's no separate data set to keep in sync. The connector is two-way: changes you make to a record in your Vibe app sync back to CRM, and updates in CRM appear in your Vibe app.
 
 ## Enabling the connector
 
@@ -44,10 +44,12 @@ Describe what you want to see, and name the CRM entity so Vibe knows which data 
 
 > Add a companies directory page with each company's name and its linked contacts.
 
-The supervisor agent recognizes terms like "contacts," "companies," and "opportunities" or "pipeline" and wires the generated UI through the CRM connector when it's enabled for the project.
+> Add a task list showing overdue tasks assigned to me.
 
-## Next Steps
+The supervisor agent recognizes terms like "contacts," "companies," "opportunities" or "pipeline," and "tasks" or "activities," and wires the generated UI through the CRM connector when it's enabled for the project.
+
+## Next steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Analytics](./analytics.md) — Surface performance metrics alongside your CRM data
-- [Prompting Library](../prompting-library.md) — Ready-made CRM prompts for contacts, companies, and pipelines
+- [Prompting Library](../guides/prompting-library.md) — Ready-made CRM prompts for contacts, companies, and pipelines
