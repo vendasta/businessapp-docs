@@ -99,8 +99,6 @@ Replace the existing code with:
 *   **Use a plugin** if you want a quick and easy way to set up a custom 404 page.
 *   **Manually edit the 404.php file** if you prefer a lightweight solution without extra plugins.
 
-<!-- TODO: Replace hotlinked wpbeginner.com screenshots below with original screenshots captured from the WordPress Hosting dashboard, and rewrite the surrounding steps in original wording. Flagged during 2026-07-28 article verification (issue #815). -->
-
 ## Creating 301 redirects to fix 404 errors
 
 A **301 redirect** is a permanent redirection that automatically sends visitors to a new URL when the original page has moved or been deleted. This ensures that visitors and search engines are directed to the correct content instead of encountering errors. 301 redirects help preserve **SEO value** and improve **user experience**.
