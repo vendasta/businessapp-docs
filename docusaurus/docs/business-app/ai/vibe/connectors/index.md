@@ -8,11 +8,12 @@ unlisted: false
 
 Connectors let your Vibe-built app do real work, not just look like it could. Each connector is a thin layer over a Business App service: instead of mocking a contact form or hardcoding a fake login button, the generated UI hooks into the live platform feature behind it. You ask for the behavior in plain English; the supervisor agent activates the connectors that are turned on for your project.
 
-There are four connectors today:
+There are five connectors today:
 
 - [Single sign-on](./single-sign-on.md) — let your customers sign in with their existing account.
 - [Forms](./forms) — capture form submissions from your app.
 - [Analytics](./analytics.md) — surface in-app metrics for signed-in users.
+- [CRM](./crm.md) — surface your contacts, companies, and opportunities.
 - [Supabase](./supabase.md) — connect your app to a Supabase database.
 
 ## Enabling a connector
@@ -38,5 +39,6 @@ That single prompt activates Forms (contact), Single sign-on (members area), and
 - [Forms](./forms) — Capture contact form and lead submissions from your app
 - [Single sign-on](./single-sign-on.md) — Gate a members area with existing customer accounts
 - [Analytics](./analytics.md) — Surface multi-location metrics for signed-in users
+- [CRM](./crm.md) — Surface contacts, companies, and opportunities in your app
 - [Prompting Library](../prompting-library.md) — Ready-made prompts for each connector
 
