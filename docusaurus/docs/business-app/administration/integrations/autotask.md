@@ -13,10 +13,10 @@ Datto Autotask PSA is a professional services automation platform for managing c
 
 ## What this integration does
 
-- **Syncs companies** — Business name, phone, email, address, and website sync in both directions.
-- **Syncs contacts** — First name, last name, phone, email, address, and company association sync in both directions.
-- **Logs every sync event** — Each sync is recorded as a note in the Activity Feed.
-- **Protects your records** — Deleting a record in one system does not delete it in the other. An activity note is logged instead.
+- **Syncs companies**: Business name, phone, email, address, and website sync in both directions.
+- **Syncs contacts**: First name, last name, phone, email, address, and company association sync in both directions.
+- **Logs every sync event**: Each sync is recorded as a note in the Activity Feed.
+- **Protects your records**: Deleting a record in one system does not delete it in the other. An activity note is logged instead.
 
 | Data | Autotask to Business App | Business App to Autotask |
 |------|--------------------------|--------------------------|
@@ -68,34 +68,25 @@ If companies or contacts already exist in both Autotask and Business App, import
 
 Open each company or contact in Autotask and locate the ID in the URL bar or in the record detail panel.
 
-### Prepare a companies CSV
+### Prepare your company CSV
 
-Create a CSV file with these columns. Enter the External ID in the format `autotask:{id}`.
+Create a CSV file with the columns below. The **External ID** column is critical. It links the Business App record to the Autotask record.
 
-- Company Name
-- Company Website
-- Phone number
-- Street address line 1
-- City/locality
-- State/province/region
-- Zip/postal code
-- Country
-- External ID
+The format must be exactly `autotask:{id}`, with no spaces.
 
-### Prepare a contacts CSV
+| Company Name | Company Website | Phone number | Street address line 1 | City/locality | State/province/region | Zip/postal code | Country | External ID |
+|---|---|---|---|---|---|---|---|---|
+| Marqt Administratie | www.example.com | 85657687 | 1032 8th Street East | Saskatoon | SK | S7H 0S2 | CA | autotask:30684201 |
+| Albany Apple Store | www.albanyapple.com | 55501234 | 123 Main St | Albany | NY | 12207 | US | autotask:29683562 |
 
-Create a second CSV file with these columns, again using `autotask:{id}` for the External ID.
+### Prepare your contacts CSV
 
-- First name
-- Last name
-- Phone number
-- Email
-- Street address line 1
-- City/locality
-- State/province/region
-- Zip/postal code
-- Country
-- External ID
+Create a CSV file for contacts following the same format, with `autotask:{id}` as the External ID.
+
+| First name | Last name | Phone number | Email | Street address line 1 | City/locality | State/province/region | Zip/postal code | Country | External ID |
+|---|---|---|---|---|---|---|---|---|---|
+| Jane | Smith | 5550100 | jane.smith@example.com | 1032 8th Street East | Saskatoon | SK | S7H 0S2 | CA | autotask:30684161 |
+| Sneha | Iyer | 4353 4545 | sneha.iyer@example.com | 1 Grand Southern Trunk Road | Chennai | Tamil Nadu | 600016 | India | autotask:30686245 |
 
 ### Import the files
 
@@ -132,11 +123,11 @@ Import companies before contacts so that each contact can be matched to its comp
 ![Autotask integration card on the Integrations page](../img/autotask/autotask_integration_card.png)
 
 3. In the **Connect Autotask** dialog, enter:
-   - **User Name** — the username of your Autotask API user
-   - **Secret** — the API key associated with that user
+   - **User Name**: the username of your Autotask API user
+   - **Secret**: the API key associated with that user
 4. Review the sync settings. Both are selected by default:
-   - **Sync back to Autotask** — reflects changes made in Business App back in Autotask. Recommended.
-   - **Set as Primary CRM** — designates Autotask as the primary system for newly created contacts.
+   - **Sync back to Autotask**: reflects changes made in Business App back in Autotask. Recommended.
+   - **Set as Primary CRM**: designates Autotask as the primary system for newly created contacts.
 5. Click **Add Connection**.
 
 ![Connect Autotask dialog with the User Name and Secret fields and the two sync checkboxes](../img/autotask/autotask_preconnect_form.png)
@@ -238,7 +229,7 @@ No. Deletes are non-destructive. An activity note is created instead.
 <details>
 <summary>Can multiple users connect to the same Autotask account?</summary>
 
-No. One connection is supported per account, at the account level rather than the user level.
+No. One connection is supported per account. The connection belongs to the account itself, not to the person who set it up.
 
 </details>
 
