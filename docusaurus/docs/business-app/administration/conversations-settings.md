@@ -44,7 +44,7 @@ Connect messaging channels so they appear in your unified inbox:
 ## Related
 
 - [Email Configuration](./email/email-configuration)
-- [SMS Configuration](./sms_configuration.mdx)
+- [SMS Configuration](./sms_configuration.md)
 - [Conversations overview](../conversations/index.mdx)
 - [Web Chat](../conversations/web-chat)
 - [Facebook Messenger](../conversations/facebook-messenger.mdx)
@@ -70,7 +70,7 @@ You can assign an AI Employee to automatically respond on certain channels. [Lea
 <details>
 <summary>What is A2P 10DLC registration?</summary>
 
-A2P 10DLC (Application-to-Person 10-Digit Long Code) registration is a requirement for US businesses sending SMS messages. It verifies your business identity and ensures your website meets carrier compliance requirements. See [SMS Registration for US Businesses](./sms_configuration.mdx) for the complete registration guide.
+A2P 10DLC (Application-to-Person 10-Digit Long Code) registration is a requirement for US businesses sending SMS messages. It verifies your business identity and ensures your website meets carrier compliance requirements. See [SMS Registration for US Businesses](./sms_configuration.md) for the complete registration guide.
 
 </details>
 

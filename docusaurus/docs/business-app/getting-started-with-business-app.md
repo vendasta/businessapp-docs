@@ -154,7 +154,7 @@ Train your AI with your website content and frequently asked questions so respon
 
 ## Step 5: Register for SMS and customize notifications
 
-If you want to send and receive text messages with customers, complete [SMS registration](./administration/sms_configuration.mdx) (required for US businesses). You can also adjust how you receive alerts so you never miss important activity.
+If you want to send and receive text messages with customers, complete [SMS registration](./administration/sms_configuration.md) (required for US businesses). You can also adjust how you receive alerts so you never miss important activity.
 
 ### SMS registration (US businesses only)
 
@@ -220,5 +220,5 @@ Go to **Administration** > **Connections** > **Manage** to see all active integr
 <details>
 <summary><strong>Is SMS available for my business?</strong></summary>
 
-SMS is available for businesses located in the United States and Canada. US businesses must complete A2P 10DLC registration before sending messages. See [SMS setup](./conversations/sms/index.mdx) and [SMS registration for US businesses](./administration/sms_configuration.mdx) for details.
+SMS is available for businesses located in the United States and Canada. US businesses must complete A2P 10DLC registration before sending messages. See [SMS setup](./conversations/sms/index.mdx) and [SMS registration for US businesses](./administration/sms_configuration.md) for details.
 </details>

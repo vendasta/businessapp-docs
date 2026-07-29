@@ -83,7 +83,7 @@ The URL you provide must link directly to the privacy policy page — not to a h
 
 **Example:** The following screenshot shows a [compliant privacy policy](https://a2p-example-site-f0f4efd9.vendasta.ai/privacy) with the required SMS language.
 
-<img src={require('./img/us-business-privacy-policy.png').default} alt="Privacy policy page with SMS consent and data sharing language" style={{maxWidth: '85%'}} />
+<img src={require('./img/us-business-privacy-policy.png').default} alt="Privacy policy page with SMS consent and data sharing language" width="85%" />
 
 ## Terms and conditions
 
@@ -116,7 +116,7 @@ The URL must link directly to the terms and conditions page.
 
 **Example:** The following screenshot shows [compliant terms of service](https://a2p-example-site-f0f4efd9.vendasta.ai/terms) with the required SMS program section.
 
-<img src={require('./img/us-business-terms-of-service.png').default} alt="Terms of service page with SMS Communications Program section" style={{maxWidth: '85%'}} />
+<img src={require('./img/us-business-terms-of-service.png').default} alt="Terms of service page with SMS Communications Program section" width="85%" />
 
 ## Consent and opt-in
 
@@ -148,7 +148,7 @@ Neither consent checkbox must be required to complete the form. Customers must b
 
 **Example:** The following screenshot shows a [compliant web form](https://a2p-example-site-f0f4efd9.vendasta.ai/contact) with separate consent checkboxes for transactional and promotional SMS.
 
-<img src={require('./img/us-business-web-form.png').default} alt="Compliant web form with separate transactional and promotional SMS consent checkboxes" style={{maxWidth: '70%'}} />
+<img src={require('./img/us-business-web-form.png').default} alt="Compliant web form with separate transactional and promotional SMS consent checkboxes" width="70%" />
 
 ### Call-to-action placement
 
