@@ -170,7 +170,11 @@ To change whether updates flow back into Autotask, adjust the **Sync back to Aut
 | Contacts are not appearing | The contact is not linked to a company | Link the contact to a company in Autotask |
 | Duplicate records | Autotask IDs were not imported before connecting | Disconnect, clean up the duplicates, bulk import with `external_id`, then reconnect |
 | Connection shows "Broken" | Credentials expired or were revoked | Click **Re-authenticate** and enter the credentials again |
-| Sync back is not working | The record is missing its Autotask ID | Check whether `autotask-company-id` or `autotask-contact-id` is empty, then use bulk import to add it |
+| Sync back is not working | The record is missing its Autotask ID | Check whether `autotask-company-id` or `autotask-contact-id` is empty. If it is, use bulk import to add the external IDs |
+
+:::note
+`autotask-company-id` and `autotask-contact-id` are the system ID fields the integration reads when syncing a record back to Autotask. Importing your `external_id` values in the `autotask:{id}` format is what populates them, which is why records that were never imported cannot sync back.
+:::
 
 ### Clean up existing duplicates
 
