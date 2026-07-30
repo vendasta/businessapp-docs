@@ -24,7 +24,7 @@ Before you start the registration form, confirm that every item below is in plac
 6. Your business does **not** fall into a [prohibited or high-scrutiny category](#prohibited-and-high-scrutiny-content)
 
 :::tip Check before you submit
-On the review step of the registration form, click **Analyse** to have the AI Verification assistant check your entry. It reviews your campaign details together with the pages you linked — your privacy policy, terms of service, and any opt-in or contact forms — and flags issues by severity with the specific fix for each one. This check is optional and does not prevent you from submitting.
+On the review step of the registration form, click **Check with AI** to have the AI Verification assistant check your entry. It reviews your campaign details together with the pages you linked — your privacy policy, terms of service, and any opt-in or contact forms — and flags issues by severity with the specific fix for each one. This check is optional and does not prevent you from submitting.
 :::
 
 ## Brand information
