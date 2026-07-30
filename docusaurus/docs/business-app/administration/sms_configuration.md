@@ -8,6 +8,8 @@ keywords: [A2P registration, 10DLC, SMS registration, US business SMS, carrier c
 
 US phone carriers require businesses to register before sending SMS messages to customers. This process is called A2P 10DLC (Application-to-Person 10-Digit Long Code) registration. It verifies your business identity and confirms that your website meets carrier compliance standards. Without an approved registration, your business cannot send or receive SMS messages through US phone numbers.
 
+For a **working example** of a compliant website, see the [sample website](https://a2p-example-site-f0f4efd9.vendasta.ai/) which includes a privacy policy, terms of service, and web form that meet all carrier requirements.
+
 :::info Canadian businesses
 This registration is only required for businesses located in the United States. Canadian businesses can use SMS messaging immediately without registration.
 :::
@@ -257,4 +259,10 @@ No. The form cannot be edited or canceled once submitted. If information was mis
 <summary><strong>What phone number will my messages come from?</strong></summary>
 
 Your business is assigned a local phone number based on your business address. If no local numbers are available, you receive a number from a nearby area code. You can view your assigned number in **Administration > Conversations Settings > Phone & SMS**.
+</details>
+
+<details>
+<summary><strong>Is there an example of a compliant website I can reference?</strong></summary>
+
+Yes. The [sample website](https://a2p-example-site-f0f4efd9.vendasta.ai/) shows a fully compliant setup including a [privacy policy](https://a2p-example-site-f0f4efd9.vendasta.ai/privacy), [terms of service](https://a2p-example-site-f0f4efd9.vendasta.ai/terms), and [contact form](https://a2p-example-site-f0f4efd9.vendasta.ai/contact) with proper consent checkboxes.
 </details>
