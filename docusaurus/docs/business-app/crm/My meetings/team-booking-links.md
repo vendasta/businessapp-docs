@@ -56,7 +56,7 @@ Meetings rotate evenly across all available team members in a set sequence. Each
 
 ### Priority assignment
 
-Customers see available time slots only — the system silently assigns the right provider based on your ranked order. No customer input required.
+Customers see available time slots only, the system silently assigns the right provider based on your ranked order. No customer input required.
 
 **How it works:**
 
@@ -67,8 +67,6 @@ Customers see available time slots only — the system silently assigns the righ
 - **Default order** — If you have not manually ranked your providers, the system defaults to the order they were added to the event type.
 
 To reorder providers, drag team members up or down in the event type editor. The order you set drives assignment logic.
-
-![Priority assignment — drag to reorder providers](../img/my-meetings/priority-assignment-editor.png)
 
 **Best for:** Service businesses where specific staff should be booked first (e.g., master stylist, top closer, most experienced practitioner), or hierarchical structures where senior members should handle most bookings.
 
