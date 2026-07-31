@@ -20,32 +20,33 @@ In the Business App, all members of a business are part of a single team. Team e
 ## Create a new team booking link
 
 1. Go to `CRM` > `My Meetings`.
+
+![My Meetings in the CRM menu](../img/my-meetings/team-booking-links-home-page.png)
+
 2. Click **Manage booking links**.
-3. Click **+ New** under **Your Team Event Links**.
 
-![Team booking links overview](../img/my-meetings/team-booking-links-1.png)
+![Manage booking links](../img/my-meetings/team-booking-links-manage-link.png)
 
-4. Click **+ New Team booking**.
+3. On the **Event types** tab, click **Create event type**, then select **Team**.
 
-![Create a new team booking link](../img/my-meetings/team-booking-links-2.png)
+![Create event type — select Team](../img/my-meetings/team-booking-links-create-event-type.png)
 
-5. Configure the following fields:
+4. Configure the event type details:
 
-![Team booking form](../img/my-meetings/team-booking-links-3.png)
+![Event type details](../img/my-meetings/team-booking-links-event-type-details.png)
 
-- **Event Title** — What clients see when they book.
-- **Event Link Name** — Creates the URL for your booking link (e.g., `/team-meeting`).
-- **Description** — Optional description of the meeting.
-- **Duration** — Length of the meeting.
-- **Team Members** — Select the team members included in this booking link.
+- **Name** — What clients see when they book.
+- **Link** — Creates the URL for your booking page (e.g., `bookmenow.info/you/team-meeting`).
+- **Location** — Choose **Video** or **In-Person** for how the meeting takes place.
+- **Duration** — Length of the meeting, in minutes. Choose a preset or select **Custom**.
+- **Description** (optional) — Details about the meeting shown to clients.
+- **Color** — Choose a color to identify this event type on your calendar.
 
-6. Click **Save** to create the team booking link.
+## Team members and assignment method
 
-## Assignment methods
+![Team members](../img/my-meetings/team-booking-links-team-members.png)
 
-Choose how meetings are distributed to team members.
-
-![Assignment methods](../img/my-meetings/team-booking-links-4.png)
+Under **Team members**, choose how meetings are distributed, then select which team members are included.
 
 ### Round robin
 
@@ -95,7 +96,7 @@ Multiple team members attend the same meeting together rather than one person be
 
 **Best for:** Complex sales processes requiring multiple stakeholders (e.g., Sales Rep + Solutions Engineer), onboarding sessions, or consultations needing multiple experts.
 
-## Selecting team members
+### Selecting team members
 
 For all assignment methods:
 
@@ -103,11 +104,79 @@ For all assignment methods:
 2. Click the **X** next to any team member to remove them.
 3. Each selected team member must have their calendar connected and properly configured.
 
-## Managing availability
+## General availability
 
-![Managing availability](../img/my-meetings/team-booking-links-6.png)
+![General availability](../img/my-meetings/team-booking-links-general-availability.png)
 
-Team members can be assigned to different days and time periods. For example, some members might be available Monday–Wednesday while others are available Thursday–Friday. Each member's individual availability settings and buffer times are respected.
+Set the days you're generally available to accept meetings for this event type.
+
+- Turn on each day you want to accept bookings, then set your available hours for that day.
+- Days left off show as **Unavailable** and won't offer any booking times to clients.
+
+## Additional settings
+
+The following settings are optional and turned off by default. Review each one and turn on whatever fits how your team takes bookings.
+
+### Questions for invitee
+
+![Questions for invitee](../img/my-meetings/team-booking-links-questions-for-invitee.png)
+
+By default, clients are asked for their **First Name**, **Last Name**, and **Email** when booking. You can also collect a **Phone Number** and **Comments**.
+
+- Turn on **Required** next to **Phone Number** to make it mandatory.
+- When a phone number is required, clients are also asked, "Which channel would you like your customers to receive confirmations on?" and choose **Phone** or **Email**.
+- Click **+ Add question** to create custom questions for clients to answer when booking. Their answers are available to the assigned team member.
+
+### Customize invitation email
+
+![Customize invitation email](../img/my-meetings/team-booking-links-customize-invitation-email.png)
+
+Write a custom **Subject** and **Description** for meeting invitations. This customization only applies to invitations sent through the CRM — not to meetings booked through your public scheduling link.
+
+### Redirect to a custom URL
+
+![Redirect to a custom URL](../img/my-meetings/team-booking-links-redirect-custom-url.png)
+
+Turn on **Redirect to a custom URL after booking** to send clients to a page of your choice — like a thank-you page — right after they confirm their booking. Enter the **Destination URL** and set a **Redirect delay** in seconds.
+
+### Meeting limits
+
+![Meeting limits](../img/my-meetings/team-booking-links-meeting-limits.png)
+
+Turn on **Daily limit** to cap how many meetings can be booked per day for this event type. Set your **Daily meeting limit** — clients can't book more than this number of meetings in a single day. The limit resets at midnight.
+
+### Availability increment
+
+![Availability increment](../img/my-meetings/team-booking-links-availability-increment.png)
+
+Choose the increment — 5, 10, 15, 30, or 60 minutes — used to display your available time slots to clients.
+
+### Meeting buffers
+
+![Meeting buffer before](../img/my-meetings/team-booking-links-buffer-before.png)
+
+![Meeting buffer after](../img/my-meetings/team-booking-links-buffer-after.png)
+
+Set a buffer **before** and/or **after** each meeting (0, 5, 10, 15, 30, or 60 minutes) to leave time for travel, notes, or other preparation.
+
+### Advance notice
+
+![Advance notice](../img/my-meetings/team-booking-links-advance-notice.png)
+
+Set how much advance notice you need before a meeting can be booked (0, 1, 2, 4, 12, 24, or 48 hours) to prevent last-minute bookings.
+
+### Limit future meetings
+
+![Limit future meetings](../img/my-meetings/team-booking-links-limit-future-meetings.png)
+
+Control how far in the future this event type can be booked:
+
+- Limit bookings to a set number of days, weeks, or months into the future, or
+- Limit bookings to a specific date range by entering a start and end date.
+
+## Save your team booking link
+
+Once you've configured your event type, click **Save** to create the team booking link.
 
 ## Calendar customization
 
@@ -126,12 +195,6 @@ Choose how timezones are handled:
 - Use the company timezone.
 - Adjust to the visitor's timezone.
 - Set a specific timezone.
-
-## Customizing your booking page
-
-![Customizing booking page](../img/my-meetings/team-booking-links-8.png)
-
-Personalize the team booking page with custom colors and questions. Custom questions are answered by visitors at booking time and are available to the assigned team member.
 
 ## Viewing and sharing your team booking link
 
