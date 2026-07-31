@@ -112,7 +112,15 @@ After outputting the report, apply all auto-fixable issues using the Edit tool. 
 
 ### Step 8: Interactive approval flow for pending items
 
-After auto-fixes are applied, check whether any articles have items listed under **Pending approval**. If none, skip this step.
+**Pending approval is the single bucket for every non-auto-fixed finding.** Before checking whether this step applies, sweep every other report section — Link check, Logo check, and the qualitative review from Step 5 — and copy anything actionable into **Pending approval** if it isn't there already:
+
+- A broken or restricted external link (Step 3), a broken internal link or dead anchor (Step 4), or a broken inbound anchor (Step 4b) is a concrete finding, not a footnote. It goes in **Pending approval**, not only in **Link check**.
+- An outdated logo (Step 4c) is a concrete finding. It goes in **Pending approval**, not only in **Logo check**.
+- Prohibited/hedging language, tone issues, or any other Step 5 finding that isn't on the auto-fix whitelist is a concrete finding. It goes in **Pending approval**.
+
+**Needs verification** is reserved only for items where nothing was actually found wrong — a spot-check reminder for content this repo has no way to confirm (e.g., "this button label may have changed, verify in the live product"). If you found a concrete problem, it is never "just" a Needs verification note — it belongs in Pending approval and must go through this step.
+
+After auto-fixes are applied and every actionable finding has been folded into **Pending approval**, check whether any articles have items listed there. If none, skip the rest of this step.
 
 Work through pending items **one article at a time**, in the order they appeared in the report.
 
@@ -126,7 +134,7 @@ Work through pending items **one article at a time**, in the order they appeared
 
 > "**[Article title]** ([path/to/file.mdx](path/to/file.mdx)) — [N] item(s) need your input."
 
-**For each individual pending item**, present the proposal clearly before asking. Always include the filename as a clickable link so the user can jump to the file:
+**For each individual pending item**, present the proposal clearly before asking. **This block is always sent as regular chat output — never skip it, and never substitute it by folding the context into the AskUserQuestion tool call's `question` or `options` text.** The user should never have to ask "what's the context" or "where's the link" — it's already on the screen before the question appears. Always include the filename as a clickable markdown link so the user can jump straight to the file:
 
 ```
 **Issue:** [One plain sentence — no jargon — describing what was found and why it matters]
@@ -135,7 +143,7 @@ Work through pending items **one article at a time**, in the order they appeared
 **Proposed:** "[exact replacement text]"
 ```
 
-Then use AskUserQuestion with:
+Only after that block has been sent as its own message, call AskUserQuestion with:
 - Question: `Apply this change?`
 - Option 1: `Yes — apply it`
 - Option 2: `No — skip it`
@@ -195,6 +203,22 @@ Use AskUserQuestion:
 Use AskUserQuestion:
 - `Flag it with an inline comment for image replacement`
 - `Leave it as-is — I'll handle the recapture separately`
+
+**Broken or restricted link** (external 4xx/timeout, missing internal target, or dead anchor):
+
+```
+**Issue:** This link returned [404 / 403 / timeout / target file not found / anchor not found] — readers who click it will hit an error.
+**Location:** Line [N] in [filename](path/to/file.mdx)
+**Current:** "[the link text and URL as it appears in the file]"
+**Proposed:** [A specific fix if one is evident — e.g. remove the link, point it at a known-good replacement URL, or fix the internal path/anchor. If no safe replacement is evident, say so and offer removal as the fallback option.]
+```
+
+Use AskUserQuestion with options tailored to what's evident, e.g.:
+- `Apply the proposed fix`
+- `Remove the link entirely`
+- `Leave it for now — I'll handle this manually`
+
+A link check can also produce a false positive (e.g. a site blocking automated/bot traffic while working fine in a real browser) — if the user reports back that a flagged link actually works, do not re-flag it or apply a fix; treat their live confirmation as authoritative over the automated check.
 
 **SME review item** (no change can be proposed without product knowledge):
 
@@ -458,23 +482,25 @@ Produce one block per article. Use this exact structure:
 - Line 34: `**Settings > Connections**` → `` `Settings` > `Connections` `` (UI formatting)
 
 **Pending approval**
-[Bullet list of issues that require user or SME confirmation before editing. Use "None" if all issues were auto-fixed or article passed.]
+[Bullet list of every finding that requires user or SME confirmation before editing — including broken links and outdated logos surfaced below, not just content/UI judgment calls. Use "None" if all issues were auto-fixed or article passed.]
 - Line 19: Blockquote used as a callout — verify intended type (info, tip, warning) before converting
 - Line 44: Button labeled `Submit` — confirm this button still exists and has the same label in the live product
+- Line 61: https://example.com/guide returns 404 — propose removing the link or replacing it
+- ./img/connect-account.png — shows the outdated logo mark in the top nav; needs recapture with current branding
 
 **Link check**
-[Results of external and internal link checks, including anchor resolution (Step 4) and inbound links from elsewhere in the repo (Step 4b). Use "No links found" or "All links verified" if applicable.]
+[Raw results of external and internal link checks, including anchor resolution (Step 4) and inbound links from elsewhere in the repo (Step 4b). Use "No links found" or "All links verified" if applicable. Anything broken here must also appear in Pending approval.]
 - https://example.com/guide — 404 Not Found (broken)
 - ../accounts/connect-profile.md — file not found (broken internal link)
 - ../accounts/connect-profile.md#old-heading — file exists but anchor not found (heading was likely renamed)
 - Inbound: `other-article.mdx` links here with `#section-that-no-longer-exists` — broken by this verification's heading changes
 
 **Logo check**
-[Results of the Step 4c screenshot review. Use "No product branding visible in images" or "All screenshots reflect current branding" if applicable.]
+[Raw results of the Step 4c screenshot review. Use "No product branding visible in images" or "All screenshots reflect current branding" if applicable. Anything outdated here must also appear in Pending approval.]
 - ./img/connect-account.png — shows the outdated logo mark in the top nav; needs recapture with current branding
 
 **Needs verification**
-[UI element names, navigation paths, product references, or content claims to spot-check against the live product. Use "None" if nothing stands out.]
+[Spot-check reminders only — items where nothing was found to be actually wrong, just content this repo can't confirm against the live product (e.g. "this button label may have changed"). If you found a concrete problem, it belongs in Pending approval instead, not here. Use "None" if nothing stands out.]
 
 ---
 ```
@@ -530,6 +556,8 @@ The article is mostly clear and well-structured. Two audience-language issues an
 - **Never assert** that content is wrong — use "may be outdated" or "verify with SME" when uncertain.
 - **Never infer functionality** from the article text. If a step or feature claim cannot be verified from other current documentation, flag it for SME review.
 - **Apply auto-fixes immediately, flag the rest** — sentence casing, audience language, UI formatting, and blockquote-to-callout fixes are applied directly without asking. All other changes require explicit approval before editing.
+- **Nothing bypasses the approval flow** — a broken link or an outdated logo is just as much a "pending" item as a gray-label term or a UI reference. Every concrete finding that isn't auto-fixed must be copied into Pending approval and walked through Step 8, never left to sit only in Link check, Logo check, or Needs verification where it can be missed.
+- **Always show context before asking** — the Issue/Location/Current/Proposed block is sent as its own chat message before every AskUserQuestion call in Step 8, with the file as a clickable link. Never fold that context into the tool call itself and never make the user ask for it.
 - **Check every link** — do not skip link checks even if the article looks clean. This includes anchor fragments (Step 4) and inbound links from other articles into the ones you're editing (Step 4b) — a heading rename that looks harmless in isolation can silently break a link on a page you never opened.
 - **Check every screenshot for logo currency** — do not skip Step 4c even if the article text looks clean. A screenshot can be fully accurate in what it depicts and still show a superseded logo mark. Never auto-replace an image — always flag it for recapture.
 - **Report on every article** — even articles that pass should appear in the output with "Status: Pass" and a brief confirmation.
