@@ -13,6 +13,8 @@ Run automations on a recurring schedule without waiting for an event to trigger 
 
 Unlike event-based triggers that run when something happens (like a company or contact creation), time-based triggers run at times you define. You set the frequency, time of day, and date range, and the automation runs automatically.
 
+Alongside your automation's description, the **On a schedule** trigger also displays when the automation will run next, so you can confirm the schedule at a glance without opening the configuration panel.
+
 **Key benefits:**
 - Automate recurring tasks without manual intervention
 - Run automations at optimal times for your audience
