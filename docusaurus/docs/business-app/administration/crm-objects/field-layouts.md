@@ -38,7 +38,7 @@ Every object starts with a standard layout. When you change it, your version tak
 5. Arrange your fields using the three panels described below.
 6. Click `Done` to save.
 
-<!-- SCREENSHOT: organize-layout-button.png - The CRM Objects page with Contacts selected, showing the "Organize layout" button next to "Create" above the field list. -->
+![CRM objects page with Contacts selected, showing the Organize layout button beside Create field above the field list](./img/organize-layout-button.png)
 
 ### The three panels
 
@@ -50,15 +50,18 @@ Every object starts with a standard layout. When you change it, your version tak
 
 Drag any field from one panel to another, or from one group to another. To move several fields at once, select them and choose `Add to group` or `Hide field`.
 
-<!-- SCREENSHOT: organize-layout-editor.png - The full editor for Contacts: the Unassigned panel on the left with its sort control, two or three named field groups in the centre, and the Hidden fields panel on the right. -->
+![The Organize field layout editor for Contacts, with the Unassigned panel and its sort control on the left, two named field groups in the centre, and the Hidden fields panel on the right](./img/organize-layout-editor.png)
 
 ### Working with groups
 
 - Click `Add group` and give it a name. Every group needs a name, and no two groups can share one.
-- Click a group's name to rename it.
+- Rename a group with the pencil icon in its header. Press Enter to confirm, or Escape to cancel.
+- Delete a group with the trash icon. The fields inside it go back to `Unassigned`.
+- Click a group's name, or the chevron, to collapse and expand it. The number beside the name is how many fields it holds.
 - Drag a group to move it up or down. The order here is the order on the record.
 - Drag fields inside a group to reorder them.
-- Use a field's menu to pick `Move to` another group, `Remove to Unassigned`, or `Hide field`.
+- Use a field's `⋮` menu to pick `Move to` another group, `Remove to Unassigned`, or `Hide field`.
+- In `Unassigned`, the `+` button on a field is a shortcut. It lists every group, so you can drop the field straight into one or hide it.
 
 :::warning
 Every group must contain at least one visible field. An empty group stops the layout from saving, so either add a field to it or delete it.
@@ -79,9 +82,11 @@ A field you have just created starts out unassigned, so it appears on records st
 
 Drag a field into `Hidden fields` to take it off the record. Hiding is not deleting. The field and everything stored in it stay exactly as they are, and the field still works in imports and integrations.
 
-To bring a hidden field back, use `Restore to Unassigned`, then drag it wherever you want it.
+![The Hidden fields panel holding three hidden contact fields, under the heading explaining that fields here are hidden from contact records](./img/organize-layout-hidden.png)
 
-<!-- SCREENSHOT: organize-layout-hidden.png - The Hidden fields panel holding two or three fields, with the helper text explaining that fields here are hidden from records, and a field's Restore action visible. -->
+To bring a hidden field back, open its `⋮` menu and choose `Restore to Unassigned`, then drag it wherever you want it.
+
+![A hidden field's menu open in the Hidden fields panel, showing the Restore to Unassigned action](./img/organize-layout-restore.png)
 
 ### Fields you won't see in the editor
 
