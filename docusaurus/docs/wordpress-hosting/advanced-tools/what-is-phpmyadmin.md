@@ -8,46 +8,46 @@ phpMyAdmin is an open-source web-based tool that allows you to manage the databa
 
 Here's what phpMyAdmin is commonly used for:
 
-1. **Managing the WordPress Hosting Database**
-   * WordPress stores all content, settings, and user data in its database. phpMyAdmin allows you to view, edit, and manage this database.
+* **Managing the WordPress Hosting Database**
+  * WordPress stores all content, settings, and user data in its database. phpMyAdmin allows you to view, edit, and manage this database.
 
-2. **Backing Up the Database**
-   * You can export the database as a backup, ensuring that your site's data is secure in case of an issue.
+* **Backing Up the Database**
+  * You can export the database as a backup, ensuring that your site's data is secure in case of an issue.
 
-3. **Restoring the Database**
-   * In case of data loss or corruption, you can use phpMyAdmin to import a previously backed-up database.
+* **Restoring the Database**
+  * In case of data loss or corruption, you can use phpMyAdmin to import a previously backed-up database.
 
-4. **Resetting User Passwords**
-   * If you're locked out of your WordPress admin account, phpMyAdmin allows you to reset the password directly by editing the `wp_users` table.
+* **Resetting User Passwords**
+  * If you're locked out of your WordPress admin account, phpMyAdmin allows you to reset the password directly by editing the `wp_users` table.
 
-5. **Troubleshooting and Fixing Issues**
-   * If the site is experiencing database-related errors (e.g., a corrupted table), phpMyAdmin can help repair or optimize database tables.
+* **Troubleshooting and Fixing Issues**
+  * If the site is experiencing database-related errors (e.g., a corrupted table), phpMyAdmin can help repair or optimize database tables.
 
-6. **Deleting Spam Comments**
-   * Bulk delete spam or unapproved comments directly from the `wp_comments` table.
+* **Deleting Spam Comments**
+  * Bulk delete spam or unapproved comments directly from the `wp_comments` table.
 
-7. **Changing Site URLs**
-   * If you need to move your WordPress site to a different domain or folder, you can update the site URL in the `wp_options` table.
+* **Changing Site URLs**
+  * If you need to move your WordPress site to a different domain or folder, you can update the site URL in the `wp_options` table.
 
-8. **Optimizing Database Performance**
-   * You can clean up unnecessary data (like revisions, drafts, or spam) and optimize database tables for better site performance.
+* **Optimizing Database Performance**
+  * You can clean up unnecessary data (like revisions, drafts, or spam) and optimize database tables for better site performance.
 
-9. **Adding or Editing Data**
-   * Manually add or update content, settings, or plugin data in the database.
+* **Adding or Editing Data**
+  * Manually add or update content, settings, or plugin data in the database.
 
 **Here's how you can access phpMyAdmin in WordPress Hosting:**
 
 * Log in to your WordPress Hosting product.
-* Once you're in the WordPress Hosting dashboard, navigate to **Advanced Tools** and click on **phpMyAdmin**.
+* Once you're in the WordPress Hosting dashboard, navigate to `Advanced Tools` and click on `phpMyAdmin`.
 
-:::important
+:::warning
 * **Use with Caution**: phpMyAdmin gives you direct access to your database, so making changes without understanding their implications can break your site.
 * **Backup First**: Always create a database backup before making changes via phpMyAdmin.
 :::
 
 phpMyAdmin is a vital tool for WordPress administrators and developers, offering flexibility and control for managing database-related tasks.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>How can I find the database connection string for my site?</summary>
@@ -79,11 +79,11 @@ If a site exceeds the MySQL resource limit, it may result in HTTP 500 internal s
 
 **How to prevent and resolve MySQL limit issues**
 
-1. **Optimize Plugins and Themes** – Regularly audit and update plugins and themes to ensure they are well-coded and efficient.
-2. **Monitor Site Traffic** – Use monitoring tools to track traffic spikes and detect unusual activity.
-3. **Implement Caching Solutions** – Caching can reduce the number of direct database queries by serving stored content instead.
-4. **Database Optimization** – Regularly clean up unnecessary data, optimize database tables, and remove outdated records.
-5. **Security Measures** – Use security plugins and firewalls to prevent malicious attacks that generate excessive database queries.
+1. **Optimize Plugins and Themes**: Regularly audit and update plugins and themes to ensure they are well-coded and efficient.
+2. **Monitor Site Traffic**: Use monitoring tools to track traffic spikes and detect unusual activity.
+3. **Implement Caching Solutions**: Caching can reduce the number of direct database queries by serving stored content instead.
+4. **Database Optimization**: Regularly clean up unnecessary data, optimize database tables, and remove outdated records.
+5. **Security Measures**: Use security plugins and firewalls to prevent malicious attacks that generate excessive database queries.
 
 </details>
 

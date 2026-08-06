@@ -1,0 +1,57 @@
+---
+title: "Use custom Activity Fields to build on your existing SFDC reports"
+description: "Use custom Activity Fields to build on your existing SFDC reports"
+sidebar_label: "Custom Activity Fields"
+sidebar_position: 10
+---
+
+# Custom Activity Fields
+
+If your team is syncing Yesware activity to Salesforce on the Enterprise plan, you can use Yesware's custom Activity Fields to build reports or add Yesware data to your existing Salesforce reports.
+
+## Salesforce sync logic
+
+When a rep sends an email with Salesforce Sync enabled, Yesware looks for the first email address in the **To** field that matches a Lead or Contact in Salesforce, then syncs all tracking activity and replies to that record.
+
+**Match priority:**
+
+- Yesware prefers **Leads over Contacts**
+- If no Lead is found, it looks for a matching Contact
+- If a Contact is found, activity syncs to the Contact and its associated Account
+- If the Contact is a Contact Role on an open Opportunity, activity also syncs to that Opportunity
+
+**If multiple matches are found**, Yesware prefers:
+
+1. Leads over Contacts
+2. Open Opportunities with the most recent created date
+3. Records with the most recent last activity date
+4. Records with the most recent last modified date
+
+**If no match is found**, the activity is not synced.
+
+Calendar events synced via **Calendar Sync** follow the same logic. Events sync as Open Events until the meeting time passes, then become Completed Events in the Activity History.
+
+## Yesware Activity Type field
+
+The **Yesware Activity Type** field lets you filter Salesforce reports by the type of Yesware action that was logged. For every action taken in Yesware, a task is synced to Salesforce with a unique subject line (e.g., `Message Sent: [Subject]`).
+
+Activity types available for reporting:
+
+| Activity | Salesforce value |
+|---|---|
+| Email send | Message Sent |
+| Email open | Message Opened |
+| Reply received | Reply received |
+| Link click | Link clicked |
+| Attachment open | Attachment Opened |
+| Bounce | Bounce received |
+| Meeting set | Event Synced |
+
+## Yesware Template Name field
+
+The **Yesware Template Name** field lets you filter by a specific template to report on sends, opens, and replies per template — useful for A/B testing messaging across your team.
+
+Combine **Template Name** and **Yesware Activity Type** to see full engagement data for a specific template:
+
+- `Yesware Template Name = [Template Name]`
+- `Yesware Activity Type = Message Sent / Message Opened / Reply received`

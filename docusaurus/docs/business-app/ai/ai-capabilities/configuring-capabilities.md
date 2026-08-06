@@ -64,6 +64,17 @@ To remove a capability:
   Send confirmation details to the customer.
   ```
 
+#### Multi-service booking
+- **What it does**: Books multiple services in one booking session when the services are in the same `Service Menu/Group`
+- **Prerequisites**: Enable `Book appointments` and choose a booking link or event type for scheduling
+- **Recommended instructions**:
+  ```
+  Confirm all requested services before booking.
+  Offer back-to-back times that fit the full session.
+  If no combined slot is available, offer another time or split the booking.
+  Collect all required contact and intake details once before confirmation.
+  ```
+
 #### Communication style
 - **What it does**: Maintains consistent tone and brand voice
 - **Recommended instructions**:
@@ -102,6 +113,17 @@ Get contact info when needed.
 - Use clear, actionable language
 - Test different phrasings to see what works best
 :::
+
+### Tailor a capability to specific channels
+
+Your AI Employee knows which channel it's responding on, so a capability's instructions can reference the channel by name. This is useful when a task should behave differently depending on where the customer reaches out — for example, collecting fewer details for lead capture over SMS than by email:
+
+```
+When capturing a lead on SMS, ask for name and phone number only, one question at a time, and keep each message short.
+When capturing a lead by email, you can ask for name, email, phone, and preferred appointment time in a single reply.
+```
+
+For guidance on channel-specific behavior across the whole AI Employee, see [Adjust responses by channel](../ai-workforce/ai_workforce_overview.md#adjust-responses-by-channel).
 
 ## Step 5: Save and test your configuration
 

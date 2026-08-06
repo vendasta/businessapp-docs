@@ -1,0 +1,85 @@
+---
+title: Video Conferencing
+description: Connect a video conferencing provider to automatically generate unique meeting links every time CalendarHero books a meeting.
+---
+
+CalendarHero supports two ways to add video conferencing to your meetings: **dynamic links** (auto-generated unique links per meeting) and **static links** (a fixed URL you provide). Dynamic links require a connected video provider integration.
+
+## Dynamic vs. static links
+
+**Dynamic links** are automatically generated when a meeting is booked. Each meeting gets a unique link — no need to copy and paste your conferencing URL. If a meeting is rescheduled or cancelled, the link updates automatically.
+
+**Static links** are a fixed URL you provide — for example, your personal Zoom room link. You can add a static link directly to a meeting type or enter it as the meeting location when scheduling. No integration is required for static links.
+
+## Connecting a video provider
+
+1. Go to the [Integration Directory → Video tab](https://app.calendarhero.com/settings/accounts/add#video)
+2. Click **Add** next to your preferred provider and complete authorization
+3. Open the meeting type you want to use video with
+4. Under the **Location & Conferencing** tab, select your video provider
+
+Once connected, dynamic links are generated automatically every time that meeting type is booked.
+
+## Supported providers
+
+CalendarHero supports the following video conferencing providers:
+
+| Provider | Notes |
+|---|---|
+| Zoom | Individual or account-level (Team plan admin) authorization |
+| Zoom Webinar | Requires a paid Zoom account with Webinar access |
+| Google Meet | Connect via Google account |
+| Microsoft Teams Video | Connect via Microsoft account |
+| Webex | Requires 3rd-party API access enabled in Webex admin settings |
+| Avaya Spaces | — |
+| Skype | — |
+| GoToMeeting | — |
+| Join.me | — |
+| Highfive | — |
+| BlueJeans | — |
+| RingCentral | — |
+| Vectera | Static link only — adds your pre-selected Vectera room link |
+| CrankWheel | Screen-sharing tool; creates a new meeting in CrankWheel |
+
+## Adding Zoom
+
+Individual users can connect Zoom or Zoom Webinar from the [Integration Directory → Video](https://app.calendarhero.com/settings/accounts/add#video). Click **Add** next to Zoom and authorize the connection.
+
+**Team plan admins** can authorize Zoom at the account level for the entire organization from [Corporate-Wide Integrations → Video](https://app.calendarhero.com/org/accounts/add#video). Select **Zoom – Account Level** and authorize. Each member must have an existing Zoom account under the same Zoom organization to use the integration.
+
+Notes:
+- If your Zoom account requires passwords for new meetings, CalendarHero automatically includes the password in the calendar invite.
+- After adding new users to your Zoom account, allow up to 10 minutes before they can use Zoom links in CalendarHero.
+- If you remove and re-add Zoom, members will need to re-add Zoom to their meeting types.
+
+## Adding Webex
+
+Connect Webex from the [Integration Directory → Video](https://app.calendarhero.com/settings/accounts/add#video). Before connecting, make sure your Webex account has 3rd-party API access enabled:
+
+1. Log in to your Webex admin account and go to **admin.webex.com/services/meeting/sites**
+2. Click your site name → **Configure Site** → **Site Options** under Common Settings
+3. Scroll to **Third-Party Integration** and check the box to enable REST API access
+4. Click **Update**
+
+## Frequently asked questions
+
+<details>
+<summary>How do I add a static video link if I don't want to use a dynamic integration?</summary>
+
+Open the meeting type, go to the **Location & Conferencing** tab, and enter your static video URL in the text field provided. You can also enter a video URL directly as the meeting location when scheduling an individual meeting from the web scheduler.
+
+</details>
+
+<details>
+<summary>Can I have different video providers for different meeting types?</summary>
+
+Yes. You can connect multiple video providers and assign a different one to each meeting type. Open each meeting type, go to **Location & Conferencing**, and select the provider you want for that meeting type.
+
+</details>
+
+<details>
+<summary>Will video details be included in the calendar invite and confirmation email?</summary>
+
+Yes. When a meeting is booked, the video conferencing details — including the meeting link and any relevant dial-in information — are automatically added to the calendar event and the confirmation email sent to all attendees.
+
+</details>

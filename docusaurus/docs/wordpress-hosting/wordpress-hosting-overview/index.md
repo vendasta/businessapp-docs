@@ -38,6 +38,21 @@ Offers all features of Standard, plus advanced tools for developers and advanced
 * No plugin or theme restrictions
 * AI-powered PHP log analysis
 
+### Feature comparison
+
+| Feature | Standard | Pro |
+| --- | --- | --- |
+| Backups | 2 | Unlimited |
+| WordPress Dashboard access | ✓ | ✓ |
+| phpMyAdmin access | ✓ | ✓ |
+| SFTP access | ✓ | ✓ |
+| Free SSL certificate | ✓ | ✓ |
+| PHP logs | ✓ | ✓ |
+| Google Analytics integration | ✓ | ✓ |
+| Staging environment | | ✓ |
+| Custom domains | | ✓ |
+| Create staging from backup | | ✓ |
+
 ## Key Features
 
 **Performance & Infrastructure**

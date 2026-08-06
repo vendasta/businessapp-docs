@@ -6,7 +6,7 @@ description: "Learn how to find your WordPress site's database connection creden
 
 If you need to find your WordPress site's database connection information (host, database name, username, and password), you can retrieve these credentials even though remote database connections are not supported.
 
-## Why you might need this
+## Why you need this
 
 You may need your database connection string for:
 * Troubleshooting database-related issues
@@ -58,15 +58,15 @@ This file exposes sensitive database credentials. You must delete it immediately
 ## Important notes
 
 * **Remote connections not supported:** WordPress Hosting databases are isolated in a secure network and cannot be accessed remotely using tools like MySQL Workbench or other database clients.
-* **Use phpMyAdmin instead:** For database management, use phpMyAdmin through the WordPress Hosting dashboard under **Advanced Tools**.
+* **Use phpMyAdmin instead:** For database management, use phpMyAdmin through the WordPress Hosting dashboard under `Advanced Tools`.
 * **Keep credentials secure:** Never share your database credentials publicly or commit them to version control systems.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Can I use these credentials to connect to the database remotely?</summary>
 
-No. WordPress Hosting databases are isolated in a secure network and cannot be accessed remotely. Even with the connection credentials, remote database tools like MySQL Workbench will not work. Use phpMyAdmin through the WordPress Hosting dashboard under **Advanced Tools** for database management.
+No. WordPress Hosting databases are isolated in a secure network and cannot be accessed remotely. Even with the connection credentials, remote database tools like MySQL Workbench will not work. Use phpMyAdmin through the WordPress Hosting dashboard under `Advanced Tools` for database management.
 
 </details>
 
@@ -87,6 +87,6 @@ The database credentials are stored in your WordPress configuration file (`wp-co
 <details>
 <summary>Can I use these credentials with phpMyAdmin?</summary>
 
-You don't need these credentials to use phpMyAdmin. phpMyAdmin is accessed directly through the WordPress Hosting dashboard under **Advanced Tools** and automatically connects to your database using the correct credentials. See [What is phpMyAdmin?](./what-is-phpmyadmin.md) for more information.
+You don't need these credentials to use phpMyAdmin. phpMyAdmin is accessed directly through the WordPress Hosting dashboard under `Advanced Tools` and automatically connects to your database using the correct credentials. See [What is phpMyAdmin?](./what-is-phpmyadmin.md) for more information.
 
 </details>

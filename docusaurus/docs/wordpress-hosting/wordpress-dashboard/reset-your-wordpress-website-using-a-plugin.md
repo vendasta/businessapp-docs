@@ -10,7 +10,7 @@ Resetting your WordPress site removes all content, settings, and customizations,
 **This action cannot be undone.** All your posts, pages, media, plugins, themes, and settings will be permanently deleted. Always create a backup before resetting your site.
 :::
 
-## Before You Reset
+## Before you reset
 
 **Important steps before resetting:**
 
@@ -18,22 +18,22 @@ Resetting your WordPress site removes all content, settings, and customizations,
 2.  **Export important content** – If you have content you want to keep, export it before resetting.
 3.  **Note your current setup** – Write down which plugins and themes you're using so you can reinstall them if needed.
 
-## How to Reset Your WordPress Site
+## How to reset your WordPress site
 
-### Step 1: Install the WP Reset Plugin
+### Step 1: Install the WP Reset plugin
 
 1.  Go to your WordPress dashboard.
 2.  Navigate to **Plugins** > **Add New**.
 3.  Search for **"WP Reset"**.
 4.  Click **Install Now**, then **Activate** the plugin.
 
-### Step 2: Access WP Reset Tools
+### Step 2: Access WP Reset tools
 
 1.  In the dashboard, go to **Tools** > **WP Reset**.
 
 ![WP Reset Plugin](./img/reset-your-wordpress-website-using-a-plugin/wp-reset-plugin.png)
 
-### Step 3: Reset the Site
+### Step 3: Reset the site
 
 1.  Scroll to the reset section.
 2.  Type **"reset"** in the confirmation box (this prevents accidental resets).
@@ -50,7 +50,7 @@ After resetting, you'll need to:
 3.  **Configure settings** – Set up your site title, permalinks, and other basic settings.
 4.  **Create content** – Start adding pages and posts to your site.
 
-## Alternative: Restore from Backup
+## Alternative: Restore from backup
 
 If you reset your site by mistake or want to go back, you can restore from a backup:
 

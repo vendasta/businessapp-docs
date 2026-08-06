@@ -25,19 +25,19 @@ Advanced Tools are designed for users who need more control over their WordPress
 ## What's included
 
 - **[Activity Logs](activity-logs-in-wordpress-hosting-pro.md)**: Track actions performed on your staging site, including resets, backups, and pushes to live
-- **[Bypass Caching to See Changes](see-changes-on-your-site-instantly-with-new-caching-tools.md)**: Temporarily bypass caching or manually flush your site cache to view your most recent changes immediately
+- **[Bypass Caching to See Changes](bypass-caching-to-see-site-changes.md)**: Temporarily bypass caching or manually flush your site cache to view your most recent changes immediately
 - **[How to Find PHP Logs](how-to-find-php-logs.md)**: Access PHP logs through the Advanced Tools section for troubleshooting and debugging
 - **[What is phpMyAdmin?](what-is-phpmyadmin.md)**: Manage your WordPress database using the phpMyAdmin web-based interface
 - **[Toggle Google Analytics Tracking](toggle-the-default-google-analytics-tracking-onoff.md)**: Enable or disable default Google Analytics tracking for GDPR compliance
 - **[Captchas, reCAPTCHAs, and Advanced Login](advanced-login.md)**: Configure captcha protection and advanced login options for your WordPress admin page
 
-## Related Platform Features
+## Related platform features
 
 - **[Cron Jobs](../wordpress-dashboard/cron-jobs-on-wordpress-hosting.md)**: Learn about WordPress Hosting's automated scheduled tasks system
 
-## Key Advanced Tools Features
+## Key Advanced Tools features
 
-### Logging and Monitoring
+### Logging and monitoring
 
 **Activity Logs** provide a comprehensive record of staging site activities, including:
 - Reset staging from template
@@ -46,22 +46,22 @@ Advanced Tools are designed for users who need more control over their WordPress
 
 **PHP Logs** help you troubleshoot issues by providing detailed error and debug information directly from your WordPress Hosting dashboard.
 
-### Caching Management
+### Caching management
 
 Control how caching affects your site:
 - **Bypass Cache**: Temporarily skip caching to see changes immediately using `/?skip` URL parameter
 - **Caching Tools**: Use built-in tools to see changes instantly without waiting for cache to clear
 
-### Database Management
+### Database management
 
-**phpMyAdmin** provides a powerful web-based interface for:
+**phpMyAdmin** provides a full-featured web-based interface for:
 - Viewing and editing database content
 - Backing up and restoring databases
 - Resetting user passwords
 - Running SQL queries
 - Managing database structure
 
-### Security and Configuration
+### Security and configuration
 
 **Advanced Login Options**:
 - Configure captcha and reCAPTCHA protection
@@ -73,14 +73,14 @@ Control how caching affects your site:
 - Ensure GDPR compliance
 - Manage analytics data collection
 
-## How to Get Started
+## How to get started
 
 1. **Access Advanced Tools**: Navigate to your WordPress Hosting dashboard and select your website
 2. **Choose Your Tool**: Select the specific tool you need from the Advanced Tools section
 3. **Follow Documentation**: Refer to the individual guides for each tool to learn how to use them effectively
-4. **Use with Caution**: Advanced Tools provide powerful capabilities—always back up your site before making database changes or significant configuration updates
+4. **Use with Caution**: Advanced Tools provide significant capabilities. Always back up your site before making database changes or significant configuration updates
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>When should I use Advanced Tools?</summary>
@@ -111,8 +111,8 @@ Most Advanced Tools are safe when used correctly, but some require caution:
 <summary>Do I need technical knowledge to use Advanced Tools?</summary>
 
 Some tools require more technical knowledge than others:
-- **Activity Logs** and **PHP Logs**: Minimal technical knowledge needed—just read and understand the information
-- **Bypass Caching**: Very simple—just add `/?skip` to your URL
+- **Activity Logs** and **PHP Logs**: Minimal technical knowledge needed. Just read and understand the information
+- **Bypass Caching**: Very simple, just add `/?skip` to your URL
 - **phpMyAdmin**: Requires understanding of databases and SQL
 - **Security Configuration**: Moderate technical knowledge helpful but not required
 
@@ -122,10 +122,10 @@ Some tools require more technical knowledge than others:
 <summary>Can I break my site using Advanced Tools?</summary>
 
 Some Advanced Tools can potentially cause issues if used incorrectly:
-- **phpMyAdmin**: Incorrect database changes can break your site—always back up first
+- **phpMyAdmin**: Incorrect database changes can break your site. Always back up first
 - **Caching Tools**: Generally safe, but disabling caching may slow your site
 - **Activity Logs** and **PHP Logs**: Read-only, cannot break your site
-- **Security Settings**: Incorrect configuration may lock you out—follow documentation carefully
+- **Security Settings**: Incorrect configuration may lock you out. Follow documentation carefully
 
 Always back up your site before making significant changes through Advanced Tools.
 
@@ -144,7 +144,7 @@ WordPress Hosting allows you to connect via **SFTP** (Secure File Transfer Proto
 
 **Step 2: Connect using FileZilla (or another SFTP client)**
 
-1. Open FileZilla and go to **File > Site Manager > New Site**.
+1. Open FileZilla and go to `File` → `Site Manager` → `New Site`.
 2. Configure the connection:
    * **Host**: `sftp.websitepro.hosting`
    * **Port**: `22`
@@ -167,7 +167,9 @@ To connect over SFTP, you must:
 * Generate a **key file** from the WordPress Hosting dashboard
 * Use an SFTP client like FileZilla with your username and key file
 
-> For setup steps, see: How to use SFTP to access the file system in the WordPress Hosting dashboard under Advanced Tools.
+:::note
+For setup steps, see: How to use SFTP to access the file system in the WordPress Hosting dashboard under Advanced Tools.
+:::
 
 </details>
 
@@ -206,12 +208,14 @@ You can increase the upload limit using a plugin, but the maximum limit in WordP
 
 To increase the default upload limit:
 
-1. In WordPress, go to **Plugins > Add New**
+1. In WordPress, go to `Plugins` → `Add New`
 2. Install **Big File Uploads – Increase Maximum File Upload Size**
 3. Activate the plugin
-4. Navigate to **Media > Big File Uploads** and set your desired limit (up to 256 MB)
+4. Navigate to `Media` → `Big File Uploads` and set your desired limit (up to 256 MB)
 
-> If you need to upload files larger than 256 MB, use **SFTP** to upload directly to your server.
+:::tip
+If you need to upload files larger than 256 MB, use **SFTP** to upload directly to your server.
+:::
 
 </details>
 
@@ -237,7 +241,6 @@ Plugins that rely on it, such as **Jetpack** or certain **Zapier** integrations,
 
 For more context:
 * [What is XMLRPC.php? (Hostinger)](https://www.hostinger.com/tutorials/xmlrpc-wordpress)
-* [Why XMLRPC is blocked (WP Engine)](https://wpengine.com/resources/xmlrpc-php/)
 
 </details>
 
@@ -259,7 +262,9 @@ This prevents access to:
 3. Go to **Product Settings**
 4. Toggle off **Show Advanced Features**
 
-> This change applies globally and cannot be customized per account.
+:::warning
+This change applies globally and cannot be customized per account.
+:::
 
 Admin users will still be able to see and use all advanced tools.
 
@@ -268,7 +273,7 @@ Admin users will still be able to see and use all advanced tools.
 <details>
 <summary>Do I get access to cPanel when hosting on WordPress Hosting?</summary>
 
-No — **[cPanel](https://cpanel.net/) is not used** with WordPress Hosting.
+No. **[cPanel](https://cpanel.net/) is not used** with WordPress Hosting.
 
 WordPress Hosting is a fully managed hosting environment built on Google Cloud infrastructure. It handles traditional cPanel features internally, including:
 * Domain management

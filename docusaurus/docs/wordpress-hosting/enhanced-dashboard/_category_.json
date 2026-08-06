@@ -1,0 +1,10 @@
+{
+  "label": "Enhanced Dashboard",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "wordpress-hosting/enhanced-dashboard/index"
+  }
+}

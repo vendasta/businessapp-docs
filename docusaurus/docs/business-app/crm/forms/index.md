@@ -11,6 +11,7 @@ Use Forms to capture leads from your website directly into the CRM. Embed a form
 
 - Convert website visitors into contacts automatically
 - Reduce manual data entry with mapped fields and defaults
+- Keep CRM records current — form submission values automatically overwrite the corresponding CRM fields, so your data stays accurate without manual updates. Every change is tracked in the CRM timeline with attribution showing what was updated and by whom
 - Trigger automations (auto-reply, nurture campaigns, routing)
 - Improve data quality with reCAPTCHA and UTM capture
 
@@ -18,7 +19,7 @@ Use Forms to capture leads from your website directly into the CRM. Embed a form
 Use UTM parameters in the links you publish (ads, social media, email) so form submissions capture where leads came from and you can see which channels perform best.
 :::
 
-## What's included
+## What’s included
 
 - **Form Builder** with configurable fields and defaults
 - **Design** controls for container, fonts, button, and custom CSS
@@ -26,8 +27,15 @@ Use UTM parameters in the links you publish (ads, social media, email) so form s
 - **Embed code** for easy installation on any site
 - **File upload** field so visitors can attach documents or images
 - **Form automations** – trigger follow-up from the form’s Automation tab
+- **Public landing page and QR code flyer** – every form has a shareable public URL and a printable QR code flyer with your account branding
 
 For the full list of contact, company, and generic fields you can add, see [Form field reference](supported-fields.md).
+
+## Share a form with a QR code flyer
+
+Every form has a default public landing page. From the form, you can generate a printable QR code flyer that links directly to that page. The flyer pulls your account branding automatically, so it's ready to print and display in-store, at events, or anywhere you want customers to scan and submit.
+
+This works for any form — lead capture, promotions, surveys, or any other type you build.
 
 ## What's in this section
 
@@ -40,7 +48,7 @@ For the full list of contact, company, and generic fields you can add, see [Form
 <details>
 <summary>My form isn't always capturing UTM fields, why might that be?</summary>
 
-For the form to capture UTM, they must be still present in the browser address bar. If a user clicks away from your landing page, to visit a second page on your website, and you don't have a UTM preservation tool active, the UTM can be lost and won't be captured if they fill out a form. One tactic to prevent this is removing all links from your landing page, to ensure leads fill out the form on the landing page and nowhere else.
+A few things can cause this: UTM parameters must still be present in the browser address bar when the form is submitted, your form needs the relevant UTM fields (Campaign, Medium, Source, Content, Term) added to it, and any redirect before the form loads must preserve the URL parameters. If a visitor clicks to a second page on your site before submitting and you don't have a UTM preservation tool active, the values can be lost, so removing links from your landing page is one way to keep leads on the page with the form. See [Form field reference](supported-fields.md).
 </details>
 
 <details>
@@ -98,13 +106,37 @@ Yes! You can add media queries and responsive CSS rules in the Custom CSS sectio
 </details>
 
 <details>
-<summary>What CSS classes can I target for form styling?</summary>
+<summary>What CSS can I use to style my form from my website?</summary>
 
-You can target standard form elements like `.form-container`, `input[type="text"]`, `input[type="email"]`, `.submit-button`, and other standard HTML form elements. Use your browser's developer tools to inspect the form structure.
+CSS entered in the **Design tab** (Custom CSS editor) works normally — you can use standard selectors like `input`, `label`, or `.submit-button` there. If you want to apply styles from your website's own stylesheet, use the `::part()` pseudo-element instead, since the form renders in an isolated container that blocks outside selectors. See [Style a form from your website's stylesheet](form-builder.md#style-a-form-from-your-websites-stylesheet) for the full list of available part names and examples.
 </details>
 
 <details>
 <summary>What fields can I add to a form?</summary>
 
 Forms support many contact fields, company fields, and generic types (text, paragraph, number, dropdown, radio, checkbox, date). See [Form field reference](supported-fields.md) for the full list.
+</details>
+
+<details>
+<summary>Why is Company name a required field on my form?</summary>
+
+`Company name` is required whenever you add the company fields group to a form and can't be made optional, similar to how `Email` is always required for contact fields. If you don't need to capture company data, use contact fields only and leave out the company fields group.
+</details>
+
+<details>
+<summary>I submitted a form but the record I expected wasn't updated, why?</summary>
+
+Forms have two separate field groups, contact fields and company fields, that write to two different record types. If your form only includes contact fields, submissions only create or update a Contact record, so add fields from the company fields group if you also want to create or update a Company record. See [Form field reference](supported-fields.md).
+</details>
+
+<details>
+<summary>Can I change the default country code for phone number fields?</summary>
+
+Yes. Phone number fields default to `+1`. Select the field in the form builder and set a different `Default country code` in its field settings. See [Build and publish a form](form-builder.md#setting-a-default-country-code).
+</details>
+
+<details>
+<summary>Can I let visitors select multiple checkbox options?</summary>
+
+There's no dedicated multi-select field type. Add the `Checkbox` field once for each option you want to offer, and label each one clearly. See [Build and publish a form](form-builder.md#adding-multiple-checkbox-options).
 </details>

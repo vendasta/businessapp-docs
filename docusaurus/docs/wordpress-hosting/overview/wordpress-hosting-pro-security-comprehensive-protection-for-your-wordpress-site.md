@@ -1,14 +1,14 @@
 ---
 title: "WordPress Hosting Pro Security: Comprehensive Protection for Your WordPress Site"
 sidebar_label: "Security"
-description: "Overview \n WordPress Hosting Pro hosting on Google Cloud Platform (GCP) is designed to provide high performance, security, and reliability. This article highli"
+description: "WordPress Hosting Pro provides Google Cloud-based security features, including a Web Application Firewall, DDoS protection, and SSL encryption, to keep your WordPress site secure and reliable."
 ---
 
-### Overview
+## Overview
 
 WordPress Hosting on Google Cloud Platform (GCP) is designed to provide high performance, security, and reliability. This article highlights the key security features, infrastructure details, and technical specifications that ensure the safety and performance of your WordPress website. WordPress Hosting leverages Google Kubernetes Engine (GKE) for hosting, Filestore for data storage, and Load Balancer WAF rules for enhanced security.
 
-### Key Security Features
+## Key security features
 
 **1\. Web Application Firewall (WAF) Rules**
 
@@ -28,7 +28,7 @@ To prevent flooding attacks, WordPress Hosting implements **rate limiting** at m
 
 **4\. Secure Login Options**
 
-Since many WordPress attacks target `wp-login.php`, WordPress Hosting offers **Single Sign-On (SSO)**. Users can only access the WordPress admin interface through a **secure dashboard**, adding an extra layer of protection.
+Since many WordPress attacks target `wp-login.php`, WordPress Hosting offers **Single Sign-On (SSO)**. You can only access the WordPress admin interface through a **secure dashboard**, adding an extra layer of protection.
 
 **5\. Private Database Connections**
 
@@ -59,7 +59,7 @@ WordPress Hosting integrates with **Google CDN** to enhance website loading spee
 
 WordPress Hosting conducts **quarterly reviews** to ensure third-party services and security measures are **continuously updated and optimized**.
 
-### Server & Infrastructure Details
+## Server & infrastructure details
 
 **Server Mode**
 
@@ -73,7 +73,7 @@ WordPress Hosting servers operate in **full-duplex mode**, enabling simultaneous
 **Server Specifications**
 
 *   **Shared hosting environment**: Resources such as CPU and memory are allocated dynamically.
-    *   **WordPress Hosting Pro** is a shared hosting platform designed to address common shared hosting issues. It isolates sites into separate shards, preventing resource interference between them and ensuring consistent, optimal performance. PHP execution and request times are continuously monitored to stay within defined thresholds. To handle peak traffic and demanding sites, the infrastructure was migrated to Google Cloud Platform’s compute-optimized (C2) machines, which feature Intel Scalable Processors with up to 3.8 GHz sustained all-core turbo—delivering top-tier performance for both WordPress Hosting Standard and Pro users.
+    *   **WordPress Hosting Pro** is a shared hosting platform designed to address common shared hosting issues. It isolates sites into separate shards, preventing resource interference between them and ensuring consistent, optimal performance. PHP execution and request times are continuously monitored to stay within defined thresholds. To handle peak traffic and demanding sites, the infrastructure runs on Google Cloud Platform’s compute-optimized (C2) machines, which feature Intel Scalable Processors with up to 3.8 GHz sustained all-core turbo, delivering top-tier performance for both WordPress Hosting Standard and Pro users.
 *   **WordPress memory limit** is optimized to ensure each site performs efficiently.
 *   **Shared IP Address**: Multiple sites use the same server IP, which is common in shared hosting.
 
@@ -82,13 +82,13 @@ WordPress Hosting servers operate in **full-duplex mode**, enabling simultaneous
 *   WordPress Hosting actively manages **plugin activations and deactivations** to ensure security and performance.
 *   Plugins are categorized as **"good" or "bad"** based on their security impact.
 
-### Conclusion
+## Conclusion
 
-WordPress Hosting offers a **secure, high-performance hosting solution** powered by Google Cloud’s advanced infrastructure. With robust security features, **DDoS protection, rate limiting, IAM-based access control, private database connections, SSL encryption, and Google CDN**, your WordPress website remains optimized for **speed, security, and reliability**.
+WordPress Hosting offers a **secure, high-performance hosting solution** powered by Google Cloud’s advanced infrastructure. With strong security features, **DDoS protection, rate limiting, IAM-based access control, private database connections, SSL encryption, and Google CDN**, your WordPress website remains optimized for **speed, security, and reliability**.
 
 For any further questions or security-related concerns, feel free to reach out to our support team.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>What is Google Cloud Armor?</summary>
@@ -106,6 +106,6 @@ Google Cloud Armor is a firewall that protects websites by blocking malicious tr
 2. **Update the A Record**
    * For each domain, modify the **A record** to the following IP address: **34.149.86.124**
 
-For more guidance on domain configuration, see [Domain Setup](../../domains/connect-a-custom-domain.md).
+For more guidance on domain configuration, see [Domain Setup](../domains/connect-a-custom-domain.md).
 
 </details>
