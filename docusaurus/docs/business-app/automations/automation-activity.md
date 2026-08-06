@@ -1,6 +1,6 @@
 ---
 title: Automation activity
-sidebar_position: 5
+sidebar_position: 6
 description: View and troubleshoot past automation runs using the Activity log.
 tags: [automation, troubleshooting]
 keywords: [automation activity, automation logs, troubleshoot workflows, automation success rate]
