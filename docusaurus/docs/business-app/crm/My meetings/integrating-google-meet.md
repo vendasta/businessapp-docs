@@ -2,9 +2,12 @@
 title: Setting up calendar integration
 sidebar_label: Calendar integration
 description: Learn how to connect your Google Calendar or Microsoft 365 / Outlook calendar to enable meeting scheduling and automatic notetaker functionality.
-tags: [calendar-integration, google-calendar, outlook, microsoft, meetings, notetaker]
-keywords: [calendar sync, google calendar, outlook calendar, microsoft 365, meeting integration, calendar setup]
+tags: [calendar-integration, google-calendar, outlook, microsoft, meetings, notetaker, reserve-with-google]
+keywords: [calendar sync, google calendar, outlook calendar, microsoft 365, meeting integration, calendar setup, reserve with google, disconnect integration]
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ## Overview
 
@@ -91,6 +94,39 @@ To switch from Google to Microsoft (or vice versa):
 2. Connect the new calendar provider following the steps above.
 
 Meetings already scheduled are not migrated. Only new bookings going forward will use the new calendar.
+
+## Reserve with Google
+
+<Tabs>
+<TabItem value="reserve-with-google" label="Reserve with Google">
+
+Reserve with Google lets customers book your services directly from your Google Business Profile. If you no longer want your booking option to appear on Google, you can disconnect the integration at any time.
+
+### Before you start
+
+You'll need access to your business account in the Business App, and permission to manage integrations.
+
+### Steps to disconnect
+
+1. Sign in to your Business App.
+2. In the left menu, go to `Administration` > `Integrations`.
+3. Find `Reserve with Google` in your list of integrations and open it.
+4. Select **Disconnect**.
+5. Confirm when prompted.
+
+![Reserve with Google integration page showing the connected service and Disconnect button](../img/my-meetings/reserve-with-google-integration-page.png)
+
+That's it. Your integration is now disconnected.
+
+### What happens after you disconnect
+
+- Your business is removed from the next daily update sent to Google. Your booking option stops appearing on your Google Business Profile within 24–48 hours.
+- Any appointments customers already booked are not affected — you'll still see and manage them as usual.
+- Your existing service and booking settings stay in place; only the connection to Google is removed.
+- You can reconnect at any time by returning to **Administration → Integrations → Reserve with Google** and setting it up again.
+
+</TabItem>
+</Tabs>
 
 ## Troubleshooting
 
