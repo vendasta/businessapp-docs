@@ -112,8 +112,8 @@ You'll need access to your business account in the Business App, and permission 
 ### Steps to disconnect
 
 1. Sign in to your Business App.
-2. In the left menu, go to **Administration → Integrations**.
-3. Find **Reserve with Google** in your list of integrations and open it.
+2. In the left menu, go to `Administration` > `Integrations`.
+3. Find `Reserve with Google` in your list of integrations and open it.
 4. Select **Disconnect**.
 5. Confirm when prompted.
 
