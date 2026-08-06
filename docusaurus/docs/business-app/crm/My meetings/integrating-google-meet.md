@@ -119,7 +119,7 @@ You'll need access to your business account in the Business App, and permission 
 
 ![Reserve with Google integration page showing the connected service and Disconnect button](../img/my-meetings/reserve-with-google-integration-page.png)
 
-That's it — your integration is now disconnected.
+That's it. Your integration is now disconnected.
 
 ### What happens after you disconnect
 
