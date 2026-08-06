@@ -195,7 +195,7 @@ What to expect: a coordinated illustration set, useful when you want visual cons
 
 ### Diagnose a build that auto-fix didn't solve
 
-> The preview is showing this error: "Cannot find module './components/HeroSection'." Auto-fix tried twice and stopped. Can you take a look?
+> The preview is showing this error: "Cannot find module './components/HeroSection'." Can you take a look?
 
 What to expect: Vibe reads the error in context, identifies what's missing, and produces a fix. See the [troubleshooting guide](./troubleshooting.md) for how the auto-fix layers work.
 
