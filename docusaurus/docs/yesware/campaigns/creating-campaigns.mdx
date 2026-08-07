@@ -7,12 +7,15 @@ tags:
   - email-automation
   - personalization
   - merge-fields
+  - campaign-chaining
 keywords:
   - create-campaigns
   - campaign-touches
   - personalization
   - manual-email
   - automated-email
+  - after-completion
+  - follow-up-campaign
 ---
 
 # Creating Campaigns
@@ -41,6 +44,7 @@ When creating a campaign, you can:
 - Set timing and intervals between touches
 - Create campaign signatures
 - Configure removal settings for when recipients connect
+- Automatically enroll recipients in a follow-up campaign after this one completes
 
 ## Understanding email delivery
 
@@ -72,6 +76,7 @@ When creating a new campaign, configure:
 - **Campaign name:** Give your campaign a descriptive name
 - **Remove recipients after connection:** Choose whether recipients should automatically be removed when they reply, answer a call, or book a meeting
 - **Campaign signature:** Optionally add a signature to appear at the bottom of all campaign messages
+- **After completion:** Optionally choose a follow-up campaign to automatically enroll recipients in once they complete this campaign without responding
 
 #### Adding a signature with GIFs
 
@@ -88,6 +93,31 @@ From there you will be able to resize the GIF as needed and make any additional 
 :::info
 Each user will need to complete these steps, as signatures cannot be rolled out to all users universally.
 :::
+
+#### Automatically enroll recipients in a follow-up campaign after completion
+
+The **After completion** section lets you automatically move recipients into a different campaign once they finish this one without responding.
+
+To set this up:
+
+1. In the **After completion** section of your campaign settings, choose a follow-up campaign from the list of campaigns you have access to.
+2. Enter the number of days to wait after this campaign completes before the follow-up campaign starts.
+3. Save your campaign.
+
+Recipients who complete every touch in this campaign without replying, connecting by phone, or booking a meeting are automatically enrolled in the follow-up campaign after the delay you set. Once enrolled, the follow-up campaign's first touch sends according to that campaign's own timing settings—so if its first touch is scheduled for a specific time of day, the recipient's email goes out at that time once the delay has passed.
+
+Recipients who reply, connect by phone, or book a meeting before this campaign completes are not moved into the follow-up campaign.
+
+:::info
+Recipients who previously opted out of your emails, or whose email address has bounced, are not enrolled in the follow-up campaign, even if they otherwise meet the completion criteria.
+:::
+
+Keep in mind:
+
+- You can't set a campaign to chain into itself, or create a loop where campaigns eventually chain back to an earlier campaign in the sequence.
+- If the follow-up campaign is paused or deleted before the delay ends, the recipient is not enrolled.
+- Cloning a campaign does not carry over its **After completion** setting—you'll need to set this up again on the new campaign.
+- A recipient can be chained into the follow-up campaign again if they complete this campaign more than once, even if they've already been through the follow-up campaign before.
 
 ### Step 3: Add touches to your campaign
 
@@ -258,6 +288,13 @@ From the Campaigns to-do list, you can send manual emails, complete custom tasks
 One of the available touch-types in Campaigns for Gmail is a Manual email. Unlike an Automated email, a Manual email requires some human intervention to get it sent.
 
 To take action on a Manual email, go to the Campaigns tab of the Yesware sidebar. If you've just added Manual tasks, refresh the sidebar. Select the to-do card for your manual email and click `Email`. This will pop out a compose window with the content you already created in the Campaign. You can then add any finishing touches and click the `Send` button.
+
+</details>
+
+<details>
+<summary>Can I automatically move recipients into another campaign once they finish this one?</summary>
+
+Yes. Use the **After completion** setting in your campaign settings to choose a follow-up campaign and a delay (in days). Recipients who complete every touch in the campaign without replying, connecting by phone, or booking a meeting are automatically enrolled in the follow-up campaign after that delay. Recipients who reply, connect, or book a meeting before the campaign completes are not moved into the follow-up campaign.
 
 </details>
 
