@@ -57,6 +57,9 @@ Toggle **Visual edits** in the chat composer to flip design mode on and off. Whe
 "browse pre-built color themes, toggle between light and dark mode, and make targeted edits..."
 -->
 
+### Device Preview
+Click the device preview icon in the control panel to shift the canvas to a mobile width, so you can check how your app looks on a phone-sized screen without leaving the editor.
+
 ### Clarifying Questions
 When your request is ambiguous, Vibe pauses and asks before going further. Questions arrive as structured prompts — pick a chip, confirm yes or no, or type a one-line answer. The conversation resumes the moment you respond.
 

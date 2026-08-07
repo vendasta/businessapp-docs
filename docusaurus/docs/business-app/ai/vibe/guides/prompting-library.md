@@ -137,6 +137,20 @@ What to expect: a small KPI tile drawing from the same analytics connector.
 
 What to expect: a comparison table tied to the analytics connector with a working date-range control.
 
+## Connecting to CRM
+
+### Contacts directory
+
+> Add a contacts page listing every contact with their name, email, and phone number.
+
+What to expect: a table populated with your real contacts, wired through the [CRM connector](./connectors/crm.md).
+
+### Pipeline view
+
+> Build a pipeline view showing opportunities grouped by stage.
+
+What to expect: a board-style view of your actual opportunities, grouped by pipeline stage through the same connector.
+
 ## Connecting to SSO
 
 ### Member sign-in area
