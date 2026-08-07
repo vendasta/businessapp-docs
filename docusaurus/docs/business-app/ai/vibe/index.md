@@ -57,6 +57,9 @@ Toggle **Visual edits** in the chat composer to flip design mode on and off. Whe
 "browse pre-built color themes, toggle between light and dark mode, and make targeted edits..."
 -->
 
+### Device Preview
+Click the device preview icon in the control panel to shift the canvas to a mobile width, so you can check how your app looks on a phone-sized screen without leaving the editor.
+
 ### Clarifying Questions
 When your request is ambiguous, Vibe pauses and asks before going further. Questions arrive as structured prompts — pick a chip, confirm yes or no, or type a one-line answer. The conversation resumes the moment you respond.
 
@@ -127,6 +130,13 @@ Vibe creates checkpoints automatically as you iterate. Open the Checkpoints pane
 <summary>What languages can I use in the chat?</summary>
 
 Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean.
+
+</details>
+
+<details>
+<summary>Are Vibe sites SEO-friendly?</summary>
+
+Yes. Vibe generates React single-page applications served as static client-side apps. Search engines that execute JavaScript, including Google, can index them. Meta tags aren't added automatically — ask Vibe to include them for any page that needs them.
 
 </details>
 

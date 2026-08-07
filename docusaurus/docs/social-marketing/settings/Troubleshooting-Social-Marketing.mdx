@@ -14,7 +14,7 @@ Social AI makes it easy to post and schedule content to multiple platforms, but 
 
 | Platform | Common Errors | Solutions Summary |
 |----------|----------------|-------------------|
-| **Facebook** | Expired token, missing permissions, API errors | Reconnect account, verify Page roles, reauthorize permissions |
+| **Facebook** | Expired token, flagged token, missing permissions, API errors | Reconnect account, verify your identity with Meta, verify Page roles, reauthorize permissions |
 | **Instagram** | Wrong account type, not linked to FB Page, permissions missing | Switch to Business/Creator account, link to Facebook Page, reconnect |
 | **LinkedIn** | Token expired (every 60 days) | Reconnect via Connect Accounts tab when prompted |
 | **Google Business Profile** | Chain location, restricted business category, rejected content | Post directly in GBP, update business category, remove sensitive content |
@@ -25,7 +25,7 @@ Social AI makes it easy to post and schedule content to multiple platforms, but 
 
 ### Common Facebook Errors
 
-#### 1. "Access has not been granted or has expired"
+#### 1. "Access has not been granted or has expired" or "Connected Facebook account has expired"
 - **What it means:** The Facebook connection is expired or incomplete.
 - **Fix it:**
   - Go to **Social AI > Settings > Connections**
@@ -38,45 +38,61 @@ Social AI makes it easy to post and schedule content to multiple platforms, but 
   - Log in to the Facebook account with **Admin, Editor, or Moderator** access to the Page
   - Check **Page Roles** under Facebook Page > Settings
 
-#### 3. "Connected Facebook account has expired"
-- Simply go to **Settings > Connections** and reconnect
-
-#### 4. "Unable to find your Business Manager account"
+#### 3. "Unable to find your Business Manager account"
 - Confirm you're logged into the correct Facebook account
 - Check [business.facebook.com](https://business.facebook.com) for Business Manager setup
 - Ensure the Pages are added and you have proper access
 
-#### 5. (#100) API permissions error
+#### 4. (#100) API permissions error
 - This error means permissions weren’t granted properly
 - **Fix it:** Reconnect the Facebook account and ensure **all permissions are accepted**
 
-#### 6. Content violates Community Standards
+#### 5. Content violates Community Standards
 - Run your post through Facebook's [Link Debugger](https://developers.facebook.com/tools/debug/) to see what’s being flagged
 - Avoid spammy links or flagged language
 
-#### 7.  Grey Facebook account
+#### 6. Grey Facebook account
 
-A grey Facebook account typically indicates that the account has limited functionality or is in a restricted state. This can happen for several reasons:
+A grey Facebook account has limited functionality or is in a restricted state, which can limit posting until it's resolved. This can happen for several reasons:
 
-## Common Causes
+- **Account verification issues**: The account needs additional verification
+- **Policy violations**: The account violated Facebook's community standards
+- **Suspicious activity**: Facebook detected unusual activity
+- **Incomplete setup**: The account isn't fully configured
 
-- **Account verification issues**: The account may need additional verification
-- **Policy violations**: The account may have violated Facebook's community standards
-- **Suspicious activity**: Facebook may have detected unusual activity
-- **Incomplete setup**: The account may not be fully configured
+**Fix it:**
 
-## How to Resolve
+1. Log in to Facebook and check for any notifications or warnings
+2. Complete any verification steps Facebook requires
+3. Make sure all content complies with Facebook's policies
+4. If the issue persists, contact Facebook support
 
-1. **Check account status**: Log into Facebook and check for any notifications or warnings
-2. **Complete verification**: Follow any verification steps Facebook requires
-3. **Review content**: Ensure all content complies with Facebook's policies
-4. **Contact support**: If issues persist, contact Facebook support
+#### 7. Access token flagged by Meta
 
-## Page Roles
+Meta may flag an access token for several reasons, including:
 
-If you're managing a Facebook page, check your page roles in the Page Settings to ensure you have the appropriate permissions.
+- **Sudden account changes**, such as adding a new admin or resetting the password
+- **Admin location or country mismatch**
+- **High-frequency posting**
 
-**Note:** Grey accounts may have limited posting capabilities until the issue is resolved.
+Other activity can trigger a flag too. When it happens, you may also be unable to post directly from your Meta account. To resolve it, verify your identity with Meta:
+
+1. Open the Facebook app on your mobile device
+2. Switch to the Page you want to post to
+3. When prompted for identity verification, verify using your registered mobile number
+
+![The Confirm your identity screen in the Facebook mobile app, explaining that unusual activity was detected and offering to verify via SMS](./img/facebook-instagram-troubleshooting/facebook-instagram-troubleshooting.png)
+
+Tap **Verify** to receive a code by SMS. Posting is unblocked once verification is complete.
+
+### Best Practices for Connecting Facebook Pages
+
+Always grant access to **all** Pages when you connect an account, and don't change which Pages are included between connections. During authorization, make sure these options are selected:
+
+- **Opt in to all current and future Pages** — for Facebook
+- **Opt in to all current and future Businesses** — for Instagram
+
+With these options enabled, if Facebook breaks your token because of suspicious activity, reconnecting even a single expired Page automatically restores access to all your other Pages.
 
 ---
 

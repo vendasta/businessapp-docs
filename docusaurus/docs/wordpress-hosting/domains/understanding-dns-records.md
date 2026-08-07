@@ -8,7 +8,7 @@ keywords: [DNS records, A record, CNAME record, CAA record, DNS configuration, D
 
 DNS (Domain Name System) records are essential for connecting your domain to WordPress Hosting. This guide explains what DNS records are, which types you need, and how to configure them.
 
-## What are DNS Records?
+## What are DNS records?
 
 The **Domain Name System (DNS)** is a collection of standards and infrastructure that allows internet clients (like Chrome, Safari, or Edge) to map human-readable domain names to server addresses.
 
@@ -16,38 +16,38 @@ Think of it like giving a taxi driver the name of a place, such as "the mall," i
 
 DNS records serve as "listings" for domain addresses. They're configured on **NameServers**, which respond to queries about domains, such as "Where can I find mybusiness.com?" WordPress Hosting works with three main types of DNS records:
 
-## Types of DNS Records Used by WordPress Hosting
+## Types of DNS records used by WordPress Hosting
 
-### 1. A Records
+### 1. A records
 
 * **Meaning**: "A" stands for **Address Record**.
 * **Purpose**: Points a domain name to a specific IP address.
-* **Example**: An A Record for `mybusiness.com` might direct traffic to IP `216.239.38.21`.
+* **Example**: An A Record for `mybusiness.com` directs traffic to IP `216.239.38.21`.
 * **In General**: "If you're looking for `mybusiness.com`, you should find it at IP address `216.239.38.21`."
 
-### 2. CNAME Records
+### 2. CNAME records
 
 * **Meaning**: Stands for **Canonical Name Record** (here, "canonical" means "the rule that must be followed").
 * **Purpose**: Points one domain name to another domain name.
 * **Example**: Setting a CNAME for `www.mybusiness.com` will ensure it points to `mybusiness.com`. If configured incorrectly, this could override other records for subdomains like `smtp.mybusiness.com`.
 * **In General**: "If you're looking for `www.mybusiness.com`, you should find it at `mybusiness.com`."
 
-### 3. CAA Records
+### 3. CAA records
 
 * **Meaning**: Stands for **Certificate Authority Authorization**.
 * **Purpose**: Controls which Certificate Authorities (CAs) can issue SSL/TLS certificates for your domain, which verify your domain's identity and secure communication.
-* **Example**: A CAA Record might specify that only certain CAs, like Let's Encrypt, can create SSL/TLS certificates for your domain.
+* **Example**: A CAA Record can specify that only certain CAs, like Let's Encrypt, create SSL/TLS certificates for your domain.
 * **In General**: "If you're an authorized Certificate Authority, you may issue SSL/TLS certificates for this domain."
 
-If there is **no CAA Record** (or if it's empty), any Certificate Authority can issue certificates for the domain—this is the most common setup.
+If there is **no CAA Record** (or if it's empty), any Certificate Authority can issue certificates for the domain. This is the most common setup.
 
-## When to Use Each Record Type
+## When to use each record type
 
-### When should I use an A Record?
+### When should I use an A record?
 
 Use an **A Record** when connecting your **primary/root domain**, such as `mybusiness.com`, directly to your WordPress Hosting site.
 
-### When should I use a CNAME Record?
+### When should I use a CNAME record?
 
 Use a **CNAME Record** any time you want a subdomain (like `www` or `blog`) to point to your WordPress Hosting site.
 
@@ -57,7 +57,7 @@ Examples:
 
 For the "Host" field in the record, only enter the subdomain part (e.g., `www` or `listings`).
 
-### Do I need an A Record or CNAME or both?
+### Do I need an A record or CNAME or both?
 
 To connect a domain to WordPress Hosting, you'll need either an **A Record** or a **CNAME Record**, depending on what part of the domain you're connecting:
 
@@ -66,7 +66,7 @@ To connect a domain to WordPress Hosting, you'll need either an **A Record** or 
 
 You must use at least one of these. It's common to use both: an A Record for the root and a CNAME for `www`.
 
-## How to Configure DNS Records
+## How to configure DNS records
 
 To connect a domain to WordPress Hosting:
 
@@ -84,7 +84,7 @@ Additionally, be aware of **CAA Records**:
 
 For a complete guide on setting up these records and connecting your domain, see [Domain Setup](connect-a-custom-domain.md).
 
-## DNS Propagation and Timing
+## DNS propagation and timing
 
 ### Why do DNS record changes take time to update?
 
@@ -98,15 +98,15 @@ DNS records are cached by Internet Service Providers (ISPs) to improve global in
 * **Flush DNS manually:**
   * Use [Google's DNS Flush Tool](https://developers.google.com/speed/public-dns/cache) to refresh their cache for your domain.
 
-Propagation can still take up to 24 hours depending on the ISP.
+Propagation can still take up to 48 hours depending on the ISP.
 
-## IPv6 and AAAA Records
+## IPv6 and AAAA records
 
-### Does WordPress Hosting support AAAA Records or IPv6?
+### Does WordPress Hosting support AAAA records or IPv6?
 
 Currently, **AAAA Records (IPv6) are not supported.** WordPress Hosting requires only an **A Record** that points to the IPv4 address: `34.149.86.124`.
 
-## Other DNS Record Types
+## Other DNS record types
 
 While A, CNAME, and CAA records are the primary types used for web hosting, you may also need to configure other DNS records for email:
 
@@ -131,7 +131,7 @@ Yes, it's common to use both. Use an A record for your root domain (`@` or `mybu
 <details>
 <summary>Why do DNS changes take so long to update?</summary>
 
-DNS records are cached by Internet Service Providers (ISPs) around the world to improve performance. When you make a change, it needs to propagate through all these caches. You can speed this up by reducing the TTL (Time To Live) value before making changes, or by using tools like Google's DNS Flush Cache. However, full propagation can still take up to 24 hours.
+DNS records are cached by Internet Service Providers (ISPs) around the world to improve performance. When you make a change, it needs to propagate through all these caches. You can speed this up by reducing the TTL (Time To Live) value before making changes, or by using tools like Google's DNS Flush Cache. However, full propagation can still take up to 48 hours.
 
 </details>
 
