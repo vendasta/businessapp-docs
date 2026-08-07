@@ -32,7 +32,7 @@ Reach for CRM when:
 
 - You want a contacts directory or company list inside your Vibe app.
 - You want a pipeline view showing opportunities by stage.
-- You want a dashboard that references real customer or deal records instead of placeholder data.
+- You want a dashboard built on your actual CRM records instead of placeholder data.
 
 ## Building with CRM data
 
