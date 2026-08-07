@@ -19,6 +19,7 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 ## What's included
 
 - **Personal and team booking links**
+- **Calendar views** — See your team's schedule in Column, Day, Week, Month, List, or Year view, filter by team member or service, and book, reschedule, or cancel meetings directly from the calendar
 - **Availability settings** and buffers
 - **Calendar connections** (Google Calendar and Microsoft 365 / Outlook)
 - **Microsoft Teams video conferencing integration**
@@ -50,6 +51,8 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 4. Click **Book a meeting** to confirm.
 
 Once booked, the meeting appears under the **Bookings** tab. Use **Upcoming** and **Past** toggles to filter your view, and switch to the **Recordings** tab to review past recordings.
+
+You can also click any open time slot directly on the calendar to open the same booking dialog pre-filled with that time and date. See [Calendar Views](./calendar-views.md) for the full calendar experience, including filtering by team member or service and rescheduling from the calendar.
 
 ## Initial setup
 
