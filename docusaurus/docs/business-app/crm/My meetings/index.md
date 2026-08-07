@@ -107,13 +107,19 @@ Click **Create event type** and fill in the details:
 You can also configure additional options per event type. Settings here override your user-level defaults for this event type only:
 
 - **General availability** — Override your default availability for this event type.
-- **Questions for invitee** — Add custom questions invitees answer when booking. You can make **Phone Number** a required field. When phone is collected, choose the **notification channel** — **SMS** or **Email** — for booking confirmations and reminders sent to the invitee.
+- **Questions for invitee** — Add custom questions invitees answer when booking. Making **Phone Number** and/or **Email** required fields controls which channels are available for confirmations and reminders.
+
+  Choose a **confirmation channel** — **Email**, **SMS**, or **Both** — for the confirmation guests receive when they book. Choose a **reminder channel** the same way; it defaults to your confirmation channel until you change it, after which the two work independently — for example, an Email confirmation with an SMS reminder.
+
+  - Turning off **Phone Number** required disables **SMS** and **Both** in both channel controls, and any current SMS/Both selection falls back to Email.
+  - Turning off **Email** required disables **Email** and **Both** in both channel controls, and any current Email/Both selection falls back to SMS.
+  - If both **Phone Number** and **Email** are off, all channel options are disabled and an inline warning appears — you must select at least one channel before you can save the event type.
+
+  Set the **reminder lead time** — an integer plus a unit (minutes, hours, or days) — to control how far ahead of the meeting the reminder sends. The default is 24 hours, and the maximum is 10 days; values entered above the maximum are clamped, and switching units re-clamps the value. Only one reminder can be configured per event type.
 
   :::note
   SMS confirmations and reminders require an active subscription to **Conversations AI Pro or Premium** (Reputation AI Premium and Campaigns Pro also unlock this). Your business phone number must be registered first. Configure at `Administration` → `SMS Configuration`.
   :::
-
-  ![SMS notification channel setup](../img/my-meetings/sms-notification-setup.png)
 
 - **Customize invitation email** — Customize the subject and body of the email sent when you request a meeting from a CRM contact.
 - **Availability increment** — Override the default time slot increment (5, 10, 15, 30, or 60 minutes).
@@ -174,7 +180,7 @@ The conferencing provider set in the booking link is used. If Microsoft Teams is
 </details>
 
 <details>
-<summary>How do I send SMS reminders to customers?</summary>
+<summary>How do I send SMS reminders to guests?</summary>
 
-Add Phone Number as a required field in **Questions for invitee** and select **Phone** as the notification channel. SMS requires a Conversations AI Pro or Premium subscription and a registered business phone number. Configure at `Administration` → `SMS Configuration`. Supported countries: United States, Canada, and Italy.
+Add **Phone Number** as a required field in **Questions for invitee**, then choose **SMS** or **Both** as the reminder channel. SMS requires a Conversations AI Pro or Premium subscription and a registered business phone number. Configure at `Administration` → `SMS Configuration`. Supported countries: United States, Canada, and Italy.
 </details>
