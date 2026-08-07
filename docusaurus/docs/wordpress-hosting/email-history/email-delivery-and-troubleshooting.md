@@ -1,9 +1,9 @@
 ---
 title: "Email Delivery and Troubleshooting"
 sidebar_label: "Delivery & Troubleshooting"
-description: "Understand email statuses, fix missing email logs, resolve deferred emails, and learn how unsubscribes work in WordPress Hosting Pro."
-tags: [wordpress-hosting, email, troubleshooting]
-keywords: [email status, deferred email, bounced email, no email logs, unsubscribe, SMTP, built-in email]
+description: "Understand email statuses, fix missing email logs, resolve deferred emails, and learn how unsubscribes work in WordPress Hosting."
+tags: [wordpress-hosting, email, troubleshooting, multisite]
+keywords: [email status, deferred email, bounced email, no email logs, unsubscribe, SMTP, built-in email, multisite]
 ---
 
 ## Email statuses
@@ -95,6 +95,8 @@ Yes. You can use an external SMTP plugin (like WP Mail SMTP) to route emails thr
 <details>
 <summary>How do I send emails on WordPress Hosting Premium (Multisite)?</summary>
 
-WordPress Hosting Premium does not include a built-in mail system. You need to configure a custom SMTP service (such as WP Mail SMTP with Gmail, Mailgun, or Amazon SES) on each site in your Multisite network to send and deliver emails.
+WordPress Hosting Premium includes the same built-in email system as single-site installations. Form-fill and other notification emails — including submissions from Keap and Gravity Forms — are sent and logged automatically, with no setup required.
+
+All outgoing email for a Multisite network is sent from the network's primary domain, not from individual subsites. You can still configure a custom SMTP service (such as WP Mail SMTP with Gmail, Mailgun, or Amazon SES) if you prefer to route email through your own provider, but emails sent through external SMTP services will not appear in the Email History tab.
 
 </details>

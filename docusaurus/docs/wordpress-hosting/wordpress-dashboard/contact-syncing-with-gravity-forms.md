@@ -4,9 +4,9 @@ sidebar_label: "Gravity Forms Sync"
 description: "Learn how to configure Gravity Forms to ensure contact form submissions sync correctly with your CRM by properly mapping fields and configuring email notifications."
 ---
 
-Gravity Forms is a powerful tool for capturing leads, but to ensure those leads sync correctly with your CRM, certain configurations must be set up properly. This article walks you through the **essential steps** to ensure contact form submissions are parsed and recorded accurately.
+Gravity Forms is a tool for capturing leads, but to ensure those leads sync correctly with your CRM, certain configurations must be set up properly. This article walks you through the **essential steps** to ensure contact form submissions are parsed and recorded accurately.
 
-## Ensure Proper Form Field Mapping
+## Ensure proper form field mapping
 
 When using Gravity Forms with CRM integration (like WordPress Hosting CRM), form fields must be set to dynamically pass data. This includes:
 
@@ -19,7 +19,7 @@ If fields are not mapped correctly, contact entries may not appear in the CRM.
 
 ![Form Field Mapping](./img/contact-syncing-with-gravity-forms/form-field-mapping.png)
 
-## Configure Email Notifications Correctly
+## Configure email notifications correctly
 
 To prevent emails from being flagged as spam or failing delivery, you must configure both the "From Email" and the "Reply-To Email" correctly.
 
@@ -39,13 +39,13 @@ Using emails like `yourname@gmail.com` or `contact@yahoo.com`, as these can fail
 
 To ensure the **user's email** is captured and used for CRM contact creation:
 
-1. Go to **Form** > **Settings** > **Notifications**.
-2. In the **Reply-To** field, click on the **merge tag selector** `{..}`.
+1. Go to `Form` > `Settings` > `Notifications`.
+2. In the `Reply-To` field, click on the merge tag selector `{..}`.
 3. Choose the form field that collects the user's **Email**.
 
 This ensures that the CRM picks up the correct contact email from the form submission.
 
-## Troubleshooting Form Sync Issues
+## Troubleshooting form sync issues
 
 If contact sync isn't working, verify the following:
 
@@ -53,11 +53,7 @@ If contact sync isn't working, verify the following:
 *   The correct merge tags are still in place.
 *   The email notification settings match what's outlined above.
 
-:::info
-This issue has been confirmed on AGID instances `AG-NFJKB35TT3` and `AG-FSJ3Z47NXP` due to recent field changes.
-:::
-
-## Updating Other Sites
+## Updating other sites
 
 If similar syncing issues are occurring on other sites:
 
@@ -65,7 +61,7 @@ If similar syncing issues are occurring on other sites:
 *   Confirm field mapping and dynamic tag usage.
 *   Contact Support for assistance with applying the necessary fixes.
 
-## Summary Checklist
+## Summary checklist
 
 - Use domain-matching **From Email**
 - Set **Reply-To** to dynamic Email field

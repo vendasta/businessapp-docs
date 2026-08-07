@@ -4,13 +4,13 @@ sidebar_position: 3
 ---
 
 # Web Chat Widget Installation and Troubleshooting
-With AI-assisted web chat, businesses can capture more leads from their website.  An AI assistant will chat live with a website visitor, capture their contact information so a business can follow up later via SMS or email, and turn them into a customer. AI-assisted web chat is a feature of Inbox Pro product. Contact your sales rep today to have the widget activated for your website.
+With AI-assisted web chat, businesses can capture more leads from their website.  An AI assistant will chat live with a website visitor, capture their contact information so a business can follow up later via SMS or email, and turn them into a customer. AI-assisted web chat is a feature of Conversations AI Pro. Contact your sales rep today to have the widget activated for your website.
 
 Once installed on a business website, the chat widget will appear to website visitors and encourage them to chat, with the goal of capturing a lead for the business.
 
 ![](./img/web-chat-widget/chat-widget.png)
 
-Conversations will appear in Inbox where a business person can respond to the lead via SMS, and try to turn them into a customer. (SMS available for US and Canada-based businesses)
+Conversations will appear in Conversations AI where a business person can respond to the lead via SMS, and try to turn them into a customer. (SMS available for US and Canada-based businesses)
 
 AI Assistant with no knowledge about the business
 -------------------------------------------------
@@ -54,16 +54,16 @@ What can I customize?
 ---------------------
 
 *   **Color**: It's possible to customize the color of the chat widget, to match the website it's installed on.
-*   **AI knowledge**: It's also possible to give your web chat AI assistant additional context and knowledge about the business it's representing, be enabling "Allow access to your business profile" in Menu > Settings > Inbox Settings > Web Chat Configuration
+*   **AI knowledge**: It's also possible to give your web chat AI assistant additional context and knowledge about the business it's representing, be enabling "Allow access to your business profile" in Menu > Settings > Conversations Settings > Web Chat Configuration
 
-How to install the Inbox Pro Web Chat widget on a website
+How to install the Conversations AI Pro Web Chat widget on a website
 ---------------------------------------------------------
 
-To install your web chat widget on your website: After Inbox Pro is activated, go to Settings > Inbox Settings > Web Chat Configuration – and set up your web chat widget. After configuring, you can copy and paste your install code into the `<head>` element of your website, typically just before the closing `</head>` tag. 
+To install your web chat widget on your website: After Conversations AI Pro is activated, go to Settings > Conversations Settings > Web Chat Configuration – and set up your web chat widget. After configuring, you can copy and paste your install code into the `<head>` element of your website, typically just before the closing `</head>` tag. 
 
 ### OPTION 1: To install on a WordPress site using a plugin
 
-1.  Download the web chat widget installation plugin from Settings > Inbox Settings > Web Chat Configuration > Installation
+1.  Download the web chat widget installation plugin from Settings > Conversations Settings > Web Chat Configuration > Installation
 2.  Navigate to your WordPress backend admin, usually at _your-website.com_/wp-admin
 3.  Go to Plugins > Add new plugin
 4.  Upload the zip file containing the plugin you just downloaded.
@@ -92,7 +92,7 @@ WordPress Jetpack plugin can also hijack some of the keys to open and close thei
 
 ### Issue: I don't see the web chat on my site, even though it's installed in the right place
 
-If the Web Chat code is installed on your website and enabled in Inbox Settings, and you cannot see it on your website, the most likely next cause is cache or plugin issues. You can try additional steps on your website to clear cache or any blocking plugins to get the web chat to appear.
+If the Web Chat code is installed on your website and enabled in Conversations Settings, and you cannot see it on your website, the most likely next cause is cache or plugin issues. You can try additional steps on your website to clear cache or any blocking plugins to get the web chat to appear.
 
 ### Caching issues
 

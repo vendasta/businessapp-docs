@@ -11,19 +11,19 @@ keywords: [SSO, single sign-on, integrations, connections, third-party apps]
 
 Single Sign-On (SSO) integrations provide seamless access to third-party applications. You can connect your accounts with supported applications without requiring separate logins.
 
-## Access the Connections page
+## Access the Integrations page
 
 To connect an integration:
 
-1. Navigate to **Administration** → **Connections**
+1. Navigate to **Administration** → **Integrations**
 
-![Accessing the Connections page](../img/sso-integrations/accessing-connections-page.jpg)
+![Accessing the Integrations page](../img/sso-integrations/accessing-connections-page.jpg)
 
 ## Set up a new connection
 
 ### Step 1: Find the application
 
-Browse through the available applications on the Connections page. Each application displays information about its features and benefits.
+Browse through the available applications on the Integrations page. Each application displays information about its features and benefits.
 
 ![Marketing page for the Jobber integration](../img/sso-integrations/marketing-page.jpg)
 
@@ -53,7 +53,7 @@ Complete the Single Sign-On connection by following the prompts. This typically 
 
 After setup, you can view and manage all connected applications through:
 
-1. The **Manage** tab on the Connections page, which displays connection cards for each integrated application
+1. The **Manage** tab on the Integrations page, which displays connection cards for each integrated application
 
 ![Manage tab with connection card](../img/sso-integrations/manage-tab.jpg)
 
@@ -90,7 +90,7 @@ There is no limit to the number of SSO integrations you can connect. Connect as 
 <details>
 <summary>What happens if an SSO connection expires?</summary>
 
-Open the integration from **Connections** → **Manage** and follow the reconnect prompts to reauthorize.
+Open the integration from **Integrations** → **Manage** and follow the reconnect prompts to reauthorize.
 
 </details>
 

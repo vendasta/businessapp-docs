@@ -1,6 +1,6 @@
 ---
 title: Automation settings
-sidebar_position: 4
+sidebar_position: 5
 description: Configure how and when your automations run with entry settings and error handling options.
 tags: [automation, settings, configuration]
 keywords: [automation settings, entry settings, error handling, automation configuration, workflow settings]
@@ -95,6 +95,6 @@ No. Error handling is set at the automation level and applies to all steps. If y
 
 ## Related resources
 
-- [Automation activity & history](automation-activity.md) - Monitor and troubleshoot automation runs
-- [Messaging steps](workflows/action-messaging.md) - Configure SMS and email steps
+- [Automation activity](automation-activity.md) - Monitor and troubleshoot automation runs
+- [Messaging steps](use-cases/action-messaging.md) - Configure SMS and email steps
 - [Automations overview](index.mdx) - Learn the basics of creating automations
