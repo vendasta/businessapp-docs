@@ -121,9 +121,12 @@ The following settings are optional and turned off by default. Review each one a
 
 By default, clients are asked for their **First Name**, **Last Name**, and **Email** when booking. You can also collect a **Phone Number** and **Comments**.
 
-- Turn on **Required** next to **Phone Number** to make it mandatory.
-- When a phone number is required, clients are also asked, "Which channel would you like your customers to receive confirmations on?" and choose **Phone** or **Email**.
-- Click **+ Add question** to create custom questions for clients to answer when booking. Their answers are available to the assigned team member.
+- Turn on **Required** next to **Phone Number** and/or **Email** to control which channels are available for confirmations and reminders. At least one must stay required — if both are off, all channel options are disabled and the event type can't be saved.
+- Choose a **confirmation channel** — **Email**, **SMS**, or **Both** — for the confirmation guests receive when they book.
+- Choose a **reminder channel** the same way. It defaults to your confirmation channel until you change it, after which the two work independently — for example, an Email confirmation with an SMS reminder.
+- Turning off **Phone Number** required disables **SMS** and **Both** in both channel controls and falls back any current SMS/Both selection to Email. Turning off **Email** required disables **Email** and **Both**, and falls back to SMS.
+- Set the **reminder lead time** — an integer plus minutes, hours, or days — to control how far ahead of the meeting the reminder sends. The default is 24 hours, and the maximum is 10 days; values above the maximum are clamped, and switching units re-clamps the value. Only one reminder can be configured per event type.
+- Click **+ Add question** to create custom questions for guests to answer when booking. Their answers are available to the assigned team member.
 
 ### Customize invitation email
 
