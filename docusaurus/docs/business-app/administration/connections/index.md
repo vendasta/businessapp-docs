@@ -104,7 +104,7 @@ The HubSpot integration keeps Contacts and Companies in sync between HubSpot and
 <details>
 <summary>How do I connect HubSpot?</summary>
 
-Go to **Administration → Integrations → Browse**, select HubSpot, and click **Connect HubSpot**. Choose your sync options, then authorize the connection using your HubSpot account.
+Go to **Administration → Integrations → Browse**, select HubSpot, and click **Connect HubSpot**. Choose your sync options, then authorize the connection using your HubSpot account. If you only have one HubSpot account available, it's selected automatically.
 </details>
 
 <details>
