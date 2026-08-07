@@ -91,7 +91,7 @@ When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
 4. **Generation** — A generation agent writes the code file by file, applying the theme, generating images, and editing components in real time. Type-check and build verification run continuously to catch and fix issues. You can stop the run at any time by clicking **Stop** — the last working preview stays on screen and your prompt returns to the input.
 5. **Validation** — Vibe takes a screenshot of the rendered preview and runs a build check. Before declaring the task complete, Vibe runs a final type check and self-corrects any remaining issues — up to three rounds. If they can't be resolved, the run finishes with a "verified with issues" status instead of a silent claim of success.
 6. **Preview** — The live preview updates as soon as the build is clean.
-7. **Iteration** — You review the result and send follow-up prompts to refine it. Runtime errors in the preview trigger an auto-fix banner.
+7. **Iteration** — You review the result and send follow-up prompts to refine it. If a runtime error appears in the preview, or a build fails, click **Fix it for me** to send the error to chat. See [Error Handling & Troubleshooting](./guides/troubleshooting.md).
 
 All of this happens through a streaming interface — status updates, file changes, screenshots, and the live preview update in real time.
 

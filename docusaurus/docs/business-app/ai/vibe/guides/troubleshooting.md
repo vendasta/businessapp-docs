@@ -17,7 +17,6 @@ Vibe runs three layers of automatic error handling. Each layer catches a differe
 | **Type and compile checks** | TypeScript errors, missing imports, type mismatches | Inline, while Vibe is writing or editing files |
 | **Build verification** | Errors that only show up when the project is bundled | After file changes are written, before the preview updates |
 | **Verified completion** | Remaining type errors before the run declares success | After all file edits, before the COMPLETED block appears |
-| **Runtime auto-fix** | Errors that happen in the live preview after the app loads | When the app crashes or throws while you're using it |
 
 You don't have to enable any of this. It's the default behavior on every generation.
 
@@ -39,15 +38,13 @@ Before the `COMPLETED` block appears, Vibe runs a final type check against the f
 
 You'll see "verified with issues" in the COMPLETED block header when this happens. Treat it the same as a build error: copy the error text and send it back as a prompt, or roll back to a clean checkpoint.
 
-### Runtime auto-fix
+### Fixing an error yourself
 
-If the live preview throws a runtime error after the build succeeds — a state bug, a missing prop, a crash on an interaction — the preview detects the error and offers to fix it. A small banner appears in the preview with the error and a "Fix it" action.
+If the live preview throws a runtime error after the build succeeds — a state bug, a missing prop, a crash on an interaction — a banner appears over the preview with the error and a **Fix it for me** button. A failed build shows the same button on the Build Failed overlay.
 
-A few details to know:
+Click it and Vibe submits the error to the chat as a normal prompt, in Build mode. If a run is already in progress, the fix is queued and starts as soon as it's idle — nothing happens until you click. The banner stays up while the fix runs, showing a "working on a fix" state, and clears once the fixed preview loads.
 
-- Auto-fix runs at most twice for the same error before stepping aside.
-- There's a 10-second cooldown between attempts, so a tight crash loop doesn't spam the agent.
-- If you'd rather diagnose runtime errors yourself, you can opt out — your browser remembers the choice for that project.
+The button doesn't appear if you're out of credits, or if Vibe is paused waiting on your answer to a clarifying question — answer the question first, then click **Fix it for me** if the error is still there.
 
 ## When auto-fix can't recover
 
