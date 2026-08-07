@@ -58,7 +58,7 @@ The AI Human Resources Coordinator is only as accurate as its knowledge sources.
 
 The role prompt defines the AI's persona, scope, and behavioral rules. This one establishes a friendly, policy-first HR assistant that defaults to redirecting rather than guessing.
 
-1. Open the **Purpose** field in the AI Employee configuration
+1. Open the `Purpose` field in the AI Employee configuration
 2. Copy and paste the following role prompt:
 
 ```markdown
@@ -98,11 +98,11 @@ The key design principle here is "redirect rather than guess." If your HR assist
 
 The PolicyScope capability defines how the AI handles different types of HR questions. General policy questions get direct answers with document links. Personal or sensitive questions get a clear redirect. Out-of-scope topics get a polite refusal and a pointer to the right team. This ensures consistent, governed behavior across every conversation.
 
-1. In the AI Employee configuration, scroll to **Capabilities**
+1. In the AI Employee configuration, scroll to `Capabilities`
 2. Click `Add a capability`
 3. Set the capability name to `PolicyScopeFramework`
 4. Set the description to: "Routes HR questions to direct answers, document links, or human redirects based on whether the question is general, personal, or out of scope"
-5. In the **Prompt** field, copy and paste the following:
+5. In the `Prompt` field, copy and paste the following:
 
 ```markdown
 You follow a three-level routing framework for every employee question.
@@ -150,14 +150,14 @@ The three levels are invisible to the employee as labels. They shape how the AI 
 
 The AI Human Resources Coordinator works primarily from its knowledge base and PolicyScope logic. No additional built-in capabilities are required, but you may optionally enable the following:
 
-1. In the **Capabilities** section, toggle on as needed:
-   - **Capture leads** (optional): enables the AI to collect the employee's name and contact details when escalating a question to HR, so the HR team has context before following up
-   - **Book appointments** (optional): allows the AI to schedule a meeting with an HR team member directly (requires calendar connected in Business App)
+1. In the `Capabilities` section, toggle on as needed:
+   - `Capture leads` (optional): enables the AI to collect the employee's name and contact details when escalating a question to HR, so the HR team has context before following up
+   - `Book appointments` (optional): allows the AI to schedule a meeting with an HR team member directly (requires calendar connected in Business App)
 
 2. Click `Save`
 
 :::note
-The **Retrieve knowledge** capability is enabled by default for all AI Employees. This is the primary mechanism the HR Employee uses to answer questions — it retrieves content from your connected policy documents and knowledge sources.
+The `Retrieve knowledge` capability is enabled by default for all AI Employees. This is the primary mechanism the HR Employee uses to answer questions. It retrieves content from your connected policy documents and knowledge sources.
 :::
 
 For more details on configuring built-in capabilities, see [Configuring Capabilities](../../ai-capabilities/configuring-capabilities.md).
@@ -166,7 +166,7 @@ For more details on configuring built-in capabilities, see [Configuring Capabili
 
 Your knowledge base is the foundation of the AI Human Resources Coordinator's accuracy. Connect every policy and reference document your employees regularly ask about.
 
-1. In the **Knowledge Sources** section, add:
+1. In the `Knowledge Sources` section, add:
    - **HR policy documents**: employee handbook, leave policies, benefits guides, onboarding and offboarding checklists
    - **Forms and process guides**: change request forms, time off submission procedures, and any workflow documentation
    - **FAQs** (recommended): written answers to your most common HR questions, especially topics not covered in a single policy file
@@ -175,16 +175,16 @@ Your knowledge base is the foundation of the AI Human Resources Coordinator's ac
 2. Click `Save`
 
 :::tip
-When a policy changes, update the source document and reconnect or re-upload it. The AI answers from what is in the knowledge base — outdated documents produce outdated answers.
+When a policy changes, update the source document and reconnect or re-upload it. The AI answers from what is in the knowledge base. Outdated documents produce outdated answers.
 :::
 
 ### Step 6: Configure your escalation contacts
 
 The PolicyScope capability references HR contacts for personal or sensitive questions. Customize the escalation language in the capability prompt to reflect your actual team structure.
 
-1. In the **Capabilities** section, click `Edit` next to `PolicyScopeFramework`
+1. In the `Capabilities` section, click `Edit` next to `PolicyScopeFramework`
 2. In the Level 2 section, replace the generic contact reference with your specific HR contact name, role, or channel:
-   - **For a small team:** "Your HR Manager [Name] is the right person — reach out at [contact method]."
+   - **For a small team:** "Your HR Manager [Name] is the right person, reach out at [contact method]."
    - **For a People Partner model:** "Reach out to your assigned People Partner for anything specific to your situation."
    - **For a ticketing system:** "Submit a request through [HR ticket portal name] and the team will follow up."
 
@@ -200,7 +200,7 @@ Run test questions across all three PolicyScope levels before announcing the AI 
 Ask a question your knowledge base covers directly, such as "How many days of PTO do I get?" or "What's the process for requesting a leave of absence?" The AI should answer from the knowledge base and link to the policy document.
 
 **Level 1: Form or process guidance**
-Ask which form to use for a specific change: "I want to change my work schedule — is there a form for that?" The AI should identify the appropriate process or form and link to it if available.
+Ask which form to use for a specific change: "I want to change my work schedule, is there a form for that?" The AI should identify the appropriate process or form and link to it if available.
 
 **Level 2: Personal question**
 Ask a question requiring personal data: "What's my current salary?" or "Can you look up my performance review?" The AI should acknowledge warmly, explain it cannot access personal records, and name the HR contact to reach.
@@ -209,13 +209,13 @@ Ask a question requiring personal data: "What's my current salary?" or "Can you 
 Ask about a non-HR topic: "My laptop won't connect to the network" or "Can you help me with a product bug?" The AI should decline and give one clear next step for the right team.
 
 **Edge case: uncertain scope**
-Ask a question that sits on the boundary — for example, "Am I eligible for the new parental leave policy?" This should trigger a Level 2 redirect, not an answer, since eligibility is individual.
+Ask a question that sits on the boundary, for example, "Am I eligible for the new parental leave policy?" This should trigger a Level 2 redirect, not an answer, since eligibility is individual.
 
 Refine the role prompt, PolicyScope capability, or escalation contacts based on what you observe. Common refinements include tightening the edge cases for personal questions and adding department-specific redirect contacts as your redirect map grows.
 
 ## Optional: Keep policies current with Google Drive sync
 
-If your HR policies live in Google Drive, you can connect them to your AI Human Resources Coordinator using Google Apps Script. When a policy document is updated in Drive, the script detects the change and refreshes the knowledge the AI uses — so your employee is always working from current information without manual re-uploads.
+If your HR policies live in Google Drive, you can connect them to your AI Human Resources Coordinator using Google Apps Script. When a policy document is updated in Drive, the script detects the change and refreshes the knowledge the AI uses. Your employee is always working from current information without manual re-uploads.
 
 This setup uses a Google Sheet as a structured index of your policy documents. An Apps Script reads from your Drive folders, writes document names and content into the Sheet, and a deployed web app makes that Sheet available to the AI Employee as a live knowledge source.
 
@@ -227,13 +227,13 @@ This setup uses a Google Sheet as a structured index of your policy documents. A
 
 ### Step 1: Create the Google Sheet
 
-Create a new Google Sheet in your Google Drive. This Sheet acts as the knowledge index — the script writes document names, IDs, and full text into it, and the AI Employee queries it at conversation time.
+Create a new Google Sheet in your Google Drive. This Sheet acts as the knowledge index: the script writes document names, IDs, and full text into it, and the AI Employee queries it at conversation time.
 
 Leave the Sheet empty for now. The script will populate it on first run.
 
 ### Step 2: Add the Apps Script
 
-1. In your Google Sheet, open **Extensions** > **Apps Script**
+1. In your Google Sheet, open `Extensions` > `Apps Script`
 2. Delete any default code in the editor
 3. Paste the following script:
 
@@ -343,41 +343,41 @@ function doGet(e) {
 }
 ```
 
-4. Replace `YOUR_FOLDER_ID_1`, `YOUR_FOLDER_ID_2`, and `YOUR_FOLDER_ID_3` with the actual folder IDs from your Google Drive. To find a folder ID, open the folder in Drive — it is the string of characters at the end of the URL: `https://drive.google.com/drive/folders/YOUR_FOLDER_ID`. Add or remove entries in the `folderIds` array to match the number of folders you want to sync.
+4. Replace `YOUR_FOLDER_ID_1`, `YOUR_FOLDER_ID_2`, and `YOUR_FOLDER_ID_3` with the actual folder IDs from your Google Drive. To find a folder ID, open the folder in Drive. It is the string of characters at the end of the URL: `https://drive.google.com/drive/folders/YOUR_FOLDER_ID`. Add or remove entries in the `folderIds` array to match the number of folders you want to sync.
 
-5. Click **Save project** (the floppy disk icon)
+5. Click `Save project` (the floppy disk icon)
 
 ### Step 3: Set up the daily trigger
 
 The `syncDriveToSheet` function needs to run on a schedule so the Sheet stays current when policies are updated in Drive.
 
-1. In the Apps Script editor, click **Triggers** (the clock icon in the left sidebar)
-2. Click **Add Trigger**
+1. In the Apps Script editor, click `Triggers` (the clock icon in the left sidebar)
+2. Click `Add Trigger`
 3. Configure the trigger:
    - **Function to run:** `syncDriveToSheet`
    - **Event source:** Time-driven
    - **Type of time-based trigger:** Day timer
    - **Time of day:** Select a low-traffic window (for example, 1am–2am or 3am–4am)
-4. Click **Save**
+4. Click `Save`
 
 The trigger will now run once daily and update the Sheet with any documents that have changed since the last sync.
 
 :::tip
-Run `syncDriveToSheet` manually the first time by selecting it from the function dropdown and clicking **Run**. This populates the Sheet immediately without waiting for the first scheduled trigger.
+Run `syncDriveToSheet` manually the first time by selecting it from the function dropdown and clicking `Run`. This populates the Sheet immediately without waiting for the first scheduled trigger.
 :::
 
 ### Step 4: Deploy the script as a web app
 
 The AI Employee needs a URL to query the Sheet at conversation time. Deploying the script as a web app creates that endpoint.
 
-1. In the Apps Script editor, click **Deploy** > **New deployment**
-2. Click the gear icon next to **Type** and select **Web app**
+1. In the Apps Script editor, click `Deploy` > `New deployment`
+2. Click the gear icon next to `Type` and select `Web app`
 3. Configure the deployment:
-   - **Description:** Give it a name you'll recognize (for example, "HR Policy Knowledge API")
-   - **Execute as:** Me
-   - **Who has access:** Anyone within your organization (or Anyone, depending on your setup)
-4. Click **Deploy**
-5. Copy the **Web app URL** — you will need this in the next step
+   - `Description`: Give it a name you'll recognize (for example, "HR Policy Knowledge API")
+   - `Execute as`: Me
+   - `Who has access`: Anyone within your organization (or Anyone, depending on your setup)
+4. Click `Deploy`
+5. Copy the `Web app URL`. You will need this in the next step.
 
 :::note
 If you update the script later, you must create a new deployment (or redeploy) for the changes to take effect. The URL stays the same when you redeploy to an existing deployment.
@@ -387,11 +387,11 @@ If you update the script later, you must create a new deployment (or redeploy) f
 
 Now connect the deployed web app to your AI Human Resources Coordinator as a custom capability with a live tool.
 
-1. In the AI Employee configuration, scroll to **Capabilities**
+1. In the AI Employee configuration, scroll to `Capabilities`
 2. Click `Add a capability`
 3. Set the capability name to `HRPolicyKnowledge`
 4. Set the description to: "Searches HR policy documents from Google Drive and returns the most relevant policy name, link, and content snippet"
-5. In the **Prompt** field, add instructions for when and how to use this capability:
+5. In the `Prompt` field, add instructions for when and how to use this capability:
 
 ```markdown
 When an employee asks a question about a specific HR policy, leave type, benefit, or process, use the HRPolicyKnowledge tool to search the policy library before answering.
@@ -403,25 +403,25 @@ Use the returned document name and link to cite the policy in your answer. Inclu
 If no policy is found, say so and redirect the employee to the HR team rather than answering from general knowledge.
 ```
 
-6. In the **Tools** section, click `+ Add a tool`
+6. In the `Tools` section, click `+ Add a tool`
 7. Configure the tool:
-   - **Tool name:** `search_hr_policies`
-   - **Description:** "Searches the HR policy knowledge base for documents matching the given topic. Returns document name, link, and a content snippet for the top matches."
-   - **Method:** GET
-   - **URL:** Paste your web app URL from Step 4
+   - `Tool name`: `search_hr_policies`
+   - `Description`: "Searches the HR policy knowledge base for documents matching the given topic. Returns document name, link, and a content snippet for the top matches."
+   - `Method`: GET
+   - `URL`: Paste your web app URL from Step 4
 8. Add one parameter:
 
    | Parameter key | Location | Type | Required | Set by AI | Description |
    |---|---|---|---|---|---|
    | `topic` | Query | String | Yes | Yes | The HR topic or policy name to search for (e.g., "maternity leave", "PTO", "onboarding") |
 
-9. Click **Done**, then click **Save**
+9. Click `Done`, then click `Save`
 
 :::note
 Test the tool by chatting with your AI Human Resources Coordinator and asking about a policy that exists in your Drive folders. The AI should retrieve the document name and link from the Sheet and include them in its response. If nothing is returned, confirm the Sheet was populated (Step 3 tip) and that the web app URL is correct.
 :::
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>Which editions support custom AI Employees?</summary>

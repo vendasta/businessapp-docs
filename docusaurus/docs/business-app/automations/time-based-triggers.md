@@ -1,7 +1,7 @@
 ---
 title: Time-based triggers
 description: Learn how to set up automations that run on a schedule using the On a schedule trigger.
-sidebar_position: 7
+sidebar_position: 8
 sidebar_label: Time-based triggers
 tags: [automations, scheduled, triggers, recurring, time-based]
 keywords: [scheduled automation, recurring automation, daily automation, weekly automation, monthly automation, time-based trigger, on a schedule]
@@ -12,6 +12,8 @@ Run automations on a recurring schedule without waiting for an event to trigger 
 ## How time-based triggers work
 
 Unlike event-based triggers that run when something happens (like a company or contact creation), time-based triggers run at times you define. You set the frequency, time of day, and date range, and the automation runs automatically.
+
+Alongside your automation's description, the **On a schedule** trigger also displays when the automation will run next, so you can confirm the schedule at a glance without opening the configuration panel.
 
 **Key benefits:**
 - Automate recurring tasks without manual intervention

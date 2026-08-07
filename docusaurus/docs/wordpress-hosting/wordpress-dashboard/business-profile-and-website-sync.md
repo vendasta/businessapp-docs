@@ -14,13 +14,13 @@ With the sync of information you only have to worry about updating it in one are
 
 It also provides website designers and developers with the flexibility to input shortcodes and blocks to display business information however they'd like.
 
-## How Does the Business Profile Sync Work?
+## How does the Business Profile sync work?
 
 Before creating a new website with WordPress Hosting, ensure all business information is up-to-date and accurate in the Business App Business Profile section.
 
 ![Business Profile in Business App](./img/business-profile-and-website-sync/business-profile-in-app.png)
 
-## Contact Information
+## Contact information
 
 Once your business information is correct, you can create your new website. One of the 7 eCommerce templates is required for this sync.
 
@@ -32,7 +32,7 @@ Once the site is created, you should see accurate contact information reflected 
 
 To use shortcodes and have the information from the Business Profile sync with your website, navigate to the WordPress Dashboard.
 
-From here select the **Tools** tab and **Business Profile Render** sub-tab.
+From here select the `Tools` tab and `Business Profile Render` sub-tab.
 
 ![Business Profile Render Plugin](./img/business-profile-and-website-sync/business-profile-render-plugin.jpg)
 
@@ -40,20 +40,20 @@ This plugin provides ways to automatically sync information on your site from th
 
 Specific instructions on how to properly utilize each type of block are located within the tab in WordPress.
 
-## Updating Header Contact Information
+## Updating header contact information
 
 To make changes to the contact details displayed in your website's header, follow these steps:
 
-1.  Open your **WordPress Dashboard**.
-2.  Navigate to **Appearance** > **Customize**.
-3.  Go to **Header and Navigation** > **Header Elements**.
-4.  From there, you can update the **phone number** or **email address** as needed.
+1.  Open your WordPress dashboard.
+2.  Navigate to `Appearance` > `Customize`.
+3.  Go to `Header and Navigation` > `Header Elements`.
+4.  From there, you can update the phone number or email address as needed.
 
 :::info
 Header contact information can also be updated through the Business Profile sync if you're using one of the 7 eCommerce templates. Changes made in Business App will automatically sync to your website header.
 :::
 
-## Benefits of Business Profile Sync
+## Benefits of Business Profile sync
 
 *   **Single source of truth** – Update information once in Business App, and it syncs everywhere
 *   **Reduced errors** – No need to manually update multiple locations
