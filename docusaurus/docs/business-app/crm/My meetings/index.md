@@ -147,6 +147,15 @@ Booking pages automatically display in your customer's browser language, so cust
 - If a customer's browser language isn't supported, the page displays in English.
 - Content you write yourself — such as service names, descriptions, and staff bios — always displays exactly as you entered it and is not translated.
 
+## Confirmation and reminder activity
+
+When a confirmation or reminder is sent to a guest for a meeting booked through My Meetings, it's logged as a **Meeting - Reminder** activity on that guest's contact timeline.
+
+- The activity appears in both the **All** and **Meetings** tabs of the contact profile.
+- It shows the invitee name, event type, date, status, and duration, and can be expanded for more detail.
+- The status updates as the send progresses — for example, from sent to delivered, or to failed if delivery doesn't succeed — so you can confirm whether a customer received their reminder.
+- This is a read-only activity, with the same menu options available on other meeting activities.
+
 ## Frequently Asked Questions
 
 <details>
