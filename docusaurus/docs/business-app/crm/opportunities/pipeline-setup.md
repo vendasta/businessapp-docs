@@ -10,7 +10,7 @@ description: Set up pipelines, add and remove stages, and use close probability 
 2. Click the `Set up a pipeline` button. This creates a default pipeline.
 3. Use `Add Stage` to insert new stages.
 4. Use the `X` next to a stage to remove it (except for default stages).
-5. Set a **Close Probability** for each stage to forecast deal success rates.
+5. Set a `Close Probability` for each stage to forecast deal success rates.
 
 ![Pipeline setup](../img/opportunities/pipeline-1.png)
 ![Pipeline stages](../img/opportunities/pipeline-2.png)
@@ -27,8 +27,8 @@ Stages represent how an opportunity moves through your sales process. You can na
 - **Qualified** – The opportunity has been qualified as a potential sale
 - **Proposal** – A proposal has been presented to the potential customer
 - **Negotiation** – Terms are being negotiated
-- **Won** – The opportunity has resulted in a sale (or use **Closed Won**)
-- **Lost** – The opportunity did not result in a sale (or use **Closed Lost**)
+- **Won** – The opportunity has resulted in a sale (or use `Closed Won`)
+- **Lost** – The opportunity did not result in a sale (or use `Closed Lost`)
 
 Moving opportunities through stages helps you track your sales process and spot bottlenecks. Set close probability per stage so the CRM can help you forecast revenue.
 

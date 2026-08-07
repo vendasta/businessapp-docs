@@ -17,9 +17,9 @@ Managing opportunities lets you visualize, organize, and act on deals across dif
 
 ## What's included
 
-- **Pipeline View** to manage opportunities by stage
-- **List View** with sortable and filterable data
-- **Opportunity Profile Page** with a detailed timeline and linked CRM records
+- `Pipeline View` to manage opportunities by stage
+- `List View` with sortable and filterable data
+- `Opportunity Profile Page` with a detailed timeline and linked CRM records
 - **Manual and Automated Creation** of opportunities
 - **Editable Fields** in both profile and table views
 - **Flexible Closing Options** for won or lost deals
@@ -28,7 +28,7 @@ Managing opportunities lets you visualize, organize, and act on deals across dif
 ## How to access opportunities
 
 1. Go to `CRM` → `Opportunities`.
-2. You'll land on the Pipeline View. Use the List icon to switch to a sortable, filterable table.
+2. You'll land on the `Pipeline View`. Use the List icon to switch to a sortable, filterable table.
 
 ## What's in this section
 

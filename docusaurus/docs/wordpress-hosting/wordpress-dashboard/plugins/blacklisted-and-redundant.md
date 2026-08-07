@@ -1,12 +1,11 @@
 ---
+title: Blacklisted and Redundant Plugins
 sidebar_position: 4
 ---
 
-# Blacklisted and Redundant Plugins
+WordPress Hosting supports thousands of WordPress plugins, and most work without issues. However, some plugins conflict with WordPress Hosting's built-in features because they provide duplicate functionality that's already included. These plugins can cause performance issues, unexpected behavior, or prevent built-in features from working correctly.
 
-WordPress Hosting supports thousands of WordPress plugins, and most work seamlessly. However, some plugins conflict with WordPress Hosting's built-in features because they provide duplicate functionality that's already included. These plugins can cause performance issues, unexpected behavior, or prevent built-in features from working correctly.
-
-## Caching Plugins
+## Caching plugins
 
 WordPress Hosting includes server-side caching to make your site fast. Caching plugins are unnecessary and can cause conflicts with WordPress Hosting's built-in caching system, potentially interfering with backups and restores.
 
@@ -16,7 +15,7 @@ WordPress Hosting includes server-side caching to make your site fast. Caching p
 * WP Super Cache
 * WP File Cache
 
-## Backup Plugins
+## Backup plugins
 
 WordPress Hosting automatically backs up your site daily and provides on-demand backup and restore capabilities. Backup plugins are unnecessary and can slow your site's performance. Some backup plugins store backups on your site itself, which uses up storage space unnecessarily.
 
@@ -27,7 +26,7 @@ WordPress Hosting automatically backs up your site daily and provides on-demand 
 * WP DB Backup
 * WP DB Manager
 
-## Login Security Plugins
+## Login security plugins
 
 WordPress Hosting provides secure login functionality automatically. Access to your WordPress Admin Dashboard is only available through WordPress Hosting's dashboard, which includes controlled access and "Sign in with Google" support.
 
@@ -37,7 +36,7 @@ Plugins that alter the login process are unnecessary and may break the login wor
 * Rename WP Login
 * [Jetpack](https://en-ca.wordpress.org/plugins/jetpack/) (some functionality issues)
 
-## SMTP/Email Plugins
+## SMTP/email plugins
 
 WordPress Hosting provides reliable email delivery. Plugins that integrate with third-party email services via HTTP APIs (like SendGrid) should work, but plugins that attempt to use SMTP directly or operating system utilities are not supported.
 
@@ -46,39 +45,39 @@ WordPress Hosting provides reliable email delivery. Plugins that integrate with 
 * WP Mailing List
 * Other SMTP email plugins
 
-## Security Plugins
+## Security plugins
 
 WordPress Hosting follows WordPress security best practices and prevents brute force attacks. Security plugins can interfere with caching mechanisms, add overhead, and conflict with WordPress Hosting's security systems.
 
 **Examples:**
 * Shield Security for WordPress (WP Simple Firewall)
 
-## Other Incompatible Plugins
+## Other incompatible plugins
 
-### Slider Revolution Plugin (Revslider)
+### Slider revolution plugin (Revslider)
 
 Older versions of Slider Revolution (Revslider) plugin have code that's incompatible with PHP 7. If you have an incompatible version installed, you may see a 500 error when accessing the WordPress Admin Dashboard.
 
 **To fix this:**
 
 1. **Remove and reinstall**: Use SFTP to remove the plugin entirely, then install the newest version (5.3.0.2 or later).
-2. **Update the code**: If you need to keep the old version temporarily, use SFTP to edit the plugin file and change a line of code. This requires technical knowledge and is not recommended for non-technical users.
+2. **Update the code**: If you need to keep the old version temporarily, use SFTP to edit the plugin file and change a line of code. This requires technical knowledge and is not recommended if you're not comfortable making code changes.
 
-### Plugins That Modify Server Configuration
+### Plugins that modify server configuration
 
 Plugins that attempt to modify `.htaccess` or NGINX configuration files will not work. WordPress Hosting manages these files to maintain security and performance.
 
 **Examples:**
 * Redirection (may not function as expected)
 
-### Plugins That Use exec()
+### Plugins that use exec()
 
 Plugins that attempt to execute commands at the operating system level are disabled for security reasons.
 
 **Examples:**
 * EWWW Image Optimizer
 
-## Blacklisted Plugins
+## Blacklisted plugins
 
 The following plugins cannot be installed on WordPress Hosting:
 

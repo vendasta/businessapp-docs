@@ -128,7 +128,7 @@ The Leads section uses data from tools in your Business App, such as:
 - **CRM** — Stored leads and follow-up
 - **Forms** — Form submissions and contact requests
 - **Google Business Profile** — Calls and actions from your listing
-- **Conversations** — Inbox for customer messages
+- **Conversations AI** — Hub for customer messages
 
 ## Frequently asked questions
 

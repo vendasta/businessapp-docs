@@ -1,0 +1,156 @@
+---
+title: Custom Objects
+sidebar_label: Custom objects
+sidebar_position: 5
+description: Create custom CRM modules to track industry-specific data like equipment, properties, vehicles, or pets alongside your contacts and companies. Supports bulk import, automations, smart lists, and API.
+tags: [crm, custom-objects, customization, automation, bulk-import, api]
+keywords: [custom objects, custom modules, custom crm, industry-specific crm, custom fields, bulk import, smart lists, automations, api]
+---
+
+Custom objects let you extend the CRM beyond standard contacts, companies, and opportunities by creating flexible data types tailored to your business or industry. Track specialized records like equipment, properties, vehicles, pets, demos, or any other entity that matters to your workflow — all within the same CRM.
+
+Custom objects are available with CRM AI Standard and Pro editions. See [CRM AI Plans](./index.mdx#crm-ai-plans) for details.
+
+## What custom objects support
+
+- **Configurable fields**: text, number, date, dropdowns, and more
+- **Bulk Import**: upload CSVs, map fields, and populate records at scale
+- **Automations**: trigger workflows on object create, update, list entry, or list exit — and update custom object fields from automation actions
+- **Smart lists**: segment custom object records with the same filter power as contacts and companies
+- **API**: programmatically create, update, and sync custom object records from external systems
+
+## Why use custom objects?
+
+Standard CRM records cover common sales workflows, but many businesses need to track data specific to their industry. Custom objects give you the flexibility to:
+
+- **Model any data your business depends on**: track assets, subscriptions, locations, equipment, pets — anything that previously lived in spreadsheets or external tools.
+- **Automate around unique business processes**: because custom objects power smart lists and automations, you can create workflows that trigger off object activity, dates, or relationships.
+- **Unify all customer-related data**: custom objects become first-class CRM entities, so sales and service teams see the full context of every customer in one place.
+
+## Examples of custom objects
+
+| Industry | Custom object | What it tracks |
+|----------|--------------|----------------|
+| Real estate | Properties | Listings, addresses, square footage, asking price |
+| Home services | Equipment | Make, model, install date, warranty status |
+| Automotive | Vehicles | VIN, year, mileage, service history |
+| Property management | Units | Tenant, lease dates, rent amount, maintenance requests |
+| Healthcare | Patients | Visit history, provider, insurance information |
+| Pet services | Pets | Breed, last grooming date, vaccination status |
+| Sales operations | Demos | Who booked, who presented, who researched |
+
+## Create a custom object
+
+1. Navigate to **Administration** → **CRM Objects**.
+2. Click **Add custom object**.
+3. Name your object and configure its fields (text, number, date, dropdown, and more).
+4. Save.
+
+Once saved, the custom object appears directly in the CRM navigation alongside standard objects. You can begin populating records manually, via bulk import, or through the API.
+
+## Import custom object records
+
+The Bulk Import workflow supports custom objects, making it easy to migrate asset lists, service records, inventory data, or any other custom dataset into the CRM.
+
+1. Go to the **Bulk Import** workflow.
+2. Upload your CSV.
+3. Choose your custom object under **Import As**.
+4. Map the CSV columns to your custom object fields.
+5. Complete the import.
+
+## Power automations and smart lists
+
+Custom objects work seamlessly with automations and smart lists, enabling powerful workflow customization.
+
+**Trigger automations when a custom object is:**
+
+- Created
+- Updated
+- Added to a list
+- Removed from a list
+
+**Use automation actions to:**
+
+- Update custom object fields
+- Retrieve associated contacts, companies, or opportunities
+- Send notifications or follow-up messages
+
+This supports vertical-specific workflows such as service reminders, asset management, demo tracking, and multi-step sales processes.
+
+## Common use cases
+
+### Service reminders
+
+Businesses that manage customer-owned assets can automate maintenance reminders.
+
+**Example: pet grooming business**
+
+A grooming business creates a **Pet** object with a field for **Last Grooming Date**.
+
+- **Smart list**: Pets where **Last Grooming Date** is at least 180 days old
+- **Automation**:
+  1. When a Pet enters the list
+  2. Retrieve the associated contact
+  3. Send an SMS (Conversation AI required) or email reminder (Campaign Pro required)
+
+### Sales-specific objects
+
+Track processes that don't belong inside an Opportunity.
+
+**Example: demo tracking**
+
+Create a **Demo** object linked to opportunities with fields like:
+
+- Who booked
+- Who presented
+- Who researched
+
+Automations can then update demo records or move opportunities forward based on booking events.
+
+## API support
+
+Custom objects are fully supported through the API. You can programmatically create, update, and sync object records from external systems or custom applications. Custom object upsert is supported via API.
+
+## FAQs
+
+<details>
+<summary>Who has access to custom objects?</summary>
+
+All users with access to CRM Administration can create and manage custom objects.
+
+</details>
+
+<details>
+<summary>Can I automate around custom object activity?</summary>
+
+Yes. Smart lists and automations support custom object fields and their relationships with contacts, companies, and opportunities.
+
+</details>
+
+<details>
+<summary>Can I import records into a custom object?</summary>
+
+Yes. Custom objects appear as options in the Bulk Import workflow. Upload a CSV, choose your custom object under **Import As**, and map the fields.
+
+</details>
+
+<details>
+<summary>Can I link a custom object to contacts or companies?</summary>
+
+Yes. Custom objects can be related to standard CRM objects and pulled into automations to retrieve the associated contacts, companies, or opportunities.
+
+</details>
+
+<details>
+<summary>Can developers sync custom objects programmatically?</summary>
+
+Yes. Custom object upsert is supported via API.
+
+</details>
+
+<details>
+<summary>Which CRM AI editions include custom objects?</summary>
+
+Custom objects are included with CRM AI Standard and Pro. See [CRM AI Plans](./index.mdx#crm-ai-plans) for the full feature comparison.
+
+</details>

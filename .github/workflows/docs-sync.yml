@@ -4,7 +4,9 @@ on:
   push:
     branches: [master]
     paths:
-      - "docusaurus/docs/**"
+      - "docusaurus/docs/yesware/**"
+  schedule:
+    - cron: "0 16 * * *"   # Daily at 11am CT (4pm UTC)
   workflow_dispatch:
     inputs:
       sync_name:

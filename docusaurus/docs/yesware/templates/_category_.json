@@ -1,6 +1,10 @@
 {
   "label": "Templates",
-  "position": 6,
+  "position": 8,
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "yesware/templates/index"
+  }
 }

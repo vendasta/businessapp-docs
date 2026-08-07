@@ -7,7 +7,7 @@ keywords: [ai employees, llm, model versions, data sources, knowledge base]
 ---
 
 ## Overview
-This page explains how Business App AI Employees—including AI Chat Receptionist, AI Voice Receptionist, and custom AI Employees—produce answers and what we disclose about their underlying AI models.
+This page explains how Business App AI Employees (including AI Chat Receptionist, AI Voice Receptionist, and custom AI Employees) produce answers and what is disclosed about their underlying AI models.
 
 ## Why is this important?
 - You can make better updates to your content and capabilities when you know how answers are generated.
@@ -30,14 +30,14 @@ Do not add sensitive or unnecessary personal data to your knowledge base. Only i
 :::
 
 ## Model disclosure policy
-- We do not publish the specific LLM provider or model version used in production.
+- The specific LLM provider or model version used in production is not published.
 - Model options may change over time to improve quality, safety, and reliability.
 - AI Chat Receptionist and AI Voice Receptionist automatically use a supported model. AI Employees let you choose from the supported models listed in Business App (the provider name is not shown).
 - The base LLM infrastructure is shared, but your account data is isolated. Your content is not visible to other businesses.
 
 ## Improve response quality
 1. Review your knowledge base for accuracy and completeness.
-2. Keep capability instructions short, specific, and action‑oriented.
+2. Keep capability instructions short, specific, and action-oriented.
 3. Test common customer questions and adjust wording where answers are unclear.
 4. Remove duplicate or outdated documents that may conflict with newer content.
 
@@ -95,6 +95,6 @@ Only if you add your website as a source in the knowledge base. Otherwise, they 
 <details>
 <summary>Is my data shared with other businesses?</summary>
 
-No. Your account's data, prompts, and responses are isolated. We monitor model performance in aggregate, but your content is not visible to other businesses.
+No. Your account's data, prompts, and responses are isolated. Model performance is monitored in aggregate, but your content is not visible to other businesses.
 
 </details>

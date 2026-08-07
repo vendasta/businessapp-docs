@@ -6,26 +6,26 @@ description: "WordPress Hosting includes richer PageSpeed data on the dashboard.
 
 WordPress Hosting includes richer PageSpeed data on the dashboard. You can see a trend of your website's page speed over time and, at a glance, understand opportunities to improve it.
 
-This additional PageSpeed data can help you understand the impact of any recent site changes. 
+This additional PageSpeed data can help you understand the impact of any recent site changes. 
 
-PageSpeed scores are measured weekly for both desktop and mobile, if a user would like to see an updated score they can do so by clicking the **refresh** button in the bottom left corner of the card. 
+PageSpeed scores are measured weekly for both desktop and mobile, if you would like to see an updated score, you can do so by clicking the `refresh` button in the bottom left corner of the card. 
 
 ![PageSpeed card showing desktop and mobile scores](img/pagespeed/pagespeed-card.png)
 
-If a user clicks to **Improve Desktop** or **Mobile Speed** they will be taken to Google's PageSpeed Insights in another tab. From here, a user can dig into what is causing their site to receive its score and what to change to improve it. 
+If you click `Improve Desktop` or `Mobile Speed`, you'll be taken to Google's PageSpeed Insights in another tab. From here, you can dig into what is causing your site to receive its score and what to change to improve it. 
 
-When a user clicks to **Learn more** a Google article will open in a new tab informing the user about why page speed is so important. 
+When you click `Learn more`, a Google article opens in a new tab explaining why page speed is so important. 
 
 If the website has recently been created the trend line will not appear as there is not enough data to support it. 
 
 ![PageSpeed card for a newly created website](img/pagespeed/pagespeed-new-site.png)
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Why is my Google PageSpeed score low, especially on mobile?</summary>
 
-Google PageSpeed scores often differ between mobile and desktop and can appear low even if your website feels fast. This is because PageSpeed scores are based on technical metrics like Core Web Vitals—not just real-world loading speed.
+Google PageSpeed scores often differ between mobile and desktop and can appear low even if your website feels fast. This is because PageSpeed scores are based on technical metrics like Core Web Vitals, not just real-world loading speed.
 
 Several factors can influence scores:
 
@@ -36,14 +36,14 @@ Several factors can influence scores:
 
 **How to improve performance:**
 
-* Use the "Improve Desktop/Mobile Speed" buttons in the WordPress Hosting Pro or Standard dashboard.
+* Use the `Improve Desktop/Mobile Speed` buttons in the WordPress Hosting Pro or Standard dashboard.
 * Remove unnecessary plugins and themes.
-* Use a lightweight theme, or build with clean HTML (note: hardcoded sites are not supported by Marketing Services).
+* Use a lightweight theme, or build with clean HTML (note: hardcoded sites are not supported).
 * Use Google PageSpeed Insights to view actionable suggestions.
 * Monitor Core Web Vitals in the WordPress Hosting dashboard.
-* Contact Marketing Services for help with image optimization, caching setup, or plugin audits.
+* Contact support for help with image optimization, caching setup, or plugin audits.
 
-Even with a low PageSpeed score, try loading your site manually on both desktop and mobile—you'll likely find that it performs well.
+Even with a low PageSpeed score, try loading your site manually on both desktop and mobile, you'll likely find that it performs well.
 
 </details>
 
@@ -70,8 +70,8 @@ Caching is bypassed for:
 * URLs with query parameters
 
 To clear your site's cache:
-* Go to WordPress Hosting > Overview
-* Click the **Flush Cache** button
+* Go to `WordPress Hosting` → `Overview`
+* Click the `Flush Cache` button
 
 You can also bypass the cache by appending a query string to any URL (e.g., `example.com/page?v=123`).
 
@@ -85,7 +85,7 @@ If you're using WordPress Hosting's staging environment (available on Pro only),
 If your changes only appear when logged in as an admin or after waiting an hour, this is likely due to caching.
 
 To resolve:
-* Click **Flush Cache** in your WordPress Hosting dashboard
+* Click `Flush Cache` in your WordPress Hosting dashboard
 * Wait one hour (the default cache expiration time)
 * Use staging to make changes and then push to live (cache clears automatically)
 * **Tip** - If you would like to access the un-cached version of a page, use a query param, i.e., add a _?v=12345_ to the page URL you'd like to access (so [www.mysite.com](http://www.mysite.com/) becomes [www.mysite.com?v=123456](http://www.mysite.com/?v=123456), bear in mind any random number will work) to the end of the URL. This will be slower to load the page, but it will bypass the NGINX cache.
@@ -95,7 +95,7 @@ To resolve:
 <details>
 <summary>Why aren't my CSS changes in Divi Builder taking effect?</summary>
 
-Divi Builder uses **Static CSS File Generation** by default, which can cause CSS changes not to apply immediately.
+Divi Builder uses `Static CSS File Generation` by default, which can cause CSS changes not to apply immediately.
 
 To fix this:
 * Temporarily disable Static CSS File Generation in the Divi theme options.
@@ -123,7 +123,7 @@ To optimize images:
 * Choose descriptive filenames and alt text
 * Use optimization plugins like Smush, EWWW Image Optimizer, or ShortPixel
 
-You can also reach out to Marketing Services for support with image cleanup and lazy loading setup.
+You can also reach out to support for help with image cleanup and lazy loading setup.
 
 </details>
 
@@ -140,7 +140,7 @@ All WordPress Hosting sites use **Google Cloud CDN** by default, which provides:
 
 To disable the CDN:
 * Visit your WordPress Hosting dashboard
-* Toggle **Enable CDN** off
+* Toggle `Enable CDN` off
 
 More about CDN functionality: [What is Cloud CDN? (Google)](https://cloud.google.com/blog/topics/developers-practitioners/what-cloud-cdn-and-how-does-it-work)
 
@@ -149,7 +149,7 @@ More about CDN functionality: [What is Cloud CDN? (Google)](https://cloud.google
 <details>
 <summary>Why is my bounce rate extremely low in Google Analytics?</summary>
 
-A bounce rate below 10% may suggest a technical issue rather than high engagement. One common cause is duplicate Google Analytics tags—often from both a theme and a plugin.
+A bounce rate below 10% may suggest a technical issue rather than high engagement. One common cause is duplicate Google Analytics tags, often from both a theme and a plugin.
 
 To troubleshoot:
 1. Install the [Google Tag Assistant Chrome extension](https://www.analyticsmania.com/post/google-tag-assistant-tutorial/)

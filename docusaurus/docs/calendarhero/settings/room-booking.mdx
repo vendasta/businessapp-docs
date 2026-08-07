@@ -1,0 +1,64 @@
+---
+title: Room Booking
+description: Automatically book a meeting room when scheduling in-person meetings using CalendarHero's room booking integration.
+---
+
+Room Booking automatically reserves a meeting room when a meeting is scheduled — no separate booking step required. CalendarHero selects a room based on the capacity you specify and adds it to all attendees' calendar events.
+
+Room Booking is available to Team plan users only. A Team plan admin must add a room provider before anyone can use it.
+
+## Supported providers
+
+- Google Rooms
+- Microsoft Office 365 Rooms
+- Zoom Rooms
+- Robin
+
+## Adding a provider (admin only)
+
+Admins set up room booking from [Admin → Integrations → Rooms](https://app.calendarhero.com/org/accounts/add#rooms). Once a provider is added, room booking becomes available to all org members.
+
+**Microsoft Office 365 note** — Microsoft's API does not return room capacity or building names. Admins must enter these manually after connecting. Go to [Admin → Applications → Meeting Scheduler](https://app.calendarhero.com/org/apps/meeting) to add capacity and location information for each room.
+
+## Using room booking
+
+Once a provider is connected, you can request a room in two ways:
+
+**In the web scheduler** — on the Details step, use the **Room** dropdown and select a capacity (e.g. "Room for 5"). A room matching that capacity is automatically booked when the meeting is scheduled.
+
+**In chat** — say *"Add a room for 3"* as part of your meeting request. For example: *"Book a meeting with Roy, Anita, and Paul next week. Add a room for 3."*
+
+**Via meeting type** — set a default room capacity in any meeting type under **Location & Conferencing → Room for #**. Every meeting created with that meeting type will automatically request a room.
+
+Room booking works alongside video conferencing — you can book a physical room for in-office attendees and add a video link for remote participants in the same meeting.
+
+## Room preferences
+
+Once a provider is set up, individual members can set their room preferences at [Settings → Meeting Room Settings](https://app.calendarhero.com/settings/rooms).
+
+**Locations/buildings** — if your org has rooms across multiple buildings, filter to only show rooms in your building or area.
+
+**Favorite rooms** — rank your preferred rooms in priority order. CalendarHero selects your highest-ranked available favorite. If none of your favorites are free, it automatically falls back to any room matching the requested capacity.
+
+## Frequently asked questions
+
+<details>
+<summary>What if no room is available at the time of the meeting?</summary>
+
+If no room matching the required capacity is available, the meeting is still scheduled — but without a room. You'll need to manually arrange a space in that case.
+
+</details>
+
+<details>
+<summary>Does buffer time apply to room bookings?</summary>
+
+No. Room booking duration is based on the meeting duration only — buffer time before or after the meeting is not added to the room reservation.
+
+</details>
+
+<details>
+<summary>Can I book a specific room by name?</summary>
+
+Not directly in chat — room requests in chat are capacity-based only. To prioritize a specific room, add it as your top-ranked favorite in [Room Settings](https://app.calendarhero.com/settings/rooms) and it will be selected first when available.
+
+</details>
