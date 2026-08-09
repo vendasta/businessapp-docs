@@ -219,6 +219,10 @@ When a caller says "I need a haircut and a beard trim," the AI Voice Receptionis
 Booking confirmations and reminders are sent via SMS to the phone number provided during the booking.
 
 :::note
+Your Voice Receptionist configuration may show two capabilities: **Book appointments with calendar** and **Book Multi-Service Appointment**. Use **Book Multi-Service Appointment** — it's a complete replacement. If **Book appointments with calendar** is visible in your configuration, it displays an **Upgrade available** badge; switch to Book Multi-Service Appointment for multi-service support and continued updates.
+:::
+
+:::note
 AI Chat and AI Voice Receptionists are independent agents. A Service Menu that works for Chat may not be immediately compatible with Voice if any of its event types use email notifications. Review and update those event types before connecting the menu to your Voice Receptionist.
 :::
 
