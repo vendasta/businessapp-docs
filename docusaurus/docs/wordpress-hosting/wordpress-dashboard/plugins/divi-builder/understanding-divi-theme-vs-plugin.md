@@ -20,12 +20,13 @@ If you are using a different theme but want to take advantage of Divi's page-bui
 
 WordPress Hosting is a hosting platform that streamlines the process of building and managing websites. When you create a site on WordPress Hosting, **Divi licenses are included by default** if you select a Divi template to design your site, so you don't need to worry about purchasing a separate license for Divi.
 
-Here's how Divi works on WordPress Hosting Pro:
+Here's how Divi works on WordPress Hosting:
 
-*   **Automatic Divi License**: When you design your site using a Divi template on WordPress Hosting, the Divi theme license is automatically provided. You don't need to manually purchase a separate Divi license.
+*   **Automatic Divi license**: When you design your site using a Divi template on WordPress Hosting, the Divi theme license is automatically provided. You don't need to manually purchase a separate Divi license.
+*   **Available in every edition**: Divi is included with all WordPress Hosting editions.
 *   **Broad compatibility**: WordPress Hosting fully supports both the Divi theme and Divi Builder plugin, making it easy to design responsive, beautiful websites with minimal effort.
 
-However, WordPress Hosting **Pro only provides the default Divi theme license**. If you need additional add-ons or premium features for Divi, you will need to purchase those separately through Elegant Themes or other providers.
+WordPress Hosting provides **only the default Divi theme license**. If you need additional add-ons or premium features for Divi, you will need to purchase those separately through Elegant Themes or other providers.
 
 For more information and detailed documentation on how to use Divi, you can visit the official **[Elegant Themes Documentation](https://www.elegantthemes.com/documentation/)**.
 
