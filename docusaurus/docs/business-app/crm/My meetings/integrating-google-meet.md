@@ -1,64 +1,132 @@
 ---
-title: Setting up calendar integration for meeting recordings
+title: Setting up calendar integration
 sidebar_label: Calendar integration
-description: Learn how to connect your Google Calendar to enable meeting scheduling and automatic notetaker functionality.
-tags: [calendar-integration, google-calendar, meetings, notetaker]
-keywords: [calendar sync, google calendar, meeting integration, calendar setup]
+description: Learn how to connect your Google Calendar or Microsoft 365 / Outlook calendar to enable meeting scheduling and automatic notetaker functionality.
+tags: [calendar-integration, google-calendar, outlook, microsoft, meetings, notetaker, reserve-with-google]
+keywords: [calendar sync, google calendar, outlook calendar, microsoft 365, meeting integration, calendar setup, reserve with google, disconnect integration]
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ## Overview
 
-Calendar integration connects your Google Calendar to the platform, enabling automatic meeting scheduling, notetaker functionality, and seamless synchronization of your upcoming meetings.
+Calendar integration connects your Google Calendar or Microsoft 365 / Outlook calendar to the platform, enabling availability checking, conflict detection, and automatic creation of meeting events when bookings are confirmed.
+
+:::note
+Only one calendar can be active at a time: either Google Calendar or Microsoft 365 / Outlook. Switching calendars later does not retroactively migrate existing meetings.
+:::
 
 ## Prerequisites
 
 Before setting up calendar integration, ensure you have:
 
-- A Google Workspace or personal Google account
+- A Google Workspace / personal Google account **or** a Microsoft 365 / Outlook.com account
 - Access to the My Meetings feature in your account
 
-## Connecting your Google Calendar
+## Connecting your calendar
 
-1. Navigate to **My Meetings** from the main menu.
-2. Click on **Meeting Settings**.
-3. Select **Connect Calendar**.
-4. Sign in with your Google account and grant the required permissions.
-5. Once connected, your upcoming calendar events will automatically sync.
+You can connect your calendar during the initial setup wizard or at any time from `Meeting settings`.
 
-**Demo:**
+### Option A: During initial setup
 
-<div style={{position: "relative", paddingBottom: "56.25%", height: 0}}>
-  <iframe 
-    src="https://drive.google.com/file/d/1cgcuBW4zyQ1AzlkJXqf-9RsDWfO8JIU8/view?usp=drive_link" 
-    frameBorder="0" 
-    webkitallowfullscreen="true" 
-    mozallowfullscreen="true" 
-    allowFullScreen 
-    style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}>
-  </iframe>
-</div>
+When you first visit `My Meetings`, the setup wizard walks you through four steps. On step 2 (`Connect calendar`), select your calendar provider:
+
+![Calendar settings step showing Google Calendar and Microsoft 365/Outlook.com options with a Sign in with Google button](../img/my-meetings/setup-wizard-connect-calendar.png)
+
+- `Google Calendar`: Click `Sign in with Google` and grant the required permissions.
+- `Microsoft 365 / Outlook.com`: Select `Microsoft 365 / Outlook.com`, then click `Sign in with Microsoft` and grant the required permissions.
+
+:::note
+When you sign in with Google, the permission screen identifies the app as "Meeting Scheduler." This is expected: it's the name Google displays for this calendar integration, so there's no need to be concerned when you see it.
+:::
+
+![Google account permission screen requesting calendar access for Meeting Scheduler](../img/my-meetings/google-calendar-permission-request.png)
+
+### Option B: From Meeting settings
+
+1. Navigate to `My Meetings` from the main menu.
+2. Click the **three-dot menu** in the top-right corner and select `Meeting settings`.
+3. Under `Calendar settings`, select your calendar provider and sign in.
+
+![Calendar settings page showing connected Google Calendar with Disconnect option](../img/my-meetings/outlook-calendar-connect.png)
 
 ## What happens after connection
 
 Once your calendar is connected:
 
-- **Automatic sync**: Your upcoming meetings appear in the My Meetings > Upcoming meetings tab
-- **Notetaker scheduling**: The platform automatically schedules notetakers for your meetings
-- **Meeting insights**: AI-powered summaries and transcripts are generated for recorded meetings
+- **Availability checking**: The platform checks your calendar for conflicts when invitees try to book, so only genuinely free slots are shown.
+- **Automatic event creation**: Confirmed bookings create calendar events in your connected calendar automatically.
+- **Notetaker scheduling**: The platform automatically schedules notetakers for your upcoming meetings.
+- **Meeting insights**: AI-powered summaries and transcripts are generated for recorded meetings.
+
+## Choosing a meeting app
+
+After connecting your calendar, select your default video conferencing app:
+
+- `Google Meet`: Recommended for Google Workspace users.
+- `Zoom`: Requires a Zoom account.
+- `Microsoft Teams`: Recommended for Microsoft 365 / Outlook users and Teams-based organizations.
+
+Your chosen app is used to generate video conference links for all Video meeting event types.
 
 ## Managing your calendar connection
 
-### Viewing connected calendars
+### Viewing your connected calendar
 
-Navigate to **My Meetings → Meeting Settings** to view your connected calendar status.
+Navigate to `My Meetings` → `Meeting settings` to view your connected calendar status.
 
 ### Disconnecting your calendar
 
-1. Go to **My Meetings → Meeting Settings**.
+1. Go to `My Meetings` → `Meeting settings`.
 2. Click on your connected calendar.
-3. Select **Disconnect**.
+3. Select `Disconnect`.
 
-> **Note:** Disconnecting your calendar will stop automatic notetaker scheduling for future meetings.
+:::note
+Disconnecting your calendar will stop automatic notetaker scheduling for future meetings.
+:::
+
+### Switching calendar providers
+
+To switch from Google to Microsoft (or vice versa):
+
+1. Disconnect your current calendar in `Meeting settings`.
+2. Connect the new calendar provider following the steps above.
+
+Meetings already scheduled are not migrated. Only new bookings going forward will use the new calendar.
+
+## Reserve with Google
+
+<Tabs>
+<TabItem value="reserve-with-google" label="Reserve with Google">
+
+Reserve with Google lets customers book your services directly from your Google Business Profile. If you no longer want your booking option to appear on Google, you can disconnect the integration at any time.
+
+### Before you start
+
+You'll need access to your business account in the Business App, and permission to manage integrations.
+
+### Steps to disconnect
+
+1. Sign in to your Business App.
+2. In the left menu, go to `Administration` > `Integrations`.
+3. Find `Reserve with Google` in your list of integrations and open it.
+4. Select **Disconnect**.
+5. Confirm when prompted.
+
+![Reserve with Google integration page showing the connected service and Disconnect button](../img/my-meetings/reserve-with-google-integration-page.png)
+
+That's it. Your integration is now disconnected.
+
+### What happens after you disconnect
+
+- Your business is removed from the next daily update sent to Google. Your booking option stops appearing on your Google Business Profile within 24–48 hours.
+- Any appointments customers already booked are not affected — you'll still see and manage them as usual.
+- Your existing service and booking settings stay in place; only the connection to Google is removed.
+- You can reconnect at any time by returning to **Administration → Integrations → Reserve with Google** and setting it up again.
+
+</TabItem>
+</Tabs>
 
 ## Troubleshooting
 
@@ -70,9 +138,16 @@ Navigate to **My Meetings → Meeting Settings** to view your connected calendar
 </details>
 
 <details>
-  <summary>I don't see the Connect Calendar option</summary>
+  <summary>I don't see the Connect calendar option</summary>
 
   Ensure you have the appropriate permissions in your account. Contact your administrator if the option is not available.
+
+</details>
+
+<details>
+  <summary>Microsoft sign-in is failing</summary>
+
+  Ensure your Microsoft 365 account has calendar access permissions enabled by your IT administrator. Use your work email when authenticating. Personal Outlook.com accounts are also supported.
 
 </details>
 

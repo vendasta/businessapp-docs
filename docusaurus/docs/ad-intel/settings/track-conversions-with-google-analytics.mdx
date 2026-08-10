@@ -8,16 +8,18 @@ Select Google Analytics as the source for your Conversion metrics in Advertising
 
 ![Google Analytics conversion tracking](img/ga-conversion-1.jpg)
 
-### Why is Google Analytics conversion tracking important?
+## Supported Google Analytics account types
 
-Previously, Conversion metrics could only be tracked from objectives set on Google Ads or Facebook Ads. However, it's common for Partners to set objectives in Google Analytics since it has broader access to the sales funnel and can track ads campaign performance in more detail. When objectives were set in Google Analytics, the Conversions metric showed as 0 since Advertising Intelligence wasn't tracking Google Analytics.
+Standard GA4 properties are supported. Google Analytics 360 sub-properties are not supported. If you attempt to connect a GA 360 sub-property, the connection will not work.
 
-Select the platform you're using to set objectives, giving you complete transparency into the data as well as flexibility in selecting and analyzing the conversions.
+## How to set up Google Analytics conversion tracking
 
-### How does tracking conversions with Google Analytics work?
-
-To configure your Conversion metric settings, open **Advertising Intelligence** and navigate to the **Settings** page. Then, click the **Conversion Metrics** section under Google AdWords or Facebook Ads to configure the settings for that platform. The option you select supplies the data for the Conversions metric in Advertising Intelligence.
-
-Advertising Intelligence pulls in and stores this data once per day. The data comes from the **"sessions" column** (not users) in the Google Analytics dashboard. If there are small differences in the data (between GA dashboard and Advertising Intelligence), it's caused by how frequently we fetch Google Analytics data. New session data may get pulled into Google Analytics before we pull it and store it.
+1. Open Advertising Intelligence and go to `Settings`.
+2. Click the `Conversion Metrics` section under Google Ads or Facebook Ads.
+3. Select `Google Analytics` as the source. The option you select supplies the data for the Conversions metric in Advertising Intelligence.
 
 ![Google Analytics conversion metrics settings](img/ga-conversion-2.jpg)
+
+## Why is there a data difference between Google Analytics and Advertising Intelligence?
+
+Advertising Intelligence pulls and stores Google Analytics data once per day. The data comes from the `Sessions` column (not Users) in the Google Analytics dashboard. Small differences between the GA dashboard and Advertising Intelligence are normal. New session data may be added to Google Analytics between pulls, so Advertising Intelligence may lag the live GA dashboard by up to 24 hours.

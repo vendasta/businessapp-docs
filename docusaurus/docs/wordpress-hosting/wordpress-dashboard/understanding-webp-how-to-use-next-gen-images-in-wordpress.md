@@ -40,7 +40,7 @@ After enabling WebP, check if your images are loading in the correct format:
 2.  Look for **.webp** in the image URL.
 3.  If WebP isn't loading, clear your cache and test again.
 
-Using WebP in WordPress is a **simple but powerful way** to enhance website speed, improve SEO, and optimize user experience. Whether you use **WordPress's built-in support, plugins, or a CDN**, WebP is a must-have for modern websites!
+Using WebP in WordPress is a **simple but effective way** to enhance website speed, improve SEO, and optimize user experience. Whether you use **WordPress's built-in support, plugins, or a CDN**, WebP is a must-have for modern websites.
 
 ## Related Articles
 

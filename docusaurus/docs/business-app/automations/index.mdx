@@ -115,9 +115,9 @@ You can also find Automations under **Business App** > **Administration** > **Au
 </div>
 
 5. **Add a Step** — define what happens when the trigger fires (templates include steps already; you can edit, remove, or add more)
-   - Example: "Send a plain text email via Inbox", "Send SMS", "Create task"
+   - Example: "Send a plain text email via Conversations AI", "Send SMS", "Create task"
 
-6. **Edit automation details** — select ``Edit details`` from the side panel to name and organize your automation. Give it a title, add a description (or select ``Regenerate description`` to have AI draft one), apply tags to make it easier to find on the Automations page, and add notes.
+6. **Edit automation details** — select ``Edit details`` from the side panel to name and organize your automation. Give it a title, add a description (or select ``Regenerate description`` to have AI draft one), apply tags to make it easier to find on the Automations page, and add notes. This description also appears under the trigger name in the automation builder, so anyone viewing the automation can see what it does at a glance.
 
 <div style={{ textAlign: 'center' }}>
   <img src={require('./img/edit-automation-details-window.png').default} alt="Edit details panel showing Title, Description, Tags, and Notes fields" width="55%" />
@@ -150,15 +150,21 @@ When you toggle an automation off, you'll be asked how to handle any runs that a
 
 Use **Drain** when you want to avoid interrupting processes that are mid-workflow. Use **Stop** when you need to halt everything immediately — for example, if the automation is behaving unexpectedly.
 
+## Run automations from the CRM
+
+You can also start automations directly from your CRM without visiting the Automations page. In `CRM` > `Contacts` or `CRM` > `Companies`, select one or more records, click the `Actions` button, and choose `Start automation`. This lets you run an existing automation on a specific set of records on demand.
+
+See [Contacts — Take bulk actions](../crm/contacts/index.md#take-bulk-actions-on-contacts) and [Companies — Take bulk actions](../crm/companies.md#take-bulk-actions-on-companies) for details.
+
 ## Related resources
 
 - [Automation triggers](automation-triggers.md) - Full list of available triggers by category
 - [Automation conditions](automation-conditions.md) - Filter when your automation runs using AND/OR logic
 - [Automation settings](automation-settings.md) - Control how often it runs and how errors are handled
 - [Automation activity](automation-activity.md) - Review what ran, when it ran, and troubleshoot issues
-- [Messaging steps](workflows/action-messaging.md) - Send SMS and email messages
-- [Campaign steps](workflows/action-campaigns.md) - Pause campaigns intelligently
-- [Review request automation](workflows/use-case-review-requests.mdx) - Collect customer reviews automatically
+- [Messaging steps](use-cases/action-messaging.md) - Send SMS and email messages
+- [Campaign steps](use-cases/action-campaigns.md) - Pause campaigns intelligently
+- [Review request automation](review-requests.mdx) - Collect customer reviews automatically
 - [Zapier integration](zapier.md) - Connect with thousands of external apps
 
 ## Frequently asked questions (FAQs)

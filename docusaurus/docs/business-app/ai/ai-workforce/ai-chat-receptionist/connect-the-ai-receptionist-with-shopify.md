@@ -79,7 +79,7 @@ This means customers can ask about products through phone calls, SMS, WhatsApp, 
 
 Yes! This guide is specific to Shopify, but you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
 
- The [Custom Capabilities framework](../../ai-capabilities/creating-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Integrations](../../administration/connections/) or create workflows with external platforms using [Zapier](../../../automations/zapier.md).
+ The [Custom Capabilities framework](../../ai-capabilities/creating-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Integrations](../../../administration/connections/) or create workflows with external platforms using [Zapier](../../../automations/zapier/).
 </details>
 
 ### AI & Knowledge Questions
@@ -122,8 +122,8 @@ Yes! The Shopify Storefront integration works across all communication channels 
 - [SMS messaging](../../../conversations/conversations-send-receive-sms.md) (Conversations Pro required)
 - [WhatsApp](../../../conversations/conversations-whatsapp-overview.md)
 - Phone calls (with [AI Voice Receptionist](../ai-voice-receptionist.md))
-- [Facebook Messenger](../../../conversations/conversations-setup-facebook-messenger.md)
-- [Instagram DMs](../../../conversations/conversations-setup-instagram.md)
+- [Facebook Messenger](../../../conversations/facebook-messenger.mdx)
+- [Instagram DMs](../../../conversations/instagram-messenger.mdx)
 
  The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
 </details>

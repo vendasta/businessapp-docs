@@ -6,10 +6,10 @@ description: "Learn how to export your website from WordPress Hosting Standard o
 
 You can export your website from WordPress Hosting Standard or Pro using the **All-in-One WP Migration** plugin.
 
-## Export Steps
+## Export steps
 
 1. Install the plugin in the WordPress dashboard.
-2. Go to the plugin menu and click **Export > File**.
+2. Go to the plugin menu and click `Export` → `File`.
 3. Download the exported `.wpress` file to your local device.
 
 :::info

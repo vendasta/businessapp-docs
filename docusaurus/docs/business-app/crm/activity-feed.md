@@ -1,12 +1,12 @@
 ---
 title: Activity feed
 sidebar_position: 4
-description: See real-time sales activities across your CRM—emails, notes, calls, meetings, and tasks—in one place.
+description: See real-time sales activities across your CRM, including emails, notes, calls, meetings, and tasks, all in one place.
 tags: [activity-feed, crm]
 keywords: [crm activity feed, sales activity, filter activities]
 ---
 
-Use the Activity Feed to see real-time updates on sales activities across your teams—emails, notes, calls, meetings, and more—so you can stay informed and coach effectively.
+Use the Activity Feed to see real-time updates on sales activities across your teams, including emails, notes, calls, meetings, and more, so you can stay informed and coach effectively.
 
 ## Why use the Activity Feed?
 
@@ -23,12 +23,12 @@ Use the Activity Feed to see real-time updates on sales activities across your t
 
 ## How to use the Activity Feed
 
-1. Go to `CRM` > `Activity Feed`.
+1. Go to `CRM` → `Activity Feed`.
 2. Filter by activity types such as Emails, Notes, Calls, or Meetings.
 3. Use search to find activities that mention specific keywords.
 4. Click an item to open the associated record and take action.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Can I filter by specific activity types?</summary>

@@ -45,7 +45,7 @@ Customers can keep calling your existing business number and your telephone prov
    - Forwarding calls automatically after-hours
 
 :::tip
-For more help forwarding calls, see [Call Forwarding Setup in Conversations](../../conversations/conversations-setup-phone-calls.md).
+For more help forwarding calls, see [Voice AI](../../conversations/phone-calls.mdx).
 :::
 
 #### Handling calls from your AI Voice Receptionist
@@ -127,6 +127,24 @@ The **Book appointments with calendar** capability connects to your integrated c
 
 On the `Book appointments with calendar` panel, use the `Select event link to book with` dropdown to choose which calendar your receptionist should use to determine availability as well as which kind of appointments they can offer.
 
+#### Book multiple services in one call
+
+You can configure your AI Voice Receptionist to book multiple services in one call when those services are grouped in the same `Service Menu/Group`.
+
+How to enable:
+1. Go to `AI` > `AI Workforce` > `Voice Receptionist` > `Configure`.
+2. In `Capabilities`, add `Book Multiple Services`.
+3. Select the `Service Menu/Group` to use for multi-service requests.
+4. Keep `Book appointments with calendar` enabled and select the event link to book with.
+5. Click `Save`, then test with a caller request that includes multiple services.
+
+When this is enabled:
+- The AI confirms the services before finalizing the booking.
+- The AI offers back-to-back options that fit the full service session.
+- If a combined slot is not available, the AI offers alternatives, such as another time or splitting the booking.
+- The AI collects required booking details before confirmation.
+- The system sends one consolidated confirmation per enabled notification channel.
+
 #### Additional instructions for AI Voice Receptionist
 
 The **Additional Instructions** capability lets you give your AI Voice Receptionist custom guidance to shape its responses, tone, and logic. It sits at the top of the AI’s prompt stack to refine how it interacts with callers. 
@@ -155,6 +173,16 @@ How to enable:
 2. In `Capabilities`, click `Add new capability`
 3. Select `Transfer call`
 4. Add one or more destination numbers and define criteria (e.g., sales vs. support, business hours)
+
+:::note Phone number format
+Destination numbers must be in international format: a `+` sign followed by the country code and phone number, with no spaces or special characters. Incorrect formatting is the most common cause of transfer errors.
+
+| Region | Example |
+|--------|---------|
+| United States | `+12025551234` |
+| Canada | `+16045551234` |
+| United Kingdom | `+441632960123` |
+:::
 
 ![Transfer Call capability](../img/voice-receptionist-transfer.png)
 
@@ -197,6 +225,7 @@ Before going live with your AI Voice Receptionist, you should test their respons
 - Answering common questions accurately
 - Offering to take a message and have someone call the caller back if they don't have an answer
 - Offering to book an appointment with your calendar
+- Handling requests that include multiple services in one booking session (if `Book Multiple Services` is enabled)
 
 ### Monitor and improve the AI Voice Receptionist
 
@@ -234,7 +263,7 @@ There are two main ways to route calls to your AI Voice Receptionist:
 1. **Direct calls to your Conversations number** - Calls made directly to your assigned Conversations phone number are automatically sent to your AI Receptionist
 2. **Forward calls from your business line** - Set up call forwarding from your existing business number to your Conversations number so customers can keep calling your familiar number
 
-For detailed call forwarding setup instructions, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md).
+For detailed call forwarding setup instructions, see [Voice AI](../../conversations/phone-calls.mdx).
 </details>
 
 <details>
@@ -333,6 +362,19 @@ This allows your team to review interactions, follow up with callers, and mainta
 ### Troubleshooting
 
 <details>
+<summary>Why isn't my call transfer working?</summary>
+
+Call transfer failures are most commonly caused by an incorrectly formatted destination number. All numbers must be in international format: a `+` sign followed by the country code and phone number, with no spaces or special characters (e.g., `+12025551234` for a US number).
+
+To update a transfer destination:
+1. Go to `AI > AI Workforce > Voice Receptionist > Configure`
+2. In `Capabilities`, open the `Transfer call` capability
+3. Update the number to use the correct international format
+4. Save your changes
+
+</details>
+
+<details>
 <summary>My AI isn't answering calls - what should I check?</summary>
 
 If your AI Voice Receptionist isn't answering calls, verify:
@@ -342,7 +384,7 @@ If your AI Voice Receptionist isn't answering calls, verify:
 3. **AI configuration** - Ensure your Voice Receptionist is configured and the "Phone call: Answer with Voice AI" setting is enabled
 4. **Call routing** - Check that calls are being routed to your Conversations number (not another destination)
 
-For additional troubleshooting, see [Conversations Phone Call Setup](../../conversations/conversations-setup-phone-calls.md).
+For additional troubleshooting, see [Voice AI](../../conversations/phone-calls.mdx).
 </details>
 
 <details>
@@ -361,6 +403,28 @@ Yes! You can update your AI Voice Receptionist anytime by:
 - **Changing voice settings** in the Profile > Speech section
 
 Changes take effect immediately, so you can continuously improve your AI's performance based on real-world interactions.
+</details>
+
+<details>
+<summary>Can I route calls from my VOIP system to the AI Voice Receptionist?</summary>
+
+Yes, if your VOIP provider supports transferring calls to external phone numbers. Add your Conversations AI phone number as an external transfer destination in your VOIP system settings, then configure your routing rules there.
+
+Check with your VOIP provider to confirm whether outbound transfers to external numbers are supported, as this varies by platform.
+</details>
+
+<details>
+<summary>Can I block specific phone numbers from reaching my AI Voice Receptionist?</summary>
+
+Call blocking is not a supported feature. If you receive unwanted calls, you will need to manage them manually through your phone provider or VOIP system.
+</details>
+
+<details>
+<summary>Can callers choose a specific team member when booking an appointment?</summary>
+
+No. The AI Voice Receptionist books appointments using your primary meeting type and cannot present team member selection to callers. If you use a booking link that requires the caller to choose a team member, those calls will not be handled as expected.
+
+To use team member selection, share your booking link directly with the caller via a follow-up SMS or email after the call.
 </details>
 
 <details>

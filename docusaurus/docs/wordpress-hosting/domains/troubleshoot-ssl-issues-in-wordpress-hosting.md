@@ -6,7 +6,7 @@ description: "If you have correctly added the required A and CNAME records in yo
 
 If you have correctly added the following A and CNAME records in your domain's DNS settings, follow the steps below to connect SSL to your custom domain.
 
-### Required DNS Records
+### Required DNS records
 
 **A Record**
 
@@ -22,13 +22,13 @@ If you have correctly added the following A and CNAME records in your domain's D
 
 For detailed information on configuring DNS records, see [Understanding DNS Records](understanding-dns-records.md).
 
-### Step 1: Reconnect Your Domain
+### Step 1: Reconnect your domain
 
 If the DNS records are configured correctly but the SSL status still shows as "Pending," remove the domain and reconnect it. This action restarts the automatic SSL generation process.
 
 ![Reconnect domain to restart SSL generation](img/ssl-troubleshooting/ssl-issue-warning.png)
 
-### Step 2: Wait for SSL Activation
+### Step 2: Wait for SSL activation
 
 After reconnecting the domain, allow up to **30 minutes** for the SSL certificate to be issued and installed.
 

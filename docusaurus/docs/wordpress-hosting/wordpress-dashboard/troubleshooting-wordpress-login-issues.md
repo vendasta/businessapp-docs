@@ -6,9 +6,9 @@ description: "Learn how to resolve common WordPress login problems including inc
 
 Logging into your WordPress site should be simple, but sometimes issues arise that prevent access. Here are common login problems and how to fix them.
 
-## Common Login Issues
+## Common login issues
 
-### 1. Incorrect Username or Password
+### 1. Incorrect username or password
 
 **Solution:**
 
@@ -16,14 +16,14 @@ Logging into your WordPress site should be simple, but sometimes issues arise th
 *   Reset your password by clicking **"Lost your password?"** on the login page.
 *   If the reset email doesn't arrive, reset the password via **phpMyAdmin** (a database management tool) in your hosting account, or contact support for assistance.
 
-### 2. Locked Out Due to Too Many Login Attempts
+### 2. Locked out due to too many login attempts
 
 **Solution:**
 
 *   Wait a few minutes and try again.
 *   If you're using a security plugin that blocks multiple failed attempts, disable it via **FTP** (File Transfer Protocol - a way to access your website files) or contact support.
 
-### 3. White Screen or Login Page Refreshing
+### 3. White screen or login page refreshing
 
 **Solution:**
 
@@ -35,15 +35,15 @@ Logging into your WordPress site should be simple, but sometimes issues arise th
 If you're not comfortable using FTP, contact support for assistance with disabling plugins or switching themes.
 :::
 
-### 4. 403 Forbidden Error
+### 4. 403 Forbidden error
 
 **Solution:**
 
-*   Check **file permissions** via FTP. Set folders to **755** and files to **644** (your hosting provider can help with this).
+*   Check **file permissions** via FTP. Set folders to **755** and files to **644** (contact support for help with this).
 *   Disable security plugins temporarily via FTP.
-*   Contact your hosting provider if the issue persists.
+*   Contact support if the issue persists.
 
-### 5. 500 Error When Logging In (Jetpack)
+### 5. 500 error when logging in (Jetpack)
 
 If you're receiving a 500 error when attempting to log in and have the **Jetpack by WordPress.com** plugin installed, this may be caused by Jetpack's WordPress.com login feature conflicting with WordPress Hosting.
 
@@ -72,7 +72,7 @@ Disable the "WordPress.com log in" feature in Jetpack:
 
 You can also set up an SFTP user and remove the Jetpack plugin from your installation if you don't need it.
 
-## When to Contact Support
+## When to contact support
 
 If you've tried these solutions and still can't access your WordPress dashboard, contact support. They can help with:
 
@@ -81,13 +81,13 @@ If you've tried these solutions and still can't access your WordPress dashboard,
 *   Fixing file permission issues
 *   Resolving server-side login problems
 
-## Always Keep Backups
+## Always keep backups
 
 Before making changes, always back up your website. WordPress Hosting creates daily backups automatically, which you can restore if something goes wrong.
 
 By following these steps, you should be able to regain access to your WordPress site quickly!
 
-## Related Articles
+## Related articles
 
 *   For general debugging help, see [WordPress Debugging Basics](wordpress-debugging-basics.md)
 *   For security best practices, see [WordPress Security Guide](wordpress-security-guide.md)

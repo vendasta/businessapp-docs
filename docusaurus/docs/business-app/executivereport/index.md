@@ -32,12 +32,14 @@ This report consolidates your data into one view, so you can make smart business
 ## What’s Included with Executive Report
 Your Executive Report includes:
 
-- **Performance data** from active products in your account (reviews, listings, social, website, SEO, advertising, and more)
+- **Performance data** from active products in your account (reviews, listings, social, website, SEO, advertising, campaigns, and more)
 - **Week-over-week and month-over-month comparisons** so you can spot trends
 - **Long-term performance trends** to see progress over time
+- **Email and campaign stats** — delivered, opened, and clicked metrics for standalone emails and campaigns, with graph and table views
 - **Automatic email delivery** — no sign-in required to open the report from the email link
 - **Mobile-friendly layout** — view it on any device
 - **Fast updates** — data from Google Business Profile can appear in the report within about 5 minutes after you connect it
+- **Booking activity** from My Meetings — appointment counts, AI booking attribution, and calendar health, when Meeting Scheduler is active on your account
 
 ![Executive Report detail](img/executive-report-detail.jpg)
 
@@ -53,6 +55,8 @@ You can learn more about specific parts of the report here:
 - **[SEO](./seo)** — Google Search Console and MarketGoo data (queries, clicks, impressions)
 - **[Advertising](./advertising)** — Google Ads and Facebook Ads performance when you use Advertising Intelligence
 - **[Finance (QuickBooks)](./finance-quickbooks)** — Income, expenses, and invoice notifications from QuickBooks Online
+- **Campaigns** — Delivered, opened, and clicked stats for your email campaigns and standalone emails, with breakdowns by date range
+- **My Meetings** — Appointment activity, AI booking performance, and calendar health (see the [My Meetings card](../home.mdx#my-meetings-card) on the Home page for details)
 
 ## When Is New Data Updated in the Executive Report
 
@@ -151,7 +155,7 @@ Most active products push data to the report, including:
 - Google Business Profile
 - Reputation AI
 - Local SEO
-- Social Marketing
+- Social AI
 - Advertising Intelligence (Google Ads, Facebook Ads)
 - Website Pro
 - Marketgoo, Metricool, SEO tools

@@ -14,10 +14,10 @@ If you're troubleshooting an issue or debugging your website, accessing PHP logs
     From the list of websites, click on the one for which you want to access PHP logs.
 
 3.  **Navigate to Advanced Tools**
-    In the website's dashboard, locate and click on the **Advanced Tools** section.
+    In the website's dashboard, locate and click on the `Advanced Tools` section.
 
 4.  **Open PHP Logs**
-    Under **Advanced Tools**, find and click the **PHP Logs** option. This displays the latest PHP error logs for your site.
+    Under `Advanced Tools`, find and click the `PHP Logs` option. This displays the latest PHP error logs for your site.
 
 5.  **Analyze the logs**
     Review the logs to identify errors or warnings related to your PHP scripts, such as syntax errors, deprecated functions, or unhandled exceptions.

@@ -7,8 +7,6 @@ tags: [email, administration, subscriptions]
 keywords: [email preferences, unsubscribe, email categories, subscription management, resubscribe]
 ---
 
-# Email subscription preferences
-
 Your contacts can manage email preferences by category instead of unsubscribing from all non-transactional emails at once. This prevents accidental unsubscribes from blocking important communications like website form submissions, lead notifications, and product updates.
 
 ## How it works
@@ -28,7 +26,7 @@ Transactional emails cannot be disabled. They are required for account managemen
 
 ## How the preference page works
 
-When a contact clicks **Unsubscribe** in any eligible email, they are directed to a preference page where they can toggle individual categories on or off.
+When a contact clicks `Unsubscribe` in any eligible email, they are directed to a preference page where they can toggle individual categories on or off.
 
 ![Unsubscribe preference page showing category toggles for Marketing, Product Notifications, and Website Communications](./img/unsubscribe-preference-page.png)
 
@@ -38,11 +36,7 @@ Contacts can also choose to unsubscribe from all non-transactional emails at onc
 
 Contacts can resubscribe using the resubscribe link in a confirmation email or by contacting support.
 
-Consent status syncs to contact records in the CRM within 5–10 minutes of any subscription change.
-
-:::info
-Expanded communication consent visibility in the CRM is coming soon.
-:::
+Consent status syncs to contact records in the CRM shortly after any subscription change.
 
 ## Frequently asked questions
 

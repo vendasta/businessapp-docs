@@ -6,7 +6,7 @@ description: "Learn how to disable the default Google Analytics tracking code fo
 
 ## What is GDPR?
 
-GDPR stands for **General Data Protection Regulation**. It's a European privacy law that protects people's personal information online. Even if your business isn't in Europe, GDPR affects any website that might have visitors from European countries.
+GDPR stands for **General Data Protection Regulation**. It's a European privacy law that protects people's personal information online. Even if your business isn't in Europe, GDPR affects any website with visitors from European countries.
 
 GDPR requires websites to:
 * Get permission before collecting personal data from visitors
@@ -40,14 +40,14 @@ You can always turn Google Analytics back on later. When you do:
 
 1. Go to your WordPress Hosting dashboard.
 
-2. Click on **Advanced Tools**.
+2. Click on `Advanced Tools`.
 
 ![Advanced Tools menu option](img/google-analytics-toggle/advanced-tools-menu.png)
 
-3. Toggle the option for the **Google Analytics Integration**.
+3. Toggle the option for the `Google Analytics Integration`.
 
 ![Google Analytics Integration toggle](img/google-analytics-toggle/ga-integration-toggle.png)
 
-4. Click **Accept**.
+4. Click `Accept`.
 
 ![Accept button for Google Analytics changes](img/google-analytics-toggle/ga-toggle-accept.png)
