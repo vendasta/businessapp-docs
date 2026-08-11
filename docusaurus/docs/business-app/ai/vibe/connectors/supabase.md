@@ -11,12 +11,14 @@ Connect your Supabase project to Vibe so the app it builds runs against your act
 
 When you link a Supabase project, Vibe builds directly against your real schema and data. The generated app is fully wired to your Supabase backend from the start, so there is no extra configuration step to connect it later.
 
+You don't build tables or write backend logic in Supabase yourself. Describe what you want in your prompts, and Vibe creates and manages the database schema for you.
+
 ## What you get
 
 When you connect Supabase to Vibe, your project gains:
 
 - **Real database access**: Vibe builds against your actual tables and relationships, not mock data.
-- **Authentication**: Your app uses Supabase Auth, including any existing users and sign-in flows.
+- **Authentication**: Your app uses Supabase Auth, including any existing users and sign-in flows. Combined with Row Level Security, each signed-in user's own data stays separate from everyone else's, for example, one user's saved work never shows up for another.
 - **Storage**: File uploads and assets connect to your Supabase Storage buckets.
 
 Because Vibe uses your own Supabase credentials, you stay in control of your data and access rules at all times.
@@ -27,7 +29,7 @@ Your Publishable Key is safe to use in your app's front-end code only when Row L
 
 ## Before you begin
 
-You need an existing Supabase project with three values ready:
+If you don't already have a Supabase project, sign up for a free account at supabase.com and create a new project. Then gather these three values:
 
 - **Project URL**: In your Supabase project dashboard, go to **Integrations**, then select **Data API**. On the **Overview** tab, check the **API URL** field. It looks like `https://[your-project-ref].supabase.co`. You can also find it by clicking `Connect` on your project dashboard.
 - **Publishable Key**: In your Supabase project dashboard, go to **Settings**, then select **API Keys**. On the **Publishable and secret API keys** tab, your key is listed under **API Key**. It starts with `sb_publishable_...`.
@@ -47,6 +49,10 @@ You need an existing Supabase project with three values ready:
 7. Click `Add Connection`.
 
 Once connected, enable the Supabase connector in your Vibe settings to start building against your project.
+
+:::note
+Supabase automatically pauses projects that sit idle for a while. If your app suddenly can't reach your database, open your Supabase project dashboard and check whether it needs to be resumed.
+:::
 
 :::tip
 Generating a Personal Access Token takes you to your Supabase account's Access Tokens page, where you can see and manage every token you've created.
