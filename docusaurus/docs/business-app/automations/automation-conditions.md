@@ -19,6 +19,12 @@ When using the AND operator, the trigger conditions are met only when ***all*** 
 
 ![Trigger conditions example](./img/trigger-conditions.jpg)
 
+## Field descriptions
+
+When you choose a CRM field while building a condition, its field description appears below the field selector. This helps you confirm you've picked the right field, including any expected format or unit, before adding the condition. The description only appears for fields that have one set.
+
+You can add or edit field descriptions from CRM Objects settings. See [CRM Fields](../administration/crm-objects/app_settings_crm_fields.md) for details.
+
 ## Best practices
 
 - Use AND conditions when all criteria must be met
