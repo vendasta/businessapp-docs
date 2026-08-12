@@ -51,7 +51,7 @@ If you don't already have a Supabase project, sign up for a free account at supa
 Once connected, enable the Supabase connector in your Vibe settings to start building against your project.
 
 :::note
-Supabase automatically pauses projects that sit idle for a while. If your app suddenly can't reach your database, open your Supabase project dashboard and check whether it needs to be resumed.
+Supabase automatically pauses free-tier projects after 7 days of inactivity. If your app suddenly can't reach your database, open your Supabase project dashboard and check whether it needs to be resumed. You can unpause a project from the dashboard within 90 days of it pausing; after that it can't be restored, though your data stays available for download. Upgrading your Supabase project to a paid plan prevents automatic pausing.
 :::
 
 :::tip
