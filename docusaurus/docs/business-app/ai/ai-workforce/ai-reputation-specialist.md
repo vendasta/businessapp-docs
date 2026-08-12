@@ -176,7 +176,7 @@ The action buttons in the notification email vary by review source:
 
 - **Edit** — Opens the draft editor in the Reviews page so you can refine the response before posting.
 - **Approve & Post** — Takes you to the Reviews page and shows a confirmation prompt. The response is not posted automatically — you must click the confirm button on the page to publish it.
-- **Respond on source** — Opens the draft editor and directs you to respond manually on the review platform.
+- **Respond to review** — Opens the draft editor and directs you to respond manually on the review platform.
 
 If you click a link while not logged in, you'll sign in first and then land on the review.
 
