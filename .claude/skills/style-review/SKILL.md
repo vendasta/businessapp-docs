@@ -174,6 +174,17 @@ Use for all UI elements:
 
 ---
 
+### Grammar & Mechanics
+
+- **Acronyms:** Spell out on first use, then use the acronym — "Google Business Profile (GBP)"
+- **Numbers:** Numerals for 10 and above; spell out one through nine
+- **Dates:** "October 15, 2025"
+- **Time:** "3:00 pm–4:00 pm"
+- **Units:** "20 GB"
+- **Hyphenation:** Follow US English rules
+
+---
+
 ### Links
 
 **Internal links:** Relative paths with file extensions
