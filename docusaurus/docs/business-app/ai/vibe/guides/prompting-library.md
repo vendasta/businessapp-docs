@@ -171,6 +171,14 @@ What to expect: a route-level guard that redirects unauthenticated visitors to s
 
 What to expect: a profile route that pulls from the signed-in member's identity and connects to recent activity. Pairs naturally with the analytics connector for the appointments list.
 
+## Connecting to Webchat
+
+### Add a webchat to the site
+
+> Add a webchat to the site so visitors can chat with us.
+
+What to expect: Vibe shows a searchable list of your existing webchats through the [Webchat connector](./connectors/webchat.md). Pick one to embed it, or if you don't have any yet, give it a name and Vibe creates one with default settings before embedding it.
+
 ## Generating images
 
 ### Hero photography
