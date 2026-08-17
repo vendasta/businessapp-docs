@@ -102,6 +102,8 @@ Want a different subdomain? Click the pencil icon next to the address to edit it
 
 Publishing again after further edits updates the same URL, you don't get a new link each time, so it's safe to share right away and keep iterating.
 
+A status indicator next to **Publish** shows whether your live site matches your current draft. It reads **up to date** when there's nothing new to publish. As soon as you make an edit, it switches to **unpublished changes** so you know the live site is out of date. Publishing clears the indicator back to **up to date**.
+
 ### Using your own domain
 
 On the Professional plan, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
