@@ -17,6 +17,15 @@ Each automation has a Settings tab where you control how and when your workflow 
 3. Select the **Settings** tab
 4. Configure entry settings and error handling options
 
+## Saving changes
+
+When you edit any settings tab, floating **Save** and **Cancel** buttons appear.
+
+- Select **Save** to apply your changes.
+- Select **Cancel** to discard your changes and return to the last saved settings.
+
+If you try to navigate away from a tab with unsaved changes, a confirmation dialog asks whether you want to save or discard them before you leave.
+
 ## Entry settings
 
 Entry settings control how frequently an automation can run for the same contact or company. Many trigger events and conditions can be met multiple times. For example, A customer makes a payment trigger with the trigger options set to Succeeds or fails will fire each time a customer attempts to pay for an invoice or shopping cart purchase. The entry settings allow you to specify whether you want the automation workflow to start only the first time the trigger criterion is met or every time.
