@@ -7,7 +7,7 @@ tags: [automations, campaigns, crm, contact-level, company-level]
 keywords: [pause campaign, automation builder, meeting booked, email bounce, lead score, crm updates]
 ---
 
-When a lead books a meeting, bounces an email, or drops off a target list, continuing to send campaign messages can feel irrelevant — or worse, damage the relationship. You can build automations that pause campaigns automatically when conditions change, so your outreach stays timely without manual intervention.
+When a lead books a meeting, bounces an email, or drops off a target list, continuing to send campaign messages can feel irrelevant, or worse, damage the relationship. You can build automations that pause campaigns automatically when conditions change, so your outreach stays timely without manual intervention.
 
 ## When to use this
 
@@ -22,7 +22,7 @@ You're running a "Cruise in winter" campaign for Tier A companies. When a compan
 
 1. **Trigger:** Set the trigger to **When a company is removed from a list** and select **List B**.
 2. **Condition:** Add a condition where `list_id` contains **Tier A**.
-3. **Action:** Add the **Pause campaign for company** step and select the **Cruise in winter** campaign.
+3. **Action:** Add the `Pause campaign for company` step and select the **Cruise in winter** campaign.
 
 When a company is removed from List B, the automation checks if the list ID contains "Tier A". If true, it pauses the "Cruise in winter" campaign for the entire company, stopping all campaign messages to every contact in that organization.
 
@@ -40,7 +40,7 @@ Add a **Delay** step before the pause action to give leads time to re-engage bef
 
 | Level | Step name | When to use |
 |-------|-----------|-------------|
-| Contact | Pause campaign for contact | A specific lead takes action (books a meeting, bounces an email) |
-| Company | Pause campaign for company | A business as a whole goes cold or no longer qualifies, and you want to stop outreach to all associated contacts |
+| Contact | `Pause campaign for contact` | A specific lead takes action (books a meeting, bounces an email) |
+| Company | `Pause campaign for company` | A business as a whole goes cold or no longer qualifies, and you want to stop outreach to all associated contacts |
 
-You can combine both in the same automation — for example, pause a contact's campaign immediately on bounce, and pause the company's campaign if all contacts in that company have bounced.
+You can combine both in the same automation. For example, pause a contact's campaign immediately on bounce, and pause the company's campaign if all contacts in that company have bounced.

@@ -1,22 +1,23 @@
 ---
 title: CRM Fields
 sidebar_label: CRM Fields
+description: Add custom data fields to your contact and company records to track information beyond the default setup.
 ---
-## What are CRM Fields?
+## What are CRM fields?
 
-CRM Fields allow you to add personalized data fields to your contact and company records in your app. These fields can store extra information that isn’t included in the default setup—such as birthdays, service preferences, or internal tracking notes. You can create and organize fields based on your business needs and the types of information you collect.
+CRM Fields allow you to add personalized data fields to your contact and company records in your app. These fields can store extra information that isn't included in the default setup, such as birthdays, service preferences, or internal tracking notes. You can create and organize fields based on your business needs and the types of information you collect.
 
 This feature is useful for businesses that want to go beyond standard fields like phone number or address. It helps centralize key contact or company details directly in your app, so you don’t have to manage separate spreadsheets or systems.
 
 ![Custom Fields inside Administration](../img/administration_custom_field_contact.png)
 
-## Why are CRM Fields Important?
+## Why are CRM fields important?
 
-Default contact and company records often don’t include everything your business needs to track. For example, you might want to log whether someone has set an appointment, track dietary preferences, or store internal status flags. Without custom fields, this data may be lost or siloed outside your app.
+Default contact and company records often don’t include everything your business needs to track. For example, you may want to log whether someone has set an appointment, track dietary preferences, or store internal status flags. Without custom fields, this data may be lost or siloed outside your app.
 
 Custom fields let you tailor your system so it works for **your business**, keeping all important contact information accessible and organized in one place.
 
-## What's Included with CRM Fields?
+## What's included with CRM fields?
 
 - Custom field creation for **Contacts** and **Companies**
 - Multiple field types: `String`, `Date`, `Boolean`, `Phone number`, `String List`, and more
@@ -28,19 +29,19 @@ Custom fields let you tailor your system so it works for **your business**, keep
 System fields (like company name or phone number) cannot be edited or deleted. Custom fields are fully configurable.
 :::
 
-## How to Create a CRM Field
+## How to create a CRM field
 
 1. In your app, go to `Administration` from the main menu.
 2. Select `CRM Fields` under the administration settings.
 3. This will take you to the **CRM Fields** page, where you can manage both contact and company fields.
 4. Click `Create` to open the new field form.
-5. Choose the **Object** (`Contact` or `Company`) the field will apply to.
-6. Enter a **Field name** (e.g., “Birthday” or “Preferred contact method”).
-7. (Optional) Add a **Field description** to provide internal clarity.
-8. Select the **Field type** (e.g., String, Date, Boolean).
+5. Choose the `Object` (`Contact` or `Company`) the field will apply to.
+6. Enter a `Field name` (e.g., "Birthday" or "Preferred contact method").
+7. (Optional) Add a `Field description` to provide internal clarity.
+8. Select the `Field type` (e.g., String, Date, Boolean).
 9. Click `Create` to save your custom field.
 
-## Field Types and Options
+## Field types and options
 
 The field type has a significant effect on the type of data that can be stored in the custom field and how the data can be filtered and sorted.
 
@@ -57,7 +58,7 @@ When creating a custom field, you can choose from the following field types:
 
 Use `String List` when you want to associate multiple values with a single field (e.g., preferred services).
 
-## Managing and Editing CRM Fields
+## Managing and editing CRM fields
 
 - All fields appear in the custom field manager under `Contacts` or `Companies`.
 - Click any field name to open and edit it.
@@ -68,35 +69,35 @@ NOTE: System fields (created by default) cannot be modified or deleted. Only cus
 
 ![CRM Fields inside Administration](../img/administration_custom_fields.png)
 
-## Field Change History
+## Field change history
 
 Every update made to a CRM field is automatically logged in Field Change History. Whether a field was updated by a form submission, the AI Sales Assistant, a teammate, or the system, you can see exactly what the previous value was, what it changed to, and who or what made the update.
 
 Field Change History may only be available on certain subscriptions.
 
-### How to view Field Change History
+### How to view field change history
 
-1. Go to **Business App** > **CRM**.
+1. Go to `Business App` → `CRM`.
 2. Open any contact, company, or opportunity record.
 3. Click the **History** icon in the top right corner of the record.
 4. Review the list of field changes, including the previous value, new value, and who or what made the update.
 
-## How Might I use CRM Fields
+## How you can use CRM fields
 
-Some ways you might use custom fields in your app include:
+Some ways you can use custom fields in your app include:
 
-- **Segmenting email lists** by number of visits — for example, sending a "new customer" campaign to contacts with fewer than 3 visits, and a loyalty offer to those with 3+ visits.
+- **Segmenting email lists** by number of visits, for example, sending a "new customer" campaign to contacts with fewer than 3 visits, and a loyalty offer to those with 3+ visits.
 - **Tracking birthdays** for contacts so you can automatically send a birthday greeting or coupon.
 - **Logging service preferences**, such as favorite haircut style or dietary restrictions for event bookings.
 - **Flagging high-value contacts** with a VIP true/false field to prioritize outreach or provide special offers.
 - **Storing secondary contact information**, like an emergency contact name or backup phone number, especially useful in childcare or health-related services.
 
-### Frequently Asked Questions (FAQs)
+### Frequently asked questions (FAQs)
 
 <details>
 <summary>What is Field Change History?</summary>
 
-Field Change History logs every update made to a CRM field. You can see the previous value, the new value, and who or what made the change — whether that's a form submission, the AI Sales Assistant, a teammate, or the system. This feature may only be available on certain subscriptions. To view it, open any contact, company, or opportunity record and click the **History** icon in the top right corner.
+Field Change History logs every update made to a CRM field. You can see the previous value, the new value, and who or what made the change: whether that's a form submission, the AI Sales Assistant, a teammate, or the system. This feature may only be available on certain subscriptions. To view it, open any contact, company, or opportunity record and click the **History** icon in the top right corner.
 
 </details>
 
