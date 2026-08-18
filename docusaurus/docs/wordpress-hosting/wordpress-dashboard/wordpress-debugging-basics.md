@@ -6,7 +6,7 @@ description: "Learn how to debug common WordPress problems using built-in tools 
 
 This guide helps you debug common problems that can occur on your WordPress website using tools available in WordPress Hosting. These can range from conflicting plugins preventing certain features from working, all the way to internal server errors that bring the website down.
 
-## When to Use Debugging Tools
+## When to use debugging tools
 
 Use these debugging tools when:
 *   Your website shows an error message
@@ -15,9 +15,9 @@ Use these debugging tools when:
 *   Your site displays a blank white screen
 *   Something changed after updating a plugin or theme
 
-## Available Debugging Tools
+## Available debugging tools
 
-### Daily Backups
+### Daily backups
 
 WordPress Hosting automatically creates daily backups of your website. These backups allow you to restore your site to a previous working state if something goes wrong.
 
@@ -33,7 +33,7 @@ The backup list shows information to help you decide which backup to restore:
 
 You can restore a backup by clicking the **Restore** link to the right of the backup you wish to use, and then confirm the restoration.
 
-### PHP Logs
+### PHP logs
 
 PHP logs record errors that occur on your website. They show the date of the error and a full trace of how the problem occurred.
 
@@ -48,7 +48,7 @@ These logs help identify:
 For step-by-step instructions on how to access PHP logs, see [How to Find PHP Logs](../../advanced-tools/how-to-find-php-logs.md).
 :::
 
-### SFTP Access
+### SFTP access
 
 **SFTP** (Secure File Transfer Protocol) is a way to access your website files directly. This allows you to rename, delete, or edit files when you can't access your WordPress dashboard.
 
@@ -60,7 +60,7 @@ SFTP access can be found on the **Advanced Tools** tab, under the **WordPress Da
 If you're not comfortable using SFTP, contact support for assistance with file access.
 :::
 
-### Staging Environment
+### Staging environment
 
 A staging environment is a copy of your live website where you can test changes without affecting your actual site. This is useful for troubleshooting and testing updates.
 
@@ -73,9 +73,9 @@ You can use a staging environment for:
 2.  Troubleshooting errors without affecting your live site
 3.  Making large changes and ensuring they work before pushing to live
 
-## Common Errors and How to Fix Them
+## Common errors and how to fix them
 
-### Internal Server Error (500 Error)
+### Internal server error (500 error)
 
 An internal server error means there's a problem with the code on your WordPress site. This could be caused by:
 *   A plugin that didn't update completely
@@ -92,18 +92,18 @@ An internal server error means there's a problem with the code on your WordPress
 
 3.  **Use staging environment** – Enable the staging environment and turn on WP_Debug. This will show you exactly what error is occurring, then you can fix it.
 
-4.  **Disable problematic plugins or themes** – Disable any plugin or theme that might be causing the issue. This can be done by renaming the folder of the plugin or theme using an SFTP connection. Simply add `-dis` to the end of the folder name (e.g., `plugin-name-dis`).
+4.  **Disable problematic plugins or themes** – Disable any plugin or theme that could be causing the issue. This can be done by renaming the folder of the plugin or theme using an SFTP connection. Simply add `-dis` to the end of the folder name (e.g., `plugin-name-dis`).
 
 **Example:**
 
-The error shown in the PHP logs might indicate that a theme has incorrect syntax. For example, if you see an error about `functions.php` on line 6, you can:
+The error shown in the PHP logs can indicate that a theme has incorrect syntax. For example, if you see an error about `functions.php` on line 6, you can:
 *   Restore a backup from before the change
 *   Use SFTP to open the file and correct the syntax issue
 *   Or enable staging environment with WP_Debug to see the error clearly
 
 ![PHP Log Error Example](./img/wordpress-debugging-basics/php-log-error-example.png)
 
-### Site Cannot Be Reached
+### Site cannot be reached
 
 If your site shows "This site can't be reached" or similar, this usually isn't a WordPress issue. It typically means:
 
@@ -117,7 +117,7 @@ If your site shows "This site can't be reached" or similar, this usually isn't a
 
 Contact whoever you registered your domain with or the company that manages your nameservers. If you need help setting up your domain with WordPress Hosting, see [Domain Setup](../../domains/connect-a-custom-domain.md).
 
-## General Debugging Steps
+## General debugging steps
 
 Most of the time your site won't be completely down, but you may notice some functionality not working. For instance, maybe your image slider isn't working, or a specific feature has issues.
 
@@ -140,11 +140,11 @@ Most of the time your site won't be completely down, but you may notice some fun
     *   Try switching to a default theme (like Twenty Twenty-Four)
     *   If it works with the default theme, you know the plugin is conflicting with your theme
 
-## Additional Resources
+## Additional resources
 
 For more WordPress troubleshooting help, visit [WordPress Codex](https://codex.wordpress.org/). The guides and help offered there are useful for troubleshooting, learning how to use WordPress, tutorials, and more advanced topics.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Why am I getting a memory limit error when editing with Divi or Elementor?</summary>
@@ -198,7 +198,7 @@ No action is needed unless you choose to handle updates differently.
 
 </details>
 
-## Related Articles
+## Related articles
 
 *   For login-specific troubleshooting, see [Troubleshooting WordPress Login Issues](troubleshooting-wordpress-login-issues.md)
 *   For security best practices, see [WordPress Security Guide](wordpress-security-guide.md)

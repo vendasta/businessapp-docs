@@ -1,6 +1,10 @@
 {
   "label": "Meeting Scheduler",
-  "position": 7,
+  "position": 5,
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "yesware/meeting-scheduler/index"
+  }
 }

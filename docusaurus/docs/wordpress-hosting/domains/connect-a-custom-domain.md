@@ -24,7 +24,7 @@ To set up your domain for WordPress Hosting, there are two types of DNS records 
 
 You'll need at least one of these records. It's common to use both: an A Record for the root domain and a CNAME for `www`.
 
-## Part 1: Configure DNS Records
+## Part 1: Configure DNS records
 
 ### Setting up an A record
 
@@ -50,27 +50,27 @@ We recommend setting a CNAME Record for subdomains. If you require an A Record f
 
 For more detailed information about DNS records, when to use each type, and DNS propagation, see [Understanding DNS Records](understanding-dns-records.md).
 
-## Part 2: Connect Domain in WordPress Hosting
+## Part 2: Connect domain in WordPress Hosting
 
-1. Log into WordPress Hosting and navigate to the **Domains** tab
-2. Click **Connect a Domain**
-3. Enter the domain name you purchased. Click **Add Domain.**
-4. WordPress Hosting will mark the new domain as **Pending** while it verifies that the DNS records are correct. Once the DNS records have been verified (WordPress Hosting checks for this automatically), your domain will show as **Connected.**
-5. You will receive an email and see a notification in the **Recent Activity** stream of **Business App**.
-6. You can also **Delete** added domains from this tab.
-7. Once it has been **connected**, requests for your new domain will be redirected to the **Primary Domain**.
+1. Log into WordPress Hosting and navigate to the `Domains` tab
+2. Click `Connect a Domain`
+3. Enter the domain name you purchased. Click `Add Domain`.
+4. WordPress Hosting will mark the new domain as `Pending` while it verifies that the DNS records are correct. Once the DNS records have been verified (WordPress Hosting checks for this automatically), your domain will show as `Connected`.
+5. You will receive an email and see a notification in the `Recent Activity` stream of Business App.
+6. You can also `Delete` added domains from this tab.
+7. Once it has been `connected`, requests for your new domain will be redirected to the **Primary Domain**.
 
-### Setting Your Primary Domain
+### Setting your primary domain
 
-You have the ability to set any of your **connected** domains to be the **Primary Domain**.
+You have the ability to set any of your `connected` domains to be the **Primary Domain**.
 
-1. On the **Domains** tab
-2. Find the domain in the list, expand the options menu on the right side, then click **Make Primary**.
+1. On the `Domains` tab
+2. Find the domain in the list, expand the options menu on the right side, then click `Make Primary`.
 3. All of your domains will then redirect to this domain.
 
 For more information on managing multiple domains and setting your primary domain, see [Set your primary domain](point-a-new-domain-to-wordpress-hosting.md#set-your-primary-domain).
 
-## Part 3: Validate DNS Records
+## Part 3: Validate DNS records
 
 Once the above records are set up, WordPress Hosting will automatically validate them. The domain will show as **Pending** until WordPress Hosting detects the correct DNS records, then it will change to **Connected**.
 
@@ -115,7 +115,7 @@ All WordPress Hosting sites are automatically provisioned with a Let's Encrypt S
 <details>
 <summary>How do I set the preferred URL?</summary>
 
-This can be done from the domains tab of WordPress Hosting. Select the kabob menu next to the domain you want to use, then select Make Primary. This will make it so that when the site is accessed from any of its connected domains, the user is redirected to your primary one.
+This can be done from the `Domains` tab of WordPress Hosting. Select the kebab menu next to the domain you want to use, then select `Make Primary`. This will make it so that when the site is accessed from any of its connected domains, the user is redirected to your primary one.
 
 </details>
 

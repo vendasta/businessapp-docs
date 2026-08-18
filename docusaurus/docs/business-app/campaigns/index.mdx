@@ -13,6 +13,30 @@ Campaigns are multi‑step, email marketing sequences you can design, schedule, 
 
 Campaigns help you send the right message to the right people at the right time. Use email marketing campaigns in Business App to deliver sequences of emails to contacts associated with your companies, nurture relationships, announce promotions, and drive engagement—all from within the CRM‑connected platform.
 
+<div
+  className="wistia_responsive_padding"
+  style={{ padding: '56.25% 0 0 0', position: 'relative' }}
+>
+  <div
+    className="wistia_responsive_wrapper"
+    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+  >
+    <iframe
+      src="https://fast.wistia.net/embed/iframe/6cwajhqz1a?web_component=true&seo=true"
+      title="Campaigns Walkthrough"
+      allow="autoplay; fullscreen"
+      allowTransparency
+      frameBorder="0"
+      scrolling="no"
+      className="wistia_embed"
+      name="wistia_embed"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </div>
+</div>
+<script src="https://fast.wistia.net/player.js" async></script>
+
 ## Why use Campaigns?
 
 - Reach the right audience with targeted, list-based sends
@@ -23,10 +47,13 @@ Campaigns help you send the right message to the right people at the right time.
 ## What you can do
 
 - Build emails in a visual editor using templates and content blocks
-- Create multi‑step campaigns with delays and branching
+- Create multi‑step campaigns with delays
 - Send to specific contacts and lists associated with your companies
 - Pause, resume, or edit campaigns before publishing
 - Preview and test campaigns as a specific account
+- Monitor how many marketing emails have been sent during the current billing period using the progress bar at the top of the Campaigns page
+
+![Marketing emails sent this billing period counter](img/emails-sent-counter.png)
 
 ## Get started
 
@@ -72,7 +99,7 @@ Check out our [Campaign Examples](campaign-examples.mdx) for ready-to-use nurtur
 <details>
 <summary>How many emails can I send in a month?</summary>
 
-A business can send up to 10,000 emails per month by default. Additional email sending may be available for purchase.
+A business can send up to 10,000 emails per month by default. Additional email sending may be available for purchase. You can track how many marketing emails have been sent during the current billing period using the progress bar at the top of the Campaigns page.
 </details>
 
 <details>
@@ -127,6 +154,18 @@ Yes. Build an automation that triggers "When a form is submitted" to add the con
 <summary>Where do I troubleshoot email delivery issues?</summary>
 
 Use `Administration` > `Email History` to review sent emails and statuses, then verify domain authentication and deliverability settings. See: [Email history](../administration/email/email-history) and [Email Configuration](../administration/email/email-configuration)
+</details>
+
+<details>
+<summary>Why am I seeing consent validation errors when adding recipients to a campaign?</summary>
+
+If your account has the email marketing consent setting enabled, campaigns require explicit marketing consent before a contact can be added. When this setting is on, any recipient missing email or SMS consent triggers a validation error. You can review and update consent settings in `Administration` > `Email Configuration`. Contacts need to have consent recorded on their profile before they can receive campaign emails.
+</details>
+
+<details>
+<summary>Why am I seeing a warning about my service area business when sending a campaign?</summary>
+
+If your Business Profile is marked as a **Service area business** and doesn't have a **Physical address** on file, a warning banner appears on the Send campaign page. Add a physical address in `Administration` > `Business Profile` to remove the warning. You can dismiss the banner, but it may appear again later.
 </details>
 
 <Head>

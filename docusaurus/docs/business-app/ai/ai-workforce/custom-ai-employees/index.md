@@ -31,9 +31,9 @@ Custom AI Employees are specialized digital team members you build from scratch 
 
 Build a custom AI Employee when you want to expand your workforce with a specialized role not covered by a pre-configured option, such as:
 
-- An **[AI Data Analyst](./ai-data-analyst.md)** that reasons through CRM, review, and social data to deliver structured insights
+- An **[AI Data Analyst](./ai-data-analyst.mdx)** that reasons through CRM, review, and social data to deliver structured insights
 - An **[Inside Sales Representative](./inside-sales-representative.md)** that qualifies inbound leads before capturing contact information or booking appointments
-- An **[AI Support Employee](./ai-support-employee.md)** that resolves customer inquiries via chat and SMS, and escalates with structured message capture when a question falls outside the knowledge base
+- An **[AI Support Employee](./ai-support-employee.mdx)** that resolves customer inquiries via chat and SMS, and escalates with structured message capture when a question falls outside the knowledge base
 - A **compliance assistant** that checks processes against internal policies
 - Any role where the default AI Employees don't match your workflow
 
@@ -49,8 +49,25 @@ Every custom AI Employee follows these steps:
 
 For detailed instructions, see [How to Create Custom Capabilities](../../ai-capabilities/creating-custom-capabilities.md).
 
+:::tip Web Chat sees the visitor's current URL
+Custom AI Employees assigned to the **Web Chat** channel receive the visitor's current page URL with every message — the same as the AI Chat Receptionist. See [Make responses page-aware with the visitor's current URL](../ai-chat-receptionist/index.mdx#make-responses-page-aware-with-the-visitors-current-url) for how to tune prompts to use it.
+:::
+
+## Assign a custom AI employee to web chat
+
+Once you've built a custom AI employee, put it to work on your website by assigning it to a web chat widget:
+
+1. Go to `Conversations`, then open `Settings`.
+2. On the **Web Chat** card, click `Manage widgets` to open the **Web Chat configuration** page.
+3. Click `New Web Chat` to add a widget, or open an existing widget to edit it.
+4. In the **AI employee** card, click `Select employee`.
+5. In the **Select employee** dialog, choose your custom AI employee, then click `Ok`.
+6. Click `Next` to save, then install the widget on your site.
+
+Each widget uses one AI employee at a time, and the same employee can be assigned to multiple widgets. For the full setup and installation walkthrough, see [Web chat setup & usage](../../../conversations/web-chat/index.mdx).
+
 ## Available guides
 
-- [AI Data Analyst](./ai-data-analyst.md): analyze CRM data, reviews, and social engagement with structured AIR (Analyze, Interpret, Recommend) reasoning
+- [AI Data Analyst](./ai-data-analyst.mdx): analyze CRM data, reviews, and social engagement with structured AIR (Analyze, Interpret, Recommend) reasoning
 - [Inside Sales Representative](./inside-sales-representative.md): qualify inbound leads, capture contact information, and book appointments with a sales-first conversational approach
-- [AI Support Employee](./ai-support-employee.md): resolve customer support inquiries via chat and SMS, with structured empathy for complaints and automatic escalation when questions fall outside the knowledge base
+- [AI Support Employee](./ai-support-employee.mdx): resolve customer support inquiries via chat and SMS, with structured empathy for complaints and automatic escalation when questions fall outside the knowledge base

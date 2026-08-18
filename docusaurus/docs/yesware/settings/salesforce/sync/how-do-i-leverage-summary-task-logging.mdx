@@ -1,0 +1,95 @@
+---
+title: "How do I leverage Summary Task-Logging?"
+sidebar_label: "Summary Task Logging"
+description: "How do I leverage Summary Task-Logging?"
+sidebar_position: 2
+---
+
+## Overview
+
+Yesware ensures Salesforce is always up to date by logging emails, replies, and all relevant email engagement data as Tasks in Salesforce.
+
+By default, Yesware creates a new Task for each type of activity that happens on an email:
+
+- **Send:** You send an outbound email
+- **Open:** Recipient opens the email
+- **Reply:** Recipient replies to the email
+- **Click:** Recipient clicks a link in the email
+- **File:** Recipient opens an attachment in the email
+- **View:** Recipient views a linked presentation
+- **Bounce:** A bounce reply is received in response
+
+Though Yesware is careful not to create a new Task for every single open, click, etc., this can still clutter your view of tasks in Salesforce Activity History. With Summary Task-Logging, Yesware offers the option to consolidate all of this activity down to a single Salesforce Task per sent email. This single Task contains summarized data fields for all the activity that occurs on that email. Summary Task-Logging also allows the flexibility to continue to sync opens, replies, clicks, and bounces as separate tasks if you so choose.
+
+## Activating Summary Task-Logging
+
+To enable Summary Task-Logging:
+
+1. Download this Yesware Salesforce package ([Sandbox, Production](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t0W0000019njv)).
+2. Add the new custom fields to your Task Page Layout so the new fields appear on each Send Task.
+3. Contact your Yesware Account Manager, if you have one, or support@yesware.com to activate the Summary Task-Logging feature.
+
+When activating Summary Task-Logging, you can choose to leave Detailed Task-Logging (the default of separating the tasks) on for any type of email activity you'd like. A typical approach for many customers is to activate Summary Task-Logging, and also leave Detailed Task-Logging enabled for replies, but to deactivate Detailed Task-Logging for all other activities.
+
+## FAQs
+
+### Does this package break my current reports or views?
+
+Installing this package will not affect the core operation of existing reports or forms. However, deactivated Detailed Task-Logging will affect the output of those reports. The main function of Summary Task-Logging is to create fewer tasks, appending information to an original sent-message task instead. If you have a report that expects message opens, clicks, or views to be represented by separate tasks, those reports will show different results once Detailed Task-Logging is deactivated. You can leave one or more Detailed Task-Logging features enabled even after you activate Summary Task-Logging.
+
+### How do I see the new Summary Task-Logging fields if I've already installed the package?
+
+Add the new custom fields to your Task Page Layout so the new fields appear on each Send Task. These fields need to be visible on the layout for every user logging Yesware activity in Salesforce.
+
+### Does this decrease the number of API calls relative to Detailed Task-Logging?
+
+The number of API calls remains approximately the same. However, Summary Task-Logging is expected to reduce Salesforce data storage requirements.
+
+### Do I have to disable Detailed Task-Logging to enable Summary Task-Logging?
+
+No. You can leave Detailed Task-Logging on for any type of email activity you'd like. A typical approach for many customers is to activate Summary Task-Logging, and also leave Detailed Task-Logging enabled for replies, but to deactivate Detailed Task-Logging for all other activities.
+
+### Will this reduce my available custom fields on Activities?
+
+Installing the Yesware managed package will reduce your [available custom fields](https://help.salesforce.com/s/articleView?id=faq_distribution_installing_why_do_the_custom.htm&amp;language=en_US&amp;type=0). Contact Salesforce to request an increased custom field limit.
+
+## Appendix
+
+### Yesware Task custom field reference
+
+After you install this package, the following custom fields are available on the Task object. These fields are used by Yesware for capturing summary data on logged emails.
+
+For each type of action, these fields capture the date of the first occurrence, the date of the most recent occurrence, and the total number of occurrences. For example, for an email sent on 2/1/2021, then opened 3 times on 2/2/2021, 2/3/2021, and 2/4/2021, the field `Yesware Opens` has the value 3, the field `Yesware First Open At` has the value "2/2/2021," and the field `Yesware Last Open At` has the value "2/4/2021."
+
+### SF Task Page Layout
+
+To visualize the data in the custom fields, the SF page layout for the Task object must be modified to include the fields. There are two ways to do this: assign the page layout included in the managed package to the SF profiles that need to see the custom fields, or manually edit the Task object Page Layout and add the custom fields yourself. Both can be done from the `Task Page Layouts` page in the Setup app.
+
+**Using the `Yesware Sample Task Layout`**
+
+To assign the sample page layout to a set of profiles:
+
+1. Click `Page Layout Assignment`.
+2. Click `Edit Assignment`.
+3. Select the profiles to assign the new page layout to. Use SHIFT + click or click and drag to select a range of adjacent cells. Use CTRL + click to select multiple cells that are not adjacent.
+4. Select `Yesware Sample Task Layout` from the `Page Layout to Use` dropdown.
+5. Click `Save`.
+
+Note that doing so will override any existing customizations on the Task Page Layout. If you have existing customizations, follow the manual page layout update instructions below instead.
+
+**Using a manual page layout update**
+
+To manually modify your Task page layout, after opening the `Task Page Layouts` page:
+
+1. Click `Edit` next to the page layout you want to add the custom fields to.
+2. In the `Task Layout` section, all the available fields are shown. Use the cursor to click and drag a field down into the Task Detail area. Arrange the fields so they're easy to view, for example, with all the total-count fields at the top and the First-At and Last-At fields below.
+3. Click `Save`.
+
+## End-to-end example
+
+After this is done, the basic summary-logging flow works as follows:
+
+1. Compose an email to a Contact. Include a link, file, and presentation, then send it.
+2. The sent email syncs to your SFDC org shortly after. You can see it by creating a custom report that shows all Tasks.
+3. Once the recipient opens the email, clicks the link, and views the presentation, the Task updates to reflect that activity.
+4. The Task description updates with each additional action as it's summarized.

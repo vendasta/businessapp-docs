@@ -14,25 +14,37 @@ The AI web chat widget automatically captures leads from your website and answer
 
 ## Setup process
 
-### Step 1: Test before installing
+### Step 1: Open your web chat widgets
 
-1. Navigate to `Business App` > `Conversations AI` > `Conversations AI Settings`
-2. Click `Try it out today` on the Web Chat Widget card
-3. This creates a demo widget on the `My Listing` page for testing
-4. Reload the Conversations AI Settings page to see configuration options
+1. Go to `Conversations`, then open `Settings` to reach the **Conversations settings** page.
+2. On the **Web Chat** card ("Capture new leads from your website with an AI-assisted chat widget"), click `Manage widgets`.
+3. The **Web Chat configuration** page lists all of your web chat widgets, with each widget's **Assigned Employees**, **Status**, and **Widget type**. Click `Try it` on a widget to preview it before installing.
 
-### Step 2: Configure Web Chat settings
+### Step 2: Create a new web chat widget
 
-1. Click `Configure Web Chat` in `Conversations AI Settings`
-2. **Widget Name**: Enter a unique name to identify this widget (usually your domain)
+1. On the **Web Chat configuration** page, click `New Web Chat`.
+2. **Widget name**: Enter a unique name to identify this widget internally (usually your domain or the page it's for).
 
-### Step 3: Set up AI Assistant
+:::tip Run more than one widget
+You can create multiple web chat widgets and assign a different AI employee to each — for example, a sales widget on your pricing page and a support widget on your help page. To add another, return to the **Web Chat configuration** page and click `New Web Chat` again.
+:::
 
-1. Go to the `AI Assistant` settings card to train and customize:
-   - **Select an AI Assistant**: Choose a pre-built AI Assistant (like Chat Receptionist)
-   - Add business knowledge: Click `Add knowledge` > Select `Website` to scrape your website content
-   - Add custom Q&A: Manually enter frequently asked questions and answers
-   - Set business profile info: Ensure location, services, and hours are correct
+### Step 3: Assign an AI employee
+
+The AI employee is the digital teammate that replies to messages sent to this widget. Every web chat widget needs one assigned.
+
+1. In the **AI employee** card, click `Select employee`.
+2. In the **Select employee** dialog, choose the employee that should handle this widget:
+   - **Chat Receptionist**: the ready-to-use AI employee for capturing leads and answering visitor questions.
+   - **A custom AI employee**: a specialized employee you've built, such as an Inside Sales Representative or AI Support Employee. Custom employees appear in this list once you create them.
+3. Click `Ok` to assign the employee.
+4. To adjust the assigned employee's knowledge, personality, or capabilities, click `Configure` on the **AI employee** card.
+
+:::info One employee per widget
+A widget can have only one AI employee assigned at a time, but you can assign the same AI employee to more than one widget. If a widget shows a **No assigned employee** warning, open it and assign one before installing it on your site.
+:::
+
+To build a specialized employee for web chat, see [Custom AI Employees](../../ai/ai-workforce/custom-ai-employees/index.md).
 
 ### Step 4: Customize messages
 
@@ -47,18 +59,28 @@ Configure how visitors interact with the widget:
 
 ### Step 5: Customize appearance
 
-Match the widget to your brand:
+Match the widget to your brand in the **Appearance** section:
 
-- **Primary Color**: Main widget color (header, branding)
-- **Primary Text Color**: Text color for primary elements
-- **Accent Color**: Send button and chat bubble color  
-- **Accent Text Color**: Text color for accent elements
-- **Position**: Choose bottom corner position (left/right)
-- **Mobile Popup**: Enable/disable message popup for mobile visitors (vs. just chat button)
+- **Primary color**: Main widget color (header, branding)
+- **Primary text color**: Text color for primary elements (`Dark` or `Light`)
+- **Accent color**: Color of the send button and chat bubbles
+- **Accent text color**: Text color for accent elements (`Dark` or `Light`)
+- **Web Chat bottom corner position**: Show the widget in the `Left` or `Right` bottom corner
+- **Mobile Call-to-Action Popup**: When enabled, the message popup shows on mobile screens for new visitors. When disabled, only the circular chat button appears.
+
+When you're done configuring the widget, click `Next` to save it.
 
 ### Step 6: Install on website
 
-Choose your installation method in the **Installation** section:
+Open the widget from the **Web Chat configuration** page (click its name, or use the `⋮` menu and choose `Embed`) to find your installation code. There are two widget types — choose one based on how you want the chat to appear on your site.
+
+## Widget types
+
+### Floating chat widget
+
+The floating widget places a chat button in the bottom corner of every page on your site. Visitors click it to open the chat.
+
+To get the code: open the widget from the **Web Chat configuration** page, expand the **Floating chat widget** section, and copy the JavaScript.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -66,72 +88,70 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="wordpress" label="WordPress">
 
-#### Install the web chat widget using the WordPress plugin
+#### Install using the WordPress plugin
 
-1. Download the web chat widget installation plugin from `Settings > Conversations Settings > Web Chat Configuration > Installation`.
+1. In the **Floating Chat Widget** section, click **Download Plugin** to download the installation ZIP.
 2. In your WordPress admin (`your-website.com/wp-admin`), go to **Plugins > Add New Plugin**.
 3. Upload the ZIP file you just downloaded.
 4. Activate the plugin.
-5. Your web chat widget should now appear on every page of your website.
 
-#### Install the web chat widget on WordPress manually
+Your web chat widget will now appear on every page of your website.
 
-_The example below uses the Divi Theme, but the steps are similar for most WordPress themes that let you paste code into the `<head>` section._
+#### Install manually on WordPress (Divi)
 
-1. Copy your web chat installation code from `Conversations Settings > Web Chat Configuration`.
+1. Copy the JavaScript from the **Floating Chat Widget** section.
 2. In WordPress admin, go to **Divi > Theme Options > Integrations**.
-3. Paste the code into the "Add code to the &lt;head&gt; of your blog" section.
+3. Paste the code into the **Add code to the `<head>` of your blog** section.
 4. Save changes.
-
-Your web chat widget should now be live on all pages!
 
   </TabItem>
   <TabItem value="shopify" label="Shopify">
 
-#### Install the web chat widget on Shopify
-
-1. Copy your web chat installation code from `Conversations Settings > Web Chat Configuration`.
+1. Copy the JavaScript from the **Floating Chat Widget** section.
 2. In Shopify, go to **Online Store > Themes > Actions > Edit Code**.
 3. Open the `theme.liquid` file.
 4. Paste the code just before the closing `</head>` tag.
 5. Save the changes.
-6. Your web chat widget should now be visible on your Shopify site.
 
   </TabItem>
   <TabItem value="custom-html" label="Other Platforms (HTML)">
 
-#### Install the web chat widget on Other Platforms (HTML)
+This method works for most website builders that let you add custom header code, including **Wix, Squarespace, Webflow, and GoDaddy**.
 
-This method works for most website builders and platforms that let you add custom HTML or header code, such as **Wix, Squarespace, Webflow, GoDaddy**, and more.
-
-1. Copy your web chat installation code from `Conversations Settings > Web Chat Configuration`.
-2. Open your website's HTML source or use your site builder's "Custom Code" or "Header Code" section.
+1. Copy the JavaScript from the **Floating Chat Widget** section.
+2. Open your site builder's **Custom Code** or **Header Code** section.
 3. Paste the code into the `<head>` section, just before the closing `</head>` tag.
 4. Save and publish your changes.
-5. Your web chat widget should now appear on your website.
 
   </TabItem>
   <TabItem value="gtm" label="Google Tag Manager">
 
-1. Select **Google Tag Manager** tab in the Installation section
-2. Follow the provided GTM setup instructions
+1. Copy the JavaScript from the **Floating Chat Widget** section.
+2. In Google Tag Manager, select **Google Tag Manager** tab in the Installation section and follow the provided setup instructions.
 
   </TabItem>
 </Tabs>
 
-**Test Installation**: Always verify the widget appears and functions correctly on the live site
-
-## Widget types and widget actions
-
-### Floating chat widget
-This is the default method of adding the AI Receptionist to your website. It places a floating button on the bottom left or right corner of your website that allows visitors to start chatting with the AI Assistant.
+---
 
 ### Embedded chat widget
-This is a more advanced version of the chat widget that places a chat box anywhere you want on your website. To make this work, you will need to add a placeholder space on your website (a container) and load the embedded chat widget code into that space. 
 
-- The code can be copied from the web chat configuration page
-- Make sure to give your container enough height to properly display the chat (eg. 400-600)
-- Test on both desktop and mobile
+The embedded widget places a fixed chat box directly on a specific page or location on your site, rather than a floating button. Use this when you want the chat to appear inline, such as on a contact page or landing page.
+
+To get the code: open the widget from the **Web Chat configuration** page, expand the **Embedded chat widget** section, and copy the JavaScript.
+
+**To install the embedded widget:**
+
+1. Copy the code from the **Embedded Chat Widget** section.
+2. Paste it into the `<body>` of your webpage, at the exact location where you want the chat to appear.
+   - **Divi (WordPress)**: open the page in the Divi Builder > add a **Code module** > paste the full snippet > Save.
+3. Optionally adjust the size and layout directly in the code:
+   - **Width**: change `width: 80%` to your preferred width (`100%` for full width)
+   - **Centering**: keep `margin: 0 auto;` to center the widget container
+   - **Height**: change `height: 600px` or remove it to control height with your own CSS
+4. Optionally add other CSS (such as `max-width` or borders) directly in the container's `style=""` attribute.
+
+**Test Installation**: Always verify the widget appears and functions correctly on the live site after installing either widget type.
 
 ### Widget actions
 When a chat widget is loaded onto a website, you can add widget actions: links that will populate the chat with a message on behalf of visitors. These are great when you want to help visitors engage with your AI Receptionist in a specific way. For example, clicking a button that pre-fills "I want to book an appointment" so your AI Receptionist can start guiding a visitor along that particular workflow.
