@@ -137,6 +137,20 @@ What to expect: a small KPI tile drawing from the same analytics connector.
 
 What to expect: a comparison table tied to the analytics connector with a working date-range control.
 
+## Connecting to CRM
+
+### Contacts directory
+
+> Add a contacts page listing every contact with their name, email, and phone number.
+
+What to expect: a table populated with your real contacts, wired through the [CRM connector](./connectors/crm.md).
+
+### Pipeline view
+
+> Build a pipeline view showing opportunities grouped by stage.
+
+What to expect: a board-style view of your actual opportunities, grouped by pipeline stage through the same connector.
+
 ## Connecting to SSO
 
 ### Member sign-in area
@@ -156,6 +170,14 @@ What to expect: a route-level guard that redirects unauthenticated visitors to s
 > Add a profile page for signed-in members showing their name, email, phone, and a list of their last five service appointments with date and service type.
 
 What to expect: a profile route that pulls from the signed-in member's identity and connects to recent activity. Pairs naturally with the analytics connector for the appointments list.
+
+## Connecting to Webchat
+
+### Add a webchat to the site
+
+> Add a webchat to the site so visitors can chat with us.
+
+What to expect: Vibe shows a searchable list of your existing webchats through the [Webchat connector](./connectors/webchat.md). Pick one to embed it, or if you don't have any yet, give it a name and Vibe creates one with default settings before embedding it.
 
 ## Generating images
 
@@ -181,7 +203,7 @@ What to expect: a coordinated illustration set, useful when you want visual cons
 
 ### Diagnose a build that auto-fix didn't solve
 
-> The preview is showing this error: "Cannot find module './components/HeroSection'." Auto-fix tried twice and stopped. Can you take a look?
+> The preview is showing this error: "Cannot find module './components/HeroSection'." Can you take a look?
 
 What to expect: Vibe reads the error in context, identifies what's missing, and produces a fix. See the [troubleshooting guide](./troubleshooting.md) for how the auto-fix layers work.
 

@@ -1,14 +1,14 @@
 ---
 title: "WordPress Hosting Premium"
 sidebar_label: "WordPress Hosting Premium"
-description: Overview of WordPress Hosting Premium, a robust multisite solution hosted on Google Cloud Platform.
+description: Overview of WordPress Hosting Premium, a multisite solution hosted on Google Cloud Platform.
 tags: [wordpress-hosting, multisite, overview]
-keywords: [WordPress Premium Hosting, multisite network, Google Cloud WordPress, scalable hosting, agency hosting solution]
+keywords: [WordPress Premium Hosting, multisite network, Google Cloud WordPress, scalable hosting, multi-location hosting solution]
 ---
 
-**WordPress Hosting Premium** is a robust multisite hosting solution tailored for managing multiple WordPress websites under one account. Hosted on **Google Cloud Platform**, it offers centralized control, enhanced security, and scalable infrastructure which is ideal for agencies, educational institutions, and corporate networks.
+**WordPress Hosting Premium** is a multisite hosting solution tailored for managing multiple WordPress websites under one account. Hosted on **Google Cloud Platform**, it offers centralized control, enhanced security, and scalable infrastructure which is ideal for businesses with multiple locations, educational institutions, and corporate networks.
 
-### Overview of WordPress Hosting Premium
+## Overview of WordPress Hosting Premium
 
 **Centralized Site Management**
 
@@ -23,23 +23,23 @@ Manage multiple websites from a single dashboard with distinct roles:
 * Elastic scaling to handle traffic surges.
 * Free SSL certificates included.
 
-### Security Capabilities
+## Security capabilities
 
 * DDoS protection and Web Application Firewall (WAF) using Google Cloud Armor.
 * HTTPS encryption with SSL for all hosted sites.
 
-### Developer-Oriented Tools
+## Developer-oriented tools
 
 * **SFTP Access.**
 * **phpMyAdmin** for advanced database access.
 * **Custom Domain Support** for main site.
 * Plugin and theme controls managed at the network level by Super Admins, with content control delegated to Site Admins.
 
-### Use Case Applications
+## Use case applications
 
-**Marketing Agencies**
+**Businesses with Multiple Locations**
 
-Efficiently manage all user sites and streamline plugin/theme updates and content deployment.
+Efficiently manage all your business's sites and streamline plugin/theme updates and content deployment.
 
 **Educational Institutions**
 
@@ -49,33 +49,33 @@ Create departmental subsites with consistent branding and independent administra
 
 Manage branch sites centrally with localized content updates.
 
-### Platform Enhancements
+## Platform enhancements
 
 * Global Content Delivery Network (CDN) for optimized load times
 * Uptime monitoring to ensure availability
 * Integrated Google Analytics for site performance tracking
 
-### Email Hosting
+## Email hosting
 
 WordPress Hosting Premium does not include email hosting. You can connect your preferred third-party email provider (e.g., Google Workspace or Microsoft 365) for business communications.
 
-### How to Use WordPress Hosting Premium
+## How to use WordPress Hosting Premium
 
 **Step 1: Activation**
 
 New Activation
 
 1. Log in to your dashboard.
-2. Navigate to **Accounts > Manage Accounts**.
+2. Navigate to `Accounts` → `Manage Accounts`.
 3. Select the appropriate account.
-4. Click **Order Products** and search for "WordPress Hosting".
+4. Click `Order Products` and search for "WordPress Hosting".
 5. Choose **Premium** from the version dropdown.
 6. Confirm and complete the order.
 
 Upgrading from WordPress Hosting Standard or Pro
 
 1. Locate the existing WordPress Hosting product in your dashboard.
-2. Select the three-dot menu > **Change Edition**.
+2. Select the three-dot menu → `Change Edition`.
 3. Choose **Premium**.
 4. Acknowledge the pricing change notice and proceed.
 
@@ -94,13 +94,13 @@ Upgrading from WordPress Hosting Standard or Pro
 **Step 3: Creating a Subsite**
 
 1. Go to the **WordPress Dashboard**.
-2. Navigate to **Network Admin > Sites**.
+2. Navigate to `Network Admin` → `Sites`.
 
 ![Network Admin Sites page](img/wordpress-hosting-premium/premium-features.png)
-3. Select **Add New** and enter:
-   * Site Address (URL)
-   * Site Title
-   * Admin Email
+3. Select `Add New` and enter:
+   * `Site Address (URL)`
+   * `Site Title`
+   * `Admin Email`
 
 ![Add new subsite form](img/wordpress-hosting-premium/premium-multisite.png)
 
@@ -130,15 +130,15 @@ Update DNS settings through your domain registrar:
 DNS propagation typically takes a few hours.
 
 :::info
-If upgrading from WordPress Hosting Standard or Pro, the original domain will redirect to the new Multisite domain. The legacy domain may display "SSL Pending" or "Disconnected" in the dashboard—this is expected and does not affect site availability.
+If upgrading from WordPress Hosting Standard or Pro, the original domain will redirect to the new Multisite domain. The original domain may display "SSL Pending" or "Disconnected" in the dashboard, this is expected and does not affect site availability.
 :::
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>What is WordPress Hosting Premium?</summary>
 
-A hosting solution for managing multiple WordPress sites through one interface. Ideal for agencies, institutions, and corporate teams.
+A hosting solution for managing multiple WordPress sites through one interface. Ideal for businesses with multiple locations, institutions, and corporate teams.
 
 </details>
 

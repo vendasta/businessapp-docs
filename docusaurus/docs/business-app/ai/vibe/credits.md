@@ -60,9 +60,34 @@ Ideal for building professional apps with the full feature set. Includes all Sta
 
 ## Add-On Credits
 
-Add-on credit packs are available for purchase in sizes of 10,000, 25,000, 50,000, and 100,000 credits. Unused add-on credits carry over into the next month as long as your add-on remains active. For current pricing, open the Upgrade dialog in Business App — it shows the image and description for each available add-on before you check out.
+Add-on credit packs are available for purchase in sizes of 10,000, 25,000, 50,000, and 100,000 credits. For current pricing, open the Upgrade dialog in Business App — it shows the image and description for each available add-on before you check out.
+
+Plan credits and add-on credits behave differently at the end of a billing period:
+
+- **Plan credits**, the allowance included with your Standard or Pro subscription, expire at the end of the month they're issued in.
+- **Add-on credits** carry over from month to month as long as the add-on remains active. If you cancel an add-on, any carried-over balance expires at cancellation.
+
+For example, on the Pro plan you receive 25,000 credits per month. If you add a 10,000-credit add-on, you have 35,000 credits available for the month. If you use only 27,500 of them, the remaining 7,500 add-on credits carry over to next month. You start the next month with your fresh 25,000 Pro credits, plus the 7,500 carried-over credits, plus any new add-on credits you purchase.
 
 ## Frequently asked questions (FAQs)
+
+<details>
+<summary>What does the Free plan include?</summary>
+
+The Free plan includes 250 credits per day, refreshed every 24 hours. For example, if you use all 250 credits on a given day, your balance refreshes the following day so you can keep building.
+</details>
+
+<details>
+<summary>How do Standard and Pro plan credits work?</summary>
+
+The credits included with your Standard or Pro subscription are part of that month's plan. Any unused balance expires at the end of the billing period it was issued in and does not carry forward. Your balance resets to your plan's full monthly amount at the start of the next cycle.
+</details>
+
+<details>
+<summary>How do add-on credit packs work?</summary>
+
+Add-on credits carry over as long as your base subscription remains active. For example, on the Pro plan you receive 25,000 credits per month. If you add a 10,000-credit add-on, you have 35,000 credits available for the month. If you use only 27,500 of them, the remaining 7,500 add-on credits carry over to next month. You start the next month with your fresh 25,000 Pro credits, plus the 7,500 carried-over credits, plus your new 10,000-credit add-on. If you cancel the add-on, any carried-over balance expires at cancellation.
+</details>
 
 <details>
 <summary>Can I stop a generation to save credits?</summary>

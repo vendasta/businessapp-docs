@@ -1,5 +1,6 @@
 ---
 title: NPS Overview
+sidebar_label: NPS
 description: Learn about Net Promoter Score (NPS) in Reputation AI Premium
 sidebar_position: 1
 ---
@@ -12,7 +13,7 @@ Using NPS surveys improves feedback accuracy and increases the likelihood of rec
 
 ## Why use NPS?
 
-Sending direct review requests to all customers may result in negative public feedback, especially from dissatisfied clients. NPS surveys offer a way to gather private feedback first. By identifying and responding to detractors privately, you reduce the risk of negative public reviews and strengthen your overall online reputation.
+Sending direct review requests to all customers may result in negative public feedback, especially from dissatisfied clients. NPS surveys offer a buffer by letting you gather private feedback first. By identifying and responding to detractors privately, you reduce the risk of negative public reviews and strengthen your overall online reputation.
 
 ## What's included
 
@@ -46,6 +47,7 @@ Sending direct review requests to all customers may result in negative public fe
 :::info
 The SMS version of the NPS message is currently not customizable. It sends the default:  
 "[Business Name]: We'd love to hear about your recent experience with us. Leave us a review here."
+You can use the default SMS request flow for NPS outreach.
 :::
 
 ## How to View NPS Feedback
@@ -59,6 +61,17 @@ The SMS version of the NPS message is currently not customizable. It sends the d
 
 You can also view individual feedback responses, including the score, written comments, and contact details.
 
+## Export NPS data
+
+You can export NPS responses from the `ML Data Exporter` tab.
+
+1. Go to `Reputation AI` > `Analytics` > `ML Data Exporter`.
+2. In the data type dropdown, select `NPS`.
+3. Review the NPS table. The table columns update for NPS data.
+4. Apply filters to narrow results. You can use the same filter behavior available for reviews, including the `Page` filter in single-location view.
+5. Export the filtered data.
+
+NPS export is visible only when this option is enabled for your account.
 NPS feedback entries also appear in the `Conversations AI` timeline as system activity for the related contact. This gives you one place to track scores, comments, and other conversation activity.
 
 ## NPS calculation and trends
@@ -84,7 +97,13 @@ Yes. You can enable a setting that redirects customers with scores above 7 to a 
 <details>
 <summary>Can I customize the SMS message?</summary>
 
-Not currently. The SMS message is hardcoded. SMS template customization is planned for a future release.
+No. The SMS message is hardcoded and is not customizable.
+</details>
+
+<details>
+<summary>Why don't I see NPS in the ML data exporter dropdown?</summary>
+
+The NPS export option appears only when it is enabled for your account.
 </details>
 
 <details>
@@ -97,6 +116,18 @@ Yes. You can select both delivery methods when sending a review request.
 <summary>Where can I view customer feedback from NPS surveys?</summary>
 
 Go to the `NPS` tab to see scores, written responses, and contact info.
+</details>
+
+<details>
+<summary>Why don't I see NPS in the ML data exporter dropdown?</summary>
+
+The NPS export option appears only when it is enabled for your account.
+</details>
+
+<details>
+<summary>Can I export NPS data?</summary>
+
+Yes. Go to `Reputation AI` > `Analytics` > `ML Data Exporter`, select `NPS`, apply filters, and export your data.
 </details>
 
 <details>

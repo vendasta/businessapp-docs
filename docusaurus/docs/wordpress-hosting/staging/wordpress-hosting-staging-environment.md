@@ -6,7 +6,7 @@ tags: [wordpress-hosting, staging, development]
 keywords: [WordPress staging site, test website changes, push to production, staging environment, safe website updates]
 ---
 
-**WordPress Hosting** accounts can create a staging environment for their websites, make the necessary changes in the staging environment, and push the change to production with minimum downtime. Standard accounts can only edit their production websites directly. A staging site is separate from the production site, and you can even import All-In-One and WordPress Hosting backups to a staging environment.
+You can create a staging environment for your website, make the necessary changes, and push the change to production with minimum downtime. If you have a Standard account, you can only edit your production website directly. A staging site is separate from the production site, and you can even import All-In-One and WordPress Hosting backups to a staging environment.
 
 When it comes to managing your website, ensuring it runs smoothly and without interruption is crucial. However, making updates or adding new features directly to your live site can often lead to unexpected issues. This is where a **staging website** becomes invaluable. A staging website is a safe, controlled environment where you can make changes without affecting your live site or your visitors.
 
@@ -21,12 +21,12 @@ The site below has a staging environment:
 In the staging environment, you can test out your site updates, and once satisfied push to live.
 
 :::tip
-If you still want the staging files to be present after pushing the site to live, check the **"Preserve the Staging files"** checkbox or they will be deleted.
+If you still want the staging files to be present after pushing the site to live, check the `Preserve the Staging files` checkbox or they will be deleted.
 :::
 
 ![Preserve the Staging files checkbox option](img/staging-environment/staging-preserve-files.png)
 
-### Resetting a Staging Site
+## Resetting a staging site
 
 There are 3 ways to reset your staging site:
 
@@ -38,7 +38,7 @@ There are 3 ways to reset your staging site:
 
 3. **Reset from template** - Reset the staging site from the template selection. This means the staging site will be different from your actual site, and it will install a fresh template from the template selections for you to work with.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Will search engines index my staging site?</summary>
@@ -57,7 +57,7 @@ Yes. The staging build will have a unique URL so you can view and share it witho
 <details>
 <summary>Why is my staging site taking a long time to create?</summary>
 
-Staging creation time depends on more than just the site's file size—it also depends on how large and complex the site's **database** is.
+Staging creation time depends on more than just the site's file size, it also depends on how large and complex the site's **database** is.
 
 **Examples:**
 
@@ -82,6 +82,8 @@ Yes. WordPress Hosting automatically restricts SEO bots from indexing temporary 
 **Best practice:**  
 Connect your **custom domain** before launching your site or beginning any SEO efforts. Only custom domains allow full indexing and visibility by search engine bots.
 
-> Temporary URLs are not intended for public visibility or long-term use. SEO bots are blocked by design until a custom domain is in place.
+:::note
+Temporary URLs are not intended for public visibility or long-term use. SEO bots are blocked by design until a custom domain is in place.
+:::
 
 </details>

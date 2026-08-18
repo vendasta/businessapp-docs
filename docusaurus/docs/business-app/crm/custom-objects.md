@@ -48,6 +48,10 @@ Standard CRM records cover common sales workflows, but many businesses need to t
 
 Once saved, the custom object appears directly in the CRM navigation alongside standard objects. You can begin populating records manually, via bulk import, or through the API.
 
+:::info
+You can create up to 3 custom objects per account. If you try to create a fourth, you'll see a message letting you know you've reached the limit.
+:::
+
 ## Import custom object records
 
 The Bulk Import workflow supports custom objects, making it easy to migrate asset lists, service records, inventory data, or any other custom dataset into the CRM.
@@ -152,5 +156,12 @@ Yes. Custom object upsert is supported via API.
 <summary>Which CRM AI editions include custom objects?</summary>
 
 Custom objects are included with CRM AI Standard and Pro. See [CRM AI Plans](./index.mdx#crm-ai-plans) for the full feature comparison.
+
+</details>
+
+<details>
+<summary>Is there a limit to how many custom objects I can create?</summary>
+
+Yes. You can create up to 3 custom objects per account. If you reach this limit, you'll see a message telling you so when you try to add another.
 
 </details>

@@ -118,9 +118,9 @@ The Discovery capability defines the qualification logic: when and how the AI co
 
 1. In the AI Employee configuration, scroll to `Capabilities`
 2. Click `Add a capability`
-3. Set the capability name to `LeadDiscovery`
-4. Set the description to: "Qualifies inbound leads by confirming the business can serve their need before capturing contact information"
-5. In the **Prompt** field, copy and paste the following:
+3. Set the capability name to `Discovery & Qualification`
+4. Set the description to: "Employs a consultative selling framework to transform initial inquiries into qualified leads."
+5. In the `Prompt` field, copy and paste the following:
 
 ```markdown
 ## 1. Discovery & Retrieval (Priority 1)
@@ -154,15 +154,15 @@ For broad requests (e.g., "consultation"), the AI can capture name and phone whi
 The Inside Sales Representative relies on two built-in capabilities for the core lead capture and booking flow. Enable both:
 
 1. In the `Capabilities` section, toggle on:
-   - **Capture leads**: handles the name, phone, and email sequence, including phone number validation and objection handling
-   - **Book appointments**: checks calendar availability and schedules meetings (requires calendar connected in Business App)
+   - `Capture leads`: handles the name, phone, and email sequence, including phone number validation and objection handling
+   - `Book appointments`: checks calendar availability and schedules meetings (requires calendar connected in Business App)
 
 2. Click `Save`
 
 ![Capabilities section showing Discovery and Qualification, Capture leads, and Book appointments](./img/inside-sales-capabilities.png)
 
 :::note
-The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the AI to answer questions about your services, pricing, and policies using your knowledge sources without additional configuration.
+The `Retrieve knowledge` capability is enabled by default for all AI Employees. This allows the AI to answer questions about your services, pricing, and policies using your knowledge sources without additional configuration.
 :::
 
 :::note
@@ -176,10 +176,10 @@ For more details on configuring built-in capabilities, see [Configuring Capabili
 Knowledge sources are critical for this AI Employee. The AI uses them to determine whether it can actually serve a customer's request during the discovery phase. To guide the AI effectively, ensure your knowledge sources contain detailed information about your offerings.
 
 1. In the `Knowledge Sources` section, add:
-   - **Business profile**: address, hours, phone, and service area
-   - **Services list**: a clear, specific list of what the business does and does not offer. The more specific, the better the AI qualifies leads.
-   - **Website**: so the AI can reference your offerings, pricing, and policies
-   - **FAQs** (optional): common questions and answers the AI can surface during conversations
+   - `Business profile`: address, hours, phone, and service area
+   - `Services list`: a clear, specific list of what the business does and does not offer. The more specific, the better the AI qualifies leads.
+   - `Website`: so the AI can reference your offerings, pricing, and policies
+   - `FAQs` (optional): common questions and answers the AI can surface during conversations
 
 2. Click `Save`
 
@@ -210,7 +210,7 @@ When the AI asks for contact info, respond with "just email me." The AI should a
 
 Adjust the role prompt or Discovery capability based on what you observe. Common refinements include adding specific service names to the Discovery prompt so the AI can make faster qualification decisions.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>Which editions support custom AI Employees?</summary>
