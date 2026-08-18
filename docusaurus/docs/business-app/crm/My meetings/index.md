@@ -112,6 +112,12 @@ You can also configure additional options per event type. Settings here override
 - **General availability** — Override your default availability for this event type.
 - **Questions for invitee** — Add custom questions invitees answer when booking. Making **Phone Number** and/or **Email** required fields controls which channels are available for confirmations and reminders.
 
+  Beyond short text, email, and phone, you can add **Multiple Choice** questions (invitees select one or more options, shown as a checkbox group) and **Dropdown** questions (invitees select exactly one option from a list). For either type, add a minimum of 2 and a maximum of 10 options, and optionally enable an **"Other"** write-in option that reveals a free-text field when selected. Mark the question required or optional — required means the invitee must select at least one option.
+
+  ![Custom question set up as a Dropdown type, with a live preview](../img/my-meetings/question-type-dropdown.png)
+
+  ![Custom question set up as a Multiple Choice type, with a live preview](../img/my-meetings/question-type-multiple-choice.png)
+
   Choose a **confirmation channel** — **Email**, **SMS**, or **Both** — for the confirmation guests receive when they book. Choose a **reminder channel** the same way; it defaults to your confirmation channel until you change it, after which the two work independently — for example, an Email confirmation with an SMS reminder.
 
   - Turning off **Phone Number** required disables **SMS** and **Both** in both channel controls, and any current SMS/Both selection falls back to Email.
@@ -155,6 +161,10 @@ Booking pages automatically display in your customer's browser language, so cust
 - Every step of the booking flow is translated, including service selection, date and time selection, the contact form, confirmations, cancellations, and rescheduling.
 - If a customer's browser language isn't supported, the page displays in English.
 - Content you write yourself — such as service names, descriptions, and staff bios — always displays exactly as you entered it and is not translated.
+
+:::note
+This only affects the booking page itself. To control the language of confirmation and reminder emails and SMS messages, set your [Primary operating language](../../administration/business_profile.md#primary-operating-language) on your Business Profile.
+:::
 
 ## Confirmation and reminder activity
 
