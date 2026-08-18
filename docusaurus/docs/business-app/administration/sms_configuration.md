@@ -164,7 +164,9 @@ If your website has multiple forms that collect phone numbers (contact forms, bo
 
 ### AI chat consent
 
-If you use the AI Chat Receptionist, the **Obtain SMS Consent** capability is automatically enabled for accounts submitting A2P registration. When a customer provides their phone number for the first time in a chat conversation, the AI asks two separate questions, one after the other:
+If your A2P registration includes web chat as an opt-in method, the **Obtain SMS Consent** capability is automatically enabled on your AI Chat Receptionist. If web chat isn't included as an opt-in method in your registration, this capability isn't added.
+
+When a customer provides their phone number for the first time in a chat conversation, the AI asks two separate questions, one after the other:
 
 > **Transactional:** "Do you agree to receive text messages from [Your Business Name] regarding appointments, service updates, and customer support? Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe or HELP for help, to any received messages. See our [Privacy Policy] and [Terms of Service] for more info. Reply Yes if you agree or No to decline."
 
