@@ -42,6 +42,24 @@ Configure your email settings via `Administration` → `Email Configuration`.
 Business App uses HTTPS link branding for tracking links in campaign emails, which helps reduce deliverability warnings from some providers. Authenticating your domain further improves inbox placement and reputation.
 :::
 
+## Set a display address for emails
+
+Anti-spam laws such as CAN-SPAM and GDPR require marketing and review request emails to include a physical mailing address in their footer. By default, this address comes from your [Business Profile](../business_profile.mdx).
+
+If you'd rather show a different address, for example a mailing address instead of your service area, turn on `Use physical address override` under `Administration` → `Email Configuration` → `Display Address` and enter the address to show:
+
+- `Address` and `Additional Address Line`
+- `City`
+- `Country` (required)
+- `Postal / Zip Code`
+- `State / Province` (required)
+
+Click `Save` to apply it.
+
+![Display Address section with Use physical address override turned on](img/physical-address-override.png)
+
+When this override is turned on, it takes priority over your Business Profile address in every email that shows a display address, including review request emails.
+
 ## Warm up your email domain
 
 Once you've established your custom email domain, it's important to allocate a period for warming it up. Without properly warming up your domain, your emails risk being filtered out by various email service providers.
