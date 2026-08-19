@@ -4,7 +4,7 @@ description: Automatically follow up by email or SMS when contacts open your cam
 sidebar_position: 4
 ---
 
-When a contact opens one of your campaign emails, they're signaling interest. Following up quickly — with a personal email or SMS — can turn that interest into a conversation. You can build an automation that triggers the moment a campaign email is opened, so you never miss that window.
+When a contact opens one of your campaign emails, they're signaling interest. Following up quickly, with a personal email or SMS, can turn that interest into a conversation. You can build an automation that triggers the moment a campaign email is opened, so you never miss that window.
 
 :::note
 This automation requires Conversations AI | Pro with email and SMS setup complete.
@@ -25,14 +25,17 @@ This automation requires Conversations AI | Pro with email and SMS setup complet
 
 3. Add your follow-up action. You have two options:
 
-**Simple follow-up** — Send a plain text email via Conversations to acknowledge their interest and continue the conversation.
+**Simple follow-up:** Send a plain text email via Conversations to acknowledge their interest and continue the conversation.
 
+{/* SME review needed: this screenshot shows the action labeled "via Inbox," but the text above and every other current automation article say "via Conversations." Confirm whether this is outdated terminology and recapture if so. */}
 <img src={require('../img/follow-up-send-email.png').default} alt="Send email configuration" width="50%" />
 
-**Multi-step follow-up** — Send an email first, then follow up with SMS or in-app notifications if the contact doesn't respond.
+**Multi-step follow-up:** Send an email first, then follow up with SMS or in-app notifications if the contact doesn't respond.
 
+{/* SME review needed: this screenshot shows an if/else branch based on whether the contact has an email vs. a phone number on file, not a "no response" condition as described above. Also labeled "via Inbox", see note above. Confirm the correct workflow logic before editing the text or recapturing. */}
 ![Advanced automation workflow](../img/follow-up-advanced-workflow.png)
 
 When the automation runs, the Activity tab shows each step that executed for the contact:
 
+{/* SME review needed: same "via Inbox" vs. "via Conversations" terminology mismatch as the screenshots above. */}
 ![Automation run example](../img/follow-up-automation-run.png)
