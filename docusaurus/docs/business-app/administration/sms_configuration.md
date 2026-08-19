@@ -142,6 +142,17 @@ Neither consent checkbox must be required to complete the form. Customers must b
 - Both checkboxes must state that message and data rates may apply, message frequency varies, and that the customer can reply STOP to unsubscribe or HELP for assistance
 - Both checkboxes must include links to your privacy policy and terms and conditions
 
+**Common mistakes that cause rejections:**
+
+Carriers reject registrations when the form implies that consent is granted automatically or required to submit, even when both checkboxes are present and correctly worded. Watch for:
+
+- A statement near the checkboxes or the submit button such as "By clicking Submit, you agree to receive marketing communications." This tells carriers that consent comes from submitting the form rather than from the customer's own choice, which contradicts the checkboxes.
+- Consent language placed in the form's introduction or fine print instead of in the checkbox labels
+- A single checkbox covering both transactional and marketing messaging
+- Wording that suggests the customer has to opt in to continue, such as marking a checkbox "required"
+
+The checkboxes must be the only place a customer gives consent. A customer who leaves both unchecked must still be able to submit the form, and must not receive any SMS messages.
+
 **Example checkbox text:**
 
 > **Transactional:** "I agree to receive text messages from [Your Business Name] regarding appointment reminders, quotes, or service updates. Message frequency varies. Message and data rates may apply. Reply STOP to cancel, HELP for help. See our [Privacy Policy] and [Terms of Service]."
@@ -203,6 +214,8 @@ If your registration is rejected, the registration status shows the specific rea
 | Terms of service missing SMS program description | Add the [required terms of service language](#required-language-1) |
 | Web forms missing consent checkbox | Add [opt-in checkboxes](#consent-on-your-web-form) to all forms with phone fields |
 | Consent checkbox is pre-checked | Change the default state to unchecked |
+| Form states that submitting grants consent | Remove wording such as "By clicking Submit, you agree to receive marketing communications" so consent comes only from the checkboxes |
+| One checkbox covers both message types | Split it into separate transactional and marketing checkboxes |
 | Consent checkbox missing privacy policy and terms of service links | Add links to your privacy policy and terms and conditions next to each checkbox |
 | Privacy policy URL links to homepage | Update the URL to point directly to the privacy policy page |
 
