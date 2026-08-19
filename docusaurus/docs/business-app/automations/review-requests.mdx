@@ -40,12 +40,14 @@ You can use placeholders such as `{{ business_name }}`; they're replaced with yo
 
 ### Business address
 
-Review request emails show your business address based on your [Business Profile](../administration/business_profile.mdx) settings:
+Review request emails show a business address based on your [Business Profile](../administration/business_profile.mdx) settings, unless you've set an override in [Email Configuration](../administration/email/email-configuration.mdx):
 
-- If `Service area business` is off, review request emails show your `Physical address`.
-- If `Service area business` is on, review request emails don't show your physical address. They show your service area instead, or leave out the address section if there's nothing to show.
+- If `Use physical address override` is turned on under `Administration` → `Email Configuration` → `Display Address`, review request emails show that override address instead of your Business Profile address.
+- If the override is turned off, review request emails follow your Business Profile:
+  - If `Service area business` is off, they show your `Physical address`.
+  - If `Service area business` is on, they don't show your physical address. They show your service area instead, or leave out the address section if there's nothing to show.
 
-Updating your address settings in your Business Profile applies to review requests you send afterward—no extra steps are needed.
+Updating either setting applies to review requests you send afterward. No extra steps are needed.
 
 ### Review sites
 
