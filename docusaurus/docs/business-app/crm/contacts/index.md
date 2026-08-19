@@ -67,6 +67,14 @@ Updating existing contacts during import will overwrite the mapped fields on mat
 Each contact should include at least one of: first name, last name, email, or phone. Company name is required for any new company rows created during import.
 :::
 
+:::info
+Contact names are stored as separate **First name** and **Last name** fields, not a single combined name field. If your CSV has one "Name" column, split it into two columns before mapping.
+:::
+
+:::tip
+Values mapped to a field with predefined options (like Lifecycle stage) or to Tags are automatically matched to the closest defined option regardless of case, so a CSV value like "lead" matches a "Lead" option.
+:::
+
 ### Export contacts
 
 1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table.
