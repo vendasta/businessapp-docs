@@ -126,6 +126,10 @@ Phone carriers require proof that your business collects consent from customers 
 
 ### Consent on your web form
 
+:::tip Use the Contact form template
+CRM > Forms includes a **Contact form** template with compliant transactional SMS, marketing SMS, and email marketing consent checkboxes already built in, unchecked by default, with your business name and the required disclosures already in place. Start from this template and you only need to add your privacy policy and terms of service links; the requirements below are for a form you build yourself. See [Consent checkboxes](/business-app/crm/forms/form-builder#consent-checkboxes).
+:::
+
 If your business collects customer information through a web form on your website, the form must include **separate consent checkboxes** for transactional and marketing messaging:
 
 - **Transactional consent**: Confirms the customer agrees to receive service-related messages such as appointment reminders and support updates.
@@ -212,7 +216,7 @@ If your registration is rejected, the registration status shows the specific rea
 | Privacy policy does not mention SMS | Add the [required privacy policy language](#required-language) |
 | Missing STOP/HELP instructions in privacy policy | Include opt-out and help instructions |
 | Terms of service missing SMS program description | Add the [required terms of service language](#required-language-1) |
-| Web forms missing consent checkbox | Add [opt-in checkboxes](#consent-on-your-web-form) to all forms with phone fields |
+| Web forms missing consent checkbox | Add [opt-in checkboxes](#consent-on-your-web-form) to all forms with phone fields, or start from the Contact form template, which includes them by default |
 | Consent checkbox is pre-checked | Change the default state to unchecked |
 | Form states that submitting grants consent | Remove wording such as "By clicking Submit, you agree to receive marketing communications" so consent comes only from the checkboxes |
 | One checkbox covers both message types | Split it into separate transactional and marketing checkboxes |
