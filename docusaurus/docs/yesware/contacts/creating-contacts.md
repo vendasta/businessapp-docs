@@ -15,8 +15,6 @@ keywords:
   - yesware-contacts
 ---
 
-# Creating and Editing Contacts
-
 ## What is creating contacts?
 
 Creating contacts allows you to add new profiles to your Yesware address book. While contacts are automatically created when you send or receive emails, you can also manually add contacts before initiating outreach. This gives you the ability to pre-fill information, prepare for campaigns, or add someone who isn't automatically tagged.
@@ -42,11 +40,11 @@ You can perform the following actions with contacts:
 
 ## How to create a contact
 
-Contacts are automatically created for every new recipient you email. However, you can also manually add contacts if needed—useful when someone isn't automatically tagged or when you want to pre-fill information in advance.
+Contacts are automatically created for every new recipient you email. However, you can also manually add contacts if needed, which is useful when someone isn't automatically tagged or when you want to pre-fill information in advance.
 
 ### For Gmail
 
-1. In the Yesware Sidebar, click the **Add (+) icon** in the top-right corner.
+1. In the Yesware Sidebar, click the `Add (+)` icon in the top-right corner.
 2. Enter the **email address** (required).
 3. Optionally add additional details:
    - First Name
@@ -62,7 +60,7 @@ Contacts are automatically created for every new recipient you email. However, y
 
 1. Go to the `Contacts` page in the Yesware web app.
 2. Click `New Contact` in the top-right corner.
-3. Fill in the required **Email** field.
+3. Fill in the required `Email` field.
 4. Optionally add:
    - Name
    - Company
@@ -84,7 +82,7 @@ Once a contact is created, you can edit the information to make sure it stays re
 You can edit contacts in your Contacts Sidebar:
 
 1. Open an email with a contact or search for a contact at the top of the sidebar.
-2. Once the profile appears in the sidebar, click the **pencil icon** next to any of the fields to update the information.
+2. Once the profile appears in the sidebar, click the `pencil icon` next to any of the fields to update the information.
 3. Once you make the edit, click `Enter` to save the updated information.
 
 You can also edit contacts on the [App Site](https://app.yesware.com/contacts):
@@ -106,12 +104,12 @@ This allows you to go into the contacts as you notice changes in title and conta
 
 If you want to remove a contact from your Yesware account, you can do so from the Contacts page on the Yesware app site or directly from Gmail.
 
-### From the App Site (Gmail and Outlook)
+### From the app site (Gmail and Outlook)
 
 1. Go to the `Contacts` page.
 2. Search for and select the contact you'd like to delete.
 3. Click `Delete` in the top right corner of the contact page.
-4. A confirmation message will appear—click `Delete Contact` to confirm.
+4. A confirmation message will appear. Click `Delete Contact` to confirm.
 
 ### From Gmail
 
@@ -122,7 +120,7 @@ You can also delete a contact directly from the Gmail sidebar:
 3. At the bottom of the sidebar, click `Delete Contact Record`.
 4. Confirm by clicking `Delete Contact` in the popup.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 
@@ -145,7 +143,7 @@ Note: Numbers starting with 0 (which indicate local dialing) are not supported b
 No, Yesware Campaigns does not currently support importing data directly from the Salesforce Campaigns object.
 
 **What Can Be Imported:**
-Users can import Contact and Lead records from Salesforce into Yesware Campaigns. However, other Salesforce objects, including those within the Campaigns object, are not supported for import.
+You can import Contact and Lead records from Salesforce into Yesware Campaigns. However, other Salesforce objects, including those within the Campaigns object, are not supported for import.
 
 **Workaround Options:**
 If you need to use data from the Salesforce Campaigns object, consider these steps:
@@ -169,8 +167,6 @@ From your Contacts tab in the sidebar (Gmail) or on the app site, you can add co
 4. You can edit any information in the add recipient screen and Campaign.
 5. The information that pulls through is the information available in the Contacts sidebar.
 6. Preview the Campaign to make sure your merge fields are set up correctly with the contact information.
-
-![Adding a contact to a Campaign](img/how-do-i-add-a-yesware-contact-005a276b.jpg)
 
 **In the App Site:**
 1. In the Contacts page, click on the `Campaign` button within the contact.
