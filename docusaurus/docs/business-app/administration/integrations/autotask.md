@@ -167,7 +167,7 @@ To change whether updates flow back into Autotask, adjust the **Sync back to Aut
 |-------|-------|----------|
 | 500 error when connecting | Invalid credentials or a disabled API user | Verify the username and secret in Autotask, then re-enter them |
 | Connected, but nothing syncs | Webhooks are not enabled | Enable webhooks on the security level with a limit of at least 5 |
-| Contacts are not appearing | The contact is not linked to a company | Link the contact to a company in Autotask |
+| Contacts are not appearing | The contact is not linked to a company | Link the contact to a company in Autotask. The Activity Feed logs "Unable to sync this contact. Company details are not associated. Please associate a company and try again." |
 | Duplicate records | Autotask IDs were not imported before connecting | Disconnect, clean up the duplicates, bulk import with `external_id`, then reconnect |
 | Connection shows "Broken" | Credentials expired or were revoked | Click **Re-authenticate** and enter the credentials again |
 | Sync back is not working | The record is missing its Autotask ID | Check whether `autotask-company-id` or `autotask-contact-id` is empty. If it is, use bulk import to add the external IDs |
@@ -205,7 +205,7 @@ Nothing is deleted. Your records remain in both systems. Reconnecting resumes th
 <details>
 <summary>Can I create a contact without a company association?</summary>
 
-Business App allows standalone contacts, but Autotask requires every contact to belong to a company. A contact without a company association will not sync to Autotask, and an activity note logs the skip.
+Business App allows standalone contacts, but Autotask requires every contact to belong to a company. A contact without a company association will not sync to Autotask. The Activity Feed logs: "Unable to sync this contact. Company details are not associated. Please associate a company and try again."
 
 </details>
 
