@@ -128,6 +128,10 @@ Phone carriers require proof that your business collects consent from customers 
 
 If your business collects customer information through a web form on your website, the form must include **separate consent checkboxes** for transactional and marketing messaging:
 
+:::info Forms builder default
+Forms you build with the Forms builder (**CRM > Forms**) show the header "Choose how you'd like to hear from us (optional)" above the consent checkboxes by default, on both new forms and forms you already created. This wording introduces the checkboxes without implying that submitting the form grants consent, so you don't need to add or edit it yourself.
+:::
+
 - **Transactional consent**: Confirms the customer agrees to receive service-related messages such as appointment reminders and support updates.
 - **Marketing consent**: Confirms the customer agrees to receive promotional messages such as sales and special offers.
 
