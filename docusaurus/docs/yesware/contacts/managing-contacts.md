@@ -16,8 +16,6 @@ keywords:
   - contact-history
 ---
 
-# Managing Contacts
-
 ## What is managing contacts?
 
 Managing contacts allows you to work with existing contact records by adding internal notes, viewing interaction timelines, enriching profiles with additional data, and exporting your contact list. These tools help you maintain context, track engagement, and keep your contact information comprehensive and actionable.
@@ -56,7 +54,7 @@ In the Yesware Contact Sidebar:
 
 This is a great way to keep information on your contacts easily accessible while emailing with them.
 
-![Adding notes in Gmail](img/how-do-i-add-notes-a-to-a7bee156.jpg)
+<!-- TODO (article-verifications, 2026-08-20): Screenshot removed - showed the outdated Yesware logo mark and needs to be recaptured with current branding and sample (non-internal) contact data. -->
 
 ### For Gmail and Outlook (App Site)
 
@@ -91,7 +89,8 @@ The timeline is visible in the Contacts Sidebar when you view a contact profile.
 **For Outlook:**
 The Contact Timeline lives within the Yesware sidebar under the `Tracking` tab. You can also view it in the [app site](https://app.yesware.com/contacts) on each contact's profile page.
 
-![Contact Timeline in Outlook](img/what-is-the-yesware-contact-timeline-in-c4edb663.jpg)
+<!-- TODO (article-verifications, 2026-08-20): Screenshot removed - showed the outdated Yesware logo mark and needs to be recaptured with current branding and sample (non-internal) contact data. -->
+
 
 ### Understanding timeline activity
 
@@ -125,7 +124,7 @@ Contact Enrichment is an **add-on** to your existing Yesware plan and uses **enr
 4. The system will display both the existing profile and newly enriched information.
 5. Click `Save` to update the contact with the enriched details.
 
-![Contact enrichment in app site](img/what-is-contact-enrichment-2b7748f1.jpg)
+<!-- TODO (article-verifications, 2026-08-20): Screenshot removed - showed the outdated Yesware logo mark and internal contact data. Needs to be recaptured with current branding and sample (non-internal) contact data. -->
 
 ### Enriching contacts in Gmail
 
@@ -145,7 +144,7 @@ You can export all of your contacts from Yesware to use in other systems or for 
 
 To export all contacts:
 
-1. Go to the Yesware dashboard.
+1. Go to the Yesware web app.
 2. Click on the `Contacts` tab.
 3. Check the `Select All` option to select all contacts.
 4. Click on `Export Contacts`.
@@ -156,7 +155,7 @@ To export all contacts:
 
 The export will download as a file that you can open in spreadsheet applications or import into other systems.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 

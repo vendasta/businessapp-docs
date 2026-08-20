@@ -14,11 +14,9 @@ keywords:
   - outlook
 ---
 
-# Getting Started with Contacts
-
 ## What is Contacts?
 
-Contacts is your inbox's integrated address book. It allows you to view contact profiles, track past interactions, add recipients to Campaigns, and record and review internal notes—all from within your email workflow.
+Contacts is your inbox's integrated address book. It allows you to view contact profiles, track past interactions, add recipients to Campaigns, and record and review internal notes, all from within your email workflow.
 
 Contacts are created automatically when you send or receive emails. You can also create them manually to pre-fill information or add contacts before initiating outreach.
 
@@ -55,7 +53,7 @@ You can access Contacts through the Yesware web app:
 3. From the profile page, you can:
    - View and edit contact details (click a field, edit, and hit `Enter` to save)
    - See a full timeline of interactions (emails sent, replies received, meetings booked)
-   - Add internal notes in the Notes section and click `Save` to keep them
+   - Add internal notes in the `Notes` section and click `Save` to keep them
    - Create a new contact using the `New Contact` button (email address is required)
 
 :::info
@@ -66,22 +64,22 @@ Contacts does not integrate with Salesforce, but you can submit feedback via the
 
 If you're a Gmail user, you can also manage Contacts directly from your Yesware Sidebar:
 
-1. Click the **Yesware icon** to open the Yesware sidebar.
-2. Click the **phone book icon** to access the Contacts tab.
-3. Use the **search bar** to find a profile by name or email.
+1. Click the `Yesware icon` to open the Yesware sidebar.
+2. Click the `phone book icon` to access the `Contacts` tab.
+3. Use the `search bar` to find a profile by name or email.
 4. Click on a contact to view and edit their details.
-5. To create a new contact manually, click the **add (+) icon** at the top right.
+5. To create a new contact manually, click the `add (+) icon` at the top right.
 
 When viewing an email, the sidebar will auto-load the associated contact profile, allowing you to see their timeline and add notes as needed.
 
 ### Using Contacts in Outlook
 
-Outlook users access Contacts through the Yesware web app:
+If you use Outlook, you access Contacts through the Yesware web app:
 
 1. Go to the `Contacts` page in the Yesware web app.
 2. Search for and select a specific contact or create a new one using the `New Contact` button.
 3. Click on any contact to view and edit their information.
-4. The Contact Timeline is available in the Tracking tab of the Yesware sidebar within Outlook.
+4. The Contact Timeline is available in the `Tracking` tab of the Yesware sidebar within Outlook.
 
 ## How contacts are created
 
@@ -92,32 +90,13 @@ Contacts are created automatically when you send or receive emails:
 
 You can also create contacts manually before sending your first email to them.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 
 <summary>What are the user limits for the Pro Plan?</summary>
 
 The Pro Plan includes a limit of 5 seats (users). If you wish to add more seats, you will be prompted to upgrade your plan or contact the sales team.
-
-</details>
-
-<details>
-
-<summary>How do I update my Contacts Email button to email from Gmail?</summary>
-
-The email button on the Contacts page will open in your default email program. To use Contacts Email with Gmail (and have access to Yesware features), follow these steps:
-
-1. Open Chrome Browser and click on the three dots on the top right of Chrome, then select `Settings`.
-2. Go to the `Privacy and Security` section.
-3. Next to `Site Settings`, click the right arrow.
-4. Scroll down to `Additional Permissions` and expand it.
-5. Next to `Protocol Handlers`, click the right arrow.
-6. At the top, make sure `Allow sites to ask to become default handlers for protocols (recommended)` is turned on.
-7. Scroll down to the Blocked section and make sure that mail.google.com doesn't appear in this list.
-8. In your Chrome Browser's address bar, enter mail.google.com.
-9. Click the Service handler icon.
-10. Click `Allow` and `Done`.
 
 </details>
 
