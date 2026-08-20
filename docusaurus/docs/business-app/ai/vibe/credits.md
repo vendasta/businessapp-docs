@@ -131,5 +131,5 @@ Yes. Click the **Stop** button in the chat input while a generation is running. 
 <details>
 <summary>What happens to my unused credits if I deactivate my base subscription?</summary>
 
-Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. Published links stay live. Download any project backups before you deactivate.
+Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. Download any project backups before you deactivate.
 </details>
