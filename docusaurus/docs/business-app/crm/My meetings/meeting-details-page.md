@@ -37,7 +37,7 @@ When an AI-generated summary is ready for a recorded meeting, Business App sends
 1. Open the CRM.
 2. In the left-hand menu, select **CRM**, then select **My Meetings**.
 3. Open the **Recordings** tab to view recorded meetings.
-4. Locate the meeting you want to review. The list shows the meeting title, date, duration, guest count, and visibility.
+4. Locate the meeting you want to review. The list shows the meeting title, date, duration, guest count, and visibility. Use the **keywords** filter to narrow the list — you can enter more than one keyword to filter by multiple terms at once.
 5. Click the meeting row or select **View** to open the Meeting Details page.
 
 **Demo:**
