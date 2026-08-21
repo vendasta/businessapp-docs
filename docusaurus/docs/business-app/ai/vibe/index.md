@@ -44,6 +44,9 @@ Every project has a built-in knowledge base pre-loaded with the location's Busin
 ### Connectors
 Vibe wires your generated app into the Business App tools you already use — so what you build isn't a standalone tool, it's connected to your business. The Forms connector captures submissions and routes them directly to your CRM. The Analytics connector pulls live performance data into custom dashboards. The Single sign-on connector gates a members area behind your customers' existing Business App accounts. See [Connectors](./connectors/index.md).
 
+### Tags
+Add free-form tags to a project from its Project Settings page to categorize it. Tags are stored in lowercase, with spaces converted to hyphens. The search box on the projects list matches against tags as well as name and description, so tagged projects are easy to find again. See [Tags](./getting-started.md#tags).
+
 ### Planning
 Every generation produces a structured plan that drives the run. The plan, the architecture, and the file list are captured in the `COMPLETED` block at the end of each run so you can verify what was built. See [Planning](./guides/plan-mode.md).
 
