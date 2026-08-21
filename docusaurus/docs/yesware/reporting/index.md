@@ -6,14 +6,12 @@ tags: [yesware, reporting, analytics]
 keywords: [Yesware reports, email activity report, template performance, sales analytics]
 ---
 
-# Reporting
-
 Yesware's reporting suite gives you clear insight into how your outreach is performing, for both individuals and teams.
 
 ## Accessing reports
 
-- **Gmail**: Click **My Reports** at the top of Gmail, or go to **Yesware** menu > **My Reports**.
-- **Outlook**: Click **Open Reporting** in your Outlook ribbon, or go to the Yesware Sidebar > **Menu** > **View Reports**.
+- **Gmail**: Click `My Reports` at the top of Gmail, or go to `Yesware` menu > `My Reports`.
+- **Outlook**: Click `Open Reporting` in your Outlook ribbon, or go to the Yesware Sidebar > `Menu` > `View Reports`.
 - **Direct link**: [app.yesware.com/reports/activity](https://app.yesware.com/reports/activity/#/activity)
 
 ## Available reports
@@ -53,7 +51,7 @@ No. Yesware detects out-of-office auto-replies and does not count them as replie
 <details>
 <summary>How do I filter reports by date range?</summary>
 
-In the Email Activity and Templates Reports, use the **Reporting period** filter to choose a pre-set range (e.g., last 7 days) or a custom date range. Select a date from the calendar, type in dates directly, or click **Custom**. Click **Done** or click outside the dropdown to apply. Custom date ranges are available from January 1, 2018 onwards.
+In the Email Activity and Templates Reports, use the `Reporting period` filter to choose a pre-set range (e.g., last 7 days) or a custom date range. Select a date from the calendar, type in dates directly, or click `Custom`. Click `Done` or click outside the dropdown to apply. Custom date ranges are available from January 1, 2018 onwards.
 </details>
 
 <details>
@@ -66,10 +64,4 @@ For multi-recipient emails, all open and engagement data is consolidated under t
 <summary>Why do bounced emails sometimes show as "Opened" or "Clicked"?</summary>
 
 The recipient's email server may scan the message before bouncing it, which registers as an open or click. A bounce notification is still sent with details about why the message was undelivered.
-</details>
-
-<details>
-<summary>How do I remove the Response Insights widget from my compose window?</summary>
-
-In Gmail, go to **Yesware** menu > **Preferences** > **Inbox**, then toggle **Response Insights — Composer Widget** off and click **Save & Reload**.
 </details>

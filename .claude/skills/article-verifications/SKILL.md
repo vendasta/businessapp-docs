@@ -448,6 +448,7 @@ These are mechanical, rules-based changes with no risk of affecting product accu
 - **Audience language** — partner/agency framing rewritten for a business owner (e.g., "your clients" → "you", removing "your provider" framing, third-person "users" → "you")
 - **UI formatting** — bold UI elements and navigation paths converted to inline code (backticks)
 - **Blockquote replacement** — `>` callouts replaced with the appropriate `:::info`, `:::tip`, `:::warning`, or `:::note` block
+- **Em dash replacement** — `—` replaced with a colon, comma, or period depending on context. Exception: if the em dash appears inside a quoted UI label or literal string (e.g. a toggle name shown in backticks), flag it for approval instead — changing it could misrepresent the actual product text.
 
 ### Approval required (flag and wait)
 
@@ -555,7 +556,7 @@ The article is mostly clear and well-structured. Two audience-language issues an
 
 - **Never assert** that content is wrong — use "may be outdated" or "verify with SME" when uncertain.
 - **Never infer functionality** from the article text. If a step or feature claim cannot be verified from other current documentation, flag it for SME review.
-- **Apply auto-fixes immediately, flag the rest** — sentence casing, audience language, UI formatting, and blockquote-to-callout fixes are applied directly without asking. All other changes require explicit approval before editing.
+- **Apply auto-fixes immediately, flag the rest** — sentence casing, audience language, UI formatting, blockquote-to-callout fixes, and em dash replacement are applied directly without asking. All other changes require explicit approval before editing.
 - **Nothing bypasses the approval flow** — a broken link or an outdated logo is just as much a "pending" item as a gray-label term or a UI reference. Every concrete finding that isn't auto-fixed must be copied into Pending approval and walked through Step 8, never left to sit only in Link check, Logo check, or Needs verification where it can be missed.
 - **Always show context before asking** — the Issue/Location/Current/Proposed block is sent as its own chat message before every AskUserQuestion call in Step 8, with the file as a clickable link. Never fold that context into the tool call itself and never make the user ask for it.
 - **Check every link** — do not skip link checks even if the article looks clean. This includes anchor fragments (Step 4) and inbound links from other articles into the ones you're editing (Step 4b) — a heading rename that looks harmless in isolation can silently break a link on a page you never opened.
