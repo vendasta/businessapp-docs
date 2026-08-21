@@ -140,6 +140,13 @@ Yes. Vibe generates React single-page applications served as static client-side 
 
 </details>
 
+<details>
+<summary>Can Vibe notify me when a generation finishes?</summary>
+
+Yes. Turn on notifications for the current run from the chat composer and allow notifications when your browser asks for permission. Your browser then sends a notification as soon as the generation completes, so you can switch to another tab without missing it.
+
+</details>
+
 ## Next Steps
 
 - [Getting Started](./getting-started.md) — Create your first app and learn the basics
