@@ -58,6 +58,17 @@ There's no dedicated multi-select field type. To let visitors choose more than o
 3. Repeat for each additional option.
 4. Save the form.
 
+### Consent checkboxes
+
+Any form that includes a `Phone number` or `Email` field automatically includes consent checkboxes: **Transactional SMS consent** and **Marketing SMS consent** for a phone field, and **Email marketing consent** for an email field. You don't need to add these separately, and starting from the **Contact form** template gives you all three from the start.
+
+- No consent checkbox is checked by default, and a visitor can submit the form without checking any of them.
+- The default label text uses your business name automatically, describes what the messages are for, and includes the disclosures carriers require (message frequency, message and data rates, and STOP/HELP instructions), along with placeholder links to your privacy policy and terms of service.
+- Checkbox labels and their fine print support rich text, so you can format the text and edit the placeholder links.
+- When a visitor checks a box and submits the form, that consent is recorded against the contact the submission creates.
+
+Before you publish, replace the placeholder privacy policy and terms of service links with your own — carriers require these links to point to your live pages. For the full compliance requirements these checkboxes satisfy, see [SMS Registration for US Businesses](/business-app/administration/sms_configuration#consent-and-opt-in).
+
 ## Step 2: Customize the styling
 
 Set the form width (e.g. 100%) and manage the width in your page builder. In the **Design** tab, style the container, font, and button.

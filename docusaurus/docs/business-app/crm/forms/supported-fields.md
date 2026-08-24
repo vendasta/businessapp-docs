@@ -21,6 +21,11 @@ Contact fields and Company fields write to two different record types. A form wi
 - Timezone, Birth year, Gender
 - UTM Campaign, UTM Medium, UTM Source, UTM Content, UTM Term
 - Market ID, Owner, External ID
+- Transactional SMS consent, Marketing SMS consent, Email marketing consent
+
+:::info
+Consent fields appear automatically whenever a form includes a `Phone number` or `Email` field — you don't add them separately. See [Consent checkboxes](form-builder.md#consent-checkboxes).
+:::
 
 ## Company fields
 
