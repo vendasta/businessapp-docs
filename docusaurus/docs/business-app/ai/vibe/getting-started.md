@@ -166,6 +166,12 @@ The top-right toolbar provides:
 - **Download** — Download a complete archive of your project: full source, all assets, and the git history of every checkpoint.
 - **Checkpoints** — Browse and restore previous versions of your project.
 
+### Tags
+
+Add tags to a project to categorize it. From the projects list, click **Configure** on a project card to open the Project Settings page, then add tags in the **Overview** section. Tags are stored in lowercase, with spaces converted to hyphens — "Client Work" becomes `client-work`.
+
+Use the search box on the projects list to find a project by name, description, or tag.
+
 ## Tips for New Users
 
 - **Start simple** — Begin with a clear, focused prompt. You can always add complexity in later iterations.
