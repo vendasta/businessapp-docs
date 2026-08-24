@@ -80,6 +80,10 @@ While a generation is in progress, you can keep typing and sending messages. Ins
 
 To stop a run early, click the **Stop** button in the chat input. The generation halts almost immediately, the last working preview stays on screen, your original prompt returns to the input so you can edit and resend, and your message queue pauses so nothing queued fires into the interrupted state.
 
+### Get notified when a run finishes
+
+If you switch to another browser tab while Vibe works, you don't have to keep checking back. Turn on notifications for the current run from the chat composer, then allow notifications when your browser asks for permission. Once enabled, your browser sends a notification as soon as the generation completes.
+
 ## Step 5: Iterate and Refine
 
 Your first generation is just the starting point. Use follow-up prompts to refine your application:
