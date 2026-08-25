@@ -96,7 +96,7 @@ Your [Business Profile](./administration/business_profile.mdx) is the central so
 
 ### How to update your business profile
 
-1. Go to **My Business** > **Business Profile**.
+1. Go to **Administration** > **Business Profile**.
 2. Use the **Primary Info**, **Hours**, and **Descriptions** tabs to update your details.
 3. Click **Save** to apply changes.
 
