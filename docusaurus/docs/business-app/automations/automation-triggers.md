@@ -94,6 +94,7 @@ Choose the most specific trigger that matches your use case and think about how 
 |---|---|
 | A contact communication summary is created | Fires when an AI-generated summary of a conversation is created for a contact |
 | Web Chat captures a lead | Fires when a visitor submits their information through the Web Chat widget |
+| A call is dispatched to on-call staff | Fires when your AI Voice Receptionist dispatches a call using the Dispatch capability, so you can notify the destination number or log the call details |
 
 ### Manual
 

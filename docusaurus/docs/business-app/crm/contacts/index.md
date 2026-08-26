@@ -67,6 +67,10 @@ Updating existing contacts during import will overwrite the mapped fields on mat
 Each contact should include at least one of: first name, last name, email, or phone. Company name is required for any new company rows created during import.
 :::
 
+:::note
+Tag columns append your imported values to any tags already on a matching contact, rather than replacing them. Dropdown and other option fields match by value regardless of capitalization, so entries like "Lead" and "lead" map to the same option. When an imported contact is associated with only one company, that company is automatically set as the contact's primary company.
+:::
+
 ### Export contacts
 
 1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table.
