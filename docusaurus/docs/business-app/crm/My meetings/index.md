@@ -75,7 +75,7 @@ From here you can configure:
 - **Calendar settings** — Connect Google Calendar or Microsoft 365 / Outlook.
 - **Choose meeting app** — Select Google Meet, Zoom, or Microsoft Teams as your default.
 - **Scheduling settings**:
-  - **Availability increment** — Show time slots in increments of 5, 10, 15, 30, or 60 minutes.
+  - **Availability increment** — Show time slots in increments of 5, 10, 15, 30, 60, or 90 minutes.
   - **Meeting buffer before/after** — Set buffer time before and after meetings for travel, notes, or preparation.
 
 ![Meeting settings — app and scheduling](../img/my-meetings/meeting-settings-app-scheduling.png)
@@ -131,7 +131,7 @@ You can also configure additional options per event type. Settings here override
   :::
 
 - **Customize invitation email** — Customize the subject and body of the email sent when you request a meeting from a CRM contact.
-- **Availability increment** — Override the default time slot increment (5, 10, 15, 30, or 60 minutes).
+- **Availability increment** — Override the default time slot increment (5, 10, 15, 30, 60, or 90 minutes).
 - **Meeting buffer before/after** — Override the default buffer times.
 - **Advance notice** — Override the minimum lead time for this event type.
 - **Add to my website** — Get an embed code to add your booking form as an inline widget on a website.

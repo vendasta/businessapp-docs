@@ -150,7 +150,7 @@ Turn on **Daily limit** to cap how many meetings can be booked per day for this 
 
 ![Availability increment](../img/my-meetings/team-booking-links-availability-increment.png)
 
-Choose the increment — 5, 10, 15, 30, or 60 minutes — used to display your available time slots to clients.
+Choose the increment — 5, 10, 15, 30, 60, or 90 minutes — used to display your available time slots to clients.
 
 ### Meeting buffers
 
