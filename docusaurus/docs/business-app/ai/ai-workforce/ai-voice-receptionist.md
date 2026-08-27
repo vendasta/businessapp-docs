@@ -120,6 +120,17 @@ The **default voice lead capture** capability guides your AI Employee to offer t
 
 > **Note:** If this is turned off, the Voice Receptionist will not be able to capture caller information but *will* still answer questions to the best of their ability.
 
+##### What happens when your AI Voice Receptionist captures a lead
+
+When your AI Voice Receptionist captures a caller's name and contact information, a few things happen automatically:
+
+1. A contact is created in your CRM with the details the caller provided, such as first name, last name, phone number, and email address.
+2. The call, along with its recording and transcript, is saved to the `Conversations` tab against that contact.
+3. A `New Leads from Conversations AI` notification is sent to everyone on the account who has that notification turned on. This covers both the instant email and the daily digest, and both are enabled by default.
+
+:::tip Check who receives new lead notifications
+New lead notifications are per user, so each person on the account controls their own. To check or change yours, go to `Settings` > `Notification Settings`, expand the `Business App` section, and confirm `New Leads from Conversations AI` is enabled. See [Notification settings](../../administration/notification_settings.mdx) for the full list.
+:::
 
 #### Book appointments with your calendar
 
@@ -368,6 +379,21 @@ You can track your AI Voice Receptionist's performance by:
 5. **Adjusting capabilities and instructions** as needed
 
 Regular monitoring helps you identify opportunities to improve responses and ensure your AI is representing your business well.
+</details>
+
+<details>
+<summary>How will I know when the AI Voice Receptionist captures a lead?</summary>
+
+You do not have to watch the `Conversations` tab to catch new leads. When your AI Voice Receptionist captures a caller's contact information, a `New Leads from Conversations AI` notification is sent to everyone on the account who has that notification enabled, and a contact is created in your CRM at the same time.
+
+This notification is enabled by default for both instant email and the daily digest, but it is set per user. If someone on your team is not receiving new lead notifications:
+
+1. Have them go to `Settings` > `Notification Settings` in Business App.
+2. Expand the `Business App` section.
+3. Confirm `New Leads from Conversations AI` is enabled under `Instant Email Notifications`, `Daily Digest Emails`, or both.
+4. Click `Save`.
+
+Also check the global settings at the top of that page, since a global `Disabled` value overrides the individual product settings. For more detail, see [Notification settings](../../administration/notification_settings.mdx).
 </details>
 
 <details>
