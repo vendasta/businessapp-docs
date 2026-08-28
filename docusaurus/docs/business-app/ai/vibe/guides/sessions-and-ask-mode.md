@@ -49,6 +49,16 @@ To review messages from previous sessions, click the **All messages** area benea
 
 ![The Vibe chat input with Ask mode selected](./img/ask-mode-chat-input.png)
 
+### Run a change directly from Ask mode
+
+If you ask Vibe to make a change while you're in Ask mode, Vibe recognizes the request and shows a **Run this in Build** card in the chat.
+
+1. Click **Run this in Build**.
+2. Vibe switches to Build mode and resubmits your original message — you don't need to retype it.
+3. The mode selector updates to show **Build**, reflecting the mode your request actually ran in.
+
+The card doesn't appear if you're out of credits, or if Vibe is paused waiting on your answer to a clarifying question. Answer the question first, then ask again.
+
 ## Frequently Asked Questions
 
 <details>
@@ -85,6 +95,12 @@ Ask mode is for discussion and brainstorming. Plan and Build modes are for execu
 <summary>Does my Ask mode conversation carry over when I switch to Plan or Build?</summary>
 
 Yes. The context and understanding built during an Ask mode conversation automatically carries forward when you switch to Plan or Build mode, so you don't need to repeat yourself.
+</details>
+
+<details>
+<summary>What happens if I ask Vibe to make a change while I'm in Ask mode?</summary>
+
+Vibe shows a **Run this in Build** card so you can run the request without manually switching the mode selector and retyping your message. Click the card and Vibe reruns your original message in Build mode.
 </details>
 
 <details>
