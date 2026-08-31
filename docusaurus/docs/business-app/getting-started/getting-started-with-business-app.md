@@ -40,7 +40,7 @@ Business App is your one-stop dashboard for running your business online. This g
   Send and receive messages with your leads and customers, and respond to reviews or inquiries through Conversations.
 
 - **Track your performance**  
-  See important business analytics such as website traffic, reviews, and leads either in your [Executive Report](./executivereport/index.md) or your [Home](./home.mdx) screen.
+  See important business analytics such as website traffic, reviews, and leads either in your [Executive Report](../executivereport/index.md) or your [Home](../home.mdx) screen.
 
 - **Access your tools and products**  
   Quickly launch any apps or services you've activated to market your business, connect with customers, or boost productivity.
@@ -63,10 +63,10 @@ Business App is your one-stop dashboard for running your business online. This g
 
 ## Step 1: Complete your onboarding checklist
 
-When you first log in, you'll see a **"Complete Setup"** card on your [Home](./home.mdx) screen. This is your personalized onboarding checklist to help you hit the ground running.
+When you first log in, you'll see a **"Complete Setup"** card on your [Home](../home.mdx) screen. This is your personalized onboarding checklist to help you hit the ground running.
 
 Finishing these steps helps you unlock everything Business App can do for your business. You'll:
-- Start seeing results in your [Executive Report](./executivereport/index.md) sooner.
+- Start seeing results in your [Executive Report](../executivereport/index.md) sooner.
 - Respond faster to customer reviews and questions.
 - Collect more leads and feedback.
 - Discover features that save you time or help your business grow.
@@ -92,7 +92,7 @@ Each step is designed to show you quick wins and real value from day one.
 
 ## Step 2: Update your business profile
 
-Your [Business Profile](./administration/business_profile.mdx) is the central source for your business name, address, hours, services, and more. Keeping it complete and up to date ensures your information appears correctly in listings, reports, and lead capture tools.
+Your [Business Profile](../administration/business_profile.mdx) is the central source for your business name, address, hours, services, and more. Keeping it complete and up to date ensures your information appears correctly in listings, reports, and lead capture tools.
 
 ### How to update your business profile
 
@@ -110,7 +110,7 @@ Complete your profile early. Other features in Business App use this data to pow
 
 ## Step 3: Connect key integrations
 
-Connections bring your most important business data into one place. When you connect platforms like Google Business Profile and QuickBooks, Business App can sync location details, power your [Executive Report](./executivereport/index.md), and trigger automations.
+Connections bring your most important business data into one place. When you connect platforms like Google Business Profile and QuickBooks, Business App can sync location details, power your [Executive Report](../executivereport/index.md), and trigger automations.
 
 ### How to add integrations
 
@@ -121,8 +121,8 @@ Connections bring your most important business data into one place. When you con
 
 Common connections to set up early:
 
-- **Google Business Profile**: Syncs location details and visibility metrics. Data can appear in your Executive Report within about 5 minutes. For setup details, see [Business Profile](./administration/business_profile.mdx) and [Integrations](./administration/connections/index.md).
-- **QuickBooks Online**: Import existing customers, automate review requests from invoiced customers, and surface financial insights. See [QuickBooks integration](./administration/integrations/quickbooks) for connection steps.
+- **Google Business Profile**: Syncs location details and visibility metrics. Data can appear in your Executive Report within about 5 minutes. For setup details, see [Business Profile](../administration/business_profile.mdx) and [Integrations](../administration/connections/index.md).
+- **QuickBooks Online**: Import existing customers, automate review requests from invoiced customers, and surface financial insights. See [QuickBooks integration](../administration/integrations/quickbooks) for connection steps.
 
 [Back to checklist](#getting-started-checklist)
 
@@ -130,13 +130,13 @@ Common connections to set up early:
 
 ## Step 4: Set up AI and web chat
 
-[AI Workforce](./ai/ai-workforce/ai_workforce_overview.md) lets you automate conversations, capture leads, and answer customer questions 24/7. The [Web Chat](./conversations/web-chat) widget engages website visitors and sends leads directly to your Conversations inbox.
+[AI Workforce](../ai/ai-workforce/ai_workforce_overview.md) lets you automate conversations, capture leads, and answer customer questions 24/7. The [Web Chat](../conversations/web-chat) widget engages website visitors and sends leads directly to your Conversations inbox.
 
 ### Meet your AI Workforce
 
 1. Go to **AI** > **AI Workforce**.
 2. Start a chat with an AI Employee to see what they can do.
-3. Configure the [Chat Receptionist](./ai/ai-workforce/ai-chat-receptionist/index.mdx) or [Voice Receptionist](./ai/ai-workforce/ai-voice-receptionist.md) to match your business.
+3. Configure the [Chat Receptionist](../ai/ai-workforce/ai-chat-receptionist/index.mdx) or [Voice Receptionist](../ai/ai-workforce/ai-voice-receptionist.md) to match your business.
 
 ### Install Web Chat on your website
 
@@ -154,11 +154,11 @@ Train your AI with your website content and frequently asked questions so respon
 
 ## Step 5: Register for SMS and customize notifications
 
-If you want to send and receive text messages with customers, complete [SMS registration](./administration/sms_configuration.md) (required for US businesses). You can also adjust how you receive alerts so you never miss important activity.
+If you want to send and receive text messages with customers, complete [SMS registration](../administration/sms_configuration.md) (required for US businesses). You can also adjust how you receive alerts so you never miss important activity.
 
 ### SMS registration (US businesses only)
 
-US-based businesses must complete A2P 10DLC registration before sending SMS. Registration can take a few weeks. Canadian businesses can use SMS immediately. See [SMS setup](./conversations/sms/index.mdx) for full details.
+US-based businesses must complete A2P 10DLC registration before sending SMS. Registration can take a few weeks. Canadian businesses can use SMS immediately. See [SMS setup](../conversations/sms/index.mdx) for full details.
 
 ### Notification settings
 
@@ -166,7 +166,7 @@ US-based businesses must complete A2P 10DLC registration before sending SMS. Reg
 2. Choose whether you want instant emails, daily digests, or both.
 3. Expand each product section to fine-tune which events trigger notifications.
 
-See [Notification settings](./administration/notification_settings.mdx) for a full overview.
+See [Notification settings](../administration/notification_settings.mdx) for a full overview.
 
 [Back to checklist](#getting-started-checklist)
 
@@ -202,13 +202,13 @@ The onboarding checklist will disappear once you complete each item. You can alw
 <details>
 <summary><strong>How long does it take to see data in my Executive Report?</strong></summary>
 
-Data from Google Business Profile can appear within about 5 minutes after you connect it. Other products may take up to 48 hours to populate. See the [Executive Report overview](./executivereport/index.md) for more details.
+Data from Google Business Profile can appear within about 5 minutes after you connect it. Other products may take up to 48 hours to populate. See the [Executive Report overview](../executivereport/index.md) for more details.
 </details>
 
 <details>
 <summary><strong>Can I invite team members to use Business App?</strong></summary>
 
-Yes. From the [Home](./home.mdx) screen, select **Invite Team Member** in the top-right corner, enter the person's name and email, and click **Send Invite**.
+Yes. From the [Home](../home.mdx) screen, select **Invite Team Member** in the top-right corner, enter the person's name and email, and click **Send Invite**.
 </details>
 
 <details>
@@ -220,5 +220,5 @@ Go to **Administration** > **Connections** > **Manage** to see all active integr
 <details>
 <summary><strong>Is SMS available for my business?</strong></summary>
 
-SMS is available for businesses located in the United States and Canada. US businesses must complete A2P 10DLC registration before sending messages. See [SMS setup](./conversations/sms/index.mdx) and [SMS registration for US businesses](./administration/sms_configuration.md) for details.
+SMS is available for businesses located in the United States and Canada. US businesses must complete A2P 10DLC registration before sending messages. See [SMS setup](../conversations/sms/index.mdx) and [SMS registration for US businesses](../administration/sms_configuration.md) for details.
 </details>
