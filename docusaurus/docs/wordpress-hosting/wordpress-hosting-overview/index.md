@@ -4,9 +4,9 @@ sidebar_label: "WordPress Hosting Overview"
 description: "WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes."
 ---
 
-WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes. Built on Google Cloud Platform, it delivers reliable hosting, built-in eCommerce, robust performance, and easy-to-use visual tools.
+WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes. Built on Google Cloud Platform, it delivers reliable hosting, built-in eCommerce, fast performance, and easy-to-use visual tools.
 
-## Product Tiers
+## Product tiers
 
 ### WordPress Hosting Standard
 
@@ -29,15 +29,6 @@ Ideal for businesses that need a quick, cost-effective online presence.
 
 Offers all features of Standard, plus advanced tools for developers and advanced users.
 
-**Additional Features:**
-* Custom domain support
-* Staging environments for safe changes
-* phpMyAdmin and SFTP access
-* Google Analytics integration
-* Automatic and manual backups, retained up to 90 days
-* No plugin or theme restrictions
-* AI-powered PHP log analysis
-
 ### Feature comparison
 
 | Feature | Standard | Pro |
@@ -53,7 +44,7 @@ Offers all features of Standard, plus advanced tools for developers and advanced
 | Custom domains | | ✓ |
 | Create staging from backup | | ✓ |
 
-## Key Features
+## Key features
 
 **Performance & Infrastructure**
 * Hosted on Google Cloud Platform with unlimited pageviews and bandwidth
@@ -73,7 +64,7 @@ Offers all features of Standard, plus advanced tools for developers and advanced
 * Secure hosting infrastructure
 * Advanced security features
 
-## Getting Started
+## Getting started
 
 1. **Set Up Your Site**: Choose a template and customize it with Divi Builder
 2. **Configure Your Store**: Set up WooCommerce to start selling online
@@ -86,14 +77,14 @@ For detailed guides, see:
 * [Domains](../domains/connect-a-custom-domain.md) - Connect custom domains
 * [Advanced Tools](../advanced-tools/index.mdx) - Access advanced features
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Can I upgrade to PHP 8.1 on WordPress Hosting?</summary>
 
 Yes. WordPress Hosting supports PHP 8.1. Before upgrading, ensure your site uses WordPress 6.0 or higher, all themes and plugins are up to date, and you have created a backup.
 
-To upgrade: Go to your WordPress Hosting dashboard, click **Change PHP version**, select **8.1.1**, and click **Accept**. You can roll back if needed.
+To upgrade: Go to your WordPress Hosting dashboard, click `Change PHP version`, select `8.1.1`, and click `Accept`. You can roll back if needed.
 
 </details>
 
@@ -127,7 +118,7 @@ Minor WordPress core updates are applied automatically to keep sites secure. Plu
 <details>
 <summary>Why are my WordPress posts returning 404 errors?</summary>
 
-This is usually a permalink issue. Go to **Settings > Permalinks** in your WordPress Dashboard and click **Save Changes** without making any changes. This flushes the rewrite rules and often resolves the issue.
+This is usually a permalink issue. Go to `Settings` → `Permalinks` in your WordPress Dashboard and click `Save Changes` without making any changes. This flushes the rewrite rules and often resolves the issue.
 
 </details>
 
