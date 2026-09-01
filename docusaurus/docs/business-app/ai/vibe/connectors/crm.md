@@ -24,7 +24,7 @@ A contacts table, company directory, or pipeline view built in Vibe reflects the
 
 ## Enabling the connector
 
-From the projects list click **Configure**, or inside the project click **+** in the chat box and select **Connectors**. Toggle **CRM** on to make your contacts, companies, and opportunities available to the supervisor agent for that project.
+Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **CRM** on to make your contacts, companies, and opportunities available to the supervisor agent for that project.
 
 ## When to use it
 

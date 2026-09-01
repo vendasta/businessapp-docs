@@ -54,7 +54,7 @@ The phrase **use my business information** tells Vibe to pull details — addres
 
 ### Enable connectors before you prompt
 
-Some builds require a connector to be enabled before running the prompt. Open **Connectors** via **Configure** on the project card or **+** in the chat box, and toggle the required connector on. If it isn't enabled first, the UI will appear but the functionality won't work.
+Some builds require a connector to be enabled before running the prompt. Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md) — then toggle the required connector on. If it isn't enabled first, the UI will appear but the functionality won't work.
 
 | What you're building | Connector to enable first |
 |---|---|

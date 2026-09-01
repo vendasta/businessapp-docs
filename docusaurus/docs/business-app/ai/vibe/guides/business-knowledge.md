@@ -30,7 +30,7 @@ Using these phrases produces more accurate results than leaving Vibe to infer th
 
 ## Adding your own knowledge
 
-You can extend the knowledge base from the Project Settings page. Click **Configure** for the project, then find the **Knowledge** section. You can add:
+You can extend the knowledge base from your [project settings](./project-settings.md). Open your project's settings and select **Knowledge**. You can add:
 
 - **URLs** — Vibe fetches and indexes the page content
 - **Files** — Upload documents such as PDFs, specs, or brand guides

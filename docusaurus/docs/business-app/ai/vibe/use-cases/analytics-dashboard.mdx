@@ -5,7 +5,6 @@ sidebar_position: 3
 description: "Build a sign-in-protected analytics dashboard showing real business data using Vibe."
 ---
 
-import sharedConnectors from './img/vibe-sso-analytics-connectors.png';
 import ssoPage from './img/vibe-sso-page.png';
 import navbarSignIn from './img/vibe-navbar-sign-in.png';
 import reputationAI from './img/vibe-analytics-reputationAI.png';
@@ -40,15 +39,12 @@ A protected analytics dashboard is one of Vibe's more compelling use cases: a pr
 
 ## Before you start
 
-This use case requires two connectors, enabled in the correct order. Open **Connectors** from the project — either via **Configure** on the project card or **+** in the chat box — and turn them on in this sequence:
+This use case requires two connectors, enabled in the correct order. Open your project's settings and select **Connectors** (see [project settings](../guides/project-settings.md)), then turn them on in this sequence:
 
 1. Toggle **Single sign-on** on first.
 2. Toggle **Analytics** on.
 
 SSO must come first. The Analytics connector pulls data from authenticated APIs scoped to the signed-in user, and without an active SSO session those requests have nothing to run against. Both need to be on before you run any of the prompts below.
-
-
-<img src={sharedConnectors} alt="Shared connectors section showing Single sign-on and Analytics toggles enabled" className="img-screenshot" />
 
 ## Step 0: Build a page to host the dashboard (optional)
 
