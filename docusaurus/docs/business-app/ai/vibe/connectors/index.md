@@ -8,7 +8,7 @@ unlisted: false
 
 Connectors let your Vibe-built app do real work, not just look like it could. Each connector is a thin layer over a Business App service: instead of mocking a contact form or hardcoding a fake login button, the generated UI hooks into the live platform feature behind it. You ask for the behavior in plain English; the supervisor agent activates the connectors that are turned on for your project.
 
-There are six connectors today:
+There are seven connectors today:
 
 - [Single sign-on](./single-sign-on.md) — let your customers sign in with their existing account.
 - [Forms](./forms) — capture form submissions from your app.
@@ -16,6 +16,7 @@ There are six connectors today:
 - [CRM](./crm.md) — surface your contacts, companies, and opportunities.
 - [Supabase](./supabase.md) — connect your app to a Supabase database.
 - [Webchat](./webchat.md) — add an existing webchat, or create one, and embed it in your app.
+- [Reviews Widget](./reviews-widget.md) — build and embed a review display widget.
 
 ## Enabling a connector
 
@@ -42,5 +43,6 @@ That single prompt activates Forms (contact), Single sign-on (members area), and
 - [Analytics](./analytics.md) — Surface multi-location metrics for signed-in users
 - [CRM](./crm.md) — Surface contacts, companies, and opportunities in your app
 - [Webchat](./webchat.md) — Add live chat to your app, or create a new webchat and embed it
+- [Reviews Widget](./reviews-widget.md) — Build and embed a review display widget
 - [Prompting Library](../guides/prompting-library.md) — Ready-made prompts for each connector
 
