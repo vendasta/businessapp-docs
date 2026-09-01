@@ -44,6 +44,9 @@ Every project has a built-in knowledge base pre-loaded with the location's Busin
 ### Connectors
 Vibe wires your generated app into the Business App tools you already use — so what you build isn't a standalone tool, it's connected to your business. The Forms connector captures submissions and routes them directly to your CRM. The Analytics connector pulls live performance data into custom dashboards. The Single sign-on connector gates a members area behind your customers' existing Business App accounts. See [Connectors](./connectors/index.md).
 
+### Reviews Widget
+Build a review display widget — a carousel, grid, list, or badge — with the Reviews Widget workflow. Describe what you want, then refine the review source, layout, and filters in the visual editor. Embed the result inline in your project, or export it as a snippet for an external site. See [Reviews Widget](./guides/reviews-widget.md).
+
 ### Planning
 Every generation produces a structured plan that drives the run. The plan, the architecture, and the file list are captured in the `COMPLETED` block at the end of each run so you can verify what was built. See [Planning](./guides/plan-mode.md).
 
@@ -157,6 +160,7 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
 - [Images](./guides/image-generation.md) — Generate images from a prompt or import your own
 - [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [Reviews Widget](./guides/reviews-widget.md) — Build and embed a review display widget
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
