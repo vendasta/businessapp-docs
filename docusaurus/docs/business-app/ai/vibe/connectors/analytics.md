@@ -60,5 +60,5 @@ You don't need to "enable" the connector inside a prompt — turning it on once 
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Single sign-on](./single-sign-on.md) — Gate your analytics dashboard behind a sign-in screen
-- [Prompting Library](../prompting-library.md) — Ready-made dashboard prompts organized by use case
+- [Prompting Library](../guides/prompting-library.md) — Ready-made dashboard prompts organized by use case
 

@@ -66,6 +66,10 @@ If Vibe pauses to ask a clarifying question or request plan approval, the queue 
 
 If a generation fails, the queue automatically pauses. Your queued messages remain untouched — resolve the issue, then resume the queue to pick up where you left off. See [Error handling and troubleshooting](./troubleshooting.md).
 
+### Who can queue and send
+
+Each queued request runs with the sender's own permissions. On projects with multiple collaborators, this means a queued message fires with the access of the person who sent it, not whoever happens to be viewing the project when it runs.
+
 ### Sending while paused
 
 If the queue is paused and Vibe isn't currently generating, sending a new message goes straight to Vibe instead of joining the queue. If Vibe is generating, your message still joins the queue even while paused.
@@ -124,6 +128,12 @@ The queue holds until you answer the question or approve the plan. Auto-fire res
 <summary>If I pause the queue, can I still add messages?</summary>
 
 Yes. You can add, edit, or remove messages while paused — they just won't fire until you resume.
+</details>
+
+<details>
+<summary>Whose permissions does a queued message use on a shared project?</summary>
+
+The sender's. Each queued request runs with the permissions of the person who sent it, even if it fires while someone else is working in the project.
 </details>
 
 <details>

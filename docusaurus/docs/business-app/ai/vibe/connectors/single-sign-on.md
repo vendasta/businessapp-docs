@@ -77,5 +77,5 @@ Only users who already have access to this Business App account can sign in thro
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Analytics](./analytics.md) — Surface member-specific metrics behind your sign-in gate
-- [Prompting Library](../prompting-library.md) — Ready-made SSO prompts for members areas and gated content
+- [Prompting Library](../guides/prompting-library.md) — Ready-made SSO prompts for members areas and gated content
 

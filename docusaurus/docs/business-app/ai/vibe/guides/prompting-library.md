@@ -9,7 +9,7 @@ unlisted: false
 
 Concrete prompts you can paste into Vibe, organized by intent. These are starting points, not recipes you have to follow exactly. Edit any prompt with your own business name, content, and constraints, and Vibe will adapt.
 
-For the principles behind why these work, see the [prompting guide](./prompting.md). For the connectors several of these activate, see the [connectors guide](./connectors/index.md).
+For the principles behind why these work, see the [prompting guide](./prompting.md). For the connectors several of these activate, see the [connectors guide](../connectors/index.md).
 
 ## Scaffolding a new app
 
@@ -25,7 +25,7 @@ What to expect: a single-page site with the seven sections in order, themed in s
 
 > Create a website for a dental clinic called "Bright Smile Dental." Include a home page with services, a team page with dentist bios and photos, an FAQ page with common questions, and a booking page with a contact form.
 
-What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](./connectors/forms).
+What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](../connectors/forms).
 
 ### Service business with multi-location
 
@@ -103,7 +103,7 @@ What to expect: the reference site's structure and visual style, with your busin
 
 > Add a contact form at the bottom of the landing page. Collect name, email, and message. Style it to match the rest of the page.
 
-What to expect: a form rendered in your theme, wired through the [Forms connector](./connectors/forms) so submissions are captured automatically.
+What to expect: a form rendered in your theme, wired through the [Forms connector](../connectors/forms) so submissions are captured automatically.
 
 ### Lead capture popup
 
@@ -123,7 +123,7 @@ What to expect: a stepped form component with state preserved across steps. Subm
 
 > Build an owner dashboard showing service requests per location for the last 30 days, top three services this month, and a bar chart of weekly revenue.
 
-What to expect: a dashboard page that activates the [Analytics connector](./connectors/analytics.md). The numbers are wired to live data, not placeholders.
+What to expect: a dashboard page that activates the [Analytics connector](../connectors/analytics.md). The numbers are wired to live data, not placeholders.
 
 ### Single-metric tile
 
@@ -143,7 +143,7 @@ What to expect: a comparison table tied to the analytics connector with a workin
 
 > Add a contacts page listing every contact with their name, email, and phone number.
 
-What to expect: a table populated with your real contacts, wired through the [CRM connector](./connectors/crm.md).
+What to expect: a table populated with your real contacts, wired through the [CRM connector](../connectors/crm.md).
 
 ### Pipeline view
 
@@ -175,7 +175,7 @@ What to expect: stage changes made in your Vibe app sync back to your pipeline i
 
 > Add a "Members" area with a sign-in screen. After signing in, members see their loyalty points, recent orders, and a profile section with their name and email.
 
-What to expect: a gated area wired through the [Single sign-on connector](./connectors/single-sign-on.md). The sign-in itself completes once Single sign-on is enabled in Project Settings, which provisions the OAuth client for your project.
+What to expect: a gated area wired through the [Single sign-on connector](../connectors/single-sign-on.md). The sign-in itself completes once Single sign-on is enabled in Project Settings, which provisions the OAuth client for your project.
 
 ### Gated content
 
@@ -195,7 +195,7 @@ What to expect: a profile route that pulls from the signed-in member's identity 
 
 > Add a webchat to the site so visitors can chat with us.
 
-What to expect: Vibe shows a searchable list of your existing webchats through the [Webchat connector](./connectors/webchat.md). Pick one to embed it, or if you don't have any yet, give it a name and Vibe creates one with default settings before embedding it.
+What to expect: Vibe shows a searchable list of your existing webchats through the [Webchat connector](../connectors/webchat.md). Pick one to embed it, or if you don't have any yet, give it a name and Vibe creates one with default settings before embedding it.
 
 ## Connecting to Reviews
 
@@ -255,5 +255,5 @@ What to expect: Vibe surfaces the diff in chat. From there you can ask for a par
 
 - [Prompting Guide](./prompting.md) — The principles behind why these prompts work
 - [Cloning a Reference Site](./clone-from-url.md) — Use a URL as your starting point instead of a prompt
-- [Connectors](./connectors/index.md) — Understand the connectors several of these prompts activate
+- [Connectors](../connectors/index.md) — Understand the connectors several of these prompts activate
 

@@ -58,7 +58,7 @@ Toggle **Visual edits** in the chat composer to flip design mode on and off. Whe
 -->
 
 ### Device Preview
-Click the device preview icon in the control panel to shift the canvas to a mobile width, so you can check how your app looks on a phone-sized screen without leaving the editor.
+Preview your app at phone, tablet, and desktop sizes without leaving the editor, or pop the preview out to a full window to see it on its own.
 
 ### Clarifying Questions
 When your request is ambiguous, Vibe pauses and asks before going further. Questions arrive as structured prompts — pick a chip, confirm yes or no, or type a one-line answer. The conversation resumes the moment you respond.

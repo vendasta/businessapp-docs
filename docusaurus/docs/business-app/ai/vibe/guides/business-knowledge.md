@@ -52,4 +52,4 @@ Good candidates for the knowledge base:
 
 - [Getting Started](../getting-started.md) — Create your first project
 - [Prompting Guide](./prompting.md) — Write prompts that make the most of your business context
-- [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [Connectors](../connectors/index.md) — Wire your app into forms, analytics, and sign-on

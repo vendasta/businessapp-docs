@@ -161,6 +161,7 @@ Use the tabs at the top to switch between views:
 The top-right toolbar provides:
 
 - **Refresh** — Reload the preview.
+- **Device preview** — Preview your app at phone, tablet, and desktop sizes, or pop the preview out to a full window.
 - **Fullscreen** — Expand the preview to full screen.
 - **Download** — Download a complete archive of your project: full source, all assets, and the git history of every checkpoint.
 - **Checkpoints** — Browse and restore previous versions of your project.
