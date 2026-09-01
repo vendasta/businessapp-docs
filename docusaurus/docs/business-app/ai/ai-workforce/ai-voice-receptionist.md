@@ -264,7 +264,7 @@ If the AI Voice Receptionist is unable to capture a caller’s contact informati
 Before getting started, make sure you have:
 - **AI Voice Receptionist access** through an eligible edition (see [AI Workforce Overview](ai_workforce_overview.md) for edition and region availability)
 - **Conversations AI phone number** assigned after activating Pro or Premium (found in Administration > Conversations Settings)
-- **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.md))
+- **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.mdx))
 - *(Optional)* **Calendar connection** for appointment booking (set up in CRM > My Meetings > Settings)
 
 Your AI Voice Receptionist will work with minimal setup, but having these prerequisites ensures the best experience for your callers.
