@@ -48,6 +48,7 @@ These are versatile builds that work across industries.
 - **Business website** — A multi-page marketing site with a homepage, services, team bios, and a contact form. Start from a single prompt; refine with follow-ups.
 - **Campaign landing page** — A standalone page for a promotion, event, or product launch. Vibe auto-populates your business name, hours, and contact details from your Business Profile.
 - **Customer testimonials page** — A page showcasing reviews and success stories with photos, names, and short quotes.
+- **Real reviews widget** — A reviews section on your homepage showing real customer reviews from your account through the [Reviews connector](./connectors/reviews.md).
 - **About us and team page** — An introduction to your business, your story, and the people behind it.
 - **Referral program page** — A page explaining how your referral program works, with a simple intake form for submitting referrals.
 - **Contact and location page** — Hours, address, a map embed, and a contact form. Populated automatically from your Business Profile.

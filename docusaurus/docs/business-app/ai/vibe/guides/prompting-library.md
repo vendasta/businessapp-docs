@@ -179,6 +179,20 @@ What to expect: a profile route that pulls from the signed-in member's identity 
 
 What to expect: Vibe shows a searchable list of your existing webchats through the [Webchat connector](./connectors/webchat.md). Pick one to embed it, or if you don't have any yet, give it a name and Vibe creates one with default settings before embedding it.
 
+## Connecting to Reviews
+
+### Reviews section on a page
+
+> Add a reviews section to the homepage showing our recent customer reviews.
+
+What to expect: a reviews section populated with your business's real customer reviews through the [Reviews connector](../connectors/reviews.md), styled to match the rest of the page.
+
+### Testimonials on a landing page
+
+> Add a testimonials section to the landing page that showcases our customer reviews, just above the footer.
+
+What to expect: a testimonials-style section drawing from the same real reviews rather than invented quotes.
+
 ## Generating images
 
 ### Hero photography
