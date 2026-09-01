@@ -72,7 +72,7 @@ Write the announcement in any language — it is spoken as written.
 
 When the field is blank, the AI uses the default announcement, skipping any part with no captured value:
 
-> "Hello, this is after-hours dispatch. I have an emergency call for you. The caller is {name}, at {location}. They're reporting: {emergency}. Connecting you with the caller now."
+> "Hello, this is after-hours dispatch. I have an emergency call for you. The caller is {CallerName}, at {ServiceLocation}. They're reporting: {Emergency}. Connecting you with the caller now."
 
 ### Step 4: Set up the companion SMS automation
 
@@ -125,7 +125,7 @@ Yes. On-call dispatch is a capability of the AI Voice Receptionist, so the recep
 <details>
 <summary>What does the technician hear if I leave the Announcement blank?</summary>
 
-The AI speaks the default announcement: "Hello, this is after-hours dispatch. I have an emergency call for you. The caller is {name}, at {location}. They're reporting: {emergency}. Connecting you with the caller now." Any part with no captured value is skipped.
+The AI speaks the default announcement: "Hello, this is after-hours dispatch. I have an emergency call for you. The caller is {CallerName}, at {ServiceLocation}. They're reporting: {Emergency}. Connecting you with the caller now." Any part with no captured value is skipped.
 </details>
 
 <details>
