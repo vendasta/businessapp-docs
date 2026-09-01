@@ -17,19 +17,18 @@ Vibe lives in Business App alongside your other AI tools.
 3. In the left sidebar, click **AI**.
 4. Click **Vibe**.
 
-You see your Vibe project list. If this is your first time, the list is empty and invites you to create your first app.
+You land on the Vibe home. It opens with the "What should we build today?" composer — a single prompt box with build-mode selection and voice input — and two tabs beneath it: **Templates** and **My Projects**.
 
-![Business App left navigation with the AI section expanded and Vibe highlighted, showing the empty Vibe project list](./img/vibe-nav-entry.png)
+![Business App left navigation with the AI section expanded and Vibe highlighted](./img/vibe-nav-entry.png)
 
 ## Step 2: Create a New Project
 
-Once you're in Vibe, you'll see a project list. Each card shows a live preview thumbnail of the app you built. Click **+ Create a new app** to create your first application.
+From the home, you have two ways to start:
 
-![Empty Vibe project list with the Create a new app button](./img/project-list.png)
+- **Start from a template** — Open the **Templates** tab to browse a searchable gallery of working examples. Select a template to see what it does and what it requires, then create an independent working project from it.
+- **Start from a prompt** — Describe what you want to build in the "What should we build today?" composer, pick a build mode, and send it.
 
-Give your project a name and an optional description, then click **Create**.
-
-![Create a new app dialog with the App Name and Description fields filled in](./img/create-project.png)
+Your existing projects live under the **My Projects** tab, where each project card shows a live preview thumbnail, and tags and search help you organize and find them. See [Projects Home & Templates](./guides/projects-home.md) for a full tour of the home, the template gallery, and the template detail view.
 
 As soon as the project is created, Vibe loads the Business Profile for the selected location — name, services, hours, and contact details — into the project's knowledge base. Your prompts can draw on that information without you having to include it. See [Business Knowledge](./guides/business-knowledge.md) to learn how to add more context.
 

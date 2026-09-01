@@ -10,6 +10,8 @@ description: Ideas for what to build with Vibe — organized by business type an
 
 Not sure where to start? Here are ideas organized by business type. Each one is something you can describe to Vibe in a single prompt and refine from there.
 
+Prefer a ready-made starting point? The template gallery on the Vibe home gives you working examples to build from — see [Projects Home & Templates](./guides/projects-home.md).
+
 For step-by-step walkthroughs of some of these, see [Use Cases](./use-cases/index.md).
 
 ---
