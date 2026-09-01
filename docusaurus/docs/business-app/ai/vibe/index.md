@@ -69,6 +69,9 @@ Attach images to your prompts to show Vibe what you want. Use the microphone but
 ### Images
 Vibe gives you two ways to add images to your app: generate them from a text description, or import your own. Generated images are hosted and embedded automatically — no setup required. See [Images](./guides/image-generation.md).
 
+### SEO & LLM Indexing
+Apps are served as fully rendered HTML that search engines and AI assistants can read. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and the SEO section in project settings puts indexing under your control. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
+
 ### Code Editor
 Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
 
@@ -136,7 +139,7 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 <details>
 <summary>Are Vibe sites SEO-friendly?</summary>
 
-Yes. Vibe generates React single-page applications served as static client-side apps. Search engines that execute JavaScript, including Google, can index them. Meta tags aren't added automatically — ask Vibe to include them for any page that needs them.
+Yes. Vibe apps are served as fully rendered HTML that search engines and AI assistants can read directly. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and you control indexing from the SEO section in project settings. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
 
 </details>
 
@@ -157,6 +160,7 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
 - [Images](./guides/image-generation.md) — Generate images from a prompt or import your own
 - [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [SEO & LLM Indexing](./guides/seo-and-indexing.md) — Understand how your app stays visible to search engines and AI assistants
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
