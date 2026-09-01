@@ -151,6 +151,24 @@ What to expect: a table populated with your real contacts, wired through the [CR
 
 What to expect: a board-style view of your actual opportunities, grouped by pipeline stage through the same connector.
 
+### Create or update a contact
+
+> Add a "New contact" form so I can create a contact with a name, email, and phone number.
+
+What to expect: a form that writes to your CRM through the [CRM connector](../connectors/crm.md) — the connector is two-way, so contacts you create or update in your Vibe app appear in CRM.
+
+### Log an activity
+
+> Let me log a call or a note on a contact's record.
+
+What to expect: an activity logged from your Vibe app that syncs back to the contact's record in CRM.
+
+### Move a deal to another stage
+
+> Let me move an opportunity to a different pipeline stage from the pipeline view.
+
+What to expect: stage changes made in your Vibe app sync back to your pipeline in CRM.
+
 ## Connecting to SSO
 
 ### Member sign-in area
