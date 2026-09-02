@@ -74,7 +74,7 @@ For example, on the Pro plan you receive 25,000 credits per month. If you add a 
 
 Top-up credit packs are one-time credit purchases available in four sizes: 10,000, 25,000, 50,000, and 100,000 credits. They add credits to your account immediately, without waiting for your next monthly renewal date. There's no limit on how many top-up packs you can purchase.
 
-Each top-up pack is valid for 12 months from the date of purchase.
+Each top-up pack is valid for 12 months from the date of purchase. Under **Active credits** in Administration > AI Settings > Credits, each top-up pack shows its expiration date, so you always know when unused credits will expire.
 
 Top-up packs are useful when unexpected usage puts you at risk of running out of credits before your billing cycle ends. Your monthly plan and add-on credits cover ongoing usage, and a top-up pack covers usage beyond that.
 
