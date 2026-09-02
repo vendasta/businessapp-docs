@@ -4,6 +4,7 @@ sidebar_label: Sessions and Ask Mode
 description: Use sessions to isolate focused objectives and Ask mode to brainstorm interactively before building in Vibe.
 tags: [vibe, ai, sessions, ask-mode]
 keywords: [vibe sessions, ask mode, vibe chat, vibe brainstorm, vibe context]
+sidebar_position: 12
 ---
 
 ## What are Sessions and Ask mode?
@@ -14,7 +15,7 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 
 ## Why are Sessions and Ask mode important?
 
-- **Prevent context cross-contamination**: When you manage multiple objectives in one continuous conversation, important context can get mixed together or lost. Sessions keep each goal isolated so the AI is only working with what's relevant.
+- **Keep objectives organized**: When you manage multiple objectives in one continuous conversation, context from different goals can get mixed together. Sessions keep each goal isolated so the AI is only working with what's relevant to your current objective.
 - **Never lose your history**: Creating a new session doesn't erase past work. Every message from every session in a project stays visible in the **All messages** area.
 - **Brainstorm before you build**: Ask mode lets you think through an idea interactively before shifting into execution — no need to repeat yourself when you switch modes.
 - **Seamless transition from strategy to creation**: The understanding you build in Ask mode automatically carries forward into plan or build mode, so you move from conversation to creation without starting over.
@@ -25,6 +26,10 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 - **All messages area**: Located beneath the session selector, this area shows the complete message history for every session in the project.
 - **Ask mode**: An interactive chat mode for back-and-forth discussion and brainstorming before execution.
 - **Mode switching**: Switch from Ask mode to plan or build mode when you're ready — the context you built in Ask mode carries forward automatically.
+
+### Long conversations
+
+Vibe holds onto what matters from earlier in the conversation — decisions and details from many prompts ago still inform the next change, so you don't need to restate them as a session grows. Sessions are for organization, not for working around a fading memory: create a new one when you want to keep separate workstreams isolated, not because a long conversation stops working.
 
 ## How to use Sessions and Ask mode
 
@@ -77,6 +82,12 @@ Nothing is deleted. All messages from every session in a project remain fully vi
 <summary>When should I create a new session?</summary>
 
 Create a new session when you're moving on to a new objective. This keeps the AI focused on your current goal rather than drawing from the context of a previous one.
+</details>
+
+<details>
+<summary>Does Vibe forget earlier parts of a long conversation?</summary>
+
+No. Vibe holds onto what matters from earlier in the conversation — decisions and details from many prompts ago still inform later changes. Create a new session to keep separate workstreams isolated, not because context runs out.
 </details>
 
 <details>

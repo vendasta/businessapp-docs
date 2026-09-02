@@ -205,26 +205,9 @@ Best practices:
 Once a call is transferred, recording ends and the system does not record or transcribe the destination leg. If the destination doesn't answer, the transfer is not reverted; the caller would need to call again to speak with the AI.
 :::
 
-#### Dispatch calls to on-call staff
+#### Dispatch calls to on-call staff {#dispatch-calls-to-on-call-staff}
 
-The **Dispatch** capability routes qualifying calls to an on-call team member instead of transferring the caller directly. Add a destination phone number and the criteria for when a call should dispatch, for example, an after-hours emergency line.
-
-When a call meets the dispatch criteria, your AI Voice Receptionist collects the caller's information the same way it does for default lead capture, then places the caller on hold and calls the destination number. Once the destination number answers, the AI announces the caller using a message you define, with placeholders for details like the caller's name, location, and the reason for the call, then connects the call.
-
-How to enable:
-1. Go to `AI > AI Workforce > Voice Receptionist > Configure`
-2. In `Capabilities`, click `Add new capability`
-3. Select `Dispatch`
-4. Add the destination phone number and the criteria for when a call should dispatch
-5. Customize the announcement message your AI Voice Receptionist reads to the destination number when connecting the call
-
-:::note Phone number format
-Destination numbers must be in international format. See the phone number format table under [Transfer calls to other numbers](#transfer-calls-to-other-numbers).
-:::
-
-:::tip Automate what happens next
-Dispatching a call triggers an automation event with the call details, so you can notify the on-call team member through other channels or log the dispatch. See [Automation triggers](../../automations/automation-triggers.md#conversations-ai).
-:::
+The **On-call dispatch** capability screens urgent calls and connects the caller to your on-call technician — the AI gathers who is calling, the nature of the emergency, and the service location, places the caller on hold, and announces the call to whichever technician answers. If no one can be reached live, the caller is told the on-call technician has been notified and will follow up — and a completed dispatch fires an automation trigger with the call details, so you can text those details to the on-call number and make that notification real. See [On-call dispatch](./on-call-dispatch.md) for setup steps, announcement template variables, and the companion automation.
 
 ### Step 3: Add knowledge sources to your AI Voice Receptionist
 
@@ -281,7 +264,7 @@ If the AI Voice Receptionist is unable to capture a caller’s contact informati
 Before getting started, make sure you have:
 - **AI Voice Receptionist access** through an eligible edition (see [AI Workforce Overview](ai_workforce_overview.md) for edition and region availability)
 - **Conversations AI phone number** assigned after activating Pro or Premium (found in Administration > Conversations Settings)
-- **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.md))
+- **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.mdx))
 - *(Optional)* **Calendar connection** for appointment booking (set up in CRM > My Meetings > Settings)
 
 Your AI Voice Receptionist will work with minimal setup, but having these prerequisites ensures the best experience for your callers.

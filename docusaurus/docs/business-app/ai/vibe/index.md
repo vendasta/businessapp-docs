@@ -42,7 +42,7 @@ Describe what you want in the chat panel. Vibe interprets the request and genera
 Every project has a built-in knowledge base pre-loaded with the location's Business Profile — name, services, hours, contact info, brand voice, and FAQs. When you ask Vibe to build a Contact page or add an About section, it fills in real details about the business instead of placeholder text. You can extend the knowledge base from the project settings page by adding URLs, files, or notes. See [Business Knowledge](./guides/business-knowledge.md).
 
 ### Connectors
-Vibe wires your generated app into the Business App tools you already use — so what you build isn't a standalone tool, it's connected to your business. The Forms connector captures submissions and routes them directly to your CRM. The Analytics connector pulls live performance data into custom dashboards. The Single sign-on connector gates a members area behind your customers' existing Business App accounts. See [Connectors](./connectors/index.md).
+Vibe wires your generated app into the Business App tools you already use — so what you build isn't a standalone tool, it's connected to your business. Forms captures submissions and routes them directly to your CRM. Analytics pulls live performance data into custom dashboards. Single sign-on gates a members area behind your customers' existing Business App accounts. CRM surfaces your contacts and opportunities, Webchat embeds live chat, Reviews showcases your real customer reviews, and Supabase connects your app to a database. See [Connectors](./connectors/index.md).
 
 ### Planning
 Every generation produces a structured plan that drives the run. The plan, the architecture, and the file list are captured in the `COMPLETED` block at the end of each run so you can verify what was built. See [Planning](./guides/plan-mode.md).
@@ -58,7 +58,7 @@ Toggle **Visual edits** in the chat composer to flip design mode on and off. Whe
 -->
 
 ### Device Preview
-Click the device preview icon in the control panel to shift the canvas to a mobile width, so you can check how your app looks on a phone-sized screen without leaving the editor.
+Preview your app at phone, tablet, and desktop sizes without leaving the editor, or pop the preview out to a full window to see it on its own.
 
 ### Clarifying Questions
 When your request is ambiguous, Vibe pauses and asks before going further. Questions arrive as structured prompts — pick a chip, confirm yes or no, or type a one-line answer. The conversation resumes the moment you respond.
@@ -68,6 +68,9 @@ Attach images to your prompts to show Vibe what you want. Use the microphone but
 
 ### Images
 Vibe gives you two ways to add images to your app: generate them from a text description, or import your own. Generated images are hosted and embedded automatically — no setup required. See [Images](./guides/image-generation.md).
+
+### SEO & LLM Indexing
+Apps are served as fully rendered HTML that search engines and AI assistants can read. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and the SEO section in project settings puts indexing under your control. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
 
 ### Code Editor
 Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
@@ -136,7 +139,7 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 <details>
 <summary>Are Vibe sites SEO-friendly?</summary>
 
-Yes. Vibe generates React single-page applications served as static client-side apps. Search engines that execute JavaScript, including Google, can index them. Meta tags aren't added automatically — ask Vibe to include them for any page that needs them.
+Yes. Vibe apps are served as fully rendered HTML that search engines and AI assistants can read directly. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and you control indexing from the SEO section in project settings. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
 
 </details>
 
@@ -157,6 +160,7 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
 - [Images](./guides/image-generation.md) — Generate images from a prompt or import your own
 - [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [SEO & LLM Indexing](./guides/seo-and-indexing.md) — Understand how your app stays visible to search engines and AI assistants
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe

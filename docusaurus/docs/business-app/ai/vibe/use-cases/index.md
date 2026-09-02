@@ -28,6 +28,7 @@ Vibe lets you build custom tools using plain language prompts — no coding requ
 
 The most common mistake is trying to build something complete in one prompt. The right approach is to think in versions — the first prompt produces a working starting point, and each follow-up refines it.
 
+- **A template can be your first version.** Starting from a working example in the template gallery often gets you further than a first prompt — see [Projects Home & Templates](../guides/projects-home.md).
 - **The first version will not be perfect.** That's normal and expected.
 - **Each prompt should focus on one or two things.** Trying to add many features at once leads to worse results.
 - **Testing is part of building.** After each version, click through what was built and identify what to adjust next.
@@ -54,7 +55,7 @@ The phrase **use my business information** tells Vibe to pull details — addres
 
 ### Enable connectors before you prompt
 
-Some builds require a connector to be enabled before running the prompt. Open **Connectors** via **Configure** on the project card or **+** in the chat box, and toggle the required connector on. If it isn't enabled first, the UI will appear but the functionality won't work.
+Some builds require a connector to be enabled before running the prompt. Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md) — then toggle the required connector on. If it isn't enabled first, the UI will appear but the functionality won't work.
 
 | What you're building | Connector to enable first |
 |---|---|

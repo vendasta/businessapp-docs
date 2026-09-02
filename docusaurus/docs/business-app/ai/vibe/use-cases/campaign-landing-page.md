@@ -12,7 +12,7 @@ A seasonal promotion, a new service launch, a limited-time offer — these usual
 
 ## Before you start
 
-Before running the prompt, enable the **Forms connector** — open **Connectors** via **Configure** on the project card or **+** in the chat box, and toggle **Forms** on. The lead capture form routes submissions to Business App through this connector. If it isn't enabled first, the form will appear in the app but submissions won't be captured.
+Before running the prompt, enable the **Forms connector** — open your project's settings and select **Connectors** (see [project settings](../guides/project-settings.md)), then toggle **Forms** on. The lead capture form routes submissions to Business App through this connector. If it isn't enabled first, the form will appear in the app but submissions won't be captured.
 
 ## The prompt
 

@@ -17,7 +17,7 @@ If your account doesn't have a webchat yet, Vibe offers to create one. You give 
 
 ## Enabling the connector
 
-From the projects list click **Configure**, or inside the project click **+** in the chat box and select **Connectors**. Toggle **Webchat** on to make it available to the supervisor agent for that project.
+Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **Webchat** on to make it available to the supervisor agent for that project.
 
 ## When to use it
 
