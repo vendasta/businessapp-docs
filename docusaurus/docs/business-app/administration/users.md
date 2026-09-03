@@ -7,34 +7,34 @@ tags: [users, permissions, team, administration]
 keywords: [users, invite user, permissions, team members, remove user, edit permissions, user management]
 ---
 
-The **User Management** page lets you manage who has access to your Business App. You can view all current users, invite new team members, set permissions for each person, and remove users who no longer need access.
+The `Users` page lets you manage who has access to your Business App. You can view all current users, invite new team members, set permissions for each person, and remove users who no longer need access.
 
-To open this page, go to `Administration` > `User Management`.
+To open this page, go to `Administration` → `Users`.
 
 ![The Users page showing a table of team members with options to invite, edit permissions, or remove users](./img/users-list.png)
 
 ## View users
 
-The User Management page displays a table of everyone who has access to your Business App. Each row shows the user's profile image and:
+The Users page displays a table of everyone who has access to your Business App. Each row shows the user's profile image and:
 
-- **Email**
-- **Name**
-- **Phone**
+- `Email`
+- `Name`
+- `Phone`
 
-Each row also has an actions menu (three dots) with options to **Edit contact info**, **Edit Permissions**, or **Remove user**.
+Each row also has an actions menu (three dots) with options to `Edit contact info`, `Edit Permissions`, or `Remove user`.
 
 Results load in pages, so the table stays responsive even for accounts with a large number of users.
 
 ## Invite a user
 
-1. On the **User Management** page, click **Invite user**.
-2. In the **Add team member** sidebar, fill in the following fields:
-   - **First name** (optional)
-   - **Last name** (optional)
-   - **Email** (required)
-   - **Phone** (optional)
-3. Under **Permissions**, choose which tabs this user can access. All tabs are selected by default. Uncheck any tabs you do not want this user to see.
-4. Click **Send**.
+1. On the `Users` page, click `Invite user`.
+2. In the `Add team member` sidebar, fill in the following fields:
+   - `First name` (optional)
+   - `Last name` (optional)
+   - `Email` (required)
+   - `Phone` (optional)
+3. Under `Permissions`, choose which tabs this user can access. All tabs are selected by default. Uncheck any tabs you do not want this user to see.
+4. Click `Send`.
 
 ![The Add team member sidebar showing the email field, phone field, and a list of permission checkboxes for each tab](./img/users-invite-permissions.png)
 
@@ -44,11 +44,11 @@ The invited user receives a welcome email with instructions to access your Busin
 
 You can change which tabs a user can access at any time.
 
-1. On the **User Management** page, find the user you want to update.
+1. On the `Users` page, find the user you want to update.
 2. Click the actions menu (three dots) on that user's row.
-3. Select **Edit Permissions**.
+3. Select `Edit Permissions`.
 4. Check or uncheck tabs to adjust what this user can see.
-5. Click **Save**.
+5. Click `Save`.
 
 Changes take effect immediately.
 
@@ -57,31 +57,31 @@ The tabs available in the permissions list match the tabs configured for your Bu
 :::
 
 :::note
-You cannot remove your own access to the **Users** or **Administration** tabs. This prevents accidental self-lockout.
+You cannot remove your own access to the `User Management` or `Administration` tabs. This prevents accidental self-lockout.
 :::
 
 ## Edit a user's profile
 
-If you have **User Management** permissions, you can update another team member's contact details on their behalf — including their name, email, and phone number.
+If you have `User Management` permissions, you can update another team member's contact details on their behalf, including their name, email, and phone number.
 
-1. On the **User Management** page, find the user whose information you want to update.
+1. On the `Users` page, find the user whose information you want to update.
 2. Click the actions menu (three dots) on that user's row.
-3. Select **Edit contact info**.
+3. Select `Edit contact info`.
 4. In the sidebar, update any of the following fields:
-   - **First name**
-   - **Last name**
-   - **Email**
-   - **Phone**
-5. Click **Save**.
+   - `First name`
+   - `Last name`
+   - `Email`
+   - `Phone`
+5. Click `Save`.
 
 Changes take effect immediately. You can also update your own email address, name, and phone number directly from your account settings.
 
 ## Remove a user
 
-1. On the **User Management** page, find the user you want to remove.
+1. On the `Users` page, find the user you want to remove.
 2. Click the actions menu (three dots) on that user's row.
-3. Select **Remove user**.
-4. In the confirmation dialog, review the user's name and click **Remove user** to confirm.
+3. Select `Remove user`.
+4. In the confirmation dialog, review the user's name and click `Remove user` to confirm.
 
 :::info
 Removing a user cannot be undone. The user immediately loses access to your Business App. If you need to restore their access, you must invite them again.
@@ -90,9 +90,9 @@ Removing a user cannot be undone. The user immediately loses access to your Busi
 ## Frequently Asked Questions (FAQs)
 
 <details>
-<summary>Where do I find the User Management page?</summary>
+<summary>Where do I find the Users page?</summary>
 
-Go to `Administration` > `User Management`. The URL ends with `administration/users` after your business ID.
+Go to `Administration` → `Users`. The URL ends with `administration/users` after your business ID.
 
 </details>
 
@@ -106,28 +106,28 @@ The user receives a welcome email with instructions to set up their account and 
 <details>
 <summary>What are permissions?</summary>
 
-Permissions control which tabs a user can see in Business App. For example, you can give a team member access to **Conversations** and **CRM** but hide **Store** and **Automations**. You set permissions when inviting a user and can update them at any time from the actions menu.
+Permissions control which tabs a user can see in Business App. For example, you can give a team member access to `Conversations` and `CRM` but hide `Store` and `Automations`. You set permissions when inviting a user and can update them at any time from the actions menu.
 
 </details>
 
 <details>
 <summary>Can I edit a user's information after inviting them?</summary>
 
-Yes. If you have **User Management** permissions, you can update another team member's contact details — including their name, email, and phone number — by selecting **Edit contact info** from the actions menu on their row. You can also update their permissions at any time. Users can also edit their own profile details from their account settings.
+Yes. If you have `User Management` permissions, you can update another team member's contact details, including their name, email, and phone number, by selecting `Edit contact info` from the actions menu on their row. You can also update their permissions at any time. Team members can also edit their own profile details from their account settings.
 
 </details>
 
 <details>
 <summary>What is the difference between a user and a contact?</summary>
 
-A **user** is someone who can log in to your Business App and use its features. A **contact** is a person stored in your CRM (such as a customer or lead) who does not have access to Business App. These are separate systems — removing a contact does not remove a user, and vice versa.
+A **user** is someone who can log in to your Business App and use its features. A **contact** is a person stored in your CRM (such as a customer or lead) who does not have access to Business App. These are separate systems: removing a contact does not remove a user, and vice versa.
 
 </details>
 
 <details>
-<summary>Can I re-invite a user I previously removed?</summary>
+<summary>Can I re-invite a user after removing them?</summary>
 
-Yes. After removing a user, you can invite them again by clicking **Invite user** and entering their email address. They receive a new welcome email.
+Yes. After removing a user, you can invite them again by clicking `Invite user` and entering their email address. They receive a new welcome email.
 
 </details>
 
@@ -141,6 +141,6 @@ No. You can invite as many team members as you need.
 <details>
 <summary>Are user changes tracked anywhere?</summary>
 
-Yes. When a user is added or removed, it is automatically logged in your CRM activity feed — on both the company record and the contact record. The log includes who performed the action and which account it was for.
+Yes. When a user is added or removed, it is automatically logged in your CRM activity feed, on both the company record and the contact record. The log includes who performed the action and which account it was for.
 
 </details>
