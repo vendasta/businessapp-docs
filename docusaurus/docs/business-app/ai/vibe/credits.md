@@ -55,7 +55,7 @@ Ideal for shipping apps with full business context. Includes all Free features, 
 
 Ideal for building professional apps with the full feature set. Includes all Standard features, plus:
 
-- Download project (.zip)
+- Download project (.tar.gz)
 - Supabase connector
 
 ## Add-on credits
