@@ -144,6 +144,13 @@ Yes. Vibe apps are served as fully rendered HTML that search engines and AI assi
 </details>
 
 <details>
+<summary>Can I download my project and host it somewhere else?</summary>
+
+Yes, on the Pro plan. Click `Download` in the toolbar to get the complete source code, assets, and checkpoint history. Projects are built on open frameworks — React, TanStack Start, Vite, and Tailwind CSS — so they run on any host that supports Node.js. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
+
+</details>
+
+<details>
 <summary>Can Vibe notify me when a generation finishes?</summary>
 
 Yes. Turn on notifications for the current run from the chat composer and allow notifications when your browser asks for permission. Your browser then sends a notification as soon as the generation completes, so you can switch to another tab without missing it.
@@ -164,5 +171,6 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
+- [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md) — Own the source code and run it on any Node.js host
 - [Credits](./credits.md) — Understand how credits work and how to purchase more
 - [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Professional)
