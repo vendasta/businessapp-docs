@@ -1,7 +1,7 @@
 ---
 title: "Download & Host Your Project Elsewhere"
 sidebar_label: "Download & Self-Host"
-description: Vibe projects are built on open frameworks. Download the complete source code at any time and run or host it anywhere that supports Node.js.
+description: Vibe projects are built on open frameworks. On the Pro plan, download the complete source code and run or host it anywhere that supports Node.js.
 tags: [vibe, ai, download, hosting, portability, open-source]
 keywords: [vibe download project, vibe source code, vibe self host, vibe portable, vibe react tanstack, move vibe site, vibe export]
 sidebar_position: 13
@@ -14,20 +14,20 @@ unlisted: false
 
 Every project you build in Vibe is a standard web application written in open, widely-used frameworks — React, TanStack Start, Vite, and Tailwind CSS. None of it is a proprietary format, and none of it is locked to Business App.
 
-You can download the complete source code of any project at any time, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe stays the simplest and least expensive option, but the choice is always yours.
+On the Pro plan you can download the complete source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe stays the simplest and least expensive option, but it is not the only one.
+
+:::warning
+Downloading a project requires the Pro plan. On the Free and Standard plans, the `Download` button is not available. See [Credits](../credits.md).
+:::
 
 ## Why this matters
 
-- **You own the code**: The download is the real, complete project — every file, every asset, and the full history of every checkpoint.
+- **The download is complete**: Every file, every asset, and the full history of every checkpoint.
 - **Nothing proprietary**: The app is built on frameworks maintained by the open-source community and used by companies of every size. Any web developer can read, change, and extend it.
 - **No dead end**: If your needs change, you can move the project to another host without rebuilding it.
 - **Standard tooling**: A developer needs `npm` and Node.js and nothing else. There is no special client, license, or account required to build and run the code.
 
 ## What's in the download
-
-:::info
-Downloading a project is available on the Pro plan. See [Credits](../credits.md).
-:::
 
 Click `Download` in the editor toolbar to get a `.vibe.tar.gz` archive containing:
 
@@ -159,6 +159,13 @@ Publishing from Vibe is one click, and everything below is handled for you. Runn
 Most businesses publish with Vibe because it's faster and costs less than running a server. The point of the download is that you never have to.
 
 ## Frequently Asked Questions
+
+<details>
+<summary>Which plan do I need to download a project?</summary>
+
+The Pro plan. The `Download` button is not available on the Free or Standard plans. See [Credits](../credits.md).
+
+</details>
 
 <details>
 <summary>Is the code Vibe generates proprietary?</summary>
