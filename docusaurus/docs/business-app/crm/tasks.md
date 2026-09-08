@@ -26,7 +26,7 @@ Tasks help you plan and track the actions required to move deals forward: calls,
 
 ### Create from a contact or company
 
-1. Go to `CRM` > `Contacts` (or `Companies`).
+1. Go to `CRM` → `Contacts` (or `Companies`).
 2. Click the record name to open the profile.
 3. In the activity area, select `Tasks`, fill in details, and save.
 
@@ -34,7 +34,7 @@ Tasks help you plan and track the actions required to move deals forward: calls,
 
 ### Create from the task table
 
-1. Go to `CRM` > `Tasks`.
+1. Go to `CRM` → `Tasks`.
 2. Click `Create task` and enter details:
    - Name, instructions
    - Due date and time
@@ -42,7 +42,7 @@ Tasks help you plan and track the actions required to move deals forward: calls,
    - Priority: Low, Medium, or High
    - Associations: Opportunity, Contact, Company
    - Tags
-3. Click `Create`.
+3. Click `Create task`.
 
 ![Create tasks from the task table](img/tasks/create-tasks-from-task-table.png)
 
@@ -52,7 +52,7 @@ Use tags and priority to organize your daily queue, then save a view for today�
 
 ### View and filter tasks
 
-1. Go to `CRM` > `Tasks`.
+1. Go to `CRM` → `Tasks`.
 2. Click `Add filter` to filter tasks and save common filters as `Views`.
 
 ![View and filter tasks](img/tasks/view-and-filter-tasks.png)
@@ -73,13 +73,13 @@ Within a CRM record’s activity timeline:
 From the task table:
 
 - View: click the task name.
-- Edit: kebab menu > `Edit task`, update fields, and save.
-- Delete: kebab menu > `Delete task`, and confirm.
+- Edit: kebab menu → `Edit task`, update fields, and save.
+- Delete: kebab menu → `Delete task`, and confirm.
 - Complete: change status in the `Task status` column.
 
 ### Work faster with task queue
 
-1. Go to `CRM` > `Tasks` and apply filters or open a saved view.
+1. Go to `CRM` → `Tasks` and apply filters or open a saved view.
 2. Click `Start [x] tasks` to work through them consecutively.
 3. For each task, choose: `Mark as complete`, `Reschedule`, or `Skip`. Use the association dropdown to jump between linked records. Exit the queue any time and resume from the table.
 
