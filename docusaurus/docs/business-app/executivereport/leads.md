@@ -2,62 +2,61 @@
 title: Leads
 sidebar_label: Leads
 sidebar_position: 2
-description: Track lead generation and customer interactions in the Executive Report—phone calls, AI receptionist, web chat, forms, and messaging.
+description: "Track lead generation and customer interactions in the Executive Report: phone calls, AI receptionist, web chat, forms, and messaging."
 ---
 
 ## What is the Leads section?
 
-The **Leads** section of the Executive Report gives you a single view of how many new leads and customer interactions your business is generating across all channels. Use it to see which lead sources are working and how your tools are performing. In the report’s navigation dropdown, this section may appear as **Customer Relations**.
+The **Leads** section of the Executive Report gives you a single view of how many new leads and customer interactions your business is generating across all channels. Use it to see which lead sources are working and how your tools are performing. In the report’s navigation dropdown, this section may appear as `Customer Relations`.
 
-![Customer Relations Lead Analytics](img/executive_report_lead_analytics.png)
+![Customer Relations Lead Analytics](img/executive-report-lead-analytics.png)
 
 ## What’s included in Leads reporting
 
 ### Lead generation summary
 
-- **New leads in CRM, by source** — Total leads captured with a breakdown by where they came from
-- **Conversations, by channel** — How much communication is happening in each channel
-- **Web chat metrics** — How many people saw chat, started a conversation, and became leads
+- **New leads in CRM, by source**: Total leads captured with a breakdown by where they came from
+- **Conversations, by channel**: How much communication is happening in each channel
 
-### Web chat metrics
+### Web Chat metrics
 
-- **Unique visitors that saw web chat** — Website visitors who had the chat widget available
-- **Unique conversations** — Visitors who actually used the chat
-- **Leads captured** — Chats that led to captured contact information
+- **Unique visitors that saw web chat**: Website visitors who had the chat widget available
+- **Unique conversations**: Visitors who actually used the chat
+- **Leads captured**: Chats that led to captured contact information
 
 ### Lead sources tracked
 
 The Leads section includes only **organically captured** leads. Sources can include:
 
-- **Phone calls** (Google Business Profile) — Calls from your listing
-- **AI Voice Receptionist** — Calls handled by the AI phone system
-- **Web chat** — Website chat conversations that become leads
-- **Zapier** — Leads from connected apps
-- **Forms** — Form submissions and contact requests on your site
-- **SMS** — Text conversations that generate leads
-- **Other sources** — Any other connected lead source
+- **Phone calls** (Google Business Profile): Calls from your listing
+- **AI Voice Receptionist**: Calls handled by the AI phone system
+- **Web Chat**: Website chat conversations that become leads
+- **Zapier**: Leads from connected apps
+- **Forms**: Form submissions and contact requests on your site
+- **SMS**: Text conversations that generate leads
+- **Other sources**: Any other connected lead source
 
 :::important Lead source exclusions
 Leads are **not counted** when they come from:
 
-- **Bulk import** — Contacts added via a contact list import
-- **CRM UI** — Contacts created manually in the CRM
+- **Bulk import**: Contacts added via a contact list import
+- **CRM UI**: Contacts created manually in the CRM
 
-Those are excluded because they aren’t from your marketing or capture tools. To have a manually added contact counted in lead analytics, change its lead source to something other than “bulk import” or “crm ui”.
+Those are excluded because they aren’t from your marketing or capture tools. To have a manually added contact counted in lead analytics, change its lead source to something other than `bulk import` or `crm ui`.
 :::
 
 ### Messages and conversations
 
-- **Message volume** — Total messages across channels, with a timeline
-- **Message types** — Received from customers vs. sent by AI vs. sent by your team
-- **Conversations by source** — How many conversations came from SMS, web chat, email, etc.
-- **Lead conversion** — Conversations that turned into leads
+- **Message volume**: Total messages across channels, with a timeline
+- **Message types**: Received from customers vs. sent by AI vs. sent by your team
+- **Conversations by source**: How many conversations came from SMS, web chat, email, etc.
+- **Lead conversion**: Conversations that turned into leads
 
 ## Understanding your lead data
 
 ### Lead summary
 
-The report might show something like:
+The report shows something like:
 
 ```
 Leads: 59 (-2)
@@ -77,33 +76,33 @@ You’ll see counts per source, for example:
 
 ### Message activity
 
-- **Total messages** — Volume across all channels
-- **Timeline** — Message activity over time
-- **Categories** — Messages from customers, from the AI, and from your team
+- **Total messages**: Volume across all channels
+- **Timeline**: Message activity over time
+- **Categories**: Messages from customers, from the AI, and from your team
 
 ## Why this data is useful
 
-- **See ROI** — Know how many leads you’re getting and from where
-- **Compare channels** — See which sources (phone, chat, forms, etc.) perform best
-- **Track tools** — See how AI receptionist and web chat are contributing
-- **Spot trends** — Watch lead volume and mix over time
-- **Improve quality** — Focus on the sources that bring the best leads
+- **See ROI**: Know how many leads you’re getting and from where
+- **Compare channels**: See which sources (phone, chat, forms, etc.) perform best
+- **Track tools**: See how AI receptionist and web chat are contributing
+- **Spot trends**: Watch lead volume and mix over time
+- **Improve quality**: Focus on the sources that bring the best leads
 
 ## How to use lead source analytics
 
 1. **Enable a lead capture tool** in your Business App (e.g., web chat or contact form).
 2. **Capture at least one lead** through that source.
-3. Go to the **CRM** tab in Business App to confirm the lead was added — you should see a new contact with a source like **Web Chat**, **Form**, or similar.
+3. Go to `CRM` in Business App to confirm the lead was added. You should see a new contact with a source like `Web Chat`, `Form`, or similar.
 4. Wait for your next Executive Report (weekly or monthly) to see this data in the Leads (Customer Relations) section.
 
 Lead source data is based on contacts created during the reporting period. The report only shows data when leads have been captured and assigned a valid source.
 
 ## Getting the most from lead generation
 
-- **Use more than one channel** — Phone, chat, and forms together give a fuller picture
-- **Use AI where it fits** — AI Voice Receptionist and Web Chat can capture leads around the clock
-- **Respond quickly** — Use message activity to make sure replies are timely
-- **Connect your tools** — Use Zapier and form integrations so all leads are tracked
+- **Use more than one channel**: Phone, chat, and forms together give a fuller picture
+- **Use AI where it fits**: AI Voice Receptionist and Web Chat can capture leads around the clock
+- **Respond quickly**: Use message activity to make sure replies are timely
+- **Connect your tools**: Use Zapier and form integrations so all leads are tracked
 
 ### Setup checklist
 
@@ -116,19 +115,19 @@ Lead source data is based on contacts created during the reporting period. The r
 
 ## Single-location vs multi-location
 
-- **Single-location report** — Leads for that one location
-- **Multi-location report** — Combined lead analytics across all locations
+- **Single-location report**: Leads for that one location
+- **Multi-location report**: Combined lead analytics across all locations
 
 ## Tools that feed the Leads section
 
 The Leads section uses data from tools in your Business App, such as:
 
-- **AI Voice Receptionist** — Phone calls and lead qualification
-- **Web Chat** — Chat on your site and lead capture
-- **CRM** — Stored leads and follow-up
-- **Forms** — Form submissions and contact requests
-- **Google Business Profile** — Calls and actions from your listing
-- **Conversations AI** — Hub for customer messages
+- **AI Voice Receptionist**: Phone calls and lead qualification
+- **Web Chat**: Chat on your site and lead capture
+- **CRM**: Stored leads and follow-up
+- **Forms**: Form submissions and contact requests
+- **Google Business Profile**: Calls and actions from your listing
+- **Conversations AI**: Hub for customer messages
 
 ## Frequently asked questions
 
@@ -165,19 +164,19 @@ When the service is active, AI Voice Receptionist appears as its own lead source
 <details>
 <summary>I don’t see any metrics in the Leads section. Why?</summary>
 
-The report uses data from the last full period (weekly or monthly). You may need to wait for the next report. If you already have contacts in the CRM with sources like “web chat” or “form,” they’ll be included in the next report.
+The report uses data from the last full period (weekly or monthly). You may need to wait for the next report. If you already have contacts in the CRM with sources like `web chat` or `form`, they’ll be included in the next report.
 </details>
 
 <details>
 <summary>Which lead sources are included? Which are excluded?</summary>
 
-Leads are counted from every source **except** “bulk import” and “crm ui,” which are manual additions. All other sources (web chat, forms, AI receptionist, phone, SMS, Zapier, etc.) are included. To include a manually added contact in analytics, change its source to something other than “bulk import” or “crm ui.”
+Leads are counted from every source **except** `bulk import` and `crm ui`, which are manual additions. All other sources (web chat, forms, AI receptionist, phone, SMS, Zapier, etc.) are included. To include a manually added contact in analytics, change its source to something other than `bulk import` or `crm ui`.
 </details>
 
 <details>
 <summary>Where do I find these analytics in the report?</summary>
 
-Open your Executive Report in Business App. In the top navigation bar dropdown, select **Customer Relations** (or **Leads**). That section includes cards summarizing your CRM activity and lead sources.
+Open your Executive Report in Business App. In the top navigation bar dropdown, select `Customer Relations` (or `Leads`). That section includes cards summarizing your CRM activity and lead sources.
 </details>
 
 ## Related resources
