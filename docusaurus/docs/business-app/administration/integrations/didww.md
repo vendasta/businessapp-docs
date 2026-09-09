@@ -93,7 +93,7 @@ DIDWW does not allow SMS routing to be set up automatically, so these steps are 
        "time": "{SMS_TIME}"
      }
      ```
-2. Go to `My Numbers`, open your number, and assign the HTTP OUT trunk you just configured to it.
+2. Go to `My Numbers`, open your number, and assign the HTTP IN trunk you just configured to it.
 
 ### Test it
 
