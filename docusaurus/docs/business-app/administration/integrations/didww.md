@@ -22,7 +22,7 @@ DIDWW is a phone number provider. With the DIDWW integration, you can bring a ph
 ## What's included with the DIDWW integration?
 
 - **Phone calls**: Incoming calls to your DIDWW number use the same call receiving settings as your Conversations number, including call forwarding, missed-call text back, and the AI voice receptionist.
-- **Two-way SMS**: Send and receive text messages from your DIDWW number in Conversations, including Review Requests and Campaign. No MMS supported at the moment
+- **Two-way SMS**: Send and receive text messages from your DIDWW number in Conversations, including Review Requests and Campaign.
 
 ## Before you begin
 
