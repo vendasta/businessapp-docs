@@ -2,17 +2,18 @@
 title: Prompting Guide
 sidebar_position: 1
 unlisted: false
+description: Learn the prompting principles, patterns, and pitfalls for getting the results you want from Vibe.
 ---
-
-# Prompting Guide
 
 Writing effective prompts is the most important skill for getting great results from Vibe. This guide covers the principles behind effective prompts: be specific, iterate in small steps, reference visual style, describe what you want rather than how to build it.
 
-> Looking for ready-made prompts you can paste? See the [prompting library](./prompting-library.md) for recipes organized by intent (scaffold, refine, clone, connect, debug).
+:::tip
+Looking for ready-made prompts you can paste? See the [prompting library](./prompting-library.md) for recipes organized by intent (scaffold, refine, clone, connect, debug).
+:::
 
-## Prompting Principles
+## Prompting principles
 
-### 1. Describe What You Want, Not How to Build It
+### 1. Describe what you want, not how to build it
 
 Focus on the outcome you want, not the implementation details. Vibe knows which components, layouts, and patterns to use.
 
@@ -22,7 +23,7 @@ Focus on the outcome you want, not the implementation details. Vibe knows which 
 **Less effective:**
 > Create a div with flexbox that contains three Card components from shadcn/ui, each with a CardHeader containing an h3 for the tier name...
 
-### 2. Be Specific About Content
+### 2. Be specific about content
 
 Use real content instead of placeholders. The more specific you are about text, data, and structure, the better the result.
 
@@ -32,17 +33,17 @@ Use real content instead of placeholders. The more specific you are about text, 
 **Less effective:**
 > Create a team page with some team members.
 
-### 3. Reference Visual Style
+### 3. Reference visual style
 
 When you have a design direction in mind, describe it with concrete terms. Reference well-known design styles, specific colors, or attach an image.
 
 **Good:**
-> Make the hero section feel minimal and editorial — large serif typography for the headline, lots of whitespace, and a muted color palette. Think Apple product page meets newspaper front page.
+> Make the hero section feel minimal and editorial: large serif typography for the headline, lots of whitespace, and a muted color palette. Think Apple product page meets newspaper front page.
 
 **Also good:**
 > Attach a screenshot of a website you like and say: "Make my landing page look similar to this style"
 
-### 4. Iterate in Focused Steps
+### 4. Iterate in focused steps
 
 Rather than cramming everything into one massive prompt, build up your application in stages. Each prompt should focus on one area or feature.
 
@@ -55,7 +56,7 @@ Rather than cramming everything into one massive prompt, build up your applicati
 **Less effective:**
 > Build a complete SaaS landing page with hero, features, testimonials, pricing, FAQ, footer, dark mode, mobile nav, animations, contact form, blog section, and team page all at once.
 
-### 5. Describe Changes Surgically
+### 5. Describe changes surgically
 
 When editing an existing application, be precise about what you want changed and where.
 
@@ -65,9 +66,9 @@ When editing an existing application, be precise about what you want changed and
 **Less effective:**
 > Update the page to look different.
 
-## Example Prompts
+## Example prompts
 
-### Starting a New Project
+### Starting a new project
 
 **Landing page:**
 > Build a modern landing page for "CloudSync", a file synchronization service. Include: a hero section with headline and CTA, a features grid with 6 features using icons, a pricing section with Free/Pro/Enterprise tiers, customer logos bar, and a footer with links.
@@ -81,7 +82,7 @@ When editing an existing application, be precise about what you want changed and
 **E-commerce** *(coming soon)*
 > Create a product listing page for a sneaker store. Show a grid of 8 product cards, each with an image placeholder, name, price, and "Add to Cart" button. Include filters on the left for brand, size, and price range. Add a header with logo, search bar, and cart icon.
 
-### Modifying an Existing Project
+### Modifying an existing project
 
 **Adding a section:**
 > Add a FAQ section before the footer. Include 6 questions with expandable answers about pricing, features, and getting started. Use an accordion component.
@@ -95,67 +96,67 @@ When editing an existing application, be precise about what you want changed and
 **Fixing specific elements:**
 > The navigation menu items are too close together on mobile. Add more spacing between them and make the font size slightly larger.
 
-### Using Images in Prompts
+### Using images in prompts
 
 You can attach screenshots or mockups to your prompt to show Vibe what you're looking for:
 
 > I attached a screenshot of a design I like. Recreate this layout for my landing page but use my existing color theme and content.
 
-> Here's a wireframe sketch I drew. Build this page layout — the boxes at the top are stat cards, the large area is a chart, and the table at the bottom shows recent transactions.
+> Here's a wireframe sketch I drew. Build this page layout: the boxes at the top are stat cards, the large area is a chart, and the table at the bottom shows recent transactions.
 
-### Using Voice Input
+### Using voice input
 
 Click the microphone button to dictate your prompt. This is especially useful when you want to quickly describe changes while looking at the preview:
 
 > "I'm looking at the pricing section and the cards feel too cramped. Can you add more padding inside each card and put some space between them? Also the prices should be bigger and bolder."
 
-## Prompt Patterns
+## Prompt patterns
 
-### The "Build + Refine" Pattern
+### The "Build + Refine" pattern
 
 Start broad, then narrow in:
 
 1. **Build:** "Create a restaurant website with a menu, reservations, and about page"
 2. **Refine layout:** "Move the reservation form to its own page and add a hero image to the menu page"
-3. **Refine style:** "Use a warm, rustic color palette — deep browns, cream, and gold accents"
+3. **Refine style:** "Use a warm, rustic color palette: deep browns, cream, and gold accents"
 4. **Refine details:** "Add the restaurant hours to the footer and a Google Maps embed on the contact page"
 
-### The "Reference + Customize" Pattern
+### The "Reference + Customize" pattern
 
 Use a reference point and customize from there:
 
-> "Build a pricing page similar to Stripe's pricing page — clean, minimal, with toggle between monthly and annual billing. Use my app's blue theme."
+> "Build a pricing page similar to Stripe's pricing page: clean, minimal, with toggle between monthly and annual billing. Use my app's blue theme."
 
-### The "Before and After" Pattern
+### The "Before and After" pattern
 
 Describe what's wrong and what you want instead:
 
 > "The features section currently shows all 6 features in a single column. Instead, arrange them in a 3x2 grid on desktop and a single column on mobile."
 
-### The "Role + Context" Pattern
+### The "Role + Context" pattern
 
 Give Vibe context about who the audience is:
 
 > "This is a landing page for small business owners who aren't tech-savvy. Keep the language simple, use large text, and make the CTA buttons very prominent. The main goal is to get them to sign up for a free trial."
 
-## Things to Avoid
+## Things to avoid
 
-### Overly Vague Prompts
+### Overly vague prompts
 > "Make it look better" / "Improve the design" / "Fix the layout"
 
 These don't give Vibe enough direction. Instead, specify *what* should look better and *how*.
 
-### Implementation-Level Detail
+### Implementation-level detail
 > "Use a useState hook with an array of objects containing id, name, and price fields, then map over them with a CardComponent..."
 
 Trust Vibe to handle the implementation. Focus on what you want the user to see and experience.
 
-### Massive All-at-Once Prompts
+### Massive all-at-once prompts
 Trying to build an entire complex application in a single prompt usually leads to worse results than building iteratively. Break it into logical pieces.
 
-## Next Steps
+## Next steps
 
-- [Prompting Library](./prompting-library.md) — Ready-made prompts organized by intent you can paste and adapt
-- [Cloning a Reference Site](./clone-from-url.md) — Use a URL as your starting point instead of describing from scratch
-- [Visual Editor](./visual-editor.md) — Make targeted element-level edits without writing a prompt
+- [Prompting Library](./prompting-library.md): Ready-made prompts organized by intent you can paste and adapt
+- [Cloning a Reference Site](./clone-from-url.md): Use a URL as your starting point instead of describing from scratch
+- [Visual Editor](./visual-editor.md): Make targeted element-level edits without writing a prompt
 

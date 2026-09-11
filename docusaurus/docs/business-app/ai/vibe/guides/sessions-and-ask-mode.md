@@ -4,6 +4,7 @@ sidebar_label: Sessions and Ask Mode
 description: Use sessions to isolate focused objectives and Ask mode to brainstorm interactively before building in Vibe.
 tags: [vibe, ai, sessions, ask-mode]
 keywords: [vibe sessions, ask mode, vibe chat, vibe brainstorm, vibe context]
+sidebar_position: 12
 ---
 
 ## What are Sessions and Ask mode?
@@ -14,7 +15,7 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 
 ## Why are Sessions and Ask mode important?
 
-- **Prevent context cross-contamination**: When you manage multiple objectives in one continuous conversation, important context can get mixed together or lost. Sessions keep each goal isolated so the AI is only working with what's relevant.
+- **Keep objectives organized**: When you manage multiple objectives in one continuous conversation, context from different goals can get mixed together. Sessions keep each goal isolated so the AI is only working with what's relevant to your current objective.
 - **Never lose your history**: Creating a new session doesn't erase past work. Every message from every session in a project stays visible in the **All messages** area.
 - **Brainstorm before you build**: Ask mode lets you think through an idea interactively before shifting into execution — no need to repeat yourself when you switch modes.
 - **Seamless transition from strategy to creation**: The understanding you build in Ask mode automatically carries forward into plan or build mode, so you move from conversation to creation without starting over.
@@ -25,6 +26,10 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 - **All messages area**: Located beneath the session selector, this area shows the complete message history for every session in the project.
 - **Ask mode**: An interactive chat mode for back-and-forth discussion and brainstorming before execution.
 - **Mode switching**: Switch from Ask mode to plan or build mode when you're ready — the context you built in Ask mode carries forward automatically.
+
+### Long conversations
+
+Vibe holds onto what matters from earlier in the conversation — decisions and details from many prompts ago still inform the next change, so you don't need to restate them as a session grows. Sessions are for organization, not for working around a fading memory: create a new one when you want to keep separate workstreams isolated, not because a long conversation stops working.
 
 ## How to use Sessions and Ask mode
 
@@ -49,6 +54,16 @@ To review messages from previous sessions, click the **All messages** area benea
 
 ![The Vibe chat input with Ask mode selected](./img/ask-mode-chat-input.png)
 
+### Run a change directly from Ask mode
+
+If you ask Vibe to make a change while you're in Ask mode, Vibe recognizes the request and shows a **Run this in Build** card in the chat.
+
+1. Click **Run this in Build**.
+2. Vibe switches to Build mode and resubmits your original message — you don't need to retype it.
+3. The mode selector updates to show **Build**, reflecting the mode your request actually ran in.
+
+The card doesn't appear if you're out of credits, or if Vibe is paused waiting on your answer to a clarifying question. Answer the question first, then ask again.
+
 ## Frequently Asked Questions
 
 <details>
@@ -70,6 +85,12 @@ Create a new session when you're moving on to a new objective. This keeps the AI
 </details>
 
 <details>
+<summary>Does Vibe forget earlier parts of a long conversation?</summary>
+
+No. Vibe holds onto what matters from earlier in the conversation — decisions and details from many prompts ago still inform later changes. Create a new session to keep separate workstreams isolated, not because context runs out.
+</details>
+
+<details>
 <summary>What is Ask mode?</summary>
 
 Ask mode is an interactive, back-and-forth chat format that lets you brainstorm and refine ideas before committing to a plan or build. It's designed for exploring ideas rather than executing them.
@@ -85,6 +106,12 @@ Ask mode is for discussion and brainstorming. Plan and Build modes are for execu
 <summary>Does my Ask mode conversation carry over when I switch to Plan or Build?</summary>
 
 Yes. The context and understanding built during an Ask mode conversation automatically carries forward when you switch to Plan or Build mode, so you don't need to repeat yourself.
+</details>
+
+<details>
+<summary>What happens if I ask Vibe to make a change while I'm in Ask mode?</summary>
+
+Vibe shows a **Run this in Build** card so you can run the request without manually switching the mode selector and retyping your message. Click the card and Vibe reruns your original message in Build mode.
 </details>
 
 <details>

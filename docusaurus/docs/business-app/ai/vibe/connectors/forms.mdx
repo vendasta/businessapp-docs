@@ -4,9 +4,6 @@ sidebar_position: 2
 unlisted: false
 ---
 
-import projectCard from './img/project-card.png';
-import sharedConnectors from './img/shared-connectors.png';
-
 # Forms
 
 The Forms connector turns your generated app into something your customers can actually fill out. Use it for contact forms, lead capture, appointment requests, surveys, and newsletter sign-ups.
@@ -19,13 +16,7 @@ You don't need to provision a backend, configure a database, or wire up email no
 
 ## Enabling the connector
 
-On your project card, click **Configure**.
-
-<img src={projectCard} alt="Project card showing Build and Configure buttons" className="img-screenshot" />
-
-On the project settings page, scroll to **Shared connectors** and toggle **Forms** on.
-
-<img src={sharedConnectors} alt="Shared connectors section with Forms enabled" className="img-screenshot" />
+Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **Forms** on.
 
 Once enabled, every prompt in the project that asks for form-like behavior is wired through the connector automatically.
 
@@ -77,6 +68,10 @@ Forms inherit your application's theme automatically — primary color, border r
 
 Forms use structured style fields (background color, border, primary color, etc.) that pull from your theme, so visual consistency is the default.
 
+## Forms map to CRM fields
+
+Forms built by Vibe map to real CRM fields, so a lead captured on your site lands in the CRM exactly where your sales team works. See the [CRM connector](./crm.md) for how your generated app reads and writes CRM records.
+
 ## Frequently asked questions (FAQs)
 
 <details>
@@ -95,4 +90,4 @@ The CRM requires the field to be labeled exactly **Email** (not "Email Address")
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Single sign-on](./single-sign-on.md) — Gate a form behind a sign-in screen
-- [Prompting Library](../prompting-library.md) — Ready-made form prompts organized by use case
+- [Prompting Library](../guides/prompting-library.md) — Ready-made form prompts organized by use case

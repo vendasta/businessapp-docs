@@ -1,8 +1,8 @@
 ---
 title: Security and privacy
 sidebar_label: Security and privacy
-description: How Yesware secures your data, and how to request SOC 2 reporting and privacy documentation.
-keywords: [security, privacy, soc 2, data protection, gdpr]
+description: How Yesware secures your data, and how to request SOC 2, SOC 3, and privacy documentation.
+keywords: [security, privacy, soc 2, soc 3, data protection, gdpr]
 ---
 
 # Security and privacy
@@ -15,14 +15,25 @@ This page explains Yesware's approach at a high level. For security documentatio
 
 Yesware maintains a current System and Organization Controls (SOC 2®) Type 2 report, issued by an independent auditor.
 
-A SOC 2 Type 2 report examines the design and operating effectiveness of an organization's controls over a defined period, measured against the Trust Services Criteria (security, availability, processing integrity, confidentiality, and privacy). It gives your own auditors and security teams the detail they need for vendor risk management.
+A SOC 2 Type 2 report examines the design and operating effectiveness of an organization's controls over a defined period, measured against the Security Trust Services Criterion. It gives your own auditors and security teams the detail they need for vendor risk management.
 
 The report itself is confidential and its use is restricted. Yesware shares it with you and others who need it for due diligence, typically under a non-disclosure agreement. Because the report is gated, this page does not reproduce its contents.
 
-## Request the SOC 2® report and security documentation
+## SOC 3® report
+
+Yesware also makes a SOC 3® report available with no non-disclosure agreement required. Its content is largely identical to the SOC 2® Type 2 report, with the confidential, NDA-sensitive detail removed.
+
+A SOC 3 report can only be issued alongside an unqualified SOC 2 Type 2 opinion, so its availability is itself evidence that Yesware passed the audit without exceptions.
+
+:::tip Which report to request
+For most vendor reviews, the SOC 3 report gives your security team everything it needs: independent confirmation that Yesware is SOC 2 Type 2 attested, without the wait or paperwork of a non-disclosure agreement. Request the SOC 3 report first. Reserve the full SOC 2 Type 2 report for cases where your vendor risk process specifically requires the detailed control testing it contains.
+:::
+
+## Request security documentation
 
 When your security team needs to complete a vendor review, request access by contacting [support@yesware.com](mailto:support@yesware.com):
 
+- **SOC 3 report** – Available on request; no non-disclosure agreement required
 - **SOC 2 report** – Available on request; access to gated documents may require a non-disclosure agreement
 - **Security control summary** – The current, published summary of Yesware's controls
 - **Subprocessors** – The current list of third-party subprocessors Yesware uses

@@ -21,6 +21,7 @@ Use UTM parameters in the links you publish (ads, social media, email) so form s
 
 ## What’s included
 
+- **Lead generation and contact form templates** with a consent field included by default, rich text support for linking to your privacy policy, and your business name auto-filled
 - **Form Builder** with configurable fields and defaults
 - **Design** controls for container, fonts, button, and custom CSS
 - **reCAPTCHA** integration

@@ -13,15 +13,15 @@ Salesforce Sync is available on the **Enterprise plan** only.
 ## Enable Salesforce Sync
 
 **Gmail**
-1. Click the Yesware menu at the top of Gmail and select **Preferences**.
-2. Go to **Integrations** and toggle Salesforce on.
+1. Click the Yesware menu at the top of Gmail and select `Preferences`.
+2. Go to `Integrations` and toggle Salesforce on.
 3. Authenticate your Salesforce account when prompted.
-4. Click **Save & Reload**.
+4. Click `Save & Reload`.
 
-Once enabled, all tracked emails and engagement events sync automatically. To disable sync for a single email, click the Salesforce cloud icon at the bottom of the compose window and toggle **Send to Salesforce** off.
+Once enabled, all tracked emails and engagement events sync automatically. To disable sync for a single email, click the Salesforce cloud icon at the bottom of the compose window and toggle `Send to Salesforce` off.
 
 **Outlook**
-Open the Yesware Sidebar from the ribbon and toggle **Send to Salesforce** on in the sidebar settings.
+Open the Yesware Sidebar from the ribbon and toggle `Send to Salesforce` on in the sidebar settings.
 
 ## What Yesware logs
 
@@ -37,25 +37,25 @@ Yesware creates a completed Task in Salesforce for each of the following activit
 | Presentation viewed | Presentation Viewed: [subject] |
 | Bounce received | Bounce: [subject] |
 
-Each task includes a **"Data provided by Yesware"** note in the Comments field. Yesware logs at most one task per event type per email — duplicate events from the same device and location are not re-logged.
+Each task includes a **"Data provided by Yesware"** note in the Comments field. Yesware logs at most one task per event type per email. Duplicate events from the same device and location are not re-logged.
 
 ## Where activity appears in Salesforce
 
-- **Lead match** — Activity History of the Lead record.
-- **Contact match** — Activity History of the Contact and the associated Account.
-- **Contact Role on open Opportunity** — Activity History of the Contact, Account, and Opportunity.
+- **Lead match**: Activity History of the Lead record.
+- **Contact match**: Activity History of the Contact and the associated Account.
+- **Contact Role on open Opportunity**: Activity History of the Contact, Account, and Opportunity.
 
 To associate email activity with an Opportunity, assign the recipient Contact as a Contact Role on that Opportunity in Salesforce. Yesware will then automatically sync activity to all three records.
 
-## Summary Task Logging
+## Summary task logging
 
 By default, Yesware creates separate tasks for each activity type. If you'd prefer a single consolidated task per email — with counts and timestamps for each event type — you can enable **Summary Task Logging**. This requires installing a Salesforce package and contacting Yesware support to activate it.
 
 See [Summary Task Logging](how-do-i-leverage-summary-task-logging) for setup steps.
 
-## Dynamic Templates
+## Dynamic templates
 
-Enterprise users can personalise templates using live data from Salesforce Contact or Lead records. When you select a template, Yesware looks up the first recipient in the To field and auto-fills any dynamic fields with matching Salesforce data.
+On the Enterprise plan, you can personalise templates using live data from Salesforce Contact or Lead records. When you select a template, Yesware looks up the first recipient in the To field and auto-fills any dynamic fields with matching Salesforce data.
 
 See [Dynamic Templates](how-do-dynamic-templates-work-with-salesforce) for setup and field reference.
 
@@ -64,7 +64,7 @@ See [Dynamic Templates](how-do-dynamic-templates-work-with-salesforce) for setup
 <details>
 <summary>What happens with duplicate records that share an email address?</summary>
 
-Yesware picks one record to sync to. It prefers Leads over Contacts, then Contacts with open Opportunities, then the record with the most recent activity, then the most recently modified record. Gmail users on the Enterprise plan can use the **Sync Selector** to manually choose which record to associate.
+Yesware picks one record to sync to. It prefers Leads over Contacts, then Contacts with open Opportunities, then the record with the most recent activity, then the most recently modified record. If you use Gmail and are on the Enterprise plan, you can use the **Sync Selector** to manually choose which record to associate.
 
 </details>
 
@@ -78,7 +78,7 @@ When composing in Gmail, click the Salesforce cloud icon at the bottom of the co
 <details>
 <summary>What is Background Sync?</summary>
 
-Background Sync lets Yesware log emails sent from any device or browser — including ones without the Yesware extension — as long as the recipient has a matching Salesforce record. Account managers can enable it under **Global Policies**.
+Background Sync lets Yesware log emails sent from any device or browser, including ones without the Yesware extension, as long as the recipient has a matching Salesforce record. Account managers can enable it under `Global Policies`.
 
 </details>
 
@@ -92,7 +92,7 @@ Yes. Yesware syncs email activity to Person Accounts and you can create Tasks, E
 <details>
 <summary>How do tracked events show up as "Email" instead of "Call" in Salesforce?</summary>
 
-Yesware uses your Salesforce environment's default value for the Activity Type field. Ask your Salesforce administrator to change the default to **Email** in Salesforce Setup under Customize > Activities > Task Fields > Activity Type, or create a workflow rule that sets Activity Type to "Email" for tasks created by Yesware.
+Yesware uses your Salesforce environment's default value for the Activity Type field. Ask your Salesforce administrator to change the default to `Email` in Salesforce Setup under `Customize` → `Activities` → `Task Fields` → `Activity Type`, or create a workflow rule that sets Activity Type to "Email" for tasks created by Yesware.
 
 </details>
 
@@ -106,6 +106,6 @@ Yesware uses API calls for Sidebar lookups and email sync actions — some activ
 <details>
 <summary>Why isn't Send to Salesforce working?</summary>
 
-Check that Send to Salesforce is toggled on in your Yesware preferences. If it is on but emails still aren't syncing, deauthorize and reauthorize your Salesforce connection from the Yesware web app. If the issue continues, ask your Salesforce administrator to confirm your user profile has API access enabled. Note that Yesware does not sync emails sent to addresses on the same domain as your own, or to addresses with no matching Contact or Lead. See [Troubleshooting](why-isn-t-send-to-salesforce-working) for more detail.
+Check that `Send to Salesforce` is toggled on in your Yesware preferences. If it is on but emails still aren't syncing, deauthorize and reauthorize your Salesforce connection from the Yesware web app. If the issue continues, ask your Salesforce administrator to confirm your user profile has API access enabled. Note that Yesware does not sync emails sent to addresses on the same domain as your own, or to addresses with no matching Contact or Lead. See [Troubleshooting](why-isn-t-send-to-salesforce-working) for more detail.
 
 </details>

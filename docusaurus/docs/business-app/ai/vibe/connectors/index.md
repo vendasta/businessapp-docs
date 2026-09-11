@@ -8,7 +8,7 @@ unlisted: false
 
 Connectors let your Vibe-built app do real work, not just look like it could. Each connector is a thin layer over a Business App service: instead of mocking a contact form or hardcoding a fake login button, the generated UI hooks into the live platform feature behind it. You ask for the behavior in plain English; the supervisor agent activates the connectors that are turned on for your project.
 
-There are six connectors today:
+Each connector adds one capability to your generated app:
 
 - [Single sign-on](./single-sign-on.md) — let your customers sign in with their existing account.
 - [Forms](./forms) — capture form submissions from your app.
@@ -16,12 +16,11 @@ There are six connectors today:
 - [CRM](./crm.md) — surface your contacts, companies, and opportunities.
 - [Supabase](./supabase.md) — connect your app to a Supabase database.
 - [Webchat](./webchat.md) — add an existing webchat, or create one, and embed it in your app.
+- [Reviews](./reviews.md) — showcase real customer reviews from your account on your app.
 
 ## Enabling a connector
 
-Connectors are managed per project. You can access them two ways: from the projects list, click **Configure** on the project card; or inside a project, click **+** in the chat box and select **Connectors**. Toggle a connector on to make it available to every prompt in the project; toggle it off to remove it from the supervisor agent's options.
-
-![Vibe Project Settings page showing the Overview card and the Shared connectors section with Single sign-on, Forms, and Analytics each toggled on](../img/project-settings.png)
+Connectors are managed per project. Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle a connector on to make it available to every prompt in the project; toggle it off to remove it from the supervisor agent's options.
 
 When a connector is **enabled**, the supervisor agent can wire your generated UI into the underlying service automatically. When a connector is **disabled**, prompts that would normally activate it fall back to mocked or static behavior — useful when you want to design without committing to live integrations yet.
 
@@ -41,6 +40,8 @@ That single prompt activates Forms (contact), Single sign-on (members area), and
 - [Single sign-on](./single-sign-on.md) — Gate a members area with existing customer accounts
 - [Analytics](./analytics.md) — Surface multi-location metrics for signed-in users
 - [CRM](./crm.md) — Surface contacts, companies, and opportunities in your app
+- [Supabase](./supabase.md) — Connect your app to a Supabase database
 - [Webchat](./webchat.md) — Add live chat to your app, or create a new webchat and embed it
+- [Reviews](./reviews.md) — Showcase real customer reviews from your account on your app
 - [Prompting Library](../guides/prompting-library.md) — Ready-made prompts for each connector
 

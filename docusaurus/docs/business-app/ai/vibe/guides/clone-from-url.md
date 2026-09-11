@@ -68,5 +68,5 @@ Vibe replaces sections rather than rebuilding everything. Useful when only part 
 
 - [Visual Editor](./visual-editor.md) — Tweak elements in your cloned app visually
 - [Prompting Library](./prompting-library.md) — Refining recipes for polishing a clone after the first generation
-- [Connectors](./connectors/index.md) — Wire your cloned app into forms, analytics, and sign-on
+- [Connectors](../connectors/index.md) — Wire your cloned app into forms, analytics, and sign-on
 

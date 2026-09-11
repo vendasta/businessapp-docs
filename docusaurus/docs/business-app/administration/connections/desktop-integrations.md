@@ -14,21 +14,21 @@ Integrations that use this method include **QuickBooks Desktop**, **Mitchell Man
 
 ### Step 1: Find the integration
 
-1. Go to **Administration** → **Connections** in Business App.
-2. Click the **Browse** tab.
+1. Go to `Administration` → `Connections` in Business App.
+2. Click the `Browse` tab.
 3. Find the integration card for your application and click it.
 
 ### Step 2: Review the marketing page and connect
 
-The marketing page describes what the integration does. Click **Connect** to start the setup process.
+The marketing page describes what the integration does. Click `Connect` to start the setup process.
 
 ### Step 3: Complete the pre-connect form
 
-The pre-connect form outlines the steps required to set up the integration. Click **Add Connection** to continue.
+The pre-connect form outlines the steps required to set up the integration. Click `Add Connection` to continue.
 
 ### Step 4: Copy your access key
 
-After submitting the form, you are taken to the Connection Settings page. Copy the **Access Key** shown — you will need it during the Broadly Upload Client installation.
+After submitting the form, you are taken to the Connection Settings page. Copy the `Access Key` shown, you will need it during the Broadly Upload Client installation.
 
 ## Install the Broadly Upload Client
 
@@ -38,7 +38,7 @@ Download the Broadly Upload Client and run the installer:
 
 [Download Broadly Upload Client](https://clients.upload.broadly.com/stable/Broadly_Upload_Client_Installer.msi)
 
-Click **Next** through the installation prompts. Ignore any "Time Remaining" pop-up that appears during the process.
+Click `Next` through the installation prompts. Ignore any "Time Remaining" pop-up that appears during the process.
 
 ### Step 2: Enter your access key
 
@@ -52,14 +52,12 @@ Choose the desktop application you are connecting (for example, **QuickBooks Des
 
 By default, all invoices and sales receipts are eligible to trigger review requests. You can narrow this:
 
-- **Only paid invoices**: Check **Only upload invoices with $0 balance** to wait until an invoice is fully paid before triggering a review request.
-- **Filter by Invoice Class**: Enter one or more exact Class names (case-sensitive) to upload invoices for specific classes only. When a class filter is active, all other classes — including unclassified invoices — are excluded.
+- **Only paid invoices**: Check `Only upload invoices with $0 balance` to wait until an invoice is fully paid before triggering a review request.
+- **Filter by Invoice Class**: Enter one or more exact Class names (case-sensitive) to upload invoices for specific classes only. When a class filter is active, all other classes, including unclassified invoices, are excluded.
 
 ### Step 5: Grant data access in QuickBooks
 
-During installation, QuickBooks may show a pop-up requesting permission for the Broadly Upload Client to read your data. Select:
-
-> **Yes, always allow access even when QuickBooks isn't running**
+During installation, QuickBooks may show a pop-up requesting permission for the Broadly Upload Client to read your data. Select `Yes, always allow access even when QuickBooks isn't running`.
 
 ### Step 6: Complete installation
 
@@ -78,7 +76,7 @@ Send a test invoice that matches your filter criteria. It should appear in Busin
 
 **Cause**: The Upload Client does not have permission to read data in your QuickBooks file.
 
-**Fix**: In QuickBooks, go to **Edit** → **Preferences** → **Integrated Applications** → **Company Preferences** → **Broadly Upload Client** → **Preferences**, then check **Allow access for this application even when QuickBooks isn't running**.
+**Fix**: In QuickBooks, go to `Edit` → `Preferences` → `Integrated Applications` → `Company Preferences` → `Broadly Upload Client` → `Preferences`, then check `Allow access for this application even when QuickBooks isn't running`.
 
 </details>
 
@@ -93,7 +91,7 @@ Send a test invoice that matches your filter criteria. It should appear in Busin
 
 </details>
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>How often does the Upload Client sync data?</summary>
@@ -105,7 +103,7 @@ The Broadly Upload Client runs an automatic sync every hour. Data from qualifyin
 <details>
 <summary>What happens if I set an Invoice Class filter?</summary>
 
-Only invoices matching the exact Class name you entered are uploaded. All other invoices — including those with no class assigned — are excluded. Class names are case-sensitive, so make sure they match exactly as they appear in QuickBooks.
+Only invoices matching the exact Class name you entered are uploaded. All other invoices, including those with no class assigned, are excluded. Class names are case-sensitive, so make sure they match exactly as they appear in QuickBooks.
 
 </details>
 

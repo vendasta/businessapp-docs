@@ -1,23 +1,21 @@
 ---
 title: Single Sign-On App Integrations
 sidebar_label: SSO Integrations
-description: Connect third-party applications through Single Sign-On (SSO) for seamless access and centralized management.
+description: Connect third-party applications through Single Sign-On (SSO) for direct access and centralized management.
 sidebar_position: 2
 tags: [integrations, sso, connections]
 keywords: [SSO, single sign-on, integrations, connections, third-party apps]
 ---
 
-# Single Sign-On App Integrations
-
-Single Sign-On (SSO) integrations provide seamless access to third-party applications. You can connect your accounts with supported applications without requiring separate logins.
+Single Sign-On (SSO) integrations give you direct access to third-party applications. You can connect your accounts with supported applications without requiring separate logins.
 
 ## Access the Integrations page
 
 To connect an integration:
 
-1. Navigate to **Administration** → **Integrations**
+1. Navigate to `Administration` → `Integrations`
 
-![Accessing the Integrations page](../img/sso-integrations/accessing-connections-page.jpg)
+![App settings page showing the Integrations tile among Automations, CRM objects, Score, and My Meetings settings](../img/sso-integrations/accessing-connections-page.jpg)
 
 ## Set up a new connection
 
@@ -27,9 +25,9 @@ Browse through the available applications on the Integrations page. Each applica
 
 ![Marketing page for the Jobber integration](../img/sso-integrations/marketing-page.jpg)
 
-### Step 2: Click Connect
+### Step 2: Click Add Connection
 
-Click the **Connect** button to begin the connection process.
+Click the `Add Connection` button to begin the connection process.
 
 ### Step 3: Complete the pre-connect form
 
@@ -53,17 +51,17 @@ Complete the Single Sign-On connection by following the prompts. This typically 
 
 After setup, you can view and manage all connected applications through:
 
-1. The **Manage** tab on the Integrations page, which displays connection cards for each integrated application
+- The `Manage` tab on the Integrations page, which displays connection cards for each integrated application
 
 ![Manage tab with connection card](../img/sso-integrations/manage-tab.jpg)
 
-2. The application pages, which display a "Connected" tag
+- The application pages, which display a "Connected" tag
 
 ![Marketing page with Connected tag](../img/sso-integrations/connected-marketing-page.jpg)
 
 ### Connection settings
 
-Click the settings icon for a connected application to access additional configuration options, which may include:
+Click `Manage Connection` on a connected application to access additional configuration options, including:
 
 - Data sync preferences
 - Automated review request settings
@@ -71,12 +69,12 @@ Click the settings icon for a connected application to access additional configu
 
 ![Connection settings page](../img/sso-integrations/connection-settings.jpg)
 
-## Benefits of SSO integrations
+## What SSO integrations do
 
-- **Simplified access** — One-click access to third-party tools without separate logins
-- **Centralized management** — Manage all applications from a single interface
-- **Streamlined workflows** — Automate data sharing between integrated applications
-- **Enhanced security** — Reduce the need for multiple passwords across different platforms
+- **Access**: Open third-party tools without a separate login
+- **Management**: Manage all connected applications from one interface
+- **Data sharing**: Share data automatically between connected applications
+- **Passwords**: Use one login instead of a separate password for each platform
 
 ## FAQ
 
@@ -90,7 +88,7 @@ There is no limit to the number of SSO integrations you can connect. Connect as 
 <details>
 <summary>What happens if an SSO connection expires?</summary>
 
-Open the integration from **Integrations** → **Manage** and follow the reconnect prompts to reauthorize.
+Open the integration from `Integrations` → `Manage` and follow the reconnect prompts to reauthorize.
 
 </details>
 

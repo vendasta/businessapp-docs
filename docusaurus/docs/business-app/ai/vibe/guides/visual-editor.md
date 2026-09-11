@@ -112,6 +112,6 @@ The visual editor is best for *small, targeted adjustments anchored to something
 ## Next Steps
 
 - [Prompting Guide](./prompting.md) — Write effective prompts for changes that go beyond the visual editor
-- [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [Connectors](../connectors/index.md) — Wire your app into forms, analytics, and sign-on
 - [Prompting Library](./prompting-library.md) — Ready-made prompts for common refinements
 

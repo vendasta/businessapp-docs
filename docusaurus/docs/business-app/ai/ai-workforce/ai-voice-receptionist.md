@@ -120,6 +120,17 @@ The **default voice lead capture** capability guides your AI Employee to offer t
 
 > **Note:** If this is turned off, the Voice Receptionist will not be able to capture caller information but *will* still answer questions to the best of their ability.
 
+##### What happens when your AI Voice Receptionist captures a lead
+
+When your AI Voice Receptionist captures a caller's name and contact information, a few things happen automatically:
+
+1. A contact is created in your CRM with the details the caller provided, such as first name, last name, phone number, and email address.
+2. The call, along with its recording and transcript, is saved to the `Conversations` tab against that contact.
+3. A `New Leads from Conversations AI` notification is sent to everyone on the account who has that notification turned on. This covers both the instant email and the daily digest, and both are enabled by default.
+
+:::tip Check who receives new lead notifications
+New lead notifications are per user, so each person on the account controls their own. To check or change yours, go to `Settings` > `Notification Settings`, expand the `Business App` section, and confirm `New Leads from Conversations AI` is enabled. See [Notification settings](../../administration/notification_settings.mdx) for the full list.
+:::
 
 #### Book appointments with your calendar
 
@@ -194,6 +205,10 @@ Best practices:
 Once a call is transferred, recording ends and the system does not record or transcribe the destination leg. If the destination doesn't answer, the transfer is not reverted; the caller would need to call again to speak with the AI.
 :::
 
+#### Dispatch calls to on-call staff {#dispatch-calls-to-on-call-staff}
+
+The **On-call dispatch** capability screens urgent calls and connects the caller to your on-call technician — the AI gathers who is calling, the nature of the emergency, and the service location, places the caller on hold, and announces the call to whichever technician answers. If no one can be reached live, the caller is told the on-call technician has been notified and will follow up — and a completed dispatch fires an automation trigger with the call details, so you can text those details to the on-call number and make that notification real. See [On-call dispatch](./on-call-dispatch.md) for setup steps, announcement template variables, and the companion automation.
+
 ### Step 3: Add knowledge sources to your AI Voice Receptionist
 
 The `Knowledge sources` panel lets you choose which information your AI Voice Receptionist can reference when answering calls. When your Voice Receptionist does not immediately have an answer to a caller's question, they will let the caller know they are taking a moment to look up information. If the Receptionist doesn't find the answer, they will let the caller know they don't have the information and offer to take a message and have someone call them back.
@@ -249,7 +264,7 @@ If the AI Voice Receptionist is unable to capture a caller’s contact informati
 Before getting started, make sure you have:
 - **AI Voice Receptionist access** through an eligible edition (see [AI Workforce Overview](ai_workforce_overview.md) for edition and region availability)
 - **Conversations AI phone number** assigned after activating Pro or Premium (found in Administration > Conversations Settings)
-- **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.md))
+- **Business Profile** complete with your basic business information (see [Business Profile Overview](../../administration/business_profile.mdx))
 - *(Optional)* **Calendar connection** for appointment booking (set up in CRM > My Meetings > Settings)
 
 Your AI Voice Receptionist will work with minimal setup, but having these prerequisites ensures the best experience for your callers.
@@ -347,6 +362,21 @@ You can track your AI Voice Receptionist's performance by:
 5. **Adjusting capabilities and instructions** as needed
 
 Regular monitoring helps you identify opportunities to improve responses and ensure your AI is representing your business well.
+</details>
+
+<details>
+<summary>How will I know when the AI Voice Receptionist captures a lead?</summary>
+
+You do not have to watch the `Conversations` tab to catch new leads. When your AI Voice Receptionist captures a caller's contact information, a `New Leads from Conversations AI` notification is sent to everyone on the account who has that notification enabled, and a contact is created in your CRM at the same time.
+
+This notification is enabled by default for both instant email and the daily digest, but it is set per user. If someone on your team is not receiving new lead notifications:
+
+1. Have them go to `Settings` > `Notification Settings` in Business App.
+2. Expand the `Business App` section.
+3. Confirm `New Leads from Conversations AI` is enabled under `Instant Email Notifications`, `Daily Digest Emails`, or both.
+4. Click `Save`.
+
+Also check the global settings at the top of that page, since a global `Disabled` value overrides the individual product settings. For more detail, see [Notification settings](../../administration/notification_settings.mdx).
 </details>
 
 <details>

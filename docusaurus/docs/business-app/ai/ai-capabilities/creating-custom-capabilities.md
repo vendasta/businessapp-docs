@@ -2,6 +2,7 @@
 title: How to Create Custom Capabilities
 sidebar_label: Creating Custom Capabilities
 sidebar_position: 3
+description: Connect your AI Employees to external systems and APIs by creating custom capabilities for tasks like inventory checks, appointment booking, and order tracking.
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';
@@ -32,22 +33,22 @@ Create custom capabilities when your AI Employees need to:
 If an action can be performed via an API, it can likely become a custom capability.
 :::
 
-## Step-by-step: Creating a custom capability
+## Step-by-step: creating a custom capability
 
-### Step 1: Access custom capability settings
+### Step 1: access custom capability settings
 
-1. Navigate to <AISparkleIcon /> **AI** › **AI Workforce** in your Business App dashboard.
+1. Navigate to <AISparkleIcon /> `AI` → `AI Workforce` in your Business App dashboard.
 2. Select the AI Employee you want to enhance (or create a new Custom AI Employee).
-3. Click the **Configure** button.
-4. Use the **Capabilities** tab to view and manage all available capabilities.
-5. Scroll down to the **Custom Capabilities** section.
-6. Click **Add a capability** to begin.
+3. Click the `Configure` button.
+4. Use the `Capabilities` tab to view and manage all available capabilities.
+5. Scroll down to the `Custom Capabilities` section.
+6. Click `Add a capability` to begin.
 
 #### Creating custom AI Employees
 
-You can now create entirely custom AI Employees with specialized capabilities:
+You can create entirely custom AI Employees with specialized capabilities:
 
-1. In the AI Workforce section, click **Create Custom AI Employee**
+1. In the AI Workforce section, click `Create Custom AI Employee`
 2. Set up the basic profile (name, avatar, purpose)
 3. Configure communication channels (web chat, SMS, etc.)
 4. Add both built-in and custom capabilities
@@ -67,9 +68,9 @@ You can now create entirely custom AI Employees with specialized capabilities:
 2. **Add a description**: Write a brief explanation of what this capability does.
    - Example: "Checks product availability in real-time inventory system"
 
-### Step 3: Create the capability prompt
+### Step 3: create the capability prompt
 
-1. In the **Prompt** field, define when and how the AI should use this capability.
+1. In the `Prompt` field, define when and how the AI should use this capability.
 2. You can start with placeholder text ("TBD") and refine it after setting up tools.
 3. For detailed guidance, see [Writing Effective Capability Prompts](#writing-a-good-capability-prompt).
 
@@ -77,19 +78,19 @@ You can now create entirely custom AI Employees with specialized capabilities:
 Consider the prompt as instructions for when you hire an employee. Be specific about when they should use this skill and how to handle different scenarios.
 :::
 
-### Step 4: Configure tools
+### Step 4: configure tools
 
-1. Click **Add Tool** to define the technical implementation.
+1. Click `Add Tool` to define the technical implementation.
 2. Choose your tool type:
-   - **Import from cURL**: Import existing API configurations
-   - **Manual configuration**: Set up custom API calls
-   - **MCP Connection**: Connect to external systems via Model Context Protocol
+   - `Import from cURL`: Import existing API configurations
+   - `Manual configuration`: Set up custom API calls
+   - `MCP Connection`: Connect to external systems via Model Context Protocol
 3. Fill in the required tool fields (see [Tool Configuration Reference](#tool-fields-explained)).
 4. Add multiple tools if your capability requires several API calls.
 
-### Step 5: Test and refine
+### Step 5: test and refine
 
-1. Click **Save** to store your capability configuration.
+1. Click `Save` to store your capability configuration.
 2. Test the capability by chatting with your AI Employee.
 3. Try different phrasings that should trigger the capability.
 4. Monitor the AI's responses and refine the prompt as needed.
@@ -103,7 +104,7 @@ Consider the prompt as instructions for when you hire an employee. Be specific a
 ## Tool configuration reference {#tool-fields-explained}
 
 #### Import from cURL  
-cURL is a tool developers use to test APIs by typing commands. Many API docs show example cURL commands. Importing a cURL command here helps you fill in the tool setup automatically—saving time and avoiding mistakes.  
+cURL is a tool developers use to test APIs by typing commands. Many API docs show example cURL commands. Importing a cURL command here helps you fill in the tool setup automatically, saving time and avoiding mistakes.  
 
 #### ID  
 This is a unique name for your tool inside your AI’s setup. Choose something simple and descriptive, like `CheckInventory` or `BookAppointment`. You cannot use spaces.
@@ -134,11 +135,11 @@ Headers are extra info sent with the API request, often for security. For exampl
 - `Content-Type: application/json` (tells the AI what kind of data is sent)
 
 #### No external processing needed  
-Check this box if your tool doesn’t actually call an outside API but works internally—like formatting dates or text within the AI. This saves unnecessary network calls.
+Check this box if your tool doesn’t actually call an outside API but works internally, like formatting dates or text within the AI. This saves unnecessary network calls.
 
 ## Writing effective capability prompts {#writing-a-good-capability-prompt}
 
-When creating your **Prompt**, be sure to:
+When creating your `Prompt`, be sure to:
 
 - Clearly specify when to call the tool (e.g., "ONLY call `CheckCustomerOrderStatus` when the user asks about their order status").
 - List the information the AI must gather before calling the tool (e.g., "You MUST have `order_number` before calling").
@@ -148,16 +149,16 @@ When creating your **Prompt**, be sure to:
 ## Managing custom capabilities
 
 - **Updating:** Any saved changes are applied the next time the AI considers the capability during chat.
-- **Disabling:** Deleting tools is not supported yet; to disable a tool, un-assign it from the AI Employee.
+- **Disabling:** Deleting tools is not supported; to disable a tool, un-assign it from the AI Employee.
 
 ## Testing and troubleshooting custom capabilities
 
 1. Chat with your AI Employee and try different phrasings to trigger the capability.
 2. Verify the AI requests any required information and calls the appropriate tool.
-3. In *Conversations*, click **Explanation** under a message to view the AI’s reasoning and raw API call.
+3. In `Conversations`, click `Explanation` under a message to view the AI’s reasoning and raw API call.
 4. If the API call fails, test it separately using tools like Postman, adjust as needed, and re-import the cURL command.
 
-## Example custom capability: Product information lookup
+## Example custom capability: product information lookup
 
 ### Example tool configuration
 
@@ -208,9 +209,9 @@ When creating your **Prompt**, be sure to:
 
 When an AI Employee is responding on **Web Chat**, it receives the URL of the page the visitor is currently on with every message. You can combine this context with a lookup capability so the AI answers vague questions ("is this still available?", "what's the price?") without needing to ask which item the visitor means.
 
-This pattern is especially powerful for businesses with structured URLs — e-commerce product pages, vehicle inventory, real estate listings, service pages, and so on.
+This pattern works well for businesses with structured URLs, such as e-commerce product pages, vehicle inventory, real estate listings, and service pages.
 
-**Prompt snippet — extend the lookup capability with URL parsing:**
+**Prompt snippet: extend the lookup capability with URL parsing:**
 
 ```markdown
 ## Using the Current Page URL

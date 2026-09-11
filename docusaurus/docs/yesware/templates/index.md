@@ -6,41 +6,41 @@ tags: [yesware, templates]
 keywords: [Yesware templates, email templates, merge fields, team templates]
 ---
 
-Templates let you save reusable email content — subject lines, body text, formatting, images, and attachments — so you can send consistent, personalized messages in a fraction of the time. Templates work in both Gmail and Outlook.
+Templates let you save reusable email content: subject lines, body text, formatting, images, and attachments, so you can send consistent, personalized messages in a fraction of the time. Templates work in both Gmail and Outlook.
 
 On Premium and Enterprise plans, templates can be shared across your entire team so everyone sends from the same approved messaging.
 
 ## Access your templates
 
-**Gmail** — Click the **Templates** menu at the top of Gmail to open the template library, or click the **Templates** button in any compose window to browse and insert.
+**Gmail**: Click the `Templates` menu at the top of Gmail to open the template library, or click the `Templates` button in any compose window to browse and insert.
 
-**Outlook** — Click **Open Templates** in the Yesware ribbon to access your library and manage templates.
+**Outlook**: Click `Open Templates` in the Yesware ribbon to access your library and manage templates.
 
 You can also manage all templates at [app.yesware.com/template_library/manage](https://app.yesware.com/template_library/manage).
 
 ## What's included in a template
 
-- **Subject and body** — full email content including formatting, bullet points, and spacing
-- **Images and HTML** — inline images or custom HTML layouts
-- **Tracked links** — links added to templates are automatically tracked
-- **Attachments** — attach files directly, with optional download controls for PDFs and presentations
-- **Merge fields** — personalize templates with Text Fields, Dropdown Fields, or live Salesforce data (Enterprise)
+- **Subject and body**: full email content including formatting, bullet points, and spacing
+- **Images and HTML**: inline images or custom HTML layouts
+- **Tracked links**: links added to templates are automatically tracked
+- **Attachments**: attach files directly, with optional download controls for PDFs and presentations
+- **Merge fields**: personalize templates with Text Fields, Dropdown Fields, or live Salesforce data (Enterprise)
 
 ## Merge fields
 
 | Type | How it works |
 |---|---|
-| **Text Field** | A blank you fill in at send time — reuse the same field name and filling one fills all |
-| **Dropdown Field** | A pick-list with up to 5 options you define when building the template |
-| **Salesforce Field** *(Enterprise only)* | Auto-fills from the matching Salesforce Contact or Lead when you compose |
+| `Text Field` | A blank you fill in at send time, reuse the same field name and filling one fills all |
+| `Dropdown Field` | A pick-list with up to 5 options you define when building the template |
+| `Salesforce Field` *(Enterprise only)* | Auto-fills from the matching Salesforce Contact or Lead when you compose |
 
 ## Measuring template performance
 
-**Templates Report** — See which templates are being used most and how they perform across your team. Available from the Reporting section.
+`Templates Report`: See which templates are being used most and how they perform across your team. Available from the Reporting section.
 
-**Response Insights** — As you write or edit a template, Response Insights scores your message and suggests improvements to increase predicted reply rates. Click **Response Insights** in the lower right of the template editor to view your grade.
+`Response Insights`: As you write or edit a template, Response Insights scores your message and suggests improvements to increase predicted reply rates. Click `Response Insights` in the lower right of the template editor to view your grade.
 
-**Favorites** — Star any template to pin it to your Favorites tab for quick access when composing.
+`Favorites`: Star any template to pin it to your Favorites tab for quick access when composing.
 
 ## Frequently asked questions
 

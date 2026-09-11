@@ -17,19 +17,18 @@ Vibe lives in Business App alongside your other AI tools.
 3. In the left sidebar, click **AI**.
 4. Click **Vibe**.
 
-You see your Vibe project list. If this is your first time, the list is empty and invites you to create your first app.
+You land on the Vibe home. It opens with the "What should we build today?" composer — a single prompt box with build-mode selection and voice input — and two tabs beneath it: **Templates** and **My Projects**.
 
-![Business App left navigation with the AI section expanded and Vibe highlighted, showing the empty Vibe project list](./img/vibe-nav-entry.png)
+![Business App left navigation with the AI section expanded and Vibe highlighted](./img/vibe-nav-entry.png)
 
 ## Step 2: Create a New Project
 
-Once you're in Vibe, you'll see a project list. Each card shows a live preview thumbnail of the app you built. Click **+ Create a new app** to create your first application.
+From the home, you have two ways to start:
 
-![Empty Vibe project list with the Create a new app button](./img/project-list.png)
+- **Start from a template** — Open the **Templates** tab to browse a searchable gallery of working examples. Select a template to see what it does and what it requires, then create an independent working project from it.
+- **Start from a prompt** — Describe what you want to build in the "What should we build today?" composer, pick a build mode, and send it.
 
-Give your project a name and an optional description, then click **Create**.
-
-![Create a new app dialog with the App Name and Description fields filled in](./img/create-project.png)
+Your existing projects live under the **My Projects** tab, where each project card shows a live preview thumbnail, and tags and search help you organize and find them. See [Projects Home & Templates](./guides/projects-home.md) for a full tour of the home, the template gallery, and the template detail view.
 
 As soon as the project is created, Vibe loads the Business Profile for the selected location — name, services, hours, and contact details — into the project's knowledge base. Your prompts can draw on that information without you having to include it. See [Business Knowledge](./guides/business-knowledge.md) to learn how to add more context.
 
@@ -79,6 +78,10 @@ The chat auto-scrolls to follow new events as they arrive. If you scroll up to r
 While a generation is in progress, you can keep typing and sending messages. Instead of interrupting the current run, each message you send joins a queue above the chat input and fires automatically once the current generation finishes. See [Message Queue](./guides/message-queue.md) for the full behavior, including pausing, editing, and removing queued messages.
 
 To stop a run early, click the **Stop** button in the chat input. The generation halts almost immediately, the last working preview stays on screen, your original prompt returns to the input so you can edit and resend, and your message queue pauses so nothing queued fires into the interrupted state.
+
+### Get notified when a run finishes
+
+If you switch to another browser tab while Vibe works, you don't have to keep checking back. Turn on notifications for the current run from the chat composer, then allow notifications when your browser asks for permission. Once enabled, your browser sends a notification as soon as the generation completes.
 
 ## Step 5: Iterate and Refine
 
@@ -158,6 +161,7 @@ Use the tabs at the top to switch between views:
 The top-right toolbar provides:
 
 - **Refresh** — Reload the preview.
+- **Device preview** — Preview your app at phone, tablet, and desktop sizes, or pop the preview out to a full window.
 - **Fullscreen** — Expand the preview to full screen.
 - **Download** — Download a complete archive of your project: full source, all assets, and the git history of every checkpoint.
 - **Checkpoints** — Browse and restore previous versions of your project.

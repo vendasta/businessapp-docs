@@ -4,15 +4,11 @@ sidebar_position: 4
 unlisted: false
 ---
 
-:::info Trusted tester
-The CRM connector is available to trusted testers. Availability and behavior may change before general release.
-:::
-
-The CRM connector gives your Vibe app access to your account's contacts, companies, and opportunities. Instead of mocking up a contact list or a deals table, Vibe wires the generated UI directly to the same records you manage in [CRM](/business-app/crm).
+The CRM connector lets your Vibe app read and write your account's contacts, companies, and opportunities. Instead of mocking up a contact list or a deals table, Vibe wires the generated UI directly to the same records you manage in [CRM](/business-app/crm).
 
 ## What it layers on
 
-CRM layers on Business App's CRM product. When the connector is enabled, Vibe can pull:
+CRM layers on Business App's CRM product. When the connector is enabled, Vibe can read and write:
 
 - **Contacts** — the people in your CRM, along with their contact details.
 - **Companies** — the businesses and organizations linked to your contacts.
@@ -24,7 +20,7 @@ A contacts table, company directory, or pipeline view built in Vibe reflects the
 
 ## Enabling the connector
 
-From the projects list click **Configure**, or inside the project click **+** in the chat box and select **Connectors**. Toggle **CRM** on to make your contacts, companies, and opportunities available to the supervisor agent for that project.
+Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **CRM** on to make your contacts, companies, and opportunities available to the supervisor agent for that project.
 
 ## When to use it
 
@@ -47,6 +43,20 @@ Describe what you want to see, and name the CRM entity so Vibe knows which data 
 > Add a task list showing overdue tasks assigned to me.
 
 The supervisor agent recognizes terms like "contacts," "companies," "opportunities" or "pipeline," and "tasks" or "activities," and wires the generated UI through the CRM connector when it's enabled for the project.
+
+## Writing back to CRM
+
+Because the connector is two-way, your Vibe app isn't limited to displaying records — it can create and update them too. Describe the action you want, and the change lands in CRM:
+
+> Add a "New contact" form so I can create a contact with a name, email, and phone number.
+
+> Let me log a call or a note on a contact's record.
+
+> Let me move an opportunity to a different pipeline stage from the pipeline view.
+
+## Forms map to CRM fields
+
+Forms built by Vibe map to real CRM fields, so a lead captured on your site lands in CRM exactly where your sales team works. See the [Forms connector](./forms.mdx) for how to build and edit forms in your Vibe app.
 
 ## Next steps
 

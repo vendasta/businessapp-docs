@@ -45,6 +45,11 @@ The AI Data Analyst is a custom AI Employee that helps you make data-backed deci
 
 Business data lives in multiple places: CRM records, customer reviews, NPS surveys, and social media. Without a dedicated analyst, you often face:
 
+- Scattered data that takes time to pull together manually
+- Inconsistent or one-off analysis instead of a repeatable process
+- Insights that surface too late to act on
+- Raw numbers without a clear next step
+
 The AI Data Analyst addresses this by connecting to these data sources and applying consistent analytical reasoning to every response.
 
 ## Before you begin
@@ -64,7 +69,7 @@ These prompts were developed and tested using **Gemini Flash 3**. Select Gemini 
 
 ### Step 1: Create the AI Employee
 
-1. Navigate to `AI` > `AI Workforce` in your Business App dashboard
+1. Navigate to `AI` → `AI Workforce` in your Business App dashboard
 2. Click `Create Custom AI Employee`
 3. Set a name (e.g., "Data Analyst") and upload an avatar image
 4. Click `Save` to create the employee profile
@@ -75,11 +80,11 @@ These prompts were developed and tested using **Gemini Flash 3**. Select Gemini 
 
 The role prompt defines your AI Data Analyst's personality and behavior. It tells the AI to lead with data, be direct, and always provide actionable next steps.
 
-1. Open the `Purpose` field in the AI Employee configuration
+1. Open the `Role` field in the AI Employee configuration
 2. Copy and paste the following role prompt:
 
 ```markdown
-You are a Data Analyst AI Employee. Your job is to help users make confident, data-backed decisions by surfacing what the data actually shows — and what to do about it.
+You are a Data Analyst AI Employee. Your job is to help users make confident, data-backed decisions by surfacing what the data actually shows, and what to do about it.
 
 You work across CRM data, customer reviews, NPS feedback, and any data the user shares directly. You are not a general-purpose assistant; if a request falls outside analysis, insights, or recommendations, redirect the user to the appropriate resource.
 
@@ -115,11 +120,11 @@ The role prompt sets the foundation for how the AI communicates. The key princip
 
 The AIR (Analyze, Interpret, Recommend) framework is a custom capability that structures how the AI reasons through every data question. It ensures responses follow a consistent pattern: state what the data shows, explain what it means, and recommend what to do next.
 
-1. In the AI Employee configuration, scroll to **Capabilities**
+1. In the AI Employee configuration, scroll to `Capabilities`
 2. Click `Add a capability`
-3. Set the capability name to `AIRAnalysisFramework`
+3. Set the capability name to `AIR Analysis Framework`
 4. Set the description to: "Structures analytical responses using the Analyze, Interpret, Recommend framework"
-5. In the **Prompt** field, copy and paste the following:
+5. In the `Prompt` field, copy and paste the following:
 
 ```markdown
 When responding to any analytical request (including CRM data, review/NPS data, or data provided directly by the user) you MUST reason through the AIR framework before responding: **Analyze > Interpret > Recommend**.
@@ -194,11 +199,11 @@ The AIR framework shapes the AI's internal reasoning, but you never see "Analyze
 
 The AIR framework prompt tells the AI to call `submit_air_analysis` as an internal reasoning scratchpad before generating each response. You add this as a tool inside the AIR Analysis Framework capability you just created.
 
-1. In the AIR Analysis Framework capability, scroll to the **Tools** section
+1. In the AIR Analysis Framework capability, scroll to the `Tools` section
 2. Click `+ Add a tool`
 3. Set the tool name to `submit_air_analysis`
 4. Set the description to: "Call this tool before delivering any AIR-structured analytical response. Populate all three fields based solely on retrieved data or data provided directly by the user."
-5. Check **This function is a no-op and will not execute an API call**
+5. Check `This function is a no-op and will not execute an API call`
 6. Add the following parameters (all with Location = Body, Type = String, Required = true, Set by AI = true):
 
    | Parameter key | Description |
@@ -217,19 +222,19 @@ This tool is invisible to you. The AI calls it internally before every analytica
 
 ### Step 4: Enable built-in capabilities
 
-The AI Data Analyst needs access to your business data. Enable every data capability that applies to your business -- the more data sources the AI can reach, the richer its analysis will be. You need at least one enabled for the analyst to be useful.
+The AI Data Analyst needs access to your business data. Enable every data capability that applies to your business: the more data sources the AI can reach, the richer its analysis will be. You need at least one enabled for the analyst to be useful.
 
-1. In the **Capabilities** section, toggle on any of the following that apply:
-   - **Access CRM information**: contacts, companies, activities, and associations
-   - **Access review and NPS data**: customer reviews and Net Promoter Score feedback
-   - **Social engagement data**: social post performance across platforms
+1. In the `Capabilities` section, toggle on any of the following that apply:
+   - `Access CRM information`: contacts, companies, activities, and associations
+   - `Access review and NPS data`: customer reviews and Net Promoter Score feedback
+   - `Social engagement data`: social post performance across platforms
 
 2. Click `Save`
 
 ![Capabilities section showing AIR Analysis Framework, Access CRM information, and Access review and NPS data](./img/data-analyst-capabilities.png)
 
 :::note
-The **Retrieve knowledge** capability is enabled by default for all AI Employees. This allows the data analyst to reference your business profile and website for context in its recommendations.
+The `Retrieve knowledge` capability is enabled by default for all AI Employees. This allows the data analyst to reference your business profile and website for context in its recommendations.
 :::
 
 These capabilities use pre-configured prompts. No custom prompt is needed for them.
@@ -240,7 +245,7 @@ For more details on configuring built-in capabilities, see [Configuring Capabili
 
 Give your AI Data Analyst context about your business so it can tailor its analysis.
 
-1. In the **Knowledge Sources** section:
+1. In the `Knowledge Sources` section:
    - **Connect your business profile**: address, hours, services, and contact information
    - **Add your website**: so the AI understands your offerings and can reference them in recommendations
    - **Upload documents** (optional): price lists, service catalogs, team structure, or any reference material that helps the AI make better recommendations
@@ -295,7 +300,7 @@ Custom AI Employees are available with any edition of Conversations AI.
 <details>
 <summary>What data can the AI Data Analyst access?</summary>
 
-It can access any data you have available in Business App: CRM data (contacts, companies, activities, associations), customer reviews and NPS feedback from connected sources (Google Business Profile, Facebook), and social post engagement data. It cannot access custom objects or opportunities through CRM queries.
+It can access any data you have available in Business App: CRM data (contacts, companies, activities, associations), customer reviews and NPS feedback from connected sources (Google Business Profile, Facebook), and social post engagement data. It cannot access custom objects through CRM queries.
 
 </details>
 
