@@ -42,7 +42,9 @@ Results load 25 at a time. You can change the page size to 50 or 100 at the bott
 3. Under `Permissions`, choose what this user can access. Everything is selected by default. Uncheck anything you do not want this user to see.
 4. Click `Send`.
 
-![The Add team member sidebar showing the email field, phone field, and a list of permission checkboxes for each tab](./img/users-invite-permissions.png)
+![The Add team member sidebar with First name, Last name, Email, and Phone fields, and a Permissions list of checked tab checkboxes below them](./img/users-invite-sidebar.png)
+
+The permissions list scrolls; the full set of what you can grant is described in [Set permissions](#set-permissions) below.
 
 The email address must be a valid email format, and it is the only required field. The invited user receives an email with instructions to access your Business App.
 
