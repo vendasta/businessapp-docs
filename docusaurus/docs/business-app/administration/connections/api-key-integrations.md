@@ -15,38 +15,38 @@ Integrations that use this method include **FieldEdge**, **JobNimbus**, **RB Con
 
 ### Step 1: Find the integration
 
-1. Go to **Administration** → **Connections** in Business App.
-2. Click the **Browse** tab.
+1. Go to `Administration` → `Connections` in Business App.
+2. Click the `Browse` tab.
 3. Find the integration card for your application and click it.
 
 ### Step 2: Review the marketing page and connect
 
-The marketing page describes what the integration does and the data it syncs. Click **Connect** to start setup.
+The marketing page describes what the integration does and the data it syncs. Click `Connect` to start setup.
 
 ### Step 3: Complete the pre-connect form
 
 The pre-connect form outlines the next steps and lets you configure your data sync preferences before the connection is established:
 
-- **Sync customer data** — Enable or disable automatic contact syncing to your CRM.
-- **Automated review requests** — Enable to send review requests automatically when customer data syncs. Requires a Reputation AI Premium subscription. If you do not have this subscription, this option is locked and can be unlocked by upgrading.
+- `Sync customer data`: Enable or disable automatic contact syncing to your CRM.
+- `Automated review requests`: Enable to send review requests automatically when customer data syncs. Requires a Reputation AI Premium subscription. If you do not have this subscription, this option is locked and can be unlocked by upgrading.
 
-Click **Add Connection** to continue.
+Click `Add Connection` to continue.
 
 ### Step 4: Copy your API key and complete setup in the third-party application
 
-After submitting the form, you are taken to the Connection Settings page. Follow the setup instructions shown there — these vary by integration. For example, for Gingr you copy the API key and paste it into the **Broadly Location ID** field in your Gingr Admin settings.
+After submitting the form, you are taken to the Connection Settings page. Follow the setup instructions shown there, they vary by integration. For example, for Gingr you copy the API key and paste it into the `Broadly Location ID` field in your Gingr Admin settings.
 
 Refer to the instructions on the Connection Settings page for the exact steps for your integration.
 
 ### Step 5: Confirm the connection
 
-The connection status shows as **Pending** until data syncs for the first time. The integration becomes **Connected** after the first qualifying event in the third-party application triggers a sync — for example, when a customer checks out a reservation or a job is completed.
+The connection status shows as `Pending` until data syncs for the first time. The integration becomes `Connected` after the first qualifying event in the third-party application triggers a sync — for example, when a customer checks out a reservation or a job is completed.
 
 When the connection is successfully established, you receive both an email notification and an in-app notification.
 
 ## Manage your connection
 
-After setup, your integration appears as a connection card in the **Manage** tab of the Connections page. The card shows the current status of the integration:
+After setup, your integration appears as a connection card in the `Manage` tab of the Connections page. The card shows the current status of the integration:
 
 | Status indicator | Meaning |
 |---|---|
@@ -60,7 +60,7 @@ Click the connection card to open the Connection Settings page, where you can re
 
 Until the first data sync occurs, the integration is in a **Pending** status. This is shown:
 
-- As a banner in the **Manage** tab
+- As a banner in the `Manage` tab
 - As an info icon on the connection card
 - On the Connection Settings page and the integration's marketing page
 
@@ -71,7 +71,7 @@ Click the connection card to return to the Connection Settings page and continue
 <details>
 <summary>Where do I find my API key?</summary>
 
-Your API key appears on the Connection Settings page after you click **Add Connection** on the integration card. Copy it from the setup instructions shown there.
+Your API key appears on the Connection Settings page after you click `Add Connection` on the integration card. Copy it from the setup instructions shown there.
 
 </details>
 

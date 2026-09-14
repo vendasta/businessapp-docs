@@ -28,25 +28,21 @@ Gingr is a dog daycare, kennel, and grooming software that modernizes and stream
 
 ### Step 1: Get your API key from Business App
 
-1. Go to **Administration** → **Integrations** in Business App.
-2. Find the **Gingr** card and click **Connect**.
-3. Click **Add Connection** on the pre-connect form.
+1. Go to `Administration` → `Integrations` in Business App.
+2. Find the `Gingr` card and click `Connect`.
+3. Click `Add Connection` on the pre-connect form.
 4. Copy the API key shown in the setup instructions.
-
-<!-- screenshot needed: Gingr Connection Settings page showing the API key and Copy button -->
 
 ### Step 2: Add the API key in Gingr
 
 1. Open a new browser tab and go to [https://my.gingrapp.com/](https://my.gingrapp.com/). Log in with Admin credentials.
-2. From the left menu, select **Admin** (gear icon).
-3. In the **Search Admin Items** box, search for **Broadly** and click the **Broadly** settings link.
-4. Set the **Broadly request positive survey only** field to **No/Off**.
-5. In the **Location Settings** drop-down, select the location you want to connect.
-6. Paste the API key you copied from Business App into the **Broadly Location ID** field.
+2. From the left menu, select `Admin` (gear icon).
+3. In the `Search Admin Items` box, search for `Broadly` and click the `Broadly` settings link.
+4. Set the `Broadly request positive survey only` field to `No/Off`.
+5. In the `Location Settings` drop-down, select the location you want to connect.
+6. Paste the API key you copied from Business App into the `Broadly Location ID` field.
 
-<!-- screenshot needed: Gingr Admin settings showing the Broadly Location ID field -->
-
-Your connection status shows as **Connection pending** until data syncs. The status updates to **Connected** the first time a reservation is checked out and customer data successfully syncs.
+Your connection status shows as `Connection pending` until data syncs. The status updates to `Connected` the first time a reservation is checked out and customer data successfully syncs.
 
 ## Multiple locations
 
@@ -54,13 +50,13 @@ Each business location requires its own setup:
 
 - Each location needs its own Business App account.
 - Generate a unique API key from each location's Gingr connection in Business App.
-- In Gingr's Admin settings, use the **Location Settings** drop-down to select the correct location, then paste the corresponding API key into the **Broadly Location ID** field for that location.
+- In Gingr's Admin settings, use the `Location Settings` drop-down to select the correct location, then paste the corresponding API key into the `Broadly Location ID` field for that location.
 
 ## Troubleshooting
 
 **Clients are not uploading after checkout**
 
-Check that the **Broadly request positive survey only** field in Gingr is set to **No/Off**. When set to **Yes/On**, the integration only triggers if the customer replied to the Gingr survey with positive feedback, which significantly reduces the number of contacts synced to your CRM.
+Check that the `Broadly request positive survey only` field in Gingr is set to `No/Off`. When set to `Yes/On`, the integration only triggers if the customer replied to the Gingr survey with positive feedback, which significantly reduces the number of contacts synced to your CRM.
 
 ## Frequently Asked Questions (FAQs)
 
