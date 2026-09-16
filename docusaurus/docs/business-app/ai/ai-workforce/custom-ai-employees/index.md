@@ -46,6 +46,7 @@ Every custom AI Employee follows these steps:
 3. **Add capabilities**: enable built-in capabilities and create custom ones as needed
 4. **Connect knowledge sources**: business profile, website, documents
 5. **Test and refine**: verify the AI responds correctly across scenarios
+6. **Publish the employee**: once you're satisfied with the setup, publish it to make it active
 
 For detailed instructions, see [How to Create Custom Capabilities](../../ai-capabilities/creating-custom-capabilities.md).
 
