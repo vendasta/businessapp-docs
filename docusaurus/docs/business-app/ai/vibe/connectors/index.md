@@ -14,7 +14,7 @@ Each connector adds one capability to your generated app:
 - [Forms](./forms) — capture form submissions from your app.
 - [Analytics](./analytics.md) — surface in-app metrics for signed-in users.
 - [CRM](./crm.md) — surface your contacts, companies, and opportunities.
-- [Supabase](./supabase.md) — connect your app to a Supabase database.
+- [Supabase](./supabase.md) — connect your app to a Supabase database (Pro/Premium).
 - [Webchat](./webchat.md) — add an existing webchat, or create one, and embed it in your app.
 - [Reviews](./reviews.md) — showcase real customer reviews from your account on your app.
 
@@ -40,7 +40,7 @@ That single prompt activates Forms (contact), Single sign-on (members area), and
 - [Single sign-on](./single-sign-on.md) — Gate a members area with existing customer accounts
 - [Analytics](./analytics.md) — Surface multi-location metrics for signed-in users
 - [CRM](./crm.md) — Surface contacts, companies, and opportunities in your app
-- [Supabase](./supabase.md) — Connect your app to a Supabase database
+- [Supabase](./supabase.md) — Connect your app to a Supabase database (Pro/Premium)
 - [Webchat](./webchat.md) — Add live chat to your app, or create a new webchat and embed it
 - [Reviews](./reviews.md) — Showcase real customer reviews from your account on your app
 - [Prompting Library](../guides/prompting-library.md) — Ready-made prompts for each connector

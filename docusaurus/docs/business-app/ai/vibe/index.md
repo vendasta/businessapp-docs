@@ -76,13 +76,13 @@ Apps are served as fully rendered HTML that search engines and AI assistants can
 Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
 
 ### Checkpoints
-Vibe automatically creates checkpoints as you iterate. You can view diffs between versions and restore previous states if needed.
+Vibe automatically creates checkpoints as you iterate — each checkpoint is a **git commit**. You can view diffs between versions and restore previous states if needed.
 
 ### Credits
 Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
 
-### Custom Domains (Professional)
-On the Professional plan, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
+### Custom Domains (Standard+)
+On the Standard plan or higher, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
 ## How It Works
 
@@ -125,7 +125,7 @@ When a prompt is ambiguous, Vibe pauses and asks clarifying questions before gen
 <details>
 <summary>How do I undo a change I don't like?</summary>
 
-Vibe creates checkpoints automatically as you iterate. Open the Checkpoints panel from the toolbar to view diffs and restore any previous version.
+Vibe creates checkpoints (git commits) automatically as you iterate. Open the Checkpoints panel from the toolbar to view diffs and restore any previous version.
 
 </details>
 
@@ -165,4 +165,4 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
 - [Credits](./credits.md) — Understand how credits work and how to purchase more
-- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Professional)
+- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Standard+)
