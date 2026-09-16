@@ -171,6 +171,6 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
-- [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md) — Own the source code and run it on any Node.js host
+- [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md) — Get the full source code on the Pro plan and run it on any Node.js host
 - [Credits](./credits.md) — Understand how credits work and how to purchase more
 - [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Professional)

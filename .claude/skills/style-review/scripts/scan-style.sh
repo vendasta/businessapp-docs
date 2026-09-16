@@ -48,11 +48,51 @@ fi
 ERRORS=0
 WARNINGS=0
 
+# ── Prose-only copies ───────────────────────────────────────────────────────
+# Style and build-safety greps run against copies with fenced code blocks
+# blanked out. Sample code is content, not prose: an `import` line or the word
+# "legacy" inside a ``` fence is the article doing its job. Blank lines are
+# kept in place of fenced lines so reported line numbers still match the file.
+PROSE_DIR=$(mktemp -d)
+trap 'rm -rf "$PROSE_DIR"' EXIT
+PROSE_FILES=()
+_pi=0
+for _f in "${FILES[@]}"; do
+  awk '/^[[:space:]]*```/ { fence = !fence; print ""; next } { print (fence ? "" : $0) }' \
+    "$_f" > "$PROSE_DIR/$_pi.md"
+  PROSE_FILES+=("$PROSE_DIR/$_pi.md")
+  _pi=$((_pi + 1))
+done
+
+# A second set that also blanks inline `code` spans. Only the evergreen check
+# uses it: a flag like `--legacy-peer-deps` carries a trigger word inside a
+# command literal. The gray-label checks deliberately keep inline code, so a
+# stray brand name in backticks still fails.
+PROSE_NOCODE_FILES=()
+_pi=0
+for _f in "${PROSE_FILES[@]}"; do
+  sed 's/`[^`]*`//g' "$_f" > "$PROSE_DIR/nocode-$_pi.md"
+  PROSE_NOCODE_FILES+=("$PROSE_DIR/nocode-$_pi.md")
+  _pi=$((_pi + 1))
+done
+
+# Translate temp paths in grep output back to the real file paths.
+unprose() {
+  local out="$1" i=0 f
+  for f in "${FILES[@]}"; do
+    out=${out//"$PROSE_DIR/nocode-$i.md"/"$f"}
+    out=${out//"$PROSE_DIR/$i.md"/"$f"}
+    i=$((i + 1))
+  done
+  printf '%s\n' "$out"
+}
+
+
 run_check() {
   local label="$1" severity="$2" pattern="$3"
   local results
-  results=$(printf '%s\n' "${FILES[@]}" \
-    | xargs grep -nE "$pattern" 2>/dev/null || true)
+  results=$(unprose "$(printf '%s\n' "${PROSE_FILES[@]}" \
+    | xargs grep -nE "$pattern" 2>/dev/null || true)")
   if [ -n "$results" ]; then
     if [ "$severity" = "error" ]; then
       red "  FAIL — $label"
@@ -71,8 +111,28 @@ run_check() {
 run_check_icase() {
   local label="$1" severity="$2" pattern="$3"
   local results
-  results=$(printf '%s\n' "${FILES[@]}" \
-    | xargs grep -niE "$pattern" 2>/dev/null || true)
+  results=$(unprose "$(printf '%s\n' "${PROSE_FILES[@]}" \
+    | xargs grep -niE "$pattern" 2>/dev/null || true)")
+  if [ -n "$results" ]; then
+    if [ "$severity" = "error" ]; then
+      red "  FAIL — $label"
+      echo "$results" | sed 's/^/    /'
+      ERRORS=$((ERRORS + $(echo "$results" | wc -l)))
+    else
+      yellow "  WARN — $label"
+      echo "$results" | sed 's/^/    /'
+      WARNINGS=$((WARNINGS + $(echo "$results" | wc -l)))
+    fi
+  else
+    green "  PASS — $label"
+  fi
+}
+
+run_check_icase_nocode() {
+  local label="$1" severity="$2" pattern="$3"
+  local results
+  results=$(unprose "$(printf '%s\n' "${PROSE_NOCODE_FILES[@]}" \
+    | xargs grep -niE "$pattern" 2>/dev/null || true)")
   if [ -n "$results" ]; then
     if [ "$severity" = "error" ]; then
       red "  FAIL — $label"
@@ -287,7 +347,7 @@ run_check_icase \
 # ── CRITICAL: Evergreen ───────────────────────────────────────────────────────
 echo ""
 bold "[ CRITICAL ] Evergreen content"
-run_check_icase \
+run_check_icase_nocode \
   "Historical references" \
   "error" \
   "\b(previously|formerly|used to|before this update|earlier version|legacy|deprecated|renamed|has since|in the past|at one point|prior to this|old version)\b"
@@ -414,12 +474,14 @@ check_frontmatter_colons
 
 # JSX / Wistia in .md files (not .mdx)
 MD_ONLY=()
+_mi=0
 for f in "${FILES[@]}"; do
-  [[ "$f" == *.md ]] && [[ "$f" != *.mdx ]] && MD_ONLY+=("$f")
+  [[ "$f" == *.md ]] && [[ "$f" != *.mdx ]] && MD_ONLY+=("${PROSE_FILES[$_mi]}")
+  _mi=$((_mi + 1))
 done
 if [ ${#MD_ONLY[@]} -gt 0 ]; then
-  local_results=$(printf '%s\n' "${MD_ONLY[@]}" \
-    | xargs grep -nE '<iframe|<WistiaVideo|^import |className=' 2>/dev/null || true)
+  local_results=$(unprose "$(printf '%s\n' "${MD_ONLY[@]}" \
+    | xargs grep -nE '<iframe|<WistiaVideo|^import |className=' 2>/dev/null || true)")
   if [ -n "$local_results" ]; then
     red "  FAIL — JSX/Wistia in .md files (must use .mdx for JSX content)"
     echo "$local_results" | sed 's/^/    /'

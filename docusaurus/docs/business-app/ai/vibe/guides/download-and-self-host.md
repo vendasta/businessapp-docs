@@ -1,7 +1,7 @@
 ---
 title: "Download & Host Your Project Elsewhere"
 sidebar_label: "Download & Self-Host"
-description: Vibe projects are built on open frameworks. On the Pro plan, download the complete source code and run or host it anywhere that supports Node.js.
+description: On the Pro plan, download a project's source code and run or host it anywhere that supports Node.js.
 tags: [vibe, ai, download, hosting, portability, open-source]
 keywords: [vibe download project, vibe source code, vibe self host, vibe portable, vibe react tanstack, move vibe site, vibe export]
 sidebar_position: 13
@@ -14,7 +14,7 @@ unlisted: false
 
 Every project you build in Vibe is a standard web application written in open, widely-used frameworks — React, TanStack Start, Vite, and Tailwind CSS. None of it is a proprietary format, and none of it is locked to Business App.
 
-On the Pro plan you can download the complete source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe stays the simplest and least expensive option, but it is not the only one.
+On the Pro plan you can download the source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe stays the simplest and least expensive option, but it is not the only one.
 
 :::warning
 Downloading a project requires the Pro plan. On the Free and Standard plans, the `Download` button is not available. See [Credits](../credits.md).
@@ -22,14 +22,14 @@ Downloading a project requires the Pro plan. On the Free and Standard plans, the
 
 ## Why this matters
 
-- **The download is complete**: Every file, every asset, and the full history of every checkpoint.
+- **The application code is all there**: Every source file, along with the full history of every checkpoint.
 - **Nothing proprietary**: The app is built on frameworks maintained by the open-source community and used by companies of every size. Any web developer can read, change, and extend it.
 - **No dead end**: If your needs change, you can move the project to another host without rebuilding it.
 - **Standard tooling**: A developer needs `npm` and Node.js and nothing else. There is no special client, license, or account required to build and run the code.
 
 ## What's in the download
 
-Click `Download` in the editor toolbar to get a `.vibe.tar.gz` archive containing:
+Click `Download` in the editor toolbar to get a `.vibe.tar.gz` archive named after your project. It contains:
 
 | Contents | Description |
 | --- | --- |
@@ -38,26 +38,31 @@ Click `Download` in the editor toolbar to get a `.vibe.tar.gz` archive containin
 | Checkpoint history | A `.git` folder holding a commit for every checkpoint in the project |
 | Project metadata | A `.vibe-meta/` folder describing the project name, template, and connectors |
 
-:::info
-Database credentials are replaced with placeholders in the download. If your app uses the Supabase connector, you supply your own database connection details when you host the project yourself. See [Supabase](../connectors/supabase.md).
+Three things are **not** in the archive:
+
+- **Generated images**. Images Vibe created for you are served from a hosted image URL that the code points at. They keep loading after a move, but they are not files in your project. To hold a full copy, save each one into a `public/` folder and update the code to use the local path.
+- **Discovery files**. `robots.txt`, `sitemap.xml`, and `llms.txt` are generated each time you publish with Vibe. A build you run yourself does not produce them. See [SEO & LLM Indexing](./seo-and-indexing.md).
+- **Database credentials**. If your app uses the Supabase connector, the connection values are replaced with placeholders such as `YOUR_SUPABASE_PROJECT`. Search the project for that text and fill in your own project's values before the app can reach a database. See [Supabase](../connectors/supabase.md).
+
+:::warning
+The checkpoint history in the `.git` folder is a record of earlier versions of your files. If a real credential was ever written into the project, it can remain readable in that history even when the current files show a placeholder. Treat a downloaded archive as sensitive, and share it only with people you would trust with the project's keys.
 :::
 
 ## What travels with the code, and what doesn't
 
-The pages, layout, styling, images, forms UI, and any logic Vibe wrote for you are all in the download and run anywhere.
+The pages, layout, styling, form interfaces, and any logic Vibe wrote for you are all in the download and run anywhere.
 
 Features backed by Business App services are wired to Business App and stop working once the app is hosted elsewhere. These are the connector-based features: Forms submissions routing to your CRM, Analytics data, Reviews content, Webchat, CRM records, and single sign-on. The screens still render — a developer replaces the data source behind them with whatever you want to use instead. See [Connectors](../connectors/index.md).
-
-Generated images are served from a hosted image URL. To make a self-hosted copy fully independent, save those images into a `public/` folder in the project and point the code at the local paths instead.
 
 ## Run a downloaded project on your computer
 
 These steps need a terminal and [Node.js](https://nodejs.org) version 22 or newer. If you aren't comfortable with a command line, hand this section to a developer — it takes them a few minutes.
 
-1. Extract the archive:
+1. Extract the archive. The file name below is an example; use the name of the file in your Downloads folder. The archive has no folder of its own inside it, so extract it into one you create:
 
    ```bash
-   tar -xzf my-project.vibe.tar.gz
+   mkdir my-project
+   tar -xzf my-project.vibe.tar.gz -C my-project
    cd my-project
    ```
 
@@ -90,13 +95,13 @@ This produces a `dist/` folder with two parts:
 - `dist/client` — the static files a browser downloads (JavaScript, CSS, images)
 - `dist/server` — the server bundle that renders each page as complete HTML
 
-The `dist/` folder is self-contained. It does not need `node_modules`, so it's the only thing you copy to a server.
+`dist/` does not need `node_modules`, so along with the server file in the next section it's all you copy to a server.
 
 ## Host it yourself
 
 Because pages are rendered on the server, the app needs a host that runs Node.js — a virtual server, a container platform, or any managed Node hosting service. Static-only hosting is not enough on its own.
 
-The server bundle exports a standard web request handler. Save this file as `server.mjs` next to the `dist/` folder to serve the app:
+The server bundle exports a standard web request handler rather than starting a server of its own. Save this file as `server.mjs` next to the `dist/` folder to serve the app:
 
 ```javascript
 // Serves dist/client as static files; everything else goes to the page renderer.
@@ -114,24 +119,60 @@ const MIME = {
   ".js": "text/javascript", ".css": "text/css", ".svg": "image/svg+xml",
   ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp",
   ".ico": "image/x-icon", ".woff2": "font/woff2", ".json": "application/json",
+  ".html": "text/html; charset=utf-8", ".txt": "text/plain; charset=utf-8",
+  ".xml": "application/xml", ".webmanifest": "application/manifest+json",
 };
 
-createServer(async (req, res) => {
-  const url = new URL(req.url, `http://${req.headers.host}`);
-  const file = path.join(CLIENT_DIR, path.normalize(decodeURIComponent(url.pathname)));
-  if (file.startsWith(CLIENT_DIR + path.sep) && existsSync(file) && statSync(file).isFile()) {
-    res.writeHead(200, { "content-type": MIME[path.extname(file)] || "application/octet-stream" });
-    createReadStream(file).pipe(res);
-    return;
+const server = createServer(async (req, res) => {
+  try {
+    // A public address receives malformed paths constantly. Decoding "/%" throws,
+    // so this has to be caught before anything else touches the path.
+    let pathname;
+    try {
+      pathname = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
+    } catch {
+      res.writeHead(400, { "content-type": "text/plain" });
+      res.end("Bad request");
+      return;
+    }
+
+    const file = path.join(CLIENT_DIR, path.normalize(pathname));
+    if (file.startsWith(CLIENT_DIR + path.sep) && existsSync(file) && statSync(file).isFile()) {
+      res.writeHead(200, { "content-type": MIME[path.extname(file)] || "application/octet-stream" });
+      createReadStream(file).pipe(res);
+      return;
+    }
+
+    // Behind a proxy the original scheme and host survive only in these headers.
+    // Without them the app renders http:// links on an https:// site.
+    const proto = (req.headers["x-forwarded-proto"] || "http").split(",")[0].trim();
+    const host = (req.headers["x-forwarded-host"] || req.headers.host || "localhost").split(",")[0].trim();
+    const body = ["GET", "HEAD"].includes(req.method) ? undefined : Readable.toWeb(req);
+    const response = await render(new Request(`${proto}://${host}${req.url}`, {
+      method: req.method, headers: req.headers, body, duplex: "half",
+    }));
+
+    // Set-Cookie repeats, and collapsing it to a single value breaks sign-in.
+    for (const [key, value] of response.headers) {
+      if (key.toLowerCase() !== "set-cookie") res.setHeader(key, value);
+    }
+    const cookies = response.headers.getSetCookie?.() ?? [];
+    if (cookies.length) res.setHeader("set-cookie", cookies);
+
+    res.writeHead(response.status);
+    if (response.body) Readable.fromWeb(response.body).pipe(res);
+    else res.end();
+  } catch (error) {
+    console.error("request failed:", error);
+    if (!res.headersSent) res.writeHead(500, { "content-type": "text/plain" });
+    res.end("Internal server error");
   }
-  const body = ["GET", "HEAD"].includes(req.method) ? undefined : Readable.toWeb(req);
-  const response = await render(new Request(url, {
-    method: req.method, headers: req.headers, body, duplex: "half",
-  }));
-  res.writeHead(response.status, Object.fromEntries(response.headers));
-  if (response.body) Readable.fromWeb(response.body).pipe(res);
-  else res.end();
-}).listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
+});
+
+// Container hosts send SIGTERM on every deploy; without this, in-flight requests are cut.
+process.on("SIGTERM", () => server.close(() => process.exit(0)));
+
+server.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
 ```
 
 Then start it:
@@ -140,7 +181,14 @@ Then start it:
 node server.mjs
 ```
 
-The app is served at `http://localhost:3000`, or at whatever port you set in the `PORT` environment variable. On a real server, put it behind a reverse proxy or load balancer that handles HTTPS. Most Node.js hosting services do this for you and simply need the build command (`npm run build`) and the start command (`node server.mjs`).
+The app is served at `http://localhost:3000`, or at whatever port you set in the `PORT` environment variable.
+
+Two things to set up on a real server:
+
+- **HTTPS**: put the app behind a reverse proxy or load balancer that terminates HTTPS and sets the `X-Forwarded-Proto` and `X-Forwarded-Host` headers. The server file reads them so your pages produce `https://` links. Most managed Node hosting services do this for you.
+- **Restarts**: run the process under a process manager or a container restart policy, so the site comes back if the process stops or the machine reboots. `node server.mjs` on its own does not restart.
+
+Most Node.js hosting services need only the build command (`npm run build`) and the start command (`node server.mjs`).
 
 ## What you take on by hosting it yourself
 
@@ -149,9 +197,11 @@ Publishing from Vibe is one click, and everything below is handled for you. Runn
 | Handled for you when you publish with Vibe | Your responsibility when you self-host |
 | --- | --- |
 | Servers, scaling, and uptime | Provisioning, monitoring, and paying for infrastructure |
+| A failed process is restarted for you | Monitoring the process and restarting it after a crash or reboot |
 | HTTPS certificates, issued and renewed | Obtaining and renewing certificates |
 | Custom domain setup and DNS verification | DNS and certificate configuration by hand |
 | A new version live in seconds after each publish | Rebuilding and redeploying after every change |
+| `robots.txt`, `sitemap.xml`, and `llms.txt` on every publish | Producing and maintaining those files yourself |
 | Connectors already wired to your business data | Replacing forms, analytics, reviews, chat, CRM, and sign-on with other services |
 | Security updates to the hosting platform | Patching the server and its dependencies |
 | Editing the app by describing a change in chat | Editing source code directly, or paying a developer to |
@@ -177,7 +227,7 @@ No. Projects are built on React, TanStack Start, Vite, and Tailwind CSS — open
 <details>
 <summary>Do I need to keep my subscription to keep the code I downloaded?</summary>
 
-No. A downloaded archive is yours to keep and run. Download a copy before deactivating a subscription, because projects are removed from Business App when a base subscription is deactivated. See [Credits](../credits.md).
+A downloaded archive runs on its own. Download a copy before deactivating a subscription, because projects are removed from Business App when a base subscription is deactivated. Note that generated images are served from a hosted URL rather than stored in the archive, so save any you want to keep into the project's `public/` folder first. See [Credits](../credits.md).
 
 </details>
 
