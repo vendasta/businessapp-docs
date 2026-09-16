@@ -11,6 +11,10 @@ keywords: [staging site, staging environment, test WordPress changes, push to pr
 
 ![Staging panel with site preview, status, PHP and WordPress versions, and reset options](img/staging-panel.png)
 
+## Availability
+
+Staging is available on Pro and Premium (Multisite) plans. Standard accounts don't include a staging environment.
+
 ## What you can do
 
 - **Preview the staging site** at its own staging URL.
@@ -22,7 +26,7 @@ keywords: [staging site, staging environment, test WordPress changes, push to pr
 ## Push to production
 
 1. Verify your changes on the staging URL.
-2. Click **Push to production**.
+2. Click `Push to production`.
 3. Confirm.
 
 The live site is replaced with the staging copy in a few minutes.
@@ -33,14 +37,15 @@ Create a backup of production before pushing, so you can roll back if needed. Se
 
 ## Reset staging
 
-If staging gets messy or out of sync with production, reset it. Click **Reset staging** and choose:
+If staging gets messy or out of sync with production, reset it. Click `Reset staging` and choose:
 
-- **Reset from live site** — Make a fresh copy of production. Any changes on staging are lost.
-- **Reset from backup** — Restore staging from a specific backup.
+- `Reset from live site`: Make a fresh copy of production. Any changes on staging are lost.
+- `Reset from backup`: Restore staging from a specific backup.
+- `Reset from a template`: Start fresh with a new template.
 
 ## WP_DEBUG
 
-The **WP_DEBUG** toggle enables WordPress debug mode on staging — useful for diagnosing PHP errors and warnings without affecting your live site.
+The `WP_DEBUG` toggle enables WordPress debug mode on staging, which is useful for diagnosing PHP errors and warnings without affecting your live site.
 
 ## FAQs
 
