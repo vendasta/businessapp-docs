@@ -9,7 +9,7 @@ keywords: [Conversations AI settings, Business App conversations, messaging pref
 
 ## Overview
 
-Use **Conversations Settings** to configure your business phone and SMS, connect channels like Facebook and Instagram, and enable AI-powered replies. Open it from **Business App → Administration → Conversations Settings**. The page shows a card per channel with status and a **Configure** button.
+Use **Conversations Settings** to configure your business phone and SMS, connect channels like Facebook and Instagram, and enable AI-powered replies. Open it from `Business App` → `Administration` → `Conversations Settings`. The page shows a card per channel with status and a `Configure` button.
 
 **What you can do here:**
 - Enable or manage each messaging channel (phone, web chat, social, email).
@@ -49,7 +49,7 @@ Connect messaging channels so they appear in your unified inbox:
 - [Web Chat](../conversations/web-chat)
 - [Facebook Messenger](../conversations/facebook-messenger.mdx)
 - [Instagram Messages](../conversations/instagram-messenger.mdx)
-- [WhatsApp for Conversations AI](../conversations/whatsapp-for-inbox.mdx)
+- [WhatsApp for Conversations AI](../conversations/whatsapp/whatsapp-for-inbox.mdx)
 
 ## Frequently asked questions
 
