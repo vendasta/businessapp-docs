@@ -94,6 +94,7 @@ Choose the most specific trigger that matches your use case and think about how 
 |---|---|
 | A contact communication summary is created | Fires when an AI-generated summary of a conversation is created for a contact |
 | Web Chat captures a lead | Fires when a visitor submits their information through the Web Chat widget |
+| A call is received | Fires when your AI Voice Receptionist receives a call, exposing the call transcript and the caller's phone number so you can route the conversation to other automation steps |
 | An AI-handled call is transferred | Fires when your AI Voice Receptionist transfers or dispatches a call, with a Transfer outcome filter (Answered, Voicemail, No answer, Busy, Failed, Unknown), so you can notify the destination number or log the call details. See the [dispatch SMS recipe](./use-cases/dispatch-on-call-sms.md) |
 
 ### Manual
