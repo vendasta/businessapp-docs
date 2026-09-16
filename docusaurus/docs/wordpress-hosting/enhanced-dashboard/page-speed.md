@@ -13,11 +13,11 @@ The **Performance** card shows how fast your homepage loads on desktop and mobil
 
 ## What you see
 
-- **Desktop and Mobile scores** — A 0–100 number for each. The arrow next to the score shows how much it changed since the last check.
-- **Passed rules** — PageSpeed checks your site already satisfies.
-- **Opportunities** — Suggested fixes that could raise your score.
-- **History chart** — Desktop (solid line) and mobile (dashed line) scores plotted over time.
-- **Performance improvement opportunities** — Opens a detailed list of fixes with estimated time savings.
+- **Desktop and Mobile scores**: A 0–100 number for each. The arrow next to the score shows how much it changed since the last check.
+- **Passed rules**: PageSpeed checks your site already satisfies.
+- **Opportunities**: Suggested fixes that could raise your score.
+- **History chart**: Desktop (solid line) and mobile (dashed line) scores plotted over time.
+- `Performance improvement opportunities`: Opens a detailed list of fixes with estimated time savings.
 
 ## Score ranges
 

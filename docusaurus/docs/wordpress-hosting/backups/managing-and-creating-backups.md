@@ -14,8 +14,9 @@ The WordPress Hosting dashboard offers a robust backup system, empowering users 
 **Manual Backup Capability**: For instances where immediate backup is crucial, users have the flexibility to generate backups at any time, providing an additional layer of control and peace of mind.
 **Backup Retention Policy**: The platform offers tiered backup retention periods:
 
-*   **WordPress Hosting Pro Accounts**: Enjoy extended security with backups retained for up to 60 days, ideal for comprehensive project tracking and risk management.
-*   **WordPress Hosting Standard Accounts**: While still offering the essential safeguard, backups are retained for 1 day, emphasizing the importance of proactive management for these users.
+*   **WordPress Hosting Pro Accounts**: Backups are retained for 30 days, plus 2 on-demand downloadable backups.
+*   **WordPress Hosting Premium (Multisite) Accounts**: Backups are retained for 30 days, plus 3 on-demand downloadable backups.
+*   **WordPress Hosting Standard Accounts**: Only the most recent daily backup is available.
 
 ### How does it work?
 
@@ -49,7 +50,8 @@ Yes. All WordPress Hosting Pro and Standard sites are backed up daily, and users
 
 **Backup retention:**
 
-* **WordPress Hosting Pro**: Backups are retained for **up to 90 days**
+* **WordPress Hosting Pro**: Backups are retained for **30 days**, plus **2 on-demand downloadable backups**
+* **WordPress Hosting Premium (Multisite)**: Backups are retained for **30 days**, plus **3 on-demand downloadable backups**
 * **WordPress Hosting Standard**: Only the **most recent daily backup** is available
 
 You can view and restore backups at any time from the **Backups** tab in the WordPress Hosting dashboard.
