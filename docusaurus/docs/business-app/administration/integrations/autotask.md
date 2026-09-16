@@ -4,12 +4,12 @@ sidebar_label: Autotask
 description: Connect Datto Autotask PSA to Business App to keep companies and contacts in sync automatically in both directions.
 sidebar_position: 5
 tags: [integrations, autotask, crm, psa]
-keywords: [Autotask, Datto Autotask, PSA, CRM sync, API user, Integration Code, webhooks, external ID, bidirectional sync]
+keywords: [Autotask, Datto Autotask, PSA, CRM sync, API user, Integration Vendor, Integration Code, webhooks, external ID, bidirectional sync]
 ---
 
 Datto Autotask PSA is a professional services automation platform for managing companies, contacts, and service delivery. Connecting Autotask to Business App keeps your companies and contacts synchronized in real time between both systems, so you do not need to enter data twice or rely on a third-party automation tool.
 
-**Requirements:** An Autotask PSA account and an Autotask API user's username, secret (API key), and Integration Code.
+**Requirements:** An Autotask PSA account and an Autotask API user's username and secret (API key).
 
 ## What this integration does
 
@@ -57,12 +57,8 @@ Without webhooks enabled, the connection appears active but changes made in Auto
 2. Click **Create New**.
 3. Enter a **Name** and **Email**.
 4. Assign the security level you created.
-5. Choose **Integration Vendor** in the **API Tracking Identifier** field, then select your vendor. This is what produces the **Integration Code** for the connection.
-6. Save, then record the **Username**, **Secret**, and **Integration Code**. You will need all three to connect.
-
-:::warning
-The **Integration Code** is required. If you leave it out or enter a code that does not match the API user, the connection fails with `Credential validation failed: Integration Code is invalid.`
-:::
+5. In the **API Tracking Identifier** field, choose **Integration Vendor**, then select **AMP - Automated Marketing Platform**.
+6. Save, then record the **Username** and **Secret**. You will need both to connect.
 
 ## Step 2: Prevent duplicate records
 
@@ -129,7 +125,6 @@ Import companies before contacts so that each contact can be matched to its comp
 3. In the **Connect Autotask** dialog, enter:
    - **User Name**: the username of your Autotask API user
    - **Secret**: the API key associated with that user
-   - **Integration Code**: the code from the API user's **API Tracking Identifier** in Autotask
 4. Review the sync settings. Both are selected by default:
    - **Sync back to Autotask**: reflects changes made in Business App back in Autotask. Recommended.
    - **Set as Primary CRM**: designates Autotask as the primary system for newly created contacts.
@@ -170,7 +165,7 @@ To change whether updates flow back into Autotask, adjust the **Sync back to Aut
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
-| `Credential validation failed: Integration Code is invalid.` | The Integration Code is missing, mistyped, or does not belong to the API user you are connecting with | Open the API user in Autotask, copy the Integration Code from **API Tracking Identifier**, and re-enter it. Confirm it belongs to the same API user as the username and secret |
+| `Credential validation failed: Integration Code is invalid.` | The API user's Integration Vendor is not set to **AMP - Automated Marketing Platform** | In Autotask, open the API User and set **API Tracking Identifier** → **Integration Vendor** → **AMP - Automated Marketing Platform**, then reconnect. If the vendor cannot be changed on the existing user, create a new API user with that vendor selected |
 | 500 error when connecting | Invalid credentials or a disabled API user | Verify the username and secret in Autotask, then re-enter them |
 | Connected, but nothing syncs | Webhooks are not enabled | Enable webhooks on the security level with a limit of at least 5 |
 | Contacts are not appearing | The contact is not linked to a company | Link the contact to a company in Autotask |
@@ -254,13 +249,6 @@ Contacts with matching email addresses are matched during the sync. For the rest
 <summary>Is my data secure?</summary>
 
 Yes. The integration communicates directly between the two APIs, with encrypted transit and no third-party intermediaries.
-
-</details>
-
-<details>
-<summary>Where do I find my Integration Code?</summary>
-
-Open the API user in Autotask under **Admin** → **Resources (Human Resources)** → **API User**. The Integration Code comes from the **API Tracking Identifier** section on that user. Copy it exactly, with no leading or trailing spaces.
 
 </details>
 
