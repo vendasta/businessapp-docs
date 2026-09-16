@@ -81,8 +81,8 @@ Vibe automatically creates checkpoints as you iterate. You can view diffs betwee
 ### Credits
 Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
 
-### Custom Domains (Professional)
-On the Professional plan, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
+### Custom Domains (Standard and Pro)
+On the Standard and Pro plans, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
 ## How It Works
 
@@ -173,4 +173,4 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
 - [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md) — Get the full source code on the Pro plan and run it on any Node.js host
 - [Credits](./credits.md) — Understand how credits work and how to purchase more
-- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Professional)
+- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Standard and Pro)

@@ -17,7 +17,7 @@ Every project you build in Vibe is a standard web application written in open, w
 On the Pro plan you can download the source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe stays the simplest and least expensive option, but it is not the only one.
 
 :::warning
-Downloading a project requires the Pro plan. On the Free and Standard plans, the `Download` button is not available. See [Credits](../credits.md).
+Downloading a project requires the Pro plan. On the Free and Standard plans, `Download` shows a lock and opens an upgrade prompt instead. See [Credits](../credits.md).
 :::
 
 ## Why this matters
@@ -213,7 +213,7 @@ Most businesses publish with Vibe because it's faster and costs less than runnin
 <details>
 <summary>Which plan do I need to download a project?</summary>
 
-The Pro plan. The `Download` button is not available on the Free or Standard plans. See [Credits](../credits.md).
+The Pro plan. On the Free and Standard plans, `Download` shows a lock and opens an upgrade prompt instead. See [Credits](../credits.md).
 
 </details>
 
