@@ -22,12 +22,12 @@ Project settings are the per-project home for configuration in Vibe. Every proje
 
 ## What's included in project settings?
 
-Project settings are organized into five sections:
+Project settings are organized into sections (availability depends on project runtime):
 
-- **General** — the project's basic details.
+- **General** — the project's basic details. For older projects on the **static** runtime, this is also where **Migrate** appears (to move to the server-rendered `node-server` runtime).
 - **Knowledge** — ground the AI in your business profile and knowledge, so generated content reflects your business instead of placeholder text. See [Business Knowledge](./business-knowledge.md).
 - **Connectors** — enable the connectors your app uses: CRM, forms, analytics, web chat, and more. See [Connectors](../connectors/index.md).
-- **SEO** — control how your app presents itself to search engines and AI assistants. See [SEO & indexing](./seo-and-indexing.md).
+- **SEO** — control how your app presents itself to search engines and AI assistants. Shown for projects on the **`node-server`** runtime. See [SEO & indexing](./seo-and-indexing.md).
 - **Code** — work with the project's code.
 
 ## How to use project settings
@@ -53,7 +53,7 @@ In the **Knowledge** section of your project's settings. It grounds the AI in yo
 <details>
 <summary>Where are the search engine and AI assistant indexing controls?</summary>
 
-In the **SEO** section of your project's settings. See [SEO & indexing](./seo-and-indexing.md).
+In the **SEO** section of your project's settings (available when the project runtime is `node-server`). See [SEO & indexing](./seo-and-indexing.md).
 </details>
 
 <details>

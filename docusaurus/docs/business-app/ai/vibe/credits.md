@@ -29,8 +29,10 @@ When your included credits are used up, Vibe opens an Upgrade dialog where you c
 | Plan | Credits | Projects & published apps |
 |------|---------|--------------------------|
 | Free | 250/day, refreshed daily | Up to 1 |
-| Standard | 10,000/month | Up to 5 |
+| Standard | 10,000/month | Up to 10 |
 | Pro | 25,000/month | Unlimited |
+
+Vibe plans include Free, Standard, Pro, and Premium. **Premium** has the same project and connector entitlements as **Pro** (including unlimited projects and the Supabase connector).
 
 ### Free
 
@@ -57,6 +59,8 @@ Ideal for building professional apps with the full feature set. Includes all Sta
 
 - Download project (.zip)
 - Supabase connector
+
+**Premium** includes the same entitlements as Pro.
 
 ## Add-on credits
 

@@ -109,7 +109,7 @@ A status indicator next to **Publish** shows whether your live site matches your
 
 ### Using your own domain
 
-On the Professional plan, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
+On the Standard plan or higher, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
 
 The published site can move to your own domain this way, while the in-editor preview link stays on its default address.
 
@@ -164,7 +164,7 @@ The top-right toolbar provides:
 - **Device preview** — Preview your app at phone, tablet, and desktop sizes, or pop the preview out to a full window.
 - **Fullscreen** — Expand the preview to full screen.
 - **Download** — Download a complete archive of your project: full source, all assets, and the git history of every checkpoint.
-- **Checkpoints** — Browse and restore previous versions of your project.
+- **Checkpoints** — Browse and restore previous versions of your project. Each checkpoint is a git commit.
 
 ## Tips for New Users
 
