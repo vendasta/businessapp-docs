@@ -61,7 +61,7 @@ Without webhooks enabled, the connection appears active but changes made in Auto
 6. Save, then record the **Username**, **Secret**, and **Integration Code**. You will need all three to connect.
 
 :::warning
-The **Integration Code** is required. If you leave it out or enter a code that does not match the API user, the connection fails with `Credential validation failed: Integration Code is invalid.`₹
+The **Integration Code** is required. If you leave it out or enter a code that does not match the API user, the connection fails with `Credential validation failed: Integration Code is invalid.`
 :::
 
 ## Step 2: Prevent duplicate records
