@@ -154,6 +154,8 @@ Use the tabs at the top to switch between views:
 - **Design** — Visual editor for colors and element-level edits. See [Visual Editor](./guides/visual-editor.md).
 - **Code** — File explorer and code editor to view or manually edit source files
 
+On a narrower window, these tabs collapse to icons only. Hover over a tab to see its name.
+
 ![Code mode with the file tree open and App.tsx loaded in the editor](./img/code-view.png)
 
 ### Toolbar
@@ -165,6 +167,8 @@ The top-right toolbar provides:
 - **Fullscreen** — Expand the preview to full screen.
 - **Download** — Download a complete archive of your project: full source, all assets, and the git history of every checkpoint.
 - **Checkpoints** — Browse and restore previous versions of your project.
+
+On a narrower window, toolbar actions that don't fit collapse into a **⋮ More actions** menu so every control stays reachable. `Publish` is the last action to collapse, so it's always visible or just one click away in the menu.
 
 ## Tips for New Users
 
