@@ -34,7 +34,7 @@ The Leads section includes only **organically captured** leads. Sources can incl
 - **Zapier**: Leads from connected apps
 - **Forms**: Form submissions and contact requests on your site
 - **SMS**: Text conversations that generate leads
-- **Other sources**: Any other connected lead source
+- **Other**: Any other connected lead source. When multiple sources are grouped under **Other**, hover over or click that row to see the individual sources it includes
 
 :::important Lead source exclusions
 Leads are **not counted** when they come from:
@@ -66,13 +66,16 @@ That means 59 total leads in the period, with 2 fewer than the previous period.
 
 ### Lead source breakdown
 
-You’ll see counts per source, for example:
+You’ll see the total number of leads per source, for example:
 
 - Phone calls (Google Business Profile): 29 leads
 - AI Voice Receptionist: 20 leads
 - Web Chat: 3 leads
 - Zapier: 2 leads
 - Forms: 2 leads
+- Other: 5 leads
+
+Hover over or click **Other** to see which sources are included in that total.
 
 ### Message activity
 
@@ -171,6 +174,12 @@ The report uses data from the last full period (weekly or monthly). You may need
 <summary>Which lead sources are included? Which are excluded?</summary>
 
 Leads are counted from every source **except** `bulk import` and `crm ui`, which are manual additions. All other sources (web chat, forms, AI receptionist, phone, SMS, Zapier, etc.) are included. To include a manually added contact in analytics, change its source to something other than `bulk import` or `crm ui`.
+</details>
+
+<details>
+<summary>What does the Other row include?</summary>
+
+**Other** groups any connected lead source that doesn’t have its own row. Hover over or click the **Other** row in the lead source breakdown to see which sources it includes.
 </details>
 
 <details>
