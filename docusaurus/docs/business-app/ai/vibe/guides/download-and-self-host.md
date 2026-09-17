@@ -108,13 +108,16 @@ The server bundle exports a standard web request handler rather than starting a 
 import { createServer } from "node:http";
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { Readable } from "node:stream";
+import { pipeline } from "node:stream/promises";
 import path from "node:path";
 
 const PORT = process.env.PORT || 3000;
 // The address the site is reached at, e.g. https://example.com. Set this whenever
 // the app runs behind a proxy: the scheme and host a client sends can be anything.
 const PUBLIC_ORIGIN = process.env.PUBLIC_ORIGIN;
-const CLIENT_DIR = path.resolve("dist/client");
+// Resolved against this file, not the working directory: a service unit that
+// starts the app from elsewhere would otherwise find no static files.
+const CLIENT_DIR = path.resolve(import.meta.dirname, "dist/client");
 const app = await import("./dist/server/server.js");
 const render = app.default.fetch.bind(app.default);
 
@@ -142,7 +145,7 @@ const server = createServer(async (req, res) => {
     const file = path.join(CLIENT_DIR, path.normalize(pathname));
     if (file.startsWith(CLIENT_DIR + path.sep) && existsSync(file) && statSync(file).isFile()) {
       res.writeHead(200, { "content-type": MIME[path.extname(file)] || "application/octet-stream" });
-      createReadStream(file).pipe(res);
+      await pipeline(createReadStream(file), res);
       return;
     }
 
@@ -162,11 +165,14 @@ const server = createServer(async (req, res) => {
     if (cookies.length) res.setHeader("set-cookie", cookies);
 
     res.writeHead(response.status);
-    if (response.body) Readable.fromWeb(response.body).pipe(res);
+    if (response.body) await pipeline(Readable.fromWeb(response.body), res);
     else res.end();
   } catch (error) {
+    // A stream that fails mid-response has already sent headers, so the only
+    // thing left is to close the connection.
     console.error("request failed:", error);
-    if (!res.headersSent) res.writeHead(500, { "content-type": "text/plain" });
+    if (res.headersSent) { res.destroy(); return; }
+    res.writeHead(500, { "content-type": "text/plain" });
     res.end("Internal server error");
   }
 });

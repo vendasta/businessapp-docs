@@ -55,11 +55,20 @@ WARNINGS=0
 # kept in place of fenced lines so reported line numbers still match the file.
 PROSE_DIR=$(mktemp -d)
 trap 'rm -rf "$PROSE_DIR"' EXIT
+# A file with an odd number of fence lines has an unclosed block: blanking from
+# there to the end would silence every later check and still exit 0. Such a file
+# is scanned raw and fails on the spot.
 PROSE_FILES=()
+UNCLOSED_FENCE_FILES=()
 _pi=0
 for _f in "${FILES[@]}"; do
-  awk '/^[[:space:]]*```/ { fence = !fence; print ""; next } { print (fence ? "" : $0) }' \
-    "$_f" > "$PROSE_DIR/$_pi.md"
+  if [ $(grep -cE '^[[:space:]]*```' "$_f") -gt 0 ] && [ $(( $(grep -cE '^[[:space:]]*```' "$_f") % 2 )) -eq 1 ]; then
+    UNCLOSED_FENCE_FILES+=("$_f")
+    cp "$_f" "$PROSE_DIR/$_pi.md"
+  else
+    awk '/^[[:space:]]*```/ { fence = !fence; print ""; next } { print (fence ? "" : $0) }' \
+      "$_f" > "$PROSE_DIR/$_pi.md"
+  fi
   PROSE_FILES+=("$PROSE_DIR/$_pi.md")
   _pi=$((_pi + 1))
 done
@@ -93,6 +102,28 @@ run_check() {
   local results
   results=$(unprose "$(printf '%s\n' "${PROSE_FILES[@]}" \
     | xargs grep -nE "$pattern" 2>/dev/null || true)")
+  if [ -n "$results" ]; then
+    if [ "$severity" = "error" ]; then
+      red "  FAIL — $label"
+      echo "$results" | sed 's/^/    /'
+      ERRORS=$((ERRORS + $(echo "$results" | wc -l)))
+    else
+      yellow "  WARN — $label"
+      echo "$results" | sed 's/^/    /'
+      WARNINGS=$((WARNINGS + $(echo "$results" | wc -l)))
+    fi
+  else
+    green "  PASS — $label"
+  fi
+}
+
+# Gray-label checks read the files unchanged: a brand name inside a sample
+# command is text a reader copies, so a fenced block must not hide it.
+run_check_icase_raw() {
+  local label="$1" severity="$2" pattern="$3"
+  local results
+  results=$(printf '%s\n' "${FILES[@]}" \
+    | xargs grep -niE "$pattern" 2>/dev/null || true)
   if [ -n "$results" ]; then
     if [ "$severity" = "error" ]; then
       red "  FAIL — $label"
@@ -329,17 +360,22 @@ check_frontmatter_fields() {
 # ── CRITICAL: Gray-label ─────────────────────────────────────────────────────
 echo ""
 bold "[ CRITICAL ] Gray-label / branding"
-run_check_icase \
+if [ ${#UNCLOSED_FENCE_FILES[@]} -gt 0 ]; then
+  red "  FAIL — Unclosed code fence (scanned raw; fix the fence)"
+  printf '    %s\n' "${UNCLOSED_FENCE_FILES[@]}"
+  ERRORS=$((ERRORS + ${#UNCLOSED_FENCE_FILES[@]}))
+fi
+run_check_icase_raw \
   "Vendasta mentions" \
   "error" \
   "Vendasta"
 
-run_check_icase \
+run_check_icase_raw \
   "Partner Center references" \
   "error" \
   "Partner Center"
 
-run_check_icase \
+run_check_icase_raw \
   "Partner / reseller / agency terminology" \
   "error" \
   "\b(partner|reseller|agency|agencies|white.?label)\b"
