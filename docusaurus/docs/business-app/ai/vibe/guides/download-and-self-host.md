@@ -95,7 +95,7 @@ This produces a `dist/` folder with two parts:
 - `dist/client`: the static files a browser downloads (JavaScript, CSS, images)
 - `dist/server`: the server bundle that renders each page as complete HTML
 
-`dist/` does not need `node_modules`, so along with the server file in the next section it's all you copy to a server.
+`dist/` does not need `node_modules`: the build bundles what the app uses. Along with the server file in the next section, it is all you copy to a server. Verified by copying `dist/` and `server.mjs` alone into an empty folder and starting them there.
 
 ## Host it yourself
 
@@ -115,16 +115,27 @@ const PORT = process.env.PORT || 3000;
 // The address the site is reached at, e.g. https://example.com. Set this whenever
 // the app runs behind a proxy: the scheme and host a client sends can be anything.
 const PUBLIC_ORIGIN = process.env.PUBLIC_ORIGIN;
+const MAX_BODY_BYTES = 10 * 1024 * 1024;
+const RENDER_TIMEOUT_MS = 20000;
 // Resolved against this file, not the working directory: a service unit that
 // starts the app from elsewhere would otherwise find no static files.
 const CLIENT_DIR = path.resolve(import.meta.dirname, "dist/client");
-const app = await import("./dist/server/server.js");
-const render = app.default.fetch.bind(app.default);
+let render;
+try {
+  const app = await import("./dist/server/server.js");
+  render = app.default.fetch.bind(app.default);
+} catch (error) {
+  // Without this the process exits in about 65ms, and a restart policy turns
+  // that into a crash loop with nothing in the log that names the cause.
+  console.error("cannot load ./dist/server/server.js — run `npm run build` and copy dist/ next to this file");
+  throw error;
+}
 
 const MIME = {
   ".js": "text/javascript", ".css": "text/css", ".svg": "image/svg+xml",
   ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp",
   ".ico": "image/x-icon", ".woff2": "font/woff2", ".json": "application/json",
+  ".gif": "image/gif", ".avif": "image/avif",
   ".html": "text/html; charset=utf-8", ".txt": "text/plain; charset=utf-8",
   ".xml": "application/xml", ".webmanifest": "application/manifest+json",
 };
@@ -144,18 +155,44 @@ const server = createServer(async (req, res) => {
 
     const file = path.join(CLIENT_DIR, path.normalize(pathname));
     if (file.startsWith(CLIENT_DIR + path.sep) && existsSync(file) && statSync(file).isFile()) {
-      res.writeHead(200, { "content-type": MIME[path.extname(file)] || "application/octet-stream" });
+      // Vite puts a content hash in each asset name, so a long max-age is safe:
+      // a changed file arrives under a different name.
+      res.writeHead(200, {
+        "content-type": MIME[path.extname(file)] || "application/octet-stream",
+        "content-length": statSync(file).size,
+        "cache-control": "public, max-age=31536000, immutable",
+      });
       await pipeline(createReadStream(file), res);
       return;
     }
 
-    // Without PUBLIC_ORIGIN the app falls back to the request's own host, which is
-    // fine locally and produces http:// links once a proxy terminates HTTPS.
+    if (Number(req.headers["content-length"]) > MAX_BODY_BYTES) {
+      res.writeHead(413, { "content-type": "text/plain" });
+      res.end("Payload too large");
+      return;
+    }
+
+    // Without PUBLIC_ORIGIN the app falls back to the request's own host, which
+    // is fine locally and wrong the moment the server is reachable publicly.
     const origin = PUBLIC_ORIGIN || `http://${(req.headers.host || "localhost").split(",")[0].trim()}`;
+    // The forwarding headers are dropped: whatever set them, a client can set
+    // them too, and PUBLIC_ORIGIN is the only trustworthy answer.
+    const headers = { ...req.headers };
+    delete headers["x-forwarded-proto"];
+    delete headers["x-forwarded-host"];
     const body = ["GET", "HEAD"].includes(req.method) ? undefined : Readable.toWeb(req);
-    const response = await render(new Request(`${origin}${req.url}`, {
-      method: req.method, headers: req.headers, body, duplex: "half",
-    }));
+    // A render that never finishes would hold the connection open, and would
+    // also keep the process alive through a deploy.
+    const abort = new AbortController();
+    const renderTimer = setTimeout(() => abort.abort(), RENDER_TIMEOUT_MS);
+    let response;
+    try {
+      response = await render(new Request(`${origin}${req.url}`, {
+        method: req.method, headers, body, duplex: "half", signal: abort.signal,
+      }));
+    } finally {
+      clearTimeout(renderTimer);
+    }
 
     // Set-Cookie repeats, and collapsing it to a single value breaks sign-in.
     for (const [key, value] of response.headers) {
@@ -177,8 +214,12 @@ const server = createServer(async (req, res) => {
   }
 });
 
-// Container hosts send SIGTERM on every deploy; without this, in-flight requests are cut.
-process.on("SIGTERM", () => server.close(() => process.exit(0)));
+// Container hosts send SIGTERM on every deploy; without this, in-flight requests
+// are cut. The timer is the backstop for a request that never completes.
+process.on("SIGTERM", () => {
+  server.close(() => process.exit(0));
+  setTimeout(() => process.exit(1), 10000).unref();
+});
 
 server.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
 ```
@@ -191,10 +232,11 @@ node server.mjs
 
 The app is served at `http://localhost:3000`, or at whatever port you set in the `PORT` environment variable.
 
-Two things to set up on a real server:
+Three things to set up on a real server:
 
-- **HTTPS**: put the app behind a reverse proxy or load balancer that terminates HTTPS, and set `PUBLIC_ORIGIN` to the address the site is reached at, such as `https://example.com`. Your pages then produce `https://` links. Most managed Node hosting services terminate HTTPS for you.
-- **Restarts**: run the process under a process manager or a container restart policy, so the site comes back if the process stops or the machine reboots. `node server.mjs` on its own does not restart.
+- **`PUBLIC_ORIGIN`**: set it to the address the site is reached at, such as `https://example.com`. This is a security setting, not a cosmetic one. Without it the server believes whatever address the request claims, and anyone can claim any address. Always set it in production.
+- **HTTPS**: put the app behind a reverse proxy or load balancer that terminates HTTPS. Most managed Node hosting services do this for you.
+- **Restarts**: run the process under a process manager or a container restart policy, so the site comes back if the process stops or the machine reboots. `node server.mjs` on its own does not restart. Use a restart backoff, so a build that is missing from the server fails visibly instead of looping.
 
 Most Node.js hosting services need only the build command (`npm run build`), the start command (`node server.mjs`), and `PUBLIC_ORIGIN` set to your address.
 
@@ -235,7 +277,7 @@ No. Projects are built on React, TanStack Start, Vite, and Tailwind CSS, open-so
 <details>
 <summary>Do I need to keep my subscription to keep the code I downloaded?</summary>
 
-A downloaded archive runs on its own. Download a copy before deactivating a subscription, because projects are removed from Business App when a base subscription is deactivated. Note that generated images are served from a hosted URL rather than stored in the archive, so save any you want to keep into the project's `public/` folder first. See [Credits](../credits.md).
+A downloaded archive runs on its own. On the Pro plan, download a copy before deactivating a subscription, because deactivating removes your projects from Business App. Generated images are served from a hosted URL rather than stored in the archive, so save any you want to keep into the project's `public/` folder first. See [Credits](../credits.md).
 
 </details>
 

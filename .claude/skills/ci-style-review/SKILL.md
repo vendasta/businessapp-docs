@@ -11,7 +11,7 @@ Machine-readable output format for automated style review in CI pipelines. This 
 
 All style rules, criteria, severity definitions, and examples are defined in the interactive skill:
 
-**Read `.claude/skills/style-review/SKILL.md` before proceeding.** Do not skip this step. That file is the single source of truth for what constitutes a violation.
+**Read `.claude/skills/style-review/SKILL.md` before proceeding.** Do not skip this step. That file is the single source of truth for what constitutes a violation, including which rules apply inside fenced code samples.
 
 ## Workflow
 
