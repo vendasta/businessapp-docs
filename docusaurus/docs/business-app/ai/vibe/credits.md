@@ -55,7 +55,7 @@ Ideal for shipping apps with full business context. Includes all Free features, 
 
 Ideal for building professional apps with the full feature set. Includes all Standard features, plus:
 
-- Download project (.zip)
+- Download project (`.vibe.tar.gz`)
 - Supabase connector
 
 ## Add-on credits
@@ -131,5 +131,5 @@ Yes. Click the **Stop** button in the chat input while a generation is running. 
 <details>
 <summary>What happens to my unused credits if I deactivate my base subscription?</summary>
 
-Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. Download any project backups before you deactivate.
+Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. On the Pro plan, download any project backups before you deactivate. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
 </details>
