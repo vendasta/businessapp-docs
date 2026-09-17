@@ -12,9 +12,9 @@ unlisted: false
 
 ## What this covers
 
-Every project you build in Vibe is a standard web application written in open, widely-used frameworks — React, TanStack Start, Vite, and Tailwind CSS. None of it is a proprietary format, and none of it is locked to Business App.
+Every project you build in Vibe is a standard web application written in open, widely-used frameworks: React, TanStack Start, Vite, and Tailwind CSS. None of it is a proprietary format, and none of it is locked to Business App.
 
-On the Pro plan you can download the source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe stays the simplest and least expensive option, but it is not the only one.
+On the Pro plan you can download the source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe keeps the servers, certificates, and connectors managed for you; hosting it elsewhere puts all of that in your hands.
 
 :::warning
 Downloading a project requires the Pro plan. On the Free and Standard plans, `Download` shows a lock and opens an upgrade prompt instead. See [Credits](../credits.md).
@@ -33,7 +33,7 @@ Click `Download` in the editor toolbar to get a `.vibe.tar.gz` archive named aft
 
 | Contents | Description |
 | --- | --- |
-| Source code | All application code under `src/` — pages, components, styling, and server functions |
+| Source code | All application code under `src/`: pages, components, styling, and server functions |
 | Configuration | `package.json`, `vite.config.ts`, `tailwind.config.ts`, and the TypeScript config |
 | Checkpoint history | A `.git` folder holding a commit for every checkpoint in the project |
 | Project metadata | A `.vibe-meta/` folder describing the project name, template, and connectors |
@@ -52,11 +52,11 @@ The checkpoint history in the `.git` folder is a record of earlier versions of y
 
 The pages, layout, styling, form interfaces, and any logic Vibe wrote for you are all in the download and run anywhere.
 
-Features backed by Business App services are wired to Business App and stop working once the app is hosted elsewhere. These are the connector-based features: Forms submissions routing to your CRM, Analytics data, Reviews content, Webchat, CRM records, and single sign-on. The screens still render — a developer replaces the data source behind them with whatever you want to use instead. See [Connectors](../connectors/index.md).
+Features backed by Business App services are wired to Business App and stop working once the app is hosted elsewhere. These are the connector-based features: Forms submissions routing to your CRM, Analytics data, Reviews content, Webchat, CRM records, and single sign-on. The screens still render, and a developer replaces the data source behind them with whatever you want to use instead. See [Connectors](../connectors/index.md).
 
 ## Run a downloaded project on your computer
 
-These steps need a terminal and [Node.js](https://nodejs.org) version 22 or newer. If you aren't comfortable with a command line, hand this section to a developer — it takes them a few minutes.
+These steps need a terminal and [Node.js](https://nodejs.org) version 22 or newer. If you aren't comfortable with a command line, hand this section to a developer. It takes them a few minutes.
 
 1. Extract the archive. The file name below is an example; use the name of the file in your Downloads folder. The archive has no folder of its own inside it, so extract it into one you create:
 
@@ -92,14 +92,14 @@ npm run build
 
 This produces a `dist/` folder with two parts:
 
-- `dist/client` — the static files a browser downloads (JavaScript, CSS, images)
-- `dist/server` — the server bundle that renders each page as complete HTML
+- `dist/client`: the static files a browser downloads (JavaScript, CSS, images)
+- `dist/server`: the server bundle that renders each page as complete HTML
 
 `dist/` does not need `node_modules`, so along with the server file in the next section it's all you copy to a server.
 
 ## Host it yourself
 
-Because pages are rendered on the server, the app needs a host that runs Node.js — a virtual server, a container platform, or any managed Node hosting service. Static-only hosting is not enough on its own.
+Because pages are rendered on the server, the app needs a host that runs Node.js: a virtual server, a container platform, or any managed Node hosting service. Static-only hosting is not enough on its own.
 
 The server bundle exports a standard web request handler rather than starting a server of its own. Save this file as `server.mjs` next to the `dist/` folder to serve the app:
 
@@ -111,6 +111,9 @@ import { Readable } from "node:stream";
 import path from "node:path";
 
 const PORT = process.env.PORT || 3000;
+// The address the site is reached at, e.g. https://example.com. Set this whenever
+// the app runs behind a proxy: the scheme and host a client sends can be anything.
+const PUBLIC_ORIGIN = process.env.PUBLIC_ORIGIN;
 const CLIENT_DIR = path.resolve("dist/client");
 const app = await import("./dist/server/server.js");
 const render = app.default.fetch.bind(app.default);
@@ -143,12 +146,11 @@ const server = createServer(async (req, res) => {
       return;
     }
 
-    // Behind a proxy the original scheme and host survive only in these headers.
-    // Without them the app renders http:// links on an https:// site.
-    const proto = (req.headers["x-forwarded-proto"] || "http").split(",")[0].trim();
-    const host = (req.headers["x-forwarded-host"] || req.headers.host || "localhost").split(",")[0].trim();
+    // Without PUBLIC_ORIGIN the app falls back to the request's own host, which is
+    // fine locally and produces http:// links once a proxy terminates HTTPS.
+    const origin = PUBLIC_ORIGIN || `http://${(req.headers.host || "localhost").split(",")[0].trim()}`;
     const body = ["GET", "HEAD"].includes(req.method) ? undefined : Readable.toWeb(req);
-    const response = await render(new Request(`${proto}://${host}${req.url}`, {
+    const response = await render(new Request(`${origin}${req.url}`, {
       method: req.method, headers: req.headers, body, duplex: "half",
     }));
 
@@ -185,10 +187,10 @@ The app is served at `http://localhost:3000`, or at whatever port you set in the
 
 Two things to set up on a real server:
 
-- **HTTPS**: put the app behind a reverse proxy or load balancer that terminates HTTPS and sets the `X-Forwarded-Proto` and `X-Forwarded-Host` headers. The server file reads them so your pages produce `https://` links. Most managed Node hosting services do this for you.
+- **HTTPS**: put the app behind a reverse proxy or load balancer that terminates HTTPS, and set `PUBLIC_ORIGIN` to the address the site is reached at, such as `https://example.com`. Your pages then produce `https://` links. Most managed Node hosting services terminate HTTPS for you.
 - **Restarts**: run the process under a process manager or a container restart policy, so the site comes back if the process stops or the machine reboots. `node server.mjs` on its own does not restart.
 
-Most Node.js hosting services need only the build command (`npm run build`) and the start command (`node server.mjs`).
+Most Node.js hosting services need only the build command (`npm run build`), the start command (`node server.mjs`), and `PUBLIC_ORIGIN` set to your address.
 
 ## What you take on by hosting it yourself
 
@@ -220,7 +222,7 @@ The Pro plan. On the Free and Standard plans, `Download` shows a lock and opens 
 <details>
 <summary>Is the code Vibe generates proprietary?</summary>
 
-No. Projects are built on React, TanStack Start, Vite, and Tailwind CSS — open-source frameworks used across the industry. Any developer familiar with modern web development can work on the code.
+No. Projects are built on React, TanStack Start, Vite, and Tailwind CSS, open-source frameworks used across the industry. Any developer familiar with modern web development can work on the code.
 
 </details>
 
@@ -248,7 +250,7 @@ Changes made outside Vibe do not sync back into your Vibe project automatically.
 <details>
 <summary>Why doesn't my contact form work after I move the site?</summary>
 
-Forms, Reviews, Analytics, Webchat, CRM, and single sign-on are powered by Business App services and only work while your app is hosted with Vibe. The form UI still renders once you move the site — a developer connects it to whichever service you want to use instead.
+Forms, Reviews, Analytics, Webchat, CRM, and single sign-on are powered by Business App services and only work while your app is hosted with Vibe. The form UI still renders once you move the site, and a developer connects it to whichever service you want to use instead.
 
 </details>
 

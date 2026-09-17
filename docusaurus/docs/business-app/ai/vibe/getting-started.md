@@ -109,7 +109,7 @@ A status indicator next to **Publish** shows whether your live site matches your
 
 ### Using your own domain
 
-On the Professional plan, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
+On the Standard and Pro plans, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
 
 The published site can move to your own domain this way, while the in-editor preview link stays on its default address.
 

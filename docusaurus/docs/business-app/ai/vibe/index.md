@@ -146,7 +146,7 @@ Yes. Vibe apps are served as fully rendered HTML that search engines and AI assi
 <details>
 <summary>Can I download my project and host it somewhere else?</summary>
 
-Yes, on the Pro plan. Click `Download` in the toolbar to get the complete source code, assets, and checkpoint history. Projects are built on open frameworks — React, TanStack Start, Vite, and Tailwind CSS — so they run on any host that supports Node.js. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
+Yes, on the Pro plan. Click `Download` in the toolbar to get the project's source code and its full checkpoint history. Images Vibe generated for you stay on their hosted URLs rather than travelling in the archive, and the guide below covers how to bring them along. Projects are built on open frameworks — React, TanStack Start, Vite, and Tailwind CSS — so they run on any host that supports Node.js. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
 
 </details>
 
