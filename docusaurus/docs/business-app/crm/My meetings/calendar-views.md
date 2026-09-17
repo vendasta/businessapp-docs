@@ -88,6 +88,12 @@ Blocked slots appear in Column, Day, and Week views and respect your sidebar fil
 
 ![Blocked slot from a team member's connected external calendar](../img/my-meetings/calendar-blocked-slot.png)
 
+### Show or hide blocked time
+
+Turn **Show blocked time slots** on or off in **Meeting settings** → **Calendar settings**. It's on by default, and it's a personal setting — each person's toggle controls only what they see. This is visual only: your bookable availability keeps excluding connected-calendar busy time whether the toggle is on or off.
+
+In Column View, a team member's blocked time shows or hides based on your own toggle setting, not theirs.
+
 ## Good to know
 
 - **Inactive team members stay visible.** Deactivated staff appear in a separate group in the sidebar so you can still review historical bookings. New bookings cannot be assigned to inactive members, and the calendar flags any existing bookings that need to be reassigned.
@@ -132,6 +138,12 @@ All linked services in that booking move by the same time offset — their relat
 Blocked slots represent busy time from a team member's connected Google or Outlook calendar. Both busy and out-of-office statuses appear as blocked, non-bookable time. The actual event title is never shown, so personal calendar details stay private.
 
 Blocked slots appear in Column, Day, and Week views and respect your sidebar filters.
+</details>
+
+<details>
+<summary>Can I hide blocked time slots?</summary>
+
+Yes. Turn off **Show blocked time slots** in **Meeting settings** → **Calendar settings**. This only changes what you see — it doesn't affect anyone else's view or your bookable availability.
 </details>
 
 <details>
