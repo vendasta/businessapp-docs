@@ -4,7 +4,7 @@ sidebar_label: Calendar Views
 description: View your team's schedule, filter by team member or service, and book, reschedule, or cancel meetings directly from the My Meetings calendar.
 sidebar_position: 5
 tags: [meetings, crm, team, calendar]
-keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots]
+keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, timezone]
 ---
 
 # Calendar Views
@@ -17,6 +17,12 @@ The My Meetings calendar gives you a live, interactive view of your business's s
 2. The calendar opens in **Column View** by default.
 3. Use the view switcher in the top toolbar to switch between views.
 4. Navigate dates with the arrow controls, or click any date on the mini calendar in the sidebar to jump directly.
+
+## Timezone indicator
+
+A timezone label is pinned in the top-left corner of the calendar timeline, above the hour column, in Column, Day, Week, and List views. It stays in place while you scroll the timeline vertically.
+
+The label shows the timezone set in your `Meeting settings`. Click the label to change the timezone the calendar displays meeting times in. Updating your timezone in `Meeting settings` updates the label and the calendar to match.
 
 ## Choosing a view
 
@@ -144,6 +150,12 @@ Yes. Deactivated staff appear in a separate group in the sidebar so you can revi
 <summary>Does the calendar account for setup or teardown time between bookings?</summary>
 
 Yes. If a service type is configured with setup or teardown buffer minutes, the calendar accounts for that buffer time when checking whether a drop destination is available.
+</details>
+
+<details>
+<summary>Which timezone does the calendar show?</summary>
+
+The timezone set in your `Meeting settings`. A label pinned in the top-left corner of the timeline shows the current timezone in Column, Day, Week, and List views. Click the label to change the timezone the calendar displays meeting times in.
 </details>
 
 ## Related articles
