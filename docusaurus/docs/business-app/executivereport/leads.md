@@ -34,7 +34,7 @@ The Leads section includes only **organically captured** leads. Sources can incl
 - **Zapier**: Leads from connected apps
 - **Forms**: Form submissions and contact requests on your site
 - **SMS**: Text conversations that generate leads
-- **Other**: Any other connected lead source. When multiple sources are grouped under **Other**, hover over or click that row to see the individual sources it includes
+- **Other**: Sources that don't fall into the top 5 sources by total for the period. Hover over or click that row to see the individual sources it includes
 
 :::important Lead source exclusions
 Leads are **not counted** when they come from:
@@ -179,7 +179,7 @@ Leads are counted from every source **except** `bulk import` and `crm ui`, which
 <details>
 <summary>What does the Other row include?</summary>
 
-**Other** groups any connected lead source that doesn’t have its own row. Hover over or click the **Other** row in the lead source breakdown to see which sources it includes.
+**Other** groups the sources that don’t fall into the top 5 sources by total for the period. Hover over or click the **Other** row in the lead source breakdown to see which sources it includes.
 </details>
 
 <details>
