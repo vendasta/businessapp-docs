@@ -58,6 +58,20 @@ Because the connector is two-way, your Vibe app isn't limited to displaying reco
 
 Forms built by Vibe map to real CRM fields, so a lead captured on your site lands in CRM exactly where your sales team works. See the [Forms connector](./forms.mdx) for how to build and edit forms in your Vibe app.
 
+## Frequently Asked Questions
+
+<details>
+<summary>Can my Vibe app automatically create CRM custom fields that do not exist yet?</summary>
+
+No. The CRM connector can use custom fields that already exist, but it cannot create new custom fields.
+</details>
+
+<details>
+<summary>How can data from Vibe trigger Campaigns Pro automations?</summary>
+
+Log events as CRM activities or use CRM forms so tags can drive automations. If your data lives in Supabase, have Vibe call a Supabase backend function that invokes an automation webhook.
+</details>
+
 ## Next steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them

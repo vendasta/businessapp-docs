@@ -89,6 +89,12 @@ Open the template's detail view. It shows an image carousel, a description, the 
 Open the **My Projects** tab. Use search to find a project by name, or use project tags to organize and filter your builds. Each card shows a live preview thumbnail so you can spot the right project at a glance.
 </details>
 
+<details>
+<summary>Why can't I find my Vibe projects even though their published links still work?</summary>
+
+The project list may only show the first 50 projects until you load more. Use `Load more` (or equivalent pagination) to see the rest. Missing projects are often still there, not archived.
+</details>
+
 ## Next Steps
 
 - [Getting Started](../getting-started.md) — Walk through a full generation end to end
