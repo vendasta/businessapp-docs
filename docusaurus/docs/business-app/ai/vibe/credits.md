@@ -20,7 +20,7 @@ A credit is used each time you send a message to Vibe. How many credits a messag
 | Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 | Clone a webpage | "Clone the look and feel of http://sample.com and build a homepage for my business" | >1,000 |
 
-Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under **Administration > AI Settings > Credits**. This section appears only when you have an active product that uses AI credits.
+Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under **Administration > AI Settings > Credits**. This section appears only when you have an active product that uses AI credits. Your credit usage report also identifies which Vibe project each entry belongs to, so you can see where credits are being spent if you manage more than one project.
 
 When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App, with no support ticket or wait time required. The dialog shows the image and description for each available plan or add-on so you know what you're purchasing before you check out.
 
@@ -57,7 +57,7 @@ Ideal for shipping apps with full business context. Includes all Free features, 
 
 Ideal for building professional apps with the full feature set. Includes all Standard features, plus:
 
-- Download project (.zip)
+- Download project (`.vibe.tar.gz`)
 - Supabase connector
 
 **Premium** includes the same entitlements as Pro.
@@ -135,5 +135,11 @@ Yes. Click the **Stop** button in the chat input while a generation is running. 
 <details>
 <summary>What happens to my unused credits if I deactivate my base subscription?</summary>
 
-Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. Download any project backups before you deactivate.
+Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. On the Pro plan, download any project backups before you deactivate. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
+</details>
+
+<details>
+<summary>Why is the one-time Vibe credit top-up greyed out after I used my credits?</summary>
+
+A new one-time top-up becomes available after the previous top-up unit is fully consumed and deactivated. If a unit is still active, schedule it for immediate deactivation before adding another, or wait until the first top-up finishes and deactivates.
 </details>

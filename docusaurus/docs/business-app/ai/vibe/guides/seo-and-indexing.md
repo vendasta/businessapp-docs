@@ -98,8 +98,20 @@ No. Crawlers and visitors receive identical content — the same fully rendered 
 Use **Migrate** on the **General** settings section (for `runtime === static` projects), or ask Vibe to upgrade. It converts the project to the server-rendered (`node-server`) runtime for you, with pages, styling, and behavior intact — no rebuild required.
 </details>
 
+<details>
+<summary>Will my Vibe website or landing page be indexed by search engines?</summary>
+
+Yes, in typical setups search engines can index Vibe sites. For best results, instruct Vibe to run an SEO pass on the project.
+</details>
+
+<details>
+<summary>How do I stop crawlers from indexing an internal Vibe dashboard?</summary>
+
+Turn off the SEO-section indexing toggles for that project. You can also publish a `robots.txt` that disallows all crawlers when robots.txt controls are available.
+</details>
+
 ## Next Steps
 
 - [Project Settings](./project-settings.md) — Configure your project's SEO, knowledge, connectors, and more
 - [Getting Started](../getting-started.md) — Walk through a full generation end to end
-- [Custom Domains](./custom-domain.mdx) — Publish your app to a domain you own (Standard+)
+- [Custom Domains](./custom-domain.mdx) — Publish your app to a domain you own (Standard and Pro)
