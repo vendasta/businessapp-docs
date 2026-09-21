@@ -96,6 +96,18 @@ No. Crawlers and visitors receive identical content — the same fully rendered 
 Ask Vibe to upgrade your project. It converts the project to the server-rendered runtime for you, with pages, styling, and behavior intact — no rebuild required.
 </details>
 
+<details>
+<summary>Will my Vibe website or landing page be indexed by search engines?</summary>
+
+Yes, in typical setups search engines can index Vibe sites. For best results, instruct Vibe to run an SEO pass on the project.
+</details>
+
+<details>
+<summary>How do I stop crawlers from indexing an internal Vibe dashboard?</summary>
+
+Turn off the SEO-section indexing toggles for that project. You can also publish a `robots.txt` that disallows all crawlers when robots.txt controls are available.
+</details>
+
 ## Next Steps
 
 - [Project Settings](./project-settings.md) — Configure your project's SEO, knowledge, connectors, and more

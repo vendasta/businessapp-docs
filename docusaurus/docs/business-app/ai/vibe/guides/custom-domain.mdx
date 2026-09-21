@@ -41,3 +41,9 @@ To remove a custom domain, go to **Publish** and remove it with one click. Your 
 
 DNS propagation can take up to 48 hours depending on your registrar. Make sure the CNAME or A records match exactly what Vibe displayed. If you entered the wrong records, remove the domain and re-add it to get fresh verification instructions.
 </details>
+
+<details>
+<summary>My custom domain has DNS set up but HTTPS certificate provisioning is stuck. What should I do?</summary>
+
+Remove the custom domain in Vibe, remove the custom DNS records you added for Vibe, then add the custom domain again. This often clears a certificate challenge left over from an older project that used the same domain.
+</details>

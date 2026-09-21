@@ -133,3 +133,9 @@ Yes. Click the **Stop** button in the chat input while a generation is running. 
 
 Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. On the Pro plan, download any project backups before you deactivate. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
 </details>
+
+<details>
+<summary>Why is the one-time Vibe credit top-up greyed out after I used my credits?</summary>
+
+A new one-time top-up becomes available after the previous top-up unit is fully consumed and deactivated. If a unit is still active, schedule it for immediate deactivation before adding another, or wait until the first top-up finishes and deactivates.
+</details>

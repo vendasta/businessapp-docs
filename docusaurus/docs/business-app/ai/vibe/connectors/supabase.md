@@ -63,3 +63,23 @@ Generating a Personal Access Token takes you to your Supabase account's Access T
 ## Secrets and API keys
 
 When your Vibe app needs a Supabase API key, Vibe shows you exactly which secret to add and links directly to the right page in your Supabase dashboard. Your keys go into your project's environment, never into the chat. If a required key is missing, your app surfaces a clear error message instead of failing silently.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Why does Vibe say Supabase is disconnected when it looks connected?</summary>
+
+Your Vibe project may be calling a different Supabase project than the one connected on the account. Confirm both point to the same project. A paused or replaced Supabase project can also cause this mismatch.
+</details>
+
+<details>
+<summary>Why does chat say Supabase is not connected even though the Supabase capability is enabled?</summary>
+
+Enabling the skill is not enough if the account has no credentials. Go to `Administration` → `Integrations` and add a Supabase connection for the account.
+</details>
+
+<details>
+<summary>Can several Vibe apps share one Supabase project? Can I host an app on a URL path like `/seo-report/`?</summary>
+
+Multiple Vibe projects can share one Supabase project, but do not share one project across different companies. Vibe does not host apps on URL paths. Use a subdomain instead, for example `seo-report.yourdomain.com`.
+</details>
