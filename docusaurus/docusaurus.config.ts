@@ -11,7 +11,6 @@ const legacyBusinessAppSections = [
   'crm',
   'executivereport',
   'store',
-  'getting-started-with-business-app',
 ];
 
 const config: Config = {
@@ -125,6 +124,19 @@ const config: Config = {
           {
             from: '/wordpress-hosting/templates/hide-vendastas-pre-built-templates-from-clients',
             to: '/wordpress-hosting/templates/hide-pre-built-templates',
+          },
+          // Getting Started restructured into a folder (business-app root -> getting-started/)
+          {
+            from: '/business-app/getting-started-with-business-app',
+            to: '/business-app/getting-started/getting-started-with-business-app',
+          },
+          {
+            from: '/getting-started-with-business-app',
+            to: '/business-app/getting-started/getting-started-with-business-app',
+          },
+          {
+            from: '/docs/getting-started-with-business-app',
+            to: '/business-app/getting-started/getting-started-with-business-app',
           },
           // Email Configuration moved under Email category (single Email section in sidebar)
           {
@@ -275,7 +287,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting started',
-              to: '/business-app/getting-started-with-business-app',
+              to: '/business-app/getting-started/getting-started-with-business-app',
             },
           ],
         },
