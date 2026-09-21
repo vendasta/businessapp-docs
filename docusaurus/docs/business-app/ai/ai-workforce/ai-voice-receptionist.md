@@ -392,6 +392,15 @@ This allows your team to review interactions, follow up with callers, and mainta
 ### Troubleshooting
 
 <details>
+<summary>I tested my AI Voice Receptionist but never received the text message</summary>
+
+Text messages are sent to the phone number captured during the call. If you place the test call from a conferencing tool, a softphone, or any service without an SMS-capable number, there is no number for the AI to text and no message arrives, even though the call itself behaves normally.
+
+Test text messages by calling from a mobile phone that can receive SMS.
+
+</details>
+
+<details>
 <summary>Why isn't my call transfer working?</summary>
 
 Call transfer failures are most commonly caused by an incorrectly formatted destination number. All numbers must be in international format: a `+` sign followed by the country code and phone number, with no spaces or special characters (e.g., `+12025551234` for a US number).

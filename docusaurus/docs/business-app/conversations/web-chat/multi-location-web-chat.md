@@ -12,7 +12,7 @@ This widget operates at the brand level and is separate from each individual loc
 
 The multi-location widget is configured from your group's setup page in Multi-Location Business App.
 
-During setup, a table lists each of your locations alongside its **AI Employee** — this shows which AI Receptionist handles chats for that location. Review this column to confirm the correct AI Receptionist is assigned to each location before going live.
+During setup, a table lists each of your locations alongside its **AI Employee**: this shows which AI Receptionist handles chats for that location. Review this column to confirm the correct AI Receptionist is assigned to each location before going live.
 
 ## Get the embed code
 

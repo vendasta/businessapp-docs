@@ -29,14 +29,14 @@ After connecting this capability to an AI Employee, fill in the following fields
 
 | Variable                      | Description                                          |       Example                              |
 |-------------------------------|------------------------------------------------------|--------------------------------------------|
-| **WooCommerceStoreUrl**       | Your WooCommerce store URL                           |    https://example.ca/                     |
-| **WooCommerceProductsApiUrl** | Direct URL to your WooCommerce products API endpoint |  https://example.ca/wp-json/wc/v3/products |
-| **WooCommerceBasicAuth**      | Your encoded API credentials for authentication      | Y29uc3VtZXJfa2V5OmNvbnN1bWVyX3NlY3JldA     |
+| `WooCommerceStoreUrl`       | Your WooCommerce store URL                           |    https://example.ca/                     |
+| `WooCommerceProductsApiUrl` | Direct URL to your WooCommerce products API endpoint |  https://example.ca/wp-json/wc/v3/products |
+| `WooCommerceBasicAuth`      | Your encoded API credentials for authentication      | Y29uc3VtZXJfa2V5OmNvbnN1bWVyX3NlY3JldA     |
 
 
 ### Getting your WooCommerce API credentials
 
-The **WooCommerceBasicAuth** field requires an authentication key that allows your AI Employee to securely connect to your WooCommerce store.
+The `WooCommerceBasicAuth` field requires an authentication key that allows your AI Employee to securely connect to your WooCommerce store.
 
 #### To generate this key:
 
@@ -47,13 +47,13 @@ The **WooCommerceBasicAuth** field requires an authentication key that allows yo
 5. Generate and copy your credentials.
 
 :::warning
-Ensure permissions are set to **Read** when creating your API key. If set to Write or Read/Write, users could potentially update or change product information or pricing on your WooCommerce store.
+Ensure permissions are set to `Read` when creating your API key. If set to `Write` or `Read/Write`, users could update or change product information or pricing on your WooCommerce store.
 :::
 
-You will need to format these credentials for use in the **WooCommerceBasicAuth** field. For detailed instructions on formatting your authentication key, search for "WooCommerce REST API Basic Authentication" or consult your WooCommerce administrator.
+You will need to format these credentials for use in the `WooCommerceBasicAuth` field. For detailed instructions on formatting your authentication key, search for "WooCommerce REST API Basic Authentication" or consult your WooCommerce administrator.
 
 :::note
-Do not include the word **Basic** in the **WooCommerceBasicAuth** field, it is added automatically.
+Do not include the word `Basic` in the `WooCommerceBasicAuth` field, it is added automatically.
 :::
 
 ---

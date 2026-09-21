@@ -99,6 +99,7 @@ Only apps your business currently has appear in the list, sorted by name. Expire
 ### Payments
 
 If payments are enabled for your business, a `Payments` checkbox appears at the bottom of the list. It controls whether the user can manage payment settings and billing. This one is not a tab — it is a standalone permission, and it is on by default for every user.
+The invited user receives an email inviting them to set a password and sign in. The email also summarizes the work already completed for their business. If a user with that email address is already associated with your business, you receive an error message.
 
 ## Edit permissions
 
@@ -166,7 +167,7 @@ The `Invite user` button only appears if you have access to the `User Management
 <details>
 <summary>What happens when I invite a user?</summary>
 
-The user receives an email with instructions to set up their account and access your Business App. They appear in the users table once the invitation is sent.
+The user receives an email inviting them to set a password and sign in. Alongside the sign-in link, the email summarizes the work already completed for your business — the same summary that appears on the [Home page](/business-app/ai-home-cards). They appear in the users table once the invitation is sent.
 
 </details>
 
@@ -229,7 +230,7 @@ A **user** is someone who can log in to your Business App and use its features. 
 <details>
 <summary>Can I re-invite a user after removing them?</summary>
 
-Yes. After removing a user, you can invite them again by clicking `Invite user` and entering their email address. They receive a new email.
+Yes. After removing a user, you can invite them again by clicking `Invite user` and entering their email address. They receive a new invitation email.
 
 </details>
 
