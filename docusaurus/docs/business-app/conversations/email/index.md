@@ -43,6 +43,10 @@ The channels available in the `Send via` menu depend on the contact information 
 
 When a customer replies to an email you sent from Conversations, their response is automatically routed back into the same conversation thread. Any team member can view and respond from the shared inbox.
 
+### Returning to the main conversation
+
+To view a single email on its own, select `View` on that message in the conversation. Select the back arrow to return to the main conversation.
+
 ## Email forwarding
 
 If your business already uses an email address for customer inquiries (like `team@yourbusiness.com`), you can forward those emails into Conversations. When a customer sends an email to your business address, a copy is automatically forwarded to your Conversations inbox, where it appears as a new conversation. Your team can then read and reply to the message directly from Conversations, without switching to a separate email client.
