@@ -44,8 +44,10 @@ You also get:
 
 ### Control how your app is indexed
 
+The **SEO** section in project settings is available for projects on the server-rendered runtime (`node-server`, including TanStack/SSR). Older projects on the static runtime use **Migrate** on the **General** settings section instead (see below).
+
 1. Open your project's settings.
-2. Select the **SEO** section.
+2. Select the **SEO** section (shown when the project runtime is `node-server`).
 3. Use the toggles to control how your app presents itself to search engines and AI assistants.
 
 See [project settings](./project-settings.md) for the full settings page.
@@ -56,7 +58,7 @@ The generated `robots.txt`, `sitemap.xml`, and `llms.txt` are each individually 
 
 ### Bring an existing project up to date
 
-Ask Vibe to upgrade your project and it converts it to the server-rendered runtime for you — pages, styling, and behavior stay intact. You don't have to rebuild anything to benefit.
+Older projects on the **static** runtime can migrate to the server-rendered (`node-server`) runtime. Use **Migrate** in the **General** section of project settings, or ask Vibe to upgrade the project — pages, styling, and behavior stay intact. You don't have to rebuild anything to benefit. After migration, the **SEO** settings section becomes available.
 
 ## Frequently Asked Questions
 
@@ -93,7 +95,7 @@ No. Crawlers and visitors receive identical content — the same fully rendered 
 <details>
 <summary>How do I get server-rendered pages on a project I built earlier?</summary>
 
-Ask Vibe to upgrade your project. It converts the project to the server-rendered runtime for you, with pages, styling, and behavior intact — no rebuild required.
+Use **Migrate** on the **General** settings section (for `runtime === static` projects), or ask Vibe to upgrade. It converts the project to the server-rendered (`node-server`) runtime for you, with pages, styling, and behavior intact — no rebuild required.
 </details>
 
 <details>

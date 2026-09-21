@@ -9,6 +9,8 @@ description: Connect a Supabase project to Vibe so your app runs on real data, a
 
 Connect your Supabase project to Vibe so the app it builds runs against your actual database, authentication, and storage, not placeholder data.
 
+The Supabase connector is available on the **Pro** and **Premium** plans (Premium has the same connector entitlements as Pro). It may also need to be enabled for your account. Credentials are stored via **Platform Integrations** (Administration → Integrations), not as a Vibe-local secret store.
+
 When you link a Supabase project, Vibe builds directly against your real schema and data. The generated app is fully wired to your Supabase backend from the start, so there is no extra configuration step to connect it later.
 
 You don't build tables or write backend logic in Supabase yourself. Describe what you want in your prompts, and Vibe creates and manages the database schema for you.
@@ -37,12 +39,14 @@ If you don't already have a Supabase project, sign up for a free account at supa
 
 ## Connect your Supabase project
 
+Credentials are connected through **Platform Integrations**:
+
 1. In Business App, go to **Administration**.
 2. Under **App settings**, select **Integrations**.
 3. On the Integrations page, select the **AI Tools** category in the left sidebar.
 4. Select **Supabase** from the list of integrations.
 5. Click `Connect`.
-6. In the **Connect Supabase** dialog, enter your **Project URL**, **Personal Access Token**, and **Publishable Key**.
+6. In the **Connect Supabase** dialog, enter your **Project URL**, **Personal Access Token**, and **Publishable Key**. The connection must include all required fields (including the publishable key) to be treated as connected.
 
 ![Connect Supabase dialog in Business App with fields for Project URL, Personal Access Token, and Publishable Key](./img/connect-supabase-dialog.png)
 
