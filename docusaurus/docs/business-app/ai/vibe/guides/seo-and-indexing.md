@@ -100,4 +100,4 @@ Ask Vibe to upgrade your project. It converts the project to the server-rendered
 
 - [Project Settings](./project-settings.md) — Configure your project's SEO, knowledge, connectors, and more
 - [Getting Started](../getting-started.md) — Walk through a full generation end to end
-- [Custom Domains](./custom-domain.mdx) — Publish your app to a domain you own (Professional)
+- [Custom Domains](./custom-domain.mdx) — Publish your app to a domain you own (Standard and Pro)

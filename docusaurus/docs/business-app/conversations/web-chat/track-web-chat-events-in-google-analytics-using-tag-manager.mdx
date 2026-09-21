@@ -5,8 +5,6 @@ sidebar_position: 2
 description: Learn how to track web chat events in Google Analytics using Tag Manager
 ---
 
-# Track web chat events in Google Analytics using Tag Manager
-
 Integrating Google Tag Manager (GTM) with your web chat can provide valuable insights into user interactions. This guide walks you through the process of tracking chat events using Google Tag Manager and Google Analytics.
 
 ## Prerequisites
@@ -33,7 +31,7 @@ dataLayer.push({
 ```
 
 :::tip
-The web chat widget must load after your GTM container initializes. If you're installing via [Google Tag Manager](../web-chat), ensure the GTM container loads before the chat widget code.
+The web chat widget must load after your GTM container initializes. If you're installing via the [Web Chat Setup & Usage guide](../web-chat), ensure the GTM container loads before the chat widget code.
 :::
 
 ## Setting up event tracking
@@ -44,10 +42,10 @@ Follow these steps to set up web chat event tracking:
 
 For each web chat event you want to track, create a Custom Event trigger in GTM:
 
-1. In your GTM workspace, navigate to **Triggers** and click **New**
-2. Select **Custom Event** as the trigger type
-3. In the **Event name** field, enter the exact event name from the table below (e.g., `inbx_web_chat_start_chat`)
-4. Leave **This trigger fires on** set to **All Custom Events** (unless you want to add additional conditions)
+1. In your GTM workspace, navigate to `Triggers` and click `New`
+2. Select `Custom Event` as the trigger type
+3. In the `Event name` field, enter the exact event name from the table below (e.g., `inbx_web_chat_start_chat`)
+4. Leave `This trigger fires on` set to `All Custom Events` (unless you want to add additional conditions)
 5. Save the trigger with a descriptive name like "Web Chat - Start Chat"
 
 ![Creating a new trigger in GTM](../img/inbox/web_chat_gtm_1.jpg)
@@ -60,13 +58,13 @@ Repeat this process for each event you want to track:
 
 For each trigger you created, set up a corresponding GA4 Event tag:
 
-1. Navigate to **Tags** and click **New**
-2. Select **Google Analytics: GA4 Event** as the tag type
+1. Navigate to `Tags` and click `New`
+2. Select `Google Analytics: GA4 Event` as the tag type
 3. Choose your GA4 Configuration tag from the dropdown (or create one if it doesn't exist)
-4. In the **Event Name** field, enter a descriptive name for the event in Google Analytics (e.g., "web_chat_started", "web_chat_lead_captured")
+4. In the `Event Name` field, enter a descriptive name for the event in Google Analytics (e.g., "web_chat_started", "web_chat_lead_captured")
 5. Optionally, add event parameters to provide additional context:
-   - **event_category**: "web_chat"
-   - **event_label**: The specific action (e.g., "start_chat", "lead_captured")
+   - `event_category`: "web_chat"
+   - `event_label`: The specific action (e.g., "start_chat", "lead_captured")
 
 ![Creating a new GA4 event tag](../img/inbox/web_chat_gtm_3.jpg)
 
@@ -78,8 +76,8 @@ Configure your event parameters:
 
 Connect each GA4 Event tag to its corresponding Custom Event trigger:
 
-1. In the tag configuration, scroll down to the **Triggering** section
-2. Click **Add** and select the appropriate Custom Event trigger you created in Step 1
+1. In the tag configuration, scroll down to the `Triggering` section
+2. Click `Add` and select the appropriate Custom Event trigger you created in Step 1
 3. For example, link the "Web Chat Started" GA4 tag to the "Web Chat - Start Chat" trigger
 4. Save the tag
 
@@ -129,7 +127,7 @@ If events aren't appearing in Google Analytics, check these common issues:
 Event names are case-sensitive. Use `inbx_web_chat_start_chat` exactly as shown, not `INBX_WEB_CHAT_START_CHAT` or other variations.
 :::
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary><strong>Why aren't my web chat events showing up in Google Analytics?</strong></summary>
@@ -137,7 +135,7 @@ Event names are case-sensitive. Use `inbx_web_chat_start_chat` exactly as shown,
 Common issues include:
 - **GTM container not loaded**: Ensure your GTM container code is installed on the website before the web chat widget
 - **Event name mismatch**: Double-check that your Custom Event trigger uses the exact event name from the table above (case-sensitive)
-- **Tag not published**: Changes in GTM preview mode only work during testing - publish your changes to make them live
+- **Tag not published**: Changes in GTM preview mode only work during testing: publish your changes to make them live
 - **Timing issues**: The web chat widget must load after GTM initializes
 </details>
 
@@ -191,7 +189,7 @@ If you have multiple websites with web chat widgets:
 <summary><strong>Are there any privacy considerations when tracking chat events?</strong></summary>
 
 Yes, ensure compliance with privacy regulations:
-- Chat interactions may contain personal data - consider if tracking is necessary
+- Chat interactions may contain personal data: consider if tracking is necessary
 - Check if you need user consent for analytics tracking
 - Review Google's privacy policies and data retention settings
 - Consider excluding sensitive events from tracking if privacy is a concern

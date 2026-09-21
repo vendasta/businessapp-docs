@@ -109,13 +109,13 @@ A status indicator next to **Publish** shows whether your live site matches your
 
 ### Using your own domain
 
-On the Professional plan, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
+On the Standard and Pro plans, you can publish to a domain you own instead of the default address, including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. Add it under **Custom Domain** in the same **Publish** dialog. See [Custom Domains](./guides/custom-domain.mdx) for the full setup steps.
 
 The published site can move to your own domain this way, while the in-editor preview link stays on its default address.
 
 ### Taking your project elsewhere
 
-If you ever need to move a project off Vibe entirely, use **Download** in the toolbar to export the complete source, assets, and checkpoint history. See [Toolbar](#toolbar) above.
+If you ever need to move a project off Vibe entirely, use **Download** in the toolbar, available on the Pro plan, to export the complete source and checkpoint history. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
 
 ## Understanding the Interface
 
@@ -163,7 +163,7 @@ The top-right toolbar provides:
 - **Refresh** — Reload the preview.
 - **Device preview** — Preview your app at phone, tablet, and desktop sizes, or pop the preview out to a full window.
 - **Fullscreen** — Expand the preview to full screen.
-- **Download** — Download a complete archive of your project: full source, all assets, and the git history of every checkpoint.
+- **Download** (Pro) — Download an archive of your project: full source and the git history of every checkpoint. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
 - **Checkpoints** — Browse and restore previous versions of your project.
 
 ## Tips for New Users
