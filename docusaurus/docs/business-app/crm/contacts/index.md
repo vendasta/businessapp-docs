@@ -73,9 +73,10 @@ Tag columns append your imported values to any tags already on a matching contac
 
 ### Export contacts
 
-1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table.
-2. Choose `Select all…` (or select specific rows), then `Actions` > `Export`.
-3. A notification is sent when your CSV is ready to download.
+1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table. A banner confirms how many records on the page are selected, for example "25 of 143 selected."
+2. To include every matching record instead of just the current page, click `Select all 143 contacts` in the banner. The banner then confirms all matching records are selected and gives you a link to clear the selection.
+3. Click `Actions` > `Export`.
+4. A notification is sent when your CSV is ready to download.
 
 :::info
 Exports respect your current filters and the set of rows displayed.
@@ -90,7 +91,7 @@ Exports respect your current filters and the set of rows displayed.
 
 ### Take bulk actions on contacts
 
-Select one or more contacts from the table, then click the **Actions** button to act on them without leaving the page.
+Select one or more contacts from the table, then click the **Actions** button to act on them without leaving the page. The header checkbox selects only the records on the current page — a banner confirms exactly how many are selected (for example, "25 of 143 selected") and gives you a link to select every matching record instead, with an option to clear the selection.
 
 ![Actions button](../img/actions-button.png)
 

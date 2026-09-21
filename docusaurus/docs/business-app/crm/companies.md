@@ -63,7 +63,7 @@ Looking for a "Salesperson" or "Assign salesperson" field? The field is called *
 
 ### Take bulk actions on companies
 
-Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page.
+Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page. The header checkbox selects only the records on the current page — a banner confirms exactly how many are selected (for example, "25 of 143 selected") and gives you a link to select every matching record instead, with an option to clear the selection.
 
 ![Actions button](img/actions-button.png)
 
