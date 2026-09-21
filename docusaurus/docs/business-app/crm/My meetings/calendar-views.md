@@ -4,7 +4,7 @@ sidebar_label: Calendar Views
 description: View your team's schedule, filter by team member or service, and book, reschedule, or cancel meetings directly from the My Meetings calendar.
 sidebar_position: 5
 tags: [meetings, crm, team, calendar]
-keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, saved view, remembered filters]
+keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, general availability, saved view, remembered filters]
 ---
 
 # Calendar Views
@@ -88,6 +88,16 @@ Blocked slots appear in Column, Day, and Week views and respect your sidebar fil
 
 ![Blocked slot from a team member's connected external calendar](../img/my-meetings/calendar-blocked-slot.png)
 
+## Hours outside general availability
+
+Hours that fall outside a person's [General availability](./index.md#meeting-settings) appear with a greyed background, so you can see at a glance which hours are within normal bookable hours and which aren't. The treatment matches General availability per day of the week — if a day isn't enabled, the entire day appears greyed; if hours are set for only part of a day, the hours before and after that window are greyed.
+
+When you view your own calendar, the greyed hours reflect your own General availability. When you view a team member's calendar, the greyed hours reflect that team member's own General availability.
+
+Greying is a visual indicator only — it doesn't restrict booking. You can still click into a greyed slot and book a meeting there if you choose.
+
+This treatment appears in Column, Day, and Week views, alongside and visually distinct from **Blocked** slots from a connected external calendar — both can appear on the same calendar at the same time.
+
 ## Good to know
 
 - **Inactive team members stay visible.** Deactivated staff appear in a separate group in the sidebar so you can still review historical bookings. New bookings cannot be assigned to inactive members, and the calendar flags any existing bookings that need to be reassigned.
@@ -139,6 +149,12 @@ All linked services in that booking move by the same time offset — their relat
 Blocked slots represent busy time from a team member's connected Google or Outlook calendar. Both busy and out-of-office statuses appear as blocked, non-bookable time. The actual event title is never shown, so personal calendar details stay private.
 
 Blocked slots appear in Column, Day, and Week views and respect your sidebar filters.
+</details>
+
+<details>
+<summary>Why are some hours greyed out on my calendar?</summary>
+
+Greyed hours fall outside the relevant person's General availability — your own when viewing your calendar, or a team member's when viewing theirs. This is a visual indicator only; you can still click into a greyed slot and book a meeting there.
 </details>
 
 <details>
