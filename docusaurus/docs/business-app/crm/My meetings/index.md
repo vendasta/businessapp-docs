@@ -19,7 +19,7 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 ## What's included
 
 - **Personal and team booking links**
-- **Calendar views** — See your team's schedule in Column, Day, Week, Month, List, or Year view, filter by team member or service, and book, reschedule, or cancel meetings directly from the calendar
+- **Calendar views** — See your team's schedule in Column, Day, Week, Month, List, or Year view, filter by team member or service, book, reschedule, or cancel meetings directly from the calendar, and choose whether to show blocked time slots from connected calendars
 - **Availability settings** and buffers
 - **Calendar connections** (Google Calendar and Microsoft 365 / Outlook)
 - **Microsoft Teams video conferencing integration**
@@ -72,7 +72,7 @@ Click the **three-dot menu** in the top-right corner of the My Meetings page and
 From here you can configure:
 
 - **General meeting URL** — Customize the URL people use to book with you.
-- **Calendar settings** — Connect Google Calendar or Microsoft 365 / Outlook, and choose whether to show blocked time slots from that calendar on your calendar view.
+- **Calendar settings** — Connect Google Calendar or Microsoft 365 / Outlook.
 - **Choose meeting app** — Select Google Meet, Zoom, or Microsoft Teams as your default.
 - **Scheduling settings**:
   - **Availability increment** — Show time slots in increments of 5, 10, 15, 30, or 60 minutes.

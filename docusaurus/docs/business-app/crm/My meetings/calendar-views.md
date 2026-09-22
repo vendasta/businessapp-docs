@@ -90,9 +90,9 @@ Blocked slots appear in Column, Day, and Week views and respect your sidebar fil
 
 ### Show or hide blocked time
 
-Turn **Show blocked time slots** on or off in **Meeting settings** → **Calendar settings**. It's on by default, and it's a personal setting — each person's toggle controls only what they see. This is visual only: your bookable availability keeps excluding connected-calendar busy time whether the toggle is on or off.
+To hide Blocked slots, turn off **Show blocked time slots** at the bottom of the calendar sidebar. It's on by default, and your choice is saved for the next time you sign in.
 
-In Column View, a team member's blocked time shows or hides based on your own toggle setting, not theirs.
+This setting is yours alone and changes only what you see, including a team member's blocked time on shared views like Column View — not theirs. It doesn't affect booking: busy time from a connected calendar is always excluded from bookable availability, whether the toggle is on or off.
 
 ## Good to know
 
@@ -143,7 +143,7 @@ Blocked slots appear in Column, Day, and Week views and respect your sidebar fil
 <details>
 <summary>Can I hide blocked time slots?</summary>
 
-Yes. Turn off **Show blocked time slots** in **Meeting settings** → **Calendar settings**. This only changes what you see — it doesn't affect anyone else's view or your bookable availability.
+Yes. Turn off **Show blocked time slots** at the bottom of the calendar sidebar. This only changes what you see — it doesn't affect anyone else's view or your bookable availability.
 </details>
 
 <details>
