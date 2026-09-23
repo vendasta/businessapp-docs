@@ -52,6 +52,8 @@ Click any empty time slot to open the booking dialog with the time and date pre-
 
 You can select up to **5 event types** in a single booking — the same limit as services and groups.
 
+If the event type has a **Daily limit** configured and the day you select has already reached it, a warning icon appears in the booking dialog. Hover the icon to see a message explaining that the booking exceeds the daily meeting limit for that day. This is informational only — you can still complete the booking after seeing the warning. The icon only appears when a daily limit is set on the event type; there's no change to the booking dialog when no limit is configured.
+
 ![Booking dialog opened from an empty calendar slot](../img/my-meetings/calendar-book-slot.png)
 
 ## View, edit, reschedule, or cancel a meeting
@@ -117,6 +119,12 @@ The calendar reopens in whichever view you last used. If you're new to My Meetin
 <summary>How many event types can I select in a single booking?</summary>
 
 You can select up to 5 event types in a single booking — the same limit that applies to services and groups.
+</details>
+
+<details>
+<summary>What does the warning icon in the booking dialog mean?</summary>
+
+It means the event type has a daily meeting limit configured and the day you selected has already reached it. Hover the icon for details. This is informational only — you can still complete the booking.
 </details>
 
 <details>
