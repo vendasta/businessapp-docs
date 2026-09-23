@@ -77,3 +77,10 @@ An AAAA record is used for IPv6 addresses. WordPress Hosting does not support IP
 If your SSL certificate was working but now shows as insecure, it may have expired or been revoked. WordPress Hosting automatically renews Let's Encrypt certificates, but if there's an issue, try disconnecting and reconnecting your domain to trigger a new certificate request. Also check that your DNS records haven't changed.
 
 </details>
+
+<details>
+<summary>Does DNSSEC block SSL certificates on my WordPress site?</summary>
+
+No. SSL uses Let's Encrypt HTTP-01, so a correctly signed DNSSEC zone does not block certificates. Certificate problems with DNSSEC usually mean the zone is misconfigured, often an old DS record left after a nameserver change.
+
+</details>
