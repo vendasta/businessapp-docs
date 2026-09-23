@@ -6,6 +6,9 @@ tags: [vibe, ai, project-settings, connectors, knowledge, seo]
 keywords: [vibe project settings, vibe settings sections, vibe knowledge section, vibe connectors section, vibe seo section]
 sidebar_position: 10
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Project settings

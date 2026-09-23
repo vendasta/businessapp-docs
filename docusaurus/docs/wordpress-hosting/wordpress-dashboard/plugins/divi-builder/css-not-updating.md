@@ -2,6 +2,9 @@
 title: "CSS Not Updating"
 sidebar_label: "CSS Not Updating"
 description: "Learn how to fix CSS changes not updating in Divi Builder by disabling static CSS file generation."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## Problem

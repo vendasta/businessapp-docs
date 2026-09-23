@@ -2,6 +2,9 @@
 title: Getting Started
 sidebar_position: 1
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Getting Started

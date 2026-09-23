@@ -4,6 +4,9 @@ sidebar_label: "GoDaddy Setup"
 description: "Step-by-step instructions for connecting GoDaddy domains to WordPress Hosting. Covers both new domains and domains being transferred from another host."
 tags: [wordpress-hosting, domains, godaddy, dns, setup]
 keywords: [GoDaddy domain, GoDaddy DNS setup, connect GoDaddy domain, GoDaddy WordPress Hosting]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 This guide provides GoDaddy-specific instructions for connecting your domain to WordPress Hosting, whether you're setting up a new domain or transferring one from another host.

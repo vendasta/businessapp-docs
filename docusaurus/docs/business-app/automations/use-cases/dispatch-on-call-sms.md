@@ -5,6 +5,9 @@ sidebar_label: On-call dispatch SMS
 description: Build an automation that texts the caller's name, issue, and location to your on-call technician whenever the AI Voice Receptionist dispatches a call.
 tags: [automation, sms, ai, voice, dispatch]
 keywords: [on-call dispatch SMS, AI voice receptionist automation, dispatch notification, after-hours emergency text, transferred call trigger, on-call technician alert]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 An emergency call comes in after hours. Your AI Voice Receptionist screens it — gathering who is calling, what the emergency is, and where the service is needed — then dials your on-call technician. Sometimes the technician answers and hears the announcement; sometimes the call goes to voicemail or isn't picked up. Either way, your technician needs the details in hand to get on route: the caller's name, the issue, the location, and a number to call back.

@@ -6,6 +6,9 @@ tags: [vibe, ai, templates, projects]
 keywords: [vibe home, vibe templates, vibe template gallery, vibe my projects, vibe project tags, create project from template]
 sidebar_position: 11
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Projects Home & Templates

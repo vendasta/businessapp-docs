@@ -2,6 +2,9 @@
 title: "Reset Staging Site"
 sidebar_label: "Reset Staging Site"
 description: "WordPress Hosting provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs.  

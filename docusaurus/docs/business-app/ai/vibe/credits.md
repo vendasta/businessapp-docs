@@ -4,6 +4,9 @@ sidebar_label: Credits
 description: Learn how Vibe credits work, including plan allowances, add-on packs, top-up packs, and how expiration order is determined.
 sidebar_position: 5
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 Vibe uses credits to measure AI activity. Your subscription includes a credit allowance per billing period, and you can purchase additional credit packs when you need more.

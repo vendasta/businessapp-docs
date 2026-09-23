@@ -4,6 +4,9 @@ sidebar_position: 6
 description: Create, prioritize, and complete tasks from CRM records or the task table, with filters, views, and a task queue.
 tags: [tasks, crm, sales]
 keywords: [sales tasks, task queue, crm tasks, activity, views, filters]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Tasks help you plan and track the actions required to move deals forward: calls, emails, follow-ups, and more.

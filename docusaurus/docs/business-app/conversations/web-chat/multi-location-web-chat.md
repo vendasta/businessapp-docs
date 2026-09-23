@@ -2,6 +2,9 @@
 title: Multi-location web chat widget
 sidebar_label: Multi-location web chat
 description: Set up one web chat widget for your brand website that lets visitors choose a location and chat with that location's AI employee
+brand: business-app
+product: conversations
+audience: smb
 ---
 
 If your business has more than one location, you can add a single web chat widget to your main brand website. Visitors choose the location they want from inside the widget, then chat with that location's own AI employee.

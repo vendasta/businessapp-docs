@@ -2,6 +2,9 @@
 title: Website Performance
 sidebar_label: Website
 description: See website performance in the Executive Report with Website Pro and Google Analytics.
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What is the Website section?

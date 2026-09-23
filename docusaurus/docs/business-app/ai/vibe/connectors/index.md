@@ -2,6 +2,9 @@
 title: Connectors
 sidebar_position: 0
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Connectors

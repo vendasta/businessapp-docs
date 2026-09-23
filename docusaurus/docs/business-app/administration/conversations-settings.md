@@ -5,6 +5,9 @@ sidebar_position: 5
 description: Manage your messaging settings, channel connections, and AI preferences in Business App.
 tags: [business-app, conversations, conversations-ai, settings]
 keywords: [Conversations AI settings, Business App conversations, messaging preferences, channel connections]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## Overview

@@ -3,6 +3,9 @@ title: Web Chat Widget Installation and Troubleshooting
 sidebar_label: "Web Chat Widget"
 sidebar_position: 3
 description: Install the AI-assisted web chat widget on a WordPress website and troubleshoot common issues.
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 With AI-assisted web chat, you can capture more leads from your website. An AI assistant chats live with a website visitor, capturing their contact information so you can follow up later via SMS or email, and turning them into a customer. AI-assisted web chat is a feature of Conversations AI Pro.

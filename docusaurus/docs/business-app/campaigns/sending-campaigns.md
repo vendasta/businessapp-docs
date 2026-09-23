@@ -4,6 +4,9 @@ sidebar_label: Send a Campaign
 description: Add contacts or lists as recipients to send a published campaign in Business App.
 tags: [campaigns, email marketing, crm, contacts, lists]
 keywords: [send campaign, add recipients, campaign contacts, campaign list, start campaign, email campaign send]
+brand: business-app
+product: campaigns
+audience: smb
 ---
 
 Publishing a campaign does not send it automatically. After you publish, you need to add contacts or a list as recipients to begin sending. You can do this directly from the Contacts table, through an automation from Contacts, or by starting an automation from a list.

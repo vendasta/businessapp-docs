@@ -5,6 +5,9 @@ sidebar_label: Automated notifications
 description: Automatically notify your team or contacts via SMS and email when leads come in, forms are submitted, or CRM events occur.
 tags: [automation, messaging, sms, email]
 keywords: [automated SMS, automated email, messaging steps, workflow alerts, customer notifications]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 When a new lead comes in from chat, a quote request lands, or a VIP contact is tagged, the faster you respond, the better your chances of closing the deal. You can build automations that send SMS or email notifications the moment these events happen — no manual follow-up needed.

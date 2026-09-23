@@ -5,6 +5,9 @@ description: Connect third-party applications through Single Sign-On (SSO) for d
 sidebar_position: 2
 tags: [integrations, sso, connections]
 keywords: [SSO, single sign-on, integrations, connections, third-party apps]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Single Sign-On (SSO) integrations give you direct access to third-party applications. You can connect your accounts with supported applications without requiring separate logins.

@@ -1,6 +1,9 @@
 ---
 title: Introduction to Vibe
 sidebar_position: 1
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Introduction to Vibe

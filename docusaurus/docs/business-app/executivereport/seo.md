@@ -2,6 +2,9 @@
 title: SEO (Google Search Console & MarketGoo)
 sidebar_label: SEO
 description: See SEO performance in the Executive Report with Google Search Console and MarketGoo data.
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What is the SEO section?

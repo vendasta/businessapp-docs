@@ -5,6 +5,9 @@ description: Download and set up the BusinessApp.io mobile app on iOS and Androi
 sidebar_position: 11
 tags: [mobile-app, ios, android, push-notifications]
 keywords: [mobile app, BusinessApp.io, iOS, Android, push notifications, mobile access]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 BusinessApp.io is the official mobile app that gives you access to your dashboard communications and key features on the go. The app provides push notifications for new leads and messages so you never miss important customer interactions.

@@ -2,6 +2,9 @@
 title: "Captchas, reCAPTCHAs, and Advanced Login"
 sidebar_label: "Advanced Login"
 description: "Learn how to configure captcha protection and advanced login options for your WordPress admin page."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## Hide Advanced Login

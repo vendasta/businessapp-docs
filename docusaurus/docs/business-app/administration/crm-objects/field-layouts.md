@@ -4,6 +4,9 @@ sidebar_label: Field Layouts
 description: Group, reorder, and hide CRM fields to control how your contact, company, and opportunity records are laid out.
 tags: [crm, custom-fields, field-layouts]
 keywords: [field layout, field groups, organize layout, hide fields, CRM fields]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What are field layouts?

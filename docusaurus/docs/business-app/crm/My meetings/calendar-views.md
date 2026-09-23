@@ -5,6 +5,9 @@ description: View your team's schedule, filter by team member or service, and bo
 sidebar_position: 5
 tags: [meetings, crm, team, calendar]
 keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, general availability, saved view, remembered filters]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 # Calendar Views

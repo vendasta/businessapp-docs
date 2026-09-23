@@ -3,6 +3,9 @@ title: Prompting Guide
 sidebar_position: 1
 unlisted: false
 description: Learn the prompting principles, patterns, and pitfalls for getting the results you want from Vibe.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 Writing effective prompts is the most important skill for getting great results from Vibe. This guide covers the principles behind effective prompts: be specific, iterate in small steps, reference visual style, describe what you want rather than how to build it.

@@ -5,6 +5,9 @@ sidebar_position: 3
 description: Track desktop and mobile page speed scores over time, with passed rules and improvement opportunities.
 tags: [wordpress-hosting, dashboard, performance, page-speed]
 keywords: [page speed, PageSpeed Insights, mobile speed, desktop speed, performance score, passed rules, opportunities]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Performance** card shows how fast your homepage loads on desktop and mobile, measured by Google PageSpeed Insights. Scores refresh automatically; click the refresh icon to run a new check on demand.

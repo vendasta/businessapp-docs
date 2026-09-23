@@ -3,6 +3,9 @@ title: Leads
 sidebar_label: Leads
 sidebar_position: 2
 description: "Track lead generation and customer interactions in the Executive Report: phone calls, AI receptionist, web chat, forms, and messaging."
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What is the Leads section?

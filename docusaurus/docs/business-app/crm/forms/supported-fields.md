@@ -3,6 +3,9 @@ title: Form field reference
 sidebar_label: Field reference
 sidebar_position: 4
 description: Full list of contact, company, and generic field types supported in Business App forms.
+brand: business-app
+product: crm
+audience: smb
 ---
 
 When building a form, you can add fields that map to Contact or Company records, or use generic field types not mapped to either.
