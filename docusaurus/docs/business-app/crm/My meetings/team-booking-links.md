@@ -9,7 +9,7 @@ keywords: [team booking, round robin, priority assignment, multi host, client se
 
 # Team booking links
 
-Team booking links let you create a single booking link that distributes meetings across a team. For example, your business might run a qualification call before handing a prospect to a sales rep — create one team link and let My Meetings distribute bookings automatically.
+Team booking links let you create a single booking link that distributes meetings across a team. For example, your business might run a qualification call before handing a prospect to a sales rep. Create one team link and let My Meetings distribute bookings automatically.
 
 ## Prerequisites
 
@@ -29,18 +29,18 @@ In the Business App, all members of a business are part of a single team. Team e
 
 3. On the **Event types** tab, click **Create event type**, then select **Team**.
 
-![Create event type — select Team](../img/my-meetings/team-booking-links-create-event-type.png)
+![Create event type: select Team](../img/my-meetings/team-booking-links-create-event-type.png)
 
 4. Configure the event type details:
 
 ![Event type details](../img/my-meetings/team-booking-links-event-type-details.png)
 
-- **Name** — What clients see when they book.
-- **Link** — Creates the URL for your booking page (e.g., `bookmenow.info/you/team-meeting`).
-- **Location** — Choose **Video** or **In-Person** for how the meeting takes place.
-- **Duration** — Length of the meeting, in minutes. Choose a preset or select **Custom**.
-- **Description** (optional) — Details about the meeting shown to clients.
-- **Color** — Choose a color to identify this event type on your calendar.
+- **Name**: What clients see when they book.
+- **Link**: Creates the URL for your booking page (e.g., `bookmenow.info/you/team-meeting`).
+- **Location**: Choose **Video** or **In-Person** for how the meeting takes place.
+- **Duration**: Length of the meeting, in minutes. Choose a preset or select **Custom**.
+- **Description** (optional): Details about the meeting shown to clients.
+- **Color**: Choose a color to identify this event type on your calendar.
 
 ## Team members and assignment method
 
@@ -61,22 +61,26 @@ Customers see available time slots only, the system silently assigns the right p
 **How it works:**
 
 - When a customer selects a time slot, the system checks your ranked list and assigns the highest-priority provider who is free at that moment.
-- **Priority waterfall** — If your top-ranked provider is not available at the selected time, the system moves to the next in line and keeps going until a free provider is found. Your order is always respected.
-- **Combined availability** — Customers see a unified calendar of slots across your entire team. A slot appears as long as at least one provider is free.
-- **No provider picker on the booking page** — Customers see times, pick one, and confirm. Provider selection controls are not shown.
-- **Default order** — If you have not manually ranked your providers, the system defaults to the order they were added to the event type.
+- **Priority waterfall**: If your top-ranked provider is not available at the selected time, the system moves to the next in line and keeps going until a free provider is found. Your order is always respected.
+- **Combined availability**: Customers see a unified calendar of slots across your entire team. A slot appears as long as at least one provider is free.
+- **No provider picker on the booking page**: Customers see times, pick one, and confirm. Provider selection controls are not shown.
+- **Default order**: If you have not manually ranked your providers, the system defaults to the order they were added to the event type.
 
 To reorder providers, drag team members up or down in the event type editor. The order you set drives assignment logic.
 
 **Best for:** Service businesses where specific staff should be booked first (e.g., master stylist, top closer, most experienced practitioner), or hierarchical structures where senior members should handle most bookings.
 
 :::note
-Customers are not shown their assigned provider before confirming. The assignment happens at booking confirmation — the customer selects a time, confirms, and the system assigns. To allow customers to choose a specific provider, use the **Client selection** assignment method instead.
+Customers are not shown their assigned provider before confirming. The assignment happens at booking confirmation: the customer selects a time, confirms, and the system assigns. To allow customers to choose a specific provider, use the **Client selection** assignment method instead.
 :::
 
 ### Client selection
 
 The person booking chooses which team member they want to meet with. Only members available at the selected time are shown.
+
+:::note
+Client selection applies to bookings made through your booking page. When an AI Chat or AI Voice Receptionist books on a customer's behalf, the customer isn't offered a choice of team member. The host is assigned automatically from the available members. See [AI booking limitations](./groups-and-service-menus.md#ai-booking-limitations).
+:::
 
 **Best for:** Service businesses where clients have preferences, or teams with different specializations.
 
@@ -102,6 +106,10 @@ For all assignment methods:
 2. Click the **X** next to any team member to remove them.
 3. Each selected team member must have their calendar connected and properly configured.
 
+Team members also need a meeting app connected (Google Meet, Zoom, or Microsoft Teams). A team member whose calendar or meeting app is disconnected is left out of the available times for every team event type until they reconnect, even though they still appear in the member list. See [Calendar integration requirements](#calendar-integration-requirements).
+
+Team members who are removed from your business are excluded from team booking links automatically. You don't need to remove them from each event type.
+
 ## General availability
 
 ![General availability](../img/my-meetings/team-booking-links-general-availability.png)
@@ -110,6 +118,8 @@ Set the days you're generally available to accept meetings for this event type.
 
 - Turn on each day you want to accept bookings, then set your available hours for that day.
 - Days left off show as **Unavailable** and won't offer any booking times to clients.
+
+For team event types, the hours you set here are combined with each team member's own general availability from their Meeting settings. A team member is only offered at times that fall within both, so nobody can be booked outside their own hours.
 
 ## Additional settings
 
@@ -121,36 +131,37 @@ The following settings are optional and turned off by default. Review each one a
 
 By default, clients are asked for their **First Name**, **Last Name**, and **Email** when booking. You can also collect a **Phone Number** and **Comments**.
 
-- Turn on **Required** next to **Phone Number** and/or **Email** to control which channels are available for confirmations and reminders. At least one must stay required — if both are off, all channel options are disabled and the event type can't be saved.
-- Choose a **confirmation channel** — **Email**, **SMS**, or **Both** — for the confirmation guests receive when they book.
-- Choose a **reminder channel** the same way. It defaults to your confirmation channel until you change it, after which the two work independently — for example, an Email confirmation with an SMS reminder.
+- Turn on **Required** next to **Phone Number** and/or **Email** to control which channels are available for confirmations and reminders. At least one must stay required. If both are off, all channel options are disabled and the event type can't be saved.
+- Choose a **confirmation channel** (**Email**, **SMS**, or **Both**) for the confirmation guests receive when they book.
+- Choose a **reminder channel** the same way. It defaults to your confirmation channel until you change it, after which the two work independently. For example, you can send an Email confirmation with an SMS reminder.
 - Turning off **Phone Number** required disables **SMS** and **Both** in both channel controls and falls back any current SMS/Both selection to Email. Turning off **Email** required disables **Email** and **Both**, and falls back to SMS.
-- Set the **reminder lead time** — an integer plus minutes, hours, or days — to control how far ahead of the meeting the reminder sends. The default is 24 hours, and the maximum is 10 days; values above the maximum are clamped, and switching units re-clamps the value. Only one reminder can be configured per event type.
+- Under **Reminder schedule**, set when reminders are sent. For each reminder, enter a number and choose minutes, hours, or days before the meeting. The default is 24 hours, and the maximum is 10 days; values above the maximum are clamped, and switching units re-clamps the value. You can set more than one reminder per event type, for example one reminder 1 day before the meeting and another 15 minutes before.
 - Click **+ Add question** to create custom questions for guests to answer when booking. Their answers are available to the assigned team member.
+- Custom questions can be a `Text box`, `Email field`, `Phone number field`, `Dropdown`, or `Multiple choice`, and each one can be marked required. See [Questions for invitee](./index.md#create-a-new-event-type) for details on the channel and reminder settings.
 
 ### Customize invitation email
 
 ![Customize invitation email](../img/my-meetings/team-booking-links-customize-invitation-email.png)
 
-Write a custom **Subject** and **Description** for meeting invitations. This customization only applies to invitations sent through the CRM — not to meetings booked through your public scheduling link.
+Write a custom **Subject** and **Description** for meeting invitations. This customization only applies to invitations sent through the CRM, not to meetings booked through your public scheduling link.
 
 ### Redirect to a custom URL
 
 ![Redirect to a custom URL](../img/my-meetings/team-booking-links-redirect-custom-url.png)
 
-Turn on **Redirect to a custom URL after booking** to send clients to a page of your choice — like a thank-you page — right after they confirm their booking. Enter the **Destination URL** and set a **Redirect delay** in seconds.
+Turn on **Redirect to a custom URL after booking** to send clients to a page of your choice, like a thank-you page, right after they confirm their booking. Enter the **Destination URL** and set a **Redirect delay** in seconds.
 
 ### Meeting limits
 
 ![Meeting limits](../img/my-meetings/team-booking-links-meeting-limits.png)
 
-Turn on **Daily limit** to cap how many meetings can be booked per day for this event type. Set your **Daily meeting limit** — clients can't book more than this number of meetings in a single day. The limit resets at midnight.
+Turn on **Daily limit** to cap how many meetings can be booked per day for this event type. Set your **Daily meeting limit**. Clients can't book more than this number of meetings in a single day. The limit resets at midnight.
 
 ### Availability increment
 
 ![Availability increment](../img/my-meetings/team-booking-links-availability-increment.png)
 
-Choose the increment — 5, 10, 15, 30, or 60 minutes — used to display your available time slots to clients.
+Choose the increment (5, 10, 15, 30, or 60 minutes) for displaying your available time slots to clients.
 
 ### Meeting buffers
 
@@ -185,6 +196,7 @@ Once you've configured your event type, click **Save** to create the team bookin
 
 For team members to appear as available:
 - Each team member must have their personal calendar connected to My Meetings (Google Calendar or Microsoft 365 / Outlook).
+- Each team member must also have a meeting app connected (Google Meet, Zoom, or Microsoft Teams). If either connection is missing, that team member is left out of the team's available times until they reconnect.
 - Events marked as "busy" in personal calendars automatically block availability.
 - All-day events prevent bookings for the entire day.
 

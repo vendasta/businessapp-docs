@@ -138,6 +138,10 @@ The **Book appointments with calendar** capability connects to your integrated c
 
 On the `Book appointments with calendar` panel, use the `Select event link to book with` dropdown to choose which calendar your receptionist should use to determine availability as well as which kind of appointments they can offer.
 
+:::note
+When the AI Voice Receptionist books an appointment, the caller isn't offered a choice of team member, and the receptionist doesn't ask the custom questions or collect the notes that appear on your booking page. See [AI booking limitations](../../crm/My%20meetings/groups-and-service-menus.md#ai-booking-limitations).
+:::
+
 #### Book multiple services in one call
 
 You can configure your AI Voice Receptionist to book multiple services in one call when those services are grouped in the same `Service Menu/Group`.
