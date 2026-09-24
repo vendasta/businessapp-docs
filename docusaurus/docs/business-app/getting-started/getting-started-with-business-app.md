@@ -1,6 +1,9 @@
 ---
 title: Getting Started with Business App
 sidebar_position: 1
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Business App is your one-stop dashboard for running your business online. This guide walks you through the most important setup steps so you can capture leads, communicate with customers, and track your performance right away.

@@ -2,6 +2,9 @@
 title: Images
 sidebar_position: 6
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Images

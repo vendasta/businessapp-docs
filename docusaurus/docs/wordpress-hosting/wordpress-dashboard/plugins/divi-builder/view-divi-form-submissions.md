@@ -2,6 +2,9 @@
 title: "View Divi form submissions in WordPress"
 sidebar_label: "Form Submissions"
 description: "Where can I access form submissions? \n Once the plugin is activated, a new menu item called  \"Divi Form DB\"  will appear in the WordPress dashboard. \n How do I"
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ### Where can I access form submissions?

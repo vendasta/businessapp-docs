@@ -5,6 +5,9 @@ description: Learn how to send Yesware email campaigns (sequences, drip campaign
 sidebar_position: 7
 tags: [yesware, email campaigns, crm, contacts, automation]
 keywords: [yesware campaigns, business app crm, email sequences, drip campaigns, contact outreach, email automation]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use this guide to start a Yesware email campaign (also known as an email sequence or drip campaign) directly from the `CRM` > `Contacts` table in your Business App. You can select contacts, add them to an existing Yesware campaign, and optionally trigger additional actions using Business App Automations.

@@ -4,6 +4,9 @@ description: Create, use, and share email templates in Yesware to send consisten
 sidebar_position: 0
 tags: [yesware, templates]
 keywords: [Yesware templates, email templates, merge fields, team templates]
+brand: yesware
+product: yesware-core
+audience: smb
 ---
 
 Templates let you save reusable email content: subject lines, body text, formatting, images, and attachments, so you can send consistent, personalized messages in a fraction of the time. Templates work in both Gmail and Outlook.

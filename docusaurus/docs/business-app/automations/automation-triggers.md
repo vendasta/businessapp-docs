@@ -1,6 +1,9 @@
 ---
 title: Triggers
 sidebar_position: 1
+brand: business-app
+product: automations
+audience: smb
 ---
 
 Automation triggers are specific actions that start your workflows. There are numerous triggers to choose from, and we're frequently adding more.

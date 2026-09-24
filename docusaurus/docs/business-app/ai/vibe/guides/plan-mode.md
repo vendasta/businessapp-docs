@@ -3,6 +3,9 @@ title: Planning
 sidebar_position: 3
 unlisted: false
 description: Vibe plans every generation before it builds. See how the plan runs, what the COMPLETED block shows, and when Vibe asks clarifying questions.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 Every Vibe generation starts with a plan. The plan describes which files will be created or modified, what changes will be made, and how the parts fit together. Once the plan is set, Vibe streams its work into the chat: preparing the environment, applying the theme, generating images, editing files, and validating the result. It finishes with a `COMPLETED` block summarizing what shipped.

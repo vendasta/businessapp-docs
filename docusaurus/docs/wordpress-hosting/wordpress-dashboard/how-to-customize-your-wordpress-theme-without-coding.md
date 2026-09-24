@@ -2,6 +2,9 @@
 title: "How to Customize Your WordPress Theme Without Coding"
 sidebar_label: "Customize Theme"
 description: "Customize your WordPress theme using the WordPress Customizer: change colors, fonts, layouts, menus, and more without writing any code."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Customizing your WordPress theme doesn’t have to involve complex coding. WordPress provides tools that let you tweak your website's appearance without writing code. Here's how you can get started:

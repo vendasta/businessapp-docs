@@ -2,6 +2,9 @@
 title: "How to Configure Gmail SMTP on Your WordPress Website"
 sidebar_label: "Gmail SMTP"
 description: "Learn how to set up Gmail SMTP for your WordPress website using the WP Mail SMTP plugin and Google Cloud Console to send emails securely."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 This article walks you through setting up Gmail SMTP for your WordPress website using the **WP Mail SMTP** plugin and **Google Cloud Console**. This configuration allows you to send emails securely via Gmail instead of relying on your hosting server.

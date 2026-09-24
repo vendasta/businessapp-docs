@@ -2,6 +2,9 @@
 title: Opportunity automations
 sidebar_position: 4
 description: Create opportunities from webchat, trigger campaigns by stage, and move opportunities when a meeting is booked.
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## Create opportunities automatically from webchat

@@ -3,6 +3,9 @@ title: How to Create Custom Capabilities
 sidebar_label: Creating Custom Capabilities
 sidebar_position: 3
 description: Connect your AI Employees to external systems and APIs by creating custom capabilities for tasks like inventory checks, appointment booking, and order tracking.
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';

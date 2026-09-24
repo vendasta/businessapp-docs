@@ -4,6 +4,9 @@ sidebar_position: 1
 description: Manage people you engage with. Import/export, organize, and take action on contacts across campaigns, tasks, and opportunities.
 tags: [contacts, crm]
 keywords: [crm contacts, import contacts, export contacts, contact fields, campaigns, owner, assign salesperson, salesperson]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use Contacts to manage the people you engage with. Create and update contact records, import and export in bulk, associate contacts with companies and opportunities, and take action with campaigns, lists, and tasks.

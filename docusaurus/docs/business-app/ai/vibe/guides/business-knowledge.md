@@ -2,6 +2,9 @@
 title: Business Knowledge
 sidebar_position: 7
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Business Knowledge

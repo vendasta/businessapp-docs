@@ -5,6 +5,9 @@ sidebar_position: 7
 description: Connect a custom domain, configure DNS, set a primary domain, and monitor SSL.
 tags: [wordpress-hosting, dashboard, domains, ssl, dns]
 keywords: [custom domain, DNS, A record, CNAME, TXT record, domain verification, primary domain, alias domain, SSL certificate, HTTPS]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Domain & SSL** panel is where you connect a custom domain to your site, monitor SSL certificates, and choose which domain visitors see in their browser. The primary domain is the one all your other connected domains redirect to.

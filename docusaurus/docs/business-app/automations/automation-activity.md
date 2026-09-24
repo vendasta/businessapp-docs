@@ -4,6 +4,9 @@ sidebar_position: 6
 description: View and troubleshoot past automation runs using the Activity log.
 tags: [automation, troubleshooting]
 keywords: [automation activity, automation logs, troubleshoot workflows, automation success rate]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 Use Automation Activity to see what ran, when it ran, and whether it succeeded. This helps you verify outcomes and troubleshoot issues.

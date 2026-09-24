@@ -5,6 +5,9 @@ description: Learn how to organize your event types into Groups and Service Menu
 sidebar_position: 4
 tags: [meetings, groups, service-menus, booking, crm, multi-service]
 keywords: [groups, service menu, booking links, event types, organize meetings, multi-service booking, AI booking]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 # Groups and Service Menus

@@ -2,6 +2,9 @@
 title: "Edit your site with Divi Builder"
 sidebar_label: "Edit your site with Divi Builder"
 description: "Learn how to use Divi Builder to customize your WordPress site visually without coding. Edit text, images, add elements, and customize your site design."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Getting your business up and selling is possible with Website Pro. This product allows you to quickly and easily create a website and online store powered by WordPress and WooCommerce. To simplify the transition to ecommerce, we also have a visual builder, called Divi Builder, within every Website Pro account. This allows you to design and create beautiful websites without having to write a single line of code. 

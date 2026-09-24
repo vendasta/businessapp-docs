@@ -2,6 +2,9 @@
 title: "What is phpMyAdmin?"
 sidebar_label: "phpMyAdmin"
 description: "phpMyAdmin is an open source web-based tool that allows you to manage the database of your WordPress site. Learn how to access and use phpMyAdmin in WordPress Hosting."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 phpMyAdmin is an open-source web-based tool that allows you to manage the database of your WordPress site. It provides a graphical user interface (GUI) for interacting with the MySQL database that stores all the essential data for your WordPress Hosting site, making it easier to perform database-related tasks without requiring advanced knowledge of SQL commands.

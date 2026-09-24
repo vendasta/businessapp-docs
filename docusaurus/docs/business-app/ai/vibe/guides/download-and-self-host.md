@@ -6,6 +6,9 @@ tags: [vibe, ai, download, hosting, portability, open-source]
 keywords: [vibe download project, vibe source code, vibe self host, vibe portable, vibe react tanstack, move vibe site, vibe export]
 sidebar_position: 13
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Download & Host Your Project Elsewhere

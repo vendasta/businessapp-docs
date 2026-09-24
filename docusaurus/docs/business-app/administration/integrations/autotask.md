@@ -5,6 +5,9 @@ description: Connect Datto Autotask PSA to Business App to keep companies and co
 sidebar_position: 5
 tags: [integrations, autotask, crm, psa]
 keywords: [Autotask, Datto Autotask, PSA, CRM sync, API user, Integration Vendor, Integration Code, webhooks, external ID, bidirectional sync]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Datto Autotask PSA is a professional services automation platform for managing companies, contacts, and service delivery. Connecting Autotask to Business App keeps your companies and contacts synchronized in real time between both systems, so you do not need to enter data twice or rely on a third-party automation tool.

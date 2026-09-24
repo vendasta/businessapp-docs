@@ -2,6 +2,9 @@
 title: "Business Profile and Website Sync"
 sidebar_label: "Business Profile Sync"
 description: "Learn how to sync business information from Business App to your WordPress website, including contact information, shortcodes, and header updates."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 You can easily update business information on your website created with WordPress Hosting Standard or Pro.

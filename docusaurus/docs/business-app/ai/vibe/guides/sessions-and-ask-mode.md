@@ -5,6 +5,9 @@ description: Use sessions to isolate focused objectives and Ask mode to brainsto
 tags: [vibe, ai, sessions, ask-mode]
 keywords: [vibe sessions, ask mode, vibe chat, vibe brainstorm, vibe context]
 sidebar_position: 12
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 ## What are Sessions and Ask mode?

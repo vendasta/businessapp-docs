@@ -5,6 +5,9 @@ sidebar_position: 3
 description: "Set up the On-call dispatch capability so your AI Voice Receptionist works as an after-hours AI dispatcher, screening emergency calls and connecting callers to your on-call technician."
 tags: [ai, voice, phone, dispatch, automation]
 keywords: [on-call dispatch, AI dispatcher, after-hours dispatch, emergency dispatch, on-call technician, AI voice receptionist, urgent call routing, emergency call handling]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 The **On-call dispatch** capability turns your AI Voice Receptionist into an after-hours dispatcher. It screens urgent calls and connects the caller to your on-call technician, first gathering who is calling, the nature of the emergency, and the service location. If no one can be reached live, the caller is told the on-call technician has been notified and will follow up.

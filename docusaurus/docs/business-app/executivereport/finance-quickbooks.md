@@ -3,6 +3,9 @@ title: Finance (QuickBooks Online)
 sidebar_label: Finance (QuickBooks)
 sidebar_position: 50
 description: View income, expenses, and invoice notifications from QuickBooks Online in the Executive Report.
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What financial data is included?

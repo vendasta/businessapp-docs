@@ -5,6 +5,9 @@ sidebar_position: 8
 description: Install, update, activate, and deactivate WordPress plugins, and manage your active theme.
 tags: [wordpress-hosting, dashboard, plugins, themes]
 keywords: [WordPress plugins, install plugin, update plugin, activate plugin, deactivate plugin, WordPress theme]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Plugins & Themes** panel lets you manage every plugin on your site and your active theme — install, update, activate, and deactivate without going into WordPress admin.
