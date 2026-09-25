@@ -1,6 +1,6 @@
 ---
 title: CRM Overview
-description: Centralize contacts, companies, and opportunities in Business App CRM. Use CRM AI Standard and Pro for an AI Sales Assistant, conversation intelligence, and sales coaching.
+description: "Manage contacts, companies, and opportunities in the Business App CRM, log emails automatically, and compare the Free, CRM AI Standard, and Pro plans."
 keywords:
   [
     Business App CRM,
@@ -14,9 +14,16 @@ tags: [crm, contacts, opportunities, sales, ai]
 brand: business-app
 product: crm
 audience: smb
+content_type: overview
+kb_id: KB-00093
+answer_snippet: "The Business App CRM stores your contacts, companies, and opportunities in one place so you can track sales deals and customer activity. The Free edition includes core CRM features, and CRM AI Standard and CRM AI Pro add AI sales tools."
+doc_owner: crm
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
-The Business App CRM is a central hub to manage your customer data, track opportunities, and automate sales tasks. It provides comprehensive tools to help build customer relationships, and integrates with your existing workflows.
+The Business App CRM stores your contacts, companies, and opportunities in one place so you can track sales deals and customer activity. The Free edition includes core CRM features, and CRM AI Standard and CRM AI Pro add AI sales tools.
 
 <div
   className="wistia_responsive_padding"
@@ -42,7 +49,7 @@ The Business App CRM is a central hub to manage your customer data, track opport
 </div>
 <script src="https://fast.wistia.net/player.js" async></script>
 
-CRM AI Standard and CRM AI Pro transform your Business App CRM from a static database into an active sales assistant that automates data entry, extracts insights from calls, and provides real-time coaching to help you close more deals. Automate your sales process, eliminate manual data entry, and focus on winning more customers.
+CRM AI Standard and CRM AI Pro add AI features to your Business App CRM that automate data entry, extract insights from calls, and provide sales coaching. The CRM AI plans table below shows what each edition includes.
 
 ## Core CRM
 
@@ -81,7 +88,7 @@ Tailor the CRM to your specific business needs and industry:
 - **[Tasks](tasks.md)**: Create and track to-do action items for sales activities.
 - **[My Meetings](My%20meetings/index.md)**: Integrated meeting scheduler to let prospects book time directly on your calendar.
 
-## CRM AI plans
+## What's included in each CRM AI plan? {#crm-ai-plans}
 
 | Feature | Free | Standard | Pro |
 | --- | --- | --- | --- |
@@ -100,7 +107,7 @@ Tailor the CRM to your specific business needs and industry:
 
 The ***Free*** edition includes core CRM features. ***Standard*** adds AI Sales Assistant capabilities and custom objects. ***Pro*** adds conversation intelligence and sales coaching.
 
-## Getting started
+## How do I get started with the CRM? {#getting-started}
 
 1. **Go to CRM in Business App**
    - Open your Business App and click `CRM` in the sidebar
@@ -118,11 +125,11 @@ The ***Free*** edition includes core CRM features. ***Standard*** adds AI Sales 
    - Bring your existing data into Business App using the bulk import tool.
    - You can upload CSV files and map your columns to CRM fields (`Contacts`, `Companies`, and `Opportunities`).
 
-## Setting up your view
+## How do I set up my Companies view? {#setting-up-your-view}
 
-Navigate to `CRM` → `Companies`. You are on the company page. The first thing to do is decide what information matters to you. There is a lot of information available; consider which data you need. You can set up your view by enabling, displaying, and reordering the columns. For example, if the website is not important to you but the address is, check the boxes according to your preferences.
+Navigate to `CRM` > `Companies`. You are on the company page. The first thing to do is decide what information matters to you. There is a lot of information available; consider which data you need. You can set up your view by enabling, displaying, and reordering the columns. For example, if the website is not important to you but the address is, check the boxes according to your preferences.
 
-## Searching, filtering, and sorting
+## How do I search, filter, and sort records? {#searching-filtering-and-sorting}
 
 You can find the company assigned to you by clicking `Add filter`, then searching for `Owner`. You can then find yourself using your name or email.
 
@@ -130,7 +137,7 @@ If you know the name of the company, find it using the search bar on the table. 
 
 You can also see when you last contacted your current customers by looking at the last activity date. Sort to see whether any customers need a follow-up so you can keep conversations fresh.
 
-## Automatic email capture
+## How do I log emails to the CRM automatically? {#automatic-email-capture}
 
 With CRM AI, you can automatically log emails sent from outside to the CRM through the BCC address and forwarding address.
 
@@ -168,7 +175,7 @@ As part of setting up an auto-forwarding rule, forwarded messages are processed 
 
 Furthermore, the implementation does not retain a copy of those email bodies in system logs or audit tables. This measure helps prevent sensitive information sent through work email from being stored in your database. The goal is to respect your privacy and security so CRM AI remains a reliable tool for managing client interactions.
 
-## Record sources
+## What do record sources mean? {#record-sources}
 
 You can view a record's source to understand how it was created or see its property history to track updates over time. The source values below indicate the tool or process that updated the record. For example, a record might be created by an import or have its property values changed via a workflow or AI Sales Assistant.
 
@@ -178,7 +185,7 @@ Records can be updated through the following sources:
 - **Account Group**: Created when an account group is made (only for Company records).
 - **Find-Businesses**: Created using the find businesses feature (only for Company records).
 - **User**: Created when an account group user is added (only for Contact records).
-- **Legacy Customer List**: Created from the legacy customer list in Business App (only for Contact records), Customer Voice, Website Pro, or Marketplace product integration.
+- **Legacy Customer List**: Created from the legacy customer list in Business App (only for Contact records), Customer Voice, WordPress Hosting, or Marketplace product integration.
 - **Bulk Import**: Added through the bulk import process via CSV upload.
 - **Web Chat**: Created via the AI lead capture widget.
 - **Form**: Created when a user fills out a form built with the form builder.
@@ -195,11 +202,47 @@ Records can be updated through the following sources:
 <details>
 <summary>Which meeting platforms are supported?</summary>
 
-Conversation Intelligence currently integrates with Google Meet and Microsoft Teams.
+Conversation Intelligence integrates with Google Meet and Microsoft Teams.
 </details>
 
 <details>
 <summary>Can I use multiple sales pipelines?</summary>
 
 Yes. You can create and manage multiple visual pipelines to track different sales processes or product lines simultaneously.
+</details>
+
+<details>
+<summary>What is my BCC address for logging sent emails to the CRM?</summary>
+
+Your BCC address uses your account group ID as the prefix, in the format `[Account Group ID]@sent-mail.yourdigitalagents.com`. For example, if your account group ID is AG-1234567, your BCC address is `AG-1234567@sent-mail.yourdigitalagents.com`.
+</details>
+
+<details>
+<summary>Can I log incoming emails to the CRM?</summary>
+
+Yes. Forward incoming emails, manually or with an auto-forwarding rule, to `[Account Group ID]@received-mail.yourdigitalagents.com`. The email is logged to the contact's record and its primary associated company.
+</details>
+
+<details>
+<summary>How is a logged email matched to a contact record?</summary>
+
+The email is matched by address. The sender must be a user in Business App, and the recipient's email address must belong to a contact record in the CRM. The logged email is associated with that contact and its primary company.
+</details>
+
+<details>
+<summary>What is the record source?</summary>
+
+The record source shows the tool or process that created or updated a record, such as a bulk import, a form, a workflow, or the AI Sales Assistant. See [Record sources](#record-sources) for the full list.
+</details>
+
+<details>
+<summary>What is the difference between a contact and a company?</summary>
+
+A contact is an individual person you communicate with. A company is an organization that owns contacts and opportunities, so you can track the whole business relationship in one place.
+</details>
+
+<details>
+<summary>What is the difference between CRM AI Standard and CRM AI Pro?</summary>
+
+CRM AI Standard adds the AI Sales Assistant and custom objects to the core CRM. CRM AI Pro also adds conversation intelligence and sales coaching.
 </details>
