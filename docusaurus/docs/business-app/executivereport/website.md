@@ -27,7 +27,7 @@ Website performance appears in the Executive Report when Website Standard/Pro is
 
 You can add more detail by connecting Google Analytics:
 
-1. Go to `Business App` → `Administration` → `Connections`
+1. Go to `Business App` → `Administration` → `Integrations`
 2. Open `Browse Integrations` and add **Google Analytics**
 3. Complete the connection steps
 
@@ -51,6 +51,6 @@ With Google Analytics connected, the report can show:
 ## What you need to set up
 
 - **Website Pro data**: Website Standard/Pro active for your account and WordPress site connected
-- **Google Analytics data**: Connect Google Analytics in `Business App` → `Administration` → `Connections` → `Browse Integrations`
+- **Google Analytics data**: Connect Google Analytics in `Business App` → `Administration` → `Integrations` → `Browse Integrations`
 
 Both give you useful website performance data in your Executive Report.

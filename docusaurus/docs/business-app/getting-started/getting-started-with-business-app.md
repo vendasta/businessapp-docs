@@ -224,7 +224,7 @@ Yes. From the [Home](../home.mdx) screen, select **Invite Team Member** in the t
 <details>
 <summary><strong>Where do I manage my integrations after connecting them?</strong></summary>
 
-Go to `Administration` > `Connections` > `Manage` to see all active integrations, reconnect expired authorizations, or disconnect platforms.
+Go to `Administration` > `Integrations` > `Manage` to see all active integrations, reconnect expired authorizations, or disconnect platforms.
 </details>
 
 <details>

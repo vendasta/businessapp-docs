@@ -35,7 +35,7 @@ That way you can stay on top of cash flow and payments without constantly openin
 
 To see financial data in your Executive Report:
 
-1. Go to `Business App` → `Administration` → `Connections`
+1. Go to `Business App` → `Administration` → `Integrations`
 2. Find **QuickBooks Online** in `Browse Integrations`
 3. Complete the steps to link your QuickBooks Online account
 4. Once connected, financial data starts appearing in your Executive Report

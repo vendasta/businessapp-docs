@@ -44,7 +44,7 @@ There are two ways to install Google Analytics in WordPress Hosting: using the b
    * Scroll to the bottom and paste your Measurement ID into the `Custom Google Analytics Tracking ID` field
    * Click `Save Changes`
 
-To ensure accurate data syncing, also verify that Google Analytics is connected in `Business App` → `Administration` → `Connections`.
+To ensure accurate data syncing, also verify that Google Analytics is connected in `Business App` → `Administration` → `Integrations`.
 
 **Method 2: Add the script manually in Divi**
 
