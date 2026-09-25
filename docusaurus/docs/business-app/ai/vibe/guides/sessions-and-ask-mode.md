@@ -26,6 +26,7 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 ## What's included?
 
 - **Session selector**: Create a new session or switch between existing sessions directly from the Vibe interface.
+- **Session search**: Search the session selector by keyword to find a past session by name or by anything said in it.
 - **All messages area**: Located beneath the session selector, this area shows the complete message history for every session in the project.
 - **Ask mode**: An interactive chat mode for back-and-forth discussion and brainstorming before execution.
 - **Mode switching**: Switch from Ask mode to plan or build mode when you're ready — the context you built in Ask mode carries forward automatically.
@@ -48,6 +49,14 @@ Vibe holds onto what matters from earlier in the conversation — decisions and 
 ### Review your message history
 
 To review messages from previous sessions, click the **All messages** area beneath the session selector. All project messages are visible here regardless of which session they belong to.
+
+### Search your sessions
+
+1. In the session selector, start typing in the search field.
+2. Matching sessions appear as you type, whether the match is in the session name or in a message sent or received within that session. The matching text is highlighted in the results.
+3. Click a result to open that session at the matching message.
+
+Search is scoped to the current project and isn't case-sensitive.
 
 ### Use Ask mode
 
@@ -127,4 +136,10 @@ No. Sessions and Ask mode are built into every Vibe project — open Vibe from t
 <summary>Where is the session selector?</summary>
 
 The session selector is available in the Vibe interface. The **All messages** area, which shows the full history for your project, is located directly beneath it.
+</details>
+
+<details>
+<summary>How do I find a past session?</summary>
+
+Use the search field in the session selector. Typing a keyword matches against session names and against the messages sent and received in each session, with the matching text highlighted. Click a result to jump straight to that session and message.
 </details>
