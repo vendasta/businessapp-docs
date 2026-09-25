@@ -2,6 +2,9 @@
 title: Web chat setup & usage
 description: How to set up, configure, and troubleshoot the AI web chat widget
 sidebar_label: Web Chat
+brand: business-app
+product: conversations
+audience: smb
 ---
 
 The AI web chat widget automatically captures leads from your website and answers visitor questions 24/7. Here's how to set it up and use it effectively.
@@ -26,7 +29,7 @@ The AI web chat widget automatically captures leads from your website and answer
 2. **Widget name**: Enter a unique name to identify this widget internally (usually your domain or the page it's for).
 
 :::tip Run more than one widget
-You can create multiple web chat widgets and assign a different AI employee to each — for example, a sales widget on your pricing page and a support widget on your help page. To add another, return to the **Web Chat configuration** page and click `New Web Chat` again.
+You can create multiple web chat widgets and assign a different AI employee to each, for example, a sales widget on your pricing page and a support widget on your help page. To add another, return to the **Web Chat configuration** page and click `New Web Chat` again.
 :::
 
 ### Step 3: Assign an AI employee
@@ -72,7 +75,7 @@ When you're done configuring the widget, click `Next` to save it.
 
 ### Step 6: Install on website
 
-Open the widget from the **Web Chat configuration** page (click its name, or use the `⋮` menu and choose `Embed`) to find your installation code. There are two widget types — choose one based on how you want the chat to appear on your site.
+Open the widget from the **Web Chat configuration** page (click its name, or use the `⋮` menu and choose `Embed`) to find your installation code. There are two widget types, choose one based on how you want the chat to appear on your site.
 
 ## Widget types
 
@@ -95,7 +98,7 @@ import TabItem from '@theme/TabItem';
 3. Upload the ZIP file you just downloaded.
 4. Activate the plugin.
 
-Your web chat widget will now appear on every page of your website.
+Your web chat widget appears on every page of your website.
 
 #### Install manually on WordPress (Divi)
 
@@ -144,7 +147,7 @@ To get the code: open the widget from the **Web Chat configuration** page, expan
 
 1. Copy the code from the **Embedded Chat Widget** section.
 2. Paste it into the `<body>` of your webpage, at the exact location where you want the chat to appear.
-   - **Divi (WordPress)**: open the page in the Divi Builder > add a **Code module** > paste the full snippet > Save.
+   - **Divi (WordPress)**: open the page in the Divi Builder → add a **Code module** → paste the full snippet → Save.
 3. Optionally adjust the size and layout directly in the code:
    - **Width**: change `width: 80%` to your preferred width (`100%` for full width)
    - **Centering**: keep `margin: 0 auto;` to center the widget container
@@ -154,54 +157,54 @@ To get the code: open the widget from the **Web Chat configuration** page, expan
 **Test Installation**: Always verify the widget appears and functions correctly on the live site after installing either widget type.
 
 ### Widget actions
-When a chat widget is loaded onto a website, you can add widget actions: links that will populate the chat with a message on behalf of visitors. These are great when you want to help visitors engage with your AI Receptionist in a specific way. For example, clicking a button that pre-fills "I want to book an appointment" so your AI Receptionist can start guiding a visitor along that particular workflow.
+When a chat widget is loaded onto a website, you can add widget actions: links that populate the chat with a message on behalf of visitors. These are great when you want to help visitors engage with your AI Receptionist in a specific way. For example, clicking a button that pre-fills "I want to book an appointment" so your AI Receptionist can start guiding a visitor along that particular workflow.
 
-Under the widget actions section of web chat configuration, you will find the types of actions, implementation options, and instructions for using the code that is generated based on your selections which you can then copy and add to your site. Here is a breakdown of the configuration options:
+Under the widget actions section of web chat configuration, you find the types of actions, implementation options, and instructions for using the code that is generated based on your selections, which you can then copy and add to your site. Here is a breakdown of the configuration options:
 
-#### Select an Action
+#### Select an action
 1. **Prefill message** - Use this option if you want to suggest a message but don't want to force visitors to send it.
 2. **Send message** - Use this option if you want the message sent to the AI assistant; useful for initiating specific workflows.
 
-#### Select an Implementation Method
+#### Select an implementation method
 1. **Anchor link listener** - Triggers the action via a URL. Best for direct links, email campaigns, or navigating to a page with the web chat from an external source.
 2. **JavaScript API** - Triggers the action programmatically. Best for dynamic interactions, custom triggers, or on-page buttons.
 
-#### Enter a Message
-Enter a message that will be used in selected action when the link is clicked. If left empty, the action will open the Web Chat only.
+#### Enter a message
+Enter a message that is used in the selected action when the link is clicked. If left empty, the action opens the Web Chat only.
 
 #### Code
 The code changes depending on the action, implementation, and message set. You can configure these multiple times to create multiple snippets of code and have many different actions. Instructions for using the code vary depending on implementation method.
-1. **For anchor link listener:** Use the code in a URL as an anchor link or redirect target. The widget will automatically detect the hash and trigger the action when the page loads or when the hash changes.
+1. **For anchor link listener:** Use the code in a URL as an anchor link or redirect target. The widget automatically detects the hash and triggers the action when the page loads or when the hash changes.
 2. **For JavaScript API:** Use the code in your button's onClick handler or any JavaScript event. The webchatAPI is automatically available once the widget script loads.
 
 ## Managing conversations
 
-### When AI Assistant hands off to humans
+### When AI assistant hands off to humans
 
 - AI assistant captures lead information first (name, phone/email)
 - Team members get notified of new conversations
-- Staff can join conversations through Business App > Conversations
+- Staff can join conversations through Business App → Conversations
 - Chat history remains available for context
 
 ### Lead follow-up
 
 - New leads automatically appear in your CRM
-- Follow up via SMS (US/Canada) or email 
+- Follow up via SMS (US/Canada) or email
 - Use automations to send immediate responses
 - Set up nurture campaigns for qualified leads
 
-## How will I be notified about a new lead?
+## How am I notified about a new lead?
 
-When your AI assistant successfully captures a name and contact info, a few things will happen automatically:
+When your AI assistant successfully captures a name and contact info, a few things happen automatically:
 
 1. A new contact is added to your CRM Contacts, with the captured info: First name, last name, phone number, and email address.
-   * If a lead updates their contact info in the AI-assisted web chat (like for example, if they make a mistake), the latest contact info will be updated on the contact automatically.
+   * If a lead updates their contact info in the AI-assisted web chat (like for example, if they make a mistake), the latest contact info updates on the contact automatically.
 2. A "New lead" email notification is sent to you and your team. Make sure you have notifications enabled for new leads.
 
 ## Common issues and solutions
 
 <details>
-<summary><strong>Widget Not Appearing</strong></summary>
+<summary><strong>Widget not appearing</strong></summary>
 
 If the Conversations web chat widget does not appear on your site after installation, try these troubleshooting steps:
 
@@ -211,7 +214,7 @@ If the Conversations web chat widget does not appear on your site after installa
   - Mac: `Shift` + `Command` + `R`
   - PC: `Ctrl` + `F5`
 - **Website hosting cache:** Clear your website's cache (e.g., use the "Flush Cache" button if available in your website platform).
-- **WordPress/Divi cache:** If using the Divi theme, go to Theme Options > Builder > Advanced and disable "Static CSS File Generation."
+- **WordPress/Divi cache:** If using the Divi theme, go to Theme Options → Builder → Advanced and disable "Static CSS File Generation."
 - **Other cache plugins:** Temporarily disable any cache plugins and refresh your site.
 
 #### 2. Check your widget code placement
@@ -227,11 +230,11 @@ Ensure the widget installation code is pasted in the correct location:
 
 #### 4. Verify activation
 
-- Confirm Conversations AI Pro is active on your account, and the web chat widget is enabled.
+- Confirm your Conversations AI subscription is active, and the web chat widget is enabled.
 </details>
 
 <details>
-<summary><strong>AI Assistant Not Responding Accurately</strong></summary>
+<summary><strong>AI assistant not responding accurately</strong></summary>
 
 - **Add more knowledge**: Train AI assistant with website content and custom Q&A
 - **Update business profile**: Ensure location, services, hours are current
@@ -240,7 +243,7 @@ Ensure the widget installation code is pasted in the correct location:
 </details>
 
 <details>
-<summary><strong>Leads Not Converting</strong></summary>
+<summary><strong>Leads not converting</strong></summary>
 
 - **Improve welcome greeting**: Make it more compelling and specific
 - **Refine initial AI message**: Ask better qualifying questions upfront
@@ -249,7 +252,7 @@ Ensure the widget installation code is pasted in the correct location:
 </details>
 
 <details>
-<summary><strong>Poor Visual Integration</strong></summary>
+<summary><strong>Poor visual integration</strong></summary>
 
 - **Adjust colors**: Match widget colors to your website branding
 - **Test mobile experience**: Enable/disable mobile popup as needed
@@ -257,7 +260,7 @@ Ensure the widget installation code is pasted in the correct location:
 </details>
 
 <details>
-<summary><strong>Team Not Getting Notifications</strong></summary>
+<summary><strong>Team not getting notifications</strong></summary>
 
 - **Check team permissions**: Ensure your team has access to Conversations
 - **Verify notification settings**: Review Business App notification preferences
@@ -278,7 +281,7 @@ Ensure the widget installation code is pasted in the correct location:
 - **Welcome Greeting**: Keep it short, friendly, and action-oriented  
 - **Initial AI Message**: Be specific about what help you provide and ask qualifying questions
 - **Colors**: Use your brand colors to integrate with your website
-- **Mobile Popup**: Enable for service businesses, disable if it might interrupt user experience
+- **Mobile Popup**: Enable for service businesses, disable if it interrupts the visitor experience
 
 The web chat widget works best when properly configured with business-specific information and integrated into your team's workflow.
 
@@ -326,15 +329,15 @@ The AI assistant can respond in over 40 languages, including English, Spanish, F
 
 Some plugins can interfere with the ability to type in the widget because they "hijack" that key for their own functions.
 
-For example, website admins will have trouble typing messages into the web chat widget when the WordPress Jetpack plugin is enabled because it hijacks some of the keys to open and close their own chat functions. Disabling the JetPack plugin will restore the function of these keys.
+For example, website admins have trouble typing messages into the web chat widget when the WordPress Jetpack plugin is enabled because it hijacks some of the keys to open and close their own chat functions. Disabling the Jetpack plugin will restore the function of these keys.
 
-Smooth scrolling website features can also interfere with the ability of your website visitors to type the 'space' key with the web chat widget. If you have the Divi theme on a WordPress website, you can disable smooth scrolling by going to Divi > Theme Options and disabling the Smooth Scrolling functions.
+Smooth scrolling website features can also interfere with the ability of your website visitors to type the 'space' key with the web chat widget. If you have the Divi theme on a WordPress website, you can disable smooth scrolling by going to Divi → Theme Options and disabling the Smooth Scrolling functions.
 </details>
 
 <details>
 <summary><strong>How do I remove the Google reCAPTCHA badge that's blocking my chat widget?</strong></summary>
 
-When reCAPTCHA is being used on a website form, this badge will appear in the bottom right of a webpage – which could be in the way of the web chat widget.
+When reCAPTCHA is being used on a website form, this badge appears in the bottom right of a webpage, which could be in the way of the web chat widget.
 
 You can hide the badge completely on your website with some custom CSS; just make sure to follow Google's required alternative ways to inform visitors that reCAPTCHA is being used.
 
@@ -343,7 +346,7 @@ Read more: https://developers.google.com/recaptcha/docs/faq#id-like-to-hide-the-
 To hide the reCAPTCHA badge, go to your website CSS editor:
 
 - Log in to your WordPress dashboard  
-- Go to Appearance » Customizer  
+- Go to Appearance → Customizer  
 - Click Additional CSS  
 - Add the snippet:
 
@@ -354,4 +357,10 @@ To hide the reCAPTCHA badge, go to your website CSS editor:
 ```
 
 - Save and preview your website.
+</details>
+
+<details>
+<summary><strong>Where did my web chat conversations go?</strong></summary>
+
+Check the `Anonymous Visitors` view in `Conversations`. Anonymous chats are hidden by default. A conversation stays anonymous when the visitor does not share contact details (and your assistant does not ask for them). Review your lead-capture prompt if you expect named leads.
 </details>

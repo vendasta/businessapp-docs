@@ -2,6 +2,9 @@
 title: "Understanding WebP: How to Use Next-Gen Images in WordPress"
 sidebar_label: "WebP Images"
 description: "WebP is a next-gen image format developed by Google that offers superior compression and quality compared to traditional formats like JPEG and PNG. Using WebP helps improve website speed and performance."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WebP is a next-gen image format developed by Google that offers **superior compression and quality** compared to traditional formats like JPEG and PNG. Using WebP in WordPress helps improve website speed and performance, leading to **better SEO and user experience**.

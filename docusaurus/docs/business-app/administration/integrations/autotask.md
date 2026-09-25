@@ -4,7 +4,10 @@ sidebar_label: Autotask
 description: Connect Datto Autotask PSA to Business App to keep companies and contacts in sync automatically in both directions.
 sidebar_position: 5
 tags: [integrations, autotask, crm, psa]
-keywords: [Autotask, Datto Autotask, PSA, CRM sync, API user, webhooks, external ID, bidirectional sync]
+keywords: [Autotask, Datto Autotask, PSA, CRM sync, API user, Integration Vendor, Integration Code, webhooks, external ID, bidirectional sync]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Datto Autotask PSA is a professional services automation platform for managing companies, contacts, and service delivery. Connecting Autotask to Business App keeps your companies and contacts synchronized in real time between both systems, so you do not need to enter data twice or rely on a third-party automation tool.
@@ -57,7 +60,7 @@ Without webhooks enabled, the connection appears active but changes made in Auto
 2. Click **Create New**.
 3. Enter a **Name** and **Email**.
 4. Assign the security level you created.
-5. Choose **Integration Vendor** in the **API Tracking Identifier** field.
+5. In the **API Tracking Identifier** field, choose **Integration Vendor**, then select **AMP - Automated Marketing Platform**.
 6. Save, then record the **Username** and **Secret**. You will need both to connect.
 
 ## Step 2: Prevent duplicate records
@@ -165,6 +168,7 @@ To change whether updates flow back into Autotask, adjust the **Sync back to Aut
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
+| `Credential validation failed: Integration Code is invalid.` | The API user's Integration Vendor is not set to **AMP - Automated Marketing Platform** | In Autotask, open the API User and set **API Tracking Identifier** → **Integration Vendor** → **AMP - Automated Marketing Platform**, then reconnect. If the vendor cannot be changed on the existing user, create a new API user with that vendor selected |
 | 500 error when connecting | Invalid credentials or a disabled API user | Verify the username and secret in Autotask, then re-enter them |
 | Connected, but nothing syncs | Webhooks are not enabled | Enable webhooks on the security level with a limit of at least 5 |
 | Contacts are not appearing | The contact is not linked to a company | Link the contact to a company in Autotask |

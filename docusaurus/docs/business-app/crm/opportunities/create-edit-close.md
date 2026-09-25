@@ -2,6 +2,9 @@
 title: Create, edit, and close opportunities
 sidebar_position: 2
 description: Create opportunities from the page or CSV import; edit from profile or table view; close won or lost.
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## Pipeline and list view

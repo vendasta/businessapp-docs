@@ -5,6 +5,9 @@ sidebar_label: AI Voice Receptionist
 sidebar_position: 2
 keywords: [AI voice receptionist, AI phone answering, automated receptionist, call handling AI, phone lead capture, appointment booking calls, call forwarding AI, 24/7 phone answering, voice AI assistant, business phone automation]
 tags: [ai, voice, phone, lead capture, automation, appointments]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 Your AI Voice Receptionist helps answer your calls 24/7, captures new-lead info, gives callers fast and accurate answers, and helps get questions to the right person when they don't have an answer. 

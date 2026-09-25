@@ -2,6 +2,9 @@
 title: "Install NitroPack on WordPress"
 sidebar_label: "Install NitroPack"
 description: "Step-by-step guide on how to install and configure NitroPack on WordPress for performance optimization."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Here is the step-by-step guide on how to install NitroPack on WordPress:

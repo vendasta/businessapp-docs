@@ -5,6 +5,9 @@ sidebar_position: 4
 description: Centralize information for AI Employees to reference when answering customer questions.
 tags: [ai-employees, knowledge-base, setup]
 keywords: [AI Knowledge Base, AI data sources, business info for AI, AI training data, document upload]
+brand: business-app
+product: ai-knowledge-base
+audience: smb
 ---
 
 The Knowledge Base is a reference library your AI Employees can search when answering customer questions. When the AI determines a lookup would be helpful, it performs a semantic search and retrieves relevant content to inform its response.

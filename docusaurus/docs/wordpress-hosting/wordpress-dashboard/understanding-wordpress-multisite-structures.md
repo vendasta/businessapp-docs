@@ -2,6 +2,9 @@
 title: "Understanding WordPress Multisite Structures"
 sidebar_label: "Multisite"
 description: "Learn about WordPress Multisite structures, subdirectory vs. subdomain setups, and how to configure subdirectory-based Multisite on WordPress Hosting."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## WordPress Multisite: Subdirectory vs. subdomain setup

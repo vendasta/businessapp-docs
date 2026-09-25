@@ -4,6 +4,9 @@ sidebar_label: SMS Registration (US)
 description: Everything you need to register your US business for SMS messaging — requirements, compliance checklist, and common rejection reasons.
 tags: [business-app, sms, a2p, registration, conversations]
 keywords: [A2P registration, 10DLC, SMS registration, US business SMS, carrier compliance]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 US phone carriers require businesses to register before sending SMS messages to customers. This process is called A2P 10DLC (Application-to-Person 10-Digit Long Code) registration. It verifies your business identity and confirms that your website meets carrier compliance standards. Without an approved registration, your business cannot send or receive SMS messages through US phone numbers.

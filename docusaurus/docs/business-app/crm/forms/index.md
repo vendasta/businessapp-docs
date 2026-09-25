@@ -2,6 +2,9 @@
 title: Forms
 sidebar_position: 1
 description: Capture leads from your website into the CRM with embeddable forms, automations, and optional file uploads.
+brand: business-app
+product: crm
+audience: smb
 ---
 Use Forms to capture leads from your website directly into the CRM. Embed a form on any page, create the contact automatically, start a conversation in Conversations, and trigger automations for instant follow-up.
 

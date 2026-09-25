@@ -2,6 +2,9 @@
 title: "Troubleshoot SSL issues in WordPress Hosting"
 sidebar_label: "Troubleshoot SSL"
 description: "If you have correctly added the required A and CNAME records in your domain's DNS settings, follow the steps below to connect SSL to your custom domain."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 If you have correctly added the following A and CNAME records in your domain's DNS settings, follow the steps below to connect SSL to your custom domain.

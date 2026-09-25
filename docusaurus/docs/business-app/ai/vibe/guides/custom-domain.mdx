@@ -1,11 +1,14 @@
 ---
 title: Custom Domains
 sidebar_position: 4
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Custom Domains
 
-Every Vibe project gets a default published URL automatically. On the Standard plan, you can also publish to a domain you own — including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. TLS is provisioned automatically for both your default URL and any custom domain, so you don't need to purchase or manage certificates.
+Every Vibe project gets a default published URL automatically. On the Standard and Pro plans, you can also publish to a domain you own — including country and regional domains like `.co.uk`, `.com.au`, and `.org.uk`. TLS is provisioned automatically for both your default URL and any custom domain, so you don't need to purchase or manage certificates.
 
 ## Your default domain
 
@@ -15,7 +18,7 @@ Visiting the bare domain (without `www`) redirects to the full URL automatically
 
 ## Requirements for custom domains
 
-Custom domains require the Standard plan. If you're on a different plan, upgrade first through the self-checkout flow in Business App. See [Credits](../credits.md) for information on plan upgrades.
+Custom domains require the Standard or Pro plan. On the Free plan, upgrade first through the self-checkout flow in Business App. See [Credits](../credits.md) for information on plan upgrades.
 
 ## Add a Custom Domain
 
@@ -40,4 +43,10 @@ To remove a custom domain, go to **Publish** and remove it with one click. Your 
 <summary>My custom domain shows "Verifying" for a long time. What should I do?</summary>
 
 DNS propagation can take up to 48 hours depending on your registrar. Make sure the CNAME or A records match exactly what Vibe displayed. If you entered the wrong records, remove the domain and re-add it to get fresh verification instructions.
+</details>
+
+<details>
+<summary>My custom domain has DNS set up but HTTPS certificate provisioning is stuck. What should I do?</summary>
+
+Remove the custom domain in Vibe, remove the custom DNS records you added for Vibe, then add the custom domain again. This often clears a certificate challenge left over from an older project that used the same domain.
 </details>

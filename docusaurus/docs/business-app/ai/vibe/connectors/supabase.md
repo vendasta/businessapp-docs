@@ -3,11 +3,16 @@ title: Supabase Backend
 sidebar_label: Supabase Backend
 sidebar_position: 5
 description: Connect a Supabase project to Vibe so your app runs on real data, authentication, and storage.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Supabase Backend
 
 Connect your Supabase project to Vibe so the app it builds runs against your actual database, authentication, and storage, not placeholder data.
+
+The Supabase connector is available on the **Pro** and **Premium** plans (Premium has the same connector entitlements as Pro). It may also need to be enabled for your account. Credentials are stored via **Platform Integrations** (Administration → Integrations), not as a Vibe-local secret store.
 
 When you link a Supabase project, Vibe builds directly against your real schema and data. The generated app is fully wired to your Supabase backend from the start, so there is no extra configuration step to connect it later.
 
@@ -37,12 +42,14 @@ If you don't already have a Supabase project, sign up for a free account at supa
 
 ## Connect your Supabase project
 
+Credentials are connected through **Platform Integrations**:
+
 1. In Business App, go to **Administration**.
 2. Under **App settings**, select **Integrations**.
 3. On the Integrations page, select the **AI Tools** category in the left sidebar.
 4. Select **Supabase** from the list of integrations.
 5. Click `Connect`.
-6. In the **Connect Supabase** dialog, enter your **Project URL**, **Personal Access Token**, and **Publishable Key**.
+6. In the **Connect Supabase** dialog, enter your **Project URL**, **Personal Access Token**, and **Publishable Key**. The connection must include all required fields (including the publishable key) to be treated as connected.
 
 ![Connect Supabase dialog in Business App with fields for Project URL, Personal Access Token, and Publishable Key](./img/connect-supabase-dialog.png)
 
@@ -63,3 +70,23 @@ Generating a Personal Access Token takes you to your Supabase account's Access T
 ## Secrets and API keys
 
 When your Vibe app needs a Supabase API key, Vibe shows you exactly which secret to add and links directly to the right page in your Supabase dashboard. Your keys go into your project's environment, never into the chat. If a required key is missing, your app surfaces a clear error message instead of failing silently.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Why does Vibe say Supabase is disconnected when it looks connected?</summary>
+
+Your Vibe project may be calling a different Supabase project than the one connected on the account. Confirm both point to the same project. A paused or replaced Supabase project can also cause this mismatch.
+</details>
+
+<details>
+<summary>Why does chat say Supabase is not connected even though the Supabase capability is enabled?</summary>
+
+Enabling the skill is not enough if the account has no credentials. Go to `Administration` → `Integrations` and add a Supabase connection for the account.
+</details>
+
+<details>
+<summary>Can several Vibe apps share one Supabase project? Can I host an app on a URL path like `/seo-report/`?</summary>
+
+Multiple Vibe projects can share one Supabase project, but do not share one project across different companies. Vibe does not host apps on URL paths. Use a subdomain instead, for example `seo-report.yourdomain.com`.
+</details>

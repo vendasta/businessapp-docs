@@ -5,6 +5,9 @@ sidebar_position: 5
 description: Create custom CRM modules to track industry-specific data like equipment, properties, vehicles, or pets alongside your contacts and companies. Supports bulk import, automations, smart lists, and API.
 tags: [crm, custom-objects, customization, automation, bulk-import, api]
 keywords: [custom objects, custom modules, custom crm, industry-specific crm, custom fields, bulk import, smart lists, automations, api]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Custom objects let you extend the CRM beyond standard contacts, companies, and opportunities by creating flexible data types tailored to your business or industry. Track specialized records like equipment, properties, vehicles, pets, demos, or any other entity that matters to your workflow — all within the same CRM.

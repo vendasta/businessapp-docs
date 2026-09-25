@@ -2,6 +2,9 @@
 title: "How to Find PHP Logs"
 sidebar_label: "PHP Logs"
 description: "Access PHP logs through the Advanced Tools section in WordPress Hosting to troubleshoot and debug your website."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 If you're troubleshooting an issue or debugging your website, accessing PHP logs is crucial. WordPress Hosting makes it easy to view these logs through the **Advanced Tools** section. Follow the steps below to locate your PHP logs:
 

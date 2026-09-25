@@ -5,6 +5,9 @@ sidebar_position: 11
 description: Browse automatic and on-demand backups, create new ones, and restore your site in one click.
 tags: [wordpress-hosting, dashboard, backups, restore]
 keywords: [WordPress backup, automatic backup, on-demand backup, restore backup, download backup, delete backup]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 **Backups** protect your site. With a recent backup you can roll back from a bad plugin update, a broken theme change, or a content mistake in minutes. Backups run automatically every day; you can also create one on demand before making a significant change.

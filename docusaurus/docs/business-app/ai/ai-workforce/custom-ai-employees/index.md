@@ -12,6 +12,9 @@ keywords:
     data analyst,
     AI setup,
   ]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 Custom AI Employees are specialized digital team members you build from scratch to handle specific business functions. Unlike pre-configured AI Employees (Chat Receptionist, Voice Receptionist, Reputation Specialist), custom employees give you full control over their role, behavior, and capabilities.
@@ -27,12 +30,12 @@ Custom AI Employees are specialized digital team members you build from scratch 
 - **Knowledge sources**: business-specific information the AI draws from
 - **Channels**: where the AI Employee operates
 
-## When to build a custom AI Employee
+## When to build a custom AI employee
 
 Build a custom AI Employee when you want to expand your workforce with a specialized role not covered by a pre-configured option, such as:
 
 - An **[AI Data Analyst](./ai-data-analyst.mdx)** that reasons through CRM, review, and social data to deliver structured insights
-- An **[Inside Sales Representative](./inside-sales-representative.md)** that qualifies inbound leads before capturing contact information or booking appointments
+- An **[Inside Sales Representative](./inside-sales-representative.mdx)** that qualifies inbound leads before capturing contact information or booking appointments
 - An **[AI Support Employee](./ai-support-employee.mdx)** that resolves customer inquiries via chat and SMS, and escalates with structured message capture when a question falls outside the knowledge base
 - A **compliance assistant** that checks processes against internal policies
 - Any role where the default AI Employees don't match your workflow
@@ -50,7 +53,7 @@ Every custom AI Employee follows these steps:
 For detailed instructions, see [How to Create Custom Capabilities](../../ai-capabilities/creating-custom-capabilities.md).
 
 :::tip Web Chat sees the visitor's current URL
-Custom AI Employees assigned to the **Web Chat** channel receive the visitor's current page URL with every message — the same as the AI Chat Receptionist. See [Make responses page-aware with the visitor's current URL](../ai-chat-receptionist/index.mdx#make-responses-page-aware-with-the-visitors-current-url) for how to tune prompts to use it.
+Custom AI Employees assigned to the **Web Chat** channel receive the visitor's current page URL with every message, the same as the AI Chat Receptionist. See [Make responses page-aware with the visitor's current URL](../ai-chat-receptionist/index.mdx#make-responses-page-aware-with-the-visitors-current-url) for how to tune prompts to use it.
 :::
 
 ## Assign a custom AI employee to web chat
@@ -69,5 +72,5 @@ Each widget uses one AI employee at a time, and the same employee can be assigne
 ## Available guides
 
 - [AI Data Analyst](./ai-data-analyst.mdx): analyze CRM data, reviews, and social engagement with structured AIR (Analyze, Interpret, Recommend) reasoning
-- [Inside Sales Representative](./inside-sales-representative.md): qualify inbound leads, capture contact information, and book appointments with a sales-first conversational approach
+- [Inside Sales Representative](./inside-sales-representative.mdx): qualify inbound leads, capture contact information, and book appointments with a sales-first conversational approach
 - [AI Support Employee](./ai-support-employee.mdx): resolve customer support inquiries via chat and SMS, with structured empathy for complaints and automatic escalation when questions fall outside the knowledge base

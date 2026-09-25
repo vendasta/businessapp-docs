@@ -2,6 +2,9 @@
 title: "Bypass Caching to See Changes"
 sidebar_label: "Bypass Caching"
 description: "Learn how to temporarily bypass caching or manually flush your site cache to view your most recent changes immediately."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting uses caching to speed up your site. However, changes may not show immediately due to this caching. You can bypass caching temporarily or manually flush your site cache to ensure visitors see the latest version.

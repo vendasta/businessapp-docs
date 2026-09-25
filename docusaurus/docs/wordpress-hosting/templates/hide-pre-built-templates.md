@@ -2,6 +2,9 @@
 title: "Hide pre-built templates"
 sidebar_label: "Hide Templates"
 description: "Learn how to hide the pre-built templates included in WordPress Hosting so they won't appear when creating new sites."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 To hide the pre-built templates included in the initial WordPress Hosting setup, follow these simple steps:

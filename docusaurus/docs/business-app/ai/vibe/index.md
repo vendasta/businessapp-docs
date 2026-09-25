@@ -1,6 +1,9 @@
 ---
 title: Introduction to Vibe
 sidebar_position: 1
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Introduction to Vibe
@@ -76,13 +79,13 @@ Apps are served as fully rendered HTML that search engines and AI assistants can
 Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
 
 ### Checkpoints
-Vibe automatically creates checkpoints as you iterate. You can view diffs between versions and restore previous states if needed.
+Vibe automatically creates checkpoints as you iterate — each checkpoint is a **git commit**. You can view diffs between versions and restore previous states if needed.
 
 ### Credits
 Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
 
-### Custom Domains (Professional)
-On the Professional plan, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
+### Custom Domains (Standard and Pro)
+On the Standard and Pro plans, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
 ## How It Works
 
@@ -125,7 +128,7 @@ When a prompt is ambiguous, Vibe pauses and asks clarifying questions before gen
 <details>
 <summary>How do I undo a change I don't like?</summary>
 
-Vibe creates checkpoints automatically as you iterate. Open the Checkpoints panel from the toolbar to view diffs and restore any previous version.
+Vibe creates checkpoints (git commits) automatically as you iterate. Open the Checkpoints panel from the toolbar to view diffs and restore any previous version.
 
 </details>
 
@@ -140,6 +143,13 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 <summary>Are Vibe sites SEO-friendly?</summary>
 
 Yes. Vibe apps are served as fully rendered HTML that search engines and AI assistants can read directly. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and you control indexing from the SEO section in project settings. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
+
+</details>
+
+<details>
+<summary>Can I download my project and host it somewhere else?</summary>
+
+Yes, on the Pro plan. Click `Download` in the toolbar to get the project's source code and its full checkpoint history. Images Vibe generated for you stay on their hosted URLs rather than travelling in the archive, and the guide below covers how to bring them along. Projects are built on open frameworks — React, TanStack Start, Vite, and Tailwind CSS — so they run on any host that supports Node.js. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
 
 </details>
 
@@ -164,5 +174,6 @@ Yes. Turn on notifications for the current run from the chat composer and allow 
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
+- [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md) — Get the full source code on the Pro plan and run it on any Node.js host
 - [Credits](./credits.md) — Understand how credits work and how to purchase more
-- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Professional)
+- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Standard and Pro)

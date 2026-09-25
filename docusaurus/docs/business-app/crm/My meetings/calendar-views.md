@@ -4,7 +4,10 @@ sidebar_label: Calendar Views
 description: View your team's schedule, filter by team member or service, and book, reschedule, or cancel meetings directly from the My Meetings calendar.
 sidebar_position: 5
 tags: [meetings, crm, team, calendar]
-keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots]
+keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, general availability, saved view, remembered filters]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 # Calendar Views
@@ -14,7 +17,7 @@ The My Meetings calendar gives you a live, interactive view of your business's s
 ## Accessing the calendar
 
 1. Go to `CRM` > `My Meetings`.
-2. The calendar opens in **Column View** by default.
+2. The calendar reopens in whichever view you last used, including a custom multi-day range. If you're new to My Meetings, it opens in **Column View** with all filters selected.
 3. Use the view switcher in the top toolbar to switch between views.
 4. Navigate dates with the arrow controls, or click any date on the mini calendar in the sidebar to jump directly.
 
@@ -44,7 +47,7 @@ Use the left sidebar to control what appears on the calendar:
 - Click the **Events** tab at the top of the sidebar to filter by service type instead of team member.
 - Use the search bar inside the Team Events section to find specific bookings by name.
 
-Your sidebar selections are remembered between sessions, so the calendar opens exactly as you left it.
+Your view, filter tab, and sidebar selections are all remembered between sessions. This is saved to your account, so it follows you to a new tab or device — if you share a computer with someone else, each of you sees your own saved view and filters. If a saved filter points to a team member or event type that's since been removed, it's dropped silently and the rest of your filters still apply.
 
 ## Book a meeting from the calendar
 
@@ -94,18 +97,29 @@ To hide Blocked slots, turn off **Show blocked time slots** at the bottom of the
 
 This setting is yours alone and changes only what you see, including a team member's blocked time on shared views like Column View — not theirs. It doesn't affect booking: busy time from a connected calendar is always excluded from bookable availability, whether the toggle is on or off.
 
+## Hours outside general availability
+
+Hours that fall outside a person's [General availability](./index.md#meeting-settings) appear with a greyed background, so you can see at a glance which hours are within normal bookable hours and which aren't. The treatment matches General availability per day of the week — if a day isn't enabled, the entire day appears greyed; if hours are set for only part of a day, the hours before and after that window are greyed.
+
+When you view your own calendar, the greyed hours reflect your own General availability. When you view a team member's calendar, the greyed hours reflect that team member's own General availability.
+
+Greying is a visual indicator only — it doesn't restrict booking. You can still click into a greyed slot and book a meeting there if you choose.
+
+This treatment appears in Column, Day, and Week views, alongside and visually distinct from **Blocked** slots from a connected external calendar — both can appear on the same calendar at the same time.
+
 ## Good to know
 
 - **Inactive team members stay visible.** Deactivated staff appear in a separate group in the sidebar so you can still review historical bookings. New bookings cannot be assigned to inactive members, and the calendar flags any existing bookings that need to be reassigned.
 - **Conflict detection includes buffer time.** Each service type can be configured with setup or teardown buffer minutes. The calendar accounts for these when evaluating whether a drop destination is available.
 - **Cross-column reassignment requires confirmation.** In Column View, dropping an event onto a different staff member's column opens a confirmation dialog before the provider change is saved.
+- **The date always resets to today.** Your view type and filters are remembered, but the calendar always opens on the current day or period rather than a past date you were looking at.
 
 ## Frequently Asked Questions
 
 <details>
 <summary>Which calendar view opens by default?</summary>
 
-Column View opens by default. You can switch to Day, Week, Month, List, or Year view using the view switcher in the top toolbar.
+The calendar reopens in whichever view you last used. If you're new to My Meetings, it opens in Column View. You can switch to Day, Week, Month, List, or Year view using the view switcher in the top toolbar.
 </details>
 
 <details>
@@ -121,9 +135,15 @@ Right-click that team member's name in the sidebar and choose **Display only thi
 </details>
 
 <details>
-<summary>Will the calendar remember my sidebar filters the next time I open it?</summary>
+<summary>Will the calendar remember my view and filters the next time I open it?</summary>
 
-Yes. Your sidebar selections are remembered between sessions, so the calendar opens exactly as you left it.
+Yes. Your last selected view (including a custom multi-day range), filter tab, and sidebar selections are all remembered between sessions. This is saved to your account, so it follows you to a new tab or device.
+</details>
+
+<details>
+<summary>What happens if a saved filter points to a deleted team member or event type?</summary>
+
+It's ignored silently — your other saved filters still apply.
 </details>
 
 <details>
@@ -144,6 +164,12 @@ Blocked slots appear in Column, Day, and Week views and respect your sidebar fil
 <summary>Can I hide blocked time slots?</summary>
 
 Yes. Turn off **Show blocked time slots** at the bottom of the calendar sidebar. This only changes what you see — it doesn't affect anyone else's view or your bookable availability.
+</details>
+
+<details>
+<summary>Why are some hours greyed out on my calendar?</summary>
+
+Greyed hours fall outside the relevant person's General availability — your own when viewing your calendar, or a team member's when viewing theirs. This is a visual indicator only; you can still click into a greyed slot and book a meeting there.
 </details>
 
 <details>

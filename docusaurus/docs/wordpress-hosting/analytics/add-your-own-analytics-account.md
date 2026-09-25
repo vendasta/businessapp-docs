@@ -2,6 +2,9 @@
 title: "Add Google Analytics Account"
 sidebar_label: "Add Google Analytics Account"
 description: "Connect your own Google Analytics account to WordPress Hosting for more accurate visitor data."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting has a built-in dashboard that displays highlights of your site’s visitor information using [Google Analytics.](https://www.google.com/analytics/analytics/) However, we understand that you may want to dig deeper using your own account. That’s why WordPress Hosting provides an easy way to do just that.

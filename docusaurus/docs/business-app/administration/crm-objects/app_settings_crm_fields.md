@@ -2,6 +2,9 @@
 title: CRM Fields
 sidebar_label: CRM Fields
 description: Add custom data fields to your contact and company records to track information beyond the default setup.
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 ## What are CRM fields?
 

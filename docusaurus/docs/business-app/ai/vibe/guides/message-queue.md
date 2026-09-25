@@ -6,6 +6,9 @@ tags: [vibe, ai, message-queue, composer]
 keywords: [vibe message queue, vibe follow-up prompts, vibe queue, vibe pause resume]
 sidebar_position: 8
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Message Queue

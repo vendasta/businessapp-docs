@@ -4,6 +4,9 @@ description: Connect desktop-based software to Business App using the Broadly Up
 sidebar_position: 4
 tags: [integrations, desktop, connections, quickbooks, upload-client]
 keywords: [desktop integration, Broadly Upload Client, QuickBooks Desktop, Mitchell Manager, RO Writer, Napa TRACS, Dentrix, access key]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Desktop-based software connects to Business App through the **Broadly Upload Client**, a lightweight application installed on your computer that syncs customer and invoice data automatically.
