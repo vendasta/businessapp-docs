@@ -1,17 +1,28 @@
 ---
-title: Getting Started
+title: "How do I get started with Vibe?"
+description: "Open Vibe in Business App, create a project from a template or prompt, refine it with follow-up prompts, and publish your site to a live URL."
+sidebar_label: Getting Started
 sidebar_position: 1
 unlisted: false
 brand: business-app
 product: vibe
 audience: smb
+content_type: how-to
+kb_id: KB-00129
+answer_snippet: "To get started with Vibe in Business App, click AI, then Vibe in the left sidebar, start a project from a template or a prompt, and watch Vibe build a working app in the live preview. When you're happy with it, click Publish to make it live at a URL."
+doc_owner: vibe
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
-# Getting Started
+# How do I get started with Vibe? {#getting-started}
+
+To get started with Vibe in Business App, click `AI`, then `Vibe` in the left sidebar, start a project from a template or a prompt, and watch Vibe build a working app in the live preview. When you're happy with it, click `Publish` to make it live at a URL.
 
 By the end of this guide, you'll have sent your first prompt and seen Vibe generate a working app in the live preview.
 
-## Step 1: Open Vibe in Business App
+## Step 1: How do I open Vibe in Business App? {#step-1-open-vibe-in-business-app}
 
 Vibe lives in Business App alongside your other AI tools.
 
@@ -24,7 +35,7 @@ You land on the Vibe home. It opens with the "What should we build today?" compo
 
 ![Business App left navigation with the AI section expanded and Vibe highlighted](./img/vibe-nav-entry.png)
 
-## Step 2: Create a New Project
+## Step 2: How do I create a new project? {#step-2-create-a-new-project}
 
 From the home, you have two ways to start:
 
@@ -35,7 +46,7 @@ Your existing projects live under the **My Projects** tab, where each project ca
 
 As soon as the project is created, Vibe loads the Business Profile for the selected location — name, services, hours, and contact details — into the project's knowledge base. Your prompts can draw on that information without you having to include it. See [Business Knowledge](./guides/business-knowledge.md) to learn how to add more context.
 
-## Step 3: Write Your First Prompt
+## Step 3: How do I write my first prompt? {#step-3-write-your-first-prompt}
 
 After creating your project, you'll land in the Vibe editor. This is where you build your application through conversation.
 
@@ -62,7 +73,7 @@ Type your first prompt in the chat input at the bottom of the chat panel. Here a
 
 Press **Enter** or click the send button to submit your prompt.
 
-## Step 4: Watch Vibe build
+## Step 4: What happens while Vibe builds? {#step-4-watch-vibe-build}
 
 After you submit your prompt, Vibe runs through a consistent sequence you can follow in the chat:
 
@@ -86,7 +97,7 @@ To stop a run early, click the **Stop** button in the chat input. The generation
 
 If you switch to another browser tab while Vibe works, you don't have to keep checking back. Turn on notifications for the current run from the chat composer, then allow notifications when your browser asks for permission. Once enabled, your browser sends a notification as soon as the generation completes.
 
-## Step 5: Iterate and Refine
+## Step 5: How do I refine my app? {#step-5-iterate-and-refine}
 
 Your first generation is just the starting point. Use follow-up prompts to refine your application:
 
@@ -98,7 +109,7 @@ Your first generation is just the starting point. Use follow-up prompts to refin
 
 Each prompt builds on the current state of your application. Vibe understands the context of what's already been built and makes targeted changes.
 
-## Step 6: Publish Your Site
+## Step 6: How do I publish my site? {#step-6-publish-your-site}
 
 Once you're happy with what Vibe has built, publish it to make it live at a real URL.
 
@@ -177,6 +188,50 @@ The top-right toolbar provides:
 - **Use images** — If you have a design mockup, attach a screenshot to show Vibe what you're going for.
 - **Paste a URL** — If a website you like is closer to your target than words can describe, paste its URL and Vibe will clone the look and structure as a starting point.
 - **Read the COMPLETED block** — The collapsible "Architecture & Navigation" and "Files" details show what shipped. After a big change, expanding them is the fastest way to confirm Vibe interpreted your prompt the way you meant it.
+
+## Frequently asked questions
+
+<details>
+<summary>How do I open Vibe?</summary>
+
+Sign in to Business App, choose the location you want to build for from the location switcher, then click `AI` > `Vibe` in the left sidebar.
+
+</details>
+
+<details>
+<summary>How do I publish my Vibe site, and do I need to set up DNS or hosting?</summary>
+
+Click `Publish` in the toolbar. Your site goes live at a default URL based on your project name, secured with TLS, and no DNS setup or hosting configuration is required.
+
+</details>
+
+<details>
+<summary>Can I change my site's address when I publish?</summary>
+
+Yes. In the `Publish` dialog, click the pencil icon next to the address to edit the subdomain.
+
+</details>
+
+<details>
+<summary>How do I apply my changes after the site is live?</summary>
+
+Click `Publish` again. Publishing after further edits updates the same URL, and the status indicator next to `Publish` shows **unpublished changes** until you do.
+
+</details>
+
+<details>
+<summary>Can I use my own domain?</summary>
+
+Yes, on the Standard and Pro plans. Add it under **Custom Domain** in the `Publish` dialog. See [Custom Domains](./guides/custom-domain.mdx) for the setup steps.
+
+</details>
+
+<details>
+<summary>Can I move a Vibe project to another host?</summary>
+
+Yes, on the Pro plan. Use **Download** in the toolbar to export the complete source and checkpoint history. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
+
+</details>
 
 ## Next Steps
 
