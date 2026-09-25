@@ -7,9 +7,16 @@ keywords: [ai-reputation-specialist, review response, nps data, google business 
 brand: business-app
 product: ai-workforce
 audience: smb
+content_type: overview
+kb_id: KB-00125
+answer_snippet: "The AI Reputation Specialist is an AI assistant in your Business App AI Workforce that automatically responds to Google Business Profile reviews and Facebook recommendations. You can also chat with it to analyze your reviews and Net Promoter Score (NPS) data."
+doc_owner: ai-workforce
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
-The AI Reputation Specialist is an AI-powered assistant that helps you manage and analyze customer feedback at scale. It can automatically respond to reviews using predefined rules and knowledge, and allows you to explore reviews and Net Promoter Score (NPS) data through a conversational interface.
+The AI Reputation Specialist is an AI assistant in your Business App AI Workforce that automatically responds to Google Business Profile reviews and Facebook recommendations. You can also chat with it to analyze your reviews and Net Promoter Score (NPS) data. Responses follow the rules and knowledge you configure.
 
 <div
   className="wistia_responsive_padding"
@@ -56,7 +63,7 @@ The AI Reputation Specialist addresses these challenges by automating responses 
 - Chat with and analyze all customer reviews and NPS feedback
 - Identify sentiment trends, common themes, and key insights across feedback data
 
-## How to set up the AI Reputation Specialist
+## How do I set up the AI Reputation Specialist? {#how-to-set-up-the-ai-reputation-specialist}
 
 ### Core requirements
 
@@ -72,7 +79,7 @@ While the AI Reputation Specialist can start working with minimal configuration,
 
 ![AI Workforce page showing the Reputation Specialist card with the Configure button highlighted](../img/ai-reputation-specialist-1.png)
 
-1. Go to `AI > AI Workforce`
+1. Go to `AI` > `AI Workforce`
 2. Click `Configure` on the AI Reputation Specialist
 3. Name your AI and upload an identifying image
 
@@ -82,7 +89,7 @@ This helps you recognize the AI during configuration and activity monitoring.
 
 ### Step 2: Understand capabilities
 
-Before enabling automation, it’s important to understand that the AI Reputation Specialist is released with two core capabilities. Each capability serves a different purpose and can be enabled or disabled independently based on your needs.
+The AI Reputation Specialist has two core capabilities. Each capability serves a different purpose and can be enabled or disabled independently based on your needs.
 
 ![Capabilities section listing the Generate Review Response and Explore review and NPS data capabilities](../img/ai-reputation-specialist-3.png)
 
@@ -129,7 +136,7 @@ In the `Trigger` section, you will see a `Settings` link that allows you to cont
 
 ![Triggers section showing the New review received trigger with a Settings link](../img/ai-reputation-specialist-7.png)
 
-1. Open `Trigger > Settings`
+1. Open `Trigger` > `Settings`
 2. Configure the following:
 
 ![Trigger settings for star rating, platforms, and response delay when a new review is received](../img/ai-reputation-specialist-9.png)
@@ -228,5 +235,19 @@ If a response has already been posted for that review, no draft is shown in the 
 <summary>Can the AI analyze reviews without responding?</summary>
 
 Yes. Enable only the `Explore Reviews & NPS Data` capability to use analysis features without posting responses.
+
+</details>
+
+<details>
+<summary>Can the AI Reputation Specialist respond to negative reviews?</summary>
+
+It responds to the star ratings you select in `Trigger` > `Settings`. The default is 4 stars and above, so select lower ratings too if you want it to respond to them.
+
+</details>
+
+<details>
+<summary>How do I turn automatic review responses on or off?</summary>
+
+In the `Trigger` section of the AI Reputation Specialist, select or clear the `New review received` checkbox, then click `Save`. When the trigger is enabled, the AI responds to new reviews based on your trigger settings.
 
 </details>
