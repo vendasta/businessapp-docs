@@ -1,15 +1,22 @@
 ---
 title: Credits
 sidebar_label: Credits
-description: Learn how Vibe credits work, including plan allowances, add-on packs, top-up packs, and how expiration order is determined.
+description: "How Vibe credits work in Business App: credit costs by task, plan allowances, add-on and top-up packs, carry-over rules, and which credits are used first."
 sidebar_position: 5
 unlisted: false
 brand: business-app
 product: vibe
 audience: smb
+content_type: reference
+kb_id: KB-00107
+answer_snippet: "Vibe in Business App uses credits to measure AI activity. Your subscription includes a credit allowance each billing period, and you can buy add-on or top-up credit packs when you need more."
+doc_owner: vibe
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
-Vibe uses credits to measure AI activity. Your subscription includes a credit allowance per billing period, and you can purchase additional credit packs when you need more.
+Vibe in Business App uses credits to measure AI activity. Your subscription includes a credit allowance each billing period, and you can buy add-on or top-up credit packs when you need more.
 
 ## How credits work
 
@@ -23,7 +30,7 @@ A credit is used each time you send a message to Vibe. How many credits a messag
 | Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 | Clone a webpage | "Clone the look and feel of http://sample.com and build a homepage for my business" | >1,000 |
 
-Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under **Administration > AI Settings > Credits**. This section appears only when you have an active product that uses AI credits. Your credit usage report also identifies which Vibe project each entry belongs to, so you can see where credits are being spent if you manage more than one project.
+Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under `Administration` > `AI Settings` > `Credits`. This section appears only when you have an active product that uses AI credits. Your credit usage report also identifies which Vibe project each entry belongs to, so you can see where credits are being spent if you manage more than one project.
 
 When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App, with no support ticket or wait time required. The dialog shows the image and description for each available plan or add-on so you know what you're purchasing before you check out.
 
@@ -145,4 +152,16 @@ Deactivating your base subscription (Free, Standard, or Pro) immediately cancels
 <summary>Why is the one-time Vibe credit top-up greyed out after I used my credits?</summary>
 
 A new one-time top-up becomes available after the previous top-up unit is fully consumed and deactivated. If a unit is still active, schedule it for immediate deactivation before adding another, or wait until the first top-up finishes and deactivates.
+</details>
+
+<details>
+<summary>Can I transfer Vibe credits to another account?</summary>
+
+No. Credits are tied to the account they were issued to and can't be transferred to other accounts.
+</details>
+
+<details>
+<summary>Where can I see how many credits I have left and where they were used?</summary>
+
+Go to `Administration` > `AI Settings` > `Credits` to check your remaining balance. This section appears only when you have an active product that uses AI credits. Your credit usage report shows which Vibe project each entry belongs to.
 </details>
