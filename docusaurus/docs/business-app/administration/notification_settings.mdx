@@ -1,21 +1,28 @@
 ---
-title: Notification settings
+title: "How do I manage my notification settings in Business App?"
 sidebar_label: Notification Settings
-description: Manage how you receive Business App notifications — instant emails, daily digests, and defaults by product.
+description: "Manage how you receive Business App notifications: instant emails, daily digests, global defaults, and defaults for each product."
 sidebar_position: 6
 brand: business-app
 product: business-app-core
 audience: smb
+content_type: how-to
+kb_id: KB-00184
+answer_snippet: "Notification settings in Business App control which events send you an email, whether alerts arrive instantly or in a daily digest, and the default for each notification type by product. To change them, go to Settings > Notification Settings."
+doc_owner: business-app-core
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Notification settings in **Business App** let you control how you receive alerts across products. You can choose which events trigger an email, whether notifications arrive instantly or as part of a daily digest, and the default behavior for each notification type.
+Notification settings in **Business App** control which events send you an email, whether alerts arrive instantly or in a daily digest, and the default for each notification type by product. To change them, go to `Settings` > `Notification Settings`.
 
-Notifications are organized by product. Each section lets you review **Instant Email Notifications** and **Daily Digest Emails** for that product. You can manage your preferences in **Settings → Notification Settings** in Business App.
+Notifications are organized by product. Each section lets you review **Instant Email Notifications** and **Daily Digest Emails** for that product.
 
-## Global settings
+## What are the global notification settings? {#global-settings}
 
 At the top of the Notification Settings page, you can configure global defaults that apply to all products unless you override them for a specific product.
 
@@ -28,7 +35,7 @@ Each dropdown offers:
 - **Enabled** — Always sends this notification type.
 - **Disabled** — Turns off this notification type completely.
 
-## Types of notifications
+## What types of notifications are there? {#types-of-notifications}
 
 ### Instant email notifications
 
@@ -38,18 +45,18 @@ Instant emails are sent in real time when specific events occur — such as new 
 
 Digest emails combine multiple events into a single summary message sent once per day. They are ideal if you prefer fewer emails while still staying informed about business activity.
 
-## Manage notification settings
+## How do I manage notification settings? {#manage-notification-settings}
 
 To view or adjust your notifications:
 
-1. In **Business App**, go to **Settings → Notification Settings**.
+1. In **Business App**, go to `Settings` > `Notification Settings`.
 2. Expand each product (e.g., Business App, Reputation AI, Social AI, WordPress Hosting).
 3. Use the dropdown beside each item to toggle between:
    - **Enabled (Default)** — the notification is turned on by default.
    - **Disabled (Default)** — the notification is turned off by default.
 4. Click **Save** to apply changes.
 
-## Notification categories by product
+## Which notifications does each product send? {#notification-categories-by-product}
 
 <Tabs>
 <TabItem value="business-app" label="Business App">
@@ -75,7 +82,7 @@ _All default: Enabled_
 
 </TabItem>
 
-<TabItem value="review-management" label="Review Management">
+<TabItem value="review-management" label="Reputation AI">
 
 ### Instant email notifications
 - Edited Review
@@ -135,3 +142,47 @@ _All default: Enabled_
 
 </TabItem>
 </Tabs>
+
+## Frequently asked questions
+
+<details>
+<summary>What are daily digest emails?</summary>
+
+Daily digest emails combine multiple events into a single summary message sent once per day. They suit you if you prefer fewer emails while still staying informed about business activity.
+
+</details>
+
+<details>
+<summary>What does Instant email and In-App (when available) mean?</summary>
+
+This global setting controls whether real-time notifications are sent by email and appear in Business App. Instant emails are sent when specific events occur, such as new leads, reviews, or post approvals.
+
+</details>
+
+<details>
+<summary>What is the difference between Default (Enabled) and Enabled?</summary>
+
+`Default (Enabled)` uses the system default, which is usually enabled. `Enabled` always sends that notification type, and `Disabled` turns it off completely.
+
+</details>
+
+<details>
+<summary>How do I turn off the daily digest?</summary>
+
+To turn off all daily digest emails, set `Daily Digest` to `Disabled` in the global settings at the top of the Notification Settings page. To turn off one product's digest emails, expand that product, set each item to `Disabled`, and click `Save`.
+
+</details>
+
+<details>
+<summary>How do I turn off Social AI notifications?</summary>
+
+Go to `Settings` > `Notification Settings`, expand `Social AI`, and use the dropdown beside each notification to set it to `Disabled`. Click `Save` to apply your changes.
+
+</details>
+
+<details>
+<summary>Do global settings override product settings?</summary>
+
+No. Global settings apply to all products unless you override them for a specific product.
+
+</details>
