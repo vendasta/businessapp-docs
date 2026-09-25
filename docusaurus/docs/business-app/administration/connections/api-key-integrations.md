@@ -18,7 +18,7 @@ Integrations that use this method include **FieldEdge**, **JobNimbus**, **RB Con
 
 ### Step 1: Find the integration
 
-1. Go to `Administration` → `Connections` in Business App.
+1. Go to `Administration` → `Integrations` in Business App.
 2. Click the `Browse` tab.
 3. Find the integration card for your application and click it.
 
