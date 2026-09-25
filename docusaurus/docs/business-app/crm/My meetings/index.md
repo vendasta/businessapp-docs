@@ -22,7 +22,7 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 ## What's included
 
 - **Personal and team booking links**
-- **Calendar views** — See your team's schedule in Column, Day, Week, Month, List, or Year view, filter by team member or service, and book, reschedule, or cancel meetings directly from the calendar
+- **Calendar views** — See your team's schedule in Column, Day, Week, Month, List, or Year view, filter by team member or service, book, reschedule, or cancel meetings directly from the calendar, and choose whether to show blocked time slots from connected calendars
 - **Availability settings** and buffers
 - **Calendar connections** (Google Calendar and Microsoft 365 / Outlook)
 - **Microsoft Teams video conferencing integration**
