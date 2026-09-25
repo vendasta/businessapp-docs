@@ -28,7 +28,7 @@ Instead of starting from an empty field, you arrive at working examples. Browse 
 
 ## What's included with the Projects Home?
 
-- **Composer**: One prompt box at the top of the home — "What should we build today?" — with build-mode selection and voice input.
+- **Composer**: One prompt box at the top of the home — "What should we build today?" — with build-mode selection, voice input, and connector selection.
 - **Templates tab**: A searchable template gallery. Each card shows cover imagery and a plain-language description of what the template does, with search and a browse-all view.
 - **Template detail view**: An image carousel, a description, the publish date, and the connectors the template requires — so you know what you're getting before you commit.
 - **My Projects tab**: Your projects, with project tags and search to organize and find them. Each project card shows a live preview thumbnail.
@@ -59,6 +59,16 @@ Instead of starting from an empty field, you arrive at working examples. Browse 
 1. From the home, type what you want to build in the "What should we build today?" composer — or use voice input to describe it.
 2. Choose the build mode for your prompt.
 3. Send it to start building.
+
+### Select connectors before your first prompt
+
+You can pick connectors in the composer before sending your first prompt. This tells Vibe which integrations the project should use from the start — CRM, reviews, meetings, and others — so the first build is already wired to the right data sources.
+
+1. From the home, open the connector picker in the composer.
+2. Select the connectors you want the project to use.
+3. Type your prompt and send it.
+
+The first generation already knows about the connectors you selected, so you don't have to mention them in your prompt or configure them afterward.
 
 ### Organize and find your projects
 
@@ -96,6 +106,12 @@ Open the **My Projects** tab. Use search to find a project by name, or use proje
 <summary>Why can't I find my Vibe projects even though their published links still work?</summary>
 
 The project list may only show the first 50 projects until you load more. Use `Load more` (or equivalent pagination) to see the rest. Missing projects are often still there, not archived.
+</details>
+
+<details>
+<summary>Can I select connectors before my first prompt?</summary>
+
+Yes. The composer includes a connector picker so you can select connectors before sending your first prompt. The first build is already wired to those integrations — no need to configure them afterward.
 </details>
 
 ## Next Steps
