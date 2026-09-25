@@ -150,3 +150,10 @@ The AI can explain frameworks or processes when customers ask about them directl
 If you need your AI to consistently follow a specific process or framework across conversations, configure that behavior in your AI Employee's instructions using a [custom Capability](/business-app/ai/ai-capabilities/creating-custom-capabilities).
 
 </details>
+
+<details>
+<summary>How should I structure knowledge for an AI receptionist?</summary>
+
+Do not rely on one large spreadsheet or a full stale site crawl. Validate each source, remove outdated paths, and split content into smaller capability-specific or workflow-specific knowledge sources (for example booking, hours, cancellations, and general Q&A). Use clear structured prompts, then test each workflow.
+
+</details>

@@ -486,3 +486,17 @@ AI Voice Receptionist is available for businesses located in the **United States
 
 For the most up-to-date region availability, see the [AI Workforce Overview](ai_workforce_overview.md).
 </details>
+
+<details>
+<summary>What are the calendar limits when the AI books meetings?</summary>
+
+The built-in meeting scheduler checks availability on a linked Google or Microsoft calendar. A third-party system may sync customer data without full two-way calendar sync. Confirm the exact integration, and use an approved connector or workaround when round-trip calendar availability is required.
+
+</details>
+
+<details>
+<summary>Can the AI receptionist use round-robin for live call transfers?</summary>
+
+Meeting booking can use round-robin when calendars are configured for it. Native round-robin for live call transfers is not supported. Use a third-party VoIP or telephony workflow when that routing is required.
+
+</details>
