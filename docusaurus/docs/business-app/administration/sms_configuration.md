@@ -1,15 +1,24 @@
 ---
-title: SMS Registration for US Businesses
+title: "How do I register my US business for SMS?"
 sidebar_label: SMS Registration (US)
-description: Everything you need to register your US business for SMS messaging — requirements, compliance checklist, and common rejection reasons.
+description: "Register your US business for SMS (A2P 10DLC) in Business App: requirements, privacy policy and terms language, consent checkboxes, and rejection reasons."
 tags: [business-app, sms, a2p, registration, conversations]
 keywords: [A2P registration, 10DLC, SMS registration, US business SMS, carrier compliance]
 brand: business-app
 product: business-app-core
 audience: smb
+content_type: how-to
+kb_id: KB-00075
+answer_snippet: "US phone carriers require your business to complete A2P 10DLC registration before you can send SMS messages from Business App. Register at Administration > Conversations Settings > Phone & SMS with your legal business name, EIN, and a compliant website."
+doc_owner: business-app-core
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
-US phone carriers require businesses to register before sending SMS messages to customers. This process is called A2P 10DLC (Application-to-Person 10-Digit Long Code) registration. It verifies your business identity and confirms that your website meets carrier compliance standards. Without an approved registration, your business cannot send or receive SMS messages through US phone numbers.
+US phone carriers require your business to complete A2P 10DLC registration before you can send SMS messages from Business App. Register at `Administration` > `Conversations Settings` > `Phone & SMS` with your legal business name, EIN, and a compliant website.
+
+A2P 10DLC (Application-to-Person 10-Digit Long Code) registration verifies your business identity and confirms that your website meets carrier compliance standards. Without an approved registration, your business cannot send or receive SMS messages through US phone numbers.
 
 For a **working example** of a compliant website, see the [sample website](https://a2p-example-site-f0f4efd9.vendasta.ai/) which includes a privacy policy, terms of service, and web form that meet all carrier requirements.
 
@@ -17,7 +26,7 @@ For a **working example** of a compliant website, see the [sample website](https
 This registration is only required for businesses located in the United States. Canadian businesses can use SMS messaging immediately without registration.
 :::
 
-## Requirements checklist
+## What do I need before I register? {#requirements-checklist}
 
 Before you start the registration form, confirm that every item below is in place. Each item links to the detailed section further down this page.
 
@@ -32,7 +41,7 @@ Before you start the registration form, confirm that every item below is in plac
 On the review step of the registration form, click **Check with AI** to have the AI Verification assistant check your entry. It reviews your campaign details together with the pages you linked — your privacy policy, terms of service, and any opt-in or contact forms — and flags issues by severity with the specific fix for each one. This check is optional and does not prevent you from submitting.
 :::
 
-## Brand information
+## What brand information do I need? {#brand-information}
 
 The registration form collects two types of information: **Brand** and **Campaign**.
 
@@ -54,7 +63,7 @@ If you do not have an EIN, you can apply for one by submitting [IRS Form SS-4](h
 If your EIN was issued within the last 90 days, it may not appear in verification databases yet. Check the date on your CP 575 letter — if fewer than 90 days have passed, wait before submitting your registration.
 :::
 
-## Privacy policy
+## What must my privacy policy include? {#privacy-policy}
 
 Your registration requires a link to a privacy policy that is publicly accessible on your website. The privacy policy must describe how your business handles customer data in the context of SMS messaging.
 
@@ -90,7 +99,7 @@ The URL you provide must link directly to the privacy policy page — not to a h
 
 <img src={require('./img/us-business-privacy-policy.png').default} alt="Privacy policy page with SMS consent and data sharing language" width="85%" />
 
-## Terms and conditions
+## What must my terms and conditions include? {#terms-and-conditions}
 
 Your registration requires a link to terms and conditions that are publicly accessible on your website. The terms must cover your SMS messaging program.
 
@@ -123,7 +132,7 @@ The URL must link directly to the terms and conditions page.
 
 <img src={require('./img/us-business-terms-of-service.png').default} alt="Terms of service page with SMS Communications Program section" width="85%" />
 
-## Consent and opt-in
+## How do I collect SMS consent? {#consent-and-opt-in}
 
 Phone carriers require proof that your business collects consent from customers before sending them SMS messages.
 
@@ -188,7 +197,7 @@ When a customer provides their phone number for the first time in a chat convers
 
 The customer can accept or decline each type of messaging independently.
 
-## Prohibited and high-scrutiny content
+## Which businesses can't register for SMS? {#prohibited-and-high-scrutiny-content}
 
 Certain industries are blocked from SMS registration by US phone carriers, regardless of whether the business is legal in your state. If your business sells or promotes any of the following, it is **not eligible** to register:
 
@@ -206,7 +215,7 @@ These categories are commonly referred to as **SHAFT** (Sex, Hate, Alcohol, Fire
 If your business is in a prohibited category, the registration will be rejected regardless of how compliant your website is. Confirm your eligibility before investing time in the registration process.
 :::
 
-## Common rejection reasons
+## Why was my registration rejected? {#common-rejection-reasons}
 
 If your registration is rejected, the registration status shows the specific reason for the failure. These are the most common causes.
 
@@ -246,13 +255,13 @@ Registration typically takes 1–4 weeks. A third-party verification agency revi
 <details>
 <summary><strong>Can sole proprietors without an EIN register for SMS?</strong></summary>
 
-Not at this time. A2P 10DLC registration requires an EIN.
+No. A2P 10DLC registration requires an EIN.
 </details>
 
 <details>
 <summary><strong>Do I need to register again if I already registered through another product?</strong></summary>
 
-No. Your business only needs to register once. The registration applies to all SMS-enabled products including Conversations, Automations, Campaigns, and Reputation.
+No. Your business only needs to register once. The registration applies to all SMS-enabled products including Conversations, Automations, Campaigns, and Reputation AI.
 </details>
 
 <details>
@@ -264,7 +273,7 @@ No. A2P registration is only available for US-based businesses. Sending SMS to U
 <details>
 <summary><strong>I don't see the registration option. Where is it?</strong></summary>
 
-Registration is only available for US-based businesses with the Conversations AI Pro product active. Confirm that your account has a US address, then go to **Administration > Conversations Settings > Phone & SMS**.
+Registration is only available for US-based businesses with the Conversations AI Pro product active. Confirm that your account has a US address, then go to `Administration` > `Conversations Settings` > `Phone & SMS`.
 </details>
 
 <details>
@@ -276,11 +285,23 @@ No. The form cannot be edited or canceled once submitted. If information was mis
 <details>
 <summary><strong>What phone number will my messages come from?</strong></summary>
 
-Your business is assigned a local phone number based on your business address. If no local numbers are available, you receive a number from a nearby area code. You can view your assigned number in **Administration > Conversations Settings > Phone & SMS**.
+Your business is assigned a local phone number based on your business address. If no local numbers are available, you receive a number from a nearby area code. You can view your assigned number in `Administration` > `Conversations Settings` > `Phone & SMS`.
 </details>
 
 <details>
 <summary><strong>Is there an example of a compliant website I can reference?</strong></summary>
 
 Yes. The [sample website](https://a2p-example-site-f0f4efd9.vendasta.ai/) shows a fully compliant setup including a [privacy policy](https://a2p-example-site-f0f4efd9.vendasta.ai/privacy), [terms of service](https://a2p-example-site-f0f4efd9.vendasta.ai/terms), and [contact form](https://a2p-example-site-f0f4efd9.vendasta.ai/contact) with proper consent checkboxes.
+</details>
+
+<details>
+<summary><strong>My registration keeps getting rejected. What should I do?</strong></summary>
+
+Check the registration status, which shows the specific reason for the failure. The most common causes are missing SMS language in your privacy policy or terms, missing or pre-checked consent checkboxes, and business details that don't match your IRS records. Correct the issue and resubmit when the form shows a failed status.
+</details>
+
+<details>
+<summary><strong>Do Canadian businesses need to register for SMS?</strong></summary>
+
+No. This registration is only required for businesses located in the United States. Canadian businesses can use SMS messaging without registration.
 </details>
