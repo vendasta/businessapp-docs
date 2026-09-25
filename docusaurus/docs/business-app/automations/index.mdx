@@ -1,13 +1,21 @@
 ---
 title: Automations
+description: "Build Business App automations with triggers, conditions, and steps, turn them on or off, and run them on selected CRM contacts and companies."
 sidebar_position: 1
 brand: business-app
 product: automations
 audience: smb
+content_type: overview
+kb_id: KB-00151
+answer_snippet: "Automations in Business App run workflows on their own when specific events happen. Each automation has a trigger that starts it, optional conditions that filter when it runs, and steps that define what happens next."
+doc_owner: automations
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
 # Automations Overview
-Automations let you create workflows that run on their own when specific events happen. Use them to save time, improve consistency, and respond to customers faster—without manual effort.
+Automations in Business App run workflows on their own when specific events happen. Each automation has a trigger that starts it, optional conditions that filter when it runs, and steps that define what happens next. Use them to save time, improve consistency, and respond to customers faster without manual effort.
 
 <div
   className="wistia_responsive_padding"
@@ -83,14 +91,14 @@ Here is an example of a simple automation workflow that sends a review request w
 Before building an automation, run the process manually a couple of times to make sure it works the way you expect. Once you're confident in the process, automate it — you'll catch fewer surprises and build a more reliable workflow.
 :::
 
-## Getting started
+## How do I create an automation? {#getting-started}
 
 There are two ways to create an automation: start with a pre-built template or build your own from scratch. Templates are the fastest way to get started—they come with triggers and steps already configured, so you just customize them for your business. Building from scratch gives you complete control over every step.
 
-1. Go to **Business App** > **Automations**
+1. Go to `Business App` > `Automations`
 
 :::tip
-You can also find Automations under **Business App** > **Administration** > **Automations**.
+You can also find Automations under `Business App` > `Administration` > `Automations`.
 :::
 
 2. Select **Create Automation**
@@ -134,7 +142,7 @@ You can also find Automations under **Business App** > **Administration** > **Au
 You must turn off your automation before you can edit its triggers, conditions, or steps.
 :::
 
-## Turning on an automation
+## What happens when I turn on an automation? {#turning-on-an-automation}
 
 When you toggle an automation on, you'll be prompted to review and confirm three settings before it goes live:
 
@@ -144,7 +152,7 @@ When you toggle an automation on, you'll be prompted to review and confirm three
 
 See [Automation settings](automation-settings.md) for a full explanation of each option.
 
-## Turning off an automation
+## What happens when I turn off an automation? {#turning-off-an-automation}
 
 When you toggle an automation off, you'll be asked how to handle any runs that are currently in progress:
 
@@ -153,7 +161,7 @@ When you toggle an automation off, you'll be asked how to handle any runs that a
 
 Use **Drain** when you want to avoid interrupting processes that are mid-workflow. Use **Stop** when you need to halt everything immediately — for example, if the automation is behaving unexpectedly.
 
-## Run automations from the CRM
+## How do I run automations from the CRM? {#run-automations-from-the-crm}
 
 You can also start automations directly from your CRM without visiting the Automations page. In `CRM` > `Contacts` or `CRM` > `Companies`, select one or more records, click the `Actions` button, and choose `Start automation`. This lets you run an existing automation on a specific set of records on demand.
 
@@ -194,4 +202,28 @@ Getter steps let you retrieve related data during automation runs. For example, 
 <summary>What's the difference between regular automations and list automations?</summary>
 
 Regular automations trigger based on events (like "when a contact is created"). List automations let you manually trigger a workflow for an entire existing list of records, making them ideal for bulk operations and targeted campaigns.
+</details>
+
+<details>
+<summary>What are the three parts of an automation?</summary>
+
+Every automation has a trigger, the event that starts the workflow; optional conditions, filters that must be met for it to run; and steps, the actions that happen next.
+</details>
+
+<details>
+<summary>Can an automation create tasks automatically?</summary>
+
+Yes. Add a "Create task" step to your automation. You can also create tasks, notes, and logged calls on opportunities.
+</details>
+
+<details>
+<summary>Can I edit an automation while it's turned on?</summary>
+
+No. You must turn off your automation before you can edit its triggers, conditions, or steps.
+</details>
+
+<details>
+<summary>How do I run an automation manually on specific contacts or companies?</summary>
+
+In `CRM` > `Contacts` or `CRM` > `Companies`, select one or more records, click `Actions`, and choose `Start automation`. The automation runs on the records you selected.
 </details>
