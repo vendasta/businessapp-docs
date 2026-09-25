@@ -1,14 +1,22 @@
 ---
 title: Introduction to Vibe
+description: "Vibe is an AI app builder in Business App. Describe what you want and Vibe builds a working web app, landing page, or dashboard."
 sidebar_position: 1
 brand: business-app
 product: vibe
 audience: smb
+content_type: overview
+kb_id: KB-00009
+answer_snippet: "Vibe is an AI-powered app builder built into Business App. Describe what you want in plain English, and Vibe builds a working web application with live preview and connections to your Business App tools."
+doc_owner: vibe
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
 # Introduction to Vibe
 
-Vibe is an AI-powered app builder built into Business App. Describe what you want in plain English, and Vibe builds it — a working web application with real design, live preview, and direct connections to the Business App tools you already use.
+Vibe is an AI-powered app builder built into Business App. Describe what you want in plain English, and Vibe builds a working web application with live preview and connections to your Business App tools. Apps include real design and connect to tools like your CRM, forms, and analytics.
 
 You don't need to know how to code. You describe what you want; Vibe handles everything else.
 
@@ -24,7 +32,7 @@ You don't need to know how to code. You describe what you want; Vibe handles eve
 
 **Anyone with an idea and no developer** — If you have something in mind — a client portal, a pricing calculator, a company presentation — Vibe is where you start. No technical setup, no waiting on anyone else.
 
-## What You Can Build
+## What can I build with Vibe? {#what-you-can-build}
 
 Here are examples of real builds to give you a sense of what Vibe produces:
 
@@ -36,7 +44,7 @@ Here are examples of real builds to give you a sense of what Vibe produces:
 
 See [Use Cases](./use-cases/index.md) for step-by-step walkthroughs of these and more.
 
-## Key Features
+## What are Vibe's key features? {#key-features}
 
 ### Chat-Based Development
 Describe what you want in the chat panel. Vibe interprets the request and generates or modifies the application. Send follow-up messages to refine the result. Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean. On projects with multiple collaborators, each prompt shows the sender's avatar, name, and a timestamp.
@@ -87,7 +95,7 @@ Vibe uses credits to measure AI activity. Your subscription includes a credit al
 ### Custom Domains (Standard and Pro)
 On the Standard and Pro plans, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
-## How It Works
+## How does Vibe build an app? {#how-it-works}
 
 When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
 
@@ -157,6 +165,27 @@ Yes, on the Pro plan. Click `Download` in the toolbar to get the project's sourc
 <summary>Can Vibe notify me when a generation finishes?</summary>
 
 Yes. Turn on notifications for the current run from the chat composer and allow notifications when your browser asks for permission. Your browser then sends a notification as soon as the generation completes, so you can switch to another tab without missing it.
+
+</details>
+
+<details>
+<summary>Can Vibe build a WordPress site?</summary>
+
+No. Vibe apps are built on React, TanStack Start, Vite, and Tailwind CSS rather than WordPress. On the Pro plan, you can download the source code and host it on any host that supports Node.js.
+
+</details>
+
+<details>
+<summary>How do Vibe credits work?</summary>
+
+Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
+
+</details>
+
+<details>
+<summary>Can I publish a Vibe app to my own domain?</summary>
+
+Yes, on the Standard and Pro plans. Vibe provisions an SSL certificate automatically after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
 </details>
 
