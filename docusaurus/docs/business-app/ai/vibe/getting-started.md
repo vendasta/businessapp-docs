@@ -20,7 +20,7 @@ Vibe lives in Business App alongside your other AI tools.
 3. In the left sidebar, click **AI**.
 4. Click **Vibe**.
 
-You land on the Vibe home. It opens with the "What should we build today?" composer — a single prompt box with build-mode selection and voice input — and two tabs beneath it: **Templates** and **My Projects**.
+You land on the Vibe home. It opens with the "What should we build today?" composer — a single prompt box with build-mode selection, voice input, and connector selection — and two tabs beneath it: **Templates** and **My Projects**.
 
 ![Business App left navigation with the AI section expanded and Vibe highlighted](./img/vibe-nav-entry.png)
 
