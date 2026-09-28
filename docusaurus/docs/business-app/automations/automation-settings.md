@@ -20,6 +20,18 @@ Each automation has a Settings tab where you control how and when your workflow 
 3. Select the **Settings** tab
 4. Configure entry settings and error handling options
 
+## Open goals and run settings from the editor
+
+While you edit an automation, you can open goals and run settings directly from the editor.
+
+- **Add goal:** Select **Add goal** to open the goal form in a modal. If the automation has no trigger, **Add goal** is disabled. Hover over it to see "Add a trigger to this automation before setting a goal".
+- **View goal:** When the automation has a goal, the button changes to **View goal**. Select it to open the goal in a modal.
+- **Run settings:** Select **Run settings** to open the automation's run settings in a modal.
+
+You can edit goals and run settings in edit mode only.
+
+Like triggers and actions, these modals can collapse into the right side panel.
+
 ## Saving changes
 
 When you edit any settings tab, floating **Save** and **Cancel** buttons appear.
