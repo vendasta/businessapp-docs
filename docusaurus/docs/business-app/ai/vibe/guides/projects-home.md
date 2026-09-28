@@ -114,6 +114,12 @@ The project list may only show the first 50 projects until you load more. Use `L
 Yes. The composer includes a connector picker so you can select connectors before sending your first prompt. The first build is already wired to those integrations — no need to configure them afterward.
 </details>
 
+<details>
+<summary>How do I reuse a Vibe project as a template for another project?</summary>
+
+There is no separate `Publish as Template` action. Create the project you want to reuse, then download it and import it into the project where you want to build. Keep one project per reusable starting point if you maintain several templates.
+</details>
+
 ## Next Steps
 
 - [Getting Started](../getting-started.md) — Walk through a full generation end to end
