@@ -63,7 +63,7 @@ Click any event card to open a detail panel showing the client's name and contac
 
 From the same panel you can:
 
-- **Reschedule** — Click **Reschedule**, then pick a new time from the available slots. Conflicts are checked automatically.
+- **Reschedule** — Click **Reschedule**, then pick a new time from the available slots. Conflicts are checked automatically. Times outside the event type's date range aren't accepted. If every host on a meeting has been removed from the calendar, the meeting can't be rescheduled — cancel it and book a new one.
 - **Cancel** — Cancel the booking directly from the detail panel.
 - **Edit client details** — Update the client's information without leaving the panel.
 
