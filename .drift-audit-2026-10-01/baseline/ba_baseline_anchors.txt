@@ -1,0 +1,2 @@
+/business-app/administration/sms_configuration#newly-issued-eins
+/business-app/administration/sms_configuration#why-registrations-are-rejected

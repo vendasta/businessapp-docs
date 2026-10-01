@@ -1,0 +1,139 @@
+=== destinations reached via different parents, or spelled differently ===
+(a destination legitimately shared by separate products is not a bug -- check before flagging)
+
+-- 'settings': 14 variants across 38 occurrences
+     Advertising Intelligence -> Settings
+     Conversations -> Settings
+     Facebook Page -> Settings
+     Form -> Settings
+     Jetpack -> Settings
+     Menu -> Settings
+     My Account -> Settings
+     NitroPack -> Settings
+     Reputation AI -> Settings
+     Social AI -> Settings
+     Trigger -> Settings
+     WP Mail SMTP -> Settings
+     WooCommerce -> Settings
+     WordPress Dashboard -> Settings
+
+-- 'configure': 4 variants across 8 occurrences
+     AI Sales Assistant -> Configure
+     Chat Receptionist -> Configure
+     Phone & SMS -> Configure
+     Voice Receptionist -> Configure
+
+-- 'analytics': 3 variants across 9 occurrences
+     Advertising Intelligence -> Analytics
+     Local SEO -> Analytics
+     Reputation AI -> Analytics
+
+-- 'export': 3 variants across 4 occurrences
+     Actions -> Export
+     All-in-One WP Migration -> Export
+     Personal Details -> Export
+
+-- 'addnew': 3 variants across 12 occurrences
+     Pages -> Add New
+     Plugins -> Add New
+     Products -> Add New
+
+-- 'overview': 3 variants across 5 occurrences
+     Advertising Intelligence -> Overview
+     SSL/TLS -> Overview
+     WordPress Hosting -> Overview
+
+-- 'integrations': 3 variants across 26 occurrences
+     Administration -> Integrations
+     App Settings -> Integrations
+     Settings -> Integrations
+
+-- 'preferences': 3 variants across 8 occurrences
+     Broadly Upload Client -> Preferences
+     Edit -> Preferences
+     Yesware -> Preferences
+
+-- 'manageadd-ins': 2 variants across 2 occurrences
+     File -> Manage Add-ins
+     Settings -> Manage Add-Ins
+
+-- 'myadd-ins': 2 variants across 3 occurrences
+     Custom Add-ins -> My Add-ins
+     Get Add-ins -> My add-ins
+
+-- 'businessprofile': 2 variants across 5 occurrences
+     Administration -> Business Profile
+     Manage My Listing -> Business Profile
+
+-- 'themes': 2 variants across 2 occurrences
+     My Listing -> Themes
+     Online Store -> Themes
+
+-- 'networkadmin': 2 variants across 2 occurrences
+     My Sites -> Network Admin
+     WordPress Dashboard -> Network admin
+
+-- 'tools': 2 variants across 2 occurrences
+     Social AI -> Tools
+     WP Mail SMTP -> Tools
+
+-- 'webchatconfiguration': 2 variants across 2 occurrences
+     Conversations AI Settings -> Web Chat Configuration
+     Conversations Settings -> Web Chat Configuration
+
+-- 'conversationssettings': 2 variants across 14 occurrences
+     Administration -> Conversations Settings
+     Settings -> Conversations Settings
+
+-- 'addnewplugin': 2 variants across 2 occurrences
+     Plugins -> Add New Plugin
+     Plugins -> Add new plugin
+
+-- 'builder': 2 variants across 2 occurrences
+     Divi Theme options -> Builder
+     Theme Options -> Builder
+
+-- '34.149.86.124': 2 variants across 2 occurrences
+     @ -> 34.149.86.124
+     mybusiness.com -> 34.149.86.124
+
+-- 'privacy': 2 variants across 2 occurrences
+     General -> Privacy
+     Settings -> Privacy
+
+
+=== same UI label spelled inconsistently ===
+(most of this is noise -- look for real navigation labels only)
+
+   40  36x 'Email' | 4x 'email'
+   37  33x 'Business Profile' | 3x 'Business profile' | 1x 'business profile'
+   28  27x 'Capabilities' | 1x 'capabilities'
+   26  25x 'Publish' | 1x 'publish'
+   23  11x 'Phone Number' | 10x 'Phone number' | 2x 'phone number'
+   20  17x 'Name' | 3x 'name'
+   19  16x 'string' | 3x 'String'
+   19  16x 'Scheduled' | 3x 'scheduled'
+   19  18x 'Conversations Settings' | 1x 'Conversations settings'
+   18  14x 'A Record' | 4x 'A record'
+   16  14x 'Plugins' | 2x 'plugins'
+   16  11x 'Connected' | 5x 'connected'
+   15  13x 'Delete' | 1x 'DELETE' | 1x 'delete'
+   14  10x 'Web Chat configuration' | 4x 'Web Chat Configuration'
+   14  12x 'Listings' | 2x 'listings'
+   14  13x 'CNAME Record' | 1x 'CNAME record'
+   13  12x 'Web Chat' | 1x 'web chat'
+   13  11x 'Make Primary' | 2x 'Make primary'
+   12  11x 'Notification Settings' | 1x 'Notification settings'
+   11  10x 'Save Changes' | 1x 'Save changes'
+   11  5x 'On' | 5x 'on' | 1x 'ON'
+   11  7x 'COMPLETED' | 4x 'Completed'
+   11  7x 'All' | 4x 'all'
+   10  8x 'Start automation' | 2x 'Start Automation'
+   10  9x 'Request' | 1x 'request'
+   10  9x 'phpMyAdmin' | 1x 'Phpmyadmin'
+   10  8x 'Phone Calls' | 2x 'Phone calls'
+   10  6x 'Pending' | 4x 'pending'
+   10  6x 'Email History' | 3x 'Email history' | 1x 'email history'
+    9  4x 'Off' | 3x 'OFF' | 2x 'off'
+
+TOTAL labels with case drift: 195

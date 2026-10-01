@@ -1,0 +1,35 @@
+DRY RUN: 294 lines in 95 files
+
+  /workspace/docusaurus/docs/calendarhero/scheduling-meetings/invitee-experience.mdx
+  -  **Calendar display** — Choose whether invitees see a daily view (focused on the next 7 days) or a monthly view
+  +  **Calendar display** — Choose whether invitees see a daily view (focused on the next 7 days) or a monthly view
+
+  /workspace/docusaurus/docs/calendarhero/scheduling-meetings/invitee-experience.mdx
+  -  **Meeting invite email** — Pro and Team plan users can customize the email CalendarHero sends when inviting so
+  +  **Meeting invite email** — Pro and Team plan users can customize the email CalendarHero sends when inviting so
+
+  /workspace/docusaurus/docs/calendarhero/scheduling-meetings/invitee-experience.mdx
+  -  To add questions: open a meeting type → **Invitee Experience → Add a Question**. Pro and Team plan users can a
+  +  To add questions: open a meeting type → `Invitee Experience` → `Add a Question`. Pro and Team plan users can a
+
+  /workspace/docusaurus/docs/calendarhero/scheduling-meetings/invitee-experience.mdx
+  -  Enable or disable this setting per meeting type under **Invitee Experience → Invitee Guests**. It is on by def
+  +  Enable or disable this setting per meeting type under `Invitee Experience` → `Invitee Guests`. It is on by def
+
+  /workspace/docusaurus/docs/calendarhero/getting-started/index.mdx
+  -  Every CalendarHero account includes a default primary booking link that is tied to your account and cannot be 
+  +  Every CalendarHero account includes a default primary booking link that is tied to your account and cannot be 
+
+  /workspace/docusaurus/docs/calendarhero/settings/troubleshooting.mdx
+  -  3. Go to **Settings → Services & add-ins → Microsoft Teams**
+  +  3. Go to `Settings` → `Services & add-ins` → `Microsoft Teams`
+
+  /workspace/docusaurus/docs/calendarhero/calendar/managing-calendars.mdx
+  -  You can customize which calendar meetings are booked into per meeting type. Open any meeting type → **Availabi
+  +  You can customize which calendar meetings are booked into per meeting type. Open any meeting type → `Availabil
+
+  /workspace/docusaurus/docs/calendarhero/calendar/managing-calendars.mdx
+  -  CalendarHero requires permission from Microsoft 365 to sync with your calendar. If you see a restricted access
+  +  CalendarHero requires permission from Microsoft 365 to sync with your calendar. If you see a restricted access
+
+Re-run with --apply to write these changes.
