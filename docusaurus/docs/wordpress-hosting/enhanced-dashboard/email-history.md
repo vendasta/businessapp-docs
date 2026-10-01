@@ -5,6 +5,9 @@ sidebar_position: 6
 description: See every transactional email your WordPress site sent, with subject, recipient, and full message detail.
 tags: [wordpress-hosting, dashboard, email, deliverability]
 keywords: [email history, transactional email, email log, email delivery, troubleshoot email]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Email History** card shows every email your site has sent: form submissions, order confirmations, comment notifications, and anything else triggered by WordPress or your plugins. Available on all WordPress Hosting plans.

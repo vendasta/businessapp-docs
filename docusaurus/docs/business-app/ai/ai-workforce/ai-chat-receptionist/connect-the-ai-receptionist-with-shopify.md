@@ -1,6 +1,9 @@
 ---
 title: "Connect the AI Chat Receptionist with Shopify"
 sidebar_label: "Connect with Shopify"
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 import {AISparkleIcon} from '@site/src/components/Icons'

@@ -4,6 +4,9 @@ sidebar_label: "Email History"
 description: "Track and troubleshoot outgoing emails from your WordPress Hosting site. Monitor delivery status, identify issues, and understand email deliverability."
 tags: [wordpress-hosting, email, troubleshooting, multisite]
 keywords: [email history, email logs, email delivery, troubleshoot email, WordPress email, built-in email, SMTP, multisite]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Email History provides a centralized view of all outgoing emails sent from your website. You can track delivery status, identify issues, and monitor email performance, all from the **Email History** tab in your dashboard.

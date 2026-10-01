@@ -5,6 +5,9 @@ sidebar_position: 4
 description: Monitor LCP, TBT, and CLS for desktop and mobile. These are Google's measurements of real-world page experience.
 tags: [wordpress-hosting, dashboard, performance, core-web-vitals]
 keywords: [Core Web Vitals, LCP, TBT, CLS, Largest Contentful Paint, Total Blocking Time, Cumulative Layout Shift, page experience]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 **Core web vitals** are Google's measurements of the experience real visitors get on your site. Strong scores help with search rankings and reduce the chance that visitors leave before your page finishes loading.

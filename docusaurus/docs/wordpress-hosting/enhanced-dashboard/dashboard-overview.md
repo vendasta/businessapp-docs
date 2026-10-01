@@ -5,6 +5,9 @@ sidebar_position: 2
 description: Site preview, PHP version, WordPress core, plugin and theme updates, Flush Cache, and CDN, all from the Overview card.
 tags: [wordpress-hosting, dashboard, overview]
 keywords: [WordPress overview, site preview, PHP version, WP core update, plugin updates, theme updates, flush cache, CDN]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Overview** card is the home of your dashboard. It shows a live preview of your site and gives you one-click access to the maintenance actions you'll use most often.

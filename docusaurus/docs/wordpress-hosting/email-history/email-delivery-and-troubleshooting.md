@@ -4,6 +4,9 @@ sidebar_label: "Delivery & Troubleshooting"
 description: "Understand email statuses, fix missing email logs, resolve deferred emails, and learn how unsubscribes work in WordPress Hosting."
 tags: [wordpress-hosting, email, troubleshooting, multisite]
 keywords: [email status, deferred email, bounced email, no email logs, unsubscribe, SMTP, built-in email, multisite]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## Email statuses

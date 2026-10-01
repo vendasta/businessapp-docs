@@ -2,6 +2,9 @@
 title: CRM
 sidebar_position: 4
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 The CRM connector lets your Vibe app read and write your account's contacts, companies, and opportunities. Instead of mocking up a contact list or a deals table, Vibe wires the generated UI directly to the same records you manage in [CRM](/business-app/crm).

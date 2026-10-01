@@ -2,6 +2,9 @@
 title: "Point a new Domain to WordPress Hosting"
 sidebar_label: "Point Domain"
 description: "Step-by-step instructions for pointing a newly purchased domain to your WordPress Hosting Pro or Premium site, including DNS configuration and domain connection."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Custom domains can be connected on **WordPress Hosting Pro** and **WordPress Hosting Premium** plans. If you recently purchased a domain (or have never pointed it to a site), follow these instructions to connect it.

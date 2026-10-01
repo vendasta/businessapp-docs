@@ -5,6 +5,9 @@ description: Learn how to set up and manage team booking links for My Meetings i
 sidebar_position: 3
 tags: [meetings, crm, team, booking]
 keywords: [team booking, round robin, priority assignment, multi host, client selection]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 # Team booking links

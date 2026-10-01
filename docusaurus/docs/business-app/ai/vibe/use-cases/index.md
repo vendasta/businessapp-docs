@@ -4,6 +4,9 @@ sidebar_label: "Overview"
 sidebar_position: 0
 draft: false
 description: "Practical guidance for building real tools with Vibe for your clients — what to build, how to approach it, and what to expect."
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Vibe Use Cases

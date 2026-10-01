@@ -4,6 +4,9 @@ sidebar_label: What Can I Build?
 sidebar_position: 2
 unlisted: false
 description: Ideas for what to build with Vibe — organized by business type and use case.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # What Can I Build with Vibe?

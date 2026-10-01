@@ -4,6 +4,9 @@ sidebar_label: "Cloudflare"
 description: "Learn how to integrate Cloudflare DNS and CDN services with WordPress Hosting. Move your domain to Cloudflare, connect existing Cloudflare domains, and configure DNS proxy settings."
 tags: [wordpress-hosting, domains, cloudflare, dns, cdn]
 keywords: [Cloudflare DNS, Cloudflare CDN, Cloudflare proxy, WordPress Hosting Cloudflare, DNS proxy setup]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Cloudflare provides DNS management and CDN (Content Delivery Network) services that can enhance your WordPress Hosting site's performance and security. This guide covers how to integrate Cloudflare with WordPress Hosting.

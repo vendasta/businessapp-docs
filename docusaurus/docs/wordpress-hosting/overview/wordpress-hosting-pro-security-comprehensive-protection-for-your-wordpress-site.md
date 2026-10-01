@@ -2,6 +2,9 @@
 title: "WordPress Hosting Pro Security: Comprehensive Protection for Your WordPress Site"
 sidebar_label: "Security"
 description: "WordPress Hosting Pro provides Google Cloud-based security features, including a Web Application Firewall, DDoS protection, and SSL encryption, to keep your WordPress site secure and reliable."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## Overview

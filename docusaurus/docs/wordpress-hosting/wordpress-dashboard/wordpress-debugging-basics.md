@@ -2,6 +2,9 @@
 title: "WordPress Debugging Basics"
 sidebar_label: "Debugging Basics"
 description: "Learn how to debug common WordPress problems using built-in tools like backups, PHP logs, SFTP access, and staging environments."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 This guide helps you debug common problems that can occur on your WordPress website using tools available in WordPress Hosting. These can range from conflicting plugins preventing certain features from working, all the way to internal server errors that bring the website down.

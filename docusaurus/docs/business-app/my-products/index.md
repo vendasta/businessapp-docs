@@ -2,6 +2,9 @@
 title: My Products
 sidebar_position: 1
 description: View your active products and pin the ones you use most to the Business App side panel.
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 The `My Products` page in Business App shows all products and services that are active for your business. You can see what you have access to and choose which products appear in the side panel for quick access.

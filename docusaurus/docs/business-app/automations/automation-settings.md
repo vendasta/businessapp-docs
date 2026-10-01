@@ -4,6 +4,9 @@ sidebar_position: 5
 description: Configure how and when your automations run with entry settings and error handling options.
 tags: [automation, settings, configuration]
 keywords: [automation settings, entry settings, error handling, automation configuration, workflow settings]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 # Automation settings

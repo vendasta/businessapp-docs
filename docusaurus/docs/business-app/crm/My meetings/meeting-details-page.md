@@ -4,6 +4,9 @@ sidebar_label: Meeting details
 description: Review recorded meetings with AI-generated summaries, insights, participants, and transcripts in the CRM.
 tags: [crm, meetings, recordings, insights]
 keywords: [meeting details, crm meetings, meeting transcript, ai meeting summary]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## Intro

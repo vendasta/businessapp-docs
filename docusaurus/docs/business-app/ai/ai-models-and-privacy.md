@@ -4,6 +4,9 @@ sidebar_label: Models and privacy
 description: Understand how Business App AI Employees generate answers, where they source information, and what we disclose about underlying AI models.
 tags: [ai, ai-workforce, privacy, models, data-sources, faq]
 keywords: [ai employees, llm, model versions, data sources, knowledge base]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 ## Overview

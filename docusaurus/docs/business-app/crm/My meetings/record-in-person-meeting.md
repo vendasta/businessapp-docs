@@ -5,6 +5,9 @@ description: Capture in-person meeting audio from the My Meetings page and uploa
 tags: [meetings, crm, recording, audio, in-person]
 keywords: [record meeting, in-person meeting, audio recording, meeting capture, crm recording]
 sidebar_position: 9
+brand: business-app
+product: crm
+audience: smb
 ---
 
 # Record an In-Person Meeting

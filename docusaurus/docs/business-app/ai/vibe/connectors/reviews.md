@@ -3,6 +3,9 @@ title: Reviews
 sidebar_label: Reviews
 sidebar_position: 7
 description: Showcase real customer reviews from your account on your Vibe app.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Reviews

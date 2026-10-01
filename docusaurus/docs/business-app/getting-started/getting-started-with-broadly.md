@@ -3,6 +3,9 @@ title: Getting Started with Broadly
 sidebar_label: Getting Started with Broadly
 sidebar_position: 2
 description: A detailed walkthrough of the setup steps every new business owner completes after onboarding, from platform login through SMS registration and integrations.
+brand: broadly
+product: broadly-core
+audience: smb
 ---
 
 This guide walks you through the setup steps you'll complete after onboarding, in more detail than a short checklist. Use it to know what to expect at each step and why it matters.

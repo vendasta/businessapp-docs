@@ -2,6 +2,9 @@
 title: "Install/Import an Envato Theme on WordPress"
 sidebar_label: "Install Envato Theme"
 description: "Learn how to download and install Envato themes on your WordPress site, including extracting files and uploading via the WordPress dashboard."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## How to download your theme

@@ -5,6 +5,9 @@ sidebar_position: 10
 description: SFTP/SSH, phpMyAdmin, firewall rules, cron jobs, PHP logs, and Google Analytics integration for developers and technical users.
 tags: [wordpress-hosting, dashboard, advanced-tools, developer]
 keywords: [SFTP, SSH, phpMyAdmin, firewall, cron jobs, PHP logs, advanced hosting, developer tools]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 **Advanced Tools** give you direct access to your site's filesystem, database, firewall, scheduled tasks, and PHP error logs. These tools are for developers and technical users. Incorrect changes can affect site availability.

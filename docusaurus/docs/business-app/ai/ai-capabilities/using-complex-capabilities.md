@@ -3,6 +3,9 @@ title: Using Complex Capabilities
 sidebar_label: Using Complex Capabilities
 sidebar_position: 4
 description: "Set up API credentials and external connections for AI Employee capabilities that require additional configuration."
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';

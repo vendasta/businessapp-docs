@@ -5,6 +5,9 @@ description: Use your own DIDWW phone number for calls and two-way SMS in Busine
 sidebar_position: 4
 tags: [integrations, sms, phone-calls]
 keywords: [DIDWW, bring your own number, SMS, phone calls, AI receptionist]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Connect your DIDWW account to use a phone number you already own for voice and two-way SMS in Business App.

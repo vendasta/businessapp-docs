@@ -2,6 +2,9 @@
 title: "Import"
 sidebar_label: "Import"
 description: "Learn how to import your existing WordPress sites into WordPress Hosting using migration plugins or manual methods."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 To import your WordPress sites into WordPress Hosting, follow these steps:

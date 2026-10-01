@@ -4,6 +4,9 @@ description: Connect Gingr to Business App to automatically sync customer data i
 sidebar_position: 3
 tags: [integrations, gingr, crm, pet]
 keywords: [gingr, gingr integration, pet care, kennel, grooming, CRM sync, API key]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Gingr is a dog daycare, kennel, and grooming software that modernizes and streamlines pet care business operations. Connecting Gingr to Business App automatically syncs customer data into your CRM so you can follow up after every reservation without manual data entry.

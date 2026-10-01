@@ -6,6 +6,9 @@ tags: [vibe, ai, seo, indexing, llms]
 keywords: [vibe seo, vibe llms.txt, vibe robots.txt, vibe sitemap, vibe indexing controls, vibe ai search]
 sidebar_position: 9
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # SEO & LLM Indexing

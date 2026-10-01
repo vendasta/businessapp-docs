@@ -2,6 +2,9 @@
 title: "WooCommerce Order Info in Contact List"
 sidebar_label: "Order Info in Contact List"
 description: "Having exceptional customer relationships is crucial to the success of any business. By automatically syncing the information of purchasing customers, you can create targeted campaigns, ask for reviews, or contact customers individually to nurture relationships, improve retention, and increase repeat purchases."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Having exceptional customer relationships is crucial to the success of any business. By automatically syncing the information of purchasing customers, you can create targeted campaigns, ask for reviews, or contact your customers individually to nurture relationships, improve customer retention, drive loyalty, and increase repeat purchases or orders.

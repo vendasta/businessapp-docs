@@ -3,6 +3,9 @@ title: Supabase Backend
 sidebar_label: Supabase Backend
 sidebar_position: 5
 description: Connect a Supabase project to Vibe so your app runs on real data, authentication, and storage.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Supabase Backend

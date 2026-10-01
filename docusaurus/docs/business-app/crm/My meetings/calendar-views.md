@@ -5,6 +5,9 @@ description: View your team's schedule, filter by team member or service, and bo
 sidebar_position: 5
 tags: [meetings, crm, team, calendar]
 keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, general availability, saved view, remembered filters]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 # Calendar Views
@@ -94,6 +97,12 @@ Use the `Show blocked time slots` toggle at the bottom of the sidebar to show or
 
 ![Blocked slot from a team member's connected external calendar](../img/my-meetings/calendar-blocked-slot.png)
 
+### Show or hide blocked time
+
+To hide Blocked slots, turn off **Show blocked time slots** at the bottom of the calendar sidebar. It's on by default, and your choice is saved for the next time you sign in.
+
+This setting is yours alone and changes only what you see, including a team member's blocked time on shared views like Column View — not theirs. It doesn't affect booking: busy time from a connected calendar is always excluded from bookable availability, whether the toggle is on or off.
+
 ## Hours outside general availability
 
 Hours that fall outside a person's [General availability](./index.md#meeting-settings) appear with a greyed background, so you can see at a glance which hours are within normal bookable hours and which aren't. The treatment matches General availability per day of the week: if a day isn't enabled, the entire day appears greyed; if hours are set for only part of a day, the hours before and after that window are greyed.
@@ -155,6 +164,12 @@ All linked services in that booking move by the same time offset, so their relat
 Blocked slots represent busy time from a team member's connected Google or Outlook calendar. Both busy and out-of-office statuses appear as blocked, non-bookable time. The actual event title is never shown, so personal calendar details stay private.
 
 Blocked slots appear in Column, Day, and Week views and respect your sidebar filters. You can hide them with the `Show blocked time slots` toggle at the bottom of the sidebar.
+</details>
+
+<details>
+<summary>Can I hide blocked time slots?</summary>
+
+Yes. Turn off **Show blocked time slots** at the bottom of the calendar sidebar. This only changes what you see — it doesn't affect anyone else's view or your bookable availability.
 </details>
 
 <details>

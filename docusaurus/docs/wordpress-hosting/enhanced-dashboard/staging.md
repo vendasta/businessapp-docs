@@ -5,6 +5,9 @@ sidebar_position: 9
 description: Create a staging copy of your live site, test changes safely, and push them to production when ready.
 tags: [wordpress-hosting, dashboard, staging, environments]
 keywords: [staging site, staging environment, test WordPress changes, push to production, reset staging, WP_DEBUG]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 **Staging** is a private copy of your live site that no one else can see. Use it to test theme changes, plugin updates, redesigns, and content edits without risking the version visitors see. When the changes look right, push them to production in one click.

@@ -12,6 +12,9 @@ keywords:
     data analyst,
     AI setup,
   ]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 Custom AI Employees are specialized digital team members you build from scratch to handle specific business functions. Unlike pre-configured AI Employees (Chat Receptionist, Voice Receptionist, Reputation Specialist), custom employees give you full control over their role, behavior, and capabilities.

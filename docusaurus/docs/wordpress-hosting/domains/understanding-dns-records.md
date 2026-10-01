@@ -4,6 +4,9 @@ sidebar_label: "DNS Records"
 description: "Learn about DNS records and how to configure them for WordPress Hosting. Understand A records, CNAME records, CAA records, and DNS propagation."
 tags: [wordpress-hosting, domains, dns, dns-records]
 keywords: [DNS records, A record, CNAME record, CAA record, DNS configuration, DNS propagation]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 DNS (Domain Name System) records are essential for connecting your domain to WordPress Hosting. This guide explains what DNS records are, which types you need, and how to configure them.

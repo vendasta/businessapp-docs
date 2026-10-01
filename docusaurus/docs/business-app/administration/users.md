@@ -5,6 +5,9 @@ description: Invite team members to your Business App and control which tabs, ap
 sidebar_position: 3
 tags: [users, permissions, team, administration]
 keywords: [users, invite user, invite team member, permissions, app permissions, tab permissions, team members, remove user, edit permissions, user management]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 The `Users` page lets you manage who has access to your Business App. You can view all current users, invite new team members, control which tabs and apps each person can see, and remove users who no longer need access.

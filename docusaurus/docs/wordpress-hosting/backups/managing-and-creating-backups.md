@@ -4,6 +4,9 @@ sidebar_label: "Manage Backups"
 description: Learn how to manage automated and manual backups in WordPress Hosting to protect your website data.
 tags: [wordpress-hosting, backups, security, setup]
 keywords: [WordPress backups, website restore, manual backup WordPress, automated backups, data protection]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The WordPress Hosting dashboard offers a robust backup system, empowering users to protect their digital assets efficiently. This article covers the mechanics of creating backups from the WordPress Hosting dashboard, highlighting its importance and providing a straightforward, step-by-step guide.
