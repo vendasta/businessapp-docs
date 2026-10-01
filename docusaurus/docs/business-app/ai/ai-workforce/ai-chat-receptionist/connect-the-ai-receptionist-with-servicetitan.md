@@ -58,7 +58,7 @@ This capability allows your AI Receptionist to search for customers and retrieve
 
 ### Step 1: Add a ServiceTitan Customer Lookup Capability
 
-1. In Business App, navigate to <AISparkleIcon /> `AI` → `AI Workforce`
+1. In Business App, navigate to <AISparkleIcon /> `AI` → `Workforce`
 2. Select your AI Employee and click `Configure`.
 3. Under `Custom Capabilities`, click `Add a capability`.
 4. Fill in the following fields:
@@ -241,7 +241,7 @@ Real-time availability and online booking requires **ServiceTitan Scheduling Pro
 
 ### Step 1: Add a ServiceTitan Appointment Scheduling Capability
 
-1. In Business App, navigate to <AISparkleIcon /> `AI` → `AI Workforce`
+1. In Business App, navigate to <AISparkleIcon /> `AI` → `Workforce`
 2. Select your AI Employee and click `Configure`.
 3. Under `Custom Capabilities`, click `Add a capability`.
 4. Fill in the following fields:
@@ -436,7 +436,7 @@ This capability allows your AI Receptionist to provide real-time updates on job 
 
 ### Step 1: Add a ServiceTitan Job Status Capability
 
-1. In Business App, navigate to <AISparkleIcon /> `AI` → `AI Workforce`
+1. In Business App, navigate to <AISparkleIcon /> `AI` → `Workforce`
 2. Select your AI Employee and click `Configure`.
 3. Under `Custom Capabilities`, click `Add a capability`.
 4. Fill in the following fields:

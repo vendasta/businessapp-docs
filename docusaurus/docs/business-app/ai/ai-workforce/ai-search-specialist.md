@@ -32,7 +32,7 @@ The AI Search Specialist is an AI employee that reviews how your business appear
 
 ## How to generate a brand visibility report
 
-1. Go to `AI` → `AI Workforce` and open the AI Search Specialist.
+1. Go to `AI` → `Workforce` and open the AI Search Specialist.
 2. In the chat, ask the AI Search Specialist to run a brand visibility report for your business.
 3. Review the report, which shows how your business scores across AI search prompts.
 4. The AI Search Specialist generates a blog post draft targeting your lowest-scoring prompt.

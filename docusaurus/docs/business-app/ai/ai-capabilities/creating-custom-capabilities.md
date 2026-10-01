@@ -40,7 +40,7 @@ If an action can be performed via an API, it can likely become a custom capabili
 
 ### Step 1: access custom capability settings
 
-1. Navigate to <AISparkleIcon /> `AI` → `AI Workforce` in your Business App dashboard.
+1. Navigate to <AISparkleIcon /> `AI` → `Workforce` in your Business App dashboard.
 2. Select the AI Employee you want to enhance (or create a new Custom AI Employee).
 3. Click the `Configure` button.
 4. Use the `Capabilities` tab to view and manage all available capabilities.

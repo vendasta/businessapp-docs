@@ -52,7 +52,7 @@ The AI Human Resources Coordinator is only as accurate as its knowledge sources.
 
 ### Step 1: Create the AI Employee
 
-1. Navigate to `AI` → `AI Workforce` in your Business App dashboard
+1. Navigate to `AI` → `Workforce` in your Business App dashboard
 2. Click `Create Custom AI Employee`
 3. Set a name (for example, "HR Assistant" or a name that fits your team's culture) and upload an avatar image
 4. Click `Save` to create the employee profile

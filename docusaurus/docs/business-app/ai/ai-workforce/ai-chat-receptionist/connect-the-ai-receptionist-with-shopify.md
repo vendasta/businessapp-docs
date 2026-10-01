@@ -50,7 +50,7 @@ Once connected, the Shopify Storefront integration makes the "Access Shopify" Ca
 
 ## Step 2: Enable Shopify actions for your AI Receptionist
 
-1. Navigate to <AISparkleIcon /> `AI` → `AI Workforce`.
+1. Navigate to <AISparkleIcon /> `AI` → `Workforce`.
 2. Select your AI Employee and click `Configure`.
 3. Under the `Capabilities` tab, find the "Access Shopify" Capability and ensure the URL for your connected Shopify Storefront is shown in the drop-down menu.
 

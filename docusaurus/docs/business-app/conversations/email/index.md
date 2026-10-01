@@ -119,7 +119,7 @@ The AI Chat Receptionist can automatically respond to inbound emails, providing 
 
 **To enable AI auto-response for email:**
 
-1. Go to `AI` → `AI Workforce` in your dashboard
+1. Go to `AI` → `Workforce` in your dashboard
 2. Configure your AI Chat Receptionist
 3. In the Communication Channels section, enable the `Email` channel
 

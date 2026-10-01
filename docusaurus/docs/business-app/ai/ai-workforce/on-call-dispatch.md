@@ -48,7 +48,7 @@ Your AI Voice Receptionist must be set up and answering calls first. See the [AI
 
 ### Step 1: Add the capability
 
-1. Go to `AI` → `AI Workforce` and click `Configure` on the Voice Receptionist.
+1. Go to `AI` → `Workforce` and click `Configure` on the Voice Receptionist.
 2. In `Capabilities`, add the **On-call dispatch** capability.
 
 ### Step 2: Add on-call numbers and criteria

@@ -89,7 +89,7 @@ The setup card will disappear when you complete each item.
 
 The checklist may include:
 
-- **Meeting your AI Workforce**: Capture leads and engage customers around the clock. Start a chat and see which tasks an AI employee can handle for you. Navigate to `AI` → `AI Workforce` to chat with and configure your AI Employees.
+- **Meeting your AI Workforce**: Capture leads and engage customers around the clock. Start a chat and see which tasks an AI employee can handle for you. Navigate to `AI` → `Workforce` to chat with and configure your AI Employees.
 - **Connecting your Google Business Profile**: Collect and respond to Google Reviews, sync your Business Profile, and more.
 - **Setting up and installing Web Chat**: Engage website visitors with AI trained on your business. Install the chat widget to get leads in Conversations.
 - **Connecting your business system**: Import existing customers from platforms like QuickBooks to automatically request reviews and manage relationships all in one place.
@@ -144,7 +144,7 @@ Common connections to set up early:
 
 ### How do I start using AI Workforce? {#meet-your-ai-workforce}
 
-1. Go to `AI` → `AI Workforce`.
+1. Go to `AI` → `Workforce`.
 2. Start a chat with an AI Employee to see what they can do.
 3. Configure the [Chat Receptionist](../ai/ai-workforce/ai-chat-receptionist/index.mdx) or [Voice Receptionist](../ai/ai-workforce/ai-voice-receptionist.md) to match your business.
 
