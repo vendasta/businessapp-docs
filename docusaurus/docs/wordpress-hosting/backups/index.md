@@ -4,6 +4,9 @@ sidebar_label: "Backups"
 description: "Protect your WordPress site with automated daily backups and manual backup options. Restore your site to any previous backup point."
 tags: [wordpress-hosting, backups, security, restore]
 keywords: [WordPress backups, website restore, manual backup WordPress, automated backups, data protection]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting provides a backup system to protect your website data. Your site is automatically backed up daily, and you can create manual backups at any time to safeguard your work before making major changes.
@@ -20,8 +23,9 @@ WordPress Hosting uses a dual-layered backup system for comprehensive protection
 
 Backup retention varies by your WordPress Hosting plan:
 
-* **WordPress Hosting Pro**: Backups are retained for **up to 90 days**, giving you access to multiple restore points for comprehensive project tracking and risk management.
-* **WordPress Hosting Standard**: Only the **most recent daily backup** is available, emphasizing the importance of proactive backup management.
+* **WordPress Hosting Pro**: Backups are retained for **30 days**, plus **2 on-demand downloadable backups**.
+* **WordPress Hosting Premium (Multisite)**: Backups are retained for **30 days**, plus **3 on-demand downloadable backups**.
+* **WordPress Hosting Standard**: Only the **most recent daily backup** is available.
 
 ## What's included in a backup
 
@@ -67,7 +71,8 @@ Yes. All WordPress Hosting Pro and Standard sites are backed up daily, and you c
 
 **Backup retention:**
 
-* **WordPress Hosting Pro**: Backups are retained for **up to 90 days**
+* **WordPress Hosting Pro**: Backups are retained for **30 days**, plus **2 on-demand downloadable backups**
+* **WordPress Hosting Premium (Multisite)**: Backups are retained for **30 days**, plus **3 on-demand downloadable backups**
 * **WordPress Hosting Standard**: Only the **most recent daily backup** is available
 
 You can view and restore backups at any time from the `Backups` tab in the WordPress Hosting dashboard.

@@ -4,6 +4,9 @@ sidebar_label: Models and privacy
 description: Understand how Business App AI Employees generate answers, where they source information, and what we disclose about underlying AI models.
 tags: [ai, ai-workforce, privacy, models, data-sources, faq]
 keywords: [ai employees, llm, model versions, data sources, knowledge base]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 ## Overview
@@ -46,7 +49,7 @@ Do not add sensitive or unnecessary personal data to your knowledge base. Only i
 <details>
 <summary>What AI model powers AI Employees?</summary>
 
-AI Employees run on enterprise‑grade LLMs that we evaluate and monitor for quality. Model names and versions are not disclosed and may change over time.
+AI Employees run on enterprise-grade LLMs that we evaluate and monitor for quality. Model names and versions are not disclosed and may change over time.
 
 </details>
 
@@ -74,7 +77,7 @@ Provide clear, current content in the knowledge base and concise instructions in
 <details>
 <summary>Do AI Employees learn permanently from chats or calls?</summary>
 
-They use the active conversation for context. Persistent behavior comes from your capabilities and knowledge base, not from ad‑hoc user conversations.
+They use the active conversation for context. Persistent behavior comes from your capabilities and knowledge base, not from ad-hoc user conversations.
 
 </details>
 

@@ -4,6 +4,9 @@ sidebar_position: 7
 description: Create static or smart lists to segment contacts and companies, trigger automations, and streamline CRM workflows.
 tags: [lists, crm, segmentation, automations]
 keywords: [smart lists, static lists, crm lists, trigger automation, segment contacts, segment companies]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use Lists to organize contacts and companies into meaningful segments for outreach, automation, and reporting. There are two types:

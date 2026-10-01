@@ -2,6 +2,9 @@
 title: Single sign-on
 sidebar_position: 1
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Single sign-on

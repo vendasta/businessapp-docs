@@ -14,6 +14,9 @@ keywords:
     employee self-serve,
     custom AI employee,
   ]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 The AI Human Resources Coordinator is a custom AI Employee built for internal use. It answers general Human Resources questions, links to official policy documents when they exist, and redirects employees to the right person or resource when a question falls outside scope or requires access to personal records. It is designed to help employees get fast, accurate guidance on HR topics without routing every inquiry to your HR team.

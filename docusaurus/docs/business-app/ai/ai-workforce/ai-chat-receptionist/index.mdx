@@ -1,10 +1,20 @@
 ---
 title: AI Chat receptionist overview
-description: Set up your AI Chat Receptionist to capture leads and answer questions 24/7 across web chat, email, SMS, Facebook, Instagram, and WhatsApp. Configure role, capabilities, and knowledge.
+description: "Set up the Business App AI Chat Receptionist to answer questions and capture leads 24/7 on web chat, email, SMS, Facebook, Instagram, and WhatsApp."
 sidebar_label: AI Chat Receptionist
 sidebar_position: 2
 keywords: [AI chat receptionist, website chatbot, email bot, SMS chatbot, Facebook Messenger bot, WhatsApp business bot, live chat AI, lead capture bot, 24/7 chat support, AI customer service, multi-channel chat, conversational AI, automated messaging, auto-reply email]
 tags: [ai, chat, lead capture, automation, customer service, sms, social media]
+brand: business-app
+product: ai-workforce
+audience: smb
+content_type: overview
+kb_id: KB-00051
+answer_snippet: "The AI Chat Receptionist in Business App answers questions and captures leads from your website visitors 24/7, and can also reply on email, SMS, Facebook, Instagram, and WhatsApp. To set it up, go to AI Workforce in the AI menu and click Configure on the Chat receptionist."
+doc_owner: ai-workforce
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
 import { AISparkleIcon } from '@site/src/components/Icons';
@@ -14,7 +24,7 @@ import ScrollToHash from '@site/src/components/ScrollToHash';
 
 <ScrollToHash />
 
-The AI Chat Receptionist helps you capture leads and respond to website visitors 24/7. In this guide, you’ll learn how to set up, train, and monitor your AI assistant to work for your business.
+The AI Chat Receptionist in Business App answers questions and captures leads from your website visitors 24/7, and can also reply on email, SMS, Facebook, Instagram, and WhatsApp. To set it up, go to `AI Workforce` in the `AI` menu and click `Configure` on the Chat receptionist.
 
 <div
   className="wistia_responsive_padding"
@@ -52,13 +62,13 @@ The AI Chat Receptionist ensures that your business never misses an opportunity 
 
 It also handles multiple visitors at once, delivering timely responses that guide them through your site's information.
  
-## Set up the AI Chat Receptionist
+## How do I set up the AI Chat Receptionist? {#set-up-the-ai-chat-receptionist}
 
-Follow these simple steps to configure your AI Chat Receptionist so it effectively engages visitors and captures valuable leads.
+Follow these steps to configure your AI Chat Receptionist so it engages visitors and captures leads.
 
 ### Step 1: Configure basic settings and purpose for the AI Chat Receptionist
 
-Go to <AISparkleIcon /> `AI > AI workforce` and then click `Configure` on the Chat receptionist.
+Go to <AISparkleIcon /> `AI` > `AI Workforce` and then click `Configure` on the Chat receptionist.
 
 - **Name and Image**  
 Give your AI a friendly, professional name and photo. The AI Receptionist knows their name and the photo will help you distinguish between other AI Employees in your app.
@@ -70,7 +80,7 @@ The Role prompt sets the tone and behavior of your AI Chat Receptionist. Include
 Your AI Chat Receptionist is assigned to the **Web Chat** trigger by default. This trigger is always active and cannot be disabled. You can also assign your AI Receptionist to additional triggers like **Email**, **SMS**, **Facebook**, **Instagram**, and **WhatsApp** to automatically respond to inbound customer messages across all your communication channels.
 
 :::note
-The Web Chat widget isn't automatically added to your website! You'll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](/business-app/conversations/conversations-ai-web-chat-overview)
+The Web Chat widget isn't automatically added to your website! You'll need to install the widget code or enable it within your site builder before your AI can start engaging visitors. When you are ready to install the widget, refer to [How to install the Conversations Web Chat Widget](/business-app/conversations/web-chat)
 
 To enable email auto-response, simply enable the Email trigger in your AI Chat Receptionist settings. Learn more about [setting up Conversations for Emails](/business-app/conversations/email/).
 :::
@@ -230,7 +240,7 @@ Capabilities are like instructions that guide how your AI Chat Receptionist beha
   The AI can ask visitors for marketing consent during a conversation. Consent responses are captured during lead capture and written directly to the contact record in your CRM. To enable this, add consent-collection instructions to your AI's Role or a custom capability.
 
 - **Book Appointments**  
-  Connect your calendar to let the AI help customers schedule meetings. It will offer available time slots and collect all necessary booking details automatically. Customers can book multiple services in a single conversation, completing the process with SMS confirmation.
+  Connect your calendar to let the AI help customers schedule meetings. It will offer available time slots and collect all necessary booking details automatically. Customers can book multiple services in a single conversation, completing the process with SMS confirmation. Bookings made through chat don't include client selection, custom questions, or booking notes. See [AI booking limitations](../../../crm/My%20meetings/groups-and-service-menus.md#ai-booking-limitations).
 
 - **Choose to stop responding**  
   Lets the AI decide, like a human receptionist, when a conversation no longer needs a reply. It turns off auto-replies for that conversation in two cases: the customer wraps up or asks the AI to stop messaging them, or the sender is clearly spam or an automated system (unsolicited sales pitches, phishing, mass texts, out-of-office bounces). The AI sends one short closing line, then stops replying. A team member can turn AI replies back on for that conversation at any time. This works on every channel your AI Chat Receptionist replies on. Add it from the capabilities list.
@@ -589,7 +599,7 @@ When your AI Chat Receptionist has access to the data behind a question — for 
 
 Charts appear as an image within the conversation, the same as any other response, across Web Chat, Email, SMS, WhatsApp, Facebook, and Instagram.
 
-## Preview your AI Chat Receptionist in action {#test-the-ai-chat-receptionists-responses}
+## How do I preview my AI Chat Receptionist in action? {#test-the-ai-chat-receptionists-responses}
 
 Once your AI Chat Receptionist is set up, it's important to test how it handles real conversations and monitor its interactions over time. This helps you ensure the AI is answering questions accurately, capturing leads, and creating a positive experience for your website visitors. This testing environment is also perfect for seeing how the AI Chat Receptionist behaves in a live setting.
 
@@ -642,7 +652,7 @@ When testing your AI Chat Receptionist, simulate real customer interactions by a
 - Test conversations in different languages your customers might use
 - Verify the AI responds appropriately in the same language
 
-### Monitor and improve the AI Chat Receptionist
+### How do I monitor and improve the AI Chat Receptionist? {#monitor-and-improve-the-ai-chat-receptionist}
 
 Regularly review the `Conversations` and `Anonymous Visitors` tabs in `Conversations` to make sure your Chat Receptionist is interacting with visitors as you expected.
 
@@ -715,5 +725,26 @@ Two things to check:
 
 1. **Knowledge coverage.** The AI only knows what's in its knowledge or what a tool returns. Make sure the relevant pages of your website are added to your AI's knowledge and that the website data is up to date.
 2. **The URL itself.** The AI is given the URL string, not page contents. If the URL doesn't carry useful information (e.g. it's a generic `/page?id=abc123`), the AI may need a custom capability to translate that into something meaningful.
+
+</details>
+
+<details>
+<summary>Can the AI Chat Receptionist respond in Spanish or other languages?</summary>
+
+Yes. The AI Chat Receptionist detects and responds in over 40 languages, including English, French, and Spanish. It replies in the same language the visitor uses.
+
+</details>
+
+<details>
+<summary>How do I make the AI Chat Receptionist respond to Facebook messages?</summary>
+
+Go to <AISparkleIcon /> `AI` > `AI Workforce` and click `Configure` on the Chat receptionist. In **Triggers**, assign the **Facebook** trigger so the AI automatically responds to inbound Facebook messages. You can assign **Email**, **SMS**, **Instagram**, and **WhatsApp** triggers the same way.
+
+</details>
+
+<details>
+<summary>Where do I see the inquiries and leads from the AI Chat Receptionist?</summary>
+
+Review the `Conversations` and `Anonymous Visitors` tabs in `Conversations`. Conversations go to `Anonymous Visitors` when the AI couldn't identify the visitor's contact information. Leads captured by the AI are saved directly to your CRM.
 
 </details>

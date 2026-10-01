@@ -4,6 +4,9 @@ sidebar_label: "WordPress Hosting Premium"
 description: Overview of WordPress Hosting Premium, a multisite solution hosted on Google Cloud Platform.
 tags: [wordpress-hosting, multisite, overview]
 keywords: [WordPress Premium Hosting, multisite network, Google Cloud WordPress, scalable hosting, multi-location hosting solution]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 **WordPress Hosting Premium** is a multisite hosting solution tailored for managing multiple WordPress websites under one account. Hosted on **Google Cloud Platform**, it offers centralized control, enhanced security, and scalable infrastructure which is ideal for businesses with multiple locations, educational institutions, and corporate networks.

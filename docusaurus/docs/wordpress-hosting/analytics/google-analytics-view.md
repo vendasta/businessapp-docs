@@ -2,6 +2,9 @@
 title: "Google Analytics View"
 sidebar_label: "Google Analytics View"
 description: "View your top traffic sources and page view metrics using the Google Analytics view in WordPress Hosting."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The Google Analytics view in WordPress Hosting allows you to view your top traffic sources and page view metrics within the product. Some available metrics include:

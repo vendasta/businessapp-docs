@@ -2,6 +2,9 @@
 title: Build and publish a form
 sidebar_position: 2
 description: Add fields, style your form, set up reCAPTCHA, embed on your site, and test.
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## Step 1: Navigate to CRM > Forms

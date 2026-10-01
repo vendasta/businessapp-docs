@@ -2,6 +2,9 @@
 title: "How to find database connection string"
 sidebar_label: "Database Connection String"
 description: "Learn how to find your WordPress site's database connection credentials, including host, database name, username, and password."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 If you need to find your WordPress site's database connection information (host, database name, username, and password), you can retrieve these credentials even though remote database connections are not supported.

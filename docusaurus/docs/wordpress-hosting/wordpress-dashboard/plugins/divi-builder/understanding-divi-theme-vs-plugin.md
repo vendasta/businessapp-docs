@@ -2,6 +2,9 @@
 title: "Understanding Divi Theme vs. Plugin"
 sidebar_label: "Divi Theme vs Plugin"
 description: "Divi is a popular WordPress theme and page builder plugin developed by Elegant Themes, offering a flexible design experience for building and customizing WordPress sites."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Divi is a popular WordPress theme and page builder plugin developed by Elegant Themes, offering a flexible design experience. Whether you're building websites from scratch or customizing existing ones, Divi makes it easy to create beautiful, responsive sites without the need for coding expertise. In this article, we will explain what Divi is, how it works on the WordPress Hosting platform, and whether you need both the Divi plugin and theme.

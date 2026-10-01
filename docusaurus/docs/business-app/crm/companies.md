@@ -4,6 +4,9 @@ sidebar_position: 3
 description: Manage organizations in your CRM. Create, enrich, and segment companies; associate contacts and opportunities; and log sales activity.
 tags: [companies, crm]
 keywords: [crm companies, company fields, logging activity, lead scoring, find accounts, owner, assign salesperson, salesperson]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use Companies to manage the organizations you sell to and serve. Keep company data accurate, track engagement, and associate contacts, opportunities, tasks, and lists.

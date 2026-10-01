@@ -4,6 +4,9 @@ sidebar_label: "Setup"
 description: "Complete guide to setting up and connecting your custom domain to WordPress Hosting. Includes DNS record configuration, domain connection steps, validation, and FAQs."
 tags: [wordpress-hosting, domains, dns, setup]
 keywords: [domain setup, connect custom domain, WordPress DNS records, domain registrar setup, point domain to WordPress, A record CNAME]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Custom domain connection is available on **WordPress Hosting Pro** and **WordPress Hosting Premium** plans. WordPress Hosting Standard does not support custom domains.

@@ -2,6 +2,9 @@
 title: "Managing 404 Errors and Redirects in WordPress"
 sidebar_label: "404 Errors & Redirects"
 description: "Learn how to troubleshoot 404 errors, create custom 404 pages, and set up 301 redirects to fix broken links and improve SEO on your WordPress site."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Encountering a **"Page Not Found" (404 error)** can frustrate visitors and harm your website's credibility, leading them to abandon your site. Broken links also negatively impact **SEO and user experience**.

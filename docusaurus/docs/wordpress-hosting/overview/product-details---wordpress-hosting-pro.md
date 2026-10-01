@@ -2,6 +2,9 @@
 title: "Product Details - WordPress Hosting Pro"
 sidebar_label: "Product Details"
 description: "WordPress Hosting Pro provides reliable, easy-to-use hosting with top-notch security, speed, and storage on Google Cloud Platform."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## Google-fast WordPress sites
