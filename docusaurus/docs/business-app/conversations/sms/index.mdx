@@ -3,6 +3,9 @@ title: "Send your first SMS message"
 sidebar_label: "SMS"
 sidebar_position: 1
 description: Send and receive SMS and MMS messages with customers from a dedicated business phone number.
+brand: business-app
+product: conversations
+audience: smb
 ---
 
 SMS messaging in Business App is available for businesses located in Canada and the United States. You can use Conversations to send and receive SMS and MMS messages with customers from a dedicated business phone number. Each business is assigned a local phone number for two-way communication based on your business address.
@@ -82,4 +85,17 @@ No! You can use SMS messaging immediately without any configuration or registrat
 <summary><strong>Can I send SMS to US numbers from Canada?</strong></summary>
 
 No. Sending SMS to US numbers requires A2P registration, which is not supported in Canada. You can only send SMS to Canadian numbers; messages to US numbers are rejected by US carriers.
+</details>
+
+<details>
+<summary><strong>Why don't I see an option to send SMS from Conversations?</strong></summary>
+
+SMS requires `Conversations AI Pro` (or an eligible SMS add-on) on **this** account. If you manage more than one location, each account that needs to send texts must have the product activated. SMS is available for businesses in the United States and Canada.
+</details>
+
+<details>
+<summary><strong>Why did my Google LSA or SMS conversation split into two contacts after the customer changed their phone number?</strong></summary>
+
+When a conversation starts from one number, the contact is updated to a new number mid-thread, and then another message arrives from the original number, the platform can create a second contact. The system treats the newly supplied number as the current contact identity, so a reply from the old number opens a separate thread. There is no workaround for Google LSA SMS at this layer; the same contact-matching behavior applies to ordinary SMS.
+
 </details>

@@ -5,6 +5,9 @@ sidebar_position: 5
 description: See visitors, sessions, page views, and bounce rate for your site, using the default analytics or your own Google Analytics property.
 tags: [wordpress-hosting, dashboard, analytics, google-analytics]
 keywords: [web analytics, Google Analytics, GA4, visitors, sessions, page views, bounce rate, traffic]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The `Web analytics` card surfaces visitor data for your site without leaving the dashboard. You can use the default analytics out of the box, or connect your own Google Analytics (GA4) property for more detail.

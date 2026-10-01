@@ -14,6 +14,9 @@ keywords:
   - enrichment
   - export-contacts
   - contact-history
+brand: yesware
+product: yesware-core
+audience: smb
 ---
 
 ## What is managing contacts?

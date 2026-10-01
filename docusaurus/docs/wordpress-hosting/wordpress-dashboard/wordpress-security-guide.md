@@ -2,6 +2,9 @@
 title: "WordPress Security Guide"
 sidebar_label: "Security"
 description: "Learn how to protect your WordPress site from hackers and cyber threats, including security best practices and understanding XML-RPC."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress is popular, which makes it a target for hackers. While WordPress provides security updates, you also need to take extra steps to protect your site from cyberattacks.

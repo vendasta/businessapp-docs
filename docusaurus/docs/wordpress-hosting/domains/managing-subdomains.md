@@ -4,6 +4,9 @@ sidebar_label: "Subdomains"
 description: "Learn how alternate domains and subdomains work on WordPress Hosting Pro single-site installations. All alternate domains redirect to your primary domain."
 tags: [wordpress-hosting, domains, subdomains, dns, alternate-domains]
 keywords: [alternate domains, subdomains, subdomain limits, primary domain, CNAME subdomain, single-site, WordPress Hosting Pro]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 This guide applies to **WordPress Hosting Pro** (single-site). On a single-site installation, you can connect additional domains and subdomains, but they all function as **alternate domains**: every one of them redirects to your primary domain.

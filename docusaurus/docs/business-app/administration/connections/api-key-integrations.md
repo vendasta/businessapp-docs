@@ -5,6 +5,9 @@ description: Connect third-party applications to Business App using an API key t
 sidebar_position: 3
 tags: [integrations, api-key, connections, fieldedge, jobnimbus, shopboss]
 keywords: [API key, integrations, FieldEdge, JobNimbus, RB Control Systems, ShopBoss, Pet Resort Pro, Protractor, Mitchell Enterprise, API key setup]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 API key integrations connect third-party applications to Business App by exchanging a unique key. Once connected, customer data syncs automatically into your CRM and you can trigger automated review requests.
@@ -15,7 +18,7 @@ Integrations that use this method include **FieldEdge**, **JobNimbus**, **RB Con
 
 ### Step 1: Find the integration
 
-1. Go to `Administration` → `Connections` in Business App.
+1. Go to `Administration` → `Integrations` in Business App.
 2. Click the `Browse` tab.
 3. Find the integration card for your application and click it.
 

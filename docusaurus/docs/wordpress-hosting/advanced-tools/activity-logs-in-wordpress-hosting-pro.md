@@ -2,6 +2,9 @@
 title: "Activity Logs in WordPress Hosting"
 sidebar_label: "Activity Logs"
 description: "Track actions performed on your staging site with the Activity Logs feature in WordPress Hosting."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Activity Logs** feature in WordPress Hosting helps you track actions performed on your **staging site**. It provides a record of significant activities, making it easier to monitor changes and troubleshoot issues.

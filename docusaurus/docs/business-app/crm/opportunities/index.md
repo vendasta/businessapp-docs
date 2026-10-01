@@ -5,6 +5,9 @@ sidebar_position: 1
 description: Track and manage potential revenue using opportunities in your sales pipeline.
 tags: [crm, opportunities, pipeline, sales]
 keywords: [opportunity, sales pipeline, create opportunity, edit opportunity, close opportunity]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## What is Opportunities?

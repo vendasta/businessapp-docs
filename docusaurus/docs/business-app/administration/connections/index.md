@@ -1,5 +1,8 @@
 ---
 title: Integrations
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 ## What Can I Manage in Integrations?
 The **Integrations** section allows you to link third-party tools directly to your app. These integrations bring your most important business data into one place and allow services across your app to work together.

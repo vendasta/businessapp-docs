@@ -12,6 +12,9 @@ keywords:
   - contact-profiles
   - gmail
   - outlook
+brand: yesware
+product: yesware-core
+audience: smb
 ---
 
 ## What is Contacts?

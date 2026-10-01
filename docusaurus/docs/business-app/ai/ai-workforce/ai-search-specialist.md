@@ -4,6 +4,9 @@ sidebar_label: AI Search Specialist
 description: The AI Search Specialist generates a brand visibility report and drafts a blog post targeting your weakest-performing AI search result.
 tags: [ai-workforce, seo, brand-visibility]
 keywords: [ai search specialist, brand visibility report, ai search optimization, blog draft, ai workforce]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 :::info Trusted testers
@@ -75,6 +78,13 @@ No. The AI Search Specialist is currently available to trusted testers only.
 <summary>Does the AI Search Specialist publish the blog post for me?</summary>
 
 No. The generated blog post saves as a draft in Social Marketing for you to review before it publishes.
+</details>
+
+<details>
+<summary>Why didn't the AI Search Specialist report appear after it said it would generate?</summary>
+
+Ask the AI Search Specialist for the report. An explicit request is required before the report is generated.
+
 </details>
 
 ## Screenshots

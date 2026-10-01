@@ -5,6 +5,9 @@ sidebar_position: 3
 description: Learn how your contacts can manage marketing, product, and website email preferences by category while continuing to receive transactional emails.
 tags: [email, administration, subscriptions]
 keywords: [email preferences, unsubscribe, email categories, subscription management, resubscribe]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Your contacts can manage email preferences by category instead of unsubscribing from all non-transactional emails at once. This prevents accidental unsubscribes from blocking important communications like website form submissions, lead notifications, and product updates.

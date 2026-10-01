@@ -3,6 +3,9 @@ title: How to configure AI capabilities
 sidebar_label: Configuring capabilities
 sidebar_position: 2
 description: Learn how to enable and configure built-in capabilities for your AI Employees to handle business tasks.
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 This guide walks you through enabling and configuring built-in capabilities for your AI Employees. Follow these steps to set up capabilities that handle common business tasks like lead capture and appointment booking.

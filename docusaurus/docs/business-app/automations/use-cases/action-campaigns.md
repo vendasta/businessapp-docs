@@ -5,6 +5,9 @@ sidebar_label: Pause campaigns
 description: Automatically pause campaigns for contacts or companies when leads go cold, bounce, or no longer qualify.
 tags: [automations, campaigns, crm, contact-level, company-level]
 keywords: [pause campaign, automation builder, meeting booked, email bounce, lead score, crm updates]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 When a lead books a meeting, bounces an email, or drops off a target list, continuing to send campaign messages can feel irrelevant, or worse, damage the relationship. You can build automations that pause campaigns automatically when conditions change, so your outreach stays timely without manual intervention.

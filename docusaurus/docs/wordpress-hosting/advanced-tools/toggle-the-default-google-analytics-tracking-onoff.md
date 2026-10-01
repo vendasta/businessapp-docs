@@ -2,6 +2,9 @@
 title: "Toggle the default Google Analytics tracking on/off"
 sidebar_label: "Google Analytics Toggle"
 description: "Learn how to disable the default Google Analytics tracking code for GDPR compliance and privacy protection."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## What is GDPR?

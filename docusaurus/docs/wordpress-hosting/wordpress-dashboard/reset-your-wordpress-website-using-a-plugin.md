@@ -2,6 +2,9 @@
 title: "Reset Your WordPress Website Using a Plugin"
 sidebar_label: "Reset Website"
 description: "Learn how to reset your WordPress site to a clean installation using the WP Reset plugin when you need to start fresh."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Resetting your WordPress site removes all content, settings, and customizations, returning it to a fresh WordPress installation. This is useful when you want to start over or test a clean setup.

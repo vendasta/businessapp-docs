@@ -5,6 +5,9 @@ description: Capture in-person meeting audio from the My Meetings page and uploa
 tags: [meetings, crm, recording, audio, in-person]
 keywords: [record meeting, in-person meeting, audio recording, meeting capture, crm recording]
 sidebar_position: 9
+brand: business-app
+product: crm
+audience: smb
 ---
 
 # Record an In-Person Meeting
@@ -23,9 +26,9 @@ The recorder opens and begins capturing audio.
 
 While the recorder is open, you can:
 
-- **Pause / Resume** — temporarily stop and restart the recording
-- **Cancel** — discard the recording and close the recorder
-- **Stop & Save** — stop recording and move to the review step
+- **Pause / Resume**: temporarily stop and restart the recording
+- **Cancel**: discard the recording and close the recorder
+- **Stop & Save**: stop recording and move to the review step
 
 ## Review and save
 
@@ -38,7 +41,7 @@ After stopping the recording, a preview opens where you can:
 
 When you're ready:
 
-- **Save** — uploads the recording to the CRM and triggers analysis
-- **Discard** — removes the recording and closes the preview
+- **Save**: uploads the recording to the CRM and triggers analysis
+- **Discard**: removes the recording and closes the preview
 
 Once saved, the recording is processed alongside other meeting recordings in the CRM.

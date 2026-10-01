@@ -1,6 +1,9 @@
 ---
 title: "Connect the AI Chat Receptionist with Shopify"
 sidebar_label: "Connect with Shopify"
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 import {AISparkleIcon} from '@site/src/components/Icons'
@@ -118,7 +121,7 @@ This ensures your AI can provide complete, helpful answers by combining real-tim
 
 Yes! The Shopify Storefront integration works across all communication channels supported by your AI Employees. Customers can search for products, update carts, and more through:
 
-- [Web chat](../../../conversations/conversations-ai-web-chat-overview.md)
+- [Web chat](../../../conversations/web-chat/index.mdx)
 - [SMS messaging](../../../conversations/conversations-send-receive-sms.md) (Conversations Pro required)
 - [WhatsApp](../../../conversations/conversations-whatsapp-overview.md)
 - Phone calls (with [AI Voice Receptionist](../ai-voice-receptionist.md))

@@ -4,6 +4,9 @@ sidebar_label: "Backups"
 description: "Protect your WordPress site with automated daily backups and manual backup options. Restore your site to any previous backup point."
 tags: [wordpress-hosting, backups, security, restore]
 keywords: [WordPress backups, website restore, manual backup WordPress, automated backups, data protection]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting provides a backup system to protect your website data. Your site is automatically backed up daily, and you can create manual backups at any time to safeguard your work before making major changes.

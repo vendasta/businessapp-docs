@@ -2,6 +2,9 @@
 title: Error Handling & Troubleshooting
 sidebar_position: 5
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Error Handling & Troubleshooting

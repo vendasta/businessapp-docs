@@ -2,6 +2,9 @@
 title: "Unpublish a WordPress Site"
 sidebar_label: "Unpublish Site"
 description: "Learn how to unpublish, temporarily hide, or fully remove a WordPress site depending on your needs."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Unpublishing a WordPress website can be done in several ways depending on your goals:

@@ -4,6 +4,9 @@ sidebar_label: Meeting details
 description: Review recorded meetings with AI-generated summaries, insights, participants, and transcripts in the CRM.
 tags: [crm, meetings, recordings, insights]
 keywords: [meeting details, crm meetings, meeting transcript, ai meeting summary]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## Intro
@@ -292,7 +295,7 @@ By using the Meeting Details page effectively, you can turn recorded meetings in
   Active listening looks for evidence that the rep heard and processed what the guest said, often by repeating or summarizing it.
 
   **Example**  
-  "So, what I'm hearing is that you need the new HVAC unit installed before the weekend heatwave—is that right?"
+  "So, what I'm hearing is that you need the new HVAC unit installed before the weekend heatwave, is that right?"
 
   **Scoring specs**  
   The score ranges from 1 to 5 based on semantic acknowledgment of guest inputs.

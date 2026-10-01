@@ -5,6 +5,9 @@ description: Connect your OctoTable account to Business App using your Property 
 sidebar_position: 4
 tags: [integrations, octotable, restaurant]
 keywords: [OctoTable, RixAPI, restaurant integration, Property ID, connect OctoTable]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 Business App integrates with OctoTable so you can connect your account without entering separate API credentials. You only need your OctoTable Property ID to complete the connection.

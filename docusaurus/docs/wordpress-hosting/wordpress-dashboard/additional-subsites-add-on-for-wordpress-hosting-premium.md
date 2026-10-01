@@ -2,11 +2,14 @@
 title: "Additional Subsites for WordPress Hosting Premium"
 sidebar_label: "Additional Subsites"
 description: "Expand your WordPress Hosting Premium plan by adding more subsites. This add-on allows you to increase your subsite capacity and manage your multisite network from the WordPress dashboard."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Additional Subsites add-on** allows you to expand your **WordPress Hosting Premium** plan beyond the default **1 primary + 5 subsites**. This add-on is useful for businesses managing multiple locations or franchise networks within a single WordPress multisite network.
 
-## Default Setup
+## Default setup
 
 By default, **WordPress Hosting Premium** includes:
 
