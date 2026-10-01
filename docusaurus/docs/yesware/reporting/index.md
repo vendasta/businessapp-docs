@@ -14,7 +14,7 @@ Yesware's reporting suite gives you clear insight into how your outreach is perf
 ## Accessing reports
 
 - **Gmail**: Click `My Reports` at the top of Gmail, or go to `Yesware` menu > `My Reports`.
-- **Outlook**: Click `Open Reporting` in your Outlook ribbon, or go to the Yesware Sidebar > `Menu` > `View Reports`.
+- **Outlook**: Click `Open Reporting` in your Outlook ribbon, or go to the Yesware Sidebar > `Menu` → `View Reports`.
 - **Direct link**: [app.yesware.com/reports/activity](https://app.yesware.com/reports/activity/#/activity)
 
 ## Available reports

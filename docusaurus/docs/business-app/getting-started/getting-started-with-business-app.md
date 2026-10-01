@@ -89,7 +89,7 @@ The setup card will disappear when you complete each item.
 
 The checklist may include:
 
-- **Meeting your AI Workforce**: Capture leads and engage customers around the clock. Start a chat and see which tasks an AI employee can handle for you. Navigate to `AI` > `AI Workforce` to chat with and configure your AI Employees.
+- **Meeting your AI Workforce**: Capture leads and engage customers around the clock. Start a chat and see which tasks an AI employee can handle for you. Navigate to `AI` → `AI Workforce` to chat with and configure your AI Employees.
 - **Connecting your Google Business Profile**: Collect and respond to Google Reviews, sync your Business Profile, and more.
 - **Setting up and installing Web Chat**: Engage website visitors with AI trained on your business. Install the chat widget to get leads in Conversations.
 - **Connecting your business system**: Import existing customers from platforms like QuickBooks to automatically request reviews and manage relationships all in one place.
@@ -106,7 +106,7 @@ Your [Business Profile](../administration/business_profile.mdx) is the central s
 
 ### How do I edit my business profile details? {#how-to-update-your-business-profile}
 
-1. Go to `Administration` > `Business Profile`.
+1. Go to `Administration` → `Business Profile`.
 2. Use the **Primary Info**, **Hours**, and **Descriptions** tabs to update your details.
 3. Click **Save** to apply changes.
 
@@ -124,7 +124,7 @@ Connections bring your most important business data into one place. When you con
 
 ### How do I add integrations? {#how-to-add-integrations}
 
-1. Go to `Administration` > `Integrations`.
+1. Go to `Administration` → `Integrations`.
 2. Click the **Browse** tab.
 3. Search for or scroll to the integration you need (for example, **Google Business Profile** or **QuickBooks**).
 4. Click the integration tile and follow the authorization steps.
@@ -144,13 +144,13 @@ Common connections to set up early:
 
 ### How do I start using AI Workforce? {#meet-your-ai-workforce}
 
-1. Go to `AI` > `AI Workforce`.
+1. Go to `AI` → `AI Workforce`.
 2. Start a chat with an AI Employee to see what they can do.
 3. Configure the [Chat Receptionist](../ai/ai-workforce/ai-chat-receptionist/index.mdx) or [Voice Receptionist](../ai/ai-workforce/ai-voice-receptionist.md) to match your business.
 
 ### How do I install Web Chat on my website? {#install-web-chat-on-your-website}
 
-1. Go to `Conversations AI` > `Conversations AI Settings`.
+1. Go to `Conversations AI` → `Conversations AI Settings`.
 2. Click **Configure Web Chat** and add your business knowledge.
 3. Copy the installation code and add it to your website, or use the WordPress plugin if you have a WordPress site.
 
@@ -172,7 +172,7 @@ US-based businesses must complete A2P 10DLC registration before sending SMS. Reg
 
 ### How do I customize my notifications? {#notification-settings}
 
-1. Go to `Settings` > `Notification Settings`.
+1. Go to `Settings` → `Notification Settings`.
 2. Choose whether you want instant emails, daily digests, or both.
 3. Expand each product section to fine-tune which events trigger notifications.
 
@@ -224,7 +224,7 @@ Yes. From the [Home](../home.mdx) screen, select **Invite Team Member** in the t
 <details>
 <summary><strong>Where do I manage my integrations after connecting them?</strong></summary>
 
-Go to `Administration` > `Integrations` > `Manage` to see all active integrations, reconnect expired authorizations, or disconnect platforms.
+Go to `Administration` → `Integrations` → `Manage` to see all active integrations, reconnect expired authorizations, or disconnect platforms.
 </details>
 
 <details>
@@ -236,17 +236,17 @@ SMS is available for businesses located in the United States and Canada. US busi
 <details>
 <summary><strong>Where do I connect my Google Business Profile?</strong></summary>
 
-Go to `Administration` > `Integrations` and click the **Browse** tab. Search for **Google Business Profile**, click the integration tile, and follow the authorization steps.
+Go to `Administration` → `Integrations` and click the **Browse** tab. Search for **Google Business Profile**, click the integration tile, and follow the authorization steps.
 </details>
 
 <details>
 <summary><strong>How do I add the web chat to my website?</strong></summary>
 
-Go to `Conversations AI` > `Conversations AI Settings`, click **Configure Web Chat**, and add your business knowledge. Then copy the installation code and add it to your website, or use the WordPress plugin if you have a WordPress site.
+Go to `Conversations AI` → `Conversations AI Settings`, click **Configure Web Chat**, and add your business knowledge. Then copy the installation code and add it to your website, or use the WordPress plugin if you have a WordPress site.
 </details>
 
 <details>
 <summary><strong>How do I choose which email notifications I receive?</strong></summary>
 
-Go to `Settings` > `Notification Settings` and choose instant emails, daily digests, or both. Expand each product section to choose which events trigger notifications.
+Go to `Settings` → `Notification Settings` and choose instant emails, daily digests, or both. Expand each product section to choose which events trigger notifications.
 </details>

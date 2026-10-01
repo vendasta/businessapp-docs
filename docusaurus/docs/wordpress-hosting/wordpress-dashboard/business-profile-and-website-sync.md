@@ -48,8 +48,8 @@ Specific instructions on how to properly utilize each type of block are located 
 To make changes to the contact details displayed in your website's header, follow these steps:
 
 1.  Open your WordPress dashboard.
-2.  Navigate to `Appearance` > `Customize`.
-3.  Go to `Header and Navigation` > `Header Elements`.
+2.  Navigate to `Appearance` → `Customize`.
+3.  Go to `Header and Navigation` → `Header Elements`.
 4.  From there, you can update the phone number or email address as needed.
 
 :::info

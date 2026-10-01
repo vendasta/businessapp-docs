@@ -29,7 +29,7 @@ Groups and Service Menus are shared across your organization. Any team member ca
 
 ### Create a Group
 
-1. Navigate to `My Meetings` > **Manage booking links** > **Groups** tab.
+1. Navigate to `My Meetings` → `Manage booking links` → `Groups` tab.
 
    ![Settings page showing Groups tab](../img/my-meetings/groups-settings-tab.png)
 
@@ -73,7 +73,7 @@ The **General Personal Event Link** and **General Team Event Link** groups are c
 
 ### Create a Service Menu
 
-1. Navigate to `My Meetings` > **Manage booking links** > **Service menu** tab.
+1. Navigate to `My Meetings` → `Manage booking links` → `Service menu` tab.
 
    ![Settings page showing Service menu tab](../img/my-meetings/service-menu-settings.png)
 
@@ -192,7 +192,7 @@ When a customer types "I need a haircut and a beard trim" in chat, the AI detect
 **To set up:**
 
 1. Create a Service Menu with multi-selection enabled (see above).
-2. Go to **AI → Workforce → Chat Receptionist → Configure → Add a Capability → Book Multi-Service Appointment**.
+2. Go to `AI` → `Workforce` → `Chat Receptionist` → `Configure` → `Add a Capability` → `Book Multi-Service Appointment`.
 3. Select the Service Menu and save.
 
 ![AI Chat Receptionist — Book Multi-Service Appointment capability](../img/my-meetings/ai-chat-multi-service-capability.png)
@@ -214,7 +214,7 @@ When a caller says "I need a haircut and a beard trim," the AI Voice Receptionis
 1. Ensure every event type in your Service Menu has:
    - **Notification type:** SMS
    - **Required intake field:** Phone Number
-2. Go to **AI → Workforce → Voice Receptionist → Configure → Add a Capability → Book Multi-Service Appointment**.
+2. Go to `AI` → `Workforce` → `Voice Receptionist` → `Configure` → `Add a Capability` → `Book Multi-Service Appointment`.
 3. Select the Service Menu and save. Only Service Menus whose event types are fully configured for SMS and phone number appear as options.
 
 ![AI Voice Receptionist — Book Multi-Service Appointment capability](../img/my-meetings/ai-voice-multi-service-capability.png)

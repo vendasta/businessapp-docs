@@ -23,7 +23,7 @@ If you're experiencing 404 errors on pages or posts that should exist, try these
 
 Often, simply reconfiguring your permalink structure can fix the problem.
 
-*   In your WordPress dashboard, go to `Settings` > `Permalinks`.
+*   In your WordPress dashboard, go to `Settings` → `Permalinks`.
     
 *   Without making any changes, click `Save Changes`.
     
@@ -123,7 +123,7 @@ You need **AIOSEO Pro** to use the redirection manager. The free version of AIOS
 
 First, install and configure the AIOSEO Pro plugin on your website.
 
-Once the plugin is active, go to `All in One SEO` > `Redirects` in your WordPress dashboard and click the `Activate Redirects` button.
+Once the plugin is active, go to `All in One SEO` → `Redirects` in your WordPress dashboard and click the `Activate Redirects` button.
 
 ![Activate AIOSEO Redirects](https://www.wpbeginner.com/wp-content/uploads/2015/03/303aioseoactivateredirects.png)
 
@@ -214,7 +214,7 @@ First, install and activate the plugin.
 While setting up 301 redirects using a WordPress plugin is easy, it has some minor performance setbacks. Depending on your WordPress hosting provider, your redirects may be a few microseconds slower than other methods.
 :::
 
-Once activated, visit `Tools` > `Redirection` and click the `Start Setup` button.
+Once activated, visit `Tools` → `Redirection` and click the `Start Setup` button.
 
 ![Start Setup of Redirection Plugin](https://www.wpbeginner.com/wp-content/uploads/2015/03/303redirectionstartsetup.png)
 
@@ -228,7 +228,7 @@ The plugin will now automatically test the REST API. When the status comes back 
 
 The redirection plugin will perform a few more tasks to complete its setup. When the progress bar reaches 100%, click the `Continue` button and then the `Ready to Begin` button.
 
-The plugin is now ready for you to create your 301 redirects. To get started, navigate to the `Tools` > `Redirection` section of your WordPress panel. Look at the **Add new redirection** section at the bottom of the screen.
+The plugin is now ready for you to create your 301 redirects. To get started, navigate to the `Tools` → `Redirection` section of your WordPress panel. Look at the **Add new redirection** section at the bottom of the screen.
 
 ![Add a New Redirection at the Bottom of the Screen](https://www.wpbeginner.com/wp-content/uploads/2015/03/303redirectionaddnewredirection-1.png)
 
@@ -248,7 +248,7 @@ One of the easiest ways to create 301 redirects is with the **Simple 301 Redirec
 
 To start, install and activate the plugin on your website.
 
-After that, visit `Settings` > `301 Redirects`. Here you can enter the old URL in the **Request** field and your target URL in the **Destination** field.
+After that, visit `Settings` → `301 Redirects`. Here you can enter the old URL in the **Request** field and your target URL in the **Destination** field.
 
 ![Simple 301 Redirects](https://www.wpbeginner.com/wp-content/uploads/2015/03/303simple301redirects.png)
 

@@ -40,7 +40,7 @@ Vibe holds onto what matters from earlier in the conversation — decisions and 
 
 1. Sign in to Business App.
 2. From the location switcher, choose the location you want to build for.
-3. In the left sidebar, click **AI** > **Vibe**.
+3. In the left sidebar, click `AI` → `Vibe`.
 4. Use the session selector to create a new session.
 
 ![The Vibe session selector showing the option to create a new session](./img/sessions-selector.png)

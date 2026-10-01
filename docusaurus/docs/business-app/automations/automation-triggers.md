@@ -20,7 +20,7 @@ See [Automation conditions](automation-conditions.md) to learn how to filter whe
 
 The **When a Company is created or modified** trigger is a good example of a trigger that requires options. Instead of firing on every company update, you can specify which fields must change for the automation to run.
 
-**Step 1** – Go to **Business App** → **Automations**.
+**Step 1** – Go to `Business App` → `Automations`.
 
 **Step 2** – Create an automation and set the trigger to **When a Company is created or modified**.
 

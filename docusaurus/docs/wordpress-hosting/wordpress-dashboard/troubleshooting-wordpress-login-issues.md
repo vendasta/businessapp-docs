@@ -65,7 +65,7 @@ Disable the "WordPress.com log in" feature in Jetpack:
 
 2.  Go to the **Jetpack by WordPress.com** settings. This can be found:
     *   In the **Plugins** tab on the left-hand side, visit the Plugins page. Find the **Jetpack by WordPress.com** plugin and click the **Settings** button immediately below the plugin name. **OR:**
-    *   Click on **Jetpack** > **Settings** tab on the left-hand side
+    *   Click on `Jetpack` → `Settings` tab on the left-hand side
 
 3.  This will redirect you to the settings page for the Jetpack plugin, which should contain multiple headers at the top. Click on the **Security** header to adjust the security settings.
 

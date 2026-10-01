@@ -22,7 +22,7 @@ In the Business App, all members of a business are part of a single team. Team e
 
 ## Create a new team booking link
 
-1. Go to `CRM` > `My Meetings`.
+1. Go to `CRM` → `My Meetings`.
 
 ![My Meetings in the CRM menu](../img/my-meetings/team-booking-links-home-page.png)
 

@@ -52,7 +52,7 @@ The AI Human Resources Coordinator is only as accurate as its knowledge sources.
 
 ### Step 1: Create the AI Employee
 
-1. Navigate to `AI` > `AI Workforce` in your Business App dashboard
+1. Navigate to `AI` → `AI Workforce` in your Business App dashboard
 2. Click `Create Custom AI Employee`
 3. Set a name (for example, "HR Assistant" or a name that fits your team's culture) and upload an avatar image
 4. Click `Save` to create the employee profile
@@ -236,7 +236,7 @@ Leave the Sheet empty for now. The script will populate it on first run.
 
 ### Step 2: Add the Apps Script
 
-1. In your Google Sheet, open `Extensions` > `Apps Script`
+1. In your Google Sheet, open `Extensions` → `Apps Script`
 2. Delete any default code in the editor
 3. Paste the following script:
 
@@ -373,7 +373,7 @@ Run `syncDriveToSheet` manually the first time by selecting it from the function
 
 The AI Employee needs a URL to query the Sheet at conversation time. Deploying the script as a web app creates that endpoint.
 
-1. In the Apps Script editor, click `Deploy` > `New deployment`
+1. In the Apps Script editor, click `Deploy` → `New deployment`
 2. Click the gear icon next to `Type` and select `Web app`
 3. Configure the deployment:
    - `Description`: Give it a name you'll recognize (for example, "HR Policy Knowledge API")

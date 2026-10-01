@@ -33,7 +33,7 @@ Lists make it easy to target the right audience, kick off automations, and keep 
 
 ### Create a List
 
-1. Go to `CRM` > `Lists`.
+1. Go to `CRM` → `Lists`.
 2. Click `Create`, then choose `Static` or `Smart`.
 
 ![CRM Lists Navigation](img/lists/list-navigation.jpg)
@@ -59,7 +59,7 @@ Keep static lists small and intentional, use them for one-time actions or short-
 
 ### Start an automation from a list
 
-1. Go to `CRM` > `Lists` and locate your list.
+1. Go to `CRM` → `Lists` and locate your list.
 2. Open the action menu (three dots) and select `Start Automation`.
 3. Choose an automation for contacts or companies (based on the list type) and run it.
 
@@ -84,7 +84,7 @@ Use these to send follow-ups, notify sales, or update CRM stages automatically.
 
 ### Delete a List
 
-1. Go to `CRM` > `Lists`, find the list.
+1. Go to `CRM` → `Lists`, find the list.
 2. Open the action menu (three dots) and select `Delete`.
 3. In the confirmation modal, type `Delete` and confirm.
 

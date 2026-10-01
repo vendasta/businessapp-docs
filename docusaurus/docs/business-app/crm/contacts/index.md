@@ -47,13 +47,13 @@ You can add, edit, and delete contacts to keep your data organized. Create conta
 
 ### View and manage contacts
 
-1. Go to `CRM` > `Contacts`.
+1. Go to `CRM` → `Contacts`.
 2. Search by first name, last name, email, or phone number. Filter by tags and other fields, and sort the table to find the right records.
 3. Click a contact to open the profile and edit details, log activity, and manage tasks.
 
 ### Import contacts (and companies)
 
-1. In `CRM` > `Contacts`, click `Import`.
+1. In `CRM` → `Contacts`, click `Import`.
 2. Upload a CSV (up to 5 MB) and map columns to contact/company fields. You can add multiple columns as tags during the mapping step.
 3. Review, choose whether to update existing matches, and finish the import.
 
@@ -76,8 +76,8 @@ Tag columns append your imported values to any tags already on a matching contac
 
 ### Export contacts
 
-1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table.
-2. Choose `Select all…` (or select specific rows), then `Actions` > `Export`.
+1. In `CRM` → `Contacts`, set filters if needed, then select the checkbox at the top-left of the table.
+2. Choose `Select all…` (or select specific rows), then `Actions` → `Export`.
 3. A notification is sent when your CSV is ready to download.
 
 :::info
@@ -108,9 +108,9 @@ Available actions include:
 
 To start an automation in bulk:
 
-1. Go to `CRM` > `Contacts`.
+1. Go to `CRM` → `Contacts`.
 2. Select the contacts you want to include (use filters and search to narrow the list first, if needed).
-3. Click `Actions` > `Start automation`.
+3. Click `Actions` → `Start automation`.
 4. Choose the automation you want to run from the list.
 5. Confirm to start the automation for all selected contacts.
 
@@ -126,7 +126,7 @@ The **Owner** field controls which team member is responsible for a contact. Thi
 2. Find the **Owner** field in the contact details panel.
 3. Click the field and select a team member from the dropdown.
 
-You can also set the Owner in bulk by selecting multiple contacts from the table, then using `Actions` > `Assign owner`.
+You can also set the Owner in bulk by selecting multiple contacts from the table, then using `Actions` → `Assign owner`.
 
 :::tip
 Looking for a "Salesperson" or "Assign salesperson" field? The field is called **Owner**. Set this field to assign a team member to the contact.
@@ -160,13 +160,13 @@ Yes. Choose to update matches by ID, external ID, or email when reviewing the im
 <details>
 <summary>Where can I see import history and errors?</summary>
 
-After an import completes, review the import summary in `CRM` > `Contacts` to see successes, failures, and error details for each row.
+After an import completes, review the import summary in `CRM` → `Contacts` to see successes, failures, and error details for each row.
 </details>
 
 <details>
 <summary>How do I assign a salesperson to a contact?</summary>
 
-Use the **Owner** field. There is no separate "Salesperson" or "Assign salesperson" field. To assign a team member, open the contact profile, find the **Owner** field, and select the person from the dropdown. You can also assign owners in bulk from the contacts table using `Actions` > `Assign owner`.
+Use the **Owner** field. There is no separate "Salesperson" or "Assign salesperson" field. To assign a team member, open the contact profile, find the **Owner** field, and select the person from the dropdown. You can also assign owners in bulk from the contacts table using `Actions` → `Assign owner`.
 </details>
 
 <details>

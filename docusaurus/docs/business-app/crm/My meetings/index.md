@@ -37,7 +37,7 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 
 ## Book a meeting
 
-1. Go to `CRM` > `My Meetings`.
+1. Go to `CRM` → `My Meetings`.
 2. Click **Book a meeting**.
 
 ![My Meetings overview](../img/my-meetings/business-app-my-meetings.png)

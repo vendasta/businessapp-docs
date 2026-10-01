@@ -16,7 +16,7 @@ last_reviewed: 2026-09-25
 last_reviewed_by: haleyserrano
 ---
 
-US phone carriers require your business to complete A2P 10DLC registration before you can send SMS messages from Business App. Register at `Administration` > `Conversations Settings` > `Phone & SMS` with your legal business name, EIN, and a compliant website.
+US phone carriers require your business to complete A2P 10DLC registration before you can send SMS messages from Business App. Register at `Administration` → `Conversations Settings` → `Phone & SMS` with your legal business name, EIN, and a compliant website.
 
 A2P 10DLC (Application-to-Person 10-Digit Long Code) registration verifies your business identity and confirms that your website meets carrier compliance standards. Without an approved registration, your business cannot send or receive SMS messages through US phone numbers.
 
@@ -273,7 +273,7 @@ No. A2P registration is only available for US-based businesses. Sending SMS to U
 <details>
 <summary><strong>I don't see the registration option. Where is it?</strong></summary>
 
-Registration is only available for US-based businesses with the Conversations AI Pro product active. Confirm that your account has a US address, then go to `Administration` > `Conversations Settings` > `Phone & SMS`.
+Registration is only available for US-based businesses with the Conversations AI Pro product active. Confirm that your account has a US address, then go to `Administration` → `Conversations Settings` → `Phone & SMS`.
 </details>
 
 <details>
@@ -285,7 +285,7 @@ No. The form cannot be edited or canceled once submitted. If information was mis
 <details>
 <summary><strong>What phone number will my messages come from?</strong></summary>
 
-Your business is assigned a local phone number based on your business address. If no local numbers are available, you receive a number from a nearby area code. You can view your assigned number in `Administration` > `Conversations Settings` > `Phone & SMS`.
+Your business is assigned a local phone number based on your business address. If no local numbers are available, you receive a number from a nearby area code. You can view your assigned number in `Administration` → `Conversations Settings` → `Phone & SMS`.
 </details>
 
 <details>

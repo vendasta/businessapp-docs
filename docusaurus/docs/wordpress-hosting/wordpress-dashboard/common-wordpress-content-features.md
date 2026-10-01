@@ -18,13 +18,13 @@ An **FAQ (Frequently Asked Questions) section** serves as a valuable resource fo
 **Step 1: Install an FAQ plugin**
 
 1.  Log in to your WordPress dashboard.
-2.  Go to `Plugins` > `Add New`.
+2.  Go to `Plugins` → `Add New`.
 3.  Search for **"Accordion FAQ"** or **"Easy Accordion"**.
 4.  Click `Install Now`, then `Activate` the plugin.
 
 **Step 2: Create an FAQ section**
 
-1.  Navigate to `FAQ` > `Add New FAQ` in your dashboard.
+1.  Navigate to `FAQ` → `Add New FAQ` in your dashboard.
 2.  Enter a title (e.g., "Frequently Asked Questions").
 3.  Add each question as a separate entry and write the corresponding answer.
 
@@ -43,7 +43,7 @@ An **FAQ (Frequently Asked Questions) section** serves as a valuable resource fo
 
 **Steps:**
 
-1.  **Go to your page or post** – Open the WordPress dashboard and navigate to `Pages` > `Add New` (or edit an existing page).
+1.  **Go to your page or post** – Open the WordPress dashboard and navigate to `Pages` → `Add New` (or edit an existing page).
 2.  **Add a heading block** – Type "FAQs" as the section title.
 3.  **Use the paragraph or list blocks** – Manually enter the questions in bold and add answers below.
 4.  **Format for clarity** – Use the list block or separate questions using heading (H3 or H4) blocks.
@@ -64,8 +64,8 @@ Password-protecting a page enhances **security and privacy** by restricting acce
 
 **Step 2: Create a new page or edit an existing one**
 
-*   To create a new page, navigate to `Pages` > `Add New`.
-*   If you want to password protect an existing page, go to `Pages` > `All Pages` and select the page you want to edit.
+*   To create a new page, navigate to `Pages` → `Add New`.
+*   If you want to password protect an existing page, go to `Pages` → `All Pages` and select the page you want to edit.
 
 **Step 3: Set the visibility to password protected**
 
@@ -95,7 +95,7 @@ RSS (Really Simple Syndication) makes it easy to automatically pull content from
 
 To display an RSS feed using WordPress's built-in widget:
 
-1. Navigate to `Appearance` > `Widgets` in the WordPress dashboard.
+1. Navigate to `Appearance` → `Widgets` in the WordPress dashboard.
 2. Click the `Add Block` (+) button at the top of the screen.
 3. Search for the **RSS** widget and add it to your desired widget area.
 4. Enter the RSS feed URL you want to display.
@@ -109,7 +109,7 @@ For more advanced RSS feed functionality, you can use a plugin like **WP RSS Agg
 
 **Step 1: Install the plugin**
 
-1. Go to `Plugins` > `Add New`.
+1. Go to `Plugins` → `Add New`.
 2. Search for **"WP RSS Aggregator"**.
 3. Click `Install Now`, then `Activate` the plugin.
 

@@ -38,7 +38,7 @@ If you don't see any logs under the Email History tab, your site is likely confi
 ### How to enable the built-in mail system
 
 1. Log in to the **WordPress Dashboard** for your site
-2. Navigate to **Settings > General**
+2. Navigate to `Settings` → `General`
 3. Locate the **Enable WordPress Hosting Mail System** option and check the box
 4. Click **Save Changes**
 
@@ -79,9 +79,9 @@ This is often caused by missing email domain settings during the migration proce
 **To fix:**
 
 1. Go to your site's **WordPress Dashboard**
-2. Navigate to **Plugins > Add New**
+2. Navigate to `Plugins` → `Add New`
 3. Search for and install **All-in-One WP Migration**
-4. After activation, go to the plugin's menu and choose **Export > Advanced Options**
+4. After activation, go to the plugin's menu and choose `Export` → `Advanced Options`
 5. Select **"Do not replace email domain (SQL)"**
 
 This prevents the migration tool from incorrectly rewriting email addresses, which is a common cause of bounced messages after import.

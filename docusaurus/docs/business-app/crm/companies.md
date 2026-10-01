@@ -31,7 +31,7 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 
 ### View and manage companies
 
-1. Go to `CRM` > `Companies`.
+1. Go to `CRM` → `Companies`.
 2. Search, sort, and filter the table to find the right records.
 3. Click a company to open the profile and edit details, review engagement, and manage associations.
 
@@ -48,7 +48,7 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 
 ### Discover companies with Find Accounts
 
-1. Go to `CRM` > `Companies` and click `Find Accounts`.
+1. Go to `CRM` → `Companies` and click `Find Accounts`.
 2. Search by business type and location, select new businesses, and click `Create companies`.
 3. Open `View companies` to work your new list.
 
@@ -78,9 +78,9 @@ Available actions include:
 
 To start an automation in bulk:
 
-1. Go to `CRM` > `Companies`.
+1. Go to `CRM` → `Companies`.
 2. Select the companies you want to include (use filters and search to narrow the list first, if needed).
-3. Click `Actions` > `Start automation`.
+3. Click `Actions` → `Start automation`.
 4. Choose the automation you want to run from the list.
 5. Confirm to start the automation for all selected companies.
 
@@ -90,7 +90,7 @@ Bulk actions are a fast way to run automations on demand — for example, sendin
 
 ### Optional: Lead Scoring
 
-If enabled, configure scoring criteria in `Administration` > `Score` and use the score to prioritize outreach in the company table.
+If enabled, configure scoring criteria in `Administration` → `Score` and use the score to prioritize outreach in the company table.
 
 ![Lead scoring interface in the CRM](img/companies/lead-scoring.png)
 

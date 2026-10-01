@@ -25,7 +25,7 @@ WordPress Hosting uses a **custom Single Sign-On (SSO) integration** that:
 To log into the WordPress Dashboard:
 
 1. Log into **Business App**
-2. Navigate to **My Products > WordPress Hosting**
+2. Navigate to `My Products` → `WordPress Hosting`
 3. Click **WordPress Dashboard**
 
 You'll be automatically logged in, and a WordPress user will be created to match your Business App account if one doesn't already exist.
@@ -78,12 +78,12 @@ There are two supported methods for updating a WordPress user's role:
 
 1. Create a Business App user
 2. Log in to WordPress as that user
-3. Navigate to **Users > Edit User > Role**, and assign a new role
+3. Navigate to `Users` → `Edit User` → `Role`, and assign a new role
 
 **Option 2: Create in WordPress first**
 
 1. In WordPress, create a user **with the same email** as their Business App account
-2. Assign the desired role under **Users > Role**
+2. Assign the desired role under `Users` → `Role`
 
 :::warning
 The email addresses **must match** exactly between Business App and WordPress. If they differ, a duplicate user will be created.

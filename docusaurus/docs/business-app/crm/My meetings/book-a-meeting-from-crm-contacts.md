@@ -18,7 +18,7 @@ This feature **sends the contact an email** so they can choose their own time sl
 
 ## How to send a meeting request
 
-1. Navigate to `CRM` > `Contacts`.
+1. Navigate to `CRM` → `Contacts`.
 2. Open the contact's profile.
 3. Click the **calendar icon** near the top of the contact profile (or the `Book a meeting` button).
 
@@ -36,7 +36,7 @@ Because the link is generated from the contact's profile, the booking form autom
 
 The subject and description of the meeting request email come from the `Customize invitation email` settings on each event type. To personalize it:
 
-1. Go to `CRM` > `My Meetings`.
+1. Go to `CRM` → `My Meetings`.
 2. Click `Manage booking links`.
 3. Open the kebab menu (⋮) next to the event type and click `Settings`.
 4. Expand the `Customize invitation email` section.

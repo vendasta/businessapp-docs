@@ -58,7 +58,7 @@ You need access to your business account in Business App, and permission to mana
 ### Steps to disconnect
 
 1. Sign in to Business App.
-2. In the left menu, go to `Administration` > `Integrations`.
+2. In the left menu, go to `Administration` → `Integrations`.
 3. Find `Reserve with Google` in your list of integrations and open it.
 4. Click `Disconnect`.
 5. Confirm when prompted.
@@ -72,7 +72,7 @@ Your integration is now disconnected.
 - Your business is removed from the next daily update sent to Google. Your booking option stops appearing on your Google Business Profile within 24–48 hours.
 - Appointments customers already booked are not affected. You can still see and manage them as usual.
 - Your existing service and booking settings stay in place. Only the connection to Google is removed.
-- You can reconnect at any time by going to `Administration` > `Integrations` > `Reserve with Google` and setting it up again.
+- You can reconnect at any time by going to `Administration` → `Integrations` → `Reserve with Google` and setting it up again.
 
 ## Related articles
 

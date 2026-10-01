@@ -42,7 +42,7 @@ Using emails like `yourname@gmail.com` or `contact@yahoo.com`, as these can fail
 
 To ensure the **user's email** is captured and used for CRM contact creation:
 
-1. Go to `Form` > `Settings` > `Notifications`.
+1. Go to `Form` → `Settings` → `Notifications`.
 2. In the `Reply-To` field, click on the merge tag selector `{..}`.
 3. Choose the form field that collects the user's **Email**.
 

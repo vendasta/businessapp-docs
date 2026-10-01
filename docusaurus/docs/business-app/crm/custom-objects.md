@@ -44,7 +44,7 @@ Standard CRM records cover common sales workflows, but many businesses need to t
 
 ## Create a custom object
 
-1. Navigate to **Administration** → **CRM Objects**.
+1. Navigate to `Administration` → `CRM Objects`.
 2. Click **Add custom object**.
 3. Name your object and configure its fields (text, number, date, dropdown, and more).
 4. Save.

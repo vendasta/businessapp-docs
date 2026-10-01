@@ -200,7 +200,7 @@ Use the search box on the projects list to find a project by name, description, 
 <details>
 <summary>How do I open Vibe?</summary>
 
-Sign in to Business App, choose the location you want to build for from the location switcher, then click `AI` > `Vibe` in the left sidebar.
+Sign in to Business App, choose the location you want to build for from the location switcher, then click `AI` → `Vibe` in the left sidebar.
 
 </details>
 

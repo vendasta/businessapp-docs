@@ -11,7 +11,7 @@ audience: smb
 
 The **Hide Advanced Login** toggle controls whether users can access the WordPress admin panel directly via `/wp-admin`. When enabled, direct access is blocked and users must sign in through the WordPress Hosting dashboard.
 
-To find the toggle, navigate to **My Products > WordPress Hosting**, select your site, and open **Advanced Tools**.
+To find the toggle, navigate to `My Products` → `WordPress Hosting`, select your site, and open **Advanced Tools**.
 
 ![Advanced Login toggle in the WordPress Hosting dashboard](./img/advanced-login/hide-advanced-login-toggle.png)
 

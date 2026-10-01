@@ -19,13 +19,13 @@ Use the **All-in-One WP Migration** plugin to move your site yourself:
 
 On your original site:
 1. Install and activate the **All-in-One WP Migration** plugin.
-2. Go to **All-in-One WP Migration > Export**.
+2. Go to `All-in-One WP Migration` → `Export`.
 3. Choose your export destination (e.g., File) and download the full export. This includes your database, media, plugins, and themes.
 
 In WordPress Hosting:
 1. Launch the WordPress Dashboard.
 2. Install and activate the **All-in-One WP Migration** plugin again.
-3. Navigate to **All-in-One WP Migration > Import**.
+3. Navigate to `All-in-One WP Migration` → `Import`.
 4. Upload the `.wpress` file you exported from your old site.
 
 Once the import finishes, your site is fully restored in WordPress Hosting — content, design, and functionality included.
@@ -89,9 +89,9 @@ Yes — **with limitations**. Squarespace allows exporting into a WordPress-comp
 
 **Steps to migrate:**
 
-1. In Squarespace, go to **Settings > Advanced > Import/Export**
+1. In Squarespace, go to `Settings` → `Advanced` → `Import/Export`
 2. Choose **Export**, then click the **WordPress** icon
-3. In WordPress, go to **Tools > Import**, and choose the Squarespace file
+3. In WordPress, go to `Tools` → `Import`, and choose the Squarespace file
 4. Run the importer and complete the process
 
 Expect to re-style or rebuild elements that do not transfer exactly.

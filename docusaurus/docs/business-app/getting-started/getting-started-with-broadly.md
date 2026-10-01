@@ -51,7 +51,7 @@ You can give teammates their own login and control exactly which tabs they can s
 
 ### Full user management
 
-1. Go to `Administration` > `User Management`.
+1. Go to `Administration` → `User Management`.
 2. Click `Invite user`.
 3. In the **Add team member** panel, enter the person's name, email, and (optionally) phone number.
 4. Under **Permissions**, choose which tabs this person can access. All tabs are selected by default, so uncheck anything you don't want them to see.
@@ -82,7 +82,7 @@ Your privacy policy needs to state that opt-in data isn't shared with third part
 
 ### How to submit your registration
 
-1. Go to `Administration` > `Conversations Settings` > `Phone & SMS`.
+1. Go to `Administration` → `Conversations Settings` → `Phone & SMS`.
 2. Complete the carrier verification form.
 3. Add your privacy policy and terms and conditions URLs.
 4. On the review step, click `Check with AI` to flag potential issues before you submit.
@@ -106,7 +106,7 @@ One registration covers every SMS feature on your account.
 
 Connecting your Google Business Profile syncs your location details and powers automated review requests and dashboard metrics, so you can see the impact of your online presence without checking Google directly.
 
-1. Go to `Administration` > `Integrations`.
+1. Go to `Administration` → `Integrations`.
 2. Click the `Browse` tab.
 3. Find and click the **Google Business Profile** tile.
 4. Sign in and authorize the connection.
@@ -115,7 +115,7 @@ Connecting your Google Business Profile syncs your location details and powers a
 Data can appear in your dashboard within about 5 minutes of connecting.
 :::
 
-You can manage or reconnect this integration later from `Administration` > `Integrations` > `Manage`. See [Integrations](../administration/connections/index.md) for more on browsing and managing connections.
+You can manage or reconnect this integration later from `Administration` → `Integrations` → `Manage`. See [Integrations](../administration/connections/index.md) for more on browsing and managing connections.
 
 [Back to checklist](#getting-started-checklist)
 
@@ -125,7 +125,7 @@ You can manage or reconnect this integration later from `Administration` > `Inte
 
 If you use the Social AI suite, connecting your accounts lets you manage posts and messages across platforms without switching tools.
 
-1. Go to `Social AI` > `Settings` > `Connect Accounts`.
+1. Go to `Social AI` → `Settings` → `Connect Accounts`.
 2. Click a platform: Facebook and Google Business Profile are available on every plan, while Instagram, LinkedIn, X, and TikTok are available on Pro plans.
 3. Sign in and grant permissions.
 4. Repeat for each additional platform.
@@ -151,7 +151,7 @@ It moves to a failed status instead of staying pending. Correct the issue (usual
 <details>
 <summary><strong>Can I skip inviting my team for now?</strong></summary>
 
-Yes. Team invites are optional and you can add teammates anytime from `Administration` > `User Management`.
+Yes. Team invites are optional and you can add teammates anytime from `Administration` → `User Management`.
 </details>
 
 <details>

@@ -33,7 +33,7 @@ Before connecting, create a dedicated security level and API user in Autotask.
 ### Create a security level
 
 1. Sign in to Autotask.
-2. Go to **Admin** → **Account Settings and Users** → **Security** → **Security Levels**.
+2. Go to `Admin` → `Account Settings and Users` → `Security` → `Security Levels`.
 3. Click **Create New** and clone **Api User (System)**.
 4. Name the security level (for example, `Business App API Access`) and save it.
 
@@ -56,7 +56,7 @@ Without webhooks enabled, the connection appears active but changes made in Auto
 
 ### Create the API user
 
-1. Go to **Admin** → **Resources (Human Resources)** → **API User**.
+1. Go to `Admin` → `Resources (Human Resources)` → `API User`.
 2. Click **Create New**.
 3. Enter a **Name** and **Email**.
 4. Assign the security level you created.
@@ -93,7 +93,7 @@ Create a CSV file for contacts following the same format, with `autotask:{id}` a
 
 ### Import the files
 
-1. Go to **CRM** → **Companies** → **Import** and upload the companies CSV.
+1. Go to `CRM` → `Companies` → `Import` and upload the companies CSV.
 
 ![CRM Companies list with the Import button in the top right](../img/autotask/autotask_companies_import.png)
 
@@ -101,7 +101,7 @@ Create a CSV file for contacts following the same format, with `autotask:{id}` a
 
 ![Company CSV field mapping with External ID mapped](../img/autotask/autotask_company_field_mapping.png)
 
-3. Go to **CRM** → **Contacts** → **Import** and upload the contacts CSV.
+3. Go to `CRM` → `Contacts` → `Import` and upload the contacts CSV.
 
 ![CRM Contacts list with the Import button in the top right](../img/autotask/autotask_contacts_import.png)
 
@@ -117,7 +117,7 @@ Import companies before contacts so that each contact can be matched to its comp
 
 ## Step 3: Connect Autotask
 
-1. Go to **Administration** → **Integrations**.
+1. Go to `Administration` → `Integrations`.
 
 ![Administration page with the Integrations link under App settings](../img/autotask/autotask_administration.png)
 
@@ -145,13 +145,13 @@ When the connection succeeds, the integration card displays a green **Connected*
 
 ## Step 4: Review your settings
 
-After connecting, scroll to **Settings** → **Integrated Service Fields** to update your credentials or change your sync options. Refresh the page to confirm your changes saved.
+After connecting, scroll to `Settings` → `Integrated Service Fields` to update your credentials or change your sync options. Refresh the page to confirm your changes saved.
 
 ## Step 5: Verify the sync
 
 Changes sync automatically in the background, so you do not need to keep the page open. Companies sync before contacts.
 
-1. Go to **CRM** → **Companies**.
+1. Go to `CRM` → `Companies`.
 2. Find a company that came from Autotask.
 3. Confirm the name, phone, email, and address are correct.
 4. Confirm the associated contacts are linked to the company.
@@ -168,7 +168,7 @@ To change whether updates flow back into Autotask, adjust the **Sync back to Aut
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
-| `Credential validation failed: Integration Code is invalid.` | The API user's Integration Vendor is not set to **AMP - Automated Marketing Platform** | In Autotask, open the API User and set **API Tracking Identifier** → **Integration Vendor** → **AMP - Automated Marketing Platform**, then reconnect. If the vendor cannot be changed on the existing user, create a new API user with that vendor selected |
+| `Credential validation failed: Integration Code is invalid.` | The API user's Integration Vendor is not set to **AMP - Automated Marketing Platform** | In Autotask, open the API User and set `API Tracking Identifier` → `Integration Vendor` → `AMP - Automated Marketing Platform`, then reconnect. If the vendor cannot be changed on the existing user, create a new API user with that vendor selected |
 | 500 error when connecting | Invalid credentials or a disabled API user | Verify the username and secret in Autotask, then re-enter them |
 | Connected, but nothing syncs | Webhooks are not enabled | Enable webhooks on the security level with a limit of at least 5 |
 | Contacts are not appearing | The contact is not linked to a company | Link the contact to a company in Autotask |

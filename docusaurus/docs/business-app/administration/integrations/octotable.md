@@ -25,7 +25,7 @@ Enable API access in your OctoTable account before starting the connection in Bu
 
 ## Set up the OctoTable integration
 
-1. In Business App, go to **Administration** → **Integrations** → **Browse**.
+1. In Business App, go to `Administration` → `Integrations` → `Browse`.
 2. Find the **OctoTable** card and click it.
 3. On the marketing page, click **Connect**.
 4. Enter your **Property ID** on the pre-connect form.

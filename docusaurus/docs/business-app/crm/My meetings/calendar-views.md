@@ -16,7 +16,7 @@ The My Meetings calendar gives you a live, interactive view of your business's s
 
 ## Accessing the calendar
 
-1. Go to `CRM` > `My Meetings`.
+1. Go to `CRM` → `My Meetings`.
 2. The calendar reopens in whichever view you last used, including a custom multi-day range. If you're new to My Meetings, it opens in **Column View** with all filters selected.
 3. Use the view switcher in the top toolbar to switch between views.
 4. Navigate dates with the arrow controls, or click any date on the mini calendar in the sidebar to jump directly.
