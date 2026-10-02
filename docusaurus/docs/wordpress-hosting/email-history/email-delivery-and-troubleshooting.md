@@ -98,8 +98,15 @@ Yes. You can use an external SMTP plugin (like WP Mail SMTP) to route emails thr
 <details>
 <summary>How do I send emails on WordPress Hosting Premium (Multisite)?</summary>
 
-WordPress Hosting Premium includes the same built-in email system as single-site installations. Form-fill and other notification emails — including submissions from Keap and Gravity Forms — are sent and logged automatically, with no setup required.
+WordPress Hosting Premium includes the same built-in email system as single-site installations. Form-fill and other notification emails, including submissions from Keap and Gravity Forms, are sent and logged automatically, with no setup required.
 
 All outgoing email for a Multisite network is sent from the network's primary domain, not from individual subsites. You can still configure a custom SMTP service (such as WP Mail SMTP with Gmail, Mailgun, or Amazon SES) if you prefer to route email through your own provider, but emails sent through external SMTP services will not appear in the Email History tab.
+
+</details>
+
+<details>
+<summary>Why do contact-form messages go to Microsoft 365 junk when SPF, DKIM, and DMARC pass?</summary>
+
+If Microsoft accepts the message and the sending domain is configured correctly, junk classification is happening inside the recipient's Microsoft 365 tenant. Ask for the original Internet headers or an M365 message trace to see which filtering rule applied.
 
 </details>
