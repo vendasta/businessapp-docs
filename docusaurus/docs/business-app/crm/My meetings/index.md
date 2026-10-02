@@ -141,7 +141,7 @@ You can also configure additional options per event type. Settings here override
   Under **Reminder schedule**, set when reminders are sent. For each reminder, enter a number and choose minutes, hours, or days before the meeting. The default is 24 hours, and the maximum is 10 days; values entered above the maximum are clamped, and switching units re-clamps the value. You can set more than one reminder per event type, for example one reminder 1 day before the meeting and another 15 minutes before. The card shows how many reminders each booking receives.
 
   :::note
-  SMS confirmations and reminders require an active subscription to **Conversations AI Pro or Premium** (Reputation AI Premium and Campaigns Pro also unlock this). Your business phone number must be registered first. Configure at `Administration` → `SMS Configuration`.
+  SMS confirmations and reminders require an active subscription to **Conversations AI Pro or Premium** (Reputation AI Premium and Campaigns Pro also unlock this). Your business phone number must be registered first. Configure at `Administration` → `SMS Configuration`. Until your registration is approved and a number is assigned, notifications stay on email. In Australia, select **Register** on the event type settings page to open the SMS configuration page and complete the Australian regulatory form.
   :::
 
 - **Customize invitation email**: Customize the subject and body of the email sent when you request a meeting from a CRM contact.
@@ -240,7 +240,7 @@ The conferencing provider set in the booking link is used. If Microsoft Teams is
 <details>
 <summary>How do I send SMS reminders to guests?</summary>
 
-Add **Phone Number** as a required field in **Questions for invitee**, then choose **SMS** or **Both** as the reminder channel. SMS requires a Conversations AI Pro or Premium subscription and a registered business phone number. Configure at `Administration` → `SMS Configuration`. Supported countries: United States, Canada, and Italy.
+Add **Phone Number** as a required field in **Questions for invitee**, then choose **SMS** or **Both** as the reminder channel. SMS requires a Conversations AI Pro or Premium subscription and a registered business phone number. Configure at `Administration` → `SMS Configuration`. Supported countries: United States, Canada, Italy, and Australia.
 </details>
 
 <details>
