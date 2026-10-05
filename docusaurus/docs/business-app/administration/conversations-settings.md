@@ -12,18 +12,19 @@ audience: smb
 
 ## Overview
 
-Use **Conversations Settings** to configure your business phone and SMS, connect channels like Facebook and Instagram, and enable AI-powered replies. Open it from `Business App` → `Administration` → `Conversations Settings`. The page shows a card per channel with status and a `Configure` button.
+Use **Conversations settings** to configure your business phone and SMS, connect channels like Facebook and Instagram, and enable AI-powered replies. Open it from `Business App` → `Administration` → `Conversations settings`. The page shows a card per channel with status information and configuration options.
 
 **What you can do here:**
 - Enable or manage each messaging channel (phone, web chat, social, email).
 - Set up sender details, numbers, and connections so you can send and receive messages.
 - Create and manage messaging templates for quick, consistent replies.
 
-## Phone & SMS
+## Phone and SMS
 
-- Choose your primary phone number for calling and texting.
-- Configure call forwarding and voicemail.
-- Enable Missed-Call Text Back to automatically text callers you could not answer.
+- View your assigned phone number for calling and texting.
+- Configure call forwarding to route calls to your mobile or landline.
+- Enable AI call handling to have an AI Employee answer calls.
+- Set up automatic SMS follow-ups when you miss a call.
 
 ## Channel connections
 
@@ -31,18 +32,19 @@ Connect messaging channels so they appear in your unified inbox:
 
 | Channel | What you configure |
 |--------|---------------------|
-| **Phone & SMS** (Pro/Premium) | Assign a number; enable AI handling and missed-call text back. |
-| **Web Chat** (Pro) | Install and configure the website widget; set availability and AI options. |
+| **Phone and SMS** | View your assigned number; enable AI handling and SMS follow-ups. |
+| **Web Chat** | Install and configure the website widget with AI options. |
 | **Facebook Messenger** | Connect a verified Facebook Page so messages appear in the inbox. |
 | **Instagram Messages** | Connect via Facebook to enable DMs in the inbox. |
 | **WhatsApp Business** | Connect via Facebook to enable WhatsApp in the inbox. |
-| **Email** | Set sender name and address; connect the inbox. |
+| **Email** | Set sender name, reply address, and email marketing preferences. |
+| **Personal Email** | Connect Gmail or Outlook to let an AI Employee draft replies. |
 | **Messaging templates** | Create reusable replies for common questions. |
 
 ## AI replies
 
 - Turn on AI to draft or auto-send replies to common questions.
-- Set guardrails and escalation rules so complex messages are handed to a person.
+- Set guardrails to control what the AI can and cannot discuss.
 
 ## Related
 

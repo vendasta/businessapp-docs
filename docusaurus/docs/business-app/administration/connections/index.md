@@ -4,7 +4,7 @@ brand: business-app
 product: business-app-core
 audience: smb
 ---
-## What Can I Manage in Integrations?
+## What can I manage in Integrations?
 The **Integrations** section allows you to link third-party tools directly to your app. These integrations bring your most important business data into one place and allow services across your app to work together.
 
 By connecting platforms like Google, Facebook, and others, you can:
@@ -16,37 +16,37 @@ By connecting platforms like Google, Facebook, and others, you can:
 
 Integrations are shared across most activated products.
 
-## Why Are Connections Important?
-When your tools are connected, your app can use real data to show what's working. Integrations help you track marketing performance, and trigger smart actions—like sending review requests or appointment reminders.
+## Why are integrations important?
+When your tools are connected, your app can use real data to show what's working. Integrations help you track marketing performance and trigger smart actions, such as sending review requests or appointment reminders.
 
 Connecting accounts also reduces manual work by automatically syncing data between systems, improving the accuracy and efficiency of your daily operations.
 
-## What is Included?
+## What is included?
 The `Browse` tab in the **Integrations** section displays available integrations. You can search for or scroll through a list of platforms to connect.
 
 ![Browse Available Integrations in the Connection Section](../img/app_settings_connections_browse_integrations.png)
 
 Common integrations include:
 
-### Google and Meta
+### Google and Meta platforms
 - **Google Business Profile** – Syncs location details and visibility metrics  
 - **Google Analytics** – Tracks site activity and marketing performance  
 - **Google Search Console** – Adds search insights
 - **Facebook** – For reporting and automation  
 
-### Scheduling and Service Tools
+### Scheduling and service tools
 - **Housecall Pro** – Syncs job scheduling and service activity  
 - **Jobber** – Connects field service workflows  
 - **Gingr**, **PetExec**, **Pet Resort Pro**, **Paw Partner**, **PawLoyalty** – Connect customer and service data for pet-related businesses  
 
-### CRM Tools
+### CRM tools
 - **HubSpot** – Two-way sync for Contacts and Companies between HubSpot and Business App
 
-### Finance and Productivity Tools
+### Finance and productivity tools
 - **QuickBooks Online / Personal** – Syncs invoices, transactions, and billing data
 - **Zapier** – Connects and automates workflows with thousands of apps  
 
-## How to Browse and Add New Integrations
+## How to browse and add new integrations
 1. Go to `Administration` in your side bar. 
 2. Select `Integrations`.  
 3. Click the `Browse` tab.  
@@ -58,7 +58,7 @@ Each integration has its own required steps to connect. You can find these detai
 
 ![Facebook Integration Example](../img/app_settings_connections_facebook.png)
 
-## Types of Integrations
+## Types of integrations
 
 Your app supports three different methods of connecting external platforms. Each method serves a different use case depending on how the integration is built, who manages it, and how it’s authenticated. Understanding these types will help you navigate set up for the connection you are working with. 
 
@@ -68,9 +68,9 @@ Your app supports three different methods of connecting external platforms. Each
 | **SSO-Based**         | Secure logins and synced data             | Single sign-on authorization     |
 | **API-Key Based**     | Custom or advanced external connections   | Generate and use API credentials |
 
-Within each specific app (after you press `Connect`) you will be prompted with special instructions on how to navigate and set up the connection. 
+Within each specific app (after you select `Add Connection`) you are prompted with special instructions on how to navigate and set up the connection. 
 
-## How to Manage or Disconnect Integrations
+## How to manage or disconnect integrations
 1. From the `Integrations` section, select the `Manage` tab.  
 2. View the list of active integrations and their connection status.  
 3. Click any integration to:
@@ -78,21 +78,21 @@ Within each specific app (after you press `Connect`) you will be prompted with s
    - Reconnect if authorization has expired  
    - Disconnect the platform  
 
-## What Data Gets Synced
+## What data gets synced
 Each integration sends specific data to your app, depending on its purpose. For example:
 
 - **Lead forms** from Facebook  
 - **Website performance** from Google Analytics  
 - **Search visibility** from Google Business Profile  
 - **Customer and job data** from Housecall Pro or Jobber  
-- **Contacts and Companies** from HubSpot (two-way sync — changes in either system update the other within minutes)
+- **Contacts and Companies** from HubSpot (two-way sync: changes in either system update the other within minutes)
 - **Financial records** from QuickBooks 
 
-## Quick Add Via Settings
+## Quick access
 
-You can also connect platforms directly from the `Settings` > `Integrations` page.
+You can access the Integrations page directly from `Administration` > `Integrations`.
 
-![Settings > Connections](../img/connections.png)
+![Integrations page in Administration](../img/connections.png)
 
 Connecting your accounts early is one of the most important steps you can take to start seeing value in Business App. The metrics pulled in through Integrations power analytics in the Executive Report and Marketing Funnel.
 
@@ -107,7 +107,7 @@ The HubSpot integration keeps Contacts and Companies in sync between HubSpot and
 <details>
 <summary>How do I connect HubSpot?</summary>
 
-Go to **Administration → Integrations → Browse**, select HubSpot, and click **Connect HubSpot**. Choose your sync options, then authorize the connection using your HubSpot account. If you only have one HubSpot account available, it's selected automatically.
+Go to `Administration` → `Integrations` → `Browse`, select HubSpot, and click `Add Connection`. Choose your sync options, then authorize the connection using your HubSpot account. If you only have one HubSpot account available, it's selected automatically.
 </details>
 
 <details>
@@ -119,7 +119,7 @@ No. Deletions in one system do not automatically remove records in the other.
 <details>
 <summary>How do I reconnect an integration that has expired?</summary>
 
-Go to `Administration > Integrations > Manage`, click the integration, and choose **Reconnect**. Follow the authorization steps to restore access.
+Go to `Administration` > `Integrations` > `Manage`, click the integration, and follow the reconnect prompts to reauthorize. If a connection has a problem, a warning banner appears with instructions to reconnect your account.
 </details>
 
 <details>
