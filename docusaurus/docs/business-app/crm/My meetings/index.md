@@ -132,13 +132,13 @@ You can also configure additional options per event type. Settings here override
 
   ![Custom question set up as a Multiple Choice type, with a live preview](../img/my-meetings/question-type-multiple-choice.png)
 
-  Choose a **confirmation channel** (**Email**, **SMS**, or **Both**) for the confirmation guests receive when they book. Choose a **reminder channel** the same way; it defaults to your confirmation channel until you change it, after which the two work independently. For example, you can send an Email confirmation with an SMS reminder.
+  Choose a **confirmation channel** (**Email**, **SMS**, or **Both**) for the confirmation guests receive when they book. Choose a **reminder channel** the same way. It starts out matching your confirmation channel, and after that the two are set independently. For example, you can send an Email confirmation with an SMS reminder.
 
   - Turning off **Phone Number** required disables **SMS** and **Both** in both channel controls, and any current SMS/Both selection falls back to Email.
   - Turning off **Email** required disables **Email** and **Both** in both channel controls, and any current Email/Both selection falls back to SMS.
   - If both **Phone Number** and **Email** are off, all channel options are disabled and an inline warning appears. You must select at least one channel before you can save the event type.
 
-  Under **Reminder schedule**, set when reminders are sent. For each reminder, enter a number and choose minutes, hours, or days before the meeting. The default is 24 hours, and the maximum is 10 days; values entered above the maximum are clamped, and switching units re-clamps the value. You can set more than one reminder per event type, for example one reminder 1 day before the meeting and another 15 minutes before. The card shows how many reminders each booking receives.
+  Under **Reminder schedule**, choose when reminders are sent. The schedule has two email reminders (1 day and 15 minutes before the meeting by default) and one SMS reminder (2 hours before by default), and the reminders shown follow your reminder channel. You can change the timing of each reminder, up to 10 days before the meeting, but you can't add or remove reminders. The card shows how many reminders each booking receives. See [Reminder schedule](./team-booking-links.md#reminder-schedule) for the full rules, and [Host reminders](./team-booking-links.md#host-reminders) for the reminders hosts receive.
 
   :::note
   SMS confirmations and reminders require an active subscription to **Conversations AI Pro or Premium** (Reputation AI Premium and Campaigns Pro also unlock this). Your business phone number must be registered first. Configure at `Administration` → `SMS Configuration`.
