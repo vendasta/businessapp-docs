@@ -2,7 +2,8 @@
 title: API Key-Based Integrations
 sidebar_label: API Key Integrations
 description: Connect third-party applications to Business App using an API key to sync customer data and automate review requests.
-sidebar_position: 3
+slug: /business-app/administration/connections/api-key-integrations
+sidebar_position: 2
 tags: [integrations, api-key, connections, fieldedge, jobnimbus, shopboss]
 keywords: [API key, integrations, FieldEdge, JobNimbus, RB Control Systems, ShopBoss, Pet Resort Pro, Protractor, Mitchell Enterprise, API key setup]
 brand: business-app
