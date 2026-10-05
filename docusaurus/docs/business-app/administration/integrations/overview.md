@@ -1,5 +1,8 @@
 ---
 title: Integrations
+sidebar_label: Overview
+slug: /business-app/administration/connections
+sidebar_position: 1
 brand: business-app
 product: business-app-core
 audience: smb

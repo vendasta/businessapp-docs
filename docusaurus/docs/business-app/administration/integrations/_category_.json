@@ -1,8 +1,8 @@
 {
-  "label": "Integration guides",
+  "label": "Integrations",
   "collapsed": true,
   "link": {
     "type": "doc",
-    "id": "business-app/administration/integrations/index"
+    "id": "business-app/administration/integrations/overview"
   }
 }
