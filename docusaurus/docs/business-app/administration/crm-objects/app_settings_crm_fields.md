@@ -12,7 +12,7 @@ CRM Fields allow you to add personalized data fields to your contact and company
 
 This feature is useful for businesses that want to go beyond standard fields like phone number or address. It helps centralize key contact or company details directly in your app, so you don’t have to manage separate spreadsheets or systems.
 
-![Custom Fields inside Administration](../img/administration_custom_field_contact.png)
+![CRM objects page with the Create field drawer open](../img/administration_custom_field_contact.png)
 
 ## Why are CRM fields important?
 
@@ -72,7 +72,7 @@ Use `Text list` when you want to associate multiple values with a single field (
 System fields (created by default) cannot be modified or deleted. Only custom fields allow full control.
 :::
 
-![CRM Fields inside Administration](../img/administration_custom_fields.png)
+![CRM objects page showing the Contacts fields list](../img/administration_custom_fields.png)
 
 ## Field change history
 

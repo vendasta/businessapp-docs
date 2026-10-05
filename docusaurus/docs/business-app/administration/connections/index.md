@@ -37,7 +37,7 @@ Common integrations include:
 ### Scheduling and service tools
 - **Housecall Pro** – Syncs job scheduling and service activity  
 - **Jobber** – Connects field service workflows  
-- **Gingr**, **PetExec**, **Pet Resort Pro**, **Paw Partner**, **PawLoyalty** – Connect customer and service data for pet-related businesses  
+- **Gingr**, **PetExec**, **Pet Resort Pro**, **Paw Partner** – Connect customer and service data for pet-related businesses  
 
 ### CRM tools
 - **HubSpot** – Two-way sync for Contacts and Companies between HubSpot and Business App
@@ -92,7 +92,7 @@ Each integration sends specific data to your app, depending on its purpose. For 
 
 You can access the Integrations page directly from `Administration` > `Integrations`.
 
-![Integrations page in Administration](../img/connections.png)
+![App settings page with the Integrations tile highlighted](../img/connections.png)
 
 Connecting your accounts early is one of the most important steps you can take to start seeing value in Business App. The metrics pulled in through Integrations power analytics in the Executive Report and Marketing Funnel.
 

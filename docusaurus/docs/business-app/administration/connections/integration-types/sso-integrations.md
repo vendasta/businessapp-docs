@@ -2,7 +2,8 @@
 title: Single Sign-On App Integrations
 sidebar_label: SSO Integrations
 description: Connect third-party applications through Single Sign-On (SSO) for direct access and centralized management.
-sidebar_position: 2
+slug: /business-app/administration/connections/sso-integrations
+sidebar_position: 1
 tags: [integrations, sso, connections]
 keywords: [SSO, single sign-on, integrations, connections, third-party apps]
 brand: business-app
@@ -18,7 +19,7 @@ To connect an integration:
 
 1. Navigate to `Administration` → `Integrations`
 
-![App settings page showing the Integrations tile among Automations, CRM objects, Score, and My Meetings settings](../img/sso-integrations/accessing-connections-page.jpg)
+![App settings page showing the Integrations tile among Automations, CRM objects, Score, and My Meetings settings](../../img/sso-integrations/accessing-connections-page.jpg)
 
 ## Set up a new connection
 
@@ -26,7 +27,7 @@ To connect an integration:
 
 Browse through the available applications on the Integrations page. Each application displays information about its features and benefits.
 
-![Marketing page for the Jobber integration](../img/sso-integrations/marketing-page.jpg)
+![Marketing page for the Jobber integration](../../img/sso-integrations/marketing-page.jpg)
 
 ### Click Add Connection
 
@@ -36,7 +37,7 @@ Click the `Add Connection` button to begin the connection process.
 
 Depending on the application, you may need to complete a pre-connect form with initial setup information.
 
-![Pre-connect form for an integration](../img/sso-integrations/pre-connect-form.jpg)
+![Pre-connect form for an integration](../../img/sso-integrations/pre-connect-form.jpg)
 
 ### Follow the SSO process
 
@@ -46,7 +47,7 @@ Complete the Single Sign-On connection by following the prompts. This typically 
 - Connecting to an existing account
 - Providing authorization for data sharing
 
-![SSO setup process](../img/sso-integrations/sso-setup.jpg)
+![SSO setup process](../../img/sso-integrations/sso-setup.jpg)
 
 ## Manage connections
 
@@ -56,11 +57,11 @@ After setup, you can view and manage all connected applications through:
 
 - The `Manage` tab on the Integrations page, which displays connection cards for each integrated application
 
-![Manage tab with connection card](../img/sso-integrations/manage-tab.jpg)
+![Manage tab with connection card](../../img/sso-integrations/manage-tab.jpg)
 
 - The application pages, which display a "Connected" tag
 
-![Marketing page with Connected tag](../img/sso-integrations/connected-marketing-page.jpg)
+![Marketing page with Connected tag](../../img/sso-integrations/connected-marketing-page.jpg)
 
 ### Connection settings
 
@@ -71,7 +72,7 @@ Click a connected application to access its configuration options. Depending on 
 - Other application-specific settings
 - A `Disconnect` button to remove the connection
 
-![Connection settings page](../img/sso-integrations/connection-settings.jpg)
+![Connection settings page](../../img/sso-integrations/connection-settings.jpg)
 
 ## What SSO integrations do
 
