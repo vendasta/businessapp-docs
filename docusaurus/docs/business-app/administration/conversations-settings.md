@@ -21,10 +21,9 @@ Use **Conversations settings** to configure your business phone and SMS, connect
 
 ## Phone and SMS
 
-- View your assigned phone number for calling and texting.
-- Configure call forwarding to route calls to your mobile or landline.
-- Enable AI call handling to have an AI Employee answer calls.
-- Set up automatic SMS follow-ups when you miss a call.
+- Choose your primary phone number for calling and texting.
+- Configure call forwarding and voicemail.
+- Enable `Follow up with an SMS message` to automatically text callers you could not answer.
 
 ## Channel connections
 
@@ -32,8 +31,8 @@ Connect messaging channels so they appear in your unified inbox:
 
 | Channel | What you configure |
 |--------|---------------------|
-| **Phone and SMS** | View your assigned number; enable AI handling and SMS follow-ups. |
-| **Web Chat** | Install and configure the website widget with AI options. |
+| **Phone and SMS** (Pro/Premium) | Assign a number; enable AI handling and missed-call text back. |
+| **Web Chat** (Pro) | Install and configure the website widget; set availability and AI options. |
 | **Facebook Messenger** | Connect a verified Facebook Page so messages appear in the inbox. |
 | **Instagram Messages** | Connect via Facebook to enable DMs in the inbox. |
 | **WhatsApp Business** | Connect via Facebook to enable WhatsApp in the inbox. |
