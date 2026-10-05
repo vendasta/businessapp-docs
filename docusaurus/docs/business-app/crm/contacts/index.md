@@ -187,3 +187,10 @@ Yes. Set up email auto-BCC and forwarding so sales emails are captured to the ap
 
 Contacts are people you store in the CRM (e.g. customers, leads); they do not log in to Business App. Users are people who have access to Business App. The two are separate; changing a contact's email disassociates them from any linked user, and removing a contact does not remove a user.
 </details>
+
+<details>
+<summary>How does marketing consent get set on contacts?</summary>
+
+By default, marketing consent is unset on new contacts. Consent is recorded when a contact submits a form that includes a consent field, or when the web chat collects consent during a conversation.
+
+</details>
