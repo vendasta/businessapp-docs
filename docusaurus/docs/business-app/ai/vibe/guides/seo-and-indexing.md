@@ -55,6 +55,10 @@ The **SEO** section in project settings is available for projects on the server-
 
 See [project settings](./project-settings.md) for the full settings page.
 
+### Block search engines from your app
+
+To keep crawlers out, for example while you share a client mock-up, turn off the `robots.txt` toggle in the **SEO** section. When it's off, Vibe publishes a `robots.txt` that blocks all crawlers and doesn't list a sitemap. If your project ships its own `robots.txt`, yours is used instead.
+
 ### Use your own discovery files
 
 The generated `robots.txt`, `sitemap.xml`, and `llms.txt` are each individually overridable. If your project ships its own version of any of these files, Vibe uses yours instead of the generated one — you can override one file and keep the automatic versions of the others.
@@ -110,7 +114,7 @@ Yes, in typical setups search engines can index Vibe sites. For best results, in
 <details>
 <summary>How do I stop crawlers from indexing an internal Vibe dashboard?</summary>
 
-Turn off the SEO-section indexing toggles for that project. You can also publish a `robots.txt` that disallows all crawlers when robots.txt controls are available.
+Turn off the `robots.txt` toggle in the **SEO** section of that project's settings. Vibe then publishes a `robots.txt` that blocks all crawlers. If your project ships its own `robots.txt`, yours is used instead.
 </details>
 
 <details>
