@@ -10,7 +10,7 @@ audience: smb
 ---
 
 :::info Trusted testers
-The AI Search Specialist is available to trusted testers. It is not yet available to all Business App users.
+The brand visibility report and blog post drafts are available to trusted testers. They are not yet available to all Business App users. Automatic business description updates are not limited to trusted testers.
 :::
 
 ## What is the AI Search Specialist?
@@ -97,7 +97,7 @@ Yes. You request a brand visibility report by chatting with the AI Search Specia
 <details>
 <summary>Is the AI Search Specialist available to everyone?</summary>
 
-No. The AI Search Specialist is currently available to trusted testers only.
+Automatic business description updates are not limited to trusted testers. The brand visibility report and blog post drafts are currently available to trusted testers only.
 </details>
 
 <details>
