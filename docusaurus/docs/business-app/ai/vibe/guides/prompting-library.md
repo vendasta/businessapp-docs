@@ -3,13 +3,16 @@ title: Prompting Library
 sidebar_label: Prompting Library
 sidebar_position: 2
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Prompting library
 
 Concrete prompts you can paste into Vibe, organized by intent. These are starting points, not recipes you have to follow exactly. Edit any prompt with your own business name, content, and constraints, and Vibe will adapt.
 
-For the principles behind why these work, see the [prompting guide](./prompting.md). For the connectors several of these activate, see the [connectors guide](./connectors/index.md).
+For the principles behind why these work, see the [prompting guide](./prompting.md). For the connectors several of these activate, see the [connectors guide](../connectors/index.md).
 
 ## Scaffolding a new app
 
@@ -25,7 +28,7 @@ What to expect: a single-page site with the seven sections in order, themed in s
 
 > Create a website for a dental clinic called "Bright Smile Dental." Include a home page with services, a team page with dentist bios and photos, an FAQ page with common questions, and a booking page with a contact form.
 
-What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](./connectors/forms).
+What to expect: four pages with shared navigation, a generated team-photo placeholder set, and a contact form that activates the [Forms connector](../connectors/forms).
 
 ### Service business with multi-location
 
@@ -103,7 +106,7 @@ What to expect: the reference site's structure and visual style, with your busin
 
 > Add a contact form at the bottom of the landing page. Collect name, email, and message. Style it to match the rest of the page.
 
-What to expect: a form rendered in your theme, wired through the [Forms connector](./connectors/forms) so submissions are captured automatically.
+What to expect: a form rendered in your theme, wired through the [Forms connector](../connectors/forms) so submissions are captured automatically.
 
 ### Lead capture popup
 
@@ -123,7 +126,7 @@ What to expect: a stepped form component with state preserved across steps. Subm
 
 > Build an owner dashboard showing service requests per location for the last 30 days, top three services this month, and a bar chart of weekly revenue.
 
-What to expect: a dashboard page that activates the [Analytics connector](./connectors/analytics.md). The numbers are wired to live data, not placeholders.
+What to expect: a dashboard page that activates the [Analytics connector](../connectors/analytics.md). The numbers are wired to live data, not placeholders.
 
 ### Single-metric tile
 
@@ -137,13 +140,45 @@ What to expect: a small KPI tile drawing from the same analytics connector.
 
 What to expect: a comparison table tied to the analytics connector with a working date-range control.
 
+## Connecting to CRM
+
+### Contacts directory
+
+> Add a contacts page listing every contact with their name, email, and phone number.
+
+What to expect: a table populated with your real contacts, wired through the [CRM connector](../connectors/crm.md).
+
+### Pipeline view
+
+> Build a pipeline view showing opportunities grouped by stage.
+
+What to expect: a board-style view of your actual opportunities, grouped by pipeline stage through the same connector.
+
+### Create or update a contact
+
+> Add a "New contact" form so I can create a contact with a name, email, and phone number.
+
+What to expect: a form that writes to your CRM through the [CRM connector](../connectors/crm.md) — the connector is two-way, so contacts you create or update in your Vibe app appear in CRM.
+
+### Log an activity
+
+> Let me log a call or a note on a contact's record.
+
+What to expect: an activity logged from your Vibe app that syncs back to the contact's record in CRM.
+
+### Move a deal to another stage
+
+> Let me move an opportunity to a different pipeline stage from the pipeline view.
+
+What to expect: stage changes made in your Vibe app sync back to your pipeline in CRM.
+
 ## Connecting to SSO
 
 ### Member sign-in area
 
 > Add a "Members" area with a sign-in screen. After signing in, members see their loyalty points, recent orders, and a profile section with their name and email.
 
-What to expect: a gated area wired through the [Single sign-on connector](./connectors/single-sign-on.md). The sign-in itself completes once Single sign-on is enabled in Project Settings, which provisions the OAuth client for your project.
+What to expect: a gated area wired through the [Single sign-on connector](../connectors/single-sign-on.md). The sign-in itself completes once Single sign-on is enabled in Project Settings, which provisions the OAuth client for your project.
 
 ### Gated content
 
@@ -156,6 +191,28 @@ What to expect: a route-level guard that redirects unauthenticated visitors to s
 > Add a profile page for signed-in members showing their name, email, phone, and a list of their last five service appointments with date and service type.
 
 What to expect: a profile route that pulls from the signed-in member's identity and connects to recent activity. Pairs naturally with the analytics connector for the appointments list.
+
+## Connecting to Webchat
+
+### Add a webchat to the site
+
+> Add a webchat to the site so visitors can chat with us.
+
+What to expect: Vibe shows a searchable list of your existing webchats through the [Webchat connector](../connectors/webchat.md). Pick one to embed it, or if you don't have any yet, give it a name and Vibe creates one with default settings before embedding it.
+
+## Connecting to Reviews
+
+### Reviews section on a page
+
+> Add a reviews section to the homepage showing our recent customer reviews.
+
+What to expect: a reviews section populated with your business's real customer reviews through the [Reviews connector](../connectors/reviews.md), styled to match the rest of the page.
+
+### Testimonials on a landing page
+
+> Add a testimonials section to the landing page that showcases our customer reviews, just above the footer.
+
+What to expect: a testimonials-style section drawing from the same real reviews rather than invented quotes.
 
 ## Generating images
 
@@ -181,7 +238,7 @@ What to expect: a coordinated illustration set, useful when you want visual cons
 
 ### Diagnose a build that auto-fix didn't solve
 
-> The preview is showing this error: "Cannot find module './components/HeroSection'." Auto-fix tried twice and stopped. Can you take a look?
+> The preview is showing this error: "Cannot find module './components/HeroSection'." Can you take a look?
 
 What to expect: Vibe reads the error in context, identifies what's missing, and produces a fix. See the [troubleshooting guide](./troubleshooting.md) for how the auto-fix layers work.
 
@@ -201,5 +258,5 @@ What to expect: Vibe surfaces the diff in chat. From there you can ask for a par
 
 - [Prompting Guide](./prompting.md) — The principles behind why these prompts work
 - [Cloning a Reference Site](./clone-from-url.md) — Use a URL as your starting point instead of a prompt
-- [Connectors](./connectors/index.md) — Understand the connectors several of these prompts activate
+- [Connectors](../connectors/index.md) — Understand the connectors several of these prompts activate
 

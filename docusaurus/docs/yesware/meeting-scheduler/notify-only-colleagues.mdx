@@ -1,0 +1,94 @@
+---
+title: "Notify-Only Colleagues"
+description: "Add a colleague to a meeting type as a Notify-Only attendee so they are invited to booked meetings without their calendar affecting availability."
+brand: yesware
+product: yesware-core
+audience: smb
+---
+
+Meeting Scheduler lets you add a colleague to a meeting type as a **Notify-Only** attendee. A Notify-Only colleague is invited to booked meetings as an **optional** attendee, but their calendar is not used when Meeting Scheduler works out the times a booker can choose. This keeps someone in the loop on a meeting without their availability shrinking the bookable time slots.
+
+You set this per colleague when adding or managing colleagues on a meeting type. Each colleague row has a **Required / Notify-Only** dropdown: leave it on **Required** for the standard availability checking, or switch it to **Notify-Only** for an optional attendee invite.
+
+## What Notify-Only does
+
+When a colleague is set to Notify-Only:
+
+- Their calendar is **skipped** when Meeting Scheduler calculates available times, so it does not narrow the bookable slots.
+- They are added to the booked calendar event as an **optional** attendee, so they still receive the invite and can choose which meetings to attend.
+- The calendar-access warning is not shown for that colleague, since their calendar is not needed for availability.
+- Rescheduling preserves the setting, so a Notify-Only colleague stays optional on the updated invite.
+
+Colleagues left as **Required** behave as they always have: their calendar is checked for availability and they are added as required attendees. Notify-Only works on both personal and team Round Robin meeting types, and applies to invites on both Google Calendar and Outlook.
+
+## How to set a colleague to Notify-Only
+
+1. Open **Meeting Scheduler** and select the **Meeting Types** tab, then choose the meeting type you want to edit.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/notify-only-colleagues-meeting-types.png').default} alt="Meeting Scheduler with the Meeting Types tab selected, showing personal and team meeting types" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+2. In the **Colleague Calendars and Availability** section, add the colleague, or open an existing colleague row.
+3. In that colleague's **Required / Notify-Only** dropdown, choose **Notify-Only**.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/notify-only-colleagues-dropdown.png').default} alt="The Required / Notify-Only dropdown open on a colleague row, with Notify-Only selected" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+4. Save the meeting type.
+
+When a booker picks a time, the available slots are calculated without the Notify-Only colleague's calendar, and the colleague receives the meeting invite as an optional attendee once the meeting is booked.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/notify-only-colleagues-optional-attendee.png').default} alt="A booked calendar event showing the Notify-Only colleague listed as an optional attendee" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+## Frequently asked questions
+
+<details>
+<summary>Who can use Notify-Only colleagues?</summary>
+
+Notify-Only relies on the Meeting Scheduler colleagues feature, which is available on all Yesware subscription plans. Note that the Pro plan is limited to two of each meeting type, and only Enterprise plans include the Round Robin feature.
+</details>
+
+<details>
+<summary>Does a Notify-Only colleague's calendar affect the times a booker can choose?</summary>
+
+No. A Notify-Only colleague's calendar is skipped entirely during availability calculation, so it does not narrow the bookable meeting slots.
+</details>
+
+<details>
+<summary>Will a Notify-Only colleague still get the invite?</summary>
+
+Yes. They are added to the booked calendar event as an optional attendee, so they receive the invite and can choose which meetings to attend.
+</details>
+
+<details>
+<summary>Does this work with both Google Calendar and Outlook?</summary>
+
+Yes. Notify-Only colleagues are added as optional attendees on invites for both Google Calendar and Outlook.
+</details>
+
+<details>
+<summary>What happens to a meeting when it is rescheduled?</summary>
+
+The current attendees are preserved, so a Notify-Only colleague stays optional on the updated invite.
+</details>
+
+<details>
+<summary>Do my existing colleagues change?</summary>
+
+No. Existing colleagues default to Required and continue to gate calendar availability and appear as required attendees. Notify-Only is opt-in, set per colleague.
+</details>
+
+<details>
+<summary>On a team meeting type, can other team leaders see colleagues I have added?</summary>
+
+Yes. Every team leader on a team meeting type sees the same shared colleague list, including colleagues another leader added.
+</details>
+
+## Related articles
+
+- [Team Meeting Types](./team-meeting-types.mdx)
+- [Meeting Scheduler](./index.mdx)

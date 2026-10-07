@@ -2,6 +2,9 @@
 title: Single sign-on
 sidebar_position: 1
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Single sign-on
@@ -12,7 +15,7 @@ The Single sign-on connector lets your customers sign into your generated app us
 
 Single sign-on layers on Business App's customer authentication. When you enable the connector, Vibe provisions an OAuth client for the project — a dedicated identity for your app inside the platform's OAuth/OIDC service. Your generated app uses that client to redirect customers through the standard OAuth flow, and Business App returns a signed identity token your app can use to look up the signed-in member.
 
-The OAuth client ID for the project is shown in the **Overview** card on the Project Settings page once the connector is enabled.
+The OAuth client ID for the project is shown in your [project's settings](../guides/project-settings.md) once the connector is enabled.
 
 **Who can sign in:** Any user who already has access to your Business App account can sign in to your Vibe-built app. This connector is not intended for signing in your business's end customers or website visitors — it's for members of your Business App account (owners, staff, managers). There are no per-user access controls within that group at this time; if someone has Business App access for the account, they can sign in.
 
@@ -22,7 +25,7 @@ Access controls for sign-in are still being developed. More granular controls ar
 
 ## Enabling the connector
 
-From the projects list click **Configure**, or inside the project click **+** in the chat box and select **Connectors**. Toggle **Single sign-on** on. Toggling it on provisions the OAuth client automatically — there's nothing you need to configure manually for the redirect flow to start working in your generated app.
+Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **Single sign-on** on. Toggling it on provisions the OAuth client automatically — there's nothing you need to configure manually for the redirect flow to start working in your generated app.
 
 If you ask for a sign-in experience before the connector is enabled, Vibe will scaffold the UI but the sign-in itself won't complete until you turn the connector on.
 
@@ -65,9 +68,17 @@ If your app will be displayed inside an iframe, use one of these approaches:
 
 If your app is standalone (not embedded in another page), this limitation does not apply.
 
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>I see "User not found" when I try to sign in to a Vibe-built app. What does that mean?</summary>
+
+Only users who already have access to this Business App account can sign in through the Single sign-on connector. This sign-in screen is for account members — owners, staff, and managers — not your business's customers or website visitors.
+</details>
+
 ## Next Steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Analytics](./analytics.md) — Surface member-specific metrics behind your sign-in gate
-- [Prompting Library](../prompting-library.md) — Ready-made SSO prompts for members areas and gated content
+- [Prompting Library](../guides/prompting-library.md) — Ready-made SSO prompts for members areas and gated content
 

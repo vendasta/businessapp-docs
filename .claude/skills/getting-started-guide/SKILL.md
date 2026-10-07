@@ -110,13 +110,13 @@ Use sentence case for all headings at every level (H1 through H4). Only capitali
 - Numbered lists for sequential steps, bullet lists for non-sequential info
 
 ### Step instructions
-Bold all UI element names (buttons, field labels, menu items, tab names):
+Use inline code (backticks) for all UI element names (buttons, field labels, menu items, tab names):
 
 ```mdx
-1. Go to **[Product]** > **Administration** > **My team**.
-2. Click **Invite team member**.
+1. Go to `[Product]` > `Administration` > `My team`.
+2. Click `Invite team member`.
 3. Enter a name and email address.
-4. Click **Send**.
+4. Click `Send`.
 ```
 
 ### Inline links

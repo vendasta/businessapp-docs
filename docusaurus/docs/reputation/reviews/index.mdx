@@ -2,6 +2,9 @@
 title: Reviews Overview
 description: Learn how to view and manage reviews in Reputation AI
 sidebar_position: 1
+brand: business-app
+product: reputation-ai
+audience: smb
 ---
 
 The **Reviews** feature in Reputation AI lets you monitor, manage, and respond to customer reviews pulled from connected review sources. Once accounts are connected, reviews are automatically retrieved and organized under one dashboard. This helps you maintain visibility of customer feedback across multiple platforms in one place.
@@ -25,53 +28,56 @@ Monitoring and responding to customer reviews is essential for building trust an
 - **[AI-Generated Responses](ai-generated-review-responses.mdx)**: Use AI to draft review responses
 - **[Managing Edited Reviews](managing-edited-reviews.mdx)**: Track when customers update their reviews
 - **[Review Matching](review-matching.mdx)**: Match reviews to your business listings
+- **[Check-in Kiosk](check-in-kiosk.mdx)**: Collect reviews from walk-in customers at your front desk
 
 ## Get started
 
-1. Navigate to `Reputation AI > Settings > Connect Accounts`.
+1. Navigate to `Reputation AI → Settings → Connect Accounts`.
 2. Click the `+` icon to connect Google, Facebook, or other review sources.
-3. Go to `Reputation AI > Reviews > Manage Reviews` to view all reviews.
+3. Go to `Reputation AI → Reviews → Manage Reviews` to view all reviews.
 4. Reviews will appear once a listing is matched or claimed in the `Listings` tab.
 
 :::info
 Facebook and Google must be connected to enable responses. Some review platforms (e.g., Yelp) do not allow direct third-party responses.
 :::
 
-## How to View and Manage Reviews
+## How to view and manage reviews
 
-1. Go to `Reputation AI > Reviews > Manage Reviews`.
+1. Go to `Reputation AI → Reviews → Manage Reviews`.
 2. Scroll down to browse all reviews pulled in from connected sources.
 3. Reviews will begin appearing once a listing is either:
    - Found through **Best Match**, or
    - Manually marked as yours in the `Listings` tab.
 
+Reviews are listed with the most recently updated review at the top. A review's updated time reflects when it was last edited, or its published date if it hasn't been edited.
+
 Reviews are updated every 24 hours after the initial listing is confirmed.
 
-## Exporting Reviews
+## Exporting reviews
 
-### Export from All Listings
-1. Go to `Reputation > Reviews`.
+### Export from all listings
+1. Go to `Reputation → Reviews`.
 2. Click the `More Options` (three dots) icon.
 3. Select `Export to CSV`.
 
-### Export from an Individual Listing
-1. Navigate to `Reputation > Listings`.
+### Export from an individual listing
+1. Navigate to `Reputation → Listings`.
 2. Select the desired listing.
 3. Go to the `Reviews` tab.
 4. Click the `More Options` icon and choose `Export to CSV`.
 
 The CSV file includes: Date, Source, Review content, and Star rating.
 
-## Responding to Reviews
+## Responding to reviews
 
-### Where You Can Respond
+### Where you can respond
 - **Google Business Profile** (GBP): Must be connected and verified
 - **Facebook**: Must be connected
 - **My Listing** page
 
 For all other sources, clicking `Respond` will redirect to the official review platform.
 
-### Using AI Responses
+### Using AI responses
 If you're on a **Pro** or **Premium** plan and have language-specific templates:
 - AI detects the review language and suggests a response in that language.
 
@@ -79,24 +85,24 @@ If you're on a **Pro** or **Premium** plan and have language-specific templates:
 Yelp does not support direct third-party responses. Clicking `Respond` redirects to Yelp's platform. Manager access or Yelp login credentials are required to respond.
 :::
 
-## Review Widget Management
+## Review widget management
 
-### How to Publish or Unpublish Reviews
+### How to publish or unpublish reviews
 To **publish** a review on your My Listing page:
-1. Go to `Reputation AI > Reviews > Manage Reviews`.
+1. Go to `Reputation AI → Reviews → Manage Reviews`.
 2. Click the `Share` icon next to a review.
 3. Select `Publish on My Listing`.
 
 To **unpublish** Google or Facebook reviews from the Review Widget:
-1. Go to `Reputation AI > Reviews > Manage Reviews`.
+1. Go to `Reputation AI → Reviews → Manage Reviews`.
 2. Click the `Share` icon next to the review.
 3. Select `Unpublish from Review Widget`.
 
-### Widget Types
+### Widget types
 - **Free Version**: Displays published reviews from My Listing, Google, and Facebook only.
 - **Pro Version**: Includes additional third-party sources. Yelp reviews are not supported.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Why am I not seeing any reviews?</summary>
@@ -118,8 +124,8 @@ Many platforms delay publishing reviews. The published date may match the submis
 <summary>Why aren't Facebook reviews showing up?</summary>
 
 Facebook must be connected. Connect via:
-- `Settings > Connect Accounts`, or
-- `Overview > Connect` next to Facebook
+- `Settings → Connect Accounts`, or
+- `Overview → Connect` next to Facebook
 </details>
 
 <details>
@@ -176,4 +182,25 @@ Yelp does not support third-party integration.
 <summary>Can I import reviews from a spreadsheet?</summary>
 
 No, reviews must be pulled directly from the source (Google, Facebook, etc.) to ensure authenticity and verified timestamps.
+</details>
+
+<details>
+<summary>How do I send review requests, and how does the NPS template work?</summary>
+
+Add customers to the CRM first (manually, via CSV import, or through an integration like QuickBooks). Go to `Reputation AI` > `Reviews` > `Request review`, click `Send to`, and choose a template. With an NPS template, scores of 7 or higher go straight to Google. Lower scores see a feedback page that still offers a Google option. Templates are editable, and `Request stats` shows sent, clicked, and average NPS.
+
+</details>
+
+<details>
+<summary>Can I reply to reviews directly from the platform?</summary>
+
+Yes. In `Reputation AI` > `Reviews` > `Manage reviews`, you can reply directly to Google and Facebook reviews. For other sites (Yelp, BBB, and others), you can draft a reply, but the button opens that site so you can paste it there.
+
+</details>
+
+<details>
+<summary>How do AI auto-replies to reviews work?</summary>
+
+In `Reputation AI`, click `AI` > `Enable AI autoresponse`. In the `New review received` trigger settings, choose which star ratings the AI answers (default is 4 stars and up) and the delay before replying (default is 30 minutes). You can also edit the response prompt in the `Generate review responses` capability.
+
 </details>

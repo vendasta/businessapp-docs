@@ -2,6 +2,9 @@
 title: Opportunity automations
 sidebar_position: 4
 description: Create opportunities from webchat, trigger campaigns by stage, and move opportunities when a meeting is booked.
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## Create opportunities automatically from webchat
@@ -26,7 +29,7 @@ Automation behavior:
 
 1. Go to `Automation`.
 2. Click `Create automation`.
-3. Search for the template **Create an opportunity and follow up when a lead is captured by Webchat**.
+3. Search for the template `Create an opportunity and follow up when a lead is captured by Webchat`.
 4. In the `Create opportunity` step, choose the appropriate pipeline.
 5. Review and customize the steps to match your workflow.
 
@@ -50,7 +53,7 @@ Automation behavior:
 
 1. Go to `Automation`.
 2. Click `Create automation`.
-3. Search for the template **Start a campaign when opportunity move to a specific stage**.
+3. Search for the template `Start a campaign when opportunity moves to a specific stage`.
 4. In the `When an opportunity is created or modified` step, set the pipeline and stage conditions.
 5. In the `Start a campaign for contact` step, select the desired campaign.
 6. Review and adjust the automation as needed.
@@ -72,7 +75,7 @@ Automation behavior:
 
 1. Go to `Automation`.
 2. Click `Create automation`.
-3. Search for the template **Move the opportunity to a specific stage when a meeting is booked**.
+3. Search for the template `Move the opportunity to a specific stage when a meeting is booked`.
 4. In the `Update opportunity` step, set the correct pipeline and target stage.
 5. Customize the steps as needed for your process.
 

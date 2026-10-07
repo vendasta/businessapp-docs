@@ -5,6 +5,9 @@ sidebar_label: Automated notifications
 description: Automatically notify your team or contacts via SMS and email when leads come in, forms are submitted, or CRM events occur.
 tags: [automation, messaging, sms, email]
 keywords: [automated SMS, automated email, messaging steps, workflow alerts, customer notifications]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 When a new lead comes in from chat, a quote request lands, or a VIP contact is tagged, the faster you respond, the better your chances of closing the deal. You can build automations that send SMS or email notifications the moment these events happen — no manual follow-up needed.
@@ -64,6 +67,6 @@ When a contact submits a signup form, send them a plain-text email to acknowledg
 - Keep SMS messages short and actionable — include your business name the first time you text a contact
 - Use clear email subjects with one primary call-to-action
 - Add **Conditions** to limit when notifications fire (e.g. only for new leads, only during business hours)
-- Personalize messages with the contact's name and relevant details using [dynamic content](../smart-values-in-automations)
+- Personalize messages with the contact's name and relevant details using [dynamic content](../dynamic-content-in-automations)
 - If messages fail to send, check the **Activity** tab — make sure required fields (phone for SMS, email for plain-text email) are present on the contact
 

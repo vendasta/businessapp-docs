@@ -5,6 +5,9 @@ sidebar_position: 5
 description: Create custom CRM modules to track industry-specific data like equipment, properties, vehicles, or pets alongside your contacts and companies. Supports bulk import, automations, smart lists, and API.
 tags: [crm, custom-objects, customization, automation, bulk-import, api]
 keywords: [custom objects, custom modules, custom crm, industry-specific crm, custom fields, bulk import, smart lists, automations, api]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Custom objects let you extend the CRM beyond standard contacts, companies, and opportunities by creating flexible data types tailored to your business or industry. Track specialized records like equipment, properties, vehicles, pets, demos, or any other entity that matters to your workflow — all within the same CRM.
@@ -14,6 +17,7 @@ Custom objects are available with CRM AI Standard and Pro editions. See [CRM AI 
 ## What custom objects support
 
 - **Configurable fields**: text, number, date, dropdowns, and more
+- **Selection banner**: the record table shows exactly how many rows are selected and lets you select every matching record — not just the current page — with an option to clear the selection, the same as contacts and companies
 - **Bulk Import**: upload CSVs, map fields, and populate records at scale
 - **Automations**: trigger workflows on object create, update, list entry, or list exit — and update custom object fields from automation actions
 - **Smart lists**: segment custom object records with the same filter power as contacts and companies
@@ -48,6 +52,10 @@ Standard CRM records cover common sales workflows, but many businesses need to t
 
 Once saved, the custom object appears directly in the CRM navigation alongside standard objects. You can begin populating records manually, via bulk import, or through the API.
 
+:::info
+You can create up to 3 custom objects per account. If you try to create a fourth, you'll see a message letting you know you've reached the limit.
+:::
+
 ## Import custom object records
 
 The Bulk Import workflow supports custom objects, making it easy to migrate asset lists, service records, inventory data, or any other custom dataset into the CRM.
@@ -73,6 +81,7 @@ Custom objects work seamlessly with automations and smart lists, enabling powerf
 
 - Update custom object fields
 - Retrieve associated contacts, companies, or opportunities
+- Start a campaign for the contacts associated with a custom object record
 - Send notifications or follow-up messages
 
 This supports vertical-specific workflows such as service reminders, asset management, demo tracking, and multi-step sales processes.
@@ -106,6 +115,20 @@ Create a **Demo** object linked to opportunities with fields like:
 - Who researched
 
 Automations can then update demo records or move opportunities forward based on booking events.
+
+### Follow-up campaigns
+
+Custom objects often relate to a contact rather than being a contact themselves, so you can start a campaign for the contacts associated with a custom object record instead of building a contact list.
+
+**Example: class enrollment business**
+
+A business creates a **Class** object to track which classes each contact's child attends.
+
+- **Automation**:
+  1. When a Class record is updated to "completed"
+  2. Start a campaign for the custom object, enrolling the parent or guardian contacts associated with that class record
+
+If a class record has no associated contact, the step is skipped and the reason appears in the automation activity feed.
 
 ## API support
 
@@ -152,5 +175,12 @@ Yes. Custom object upsert is supported via API.
 <summary>Which CRM AI editions include custom objects?</summary>
 
 Custom objects are included with CRM AI Standard and Pro. See [CRM AI Plans](./index.mdx#crm-ai-plans) for the full feature comparison.
+
+</details>
+
+<details>
+<summary>Is there a limit to how many custom objects I can create?</summary>
+
+Yes. You can create up to 3 custom objects per account. If you reach this limit, you'll see a message telling you so when you try to add another.
 
 </details>

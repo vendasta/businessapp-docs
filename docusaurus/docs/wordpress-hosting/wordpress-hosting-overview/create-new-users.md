@@ -3,6 +3,9 @@ title: "Managing Users"
 sidebar_label: "Managing Users"
 sidebar_position: 2
 description: "Learn how to create WordPress users through Business App and change their roles. Users are automatically created in WordPress when you create them in Business App."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## Create New Users

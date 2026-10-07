@@ -2,6 +2,9 @@
 title: Business Knowledge
 sidebar_position: 7
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Business Knowledge
@@ -30,7 +33,7 @@ Using these phrases produces more accurate results than leaving Vibe to infer th
 
 ## Adding your own knowledge
 
-You can extend the knowledge base from the Project Settings page. Click **Configure** for the project, then find the **Knowledge** section. You can add:
+You can extend the knowledge base from your [project settings](./project-settings.md). Open your project's settings and select **Knowledge**. You can add:
 
 - **URLs** — Vibe fetches and indexes the page content
 - **Files** — Upload documents such as PDFs, specs, or brand guides
@@ -52,4 +55,4 @@ Good candidates for the knowledge base:
 
 - [Getting Started](../getting-started.md) — Create your first project
 - [Prompting Guide](./prompting.md) — Write prompts that make the most of your business context
-- [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [Connectors](../connectors/index.md) — Wire your app into forms, analytics, and sign-on
