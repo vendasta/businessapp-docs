@@ -4,7 +4,7 @@ sidebar_label: Calendar Views
 description: View your team's schedule, filter by team member or service, and book, reschedule, or cancel meetings directly from the My Meetings calendar.
 sidebar_position: 5
 tags: [meetings, crm, team, calendar]
-keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, timezone, general availability, saved view, remembered filters]
+keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, calendar source mark, multi-host meetings, timezone, general availability, saved view, remembered filters]
 brand: business-app
 product: crm
 audience: smb
@@ -85,6 +85,12 @@ From the same panel you can:
 
 Each team member and service type has its own color so you can read a packed calendar at a glance. Choose from 27 options per member: 9 base colors across regular, light, and bold intensities.
 
+## Multi-host meetings
+
+A meeting with two or more hosts shows a multi-host mark on its card in Column, Day, and Week views. Hover over the mark to see how many hosts the meeting has. Meetings with a single host show no mark. Click the card to see the full host list in the detail panel.
+
+The multi-host mark and the calendar source mark can appear on the same card without hiding the meeting title.
+
 ## Multi-service bookings
 
 When a client books multiple services in a single session, the calendar shows them as linked. Click any one of the events and the detail panel lists the complete appointment: every service, its time, duration, and assigned provider.
@@ -104,6 +110,12 @@ Blocked slots appear in Column, Day, and Week views and respect your sidebar fil
 Use the `Show blocked time slots` toggle at the bottom of the sidebar to show or hide blocked slots. Turn it off when you only want to see booked meetings.
 
 ![Blocked slot from a team member's connected external calendar](../img/my-meetings/calendar-blocked-slot.png)
+
+### Calendar source mark
+
+Each Blocked slot shows a small mark in its top-right corner that tells you which calendar it came from. The mark looks different for Google and Outlook calendars. Hover over it to see "Synced from Google Calendar" or "Synced from Outlook Calendar." The mark stays legible on every team member color and is announced by screen readers.
+
+Blocked slots stay anonymous and can't be opened, dragged, or rescheduled. Meetings booked through My Meetings never show a source mark. The marks appear and disappear together with the Blocked slots when you turn **Show blocked time slots** on or off.
 
 ### Show or hide blocked time
 
@@ -178,6 +190,18 @@ All linked services in that booking move by the same time offset, so their relat
 Blocked slots represent busy time from a team member's connected Google or Outlook calendar. Both busy and out-of-office statuses appear as blocked, non-bookable time. The actual event title is never shown, so personal calendar details stay private.
 
 Blocked slots appear in Column, Day, and Week views and respect your sidebar filters. You can hide them with the `Show blocked time slots` toggle at the bottom of the sidebar.
+</details>
+
+<details>
+<summary>How do I tell which calendar a blocked slot came from?</summary>
+
+Look for the small mark in the top-right corner of the slot. Hover over it to see whether the slot was synced from Google Calendar or Outlook Calendar.
+</details>
+
+<details>
+<summary>How do I know which meetings have more than one host?</summary>
+
+Meetings with two or more hosts show a multi-host mark on the card. Hover over the mark to see the number of hosts, or click the card to see the full host list.
 </details>
 
 <details>
