@@ -113,6 +113,18 @@ Yes, in typical setups search engines can index Vibe sites. For best results, in
 Turn off the SEO-section indexing toggles for that project. You can also publish a `robots.txt` that disallows all crawlers when robots.txt controls are available.
 </details>
 
+<details>
+<summary>Is my Vibe site indexed by search engines, and how do I keep a draft site out of search?</summary>
+
+A published site is not indexed right away, because search engines do not know about it until you submit your sitemap. To keep a mockup out of search, open the SEO settings and turn off generating the files that tell search engines to index the site. Any public site can still be found, but the odds are low if nothing links to it.
+</details>
+
+<details>
+<summary>How do I rebuild my website in Vibe without losing my search rankings?</summary>
+
+Ask Vibe to clone your existing site so it captures the theme, content, and layout. Vibe generates `llms.txt`, `robots.txt`, and `sitemap.xml` files for you. Keep the same URL paths as your old site so existing links do not break.
+</details>
+
 ## Next Steps
 
 - [Project Settings](./project-settings.md) — Configure your project's SEO, knowledge, connectors, and more

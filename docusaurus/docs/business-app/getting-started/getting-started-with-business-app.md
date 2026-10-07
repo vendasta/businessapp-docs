@@ -197,6 +197,8 @@ You can use Business App in your preferred language.
 
    ![Preferred language list](img/preferred_language_list.png)
 
+Some items keep their original wording in every language. These include product names set by your provider, the names and descriptions of AI capabilities, and the names of your knowledge sources.
+
 [Back to checklist](#getting-started-checklist)
 
 ---
