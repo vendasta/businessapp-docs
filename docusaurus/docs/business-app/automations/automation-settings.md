@@ -34,7 +34,8 @@ You can edit goals and run settings in edit mode only.
 
 A goal is an optional condition that tells an automation when it has done its job. When a contact meets the goal, the automation stops instead of running its remaining steps.
 
-Goals are useful when the point of an automation is to prompt someone to take an action. For example, if an automation sends a reminder to verify an account, a goal lets the automation stop once the contact has verified, so they don't keep receiving emails they no longer need.
+Goals are useful when the point of an automation is to prompt someone to take an action. Once a contact has taken that action, the automation stops, so they don't keep receiving messages they no longer need.
+
 Set a goal if you want an automation to stop as soon as its purpose is achieved. Skip it if you want the automation to always run every step.
 
 ### What run settings are
