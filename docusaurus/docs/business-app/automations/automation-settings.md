@@ -1,9 +1,12 @@
 ---
 title: Automation settings
-sidebar_position: 4
+sidebar_position: 5
 description: Configure how and when your automations run with entry settings and error handling options.
 tags: [automation, settings, configuration]
 keywords: [automation settings, entry settings, error handling, automation configuration, workflow settings]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 # Automation settings
@@ -16,6 +19,39 @@ Each automation has a Settings tab where you control how and when your workflow 
 2. Open an automation
 3. Select the **Settings** tab
 4. Configure entry settings and error handling options
+
+## Open goals and run settings from the editor
+
+While you edit an automation, you can open goals and run settings directly from the editor.
+
+- **Add goal:** Select **Add goal** to open the goal form in a modal.
+- **View goal:** When the automation has a goal, the button changes to **View goal**. Select it to open the goal in a modal.
+- **Run settings:** Select **Run settings** to open the automation's run settings in a modal.
+
+You can edit goals and run settings in edit mode only.
+
+### What a goal is
+
+A goal is an optional condition that tells an automation when it has done its job. When a contact meets the goal, the automation stops instead of running its remaining steps.
+
+Goals are useful when the point of an automation is to prompt someone to take an action. Once a contact has taken that action, the automation stops, so they don't keep receiving messages they no longer need.
+
+Set a goal if you want an automation to stop as soon as its purpose is achieved. Skip it if you want the automation to always run every step.
+
+### What run settings are
+
+Run settings control how an automation runs, such as how often it can run for the same contact and what happens when a step fails. Change them when the defaults don't fit how you want the automation to behave, for example to limit a welcome email to once per contact. For details on each option, see [Entry settings](#entry-settings) and [Error handling](#error-handling).
+
+Like triggers and actions, these modals can collapse into the right side panel.
+
+## Saving changes
+
+When you edit any settings tab, floating **Save** and **Cancel** buttons appear.
+
+- Select **Save** to apply your changes.
+- Select **Cancel** to discard your changes and return to the last saved settings.
+
+If you try to navigate away from a tab with unsaved changes, a confirmation dialog asks whether you want to save or discard them before you leave.
 
 ## Entry settings
 
@@ -50,7 +86,7 @@ Use "Skip and continue" for non-critical steps like logging or tagging. Use "Sto
 
 ## Timezone Configuration
 
-Set your preferred timezone for time-based automation steps and scheduling.
+Set your preferred timezone for time-based automation steps and scheduling. Timezones in the list are sorted by UTC offset. Your browser-detected timezone appears at the top of the list for quick selection, in addition to its place in the full list.
 
 ## Notification Settings
 
@@ -95,6 +131,6 @@ No. Error handling is set at the automation level and applies to all steps. If y
 
 ## Related resources
 
-- [Automation activity & history](automation-activity.md) - Monitor and troubleshoot automation runs
+- [Automation activity](automation-activity.md) - Monitor and troubleshoot automation runs
 - [Messaging steps](use-cases/action-messaging.md) - Configure SMS and email steps
 - [Automations overview](index.mdx) - Learn the basics of creating automations

@@ -1,9 +1,14 @@
 ---
 title: Triggers
 sidebar_position: 1
+brand: business-app
+product: automations
+audience: smb
 ---
 
 Automation triggers are specific actions that start your workflows. There are numerous triggers to choose from, and we're frequently adding more.
+
+The trigger area also displays your automation's description directly under the trigger name, so you (or anyone else reviewing the automation) can see what it does without opening the details panel. Add or edit this description from **Edit details** in the automation builder. See [Automations overview](index.mdx#getting-started) for where to set it.
 
 Some triggers are simple and are ready out-of-the-box. For example, the **A contact is created** trigger will start whenever any contact is created. Other triggers may require specifying trigger options. For example, the **A sales order status is changed** trigger requires that you specify the sales order origin and status that it's changed to.
 
@@ -92,6 +97,7 @@ Choose the most specific trigger that matches your use case and think about how 
 |---|---|
 | A contact communication summary is created | Fires when an AI-generated summary of a conversation is created for a contact |
 | Web Chat captures a lead | Fires when a visitor submits their information through the Web Chat widget |
+| An AI-handled call is transferred | Fires when your AI Voice Receptionist transfers or dispatches a call, with a Transfer outcome filter (Answered, Voicemail, No answer, Busy, Failed, Unknown), so you can notify the destination number or log the call details. See the [dispatch SMS recipe](./use-cases/dispatch-on-call-sms.md) |
 
 ### Manual
 

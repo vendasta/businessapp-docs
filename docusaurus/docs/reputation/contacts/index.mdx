@@ -2,6 +2,9 @@
 title: Contacts Overview
 description: Learn how to manage and organize your contact list in the Contacts tab of Reputation AI.
 sidebar_position: 1
+brand: business-app
+product: reputation-ai
+audience: smb
 ---
 
 The Contacts tab in Reputation AI displays all saved contacts along with their phone numbers, email addresses, and activity related to review requests. You can use this tab to manage contact records and track communication history for email and SMS requests.
@@ -130,4 +133,24 @@ Yes. The `Last review request email activity` or `SMS activity` fields show enga
 <summary>Does deleting a contact remove their history?</summary>
 
 Yes. Deleting a contact also deletes their associated review request data.
+</details>
+
+<details>
+<summary>What are the required fields for a CSV import?</summary>
+
+Each row in your CSV must include at least a first name, last name, and either an email address or a phone number. All three name and contact fields together are recommended for full functionality. Rows missing both email and phone will not import successfully.
+
+</details>
+
+<details>
+<summary>Is there a daily limit on how many review requests I can send?</summary>
+
+Email review requests have no daily limit. SMS review requests are limited to 150 per day. If you send a bulk SMS campaign to more than 150 contacts, the remaining messages automatically roll over and are sent on subsequent days — you do not need to resend them manually.
+
+</details>
+
+<details>
+<summary>How can I tell when a review request email was last sent to a contact?</summary>
+
+Open `Contacts` and check the `Last review request email sent` field for that contact. To see request and click activity over time, open `Analytics` and review the graph for review requests and clicks.
 </details>

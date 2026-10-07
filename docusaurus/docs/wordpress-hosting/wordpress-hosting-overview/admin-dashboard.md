@@ -3,13 +3,14 @@ title: "WordPress Dashboard Login"
 sidebar_label: "Admin Dashboard"
 sidebar_position: 1
 description: "Learn how to securely access the WordPress Admin Dashboard through WordPress Hosting and understand how the custom login system works."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
-
-# WordPress Dashboard Login
 
 WordPress Hosting provides secure access to the WordPress Admin Dashboard through a custom login system. This makes your site safer and easier to use by unifying user management and access control.
 
-## How It Works
+## How it works
 
 WordPress Hosting uses a **custom Single Sign-On (SSO) integration** that:
 
@@ -29,7 +30,7 @@ To log into the WordPress Dashboard:
 
 You'll be automatically logged in, and a WordPress user will be created to match your Business App account if one doesn't already exist.
 
-## Important Plugin Compatibility Notes
+## Important plugin compatibility notes
 
 :::warning
 Plugins that attempt to intercept or alter WordPress login behavior are **not recommended** and may interfere with WordPress Hosting's login mechanisms.
@@ -49,7 +50,7 @@ If a plugin prevents access to the WordPress dashboard, you can:
 If you need to disable WordPress Hosting's login override, you can toggle off **Hide Advanced Login** under **Advanced Tools** in the WordPress Hosting dashboard.
 :::
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>How does WordPress Hosting handle WordPress login?</summary>
@@ -60,7 +61,9 @@ WordPress Hosting uses a **custom SSO (Single Sign-On) integration** to provide 
 * Unauthenticated access attempts to `/wp-admin` are redirected or denied
 * This login method enhances site security and centralizes user management
 
-> **Note:** Plugins that alter or override login behavior—such as _Rename wp-login.php_—can interfere with WordPress Hosting's login system and **should not be used**. If a plugin locks you out, you can use **SFTP access** to remove it from your file system.
+:::note
+Plugins that alter or override login behavior, such as _Rename wp-login.php_, can interfere with WordPress Hosting's login system and **should not be used**. If a plugin locks you out, you can use **SFTP access** to remove it from your file system.
+:::
 
 To disable the WordPress Hosting login override, toggle off **Hide Advanced Login** under **Advanced Tools** in the WordPress Hosting dashboard.
 
@@ -82,7 +85,9 @@ There are two supported methods for updating a WordPress user's role:
 1. In WordPress, create a user **with the same email** as their Business App account
 2. Assign the desired role under **Users > Role**
 
-> **Important:** The email addresses **must match** exactly between Business App and WordPress. If they differ, a duplicate user will be created.
+:::warning
+The email addresses **must match** exactly between Business App and WordPress. If they differ, a duplicate user will be created.
+:::
 
 </details>
 

@@ -4,6 +4,10 @@ sidebar_label: Sessions and Ask Mode
 description: Use sessions to isolate focused objectives and Ask mode to brainstorm interactively before building in Vibe.
 tags: [vibe, ai, sessions, ask-mode]
 keywords: [vibe sessions, ask mode, vibe chat, vibe brainstorm, vibe context]
+sidebar_position: 12
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 ## What are Sessions and Ask mode?
@@ -14,7 +18,7 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 
 ## Why are Sessions and Ask mode important?
 
-- **Prevent context cross-contamination**: When you manage multiple objectives in one continuous conversation, important context can get mixed together or lost. Sessions keep each goal isolated so the AI is only working with what's relevant.
+- **Keep objectives organized**: When you manage multiple objectives in one continuous conversation, context from different goals can get mixed together. Sessions keep each goal isolated so the AI is only working with what's relevant to your current objective.
 - **Never lose your history**: Creating a new session doesn't erase past work. Every message from every session in a project stays visible in the **All messages** area.
 - **Brainstorm before you build**: Ask mode lets you think through an idea interactively before shifting into execution — no need to repeat yourself when you switch modes.
 - **Seamless transition from strategy to creation**: The understanding you build in Ask mode automatically carries forward into plan or build mode, so you move from conversation to creation without starting over.
@@ -22,9 +26,14 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 ## What's included?
 
 - **Session selector**: Create a new session or switch between existing sessions directly from the Vibe interface.
+- **Session search**: Search the session selector by keyword to find a past session by name or by anything said in it.
 - **All messages area**: Located beneath the session selector, this area shows the complete message history for every session in the project.
 - **Ask mode**: An interactive chat mode for back-and-forth discussion and brainstorming before execution.
 - **Mode switching**: Switch from Ask mode to plan or build mode when you're ready — the context you built in Ask mode carries forward automatically.
+
+### Long conversations
+
+Vibe holds onto what matters from earlier in the conversation — decisions and details from many prompts ago still inform the next change, so you don't need to restate them as a session grows. Sessions are for organization, not for working around a fading memory: create a new one when you want to keep separate workstreams isolated, not because a long conversation stops working.
 
 ## How to use Sessions and Ask mode
 
@@ -41,6 +50,14 @@ Ask mode introduces an interactive, back-and-forth discussion format inside a se
 
 To review messages from previous sessions, click the **All messages** area beneath the session selector. All project messages are visible here regardless of which session they belong to.
 
+### Search your sessions
+
+1. In the session selector, start typing in the search field.
+2. Matching sessions appear as you type, whether the match is in the session name or in a message sent or received within that session. The matching text is highlighted in the results.
+3. Click a result to open that session at the matching message.
+
+Search is scoped to the current project and isn't case-sensitive.
+
 ### Use Ask mode
 
 1. In the Vibe chat input, select **Ask** from the mode selector.
@@ -48,6 +65,16 @@ To review messages from previous sessions, click the **All messages** area benea
 3. When you're ready to build, switch the mode selector to **Plan** or **Build**. The context from your Ask conversation carries forward automatically.
 
 ![The Vibe chat input with Ask mode selected](./img/ask-mode-chat-input.png)
+
+### Run a change directly from Ask mode
+
+If you ask Vibe to make a change while you're in Ask mode, Vibe recognizes the request and shows a **Run this in Build** card in the chat.
+
+1. Click **Run this in Build**.
+2. Vibe switches to Build mode and resubmits your original message — you don't need to retype it.
+3. The mode selector updates to show **Build**, reflecting the mode your request actually ran in.
+
+The card doesn't appear if you're out of credits, or if Vibe is paused waiting on your answer to a clarifying question. Answer the question first, then ask again.
 
 ## Frequently Asked Questions
 
@@ -70,6 +97,12 @@ Create a new session when you're moving on to a new objective. This keeps the AI
 </details>
 
 <details>
+<summary>Does Vibe forget earlier parts of a long conversation?</summary>
+
+No. Vibe holds onto what matters from earlier in the conversation — decisions and details from many prompts ago still inform later changes. Create a new session to keep separate workstreams isolated, not because context runs out.
+</details>
+
+<details>
 <summary>What is Ask mode?</summary>
 
 Ask mode is an interactive, back-and-forth chat format that lets you brainstorm and refine ideas before committing to a plan or build. It's designed for exploring ideas rather than executing them.
@@ -88,13 +121,25 @@ Yes. The context and understanding built during an Ask mode conversation automat
 </details>
 
 <details>
+<summary>What happens if I ask Vibe to make a change while I'm in Ask mode?</summary>
+
+Vibe shows a **Run this in Build** card so you can run the request without manually switching the mode selector and retyping your message. Click the card and Vibe reruns your original message in Build mode.
+</details>
+
+<details>
 <summary>Do I need to activate anything to use Sessions and Ask mode?</summary>
 
-Vibe must be activated in the marketplace for your account before you can access these features.
+No. Sessions and Ask mode are built into every Vibe project — open Vibe from the AI section in Business App and they're ready to use.
 </details>
 
 <details>
 <summary>Where is the session selector?</summary>
 
 The session selector is available in the Vibe interface. The **All messages** area, which shows the full history for your project, is located directly beneath it.
+</details>
+
+<details>
+<summary>How do I find a past session?</summary>
+
+Use the search field in the session selector. Typing a keyword matches against session names and against the messages sent and received in each session, with the matching text highlighted. Click a result to jump straight to that session and message.
 </details>

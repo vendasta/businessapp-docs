@@ -2,6 +2,9 @@
 title: Error Handling & Troubleshooting
 sidebar_position: 5
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Error Handling & Troubleshooting
@@ -17,7 +20,6 @@ Vibe runs three layers of automatic error handling. Each layer catches a differe
 | **Type and compile checks** | TypeScript errors, missing imports, type mismatches | Inline, while Vibe is writing or editing files |
 | **Build verification** | Errors that only show up when the project is bundled | After file changes are written, before the preview updates |
 | **Verified completion** | Remaining type errors before the run declares success | After all file edits, before the COMPLETED block appears |
-| **Runtime auto-fix** | Errors that happen in the live preview after the app loads | When the app crashes or throws while you're using it |
 
 You don't have to enable any of this. It's the default behavior on every generation.
 
@@ -39,15 +41,13 @@ Before the `COMPLETED` block appears, Vibe runs a final type check against the f
 
 You'll see "verified with issues" in the COMPLETED block header when this happens. Treat it the same as a build error: copy the error text and send it back as a prompt, or roll back to a clean checkpoint.
 
-### Runtime auto-fix
+### Fixing an error yourself
 
-If the live preview throws a runtime error after the build succeeds — a state bug, a missing prop, a crash on an interaction — the preview detects the error and offers to fix it. A small banner appears in the preview with the error and a "Fix it" action.
+If the live preview throws a runtime error after the build succeeds — a state bug, a missing prop, a crash on an interaction — a banner appears over the preview with the error and a **Fix it for me** button. A failed build shows the same button on the Build Failed overlay.
 
-A few details to know:
+Click it and Vibe submits the error to the chat as a normal prompt, in Build mode. If a run is already in progress, the fix is queued and starts as soon as it's idle — nothing happens until you click. The banner stays up while the fix runs, showing a "working on a fix" state, and clears once the fixed preview loads.
 
-- Auto-fix runs at most twice for the same error before stepping aside.
-- There's a 10-second cooldown between attempts, so a tight crash loop doesn't spam the agent.
-- If you'd rather diagnose runtime errors yourself, you can opt out — your browser remembers the choice for that project.
+The button doesn't appear if you're out of credits, or if Vibe is paused waiting on your answer to a clarifying question — answer the question first, then click **Fix it for me** if the error is still there.
 
 ## When auto-fix can't recover
 
@@ -111,6 +111,7 @@ A blank preview panel or a stuck loading spinner usually means one of:
 - **The preview lost connection.** Click the refresh button in the top-right toolbar.
 - **There's a build error the chat missed.** Switch to Code mode to inspect files directly.
 - **The dev server needs a kick.** Send Vibe a prompt: "The preview isn't loading, can you check the build?"
+- **A previous prompt replaced the React entry point.** If an earlier change swapped `index.html` for static HTML, the app loses its React entry point and shows a blank screen. Prompt Vibe to "rebuild this as a proper React app" to restore it.
 
 ## Files don't seem to have changed
 
@@ -139,8 +140,33 @@ If a problem persists after auto-fix, manual prompts, and a checkpoint restore:
 - Restore the last checkpoint where things were working and try a smaller step from there.
 - Reach out to your trusted-tester program contact with what you tried and what error you saw.
 
+## If a generation fails while you have queued messages
+
+A failed generation automatically pauses your message queue, so a queued message doesn't fire into a broken state. Your queued messages stay intact — work through the recovery steps above, then resume the queue from the queue panel. See [Message Queue](./message-queue.md) for the full behavior.
+
+## Frequently asked questions (FAQs)
+
+<details>
+<summary>How long does it take for changes to appear on the live site after publishing?</summary>
+
+Changes typically appear within 30 seconds. Browser caching can add up to 20 minutes of delay — try a hard refresh (Ctrl+Shift+R / Cmd+Shift+R) or open the site in an incognito window if you don't see the latest version.
+</details>
+
+<details>
+<summary>My published site isn't updating even after I publish new changes. What should I do?</summary>
+
+First confirm you clicked **Publish** and not just saved your work. If the live site hasn't updated after a minute, do a hard refresh. If it still shows old content after 20 minutes, contact support and include your project URL.
+</details>
+
+<details>
+<summary>Why are some images missing on my Vibe site after I moved my domain from WordPress?</summary>
+
+Those images were linked from your old WordPress site instead of saved in the project, so they stopped loading when the domain moved. Re-upload the photos by pasting them into the Vibe chat and saying which project they are for. They are saved to the media library and will not break again. Your old host's `wp-content/uploads` folder or a backup has the originals.
+</details>
+
 ## Next Steps
 
 - [Planning](./plan-mode.md) — Understand how Vibe plans so you can catch misalignments early
 - [Prompting Guide](./prompting.md) — Write clearer prompts that produce fewer errors
+- [Message Queue](./message-queue.md) — Queue follow-up prompts while Vibe is generating
 - [Getting Started](../getting-started.md) — Review the full generation flow end to end
