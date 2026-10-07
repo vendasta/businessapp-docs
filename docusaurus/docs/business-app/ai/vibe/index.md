@@ -86,8 +86,8 @@ Vibe gives you two ways to add images to your app: generate them from a text des
 ### SEO & LLM Indexing
 Apps are served as fully rendered HTML that search engines and AI assistants can read. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and the SEO section in project settings puts indexing under your control. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
 
-### Code Editor
-Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
+### Code Editor (Pro)
+On the Pro plan, switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
 
 ### Checkpoints
 Vibe automatically creates checkpoints as you iterate — each checkpoint is a **git commit**. You can view diffs between versions and restore previous states if needed.
