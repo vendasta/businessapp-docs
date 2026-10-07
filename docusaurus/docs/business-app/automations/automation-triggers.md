@@ -76,7 +76,7 @@ Choose the most specific trigger that matches your use case and think about how 
 
 ### Activity triggers with multiple associations
 
-A call, email, meeting, or note activity can be linked to more than one company or contact — for example, an email sent to several contacts on the same deal. By default, these triggers only fire for the activity's primary association. Turn on **Fire for secondary associations** in the trigger's options to also run the automation for every other linked record.
+A call, email, meeting, or note activity can be linked to more than one company or contact — for example, an email sent to several contacts on the same deal. By default, these triggers fire only for the first association on the activity. Turn on **Fire for secondary associations** in the trigger's options to also run the automation for every other linked record.
 
 ### Custom Objects
 
