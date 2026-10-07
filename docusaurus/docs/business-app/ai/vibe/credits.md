@@ -67,6 +67,7 @@ Ideal for shipping apps with full business context. Includes all Free features, 
 
 Ideal for building professional apps with the full feature set. Includes all Standard features, plus:
 
+- Code editor (Code mode)
 - Download project (`.vibe.tar.gz`)
 - Supabase connector
 

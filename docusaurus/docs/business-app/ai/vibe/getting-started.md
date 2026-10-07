@@ -166,7 +166,7 @@ Use the tabs at the top to switch between views:
 
 - **Preview** — Live preview of your built application
 - **Design** — Visual editor for colors and element-level edits. See [Visual Editor](./guides/visual-editor.md).
-- **Code** — File explorer and code editor to view or manually edit source files
+- **Code** (Pro) — File explorer and code editor to view or manually edit source files
 
 ![Code mode with the file tree open and App.tsx loaded in the editor](./img/code-view.png)
 
