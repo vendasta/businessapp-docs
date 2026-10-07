@@ -38,20 +38,20 @@ You'll need the following from your DIDWW account:
 You also need a **Conversations Pro** or **Premium subscription**. The AI voice receptionist requires **Premium**. See [Phone Calls](../../conversations/phone-calls.mdx) for details.
 
 :::warning Registration and compliance
-Business App does not register your DIDWW number with carriers. Any registration/regulation required in your region is between you and DIDWW.
+Business App does not register your DIDWW number with carriers. Any registration or regulatory requirements in your region are between you and DIDWW.
 :::
 
 ## Step 1: Connect DIDWW in Business App
 
-1. In Business App, go to `Administration` → `Integrations` → `Browse integrations`.
-2. Select the **DIDWW** card and click `Connect`.
+1. In Business App, go to `Administration` → `Integrations` → `Browse`.
+2. Select the `DIDWW` card and click `Connect`.
 3. Enter your `SMS Trunk Username`, `SMS Trunk Password`, `API Key`, and `Phone Number`. Enter the phone number in international format, starting with `+` or `00`.
 4. Click `Add Connection`.
 
 Business App checks that the number belongs to your DIDWW account and then sets up call routing for it automatically. As soon as the connection shows as connected, calls to your DIDWW number are handled by Business App.
 
 :::info Connection failed?
-If the connection shows **Could not reach DIDWW**, delete the connection and connect again. If you see **This phone number is already connected to another account**, the number is in use elsewhere and cannot be connected twice.
+If the connection shows `Could not reach DIDWW`, delete the connection and connect again. If you see `This phone number is already connected to another account`, the number is in use elsewhere and cannot be connected twice.
 :::
 
 ## What changes when you connect
@@ -80,12 +80,12 @@ DIDWW does not allow SMS routing to be set up automatically, so these steps are 
 ### Incoming texts
 
 1. In the DIDWW User Panel, go to `SMS` → `SMS Trunks` and create an HTTP IN trunk with these settings:
-   - **Method**: `POST`
-   - **Request URL**: `https://platform-integrations-prod.apigateway.co/webhook/data-sync?source=DIDWW`
-   - **Source**: `DIDWW` (case-sensitive)
-   - **Authorization**: the inbound token provided to you by support. Requests without it are rejected.
-   - **Body type**: `JSON`
-   - **Request body**:
+   - `Method`: `POST`
+   - `Request URL`: `https://platform-integrations-prod.apigateway.co/webhook/data-sync?source=DIDWW`
+   - `Source`: `DIDWW` (case-sensitive)
+   - `Authorization`: the inbound token provided to you by support. Requests without it are rejected.
+   - `Body type`: `JSON`
+   - `Request body`:
 
      ```json
      {
@@ -112,9 +112,9 @@ Send a text to your DIDWW number from a mobile phone. It appears in Conversation
 ## Disconnect DIDWW
 
 1. Go to `Administration` → `Integrations` → `Manage`.
-2. Open the **DIDWW** connection and disconnect it.
+2. Open the `DIDWW` connection and disconnect it.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>Does connecting DIDWW remove the phone number Business App assigned to me?</summary>
@@ -131,7 +131,7 @@ No. Call routing is set up automatically when you connect. Only SMS requires the
 <details>
 <summary>Can the AI receptionist answer calls to my DIDWW number?</summary>
 
-Yes, with Conversations Premium. Set `When a call is received...` to **Answer with AI** under `Administration` → `Conversation Settings` → `Phone & SMS`.
+Yes, with Conversations Premium. Set `When a call is received...` to `Answer with AI` under `Administration` → `Conversation Settings` → `Phone & SMS`.
 </details>
 
 <details>
