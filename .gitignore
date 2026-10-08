@@ -155,3 +155,6 @@ docusaurus/broken_links_full_report.csv
 # Claude Code worktrees
 .claude/worktrees/
 
+# Claude Code local preview config
+.claude/launch.json
+
