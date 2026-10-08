@@ -15,9 +15,9 @@ Gingr is a dog daycare, kennel, and grooming software that modernizes and stream
 
 ## What this integration does
 
-- **Sync customer data** — When a reservation is checked out in Gingr, the associated customer data syncs automatically to your CRM.
-- **Automate review requests** — Automatically request reviews from customers after a checked-out reservation to build your online reputation.
-- **Customer communication** — Follow up with customers using campaigns and messaging, all from within Business App.
+- **Sync customer data**: When a reservation is checked out in Gingr, the associated customer data syncs automatically to your CRM.
+- **Automate review requests**: Automatically request reviews from customers after a checked-out reservation to build your online reputation.
+- **Customer communication**: Follow up with customers using campaigns and messaging, all from within Business App.
 
 ## How the integration works
 
@@ -61,12 +61,12 @@ Each business location requires its own setup:
 
 Check that the `Broadly request positive survey only` field in Gingr is set to `No/Off`. When set to `Yes/On`, the integration only triggers if the customer replied to the Gingr survey with positive feedback, which significantly reduces the number of contacts synced to your CRM.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>When does a contact appear in my CRM?</summary>
 
-A contact is created in your CRM when a reservation is checked out in Gingr. There is no manual step required — the sync happens automatically.
+A contact is created in your CRM when a reservation is checked out in Gingr. There is no manual step required. The sync happens automatically.
 
 </details>
 
@@ -80,7 +80,7 @@ If the customer is opted out of marketing emails, they will not be uploaded to y
 <details>
 <summary>Why does my connection show "Connection pending"?</summary>
 
-The connection status updates to **Connected** only after a reservation has been checked out in Gingr and customer data has synced at least once. Complete a test checkout in Gingr to confirm the connection is working.
+The connection status updates to `Connected` only after a reservation has been checked out in Gingr and customer data has synced at least once. Complete a test checkout in Gingr to confirm the connection is working.
 
 </details>
 
