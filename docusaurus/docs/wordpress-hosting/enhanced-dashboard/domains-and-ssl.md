@@ -82,7 +82,7 @@ You need to update a domain when its current value is one of these:
 Any CNAME ending in `host.websitepro.hosting` or `host.websiteprohosting.com` needs updating, including variations such as `www.host.websitepro.hosting`.
 
 :::info
-**A working site is not the same as a correctly pointed domain.** The CNAME values above still reach your site, so nothing appears broken. They do it through a shared address that is going away, and the domain stops working when it does.
+**A working site is not the same as a finished upgrade.** The CNAME values above still reach your site through the older setup, so nothing appears broken. Updating them moves the domain onto the upgraded platform, where the speed, uptime, and security improvements apply.
 :::
 
 A domain pointing anywhere else outside your panel's recommended values, such as an old host, a website builder, or a CDN, also needs updating.
@@ -175,9 +175,9 @@ Remove it. Click **Remove** on that domain's row in the Domain & SSL panel and c
 <details>
 <summary>My site works, so I don't think I need to update anything</summary>
 
-A domain can reach your site without pointing at it directly. Older records route visitors through a shared address, which works until that address is removed.
+A domain can keep reaching your site on the older setup without being connected to the upgraded one. Your visitors still get through, but the domain does not pick up the faster page loads, stronger uptime, or added security until its record is updated.
 
-Compare the **Current value** in your Domain & SSL panel against the **Recommend value**. If they are different, the domain needs updating, even if the site is working now.
+Compare the **Current value** in your Domain & SSL panel against the **Recommend value**. If they are different, the domain has not finished moving yet.
 </details>
 
 <details>
