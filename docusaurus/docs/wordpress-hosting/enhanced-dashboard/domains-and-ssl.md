@@ -61,7 +61,9 @@ In the **Domain & SSL** panel, a warning triangle marks each domain that needs u
 
 ![Domain & SSL panel with a warning triangle beside two domains, and an expanded row comparing the recommended A record value against the domain's current value](img/domains-ssl-dns-check.png)
 
-You need to update a domain when its current value is one of these addresses:
+You need to update a domain when its current value is one of these.
+
+**A record values**
 
 | Current value |
 | --- |
@@ -69,6 +71,19 @@ You need to update a domain when its current value is one of these addresses:
 | `104.154.100.138` |
 | `35.227.228.214` |
 | `104.198.16.142` |
+
+**CNAME values**
+
+| Current value |
+| --- |
+| `host.websitepro.hosting` |
+| `host.websiteprohosting.com` |
+
+Any CNAME ending in `host.websitepro.hosting` or `host.websiteprohosting.com` needs updating, including values carrying an extra prefix such as `www.host.websitepro.hosting`.
+
+:::info
+**Your site still loads on the CNAME values above.** Those records resolve today, so nothing looks wrong. They route your visitors through a shared address rather than connecting the domain to your site directly, and that shared address is being retired. Pointing the domain at the value in your panel is what keeps the site reachable afterwards.
+:::
 
 A domain pointing anywhere else outside your panel's recommended values, such as an old host, a website builder, or a CDN, also needs updating.
 
@@ -155,6 +170,14 @@ If you registered the domain recently, it can take up to 48 hours before any rec
 <summary>The notice lists a domain I don't use any more</summary>
 
 Remove it. Click **Remove** on that domain's row in the Domain & SSL panel and confirm. The notice stops counting it.
+</details>
+
+<details>
+<summary>My site loads fine, so why am I being asked to change anything?</summary>
+
+A domain can resolve correctly and still not be pointed at your site. Some older records send visitors through a shared address that is being retired. While that address exists the site loads normally, and once it goes the domain has nothing to resolve to.
+
+Compare the **Current value** in your Domain & SSL panel against the **Recommend value**. If they differ, the domain needs updating even though the site is up today.
 </details>
 
 <details>
