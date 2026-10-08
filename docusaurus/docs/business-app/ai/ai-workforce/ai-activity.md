@@ -21,14 +21,14 @@ The **AI Activity** page shows the work your AI Employees do for your business, 
 
 ## Open the AI Activity page
 
-From the `AI` menu, select `AI Activity`.
+From the `AI` menu, select `Activity`. The page is available in the web app, not the mobile app.
 
 ---
 
 ## What the page shows
 
-- **Jobs per day**: A chart of the jobs your AI Employees completed each day.
-- **Jobs per employee**: The number of jobs each AI Employee completed.
+- **Jobs per day**: A chart of the jobs your AI Employees completed each day, split by AI Employee.
+- **Jobs per employee**: The legend under the chart lists the number of jobs each AI Employee completed.
 
 Use the date range picker to choose how many days to view, from 7 to 90 days. The page shows 30 days by default.
 
