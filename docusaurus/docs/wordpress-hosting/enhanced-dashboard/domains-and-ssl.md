@@ -61,7 +61,7 @@ In the **Domain & SSL** panel, a warning triangle marks each domain that needs u
 
 ![Domain & SSL panel with a warning triangle beside two domains, and an expanded row comparing the recommended A record value against the domain's current value](img/domains-ssl-dns-check.png)
 
-You need to update a domain when its current value is one of these.
+You need to update a domain when its current value is one of these:
 
 **A record values**
 
@@ -79,10 +79,10 @@ You need to update a domain when its current value is one of these.
 | `host.websitepro.hosting` |
 | `host.websiteprohosting.com` |
 
-Any CNAME ending in `host.websitepro.hosting` or `host.websiteprohosting.com` needs updating, including values carrying an extra prefix such as `www.host.websitepro.hosting`.
+Any CNAME ending in `host.websitepro.hosting` or `host.websiteprohosting.com` needs updating, including variations such as `www.host.websitepro.hosting`.
 
 :::info
-**Your site still loads on the CNAME values above.** Those records resolve today, so nothing looks wrong. They route your visitors through a shared address rather than connecting the domain to your site directly, and that shared address is being retired. Pointing the domain at the value in your panel is what keeps the site reachable afterwards.
+**A working site is not the same as a correctly pointed domain.** The CNAME values above still reach your site, so nothing appears broken. They do it through a shared address that is going away, and the domain stops working when it does.
 :::
 
 A domain pointing anywhere else outside your panel's recommended values, such as an old host, a website builder, or a CDN, also needs updating.
@@ -173,11 +173,11 @@ Remove it. Click **Remove** on that domain's row in the Domain & SSL panel and c
 </details>
 
 <details>
-<summary>My site loads fine, so why am I being asked to change anything?</summary>
+<summary>My site works, so I don't think I need to update anything</summary>
 
-A domain can resolve correctly and still not be pointed at your site. Some older records send visitors through a shared address that is being retired. While that address exists the site loads normally, and once it goes the domain has nothing to resolve to.
+A domain can reach your site without pointing at it directly. Older records route visitors through a shared address, which works until that address is removed.
 
-Compare the **Current value** in your Domain & SSL panel against the **Recommend value**. If they differ, the domain needs updating even though the site is up today.
+Compare the **Current value** in your Domain & SSL panel against the **Recommend value**. If they are different, the domain needs updating, even if the site is working now.
 </details>
 
 <details>
