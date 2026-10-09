@@ -152,6 +152,10 @@ On the `Book appointments with calendar` panel, use the `Select event link to bo
 When the AI Voice Receptionist books an appointment, the caller isn't offered a choice of team member, and the receptionist doesn't ask the custom questions or collect the notes that appear on your booking page. See [AI booking limitations](../../crm/My%20meetings/groups-and-service-menus.md#ai-booking-limitations).
 :::
 
+:::note
+If your Voice Receptionist configuration shows a **Book appointments** capability with an **Upgrade available** badge, that is a legacy capability being deprecated. Switch to **Book appointments — Voice** (this capability) for the latest features and multi-service booking.
+:::
+
 #### Book multiple services in one call
 
 You can configure your AI Voice Receptionist to book multiple services in one call when those services are grouped in the same `Service Menu/Group`.
@@ -172,7 +176,7 @@ When this is enabled:
 
 #### Additional instructions for AI Voice Receptionist
 
-The **Additional Instructions** capability lets you give your AI Voice Receptionist custom guidance to shape its responses, tone, and logic. It sits at the top of the AI’s prompt stack to refine how it interacts with callers. 
+The **Additional Instructions** capability lets you give your AI Voice Receptionist custom guidance to shape its responses, tone, and logic. It sits at the top of the AI's prompt stack to refine how it interacts with callers. 
 
 To add additional instructions, click on the `Additional Instructions` tab in the Capabilities panel. From there you can write plain language instructions to your AI Voice Receptionist. 
 
@@ -242,7 +246,7 @@ For more details on knowledge sources and adding them to the Knowledge Base, see
 
 ## How do I test and monitor my AI Voice Receptionist? {#test-and-monitor-your-ai-voice-receptionist}
 
-Once your AI Voice Receptionist is set up, it’s important to test how it handles real calls and monitor its performance over time. This helps you ensure the AI is providing accurate answers, capturing leads, and delivering a professional experience to your callers. Regular testing and review will also help you spot opportunities to improve your AI’s responses as your business grows.
+Once your AI Voice Receptionist is set up, it's important to test how it handles real calls and monitor its performance over time. This helps you ensure the AI is providing accurate answers, capturing leads, and delivering a professional experience to your callers. Regular testing and review will also help you spot opportunities to improve your AI's responses as your business grows.
 
 ### Testing and reviewing the AI Voice Receptionist's responses
 
@@ -263,7 +267,7 @@ You can review call recordings and transcripts of the conversations your AI Voic
 By reviewing the call recording and transcripts regularly, you can see how your AI Voice Receptionist is performing and make adjustments to your configuration as needed. 
 
 :::note  
-If the AI Voice Receptionist is unable to capture a caller’s contact information, those calls may appear without all contact details in your Conversations. 
+If the AI Voice Receptionist is unable to capture a caller's contact information, those calls may appear without all contact details in your Conversations. 
 :::
 
 ---
