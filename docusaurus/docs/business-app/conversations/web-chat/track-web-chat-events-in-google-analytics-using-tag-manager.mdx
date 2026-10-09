@@ -8,7 +8,7 @@ product: conversations
 audience: smb
 ---
 
-Integrating Google Tag Manager (GTM) with your web chat can provide valuable insights into user interactions. This guide walks you through the process of tracking chat events using Google Tag Manager and Google Analytics.
+Integrating Google Tag Manager (GTM) with your web chat can provide valuable insights into visitor interactions. This guide walks you through the process of tracking chat events using Google Tag Manager and Google Analytics.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ If you haven't set up your web chat widget yet, start with the [Web Chat Setup &
 
 ## How web chat events work
 
-The web chat widget automatically sends events to the Google Tag Manager dataLayer when users interact with the chat. These events are pushed to the dataLayer using standard GTM event format, making them available for tracking and analytics.
+The web chat widget automatically sends events to the Google Tag Manager dataLayer when visitors interact with the chat. These events are pushed to the dataLayer using standard GTM event format, making them available for tracking and analytics.
 
 When a web chat event occurs, the widget executes code similar to:
 ```javascript
@@ -51,11 +51,9 @@ For each web chat event you want to track, create a Custom Event trigger in GTM:
 4. Leave `This trigger fires on` set to `All Custom Events` (unless you want to add additional conditions)
 5. Save the trigger with a descriptive name like "Web Chat - Start Chat"
 
-![Creating a new trigger in GTM](../img/inbox/web_chat_gtm_1.jpg)
+![Triggers list showing the four web chat Custom Event triggers](../img/inbox/web_chat_gtm_3.jpg)
 
-Repeat this process for each event you want to track:
-
-![Setting up a custom event trigger](../img/inbox/web_chat_gtm_2.jpg)
+Repeat this process for each event you want to track.
 
 ### 2. Configure Google Analytics event tags
 
@@ -69,11 +67,7 @@ For each trigger you created, set up a corresponding GA4 Event tag:
    - `event_category`: "web_chat"
    - `event_label`: The specific action (e.g., "start_chat", "lead_captured")
 
-![Creating a new GA4 event tag](../img/inbox/web_chat_gtm_3.jpg)
-
-Configure your event parameters:
-
-![Configuring event parameters](../img/inbox/web_chat_gtm_4.jpg)
+![Creating a GA4 Event tag](../img/inbox/web_chat_gtm_4.jpg)
 
 ### 3. Link your tags to triggers
 
@@ -84,19 +78,19 @@ Connect each GA4 Event tag to its corresponding Custom Event trigger:
 3. For example, link the "Web Chat Started" GA4 tag to the "Web Chat - Start Chat" trigger
 4. Save the tag
 
-![Linking tags to triggers](../img/inbox/web_chat_gtm_5.jpg)
+![Choosing a trigger for the tag](../img/inbox/web_chat_gtm_5.jpg)
+
+![GA4 Event tag with the four web chat triggers attached](../img/inbox/web_chat_gtm_6.jpg)
 
 ### 4. Preview and test your configuration
 
 Use the GTM preview mode to ensure your events are firing correctly:
 
-![Testing in preview mode](../img/inbox/web_chat_gtm_6.jpg)
+![Tag Assistant preview showing the web chat event firing the GA4 tag](../img/inbox/web_chat_gtm_7.jpg)
 
 ### 5. Publish your changes
 
-Once you've verified everything is working correctly in preview mode, publish your changes to make them live on your website:
-
-![Publishing changes in GTM](../img/inbox/web_chat_gtm_7.jpg)
+Once you've verified everything is working correctly in preview mode, publish your changes to make them live on your website.
 
 ## Verifying event tracking
 
@@ -116,7 +110,7 @@ The web chat widget emits the following Google Tag Manager events that can be tr
 | Start web chat | `inbx_web_chat_start_chat` | Emits when a new conversation starts with a visitor |
 | Lead Captured | `inbx_web_chat_lead_captured` | Emits when a lead is captured by the web chat |
 | Send Message | `inbx_web_chat_clicked_send_message` | Emits when a message is sent by a visitor |
-| Open Close Fab | `inbx_web_chat_clicked_fab_openclose_widget` | Emits when the chat window is opened or closed by a visitor |
+| Open or close chat window | `inbx_web_chat_clicked_fab_openclose_widget` | Emits when the chat window is opened or closed by a visitor |
 
 ## Troubleshooting
 
