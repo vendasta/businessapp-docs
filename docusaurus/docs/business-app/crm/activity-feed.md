@@ -4,6 +4,9 @@ sidebar_position: 4
 description: See real-time sales activities across your CRM, including emails, notes, calls, meetings, and tasks, all in one place.
 tags: [activity-feed, crm]
 keywords: [crm activity feed, sales activity, filter activities]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use the Activity Feed to see real-time updates on sales activities across your teams, including emails, notes, calls, meetings, and more, so you can stay informed and coach effectively.

@@ -4,6 +4,9 @@ sidebar_position: 3
 description: Manage organizations in your CRM. Create, enrich, and segment companies; associate contacts and opportunities; and log sales activity.
 tags: [companies, crm]
 keywords: [crm companies, company fields, logging activity, lead scoring, find accounts, owner, assign salesperson, salesperson]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use Companies to manage the organizations you sell to and serve. Keep company data accurate, track engagement, and associate contacts, opportunities, tasks, and lists.
@@ -15,7 +18,7 @@ Use Companies to manage the organizations you sell to and serve. Keep company da
 - Associate contacts and opportunities to see full context
 - Enrich with custom fields and segment for targeting
 
-## What’s Included with Companies?
+## What's Included with Companies?
 
 - **Companies table and profile** for searching, filtering, and editing records
 - **Default fields** (name, website, address, lifecycle, UTM, source, social URLs, etc.) and support for custom fields
@@ -63,13 +66,13 @@ Looking for a "Salesperson" or "Assign salesperson" field? The field is called *
 
 ### Take bulk actions on companies
 
-Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page.
+Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page. The header checkbox selects only the records on the current page — a banner confirms exactly how many are selected (for example, "25 of 143 selected") and gives you a link to select every matching record instead, with an option to clear the selection.
 
 ![Actions button](img/actions-button.png)
 
 Available actions include:
 
-- **Delete companies** — remove the selected companies from your CRM
+- **Delete companies** — remove the selected companies from your CRM. Type `Delete` in the confirmation modal to proceed.
 - **Add to static list** — add selected companies to a static list
 - **Start automation** — run an automation on the selected companies immediately
 
@@ -120,5 +123,3 @@ Yes. Platform actions like company creation, owner changes, and opportunity wins
 
 Yes. Use `Find Accounts` to search for local businesses and add them in bulk without duplicates.
 </details>
-
-

@@ -5,9 +5,10 @@ description: Download and set up the BusinessApp.io mobile app on iOS and Androi
 sidebar_position: 11
 tags: [mobile-app, ios, android, push-notifications]
 keywords: [mobile app, BusinessApp.io, iOS, Android, push notifications, mobile access]
+brand: business-app
+product: business-app-core
+audience: smb
 ---
-
-# Mobile App
 
 BusinessApp.io is the official mobile app that gives you access to your dashboard communications and key features on the go. The app provides push notifications for new leads and messages so you never miss important customer interactions.
 
@@ -18,16 +19,15 @@ BusinessApp.io is the official mobile app that gives you access to your dashboar
 
 ## System requirements
 
-- **iOS**: Requires iOS 13.0 or later
-- **Android**: Requires Android 5.1 or later
-- **App Size**: Approximately 219.5 MB
+- **iOS**: Requires a current version of iOS
+- **Android**: Requires a current version of Android
 
 ## Key benefits
 
-- **Push notifications** — Instant alerts for new leads, messages, and important updates
-- **Mobile access** — Access conversations, CRM, and key features anywhere
-- **Quick response** — Respond to customer inquiries immediately without waiting to reach a computer
-- **Lead management** — Never miss a lead with real-time mobile notifications
+- **Push notifications**: Instant alerts for new leads, messages, and important updates
+- **Mobile access**: Access conversations, CRM, and key features anywhere
+- **Quick response**: Respond to customer inquiries immediately without waiting to reach a computer
+- **Lead management**: Never miss a lead with real-time mobile notifications
 
 ## Login process
 
@@ -48,26 +48,21 @@ BusinessApp.io is the official mobile app that gives you access to your dashboar
 ## Available features
 
 ### Currently available
-- **Home** — Dashboard overview and key metrics
-- **Conversations** — Message management across all channels
-- **Executive Report** — Performance reports and analytics
-- **CRM** — Contact management and lead tracking
-- **AI Workforce** — AI employee management
-- **Reputation AI** — Review monitoring and responses
-- **Listings** — Business listing management (opens in browser)
-- **Administration** — Account settings (some pages open in browser)
-
-### Coming soon
-- My Products page
-- Automations
-- Campaigns
+- **Home**: Dashboard overview and key metrics
+- **Conversations**: Message management across all channels
+- **Executive Report**: Performance reports and analytics
+- **CRM**: Contact management and lead tracking
+- **AI Workforce**: AI employee management
+- **Reputation AI**: Review monitoring and responses
+- **Listings**: Business listing management (opens in browser)
+- **Administration**: Account settings (some pages open in browser)
 
 ## Progressive Web App (PWA)
 
 You can also add the web version of your dashboard to your home screen as a Progressive Web App:
 
-- **iOS (Safari):** Open your dashboard URL, tap **Share**, choose **Add to Home Screen**, and confirm the shortcut name.
-- **Android (Chrome):** Open your dashboard URL, tap the three-dot menu, select **Install App**, then confirm adding it to the home screen.
+- **iOS (Safari):** Open your dashboard URL, tap `Share`, choose `Add to Home Screen`, and confirm the shortcut name.
+- **Android (Chrome):** Open your dashboard URL, tap the three-dot menu, select `Install App`, then confirm adding it to the home screen.
 
 ## Troubleshooting
 
@@ -97,6 +92,9 @@ This is normal if your email is associated with multiple accounts. Select the co
 
 - Ensure notifications are enabled in your device settings
 - Check that the app has notification permissions
+- In Business App, go to `Settings` → `Notification Settings` and make sure `Instant email and In-App (when available)` is enabled. Under Business App, check that `New Leads from Conversations AI` and `Conversations AI Message Received` are enabled. See [notification settings](./notification_settings.mdx).
+- If you have access to more than one account, check the notification settings for each account
+- When testing with a new lead, make sure the visitor shares a name, phone number, or email. Chats without contact details stay in the `Anonymous Visitors` view and don't create a new lead. See [web chat](../conversations/web-chat/index.mdx).
 - Restart the app and try again
 
 </details>
@@ -104,9 +102,9 @@ This is normal if your email is associated with multiple accounts. Select the co
 <details>
 <summary>How do I enable notifications?</summary>
 
-1. Go to device **Settings** → **Notifications**
+1. Go to device `Settings` → `Notifications`
 2. Find BusinessApp.io in the app list
-3. Enable **Allow Notifications**
+3. Enable `Allow Notifications`
 4. Configure alert styles as preferred
 
 </details>
@@ -123,7 +121,9 @@ Not all web features are available on mobile yet. Core communication and CRM fea
 <details>
 <summary>Why do some pages open in the browser?</summary>
 
-Some complex features haven't been adapted for mobile yet. These open in your mobile browser automatically. Full mobile versions are planned for future releases.
+Some features, such as Listings and some Administration pages, open in your mobile browser instead of the app. This also applies when you tap a notification that links to one of these pages.
+
+Your mobile browser keeps its own sign-in, separate from the app, so it may ask you to log in.
 
 </details>
 

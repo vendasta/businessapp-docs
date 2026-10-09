@@ -5,6 +5,9 @@ sidebar_position: 4
 description: Centralize information for AI Employees to reference when answering customer questions.
 tags: [ai-employees, knowledge-base, setup]
 keywords: [AI Knowledge Base, AI data sources, business info for AI, AI training data, document upload]
+brand: business-app
+product: ai-knowledge-base
+audience: smb
 ---
 
 The Knowledge Base is a reference library your AI Employees can search when answering customer questions. When the AI determines a lookup would be helpful, it performs a semantic search and retrieves relevant content to inform its response.
@@ -22,7 +25,7 @@ Your Knowledge Base is a collection of information sources that your AI Employee
 - **Custom Documents** - Uploaded files like FAQs, price lists, policies, or procedures
 - **Manual Knowledge Entries** - Custom text you've written specifically for your AI team
 
-## How AI employees use knowledge
+## How AI Employees use knowledge
 
 When a customer asks a question, your AI Employee:
 1. Understands what the customer is asking
@@ -73,7 +76,7 @@ To build an effective Knowledge Base:
 4. **Test with your AI** - See how well your AI can answer questions with the current knowledge
 5. **Expand gradually** - Add more detailed information as you identify gaps
 
-A strong Knowledge Base is the foundation of effective AI Employee performance. The time you invest in creating comprehensive, accurate knowledge sources will pay dividends in better customer interactions and reduced manual support needs.
+A well-maintained Knowledge Base supports effective AI Employee performance. Keeping it comprehensive and accurate leads to better customer interactions and less need for manual support.
 
 ## Frequently asked questions
 
@@ -114,7 +117,7 @@ If certain information must appear in **every** AI response, add it to your AI E
 <details>
 <summary>How can I see what Knowledge Base content the AI used?</summary>
 
-You can audit any AI response by clicking **Explanation** on the message in Conversations. This shows exactly which Knowledge Base content was retrieved and referenced for that specific response.
+You can audit any AI response by clicking `Explanation` on the message in Conversations. This shows exactly which Knowledge Base content was retrieved and referenced for that specific response.
 
 </details>
 
@@ -125,7 +128,7 @@ Your AI Employee's prompt and instructions take priority over Knowledge Base con
 
 To avoid this:
 - Ensure your Knowledge Base content aligns with your AI's configured instructions
-- Use the **Explanation** feature to audit responses and identify conflicts
+- Use the `Explanation` feature to audit responses and identify conflicts
 - Keep authoritative business rules in your AI's instructions (via Capabilities) and factual reference information in the Knowledge Base
 
 </details>
@@ -145,5 +148,12 @@ If you update attributes in your Business Profile, save your changes so the upda
 The AI can explain frameworks or processes when customers ask about them directly. However, it won't automatically apply a described framework to unrelated questions unless the customer specifically asks it to.
 
 If you need your AI to consistently follow a specific process or framework across conversations, configure that behavior in your AI Employee's instructions using a [custom Capability](/business-app/ai/ai-capabilities/creating-custom-capabilities).
+
+</details>
+
+<details>
+<summary>How should I structure knowledge for an AI receptionist?</summary>
+
+Do not rely on one large spreadsheet or a full stale site crawl. Validate each source, remove outdated paths, and split content into smaller capability-specific or workflow-specific knowledge sources (for example booking, hours, cancellations, and general Q&A). Use clear structured prompts, then test each workflow.
 
 </details>

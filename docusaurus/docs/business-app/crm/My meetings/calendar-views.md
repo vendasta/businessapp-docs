@@ -1,0 +1,240 @@
+---
+title: Calendar Views
+sidebar_label: Calendar Views
+description: View your team's schedule, filter by team member or service, and book, reschedule, or cancel meetings directly from the My Meetings calendar.
+sidebar_position: 5
+tags: [meetings, crm, team, calendar]
+keywords: [calendar views, column view, day view, week view, month view, list view, year view, book a meeting, reschedule, blocked slots, calendar source mark, multi-host meetings, timezone, general availability, saved view, remembered filters]
+brand: business-app
+product: crm
+audience: smb
+---
+
+# Calendar Views
+
+The My Meetings calendar gives you a live, interactive view of your business's schedule. Filter by team member or event type, switch between six calendar views, and book, reschedule, or cancel meetings directly from the calendar without leaving the page.
+
+## Accessing the calendar
+
+1. Go to `CRM` > `My Meetings`.
+2. The calendar reopens in whichever view you last used, including a custom multi-day range. If you're new to My Meetings, it opens in **Column View** with all filters selected.
+3. Use the view switcher in the top toolbar to switch between views.
+4. Navigate dates with the arrow controls, or click any date on the mini calendar in the sidebar to jump directly.
+
+## Timezone indicator
+
+A timezone label is pinned in the top-left corner of the calendar timeline, above the hour column, in Column, Day, Week, and List views. It stays in place while you scroll the timeline vertically.
+
+The label shows the timezone set in your `Meeting settings`. Click the label to change the timezone the calendar displays meeting times in. Updating your timezone in `Meeting settings` updates the label and the calendar to match.
+
+## Choosing a view
+
+Pick the view that fits how you work:
+
+- **Column View (Teams)**: See your entire team side by side. Each column is a staff member; each row is a time slot. This is the fastest way to spot a gap across your whole team and find the right person for a new booking.
+- **Day View**: A single-day breakdown by hour. Use this when you need to focus on what's happening today without any noise from the rest of the week.
+- **Week View**: A seven-day grid for short-term planning. See how your team is spread across the week while keeping the detail of individual time slots.
+- **Month View**: A full-month overview with event density that adapts to available space. Good for spotting coverage patterns and planning ahead.
+- **List View**: A clean, chronological list of events grouped by day, ideal for a quick read of what's on the books without the visual weight of a grid.
+- **Year View**: Also available from the view switcher for a longer-range look at your schedule.
+
+## Column View: your whole team at a glance
+
+Column View arranges your staff as side-by-side columns on a shared time axis. You can see at a glance who is booked, who has availability, and where the gaps are. Drag column headers to rearrange the order to match how you think about your team.
+
+![Column View showing team members side by side](../img/my-meetings/calendar-column-view.png)
+
+## Filter what you see
+
+Use the left sidebar to control what appears on the calendar:
+
+- Check or uncheck individual team members to show or hide their bookings.
+- Right-click any team member's name and choose **Display only this** to isolate their schedule.
+- Switch between **Members** and **Events** with the toggle above the calendar grid to filter by service type instead of team member.
+- Use the search bar inside the Team Events section to find specific bookings by name.
+- Your own bookings are listed under `My meetings`; everyone else appears under `Team members`. Use the checkbox next to `Team members` to select or clear all team members at once, and the search icon beside it to find a team member by name.
+- The color swatch next to each team member or event type matches their events on the calendar.
+
+![Week View with the team member filter in the sidebar and the Show blocked time slots toggle](../img/my-meetings/calendar-week-view.png)
+
+Your view, filter tab, and sidebar selections are all remembered between sessions. This is saved to your account, so it follows you to a new tab or device. If you share a computer with someone else, each of you sees your own saved view and filters. If a saved filter points to a team member or event type that's since been removed, it's dropped silently and the rest of your filters still apply.
+
+## Book a meeting from the calendar
+
+Click any empty time slot to open the booking dialog with the time and date pre-filled. Select the event, date, time, and contact to book with. You are booking as the host. Drag across multiple slots before releasing to set a longer duration.
+
+You can select up to **5 event types** in a single booking, the same limit as services and groups.
+
+If the event type has a **Daily limit** configured and the day you select has already reached it, a warning icon appears in the booking dialog. Hover the icon to see a message explaining that the booking exceeds the daily meeting limit for that day. This is informational only — you can still complete the booking after seeing the warning. The icon only appears when a daily limit is set on the event type; there's no change to the booking dialog when no limit is configured.
+
+![Booking dialog opened from an empty calendar slot](../img/my-meetings/calendar-book-slot.png)
+
+## View, edit, reschedule, or cancel a meeting
+
+Click any event card to open a detail panel showing the client's name and contact information, service type, time and duration, assigned hosts, booking questions and answers, any notes the invitee added when booking, guest emails, meeting link, and room or location.
+
+From the same panel you can:
+
+- **Reschedule**: Click **Reschedule**, then pick a new time from the available slots. Conflicts are checked automatically.
+- **Cancel**: Cancel the booking directly from the detail panel.
+- **Edit client details**: Update the client's information without leaving the panel.
+
+![Event detail panel showing full booking information](../img/my-meetings/calendar-event-details.png)
+
+## Color-coded team and services
+
+Each team member and service type has its own color so you can read a packed calendar at a glance. Choose from 27 options per member: 9 base colors across regular, light, and bold intensities.
+
+## Multi-host meetings
+
+A meeting with two or more hosts shows a multi-host mark on its card in Column, Day, and Week views. Hover over the mark to see how many hosts the meeting has. Meetings with a single host show no mark. Click the card to see the full host list in the detail panel.
+
+The multi-host mark and the calendar source mark can appear on the same card without hiding the meeting title.
+
+## Multi-service bookings
+
+When a client books multiple services in a single session, the calendar shows them as linked. Click any one of the events and the detail panel lists the complete appointment: every service, its time, duration, and assigned provider.
+
+![Detail panel showing linked services in one appointment](../img/my-meetings/calendar-linked-services.png)
+
+:::note
+Dragging one event in a multi-service booking moves all linked services by the same time offset, so their relative spacing is always preserved.
+:::
+
+## Blocked time from connected calendars
+
+When a team member connects their Google or Outlook calendar, their external busy time appears on the My Meetings calendar as a non-bookable **Blocked** slot, so you won't accidentally book over a lunch break, focus block, or out-of-office. Each card shows "Blocked," the team member's name, and the time and duration, in their assigned color at low opacity. The actual event title is never shown, keeping personal calendar details private.
+
+Blocked slots appear in Column, Day, and Week views and respect your sidebar filters. Both **busy** and **out-of-office** statuses are treated as blocked.
+
+Use the `Show blocked time slots` toggle at the bottom of the sidebar to show or hide blocked slots. Turn it off when you only want to see booked meetings.
+
+![Blocked slot from a team member's connected external calendar](../img/my-meetings/calendar-blocked-slot.png)
+
+### Calendar source mark
+
+Each Blocked slot shows a small mark in its top-right corner that tells you which calendar it came from. The mark looks different for Google and Outlook calendars. Hover over it to see "Synced from Google Calendar" or "Synced from Outlook Calendar." The mark stays legible on every team member color and is announced by screen readers.
+
+Blocked slots stay anonymous and can't be opened, dragged, or rescheduled. Meetings booked through My Meetings never show a source mark. The marks appear and disappear together with the Blocked slots when you turn **Show blocked time slots** on or off.
+
+### Show or hide blocked time
+
+To hide Blocked slots, turn off **Show blocked time slots** at the bottom of the calendar sidebar. It's on by default, and your choice is saved for the next time you sign in.
+
+This setting is yours alone and changes only what you see, including a team member's blocked time on shared views like Column View — not theirs. It doesn't affect booking: busy time from a connected calendar is always excluded from bookable availability, whether the toggle is on or off.
+
+## Hours outside general availability
+
+Hours that fall outside a person's [General availability](./index.md#meeting-settings) appear with a greyed background, so you can see at a glance which hours are within normal bookable hours and which aren't. The treatment matches General availability per day of the week: if a day isn't enabled, the entire day appears greyed; if hours are set for only part of a day, the hours before and after that window are greyed.
+
+When you view your own calendar, the greyed hours reflect your own General availability. When you view a team member's calendar, the greyed hours reflect that team member's own General availability.
+
+Greying is a visual indicator only. It doesn't restrict booking. You can still click into a greyed slot and book a meeting there if you choose.
+
+This treatment appears in Column, Day, and Week views, alongside and visually distinct from **Blocked** slots from a connected external calendar. Both can appear on the same calendar at the same time.
+
+## Good to know
+
+- **Inactive team members stay visible.** Deactivated staff appear in a separate group in the sidebar so you can still review historical bookings. New bookings cannot be assigned to inactive members, and the calendar flags any existing bookings that need to be reassigned.
+- **Conflict detection includes buffer time.** Each service type can be configured with setup or teardown buffer minutes. The calendar accounts for these when evaluating whether a drop destination is available.
+- **Cross-column reassignment requires confirmation.** In Column View, dropping an event onto a different staff member's column opens a confirmation dialog before the provider change is saved.
+- **The date always resets to today.** Your view type and filters are remembered, but the calendar always opens on the current day or period rather than a past date you were looking at.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Which calendar view opens by default?</summary>
+
+The calendar reopens in whichever view you last used. If you're new to My Meetings, it opens in Column View. You can switch to Day, Week, Month, List, or Year view using the view switcher in the top toolbar.
+</details>
+
+<details>
+<summary>How many event types can I select in a single booking?</summary>
+
+You can select up to 5 event types in a single booking, the same limit that applies to services and groups.
+</details>
+
+<details>
+<summary>What does the warning icon in the booking dialog mean?</summary>
+
+It means the event type has a daily meeting limit configured and the day you selected has already reached it. Hover the icon for details. This is informational only — you can still complete the booking.
+</details>
+
+<details>
+<summary>How do I see only one team member's schedule?</summary>
+
+Right-click that team member's name in the sidebar and choose **Display only this** to isolate their schedule.
+</details>
+
+<details>
+<summary>Will the calendar remember my view and filters the next time I open it?</summary>
+
+Yes. Your last selected view (including a custom multi-day range), filter tab, and sidebar selections are all remembered between sessions. This is saved to your account, so it follows you to a new tab or device.
+</details>
+
+<details>
+<summary>What happens if a saved filter points to a deleted team member or event type?</summary>
+
+It's ignored silently, and your other saved filters still apply.
+</details>
+
+<details>
+<summary>What happens if I drag one event in a multi-service booking?</summary>
+
+All linked services in that booking move by the same time offset, so their relative spacing is always preserved.
+</details>
+
+<details>
+<summary>What are the blocked slots on my calendar?</summary>
+
+Blocked slots represent busy time from a team member's connected Google or Outlook calendar. Both busy and out-of-office statuses appear as blocked, non-bookable time. The actual event title is never shown, so personal calendar details stay private.
+
+Blocked slots appear in Column, Day, and Week views and respect your sidebar filters. You can hide them with the `Show blocked time slots` toggle at the bottom of the sidebar.
+</details>
+
+<details>
+<summary>How do I tell which calendar a blocked slot came from?</summary>
+
+Look for the small mark in the top-right corner of the slot. Hover over it to see whether the slot was synced from Google Calendar or Outlook Calendar.
+</details>
+
+<details>
+<summary>How do I know which meetings have more than one host?</summary>
+
+Meetings with two or more hosts show a multi-host mark on the card. Hover over the mark to see the number of hosts, or click the card to see the full host list.
+</details>
+
+<details>
+<summary>Can I hide blocked time slots?</summary>
+
+Yes. Turn off **Show blocked time slots** at the bottom of the calendar sidebar. This only changes what you see — it doesn't affect anyone else's view or your bookable availability.
+</details>
+
+<details>
+<summary>Why are some hours greyed out on my calendar?</summary>
+
+Greyed hours fall outside the relevant person's General availability: your own when viewing your calendar, or a team member's when viewing theirs. This is a visual indicator only; you can still click into a greyed slot and book a meeting there.
+</details>
+
+<details>
+<summary>Can I still see bookings for a deactivated team member?</summary>
+
+Yes. Deactivated staff appear in a separate group in the sidebar so you can review historical bookings. New bookings can't be assigned to inactive members, and the calendar flags any existing bookings that need to be reassigned.
+</details>
+
+<details>
+<summary>Does the calendar account for setup or teardown time between bookings?</summary>
+
+Yes. If a service type is configured with setup or teardown buffer minutes, the calendar accounts for that buffer time when checking whether a drop destination is available.
+</details>
+
+<details>
+<summary>Which timezone does the calendar show?</summary>
+
+The timezone set in your `Meeting settings`. A label pinned in the top-left corner of the timeline shows the current timezone in Column, Day, Week, and List views. Click the label to change the timezone the calendar displays meeting times in.
+</details>
+
+## Related articles
+
+- [My Meetings](./index.md)
+- [Team Booking Links](./team-booking-links.md)

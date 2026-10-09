@@ -1,11 +1,22 @@
 ---
 title: Introduction to Vibe
+description: "Vibe is an AI app builder in Business App. Describe what you want and Vibe builds a working web app, landing page, or dashboard."
 sidebar_position: 1
+brand: business-app
+product: vibe
+audience: smb
+content_type: overview
+kb_id: KB-00009
+answer_snippet: "Vibe is an AI-powered app builder built into Business App. Describe what you want in plain English, and Vibe builds a working web application with live preview and connections to your Business App tools."
+doc_owner: vibe
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
 # Introduction to Vibe
 
-Vibe is an AI-powered app builder built into Business App. Describe what you want in plain English, and Vibe builds it — a working web application with real design, live preview, and direct connections to the Business App tools you already use.
+Vibe is an AI-powered app builder built into Business App. Describe what you want in plain English, and Vibe builds a working web application with live preview and connections to your Business App tools. Apps include real design and connect to tools like your CRM, forms, and analytics.
 
 You don't need to know how to code. You describe what you want; Vibe handles everything else.
 
@@ -21,7 +32,7 @@ You don't need to know how to code. You describe what you want; Vibe handles eve
 
 **Anyone with an idea and no developer** — If you have something in mind — a client portal, a pricing calculator, a company presentation — Vibe is where you start. No technical setup, no waiting on anyone else.
 
-## What You Can Build
+## What can I build with Vibe? {#what-you-can-build}
 
 Here are examples of real builds to give you a sense of what Vibe produces:
 
@@ -33,7 +44,7 @@ Here are examples of real builds to give you a sense of what Vibe produces:
 
 See [Use Cases](./use-cases/index.md) for step-by-step walkthroughs of these and more.
 
-## Key Features
+## What are Vibe's key features? {#key-features}
 
 ### Chat-Based Development
 Describe what you want in the chat panel. Vibe interprets the request and generates or modifies the application. Send follow-up messages to refine the result. Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean. On projects with multiple collaborators, each prompt shows the sender's avatar, name, and a timestamp.
@@ -42,7 +53,10 @@ Describe what you want in the chat panel. Vibe interprets the request and genera
 Every project has a built-in knowledge base pre-loaded with the location's Business Profile — name, services, hours, contact info, brand voice, and FAQs. When you ask Vibe to build a Contact page or add an About section, it fills in real details about the business instead of placeholder text. You can extend the knowledge base from the project settings page by adding URLs, files, or notes. See [Business Knowledge](./guides/business-knowledge.md).
 
 ### Connectors
-Vibe wires your generated app into the Business App tools you already use — so what you build isn't a standalone tool, it's connected to your business. The Forms connector captures submissions and routes them directly to your CRM. The Analytics connector pulls live performance data into custom dashboards. The Single sign-on connector gates a members area behind your customers' existing Business App accounts. See [Connectors](./connectors/index.md).
+Vibe wires your generated app into the Business App tools you already use — so what you build isn't a standalone tool, it's connected to your business. Forms captures submissions and routes them directly to your CRM. Analytics pulls live performance data into custom dashboards. Single sign-on gates a members area behind your customers' existing Business App accounts. CRM surfaces your contacts and opportunities, Webchat embeds live chat, Reviews showcases your real customer reviews, and Supabase connects your app to a database. See [Connectors](./connectors/index.md).
+
+### Tags
+Add free-form tags to a project from its Project Settings page to categorize it. Tags are stored in lowercase, with spaces converted to hyphens. The search box on the projects list matches against tags as well as name and description, so tagged projects are easy to find again. See [Tags](./getting-started.md#tags).
 
 ### Planning
 Every generation produces a structured plan that drives the run. The plan, the architecture, and the file list are captured in the `COMPLETED` block at the end of each run so you can verify what was built. See [Planning](./guides/plan-mode.md).
@@ -57,6 +71,9 @@ Toggle **Visual edits** in the chat composer to flip design mode on and off. Whe
 "browse pre-built color themes, toggle between light and dark mode, and make targeted edits..."
 -->
 
+### Device Preview
+Preview your app at phone, tablet, and desktop sizes without leaving the editor, or pop the preview out to a full window to see it on its own.
+
 ### Clarifying Questions
 When your request is ambiguous, Vibe pauses and asks before going further. Questions arrive as structured prompts — pick a chip, confirm yes or no, or type a one-line answer. The conversation resumes the moment you respond.
 
@@ -66,19 +83,22 @@ Attach images to your prompts to show Vibe what you want. Use the microphone but
 ### Images
 Vibe gives you two ways to add images to your app: generate them from a text description, or import your own. Generated images are hosted and embedded automatically — no setup required. See [Images](./guides/image-generation.md).
 
-### Code Editor
-Switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
+### SEO & LLM Indexing
+Apps are served as fully rendered HTML that search engines and AI assistants can read. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and the SEO section in project settings puts indexing under your control. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
+
+### Code Editor (Pro)
+On the Pro plan, switch to Code mode to view and edit the generated source code directly. Browse the file tree, open files in tabs, and make manual edits that sync with the preview.
 
 ### Checkpoints
-Vibe automatically creates checkpoints as you iterate. You can view diffs between versions and restore previous states if needed.
+Vibe automatically creates checkpoints as you iterate — each checkpoint is a **git commit**. You can view diffs between versions and restore previous states if needed.
 
 ### Credits
 Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
 
-### Custom Domains (Professional)
-On the Professional plan, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
+### Custom Domains (Standard and Pro)
+On the Standard and Pro plans, you can publish your app to a domain you own. Vibe automatically provisions an SSL certificate after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
-## How It Works
+## How does Vibe build an app? {#how-it-works}
 
 When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
 
@@ -88,7 +108,7 @@ When you send a prompt, Vibe's orchestrator coordinates multiple AI agents:
 4. **Generation** — A generation agent writes the code file by file, applying the theme, generating images, and editing components in real time. Type-check and build verification run continuously to catch and fix issues. You can stop the run at any time by clicking **Stop** — the last working preview stays on screen and your prompt returns to the input.
 5. **Validation** — Vibe takes a screenshot of the rendered preview and runs a build check. Before declaring the task complete, Vibe runs a final type check and self-corrects any remaining issues — up to three rounds. If they can't be resolved, the run finishes with a "verified with issues" status instead of a silent claim of success.
 6. **Preview** — The live preview updates as soon as the build is clean.
-7. **Iteration** — You review the result and send follow-up prompts to refine it. Runtime errors in the preview trigger an auto-fix banner.
+7. **Iteration** — You review the result and send follow-up prompts to refine it. If a runtime error appears in the preview, or a build fails, click **Fix it for me** to send the error to chat. See [Error Handling & Troubleshooting](./guides/troubleshooting.md).
 
 All of this happens through a streaming interface — status updates, file changes, screenshots, and the live preview update in real time.
 
@@ -119,7 +139,7 @@ When a prompt is ambiguous, Vibe pauses and asks clarifying questions before gen
 <details>
 <summary>How do I undo a change I don't like?</summary>
 
-Vibe creates checkpoints automatically as you iterate. Open the Checkpoints panel from the toolbar to view diffs and restore any previous version.
+Vibe creates checkpoints (git commits) automatically as you iterate. Open the Checkpoints panel from the toolbar to view diffs and restore any previous version.
 
 </details>
 
@@ -127,6 +147,48 @@ Vibe creates checkpoints automatically as you iterate. Open the Checkpoints pane
 <summary>What languages can I use in the chat?</summary>
 
 Vibe's chat supports multiple languages, including French, Spanish, German, Italian, Czech, Chinese, Japanese, and Korean.
+
+</details>
+
+<details>
+<summary>Are Vibe sites SEO-friendly?</summary>
+
+Yes. Vibe apps are served as fully rendered HTML that search engines and AI assistants can read directly. Every publish generates `robots.txt`, `sitemap.xml`, and `llms.txt` automatically, and you control indexing from the SEO section in project settings. See [SEO & LLM Indexing](./guides/seo-and-indexing.md).
+
+</details>
+
+<details>
+<summary>Can I download my project and host it somewhere else?</summary>
+
+Yes, on the Pro plan. Click `Download` in the toolbar to get the project's source code and its full checkpoint history. Images Vibe generated for you stay on their hosted URLs rather than travelling in the archive, and the guide below covers how to bring them along. Projects are built on open frameworks — React, TanStack Start, Vite, and Tailwind CSS — so they run on any host that supports Node.js. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
+
+</details>
+
+<details>
+<summary>Can Vibe notify me when a generation finishes?</summary>
+
+Yes. Turn on notifications for the current run from the chat composer and allow notifications when your browser asks for permission. Your browser then sends a notification as soon as the generation completes, so you can switch to another tab without missing it.
+
+</details>
+
+<details>
+<summary>Can Vibe build a WordPress site?</summary>
+
+No. Vibe apps are built on React, TanStack Start, Vite, and Tailwind CSS rather than WordPress. On the Pro plan, you can download the source code and host it on any host that supports Node.js.
+
+</details>
+
+<details>
+<summary>How do Vibe credits work?</summary>
+
+Vibe uses credits to measure AI activity. Your subscription includes a credit allowance, and you can purchase additional credit packs when you need more. See [Credits](./credits.md).
+
+</details>
+
+<details>
+<summary>Can I publish a Vibe app to my own domain?</summary>
+
+Yes, on the Standard and Pro plans. Vibe provisions an SSL certificate automatically after DNS verification is complete. See [Custom Domains](./guides/custom-domain.mdx).
 
 </details>
 
@@ -140,8 +202,10 @@ Vibe's chat supports multiple languages, including French, Spanish, German, Ital
 - [Planning](./guides/plan-mode.md) — Understand how Vibe plans before it builds
 - [Images](./guides/image-generation.md) — Generate images from a prompt or import your own
 - [Connectors](./connectors/index.md) — Wire your app into forms, analytics, and sign-on
+- [SEO & LLM Indexing](./guides/seo-and-indexing.md) — Understand how your app stays visible to search engines and AI assistants
 - [Prompting Library](./guides/prompting-library.md) — Ready-made prompts for common use cases
 - [Troubleshooting](./guides/troubleshooting.md) — Fix common errors and unexpected behavior
 - [Use Cases](./use-cases/index.md) — See real examples of what you can build with Vibe
+- [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md) — Get the full source code on the Pro plan and run it on any Node.js host
 - [Credits](./credits.md) — Understand how credits work and how to purchase more
-- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Professional)
+- [Custom Domains](./guides/custom-domain.mdx) — Publish your app to a domain you own (Standard and Pro)
