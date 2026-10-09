@@ -38,7 +38,7 @@ If an action can be performed via an API, it can likely become a custom capabili
 
 ## Step-by-step: creating a custom capability
 
-### Step 1: access custom capability settings
+### Step 1: Access custom capability settings
 
 1. Navigate to <AISparkleIcon /> `AI` → `AI Workforce` in your Business App dashboard.
 2. Select the AI Employee you want to enhance (or create a new Custom AI Employee).
@@ -71,7 +71,7 @@ You can create entirely custom AI Employees with specialized capabilities:
 2. **Add a description**: Write a brief explanation of what this capability does.
    - Example: "Checks product availability in real-time inventory system"
 
-### Step 3: create the capability prompt
+### Step 3: Create the capability prompt
 
 1. In the `Prompt` field, define when and how the AI should use this capability.
 2. You can start with placeholder text ("TBD") and refine it after setting up tools.
@@ -81,7 +81,7 @@ You can create entirely custom AI Employees with specialized capabilities:
 Consider the prompt as instructions for when you hire an employee. Be specific about when they should use this skill and how to handle different scenarios.
 :::
 
-### Step 4: configure tools
+### Step 4: Configure tools
 
 1. Click `Add Tool` to define the technical implementation.
 2. Choose your tool type:
@@ -91,7 +91,7 @@ Consider the prompt as instructions for when you hire an employee. Be specific a
 3. Fill in the required tool fields (see [Tool Configuration Reference](#tool-fields-explained)).
 4. Add multiple tools if your capability requires several API calls.
 
-### Step 5: test and refine
+### Step 5: Test and refine
 
 1. Click `Save` to store your capability configuration.
 2. Test the capability by chatting with your AI Employee.

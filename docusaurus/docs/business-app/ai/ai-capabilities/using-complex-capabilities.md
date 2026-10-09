@@ -71,12 +71,12 @@ You must have **Campaigns Pro** enabled to access this capability.
 
 ### Using this capability
 
-Chat with your AI Employee that has the **Create email template** capability assigned. Describe the email you want to create, and the AI will generate a template for you.
+Chat with your AI Employee that has the `Create email template` capability assigned. Describe the email you want to create, and the AI will generate a template for you.
 
 ### Finding your email templates
 
 After your AI Employee creates a template:
 
-1. Navigate to `Campaigns` in the right navigation panel.
+1. Navigate to `Campaigns` in the left navigation panel.
 2. Click `Templates`.
 3. Your created templates appear under `My templates`.
