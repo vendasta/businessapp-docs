@@ -19,7 +19,7 @@ Before you begin:
 
 ## Step 1: Access AI Employee configuration
 
-1. Navigate to `AI` > `AI Workforce` in your Business App dashboard.
+1. Navigate to `AI` → `AI Workforce` in your Business App dashboard.
 2. Locate the AI Employee you want to configure.
 3. Click the `Configure` button next to the employee's name.
 
@@ -110,7 +110,7 @@ Lead Capture: Only collect contact information after the customer shows interest
 Get contact info when needed.
 ```
 
-:::tip Best Practices for Instructions
+:::tip Best practices for instructions
 - Be specific about trigger conditions
 - Include error handling guidance
 - Use clear, actionable language
@@ -135,7 +135,7 @@ Capability prompts have no version history. Before making substantial edits, cop
 
 ### Tailor a capability to specific channels
 
-Your AI Employee knows which channel it's responding on, so a capability's instructions can reference the channel by name. This is useful when a task should behave differently depending on where the customer reaches out — for example, collecting fewer details for lead capture over SMS than by email:
+Your AI Employee knows which channel it's responding on, so a capability's instructions can reference the channel by name. This is useful when a task should behave differently depending on where the customer reaches out, for example, collecting fewer details for lead capture over SMS than by email:
 
 ```
 When capturing a lead on SMS, ask for name and phone number only, one question at a time, and keep each message short.
@@ -227,8 +227,6 @@ Track key metrics to measure capability effectiveness:
 ## Next steps
 
 - **Create Custom Capabilities**: [Learn how to build custom capabilities](creating-custom-capabilities.md) for specialized business needs
-- **Advanced Prompting**: Explore prompt engineering techniques for better capability performance
-- **Integration Setup**: Connect external systems to enhance capability functionality
 
 Need help with specific capability configurations? Check our [troubleshooting guide](#troubleshooting-common-issues) or contact support for personalized assistance.
 
