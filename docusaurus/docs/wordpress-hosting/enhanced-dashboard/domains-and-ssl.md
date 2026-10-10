@@ -61,7 +61,9 @@ In the **Domain & SSL** panel, a warning triangle marks each domain that needs u
 
 ![Domain & SSL panel with a warning triangle beside two domains, and an expanded row comparing the recommended A record value against the domain's current value](img/domains-ssl-dns-check.png)
 
-You need to update a domain when its current value is one of these addresses:
+You need to update a domain when its current value is one of these:
+
+**A record values**
 
 | Current value |
 | --- |
@@ -69,6 +71,19 @@ You need to update a domain when its current value is one of these addresses:
 | `104.154.100.138` |
 | `35.227.228.214` |
 | `104.198.16.142` |
+
+**CNAME values**
+
+| Current value |
+| --- |
+| `host.websitepro.hosting` |
+| `host.websiteprohosting.com` |
+
+Any CNAME ending in `host.websitepro.hosting` or `host.websiteprohosting.com` needs updating, including variations such as `www.host.websitepro.hosting`.
+
+:::info
+**A working site is not the same as a finished upgrade.** The CNAME values above still reach your site through the older setup, so nothing appears broken. Updating them moves the domain onto the upgraded platform, where the speed, uptime, and security improvements apply.
+:::
 
 A domain pointing anywhere else outside your panel's recommended values, such as an old host, a website builder, or a CDN, also needs updating.
 
@@ -155,6 +170,14 @@ If you registered the domain recently, it can take up to 48 hours before any rec
 <summary>The notice lists a domain I don't use any more</summary>
 
 Remove it. Click **Remove** on that domain's row in the Domain & SSL panel and confirm. The notice stops counting it.
+</details>
+
+<details>
+<summary>My site works, so I don't think I need to update anything</summary>
+
+A domain can keep reaching your site on the older setup without being connected to the upgraded one. Your visitors still get through, but the domain does not pick up the faster page loads, stronger uptime, or added security until its record is updated.
+
+Compare the **Current value** in your Domain & SSL panel against the **Recommend value**. If they are different, the domain has not finished moving yet.
 </details>
 
 <details>
