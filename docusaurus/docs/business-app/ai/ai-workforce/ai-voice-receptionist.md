@@ -496,6 +496,12 @@ For the most up-to-date region availability, see the [AI Workforce Overview](ai_
 </details>
 
 <details>
+<summary>Can I use Voice AI without SMS registration?</summary>
+
+Yes. Voice AI does not require SMS / A2P registration. A2P applies to sending outbound SMS messages, not to Voice AI itself.
+</details>
+
+<details>
 <summary>What are the calendar limits when the AI books meetings?</summary>
 
 The built-in meeting scheduler checks availability on a linked Google or Microsoft calendar. A third-party system may sync customer data without full two-way calendar sync. Confirm the exact integration, and use an approved connector or workaround when round-trip calendar availability is required.

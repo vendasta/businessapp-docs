@@ -252,3 +252,9 @@ Go to `Conversations AI` > `Conversations AI Settings`, click **Configure Web Ch
 
 Go to `Settings` > `Notification Settings` and choose instant emails, daily digests, or both. Expand each product section to choose which events trigger notifications.
 </details>
+
+<details>
+<summary><strong>Why does my last-login date stay old even though I use the app?</strong></summary>
+
+The last-login timestamp updates only when you sign in with a username and password or an external sign-in provider (for example Google or Microsoft). It does not track last activity. If you already have an active session and are not asked to sign in again, the date does not change.
+</details>

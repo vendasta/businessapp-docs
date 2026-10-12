@@ -48,6 +48,15 @@ If your account has one or more webchats, Vibe shows a searchable list so you ca
 - Vibe can list, select, and embed webchats, and create a new one when you have none — it can't edit, delete, or otherwise reconfigure an existing webchat. Make those changes in [Web Chat](/business-app/conversations/web-chat).
 - Vibe doesn't manage which domains a webchat is allowed to load on. Review or restrict that in Web Chat if needed.
 
+## Frequently Asked Questions
+
+<details>
+<summary>Why does the chat widget connector show the wrong business for my Vibe project?</summary>
+
+Vibe only lists chat widgets for the business the project belongs to. To use a widget from another business, give Vibe that widget's ID or install code, or build the site in the business that owns the widget.
+
+</details>
+
 ## Next Steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
