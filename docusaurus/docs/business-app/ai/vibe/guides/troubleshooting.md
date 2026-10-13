@@ -158,6 +158,12 @@ Changes typically appear within 30 seconds. Browser caching can add up to 20 min
 First confirm you clicked **Publish** and not just saved your work. If the live site hasn't updated after a minute, do a hard refresh. If it still shows old content after 20 minutes, contact support and include your project URL.
 </details>
 
+<details>
+<summary>Why are some images missing on my Vibe site after I moved my domain from WordPress?</summary>
+
+Those images were linked from your old WordPress site instead of saved in the project, so they stopped loading when the domain moved. Re-upload the photos by pasting them into the Vibe chat and saying which project they are for. They are saved to the media library and will not break again. Your old host's `wp-content/uploads` folder or a backup has the originals.
+</details>
+
 ## Next Steps
 
 - [Planning](./plan-mode.md) — Understand how Vibe plans so you can catch misalignments early

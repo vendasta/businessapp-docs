@@ -1,21 +1,21 @@
 ---
 title: "View Divi form submissions in WordPress"
 sidebar_label: "Form Submissions"
-description: "Where can I access form submissions? \n Once the plugin is activated, a new menu item called  \"Divi Form DB\"  will appear in the WordPress dashboard. \n How do I"
+description: "Find and view Divi form submissions in the WordPress dashboard using the Divi Form DB menu."
 brand: business-app
 product: wordpress-hosting
 audience: smb
 ---
 
-### Where can I access form submissions?
+## Where can I access form submissions?
 
-Once the plugin is activated, a new menu item called `Divi Form DB` will appear in the WordPress dashboard.
+Once the Divi Contact Form DB plugin is activated, a new menu item called `Divi Form DB` appears in the WordPress dashboard.
 
-### How do I view a form submission?
+## How do I view a form submission?
 
 Go to `Divi Form DB` and click `View Form Submission` to see the details.
 
-### Why can't I see all form fields?
+## Why can't I see all form fields?
 
 The free version only supports fields with IDs: **name, email, and message**. To view all fields, upgrade to the **Pro version**. If you're using Pro and still facing issues, submit a support request.
 **For more details, check Divi's official article:**

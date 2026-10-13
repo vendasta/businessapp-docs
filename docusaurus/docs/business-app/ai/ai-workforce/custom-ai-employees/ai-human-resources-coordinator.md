@@ -52,7 +52,7 @@ The AI Human Resources Coordinator is only as accurate as its knowledge sources.
 
 ### Step 1: Create the AI Employee
 
-1. Navigate to `AI` > `AI Workforce` in your Business App dashboard
+1. Navigate to `AI` → `AI Workforce` in your Business App dashboard
 2. Click `Create Custom AI Employee`
 3. Set a name (for example, "HR Assistant" or a name that fits your team's culture) and upload an avatar image
 4. Click `Save` to create the employee profile
@@ -61,7 +61,7 @@ The AI Human Resources Coordinator is only as accurate as its knowledge sources.
 
 The role prompt defines the AI's persona, scope, and behavioral rules. This one establishes a friendly, policy-first HR assistant that defaults to redirecting rather than guessing.
 
-1. Open the `Purpose` field in the AI Employee configuration
+1. Open the `Role` field in the AI Employee configuration
 2. Copy and paste the following role prompt:
 
 ```markdown
@@ -115,7 +115,7 @@ You follow a three-level routing framework for every employee question.
 If the employee asks a general, non-personalized question about company policies, leave, benefits, onboarding, offboarding, payroll timelines (not individual amounts), or HR processes:
 
 - Answer directly using the information in your knowledge base.
-- If an official policy document exists for this topic, link to it. Do not only paraphrase — always provide the link when one is available.
+- If an official policy document exists for this topic, link to it. Do not only paraphrase: always provide the link when one is available.
 - Ask a follow-up question to keep the conversation moving if it helps clarify the employee's situation.
 - Tone is friendly and reassuring.
 
@@ -125,7 +125,7 @@ If the employee asks about their individual pay, personal performance, a role-sp
 
 - Do not attempt to answer from inference or partial information.
 - Acknowledge the question warmly, explain that you cannot access personal records, and direct the employee to their HR contact (People Partner, HR Manager, or equivalent role you have configured for your team).
-- Example transition: "That's a question I'll need to pass to a member of the HR team — they'll have access to your specific details. [Name or contact method] is the right person to reach out to."
+- Example transition: "That's a question I'll need to pass to a member of the HR team, because they have access to your specific details. [Name or contact method] is the right person to reach out to."
 
 ## Level 3: Out of Scope (Different Team)
 
@@ -139,7 +139,7 @@ If the employee asks about IT support, product questions, legal matters, finance
 
 - **Default to redirect when uncertain.** If you are unsure whether a topic is general HR or personal, treat it as Level 2 and redirect.
 - **No guessing on policy.** If the knowledge base does not contain the answer, say so explicitly and point to the HR team rather than inferring.
-- **No action on behalf of the employee.** Never submit a form, send a message, or open a ticket for the employee. You can tell them what to do and where to go — that is all.
+- **No action on behalf of the employee.** Never submit a form, send a message, or open a ticket for the employee. You can tell them what to do and where to go. That is all.
 - **Language follows the employee.** If the conversation begins in a language other than English, respond in that language.
 ```
 
@@ -236,7 +236,7 @@ Leave the Sheet empty for now. The script will populate it on first run.
 
 ### Step 2: Add the Apps Script
 
-1. In your Google Sheet, open `Extensions` > `Apps Script`
+1. In your Google Sheet, open `Extensions` → `Apps Script`
 2. Delete any default code in the editor
 3. Paste the following script:
 
@@ -363,7 +363,7 @@ The `syncDriveToSheet` function needs to run on a schedule so the Sheet stays cu
    - **Time of day:** Select a low-traffic window (for example, 1am–2am or 3am–4am)
 4. Click `Save`
 
-The trigger will now run once daily and update the Sheet with any documents that have changed since the last sync.
+The trigger now runs once daily and updates the Sheet with any documents that have changed since the last sync.
 
 :::tip
 Run `syncDriveToSheet` manually the first time by selecting it from the function dropdown and clicking `Run`. This populates the Sheet immediately without waiting for the first scheduled trigger.
@@ -373,7 +373,7 @@ Run `syncDriveToSheet` manually the first time by selecting it from the function
 
 The AI Employee needs a URL to query the Sheet at conversation time. Deploying the script as a web app creates that endpoint.
 
-1. In the Apps Script editor, click `Deploy` > `New deployment`
+1. In the Apps Script editor, click `Deploy` → `New deployment`
 2. Click the gear icon next to `Type` and select `Web app`
 3. Configure the deployment:
    - `Description`: Give it a name you'll recognize (for example, "HR Policy Knowledge API")
@@ -401,7 +401,7 @@ When an employee asks a question about a specific HR policy, leave type, benefit
 
 Pass the employee's topic as the search term (for example: "maternity leave", "PTO", "onboarding", "resignation").
 
-Use the returned document name and link to cite the policy in your answer. Include the link so the employee can read the full document. Use the snippet to inform your answer, but do not paste it verbatim — summarize clearly and link to the source.
+Use the returned document name and link to cite the policy in your answer. Include the link so the employee can read the full document. Use the snippet to inform your answer, but do not paste it verbatim: summarize clearly and link to the source.
 
 If no policy is found, say so and redirect the employee to the HR team rather than answering from general knowledge.
 ```

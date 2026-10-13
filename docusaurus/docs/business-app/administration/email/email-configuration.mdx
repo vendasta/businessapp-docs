@@ -39,7 +39,7 @@ By default, when you are sending any email through the Business App platform, yo
 
 Setting up SPF, DKIM, and DMARC is like showing an ID for your emails. It proves to email companies that you are genuine, making them more likely to trust and deliver your emails.
 
-Configure your email settings via `Administration` → `Email Configuration`.
+Configure your email settings via `Administration` → `Email configuration`. Under `Advanced email settings` → Sender domain, choose `Use default authenticated email domain` or `Use my own email domain`. To add a domain, use `Authorize a domain` in the Email domains area.
 
 :::info
 Business App uses HTTPS link branding for tracking links in campaign emails, which helps reduce deliverability warnings from some providers. Authenticating your domain further improves inbox placement and reputation.
@@ -49,7 +49,7 @@ Business App uses HTTPS link branding for tracking links in campaign emails, whi
 
 Anti-spam laws such as CAN-SPAM and GDPR require marketing and review request emails to include a physical mailing address in their footer. By default, this address comes from your [Business Profile](../business_profile.mdx).
 
-If you'd rather show a different address, for example a mailing address instead of your service area, turn on `Use physical address override` under `Administration` → `Email Configuration` → `Display Address` and enter the address to show:
+If you'd rather show a different address, for example a mailing address instead of your service area, turn on `Use physical address override` under `Administration` → `Email configuration` → `Display Address` and enter the address to show:
 
 - `Address` and `Additional Address Line`
 - `City`
@@ -113,7 +113,7 @@ Use the shared domain to get started quickly. For ongoing sending, we strongly r
 <details>
 <summary>Why can't I update my send-from name and address?</summary>
 
-You must be signed in directly to Business App (not through a link that opens it for you). Then go to `Administration` → `Email Configuration` and update the email address and sender name there.
+You must be signed in directly to Business App (not through a link that opens it for you). Then go to `Administration` → `Email configuration` and update `Sender name` and `Reply Address` under Sender and reply settings.
 </details>
 
 <details>
@@ -125,5 +125,5 @@ DNS record updates usually take 24–48 hours to propagate. Verification may sho
 <details>
 <summary>What if my emails go to spam?</summary>
 
-Check `Administration` → `Email Configuration` for verification status. Red exclamation points mean a record is not verified. Fix the DNS records (SPF, DMARC, DKIM) with your domain provider and wait for propagation.
+Check `Administration` → `Email configuration` for verification status. Red exclamation points mean a record is not verified. Fix the DNS records (SPF, DMARC, DKIM) with your domain provider and wait for propagation.
 </details>

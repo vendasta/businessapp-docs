@@ -180,3 +180,9 @@ If you’ve checked these and the issue persists, additional investigation may b
 
 </details>
 
+<details>
+<summary>Is the Executive Report data live?</summary>
+
+No. The Executive Report shows historical data for the selected date range. For live listing or performance data, check the relevant product dashboard directly, such as the Local SEO dashboard for listing metrics.
+
+</details>

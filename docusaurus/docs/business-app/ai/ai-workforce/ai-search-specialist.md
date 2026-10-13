@@ -1,16 +1,16 @@
 ---
 title: AI Search Specialist
 sidebar_label: AI Search Specialist
-description: The AI Search Specialist generates a brand visibility report and drafts a blog post targeting your weakest-performing AI search result.
-tags: [ai-workforce, seo, brand-visibility]
-keywords: [ai search specialist, brand visibility report, ai search optimization, blog draft, ai workforce]
+description: The AI Search Specialist generates a brand visibility report, drafts a blog post targeting your weakest-performing AI search result, and keeps your business description up to date.
+tags: [ai-workforce, seo, brand-visibility, local-seo, description]
+keywords: [ai search specialist, brand visibility report, ai search optimization, blog draft, ai workforce, business description, profile optimization, keyword tracking]
 brand: business-app
 product: ai-workforce
 audience: smb
 ---
 
-:::info Trusted testers
-The AI Search Specialist is available to trusted testers. It is not yet available to all Business App users.
+:::info Beta
+The AI Search Specialist is currently in beta and is available to trusted testers. It is not yet available to all Business App users.
 :::
 
 ## What is the AI Search Specialist?
@@ -42,6 +42,32 @@ The AI Search Specialist is an AI employee that reviews how your business appear
 
 The generated blog draft saves into Social Marketing as a draft, so you review, edit, and publish it the same way as any other blog content in Social Marketing.
 
+## Automatic business description updates
+
+The AI Search Specialist also keeps your business description competitive. Once a month, it checks whether your description is up to date and refreshes it when your services or tracked keywords have changed in ways it doesn't yet reflect.
+
+### How it works
+
+It evaluates your description against:
+
+- Your website and business profile content (services, specialties, and voice)
+- Your tracked keywords and their search performance
+- Your business category
+
+It updates your description only when there is something meaningful to add, such as new services on your website, a niche specialty not yet mentioned, or tracked keywords that are missing from your current description. If your description already reflects your services and keywords accurately, it stays unchanged until the next review cycle. Changes are not made just because time has passed.
+
+### When your description is updated
+
+When your description is refreshed:
+
+1. You receive an **AI Search Specialist: Profile Description Updated** notification.
+2. The notification links to your Business Profile so you can review the change.
+3. Your updated description syncs automatically to Google, Bing, Apple, and Facebook.
+
+### Tracked keywords
+
+The AI Search Specialist considers only the keywords you are actively tracking. It skips keywords you are not tracking. It reinforces keywords where you already rank well and incorporates keywords you are pursuing that are not yet in your description.
+
 ## Frequently Asked Questions
 
 <details>
@@ -71,7 +97,7 @@ Yes. You request a brand visibility report by chatting with the AI Search Specia
 <details>
 <summary>Is the AI Search Specialist available to everyone?</summary>
 
-No. The AI Search Specialist is currently available to trusted testers only.
+No. The AI Search Specialist is currently in beta and is available to trusted testers only.
 </details>
 
 <details>
@@ -85,6 +111,36 @@ No. The generated blog post saves as a draft in Social Marketing for you to revi
 
 Ask the AI Search Specialist for the report. An explicit request is required before the report is generated.
 
+</details>
+
+<details>
+<summary>Do I need to configure anything for description updates?</summary>
+
+No setup is required. The AI Search Specialist runs the description check automatically. To get the most value from it, keep your website up to date and track the keywords most relevant to your business.
+</details>
+
+<details>
+<summary>How often does it check my description?</summary>
+
+Once a month.
+</details>
+
+<details>
+<summary>Will it change my description every month?</summary>
+
+No. It updates your description only when there is something meaningful to add. If your description already reflects your current services and tracked keywords, no change is made.
+</details>
+
+<details>
+<summary>What if I recently updated my own description?</summary>
+
+If your description was updated within the last 90 days, the AI Search Specialist leaves it unchanged.
+</details>
+
+<details>
+<summary>What if I don't agree with the update?</summary>
+
+You can review the updated description in your Business Profile and edit it at any time.
 </details>
 
 ## Screenshots

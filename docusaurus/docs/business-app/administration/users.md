@@ -34,27 +34,32 @@ Each row also has an actions menu (three dots) with options to `Edit contact inf
 
 Results load 25 at a time. You can change the page size to 50 or 100 at the bottom of the table, so the list stays responsive even for businesses with a large number of users.
 
-## Invite a user
+## Invite users
+
+You can invite up to five people at a time.
 
 1. On the `Users` page, click `Invite user`.
-2. In the `Add team member` sidebar, fill in the following fields:
-   - `First name` (optional)
-   - `Last name` (optional)
-   - `Email` (required)
-   - `Phone` (optional)
-3. Under `Permissions`, choose what this user can access. Everything is selected by default. Uncheck anything you do not want this user to see.
-4. Click `Send`.
+2. In the `Users` field, type an email address and press Enter. Repeat for each person you want to invite.
+3. Optional: under `Customize users`, select a person to change their settings, then click `Save`:
+   - `Contact information`: `First name`, `Last name`, `Email`, `Phone`, and `Correspondence language`. The correspondence language sets the language this user sees in the platform and in their emails, including the onboarding email.
+   - `Permissions`: the tabs and apps this person can access. Use `Select all` or `Clear all` to change everything at once.
+   - `Email`: a `Custom greeting` that appears in this person's onboarding email (up to 1,000 characters).
+4. Click `Invite 1 user` or `Invite [count] users`.
 
-![The Add team member sidebar with First name, Last name, Email, and Phone fields, and a Permissions list of checked tab checkboxes below them](./img/users-invite-sidebar.png)
+Everyone you invite receives an onboarding email and full access unless you customize them. In the `Customize users` list, each person shows whether they `Can add and manage users`, so you can see at a glance who has access to `User Management`.
 
-The permissions list scrolls; the full set of what you can grant is described in [Set permissions](#set-permissions) below.
+The onboarding email invites each person to set a password and sign in, and summarizes the work already completed for your business.
 
-The email address must be a valid email format, and it is the only required field. The invited user receives an email with instructions to access your Business App.
+If an email address belongs to someone who already has an account elsewhere, they are added to your business using their existing account rather than a new one. If that person is already a user on this business, the panel shows `This person is already a user on this account` before you send, and they are not invited again.
 
-If the email address belongs to someone who already has an account elsewhere, they are added to your business using their existing account rather than a new one. If that person is already a user on this business, you receive an error message instead and no changes are made.
+If some invitations cannot be completed, the panel shows how many failed and keeps only those people in the list, so you can try again without re-entering everyone else.
 
 :::note
 The `Permissions` section only appears if you have permission to manage users. If it is not shown, the invite still works and the new user is created with access to everything.
+:::
+
+:::tip
+`Payments` is not part of the invite. Each new user starts with the default for `Payments`; change it afterwards with [Edit permissions](#edit-permissions).
 :::
 
 ## Set permissions
@@ -102,7 +107,6 @@ Only apps your business currently has appear in the list, sorted by name. Expire
 ### Payments
 
 If payments are enabled for your business, a `Payments` checkbox appears at the bottom of the list. It controls whether the user can manage payment settings and billing. This one is not a tab — it is a standalone permission, and it is on by default for every user.
-The invited user receives an email inviting them to set a password and sign in. The email also summarizes the work already completed for their business. If a user with that email address is already associated with your business, you receive an error message.
 
 ## Edit permissions
 
@@ -240,7 +244,7 @@ Yes. After removing a user, you can invite them again by clicking `Invite user` 
 <details>
 <summary>Is there a limit to how many users I can add?</summary>
 
-No. You can invite as many team members as you need.
+No. You can invite as many team members as you need. Each invite adds up to five people at a time, so for a larger team, send more than one invite.
 
 </details>
 

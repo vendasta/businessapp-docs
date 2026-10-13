@@ -20,9 +20,9 @@ Email subscription preferences let contacts choose which types of emails they re
 
 | Category | What's included |
 |:------|:---|
-| **Marketing** | Campaigns, newsletters, and promotions |
-| **Product notifications** | Platform and product updates |
-| **Website communications** | Website messages and order notifications |
+| **Marketing and promotional emails** | Campaigns, newsletters, and promotions |
+| **Product updates and platform communications** | Platform and product updates |
+| **Website communications and website order notifications** | Website messages and order notifications |
 | **Transactional** | Account, billing, contact form submissions, and lead notifications |
 
 Transactional emails cannot be disabled. They are required for account management and compliance.
@@ -33,7 +33,7 @@ When a contact clicks `Unsubscribe` in any eligible email, they are directed to 
 
 ![Unsubscribe preference page showing category toggles for Marketing, Product Notifications, and Website Communications](./img/unsubscribe-preference-page.png)
 
-Contacts can also choose to unsubscribe from all non-transactional emails at once. Changes take effect immediately.
+Contacts can also click the unsubscribe option in an email to stop receiving those emails. Changes take effect immediately.
 
 ## Resubscription
 

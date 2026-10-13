@@ -17,6 +17,7 @@ Custom objects are available with CRM AI Standard and Pro editions. See [CRM AI 
 ## What custom objects support
 
 - **Configurable fields**: text, number, date, dropdowns, and more
+- **Selection banner**: the record table shows exactly how many rows are selected and lets you select every matching record — not just the current page — with an option to clear the selection, the same as contacts and companies
 - **Bulk Import**: upload CSVs, map fields, and populate records at scale
 - **Automations**: trigger workflows on object create, update, list entry, or list exit — and update custom object fields from automation actions
 - **Smart lists**: segment custom object records with the same filter power as contacts and companies
@@ -80,6 +81,7 @@ Custom objects work seamlessly with automations and smart lists, enabling powerf
 
 - Update custom object fields
 - Retrieve associated contacts, companies, or opportunities
+- Start a campaign for the contacts associated with a custom object record
 - Send notifications or follow-up messages
 
 This supports vertical-specific workflows such as service reminders, asset management, demo tracking, and multi-step sales processes.
@@ -113,6 +115,20 @@ Create a **Demo** object linked to opportunities with fields like:
 - Who researched
 
 Automations can then update demo records or move opportunities forward based on booking events.
+
+### Follow-up campaigns
+
+Custom objects often relate to a contact rather than being a contact themselves, so you can start a campaign for the contacts associated with a custom object record instead of building a contact list.
+
+**Example: class enrollment business**
+
+A business creates a **Class** object to track which classes each contact's child attends.
+
+- **Automation**:
+  1. When a Class record is updated to "completed"
+  2. Start a campaign for the custom object, enrolling the parent or guardian contacts associated with that class record
+
+If a class record has no associated contact, the step is skipped and the reason appears in the automation activity feed.
 
 ## API support
 

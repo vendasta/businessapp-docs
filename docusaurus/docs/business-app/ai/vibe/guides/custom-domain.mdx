@@ -97,3 +97,15 @@ Your project continues to be available at its default URL.
 
 Publish the project. Publishing switches the live site to the new domain. The previous domain redirects to the new site. The domain list can look confusing because the publishing system controls which domain is live.
 </details>
+
+<details>
+<summary>Why does my old Vibe site address stop working after I rename it?</summary>
+
+Renaming a site releases its old address, and the old address does not redirect to the new one. Update any links or printed QR codes to use the new address.
+</details>
+
+<details>
+<summary>Why is my Vibe custom domain stuck in Provisioning or failing?</summary>
+
+Usually a DNS conflict is blocking the SSL certificate. In your DNS provider, check the `_acme-challenge` record: it must be a single CNAME with no other records (such as TXT records) using the same name. Add the domain to only one project, select `Verify` once, and then leave it alone, since removing and re-adding the domain restarts the certificate. Once DNS is correct, the certificate is usually issued within an hour. To change a custom domain, remove it and add the new one.
+</details>

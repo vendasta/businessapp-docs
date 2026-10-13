@@ -20,6 +20,30 @@ Each automation has a Settings tab where you control how and when your workflow 
 3. Select the **Settings** tab
 4. Configure entry settings and error handling options
 
+## Open goals and run settings from the editor
+
+While you edit an automation, you can open goals and run settings directly from the editor.
+
+- **Add goal:** Select **Add goal** to open the goal form in a modal.
+- **View goal:** When the automation has a goal, the button changes to **View goal**. Select it to open the goal in a modal.
+- **Run settings:** Select **Run settings** to open the automation's run settings in a modal.
+
+You can edit goals and run settings in edit mode only.
+
+### What a goal is
+
+A goal is an optional condition that tells an automation when it has done its job. When a contact meets the goal, the automation stops instead of running its remaining steps.
+
+Goals are useful when the point of an automation is to prompt someone to take an action. Once a contact has taken that action, the automation stops, so they don't keep receiving messages they no longer need.
+
+Set a goal if you want an automation to stop as soon as its purpose is achieved. Skip it if you want the automation to always run every step.
+
+### What run settings are
+
+Run settings control how an automation runs, such as how often it can run for the same contact and what happens when a step fails. Change them when the defaults don't fit how you want the automation to behave, for example to limit a welcome email to once per contact. For details on each option, see [Entry settings](#entry-settings) and [Error handling](#error-handling).
+
+Like triggers and actions, these modals can collapse into the right side panel.
+
 ## Saving changes
 
 When you edit any settings tab, floating **Save** and **Cancel** buttons appear.

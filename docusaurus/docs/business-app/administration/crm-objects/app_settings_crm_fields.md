@@ -12,7 +12,7 @@ CRM Fields allow you to add personalized data fields to your contact and company
 
 This feature is useful for businesses that want to go beyond standard fields like phone number or address. It helps centralize key contact or company details directly in your app, so you don’t have to manage separate spreadsheets or systems.
 
-![Custom Fields inside Administration](../img/administration_custom_field_contact.png)
+![CRM objects page with the Create field drawer open](../img/administration_custom_field_contact.png)
 
 ## Why are CRM fields important?
 
@@ -22,11 +22,11 @@ Custom fields let you tailor your system so it works for **your business**, keep
 
 ## What's included with CRM fields?
 
-- Custom field creation for **Contacts** and **Companies**
-- Multiple field types: `String`, `Date`, `Boolean`, `Phone number`, `String List`, and more
-- Searchable and editable fields in the Contacts and Companies sections
+- Custom field creation for **Contacts**, **Companies**, and **Opportunities**
+- Multiple field types: `Text`, `Date`, `True or false`, `Phone number`, `Text list`, and more
+- Searchable and editable fields in the Contacts, Companies, and Opportunities sections
 - Required or optional descriptions for internal clarity
-- Full visibility and editing from the custom field manager
+- Full visibility and editing from the CRM objects manager
 
 :::info
 System fields (like company name or phone number) cannot be edited or deleted. Custom fields are fully configurable.
@@ -35,13 +35,13 @@ System fields (like company name or phone number) cannot be edited or deleted. C
 ## How to create a CRM field
 
 1. In your app, go to `Administration` from the main menu.
-2. Select `CRM Fields` under the administration settings.
-3. This will take you to the **CRM Fields** page, where you can manage both contact and company fields.
-4. Click `Create` to open the new field form.
-5. Choose the `Object` (`Contact` or `Company`) the field will apply to.
+2. Select `CRM objects` under the administration settings.
+3. This takes you to the **CRM objects** page, where you can manage fields for contacts, companies, and opportunities.
+4. Click `Create field` to open the new field form.
+5. Choose the `Object` (`Contact`, `Company`, or `Opportunity`) the field applies to.
 6. Enter a `Field name` (e.g., "Birthday" or "Preferred contact method").
 7. (Optional) Add a `Field description` to provide internal clarity.
-8. Select the `Field type` (e.g., String, Date, Boolean).
+8. Select the `Field type` from the available options.
 9. Click `Create` to save your custom field.
 
 ## Field types and options
@@ -59,22 +59,24 @@ When creating a custom field, you can choose from the following field types:
 - **Date and time** – Combined date and time (e.g., next meeting)
 - **True or false** – Boolean yes/no field
 
-Use `String List` when you want to associate multiple values with a single field (e.g., preferred services).
+Use `Text list` when you want to associate multiple values with a single field (e.g., preferred services).
 
 ## Managing and editing CRM fields
 
-- All fields appear in the custom field manager under `Contacts` or `Companies`.
+- All fields appear in the CRM objects manager under `Contacts`, `Companies`, or `Opportunities`.
 - Click any field name to open and edit it.
-- You can update the description or field type, but object and identifier may be locked after creation.
+- You can update the field name and description, but the object and field type are locked after creation.
 - Fields that were added manually can be deleted when no longer needed.
 
-NOTE: System fields (created by default) cannot be modified or deleted. Only custom fields allow full control.
+:::info
+System fields (created by default) cannot be modified or deleted. Only custom fields allow full control.
+:::
 
-![CRM Fields inside Administration](../img/administration_custom_fields.png)
+![CRM objects page showing the Contacts fields list](../img/administration_custom_fields.png)
 
 ## Field change history
 
-Every update made to a CRM field is automatically logged in Field Change History. Whether a field was updated by a form submission, the AI Sales Assistant, a teammate, or the system, you can see exactly what the previous value was, what it changed to, and who or what made the update.
+Every update made to a CRM field is automatically logged in Field Change History. Whether a field was updated by a form submission, the AI Sales Assistant, a teammate, or the system, you can see what the value changed to and who or what made the update.
 
 Field Change History may only be available on certain subscriptions.
 
@@ -82,8 +84,8 @@ Field Change History may only be available on certain subscriptions.
 
 1. Go to `Business App` → `CRM`.
 2. Open any contact, company, or opportunity record.
-3. Click the **History** icon in the top right corner of the record.
-4. Review the list of field changes, including the previous value, new value, and who or what made the update.
+3. Click the `History` button in the top right corner of the record.
+4. Review the list of field changes, including the new value and who or what made the update.
 
 ## How you can use CRM fields
 
@@ -100,7 +102,7 @@ Some ways you can use custom fields in your app include:
 <details>
 <summary>What is Field Change History?</summary>
 
-Field Change History logs every update made to a CRM field. You can see the previous value, the new value, and who or what made the change: whether that's a form submission, the AI Sales Assistant, a teammate, or the system. This feature may only be available on certain subscriptions. To view it, open any contact, company, or opportunity record and click the **History** icon in the top right corner.
+Field Change History logs every update made to a CRM field. You can see the new value and who or what made the change: whether that's a form submission, the AI Sales Assistant, a teammate, or the system. This feature may only be available on certain subscriptions. To view it, open any contact, company, or opportunity record and click `History` in the top right corner.
 
 </details>
 
@@ -126,9 +128,9 @@ Not all views support filtering by custom fields. Check your record view or expo
 </details>
 
 <details>
-<summary>What's the difference between `String` and `String List`?</summary>
+<summary>What's the difference between Text and Text list?</summary>
 
-`String` stores a single line of text. `String List` allows multiple values separated by commas or new entries.
+`Text` stores a single line of text. `Text list` allows multiple values.
 
 </details>
 

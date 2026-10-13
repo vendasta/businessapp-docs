@@ -23,8 +23,8 @@ Datto Autotask PSA is a professional services automation platform for managing c
 
 | Data | Autotask to Business App | Business App to Autotask |
 |------|--------------------------|--------------------------|
-| Companies | Synced automatically | Synced automatically when **Sync back to Autotask** is enabled |
-| Contacts | Synced automatically | Synced automatically when **Sync back to Autotask** is enabled |
+| Companies | Synced automatically | Synced automatically when `Sync back to Autotask` is enabled |
+| Contacts | Synced automatically | Synced automatically when `Sync back to Autotask` is enabled |
 
 ## Step 1: Set up permissions in Autotask
 
@@ -33,14 +33,14 @@ Before connecting, create a dedicated security level and API user in Autotask.
 ### Create a security level
 
 1. Sign in to Autotask.
-2. Go to **Admin** → **Account Settings and Users** → **Security** → **Security Levels**.
-3. Click **Create New** and clone **Api User (System)**.
+2. Go to `Admin` → `Account Settings and Users` → `Security` → `Security Levels`.
+3. Click `Create New` and clone `Api User (System)`.
 4. Name the security level (for example, `Business App API Access`) and save it.
 
 ### Enable webhooks
 
 1. Open the security level you just created.
-2. Go to the **Other Settings** tab.
+2. Go to the `Other Settings` tab.
 3. Enable webhooks and set the maximum limit to at least **5**.
 4. Save your changes.
 
@@ -50,18 +50,18 @@ Without webhooks enabled, the connection appears active but changes made in Auto
 
 ### Configure object permissions
 
-1. In the same security level, open the **Companies** tab and enable **Read** and **Write** access.
-2. Open the **Contacts** tab and enable **Read** and **Write** access.
+1. In the same security level, open the `Companies` tab and enable `Read` and `Write` access.
+2. Open the `Contacts` tab and enable `Read` and `Write` access.
 3. Save your changes.
 
 ### Create the API user
 
-1. Go to **Admin** → **Resources (Human Resources)** → **API User**.
-2. Click **Create New**.
-3. Enter a **Name** and **Email**.
+1. Go to `Admin` → `Resources (Human Resources)` → `API User`.
+2. Click `Create New`.
+3. Enter a `Name` and `Email`.
 4. Assign the security level you created.
-5. In the **API Tracking Identifier** field, choose **Integration Vendor**, then select **AMP - Automated Marketing Platform**.
-6. Save, then record the **Username** and **Secret**. You will need both to connect.
+5. In the `API Tracking Identifier` field, choose `Integration Vendor`, then select `AMP - Automated Marketing Platform`.
+6. Save, then record the `Username` and `Secret`. You will need both to connect.
 
 ## Step 2: Prevent duplicate records
 
@@ -73,7 +73,7 @@ Open each company or contact in Autotask and locate the ID in the URL bar or in 
 
 ### Prepare your company CSV
 
-Create a CSV file with the columns below. The **External ID** column is critical. It links the Business App record to the Autotask record.
+Create a CSV file with the columns below. The `External ID` column is critical. It links the Business App record to the Autotask record.
 
 The format must be exactly `autotask:{id}`, with no spaces.
 
@@ -93,15 +93,15 @@ Create a CSV file for contacts following the same format, with `autotask:{id}` a
 
 ### Import the files
 
-1. Go to **CRM** → **Companies** → **Import** and upload the companies CSV.
+1. Go to `CRM` → `Companies` → `Import` and upload the companies CSV.
 
 ![CRM Companies list with the Import button in the top right](../img/autotask/autotask_companies_import.png)
 
-2. Map the `external_id` column to the **External ID** field, then complete the import.
+2. Map the `external_id` column to the `External ID` field, then complete the import.
 
 ![Company CSV field mapping with External ID mapped](../img/autotask/autotask_company_field_mapping.png)
 
-3. Go to **CRM** → **Contacts** → **Import** and upload the contacts CSV.
+3. Go to `CRM` → `Contacts` → `Import` and upload the contacts CSV.
 
 ![CRM Contacts list with the Import button in the top right](../img/autotask/autotask_contacts_import.png)
 
@@ -117,21 +117,21 @@ Import companies before contacts so that each contact can be matched to its comp
 
 ## Step 3: Connect Autotask
 
-1. Go to **Administration** → **Integrations**.
+1. Go to `Administration` → `Integrations`.
 
 ![Administration page with the Integrations link under App settings](../img/autotask/autotask_administration.png)
 
-2. Find the **Autotask** card and click **Connect**.
+2. Find the `Autotask` card and click `Connect`.
 
 ![Autotask integration card on the Integrations page](../img/autotask/autotask_integration_card.png)
 
-3. In the **Connect Autotask** dialog, enter:
-   - **User Name**: the username of your Autotask API user
-   - **Secret**: the API key associated with that user
+3. In the `Connect Autotask` dialog, enter:
+   - `User Name`: the username of your Autotask API user
+   - `Secret`: the API key associated with that user
 4. Review the sync settings. Both are selected by default:
-   - **Sync back to Autotask**: reflects changes made in Business App back in Autotask. Recommended.
-   - **Set as Primary CRM**: designates Autotask as the primary system for newly created contacts.
-5. Click **Add Connection**.
+   - `Sync back to Autotask`: reflects changes made in Business App back in Autotask. Recommended.
+   - `Set as Primary CRM`: designates Autotask as the primary system for newly created contacts.
+5. Click `Add Connection`.
 
 ![Connect Autotask dialog with the User Name and Secret fields and the two sync checkboxes](../img/autotask/autotask_preconnect_form.png)
 
@@ -139,19 +139,19 @@ Import companies before contacts so that each contact can be matched to its comp
 A 500 error means the credentials are invalid or the API user is disabled. Verify the username and secret in Autotask and re-enter them. Retrying with the same credentials will not resolve the error.
 :::
 
-When the connection succeeds, the integration card displays a green **Connected** badge along with the account details and a **Disconnect** button.
+When the connection succeeds, the integration card displays a green `Connected` badge along with the account details and a `Disconnect` button.
 
 ![Autotask integration page showing a green Connected badge, account details, and a Disconnect button](../img/autotask/autotask_connection_confirmed.png)
 
 ## Step 4: Review your settings
 
-After connecting, scroll to **Settings** → **Integrated Service Fields** to update your credentials or change your sync options. Refresh the page to confirm your changes saved.
+After connecting, scroll to `Settings` → `Integrated Service Fields` to update your credentials or change your sync options. Refresh the page to confirm your changes saved.
 
 ## Step 5: Verify the sync
 
 Changes sync automatically in the background, so you do not need to keep the page open. Companies sync before contacts.
 
-1. Go to **CRM** → **Companies**.
+1. Go to `CRM` → `Companies`.
 2. Find a company that came from Autotask.
 3. Confirm the name, phone, email, and address are correct.
 4. Confirm the associated contacts are linked to the company.
@@ -162,18 +162,18 @@ Every sync event is recorded in the contact's Activity Feed, so you can confirm 
 
 ## Manage the sync direction
 
-To change whether updates flow back into Autotask, adjust the **Sync back to Autotask** setting on the connection page.
+To change whether updates flow back into Autotask, adjust the `Sync back to Autotask` setting on the connection page.
 
 ## Troubleshooting
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
-| `Credential validation failed: Integration Code is invalid.` | The API user's Integration Vendor is not set to **AMP - Automated Marketing Platform** | In Autotask, open the API User and set **API Tracking Identifier** → **Integration Vendor** → **AMP - Automated Marketing Platform**, then reconnect. If the vendor cannot be changed on the existing user, create a new API user with that vendor selected |
+| `Credential validation failed: Integration Code is invalid.` | The API user's Integration Vendor is not set to `AMP - Automated Marketing Platform` | In Autotask, open the API User and set `API Tracking Identifier` → `Integration Vendor` → `AMP - Automated Marketing Platform`, then reconnect. If the vendor cannot be changed on the existing user, create a new API user with that vendor selected |
 | 500 error when connecting | Invalid credentials or a disabled API user | Verify the username and secret in Autotask, then re-enter them |
 | Connected, but nothing syncs | Webhooks are not enabled | Enable webhooks on the security level with a limit of at least 5 |
 | Contacts are not appearing | The contact is not linked to a company | Link the contact to a company in Autotask |
 | Duplicate records | Autotask IDs were not imported before connecting | Disconnect, clean up the duplicates, bulk import with `external_id`, then reconnect |
-| Connection shows "Broken" | Credentials expired or were revoked | Click **Re-authenticate** and enter the credentials again |
+| Connection shows "Broken" | Credentials expired or were revoked | Click `Re-authenticate` and enter the credentials again |
 | Sync back is not working | The record is missing its Autotask ID | Check whether `autotask-company-id` or `autotask-contact-id` is empty. If it is, use bulk import to add the external IDs |
 
 :::note
@@ -190,7 +190,7 @@ If duplicates have already been created:
 4. Import companies first, then contacts, with the `external_id` values in place.
 5. Reconnect the integration. The sync now matches records by `external_id`.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions (FAQs)
 
 <details>
 <summary>Can I use an automation tool such as Zapier alongside this integration?</summary>
@@ -258,6 +258,6 @@ Yes. The integration communicates directly between the two APIs, with encrypted 
 <details>
 <summary>Why is the sync broken after I changed my credentials?</summary>
 
-Your API credentials may have expired. Check the integration card for a **Broken** status and click **Re-authenticate** to enter the new credentials.
+Your API credentials may have expired. Check the integration card for a `Broken` status and click `Re-authenticate` to enter the new credentials.
 
 </details>
