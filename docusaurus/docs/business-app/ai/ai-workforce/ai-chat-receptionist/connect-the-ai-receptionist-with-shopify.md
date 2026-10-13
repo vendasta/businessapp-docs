@@ -12,7 +12,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Head from '@docusaurus/Head';
 
-By connecting the AI Chat Receptionist with your Shopify Storefront, customers will be able to interact with your store directly on any channel your AI Chat Receptionist is working on, such as web chat, SMS, Facebook Messenger, Instagram DMs, WhatsApp, or phone calls.
+By connecting the AI Chat Receptionist with your Shopify Storefront, customers can interact with your store directly on any channel your AI Chat Receptionist is working on, such as web chat, SMS, Facebook Messenger, Instagram DMs, WhatsApp, or phone calls.
 
 **In this guide, you will enable your AI Receptionist to:**
 - Search and find products
@@ -21,15 +21,15 @@ By connecting the AI Chat Receptionist with your Shopify Storefront, customers w
 
 ### Why is connecting the AI Receptionist with Shopify important?
 
-When a customer connects with your business—whether through web chat, SMS, social messaging apps, or even a phone call—they often know what they’re looking for but may struggle to find it quickly. The Shopify integration allows your AI Receptionist to handle these inquiries seamlessly across every supported channel. Customers can ask general or detailed questions and receive helpful, personalized responses that guide them to the right products or key details, no matter where the conversation starts.
+When a customer connects with your business, whether through web chat, SMS, social messaging apps, or even a phone call, they often know what they’re looking for but may struggle to find it quickly. The Shopify integration allows your AI Receptionist to handle these inquiries across every supported channel. Customers can ask general or detailed questions and receive helpful, personalized responses that guide them to the right products or key details, no matter where the conversation starts.
 
 :::tip
 This guide focuses on the AI Chat Receptionist, but the Shopify Storefront integration works across all AI Employees (including AI Voice Receptionist). No manual tool creation is required.
 :::
 
-## Prerequisites & Setup
+## Prerequisites and setup
 
-Getting started is simple! All you need to have ready is:
+To get started, have the following ready:
 
 | What you need | Where to find it | Notes |
 |---------------|------------------|-------|
@@ -58,7 +58,7 @@ Once connected, the Shopify Storefront integration makes the "Access Shopify" Ca
 
 ## Step 3: Optional prompt tips
 
-While the "Access Shopify" Capability works out of the box without further configuration, you might want to include instructions in your AI Employee's `Purpose` or in an additional Custom Capability to help format the Shopify responses consistently.
+While the "Access Shopify" Capability works out of the box without further configuration, you might want to include instructions in your AI Employee's `Role` or in an additional Custom Capability to help format the Shopify responses consistently.
 
 Examples of instructions you might include are:
 - only share one product at a time unless the user asks for more
@@ -67,12 +67,12 @@ Examples of instructions you might include are:
 
 ## FAQ: Connecting the AI Receptionist with Shopify
 
-### Integration & Setup
+### Integration and setup
 
 <details>
 <summary>Can I use this Shopify integration with other AI Employees besides the Chat Receptionist?</summary>
 
-Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](../ai-voice-receptionist.md). 
+Yes. While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your [AI Voice Receptionist](../ai-voice-receptionist.md). 
 
 This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business. 
 </details>
@@ -80,12 +80,12 @@ This means customers can ask about products through phone calls, SMS, WhatsApp, 
 <details>
 <summary>Can I connect other e-commerce platforms besides Shopify?</summary>
 
-Yes! This guide is specific to Shopify, but you can create similar integrations with any e-commerce platform that offers an API—including WooCommerce, BigCommerce, Magento, or custom-built stores.
+Yes! This guide is specific to Shopify, but you can create similar integrations with any e-commerce platform that offers an API, including WooCommerce, BigCommerce, Magento, or custom-built stores.
 
- The [Custom Capabilities framework](../../ai-capabilities/creating-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Integrations](../../../administration/connections/) or create workflows with external platforms using [Zapier](../../../automations/zapier/).
+ The [Custom Capabilities framework](../../ai-capabilities/creating-custom-capabilities.md) allows you to connect to virtually any system that has an API. You can also explore other pre-built integrations in [Integrations](../../../administration/integrations/overview.md) or create workflows with external platforms using [Zapier](../../../automations/zapier/).
 </details>
 
-### AI & Knowledge Questions
+### AI and knowledge questions
 
 <details>
 <summary>How does the Shopify integration work with my AI's Knowledge Base?</summary>
@@ -101,7 +101,7 @@ Your AI will use the Shopify Storefront integration to answer "Do you have this 
 <details>
 <summary>What if customers ask about Shopify-related questions the API can't answer?</summary>
 
-Great question! The Shopify Storefront integration detailed storefront data, but customers often need additional information. If the below information is *not* shared on your Shopify store, you should add it to your [Knowledge Base](../../knowledge-base.md):
+The Shopify Storefront integration provides detailed storefront data, but customers often need additional information. If the below information is *not* shared on your Shopify store, you should add it to your [Knowledge Base](../../knowledge-base.md):
 
 - Shipping costs and delivery times
 - Return and exchange policies  
@@ -114,7 +114,7 @@ Great question! The Shopify Storefront integration detailed storefront data, but
 This ensures your AI can provide complete, helpful answers by combining real-time product data with your business policies and procedures.
 </details>
 
-### Channel & Communication Questions
+### Channel and communication questions
 
 <details>
 <summary>Can customers use this Shopify integration through SMS or WhatsApp?</summary>
@@ -122,13 +122,13 @@ This ensures your AI can provide complete, helpful answers by combining real-tim
 Yes! The Shopify Storefront integration works across all communication channels supported by your AI Employees. Customers can search for products, update carts, and more through:
 
 - [Web chat](../../../conversations/web-chat/index.mdx)
-- [SMS messaging](../../../conversations/conversations-send-receive-sms.md) (Conversations Pro required)
-- [WhatsApp](../../../conversations/conversations-whatsapp-overview.md)
+- [SMS messaging](../../../conversations/sms/index.mdx) (Conversations Pro required)
+- [WhatsApp](../../../conversations/whatsapp/whatsapp-coexistence.mdx)
 - Phone calls (with [AI Voice Receptionist](../ai-voice-receptionist.md))
 - [Facebook Messenger](../../../conversations/facebook-messenger.mdx)
 - [Instagram DMs](../../../conversations/instagram-messenger.mdx)
 
- The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../conversations/) for a complete list of supported channels.
+ The same product information will be available regardless of how customers choose to contact you. See [Conversations Overview](../../../conversations/index.mdx) for a complete list of supported channels.
 </details>
 
 <details>
@@ -140,30 +140,30 @@ Your AI will adapt product recommendations to each communication channel:
 **SMS/WhatsApp:** Simplified text format with product names, prices, and shortened URLs  
 **Voice Calls:** Spoken product names, prices, and descriptions 
 
- Your AI automatically optimizes the presentation for each channel. For more details on channel setup, see [Conversations Overview](../../conversations/).
+ Your AI automatically optimizes the presentation for each channel. For more details on channel setup, see [Conversations Overview](../../../conversations/index.mdx).
 
  :::note
  You are welcome to write custom prompts to create more specific formatting for each channel, but note that the Shopify Storefront integration is designed to work out of the box with no additional configuration.
  :::
 </details>
 
-### Advanced Configuration Questions
+### Advanced configuration questions
 
 <details>
 <summary>How can I track which products customers are asking about most?</summary>
 
 You can monitor product inquiry patterns through several methods:
 
- 1. **Conversation Reviews:** Check the [Conversations](../../conversations/) tab to see which products customers mention most frequently
+ 1. **Conversation Reviews:** Check the [Conversations](../../../conversations/index.mdx) tab to see which products customers mention most frequently
 
 2. **AI Explanation Feature:** Click "Explanation" on AI responses to see exactly which tools were called and what products were searched
 
-3. **Automation Tracking:** Set up [automations](../../automations/index) to log product inquiries or notify your team about trending searches
+3. **Automation Tracking:** Set up [automations](../../../automations/index.mdx) to log product inquiries or notify your team about trending searches
 
 This data helps you understand customer demand, optimize your inventory, and identify opportunities for targeted marketing campaigns.
 </details>
 
-### Business Process Questions
+### Business process questions
 
 <details>
 <summary>What happens when a customer wants to purchase a product the AI recommends?</summary>
@@ -171,7 +171,7 @@ This data helps you understand customer demand, optimize your inventory, and ide
 The Shopify Storefront allows your AI Employee to add products to a customer's cart and then send a link to the customer to checkout. 
 
 :::note
-This cart will be a different cart than the one that is visible if the customer is already browsing your store on a different device.
+This cart is separate from the cart that is visible if the customer is already browsing your store on a different device.
 :::
 </details>
 
@@ -184,20 +184,20 @@ Yes! You can customize out-of-stock responses by creating an additional Custom C
 **Restock notifications:** "I can have our team notify you when it's back in stock."  
 **Substitute suggestions:** "Based on your interest, you might also like [alternative products]."
 
-See [Creating Custom Capabilities](../empower-your-ai-employee-custom-capabilities.md) for prompt customization best practices.
+See [Creating Custom Capabilities](../../ai-capabilities/creating-custom-capabilities.md) for prompt customization best practices.
 </details>
 
-### Technical & Troubleshooting Questions
+### Technical and troubleshooting questions
 <details>
 <summary>Can I test this integration before making it live to customers?</summary>
 
-Absolutely! Use these testing methods:
+Yes. Use these testing methods:
 
 **AI Employee Testing:** Use the "Try it" button in [AI Workforce](../ai_workforce_overview.md) to test your AI Employee with sample product questions
 
 **Tool Testing:** Review the "Explanation" feature in conversations to see raw API calls and responses
 
-**Channel Testing:** Test across different channels using the methods described in [AI Chat Receptionist setup](./index.md#test-the-ai-chat-receptionists-responses) and [AI Voice Receptionist testing](../ai-voice-receptionist.md)
+**Channel Testing:** Test across different channels using the methods described in [AI Chat Receptionist setup](./index.mdx#test-the-ai-chat-receptionists-responses) and [AI Voice Receptionist testing](../ai-voice-receptionist.md)
 
 Always test thoroughly before enabling the capability for customer-facing interactions.
 </details>
@@ -211,7 +211,7 @@ export const faqSchema = {
       name: 'Can I use this Shopify integration with other AI Employees besides the Chat Receptionist?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Absolutely! While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your AI Voice Receptionist. This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business.',
+        text: 'Yes. While this guide focuses on the AI Chat Receptionist, the Custom Capability and tools you create here work with any AI Employee, including your AI Voice Receptionist. This means customers can ask about products through phone calls, SMS, WhatsApp, or any other channel your AI Employees support. The same Shopify product data will be available regardless of how customers choose to interact with your business.',
       },
     },
     {
@@ -235,7 +235,7 @@ export const faqSchema = {
       name: "What if customers ask about Shopify-related questions the API can't answer?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Great question! The Shopify Storefront integration delivers detailed storefront data, but customers often need additional information. If shipping costs and delivery times, return and exchange policies, size charts and fitting guides, product care instructions, warranty information, payment methods accepted, or order tracking and customer service contacts are not shared on your Shopify store, add them to your Knowledge Base. This ensures your AI can provide complete, helpful answers by combining real-time product data with your business policies and procedures.",
+        text: "The Shopify Storefront integration delivers detailed storefront data, but customers often need additional information. If shipping costs and delivery times, return and exchange policies, size charts and fitting guides, product care instructions, warranty information, payment methods accepted, or order tracking and customer service contacts are not shared on your Shopify store, add them to your Knowledge Base. This ensures your AI can provide complete, helpful answers by combining real-time product data with your business policies and procedures.",
       },
     },
     {
@@ -283,7 +283,7 @@ export const faqSchema = {
       name: 'Can I test this integration before making it live to customers?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Absolutely! Use the "Try it" button in AI Workforce to test your AI Employee with sample product questions. Review the Explanation feature in conversations to inspect raw API calls and responses. Test across different channels using the AI Chat Receptionist and AI Voice Receptionist setup guides. Always test thoroughly before enabling the capability for customer-facing interactions.',
+        text: 'Yes. Use the "Try it" button in AI Workforce to test your AI Employee with sample product questions. Review the Explanation feature in conversations to inspect raw API calls and responses. Test across different channels using the AI Chat Receptionist and AI Voice Receptionist setup guides. Always test thoroughly before enabling the capability for customer-facing interactions.',
       },
     },
   ],
