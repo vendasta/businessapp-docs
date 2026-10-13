@@ -156,7 +156,7 @@ You can also configure additional options per event type. Settings here override
   - **Rolling window**: Enter a number and select Days, Weeks, or Months (e.g., "4 weeks into the future"). The window advances daily, keeping availability a fixed look-ahead from today. Use this for ongoing event types.
   - **Fixed date range**: Set a specific start and end date. Useful for seasonal promotions, limited-availability campaigns, or events with a hard end date.
 
-  If no limit is set, bookings are accepted with no future date restriction.
+  If no limit is set, bookings are accepted with no future date restriction. Bookings and reschedules that start outside the limit are declined, whether they come from a customer, a team member, or the AI Receptionist.
 
   ![Limit future meetings: rolling window and fixed date range options](../img/my-meetings/limit-future-meetings-options.png)
 
@@ -177,7 +177,7 @@ Booking pages automatically display in your customer's browser language, so cust
 - Content you write yourself, such as service names, descriptions, and staff bios, always displays exactly as you entered it and is not translated.
 
 :::note
-This only affects the booking page itself. To control the language of confirmation and reminder emails and SMS messages, set your [Primary operating language](../../administration/business_profile.md#primary-operating-language) on your Business Profile.
+This only affects the booking page itself. To control the language of confirmation and reminder emails and SMS messages, set your [Primary operating language](../../administration/business_profile.mdx#primary-operating-language) on your Business Profile.
 :::
 
 ## Booking page timezone
