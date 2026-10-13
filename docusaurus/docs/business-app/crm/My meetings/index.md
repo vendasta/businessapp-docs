@@ -177,7 +177,7 @@ Booking pages automatically display in your customer's browser language, so cust
 - Content you write yourself, such as service names, descriptions, and staff bios, always displays exactly as you entered it and is not translated.
 
 :::note
-This only affects the booking page itself. To control the language of confirmation and reminder emails and SMS messages, set your [Primary operating language](../../administration/business_profile.md#primary-operating-language) on your Business Profile.
+This only affects the booking page itself. To control the language of confirmation and reminder emails and SMS messages, set your [Primary operating language](../../administration/business_profile.mdx#primary-operating-language) on your Business Profile.
 :::
 
 ## Booking page timezone
