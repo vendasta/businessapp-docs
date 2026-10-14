@@ -236,7 +236,7 @@ Set a buffer **before** and/or **after** each meeting (0, 5, 10, 15, 30, or 60 m
 
 ![Advance notice](../img/my-meetings/team-booking-links-advance-notice.png)
 
-Set how much advance notice you need before a meeting can be booked (0, 1, 2, 4, 12, 24, or 48 hours) to prevent last-minute bookings.
+Set how much advance notice you need before a meeting can be booked to prevent last-minute bookings. Choose a preset option (0, 1, 2, 4, 12, 24, or 48 hours), or choose a custom option to set an advance notice of up to one week.
 
 ### Limit future meetings
 

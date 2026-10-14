@@ -83,7 +83,7 @@ From here you can configure:
 
 ![Meeting settings: app and scheduling](../img/my-meetings/meeting-settings-app-scheduling.png)
 
-- **Advance notice**: Set the minimum lead time to prevent last-minute bookings.
+- **Advance notice**: Set the minimum lead time to prevent last-minute bookings. Choose a preset option, or choose a custom option to require up to one week of advance notice.
 - **General availability**: Set which days and hours you accept meetings.
 - **Timezone**: Confirm or change your timezone.
 
@@ -147,7 +147,7 @@ You can also configure additional options per event type. Settings here override
 - **Customize invitation email**: Customize the subject and body of the email sent when you request a meeting from a CRM contact.
 - **Availability increment**: Override the default time slot increment (5, 10, 15, 30, or 60 minutes).
 - **Meeting buffer before/after**: Override the default buffer times.
-- **Advance notice**: Override the minimum lead time for this event type.
+- **Advance notice**: Override the minimum lead time for this event type, up to one week.
 - **Add to my website**: Get an embed code to add your booking form as an inline widget on a website.
 
   ![Add to my website embed code](../img/my-meetings/add-to-website.png)
