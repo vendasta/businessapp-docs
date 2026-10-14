@@ -12,7 +12,7 @@ kb_id: KB-00107
 answer_snippet: "Vibe in Business App uses credits to measure AI activity. Your subscription includes a credit allowance each billing period, and you can buy add-on or top-up credit packs when you need more."
 doc_owner: vibe
 review_frequency: 3-months
-last_reviewed: 2026-09-25
+last_reviewed: 2026-10-12
 last_reviewed_by: haleyserrano
 ---
 
@@ -30,9 +30,35 @@ A credit is used each time you send a message to Vibe. How many credits a messag
 | Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 | Clone a webpage | "Clone the look and feel of http://sample.com and build a homepage for my business" | >1,000 |
 
-Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under `Administration` > `AI Settings` > `Credits`. This section appears only when you have an active product that uses AI credits. Your credit usage report also identifies which Vibe project each entry belongs to, so you can see where credits are being spent if you manage more than one project.
+Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can view your remaining balance and usage history under `Administration` > `AI Settings` > `Credits`. This section appears only when you have an active product that uses AI credits.
 
 When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App, with no support ticket or wait time required. The dialog shows the image and description for each available plan or add-on so you know what you're purchasing before you check out.
+
+## Viewing your credits
+
+To view your credit balance and usage, go to `Administration` > `AI Settings` > `Credits`. This section appears only when you have an active product that uses AI credits.
+
+The Credits page organizes your credits into monthly buckets, distinguishing between plan credits and recurring add-on credits (which reset each billing period) and one-time top-up purchases (which have a fixed expiration date). Two tabs help you track your credits:
+
+### Source tab
+
+The **Source** tab lists each credit bucket in your account. For each bucket, you can see:
+
+- **Source** — Where the credits come from (plan allowance, add-on pack, or top-up)
+- **Amount** — The total size of the bucket
+- **Used** — How many credits have been spent from this bucket
+- **Expires/Resets** — When the bucket expires or resets to its full amount
+
+### Usage tab
+
+The **Usage** tab shows a detailed history of credit consumption. Each entry includes:
+
+- **Date** — When the credits were used
+- **User** — Who used the credits
+- **Activity** — What task consumed the credits
+- **Credits Used** — How many credits the activity consumed
+
+If you manage multiple Vibe projects, the Usage tab helps you see where credits are being spent across your projects.
 
 ## Credit allowances by plan
 
@@ -89,7 +115,7 @@ For example, on the Pro plan you receive 25,000 credits per month. If you add a 
 
 Top-up credit packs are one-time credit purchases available in four sizes: 10,000, 25,000, 50,000, and 100,000 credits. They add credits to your account immediately, without waiting for your next monthly renewal date. There's no limit on how many top-up packs you can purchase.
 
-Each top-up pack is valid for 12 months from the date of purchase. Under **Active credits** in Administration > AI Settings > Credits, each top-up pack shows its expiration date, so you always know when unused credits will expire.
+Each top-up pack is valid for 12 months from the date of purchase. In the **Source** tab under `Administration` > `AI Settings` > `Credits`, each top-up pack shows its expiration date in the **Expires/Resets** column, so you always know when unused credits will expire.
 
 Top-up packs are useful when unexpected usage puts you at risk of running out of credits before your billing cycle ends. Your monthly plan and add-on credits cover ongoing usage, and a top-up pack covers usage beyond that.
 
@@ -164,5 +190,5 @@ No. Credits are tied to the account they were issued to and can't be transferred
 <details>
 <summary>Where can I see how many credits I have left and where they were used?</summary>
 
-Go to `Administration` > `AI Settings` > `Credits` to check your remaining balance. This section appears only when you have an active product that uses AI credits. Your credit usage report shows which Vibe project each entry belongs to.
+Go to `Administration` > `AI Settings` > `Credits`. The **Source** tab shows each credit bucket with its size, how much is used and remaining, and when it expires or resets. The **Usage** tab shows a history of credit consumption, including the date, user, activity, and credits used for each entry.
 </details>
