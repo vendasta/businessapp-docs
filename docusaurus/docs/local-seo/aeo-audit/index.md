@@ -1,28 +1,25 @@
 ---
 title: AEO Audit
 sidebar_label: AEO Audit
-description: Use the AI assistant to access your AEO Audit results and understand how your website performs in AI-powered search.
+description: Use the AI Search Specialist to access your AEO Audit results and understand how your website performs in AI-powered search.
 tags: [local-seo, aeo, answer-engine-optimization, ai-assistant]
-keywords: [AEO audit, answer engine optimization, AI search, AI overview, voice assistant, local SEO premium]
+keywords: [AEO audit, answer engine optimization, AI search, AI overview, voice assistant, AI Search Specialist]
 ---
 
-# AEO Audit
-
-The AEO (Answer Engine Optimization) Audit evaluates how well your website is positioned to appear in AI-powered search results, such as Google AI Overviews and voice assistant responses. It identifies gaps in your content, structure, and technical setup that may be limiting your visibility in AI-generated answers.
-
-AEO Audit is available on Local SEO Premium.
+The AEO (Answer Engine Optimization) Audit evaluates how well your website is positioned to appear in AI-powered search results, such as Google AI Overviews and voice assistant responses. It identifies gaps in your content, structure, and technical setup that limit your visibility in AI-generated answers.
 
 ## Access your audit results
 
-You can access your AEO Audit results by asking the AI assistant in Local SEO. The assistant retrieves your most recent audit by default.
+You can access your AEO Audit results by chatting with the `AI Search Specialist` AI employee in `AI` → `Workforce`. The AEO Audit is provided through its `Create a brand visibility report (AEO)` capability. The AI Search Specialist retrieves your most recent audit by default.
+<!-- SME: confirm AEO Audit results are only available through chat (no standalone AEO page or report view). Unverified as of 2026-10-14. -->
 
-To review results from a previous audit or a different website, ask the assistant by date or website name.
+To review results from a previous audit or a different website, ask the AI Search Specialist by date or website name.
 
-The AI assistant can share:
+The AI Search Specialist can share:
 
 - Your overall AEO score and individual category scores
 - An executive summary of your site's AI search performance
-- Easy wins — high-impact improvements you can make quickly
+- Easy wins: high-impact improvements you can make quickly
 - Specific issues found and step-by-step fix instructions
 - A content quality assessment
 - PageSpeed Insights for your homepage on both mobile and desktop

@@ -48,16 +48,16 @@ Your AI Voice Receptionist must be set up and answering calls first. See the [AI
 
 ### Step 1: Add the capability
 
-1. Go to **AI** > `AI Workforce` and click `Configure` on the Voice Receptionist.
-2. In `Capabilities`, add the **On-call dispatch** capability.
+1. Go to `AI` → `Workforce` and click `Configure` on the `Voice receptionist` card.
+2. In `Capabilities`, click `+ Add a capability`, select `On-call dispatch`, and click `Add`.
 
 ### Step 2: Add on-call numbers and criteria
 
-1. Click **+ Add an on-call number** to add a row. Each row has two required fields:
-   - `Phone number` — the on-call number to reach. Enter it in international format (a `+` followed by the country code and number) or as a 7–15 digit national number.
-   - `Criteria` — free text describing when to dispatch to this number, for example, "after-hours plumbing emergencies".
+1. Click `+ Add an on-call number` to add a row. Each row has two required fields:
+   - `Phone number`: the on-call number to reach. Enter it in international format (a `+` followed by the country code and number) or as a 7–15 digit national number.
+   - `Criteria`: free text describing when to dispatch to this number, for example, "after-hours plumbing emergencies".
 2. Repeat for each on-call number. Each number gets its own row and its own criteria describing when it should receive the dispatch.
-3. To remove a row, delete it — rows can be removed whenever more than one row exists.
+3. To remove a row, delete it. Rows can be removed whenever more than one row exists.
 
 ### Step 3: Customize the announcement (optional)
 
@@ -71,15 +71,17 @@ You can personalize the announcement with these template variables, spelled exac
 | `{Emergency}` | The emergency in the caller's own words |
 | `{ServiceLocation}` | The service location |
 
-Write the announcement in any language — it is spoken as written.
+Write the announcement in any language. It is spoken as written.
 
 When the field is blank, the AI uses the default announcement, skipping any part with no captured value:
 
-> "Hello, this is after-hours dispatch. I have an emergency call for you. The caller is \{CallerName\}, at \{ServiceLocation\}. They're reporting: \{Emergency\}. Connecting you with the caller now."
+:::note Default announcement
+"Hello, this is after-hours dispatch. I have an emergency call for you. The caller is \{CallerName\}, at \{ServiceLocation\}. They're reporting: \{Emergency\}. Connecting you with the caller now."
+:::
 
 ### Step 4: Set up the companion SMS automation
 
-If your on-call technician can't be reached live, the caller is told the on-call technician has been notified — and the automation is how that notification actually reaches your technician. Treat it as an essential part of setup, not an optional extra.
+If your on-call technician can't be reached live, the caller is told the on-call technician has been notified, and the automation is how that notification actually reaches your technician. Treat it as an essential part of setup, not an optional extra.
 
 When a dispatch completes, the `An AI-handled call is transferred` automation trigger fires with the call details: the outcome, caller name, reason for call, service location, caller number, and transferred-to number. Use it to text the call details to the on-call number so your technician always gets the information, whether or not they answered.
 
@@ -91,14 +93,14 @@ For a step-by-step recipe that texts the call details to your on-call number, se
 
 When a caller matches a configured criteria:
 
-1. **The AI screens the call.** It collects, conversationally and one item at a time: the emergency in the caller's own words (confirmed back), the service location (read back and confirmed), and the caller's name. It never asks for a callback number — that is captured automatically from the call — and it never reveals the on-call number to the caller.
+1. **The AI screens the call.** It collects, conversationally and one item at a time: the emergency in the caller's own words (confirmed back), the service location (read back and confirmed), and the caller's name. It never asks for a callback number (that is captured automatically from the call), and it never reveals the on-call number to the caller.
 2. **The caller is placed on hold** with music.
 3. **The AI dials the on-call number** separately, with answering-machine detection.
 4. **When a person answers**, the AI speaks the announcement (or the default), then connects the two calls.
 5. **If the call reaches voicemail, isn't answered, is busy, or fails**, no voicemail message is left. The caller is taken off hold and told: "The on-call technician has been notified and will be in contact as soon as possible. Goodbye."
 
 :::note One dispatch attempt per call
-There is one dispatch attempt — the AI does not automatically retry the number or cascade to a second number. This is why the companion SMS automation matters: it makes sure the call details reach your technician even when no one answers live.
+There is one dispatch attempt. The AI does not automatically retry the number or cascade to a second number. This is why the companion SMS automation matters: it makes sure the call details reach your technician even when no one answers live.
 :::
 
 ## Frequently asked questions
@@ -108,7 +110,7 @@ There is one dispatch attempt — the AI does not automatically retry the number
 <details>
 <summary>Can I dispatch to more than one on-call number?</summary>
 
-Yes. Click **+ Add an on-call number** to add a row for each number. Each row has its own criteria describing when that number should receive the dispatch. A single dispatched call goes to one number — the one whose criteria the call matches.
+Yes. Click `+ Add an on-call number` to add a row for each number. Each row has its own criteria describing when that number should receive the dispatch. A single dispatched call goes to one number: the one whose criteria the call matches.
 </details>
 
 <details>
@@ -134,7 +136,7 @@ The AI speaks the default announcement: "Hello, this is after-hours dispatch. I 
 <details>
 <summary>Can I write the announcement in another language?</summary>
 
-Yes. Write the announcement in any language — the AI speaks it as written. The template variables `{CallerName}`, `{Emergency}`, and `{ServiceLocation}` work the same way in any language.
+Yes. Write the announcement in any language. The AI speaks it as written. The template variables `{CallerName}`, `{Emergency}`, and `{ServiceLocation}` work the same way in any language.
 </details>
 
 ### During a dispatch call
@@ -154,11 +156,11 @@ No. The caller's number is captured automatically from the call, so the AI never
 <details>
 <summary>What happens if my technician doesn't answer?</summary>
 
-If the call reaches voicemail, isn't answered, is busy, or fails, no voicemail message is left. The caller is taken off hold and told the on-call technician has been notified and will be in contact as soon as possible. There is one dispatch attempt — no automatic retry or second-number cascade.
+If the call reaches voicemail, isn't answered, is busy, or fails, no voicemail message is left. The caller is taken off hold and told the on-call technician has been notified and will be in contact as soon as possible. There is one dispatch attempt, with no automatic retry or second-number cascade.
 </details>
 
 <details>
 <summary>How does my technician actually get notified when they miss the dispatch call?</summary>
 
-Through the companion automation. Set up an automation on the `An AI-handled call is transferred` trigger to text the call details to your on-call number — see [Text your on-call technician when a call is dispatched](../../automations/use-cases/dispatch-on-call-sms.md). Without it, a missed dispatch call leaves your technician with only the missed call itself.
+Through the companion automation. Set up an automation on the `An AI-handled call is transferred` trigger to text the call details to your on-call number. See [Text your on-call technician when a call is dispatched](../../automations/use-cases/dispatch-on-call-sms.md). Without it, a missed dispatch call leaves your technician with only the missed call itself.
 </details>
