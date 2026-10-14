@@ -1,9 +1,21 @@
 ---
 title: Listing Sync
 description: Set up Listing Sync, connect Apple, understand statuses and reports, manage timelines, and resolve common issues.
+brand: business-app
+product: local-seo
+audience: smb
+content_type: overview
+kb_id: KB-00116
+answer_snippet: "Listing Sync in Business App sends your Business Profile information to Google Business Profile, Facebook, Bing, X, and other directories, so your name, address, phone number, and other details stay accurate and consistent everywhere."
+doc_owner: local-seo
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
 # Listing Sync
+
+Listing Sync in Business App sends your Business Profile information to Google Business Profile, Facebook, Bing, X, and other directories, so your name, address, phone number, and other details stay accurate and consistent everywhere.
 
 ## What is Listing Sync?
 
@@ -12,7 +24,7 @@ Listing Sync allows you to sync common business data to your Google Business Pro
 ## Why is Listing Sync important?
 
 - **Increased visibility**: People use online maps and directories daily to find businesses. By keeping your listings up to date, you can attract more local customers.
-- **Time savings**: Update your business information once in your Business Profile, and it syncs automatically across Google, Facebook, Bing, X, and other directories. You no longer need to manually update each platform separately.
+- **Time savings**: Update your business information once in your Business Profile, and it syncs automatically across Google, Facebook, Bing, X, and other directories. You don't need to manually update each platform separately.
 - **Reduced errors**: Manual updates across multiple platforms can lead to typos, outdated information, or inconsistencies. Listing Sync ensures your data stays accurate and uniform everywhere.
 - **Customer trust**: When customers see the same accurate information across all directories, they can find you easily and trust that your business details are reliable.
 - **Local SEO benefits**: Consistent Name, Address, and Phone (NAP) data across directories helps search engines verify your business information, which can improve your local search rankings.
@@ -28,13 +40,18 @@ You can sync the core data that helps customers find you:
 
 Each directory decides which attributes to display.
 
-## How to set up Listing Sync
+## How do I set up Listing Sync? {#how-to-set-up-listing-sync}
 
 1. Go to `Local SEO` and open the `Listing Sync` tab.
 2. Click `Connect` next to Google, Facebook, X or Apple.
 3. Enter your login credentials for that source.
 4. Click `Allow` or grant permissions for the source to sync.
 
+### Google Business Profile mismatch warning
+
+After you select a Google account, the system checks whether the Google Business Profile's business name and address match your Business Profile. If either doesn't match, a warning appears so you can confirm before continuing. This helps you avoid connecting the wrong Google Business Profile, which can result in that listing being suspended.
+
+The warning only checks business name and address — a mismatched phone number or website does not trigger it.
 
 ## Multiple social connections
 
@@ -65,6 +82,28 @@ If your business does not have a physical customer-facing storefront, you can ma
 
 ![Service area business listings](img/service-area-business-listings.jpg)
 
+### Which platforms support service areas
+
+Only **Google Business Profile** and **Bing** receive service area data. Apple Maps, Foursquare, and most other directories require a physical address and will not list pure service area businesses.
+
+**Hybrid businesses** — businesses that display a physical address alongside a service area — are supported on Apple Maps and other address-required sources. If you want to appear on these platforms, keep your physical address visible in your Business Profile.
+
+### Service area configuration rules
+
+When adding service areas to Google Business Profile:
+
+- You can add up to **20 service areas**.
+- Specify areas by **city or postal code** — distance-based radius settings are not supported.
+- Service areas must fall within roughly a **2-hour driving radius** of your business location.
+
+### Why some listing sources don't appear
+
+The available listing sources vary by account based on several factors:
+
+- **Physical address required**: Sources that require a street address will not appear for pure service area businesses with a hidden address.
+- **Business category restrictions**: Some directories do not accept certain business categories and are hidden automatically for those accounts.
+- **Hybrid businesses**: If your business shows a physical address alongside a service area, more sources become available.
+
 ## Improve your listing score
 
 To get the most value from Listing Sync:
@@ -76,6 +115,27 @@ To get the most value from Listing Sync:
 ## Listing score considerations
 
 The listing score per source has a maximum attainable value, but there is no fixed maximum across all sources. Overall scores can change as sources are added or removed. You can see the per‑source maximum on the listings table under `Listing Sync`.
+
+### How listing scores are calculated
+
+Listing scores are weighted by directory authority:
+
+- The top 30 of the top 100 directories earn the most points per listing.
+- The remaining directories in the top 100 earn 5 points each.
+- Directories outside the top 100 earn 2 points each.
+
+Scores are based on both listing **presence** (whether a listing exists) and **accuracy** (whether NAP data matches exactly).
+
+### What "Max score" means
+
+The Max score reflects the maximum points achievable from the actual listing sources found for your business. Your total score can exceed Max because citations — which have no fixed cap — also contribute to the total score.
+
+### Why your listing score might drop
+
+- **Inconsistent NAP data**: If your business name, address, or phone number varies across directories, those listings score lower for accuracy.
+- **URL mismatches**: Different URL formats (for example, `www.example.com` vs. `example.com`) may not be recognized as matching. Use the exact same URL format consistently across all sources.
+
+To keep your score high, keep NAP data consistent across all directories and ensure the website URL in your Business Profile matches what appears on your website exactly.
 
 
 ## What information syncs
@@ -96,7 +156,7 @@ Common fields that sync to multiple sources include:
 
 For source‑specific details inside the product: open `Local SEO` > `Listing Sync` > choose a source > `Syncing Info`.
 
-## Where to edit these fields
+## Where do I edit these fields? {#where-to-edit-these-fields}
 
 Use `Business Profile` in the product to update all fields that Listing Sync Pro syncs.
 
@@ -154,11 +214,11 @@ When a listing is marked as claimed, someone controls it. Claimed listings are v
 
 ![Example of a claimed listing](img/claimed-listing.jpg)
 
-## Stop listings from syncing
+## How do I stop listings from syncing? {#stop-listings-from-syncing}
 
 - If Listing Sync Pro is active, syncing continues until the billing cycle ends, even after cancellation.
 - To stop syncing immediately, click schedule deactivation, then click `immediately` in the menu.
-- You can turn sync on/off for Google, Facebook, Instagram, or X by clicking the sync button for each source, then `More > Turn off Syncing`.
+- You can turn sync on/off for Google, Facebook, Instagram, or X by clicking the sync button for each source, then `More` > `Turn off Syncing`.
 - Turning off sync for Facebook also turns off Instagram.
 
 ![Listing Sync Pro active](img/listing-sync-active.jpg)
@@ -172,10 +232,20 @@ When a listing is marked as claimed, someone controls it. Claimed listings are v
 Forcing deactivation removes the add-on and ends syndication services. Billing continues until the end of the commitment.
 ![Turn off syncing](img/turn-off-syncing.jpg)
 
-## Special hours on Apple
+## Apple Maps sync behavior
+
+Apple Maps receives your listing data through a submission feed. Because Apple processes submissions on its own schedule, there is no confirmation of exactly when data is processed or published. Updates to business hours can take up to **4 working days** to appear on Apple Maps.
+
+**Website URL requirement**: Apple Maps only accepts websites that are IPv6-compatible. If a business's website is not IPv6-compatible, it may not appear on Apple Maps regardless of other settings.
+
+**Service area businesses**: Apple Maps requires a physical address. Pure service area businesses (with hidden address) will not receive an Apple Maps listing. Hybrid businesses — those that display a physical address alongside a service area — are supported.
+
+**Permanently closed listings**: Permanently closed listings remain visible on Apple Maps but are not searchable by category and appear below open locations. Apple will eventually remove them from search results.
+
+### Special hours on Apple
 
 - Apple displays Holiday Hours as `Special Hours` for a 7‑day timeframe if you are within 4 days of the holiday.
-- Updates made in Yext can take up to a week to display on Apple Maps. Apple allows a maximum of 50 holiday hour entries.
+- Updates to special hours can take up to a week to display on Apple Maps. Apple allows a maximum of 50 holiday hour entries.
 - Apple does not display all special hours for the entire year at once.
 
 ## Bing duplicate listing alternative
@@ -316,5 +386,61 @@ You cannot suppress duplicates directly. Use Suggest an edit on the listing and 
 <summary>Do special hours sync to Apple?</summary>
 
 Apple displays special hours within 4 days of the holiday for a 7‑day timeframe. Updates can take up to a week to show, with a maximum of 50 holiday hour entries.
+
+</details>
+
+<details>
+<summary>What should I expect after I request a listing release from a claimed source?</summary>
+
+After the business owner contacts the listing source to request a release, timelines vary by directory — some release within days, others may take weeks. Once the source releases the listing, Listing Sync will begin managing and updating it automatically. There is no in-product notification when a release is complete; check the listing's status in the Listing Sync tab after a few days.
+
+</details>
+
+<details>
+<summary>Why does my Facebook profile picture keep changing back?</summary>
+
+When Listing Sync is active, the logo and primary photo set in your Business Profile media section automatically sync to Facebook. Any time the sync runs, it will push those images again. To stop this, you can either disable Facebook sync or remove the logo and primary photo from the Business Profile media section.
+
+</details>
+
+<details>
+<summary>How does Instagram sync work?</summary>
+
+Instagram does not have a direct integration. Instead, the system syncs listing data to Facebook, which then creates or updates the associated Instagram location page. Because of this, the Instagram source selection in Listing Sync is managed through the Facebook connection — there is no separate Instagram login required.
+
+</details>
+
+<details>
+<summary>Why does my listing score show higher than the Max score?</summary>
+
+The Max score reflects the maximum points achievable from the listing sources found for your business. Citations — which are separate from directory listings and have no fixed cap — also contribute to your total score. This means your total score can legitimately exceed the Max value.
+
+</details>
+
+<details>
+<summary>Do basic listings require verification?</summary>
+
+Most basic listings do not require a separate verification step in Local SEO. Google Business Profile is the listing that most often needs verification in Google before changes show reliably on Search and Maps.
+
+</details>
+
+<details>
+<summary>Where should I keep listing details current, and how does syncing work?</summary>
+
+Keep the Business Profile in Local SEO as the source of truth. Connect the listing sources you use, then push updates such as hours or descriptions to those connected sources. Google and Facebook usually need an explicit connection before sync works.
+
+</details>
+
+<details>
+<summary>Why don't I see an Apple listing for my business?</summary>
+
+Apple does not support listings for service-area businesses. If your business is set up as a service-area business, the Apple listing does not appear.
+
+</details>
+
+<details>
+<summary>What do I do when a listing source shows Sync failed?</summary>
+
+On the `Listing Sync` card, click `Sync failed` > `More` and select `Refresh accuracy data`, or turn syncing off and back on to force a retry. Some sources require an existing listing or login before they can sync.
 
 </details>

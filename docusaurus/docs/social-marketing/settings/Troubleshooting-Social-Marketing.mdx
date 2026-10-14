@@ -1,11 +1,22 @@
 ---
-title: Troubleshooting Errors in Social Marketing
+title: "How do I troubleshoot errors in Social AI?"
+description: "Fix common Social AI posting and connection errors for Facebook, Instagram, LinkedIn, Google Business Profile, and X, including expired tokens."
 sidebar_label: Troubleshooting
+brand: business-app
+product: social-marketing
+audience: smb
+content_type: troubleshooting
+kb_id: KB-00130
+answer_snippet: "Most Social AI posting errors come from an expired or broken social account connection. To fix them, reconnect the account in Social AI settings and accept all requested permissions, then follow the platform-specific fixes for Facebook, Instagram, LinkedIn, Google Business Profile, or X."
+doc_owner: social-marketing
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
-# Troubleshooting Errors in Social Marketing
+# How do I troubleshoot errors in Social AI? {#troubleshooting-errors-in-social-ai}
 
-Social Marketing makes it easy to post and schedule content to multiple platforms, but sometimes you may encounter errors that prevent your posts from publishing successfully. This guide walks you through the most common error messages, what they mean, and how to fix them. Whether you're posting to Facebook, Instagram, LinkedIn, Google Business Profile, or X (formerly Twitter), you'll find clear steps to help get you back on track.
+Most Social AI posting errors come from an expired or broken social account connection. To fix them, reconnect the account in Social AI settings and accept all requested permissions, then follow the platform-specific fixes for Facebook, Instagram, LinkedIn, Google Business Profile, or X. This guide covers the most common error messages, what they mean, and how to fix them.
 
 ---
 
@@ -14,21 +25,21 @@ Social Marketing makes it easy to post and schedule content to multiple platform
 
 | Platform | Common Errors | Solutions Summary |
 |----------|----------------|-------------------|
-| **Facebook** | Expired token, missing permissions, API errors | Reconnect account, verify Page roles, reauthorize permissions |
+| **Facebook** | Expired token, flagged token, missing permissions, API errors | Reconnect account, verify your identity with Meta, verify Page roles, reauthorize permissions |
 | **Instagram** | Wrong account type, not linked to FB Page, permissions missing | Switch to Business/Creator account, link to Facebook Page, reconnect |
 | **LinkedIn** | Token expired (every 60 days) | Reconnect via Connect Accounts tab when prompted |
 | **Google Business Profile** | Chain location, restricted business category, rejected content | Post directly in GBP, update business category, remove sensitive content |
 | **X (Twitter)** | Locked account, expired token, failed video upload | Unlock via x.com, reconnect login, meet video file specs |
 
 
-## Facebook Troubleshooting
+## How do I fix Facebook errors? {#facebook-troubleshooting}
 
 ### Common Facebook Errors
 
-#### 1. "Access has not been granted or has expired"
+#### 1. "Access has not been granted or has expired" or "Connected Facebook account has expired"
 - **What it means:** The Facebook connection is expired or incomplete.
 - **Fix it:**
-  - Go to **Social Marketing > Settings > Connections**
+  - Go to `Social AI` > `Settings` > `Connections`
   - Click **Reconnect** beside Facebook
   - Log in and accept all requested permissions
   - Select and connect the right Pages
@@ -36,63 +47,79 @@ Social Marketing makes it easy to post and schedule content to multiple platform
 #### 2. "You do not have permission to create posts"
 - **Fix it:**
   - Log in to the Facebook account with **Admin, Editor, or Moderator** access to the Page
-  - Check **Page Roles** under Facebook Page > Settings
+  - Check **Page Roles** under `Facebook Page` > `Settings`
 
-#### 3. "Connected Facebook account has expired"
-- Simply go to **Settings > Connections** and reconnect
-
-#### 4. "Unable to find your Business Manager account"
+#### 3. "Unable to find your Business Manager account"
 - Confirm you're logged into the correct Facebook account
 - Check [business.facebook.com](https://business.facebook.com) for Business Manager setup
 - Ensure the Pages are added and you have proper access
 
-#### 5. (#100) API permissions error
+#### 4. (#100) API permissions error
 - This error means permissions weren’t granted properly
 - **Fix it:** Reconnect the Facebook account and ensure **all permissions are accepted**
 
-#### 6. Content violates Community Standards
+#### 5. Content violates Community Standards
 - Run your post through Facebook's [Link Debugger](https://developers.facebook.com/tools/debug/) to see what’s being flagged
 - Avoid spammy links or flagged language
 
-#### 7.  Grey Facebook account
+#### 6. Grey Facebook account
 
-A grey Facebook account typically indicates that the account has limited functionality or is in a restricted state. This can happen for several reasons:
+A grey Facebook account has limited functionality or is in a restricted state, which can limit posting until it's resolved. This can happen for several reasons:
 
-## Common Causes
+- **Account verification issues**: The account needs additional verification
+- **Policy violations**: The account violated Facebook's community standards
+- **Suspicious activity**: Facebook detected unusual activity
+- **Incomplete setup**: The account isn't fully configured
 
-- **Account verification issues**: The account may need additional verification
-- **Policy violations**: The account may have violated Facebook's community standards
-- **Suspicious activity**: Facebook may have detected unusual activity
-- **Incomplete setup**: The account may not be fully configured
+**Fix it:**
 
-## How to Resolve
+1. Log in to Facebook and check for any notifications or warnings
+2. Complete any verification steps Facebook requires
+3. Make sure all content complies with Facebook's policies
+4. If the issue persists, contact Facebook support
 
-1. **Check account status**: Log into Facebook and check for any notifications or warnings
-2. **Complete verification**: Follow any verification steps Facebook requires
-3. **Review content**: Ensure all content complies with Facebook's policies
-4. **Contact support**: If issues persist, contact Facebook support
+#### 7. Access token flagged by Meta
 
-## Page Roles
+Meta may flag an access token for several reasons, including:
 
-If you're managing a Facebook page, check your page roles in the Page Settings to ensure you have the appropriate permissions.
+- **Sudden account changes**, such as adding a new admin or resetting the password
+- **Admin location or country mismatch**
+- **High-frequency posting**
 
-**Note:** Grey accounts may have limited posting capabilities until the issue is resolved.
+Other activity can trigger a flag too. When it happens, you may also be unable to post directly from your Meta account. To resolve it, verify your identity with Meta:
+
+1. Open the Facebook app on your mobile device
+2. Switch to the Page you want to post to
+3. When prompted for identity verification, verify using your registered mobile number
+
+![The Confirm your identity screen in the Facebook mobile app, explaining that unusual activity was detected and offering to verify via SMS](./img/facebook-instagram-troubleshooting/facebook-instagram-troubleshooting.png)
+
+Tap **Verify** to receive a code by SMS. Posting is unblocked once verification is complete.
+
+### Best Practices for Connecting Facebook Pages
+
+Always grant access to **all** Pages when you connect an account, and don't change which Pages are included between connections. During authorization, make sure these options are selected:
+
+- **Opt in to all current and future Pages** — for Facebook
+- **Opt in to all current and future Businesses** — for Instagram
+
+With these options enabled, if Facebook breaks your token because of suspicious activity, reconnecting even a single expired Page automatically restores access to all your other Pages.
 
 ---
 
-## Instagram Troubleshooting
+## How do I fix Instagram errors? {#instagram-troubleshooting}
 
 ### Common Instagram Errors
 
 #### 1. "Instagram account is not a Business account"
-- Social Marketing can only post to **Business or Creator** accounts
+- Social AI can only post to **Business or Creator** accounts
 - **Fix it:**
-  - Go to IG App > Profile > ☰ > Settings and Privacy > Account Type > Switch to Professional Account
+  - Go to `IG App` > `Profile` > `☰` > `Settings and Privacy` > `Account Type` > `Switch to Professional Account`
   - Link the account to a Facebook Page
 
 #### 2. "Instagram account not connected to a Facebook Page"
 - **Fix it:**
-  - IG App > Profile > Edit Profile > Page > Select FB Page to connect
+  - Go to `IG App` > `Profile` > `Edit Profile` > `Page` and select the Facebook Page to connect
 
 #### 3. "You do not have permission to manage this Instagram account"
 - **Fix it:**
@@ -106,7 +133,7 @@ If you're managing a Facebook page, check your page roles in the Page Settings t
 #### 5. Token Errors (expired, broken, missing)
 - These mean your Instagram connection needs to be refreshed
 - **Fix it:**
-  - Go to **Settings > Connections**, click **Reconnect** beside Instagram
+  - Go to `Settings` > `Connections`, click **Reconnect** beside Instagram
 
 #### 6. Publishing Authorization Needed
 - You may see (#263) errors if Page Publishing Authorization is incomplete
@@ -123,20 +150,20 @@ If you're managing a Facebook page, check your page roles in the Page Settings t
 
 ---
 
-## LinkedIn Troubleshooting
+## How do I fix LinkedIn errors? {#linkedin-troubleshooting}
 
 ### "The token used has expired"
 - LinkedIn requires you to **reconnect every 60 days**
 - You’ll see a yellow banner 10 days before expiration
 - **Fix it:**
-  - Go to **Settings > Connect Accounts**
+  - Go to `Settings` > `Connect Accounts`
   - Click **Reconnect** beside LinkedIn
 
 > Reconnection only takes a few seconds. Do this proactively to avoid failed posts.
 
 ---
 
-## Google Business Profile Troubleshooting
+## How do I fix Google Business Profile errors? {#google-business-profile-troubleshooting}
 
 ### 1. "This location belongs to a chain"
 - Google disables Local Post API for chain businesses
@@ -152,18 +179,18 @@ If you're managing a Facebook page, check your page roles in the Page Settings t
 
 ### 3. "Business category isn't eligible"
 - Some categories like hotels, casinos, or cannabis shops can’t post
-- **Fix it:** Update business category via **Partner Center > Edit**
+- **Fix it:** Update your business category, or contact your provider to update it
 
 ---
 
-## X (Twitter) Troubleshooting
+## How do I fix X (Twitter) errors? {#x-twitter-troubleshooting}
 
 ### 1. "Account is locked" or "Looks automated"
 - X may temporarily restrict accounts
 - **Fix it:** Log in at [x.com](https://x.com) to unlock and confirm access
 
 ### 2. "Invalid or expired token"
-- **Fix it:** Go to **Settings > Connect Accounts > ⋮ > Reconnect**
+- **Fix it:** Go to `Settings` > `Connect Accounts` > `⋮` > `Reconnect`
 
 ### 3. "Upload failed" for videos
 - Video does not meet format or size requirements
@@ -171,16 +198,16 @@ If you're managing a Facebook page, check your page roles in the Page Settings t
 
 ---
 
-## General Posting Failures
+## Why did my post fail to publish? {#general-posting-failures}
 
 ### Post Failed to Publish
 - Most often caused by an **expired social token** (broken token)
 - **Fix it:**
-  - Go to **Settings > Connect Accounts > ⋮ > Reconnect**
+  - Go to `Settings` > `Connect Accounts` > `⋮` > `Reconnect`
   - If user permissions changed, reconnect with a different admin
 
 ### Scheduled Posts During Expired Connection
-- Social Marketing **saves failed scheduled posts to Drafts**
+- Social AI **saves failed scheduled posts to Drafts**
 - Reconnect the account and reschedule from Drafts
 
 > Only unpublished posts will be saved. If the product is deactivated, posts cannot be recovered.
@@ -206,14 +233,14 @@ If you're managing a Facebook page, check your page roles in the Page Settings t
 
 Try the following:
 
-1. Disconnect the affected account in Social Marketing  
-2. Remove the app from the platform (e.g., Facebook > Apps & Websites)  
+1. Disconnect the affected account in Social AI  
+2. Remove the app from the platform (for example, `Facebook` > `Apps & Websites`)  
 3. Clear your browser cache or use an incognito/private window  
 4. Try using a different browser  
 
 ---
 
-## Tips to Prevent Future Issues
+## How do I prevent connection errors? {#tips-to-prevent-future-issues}
 
 - Monitor your account connections regularly  
 - Use strong, secure passwords and enable 2FA  
@@ -223,3 +250,46 @@ Try the following:
 
 ---
 
+## Frequently asked questions
+
+<details>
+<summary>Why does my LinkedIn connection keep expiring?</summary>
+
+LinkedIn requires you to reconnect every 60 days. You see a yellow banner 10 days before the connection expires. Go to `Settings` > `Connect Accounts` and click **Reconnect** beside LinkedIn.
+
+</details>
+
+<details>
+<summary>Why did my Facebook or Instagram connection expire?</summary>
+
+The connection token has expired or broken. Meta may also flag a token after sudden account changes, such as a new admin or a password reset, an admin location mismatch, or high-frequency posting. Reconnect the account and accept all permissions, or verify your identity with Meta if prompted.
+
+</details>
+
+<details>
+<summary>What happens to scheduled posts while a connection is expired?</summary>
+
+Social AI saves failed scheduled posts to Drafts. Reconnect the account and reschedule the posts from Drafts. If the product is deactivated, posts can't be recovered.
+
+</details>
+
+<details>
+<summary>Why can't I connect my Instagram account?</summary>
+
+Social AI can only post to Instagram Business or Creator accounts that are linked to a Facebook Page. You also need Admin or Editor access to that Facebook Page.
+
+</details>
+
+<details>
+<summary>What does the (#100) error mean?</summary>
+
+A (#100) error means permissions weren't granted properly. Reconnect the Facebook account and accept all requested permissions.
+
+</details>
+
+<details>
+<summary>How long does reconnecting take?</summary>
+
+Reconnecting only takes a few seconds. Reconnect when you see an expiration banner to avoid failed posts.
+
+</details>

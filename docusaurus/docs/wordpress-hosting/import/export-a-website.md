@@ -2,6 +2,9 @@
 title: "Export a Website"
 sidebar_label: "Export a Website"
 description: "Learn how to export your website from WordPress Hosting Standard or Pro using the All-in-One WP Migration plugin."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 You can export your website from WordPress Hosting Standard or Pro using the **All-in-One WP Migration** plugin.

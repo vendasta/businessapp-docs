@@ -1,20 +1,23 @@
 ---
 title: AEO Audit
-description: Learn how the AEO Audit automatically evaluates your website's readiness for AI-powered search and tracks your progress over time.
-keywords: [AEO audit, AI search readiness, readiness score, local seo premium, AI search]
+sidebar_label: AEO Audit
+description: Learn how the AEO Audit evaluates your website's readiness for AI-powered search, runs automatically each month, and how to review your results.
+tags: [local-seo, aeo, answer-engine-optimization, ai-assistant]
+keywords: [AEO audit, answer engine optimization, AI search, AI search readiness, readiness score, local seo premium, AI overview, voice assistant, AI Search Specialist]
 sidebar_position: 1
+brand: business-app
+product: local-seo
+audience: smb
 ---
 
-# AEO Audit
-
-The AEO Audit evaluates your website's readiness for AI-powered search. It crawls your site, runs an AI analysis, and produces a Readiness Score with a prioritized list of improvements.
+The AEO (Answer Engine Optimization) Audit evaluates how well your website is positioned to appear in AI-powered search results, such as Google AI Overviews and voice assistant responses. It identifies gaps in your content, structure, and technical setup that limit your visibility in AI-generated answers.
 
 ## How the AEO Audit works
 
-When you activate Local SEO Premium, the system automatically starts your first audit. It crawls up to 50 pages of your website and produces:
+When you activate Local SEO Premium, your first audit starts automatically. It crawls up to 50 pages of your website, runs an AI analysis, and produces:
 
-- **Readiness Score** — an overall score reflecting how prepared your site is for AI search
-- **Top 5 Fixes** — a prioritized list of improvements across Schema, Robots.txt, JSON-LD, Metadata, Content, and Speed
+- **Readiness Score**: An overall score reflecting how prepared your site is for AI search
+- **Top 5 Fixes**: A prioritized list of improvements across Schema, Robots.txt, JSON-LD, Metadata, Content, and Speed
 
 The first time you open the AEO Dashboard, your completed results are ready to view.
 
@@ -30,10 +33,44 @@ If you update your website after an audit has already started, the changes are r
 
 ## Run an audit manually
 
-You can trigger an audit outside of the monthly schedule. Manual audits use credits from your account.
+You can run an audit outside of the monthly schedule. Manual audits use credits from your account.
 
 - If you have enough credits, the audit starts immediately.
-- If you do not have enough credits, you will be prompted to purchase more.
+- If you do not have enough credits, you are prompted to purchase more.
+
+## Access your audit results
+
+You can review your results in the AEO Dashboard, or by chatting with the `AI Search Specialist` AI employee in `AI` → `Workforce`. The AEO Audit is provided through its `Create a brand visibility report (AEO)` capability. The AI Search Specialist retrieves your most recent audit by default.
+<!-- SME: confirm where the AEO Dashboard is found in the product. Previous wording said results were only available through chat (no standalone AEO page), but LIS-2643 describes an AEO Dashboard. -->
+
+To review results from a previous audit or a different website, ask the AI Search Specialist by date or website name.
+
+The AI Search Specialist can share:
+
+- Your overall AEO score and individual category scores
+- An executive summary of your site's AI search performance
+- Easy wins: high-impact improvements you can make quickly
+- Specific issues found and step-by-step fix instructions
+- A content quality assessment
+- PageSpeed Insights for your homepage on both mobile and desktop
+- A page-by-page breakdown of audit findings across your site
+- Historical audit results so you can compare performance over time
+
+## Example questions to ask
+
+- "How is my website performing for AI search?"
+- "What are my easiest wins from the AEO audit?"
+- "What issues does the audit show for my homepage?"
+- "What are my PageSpeed scores on mobile and desktop?"
+- "Show me results from my previous audit."
+
+## Audit status
+
+| Status | What it means |
+|--------|---------------|
+| Running | The audit is in progress |
+| Completed | Results are ready to review |
+| Failed | The audit could not be completed |
 
 ## View your audit history
 

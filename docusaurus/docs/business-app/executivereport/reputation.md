@@ -2,6 +2,9 @@
 title: Reputation
 sidebar_label: Reputation
 description: See how your online review presence is performing with the Review Grade in the Executive Report.
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What is the Reputation section?
@@ -31,6 +34,8 @@ Those four are combined and compared to the industry average. The result is a le
 - **D** = 30th–49th percentile
 - **F** = 0th–29th percentile
 
-*Example: If your average review score is 3.5 and the industry average is 4.32, that category might fall in a lower percentile and pull the grade down. The same logic applies to the other three categories to produce one overall Review Grade.*
+:::note Example
+If your average review score is 3.5 and the industry average is 4.32, that category falls in a lower percentile and pulls the grade down. The same logic applies to the other three categories to produce one overall Review Grade.
+:::
 
-The Review Grade is on by default. If you don’t see it or want to change whether it appears, your provider can adjust that in the report settings.
+The Review Grade is on by default. If you don’t see it or want to change whether it appears, contact support to adjust the report settings.
