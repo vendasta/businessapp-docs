@@ -1,12 +1,22 @@
 ---
 title: Credits
 sidebar_label: Credits
-description: Learn how Vibe credits work, including plan allowances, add-on packs, top-up packs, and how expiration order is determined.
+description: "How Vibe credits work in Business App: credit costs by task, plan allowances, add-on and top-up packs, carry-over rules, and which credits are used first."
 sidebar_position: 5
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
+content_type: reference
+kb_id: KB-00107
+answer_snippet: "Vibe in Business App uses credits to measure AI activity. Your subscription includes a credit allowance each billing period, and you can buy add-on or top-up credit packs when you need more."
+doc_owner: vibe
+review_frequency: 3-months
+last_reviewed: 2026-10-12
+last_reviewed_by: haleyserrano
 ---
 
-Vibe uses credits to measure AI activity. Your subscription includes a credit allowance per billing period, and you can purchase additional credit packs when you need more.
+Vibe in Business App uses credits to measure AI activity. Your subscription includes a credit allowance each billing period, and you can buy add-on or top-up credit packs when you need more.
 
 ## How credits work
 
@@ -20,17 +30,45 @@ A credit is used each time you send a message to Vibe. How many credits a messag
 | Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 | Clone a webpage | "Clone the look and feel of http://sample.com and build a homepage for my business" | >1,000 |
 
-Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can check your remaining balance under **Administration > AI Settings > Credits**. This section appears only when you have an active product that uses AI credits.
+Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can view your remaining balance and usage history under `Administration` > `AI Settings` > `Credits`. This section appears only when you have an active product that uses AI credits.
 
 When your included credits are used up, Vibe opens an Upgrade dialog where you can complete checkout directly in Business App, with no support ticket or wait time required. The dialog shows the image and description for each available plan or add-on so you know what you're purchasing before you check out.
+
+## Viewing your credits
+
+To view your credit balance and usage, go to `Administration` > `AI Settings` > `Credits`. This section appears only when you have an active product that uses AI credits.
+
+The Credits page organizes your credits into monthly buckets, distinguishing between plan credits and recurring add-on credits (which reset each billing period) and one-time top-up purchases (which have a fixed expiration date). Two tabs help you track your credits:
+
+### Source tab
+
+The **Source** tab lists each credit bucket in your account. For each bucket, you can see:
+
+- **Source** — Where the credits come from (plan allowance, add-on pack, or top-up)
+- **Amount** — The total size of the bucket
+- **Used** — How many credits have been spent from this bucket
+- **Expires/Resets** — When the bucket expires or resets to its full amount
+
+### Usage tab
+
+The **Usage** tab shows a detailed history of credit consumption. Each entry includes:
+
+- **Date** — When the credits were used
+- **User** — Who used the credits
+- **Activity** — What task consumed the credits
+- **Credits Used** — How many credits the activity consumed
+
+If you manage multiple Vibe projects, the Usage tab helps you see where credits are being spent across your projects.
 
 ## Credit allowances by plan
 
 | Plan | Credits | Projects & published apps |
 |------|---------|--------------------------|
 | Free | 250/day, refreshed daily | Up to 1 |
-| Standard | 10,000/month | Up to 5 |
+| Standard | 10,000/month | Up to 10 |
 | Pro | 25,000/month | Unlimited |
+
+Vibe plans include Free, Standard, Pro, and Premium. **Premium** has the same project and connector entitlements as **Pro** (including unlimited projects and the Supabase connector).
 
 ### Free
 
@@ -55,8 +93,11 @@ Ideal for shipping apps with full business context. Includes all Free features, 
 
 Ideal for building professional apps with the full feature set. Includes all Standard features, plus:
 
-- Download project (.zip)
+- Code editor (Code mode)
+- Download project (`.vibe.tar.gz`)
 - Supabase connector
+
+**Premium** includes the same entitlements as Pro.
 
 ## Add-on credits
 
@@ -74,7 +115,7 @@ For example, on the Pro plan you receive 25,000 credits per month. If you add a 
 
 Top-up credit packs are one-time credit purchases available in four sizes: 10,000, 25,000, 50,000, and 100,000 credits. They add credits to your account immediately, without waiting for your next monthly renewal date. There's no limit on how many top-up packs you can purchase.
 
-Each top-up pack is valid for 12 months from the date of purchase.
+Each top-up pack is valid for 12 months from the date of purchase. In the **Source** tab under `Administration` > `AI Settings` > `Credits`, each top-up pack shows its expiration date in the **Expires/Resets** column, so you always know when unused credits will expire.
 
 Top-up packs are useful when unexpected usage puts you at risk of running out of credits before your billing cycle ends. Your monthly plan and add-on credits cover ongoing usage, and a top-up pack covers usage beyond that.
 
@@ -131,5 +172,23 @@ Yes. Click the **Stop** button in the chat input while a generation is running. 
 <details>
 <summary>What happens to my unused credits if I deactivate my base subscription?</summary>
 
-Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. Download any project backups before you deactivate.
+Deactivating your base subscription (Free, Standard, or Pro) immediately cancels all associated add-on and top-up credits and removes your Vibe projects from Business App. On the Pro plan, download any project backups before you deactivate. See [Download & Host Your Project Elsewhere](./guides/download-and-self-host.md).
+</details>
+
+<details>
+<summary>Why is the one-time Vibe credit top-up greyed out after I used my credits?</summary>
+
+A new one-time top-up becomes available after the previous top-up unit is fully consumed and deactivated. If a unit is still active, schedule it for immediate deactivation before adding another, or wait until the first top-up finishes and deactivates.
+</details>
+
+<details>
+<summary>Can I transfer Vibe credits to another account?</summary>
+
+No. Credits are tied to the account they were issued to and can't be transferred to other accounts.
+</details>
+
+<details>
+<summary>Where can I see how many credits I have left and where they were used?</summary>
+
+Go to `Administration` > `AI Settings` > `Credits`. The **Source** tab shows each credit bucket with its size, how much is used and remaining, and when it expires or resets. The **Usage** tab shows a history of credit consumption, including the date, user, activity, and credits used for each entry.
 </details>

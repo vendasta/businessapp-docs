@@ -5,6 +5,9 @@ description: Learn how to send a meeting request email directly from a contact's
 sidebar_position: 2
 tags: [meetings, crm, contacts, booking]
 keywords: [book a meeting, meeting request, crm contacts, send meeting link]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Instead of copying a booking link and emailing it manually, you can send a meeting request directly from a contact's profile in the CRM. The contact receives an email with your booking link and picks a date and time that works for them.
@@ -27,7 +30,7 @@ This feature **sends the contact an email** so they can choose their own time sl
 
 The contact receives an email with your booking link. They click the link, choose an available date and time, and confirm. The meeting is then added to your calendar automatically.
 
-Because the link is generated from the contact's profile, the booking form automatically fills in their known name, email, and phone number — so they don't have to re-enter details you already have. These fields stay fully editable, so the contact can update or clear any value before confirming, and any detail that isn't on file is simply left blank for them to fill in.
+Because the link is generated from the contact's profile, the booking form automatically fills in their known name, email, and phone number, so they don't have to re-enter details you already have. These fields stay fully editable, so the contact can update or clear any value before confirming, and any detail that isn't on file is simply left blank for them to fill in.
 
 ## Customizing the invitation email
 

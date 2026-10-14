@@ -2,6 +2,9 @@
 title: "Troubleshooting WordPress Login Issues"
 sidebar_label: "Login Issues"
 description: "Learn how to resolve common WordPress login problems including incorrect credentials, locked accounts, white screens, and Jetpack-related errors."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Logging into your WordPress site should be simple, but sometimes issues arise that prevent access. Here are common login problems and how to fix them.

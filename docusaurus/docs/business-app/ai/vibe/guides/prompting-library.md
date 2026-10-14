@@ -3,6 +3,9 @@ title: Prompting Library
 sidebar_label: Prompting Library
 sidebar_position: 2
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Prompting library

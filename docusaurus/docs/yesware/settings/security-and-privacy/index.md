@@ -3,6 +3,9 @@ title: Security and privacy
 sidebar_label: Security and privacy
 description: How Yesware secures your data, and how to request SOC 2, SOC 3, and privacy documentation.
 keywords: [security, privacy, soc 2, soc 3, data protection, gdpr]
+brand: yesware
+product: yesware-core
+audience: smb
 ---
 
 # Security and privacy

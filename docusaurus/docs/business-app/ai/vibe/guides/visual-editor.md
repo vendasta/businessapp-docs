@@ -2,6 +2,9 @@
 title: Visual Editor
 sidebar_position: 2
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Visual Editor

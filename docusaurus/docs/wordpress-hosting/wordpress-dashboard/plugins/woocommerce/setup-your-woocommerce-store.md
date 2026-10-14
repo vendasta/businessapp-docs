@@ -2,6 +2,9 @@
 title: "Set Up Your WooCommerce Store"
 sidebar_label: "WooCommerce"
 description: "From startups to large enterprises, every business can benefit from an ecommerce website to sell products or services. In today's convenience-focused world, consumers prefer shopping from home."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 From startups to large enterprises, every business can benefit from an ecommerce website to sell products or services. In today's convenience-focused world, consumers prefer shopping from the comfort of their homes, making ecommerce a perfect solution for businesses and buyers alike.

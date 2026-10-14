@@ -6,6 +6,9 @@ tags: [vibe, ai, seo, indexing, llms]
 keywords: [vibe seo, vibe llms.txt, vibe robots.txt, vibe sitemap, vibe indexing controls, vibe ai search]
 sidebar_position: 9
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # SEO & LLM Indexing
@@ -44,11 +47,17 @@ You also get:
 
 ### Control how your app is indexed
 
+The **SEO** section in project settings is available for projects on the server-rendered runtime (`node-server`, including TanStack/SSR). Older projects on the static runtime use **Migrate** on the **General** settings section instead (see below).
+
 1. Open your project's settings.
-2. Select the **SEO** section.
+2. Select the **SEO** section (shown when the project runtime is `node-server`).
 3. Use the toggles to control how your app presents itself to search engines and AI assistants.
 
 See [project settings](./project-settings.md) for the full settings page.
+
+### Block search engines from your app
+
+To keep crawlers out, for example while you share a client mock-up, turn off the `robots.txt` toggle in the **SEO** section. When it's off, Vibe publishes a `robots.txt` that blocks all crawlers and doesn't list a sitemap. If your project ships its own `robots.txt`, yours is used instead.
 
 ### Use your own discovery files
 
@@ -56,7 +65,7 @@ The generated `robots.txt`, `sitemap.xml`, and `llms.txt` are each individually 
 
 ### Bring an existing project up to date
 
-Ask Vibe to upgrade your project and it converts it to the server-rendered runtime for you — pages, styling, and behavior stay intact. You don't have to rebuild anything to benefit.
+Older projects on the **static** runtime can migrate to the server-rendered (`node-server`) runtime. Use **Migrate** in the **General** section of project settings, or ask Vibe to upgrade the project — pages, styling, and behavior stay intact. You don't have to rebuild anything to benefit. After migration, the **SEO** settings section becomes available.
 
 ## Frequently Asked Questions
 
@@ -93,11 +102,35 @@ No. Crawlers and visitors receive identical content — the same fully rendered 
 <details>
 <summary>How do I get server-rendered pages on a project I built earlier?</summary>
 
-Ask Vibe to upgrade your project. It converts the project to the server-rendered runtime for you, with pages, styling, and behavior intact — no rebuild required.
+Use **Migrate** on the **General** settings section (for `runtime === static` projects), or ask Vibe to upgrade. It converts the project to the server-rendered (`node-server`) runtime for you, with pages, styling, and behavior intact — no rebuild required.
+</details>
+
+<details>
+<summary>Will my Vibe website or landing page be indexed by search engines?</summary>
+
+Yes, in typical setups search engines can index Vibe sites. For best results, instruct Vibe to run an SEO pass on the project.
+</details>
+
+<details>
+<summary>How do I stop crawlers from indexing an internal Vibe dashboard?</summary>
+
+Turn off the `robots.txt` toggle in the **SEO** section of that project's settings. Vibe then publishes a `robots.txt` that blocks all crawlers. If your project ships its own `robots.txt`, yours is used instead.
+</details>
+
+<details>
+<summary>Is my Vibe site indexed by search engines, and how do I keep a draft site out of search?</summary>
+
+A published site is not indexed right away, because search engines do not know about it until you submit your sitemap. To keep a mockup out of search, open the SEO settings and turn off generating the files that tell search engines to index the site. Any public site can still be found, but the odds are low if nothing links to it.
+</details>
+
+<details>
+<summary>How do I rebuild my website in Vibe without losing my search rankings?</summary>
+
+Ask Vibe to clone your existing site so it captures the theme, content, and layout. Vibe generates `llms.txt`, `robots.txt`, and `sitemap.xml` files for you. Keep the same URL paths as your old site so existing links do not break.
 </details>
 
 ## Next Steps
 
 - [Project Settings](./project-settings.md) — Configure your project's SEO, knowledge, connectors, and more
 - [Getting Started](../getting-started.md) — Walk through a full generation end to end
-- [Custom Domains](./custom-domain.mdx) — Publish your app to a domain you own (Professional)
+- [Custom Domains](./custom-domain.mdx) — Publish your app to a domain you own (Standard and Pro)

@@ -5,6 +5,9 @@ description: Use the Contact Us card in Business App navigation to reach your se
 tags: [business-app, support, help]
 keywords: [contact us, get help, support center, send message, assigned contact]
 sidebar_position: 9
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What is Contact Us?

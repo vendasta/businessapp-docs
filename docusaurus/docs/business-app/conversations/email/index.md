@@ -2,6 +2,9 @@
 title: "Email in Conversations"
 sidebar_label: "Email"
 description: "Send and receive email in Conversations, set up email forwarding, and find your assigned email address."
+brand: business-app
+product: conversations
+audience: smb
 ---
 
 Conversations lets you send and receive emails with leads and customers from a shared team inbox. When a lead provides an email address through a web chat, form, or any other channel, anyone on your team can reply via email directly from Conversations without opening a separate email client.

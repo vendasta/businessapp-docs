@@ -2,6 +2,9 @@
 title: Images
 sidebar_position: 6
 unlisted: false
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Images
@@ -22,6 +25,8 @@ You can attach your own images directly in the chat and tell Vibe what to do wit
 ## Asking for a generated image
 
 Image generation is built into Vibe. When your prompt mentions an image, Vibe sends a description to the platform's image model, gets back a hosted image, and embeds the URL directly in your generated app. The result is a real asset, not a `lorem ipsum` graphic — and not something you have to enable in Project Settings. It's always available.
+
+Generated images are saved into a per-project folder in your account's media library, so you can find and reuse them later.
 
 Mention the image in any prompt:
 

@@ -2,6 +2,9 @@
 title: "PageSpeed"
 sidebar_label: "PageSpeed"
 description: "WordPress Hosting includes richer PageSpeed data on the dashboard. You can see a trend of your website's page speed over time and understand opportunities to improve it."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting includes richer PageSpeed data on the dashboard. You can see a trend of your website's page speed over time and, at a glance, understand opportunities to improve it.

@@ -3,6 +3,9 @@ title: Webchat
 sidebar_label: Webchat
 sidebar_position: 6
 description: Add an existing webchat to your Vibe app, or create a new one, without leaving the chat.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Webchat

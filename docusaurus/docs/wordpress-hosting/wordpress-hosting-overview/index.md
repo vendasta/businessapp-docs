@@ -2,6 +2,9 @@
 title: "WordPress Hosting Overview"
 sidebar_label: "WordPress Hosting Overview"
 description: "WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes. Built on Google Cloud Platform, it delivers reliable hosting, built-in eCommerce, fast performance, and easy-to-use visual tools.

@@ -4,6 +4,9 @@ description: Overview of Yesware reporting tools including activity, template, c
 sidebar_position: 0
 tags: [yesware, reporting, analytics]
 keywords: [Yesware reports, email activity report, template performance, sales analytics]
+brand: yesware
+product: yesware-core
+audience: smb
 ---
 
 Yesware's reporting suite gives you clear insight into how your outreach is performing, for both individuals and teams.
