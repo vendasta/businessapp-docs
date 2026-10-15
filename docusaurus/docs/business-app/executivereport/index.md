@@ -1,5 +1,8 @@
 ---
 title: Executive Report
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 ## What is the Executive Report?
 The **Executive Report** gives you a clear summary of your business’s online performance across key marketing areas like reviews, SEO, social media, listings, advertising, and website traffic. The report is automatically generated and delivered on a weekly or monthly schedule and includes data from the tools connected to your Business App.
@@ -39,6 +42,7 @@ Your Executive Report includes:
 - **Automatic email delivery** — no sign-in required to open the report from the email link
 - **Mobile-friendly layout** — view it on any device
 - **Fast updates** — data from Google Business Profile can appear in the report within about 5 minutes after you connect it
+- **Booking activity** from My Meetings — appointment counts, AI booking attribution, and calendar health, when Meeting Scheduler is active on your account
 
 ![Executive Report detail](img/executive-report-detail.jpg)
 
@@ -55,6 +59,7 @@ You can learn more about specific parts of the report here:
 - **[Advertising](./advertising)** — Google Ads and Facebook Ads performance when you use Advertising Intelligence
 - **[Finance (QuickBooks)](./finance-quickbooks)** — Income, expenses, and invoice notifications from QuickBooks Online
 - **Campaigns** — Delivered, opened, and clicked stats for your email campaigns and standalone emails, with breakdowns by date range
+- **My Meetings** — Appointment activity, AI booking performance, and calendar health (see the [My Meetings card](../home.mdx#my-meetings-card) on the Home page for details)
 
 ## When Is New Data Updated in the Executive Report
 
@@ -153,7 +158,7 @@ Most active products push data to the report, including:
 - Google Business Profile
 - Reputation AI
 - Local SEO
-- Social Marketing
+- Social AI
 - Advertising Intelligence (Google Ads, Facebook Ads)
 - Website Pro
 - Marketgoo, Metricool, SEO tools
@@ -175,3 +180,9 @@ If you’ve checked these and the issue persists, additional investigation may b
 
 </details>
 
+<details>
+<summary>Is the Executive Report data live?</summary>
+
+No. The Executive Report shows historical data for the selected date range. For live listing or performance data, check the relevant product dashboard directly, such as the Local SEO dashboard for listing metrics.
+
+</details>

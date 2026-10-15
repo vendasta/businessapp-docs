@@ -2,6 +2,9 @@
 title: "How to Find PHP Logs"
 sidebar_label: "PHP Logs"
 description: "Access PHP logs through the Advanced Tools section in WordPress Hosting to troubleshoot and debug your website."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 If you're troubleshooting an issue or debugging your website, accessing PHP logs is crucial. WordPress Hosting makes it easy to view these logs through the **Advanced Tools** section. Follow the steps below to locate your PHP logs:
 
@@ -14,10 +17,10 @@ If you're troubleshooting an issue or debugging your website, accessing PHP logs
     From the list of websites, click on the one for which you want to access PHP logs.
 
 3.  **Navigate to Advanced Tools**
-    In the website's dashboard, locate and click on the **Advanced Tools** section.
+    In the website's dashboard, locate and click on the `Advanced Tools` section.
 
 4.  **Open PHP Logs**
-    Under **Advanced Tools**, find and click the **PHP Logs** option. This displays the latest PHP error logs for your site.
+    Under `Advanced Tools`, find and click the `PHP Logs` option. This displays the latest PHP error logs for your site.
 
 5.  **Analyze the logs**
     Review the logs to identify errors or warnings related to your PHP scripts, such as syntax errors, deprecated functions, or unhandled exceptions.

@@ -2,25 +2,28 @@
 title: "Reset Staging Site"
 sidebar_label: "Reset Staging Site"
 description: "WordPress Hosting provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting provides three flexible options for resetting your staging environment, allowing you to tailor it to your needs.  
   
 ![Staging site reset options](./img/resetting-staging/reset-staging-site.png)
 
-### 1\. Reset to Live Site
+### 1. Reset to live site
 
 This option creates an **exact copy** of your current live site in the staging environment.
 
 *   Best for testing updates or changes based on your live website's most recent state.
 
-### 2\. Reset from Backup
+### 2. Reset from backup
 
 Select this option to reset the staging site using a backup from your **backup list**.
 
 *   Ideal for comparing your current live site to an earlier version or recovering content from a previous state.
 
-### 3\. Reset from Template
+### 3. Reset from template
 
 Use this option to install a **fresh template** on your staging site.
 
