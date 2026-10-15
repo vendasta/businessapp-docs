@@ -5,6 +5,9 @@ sidebar_position: 3
 description: Track desktop and mobile page speed scores over time, with passed rules and improvement opportunities.
 tags: [wordpress-hosting, dashboard, performance, page-speed]
 keywords: [page speed, PageSpeed Insights, mobile speed, desktop speed, performance score, passed rules, opportunities]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The **Performance** card shows how fast your homepage loads on desktop and mobile, measured by Google PageSpeed Insights. Scores refresh automatically; click the refresh icon to run a new check on demand.
@@ -13,11 +16,11 @@ The **Performance** card shows how fast your homepage loads on desktop and mobil
 
 ## What you see
 
-- **Desktop and Mobile scores** — A 0–100 number for each. The arrow next to the score shows how much it changed since the last check.
-- **Passed rules** — PageSpeed checks your site already satisfies.
-- **Opportunities** — Suggested fixes that could raise your score.
-- **History chart** — Desktop (solid line) and mobile (dashed line) scores plotted over time.
-- **Performance improvement opportunities** — Opens a detailed list of fixes with estimated time savings.
+- **Desktop and Mobile scores**: A 0–100 number for each. The arrow next to the score shows how much it changed since the last check.
+- **Passed rules**: PageSpeed checks your site already satisfies.
+- **Opportunities**: Suggested fixes that could raise your score.
+- **History chart**: Desktop (solid line) and mobile (dashed line) scores plotted over time.
+- `Performance improvement opportunities`: Opens a detailed list of fixes with estimated time savings.
 
 ## Score ranges
 

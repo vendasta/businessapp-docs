@@ -2,6 +2,9 @@
 title: "Common WordPress Content Features"
 sidebar_label: "Content Features"
 description: "Learn how to add common content features to your WordPress site including FAQ sections, password-protected pages, and RSS feeds."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress offers several built-in and plugin-based features to enhance your website's content and functionality. This guide covers three common content features: FAQ sections, password-protected pages, and RSS feeds.

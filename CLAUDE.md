@@ -155,10 +155,11 @@ Every pull request that changes files under `docusaurus/docs/` triggers a **Gemi
 
 **What it does:**
 1. Detects changed `.md`/`.mdx` files in the PR
-2. Runs the `scan-style.sh` deterministic checks (gray-label, evergreen, formatting, build safety)
-3. Sends file content to Gemini for qualitative review (subtle evergreen language, alt text quality, wall-of-text, etc.)
-4. Posts findings as inline PR comments with committable `suggestion` blocks
-5. Requests changes if blockers are found; posts a comment otherwise
+2. Sends file content to Gemini for qualitative review (subtle evergreen language, alt text quality, wall-of-text, etc.)
+3. Posts findings as inline PR comments with committable `suggestion` blocks
+4. Requests changes if blockers are found; posts a comment otherwise
+
+The workflow does **not** run `scan-style.sh`. Those deterministic checks (gray-label, evergreen, formatting, build safety) are available to run locally before you push: `bash .claude/skills/style-review/scripts/scan-style.sh` (no argument scans the docs your branch changed; pass a file or directory to scan that instead).
 
 **How it works:**
 - Primary model: `gemini-3-flash-preview` with automatic fallback to `gemini-2.5-flash`
@@ -220,10 +221,12 @@ title: Scheduling Posts: A Guide     ✗ (breaks YAML)
 - Missing `title` in frontmatter
 - Unquoted colons in frontmatter values
 - Unclosed `<details>`, `<summary>`, `:::`, or code blocks
-- Broken internal links or missing image files
+- Missing image files
 - Wistia video embeds in `.md` files (must be `.mdx`)
 - Invalid `_category_.json` (bad JSON, missing `label`)
 - WordPress Hosting categories missing the required `slug`
+
+Broken internal links do **not** break the build: `docusaurus/docusaurus.config.ts` sets `onBrokenLinks: 'ignore'` and `onBrokenMarkdownLinks: 'ignore'`, so a bad link ships silently. Check links yourself with pre-push validation.
 
 Run pre-push validation before every commit to catch all of these.
 

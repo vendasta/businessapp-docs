@@ -2,6 +2,9 @@
 title: "Contact Syncing with Gravity Forms"
 sidebar_label: "Gravity Forms Sync"
 description: "Learn how to configure Gravity Forms to ensure contact form submissions sync correctly with your CRM by properly mapping fields and configuring email notifications."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Gravity Forms is a tool for capturing leads, but to ensure those leads sync correctly with your CRM, certain configurations must be set up properly. This article walks you through the **essential steps** to ensure contact form submissions are parsed and recorded accurately.

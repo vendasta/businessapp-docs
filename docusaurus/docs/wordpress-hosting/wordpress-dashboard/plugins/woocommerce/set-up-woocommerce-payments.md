@@ -2,6 +2,9 @@
 title: "Set up WooCommerce payments"
 sidebar_label: "Set Up Payments"
 description: "Step-by-step guide to set up WooCommerce payments in your WordPress dashboard, including payment method selection and optional sandbox testing."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 **To set up WooCommerce payments:**

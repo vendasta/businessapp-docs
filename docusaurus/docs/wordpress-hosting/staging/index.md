@@ -4,6 +4,9 @@ sidebar_label: "Staging"
 description: "Use the WordPress Hosting staging environment to safely test changes before pushing them to your live production site."
 tags: [wordpress-hosting, staging, development]
 keywords: [WordPress staging site, test website changes, push to production, staging environment, safe website updates]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 The WordPress Hosting staging environment lets you test changes safely before pushing them to your live production site. Create a separate copy of your website where you can experiment, make updates, and verify everything works correctly, all without affecting your live site or visitors.

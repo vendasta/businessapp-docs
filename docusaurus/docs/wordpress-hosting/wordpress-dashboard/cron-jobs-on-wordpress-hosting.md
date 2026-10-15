@@ -2,6 +2,9 @@
 title: "Cron Jobs on WordPress Hosting"
 sidebar_label: "Cron Jobs"
 description: "Learn about WordPress Hosting's automated scheduled tasks system that handles posts, backups, and emails automatically."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Cron jobs are scheduled tasks that run automatically on your website, handling things like publishing posts, running backups, and sending emails without you having to trigger them manually.

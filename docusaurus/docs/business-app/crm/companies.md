@@ -4,6 +4,9 @@ sidebar_position: 3
 description: Manage organizations in your CRM. Create, enrich, and segment companies; associate contacts and opportunities; and log sales activity.
 tags: [companies, crm]
 keywords: [crm companies, company fields, logging activity, lead scoring, find accounts, owner, assign salesperson, salesperson]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use Companies to manage the organizations you sell to and serve. Keep company data accurate, track engagement, and associate contacts, opportunities, tasks, and lists.
@@ -63,7 +66,7 @@ Looking for a "Salesperson" or "Assign salesperson" field? The field is called *
 
 ### Take bulk actions on companies
 
-Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page.
+Select one or more companies from the table, then click the **Actions** button to act on them without leaving the page. The header checkbox selects only the records on the current page — a banner confirms exactly how many are selected (for example, "25 of 143 selected") and gives you a link to select every matching record instead, with an option to clear the selection.
 
 ![Actions button](img/actions-button.png)
 

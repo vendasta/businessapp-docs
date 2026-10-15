@@ -2,6 +2,9 @@
 title: "Add Google Tag/AdSense Code to WordPress"
 sidebar_label: "Google Tag/AdSense"
 description: "Adding a Google Tag or AdSense code to your WordPress site is a straightforward process. Follow these steps to ensure the code is correctly integrated into your website."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 Adding a Google Tag or AdSense code to your WordPress site is a straightforward process. Follow these steps to ensure the code is correctly integrated into your website.

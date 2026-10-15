@@ -1,9 +1,12 @@
 ---
 title: "Email Delivery and Troubleshooting"
 sidebar_label: "Delivery & Troubleshooting"
-description: "Understand email statuses, fix missing email logs, resolve deferred emails, and learn how unsubscribes work in WordPress Hosting."
+description: "Understand email statuses, find form emails filtered to Junk or quarantine, fix missing email logs, resolve deferred emails, and learn how unsubscribes work in WordPress Hosting."
 tags: [wordpress-hosting, email, troubleshooting, multisite]
-keywords: [email status, deferred email, bounced email, no email logs, unsubscribe, SMTP, built-in email, multisite]
+keywords: [email status, deferred email, bounced email, no email logs, unsubscribe, SMTP, built-in email, multisite, form emails in junk, quarantine, DMARC]
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## Email statuses
@@ -13,7 +16,7 @@ When reviewing emails in the Activity section, you'll see the following statuses
 | Status | Meaning |
 |--------|---------|
 | **Processed** | The email has been accepted by the system. This is a combined status covering both delivered and bounced emails. |
-| **Delivered** | The email was successfully delivered to the recipient's inbox. |
+| **Delivered** | The recipient's mail server accepted the email. The recipient's mail provider still decides where it lands, so a delivered email can end up in Junk or quarantine instead of the inbox. |
 | **Bounced** | The email could not be delivered — usually due to an invalid email address or a full mailbox. |
 | **Opened** | The recipient opened the email. |
 | **Clicked Through** | The recipient clicked a link within the email. |
@@ -43,6 +46,27 @@ If you don't see any logs under the Email History tab, your site is likely confi
 
 Once enabled, all outgoing emails will be routed through the built-in email system and appear in the Email History tab.
 
+## Form emails show as delivered but aren't in the inbox
+
+If Email History shows a form notification as **Delivered** but the recipient can't find it, the recipient's mail provider accepted the email and then filtered it. This usually happens when the form sends from an address on your own domain (for example, `info@yourbusiness.com`), your domain has a DMARC policy of `quarantine` or `reject`, and the domain isn't yet authorized to send through Business App. The recipient's provider can't verify the email, so it moves it to Junk or quarantine, or rejects it.
+
+### Release the emails that were filtered
+
+1. Check the recipient's **Junk** or **Spam** folder
+2. If the mailbox is on Microsoft 365 or Google Workspace, ask the mailbox administrator to check the quarantine and release the form emails
+3. Mark the released emails as **Not junk** so future notifications are more likely to reach the inbox
+
+### Stop it from happening again
+
+Authorize your domain so that the recipient's mail provider can verify your form emails:
+
+1. In Business App, go to `Administration` → `Email configuration`
+2. Use `Authorize a domain` to add the domain your forms send from
+3. Add the SPF, DKIM, and DMARC records shown there at your domain provider
+4. Wait for the records to show as verified
+
+For step-by-step instructions, see [Email Configuration](../../business-app/administration/email/email-configuration.mdx).
+
 ## Deferred emails
 
 A deferred status means the receiving server temporarily limited access — similar to a busy signal. Common reasons include:
@@ -64,7 +88,7 @@ The only DNS records you need are:
 * **A Record** — Name: `@` or your domain name, Value: `34.149.86.124`
 * **CNAME Record** — Name: `www`, Value: `host.websiteprohosting.com`
 
-If you're sending emails using your own custom domain and want to improve deliverability, you may optionally configure SPF, DKIM, and DMARC records, but they are not required by default.
+SPF, DKIM, and DMARC records aren't needed to launch your site, but they matter for email. If your forms send from an address on your own domain, authorize that domain in `Administration` → `Email configuration`. If your domain has a DMARC policy of `quarantine` or `reject`, form emails from an unauthorized domain are likely to land in Junk or quarantine, or be rejected. See [Form emails show as delivered but aren't in the inbox](#form-emails-show-as-delivered-but-arent-in-the-inbox).
 
 </details>
 

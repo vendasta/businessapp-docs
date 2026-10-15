@@ -5,6 +5,9 @@ sidebar_position: 8
 sidebar_label: Time-based triggers
 tags: [automations, scheduled, triggers, recurring, time-based]
 keywords: [scheduled automation, recurring automation, daily automation, weekly automation, monthly automation, time-based trigger, on a schedule]
+brand: business-app
+product: automations
+audience: smb
 ---
 
 Run automations on a recurring schedule without waiting for an event to trigger them. The **On a schedule** trigger is useful for routine tasks like sending team reminders, weekly notifications, or monthly check-ins.

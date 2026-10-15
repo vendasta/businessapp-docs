@@ -2,6 +2,9 @@
 title: "Get Started with Elementor AI"
 sidebar_label: "Elementor AI"
 description: "Elementor AI is a tool integrated into the Elementor page builder that helps you generate text and code using artificial intelligence. This guide will help you get started."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## What is Elementor AI?

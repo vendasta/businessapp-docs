@@ -4,6 +4,9 @@ sidebar_position: 1
 description: Manage people you engage with. Import/export, organize, and take action on contacts across campaigns, tasks, and opportunities.
 tags: [contacts, crm]
 keywords: [crm contacts, import contacts, export contacts, contact fields, campaigns, owner, assign salesperson, salesperson]
+brand: business-app
+product: crm
+audience: smb
 ---
 
 Use Contacts to manage the people you engage with. Create and update contact records, import and export in bulk, associate contacts with companies and opportunities, and take action with campaigns, lists, and tasks.
@@ -67,11 +70,20 @@ Updating existing contacts during import will overwrite the mapped fields on mat
 Each contact should include at least one of: first name, last name, email, or phone. Company name is required for any new company rows created during import.
 :::
 
+:::info
+Contact names are stored as separate **First name** and **Last name** fields, not a single combined name field. If your CSV has one "Name" column, split it into two columns before mapping.
+:::
+
+:::note
+Tag columns append your imported values to any tags already on a matching contact, rather than replacing them. Dropdown and other option fields match by value regardless of capitalization, so entries like "Lead" and "lead" map to the same option. When an imported contact is associated with only one company, that company is automatically set as the contact's primary company.
+:::
+
 ### Export contacts
 
-1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table.
-2. Choose `Select all…` (or select specific rows), then `Actions` > `Export`.
-3. A notification is sent when your CSV is ready to download.
+1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table. A banner confirms how many records on the page are selected, for example "25 of 143 selected."
+2. To include every matching record instead of just the current page, click `Select all 143 contacts` in the banner. The banner then confirms all matching records are selected and gives you a link to clear the selection.
+3. Click `Actions` > `Export`.
+4. A notification is sent when your CSV is ready to download.
 
 :::info
 Exports respect your current filters and the set of rows displayed.
@@ -86,7 +98,7 @@ Exports respect your current filters and the set of rows displayed.
 
 ### Take bulk actions on contacts
 
-Select one or more contacts from the table, then click the **Actions** button to act on them without leaving the page.
+Select one or more contacts from the table, then click the **Actions** button to act on them without leaving the page. The header checkbox selects only the records on the current page — a banner confirms exactly how many are selected (for example, "25 of 143 selected") and gives you a link to select every matching record instead, with an option to clear the selection.
 
 ![Actions button](../img/actions-button.png)
 
@@ -178,4 +190,11 @@ Yes. Set up email auto-BCC and forwarding so sales emails are captured to the ap
 <summary>How are contacts different from users?</summary>
 
 Contacts are people you store in the CRM (e.g. customers, leads); they do not log in to Business App. Users are people who have access to Business App. The two are separate; changing a contact's email disassociates them from any linked user, and removing a contact does not remove a user.
+</details>
+
+<details>
+<summary>How does marketing consent get set on contacts?</summary>
+
+By default, marketing consent is unset on new contacts. Consent is recorded when a contact submits a form that includes a consent field, or when the web chat collects consent during a conversation.
+
 </details>
