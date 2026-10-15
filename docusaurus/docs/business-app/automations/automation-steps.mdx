@@ -2,6 +2,9 @@
 title: Steps
 sidebar_position: 3
 description: Browse all available automation steps and learn how logic steps like delays, If/Else branches, and End This Automation work.
+brand: business-app
+product: automations
+audience: smb
 ---
 
 Automation steps are what happen after a trigger fires. Each step defines a specific action your workflow performs: sending a message, updating a record, creating a task, and so on. You can add multiple steps to a workflow and they run from top to bottom.
@@ -115,13 +118,9 @@ When you need to add an If/Else branch above a series of existing steps, you don
 <script src="https://fast.wistia.net/player.js" async></script>
 :::
 
-## Search for steps in the editor
+## Finding your way around the canvas
 
-When editing a long automation, press **Cmd+F** (Mac) or **Ctrl+F** (Windows) inside the automation editor to open step search. Type any keyword — a step name, action type, or phrase like "email" or "update contact" — and matching steps are highlighted so you can jump directly to what you need.
-
-- Search is case-insensitive
-- Works across all trigger and action steps
-- Use the arrow keys or Enter to move between matches, or click a highlighted step to jump to it
+Long automations get hard to scan. The Automation Builder has a set of canvas tools for this — step search, step references, and the minimap. See [Navigating the canvas](./navigating-the-canvas.mdx).
 
 ## Step Reference
 
@@ -168,6 +167,7 @@ When editing a long automation, press **Cmd+F** (Mac) or **Ctrl+F** (Windows) in
 | Pause campaign for contact | Pauses an ongoing email campaign for the contact |
 | Start a campaign for the contact | Enrolls a contact in a specified email campaign |
 | Start a campaign for the company | Enrolls all contacts associated with a company in a specified email campaign |
+| Start a campaign for the custom object | Enrolls the contacts associated with a custom object record in a specified email campaign (up to 50). A contact associated with multiple records in the same automation run is enrolled once. If the record has no associated contact, the step is skipped and the reason appears in the automation activity feed |
 | Start a Yesware campaign for the contact | Enrolls a contact in a Yesware email sequence |
 | Send a marketing email template to a contact | Sends a marketing email from a template to a contact's email address |
 | Send a marketing email template to a company | Sends a marketing email from a template to the primary address on file for a company |
@@ -178,7 +178,7 @@ When editing a long automation, press **Cmd+F** (Mac) or **Ctrl+F** (Windows) in
 
 | Step | Description |
 |---|---|
-| Notify a user | Sends an in-app and email notification to a specified team member |
+| Notify a user | Sends an in-app and email notification to a team member. Select a specific user, or insert a dynamic user ID from a previous step so the notification routes to the right person automatically |
 
 ### Conversations AI
 
@@ -244,5 +244,5 @@ When editing a long automation, press **Cmd+F** (Mac) or **Ctrl+F** (Windows) in
 - [Messaging steps](./use-cases/action-messaging) - Send SMS and email messages via Conversations
 - [Campaign steps](./use-cases/action-campaigns) - Pause and start campaigns from a workflow
 - [Review request automation](./review-requests) - Collect customer reviews automatically
-- [Dynamic content](./smart-values-in-automations) - Personalize steps with dynamic contact and company data
+- [Dynamic content](./dynamic-content-in-automations) - Personalize steps with dynamic contact and company data
 - [Automation settings](./automation-settings) - Control how often it runs and how errors are handled

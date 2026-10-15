@@ -48,11 +48,84 @@ fi
 ERRORS=0
 WARNINGS=0
 
+# ── Prose-only copies ───────────────────────────────────────────────────────
+# Style and build-safety greps run against copies with fenced code blocks
+# blanked out. Sample code is content, not prose: an `import` line or the word
+# "legacy" inside a ``` fence is the article doing its job. Blank lines are
+# kept in place of fenced lines so reported line numbers still match the file.
+PROSE_DIR=$(mktemp -d)
+trap 'rm -rf "$PROSE_DIR"' EXIT
+# Fences are matched the way Markdown matches them: a run of three or more
+# backticks opens a block, and only a run at least as long closes it. Counting
+# fence lines would call a valid ````-wrapped ``` sample unclosed, and would
+# miss a file that really is unclosed. A file left open at EOF is scanned raw,
+# because blanking from the stray fence to the end would silence every later
+# check and still exit 0.
+PROSE_FILES=()
+UNCLOSED_FENCE_FILES=()
+_pi=0
+for _f in "${FILES[@]}"; do
+  if awk '
+      function runlen(s,   n) { n = 0; while (substr(s, n + 1, 1) == "`") n++; return n }
+      {
+        t = $0; sub(/^[[:space:]]+/, "", t)
+        if (t ~ /^```/) {
+          n = runlen(t)
+          rest = substr(t, n + 1); gsub(/[[:space:]]/, "", rest)
+          if (!fence) { fence = 1; open = n }
+          else if (n >= open && rest == "") { fence = 0 }
+          print ""
+          next
+        }
+        print (fence ? "" : $0)
+      }
+      END { if (fence) exit 3 }
+    ' "$_f" > "$PROSE_DIR/$_pi.md"; then
+    :
+  else
+    UNCLOSED_FENCE_FILES+=("$_f")
+    cp "$_f" "$PROSE_DIR/$_pi.md"
+  fi
+  PROSE_FILES+=("$PROSE_DIR/$_pi.md")
+  _pi=$((_pi + 1))
+done
+
+# Translate temp paths in grep output back to the real file paths.
+unprose() {
+  local out="$1" i=0 f
+  for f in "${FILES[@]}"; do
+    out=${out//"$PROSE_DIR/$i.md"/"$f"}
+    i=$((i + 1))
+  done
+  printf '%s\n' "$out"
+}
+
+
 run_check() {
   local label="$1" severity="$2" pattern="$3"
   local results
-  results=$(printf '%s\n' "${FILES[@]}" \
-    | xargs grep -nE "$pattern" 2>/dev/null || true)
+  results=$(unprose "$(grep -nE "$pattern" "${PROSE_FILES[@]}" 2>/dev/null || true)")
+  if [ -n "$results" ]; then
+    if [ "$severity" = "error" ]; then
+      red "  FAIL — $label"
+      echo "$results" | sed 's/^/    /'
+      ERRORS=$((ERRORS + $(echo "$results" | wc -l)))
+    else
+      yellow "  WARN — $label"
+      echo "$results" | sed 's/^/    /'
+      WARNINGS=$((WARNINGS + $(echo "$results" | wc -l)))
+    fi
+  else
+    green "  PASS — $label"
+  fi
+}
+
+# Gray-label checks read the files unchanged: a brand name inside a sample
+# command is text a reader copies, so a fenced block must not hide it.
+run_check_icase_raw() {
+  local label="$1" severity="$2" pattern="$3"
+  local results
+  results=$(grep -niE "$pattern" "${FILES[@]}" 2>/dev/null || true)
   if [ -n "$results" ]; then
     if [ "$severity" = "error" ]; then
       red "  FAIL — $label"
@@ -71,8 +144,7 @@ run_check() {
 run_check_icase() {
   local label="$1" severity="$2" pattern="$3"
   local results
-  results=$(printf '%s\n' "${FILES[@]}" \
-    | xargs grep -niE "$pattern" 2>/dev/null || true)
+  results=$(unprose "$(grep -niE "$pattern" "${PROSE_FILES[@]}" 2>/dev/null || true)")
   if [ -n "$results" ]; then
     if [ "$severity" = "error" ]; then
       red "  FAIL — $label"
@@ -162,32 +234,19 @@ check_frontmatter_colons() {
 }
 
 # ── Custom check: unclosed code blocks and callout blocks (BUILD-SAFETY) ─────
+# Callout blocks only. Fences are settled by the parser at the top of this
+# script, which knows marker lengths; counting ``` lines here as well gave one
+# file two different answers.
 check_unclosed_blocks() {
-  local code_results="" callout_results=""
+  local callout_results=""
   for f in "${FILES[@]}"; do
-    # Count triple-backtick lines
-    local code_count
-    code_count=$(grep -cE '^\x60\x60\x60' "$f" 2>/dev/null) || code_count=0
-    if [ $((code_count % 2)) -ne 0 ]; then
-      code_results+="$f: $code_count triple-backtick lines (odd — likely unclosed)"$'\n'
-    fi
-    # Count ::: lines
     local callout_count
     callout_count=$(grep -cE '^:::' "$f" 2>/dev/null) || callout_count=0
     if [ $((callout_count % 2)) -ne 0 ]; then
       callout_results+="$f: $callout_count ::: lines (odd — likely unclosed)"$'\n'
     fi
   done
-  code_results="${code_results%$'\n'}"
   callout_results="${callout_results%$'\n'}"
-
-  if [ -n "$code_results" ]; then
-    yellow "  WARN — Unclosed code blocks (odd number of triple-backtick lines)"
-    echo "$code_results" | sed 's/^/    /'
-    WARNINGS=$((WARNINGS + $(echo "$code_results" | wc -l)))
-  else
-    green "  PASS — Unclosed code blocks (odd number of triple-backtick lines)"
-  fi
 
   if [ -n "$callout_results" ]; then
     yellow "  WARN — Unclosed callout blocks (odd number of ::: lines)"
@@ -200,8 +259,9 @@ check_unclosed_blocks() {
 
 # ── Custom check: H1 in body (skips frontmatter) ────────────────────────────
 check_h1_in_body() {
-  local results=""
-  for f in "${FILES[@]}"; do
+  local results="" f
+  # Prose copies: a "# comment" line inside a bash sample is not a heading.
+  for f in "${PROSE_FILES[@]}"; do
     local in_frontmatter=0 past_frontmatter=0 line_num=0
     while IFS= read -r line; do
       line_num=$((line_num + 1))
@@ -220,7 +280,7 @@ check_h1_in_body() {
       fi
     done < "$f"
   done
-  results="${results%$'\n'}"
+  results=$(unprose "${results%$'\n'}")
   if [ -n "$results" ]; then
     yellow "  WARN — H1 in body (Docusaurus uses frontmatter title as H1)"
     echo "$results" | sed 's/^/    /'
@@ -268,18 +328,28 @@ check_frontmatter_fields() {
 
 # ── CRITICAL: Gray-label ─────────────────────────────────────────────────────
 echo ""
+bold "[ BUILD-SAFETY ] File structure"
+if [ ${#UNCLOSED_FENCE_FILES[@]} -gt 0 ]; then
+  red "  FAIL — Unclosed code fence (file scanned raw; fix the fence)"
+  printf '    %s\n' "${UNCLOSED_FENCE_FILES[@]}"
+  ERRORS=$((ERRORS + ${#UNCLOSED_FENCE_FILES[@]}))
+else
+  green "  PASS — Code fences all closed"
+fi
+
+echo ""
 bold "[ CRITICAL ] Gray-label / branding"
-run_check_icase \
+run_check_icase_raw \
   "Vendasta mentions" \
   "error" \
   "Vendasta"
 
-run_check_icase \
+run_check_icase_raw \
   "Partner Center references" \
   "error" \
   "Partner Center"
 
-run_check_icase \
+run_check_icase_raw \
   "Partner / reseller / agency terminology" \
   "error" \
   "\b(partner|reseller|agency|agencies|white.?label)\b"
@@ -287,10 +357,13 @@ run_check_icase \
 # ── CRITICAL: Evergreen ───────────────────────────────────────────────────────
 echo ""
 bold "[ CRITICAL ] Evergreen content"
+# Hyphen-aware boundaries: a flag like `--legacy-peer-deps` is a command
+# literal, while "previously called" in prose is the violation this rule exists
+# for. Blanking every inline code span exempted both.
 run_check_icase \
   "Historical references" \
   "error" \
-  "\b(previously|formerly|used to|before this update|earlier version|legacy|deprecated|renamed|has since|in the past|at one point|prior to this|old version)\b"
+  "(^|[^-[:alnum:]])(previously|formerly|used to|before this update|earlier version|legacy|deprecated|renamed|has since|in the past|at one point|prior to this|old version)([^-[:alnum:]]|$)"
 
 run_check_icase \
   "Future-state / roadmap language" \
@@ -343,8 +416,7 @@ check_h1_in_body
 # Heading sentence case — custom check with exclusion list to reduce false positives
 check_heading_sentence_case() {
   local results
-  results=$(printf '%s\n' "${FILES[@]}" \
-    | xargs grep -nE "^#{2,3} [A-Za-z]+ (A[^n ]|B[^u]|[CDEFHIJKLMNOPQRSTUVWXYZ])[a-z]" 2>/dev/null || true)
+  results=$(grep -nE "^#{2,3} [A-Za-z]+ (A[^n ]|B[^u]|[CDEFHIJKLMNOPQRSTUVWXYZ])[a-z]" "${FILES[@]}" 2>/dev/null || true)
   if [ -n "$results" ]; then
     # Filter out known acceptable patterns:
     #   Standard section names, product/brand proper nouns, common doc headings
@@ -414,12 +486,13 @@ check_frontmatter_colons
 
 # JSX / Wistia in .md files (not .mdx)
 MD_ONLY=()
+_mi=0
 for f in "${FILES[@]}"; do
-  [[ "$f" == *.md ]] && [[ "$f" != *.mdx ]] && MD_ONLY+=("$f")
+  [[ "$f" == *.md ]] && [[ "$f" != *.mdx ]] && MD_ONLY+=("${PROSE_FILES[$_mi]}")
+  _mi=$((_mi + 1))
 done
 if [ ${#MD_ONLY[@]} -gt 0 ]; then
-  local_results=$(printf '%s\n' "${MD_ONLY[@]}" \
-    | xargs grep -nE '<iframe|<WistiaVideo|^import |className=' 2>/dev/null || true)
+  local_results=$(unprose "$(grep -nE '<iframe|<WistiaVideo|^import |className=' "${MD_ONLY[@]}" 2>/dev/null || true)")
   if [ -n "$local_results" ]; then
     red "  FAIL — JSX/Wistia in .md files (must use .mdx for JSX content)"
     echo "$local_results" | sed 's/^/    /'

@@ -1,17 +1,27 @@
 ---
 title: Campaigns
-description: Create, send, and track email marketing campaigns in Business App. Build audiences with CRM contacts and lists, personalize emails, and improve deliverability.
+description: "Create, send, and track email campaigns in Business App. Build audiences from CRM contacts and lists, personalize emails, and improve delivery."
 keywords: [Business App campaigns, email marketing campaigns, create email campaign, send email campaign, campaign performance, marketing automation, CRM contacts lists]
 tags: [campaigns, email marketing, automation, crm]
+brand: business-app
+product: campaigns
+audience: smb
+content_type: overview
+kb_id: KB-00148
+answer_snippet: "Campaigns in Business App are multi-step email marketing sequences you design, schedule, and send to targeted CRM contacts and lists. You can personalize content, automate timing, and track sends, opens, clicks, and unsubscribes to improve results."
+doc_owner: campaigns
+review_frequency: 3-months
+last_reviewed: 2026-09-25
+last_reviewed_by: haleyserrano
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Head from '@docusaurus/Head';
 
-Campaigns are multi‑step, email marketing sequences you can design, schedule, and send to targeted CRM contacts and lists. You can personalize content, automate timing, and measure performance (sends, opens, clicks, unsubscribes) to improve results over time.
+Campaigns in Business App are multi-step email marketing sequences you design, schedule, and send to targeted CRM contacts and lists. You can personalize content, automate timing, and track sends, opens, clicks, and unsubscribes to improve results.
 
-Campaigns help you send the right message to the right people at the right time. Use email marketing campaigns in Business App to deliver sequences of emails to contacts associated with your companies, nurture relationships, announce promotions, and drive engagement—all from within the CRM‑connected platform.
+Use campaigns to send sequences of emails to contacts associated with your companies, nurture relationships, and announce promotions from within the CRM.
 
 <div
   className="wistia_responsive_padding"
@@ -55,10 +65,10 @@ Campaigns help you send the right message to the right people at the right time.
 
 ![Marketing emails sent this billing period counter](img/emails-sent-counter.png)
 
-## Get started
+## How do I create a campaign? {#get-started}
 
-1. Go to Business App > Campaigns
-2. Select Create campaign
+1. Go to `Campaigns`
+2. Select `Create campaign`
 3. Choose a template or start from blank
 4. Add your emails, delays, and audience
 5. Preview, then publish when ready
@@ -123,7 +133,7 @@ Use the Preview option in the campaign builder to select a contact and see merge
 <details>
 <summary>Where do I change the `From` name and email?</summary>
 
-Go to Administration > Email Settings to configure the default sender name and email used by campaigns. See: [Email Configuration](../administration/email/email-configuration)
+Go to `Administration` > `Email Configuration` to configure the default sender name and email used by campaigns. See: [Email Configuration](../administration/email/email-configuration)
 </details>
 
 <details>
@@ -160,6 +170,12 @@ Use `Administration` > `Email History` to review sent emails and statuses, then 
 <summary>Why am I seeing consent validation errors when adding recipients to a campaign?</summary>
 
 If your account has the email marketing consent setting enabled, campaigns require explicit marketing consent before a contact can be added. When this setting is on, any recipient missing email or SMS consent triggers a validation error. You can review and update consent settings in `Administration` > `Email Configuration`. Contacts need to have consent recorded on their profile before they can receive campaign emails.
+</details>
+
+<details>
+<summary>Why am I seeing a warning about my service area business when sending a campaign?</summary>
+
+If your Business Profile is marked as a **Service area business** and doesn't have a **Physical address** on file, a warning banner appears on the Send campaign page. Add a physical address in `Administration` > `Business Profile` to remove the warning. You can dismiss the banner, but it may appear again later.
 </details>
 
 <Head>
@@ -205,7 +221,7 @@ If your account has the email marketing consent setting enabled, campaigns requi
           "name": "Where do I change the From name and email?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Go to Administration > Email Settings to configure the default sender name and email used by campaigns."
+            "text": "Go to Administration > Email Configuration to configure the default sender name and email used by campaigns."
           }
         },
         {

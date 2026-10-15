@@ -19,7 +19,7 @@ export const products: Product[] = [
   {
     id: 'adintel',
     name: 'Advertising Intelligence',
-    logo: '/img/Advertising-Intelligence.svg',
+    logo: '/img/Advertising-Intelligence.png',
     sidebarId: 'adintelSidebar',
     path: '/ad-intel/',
     tagline: 'Unified PPC reporting for easy ad performance insights',
@@ -27,7 +27,7 @@ export const products: Product[] = [
   {
     id: 'localseo',
     name: 'Local SEO',
-    logo: '/img/Local-SEO.svg',
+    logo: '/img/Local-SEO.png',
     sidebarId: 'localseoSidebar',
     path: '/local-seo/',
     tagline: "Boost your clients' local rankings with AI-powered software",
@@ -35,15 +35,15 @@ export const products: Product[] = [
   {
     id: 'repman',
     name: 'Reputation AI',
-    logo: '/img/Reputation-Management.svg',
+    logo: '/img/Reputation-Management.png',
     sidebarId: 'repmanSidebar',
     path: '/reputation/',
     tagline: 'AI-powered review management software',
   },
   {
     id: 'socialmarketing',
-    name: 'Social Marketing',
-    logo: '/img/Social-Marketing.svg',
+    name: 'Social AI',
+    logo: '/img/Social-Marketing.png',
     sidebarId: 'socialmarketingSidebar',
     path: '/social-marketing/',
     tagline: 'AI-Powered Social Media Management Software',
@@ -51,7 +51,7 @@ export const products: Product[] = [
   {
     id: 'website',
     name: 'WordPress Hosting',
-    logo: '/img/Wordpress-Hosting.png',
+    logo: '/img/WordPress-Hosting.png',
     sidebarId: 'websiteSidebar',
     path: '/wordpress-hosting/',
     tagline: 'Build and manage beautiful, professional websites',

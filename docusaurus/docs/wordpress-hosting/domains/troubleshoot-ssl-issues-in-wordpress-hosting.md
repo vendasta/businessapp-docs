@@ -2,11 +2,14 @@
 title: "Troubleshoot SSL issues in WordPress Hosting"
 sidebar_label: "Troubleshoot SSL"
 description: "If you have correctly added the required A and CNAME records in your domain's DNS settings, follow the steps below to connect SSL to your custom domain."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 If you have correctly added the following A and CNAME records in your domain's DNS settings, follow the steps below to connect SSL to your custom domain.
 
-### Required DNS Records
+### Required DNS records
 
 **A Record**
 
@@ -22,17 +25,27 @@ If you have correctly added the following A and CNAME records in your domain's D
 
 For detailed information on configuring DNS records, see [Understanding DNS Records](understanding-dns-records.md).
 
-### Step 1: Reconnect Your Domain
+### Step 1: Reconnect your domain
 
 If the DNS records are configured correctly but the SSL status still shows as "Pending," remove the domain and reconnect it. This action restarts the automatic SSL generation process.
 
 ![Reconnect domain to restart SSL generation](img/ssl-troubleshooting/ssl-issue-warning.png)
 
-### Step 2: Wait for SSL Activation
+### Step 2: Wait for SSL activation
 
 After reconnecting the domain, allow up to **30 minutes** for the SSL certificate to be issued and installed.
 
 ![SSL certificate details after reconnection](./img/ssl-troubleshooting/ssl-certificate-details.png)
+
+### Automatic and manual SSL retries
+
+When your domain is eligible for an SSL retry, the Domains tab shows this message: "We retry SSL automatically every 30 min. To try right away, use Retry SSL."
+
+### Multiple A records
+
+When your domain has more than one A record, WordPress Hosting can't generate an SSL certificate, and `Retry SSL` doesn't work. The Domains tab shows `Multiple` as the current IP, with this message: "This domain points to multiple A records. Keep only the recommended IP (...) and remove the others."
+
+Remove the extra A records at your domain registrar so only the recommended IP remains. If SSL setup still fails after multiple retries, the Domains tab shows "SSL setup failed after multiple retries — please contact support."
 
 ### Notes
 

@@ -2,6 +2,9 @@
 title: Reputation
 sidebar_label: Reputation
 description: See how your online review presence is performing with the Review Grade in the Executive Report.
+brand: business-app
+product: business-app-core
+audience: smb
 ---
 
 ## What is the Reputation section?

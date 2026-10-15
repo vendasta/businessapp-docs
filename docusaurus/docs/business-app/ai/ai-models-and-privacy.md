@@ -4,6 +4,9 @@ sidebar_label: Models and privacy
 description: Understand how Business App AI Employees generate answers, where they source information, and what we disclose about underlying AI models.
 tags: [ai, ai-workforce, privacy, models, data-sources, faq]
 keywords: [ai employees, llm, model versions, data sources, knowledge base]
+brand: business-app
+product: ai-workforce
+audience: smb
 ---
 
 ## Overview
@@ -33,6 +36,7 @@ Do not add sensitive or unnecessary personal data to your knowledge base. Only i
 - The specific LLM provider or model version used in production is not published.
 - Model options may change over time to improve quality, safety, and reliability.
 - AI Chat Receptionist and AI Voice Receptionist automatically use a supported model. AI Employees let you choose from the supported models listed in Business App (the provider name is not shown).
+- If you leave an AI Employee's model field on `Default` instead of choosing a specific model, the field shows `Default` along with the name of the model currently used automatically, so you can see what's active without making a selection.
 - The base LLM infrastructure is shared, but your account data is isolated. Your content is not visible to other businesses.
 
 ## Improve response quality
@@ -46,14 +50,14 @@ Do not add sensitive or unnecessary personal data to your knowledge base. Only i
 <details>
 <summary>What AI model powers AI Employees?</summary>
 
-AI Employees run on enterprise‑grade LLMs that we evaluate and monitor for quality. Model names and versions are not disclosed and may change over time.
+AI Employees run on enterprise-grade LLMs that we evaluate and monitor for quality. Model names and versions are not disclosed and may change over time.
 
 </details>
 
 <details>
 <summary>Can I choose which model is used?</summary>
 
-AI Chat Receptionist and AI Voice Receptionist automatically use a supported model managed by the platform. AI Employees let you choose from the supported model options exposed in Business App settings, though we do not list the underlying provider names.
+AI Chat Receptionist and AI Voice Receptionist automatically use a supported model managed by the platform. AI Employees let you choose from the supported model options exposed in Business App settings, though we do not list the underlying provider names. If you leave an AI Employee on `Default`, its model field shows the name of the model currently in use so you can see what's active without making a selection.
 
 </details>
 
@@ -74,7 +78,7 @@ Provide clear, current content in the knowledge base and concise instructions in
 <details>
 <summary>Do AI Employees learn permanently from chats or calls?</summary>
 
-They use the active conversation for context. Persistent behavior comes from your capabilities and knowledge base, not from ad‑hoc user conversations.
+They use the active conversation for context. Persistent behavior comes from your capabilities and knowledge base, not from ad-hoc user conversations.
 
 </details>
 
