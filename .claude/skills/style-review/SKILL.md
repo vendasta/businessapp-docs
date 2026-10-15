@@ -36,6 +36,21 @@ The script checks for:
 - Frontmatter recommended fields (`sidebar_label`, `description`)
 - Build safety (missing title, unquoted colons, JSX in `.md`, unclosed blocks)
 
+**What the script reads inside code samples.** Fenced code blocks are prose to a
+reader but not to these rules, so the evergreen, voice, and formatting checks
+skip them: a sample containing `npm install --legacy-peer-deps` is not a
+historical reference. The gray-label checks are the exception and read every
+line, fenced or not, because a reader copies those commands and a brand name in
+one ships as surely as a brand name in a sentence. The evergreen rule still
+applies to a trigger word in inline code; only a hyphenated flag such as
+`--legacy-peer-deps` is exempt. A file whose fences do not close is scanned with
+nothing skipped, and fails.
+
+The fixtures under `.claude/skills/style-review/fixtures/` hold one small file per
+case above. Run `.claude/skills/style-review/fixtures/run-fixtures.sh` after
+changing the script: a scanner bug shows up as a silent PASS, which no article
+review would catch.
+
 ### Step 3: Qualitative review
 
 For each file flagged by the scan (or all files if doing a full review), read the file and apply the full criteria below. The script catches pattern-matchable issues; this step catches judgment calls.

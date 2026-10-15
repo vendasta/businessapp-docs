@@ -23,9 +23,10 @@ const getArticleMarkdown = (): string => {
 };
 
 // Build a tool URL (base already includes the query param, e.g. ".../?q=") with
-// the page content embedded as Markdown. Budgets against the final encoded URL
-// length so the embedded content is truncated — and ultimately dropped in favour
-// of a page-URL-only prompt — before the URL grows past MAX_AI_URL_LENGTH.
+// the page content embedded as Markdown. If the fully-embedded prompt would push
+// the encoded URL past MAX_AI_URL_LENGTH, fall back to referencing the live page
+// URL (which the assistant can open and read) instead of embedding a truncated
+// slice — so the assistant always works from the complete page.
 const buildAIUrl = ({
   queryBase,
   pageUrl,
@@ -45,33 +46,13 @@ const buildAIUrl = ({
     if (fits(fullPrompt)) {
       return toUrl(fullPrompt);
     }
-
-    // Binary-search the largest Markdown slice whose encoded URL still fits.
-    // Encoding expansion is non-linear, so measure the real URL each step.
-    const truncationNote = `\n\n(Content truncated. Open ${pageUrl} for the full page.)`;
-    const build = (length: number) =>
-      `${basePrompt}${sectionHeader}${markdown.slice(0, length)}${truncationNote}`;
-    let lo = 0;
-    let hi = markdown.length;
-    let bestPrompt = '';
-    while (lo <= hi) {
-      const mid = Math.floor((lo + hi) / 2);
-      const candidate = build(mid);
-      if (fits(candidate)) {
-        bestPrompt = candidate;
-        lo = mid + 1;
-      } else {
-        hi = mid - 1;
-      }
-    }
-    if (bestPrompt) {
-      return toUrl(bestPrompt);
-    }
   }
 
-  // No markdown, or not even a truncated slice fits: send a page-URL-only prompt.
+  // The page is too long to embed inline (or has no scrapeable Markdown): point
+  // the tool at the live page URL, which the assistant can open and read in full,
+  // instead of sending a truncated slice.
   return toUrl(
-    `${basePrompt}\n\nPlease open the page above to read the full content before helping me.`
+    `${basePrompt}\n\nPlease open the page above and read the full content before helping me.`
   );
 };
 

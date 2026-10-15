@@ -2,6 +2,9 @@
 title: Pipeline setup
 sidebar_position: 3
 description: Set up pipelines, add and remove stages, and use close probability for forecasting.
+brand: business-app
+product: crm
+audience: smb
 ---
 
 ## How to set up a pipeline

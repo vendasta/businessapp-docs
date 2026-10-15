@@ -1,6 +1,9 @@
 ---
 title: Blacklisted and Redundant Plugins
 sidebar_position: 4
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting supports thousands of WordPress plugins, and most work without issues. However, some plugins conflict with WordPress Hosting's built-in features because they provide duplicate functionality that's already included. These plugins can cause performance issues, unexpected behavior, or prevent built-in features from working correctly.

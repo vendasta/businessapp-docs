@@ -2,6 +2,9 @@
 title: Conditions
 sidebar_position: 2
 description: Use AND/OR conditions to filter which triggers start your automation workflows.
+brand: business-app
+product: automations
+audience: smb
 ---
 
 

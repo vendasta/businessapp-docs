@@ -2,6 +2,9 @@
 title: "Merge multiple SPF records into a single record"
 sidebar_label: "Merge SPF Records"
 description: "Learn how to merge multiple SPF records into a single record by combining all mechanisms without repeating any parts."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 To merge SPF values, include all parts into one single record without repeating any mechanisms. Here's how to merge the following example SPF records for Outlook and MailerLite:

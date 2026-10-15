@@ -2,6 +2,9 @@
 title: "Add Google Analytics Account"
 sidebar_label: "Add Google Analytics Account"
 description: "Connect your own Google Analytics account to WordPress Hosting for more accurate visitor data."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting has a built-in dashboard that displays highlights of your site’s visitor information using [Google Analytics.](https://www.google.com/analytics/analytics/) However, we understand that you may want to dig deeper using your own account. That’s why WordPress Hosting provides an easy way to do just that.
@@ -41,7 +44,7 @@ There are two ways to install Google Analytics in WordPress Hosting: using the b
    * Scroll to the bottom and paste your Measurement ID into the `Custom Google Analytics Tracking ID` field
    * Click `Save Changes`
 
-To ensure accurate data syncing, also verify that Google Analytics is connected in `Business App` → `Administration` → `Connections`.
+To ensure accurate data syncing, also verify that Google Analytics is connected in `Business App` → `Administration` → `Integrations`.
 
 **Method 2: Add the script manually in Divi**
 

@@ -3,6 +3,9 @@ title: "WordPress Dashboard Login"
 sidebar_label: "Admin Dashboard"
 sidebar_position: 1
 description: "Learn how to securely access the WordPress Admin Dashboard through WordPress Hosting and understand how the custom login system works."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 WordPress Hosting provides secure access to the WordPress Admin Dashboard through a custom login system. This makes your site safer and easier to use by unifying user management and access control.

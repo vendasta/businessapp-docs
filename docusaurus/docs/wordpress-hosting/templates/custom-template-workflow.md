@@ -2,6 +2,9 @@
 title: "Custom Template Workflow"
 sidebar_label: "Template Workflow"
 description: "Create and manage custom templates through the Templates tab in WordPress Hosting Standard/Pro/Premium."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 You can create and manage custom templates through the Templates tab in WordPress Hosting Standard/Pro/Premium.

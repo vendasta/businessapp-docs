@@ -3,6 +3,9 @@ title: Webchat
 sidebar_label: Webchat
 sidebar_position: 6
 description: Add an existing webchat to your Vibe app, or create a new one, without leaving the chat.
+brand: business-app
+product: vibe
+audience: smb
 ---
 
 # Webchat
@@ -17,7 +20,7 @@ If your account doesn't have a webchat yet, Vibe offers to create one. You give 
 
 ## Enabling the connector
 
-From the projects list click **Configure**, or inside the project click **+** in the chat box and select **Connectors**. Toggle **Webchat** on to make it available to the supervisor agent for that project.
+Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **Webchat** on to make it available to the supervisor agent for that project.
 
 ## When to use it
 
@@ -44,6 +47,15 @@ If your account has one or more webchats, Vibe shows a searchable list so you ca
 
 - Vibe can list, select, and embed webchats, and create a new one when you have none — it can't edit, delete, or otherwise reconfigure an existing webchat. Make those changes in [Web Chat](/business-app/conversations/web-chat).
 - Vibe doesn't manage which domains a webchat is allowed to load on. Review or restrict that in Web Chat if needed.
+
+## Frequently Asked Questions
+
+<details>
+<summary>Why does the chat widget connector show the wrong business for my Vibe project?</summary>
+
+Vibe only lists chat widgets for the business the project belongs to. To use a widget from another business, give Vibe that widget's ID or install code, or build the site in the business that owns the widget.
+
+</details>
 
 ## Next Steps
 

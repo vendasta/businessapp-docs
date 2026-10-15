@@ -13,6 +13,9 @@ keywords:
   - delete-contact
   - add-contact
   - yesware-contacts
+brand: yesware
+product: yesware-core
+audience: smb
 ---
 
 ## What is creating contacts?

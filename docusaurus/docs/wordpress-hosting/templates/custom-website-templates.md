@@ -2,6 +2,9 @@
 title: "Custom Website Templates"
 sidebar_label: "Custom Templates"
 description: "Learn how to create custom templates for your WordPress sites to streamline website creation and reuse your preferred configurations."
+brand: business-app
+product: wordpress-hosting
+audience: smb
 ---
 
 ## What are custom templates?

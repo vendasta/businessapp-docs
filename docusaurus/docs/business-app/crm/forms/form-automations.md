@@ -2,6 +2,9 @@
 title: Automate follow-up from your form
 sidebar_position: 3
 description: Create and manage form automations from the Automation tab—templates, follow-up email, and advanced workflows.
+brand: business-app
+product: crm
+audience: smb
 ---
 
 You can create and manage automations directly from a form using the `Automation` tab.
