@@ -12,7 +12,7 @@ Connect an existing QuickBooks company to Business App and surface accounting in
 :::info Choosing the right QuickBooks connection
 There are two connection options:
 
-- **QuickBooks Online**: Sync contacts and certain financial details, automate review requests from invoiced customers, communicate via Business App, and build campaigns using financial insights.
+- **QuickBooks Online**: Sync contacts, companies, and certain financial details, automate review requests from invoiced customers, communicate via Business App, and build campaigns using financial insights.
 - **QuickBooks Online: Personal**: Display a high-level financial summary in the Executive Report only. No contact sync or automations are available with this connection.
 :::
 
@@ -26,6 +26,15 @@ There are two connection options:
 ## Manage the integration
 
 Use the `Manage` tab on the Integrations page to view status and open settings. When connected, you'll see the established connection with options to reauthorize or disconnect.
+
+## Company sync
+
+QuickBooks does not store companies as separate records. Business App uses the `Company name` on each QuickBooks customer to create and update companies in your CRM.
+
+- If a QuickBooks customer has a company name, Business App creates or updates a CRM company with the name, phone number, and billing address from QuickBooks.
+- Contacts with the same company name share one CRM company, and each contact is linked to it.
+- If a company can't be synced, the contact still syncs without the company.
+- Changes you make to a synced company in the CRM sync back to QuickBooks.
 
 ## FAQ
 
