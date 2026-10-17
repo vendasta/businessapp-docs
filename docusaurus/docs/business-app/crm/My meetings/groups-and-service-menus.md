@@ -210,15 +210,15 @@ When a customer types "I need a haircut and a beard trim" in chat, the AI detect
 **To set up:**
 
 1. Create a Service Menu with multi-selection enabled (see above).
-2. Go to **AI → Workforce → Chat Receptionist → Configure → Add a Capability → Book Multi-Service Appointment**.
+2. Go to **AI → Workforce → Chat Receptionist → Configure → Add a Capability → Book Multi-Service Appointment (Chat)**.
 3. Select the Service Menu and save.
 
-![AI Chat Receptionist: Book Multi-Service Appointment capability](../img/my-meetings/ai-chat-multi-service-capability.png)
+![AI Chat Receptionist: Book Multi-Service Appointment (Chat) capability](../img/my-meetings/ai-chat-multi-service-capability.png)
 
 Your AI Chat Receptionist presents that menu to customers and handles the full multi-service booking flow automatically.
 
 :::note
-Your Chat Receptionist configuration may show two capabilities: **Book Appointments** and **Book Multi-Service Appointment**. Use **Book Multi-Service Appointment**. It handles both single-service and multi-service bookings and is a complete replacement. If Book Appointments is visible in your configuration, switch to Book Multi-Service Appointment to access multi-service support and future improvements.
+Your Chat Receptionist configuration may show two capabilities: **Book Appointments** and **Book Multi-Service Appointment (Chat)**. Use **Book Multi-Service Appointment (Chat)**. It handles both single-service and multi-service bookings and is a complete replacement. If Book Appointments is visible in your configuration, switch to Book Multi-Service Appointment (Chat) to access multi-service support and future improvements.
 :::
 
 ### AI Voice Receptionist
@@ -232,12 +232,16 @@ When a caller says "I need a haircut and a beard trim," the AI Voice Receptionis
 1. Ensure every event type in your Service Menu has:
    - **Notification type:** SMS
    - **Required intake field:** Phone Number
-2. Go to **AI → Workforce → Voice Receptionist → Configure → Add a Capability → Book Multi-Service Appointment**.
+2. Go to **AI → Workforce → Voice Receptionist → Configure → Add a Capability → Book Multi-Service Appointment (Voice)**.
 3. Select the Service Menu and save. Only Service Menus whose event types are fully configured for SMS and phone number appear as options.
 
-![AI Voice Receptionist: Book Multi-Service Appointment capability](../img/my-meetings/ai-voice-multi-service-capability.png)
+![AI Voice Receptionist: Book Multi-Service Appointment (Voice) capability](../img/my-meetings/ai-voice-multi-service-capability.png)
 
 Booking confirmations and reminders are sent via SMS to the phone number provided during the booking.
+
+:::note
+Your Voice Receptionist configuration may show two capabilities: **Book appointments with calendar** and **Book Multi-Service Appointment (Voice)**. Use **Book Multi-Service Appointment (Voice)** — it's a complete replacement. If **Book appointments with calendar** is visible in your configuration, it displays an **Upgrade available** badge; switch to Book Multi-Service Appointment (Voice) for multi-service support and continued updates.
+:::
 
 :::note
 AI Chat and AI Voice Receptionists are independent agents. A Service Menu that works for Chat may not be immediately compatible with Voice if any of its event types use email notifications. Review and update those event types before connecting the menu to your Voice Receptionist.
