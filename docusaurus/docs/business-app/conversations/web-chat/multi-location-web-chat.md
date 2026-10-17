@@ -30,7 +30,7 @@ Each location you want to include needs web chat active in its own `Conversation
 
 ## Set up the widget
 
-1. From your group of locations, open the `Web Chat configuration` page under `Administration`, then select `New Web Chat`.
+1. From your group of locations, go to `Administration` and select `Web chat widgets`, or go to `Conversations` and select `More` → `Manage widgets`. Both open the `Web Chat configuration` page. Select `New Web Chat`.
 2. Check the `Widget name`. It fills in automatically with your brand name. Only you see this name, so change it to something more specific if you plan to run more than one widget.
 3. Under `Businesses included`, select `Add locations`. In the `Choose businesses` window, search for a location or pick it from the list. Each row shows the business name, its address, and the `AI Employee` that handles its chats. Check that column to confirm the right employee is assigned to each location before you go live. Select your first location and a banner appears offering to add the rest at once, for example `Select all 12 eligible`. Select `Done` when you're finished.
 4. Add a `Welcome greeting` (up to 70 characters). This appears in the widget header to encourage visitors to start a chat, for example "Hi, how can we help you today?"
@@ -44,7 +44,7 @@ The live preview beside the form uses sample locations, not the ones you selecte
 
 ## Install the widget on your website
 
-Your installation code appears under `Floating chat widget` when you create the widget. You can reopen it any time from the `Web Chat configuration` page.
+Your installation code appears under `Floating chat widget` when you create the widget. You can reopen it any time from the `Web Chat configuration` page (`Conversations` → `More` → `Manage widgets`).
 
 The panel has four tabs:
 
