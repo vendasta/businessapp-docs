@@ -20,6 +20,17 @@ Each automation has a Settings tab where you control how and when your workflow 
 3. Select the **Settings** tab
 4. Configure entry settings and error handling options
 
+## Overview tab
+
+The Overview tab shows a simplified summary of your automation.
+
+- **Version cards:** Reporting cards show information about the version of the automation you're currently viewing.
+- **Details:** View and edit your automation's details.
+- **Notifications:** Subscribe to error notifications for the automation. See [Notification settings](#notification-settings).
+- **Transfer permissions:** Manage transfer permissions for the automation.
+
+If you edit the details and try to navigate away with unsaved changes, a warning asks whether you want to leave without saving.
+
 ## Open goals and run settings from the editor
 
 While you edit an automation, you can open goals and run settings directly from the editor.
@@ -88,9 +99,9 @@ Use "Skip and continue" for non-critical steps like logging or tagging. Use "Sto
 
 Set your preferred timezone for time-based automation steps and scheduling. Timezones in the list are sorted by UTC offset. Your browser-detected timezone appears at the top of the list for quick selection, in addition to its place in the full list.
 
-## Notification Settings
+## Notification settings
 
-Subscribe to error notifications to be alerted when automations encounter issues.
+Subscribe to error notifications from the **Overview** tab to be alerted when an automation encounters issues.
 
 ## Frequently asked questions
 
