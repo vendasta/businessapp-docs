@@ -8,20 +8,32 @@ product: vibe
 audience: smb
 ---
 
-Every Vibe generation starts with a plan. The plan describes which files will be created or modified, what changes will be made, and how the parts fit together. Once the plan is set, Vibe streams its work into the chat: preparing the environment, applying the theme, generating images, editing files, and validating the result. It finishes with a `COMPLETED` block summarizing what shipped.
+Every Vibe generation starts with a plan. The plan describes which files Vibe creates or modifies, what changes it makes, and how the parts fit together. Once the plan is set, Vibe streams its work into the chat: preparing the environment, applying the theme, generating images, editing files, and validating the result. It finishes with a `COMPLETED` block summarizing what shipped.
+
+## Choose a mode
+
+The mode switch next to `Send` in the chat input sets how Vibe handles your next message. The same switch appears in the prompt box on the Vibe home page.
+
+| Mode | What it does |
+| --- | --- |
+| `Ask` | Discuss your project without making any changes. See [Sessions and Ask mode](./sessions-and-ask-mode.md). |
+| `Plan` | Formulate a plan first, before Vibe starts building. |
+| `Build` | Start building immediately. This is the default. |
+
+To switch modes from the keyboard, press `Shift+Tab`. Choose `Plan` when you want Vibe to work out a plan before it builds, such as for a large change that spans the whole app.
 
 ## How a generation flows
 
 A typical run progresses through these stages, visible inline in the chat:
 
-1. **Preparing environment**: the sandbox spins up.
-2. **Thinking**: Vibe internalizes your request, works out the architecture, and commits to a named design system, including palette, typography, and UI primitives, before any code is written.
-3. **Applying theme**: the visual style you described is set.
-4. **Generating images**: any imagery the design needs is created.
-5. **Editing files**: each component, page, and configuration file appears as Vibe writes it.
-6. **Taking screenshot of preview** and **Validating design**: Vibe captures its own output and reviews it.
-7. **Checking for errors**: Vibe runs a build and resolves anything broken before declaring the run finished. See [Error handling and troubleshooting](./troubleshooting.md) for how the auto-fix layers work.
-8. **`COMPLETED`**: a green-checked block appears at the bottom with collapsible "Architecture & Navigation" details (the plan that ran) and a files list (everything that changed).
+1. `Preparing environment`: the sandbox spins up.
+2. `Thinking`: Vibe internalizes your request, works out the architecture, and commits to a named design system, including palette, typography, and UI primitives, before any code is written.
+3. `Applying theme`: the visual style you described is set.
+4. `Generating images`: any imagery the design needs is created.
+5. `Editing files`: each component, page, and configuration file appears as Vibe writes it.
+6. `Taking screenshot of preview` and `Validating design`: Vibe captures its own output and reviews it.
+7. `Checking for errors`: Vibe runs a build and resolves anything broken before declaring the run finished. See [Error handling and troubleshooting](./troubleshooting.md) for how the auto-fix layers work.
+8. `COMPLETED`: a green-checked block appears at the bottom with collapsible "Architecture & Navigation" details (the plan that ran) and a files list (everything that changed).
 
 For a small change, such as tweaking text, recoloring a button, or swapping a single image, the run is short. For a large change, expect more file-edit rows and a longer validation pass.
 
@@ -46,7 +58,7 @@ You answer in the chat, and Vibe resumes the same conversation. There's no new r
 
 ### Example
 
-For the prompt "Add a contact section," Vibe might ask:
+For the prompt "Add a contact section," Vibe can ask:
 
 - **Where should the contact section go?** → *Before footer* · *After hero* · *New page*
 - **What fields should the form include?** → *Name + email* · *Name + email + phone + message* · *Custom*
@@ -67,7 +79,7 @@ If Vibe is confident it understands the request, it skips the questions and show
 
 ## Next steps
 
-- [Prompting Guide](./prompting.md): Write specific prompts that produce cleaner plans with fewer questions
+- [Prompting guide](./prompting.md): Write specific prompts that produce cleaner plans with fewer questions
 - [Troubleshooting](./troubleshooting.md): What to do when a generation doesn't go as planned
-- [Getting Started](../getting-started.md): Walk through a full generation end to end
+- [Getting started](../getting-started.md): Walk through a full generation end to end
 
