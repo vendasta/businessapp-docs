@@ -110,6 +110,7 @@ Available actions include:
 - **Add to campaign** — add selected contacts to a campaign
 - **Add to Yesware campaign** — add selected contacts to a Yesware campaign
 - **Start automation** — run an automation on the selected contacts immediately
+- **Update contact** — update a field on the selected contacts, such as adding a tag or changing lifecycle stage
 
 To start an automation in bulk:
 
@@ -196,5 +197,12 @@ Contacts are people you store in the CRM (e.g. customers, leads); they do not lo
 <summary>How does marketing consent get set on contacts?</summary>
 
 By default, marketing consent is unset on new contacts. Consent is recorded when a contact submits a form that includes a consent field, or when the web chat collects consent during a conversation.
+
+</details>
+
+<details>
+<summary>How do I add a tag to many contacts at once?</summary>
+
+In `CRM` > `Contacts`, select the contacts, then click `Actions` > `More actions` > `Update contact` and choose the `Tags` field. Choose the append option to add the tag and keep existing tags, since set replaces existing tags and clear removes them. The tag must already exist, so add it to one contact first if it is new.
 
 </details>

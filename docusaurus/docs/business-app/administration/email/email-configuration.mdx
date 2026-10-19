@@ -127,3 +127,10 @@ DNS record updates usually take 24–48 hours to propagate. Verification may sho
 
 Check `Administration` → `Email configuration` for verification status. Red exclamation points mean a record is not verified. Fix the DNS records (SPF, DMARC, DKIM) with your domain provider and wait for propagation.
 </details>
+
+<details>
+<summary>Can I send emails from my Gmail address?</summary>
+
+You can set your Gmail address as the `Reply Address` in `Administration` > `Email configuration` so replies come to your inbox. To show your own address as the sender, connect a domain you own under `Advanced email settings`, since a Gmail address cannot be used as a sending domain. Until you connect one, emails send from the default shared domain.
+
+</details>

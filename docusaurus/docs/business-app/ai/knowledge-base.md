@@ -157,3 +157,10 @@ If you need your AI to consistently follow a specific process or framework acros
 Do not rely on one large spreadsheet or a full stale site crawl. Validate each source, remove outdated paths, and split content into smaller capability-specific or workflow-specific knowledge sources (for example booking, hours, cancellations, and general Q&A). Use clear structured prompts, then test each workflow.
 
 </details>
+
+<details>
+<summary>Will my AI employee learn pages on other websites that my site links to?</summary>
+
+No. The AI does not follow links to other websites, such as an external booking or staff profile page. Add each of those pages as its own knowledge source if you want the AI to use it.
+
+</details>
