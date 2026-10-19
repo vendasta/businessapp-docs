@@ -41,6 +41,8 @@ Setting up SPF, DKIM, and DMARC is like showing an ID for your emails. It proves
 
 Configure your email settings via `Administration` → `Email configuration`. Under `Advanced email settings` → Sender domain, choose `Use default authenticated email domain` or `Use my own email domain`. To add a domain, use `Authorize a domain` in the Email domains area.
 
+You can authenticate only a domain you own. A free email address such as Gmail uses a domain you don't own, so you can't set it up as your sender domain. To have replies reach your Gmail inbox, enter your Gmail address as the `Reply Address` under `Administration` → `Email configuration`. Your emails still send from the shared domain.
+
 :::info
 Business App uses HTTPS link branding for tracking links in campaign emails, which helps reduce deliverability warnings from some providers. Authenticating your domain further improves inbox placement and reputation.
 :::
