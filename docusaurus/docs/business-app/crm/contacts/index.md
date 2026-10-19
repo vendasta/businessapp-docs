@@ -110,6 +110,7 @@ Available actions include:
 - **Add to campaign** — add selected contacts to a campaign
 - **Add to Yesware campaign** — add selected contacts to a Yesware campaign
 - **Start automation** — run an automation on the selected contacts immediately
+- **Update contact**: change a field on all the selected contacts at once, such as adding a tag
 
 To start an automation in bulk:
 
@@ -122,6 +123,18 @@ To start an automation in bulk:
 :::tip
 Bulk actions are a fast way to run automations on demand — for example, sending a campaign to a specific segment or assigning owners across a batch of new leads. You don't need to build a new automation; just pick an existing one.
 :::
+
+To add a tag to many contacts at once:
+
+1. Go to `CRM` → `Contacts`.
+2. Select the contacts you want to tag.
+3. Click `Actions` → `More actions` → `Update contact`.
+4. For the field to change, choose `Tags`.
+5. Choose how to apply the tag:
+   - `Set value` replaces all existing tags on the selected contacts.
+   - `Clear value` removes all tags from the selected contacts.
+   - `Append value` adds your tag and keeps the existing ones. Use this option to add a tag.
+6. Enter the tag and confirm.
 
 ### Set or change the Owner
 
