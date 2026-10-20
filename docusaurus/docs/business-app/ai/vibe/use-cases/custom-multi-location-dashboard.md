@@ -1,6 +1,6 @@
 ---
-title: "Build a Custom Multi-Location Dashboard"
-sidebar_label: "Custom Multi-Location Dashboard"
+title: "Build a custom multi-location dashboard"
+sidebar_label: "Custom multi-location dashboard"
 sidebar_position: 4
 draft: false
 description: "Use Vibe to build a gated, custom-branded multi-location performance dashboard for your team, organized around the KPIs that matter to your business."
@@ -8,8 +8,6 @@ brand: business-app
 product: vibe
 audience: smb
 ---
-
-# Build a Custom Multi-Location Dashboard
 
 Business App includes a built-in multi-location dashboard, but it's designed to cover a wide range of use cases. Building a custom version with Vibe makes sense when you want a dashboard organized exactly the way your business reviews performance, with a branded sign-in gate, only the metrics that matter, and a layout your team can check at a glance.
 
@@ -27,42 +25,56 @@ The SSO connector signs in users with their existing Business App account creden
 
 ## Before you start
 
-This use case requires two connectors, enabled in the correct order. Open your project's settings and select **Connectors** (see [project settings](../guides/project-settings.md)), then turn them on in this sequence:
+This use case requires two connectors, enabled in the correct order. In your project, select Settings > `Connectors` (see [project settings](../guides/project-settings.md)), then enable them in this sequence. If a connector isn't listed, select `Add connectors` first.
 
-1. Toggle **Single sign-on** on first.
-2. Toggle **Analytics** on.
+1. Select `Enable` next to Single sign-on first.
+2. Select `Enable` next to Analytics.
 
-SSO must come first. It gates the dashboard to members of your Business App account — if it isn't enabled first, the sign-in UI will appear but authentication will not complete. Both need to be on before you run any of the prompts below.
+SSO must come first. It gates the dashboard to members of your Business App account. If it isn't enabled first, the sign-in UI appears but authentication doesn't complete. Both need to be on before you run any of the prompts below.
 
 ## The prompts
 
 **Starting prompt:**
 
-> Build an owner dashboard for this multi-location business. Show a summary card for each location with total leads this month, bookings this week, and average review rating. Add a bar chart comparing monthly revenue across all locations, and a date-range picker at the top so I can compare any two time periods.
+```text
+Build an owner dashboard for this multi-location business. Show a summary card for each location with total leads this month, bookings this week, and average review rating. Add a bar chart comparing monthly revenue across all locations, and a date-range picker at the top so I can compare any two time periods.
+```
 
 **To connect real Reputation AI data:**
 
-> Please add in the Reputation AI Average Review rating for multi-location group [your-group-ID]
+```text
+Please add in the Reputation AI Average Review rating for multi-location group [your-group-ID]
+```
 
 **To pull in live data across the rest of the dashboard:**
 
-> Please add in the other real data for this multi location group
+```text
+Please add in the other real data for this multi location group
+```
 
 **To connect leads and bookings:**
 
-> Can you add in leads and booking information from the multi-location group now?
+```text
+Can you add in leads and booking information from the multi-location group now?
+```
 
 **To fill in the revenue chart:**
 
-> Can we fill in the monthly revenue box?
+```text
+Can we fill in the monthly revenue box?
+```
 
 **To add a sign-in gate:**
 
-> Gate the dashboard behind a sign-in screen so only authorized users can view the data.
+```text
+Gate the dashboard behind a sign-in screen so only authorized users can view the data.
+```
 
 **To apply visual polish:**
 
-> Can you make the whole page more visually pretty but making it multi-coloured
+```text
+Can you make the whole page more visually pretty but making it multi-coloured
+```
 
 ## What Vibe built
 
@@ -95,16 +107,24 @@ From those prompts, Vibe produced a gated, fully connected dashboard with:
 
 **Use separate prompts to connect each data source.** Leads, bookings, revenue, and Reputation AI each connect differently. If one section shows empty or placeholder data, prompt specifically for that section rather than asking Vibe to fix everything at once:
 
-> The leads section isn't showing data. Connect it to the multi-location group and pull the real figures.
+```text
+The leads section isn't showing data. Connect it to the multi-location group and pull the real figures.
+```
 
 **SSO doesn't work inside an iframe.** The OAuth redirect flow can't complete inside an embedded frame. If you want to embed this dashboard somewhere, either open it in a new tab or ask Vibe to implement sign-in as a pop-up instead:
 
-> Change sign-in to use a pop-up window instead of a redirect so it works when the app is embedded.
+```text
+Change sign-in to use a pop-up window instead of a redirect so it works when the app is embedded.
+```
 
 **Add a location-level breakdown as a follow-up.** The initial output aggregates data across all locations. Once the summary view is working, drill down:
 
-> Add a table below the charts that breaks down phone calls and website clicks by individual location, sortable by each column.
+```text
+Add a table below the charts that breaks down phone calls and website clicks by individual location, sortable by each column.
+```
 
 **Test the date range filter before publishing.** Click through several date ranges and confirm that all charts and metrics update together. If any element stays static, prompt to reconnect it:
 
-> The monthly revenue chart isn't responding to the date range filter. Fix it so it updates when the date range changes.
+```text
+The monthly revenue chart isn't responding to the date range filter. Fix it so it updates when the date range changes.
+```
