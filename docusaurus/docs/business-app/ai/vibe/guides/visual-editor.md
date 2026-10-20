@@ -1,5 +1,6 @@
 ---
-title: Visual Editor
+title: Visual editor
+description: Turn on Visual edits to select an element in the Vibe live preview, then ask for a change or adjust its text, colors, spacing, typography, and more directly.
 sidebar_position: 2
 unlisted: false
 brand: business-app
@@ -7,9 +8,7 @@ product: vibe
 audience: smb
 ---
 
-# Visual Editor
-
-Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Toggle the **Visual edits** button in the chat composer to flip design mode on and off — click elements in the live preview when it's on, then toggle it off to return to prompting. No hunting for a separate control.
+Vibe includes a visual editor that lets you customize your application's appearance without writing prompts or code. Select `Visual edits` in the chat composer to turn it on. The button turns purple, its tooltip reads "Select object to edit," and the left panel replaces the chat with "Select an element to edit." Click elements in the live preview to edit them. To go back to prompting, select `Visual edits` again.
 
 <!-- THEMES: restore the following image and section when themes feature launches
 ![The Vibe editor in design mode: the left panel shows the Appearance Light/Dark toggle, the current theme, and the color palette list (Default, Glacier, Harvest, Lavender, and more), with the Visual edits button active in the chat composer below it.](../img/design-mode-themes.png)
@@ -43,20 +42,20 @@ Every theme supports both light and dark appearances. Use the toggle at the top 
 
 ## Editing a specific element
 
-Click any element in the live preview to select it. A blue outline marks the selection. You can also click **Select parent** to walk the selection up to the containing element.
+Hover over an element in the live preview to see a purple outline and a tag with its selector, then click the element to select it. The left panel shows `Select parent` next to a chip with the element's selector. Click `Select parent` to walk the selection up to the containing element.
 
-When you select an element, Vibe gets exact context about what you clicked: the source file, the line and column in that file, the JSX tag, the CSS classes, and the text content. That context travels with any prompt you send while the element is selected, so when you ask for a change Vibe edits the right element directly — no guesswork from prose descriptions.
+When you select an element, Vibe gets exact context about what you clicked: the source file, the line and column in that file, the JSX tag, the CSS classes, and the text content. That context travels with any prompt you send while the element is selected, so when you ask for a change Vibe edits the right element directly, without guessing from a prose description.
 
 You can select up to ten elements at once. Vibe handles each one in the same prompt.
 
-![Hero headline selected in Design mode: a blue outline marks the element, an inline 'Ask Vibe' chat appears next to it, and the left Visual edits panel shows the element's tag, text content, layout, and color controls.](../img/visual-editor-selected.png)
+![A heading selected with Visual edits on: a purple outline and selector tag mark the element, an Ask Vibe input appears next to it, and the left panel shows Select parent, the element's selector, and the Text, Layout, Colors, Spacing, and Typography sections.](../img/visual-editor-selected.png)
 
 ### Two ways to ask for a change
 
 Once an element is selected, you have two paths:
 
-- **Inline quick-edit** — A small chat input appears near the selection. Type a one-line change ("make this bigger and bolder," "change the color to navy") and press enter. Best for fast tweaks where you don't need to leave the canvas.
-- **Main Design panel chat** — Open the Design panel chat for longer changes that need more context, more steps, or a follow-up question from Vibe. The selection still travels with the prompt, so Vibe knows what you're talking about.
+- **Inline quick-edit**: An `Ask Vibe...` input appears next to the selection. Type a one-line change ("make this bigger and bolder," "change the color to navy") and press enter. Best for fast tweaks where you don't need to leave the canvas.
+- **Chat input**: Use the chat input below the left panel for longer changes that need more context, more steps, or a follow-up question from Vibe. The selection still travels with the prompt, so Vibe knows what you're talking about.
 
 Both paths produce the same result. Pick whichever fits the change you have in mind.
 
@@ -86,17 +85,20 @@ For some properties you can edit the value directly in the Visual edits panel wi
 
 ### Style properties
 
-For any selected element, you can modify:
+The left panel groups the controls for the selected element into these sections, in this order. `Text` appears for text elements, and `Icon` appears for icons.
 
-| Category | Properties |
+| Section | Properties |
 |----------|-----------|
-| **Colors** | Text color, background color |
-| **Spacing** | Padding, margin |
-| **Typography** | Font size, family, weight, style, alignment, line height, letter spacing |
-| **Effects** | Box shadow (none, sm, md, lg, xl), opacity, border radius |
-| **Layout** | Display (flex/grid), direction, justify, align, gap, wrap |
+| `Text` | Text content |
+| `Icon` | Icon, size, color |
+| `Layout` | Display (flex/grid), direction, justify, align, gap, wrap |
+| `Colors` | Background color, text color (each with `Inherit`, a swatch, and a hex value) |
+| `Spacing` | Margin, padding |
+| `Typography` | Font size, font weight, font style, line height, letter spacing, alignment, decoration, transform |
+| `Border` | Border settings for the selected element |
+| `Effects` | Box shadow (none, sm, md, lg, xl), opacity, border radius |
 
-All changes update the source code, so they persist and you can see them in Code mode.
+All changes update the source code, so they persist and you can see them in Settings > `Code`.
 
 ## Visual editor vs. main chat
 
@@ -112,9 +114,9 @@ Both the visual editor and the main chat reach the same generation engine. The d
 
 The visual editor is best for *small, targeted adjustments anchored to something on screen*. For structural changes or anything that doesn't start from "this thing right here," the main chat is the right entry point.
 
-## Next Steps
+## Next steps
 
-- [Prompting Guide](./prompting.md) — Write effective prompts for changes that go beyond the visual editor
-- [Connectors](../connectors/index.md) — Wire your app into forms, analytics, and sign-on
-- [Prompting Library](./prompting-library.md) — Ready-made prompts for common refinements
+- [Prompting guide](./prompting.md): Write effective prompts for changes that go beyond the visual editor
+- [Connectors](../connectors/index.md): Wire your app into forms, analytics, and sign-on
+- [Prompting library](./prompting-library.md): Ready-made prompts for common refinements
 
