@@ -59,7 +59,7 @@ You can learn more about specific parts of the report here:
 - **[Advertising](./advertising)** — Google Ads and Facebook Ads performance when you use Advertising Intelligence
 - **[Finance (QuickBooks)](./finance-quickbooks)** — Income, expenses, and invoice notifications from QuickBooks Online
 - **Campaigns** — Delivered, opened, and clicked stats for your email campaigns and standalone emails, with breakdowns by date range
-- **My Meetings** — Appointment activity, AI booking performance, and calendar health (see the [My Meetings card](../home.mdx#my-meetings-card) on the Home page for details)
+- **My Meetings** — Appointment activity, AI booking performance, and calendar health (see the [My Meetings card](../home/index.mdx#my-meetings-card) on the Home page for details)
 
 ## When Is New Data Updated in the Executive Report
 

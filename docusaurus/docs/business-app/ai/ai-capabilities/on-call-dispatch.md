@@ -1,7 +1,7 @@
 ---
 title: On-call dispatch
 sidebar_label: On-call dispatch
-sidebar_position: 3
+sidebar_position: 5
 description: "Set up the On-call dispatch capability so your AI Voice Receptionist works as an after-hours AI dispatcher, screening emergency calls and connecting callers to your on-call technician."
 tags: [ai, voice, phone, dispatch, automation]
 keywords: [on-call dispatch, AI dispatcher, after-hours dispatch, emergency dispatch, on-call technician, AI voice receptionist, urgent call routing, emergency call handling]
@@ -21,7 +21,7 @@ The **On-call dispatch** capability turns your AI Voice Receptionist into an aft
 
 ## What is On-call dispatch?
 
-On-call dispatch is a capability of the [AI Voice Receptionist](./ai-voice-receptionist.md), configured in its capabilities settings. When a caller matches criteria you define, such as an after-hours emergency, the AI collects the details of the emergency, places the caller on hold, calls your on-call technician, announces the call, and connects the two.
+On-call dispatch is a capability of the [AI Voice Receptionist](../ai-workforce/ai-voice-receptionist.md), configured in its capabilities settings. When a caller matches criteria you define, such as an after-hours emergency, the AI collects the details of the emergency, places the caller on hold, calls your on-call technician, announces the call, and connects the two.
 
 Unlike a simple call transfer, the AI screens the call first, so your technician picks up already knowing who is calling, what the emergency is, and where the service is needed.
 
@@ -44,7 +44,7 @@ Unlike a simple call transfer, the AI screens the call first, so your technician
 
 ### Prerequisites
 
-Your AI Voice Receptionist must be set up and answering calls first. See the [AI Voice Receptionist](./ai-voice-receptionist.md) guide for setup, call routing, and prerequisites.
+Your AI Voice Receptionist must be set up and answering calls first. See the [AI Voice Receptionist](../ai-workforce/ai-voice-receptionist.md) guide for setup, call routing, and prerequisites.
 
 ### Step 1: Add the capability
 
@@ -122,7 +122,7 @@ The `Phone number` field accepts international format (a `+` followed by the cou
 <details>
 <summary>Do I need to set up the AI Voice Receptionist before using On-call dispatch?</summary>
 
-Yes. On-call dispatch is a capability of the AI Voice Receptionist, so the receptionist must be set up and answering calls first. See the [AI Voice Receptionist](./ai-voice-receptionist.md) guide.
+Yes. On-call dispatch is a capability of the AI Voice Receptionist, so the receptionist must be set up and answering calls first. See the [AI Voice Receptionist](../ai-workforce/ai-voice-receptionist.md) guide.
 </details>
 
 ### Announcements
