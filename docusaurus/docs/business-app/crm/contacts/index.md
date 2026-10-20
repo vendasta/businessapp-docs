@@ -83,10 +83,10 @@ Tag columns append your imported values to any tags already on a matching contac
 1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table. A banner confirms how many records on the page are selected, for example "25 of 143 selected."
 2. To include every matching record instead of just the current page, click `Select all 143 contacts` in the banner. The banner then confirms all matching records are selected and gives you a link to clear the selection.
 3. Click `Actions` > `Export`.
-4. A notification is sent when your CSV is ready to download.
+4. Export progress shows as soon as the export starts. When your CSV is ready, you also get an email with a download link.
 
 :::info
-Exports respect your current filters and the set of rows displayed.
+Exports respect your current filters and selection. When you select all matching records, the export includes every one of them. If you leave the page and come back after the export finishes, the download starts automatically.
 :::
 
 ### Start, pause, or resume campaigns
