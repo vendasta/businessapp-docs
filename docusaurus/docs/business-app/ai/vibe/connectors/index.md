@@ -26,6 +26,8 @@ Each connector adds one capability to your generated app:
 
 Connectors are managed per project. Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle a connector on to make it available to every prompt in the project; toggle it off to remove it from the supervisor agent's options.
 
+You can also open the connector catalog from the chat box. Each connector in the catalog has a page that explains what it does, what it needs, and any plan or product it requires. Select `Try it` to write a sample prompt, turn the connector on, and start building.
+
 When a connector is **enabled**, the supervisor agent can wire your generated UI into the underlying service automatically. When a connector is **disabled**, prompts that would normally activate it fall back to mocked or static behavior — useful when you want to design without committing to live integrations yet.
 
 Some connectors do extra setup the first time you turn them on. Single sign-on, for example, provisions an OAuth client for the project the moment you enable it. The connector page calls this out for each one.
