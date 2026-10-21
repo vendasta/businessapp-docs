@@ -2,7 +2,7 @@
 title: AI Voice receptionist overview
 description: Configure your AI Voice Receptionist to answer calls 24/7, capture lead information, book appointments, and route calls.
 sidebar_label: AI Voice Receptionist
-sidebar_position: 2
+sidebar_position: 8
 keywords: [AI voice receptionist, AI phone answering, automated receptionist, call handling AI, phone lead capture, appointment booking calls, call forwarding AI, 24/7 phone answering, voice AI assistant, business phone automation]
 tags: [ai, voice, phone, lead capture, automation, appointments]
 brand: business-app
@@ -229,7 +229,7 @@ Once a call is transferred, recording ends and the system does not record or tra
 
 #### Dispatch calls to on-call staff {#dispatch-calls-to-on-call-staff}
 
-The **On-call dispatch** capability screens urgent calls and connects the caller to your on-call technician — the AI gathers who is calling, the nature of the emergency, and the service location, places the caller on hold, and announces the call to whichever technician answers. If no one can be reached live, the caller is told the on-call technician has been notified and will follow up — and a completed dispatch fires an automation trigger with the call details, so you can text those details to the on-call number and make that notification real. See [On-call dispatch](./on-call-dispatch.md) for setup steps, announcement template variables, and the companion automation.
+The **On-call dispatch** capability screens urgent calls and connects the caller to your on-call technician — the AI gathers who is calling, the nature of the emergency, and the service location, places the caller on hold, and announces the call to whichever technician answers. If no one can be reached live, the caller is told the on-call technician has been notified and will follow up — and a completed dispatch fires an automation trigger with the call details, so you can text those details to the on-call number and make that notification real. See [On-call dispatch](../ai-capabilities/on-call-dispatch.md) for setup steps, announcement template variables, and the companion automation.
 
 ### Step 3: Add knowledge sources to your AI Voice Receptionist
 

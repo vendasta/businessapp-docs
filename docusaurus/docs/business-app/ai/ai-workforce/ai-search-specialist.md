@@ -1,6 +1,7 @@
 ---
 title: AI Search Specialist
 sidebar_label: AI Search Specialist
+sidebar_position: 6
 description: The AI Search Specialist generates a brand visibility report, drafts a blog post targeting your weakest-performing AI search result, and keeps your business description up to date.
 tags: [ai-workforce, seo, brand-visibility, local-seo, description]
 keywords: [ai search specialist, brand visibility report, ai search optimization, blog draft, ai workforce, business description, profile optimization, keyword tracking]

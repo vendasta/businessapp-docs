@@ -52,7 +52,7 @@ Business App is the dashboard where you manage your business profile, talk with 
   Send and receive messages with your leads and customers, and respond to reviews or inquiries through Conversations.
 
 - **Track your performance**  
-  See important business analytics such as website traffic, reviews, and leads either in your [Executive Report](../executivereport/index.md) or your [Home](../home.mdx) screen.
+  See important business analytics such as website traffic, reviews, and leads either in your [Executive Report](../executivereport/index.md) or your [Home](../home/index.mdx) screen.
 
 - **Access your tools and products**  
   Quickly launch any apps or services you've activated to market your business, connect with customers, or boost productivity.
@@ -75,7 +75,7 @@ Business App is the dashboard where you manage your business profile, talk with 
 
 ## Step 1: How do I complete my onboarding checklist? {#step-1-complete-your-onboarding-checklist}
 
-When you first log in, you'll see a **"Complete Setup"** card on your [Home](../home.mdx) screen. This is your personalized onboarding checklist to help you set up your account.
+When you first log in, you'll see a **"Complete Setup"** card on your [Home](../home/index.mdx) screen. This is your personalized onboarding checklist to help you set up your account.
 
 Finishing these steps helps you use all of the features in Business App. You'll:
 - Start seeing results in your [Executive Report](../executivereport/index.md) sooner.
@@ -220,7 +220,7 @@ Data from Google Business Profile can appear within about 5 minutes after you co
 <details>
 <summary><strong>Can I invite team members to use Business App?</strong></summary>
 
-Yes. From the [Home](../home.mdx) screen, select **Invite Team Member** in the top-right corner, enter the person's name and email, and click **Send Invite**.
+Yes. From the [Home](../home/index.mdx) screen, select **Invite Team Member** in the top-right corner, enter the person's name and email, and click **Send Invite**.
 </details>
 
 <details>
