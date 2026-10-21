@@ -47,3 +47,21 @@ Add a **Delay** step before the pause action to give leads time to re-engage bef
 | Company | `Pause campaign for company` | A business as a whole goes cold or no longer qualifies, and you want to stop outreach to all associated contacts |
 
 You can combine both in the same automation. For example, pause a contact's campaign immediately on bounce, and pause the company's campaign if all contacts in that company have bounced.
+
+## Where do email stats appear?
+
+How you send marketing email from an automation determines where you see the stats:
+
+| Step | Where stats appear |
+|------|-------------------|
+| `Start a campaign for the contact` | In the campaign's reporting page, same as any other campaign send |
+| `Send a marketing email template to a contact` | In the automation step itself. The email is not tied to a campaign and its stats are stored separately |
+
+Both steps send marketing email. The difference is:
+
+- **Start a campaign for the contact** enrolls the contact in a campaign workflow. Stats roll up to the campaign's main reporting page alongside any other sends.
+- **Send a marketing email template to a contact** sends a standalone email directly from the automation. To see how that email performed, open the automation and inspect the step.
+
+:::tip
+If you want email performance to show up in campaign reporting, use `Start a campaign for the contact`. If you're sending a one-off email that doesn't need its own campaign, use `Send a marketing email template to a contact` and check the automation step for results.
+:::
