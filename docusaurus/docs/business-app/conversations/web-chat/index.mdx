@@ -94,13 +94,15 @@ When you're done configuring the widget, click `Next` to save it.
 
 Open the widget from the **Web Chat configuration** page (click its name, or use the `⋮` menu and choose `Embed`) to find your installation code. There are two widget types, choose one based on how you want the chat to appear on your site.
 
+If your website is built with Vibe, you don't need to copy any code. Add the widget through Vibe's Webchat connector instead. See [Webchat](../../ai/vibe/connectors/webchat.md).
+
 ## Which widget type should I use? {#widget-types}
 
 ### Floating chat widget
 
 The floating widget places a chat button in the bottom corner of every page on your site. Visitors click it to open the chat.
 
-To get the code: open the widget from the **Web Chat configuration** page, expand the **Floating chat widget** section, and copy the JavaScript.
+To get the code: open the widget from the **Web Chat configuration** page, expand the **Floating chat widget** section, and copy the JavaScript. The section has tabs for `Website`, `Google Tag Manager`, `WordPress`, and `GoDaddy Website Builder`. Use the `Website` tab unless one of the others matches how you build your site.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -110,7 +112,7 @@ import TabItem from '@theme/TabItem';
 
 #### Install using the WordPress plugin
 
-1. In the **Floating Chat Widget** section, click **Download Plugin** to download the installation ZIP.
+1. In the **Floating Chat Widget** section, open the `WordPress` tab and click **Download WordPress plugin** to download the installation ZIP.
 2. In your WordPress admin (`your-website.com/wp-admin`), go to `Plugins` > `Add New Plugin`.
 3. Upload the ZIP file you just downloaded.
 4. Activate the plugin.
@@ -136,12 +138,21 @@ Your web chat widget appears on every page of your website.
   </TabItem>
   <TabItem value="custom-html" label="Other Platforms (HTML)">
 
-This method works for most website builders that let you add custom header code, including **Wix, Squarespace, Webflow, and GoDaddy**.
+This method works for most website builders that let you add custom header code, including **Wix, Squarespace, and Webflow**. For GoDaddy Website Builder, use the GoDaddy tab instead.
 
 1. Copy the JavaScript from the **Floating Chat Widget** section.
 2. Open your site builder's **Custom Code** or **Header Code** section.
 3. Paste the code into the `<head>` section, just before the closing `</head>` tag.
 4. Save and publish your changes.
+
+  </TabItem>
+  <TabItem value="godaddy" label="GoDaddy">
+
+GoDaddy Website Builder needs a different installation script so the widget appears correctly on your site.
+
+1. In the **Floating Chat Widget** section, open the `GoDaddy Website Builder` tab and copy the code.
+2. Add the code to your GoDaddy site where you add custom code.
+3. Save and publish your changes.
 
   </TabItem>
   <TabItem value="gtm" label="Google Tag Manager">
