@@ -130,7 +130,7 @@ Write every instruction as an order addressed to the AI Employee. An instruction
 This applies anywhere you write instructions: capability prompts, goals, and the instructions attached to individual capabilities.
 
 :::tip Experiment safely with version history
-Each time you save your AI Employee's settings, the saved version is kept in its version history. Select `Restore previous settings` to open the history and go back to an earlier version. You can adjust a prompt and re-test as many times as you need, and un-assign a capability from the AI Employee if it is not behaving the way you want.
+Each time you save your AI Employee's settings, the saved version is kept in its version history. Select `Restore previous settings` to open the history and go back to a previous version. You can adjust a prompt and re-test as many times as you need, and un-assign a capability from the AI Employee if it is not behaving the way you want.
 :::
 
 ### Tailor a capability to specific channels
