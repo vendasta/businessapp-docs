@@ -59,8 +59,8 @@ How you send marketing email from an automation determines where you see the sta
 
 Both steps send marketing email. The difference is:
 
-- **Start a campaign for the contact** enrolls the contact in a campaign workflow. Stats roll up to the campaign's main reporting page alongside any other sends.
-- **Send a marketing email template to a contact** sends a standalone email directly from the automation. To see how that email performed, open the automation and inspect the step.
+- **Start a campaign for the contact** enrolls the contact in a campaign workflow. Stats roll up to the campaign's main reporting page alongside any other sends. It sends through Campaigns, so it counts toward the Campaigns email quota and requires Campaigns Pro. The same applies to `Start a campaign for the company`.
+- **Send a marketing email template to a contact** sends a standalone email directly from the automation. To see how that email performed, open the automation and inspect the step. It doesn't send through Campaigns, so it doesn't require Campaigns Pro. It does count toward your daily email sending limit, which helps prevent sending a large volume of email by accident. The same applies to `Send a marketing email template to a company`.
 
 :::tip
 If you want email performance to show up in campaign reporting, use `Start a campaign for the contact`. If you're sending a one-off email that doesn't need its own campaign, use `Send a marketing email template to a contact` and check the automation step for results.
