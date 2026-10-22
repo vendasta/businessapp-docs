@@ -12,7 +12,7 @@ audience: smb
 
 An emergency call comes in after hours. Your AI Voice Receptionist screens it — gathering who is calling, what the emergency is, and where the service is needed — then dials your on-call technician. Sometimes the technician answers and hears the announcement; sometimes the call goes to voicemail or isn't picked up. Either way, your technician needs the details in hand to get on route: the caller's name, the issue, the location, and a number to call back.
 
-This automation closes that gap. Whenever the AI dispatches a call, it texts the full call details to the on-call number — so the information arrives even when the live call didn't connect. The [On-call dispatch](../../ai/ai-workforce/on-call-dispatch.md) capability treats this automation as an essential part of setup: when the technician can't be reached live, the caller is told the on-call technician has been notified, and this text is that notification.
+This automation closes that gap. Whenever the AI dispatches a call, it texts the full call details to the on-call number — so the information arrives even when the live call didn't connect. The [On-call dispatch](../../ai/ai-capabilities/on-call-dispatch.md) capability treats this automation as an essential part of setup: when the technician can't be reached live, the caller is told the on-call technician has been notified, and this text is that notification.
 
 ## When to use this
 
@@ -68,7 +68,7 @@ The intake fields — `caller_name`, `reason_for_call`, and `service_location` �
 
 ## Tips
 
-- Write your on-call criteria so the AI knows what counts as an emergency — the clearer the criteria, the more reliably the right calls dispatch. See [On-call dispatch](../../ai/ai-workforce/on-call-dispatch.md) for setup.
+- Write your on-call criteria so the AI knows what counts as an emergency — the clearer the criteria, the more reliably the right calls dispatch. See [On-call dispatch](../../ai/ai-capabilities/on-call-dispatch.md) for setup.
 - Test the automation by placing a call that matches your criteria and confirming the text arrives with the details filled in.
 - Keep the message scannable — the technician may read it while heading to their vehicle. Lead with the outcome and the issue.
 - For the full list of triggers, see [Automation triggers](../automation-triggers.md#conversations-ai).

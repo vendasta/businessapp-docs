@@ -1,5 +1,5 @@
 ---
-title: Prompting Guide
+title: Prompting guide
 sidebar_position: 1
 unlisted: false
 description: Learn the prompting principles, patterns, and pitfalls for getting the results you want from Vibe.
@@ -21,30 +21,44 @@ Looking for ready-made prompts you can paste? See the [prompting library](./prom
 Focus on the outcome you want, not the implementation details. Vibe knows which components, layouts, and patterns to use.
 
 **Good:**
-> Build a pricing page with three tiers: Starter at $9/mo, Pro at $29/mo, and Enterprise with custom pricing. Highlight the Pro tier as recommended.
+```text
+Build a pricing page with three tiers: Starter at $9/mo, Pro at $29/mo, and Enterprise with custom pricing. Highlight the Pro tier as recommended.
+```
 
 **Less effective:**
-> Create a div with flexbox that contains three Card components from shadcn/ui, each with a CardHeader containing an h3 for the tier name...
+```text
+Create a div with flexbox that contains three Card components from shadcn/ui, each with a CardHeader containing an h3 for the tier name...
+```
 
 ### 2. Be specific about content
 
 Use real content instead of placeholders. The more specific you are about text, data, and structure, the better the result.
 
 **Good:**
-> Create a team page showing four team members: Sarah Chen (CEO), Marcus Johnson (CTO), Priya Patel (Head of Design), and Alex Rivera (Lead Engineer). Each person should have a photo placeholder, their name, role, and a short bio.
+```text
+Create a team page showing four team members: Sarah Chen (CEO), Marcus Johnson (CTO), Priya Patel (Head of Design), and Alex Rivera (Lead Engineer). Each person should have a photo placeholder, their name, role, and a short bio.
+```
 
 **Less effective:**
-> Create a team page with some team members.
+```text
+Create a team page with some team members.
+```
 
 ### 3. Reference visual style
 
 When you have a design direction in mind, describe it with concrete terms. Reference well-known design styles, specific colors, or attach an image.
 
 **Good:**
-> Make the hero section feel minimal and editorial: large serif typography for the headline, lots of whitespace, and a muted color palette. Think Apple product page meets newspaper front page.
+```text
+Make the hero section feel minimal and editorial: large serif typography for the headline, lots of whitespace, and a muted color palette. Think Apple product page meets newspaper front page.
+```
 
 **Also good:**
-> Attach a screenshot of a website you like and say: "Make my landing page look similar to this style"
+Attach a screenshot of a website you like and say:
+
+```text
+Make my landing page look similar to this style
+```
 
 ### 4. Iterate in focused steps
 
@@ -57,61 +71,89 @@ Rather than cramming everything into one massive prompt, build up your applicati
 4. "Add a dark mode toggle to the header"
 
 **Less effective:**
-> Build a complete SaaS landing page with hero, features, testimonials, pricing, FAQ, footer, dark mode, mobile nav, animations, contact form, blog section, and team page all at once.
+```text
+Build a complete SaaS landing page with hero, features, testimonials, pricing, FAQ, footer, dark mode, mobile nav, animations, contact form, blog section, and team page all at once.
+```
 
 ### 5. Describe changes surgically
 
 When editing an existing application, be precise about what you want changed and where.
 
 **Good:**
-> In the hero section, change the headline to "Ship Faster with AI" and make the CTA button blue instead of green.
+```text
+In the hero section, change the headline to "Ship Faster with AI" and make the CTA button blue instead of green.
+```
 
 **Less effective:**
-> Update the page to look different.
+```text
+Update the page to look different.
+```
 
 ## Example prompts
 
 ### Starting a new project
 
 **Landing page:**
-> Build a modern landing page for "CloudSync", a file synchronization service. Include: a hero section with headline and CTA, a features grid with 6 features using icons, a pricing section with Free/Pro/Enterprise tiers, customer logos bar, and a footer with links.
+```text
+Build a modern landing page for "CloudSync", a file synchronization service. Include: a hero section with headline and CTA, a features grid with 6 features using icons, a pricing section with Free/Pro/Enterprise tiers, customer logos bar, and a footer with links.
+```
 
 **Multi-page site:**
-> Create a website for a dental clinic called "Bright Smile Dental". Include a home page with services, a team page with dentist bios and photos, an FAQ page with common questions, and a booking page with a contact form.
+```text
+Create a website for a dental clinic called "Bright Smile Dental". Include a home page with services, a team page with dentist bios and photos, an FAQ page with common questions, and a booking page with a contact form.
+```
 
 **Portfolio:**
-> Build a minimalist photography portfolio. Full-screen hero with the photographer's name "Elena Voss" and a tagline. Below, a masonry-style image gallery. Include an About page with a bio and a Contact page with a form.
+```text
+Build a minimalist photography portfolio. Full-screen hero with the photographer's name "Elena Voss" and a tagline. Below, a masonry-style image gallery. Include an About page with a bio and a Contact page with a form.
+```
 
-**E-commerce** *(coming soon)*
-> Create a product listing page for a sneaker store. Show a grid of 8 product cards, each with an image placeholder, name, price, and "Add to Cart" button. Include filters on the left for brand, size, and price range. Add a header with logo, search bar, and cart icon.
+**E-commerce:**
+```text
+Create a product listing page for a sneaker store. Show a grid of 8 product cards, each with an image placeholder, name, price, and "Add to Cart" button. Include filters on the left for brand, size, and price range. Add a header with logo, search bar, and cart icon.
+```
 
 ### Modifying an existing project
 
 **Adding a section:**
-> Add a FAQ section before the footer. Include 6 questions with expandable answers about pricing, features, and getting started. Use an accordion component.
+```text
+Add a FAQ section before the footer. Include 6 questions with expandable answers about pricing, features, and getting started. Use an accordion component.
+```
 
 **Changing styling:**
-> Make the entire site feel more premium: increase font sizes, add more whitespace between sections, use a serif font for headings, and add subtle animations when sections scroll into view.
+```text
+Make the entire site feel more premium: increase font sizes, add more whitespace between sections, use a serif font for headings, and add subtle animations when sections scroll into view.
+```
 
 **Adding functionality:**
-> Add a contact form to the footer with fields for Name, Email, and Message. Style it to match the rest of the site. Include a "Send Message" button.
+```text
+Add a contact form to the footer with fields for Name, Email, and Message. Style it to match the rest of the site. Include a "Send Message" button.
+```
 
 **Fixing specific elements:**
-> The navigation menu items are too close together on mobile. Add more spacing between them and make the font size slightly larger.
+```text
+The navigation menu items are too close together on mobile. Add more spacing between them and make the font size slightly larger.
+```
 
 ### Using images in prompts
 
 You can attach screenshots or mockups to your prompt to show Vibe what you're looking for:
 
-> I attached a screenshot of a design I like. Recreate this layout for my landing page but use my existing color theme and content.
+```text
+I attached a screenshot of a design I like. Recreate this layout for my landing page but use my existing color theme and content.
+```
 
-> Here's a wireframe sketch I drew. Build this page layout: the boxes at the top are stat cards, the large area is a chart, and the table at the bottom shows recent transactions.
+```text
+Here's a wireframe sketch I drew. Build this page layout: the boxes at the top are stat cards, the large area is a chart, and the table at the bottom shows recent transactions.
+```
 
 ### Using voice input
 
 Click the microphone button to dictate your prompt. This is especially useful when you want to quickly describe changes while looking at the preview:
 
-> "I'm looking at the pricing section and the cards feel too cramped. Can you add more padding inside each card and put some space between them? Also the prices should be bigger and bolder."
+```text
+"I'm looking at the pricing section and the cards feel too cramped. Can you add more padding inside each card and put some space between them? Also the prices should be bigger and bolder."
+```
 
 ## Prompt patterns
 
@@ -128,38 +170,48 @@ Start broad, then narrow in:
 
 Use a reference point and customize from there:
 
-> "Build a pricing page similar to Stripe's pricing page: clean, minimal, with toggle between monthly and annual billing. Use my app's blue theme."
+```text
+"Build a pricing page similar to Stripe's pricing page: clean, minimal, with toggle between monthly and annual billing. Use my app's blue theme."
+```
 
 ### The "Before and After" pattern
 
 Describe what's wrong and what you want instead:
 
-> "The features section currently shows all 6 features in a single column. Instead, arrange them in a 3x2 grid on desktop and a single column on mobile."
+```text
+"The features section currently shows all 6 features in a single column. Instead, arrange them in a 3x2 grid on desktop and a single column on mobile."
+```
 
 ### The "Role + Context" pattern
 
 Give Vibe context about who the audience is:
 
-> "This is a landing page for small business owners who aren't tech-savvy. Keep the language simple, use large text, and make the CTA buttons very prominent. The main goal is to get them to sign up for a free trial."
+```text
+"This is a landing page for small business owners who aren't tech-savvy. Keep the language simple, use large text, and make the CTA buttons very prominent. The main goal is to get them to sign up for a free trial."
+```
 
 ## Things to avoid
 
 ### Overly vague prompts
-> "Make it look better" / "Improve the design" / "Fix the layout"
+```text
+"Make it look better" / "Improve the design" / "Fix the layout"
+```
 
 These don't give Vibe enough direction. Instead, specify *what* should look better and *how*.
 
 ### Implementation-level detail
-> "Use a useState hook with an array of objects containing id, name, and price fields, then map over them with a CardComponent..."
+```text
+"Use a useState hook with an array of objects containing id, name, and price fields, then map over them with a CardComponent..."
+```
 
-Trust Vibe to handle the implementation. Focus on what you want the user to see and experience.
+Trust Vibe to handle the implementation. Focus on what you want your visitors to see and experience.
 
 ### Massive all-at-once prompts
 Trying to build an entire complex application in a single prompt usually leads to worse results than building iteratively. Break it into logical pieces.
 
 ## Next steps
 
-- [Prompting Library](./prompting-library.md): Ready-made prompts organized by intent you can paste and adapt
-- [Cloning a Reference Site](./clone-from-url.md): Use a URL as your starting point instead of describing from scratch
-- [Visual Editor](./visual-editor.md): Make targeted element-level edits without writing a prompt
+- [Prompting library](./prompting-library.md): Ready-made prompts organized by intent you can paste and adapt
+- [Cloning a reference site](./clone-from-url.md): Use a URL as your starting point instead of describing from scratch
+- [Visual editor](./visual-editor.md): Make targeted element-level edits without writing a prompt
 

@@ -207,6 +207,11 @@ const config: Config = {
             from: '/business-app/conversations/conversations-send-receive-emails',
             to: '/business-app/conversations/email/',
           },
+          // Email history removed: nonexistent page documented
+          {
+            from: '/business-app/administration/email/email-history',
+            to: '/business-app/administration/email/',
+          },
         ],
         createRedirects(existingPath) {
           // Only create redirects for business-app paths

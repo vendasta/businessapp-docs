@@ -1,7 +1,7 @@
 ---
-title: "Download & Host Your Project Elsewhere"
-sidebar_label: "Download & Self-Host"
-description: On the Pro plan, download a project's source code and run or host it anywhere that supports Node.js.
+title: "Download and host your project elsewhere"
+sidebar_label: "Download and self-host"
+description: On the Pro and Premium plans, download a project's source code and run or host it anywhere that supports Node.js.
 tags: [vibe, ai, download, hosting, portability, open-source]
 keywords: [vibe download project, vibe source code, vibe self host, vibe portable, vibe react tanstack, move vibe site, vibe export]
 sidebar_position: 13
@@ -11,16 +11,14 @@ product: vibe
 audience: smb
 ---
 
-# Download & Host Your Project Elsewhere
-
 ## What this covers
 
-Every project you build in Vibe is a standard web application written in open, widely-used frameworks: React, TanStack Start, Vite, and Tailwind CSS. None of it is a proprietary format, and none of it is locked to Business App.
+Every project you build in Vibe is a standard web application written in open, widely used frameworks: React, TanStack Start, Vite, and Tailwind CSS. None of it is a proprietary format, and none of it is locked to Business App.
 
-On the Pro plan you can download the source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe keeps the servers, certificates, and connectors managed for you; hosting it elsewhere puts all of that in your hands.
+On the Pro and Premium plans you can download the source code of a project, run it on your own computer, and host it on any provider that supports Node.js. Publishing with Vibe keeps the servers, certificates, and connectors managed for you; hosting it elsewhere puts all of that in your hands.
 
 :::warning
-Downloading a project requires the Pro plan. On the Free and Standard plans, `Download` shows a lock and opens an upgrade prompt instead. See [Credits](../credits.md).
+Downloading a project requires the Pro or Premium plan. On the Free and Standard plans, `Download project` shows a lock. See [Credits](../credits.md).
 :::
 
 ## Why this matters
@@ -32,7 +30,7 @@ Downloading a project requires the Pro plan. On the Free and Standard plans, `Do
 
 ## What's in the download
 
-Click `Download` in the editor toolbar to get a `.vibe.tar.gz` archive named after your project. It contains:
+Select `Download project` in the top bar to get a `.vibe.tar.gz` archive named after your project. It contains:
 
 | Contents | Description |
 | --- | --- |
@@ -44,7 +42,7 @@ Click `Download` in the editor toolbar to get a `.vibe.tar.gz` archive named aft
 Three things are **not** in the archive:
 
 - **Generated images**. Images Vibe created for you are served from a hosted image URL that the code points at. They keep loading after a move, but they are not files in your project. To hold a full copy, save each one into a `public/` folder and update the code to use the local path.
-- **Discovery files**. `robots.txt`, `sitemap.xml`, and `llms.txt` are generated each time you publish with Vibe. A build you run yourself does not produce them. See [SEO & LLM Indexing](./seo-and-indexing.md).
+- **Discovery files**. `robots.txt`, `sitemap.xml`, and `llms.txt` are generated each time you publish with Vibe. A build you run yourself does not produce them. See [SEO & LLM indexing](./seo-and-indexing.md).
 - **Database credentials**. If your app uses the Supabase connector, the connection values are replaced with placeholders such as `YOUR_SUPABASE_PROJECT`. Search the project for that text and fill in your own project's values before the app can reach a database. See [Supabase](../connectors/supabase.md).
 
 :::warning
@@ -55,7 +53,7 @@ The checkpoint history in the `.git` folder is a record of earlier versions of y
 
 The pages, layout, styling, form interfaces, and any logic Vibe wrote for you are all in the download and run anywhere.
 
-Features backed by Business App services are wired to Business App and stop working once the app is hosted elsewhere. These are the connector-based features: Forms submissions routing to your CRM, Analytics data, Reviews content, Webchat, CRM records, and single sign-on. The screens still render, and a developer replaces the data source behind them with whatever you want to use instead. See [Connectors](../connectors/index.md).
+Features backed by Business App services are wired to Business App and stop working once the app is hosted elsewhere. These are the connector-based features: Forms submissions routing to your CRM, Analytics data, Reviews content, Web Chat, CRM records, Meetings, Business Nav, and single sign-on. The screens still render, and a developer replaces the data source behind them with whatever you want to use instead. See [Connectors](../connectors/index.md).
 
 ## Run a downloaded project on your computer
 
@@ -98,7 +96,7 @@ This produces a `dist/` folder with two parts:
 - `dist/client`: the static files a browser downloads (JavaScript, CSS, images)
 - `dist/server`: the server bundle that renders each page as complete HTML
 
-`dist/` does not need `node_modules`: the build bundles what the app uses. Along with the server file in the next section, it is all you copy to a server. Verified by copying `dist/` and `server.mjs` alone into an empty folder and starting them there.
+`dist/` does not need `node_modules`: the build bundles what the app uses. Along with the server file in the next section, it is all you copy to a server.
 
 ## Host it yourself
 
@@ -259,14 +257,14 @@ Publishing from Vibe is one click, and everything below is handled for you. Runn
 | Security updates to the hosting platform | Patching the server and its dependencies |
 | Editing the app by describing a change in chat | Editing source code directly, or paying a developer to |
 
-Most businesses publish with Vibe because it's faster and costs less than running a server. The point of the download is that you never have to.
+The download means publishing with Vibe is a choice, not a requirement.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>Which plan do I need to download a project?</summary>
 
-The Pro plan. On the Free and Standard plans, `Download` shows a lock and opens an upgrade prompt instead. See [Credits](../credits.md).
+The Pro or Premium plan. On the Free and Standard plans, `Download project` shows a lock. See [Credits](../credits.md).
 
 </details>
 
@@ -280,7 +278,7 @@ No. Projects are built on React, TanStack Start, Vite, and Tailwind CSS, open-so
 <details>
 <summary>Do I need to keep my subscription to keep the code I downloaded?</summary>
 
-A downloaded archive runs on its own. On the Pro plan, download a copy before deactivating a subscription, because deactivating removes your projects from Business App. Generated images are served from a hosted URL rather than stored in the archive, so save any you want to keep into the project's `public/` folder first. See [Credits](../credits.md).
+A downloaded archive runs on its own. On the Pro or Premium plan, download a copy before deactivating a subscription, because deactivating removes your projects from Business App. Generated images are served from a hosted URL rather than stored in the archive, so save any you want to keep into the project's `public/` folder first. See [Credits](../credits.md).
 
 </details>
 
@@ -301,20 +299,20 @@ Changes made outside Vibe do not sync back into your Vibe project automatically.
 <details>
 <summary>Why doesn't my contact form work after I move the site?</summary>
 
-Forms, Reviews, Analytics, Webchat, CRM, and single sign-on are powered by Business App services and only work while your app is hosted with Vibe. The form UI still renders once you move the site, and a developer connects it to whichever service you want to use instead.
+Forms, Reviews, Analytics, Web Chat, CRM, Meetings, Business Nav, and single sign-on are powered by Business App services and only work while your app is hosted with Vibe. The form UI still renders once you move the site, and a developer connects it to whichever service you want to use instead.
 
 </details>
 
 <details>
 <summary>Can I host it as plain static files with no server?</summary>
 
-Not without changes. Pages are rendered on the server so search engines and AI assistants receive complete HTML, which is why the app needs a Node.js host. See [SEO & LLM Indexing](./seo-and-indexing.md).
+Not without changes. Pages are rendered on the server so search engines and AI assistants receive complete HTML, which is why the app needs a Node.js host. See [SEO & LLM indexing](./seo-and-indexing.md).
 
 </details>
 
-## Next Steps
+## Next steps
 
-- [Getting Started](../getting-started.md) — Where the `Download` button lives in the toolbar
-- [Connectors](../connectors/index.md) — What each connector adds to your app
-- [Custom Domains](./custom-domain.mdx) — Publish to a domain you own without leaving Vibe
-- [Credits](../credits.md) — How credits and subscriptions work
+- [Getting started](../getting-started.md): Find your way around the project editor
+- [Connectors](../connectors/index.md): What each connector adds to your app
+- [Custom domains](./custom-domain.mdx): Publish to a domain you own without leaving Vibe
+- [Credits](../credits.md): How credits and subscriptions work

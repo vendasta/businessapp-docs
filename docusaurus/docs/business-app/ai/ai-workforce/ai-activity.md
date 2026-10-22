@@ -1,7 +1,7 @@
 ---
 title: AI Activity
 sidebar_label: AI Activity
-sidebar_position: 20
+sidebar_position: 1
 description: See how many jobs your AI Employees complete each day and how many each employee completes.
 tags: [ai-workforce, reporting, ai-employees]
 keywords: [AI Activity, AI employee jobs, jobs per day, AI workforce report]

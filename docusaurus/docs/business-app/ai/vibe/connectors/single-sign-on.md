@@ -1,13 +1,12 @@
 ---
 title: Single sign-on
+description: Let members of your Business App account sign in to your Vibe app with their existing account.
 sidebar_position: 1
 unlisted: false
 brand: business-app
 product: vibe
 audience: smb
 ---
-
-# Single sign-on
 
 The Single sign-on connector lets your customers sign into your generated app using their existing Business App account. The connector wires the login UI into the OAuth/OIDC flow, so you don't have to manage passwords, password resets, or session storage yourself.
 
@@ -17,17 +16,17 @@ Single sign-on layers on Business App's customer authentication. When you enable
 
 The OAuth client ID for the project is shown in your [project's settings](../guides/project-settings.md) once the connector is enabled.
 
-**Who can sign in:** Any user who already has access to your Business App account can sign in to your Vibe-built app. This connector is not intended for signing in your business's end customers or website visitors — it's for members of your Business App account (owners, staff, managers). There are no per-user access controls within that group at this time; if someone has Business App access for the account, they can sign in.
-
-:::caution Work in progress
-Access controls for sign-in are still being developed. More granular controls are coming in a future update.
-:::
+**Who can sign in:** Any user who already has access to your Business App account can sign in to your Vibe-built app. This connector is not intended for signing in your business's end customers or website visitors — it's for members of your Business App account (owners, staff, managers). There are no per-user access controls within that group. If someone has Business App access for the account, they can sign in.
 
 ## Enabling the connector
 
-Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **Single sign-on** on. Toggling it on provisions the OAuth client automatically — there's nothing you need to configure manually for the redirect flow to start working in your generated app.
+Go to **AI** > **Vibe**, open your project, and select **Settings**. Then select `Connectors` (see [project settings](../guides/project-settings.md)). Select `Enable` next to **Single sign-on**. Enabling it provisions the OAuth client automatically, so there's nothing you need to configure manually for the redirect flow to start working in your generated app.
 
-If you ask for a sign-in experience before the connector is enabled, Vibe will scaffold the UI but the sign-in itself won't complete until you turn the connector on.
+:::note
+The Analytics and CRM connectors require Single sign-on. While either of them is enabled, the `Disable` button for Single sign-on is unavailable and shows "Required by Analytics, CRM".
+:::
+
+If you ask for a sign-in experience before the connector is enabled, Vibe scaffolds the UI, but the sign-in itself won't complete until you enable the connector.
 
 ## When to use it
 
@@ -47,7 +46,7 @@ Describe the gated experience in your prompt:
 
 > Add a profile page that shows the signed-in customer's name, email, phone, and a list of their last five service appointments.
 
-The supervisor agent recognizes phrases like "sign in", "members area", "gated", and "profile" and wires the UI through the Single sign-on connector when it is enabled for the project.
+The assistant recognizes phrases like "sign in", "members area", "gated", and "profile" and wires the UI through the Single sign-on connector when it is enabled for the project.
 
 ## What you get in the generated app
 
@@ -55,13 +54,13 @@ The supervisor agent recognizes phrases like "sign in", "members area", "gated",
 - A session-aware layout that knows when a member is signed in and exposes their identity to the rest of the app.
 - A sign-out control wired to the same flow so members can end their session cleanly.
 
-Single sign-on pairs naturally with the [Analytics connector](./analytics.md) for member-specific data, and with the [Forms connector](./forms) when a form should be visible only to signed-in members.
+Single sign-on pairs naturally with the [Analytics connector](./analytics.md) for member-specific data, and with the [Forms connector](./forms.mdx) when a form should be visible only to signed-in members.
 
 ## Iframe limitation
 
 Single sign-on does not work when your Vibe app is embedded inside an iframe. Browser sandboxing prevents the OAuth redirect flow from completing inside an embedded frame.
 
-If your app will be displayed inside an iframe, use one of these approaches:
+If your app is displayed inside an iframe, use one of these approaches:
 
 - **Open in a new tab** — add a sign-in button that opens the full app URL in a new tab so the OAuth flow can complete outside the iframe.
 - **Pop-up sign-in** — prompt Vibe to implement sign-in as a pop-up window rather than a redirect. Pop-ups are not subject to the same iframe sandboxing restrictions.
@@ -76,9 +75,9 @@ If your app is standalone (not embedded in another page), this limitation does n
 Only users who already have access to this Business App account can sign in through the Single sign-on connector. This sign-in screen is for account members — owners, staff, and managers — not your business's customers or website visitors.
 </details>
 
-## Next Steps
+## Next steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Analytics](./analytics.md) — Surface member-specific metrics behind your sign-in gate
-- [Prompting Library](../guides/prompting-library.md) — Ready-made SSO prompts for members areas and gated content
+- [Prompting library](../guides/prompting-library.md) — Ready-made SSO prompts for members areas and gated content
 

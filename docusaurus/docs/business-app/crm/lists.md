@@ -82,6 +82,12 @@ Use these to send follow-ups, notify sales, or update CRM stages automatically.
 
 ![List Triggers](img/lists/list-triggers.jpg)
 
+### Edit or duplicate a list
+
+- You can change a list's name and description at any time after you create it.
+- List actions are available from inside the list's details page.
+- You can duplicate a list in one click. <!-- verify label in product: name of the duplicate action -->
+
 ### Delete a List
 
 1. Go to `CRM` > `Lists`, find the list.
