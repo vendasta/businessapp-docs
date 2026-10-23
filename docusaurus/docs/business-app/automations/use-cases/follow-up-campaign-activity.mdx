@@ -10,7 +10,7 @@ audience: smb
 When a contact opens one of your campaign emails, they're signaling interest. Following up quickly, with a personal email or SMS, can turn that interest into a conversation. You can build an automation that triggers the moment a campaign email is opened, so you never miss that window.
 
 :::note
-This automation requires Conversations AI | Pro with email and SMS setup complete.
+SMS follow-ups require Conversations AI | Pro or Premium. SMS is available only for businesses in the US and Canada.
 :::
 
 ## When to use this
@@ -21,24 +21,16 @@ This automation requires Conversations AI | Pro with email and SMS setup complet
 
 ## How to set it up
 
-1. Create a new automation and set the trigger to **When a contact is modified** with the field **Last campaign email open date**.
-2. (Recommended) Tag the contacts you want to target beforehand and add those tags as **Additional conditions** in the trigger, so the automation only runs for the right audience.
-
-<img src={require('../img/follow-up-automation-trigger.png').default} alt="Automation trigger configuration" width="50%" />
-
+1. Create a new automation and set the trigger to `A contact is created or modified`. Set `Action` to `Modified` (the other options are `Created or modified` and `Created`), then choose the field or fields you want to watch in `Contact fields`. If you select more than one field, the automation triggers when at least one of them is modified.
+2. (Recommended) Tag the contacts you want to target beforehand. In the trigger, select `Add conditions for starting this automation` and add those tags as conditions, so the automation only runs for the right audience.
 3. Add your follow-up action. You have two options:
 
-**Simple follow-up:** Send a plain text email via Conversations to acknowledge their interest and continue the conversation.
+**Simple follow-up:** Add a `Send a plain text email via Conversations` step to acknowledge their interest and continue the conversation.
 
-{/* SME review needed: this screenshot shows the action labeled "via Inbox," but the text above and every other current automation article say "via Conversations." Confirm whether this is outdated terminology and recapture if so. */}
-<img src={require('../img/follow-up-send-email.png').default} alt="Send email configuration" width="50%" />
+**Email or SMS follow-up:** Add an `If/else branch` step that checks which contact details are on file, so each contact gets the follow-up on a channel they can receive:
 
-**Multi-step follow-up:** Send an email first, then follow up with SMS or in-app notifications if the contact doesn't respond.
+- **First branch:** The contact has an email address. Add a `Send a plain text email via Conversations` step.
+- **Second branch:** The contact has no email address but has a phone number. Add a `Send an SMS message via Conversations` step.
+- **Neither:** The contact has no email address or phone number. Add a `Notify a user` step so someone on your team can follow up another way.
 
-{/* SME review needed: this screenshot shows an if/else branch based on whether the contact has an email vs. a phone number on file, not a "no response" condition as described above. Also labeled "via Inbox", see note above. Confirm the correct workflow logic before editing the text or recapturing. */}
-![Advanced automation workflow](../img/follow-up-advanced-workflow.png)
-
-When the automation runs, the Activity tab shows each step that executed for the contact:
-
-{/* SME review needed: same "via Inbox" vs. "via Conversations" terminology mismatch as the screenshots above. */}
-![Automation run example](../img/follow-up-automation-run.png)
+When the automation runs, the `Activity` tab shows each step that ran for the contact.
