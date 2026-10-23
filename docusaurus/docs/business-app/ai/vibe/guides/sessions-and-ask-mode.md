@@ -64,6 +64,8 @@ Search is scoped to the current project and isn't case-sensitive.
 2. Type your message and engage in a back-and-forth discussion with the AI.
 3. When you're ready to build, switch the mode selector to **Plan** or **Build**. The context from your Ask conversation carries forward automatically.
 
+Ask mode includes a free daily allowance. Ask messages within that allowance don't use credits, and you can use them even when your account has no credits remaining. Vibe tells you when the allowance is nearly or fully used. Plan and Build messages use credits.
+
 ![The Vibe chat input with Ask mode selected](./img/ask-mode-chat-input.png)
 
 ### Run a change directly from Ask mode
