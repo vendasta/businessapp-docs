@@ -1,108 +1,89 @@
 ---
-title: Review request automations
-description: Set up and manage automations that send review request emails to customers after a purchase or visit.
+title: Send review requests with automations
+description: Use the Send a review request step to send review requests by SMS or email from an automation.
 sidebar_position: 9
 brand: business-app
 product: automations
 audience: smb
 ---
 
-# Review request automations
+Ask customers for a review automatically at the right moment, for example after a job is finished or an appointment ends. Add the `Send a review request` step to an automation, and it sends a review request by SMS or email using your Reputation AI request templates, so you don't have to send each request yourself.
 
-Review request automations send review request emails to customers after a purchase, visit, or other interaction—so you don't have to send each request manually.
+:::note
+Sending review requests from an automation requires Reputation AI Premium.
+:::
 
-## Setting up review request automations
+## Before you start
 
-1. In Business App, go to **Automations** in the left menu.
+- **Templates:** The step sends your Reputation AI request templates. Each account starts with three request templates: `Review Request` (the default), `NPS Request`, and `Review + NPS`. There's one default email template and one default SMS template. To create or edit templates, see [Templates overview](../../reputation/templates/index.mdx) and [SMS template management](../../reputation/templates/sms-template-management.mdx).
+- **SMS:** To send review requests by SMS, set up [SMS review requesting](../../reputation/reviews/sms-review-requesting.mdx) first.
+- **Contact details:** A contact needs a phone number to receive SMS requests and an email address to receive email requests.
 
-2. On the automations dashboard, find the **Review Request** automation card.
+## Add the step to an automation
 
-3. Click **Edit** on the Review Request card.
+1. Go to `Business App` → `Automations`.
+2. In `My automations`, select `Create automation`, or open an existing automation. If the automation is live, select `Edit` to make changes.
+3. Set the trigger for the moment you want to ask for a review.
+4. Add the `Send a review request` step where the request should go in the workflow.
+5. Enter a `Step name`, fill in the settings described below, and save the step.
+6. Select `Publish` to make your changes live.
 
-4. Use the configuration page to turn the automation on or off and customize it.
+## Step settings
 
-<img src={require('./img/automation-toggle.png').default} alt="Toggle switch in On state with options menu" width="30%" />
+### Send via
 
-## Configuring the automation
+`Send via` (required) sets how the request is sent, for example `SMS, and if not available, send via email`. When a request can't be sent by SMS, it's sent by email instead. If a contact has no phone number or email address for the channel, the step skips that contact.
 
-### Enable or disable
+### Email template and SMS template
 
-At the top of the configuration page, use the switch to turn the automation on or off. When it's on, review requests are sent according to your settings.
+Choose the request template to send in the `Email template` and `SMS template` dropdowns. Both are required when they're shown. The dropdowns you see depend on your `Send via` choice, and each one starts on your account's default template for that channel.
 
-### Email template
+### Schedule review request
 
-You can customize the email that customers receive:
+`Schedule review request` controls when the request goes out:
 
-1. Edit the **Subject Line**.
-2. Add or edit the **Preview Text** (optional; shown in some email clients before the email is opened).
-3. Change the **Content** in the rich text editor.
+- `Use default`: Sends about 15 minutes after the automation is triggered, between 8:00 AM and 8:00 PM, on any day of the week.
+- `Send immediately`: Sends as soon as the step runs.
+- `Delay by`: Waits for the duration you set, then sends within the send window you choose (for example, `Send between 8:00 AM – 8:00 PM`) on the days you select, Monday through Sunday.
 
-<img src={require('./img/automation-review-4.png').default} alt="Email template customization" width="40%" />
+### Email follow-up
 
-You can use placeholders such as `{{ business_name }}`; they're replaced with your real business name when the email is sent.
+`Email follow-up` sends a follow-up email if the customer doesn't open the initial link. Choose the follow-up's `Email template` (required), how many days to wait, and the send frequency. Follow-ups are sent by email only, even when the first request goes out by SMS. By default, one follow-up is sent after 3 days.
 
-### Business address
+### Feedback frequency
 
-Review request emails show a business address based on your [Business Profile](../administration/business_profile.mdx) settings, unless you've set an override in [Email Configuration](../administration/email/email-configuration.mdx#set-a-display-address-for-emails):
+`Feedback frequency` sets how long to wait before asking a repeat customer for feedback again. The default is 60 days.
 
-- If `Use physical address override` is turned on under `Administration` → `Email Configuration` → `Display Address`, review request emails show that override address instead of your Business Profile address.
-- If the override is turned off, review request emails follow your Business Profile:
-  - If `Service area business` is off, they show your `Physical address`.
-  - If `Service area business` is on, they don't show your physical address. They show your service area instead, or leave out the address section if there's nothing to show.
+### Notes
+
+Use `Notes` to leave details for your team about what the step does. Notes are optional.
+
+## Business address in review request emails
+
+Review request emails show a business address based on your [Business Profile](../administration/business_profile.mdx), unless you've set an override in [Email configuration](../administration/email/email-configuration.mdx#set-a-display-address-for-emails):
+
+- If `Use physical address override` is turned on under `Administration` → `Email configuration` → `Display Address`, review request emails show that override address instead of your Business Profile address.
+- If the override is turned off, review request emails show the `Address` from your Business Profile. If your Business Profile's `Service area business` setting is `Hide my address and only show service areas`, they don't show your address. They show your service area instead, or leave out the address section if there's nothing to show.
 
 Updating either setting applies to review requests you send afterward. No extra steps are needed.
 
-### Review sites
+## See how your requests perform
 
-Choose which review sites to include in the email:
+Go to `Reputation AI` → `Requests` to see how your review requests perform, including `Requests sent`, `Opened`, `Links clicked`, `Clickthrough rate`, `Conversion rate`, and `Total reviews`. Use the `Source` filter (for example, `Email` or `SMS`) and the `Request type` filter (`Review` or `NPS`) to narrow the results.
 
-1. Turn on or off sites like Google, Facebook, and others.
-2. Only the sites you turn on appear in the request.
+## Other ways to send review requests
 
-<img src={require('./img/automation-review-5.png').default} alt="Review site selection" width="50%" />
-
-### Timing
-
-Set when the automation runs:
-
-1. Set how many days after a transaction or interaction the review request is sent.
-2. Optionally set the time of day to send the emails.
-
-<img src={require('./img/automation-review-6.png').default} alt="Timing configuration" width="85%" />
-
-### Customer list
-
-Choose who receives the automated review requests:
-
-1. Send to **All Customers** or to a specific segment.
-
-<img src={require('./img/automation-review-7.png').default} alt="Customer list configuration" width="40%" />
-
-### Test email
-
-Before turning the automation on, you can send a test email:
-
-1. Click **Send Test Email**.
-2. Enter the email address that should receive the test.
-3. Click **Send**.
-
-![Test email function](./img/automation-review-8.png)
-
-## Review activity analytics
-
-After the automation is on, you can see how it's doing in the Review Activity section:
-
-1. See how many emails were sent, opened, and clicked through to review sites, and how often they led to a review.
-2. See ratings from reviews that came from the automation.
-
-<img src={require('./img/automation-review-9.png').default} alt="Review activity analytics" width="70%" />
+To send a single request yourself, go to `Reputation AI` → `Reviews` and select `Request` → `Send review request`. To collect reviews from walk-in customers, see [Check-in kiosk](../../reputation/reviews/check-in-kiosk.mdx). For more about review requests in Reputation AI, see [Sending review requests](../../reputation/reviews/reputation-management-premium.mdx).
 
 ## Best practices
 
-- **Timing**: Sending requests 1–3 days after a transaction often gets better response rates.
-- **Personalize**: Use the customer's name and details about their visit or purchase when you can.
-- **Keep it short**: Short emails with a clear call-to-action usually work best.
-- **Check analytics**: Review performance regularly and adjust timing or content as needed.
-- **Follow regulations**: Make sure your review requests follow email and review solicitation rules in your region.
+- **Timing**: Sending requests 1–3 days after a transaction often gets better response rates. Use `Delay by` to wait before sending.
+- **Keep it short**: Short templates with a clear call to action usually work best.
+- **Don't over-ask**: Use `Feedback frequency` so repeat customers aren't asked too often.
+- **Check results**: Review the `Requests` tab regularly and adjust timing or templates as needed.
+- **Follow regulations**: Make sure your review requests follow email, SMS, and review solicitation rules in your region.
 
-Turn the automation on and check Review Activity regularly to monitor results.
+## Related
+
+- [Steps](./automation-steps.mdx): Every step your automations can perform
+- [Triggers](./automation-triggers.md): Events that start an automation

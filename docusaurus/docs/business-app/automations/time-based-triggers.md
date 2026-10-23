@@ -10,13 +10,13 @@ product: automations
 audience: smb
 ---
 
-Run automations on a recurring schedule without waiting for an event to trigger them. The **On a schedule** trigger is useful for routine tasks like sending team reminders, weekly notifications, or monthly check-ins.
+Run automations on a recurring schedule without waiting for an event to trigger them. The `On a schedule` trigger is useful for routine tasks like sending team reminders, weekly notifications, or monthly check-ins.
 
 ## How time-based triggers work
 
 Unlike event-based triggers that run when something happens (like a company or contact creation), time-based triggers run at times you define. You set the frequency, time of day, and date range, and the automation runs automatically.
 
-Alongside your automation's description, the **On a schedule** trigger also displays when the automation will run next, so you can confirm the schedule at a glance without opening the configuration panel.
+On the canvas, the `On a schedule` trigger card shows the schedule, for example "Weekly on Wednesday at 9:00 am (America/Regina)", and a `Next scheduled run` line with the date and time of the next run. You can confirm the schedule at a glance without opening the trigger panel.
 
 **Key benefits:**
 - Automate recurring tasks without manual intervention
@@ -29,15 +29,17 @@ Alongside your automation's description, the **On a schedule** trigger also disp
 
 **Step 2**: Click `Create automation` or open an existing automation.
 
-**Step 3**: In the trigger selection, find **Time-based** and select **On a schedule**.
+**Step 3**: In the trigger picker, find the `Time-based` group and select `On a schedule`.
 
-**Step 4**: Configure the schedule options (see below).
+**Step 4**: Select a preset (`Every day`, `Mondays`, or `First of the month`) or set the schedule options yourself (see below), then select `Save`.
 
-**Step 5**: Add your automation steps and save.
+**Step 5**: Add your automation steps, then select `Publish` to make the automation live.
 
 ![On a schedule trigger configuration](./img/time-based-trigger-config.png)
 
 ## Schedule options
+
+Choose `Daily`, `Weekly`, or `Monthly` in the required `Frequency` field. Every schedule also needs a `Time`. The automation starts after this time.
 
 ### Daily
 
@@ -45,7 +47,7 @@ Run the automation at the same time every day.
 
 | Setting | Description |
 | --- | --- |
-| **Time** | The time of day to run (in your configured timezone) |
+| `Time` | The time of day to run, in the timezone set in the trigger's `Timezone` field |
 
 ### Weekly
 
@@ -54,7 +56,7 @@ Run the automation on specific days of the week.
 | Setting | Description |
 | --- | --- |
 | **Time** | The time of day to run |
-| **Days of week** | Select one or more days (Sunday through Saturday) |
+| `Day of the week` | Select one or more days |
 
 ### Monthly
 
@@ -76,12 +78,12 @@ Control when your time-based automation is active.
 
 | Setting | Description |
 | --- | --- |
-| **Start date** | The earliest date the automation can run. The schedule becomes active on this date. |
-| **End date** | (Optional) The latest date the automation can run. After this date, the schedule stops. |
+| `Start date` | Required. The automation starts on or after this date. |
+| `End date` | Optional. The automation stops on this date. Leave it blank to run the schedule indefinitely. |
 
 ## Timezone
 
-The schedule runs based on your automation's timezone setting. All times you enter are interpreted in this timezone.
+Choose the schedule's timezone in the trigger's `Timezone` field, for example `CST (America/Regina)`. The `Time` you enter is interpreted in this timezone, and the trigger card shows the timezone in brackets, for example "(America/Regina)".
 
 ## Example use cases
 
@@ -108,9 +110,10 @@ Invoke an AI employee to generate insights and share them with your team:
 
 ### Automation did not run at the scheduled time
 
-- Verify the automation is turned **on** (running state)
-- Check that the current date is within the **Start date** and **End date** range
-- Confirm the timezone is set correctly in automation settings
+- Verify the automation's status is `Live` in `My automations` and its switch is `On`
+- Check that the current date is within the `Start date` and `End date` range
+- Confirm the trigger's `Timezone` field is set correctly
+- Check the `Next scheduled run` line on the trigger card to see when the automation runs next
 
 ### Schedule options not appearing correctly
 
@@ -119,7 +122,7 @@ Invoke an AI employee to generate insights and share them with your team:
 
 ### Automation runs at unexpected times
 
-- Double-check your timezone configuration
+- Double-check the trigger's `Timezone` field
 - Remember that daylight saving time changes may affect the actual run time in your local time
 
 ## Related resources
