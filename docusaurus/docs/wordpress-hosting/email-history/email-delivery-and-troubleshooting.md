@@ -25,6 +25,8 @@ When reviewing emails in the Activity section, you'll see the following statuses
 | **Dropped** | The email was not sent due to prior bounces, unsubscribes, spam reports, or invalid addresses. |
 | **Deferred** | The receiving server temporarily limited access. The system retries delivery for up to 72 hours. If still deferred after 72 hours, the deferral becomes a block. |
 
+Statuses can appear after the email itself. An email can show in Email History with no status for a while even though it was already delivered, because delivery events sometimes arrive late. Check again later before treating a missing status as a delivery problem.
+
 ## Understanding unsubscribed emails
 
 WordPress Hosting contact form submissions are classified as **transactional emails**. Transactional emails cannot be unsubscribed from — this prevents the loss of leads and ensures you receive every contact form submission.
