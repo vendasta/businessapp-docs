@@ -107,15 +107,14 @@ One registration covers every SMS feature on your account.
 Connecting your Google Business Profile syncs your location details and powers automated review requests and dashboard metrics, so you can see the impact of your online presence without checking Google directly.
 
 1. Go to `Administration` > `Integrations`.
-2. Click the `Browse` tab.
-3. Find and click the **Google Business Profile** tile.
-4. Sign in and authorize the connection.
+2. Find and click the **Google Business Profile** tile.
+3. Sign in and authorize the connection.
 
 :::tip
 Data can appear in your dashboard within about 5 minutes of connecting.
 :::
 
-You can manage or reconnect this integration later from `Administration` > `Integrations` > `Manage`. See [Integrations](../administration/connections/index.md) for more on browsing and managing connections.
+You can manage or reconnect this integration later from `Administration` > `Integrations`. See [Integrations](../administration/connections/index.md) for more on finding and managing connections.
 
 [Back to checklist](#getting-started-checklist)
 

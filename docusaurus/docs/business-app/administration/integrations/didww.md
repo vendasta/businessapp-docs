@@ -43,8 +43,8 @@ Business App does not register your DIDWW number with carriers. Any registration
 
 ## Step 1: Connect DIDWW in Business App
 
-1. In Business App, go to `Administration` → `Integrations` → `Browse`.
-2. Select the `DIDWW` card and click `Connect`.
+1. In Business App, go to `Administration` → `Integrations`.
+2. Find the `DIDWW` card and click `Connect`.
 3. Enter your `SMS Trunk Username`, `SMS Trunk Password`, `API Key`, and `Phone Number`. Enter the phone number in international format, starting with `+` or `00`.
 4. Click `Add Connection`.
 
@@ -111,7 +111,7 @@ Send a text to your DIDWW number from a mobile phone. It appears in Conversation
 
 ## Disconnect DIDWW
 
-1. Go to `Administration` → `Integrations` → `Manage`.
+1. Go to `Administration` → `Integrations`.
 2. Open the `DIDWW` connection and disconnect it.
 
 ## Frequently asked questions
