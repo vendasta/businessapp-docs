@@ -57,7 +57,7 @@ After setup, you can view and manage all connected applications through:
 
 - The Integrations page, where a connected application shows a green check mark and can be filtered into view with the `Connected` filter
 
-![Manage tab with connection card](../../img/sso-integrations/manage-tab.jpg)
+![Integrations page with the Connected filter on, showing connected integrations with green checks](../../img/sso-integrations/manage-tab.jpg)
 
 - The application pages, which display a "Connected" tag
 

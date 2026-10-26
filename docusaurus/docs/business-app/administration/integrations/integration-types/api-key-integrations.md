@@ -43,7 +43,7 @@ Refer to the instructions on the Connection Settings page for the exact steps fo
 
 ### Step 5: Confirm the connection
 
-The connection status shows as `Pending` until data syncs for the first time. The integration becomes `Connected` after the first qualifying event in the third-party application triggers a sync — for example, when a customer checks out a reservation or a job is completed.
+Until data syncs for the first time, the integration's page shows the connection as pending. The integration becomes connected after the first qualifying event in the third-party application triggers a sync — for example, when a customer checks out a reservation or a job is completed.
 
 When the connection is successfully established, you receive both an email notification and an in-app notification.
 
@@ -51,23 +51,19 @@ When the connection is successfully established, you receive both an email notif
 
 After setup, your integration's status shows directly on its row on the Integrations page:
 
-| Status indicator | Meaning |
+| What you see | Meaning |
 |---|---|
-| Green checkmark | Connected and syncing normally |
-| Yellow warning | There is a problem with the integration |
-| Blue info icon | Setup is in progress (pending connection) |
+| Green check on the row | Connected |
+| Listed in `Needs attention` with `Resume` and a reason such as "Sign-in not finished" | Setup isn't finished |
+| Listed in `Needs attention` with `Reconnect` and a reason such as "Disconnected · Sign in again to keep syncing" | The connection is broken and needs you to sign in again |
 
-Click the connection card to open the Connection Settings page, where you can review setup instructions, adjust sync preferences, or disconnect the integration.
+Click the integration to open the Connection Settings page, where you can review setup instructions, adjust sync preferences, or disconnect the integration.
 
-### Pending connection status
+### Unfinished connections
 
-Until the first data sync occurs, the integration is in a **Pending** status. This is shown:
+If setup isn't finished, the integration appears in `Needs attention` at the top of the Integrations page with `Resume` and the reason. Its integration page shows **Connection pending** with a `Resume connection` button.
 
-- On the integration's row on the Integrations page
-- As an info icon on the connection card
-- On the Connection Settings page and the integration's marketing page
-
-Click the connection card to return to the Connection Settings page and continue or troubleshoot the setup.
+Select `Resume` to return to the setup and continue or troubleshoot it.
 
 ## Frequently Asked Questions (FAQs)
 
@@ -79,7 +75,7 @@ Your API key appears on the Connection Settings page after you click `Add Connec
 </details>
 
 <details>
-<summary>Why does my connection still show as pending?</summary>
+<summary>Why does my integration page still show the connection as pending?</summary>
 
 The status updates to **Connected** only after data has synced at least once. Trigger a qualifying event in the third-party application — such as completing a job or checking out a reservation — to initiate the first sync.
 

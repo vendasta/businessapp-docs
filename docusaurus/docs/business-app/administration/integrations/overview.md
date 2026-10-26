@@ -27,7 +27,7 @@ Connecting accounts also reduces manual work by automatically syncing data betwe
 ## What is included?
 The Integrations page shows every integration in one list. A `Needs attention` section comes first if any connections need fixing, followed by MCP servers, then one section for each integration category. Each section shows six integrations at a time, connected ones first, with a `Show all` option to see the rest.
 
-![Browse Available Integrations in the Connection Section](../img/app_settings_connections_browse_integrations.png)
+![Integrations page showing filters, Needs attention, MCP servers, and integration categories](../img/app_settings_connections_browse_integrations.png)
 
 Common integrations include:
 
