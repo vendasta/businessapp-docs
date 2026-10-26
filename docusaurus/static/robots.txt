@@ -1,4 +1,18 @@
+# One rule set for everyone. The AI search and fetch bots are named so the
+# intent is explicit; a bot reads only the first group that names it, which
+# is why they share this group instead of getting their own (a separate
+# group would silently drop the Disallow line for them). Training crawlers
+# (GPTBot, ClaudeBot, Google-Extended) fall under * and stay allowed.
 User-agent: *
-Disallow:
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+# Tag pages are generated lists of article titles, not content. Readers can
+# still use them; crawlers should spend their time on the articles. This
+# comes before Allow because some bots take the first rule that matches.
+Disallow: /tags/
+Allow: /
 
 Sitemap: https://docs.businessapp.io/sitemap.xml
