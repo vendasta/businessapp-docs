@@ -23,15 +23,23 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  // nginx serves every page as a directory and 301s the slash-less form to it,
+  // so emit the slash form everywhere (links, canonical, sitemap) and the
+  // sitemap stops pointing at addresses that redirect.
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vendasta', // Usually your GitHub org/user name.
   projectName: 'businessapp-docs', // Usually your repo name.
 
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'ignore',
-
+  // Report dead links in the build output instead of hiding them.
+  onBrokenLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Custom head tags for Cookiebot integration
   headTags: [
@@ -89,11 +97,18 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
-          // Show git-based last update metadata (Docker build now includes .git)
+          // Readers don't see a last-updated date; review dates live in the
+          // `last_reviewed` frontmatter instead (DOC-1038).
           showLastUpdateTime: false,
-          // Note: Docusaurus will gracefully skip git metadata if .git is unavailable
         },
         blog: false,
+        sitemap: {
+          // Crawlers ignore changefreq and priority; tag listings, the search
+          // page and the cookie declaration are not content worth indexing.
+          changefreq: null,
+          priority: null,
+          ignorePatterns: ['/tags/**', '/search/', '/cookie-declaration/'],
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
