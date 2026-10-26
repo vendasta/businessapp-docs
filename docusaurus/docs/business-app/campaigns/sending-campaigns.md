@@ -33,14 +33,14 @@ Use this method to send a campaign to one or more specific contacts immediately 
 
 4. Select `Add to campaign`
 5. On the Send campaign page:
-   - Choose your campaign from the dropdown
-   - Review or adjust the recipient list
+   - Choose your campaign in the `Campaign` field
+   - Review or adjust the contacts in `Select recipients`
    - Select a `Send from` address
-   - Preview the email using the `Desktop`, `Tablet`, or `Mobile` view tabs
-![Send campaign page showing email preview, recipient selection, and Send button](./img/sending-campaigns/send-campaign-page.png)
+   - For email campaigns, preview the email using the `Desktop`, `Tablet`, or `Mobile` view
+![Send campaign page with the menu beside the Send button open to show the Schedule option, next to the Campaign, Select recipients, Send from, and Email settings fields](./img/sending-campaigns/send-campaign-page.png)
 
 6. To send immediately, click `Send`
-7. To schedule for a later time, select the `Schedule` tab, set your date and time, then confirm
+7. To schedule for a later time, click the arrow beside `Send` and select `Schedule`. In the `Schedule` window, set your date and time, review the estimated delivery, then click `Schedule`
 
 :::note
 Contacts without a valid email address appear as "contacts with issues" and are excluded from sending. The `Estimated recipients` count reflects only contacts who will actually receive the email.
@@ -53,7 +53,8 @@ Use this method to enroll selected contacts into a campaign-based automation wor
 1. Go to `CRM` → `Contacts`
 2. Select one or more contacts using the checkboxes
 3. Click `Actions` → `Start automation`
-4. Select a campaign-based automation to enroll the selected contacts
+4. In the `Select automation` window, search for and select the automation. Only automations with a manual trigger that are turned on appear in the list.
+5. Click `Start`
 
 The automation runs immediately for the selected contacts and enrolls them according to the automation's configured steps and delays.
 
@@ -84,13 +85,13 @@ The campaign starts immediately for all current members of the list. Contacts ad
 
 When you add contacts directly to a campaign, the Send campaign page gives you a full overview before you confirm.
 
-- `Email preview`: Switch between `Desktop`, `Tablet`, and `Mobile` views to see how the email renders
-- `Day navigation`: Use the arrows to browse through each step in a multi-step campaign
-- `Campaign selection`: Choose which published campaign to send
-- `Recipients panel`: Add or remove individual contacts before sending
-- `Send from address`: Select which sender address to use for this send
-- `Email settings summary`: Review the sender name, sender address, and reply address
+- `Campaign`: Choose which published campaign to send
+- `Select recipients`: Add or remove individual contacts before sending
 - `Estimated recipients`: The total number of contacts that have the required information for each step in the campaign: email addresses for email steps and phone numbers for SMS steps
+- `Send from`: Select which sender address to use for this send
+- `Email settings`: Review the sender name, sender address, and reply address
+- Day pager: Use the arrows on either side of the day (for example, `Day 1 (1/1)`) to browse through each step in a multi-step campaign
+- Preview views: For email campaigns, switch between `Desktop`, `Tablet`, and `Mobile` views to see how the email renders
 
 ## Frequently asked questions
 
@@ -109,7 +110,7 @@ Contacts with issues are contacts that are missing the required information for 
 <details>
 <summary>Can I schedule a campaign send for a future date?</summary>
 
-Yes. On the Send campaign page, select the `Schedule` tab instead of sending immediately, then choose the date and time for delivery.
+Yes. On the Send campaign page, click the arrow beside `Send` and select `Schedule` instead of sending immediately. Choose the date and time for delivery, then click `Schedule`.
 </details>
 
 <details>
@@ -133,7 +134,7 @@ No. Starting an automation from a list enrolls only the current members at the t
 <details>
 <summary>Can I preview a multi-step campaign before sending?</summary>
 
-Yes. On the Send campaign page, use the Day navigation arrows to move through each step in the sequence and preview how each email will look.
+Yes. On the Send campaign page, use the arrows on the Day pager to move through each step in the sequence and preview how each email looks.
 </details>
 
 <details>
@@ -145,23 +146,17 @@ Yes. The Send campaign page includes a `Send from` dropdown where you can select
 <details>
 <summary>How do I create a list to use when sending a campaign?</summary>
 
-Go to `CRM` → `Lists` and click `Create` to set up a static or smart list. Once your list has members, you can use it to start a campaign automation. See [Lists](../crm/lists.md).
+Go to `CRM` → `Lists` and click `Create list` to set up a static or smart list. Once your list has members, you can use it to start a campaign automation. See [Lists](../crm/lists.md).
 </details>
 
 <details>
 <summary>Where can I see campaign performance and delivery stats?</summary>
 
-Go to `Campaigns` and click on the campaign you want to review. The Campaign Details page shows recipient counts, in-progress and completed statuses, and email performance metrics including delivery rate, open rate, click-to-open rate, dropped, and bounced. Each email step also shows its individual delivered, pending, open rate, and click rate.
+Go to `Marketing` → `Campaigns` and click the campaign you want to review. The Campaign Details page shows recipient counts, in-progress, stopped, and completed statuses, and email performance metrics including engaged recipients, delivery rate, open rate, click-to-open rate, dropped, and bounced. Each email step also shows its individual delivered, pending, open rate, and click rate.
 </details>
 
 <details>
 <summary>What happens if I select contacts who are already enrolled in the campaign?</summary>
 
 Contacts already enrolled in a campaign will not receive duplicate emails. Only new eligible recipients are added to the send.
-</details>
-
-<details>
-<summary>Can I remove a recipient from a campaign after it starts sending?</summary>
-
-Yes. Open the campaign, navigate to the recipients list, and remove the contact. They will not receive any remaining steps in the sequence.
 </details>
