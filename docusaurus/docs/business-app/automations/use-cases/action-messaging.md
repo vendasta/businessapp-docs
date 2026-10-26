@@ -61,6 +61,6 @@ When a contact submits a signup form, send them a plain-text email to acknowledg
 - Keep SMS messages short and actionable. Include your business name the first time you text a contact
 - Use clear email subjects with one primary call-to-action
 - Add conditions to limit when notifications fire (for example, only for new leads or only during business hours). In the trigger, select `Add conditions for starting this automation`, or add an `If/else branch` step.
-- Personalize messages with the contact's name and relevant details using [dynamic content](../dynamic-content-in-automations)
+- Personalize messages with the contact's name and relevant details using [dynamic content](../dynamic-content-in-automations.mdx)
 - If messages fail to send, check the `Activity` tab and make sure required fields (phone for SMS, email for plain-text email) are present on the contact
 

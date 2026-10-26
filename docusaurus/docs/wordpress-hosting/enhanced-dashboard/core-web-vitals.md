@@ -26,11 +26,11 @@ The card has three rows, one per metric, with separate values for **Desktop** an
 
 ## When a score is poor
 
-- **Slow LCP**: Compress hero images, enable the [CDN](./dashboard-overview), or upgrade to a faster PHP version.
+- **Slow LCP**: Compress hero images, enable the [CDN](./dashboard-overview.md), or upgrade to a faster PHP version.
 - **High TBT**: Remove or defer heavy third-party scripts (chat widgets, marketing tags).
 - **High CLS**: Set explicit width and height on images, reserve space for ads and embeds.
 
-For specific, prioritized fixes, open `Performance improvement opportunities` from the [Performance](./page-speed) card.
+For specific, prioritized fixes, open `Performance improvement opportunities` from the [Performance](./page-speed.md) card.
 
 :::tip
 Core Web Vitals are part of Google's search ranking signals. Improving them often improves both search visibility and conversion.

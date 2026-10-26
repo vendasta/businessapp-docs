@@ -39,7 +39,7 @@ Click `Update v[new version]` on the plugin's row. The update completes in a few
 The plugin appears under `Inactive Plugins`. Click `Activate` when you're ready.
 
 :::tip
-Create a backup before installing or updating a plugin. Test major updates on [staging](./staging) first.
+Create a backup before installing or updating a plugin. Test major updates on [staging](./staging.md) first.
 :::
 
 ## Keep plugins healthy
