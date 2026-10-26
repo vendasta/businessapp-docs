@@ -56,6 +56,8 @@ Customers can keep calling your existing business number and your telephone prov
 
    When a call is forwarded, your Conversations inbox and CRM show the original caller's phone number, not your business line.
 
+   Call forwarding is set up with your phone carrier, not in Business App, so canceling your AI Voice Receptionist doesn't turn it off and you won't get a reminder. Before you cancel, turn off forwarding with your carrier so calls to your business line aren't still forwarded.
+
 :::tip
 For more help forwarding calls, see [Voice AI](../../conversations/phone-calls.mdx).
 :::
