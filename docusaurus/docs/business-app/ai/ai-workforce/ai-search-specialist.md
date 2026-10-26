@@ -10,8 +10,8 @@ product: ai-workforce
 audience: smb
 ---
 
-:::info Beta
-The AI Search Specialist is currently in beta and is available to trusted testers. It is not yet available to all Business App users.
+:::info
+Available on plans that include the AI Search Specialist.
 :::
 
 ## What is the AI Search Specialist?
@@ -96,9 +96,9 @@ Yes. You request a brand visibility report by chatting with the AI Search Specia
 </details>
 
 <details>
-<summary>Is the AI Search Specialist available to everyone?</summary>
+<summary>Who can use the AI Search Specialist?</summary>
 
-No. The AI Search Specialist is currently in beta and is available to trusted testers only.
+The AI Search Specialist is available on plans that include it.
 </details>
 
 <details>
