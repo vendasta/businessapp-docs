@@ -20,8 +20,7 @@ Integrations that use this method include **FieldEdge**, **JobNimbus**, **RB Con
 ### Step 1: Find the integration
 
 1. Go to `Administration` → `Integrations` in Business App.
-2. Click the `Browse` tab.
-3. Find the integration card for your application and click it.
+2. Find the integration card for your application and click it.
 
 ### Step 2: Review the marketing page and connect
 
@@ -50,7 +49,7 @@ When the connection is successfully established, you receive both an email notif
 
 ## Manage your connection
 
-After setup, your integration appears as a connection card in the `Manage` tab of the Connections page. The card shows the current status of the integration:
+After setup, your integration's status shows directly on its row on the Integrations page:
 
 | Status indicator | Meaning |
 |---|---|
@@ -64,7 +63,7 @@ Click the connection card to open the Connection Settings page, where you can re
 
 Until the first data sync occurs, the integration is in a **Pending** status. This is shown:
 
-- As a banner in the `Manage` tab
+- On the integration's row on the Integrations page
 - As an info icon on the connection card
 - On the Connection Settings page and the integration's marketing page
 

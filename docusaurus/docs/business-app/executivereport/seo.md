@@ -45,7 +45,7 @@ You (or whoever manages your site) need a Google Search Console account with you
 
 ![Connect Search Console to Business App](img/google-search-console-connection.jpg)
 
-- Go to `Business App` → `Administration` → `Integrations` → `Browse Integrations`
+- Go to `Business App` → `Administration` → `Integrations`
 - Find the **Google Search Console** card and click it to add an account (one connection per account)
 - Sign in with a Google account that has access to the Search Console property
 - Choose the property you want to connect
