@@ -296,6 +296,9 @@ const config: Config = {
       logo: {
         alt: 'Business App logo',
         src: 'img/Business App.svg',
+        // The site has no page at "/" (nginx redirects it), so link straight
+        // to where that redirect lands.
+        href: '/business-app/',
       },
       items: [],
     },
