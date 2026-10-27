@@ -102,6 +102,18 @@ const config: Config = {
           showLastUpdateTime: false,
         },
         blog: false,
+        pages: {
+          // src/pages/index.tsx only sends the dev server's "/" to
+          // /business-app/. In production nginx does that with a 301, so the
+          // build leaves the page out. The other entries are the defaults.
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+            ...(process.env.NODE_ENV === 'production' ? ['index.tsx'] : []),
+          ],
+        },
         sitemap: {
           // Crawlers ignore changefreq and priority; tag listings, the search
           // page and the cookie declaration are not content worth indexing.
