@@ -131,7 +131,7 @@ Connections bring your most important business data into one place. When you con
 
 Common connections to set up early:
 
-- **Google Business Profile**: Syncs location details and visibility metrics. Data can appear in your Executive Report within about 5 minutes. For setup details, see [Business Profile](../administration/business_profile.mdx) and [Integrations](../administration/connections/index.md).
+- **Google Business Profile**: Syncs location details and visibility metrics. Data can appear in your Executive Report within about 5 minutes. For setup details, see [Business Profile](../administration/business_profile.mdx) and [Integrations](../administration/integrations/overview.md).
 - **QuickBooks Online**: Import existing customers, automate review requests from invoiced customers, and surface financial insights. See [QuickBooks integration](../administration/integrations/quickbooks.mdx) for connection steps.
 
 [Back to checklist](#getting-started-checklist)

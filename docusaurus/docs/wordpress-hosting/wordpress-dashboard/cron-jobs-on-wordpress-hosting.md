@@ -44,4 +44,4 @@ Cron jobs handle routine WordPress tasks automatically. WordPress Hosting's cron
 
 ## Related articles
 
-For other WordPress Hosting platform features and advanced tools, see [Advanced Tools](../../advanced-tools/index.mdx).
+For other WordPress Hosting platform features and advanced tools, see [Advanced Tools](../advanced-tools/index.mdx).
