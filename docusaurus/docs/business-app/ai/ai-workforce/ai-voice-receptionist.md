@@ -155,7 +155,7 @@ The **Book appointments with calendar** capability connects to your integrated c
 On the `Book appointments with calendar` panel, use the `Select event link to book with` dropdown to choose which calendar your receptionist should use to determine availability as well as which kind of appointments they can offer.
 
 :::note
-When the AI Voice Receptionist books an appointment, the caller isn't offered a choice of team member, and the receptionist doesn't ask the custom questions or collect the notes that appear on your booking page. See [AI booking limitations](../../crm/My%20meetings/groups-and-service-menus.md#ai-booking-limitations).
+When the AI Voice Receptionist books an appointment, the caller isn't offered a choice of team member, and the receptionist doesn't ask the custom questions or collect the notes that appear on your booking page. See [AI booking limitations](../../crm/my-meetings/groups-and-service-menus.md#ai-booking-limitations).
 :::
 
 :::note
@@ -453,7 +453,7 @@ For additional troubleshooting, see [Voice AI](../../conversations/phone-calls.m
 <details>
 <summary>Can the AI book meetings on my calendar?</summary>
 
-Yes. Connect your calendar in `CRM` > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then enable the **Book appointments with calendar** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](../../crm/My meetings/) for details.
+Yes. Connect your calendar in `CRM` > `My Meetings` > `Settings` > `Defaults` > `Connect Calendar`. Then enable the **Book appointments with calendar** capability in your AI configuration. If your booking link uses Microsoft Teams or Google Meet, meeting links are included automatically. See [My Meetings](../../crm/my-meetings/index.md) for details.
 </details>
 
 <details>

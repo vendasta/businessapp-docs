@@ -47,9 +47,9 @@ Google PageSpeed Insights uses the same scoring scale for desktop and mobile, bu
 The fastest wins for most sites:
 
 - Compress and resize large images.
-- Enable the [CDN](./dashboard-overview) if it's not already on.
+- Enable the [CDN](./dashboard-overview.md) if it's not already on.
 - Remove unused plugins and heavy third-party scripts.
-- Test changes on [staging](./staging) before publishing.
+- Test changes on [staging](./staging.md) before publishing.
 
 :::tip
 After making a change you expect to improve performance, click the refresh icon to measure right away instead of waiting for the next automatic update.

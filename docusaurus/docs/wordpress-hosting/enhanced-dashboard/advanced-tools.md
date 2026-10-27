@@ -43,7 +43,7 @@ Editing the database can break your site. Back up before changes, and only run q
 
 Block specific IPs or patterns to stop bots, scrapers, or abusive traffic. Click `+ Add rule` to create a rule; the delete icon to remove one.
 
-If the panel shows a banner that your domain isn't pointing to the correct A or CNAME record, firewall rules won't take effect until DNS is updated. See [Domains and SSL](./domains-and-ssl) for the recommended values.
+If the panel shows a banner that your domain isn't pointing to the correct A or CNAME record, firewall rules won't take effect until DNS is updated. See [Domains and SSL](./domains-and-ssl.md) for the recommended values.
 
 ## Cron jobs
 
@@ -55,8 +55,8 @@ Click `Open` next to `PHPlogs` to view recent PHP errors and warnings, with the 
 
 ## Google Analytics integration
 
-A built-in Google Analytics integration is available as a toggle. Turn it on for default analytics, or use [Web Analytics](./web-analytics) to connect your own GA4 property.
+A built-in Google Analytics integration is available as a toggle. Turn it on for default analytics, or use [Web Analytics](./web-analytics.md) to connect your own GA4 property.
 
 :::tip
-When in doubt, test on [staging](./staging) before changing production.
+When in doubt, test on [staging](./staging.md) before changing production.
 :::

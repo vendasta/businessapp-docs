@@ -195,8 +195,8 @@ Open your Executive Report in Business App. In the top navigation bar dropdown, 
 
 ## Related resources
 
-- [Executive Report](./index)
-- [CRM](../crm/)
-- [AI Voice Receptionist](../ai/ai-workforce/ai-voice-receptionist)
-- [Web chat](../conversations/web-chat/)
-- [Conversations](../conversations/)
+- [Executive Report](./index.md)
+- [CRM](../crm/index.mdx)
+- [AI Voice Receptionist](../ai/ai-workforce/ai-voice-receptionist.md)
+- [Web chat](../conversations/web-chat/index.mdx)
+- [Conversations](../conversations/index.mdx)
