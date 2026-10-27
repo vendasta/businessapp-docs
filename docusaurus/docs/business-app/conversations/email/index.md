@@ -25,17 +25,17 @@ Conversations lets you send and receive emails with leads and customers from a s
 
 Every business is assigned a unique Conversations email address in the format `reply+xxxxx@businessapp.io`. All outbound emails from Conversations are sent from this address, and customer replies to it are routed back into your Conversations inbox automatically.
 
-You can find your assigned address at `Administration` → `Email Configuration` → `Advanced email settings`, listed as the `Forwarding address`.
+You can find your assigned address at `Administration` → `Email configuration` → `Advanced email settings`, listed as the `Forwarding address`.
 
-![Advanced email settings showing sender info preview and forwarding address](./img/email-setup.png)
+![Advanced email settings with the Forwarding address](./img/email-setup.png)
 
 ### Sending emails
 
 To send an email to a new or existing contact:
 
-1. Click `New Message` in Conversations
-2. Enter the recipient's email address
-3. Write your message, then select `Email` in the `Send via` dropdown menu
+1. Click `New message` in Conversations
+2. Enter or select the contact
+3. Write your message, then select `Email` in the `Send via` dropdown (it appears after you pick a contact)
 4. Click `Send`
 
 :::info
@@ -54,7 +54,7 @@ This is useful when you want customers to email a familiar, branded address whil
 
 ### How to set up forwarding
 
-1. Find your Conversations forwarding address at `Administration` → `Email Configuration` → `Advanced email settings`, in the `Forwarding address` field (it looks like `reply+xxxxx@businessapp.io`)
+1. Find your Conversations forwarding address at `Administration` → `Email configuration` → `Advanced email settings`, in the `Forwarding address` field (it looks like `reply+xxxxx@businessapp.io`)
 2. Copy this address
 3. In your email provider's settings, add this address as a forwarding destination
 
@@ -83,11 +83,11 @@ Most email providers support automatic forwarding. Look for a forwarding or redi
 
 ## Email configuration settings
 
-The `Administration` → `Email Configuration` page contains email settings for your business. It is important to understand which settings apply to Conversations and which apply to other products.
+The `Administration` → `Email configuration` page contains email settings for your business. It is important to understand which settings apply to Conversations and which apply to other products.
 
 ### Sender and reply settings
 
-The `Sender and reply settings` section at the top of the Email Configuration page controls the sender name, reply address, and display address used by **Campaigns and other integrated services**. These settings do not affect emails sent through Conversations.
+The `Sender and reply settings` section at the top of the Email configuration page controls the sender name, reply address, and display address used by **Campaigns and other integrated services**. These settings do not affect emails sent through Conversations.
 
 ### Advanced email settings
 
@@ -98,7 +98,7 @@ The `Advanced email settings` section is where you find your Conversations forwa
 
 ### Email domains and DNS records
 
-If you configure a custom sender domain, you need to add DNS records that verify your domain and improve email deliverability. Go to `Administration` → `Email Configuration` → `Email domains` to see the required records.
+If you configure a custom sender domain, you need to add DNS records that verify your domain and improve email deliverability. Go to `Administration` → `Email configuration` → `Email domains` to see the required records.
 
 You need to add the following records through your domain registrar or DNS provider:
 
@@ -119,9 +119,9 @@ The AI Chat Receptionist can automatically respond to inbound emails, providing 
 
 **To enable AI auto-response for email:**
 
-1. Go to `AI` → `AI Workforce` in your dashboard
-2. Configure your AI Chat Receptionist
-3. In the Communication Channels section, enable the `Email` channel
+1. Go to `AI` → `Workforce`
+2. Click `Configure` on the `Chat Receptionist` card
+3. In the `Triggers` section, enable the email received trigger for your Conversations address
 
 Learn more about setting up and customizing your [AI Chat Receptionist](/business-app/ai/ai-workforce/ai-chat-receptionist/).
 
@@ -136,7 +136,7 @@ Your business uses one shared email address for Conversations. When a team membe
 <details>
 <summary><strong>Can I send Conversations emails from my own domain?</strong></summary>
 
-Conversations sends all emails from your assigned `reply+xxxxx@businessapp.io` address. You can configure a custom sender domain at `Administration` → `Email Configuration`, but that applies to Campaigns and other integrated services, not Conversations.
+Conversations sends all emails from your assigned `reply+xxxxx@businessapp.io` address. You can configure a custom sender domain at `Administration` → `Email configuration`, but that applies to Campaigns and other integrated services, not Conversations.
 
 To give customers a familiar point of contact, set up email forwarding from your business email address so that inbound messages arrive in Conversations. Customers can email your branded address (e.g., `team@yourbusiness.com`) and your team responds from within Conversations.
 </details>
