@@ -55,9 +55,9 @@ Complete the Single Sign-On connection by following the prompts. This typically 
 
 After setup, you can view and manage all connected applications through:
 
-- The `Manage` tab on the Integrations page, which displays connection cards for each integrated application
+- The Integrations page, where a connected application shows a green check mark and can be filtered into view with the `Connected` filter
 
-![Manage tab with connection card](../../img/sso-integrations/manage-tab.jpg)
+![Integrations page with the Connected filter on, showing connected integrations with green checks](../../img/sso-integrations/manage-tab.jpg)
 
 - The application pages, which display a "Connected" tag
 
@@ -93,7 +93,7 @@ There is no limit to the number of SSO integrations you can connect. Connect as 
 <details>
 <summary>What happens if an SSO connection expires?</summary>
 
-Open the integration from `Integrations` → `Manage` and follow the reconnect prompts to reauthorize.
+Look in `Needs attention` on the Integrations page and select `Reconnect` on the integration's row, then follow the prompts to reauthorize.
 
 </details>
 

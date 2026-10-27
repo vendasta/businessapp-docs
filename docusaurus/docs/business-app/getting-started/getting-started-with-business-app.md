@@ -125,9 +125,8 @@ Connections bring your most important business data into one place. When you con
 ### How do I add integrations? {#how-to-add-integrations}
 
 1. Go to `Administration` > `Integrations`.
-2. Click the **Browse** tab.
-3. Search for or scroll to the integration you need (for example, **Google Business Profile** or **QuickBooks**).
-4. Click the integration tile and follow the authorization steps.
+2. Search for or scroll to the integration you need (for example, **Google Business Profile** or **QuickBooks**).
+3. Click the integration tile and follow the authorization steps.
 
 Common connections to set up early:
 
@@ -226,7 +225,7 @@ Yes. From the [Home](../home/index.mdx) screen, select **Invite Team Member** in
 <details>
 <summary><strong>Where do I manage my integrations after connecting them?</strong></summary>
 
-Go to `Administration` > `Integrations` > `Manage` to see all active integrations, reconnect expired authorizations, or disconnect platforms.
+Go to `Administration` > `Integrations` and use the **Connected** filter to see all active integrations, reconnect expired authorizations, or disconnect platforms.
 </details>
 
 <details>
@@ -238,7 +237,7 @@ SMS is available for businesses located in the United States and Canada. US busi
 <details>
 <summary><strong>Where do I connect my Google Business Profile?</strong></summary>
 
-Go to `Administration` > `Integrations` and click the **Browse** tab. Search for **Google Business Profile**, click the integration tile, and follow the authorization steps.
+Go to `Administration` > `Integrations`. Search for **Google Business Profile**, click the integration tile, and follow the authorization steps.
 </details>
 
 <details>
