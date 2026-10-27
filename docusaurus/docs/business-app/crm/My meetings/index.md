@@ -190,7 +190,7 @@ After booking, the invitee receives a confirmation on the channel set for the ev
 
 - `Join` the meeting when the event type uses a video location.
 - `Reschedule` the meeting to another available time. Your calendar is updated, and reminders are scheduled for the new time.
-- `Cancel` the meeting, with an optional reason for cancelling. The reason appears in the cancelled meeting activity on the contact's timeline in the CRM.
+- `Cancel` the meeting. A reason for cancelling is required in the `Cancellation details` field, and `Cancel appointment` stays unavailable until the invitee enters one. Any text is accepted. The reason appears in the cancelled meeting activity on the contact's timeline in the CRM.
 
 A cancelled meeting can't be rescheduled from the same link. If the invitee changes their mind, they book again from your booking link.
 
