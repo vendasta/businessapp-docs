@@ -88,6 +88,7 @@ Consider the prompt as instructions for when you hire an employee. Be specific a
    - `Import from cURL`: Import existing API configurations
    - `Manual configuration`: Set up custom API calls
    - `MCP Connection`: Connect to external systems via Model Context Protocol
+     - To use a public MCP server here, first connect it from `Administration` → `Integrations` → `Connect MCP`, then add that integration's capability to this AI Employee.
 3. Fill in the required tool fields (see [Tool Configuration Reference](#tool-fields-explained)).
 4. Add multiple tools if your capability requires several API calls.
 

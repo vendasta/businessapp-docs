@@ -66,12 +66,28 @@ You can connect more than one account to the same integration — for example, t
 ### Filters and search
 Use the `Category` filter to narrow the list to one category, the `Connected` filter to show only integrations you've already connected, or the `Mine` filter to show only the connections you made yourself. Search looks at integration names, descriptions, and category names.
 
-Your chosen filters stay in the page link, so you can copy and share a filtered view. Going back from an integration's page returns you to the same filtered view you started from.
+Your chosen filters and categories stay in the page link, so you can copy and share that view. Going back from an integration's page returns you to the same filtered view you started from.
 
 On a phone, categories open in a bottom sheet, and search expands from an icon.
 
-### Adding an MCP server
-Select `Add server` in the MCP servers section to add a new server.
+### Connecting a public MCP server
+You can connect any tool that has a public MCP server to Business App. Add the server's URL, sign in, and give its capabilities to your AI Employees — no need to wait for a native integration to be built.
+
+1. Go to `Administration` > `Integrations`.
+2. Select `Connect MCP` in the MCP servers section.
+3. Enter the public MCP URL.
+4. Give the integration a name.
+5. Choose how to sign in: `API key` or `OAuth`.
+6. Enter the API key, or sign in and approve access if you chose OAuth.
+
+Your new integration appears as its own card on the Integrations page, alongside your other connections.
+
+#### Using the connection with an AI Employee
+1. Go to `AI Employee` and open the AI Employee you want to configure.
+2. Add the capability from the MCP integration you just connected.
+3. Save. You can now chat with the AI Employee and it will use that capability.
+
+Only public MCP URLs work — private or local servers aren't supported. Tool quality depends on the third-party MCP server; Business App doesn't control or support external servers.
 
 ## Types of integrations
 
@@ -166,6 +182,18 @@ No. Those accounts were always connected; the integration's row now shows them, 
 <summary>Can I send someone a link to just the CRM integrations?</summary>
 
 Yes. Pick the category and any other filters you want, then copy the page link. Whoever opens it sees the same view.
+</details>
+
+<details>
+<summary>Can I connect a private or local MCP server?</summary>
+
+No. Only public MCP URLs work with `Connect MCP`.
+</details>
+
+<details>
+<summary>Can I give an MCP server's capability to any AI Employee?</summary>
+
+Yes. Once a public MCP server is connected, you can add its capability to any AI Employee.
 </details>
 
 <details>
