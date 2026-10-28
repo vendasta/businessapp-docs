@@ -25,7 +25,7 @@ function sidebarDocIds(items, ids = []) {
 
 module.exports = function llmsTxtPlugin(context, options) {
   // products: [{name, sidebarId}] from src/config/products.ts
-  const {title, summary, products} = options;
+  const {summary, products} = options;
   return {
     name: 'llms-txt',
     async postBuild({siteConfig, outDir, plugins}) {
@@ -35,7 +35,7 @@ module.exports = function llmsTxtPlugin(context, options) {
         siteUrl + applyTrailingSlash(permalink, {trailingSlash: siteConfig.trailingSlash, baseUrl: siteConfig.baseUrl});
       const version = plugins.find((p) => p.name === DOCS_PLUGIN).content.loadedVersions[0];
       const docsById = new Map(version.docs.map((d) => [d.id, d]));
-      const parts = [`# ${title}`, '', `> ${summary}`, ''];
+      const parts = [`# ${siteConfig.title}`, '', `> ${summary}`, ''];
       for (const product of products) {
         const sidebar = version.sidebars[product.sidebarId];
         if (!sidebar) throw new Error(`llms-txt: no sidebar "${product.sidebarId}" for ${product.name}`);

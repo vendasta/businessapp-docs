@@ -133,7 +133,6 @@ const config: Config = {
     [
       './plugins/llms-txt.js',
       {
-        title: 'Business App Documentation',
         summary:
           'Help documentation for Business App and the products used inside it: Advertising Intelligence, Local SEO, Reputation AI, Social AI, WordPress Hosting, Yesware and CalendarHero. Covers getting started, CRM, conversations, campaigns, automations, AI tools and reporting.',
         products,
