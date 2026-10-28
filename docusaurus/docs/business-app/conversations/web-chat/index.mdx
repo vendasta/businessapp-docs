@@ -205,6 +205,15 @@ The code changes depending on the action, implementation, and message set. You c
 1. **For anchor link listener:** Use the code in a URL as an anchor link or redirect target. The widget automatically detects the hash and triggers the action when the page loads or when the hash changes.
 2. **For JavaScript API:** Use the code in your button's onClick handler or any JavaScript event. The webchatAPI is automatically available once the widget script loads.
 
+## How do I turn a widget on or off? {#turn-widget-on-off}
+
+The **Status** column on the **Web Chat configuration** page shows whether each widget is **Active** or **Not active**. A widget that's not active won't work on your website, even with the code installed.
+
+1. On the **Web Chat configuration** page, click the widget's name.
+2. At the top right, click the toggle. It reads **Enabled** when the widget is on and **Disabled** when it's off.
+
+The change saves right away.
+
 ## How do I manage web chat conversations? {#managing-conversations}
 
 ### When AI assistant hands off to humans
@@ -250,6 +259,7 @@ If the Conversations web chat widget does not appear on your site after installa
 Ensure the widget installation code is pasted in the correct location:
 - The code must be inside the `<head>` section of your site's HTML (not the `<body>` or a widget block).
 - For WordPress, double-check if the plugin is active, or if you pasted the code into the correct theme section.
+- Save your changes and publish your site. Many website platforms don't show changes until you publish.
 
 #### 3. Check your hosting platform for plugin or theme conflicts
 
@@ -258,7 +268,7 @@ Ensure the widget installation code is pasted in the correct location:
 
 #### 4. Verify activation
 
-- Confirm your Conversations AI subscription is active, and the web chat widget is enabled.
+- Confirm your Conversations AI subscription is active, and the web chat widget is enabled. See [How do I turn a widget on or off?](#turn-widget-on-off)
 </details>
 
 <details>
@@ -315,6 +325,12 @@ The web chat widget works best when properly configured with business-specific i
 
 ## Additional FAQs
 
+
+<details>
+<summary><strong>Can I use the same widget on more than one website?</strong></summary>
+
+Yes. The same installation code works on any website you add it to, and conversations from every site go to the same widget. If you want web chat for a different purpose, such as sales on one site and support on another, create a separate widget so each can have its own AI employee and messages. See [Run more than one widget](#setup-process).
+</details>
 
 <details>
 <summary><strong>Can the AI assistant scrape websites for information?</strong></summary>
