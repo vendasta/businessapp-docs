@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {products} from './src/config/products';
 
 const legacyBusinessAppSections = [
   'administration',
@@ -129,6 +130,15 @@ const config: Config = {
   ],
 
   plugins: [
+    [
+      './plugins/llms-txt.js',
+      {
+        title: 'Business App Documentation',
+        summary:
+          'Help documentation for Business App and the products used inside it: Advertising Intelligence, Local SEO, Reputation AI, Social AI, WordPress Hosting, Yesware and CalendarHero. Covers getting started, CRM, conversations, campaigns, automations, AI tools and reporting.',
+        products,
+      },
+    ],
     [
       '@docusaurus/plugin-client-redirects',
       {
