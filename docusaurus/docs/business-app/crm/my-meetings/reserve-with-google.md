@@ -7,7 +7,10 @@ keywords: [reserve with google, google business profile, book online, service na
 brand: business-app
 product: crm
 audience: smb
+hide_title: true
 ---
+
+# Reserve with Google <span className="badge badge--secondary">Coming soon</span>
 
 ## Overview
 
