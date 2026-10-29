@@ -2,7 +2,7 @@
 title: Campaigns
 sidebar_label: Campaigns
 sidebar_position: 4
-description: Track how many campaign and standalone emails were delivered, opened, and clicked in the Executive Report.
+description: Track how many campaign emails were delivered, opened, and clicked in the Executive Report.
 brand: business-app
 product: business-app-core
 audience: smb
@@ -11,7 +11,7 @@ keywords: [executive report, campaigns, email stats, delivered, opened, clicked]
 
 ## What is the Campaigns section?
 
-The Executive Report includes email performance for your [campaigns](../campaigns/index.mdx) and standalone emails. You can see how many emails reached your contacts, how many were opened, and how many were clicked, for the date range you select.
+The Executive Report includes email performance for your [campaigns](../campaigns/index.mdx). You can see how many emails reached your contacts, how many were opened, and how many were clicked, for the date range you select.
 
 ## Campaign email metrics
 
@@ -32,16 +32,6 @@ Each card shows:
 Click `Show campaign breakdown` on any card to see a table of results for each campaign step. Each row shows the step name followed by the campaign name in brackets, for example **Welcome email (New customer follow-up)**, along with its count. The table lists up to 5 rows at first.
 
 Click `Hide campaign breakdown` to collapse the table.
-
-## Standalone email metrics
-
-Emails you send one at a time, outside of a campaign, appear in their own set of cards:
-
-- **Emails Delivered**
-- **Emails Opened**
-- **Emails Clicked**
-
-These cards work the same way as the campaign cards: a total, the change from the previous period, and a daily trend chart. Click `Show email breakdown` to see results for each email by name.
 
 ## How the counts work
 
