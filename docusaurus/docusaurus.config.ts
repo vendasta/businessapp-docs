@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {products} from './src/config/products';
 
 const legacyBusinessAppSections = [
   'administration',
@@ -23,15 +24,23 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  // nginx serves every page as a directory and 301s the slash-less form to it,
+  // so emit the slash form everywhere (links, canonical, sitemap) and the
+  // sitemap stops pointing at addresses that redirect.
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vendasta', // Usually your GitHub org/user name.
   projectName: 'businessapp-docs', // Usually your repo name.
 
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'ignore',
-
+  // Report dead links in the build output instead of hiding them.
+  onBrokenLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Custom head tags for Cookiebot integration
   headTags: [
@@ -89,11 +98,30 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Serve docs at site root so "/" shows the docs with sidebar
           routeBasePath: '/',
-          // Show git-based last update metadata (Docker build now includes .git)
+          // Readers don't see a last-updated date; review dates live in the
+          // `last_reviewed` frontmatter instead (DOC-1038).
           showLastUpdateTime: false,
-          // Note: Docusaurus will gracefully skip git metadata if .git is unavailable
         },
         blog: false,
+        pages: {
+          // src/pages/index.tsx only sends the dev server's "/" to
+          // /business-app/. In production nginx does that with a 301, so the
+          // build leaves the page out. The other entries are the defaults.
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+            ...(process.env.NODE_ENV === 'production' ? ['index.tsx'] : []),
+          ],
+        },
+        sitemap: {
+          // Crawlers ignore changefreq and priority; tag listings, the search
+          // page and the cookie declaration are not content worth indexing.
+          changefreq: null,
+          priority: null,
+          ignorePatterns: ['/tags/**', '/search/', '/cookie-declaration/'],
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -102,6 +130,14 @@ const config: Config = {
   ],
 
   plugins: [
+    [
+      './plugins/llms-txt.js',
+      {
+        summary:
+          'Help documentation for Business App and the products used inside it: Advertising Intelligence, Local SEO, Reputation AI, Social AI, WordPress Hosting, Yesware and CalendarHero. Covers getting started, CRM, conversations, campaigns, automations, AI tools and reporting.',
+        products,
+      },
+    ],
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -281,6 +317,9 @@ const config: Config = {
       logo: {
         alt: 'Business App logo',
         src: 'img/Business App.svg',
+        // The site has no page at "/" (nginx redirects it), so link straight
+        // to where that redirect lands.
+        href: '/business-app/',
       },
       items: [],
     },

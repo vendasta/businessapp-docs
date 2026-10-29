@@ -35,7 +35,7 @@ Staging is available on Pro and Premium (Multisite) plans. Standard accounts don
 The live site is replaced with the staging copy in a few minutes.
 
 :::tip
-Create a backup of production before pushing, so you can roll back if needed. See [Backups](./backups).
+Create a backup of production before pushing, so you can roll back if needed. See [Backups](./backups.md).
 :::
 
 ## Reset staging

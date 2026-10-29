@@ -114,7 +114,7 @@ Connecting your Google Business Profile syncs your location details and powers a
 Data can appear in your dashboard within about 5 minutes of connecting.
 :::
 
-You can manage or reconnect this integration later from `Administration` > `Integrations`. See [Integrations](../administration/connections/index.md) for more on finding and managing connections.
+You can manage or reconnect this integration later from `Administration` > `Integrations`. See [Integrations](../administration/integrations/overview.md) for more on finding and managing connections.
 
 [Back to checklist](#getting-started-checklist)
 

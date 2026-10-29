@@ -14,7 +14,7 @@ The Meetings connector lets visitors book appointments directly from your Vibe a
 
 ## What it layers on
 
-Meetings layers on the same scheduler you manage in [My Meetings](/business-app/my-meetings). When the connector is enabled, Vibe can:
+Meetings layers on the same scheduler you manage in [My Meetings](../../../crm/my-meetings/index.md). When the connector is enabled, Vibe can:
 
 - Read the event types configured for your account.
 - Present them as options in a chat card so you can pick which one to offer.
@@ -62,11 +62,11 @@ If the Meetings connector can't surface a working booking widget, Vibe explains 
 | A host hasn't connected their calendar | The host needs to connect their calendar so Vibe can read availability. |
 | No event types are configured | Create at least one event type in your scheduler before enabling the connector. |
 
-Resolve the issue in [My Meetings](/business-app/my-meetings), then ask Vibe to try again.
+Resolve the issue in [My Meetings](../../../crm/my-meetings/index.md), then ask Vibe to try again.
 
 ## Limitations
 
-- Vibe can embed your existing booking pages — it can't create or configure event types. Set those up in [My Meetings](/business-app/my-meetings) first.
+- Vibe can embed your existing booking pages — it can't create or configure event types. Set those up in [My Meetings](../../../crm/my-meetings/index.md) first.
 - Vibe shows only event types that are bookable (host assigned, calendar connected). If an event type is missing from the list, check its configuration.
 
 ## Frequently Asked Questions
@@ -74,7 +74,7 @@ Resolve the issue in [My Meetings](/business-app/my-meetings), then ask Vibe to 
 <details>
 <summary>Can Vibe create event types for me?</summary>
 
-No. Vibe can read and embed event types that already exist, but it can't create, edit, or delete them. Manage your event types in [My Meetings](/business-app/my-meetings).
+No. Vibe can read and embed event types that already exist, but it can't create, edit, or delete them. Manage your event types in [My Meetings](../../../crm/my-meetings/index.md).
 </details>
 
 <details>
@@ -86,11 +86,11 @@ An event type must have a host assigned and that host must have their calendar c
 <details>
 <summary>Where do confirmed bookings appear?</summary>
 
-Bookings made through your Vibe app appear in the same place as every other appointment: on your calendar and in [My Meetings](/business-app/my-meetings).
+Bookings made through your Vibe app appear in the same place as every other appointment: on your calendar and in [My Meetings](../../../crm/my-meetings/index.md).
 </details>
 
 ## Next Steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
-- [My Meetings](/business-app/my-meetings) — Configure event types and calendar settings
+- [My Meetings](../../../crm/my-meetings/index.md) — Configure event types and calendar settings
 - [Prompting Library](../guides/prompting-library.md) — Ready-made prompts for each connector
