@@ -12,6 +12,10 @@ audience: smb
 
 BusinessApp.io is the official mobile app that gives you access to your dashboard communications and key features on the go. The app provides push notifications for new leads and messages so you never miss important customer interactions.
 
+:::tip
+New to the app? Follow [Set up the mobile app](./set-up-the-mobile-app.md) for step-by-step instructions to download it, sign in, and turn on notifications.
+:::
+
 ## App Store links
 
 - **iOS**: [BusinessApp.io on Apple App Store](https://apps.apple.com/ca/app/businessapp-io/id6747438513)

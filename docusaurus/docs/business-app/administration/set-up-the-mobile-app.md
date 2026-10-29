@@ -1,0 +1,179 @@
+---
+title: Set up the mobile app
+sidebar_label: Set up the mobile app
+description: A step-by-step guide to download the BusinessApp.io mobile app, sign in, and turn on notifications so you never miss a new lead.
+sidebar_position: 12
+tags: [mobile-app, ios, android, push-notifications, getting-started]
+keywords: [download mobile app, BusinessApp.io, sign in, one-time code, turn on notifications, push notifications, iPhone, Android]
+brand: business-app
+product: business-app-core
+audience: smb
+---
+
+The **BusinessApp.io** mobile app puts your customer messages, contacts, and reviews on your phone. It also sends you an alert the moment a new lead or message comes in, so you can reply quickly, even when you are away from your computer.
+
+Setup takes about five minutes. You need your phone and access to the email inbox you use to sign in to Business App.
+
+## Getting started checklist
+
+1. [Download the app](#step-1-download-the-app): get BusinessApp.io from your phone's app store
+2. [Sign in](#step-2-sign-in): use your Business App login and a code from your email
+3. [Turn on notifications](#step-3-turn-on-notifications): make sure alerts can reach your phone
+4. [Check that alerts work](#step-4-check-that-alerts-work): send yourself a test lead
+
+---
+
+## Step 1: Download the app
+
+The app is free. Its name in the app store is **BusinessApp.io**.
+
+1. On your phone, tap the link for your type of phone:
+   - **iPhone:** [BusinessApp.io on the App Store](https://apps.apple.com/ca/app/businessapp-io/id6747438513)
+   - **Android:** [BusinessApp.io on Google Play](https://play.google.com/store/apps/details?id=io.businessapp)
+2. Tap `Get` (iPhone) or `Install` (Android).
+3. Wait for the download to finish, then tap `Open`.
+
+![The BusinessApp.io app in the App Store, showing the app icon and name](./img/mobile-app-store-listing.png)
+
+:::info
+If the app does not install or will not open, your phone may need an update. Open your phone's `Settings` and look for a software update.
+:::
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Step 2: Sign in
+
+You use the same login you already use for Business App on your computer. You do not need a new account.
+
+### Enter your login
+
+1. Open the BusinessApp.io app.
+2. In the `Email` box, type the email address you use to sign in to Business App on your computer.
+3. Tap `Continue`.
+
+![The Welcome to Business App screen with an Email box and a Continue button](./img/mobile-app-sign-in.png)
+
+### Enter the code from your email
+
+To keep your account safe, the app sends a 6-digit code to your email address. The code works only once, so you get a new one each time you sign in.
+
+1. Open your email on your phone or computer.
+2. Find the email from **businessapp.io** with your code.
+3. Type the 6 digits into the boxes in the app.
+
+![The Confirm your email screen with six boxes for the code and a Resend confirmation code button](./img/mobile-app-sign-in-code.png)
+
+:::info
+Can't find the code? Check your spam or junk folder, and wait two to three minutes. If it still has not arrived, tap `Resend confirmation code` and use the code from the newest email.
+:::
+
+### Choose your business
+
+If your email has access to more than one business, the app shows a `Select location` screen with a list of your businesses. Tap the business you want to open. If the list is long, type the business name or address in the search box. If you have only one business, the app skips this step.
+
+![The Select location screen with a search box and two businesses in the list](./img/mobile-app-select-location.png)
+
+:::info
+You can set a business as your default so the app skips this screen next time.
+:::
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Step 3: Turn on notifications
+
+Notifications are the alerts that pop up on your phone's screen, even when the app is closed. They are the main reason to have the app, so this step is important.
+
+Alerts reach your phone only when **both** your phone and your Business App notification settings allow them.
+
+### Allow notifications on your phone
+
+The first time you open the app, your phone asks if BusinessApp.io can send you notifications. Tap `Allow`.
+
+If you tapped `Don't Allow` by mistake, or alerts are not showing up, turn them on in your phone's settings:
+
+1. Open your phone's `Settings`, then `Notifications`.
+2. Find **BusinessApp.io** in the list of apps.
+3. Turn on `Allow Notifications`.
+
+The menu names are a little different on iPhone and Android, but both phones have a `Notifications` section with a switch for each app.
+
+### Choose which alerts you get
+
+Your notification settings decide which alerts Business App sends to the app. Each type of notification has an `App` checkbox and an `Email` checkbox. Check the `App` box for each alert you want on your phone, such as new leads and new messages, then save your changes.
+
+![Notification settings, where each alert has App and Email checkboxes and a Save button at the bottom](./img/mobile-app-notification-settings.png)
+
+:::warning
+If you have more than one business, notification settings are separate for each one. Turn them on in every business you want alerts from.
+:::
+
+To find these settings and see every option, see [notification settings](./notification_settings.mdx).
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Step 4: Check that alerts work
+
+A new lead alert arrives only when a visitor shares a way to contact them, such as a name, phone number, or email. A chat that only says "hello" or "test" does not create a lead, so it does not send an alert.
+
+To test your alerts:
+
+1. On a computer or another phone, open your business website.
+2. Start a chat with the chat window on your site.
+3. Type a name and a phone number or email, like a real customer would.
+4. Check your phone for a new lead alert.
+
+If the alert does not arrive, close the app fully, open it again, and repeat the test. To learn how website chat collects contact details, see [web chat](../conversations/web-chat/index.mdx).
+
+[Back to checklist](#getting-started-checklist)
+
+---
+
+## Frequently asked questions
+
+<details>
+<summary>Does the app cost anything?</summary>
+
+No. The BusinessApp.io app is free to download.
+
+</details>
+
+<details>
+<summary>Do I need to create a new account?</summary>
+
+No. You sign in with the same login you use for Business App on your computer. Your messages, contacts, and settings are already there.
+
+</details>
+
+<details>
+<summary>Why does the app ask for a code every time I sign in?</summary>
+
+The code proves that you can open the email inbox on your account. This keeps someone else from signing in, even if they know your login.
+
+</details>
+
+<details>
+<summary>How do I switch to a different business?</summary>
+
+The app opens one business at a time. Tap your profile icon in the top-right corner, tap `Sign out`, then sign in again and choose the other business from the list.
+
+</details>
+
+<details>
+<summary>Why did a page open in my web browser?</summary>
+
+Some pages, such as Listings and some settings, open in your phone's web browser instead of the app. Your browser has its own sign-in, so it may ask you to log in once.
+
+</details>
+
+<details>
+<summary>I still don't get notifications. What else can I check?</summary>
+
+Go through each part of Step 3 again, then test with a real lead as shown in Step 4. For more help, see the troubleshooting section in [Mobile App](./mobile-app.md).
+
+</details>
