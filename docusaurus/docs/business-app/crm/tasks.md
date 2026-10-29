@@ -31,7 +31,7 @@ Tasks help you plan and track the actions required to move deals forward: calls,
 
 1. Go to `CRM` → `Contacts` (or `Companies`).
 2. Click the record name to open the profile.
-3. In the activity area, select `Tasks`, fill in details, and save.
+3. In the activity area, click the `Task` chip, fill in details, and click `Create task`.
 
 ![Create tasks from a CRM record](img/tasks/create-tasks-from-crm-record.png)
 
@@ -41,10 +41,9 @@ Tasks help you plan and track the actions required to move deals forward: calls,
 2. Click `Create task` and enter details:
    - Name, instructions
    - Due date and time
-   - Type: To-do, Email, Call, Message, Connection, LinkedIn
+   - Type: To-do, Email, Call, Message, Meeting, LinkedIn
    - Priority: Low, Medium, or High
-   - Associations: Opportunity, Contact, Company
-   - Tags
+   - Associations: Contact, Company
 3. Click `Create task`.
 
 ![Create tasks from the task table](img/tasks/create-tasks-from-task-table.png)
@@ -56,7 +55,7 @@ Use tags and priority to organize your daily queue, then save a view for today�
 ### View and filter tasks
 
 1. Go to `CRM` → `Tasks`.
-2. Click `Add filter` to filter tasks and save common filters as `Views`.
+2. Click `Add filter` to filter tasks, and use the `Edit views` tab to save common filters as views.
 
 ![View and filter tasks](img/tasks/view-and-filter-tasks.png)
 
@@ -83,7 +82,7 @@ From the task table:
 ### Work faster with task queue
 
 1. Go to `CRM` → `Tasks` and apply filters or open a saved view.
-2. Click `Start [x] tasks` to work through them consecutively.
+2. Click `Start [x] task(s)` to work through them consecutively.
 3. For each task, choose: `Mark as complete`, `Reschedule`, or `Skip`. Use the association dropdown to jump between linked records. Exit the queue any time and resume from the table.
 
 ![Complete tasks consecutively](img/tasks/complete-tasks-consecutively.png)
@@ -104,13 +103,13 @@ Yes. You can associate tasks with contacts, companies, and opportunities.
 <details>
 <summary>Can I save my filtered views?</summary>
 
-Yes. Save common filters as `Views` to access them quickly.
+Yes. Use the `Edit views` tab to save common filters as views and access them quickly.
 </details>
 
 <details>
 <summary>What task types are available?</summary>
 
-To-do, Email, Call, Message, Connection, and LinkedIn.
+To-do, Email, Call, Message, Meeting, and LinkedIn.
 </details>
 
 <details>

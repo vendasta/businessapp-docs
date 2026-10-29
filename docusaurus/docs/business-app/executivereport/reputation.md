@@ -9,7 +9,7 @@ audience: smb
 
 ## What is the Reputation section?
 
-The Executive Report includes a **Reputation** section so you can see how your business is performing on reviews and reputation. A main part of this is the **Review Grade**—a letter grade that summarizes your online review presence and how it compares to others in your industry.
+The Executive Report includes a **Reputation** section so you can see how your business is performing on reviews and reputation. A main part of this is the **Review Grade**, a letter grade that summarizes your online review presence and how it compares to others in your industry.
 
 ![Review Grade in Executive Report](img/review-grades-1.jpg)
 
@@ -17,14 +17,16 @@ The Executive Report includes a **Reputation** section so you can see how your b
 
 The **Review Grade** is a letter grade (A through F) that reflects your business’s online review presence. It helps you see at a glance how you’re doing and track improvement over time.
 
+To see it, open the weekly view of the Executive Report and go to the `Reputation` section. Click `Show detailed breakdown` to see each category's grade, percentile, business score, industry average, and industry leader.
+
 ### How is the Review Grade calculated?
 
 The grade is based on four areas:
 
-- **Average review score** — Your typical star rating
-- **Number of review sources** — How many sites you’re getting reviews on
-- **Reviews found** — How many reviews were found for your business
-- **Reviews per month** — How many new reviews you’re getting
+- **Average review score**: Your typical star rating
+- **Number of review sources**: How many sites you’re getting reviews on
+- **Reviews found**: How many reviews were found for your business
+- **Number of reviews found per month**: How many new reviews you’re getting
 
 Those four are combined and compared to the industry average. The result is a letter grade using this scale:
 

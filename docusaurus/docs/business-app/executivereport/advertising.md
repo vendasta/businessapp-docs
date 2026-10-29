@@ -2,7 +2,7 @@
 title: Advertising
 sidebar_label: Advertising
 sidebar_position: 3
-description: View Google Ads and Facebook Ads performance in the Executive Report when you use Advertising Intelligence.
+description: View performance from Google Ads, Facebook Ads, and your other connected ad platforms in the Executive Report when you use Advertising Intelligence.
 brand: business-app
 product: business-app-core
 audience: smb
@@ -10,7 +10,7 @@ audience: smb
 
 ## What is the Advertising section?
 
-If you use Advertising Intelligence, you can view performance summaries for your Facebook Ads and Google Ads accounts in the Executive Report in Business App. This section gives you a single view of your advertising performance across both platforms.
+If you use Advertising Intelligence, you can view performance summaries for your connected ad accounts, such as Google Ads and Facebook Ads, in the Executive Report in Business App. This section gives you a single view of your advertising performance across your connected platforms.
 
 ## Why is it useful?
 
@@ -34,13 +34,15 @@ You can see what’s happening across your ad channels in one place. That makes 
 
 ### Connect your ad accounts
 
-1. With Advertising Intelligence active, connect your Facebook Ads and/or Google Ads accounts in the product.
-2. Go to the `Executive Report` in Business App and choose a time period.
-3. In the `Advertising` section, you’ll see `Facebook Ads` and `Google Ads` (depending on which accounts are connected).
+1. With Advertising Intelligence active, connect your ad accounts in the product.
+2. Go to the `Executive Report` in Business App and choose a weekly date range. The `Advertising` section isn't in the monthly view.
+3. Go to the `Advertising` section to see performance for each connected platform.
+
+If an account isn't connected yet, you can connect it from its card in the `Advertising` section.
 
 ### Viewing performance data
 
-In the Executive Report, the Advertising section shows a summary of your Google Ads and Facebook Ads campaigns in one place so you can review performance across both platforms.
+In the Executive Report, the Advertising section shows a summary of your connected ad campaigns in one place so you can review performance across platforms.
 
 ## When data updates
 
@@ -48,9 +50,14 @@ The weekly Executive Report is updated and sent on Mondays, starting the week af
 
 ## Supported platforms
 
-The Executive Report can show advertising data from:
+The Executive Report can show advertising data from these platforms through Advertising Intelligence:
 
-- **Google Ads** (via Advertising Intelligence)
-- **Facebook Ads** (via Advertising Intelligence)
+- **Google Ads**
+- **Facebook Ads**
+- **Simplifi Ads**
+- **LinkedIn Ads**
+- **Google Ad Manager**
+- **Microsoft Ads**
+- **TikTok Ads**
 
-Both provide the same core metrics (ROI, spend, impressions, clicks, conversions) and comparison data so you can see how your advertising is performing.
+Each provides the same core metrics (ROI, spend, impressions, clicks, conversions) and comparison data so you can see how your advertising is performing.
