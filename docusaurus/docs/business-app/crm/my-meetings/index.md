@@ -53,11 +53,11 @@ Use My Meetings to share booking links, manage availability, and track upcoming 
 
 4. Click **Book a meeting** to confirm.
 
-Once booked, a card for the meeting appears immediately, showing the team member, client name and email, meeting title, date, time range, and duration.
+Once booked, the meeting appears on your calendar under the **Bookings** tab. Click it to see the team member, client name and email, meeting title, date, time range, and duration.
 
 If the meeting link isn't ready yet, **Join meeting** appears as greyed-out text that you can't click, with the message "Link appears after a page refresh, usually within 10 seconds." Refresh the page and **Join meeting** becomes a clickable link.
 
-The meeting also appears under the **Bookings** tab. Use **Upcoming** and **Past** toggles to filter your view, and switch to the **Recordings** tab to review past recordings.
+Switch between **Day**, **Week**, **Month**, **List**, and **Column** views, and use the sidebar to filter by team member or event type. To review past recordings, switch to the **Recordings** tab.
 
 You can also click any open time slot directly on the calendar to open the same booking dialog pre-filled with that time and date. See [Calendar Views](./calendar-views.md) for the full calendar experience, including filtering by team member or service and rescheduling from the calendar.
 
