@@ -1,0 +1,223 @@
+---
+title: Remove field options that are still in use
+sidebar_label: Remove field options in use
+description: Fix the "These options are still in use" message by updating your contacts first, then removing the option from your CRM field.
+tags: [crm, crm-fields, field-options, contacts]
+keywords: [field options, remove field option, options still in use, crm fields, update contacts, dropdown options, interests field]
+brand: business-app
+product: business-app-core
+audience: smb
+---
+
+## What does "These options are still in use" mean?
+
+Some CRM fields have a fixed list of choices, called **field options**. For example, an `Interests` field can offer "Hiking", "Camping", and "Scuba".
+
+When you try to delete one of those choices, Business App first checks whether any of your records still have it. If some do, you see the message **These options are still in use**, and the change isn't saved yet. This keeps your records from ending up with a choice that no longer exists.
+
+To finish removing the option, change those records first. This page shows you how, using "Hiking" as the option you want to remove.
+
+## Why is this check important?
+
+- **Keeps your records tidy**: every record keeps a value that's still on the list.
+- **Prevents errors later**: a record with a deleted choice could cause errors the next time it's edited or imported.
+- **Shows exactly what to fix**: the message tells you how many records still use each choice and takes you straight to them.
+
+## What you need before you start
+
+- Access to `Administration` → `CRM objects`, where you manage your CRM fields.
+- A few minutes. Larger updates can take a little longer to finish in the background.
+
+## How to remove an option that's still in use
+
+### Step 1: Open the records that use the option
+
+The message lists each choice that's still in use and how many records have it, for example **24 with "Hiking"**.
+
+1. Click `View records` next to the choice.
+2. Your contact list opens, showing only the records that have that choice.
+
+If you closed the message, go to `CRM` → `Contacts` and filter the list by the field and choice instead.
+
+If several choices are listed, repeat steps 1 to 4 for each one.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-in-use-dialog.png').default} alt="These options are still in use message listing 24 records with Hiking, with the View records link highlighted" style={{width: '75%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+### Step 2: Select all of those records
+
+1. Check that the filter above the list says `Interests any of hiking`.
+2. Select the checkbox at the top of the list to select every record.
+3. If a banner shows how many contacts on this page are selected, click `Select all` so contacts on the next pages are included too.
+4. Make sure the bar above the list says `All 24 selected`, with the same number shown in the message.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-select-all-banner.png').default} alt="Contact list filtered to Interests is any of Hiking, with the header checkbox selected and the Select all 24 link highlighted" style={{width: '75%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+:::warning
+Any record you don't select keeps the old choice, and the message appears again when you try to save.
+:::
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-select-all.png').default} alt="Contact list showing only contacts with Interests any of hiking, with all 24 contacts selected" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+### Step 3: Open the update tool
+
+1. In the bar above the list, click `Actions on all`.
+2. Click `More actions`.
+3. In the `Choose an action` panel, search for "update" and click `Update contact`. For companies, choose `Update company`.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-more-actions.png').default} alt="Actions on all menu with More actions selected, and the Choose an action panel showing Update contact" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+The `Update contact` panel opens.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-update-contact-panel.png').default} alt="Update contact panel with the field to change and the operation to use" style={{width: '50%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+### Step 4: Choose how to change the records
+
+1. In `Select the field to change`, choose the field from the message, such as `Interests`.
+2. Open `Select operation` and pick the option that fits what you want to happen:
+
+| Choose this | When you want to | A record with "Hiking, Scuba" becomes |
+|---|---|---|
+| `Remove from value` | Take out only the choice you're deleting and keep everything else | Scuba |
+| `Set value` | Replace what's there with a different choice | Camping |
+| `Clear value` | Empty the field completely | Empty |
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-operation-menu.png').default} alt="Select operation list showing Set value, Clear value, Append to value, and Remove from value" style={{width: '50%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+:::tip
+If you're not sure which to pick, choose `Remove from value`. It only takes out the choice you're deleting, so nothing else on your records changes.
+:::
+
+#### Take out only that choice
+
+1. In `Select operation`, choose `Remove from value`.
+2. In the box below, type the choice you're deleting, such as "Hiking".
+3. Click `Run`.
+
+A record with "Hiking, Scuba" keeps "Scuba". A record that only had "Hiking" ends up empty. Uppercase and lowercase letters don't matter.
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-remove-from-value.png').default} alt="Update contact panel with Remove from value selected and a choice entered in the box" style={{width: '50%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+#### Replace it with a different choice
+
+1. In `Select operation`, choose `Set value`.
+2. In the box below, pick a choice you're keeping, such as "Camping".
+3. Click `Run`.
+
+:::warning
+`Set value` replaces everything in the field. A record with "Hiking, Scuba" ends up with only "Camping". To keep "Scuba", add it in the box too.
+:::
+
+<div style={{marginBottom: '24px'}}>
+<img src={require('./img/remove-field-options-set-value.png').default} alt="Update contact panel with Set value selected and camping entered as the new choice" style={{width: '50%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+#### Empty the field
+
+1. In `Select operation`, choose `Clear value`.
+2. Click `Run`.
+
+:::warning
+`Clear value` empties the whole field, not just "Hiking". A record with "Hiking, Scuba" loses both. To keep your other choices, use `Remove from value` instead.
+:::
+
+#### Check that it worked
+
+Refresh your filtered contact list. When the update finishes, the list is empty.
+
+Larger updates can take a few minutes. If you still see records, wait a moment and refresh again.
+
+### Step 5: Check your automations
+
+Automations can add a choice back to your records on their own. The message only counts records, so check your automations too.
+
+1. Go to `Automations`.
+2. Open each automation that's turned on and look for steps like `Update contact` or `Update company`.
+3. If a step sets this field to the choice you're deleting, change it to a choice you're keeping, or remove the step.
+4. Save the automation.
+
+### Step 6: Remove the option
+
+1. Go to `Administration` → `CRM objects` and open the field.
+2. Under `Field options`, click the `X` next to the choice you're deleting.
+3. Click `Save`. You see a short loading spinner while Business App checks your records.
+
+When no records have the choice anymore, the change saves and the panel closes. If the message appears again, some records were missed or an automation added the choice back. The message shows the new count, so repeat the steps for the records that are left.
+
+## Frequently asked questions
+
+<details>
+<summary>Why can't I just delete the option?</summary>
+
+Records that still have the option would keep a choice that's no longer on the list, which can cause errors later. Updating those records first keeps everything working.
+
+</details>
+
+<details>
+<summary>Why does the message only have a Close button?</summary>
+
+The option can't be removed while records still use it. Close the message, update those records, then try again.
+
+</details>
+
+<details>
+<summary>Which option should I use: Remove from value, Set value, or Clear value?</summary>
+
+Use `Remove from value` to take out only the choice you're deleting. Use `Set value` to switch records to a different choice. Use `Clear value` only if you want the field to be empty.
+
+</details>
+
+<details>
+<summary>Will removing a choice delete my contacts?</summary>
+
+No. Only the field's value changes. Your contacts and everything else on them stay the same.
+
+</details>
+
+<details>
+<summary>I updated my records, but the message still appears. What happened?</summary>
+
+Some records may not have been selected, or an automation added the choice back. The message shows how many records still have it. Repeat the steps for those records.
+
+</details>
+
+<details>
+<summary>The update finished, but I still see records in the list. Is something wrong?</summary>
+
+Larger updates run in the background and can take a few minutes. Wait a moment and refresh the list.
+
+</details>
+
+<details>
+<summary>The message says it couldn't check whether the options are in use. What should I do?</summary>
+
+Business App couldn't count your records at that moment, so it didn't save the change to be safe. Wait a moment and click `Save` again.
+
+</details>
+
+<details>
+<summary>The message says some options weren't checked. What does that mean?</summary>
+
+Business App checks up to 10 deleted choices at a time. Delete fewer choices at once, or fix the first 10 and then delete the rest in a second save.
+
+</details>
+
+<details>
+<summary>Does this work for companies too?</summary>
+
+Yes. The steps are the same. In step 3, choose `Update company` instead of `Update contact`.
+
+</details>
