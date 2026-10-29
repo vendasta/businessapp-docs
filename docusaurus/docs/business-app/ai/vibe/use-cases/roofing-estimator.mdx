@@ -1,6 +1,6 @@
 ---
-title: "Roofing Quote Estimator"
-sidebar_label: "Roofing Quote Estimator"
+title: "Roofing quote estimator"
+sidebar_label: "Roofing quote estimator"
 sidebar_position: 1
 draft: false
 description: "Build a roofing quote estimator with lead capture using Vibe."
@@ -9,9 +9,7 @@ product: vibe
 audience: smb
 ---
 
-# Roofing Quote Estimator
-
-A service estimator is one of the strongest demonstrations of what Vibe can do for a trade or home services client. This example walks through building a quote calculator for a roofing company, complete with a contact intake form that routes leads directly to the CRM.
+If you run a trade or home services business, a service estimator lets your customers get an instant price range before they contact you. This example walks through building a quote calculator for a roofing company, complete with a contact intake form that routes leads directly to the CRM.
 
 <div
   className="wistia_responsive_padding"
@@ -39,11 +37,13 @@ A service estimator is one of the strongest demonstrations of what Vibe can do f
 
 ## Before you start
 
-Before running the prompt, enable the **Forms connector** — open your project's settings and select **Connectors** (see [project settings](../guides/project-settings.md)), then toggle **Forms** on. The contact intake form routes leads to Business App through this connector. If it isn't enabled first, the form will appear in the app but submissions won't be captured.
+Before running the prompt, enable the `Forms` connector. In your project, select `Settings` → `Connectors` → `Add connectors` (see [project settings](../guides/project-settings.md)), then select `Enable` next to `Forms`. The contact intake form routes leads to Business App through this connector. If it isn't enabled first, the form appears in the app but submissions aren't captured.
 
 ## The prompt
 
-> Build a roofing quote estimator for my business. Use my business information for the company name and contact details. Include fields for home square footage, number of stories, roof pitch, and material type (asphalt shingles, architectural shingles, and metal roofing). Show an estimated cost range based on the selections, and add a note that the estimate is subject to a full inspection. At the bottom, include a contact intake form that captures the customer's name, email, phone number, and property address. Keep the design clean and professional.
+```text
+Build a roofing quote estimator for my business. Use my business information for the company name and contact details. Include fields for home square footage, number of stories, roof pitch, and material type (asphalt shingles, architectural shingles, and metal roofing). Show an estimated cost range based on the selections, and add a note that the estimate is subject to a full inspection. At the bottom, include a contact intake form that captures the customer's name, email, phone number, and property address. Keep the design clean and professional.
+```
 
 ## What Vibe built
 
@@ -61,22 +61,24 @@ From that single prompt, Vibe produced:
 <img src={require('./img/roofing-estimator-hero-estimator.png').default} alt="Roofing quote estimator with material selection and estimated cost range" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
 </div>
 
-<img src={require('./img/roofing-estimator-quote-footer.png').default} alt="Contact intake form and footer with auto-populated business details" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+<img src={require('./img/roofing-estimator-quote-footer.png').default} alt="Request an Exact Quote form with name, phone, email, and property address fields, above a footer with sample business name, address, phone, and hours" style={{width: '100%', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
 
 ## What made this work
 
 **"Use my business information" pulled real details automatically.** The company name and contact details appeared in the generated app without any manual entry. The Business Profile handled it.
 
-**"Contact intake" wired the form to the CRM.** Using that specific phrase — rather than "contact form" or "lead capture form" — is what causes the Forms connector to route submissions to Business App. Without it, the form appears but leads aren't captured.
+**"Contact intake" wired the form to the CRM.** Using that specific phrase, rather than "contact form" or "lead capture form," is what causes the Forms connector to route submissions to Business App. Without it, the form appears but leads aren't captured.
 
 **Specifying each input field produced a cleaner result.** Listing the exact fields (square footage, stories, pitch, material type) gave Vibe a precise target and avoided a generic output that would need more follow-up prompting to correct.
 
 ## Tips for this use case
 
-**Add real material and labour costs to Business Knowledge.** The default output uses general pricing approximations. For more accurate estimates, open your project's settings and select **Knowledge**, then add a Note with the client's actual material and labour rates. Once it's there, prompt Vibe to use it:
+**Add real material and labour costs to your business knowledge.** The default output uses general pricing approximations. For more accurate estimates, select `Settings` → `Knowledge` in your project. Under `Business knowledge`, select `Add knowledge` → `+ Add new knowledge` → `Text`, then enter your actual material and labour rates. Once it's there, prompt Vibe to use it:
 
-> Update the estimator to use the pricing from my Business Knowledge instead of the default approximations.
+```text
+Update the estimator to use the pricing from my Business Knowledge instead of the default approximations.
+```
 
-If the client has a pricing page on their website, you can add it as a URL in the same Knowledge section rather than pasting the rates manually.
+If you have a pricing page on your website, add it as a `Website` source in `Business knowledge` instead of pasting the rates manually.
 
-**Embed it on their website.** Once the estimator is built, it can be embedded on the client's existing website or deployed with a custom domain.
+**Embed it on your website.** Once the estimator is built, you can embed it on your existing website or deploy it with a custom domain from `Settings` → `Domains` → `Custom domain`.

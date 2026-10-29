@@ -8,8 +8,6 @@ product: vibe
 audience: smb
 ---
 
-# Reviews
-
 The Reviews connector lets your Vibe app showcase real customer reviews from your account. Ask for a reviews section, and Vibe renders the reviews your business has actually received — not placeholder quotes.
 
 ## What it layers on
@@ -18,7 +16,7 @@ Reviews layers on the customer reviews already associated with your account. Whe
 
 ## Enabling the connector
 
-Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **Reviews** on to make it available to the supervisor agent for that project.
+Go to **AI** > **Vibe**, open your project, and select **Settings**. Then select `Connectors` (see [project settings](../guides/project-settings.md)). Select `Enable` next to **Reviews** to make it available to the assistant for that project. If **Reviews** isn't in the list, select `Add connectors` to add it first.
 
 ## When to use it
 
@@ -41,9 +39,9 @@ Vibe renders a reviews section wired to your account's real reviews.
 
 ## Limitations
 
-- The connector displays the reviews your account already has — it isn't where you collect new reviews or respond to existing ones.
+- The connector displays the reviews your account already has. It isn't where you collect new reviews or respond to existing ones.
 
-## Next Steps
+## Next steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
-- [Prompting Library](../guides/prompting-library.md) — Ready-made prompts for each connector
+- [Prompting library](../guides/prompting-library.md) — Ready-made prompts for each connector

@@ -11,25 +11,26 @@ Once an automation grows past a handful of steps, the canvas gets hard to scan. 
 
 The Automation Builder has three tools for this, in the toolbar on the right edge of the canvas. All three only change what you see: none of them alter your automation, and turning them on or off is never a change you need to save.
 
-| Tool | What it does |
-|---|---|
-| **Search for steps** | Finds and highlights steps matching a keyword |
-| **Step references** | Draws lines showing which steps pass data to which |
-| **Minimap** | Shows a scaled-down overview of the whole workflow, and jumps you to any part of it |
+| Tool | Icon and tooltip | What it does |
+|---|---|---|
+| Step search | Magnifier, `Search steps` | Finds and highlights steps matching a keyword |
+| Step references | Branch icon, `Show step references` | Draws lines showing which steps pass data to which |
+| Minimap | Minimap icon, `Hide minimap` | Shows a scaled-down overview of the whole workflow, and jumps you to any part of it |
 
-## Search for steps
+## Search steps
 
-When editing a long automation, press **Cmd+F** (Mac) or **Ctrl+F** (Windows) inside the automation editor to open step search. Type any keyword — a step name, action type, or phrase like "email" or "update contact" — and matching steps are highlighted so you can jump directly to what you need.
+Select the magnifier icon (`Search steps`) at the top of the canvas toolbar, or press `Cmd+F` (Mac) or `Ctrl+F` (Windows) inside the automation editor, to open the `Search steps` box. Type any keyword, such as a step name, action type, or a phrase like "email" or "update contact", and matching steps are highlighted so you can jump directly to what you need.
 
 - Search is case-insensitive
 - Works across all trigger and action steps
-- Use the arrow keys or Enter to move between matches, or click a highlighted step to jump to it
+- Use the up and down arrows in the search box (or the arrow keys or Enter) to move between matches, or click a highlighted step to jump to it
+- Select the X in the search box to close it
 
 ## Step references
 
 When a step uses dynamic content from an earlier step, the value is stored as a step ID rather than a step name, for example `{.WorkflowStep.773dcc25-db4c-4d5d-882d-d3c8482e9770.response}`. Opening that step later tells you a previous step is feeding it data, but not which one.
 
-**Step references** answers that visually. Select the step references icon in the canvas toolbar, between the search and minimap controls, and the canvas draws coloured dotted lines between steps. Each line connects a step that produces data to the step that uses it, with a different colour per source step so you can follow several at once. Select the icon again (**Hide step references**) to turn the lines off.
+Step references answers that visually. Select the branch icon (`Show step references`) in the canvas toolbar, between the search and minimap icons, and the canvas draws coloured dotted lines from each source step, such as the trigger, to the later steps that reference it. The lines use different colours so you can follow several at once. Select the icon again (`Hide step references`) to turn the lines off.
 
 <div style={{ textAlign: 'center' }}>
   <img src={require('./img/step-references-canvas.png').default} alt="Automation canvas with step references turned on, showing coloured dotted lines connecting steps that pass data to each other" width="85%" />
@@ -49,19 +50,19 @@ For the syntax behind these references, see [Dynamic content in automations](./d
 
 ## Minimap
 
-The minimap is a scaled-down image of the whole workflow, shown in the bottom-left corner of the canvas. A highlighted rectangle marks the part of the automation you are currently viewing, so you can tell at a glance where you are in a large automation.
+The minimap is a scaled-down image of the whole workflow, shown in the bottom-right corner of the canvas. It's on by default. A highlighted rectangle marks the part of the automation you are currently viewing, so you can tell at a glance where you are in a large automation.
 
-Select the minimap icon at the bottom of the canvas toolbar to show or hide it (**Hide minimap** when it is already on).
+To hide it, select the minimap icon at the bottom of the canvas toolbar (`Hide minimap`). Select the icon again to show it.
 
 Click anywhere on the minimap to jump straight to that section of the automation, which is far faster than scrolling across a wide, branching workflow.
 
 <div style={{ textAlign: 'center' }}>
-  <img src={require('./img/minimap-canvas.png').default} alt="Automation canvas with the minimap in the bottom-left corner, showing an overview of the whole workflow and a blue rectangle marking the part currently in view, with the zoom controls below it" width="85%" />
+  <img src={require('./img/minimap-canvas.png').default} alt="Automation canvas with the minimap turned on, showing an overview of the whole workflow and a blue rectangle marking the part currently in view" width="85%" />
 </div>
 
-Alongside the minimap are the canvas zoom controls: use **&minus;** and **+** to zoom out and in, or the expand icon to fit the entire automation on screen. Zooming out to see the full shape of a workflow and then clicking into a section on the minimap is the quickest way to move around a branching automation.
+The zoom bar sits in the bottom-left corner of the canvas. From left to right: `Fit to view` fits the entire automation on screen, `−` and `+` zoom out and in, the percentage shows the current zoom level (`+` is unavailable at `100%`), and `Center yourself to the start` brings the view back to the trigger at the top of the automation. Zooming out to see the full shape of a workflow and then clicking into a section on the minimap is the quickest way to move around a branching automation.
 
 ## Related
 
-- [Steps](./automation-steps.mdx) — Every step your automations can perform
-- [Dynamic content in automations](./dynamic-content-in-automations.mdx) — Pass data between steps
+- [Steps](./automation-steps.mdx): Every step your automations can perform
+- [Dynamic content in automations](./dynamic-content-in-automations.mdx): Pass data between steps

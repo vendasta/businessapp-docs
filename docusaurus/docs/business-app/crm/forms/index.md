@@ -24,7 +24,7 @@ Use UTM parameters in the links you publish (ads, social media, email) so form s
 
 ## What’s included
 
-- **Lead generation and contact form templates** with a consent field included by default, rich text support for linking to your privacy policy, and your business name auto-filled
+- **Lead generation and contact form templates** with compliant SMS and email consent checkboxes built in, rich text support for linking to your privacy policy, and your business name auto-filled
 - **Form Builder** with configurable fields and defaults
 - **Design** controls for container, fonts, button, and custom CSS
 - **reCAPTCHA** integration
@@ -35,11 +35,21 @@ Use UTM parameters in the links you publish (ads, social media, email) so form s
 
 For the full list of contact, company, and generic fields you can add, see [Form field reference](supported-fields.md).
 
+## Capturing leads with SMS and email consent
+
+If you want to text or email the leads you capture, start your form from the **Contact form** template. It's built for lead capture and already includes the phone and email fields along with their compliant consent checkboxes, so you don't have to build consent language yourself. See [Consent checkboxes](form-builder.md#consent-checkboxes) for how the default text and consent capture work.
+
 ## Share a form with a QR code flyer
 
 Every form has a default public landing page. From the form, you can generate a printable QR code flyer that links directly to that page. The flyer pulls your account branding automatically, so it's ready to print and display in-store, at events, or anywhere you want customers to scan and submit.
 
 This works for any form — lead capture, promotions, surveys, or any other type you build.
+
+## See what a submission did
+
+Each form submission has a view that shows exactly what happened when it came in. It lists the contact, company, and custom object records the submission created or updated, any associations it created, and any files it received. Each item links to its record. <!-- verify in product: how to open the submission view -->
+
+If a submission didn't do what you expected, check its submission view first.
 
 ## What's in this section
 
@@ -130,7 +140,7 @@ Forms support many contact fields, company fields, and generic types (text, para
 <details>
 <summary>I submitted a form but the record I expected wasn't updated, why?</summary>
 
-Forms have two separate field groups, contact fields and company fields, that write to two different record types. If your form only includes contact fields, submissions only create or update a Contact record, so add fields from the company fields group if you also want to create or update a Company record. See [Form field reference](supported-fields.md).
+Forms have two separate field groups, contact fields and company fields, that write to two different record types. If your form only includes contact fields, submissions only create or update a Contact record, so add fields from the company fields group if you also want to create or update a Company record. See [Form field reference](supported-fields.md). To see which records a specific submission created or updated, open its submission view. See [See what a submission did](#see-what-a-submission-did).
 </details>
 
 <details>
@@ -143,4 +153,16 @@ Yes. Phone number fields default to `+1`. Select the field in the form builder a
 <summary>Can I let visitors select multiple checkbox options?</summary>
 
 There's no dedicated multi-select field type. Add the `Checkbox` field once for each option you want to offer, and label each one clearly. See [Build and publish a form](form-builder.md#adding-multiple-checkbox-options).
+</details>
+
+<details>
+<summary>Which template should I use to capture leads I want to text or email?</summary>
+
+Use the **Contact form** template. It includes phone and email fields along with their compliant SMS and email consent checkboxes by default, so you don't need to build the consent checkboxes yourself. See [Consent checkboxes](form-builder.md#consent-checkboxes).
+</details>
+
+<details>
+<summary>Do I need to add a consent checkbox for SMS or email myself?</summary>
+
+No. Any form that includes a `Phone number` or `Email` field automatically includes the matching consent checkboxes, unchecked by default. See [Consent checkboxes](form-builder.md#consent-checkboxes).
 </details>

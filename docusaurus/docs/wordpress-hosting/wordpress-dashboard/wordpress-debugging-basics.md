@@ -48,7 +48,7 @@ These logs help identify:
 *   When the error occurred
 
 :::info
-For step-by-step instructions on how to access PHP logs, see [How to Find PHP Logs](../../advanced-tools/how-to-find-php-logs.md).
+For step-by-step instructions on how to access PHP logs, see [How to Find PHP Logs](../advanced-tools/how-to-find-php-logs.md).
 :::
 
 ### SFTP access
@@ -118,7 +118,7 @@ If your site shows "This site can't be reached" or similar, this usually isn't a
 
 **Solution:**
 
-Contact whoever you registered your domain with or the company that manages your nameservers. If you need help setting up your domain with WordPress Hosting, see [Domain Setup](../../domains/connect-a-custom-domain.md).
+Contact whoever you registered your domain with or the company that manages your nameservers. If you need help setting up your domain with WordPress Hosting, see [Domain Setup](../domains/connect-a-custom-domain.md).
 
 ## General debugging steps
 

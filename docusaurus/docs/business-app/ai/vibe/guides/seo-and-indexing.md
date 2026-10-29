@@ -120,7 +120,7 @@ Turn off the `robots.txt` toggle in the **SEO** section of that project's settin
 <details>
 <summary>Is my Vibe site indexed by search engines, and how do I keep a draft site out of search?</summary>
 
-A published site is not indexed right away, because search engines do not know about it until you submit your sitemap. To keep a mockup out of search, open the SEO settings and turn off generating the files that tell search engines to index the site. Any public site can still be found, but the odds are low if nothing links to it.
+A published site is not indexed right away, because search engines do not know about it until you submit your sitemap. To keep a mockup out of search, turn off the `robots.txt` toggle in the **SEO** section of project settings. Vibe then publishes a `robots.txt` that blocks all crawlers. Any public URL can still be discovered through links, so share it only with the people who need to review it.
 </details>
 
 <details>

@@ -165,12 +165,12 @@ Long automations get hard to scan. The Automation Builder has a set of canvas to
 |---|---|
 | Pause campaign for company | Pauses an ongoing campaign for the company. This applies to all contacts associated with the company (up to 50) |
 | Pause campaign for contact | Pauses an ongoing email campaign for the contact |
-| Start a campaign for the contact | Enrolls a contact in a specified email campaign |
-| Start a campaign for the company | Enrolls all contacts associated with a company in a specified email campaign |
+| Start a campaign for the contact | Enrolls a contact in a specified email campaign. Stats for emails sent this way appear in the campaign's reporting page. Requires Campaigns Pro |
+| Start a campaign for the company | Enrolls all contacts associated with a company in a specified email campaign. Requires Campaigns Pro |
 | Start a campaign for the custom object | Enrolls the contacts associated with a custom object record in a specified email campaign (up to 50). A contact associated with multiple records in the same automation run is enrolled once. If the record has no associated contact, the step is skipped and the reason appears in the automation activity feed |
 | Start a Yesware campaign for the contact | Enrolls a contact in a Yesware email sequence |
-| Send a marketing email template to a contact | Sends a marketing email from a template to a contact's email address |
-| Send a marketing email template to a company | Sends a marketing email from a template to the primary address on file for a company |
+| Send a marketing email template to a contact | Sends a marketing email from a template to a contact's email address. Stats for emails sent this way appear in the automation step itself, not in campaign reporting. Does not require Campaigns Pro, but counts toward your daily email sending limit |
+| Send a marketing email template to a company | Sends a marketing email from a template to the primary address on file for a company. Does not require Campaigns Pro, but counts toward your daily email sending limit |
 | Send a marketing email to a contact | Sends a standalone email to a contact |
 | Send a review request | Sends a review request email to a contact |
 
@@ -189,6 +189,12 @@ Long automations get hard to scan. The Automation Builder has a set of canvas to
 | Send an SMS message to a phone number | Sends an SMS to any phone number you specify, including numbers not in your CRM |
 | Send a WhatsApp template to a contact | Sends a pre-approved WhatsApp template message to a contact |
 | Make outbound call with an employee | Places an outbound AI phone call to a contact using a selected AI Employee |
+
+### AI actions
+
+| Step | Description |
+|---|---|
+| Analyze sentiment with AI | Reads text you provide, such as an incoming message, and classifies it as positive, neutral, or negative, then sends the automation down the matching branch. Works out of the box with a default prompt |
 
 ### Advanced
 
@@ -239,10 +245,10 @@ Long automations get hard to scan. The Automation Builder has a set of canvas to
 
 ## Related resources
 
-- [Automation triggers](./automation-triggers) - Events that start your workflow
-- [Automation conditions](./automation-conditions) - Filter when your automation runs using AND/OR logic
-- [Messaging steps](./use-cases/action-messaging) - Send SMS and email messages via Conversations
-- [Campaign steps](./use-cases/action-campaigns) - Pause and start campaigns from a workflow
-- [Review request automation](./review-requests) - Collect customer reviews automatically
-- [Dynamic content](./dynamic-content-in-automations) - Personalize steps with dynamic contact and company data
-- [Automation settings](./automation-settings) - Control how often it runs and how errors are handled
+- [Automation triggers](./automation-triggers.md) - Events that start your workflow
+- [Automation conditions](./automation-conditions.md) - Filter when your automation runs using AND/OR logic
+- [Messaging steps](./use-cases/action-messaging.md) - Send SMS and email messages via Conversations
+- [Campaign steps](./use-cases/action-campaigns.md) - Pause and start campaigns from a workflow
+- [Review request automation](./review-requests.mdx) - Collect customer reviews automatically
+- [Dynamic content](./dynamic-content-in-automations.mdx) - Personalize steps with dynamic contact and company data
+- [Automation settings](./automation-settings.md) - Control how often it runs and how errors are handled

@@ -168,6 +168,8 @@ Use the tabs at the top to switch between views:
 - **Design** — Visual editor for colors and element-level edits. See [Visual Editor](./guides/visual-editor.md).
 - **Code** (Pro) — File explorer and code editor to view or manually edit source files
 
+The live preview runs on a development server that loads your app's code fresh on each page change, so switching pages can feel slower than on your published site. Publishing creates an optimized build, so test speed on the published site. If pages are still slow there, large images are a common cause; ask Vibe to resize or optimize them.
+
 ![Code mode with the file tree open and App.tsx loaded in the editor](./img/code-view.png)
 
 ### Toolbar

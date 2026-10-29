@@ -192,6 +192,27 @@ Yes, on the Standard and Pro plans. Vibe provisions an SSL certificate automatic
 
 </details>
 
+<details>
+<summary>Is Code mode or direct code editing available on every Vibe plan?</summary>
+
+No. Direct code editing (Code mode) is available on Professional only. You can still ask Vibe in chat to change code on any edition. Viewing source is available on all editions; import and export are limited to higher editions.
+
+</details>
+
+<details>
+<summary>Does Vibe process customer payments with Stripe or PayPal built in?</summary>
+
+No. Vibe has no built-in payment processing for customer checkouts. Choose a payment provider and ask Vibe to build the integration for you.
+
+</details>
+
+<details>
+<summary>Does Vibe hosting support 301 redirects when I migrate URLs?</summary>
+
+Yes. Tell Vibe the old and new paths so it can implement those redirects in the project.
+
+</details>
+
 ## Next Steps
 
 - [Getting Started](./getting-started.md) — Create your first app and learn the basics

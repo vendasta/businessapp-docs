@@ -15,7 +15,7 @@ You can manage opportunities in two views:
 
 ![Opportunities Pipeline View](../img/opportunities/opportunity-1.png)
 
-`List View` – Click the `List` icon to switch. Configure columns, sort by fields such as expected close date, and use bulk actions.
+`List View` – click the list icon to switch. Configure columns, sort by fields such as expected close date, and use bulk actions.
 
 ![Opportunities List View](../img/opportunities/opportunity-2.png)
 
@@ -24,7 +24,7 @@ You can manage opportunities in two views:
 ### From the opportunity page
 
 1. Navigate to `CRM` → `Opportunities`.
-2. Click `Create Opportunity`.
+2. Click `Create opportunity`.
 3. Enter the opportunity details.
 4. Click `Create`.
 
@@ -66,22 +66,22 @@ Updating existing opportunities during import overwrites mapped fields on matchi
 
 ### In pipeline view
 
-Drag the opportunity to the `Closed Won` or `Closed Lost` column.
+Drag the opportunity to the `Closed won` or `Closed lost` column.
 
 ![Close in pipeline](../img/opportunities/opportunity-6.png)
 
 ### From the profile page
 
-Open the opportunity and click `Closed Won` or `Closed Lost` at the top.
+Open the opportunity and click `Won` or `Lost` at the top.
 
 ![Close from profile](../img/opportunities/opportunity-7.png)
 
 ### By updating the stage field
 
-Open the opportunity and change the `Stage` field to `Closed Won` or `Closed Lost`.
+Open the opportunity and change the `Stage` field to `Closed won` or `Closed lost`.
 
 ![Close via stage field](../img/opportunities/opportunity-8.png)
 
 :::info
-When marking an opportunity as `Closed Lost`, you may be prompted to provide a reason. Key stage changes (Won, Lost, Reopened) are recorded as activity notes for better history and reporting.
+When marking an opportunity as `Closed lost`, you may be prompted to provide a reason. Key stage changes (Won, Lost, Reopened) are recorded as activity notes for better history and reporting.
 :::

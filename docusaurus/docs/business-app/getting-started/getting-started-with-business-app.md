@@ -52,7 +52,7 @@ Business App is the dashboard where you manage your business profile, talk with 
   Send and receive messages with your leads and customers, and respond to reviews or inquiries through Conversations.
 
 - **Track your performance**  
-  See important business analytics such as website traffic, reviews, and leads either in your [Executive Report](../executivereport/index.md) or your [Home](../home.mdx) screen.
+  See important business analytics such as website traffic, reviews, and leads either in your [Executive Report](../executivereport/index.md) or your [Home](../home/index.mdx) screen.
 
 - **Access your tools and products**  
   Quickly launch any apps or services you've activated to market your business, connect with customers, or boost productivity.
@@ -75,7 +75,7 @@ Business App is the dashboard where you manage your business profile, talk with 
 
 ## Step 1: How do I complete my onboarding checklist? {#step-1-complete-your-onboarding-checklist}
 
-When you first log in, you'll see a **"Complete Setup"** card on your [Home](../home.mdx) screen. This is your personalized onboarding checklist to help you set up your account.
+When you first log in, you'll see a **"Complete Setup"** card on your [Home](../home/index.mdx) screen. This is your personalized onboarding checklist to help you set up your account.
 
 Finishing these steps helps you use all of the features in Business App. You'll:
 - Start seeing results in your [Executive Report](../executivereport/index.md) sooner.
@@ -125,14 +125,13 @@ Connections bring your most important business data into one place. When you con
 ### How do I add integrations? {#how-to-add-integrations}
 
 1. Go to `Administration` > `Integrations`.
-2. Click the **Browse** tab.
-3. Search for or scroll to the integration you need (for example, **Google Business Profile** or **QuickBooks**).
-4. Click the integration tile and follow the authorization steps.
+2. Search for or scroll to the integration you need (for example, **Google Business Profile** or **QuickBooks**).
+3. Click the integration tile and follow the authorization steps.
 
 Common connections to set up early:
 
-- **Google Business Profile**: Syncs location details and visibility metrics. Data can appear in your Executive Report within about 5 minutes. For setup details, see [Business Profile](../administration/business_profile.mdx) and [Integrations](../administration/connections/index.md).
-- **QuickBooks Online**: Import existing customers, automate review requests from invoiced customers, and surface financial insights. See [QuickBooks integration](../administration/integrations/quickbooks) for connection steps.
+- **Google Business Profile**: Syncs location details and visibility metrics. Data can appear in your Executive Report within about 5 minutes. For setup details, see [Business Profile](../administration/business_profile.mdx) and [Integrations](../administration/integrations/overview.md).
+- **QuickBooks Online**: Import existing customers, automate review requests from invoiced customers, and surface financial insights. See [QuickBooks integration](../administration/integrations/quickbooks.mdx) for connection steps.
 
 [Back to checklist](#getting-started-checklist)
 
@@ -140,7 +139,7 @@ Common connections to set up early:
 
 ## Step 4: How do I set up AI and web chat? {#step-4-set-up-ai-and-web-chat}
 
-[AI Workforce](../ai/ai-workforce/ai_workforce_overview.md) lets you automate conversations, capture leads, and answer customer questions 24/7. The [Web Chat](../conversations/web-chat) widget engages website visitors and sends leads directly to your Conversations inbox.
+[AI Workforce](../ai/ai-workforce/ai_workforce_overview.md) lets you automate conversations, capture leads, and answer customer questions 24/7. The [Web Chat](../conversations/web-chat/index.mdx) widget engages website visitors and sends leads directly to your Conversations inbox.
 
 ### How do I start using AI Workforce? {#meet-your-ai-workforce}
 
@@ -220,13 +219,13 @@ Data from Google Business Profile can appear within about 5 minutes after you co
 <details>
 <summary><strong>Can I invite team members to use Business App?</strong></summary>
 
-Yes. From the [Home](../home.mdx) screen, select **Invite Team Member** in the top-right corner, enter the person's name and email, and click **Send Invite**.
+Yes. From the [Home](../home/index.mdx) screen, select **Invite Team Member** in the top-right corner, enter the person's name and email, and click **Send Invite**.
 </details>
 
 <details>
 <summary><strong>Where do I manage my integrations after connecting them?</strong></summary>
 
-Go to `Administration` > `Integrations` > `Manage` to see all active integrations, reconnect expired authorizations, or disconnect platforms.
+Go to `Administration` > `Integrations` and use the **Connected** filter to see all active integrations, reconnect expired authorizations, or disconnect platforms.
 </details>
 
 <details>
@@ -238,7 +237,7 @@ SMS is available for businesses located in the United States and Canada. US busi
 <details>
 <summary><strong>Where do I connect my Google Business Profile?</strong></summary>
 
-Go to `Administration` > `Integrations` and click the **Browse** tab. Search for **Google Business Profile**, click the integration tile, and follow the authorization steps.
+Go to `Administration` > `Integrations`. Search for **Google Business Profile**, click the integration tile, and follow the authorization steps.
 </details>
 
 <details>
@@ -251,4 +250,10 @@ Go to `Conversations AI` > `Conversations AI Settings`, click **Configure Web Ch
 <summary><strong>How do I choose which email notifications I receive?</strong></summary>
 
 Go to `Settings` > `Notification Settings` and choose instant emails, daily digests, or both. Expand each product section to choose which events trigger notifications.
+</details>
+
+<details>
+<summary><strong>Why does my last-login date stay old even though I use the app?</strong></summary>
+
+The last-login timestamp updates only when you sign in with a username and password or an external sign-in provider (for example Google or Microsoft). It does not track last activity. If you already have an active session and are not asked to sign in again, the date does not change.
 </details>

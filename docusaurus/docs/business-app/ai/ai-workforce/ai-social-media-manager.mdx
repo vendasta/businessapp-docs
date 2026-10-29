@@ -1,6 +1,7 @@
 ---
 title: AI Social Media Manager
 sidebar_label: AI Social Media Manager
+sidebar_position: 7
 description: "The AI Social Media Manager generates, schedules, and publishes a social media calendar across your connected networks in Business App."
 tags: [ai-workforce, social-media, social-ai-premium]
 keywords: [ai social media manager, social calendar, social media automation, ai image generation, social posts, ai workforce, social ai premium]
@@ -180,6 +181,12 @@ Ask the AI Social Media Manager to generate a video for a post directly in chat.
 
 Video generation runs asynchronously: you can continue chatting with the AI Social Media Manager while a video renders, and the finished video is inserted into the conversation when it's ready. You can also base a generated video on one of your own photos, so the output reflects your business's real look, and generate the same video concept in a different language.
 
+## Where do generated images and videos appear in File Management? {#generated-media-file-management}
+
+Images and videos the AI Social Media Manager generates are saved to **CRM** → **File Management**, in the `ai-generated` folder. Images are in `ai-generated/images` and videos are in `ai-generated/videos`.
+
+The copy in File Management is independent of the copy your posts use. Deleting a file from File Management doesn't affect posts or drafts that use it.
+
 ## Recommended models
 
 | Use case | Recommended model |
@@ -267,6 +274,6 @@ The AI Social Media Manager operates in a reasoning mode — before generating, 
 <details>
 <summary>Can I stop the AI Social Media Manager from generating content on a schedule?</summary>
 
-Yes. The Social Calendar Generation trigger controls when the AI runs on its own, and you can set an **End date** for the date the trigger stops. You can still chat with the AI Social Media Manager to generate posts on demand.
+Yes. The Social Calendar Generation trigger controls when the AI runs on its own, and you can set an **End date** for the date the trigger stops. You can also turn off the `Configure Social Media Calendar` capability. It's what creates posts on the cadence you set, so while it's off, no posts are created on that cadence. You can still chat with the AI Social Media Manager to generate posts on demand.
 
 </details>

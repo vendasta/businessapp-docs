@@ -29,3 +29,4 @@ Use this option to install a **fresh template** on your staging site.
 
 *   Perfect for experimenting with new designs or starting with a blank canvas.
 *   This setup will differ from your live site, allowing you to explore creative changes without affecting the production environment.
+*   To replace your live site with a template, reset staging from the template, make any changes you want, then [push to production](./index.md#push-to-production). Pushing to production overwrites your current live site, so create a backup first.

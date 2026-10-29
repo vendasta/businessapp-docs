@@ -37,6 +37,16 @@ After reconnecting the domain, allow up to **30 minutes** for the SSL certificat
 
 ![SSL certificate details after reconnection](./img/ssl-troubleshooting/ssl-certificate-details.png)
 
+### Automatic and manual SSL retries
+
+When your domain is eligible for an SSL retry, the Domains tab shows this message: "We retry SSL automatically every 30 min. To try right away, use Retry SSL."
+
+### Multiple A records
+
+When your domain has more than one A record, WordPress Hosting can't generate an SSL certificate, and `Retry SSL` doesn't work. The Domains tab shows `Multiple` as the current IP, with this message: "This domain points to multiple A records. Keep only the recommended IP (...) and remove the others."
+
+Remove the extra A records at your domain registrar so only the recommended IP remains. If SSL setup still fails after multiple retries, the Domains tab shows "SSL setup failed after multiple retries — please contact support."
+
 ### Notes
 
 *   Ensure only **one A record** exists, pointing to WordPress Hosting's IP (**34.149.86.124**).

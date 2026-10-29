@@ -87,7 +87,7 @@ From here you can configure:
 
 ![Meeting settings: app and scheduling](../img/my-meetings/meeting-settings-app-scheduling.png)
 
-- **Advance notice**: Set the minimum lead time to prevent last-minute bookings.
+- **Advance notice**: Set the minimum lead time to prevent last-minute bookings. Choose a preset option, or choose a custom option to require up to one week of advance notice.
 - **General availability**: Set which days and hours you accept meetings.
 - **Timezone**: Confirm or change your timezone.
 
@@ -145,13 +145,13 @@ You can also configure additional options per event type. Settings here override
   Under **Reminder schedule**, choose when reminders are sent. The schedule has two email reminders (1 day and 15 minutes before the meeting by default) and one SMS reminder (2 hours before by default), and the reminders shown follow your reminder channel. You can change the timing of each reminder, up to 10 days before the meeting, but you can't add or remove reminders. The card shows how many reminders each booking receives. See [Reminder schedule](./team-booking-links.md#reminder-schedule) for the full rules, and [Host reminders](./team-booking-links.md#host-reminders) for the reminders hosts receive.
 
   :::note
-  SMS confirmations and reminders require an active subscription to **Conversations AI Pro or Premium** (Reputation AI Premium and Campaigns Pro also unlock this). Your business phone number must be registered first. Configure at `Administration` → `SMS Configuration`.
+  SMS confirmations and reminders require an active subscription to **Conversations AI Pro or Premium** (Reputation AI Premium and Campaigns Pro also unlock this). Your business phone number must be registered first. Configure at `Administration` → `SMS Configuration`. Until your registration is approved and a number is assigned, notifications stay on email. In Australia, select **Register** on the event type settings page to open the SMS configuration page and complete the Australian regulatory form.
   :::
 
 - **Customize invitation email**: Customize the subject and body of the email sent when you request a meeting from a CRM contact.
 - **Availability increment**: Override the default time slot increment (5, 10, 15, 30, or 60 minutes).
 - **Meeting buffer before/after**: Override the default buffer times.
-- **Advance notice**: Override the minimum lead time for this event type.
+- **Advance notice**: Override the minimum lead time for this event type, up to one week.
 - **Add to my website**: Get an embed code to add your booking form as an inline widget on a website.
 
   ![Add to my website embed code](../img/my-meetings/add-to-website.png)
@@ -160,7 +160,7 @@ You can also configure additional options per event type. Settings here override
   - **Rolling window**: Enter a number and select Days, Weeks, or Months (e.g., "4 weeks into the future"). The window advances daily, keeping availability a fixed look-ahead from today. Use this for ongoing event types.
   - **Fixed date range**: Set a specific start and end date. Useful for seasonal promotions, limited-availability campaigns, or events with a hard end date.
 
-  If no limit is set, bookings are accepted with no future date restriction.
+  If no limit is set, bookings are accepted with no future date restriction. Bookings and reschedules that start outside the limit are declined, whether they come from a customer, a team member, or the AI Receptionist.
 
   ![Limit future meetings: rolling window and fixed date range options](../img/my-meetings/limit-future-meetings-options.png)
 
@@ -181,7 +181,7 @@ Booking pages automatically display in your customer's browser language, so cust
 - Content you write yourself, such as service names, descriptions, and staff bios, always displays exactly as you entered it and is not translated.
 
 :::note
-This only affects the booking page itself. To control the language of confirmation and reminder emails and SMS messages, set your [Primary operating language](../../administration/business_profile.md#primary-operating-language) on your Business Profile.
+This only affects the booking page itself. To control the language of confirmation and reminder emails and SMS messages, set your [Primary operating language](../../administration/business_profile.mdx#primary-operating-language) on your Business Profile.
 :::
 
 ## Booking page timezone
@@ -244,7 +244,7 @@ The conferencing provider set in the booking link is used. If Microsoft Teams is
 <details>
 <summary>How do I send SMS reminders to guests?</summary>
 
-Add **Phone Number** as a required field in **Questions for invitee**, then choose **SMS** or **Both** as the reminder channel. SMS requires a Conversations AI Pro or Premium subscription and a registered business phone number. Configure at `Administration` → `SMS Configuration`. Supported countries: United States, Canada, and Italy.
+Add **Phone Number** as a required field in **Questions for invitee**, then choose **SMS** or **Both** as the reminder channel. SMS requires a Conversations AI Pro or Premium subscription and a registered business phone number. Configure at `Administration` → `SMS Configuration`. Supported countries: United States, Canada, Italy, and Australia.
 </details>
 
 <details>

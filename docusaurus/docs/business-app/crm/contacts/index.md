@@ -70,6 +70,10 @@ Updating existing contacts during import will overwrite the mapped fields on mat
 Each contact should include at least one of: first name, last name, email, or phone. Company name is required for any new company rows created during import.
 :::
 
+:::info
+Contact names are stored as separate **First name** and **Last name** fields, not a single combined name field. If your CSV has one "Name" column, split it into two columns before mapping.
+:::
+
 :::note
 Tag columns append your imported values to any tags already on a matching contact, rather than replacing them. Dropdown and other option fields match by value regardless of capitalization, so entries like "Lead" and "lead" map to the same option. When an imported contact is associated with only one company, that company is automatically set as the contact's primary company.
 :::
@@ -79,10 +83,10 @@ Tag columns append your imported values to any tags already on a matching contac
 1. In `CRM` > `Contacts`, set filters if needed, then select the checkbox at the top-left of the table. A banner confirms how many records on the page are selected, for example "25 of 143 selected."
 2. To include every matching record instead of just the current page, click `Select all 143 contacts` in the banner. The banner then confirms all matching records are selected and gives you a link to clear the selection.
 3. Click `Actions` > `Export`.
-4. A notification is sent when your CSV is ready to download.
+4. Export progress shows as soon as the export starts. When your CSV is ready, you also get an email with a download link.
 
 :::info
-Exports respect your current filters and the set of rows displayed.
+Exports respect your current filters and selection. When you select all matching records, the export includes every one of them. If you leave the page and come back after the export finishes, the download starts automatically.
 :::
 
 ### Start, pause, or resume campaigns
@@ -106,6 +110,7 @@ Available actions include:
 - **Add to campaign** — add selected contacts to a campaign
 - **Add to Yesware campaign** — add selected contacts to a Yesware campaign
 - **Start automation** — run an automation on the selected contacts immediately
+- **Update contact**: change a field on all the selected contacts at once, such as adding a tag
 
 To start an automation in bulk:
 
@@ -118,6 +123,18 @@ To start an automation in bulk:
 :::tip
 Bulk actions are a fast way to run automations on demand — for example, sending a campaign to a specific segment or assigning owners across a batch of new leads. You don't need to build a new automation; just pick an existing one.
 :::
+
+To add a tag to many contacts at once:
+
+1. Go to `CRM` → `Contacts`.
+2. Select the contacts you want to tag.
+3. Click `Actions` → `More actions` → `Update contact`.
+4. For the field to change, choose `Tags`.
+5. Choose how to apply the tag:
+   - `Set value` replaces all existing tags on the selected contacts.
+   - `Clear value` removes all tags from the selected contacts.
+   - `Append value` adds your tag and keeps the existing ones. Use this option to add a tag.
+6. Enter the tag and confirm.
 
 ### Set or change the Owner
 

@@ -8,7 +8,7 @@ product: crm
 audience: smb
 ---
 
-When building a form, you can add fields that map to Contact or Company records, or use generic field types not mapped to either.
+When building a form, you can add fields that map to Contact or Company records, or use generic field types not mapped to either. Form submissions can also create or update custom object records. <!-- verify in product: how custom object fields appear in the form builder -->
 
 Contact fields and Company fields write to two different record types. A form with only Contact fields creates or updates a Contact record and doesn't touch a Company record. If you want a submission to also create or update a Company record, such as a business name or address, add fields from the Company fields group as well. Choosing the wrong group is a common reason a submission doesn't appear where you expect it.
 
@@ -24,6 +24,11 @@ Contact fields and Company fields write to two different record types. A form wi
 - Timezone, Birth year, Gender
 - UTM Campaign, UTM Medium, UTM Source, UTM Content, UTM Term
 - Market ID, Owner, External ID
+- Transactional SMS consent, Marketing SMS consent, Email marketing consent
+
+:::info
+Consent fields appear automatically whenever a form includes a `Phone number` or `Email` field — you don't add them separately. See [Consent checkboxes](form-builder.md#consent-checkboxes).
+:::
 
 ## Company fields
 

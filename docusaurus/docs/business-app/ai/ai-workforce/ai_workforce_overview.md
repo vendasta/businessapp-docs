@@ -91,6 +91,50 @@ The more up-to-date and specific your knowledge sources, the more helpful and ac
 
 ---
 
+### Save and version history
+
+Select `Save` to save and publish your changes to an AI Employee. Each saved version is kept in its version history. Select `Restore previous settings` to open the version history and go back to an earlier version.
+
+---
+
+### Edit with AI
+
+You can describe the change you want to make to your AI Employee in plain language. The AI proposes the edit, and you review it before you save. <!-- verify label in product: name of the AI-assisted editing entry point -->
+
+---
+
+### Jobs to be done
+
+Jobs to be done show whether your receptionist is doing the jobs you expect of it. They appear on the AI Chat Receptionist and AI Voice Receptionist, not on custom AI Employees.
+
+Every receptionist has three standard jobs:
+
+- Answering questions
+- Capturing leads
+- Handling customers who report wrong business information
+
+You can also add jobs specific to your business, such as answering questions about deals and promotions, and set the target for each one.
+
+Each job is scored on a daily sample of real conversations from the last 30 days and shows as `On target` or `Below target`.
+
+---
+
+### Guardrails
+
+Guardrails are rules on what your AI Employee replies with and what it accepts from customers. You can set:
+
+- Length limits
+- Hiding or blocking phone numbers and email addresses
+- Blocked words
+- A safety check
+- A custom rule written in plain language
+
+:::note
+Guardrails apply to chat. Voice AI Employees don't support guardrails.
+:::
+
+---
+
 ## Adjust responses by channel
 
 Your AI Employee knows which channel a conversation is happening on, so a single employee can respond differently depending on where a customer reaches out. A text message and an email often call for different lengths and tones, and your AI can adapt to each one automatically.
@@ -144,6 +188,17 @@ See [Custom AI Employees](./custom-ai-employees/index.md) for the full setup pro
 <summary>How many channels can I enable for one AI Employee?</summary>
 
 You can enable as many available channels as you like. One AI Employee can handle website chat, email, SMS, Facebook, and other enabled channels at the same time.
+</details>
+
+<details>
+<summary>Can I give an AI Employee a CSV file in chat?</summary>
+
+Yes. In chat, attach a CSV file of up to 10 MB and ask the AI Employee about it, for example which leads are in a specific region or how many customers are on each plan.
+
+Keep these limits in mind:
+
+- The AI Employee reads and filters the data well, but calculations across many rows can come out wrong.
+- It reads up to several hundred rows, depending on how wide the rows are. A longer file is only partly read.
 </details>
 
 <details>

@@ -1,13 +1,13 @@
 ---
 title: Multi-location web chat widget
 sidebar_label: Multi-location web chat
-description: Set up one web chat widget for your brand website that lets visitors choose a location and chat with that location's AI employee
+description: Set up one web chat widget for your brand website that lets visitors choose a location and chat with that location's AI Employee
 brand: business-app
 product: conversations
 audience: smb
 ---
 
-If your business has more than one location, you can add a single web chat widget to your main brand website. Visitors choose the location they want from inside the widget, then chat with that location's own AI employee.
+If your business has more than one location, you can add a single web chat widget to your main brand website. Visitors choose the location they want from inside the widget, then chat with that location's own AI Employee.
 
 This widget is set up for your group of locations and is separate from the web chat widget on any individual location's website. It has its own installation code.
 
@@ -16,9 +16,9 @@ This widget is set up for your group of locations and is separate from the web c
 The widget has two views:
 
 1. `Location picker`: When a visitor opens the widget, they see your locations listed with their names and addresses. They can search by business name or address, and page through the list ten locations at a time.
-2. `Chat`: When a visitor picks a location, the chat opens with that location's AI employee. A back arrow returns them to the list.
+2. `Chat`: When a visitor picks a location, the chat opens with that location's AI Employee. A back arrow returns them to the list.
 
-Each location answers with its own AI employee and its own knowledge, and the conversation goes to that location's inbox.
+Each location answers with its own AI Employee and its own knowledge, and the conversation goes to that location's inbox.
 
 :::note
 Going back to the location list ends the current chat. If a visitor picks a different location, they start a new conversation.
@@ -30,11 +30,11 @@ Each location you want to include needs web chat active in its own `Conversation
 
 ## Set up the widget
 
-1. From your group of locations, open the `Web Chat configuration` page under `Administration`, then select `New Web Chat`.
+1. From your group of locations, go to `Administration` and select `Web chat widgets`, or go to `Conversations` and select `More` → `Manage widgets`. Both open the `Web Chat configuration` page. Select `New Web Chat`.
 2. Check the `Widget name`. It fills in automatically with your brand name. Only you see this name, so change it to something more specific if you plan to run more than one widget.
 3. Under `Businesses included`, select `Add locations`. In the `Choose businesses` window, search for a location or pick it from the list. Each row shows the business name, its address, and the `AI Employee` that handles its chats. Check that column to confirm the right employee is assigned to each location before you go live. Select your first location and a banner appears offering to add the rest at once, for example `Select all 12 eligible`. Select `Done` when you're finished.
 4. Add a `Welcome greeting` (up to 70 characters). This appears in the widget header to encourage visitors to start a chat, for example "Hi, how can we help you today?"
-5. Set the `Initial AI message` (up to 600 characters). This is the first message your AI employee sends when a chat opens. It's turned on by default with a standard message and privacy notice. This message is the same for every location.
+5. Set the `Initial AI message` (up to 600 characters). This is the first message your AI Employee sends when a chat opens. It's turned on by default with a standard message and privacy notice. This message is the same for every location.
 6. Under `Appearance`, set your `Primary color`, `Accent color`, text colors, which bottom corner the widget sits in, and whether the mobile popup shows. These apply to the whole widget, including every location's chat.
 7. Select `Next`. Your installation code appears right away.
 
@@ -44,7 +44,7 @@ The live preview beside the form uses sample locations, not the ones you selecte
 
 ## Install the widget on your website
 
-Your installation code appears under `Floating chat widget` when you create the widget. You can reopen it any time from the `Web Chat configuration` page.
+Your installation code appears under `Floating chat widget` when you create the widget. You can reopen it any time from the `Web Chat configuration` page (`Conversations` → `More` → `Manage widgets`).
 
 The panel has four tabs:
 
@@ -77,7 +77,7 @@ Some options from the single-location web chat widget don't apply here:
 
 - The `Embedded chat widget` installation option. The multi-location widget is a floating widget only.
 - `Widget actions`, the links that prefill or send a message for a visitor.
-- The AI employee's name and picture aren't shown in the chat window. You can see which employee handles each location in the `Choose businesses` window when you set the widget up.
+- The AI Employee's name and picture aren't shown in the chat window. You can see which employee handles each location in the `Choose businesses` window when you set the widget up.
 
 ## Related articles
 

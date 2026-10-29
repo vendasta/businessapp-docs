@@ -67,6 +67,15 @@ Vibe replaces sections rather than rebuilding everything. Useful when only part 
 - **Single-page references work best.** Most clones target one page. If you want a multi-page site, scaffold the first page from a URL, then use follow-up prompts to add additional pages.
 - **Iterate after the first clone.** The first generation gets you 70% of the way. Use the prompting library's [refining recipes](./prompting-library.md#refining-an-existing-app) to push it the rest of the way.
 
+## Frequently Asked Questions
+
+<details>
+<summary>How do I migrate an existing site into Vibe when it has many pages?</summary>
+
+Ask Vibe to clone the site. Cloning handles about 5 pages at a time, so tell it specifically which pages to clone when you need more than that.
+
+</details>
+
 ## Next Steps
 
 - [Visual Editor](./visual-editor.md) — Tweak elements in your cloned app visually

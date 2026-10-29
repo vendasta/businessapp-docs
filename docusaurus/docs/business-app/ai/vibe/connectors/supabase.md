@@ -8,11 +8,9 @@ product: vibe
 audience: smb
 ---
 
-# Supabase Backend
-
 Connect your Supabase project to Vibe so the app it builds runs against your actual database, authentication, and storage, not placeholder data.
 
-The Supabase connector is available on the **Pro** and **Premium** plans (Premium has the same connector entitlements as Pro). It may also need to be enabled for your account. Credentials are stored via **Platform Integrations** (Administration → Integrations), not as a Vibe-local secret store.
+Supabase credentials are stored in your account's integrations (**Administration** > **Integrations**), not inside your Vibe project.
 
 When you link a Supabase project, Vibe builds directly against your real schema and data. The generated app is fully wired to your Supabase backend from the start, so there is no extra configuration step to connect it later.
 
@@ -42,7 +40,7 @@ If you don't already have a Supabase project, sign up for a free account at supa
 
 ## Connect your Supabase project
 
-Credentials are connected through **Platform Integrations**:
+Credentials are connected through your account's integrations:
 
 1. In Business App, go to **Administration**.
 2. Under **App settings**, select **Integrations**.
@@ -55,7 +53,7 @@ Credentials are connected through **Platform Integrations**:
 
 7. Click `Add Connection`.
 
-Once connected, enable the Supabase connector in your Vibe settings to start building against your project.
+Once connected, go to **AI** > **Vibe**, open your project, select **Settings**, then `Connectors`, and select `Enable` next to **Supabase** to start building against your project. If **Supabase** isn't in the list, select `Add connectors` to add it first.
 
 :::note
 Supabase automatically pauses free-tier projects after 7 days of inactivity. If your app suddenly can't reach your database, open your Supabase project dashboard and check whether it needs to be resumed. You can unpause a project from the dashboard within 90 days of it pausing; after that it can't be restored, though your data stays available for download. Upgrading your Supabase project to a paid plan prevents automatic pausing.
@@ -71,18 +69,18 @@ Generating a Personal Access Token takes you to your Supabase account's Access T
 
 When your Vibe app needs a Supabase API key, Vibe shows you exactly which secret to add and links directly to the right page in your Supabase dashboard. Your keys go into your project's environment, never into the chat. If a required key is missing, your app surfaces a clear error message instead of failing silently.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 <details>
 <summary>Why does Vibe say Supabase is disconnected when it looks connected?</summary>
 
-Your Vibe project may be calling a different Supabase project than the one connected on the account. Confirm both point to the same project. A paused or replaced Supabase project can also cause this mismatch.
+Your Vibe project can end up calling a different Supabase project than the one connected on the account. Confirm both point to the same project. A paused or replaced Supabase project can also cause this mismatch.
 </details>
 
 <details>
-<summary>Why does chat say Supabase is not connected even though the Supabase capability is enabled?</summary>
+<summary>Why does chat say Supabase is not connected even though the Supabase connector is enabled?</summary>
 
-Enabling the skill is not enough if the account has no credentials. Go to `Administration` → `Integrations` and add a Supabase connection for the account.
+Enabling the connector is not enough if the account has no credentials. Go to `Administration` → `Integrations` and add a Supabase connection for the account.
 </details>
 
 <details>

@@ -24,6 +24,10 @@ The widget captures leads from your website and answers visitor questions 24/7.
 - **Access**: Business App with Conversations enabled
 - **Website**: Any website where you can add HTML code
 
+:::info If you don't have Conversations AI yet
+Without Conversations AI, your widget shows an **Installation** card that reads *Upgrade to get AI Web Chat on your website* in place of your installation code. Depending on how Conversations AI is offered to you, its button reads `Get started` (opens the upgrade), `Contact us` (connects you with your account contact), or `View product`. Once Conversations AI is active, your installation code appears in its place.
+:::
+
 ## How do I set up web chat? {#setup-process}
 
 ### Step 1: Open your web chat widgets
@@ -68,6 +72,10 @@ Configure how visitors interact with the widget:
   - Example: "Hi! I'm here to assist with your [service] questions. How can I help you today?"
   - Keep it friendly, specific to your business, and encourage engagement
   - To add a link to the message, use this format: `[Link text Here](https://www.example.com)`
+
+:::note
+Your `Welcome Greeting` and `Initial AI Message` appear exactly as you write them. The widget's other built-in text, such as the `Send` button and status labels, appears in the language of each visitor's browser and cannot be set per widget. Your AI employee replies in the language it is set up to speak by default.
+:::
 
 ### Step 5: Customize appearance
 
@@ -384,4 +392,10 @@ Open the widget from the **Web Chat configuration** page by clicking its name, o
 <summary><strong>Do knowledge updates apply to the live widget after I install it?</strong></summary>
 
 Yes. After the JavaScript snippet is installed on your website, any knowledge and style updates you make in AI Workforce apply to the live widget automatically. You do not need to reinstall the code when you update your AI employee's knowledge or appearance. Conversations and leads continue to flow into your CRM.
+</details>
+
+<details>
+<summary><strong>How do I make an "Ask AI" suggested-question link open the chat widget with a message?</strong></summary>
+
+Use a link in this form: `#webchat-send-message?webchat-widgetId=<WIDGETID>&webchat-message=<MESSAGE>`, and include both the widget ID and the message text.
 </details>

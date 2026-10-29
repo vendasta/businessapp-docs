@@ -1,13 +1,12 @@
 ---
 title: Forms
+description: Add contact forms, lead capture, and other forms to your Vibe app, with submissions saved in Business App.
 sidebar_position: 2
 unlisted: false
 brand: business-app
 product: vibe
 audience: smb
 ---
-
-# Forms
 
 The Forms connector turns your generated app into something your customers can actually fill out. Use it for contact forms, lead capture, appointment requests, surveys, and newsletter sign-ups.
 
@@ -19,7 +18,7 @@ You don't need to provision a backend, configure a database, or wire up email no
 
 ## Enabling the connector
 
-Open your project's settings and select **Connectors** — see [project settings](../guides/project-settings.md). Toggle **Forms** on.
+Go to **AI** > **Vibe**, open your project, and select **Settings**. Then select `Connectors` (see [project settings](../guides/project-settings.md)). Select `Enable` next to **Forms**. If **Forms** isn't in the list, select `Add connectors` to add it first.
 
 Once enabled, every prompt in the project that asks for form-like behavior is wired through the connector automatically.
 
@@ -51,7 +50,7 @@ If you already have a form set up in Business App, you can tell Vibe to embed it
 
 > Use the existing inquiry form on the contact page instead of creating a new one.
 
-Vibe will look up the available forms and wire the matching one into the page.
+Vibe looks up the available forms and wires the matching one into the page.
 
 ## Editing a form
 
@@ -80,7 +79,7 @@ Forms built by Vibe map to real CRM fields, so a lead captured on your site land
 <details>
 <summary>How do I get my form to create contacts in the CRM, not just form submissions?</summary>
 
-Use words like "contact" or "company" when you describe the form — for example, "build me a contact intake form." That tells Vibe which CRM entity type to create. A generic request like "build me a form" may capture submissions without creating a CRM record.
+Use words like "contact" or "company" when you describe the form — for example, "build me a contact intake form." That tells Vibe which CRM entity type to create. A generic request like "build me a form" can capture submissions without creating a CRM record.
 </details>
 
 <details>
@@ -89,8 +88,8 @@ Use words like "contact" or "company" when you describe the form — for example
 The CRM requires the field to be labeled exactly **Email** (not "Email Address") for automations to recognize it. Rename the field in the form builder, or ask Vibe to use standard CRM field labels when you prompt it.
 </details>
 
-## Next Steps
+## Next steps
 
 - [Connectors](./index.md) — Overview of all connectors and how to combine them
 - [Single sign-on](./single-sign-on.md) — Gate a form behind a sign-in screen
-- [Prompting Library](../guides/prompting-library.md) — Ready-made form prompts organized by use case
+- [Prompting library](../guides/prompting-library.md) — Ready-made form prompts organized by use case

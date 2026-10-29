@@ -31,5 +31,5 @@ The `WordPress Admin` button in the page header opens `/wp-admin` in a new tab w
 Plugin and theme updates often include security fixes. Out-of-date plugins are the most common cause of a hacked WordPress site, so install updates regularly: at minimum once a month, ideally as soon as updates are available.
 
 :::tip
-Create a backup before installing a WordPress core, plugin, or theme update. See [Backups](./backups) for the one-click on-demand backup.
+Create a backup before installing a WordPress core, plugin, or theme update. See [Backups](./backups.md) for the one-click on-demand backup.
 :::

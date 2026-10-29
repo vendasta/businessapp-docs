@@ -1,13 +1,12 @@
 ---
-title: Business Knowledge
+title: Business knowledge
+description: Give Vibe your Business Profile and extra knowledge so generated apps use accurate business details.
 sidebar_position: 7
 unlisted: false
 brand: business-app
 product: vibe
 audience: smb
 ---
-
-# Business Knowledge
 
 Every Vibe project has a built-in knowledge base. When you create a project for a location, Vibe automatically pulls in that location's Business Profile — name, services, hours, contact information, brand voice, and FAQs — and makes it available to the AI from the first prompt.
 
@@ -33,11 +32,13 @@ Using these phrases produces more accurate results than leaving Vibe to infer th
 
 ## Adding your own knowledge
 
-You can extend the knowledge base from your [project settings](./project-settings.md). Open your project's settings and select **Knowledge**. You can add:
+You can extend the knowledge base from your [project settings](./project-settings.md). Go to **AI** > **Vibe**, open your project, select **Settings**, then select `Knowledge`.
 
-- **URLs** — Vibe fetches and indexes the page content
-- **Files** — Upload documents such as PDFs, specs, or brand guides
-- **Notes** — Paste in text directly: pricing tables, FAQs, product descriptions, or anything else the AI should know
+The **Business knowledge** section shows your Business Profile, which Vibe already includes. Use the `Add knowledge` input to add more:
+
+- **URLs**: Vibe fetches and indexes the page content.
+- **Files**: Upload documents such as PDFs, specs, or brand guides.
+- **Notes**: Paste in text directly, such as pricing tables, FAQs, product descriptions, or anything else the AI should know.
 
 Everything you add goes into the same knowledge base Vibe already uses for the Business Profile. Once it's there, Vibe can reference it in any future prompt for that project.
 
@@ -49,10 +50,10 @@ Good candidates for the knowledge base:
 - Staff bios and team information
 - Brand voice guidelines or tone notes
 - FAQs you want to appear in the generated app
-- Any content the AI might otherwise get wrong or leave as placeholder text
+- Any content the AI would otherwise get wrong or leave as placeholder text
 
-## Next Steps
+## Next steps
 
-- [Getting Started](../getting-started.md) — Create your first project
-- [Prompting Guide](./prompting.md) — Write prompts that make the most of your business context
+- [Getting started](../getting-started.md) — Create your first project
+- [Prompting guide](./prompting.md) — Write prompts that make the most of your business context
 - [Connectors](../connectors/index.md) — Wire your app into forms, analytics, and sign-on

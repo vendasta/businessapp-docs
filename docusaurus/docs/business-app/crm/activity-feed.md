@@ -9,9 +9,9 @@ product: crm
 audience: smb
 ---
 
-Use the Activity Feed to see real-time updates on sales activities across your teams, including emails, notes, calls, meetings, and more, so you can stay informed and coach effectively.
+Use the activity feed to see real-time updates on sales activities across your teams, including emails, notes, calls, meetings, and more, so you can stay informed and coach effectively.
 
-## Why use the Activity Feed?
+## Why use the activity feed?
 
 - Get a centralized view of sales activity across contacts and companies
 - Search and filter to find relevant work quickly
@@ -24,10 +24,10 @@ Use the Activity Feed to see real-time updates on sales activities across your t
 - **Links** to the underlying contact or company record for context
 - **Richer activity details** like meeting status and call outcomes at-a-glance
 
-## How to use the Activity Feed
+## How to use the activity feed
 
-1. Go to `CRM` → `Activity Feed`.
-2. Filter by activity types such as Emails, Notes, Calls, or Meetings.
+1. Go to `CRM` → `Activity feed`.
+2. Use the tabs (`All`, `Calls`, `Communications`, `Emails`, `Meetings`, `Notes`, `Recorded meetings`) or `Filters` to narrow activities by type.
 3. Use search to find activities that mention specific keywords.
 4. Click an item to open the associated record and take action.
 
@@ -42,7 +42,7 @@ Yes. Use filters to focus on emails, notes, calls, meetings, and more.
 <details>
 <summary>Can I delete a recorded meeting activity?</summary>
 
-Yes. Open the related record and delete the activity there; the Activity Feed will reflect the change. You can access activities from [Contacts](/business-app/crm/contacts), [Companies](companies.md), or [Opportunities](opportunities/index.md).
+Yes. Open the related record and delete the activity there; the activity feed reflects the change. You can access activities from [Contacts](/business-app/crm/contacts), [Companies](companies.md), or [Opportunities](opportunities/index.md).
 </details>
 
 <details>

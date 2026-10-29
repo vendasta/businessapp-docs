@@ -69,8 +69,8 @@ Only existing Yesware campaigns can be selected in Automations. Campaign creatio
 :::
 
 **Related automation guides:**
-- [Business App Automations overview](../../automations/index) - Learn how to create your first automation workflow
-- [Automations](../../automations/index) - Create workflows and use pre-built templates to trigger Yesware campaigns
+- [Business App Automations overview](../../automations/index.mdx) - Learn how to create your first automation workflow
+- [Automations](../../automations/index.mdx) - Create workflows and use pre-built templates to trigger Yesware campaigns
 
 ## Frequently asked questions
 
@@ -142,8 +142,8 @@ Yesware campaigns pull contact information from your email provider's contacts, 
 - [CRM forms for lead capture](../forms/index.md) - Capture new leads that can be added to Yesware campaigns
 
 **Business App automation options:**
-- [Automations overview](../../automations/index) - Compare Yesware with native Business App automation options
-- [Automations](../../automations/index) - Pre-built templates and workflows for lead nurturing and follow-up
+- [Automations overview](../../automations/index.mdx) - Compare Yesware with native Business App automation options
+- [Automations](../../automations/index.mdx) - Pre-built templates and workflows for lead nurturing and follow-up
 
 **Advanced workflows:**
 - [CRM opportunities](../opportunities/index.md) - Track deals that result from Yesware campaigns

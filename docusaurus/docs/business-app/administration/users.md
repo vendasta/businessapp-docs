@@ -174,7 +174,7 @@ The `Invite user` button only appears if you have access to the `User Management
 <details>
 <summary>What happens when I invite a user?</summary>
 
-The user receives an email inviting them to set a password and sign in. Alongside the sign-in link, the email summarizes the work already completed for your business — the same summary that appears on the [Home page](/business-app/ai-home-cards). They appear in the users table once the invitation is sent.
+The user receives an email inviting them to set a password and sign in. Alongside the sign-in link, the email summarizes the work already completed for your business — the same summary that appears on the [Home page](/business-app/home/ai-home-cards). They appear in the users table once the invitation is sent.
 
 </details>
 
