@@ -20,7 +20,7 @@ Vibe in Business App uses credits to measure AI activity. Your subscription incl
 
 ## How credits work
 
-A credit is used each time you send a message to Vibe. How many credits a message costs depends on the complexity of the task. Each Vibe subscription includes a credit allowance that resets each billing period.
+A credit is used each time you send a message to Vibe in Plan or Build mode. How many credits a message costs depends on the complexity of the task. Ask mode includes a free daily allowance, so Ask messages within that allowance don't use credits. Each Vibe subscription includes a credit allowance that resets each billing period.
 
 | Action | Example prompt | Credits |
 |--------|---------------|---------|
@@ -29,6 +29,8 @@ A credit is used each time you send a message to Vibe. How many credits a messag
 | Generate a new component | "Add a contact form and connected to my CRM" | ~300 |
 | Build a multi-page website | "Create a 4-page business website with my business profile" | ~500 |
 | Clone a webpage | "Clone the look and feel of http://sample.com and build a homepage for my business" | >1,000 |
+
+While your free daily Ask allowance has room, you can use Ask mode even when your account has no credits remaining. Vibe tells you when the allowance is nearly or fully used.
 
 Credits are tied to the account they were issued to and cannot be transferred to other accounts. You can view your remaining balance and usage history under `Administration` > `AI Settings` > `Credits`. This section appears only when you have an active product that uses AI credits.
 
