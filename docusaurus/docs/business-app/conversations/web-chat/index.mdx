@@ -94,13 +94,15 @@ When you're done configuring the widget, click `Next` to save it.
 
 Open the widget from the **Web Chat configuration** page (click its name, or use the `⋮` menu and choose `Embed`) to find your installation code. There are two widget types, choose one based on how you want the chat to appear on your site.
 
+If your website is built with Vibe, you don't need to copy any code. Add the widget through Vibe's Webchat connector instead. See [Webchat](../../ai/vibe/connectors/webchat.md).
+
 ## Which widget type should I use? {#widget-types}
 
 ### Floating chat widget
 
 The floating widget places a chat button in the bottom corner of every page on your site. Visitors click it to open the chat.
 
-To get the code: open the widget from the **Web Chat configuration** page, expand the **Floating chat widget** section, and copy the JavaScript.
+To get the code: open the widget from the **Web Chat configuration** page, expand the **Floating chat widget** section, and copy the JavaScript. The section has tabs for `Website`, `Google Tag Manager`, `WordPress`, and `GoDaddy Website Builder`. Use the `Website` tab unless one of the others matches how you build your site.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -110,7 +112,7 @@ import TabItem from '@theme/TabItem';
 
 #### Install using the WordPress plugin
 
-1. In the **Floating Chat Widget** section, click **Download Plugin** to download the installation ZIP.
+1. In the **Floating chat widget** section, open the `WordPress` tab and click **Download WordPress plugin** to download the installation ZIP.
 2. In your WordPress admin (`your-website.com/wp-admin`), go to `Plugins` > `Add New Plugin`.
 3. Upload the ZIP file you just downloaded.
 4. Activate the plugin.
@@ -119,7 +121,7 @@ Your web chat widget appears on every page of your website.
 
 #### Install manually on WordPress (Divi)
 
-1. Copy the JavaScript from the **Floating Chat Widget** section.
+1. Copy the JavaScript from the **Floating chat widget** section.
 2. In WordPress admin, go to `Divi` > `Theme Options` > `Integrations`.
 3. Paste the code into the **Add code to the `<head>` of your blog** section.
 4. Save changes.
@@ -127,7 +129,7 @@ Your web chat widget appears on every page of your website.
   </TabItem>
   <TabItem value="shopify" label="Shopify">
 
-1. Copy the JavaScript from the **Floating Chat Widget** section.
+1. Copy the JavaScript from the **Floating chat widget** section.
 2. In Shopify, go to `Online Store` > `Themes` > `Actions` > `Edit Code`.
 3. Open the `theme.liquid` file.
 4. Paste the code just before the closing `</head>` tag.
@@ -136,18 +138,28 @@ Your web chat widget appears on every page of your website.
   </TabItem>
   <TabItem value="custom-html" label="Other Platforms (HTML)">
 
-This method works for most website builders that let you add custom header code, including **Wix, Squarespace, Webflow, and GoDaddy**.
+This method works for most website builders that let you add custom header code, including **Wix, Squarespace, and Webflow**. For GoDaddy Website Builder, use the GoDaddy tab instead.
 
-1. Copy the JavaScript from the **Floating Chat Widget** section.
+1. Copy the JavaScript from the **Floating chat widget** section.
 2. Open your site builder's **Custom Code** or **Header Code** section.
 3. Paste the code into the `<head>` section, just before the closing `</head>` tag.
 4. Save and publish your changes.
 
   </TabItem>
+  <TabItem value="godaddy" label="GoDaddy">
+
+GoDaddy Website Builder needs a different installation script so the widget appears correctly on your site.
+
+1. In the **Floating chat widget** section, open the `GoDaddy Website Builder` tab and copy the code.
+2. Add the code to your GoDaddy site where you add custom code.
+3. Save and publish your changes.
+
+  </TabItem>
   <TabItem value="gtm" label="Google Tag Manager">
 
-1. Copy the JavaScript from the **Floating Chat Widget** section.
-2. In Google Tag Manager, select **Google Tag Manager** tab in the Installation section and follow the provided setup instructions.
+1. In the **Floating chat widget** section, open the `Google Tag Manager` tab and copy the code.
+2. In Google Tag Manager, add the code as a **Custom HTML** tag that fires on all pages.
+3. Submit and publish your container.
 
   </TabItem>
 </Tabs>
@@ -194,6 +206,15 @@ The code changes depending on the action, implementation, and message set. You c
 1. **For anchor link listener:** Use the code in a URL as an anchor link or redirect target. The widget automatically detects the hash and triggers the action when the page loads or when the hash changes.
 2. **For JavaScript API:** Use the code in your button's onClick handler or any JavaScript event. The webchatAPI is automatically available once the widget script loads.
 
+## How do I turn a widget on or off? {#turn-widget-on-off}
+
+The **Status** column on the **Web Chat configuration** page shows whether each widget is **Active** or **Not active**. A widget that's not active won't work on your website, even with the code installed.
+
+1. On the **Web Chat configuration** page, click the widget's name.
+2. At the top right, click the toggle. It reads **Enabled** when the widget is on and **Disabled** when it's off.
+
+The change saves right away.
+
 ## How do I manage web chat conversations? {#managing-conversations}
 
 ### When AI assistant hands off to humans
@@ -239,6 +260,7 @@ If the Conversations web chat widget does not appear on your site after installa
 Ensure the widget installation code is pasted in the correct location:
 - The code must be inside the `<head>` section of your site's HTML (not the `<body>` or a widget block).
 - For WordPress, double-check if the plugin is active, or if you pasted the code into the correct theme section.
+- Save your changes and publish your site. Many website platforms don't show changes until you publish.
 
 #### 3. Check your hosting platform for plugin or theme conflicts
 
@@ -247,7 +269,7 @@ Ensure the widget installation code is pasted in the correct location:
 
 #### 4. Verify activation
 
-- Confirm your Conversations AI subscription is active, and the web chat widget is enabled.
+- Confirm your Conversations AI subscription is active, and the web chat widget is enabled. See [How do I turn a widget on or off?](#turn-widget-on-off)
 </details>
 
 <details>
@@ -304,6 +326,12 @@ The web chat widget works best when properly configured with business-specific i
 
 ## Additional FAQs
 
+
+<details>
+<summary><strong>Can I use the same widget on more than one website?</strong></summary>
+
+Yes. The same installation code works on any website you add it to, and conversations from every site come into the same inbox. If you want web chat for a different purpose, such as sales on one site and support on another, create a separate widget so each can have its own AI employee and messages. See [Run more than one widget](#setup-process).
+</details>
 
 <details>
 <summary><strong>Can the AI assistant scrape websites for information?</strong></summary>
@@ -385,7 +413,7 @@ Check the `Anonymous Visitors` view in `Conversations`. Anonymous chats are hidd
 <details>
 <summary><strong>Where do I find the code to install the web chat widget?</strong></summary>
 
-Open the widget from the **Web Chat configuration** page by clicking its name, or use the `⋮` menu and choose `Embed`. Expand the **Floating chat widget** or **Embedded chat widget** section and copy the JavaScript. For WordPress, you can instead click **Download Plugin** in the **Floating Chat Widget** section.
+Open the widget from the **Web Chat configuration** page by clicking its name, or use the `⋮` menu and choose `Embed`. Expand the **Floating chat widget** or **Embedded chat widget** section and copy the JavaScript. For WordPress, you can instead open the `WordPress` tab in the **Floating chat widget** section and click **Download WordPress plugin**.
 </details>
 
 <details>
