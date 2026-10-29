@@ -160,6 +160,22 @@ At the bottom of the chat panel, you find:
 
 ![The Vibe chat input with a sample prompt typed in, showing the image, mode, microphone, and send controls](./img/chat-input.png)
 
+### Suggested next message
+
+When a run ends, Vibe can show one suggested next message as grey text in the empty chat input. Press `Tab` (or tap the suggestion on a touch screen) to put it in the input, then edit it or click **Send**.
+
+The suggestion depends on what just happened:
+
+| Situation | Suggestion |
+|-----------|------------|
+| Vibe finished a run | A next step, such as "Help me add my actual menu, prices, and opening hours." |
+| The preview shows a runtime error, build error, or blank page | A fix request that names the broken part and the error, such as "Fix the error in the opening hours: Cannot read properties of undefined (reading 'open')." |
+| A run failed | "Try that again," in the mode the failed run used. |
+
+Accepting a change or fix suggestion switches the mode selector to **Build**.
+
+No suggestion appears while a run is working, while Vibe is waiting on your answer to a question, or while a Build or connector offer is waiting for you to act on it.
+
 ### Preview, Design, and Code Modes
 
 Use the tabs at the top to switch between views:

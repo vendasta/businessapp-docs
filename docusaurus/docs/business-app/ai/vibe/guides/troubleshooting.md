@@ -47,6 +47,8 @@ If the live preview throws a runtime error after the build succeeds — a state 
 
 Click it and Vibe submits the error to the chat as a normal prompt, in Build mode. If a run is already in progress, the fix is queued and starts as soon as it's idle — nothing happens until you click. The banner stays up while the fix runs, showing a "working on a fix" state, and clears once the fixed preview loads.
 
+The empty chat input also shows a fix request as grey text, naming the broken part and the error. Press `Tab` (or tap it on a touch screen) to put it in the input, then send it. Accepting it switches the mode selector to **Build**.
+
 The button doesn't appear if you're out of credits, or if Vibe is paused waiting on your answer to a clarifying question — answer the question first, then click **Fix it for me** if the error is still there.
 
 ## When auto-fix can't recover
