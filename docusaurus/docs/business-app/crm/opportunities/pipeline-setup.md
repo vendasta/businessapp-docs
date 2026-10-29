@@ -9,17 +9,18 @@ audience: smb
 
 ## How to set up a pipeline
 
-1. Go to the Opportunities page.
-2. Click the `Set up a pipeline` button. This creates a default pipeline.
-3. Use `Add Stage` to insert new stages.
+1. Go to `CRM` → `Opportunities`.
+2. Click the `Set up a pipeline` button. This creates a default pipeline. For an existing pipeline, open the pipeline dropdown and select `Manage pipelines`.
+3. Use `Add stage` to insert new stages.
 4. Use the `X` next to a stage to remove it (except for default stages).
-5. Set a `Close Probability` for each stage to forecast deal success rates.
+5. Set a `Close probability` for each stage to forecast deal success rates.
+6. Click `Save`.
 
 ![Pipeline setup](../img/opportunities/pipeline-1.png)
 ![Pipeline stages](../img/opportunities/pipeline-2.png)
 
 :::warning
-You cannot remove `Closed Won` and `Closed Lost` stages. You also cannot set any stage to 0% or 100% Close Probability, as those are reserved for the default stages.
+You cannot remove `Closed won` and `Closed lost` stages. You also cannot set any stage to 0% or 100% close probability, as those are reserved for the default stages.
 :::
 
 ## Example pipeline stages
@@ -30,8 +31,8 @@ Stages represent how an opportunity moves through your sales process. You can na
 - **Qualified** – The opportunity has been qualified as a potential sale
 - **Proposal** – A proposal has been presented to the potential customer
 - **Negotiation** – Terms are being negotiated
-- **Won** – The opportunity has resulted in a sale (or use `Closed Won`)
-- **Lost** – The opportunity did not result in a sale (or use `Closed Lost`)
+- **Won** – The opportunity has resulted in a sale (or use `Closed won`)
+- **Lost** – The opportunity did not result in a sale (or use `Closed lost`)
 
 Moving opportunities through stages helps you track your sales process and spot bottlenecks. Set close probability per stage so the CRM can help you forecast revenue.
 
@@ -39,13 +40,13 @@ Moving opportunities through stages helps you track your sales process and spot 
 
 ### Add a new pipeline
 
-- Click `Create Pipeline` to add a new one. There is no limit to the number of pipelines you can create.
+- Click `Create pipeline` to add a new one. There is no limit to the number of pipelines you can create.
 
 ![Create pipeline](../img/opportunities/pipeline-3.png)
 
 ### Remove a pipeline
 
-- Click `Delete` next to the pipeline you want to remove.
+- On the `Manage pipelines` page, select the pipeline in the left list, then click `Delete` at the bottom.
 - Ensure all opportunities are reassigned before deletion. If not, they will remain unattached.
 
 ![Delete pipeline](../img/opportunities/pipeline-4.png)
