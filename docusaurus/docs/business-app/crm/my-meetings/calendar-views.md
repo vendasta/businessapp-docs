@@ -69,6 +69,8 @@ If the event type has a **Daily limit** configured and the day you select has al
 
 ![Booking dialog opened from an empty calendar slot](../img/my-meetings/calendar-book-slot.png)
 
+After you book, a confirmation message shows who the meeting is with, for example `1 service booked with Jane Doe · Wed, Sep 2, 12:30 PM (IST)`. This applies to every host assignment method, including Round Robin, Priority Assignment, and Multi Host, so you can see which team member was assigned. When a booking has more than one host, names appear as a first name and last initial. If the list doesn't fit on one line, the message ends with `and N others`.
+
 ## View, edit, reschedule, or cancel a meeting
 
 Click any event card to open a detail panel showing the client's name and contact information, service type, time and duration, assigned hosts, booking questions and answers, any notes the invitee added when booking, guest emails, meeting link, and room or location.
