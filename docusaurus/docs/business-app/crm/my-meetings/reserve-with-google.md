@@ -10,7 +10,7 @@ audience: smb
 hide_title: true
 ---
 
-# Reserve with Google <span className="badge badge--secondary">Coming soon</span>
+# Reserve with Google <span class="badge badge--secondary">Coming soon</span>
 
 ## Overview
 
