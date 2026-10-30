@@ -67,6 +67,8 @@ You can select up to **5 event types** in a single booking, the same limit as se
 
 If the event type has a **Daily limit** configured and the day you select has already reached it, a warning icon appears in the booking dialog. Hover the icon to see a message explaining that the booking exceeds the daily meeting limit for that day. This is informational only — you can still complete the booking after seeing the warning. The icon only appears when a daily limit is set on the event type; there's no change to the booking dialog when no limit is configured.
 
+When the event type assigns the host automatically (**Any available**, such as Round Robin or Priority Assignment), the confirmation message after you book names the team member who was assigned: `Meeting booked successfully with {host full name}`. This applies whether you book from the calendar or with the `Book meeting` button in the confirmation message.
+
 ![Booking dialog opened from an empty calendar slot](../img/my-meetings/calendar-book-slot.png)
 
 ## View, edit, reschedule, or cancel a meeting
