@@ -1,15 +1,15 @@
 ---
 title: "WordPress Hosting Premium"
 sidebar_label: "WordPress Hosting Premium"
-description: Overview of WordPress Hosting Premium, a multisite solution hosted on Google Cloud Platform.
+description: Overview of WordPress Hosting Premium, a fully managed multisite hosting solution.
 tags: [wordpress-hosting, multisite, overview]
-keywords: [WordPress Premium Hosting, multisite network, Google Cloud WordPress, scalable hosting, multi-location hosting solution]
+keywords: [WordPress Premium Hosting, multisite network, managed WordPress hosting, scalable hosting, multi-location hosting solution]
 brand: business-app
 product: wordpress-hosting
 audience: smb
 ---
 
-**WordPress Hosting Premium** is a multisite hosting solution tailored for managing multiple WordPress websites under one account. Hosted on **Google Cloud Platform**, it offers centralized control, enhanced security, and scalable infrastructure which is ideal for businesses with multiple locations, educational institutions, and corporate networks.
+**WordPress Hosting Premium** is a multisite hosting solution tailored for managing multiple WordPress websites under one account. It offers fully managed, secure, high-performance hosting with centralized control, which is ideal for businesses with multiple locations, educational institutions, and corporate networks.
 
 ## Overview of WordPress Hosting Premium
 
@@ -20,15 +20,16 @@ Manage multiple websites from a single dashboard with distinct roles:
 * **Network Admins**: Oversee network-wide settings, themes, plugins, and users.
 * **Site Admins**: Manage site-specific content and configuration independently.
 
-**Google Cloud Hosting**
+**Managed hosting**
 
 * Daily automated backups.
-* Elastic scaling to handle traffic surges.
-* Free SSL certificates included.
+* Per-site isolation.
+* Global CDN for fast load times worldwide (Pro and Premium only).
+* Free SSL certificates that renew automatically.
 
 ## Security capabilities
 
-* DDoS protection and Web Application Firewall (WAF) using Google Cloud Armor.
+* Built-in firewall and DDoS protection.
 * HTTPS encryption with SSL for all hosted sites.
 
 ## Developer-oriented tools
@@ -120,11 +121,6 @@ Upgrading from WordPress Hosting Standard or Pro
 
 Update DNS settings through your domain registrar:
 
-**A Record**
-
-* Name: `@`
-* Value: `35.227.228.214`
-
 **CNAME Record**
 
 * Name: `www`
@@ -162,7 +158,7 @@ Yes. Custom domains can be applied to the main site using DNS records.
 <details>
 <summary>Are security features included?</summary>
 
-Yes. Includes Cloud Armor protection, SSL certificates, and regular backups.
+Yes. Includes a built-in firewall, DDoS protection, SSL certificates, and regular backups.
 
 </details>
 

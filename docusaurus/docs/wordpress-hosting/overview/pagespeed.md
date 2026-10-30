@@ -56,7 +56,7 @@ Even with a low PageSpeed score, try loading your site manually on both desktop 
 Caching stores parts of your website so they can load faster for visitors. WordPress Hosting uses multiple caching layers, including:
 
 * **Nginx reverse proxy caching** (active for 1 hour)
-* **Google Cloud CDN** (serves content from nearby servers)
+* **Global CDN** on WordPress Hosting Pro and Premium (serves content from nearby servers)
 * Optional plugin-level caching (e.g., from Divi)
 
 WordPress Hosting caches public-facing pages that meet all the following conditions:
@@ -135,7 +135,7 @@ You can also reach out to support for help with image cleanup and lazy loading s
 
 A **Content Delivery Network (CDN)** speeds up your site by storing and serving content from servers that are geographically close to your visitors.
 
-All WordPress Hosting sites use **Google Cloud CDN** by default, which provides:
+WordPress Hosting Pro and Premium sites use a global CDN by default. The CDN is not included with WordPress Hosting Standard. It provides:
 * Faster global load times
 * Better performance in mobile and remote environments
 * Built-in security and privacy protections
@@ -144,8 +144,6 @@ All WordPress Hosting sites use **Google Cloud CDN** by default, which provides:
 To disable the CDN:
 * Visit your WordPress Hosting dashboard
 * Toggle `Enable CDN` off
-
-More about CDN functionality: [What is Cloud CDN? (Google)](https://cloud.google.com/blog/topics/developers-practitioners/what-cloud-cdn-and-how-does-it-work)
 
 </details>
 
