@@ -1,9 +1,9 @@
 ---
 title: Message queue
 sidebar_label: Message queue
-description: Queue up to three follow-up prompts while Vibe is generating, and have them fire automatically when the current run finishes.
+description: Queue up to three follow-up prompts while Vibe is generating, have them fire automatically when the current run finishes, or send one into the live run with Send now.
 tags: [vibe, ai, message-queue, composer]
-keywords: [vibe message queue, vibe follow-up prompts, vibe queue, vibe pause resume]
+keywords: [vibe message queue, vibe follow-up prompts, vibe queue, vibe pause resume, vibe send now]
 sidebar_position: 8
 unlisted: false
 brand: business-app
@@ -30,6 +30,7 @@ You can queue up to three messages per project. Each queued message keeps everyt
 - **Auto-fire**: The oldest queued message runs automatically as soon as the current generation finishes, as long as the queue isn't paused.
 - **Edit and remove**: Change the text, images, or mode of any queued message, or remove it entirely, at any point before it fires.
 - **Pause and resume**: Suspend auto-fire so queued messages wait for you, then resume when you're ready.
+- **Send now**: Send a queued message into the run that's working so Vibe adjusts course without stopping or starting over.
 - **Queue limit**: Up to three messages per project. Once the queue is full, sending is disabled with a "Queue full — remove a message to continue" message until a slot frees up.
 
 ## How to use the message queue
@@ -52,6 +53,24 @@ You can queue up to three messages per project. Each queued message keeps everyt
 1. In the queue panel, click `Pause` to stop queued messages from firing automatically.
 2. While paused, you can still add, edit, or remove messages. They just won't run until you resume.
 3. Click `Resume` to pick up where you left off. If Vibe isn't generating, the oldest queued message fires as soon as you resume. If a generation is already in progress, it fires automatically when that generation completes.
+
+### Send a queued message into the current run
+
+1. While Vibe is generating, queue a message as described above.
+2. In the queue panel, click `Send now` on that message.
+3. The message leaves the queue and appears at the end of the conversation as a dimmed bubble with a `Move back to queue` button.
+4. Vibe takes the message in before its next model call, never in the middle of a tool call, and adjusts course without starting over. The bubble becomes a normal message at the point where Vibe picked it up.
+
+To cancel before Vibe picks the message up, click `Move back to queue`.
+
+`Send now` appears only when:
+
+- The queued message's mode (`Ask`, `Plan`, or `Build`) matches the mode of the current run.
+- The run isn't paused for plan approval, a clarifying question, or a takeover.
+- The run is yours, not a teammate's.
+- Vibe isn't using a computer.
+
+If the run pauses, stops, or ends before Vibe picks up the message, the message returns to the queue with a short note explaining why.
 
 ## Additional details
 
@@ -141,6 +160,24 @@ The sender's. Each queued request runs with the permissions of the person who se
 <summary>What happens if I send a message while paused and Vibe isn't generating?</summary>
 
 It sends directly instead of joining the queue, since there's no active generation for it to wait behind.
+</details>
+
+<details>
+<summary>What does Send now do?</summary>
+
+It sends a queued message into the run that's in progress. Vibe takes it in before its next model call and adjusts course without starting over.
+</details>
+
+<details>
+<summary>Why don't I see Send now on a queued message?</summary>
+
+`Send now` appears only when the message's mode matches the current run's mode. It isn't available while the run is paused for plan approval, a question, or a takeover, for a teammate's run, or while Vibe is using a computer.
+</details>
+
+<details>
+<summary>What happens to a sent-now message if the run stops or ends first?</summary>
+
+The message returns to the queue with a short note explaining why.
 </details>
 
 ## Next steps
