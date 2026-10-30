@@ -7,7 +7,7 @@ product: wordpress-hosting
 audience: smb
 ---
 
-WordPress Hosting enables you to create fast, secure, and customizable websites for businesses of all sizes. Built on Google Cloud Platform, it delivers reliable hosting, built-in eCommerce, fast performance, and easy-to-use visual tools.
+WordPress Hosting is fully managed, secure, high-performance hosting that lets you create fast, customizable websites for businesses of all sizes. It includes built-in eCommerce and easy-to-use visual tools.
 
 ## Product tiers
 
@@ -20,13 +20,12 @@ Ideal for businesses that need a quick, cost-effective online presence.
 * Pre-installed WooCommerce for eCommerce functionality
 * Seven industry-specific templates
 * Free SSL certificate
-* Daily backups (two most recent versions retained)
+* Daily backups
 * Built-in analytics
 
 **Limitations:**
 * No support for custom domains (uses subdomains only)
 * No staging environment
-* Limited backup retention (only two versions)
 
 ### WordPress Hosting Pro
 
@@ -36,7 +35,6 @@ Offers all features of Standard, plus advanced tools for developers and advanced
 
 | Feature | Standard | Pro |
 | --- | --- | --- |
-| Backups | 2 | Unlimited |
 | WordPress Dashboard access | ✓ | ✓ |
 | phpMyAdmin access | ✓ | ✓ |
 | SFTP access | ✓ | ✓ |
@@ -50,10 +48,10 @@ Offers all features of Standard, plus advanced tools for developers and advanced
 ## Key features
 
 **Performance & Infrastructure**
-* Hosted on Google Cloud Platform with unlimited pageviews and bandwidth
-* Free SSL certificates via Let's Encrypt
+* Fully managed, high-performance hosting with unlimited pageviews and bandwidth
+* Per-site isolation, so each site runs separately from others
+* Global CDN for fast load times worldwide (WordPress Hosting Pro and Premium only)
 * Automatic WordPress core updates for security
-* High-speed, scalable performance
 
 **eCommerce & Customization**
 * Built-in WooCommerce for online stores
@@ -63,9 +61,9 @@ Offers all features of Standard, plus advanced tools for developers and advanced
 
 **Security & Backups**
 * Daily automatic backups
-* Free SSL certificates
-* Secure hosting infrastructure
-* Advanced security features
+* Free SSL certificates that renew automatically
+* Built-in firewall and DDoS protection
+* Secure, isolated hosting for every site
 
 ## Getting started
 
@@ -83,18 +81,18 @@ For detailed guides, see:
 ## Frequently asked questions (FAQs)
 
 <details>
-<summary>Can I upgrade to PHP 8.1 on WordPress Hosting?</summary>
+<summary>Can I change the PHP version on WordPress Hosting?</summary>
 
-Yes. WordPress Hosting supports PHP 8.1. Before upgrading, ensure your site uses WordPress 6.0 or higher, all themes and plugins are up to date, and you have created a backup.
+Yes. You can change your site's PHP version from your WordPress Hosting dashboard. Before changing it, make sure WordPress, your themes, and your plugins are up to date, and create a backup.
 
-To upgrade: Go to your WordPress Hosting dashboard, click `Change PHP version`, select `8.1.1`, and click `Accept`. You can roll back if needed.
+To change it: Go to your WordPress Hosting dashboard, click `Change PHP version`, select the version you want from the list, and click `Accept`. You can roll back if needed.
 
 </details>
 
 <details>
 <summary>Is WordPress Hosting suitable for high-traffic websites?</summary>
 
-Yes. WordPress Hosting is optimized for high traffic with unlimited pageviews, database storage, and bandwidth. It uses Google Cloud Platform's C2 machines and automatically scales resources based on demand.
+Yes. WordPress Hosting is optimized for high traffic with unlimited pageviews, database storage, and bandwidth. Each site runs in its own isolated environment. WordPress Hosting Pro and Premium also include a global CDN that serves your site quickly to visitors worldwide.
 
 </details>
 

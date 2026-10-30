@@ -96,7 +96,7 @@ We recommend:
 <details>
 <summary>How does WordPress Hosting protect my sites from DoS attacks?</summary>
 
-WordPress Hosting leverages [**Google Cloud Platform's**](https://cloud.google.com/security) infrastructure-level DDoS protection, along with additional platform measures:
+WordPress Hosting includes built-in DDoS protection, along with additional platform measures:
 
 * **Rate limiting** on high-volume requests (20 requests per second limit, with 20 extra requests burst buffer)
 * Protection of the WordPress login system:
