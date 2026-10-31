@@ -63,9 +63,18 @@ Your view, filter tab, and sidebar selections are all remembered between session
 
 Click any empty time slot to open the booking dialog with the time and date pre-filled. Select the event, date, time, and contact to book with. You are booking as the host. Drag across multiple slots before releasing to set a longer duration.
 
+As the host, you can book any time on any future date. Only two things stop a booking: a meeting already booked through My Meetings, and the buffer time before and after it. Everything else shows a warning before you confirm, and you can still proceed:
+
+- **Blocked** time from a connected Google or Outlook calendar
+- Times outside your General availability
+- Times sooner than your minimum advance notice (as long as the time hasn't already passed)
+- Days that have reached the event type's daily limit
+
+A meeting booked on Blocked time appears on the connected calendar alongside the existing event. Nothing already on that calendar is changed, moved, or removed. The same rules apply when you book for a team member, so you can use that team member's Blocked time. They apply to booking or rescheduling several meetings at once as well.
+
 You can select up to **5 event types** in a single booking, the same limit as services and groups.
 
-If the event type has a **Daily limit** configured and the day you select has already reached it, a warning icon appears in the booking dialog. Hover the icon to see a message explaining that the booking exceeds the daily meeting limit for that day. This is informational only — you can still complete the booking after seeing the warning. The icon only appears when a daily limit is set on the event type; there's no change to the booking dialog when no limit is configured.
+If the event type has a **Daily limit** configured and the day you select has already reached it, a warning icon appears in the booking dialog. Hover the icon to see a message explaining that the booking exceeds the daily meeting limit for that day. You can still complete the booking after seeing the warning. The icon only appears when a daily limit is set on the event type; there's no change to the booking dialog when no limit is configured.
 
 ![Booking dialog opened from an empty calendar slot](../img/my-meetings/calendar-book-slot.png)
 
@@ -75,7 +84,7 @@ Click any event card to open a detail panel showing the client's name and contac
 
 From the same panel you can:
 
-- **Reschedule**: Click **Reschedule**, then pick a new time from the available slots. Conflicts are checked automatically. Times outside the event type's date range aren't accepted. If every host on a meeting has been removed from the calendar, the meeting can't be rescheduled. Cancel it and book a new one.
+- **Reschedule**: Click **Reschedule**, then pick a new time from the available slots. The same rules as booking apply: warnings can be overridden, but you can't move a meeting onto a different My Meetings meeting or into its buffer time. Leaving a meeting at its current time isn't a conflict. Times outside the event type's date range aren't accepted. If every host on a meeting has been removed from the calendar, the meeting can't be rescheduled. Cancel it and book a new one.
 - **Cancel**: Cancel the booking directly from the detail panel.
 - **Edit client details**: Update the client's information without leaving the panel.
 
@@ -103,7 +112,7 @@ Dragging one event in a multi-service booking moves all linked services by the s
 
 ## Blocked time from connected calendars
 
-When a team member connects their Google or Outlook calendar, their external busy time appears on the My Meetings calendar as a non-bookable **Blocked** slot, so you won't accidentally book over a lunch break, focus block, or out-of-office. Each card shows "Blocked," the team member's name, and the time and duration, in their assigned color at low opacity. The actual event title is never shown, keeping personal calendar details private.
+When a team member connects their Google or Outlook calendar, their external busy time appears on the My Meetings calendar as a **Blocked** slot, so you can see a lunch break, focus block, or out-of-office at a glance. Each card shows "Blocked," the team member's name, and the time and duration, in their assigned color at low opacity. The actual event title is never shown, keeping personal calendar details private.
 
 Blocked slots appear in Column, Day, and Week views and respect your sidebar filters. Both **busy** and **out-of-office** statuses are treated as blocked.
 
@@ -121,7 +130,7 @@ Blocked slots stay anonymous and can't be opened, dragged, or rescheduled. Meeti
 
 To hide Blocked slots, turn off **Show blocked time slots** at the bottom of the calendar sidebar. It's on by default, and your choice is saved for the next time you sign in.
 
-This setting is yours alone and changes only what you see, including a team member's blocked time on shared views like Column View — not theirs. It doesn't affect booking: busy time from a connected calendar is always excluded from bookable availability, whether the toggle is on or off.
+This setting is yours alone and changes only what you see, including a team member's blocked time on shared views like Column View — not theirs. It doesn't affect booking: when you book as the host, Blocked time shows a warning whether the toggle is on or off. Customers using a booking link never see times that fall on Blocked time.
 
 ## Hours outside general availability
 
@@ -129,7 +138,7 @@ Hours that fall outside a person's [General availability](./index.md#meeting-set
 
 When you view your own calendar, the greyed hours reflect your own General availability. When you view a team member's calendar, the greyed hours reflect that team member's own General availability.
 
-Greying is a visual indicator only. It doesn't restrict booking. You can still click into a greyed slot and book a meeting there if you choose.
+Greying is a visual indicator only. It doesn't restrict booking as the host. You can still click into a greyed slot and book a meeting there if you choose.
 
 This treatment appears in Column, Day, and Week views, alongside and visually distinct from **Blocked** slots from a connected external calendar. Both can appear on the same calendar at the same time.
 
@@ -187,7 +196,7 @@ All linked services in that booking move by the same time offset, so their relat
 <details>
 <summary>What are the blocked slots on my calendar?</summary>
 
-Blocked slots represent busy time from a team member's connected Google or Outlook calendar. Both busy and out-of-office statuses appear as blocked, non-bookable time. The actual event title is never shown, so personal calendar details stay private.
+Blocked slots represent busy time from a team member's connected Google or Outlook calendar. Both busy and out-of-office statuses appear as blocked. You can book over Blocked time as the host, with a warning. Customers using a booking link can't book it. The actual event title is never shown, so personal calendar details stay private.
 
 Blocked slots appear in Column, Day, and Week views and respect your sidebar filters. You can hide them with the `Show blocked time slots` toggle at the bottom of the sidebar.
 </details>
